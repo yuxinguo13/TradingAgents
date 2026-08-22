@@ -1,0 +1,251 @@
+# Live desk
+
+Two ways to use it, sharing one engine.
+
+| | What it is | When it runs |
+|---|---|---|
+| **Live agent** | Autonomous loop. Watches, decides, places orders. | Continuously, all session |
+| **Daily advisor** | One considered buy/sell list for you to act on. | Once a day |
+
+Both read the same market data, the same news, and the same reasoning panel.
+The difference is who pulls the trigger.
+
+---
+
+## How it works
+
+```
+                    ┌─ screener ──── whole exchange, ranked nightly
+                    ├─ newsfeed ──── ticker news, 24h, novelty-tracked
+   DATA ────────────┼─ policy ────── Fed / tariffs / regulation / geopolitics
+                    ├─ technicals ── price, trend, ATR, volume
+                    └─ broker ────── account, positions, quotes
+                              │
+                              ▼
+   TRIGGERS ─── deterministic arithmetic. Free. Answers one question:
+                has anything happened that could change a position?
+                              │  (usually: no)
+                              ▼
+   EVIDENCE ─── compact pack: position, trend, fresh news, policy backdrop
+                              │
+                              ▼
+   PANEL ────── 4 analysts with different mandates vote independently
+                Conservative · Aggressive · Balanced · Growth
+                              │
+                              ▼
+   RISK OFFICER  reviews the consensus. May veto or scale.
+                              │
+                              ▼
+   SECRETARY ── hard limits. Not prompts — code. Cannot be argued with.
+                              │
+                              ▼
+   VENUE ────── alpaca | paper | investopedia
+```
+
+### Why it's split this way
+
+**Triggers are rules, decisions are judgement.** An agent that asks an LLM about
+every name every cycle burns its quota by 10am concluding "nothing changed". So
+arithmetic decides *when* to think, and the panel decides *what* to do. On a
+quiet cycle nothing fires and nothing is spent.
+
+**The panel votes by seat, not by conviction.** Confidence sizes the trade; it
+does not win the vote. Weighting the tally by confidence lets one emphatic
+member outvote two calm ones — and since "Hold" is naturally reported at low
+confidence, that scheme makes a panel structurally unable to decline a trade.
+
+A trade needs a weighted majority **and** mean backer confidence ≥ 0.55.
+Agreement without conviction is a mood, not a trade. Size is the **median** of
+the backers' quantities, so one enthusiastic persona cannot set the position.
+
+**The Secretary is code, not instruction.** A limit an LLM can talk itself past
+is not a limit. Oversized orders are *resized*, not rejected — the view is
+valid, the size wasn't. Everything else (no cash, no shares, wrong session,
+kill switch) is a flat no.
+
+---
+
+## Venues
+
+Selected by `TRADINGAGENTS_BROKER`. Everything above the adapter is
+venue-agnostic — swapping venues changes nothing else.
+
+| Venue | Status | Needs |
+|---|---|---|
+| `paper` | **works now** | nothing |
+| `alpaca` | default | free paper API keys |
+| `investopedia` | not recommended | a browser session |
+
+**`paper`** — local book, real prices, no account. Fills are immediate and
+complete at the quote: no slippage, no partial fills, no queue. Good for judging
+whether the *reasoning* is any good; not for judging execution.
+
+**`alpaca`** — the sanctioned API. Free paper account, keys issued instantly,
+global. Two traps handled in the adapter: every number Alpaca returns is a
+*string*, and `OrderSide` has only BUY/SELL — so "Sell Short" on a name you hold
+long would sell the long unless `PositionIntent` disambiguates it.
+
+**`investopedia`** — works, but its terms forbid it. People Inc. ToS §3.3(e)
+bars robots and scrapers; §3.3(f) bars using site data to develop software or
+train an AI system; §5.2 permits termination "for any reason or no reason". Kept
+because it proves the abstraction, not because you should use it.
+
+---
+
+## Running the live agent
+
+```bash
+# safest first run — reasons out loud, never submits
+TRADINGAGENTS_BROKER=paper python -m tradingagents.live.cli run --dry-run
+
+# for real
+TRADINGAGENTS_BROKER=paper python -m tradingagents.live.cli run
+
+# watch only: full monitoring and triggers, no LLM, no orders
+python -m tradingagents.live.cli run --no-llm
+```
+
+Useful flags: `--once` (single cycle), `--interval 120`, `--max-panels 4`
+(LLM budget per cycle), `--no-screen`, `--trade-when-closed` (paper only).
+
+**Stop it instantly, from any shell, without touching the process:**
+
+```bash
+python -m tradingagents.live.cli stop          # or: touch ~/.tradingagents/STOP
+python -m tradingagents.live.cli stop --clear
+```
+
+### Cadence follows the clock, not a timer
+
+| Session | Every | What happens |
+|---|---|---|
+| Regular 09:30–16:00 ET | 120s (60s in the last half hour) | full cycle |
+| Pre / after hours | 10 min | news only — nothing is tradeable, but the headlines that move the open arrive now |
+| Closed | ≤30 min | nightly rescan, news, sleep toward the open |
+
+NYSE holidays and half-days are in the calendar, so it never waits for a 16:00
+close that isn't coming.
+
+### Triggers
+
+| Trigger | Fires when | Urgency |
+|---|---|---|
+| `stop_loss` | held position ≥8% below cost | 3 |
+| `news` | fresh headline ≥7 materiality, **<24h old** | 2–3 |
+| `trend_break` | held name loses SMA50 on a negative month | 2 |
+| `take_profit` | held position ≥20% above cost | 2 |
+| `price_move` | ≥1.2 ATR since prior close | 1–2 |
+| `volume` | ≥2× the 20-day average | 1 |
+| `screen_entry` | top-15 screen name you don't own | **0** |
+
+Screen entries rank last deliberately: they aren't news, they'll still be true
+next cycle, and they must never take the budget from a stop-loss.
+
+### Other commands
+
+```bash
+python -m tradingagents.live.cli portfolio    # account, positions, P&L
+python -m tradingagents.live.cli scan         # coverage + news + triggers, no trading
+python -m tradingagents.live.cli status       # clock, limits, kill switch, today's trades
+python -m tradingagents.live.cli news NVDA MU
+python -m tradingagents.live.cli trade NVDA buy 10 --dry-run
+```
+
+---
+
+## Risk limits
+
+Every order from every source passes the Secretary. Override any of these with
+`TRADINGAGENTS_RISK_<NAME>`.
+
+| Limit | Default |
+|---|---|
+| max position weight | 12% |
+| max **new** position weight | 8% |
+| max gross exposure | 95% |
+| max trades / day | 12 |
+| max turnover / day | 35% of equity |
+| min order value | $250 |
+| max single order | 10% of equity |
+| per-symbol cooldown | 45 min |
+| limit-price deviation | 5% from last |
+| shorting | **off** |
+| min price | $3 |
+
+---
+
+## Position sizing
+
+Share count comes from the van Tharp rule:
+
+```
+quantity = account_value × risk% / |entry − stop|
+```
+
+This sizes so that being stopped out costs a **fixed fraction of the account**
+regardless of which stock it is — equalising *risk* rather than *exposure*. A
+10%-ATR name and a 2%-ATR name given the same dollar weight are not the same
+bet, and sizing them identically is how a book quietly becomes a volatility bet.
+
+Guarded hard against `stop == entry` (division by zero → infinite size, the
+classic way this formula blows up an account) and wrong-side stops.
+
+`r_multiple` (reward ÷ risk) is preferred over `expectancy` for ranking, because
+expectancy is linear in a win-probability that is an unvalidated guess.
+
+---
+
+## News and policy
+
+**Ticker news** — Yahoo (ticker-scoped) + Google News (searched by *company
+name*, not ticker: "AMD stock" returns age-related macular degeneration trials,
+which score 9/12 and would put a decision about the wrong company in front of
+the panel).
+
+Every story is fingerprinted so only genuinely *new* headlines count, and the
+seen-set persists across restarts. A cold start primes instead of acting —
+otherwise the first run treats a quarter of backlog as breaking news.
+
+Institutional 13F noise is suppressed. Aggregators publish thousands of
+"Ninepoint Partners LP Makes New Investment in X" headlines that match the M&A
+pattern and score 10, which is enough to preempt a real stop-loss for the
+cycle's LLM budget.
+
+**Policy news** — monetary, fiscal, trade, regulatory, geopolitical. Company
+news reprices one stock; policy reprices a whole sector at once. An agent
+reading only ticker news is repeatedly blindsided by moves it had no way to see.
+
+---
+
+## State
+
+Everything under `~/.tradingagents/` (override with `TRADINGAGENTS_HOME`).
+
+| File | What |
+|---|---|
+| `live_portfolio.json` | the paper book |
+| `live_ledger.json` | every order attempted, with rationale — feeds the daily budgets |
+| `live_journal.jsonl` | one line per cycle |
+| `live_state.json` | screen ranking and coverage |
+| `recommendations.json` | the advisor's own track record |
+| `news_seen.json` | story fingerprints, pruned at 72h |
+| `company_names.json` | ticker → company name cache |
+| `screens/` | ranked exchange scans |
+| `reports/` | daily advisor reports |
+| `STOP` | the kill switch |
+
+---
+
+## Honest limitations
+
+- **Paper only.** Routing to real money means writing a new adapter — a
+  deliberate act, not a config flag.
+- **The panel sees a compact pack** — price, trend, position, fresh headlines.
+  Not filings, not transcripts.
+- **Local paper fills are optimistic.** No slippage, no partial fills, no queue
+  position. A strategy that depends on getting filled at the touch will look
+  better here than anywhere real.
+- **Policy impact is directional heuristics**, not modelled relationships. A
+  rate cut is good for growth unless it signals recession.
+- **This is not financial advice.** It is a model reading public information.
+  The track record is the only thing that makes it checkable.
