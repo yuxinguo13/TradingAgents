@@ -151,8 +151,13 @@ def size_position(
     risk_pct: float = DEFAULT_RISK_PCT,
     cap_fraction: float = DEFAULT_CAP_FRACTION,
     direction: str = LONG,
+    clamp_to_cap: bool = True,
 ) -> SizingResult:
     """Shares to trade so that being stopped out costs ``risk_pct`` of the account.
+
+    When the risk budget asks for more shares than ``cap_fraction`` allows, the
+    position is trimmed to the cap and risks less than budgeted. Pass
+    ``clamp_to_cap=False`` to refuse the trade instead.
 
     Every input the formula cannot handle returns quantity 0 with a reason. The
     arguments are annotated as numbers because numbers are what a caller should
@@ -215,19 +220,33 @@ def size_position(
                                f"(${cf * av:,.2f})", risk_per_share=dist,
                             uncapped_quantity=raw)
     if raw > cap_shares:
-        # Refused rather than trimmed to the cap, which is the opposite of what
-        # the Secretary does with an oversized order, and deliberately so. The
-        # Secretary is resizing a view it believes; here the breach is evidence
-        # that the *stop* is wrong — a stop this tight relative to the risk
-        # budget is usually noise-width, not a level the trade is invalidated
-        # at. Trimming would keep the bad trade and hide the bad stop. The cost
-        # of this choice is that a genuinely tight stop on a quiet name gets
-        # refused too; uncapped_quantity is reported so a caller that wants to
-        # trim anyway can see what was asked for.
-        return SizingResult(0, f"risk sizing wants {raw:,} shares (${raw * e:,.0f}) but the "
-                               f"{cf:.0%} cap allows {cap_shares:,}; the stop is too tight "
-                               f"for this risk budget", risk_per_share=dist,
-                            uncapped_quantity=raw)
+        # Clamp to the cap. The breach means the risk budget would buy more
+        # exposure than the concentration limit allows, so the binding
+        # constraint is position size and the trade simply risks LESS than
+        # budgeted — strictly more conservative, never more dangerous.
+        #
+        # Refusing here instead looks principled and is not: with the defaults
+        # (1% risk, 8% cap) the cap binds whenever the stop is nearer than
+        # entry/8, i.e. 12.5% away, so a 2xATR stop on a 3%-ATR name — six
+        # percent, an entirely ordinary stop — would be rejected. That silently
+        # returns zero recommendations for almost every real candidate.
+        #
+        # A stop that is genuinely too tight is one that is small against
+        # *volatility*, not against the cap ratio; that check belongs with ATR
+        # (see stop_from_atr), which is a different question from this one.
+        if not clamp_to_cap:
+            return SizingResult(0, f"risk sizing wants {raw:,} shares (${raw * e:,.0f}) "
+                                   f"but the {cf:.0%} cap allows {cap_shares:,}",
+                                risk_per_share=dist, uncapped_quantity=raw)
+        return SizingResult(
+            quantity=cap_shares,
+            reason=(f"{cap_shares:,} {d} shares at ${e:,.2f}, trimmed to the {cf:.0%} "
+                    f"exposure cap from the {raw:,} the risk budget allowed; risks "
+                    f"${cap_shares * dist:,.2f} ({cap_shares * dist / av:.2%} of the "
+                    f"account, under the {rp:g}% budget)"),
+            risk_per_share=dist, risk_amount=cap_shares * dist,
+            notional=cap_shares * e, uncapped_quantity=raw,
+        )
 
     return SizingResult(
         quantity=raw,

@@ -200,7 +200,6 @@ class TestInputGuards:
         (ACCOUNT, 50.0, 40.0, 0.0),          # no risk budget
         (ACCOUNT, 50.0, 40.0, 99.0),         # risk_pct above the ceiling
         (ACCOUNT, 50.0, 49.995, 1.0),        # sub-cent stop
-        (ACCOUNT, 50.0, 49.5, 1.0),          # cap breach
     ])
     def test_every_rejection_states_a_reason(self, case):
         r = size_position(*case)
@@ -210,16 +209,40 @@ class TestInputGuards:
 
 @pytest.mark.unit
 class TestExposureCap:
-    def test_position_above_the_cap_is_refused(self):
-        # A $0.50 stop on a $50 stock: $1,000 of risk buys 2,000 shares =
-        # $100,000, the entire account, on a stop inside one day's noise.
+    def test_position_above_the_cap_is_trimmed_to_the_cap(self):
+        # A $0.50 stop on a $50 stock: $1,000 of risk would buy 2,000 shares =
+        # the entire account. The cap trims it to 160 shares ($8,000), which
+        # risks $80 — under budget, which is the safe direction to miss in.
         r = size_position(ACCOUNT, 50.0, 49.5, 1.0, cap_fraction=DEFAULT_CAP_FRACTION)
-        assert r.quantity == 0
+        assert r.quantity == 160
+        assert r.notional == pytest.approx(8_000.0)
+        assert r.risk_amount == pytest.approx(80.0)
         assert "cap" in r.reason
 
-    def test_refused_size_still_reports_what_was_asked_for(self):
+    def test_a_trimmed_position_never_exceeds_the_risk_budget(self):
+        # Trimming can only reduce risk. Assert it across a range of stops so a
+        # future change cannot quietly invert the inequality.
+        budget = ACCOUNT * 0.01
+        for stop in (49.5, 48.0, 45.0, 43.75, 40.0, 30.0):
+            r = size_position(ACCOUNT, 50.0, stop, 1.0, cap_fraction=0.08)
+            assert r.risk_amount <= budget + 1e-9, f"stop {stop} over budget"
+
+    def test_refusal_is_still_available_explicitly(self):
+        r = size_position(ACCOUNT, 50.0, 49.5, 1.0,
+                          cap_fraction=DEFAULT_CAP_FRACTION, clamp_to_cap=False)
+        assert r.quantity == 0 and "cap" in r.reason
+
+    def test_trimmed_size_still_reports_what_was_asked_for(self):
         r = size_position(ACCOUNT, 50.0, 49.5, 1.0, cap_fraction=DEFAULT_CAP_FRACTION)
         assert r.uncapped_quantity == 2_000
+
+    def test_an_ordinary_atr_stop_is_not_rejected(self):
+        # Regression: with 1% risk and an 8% cap, refusing on cap breach
+        # rejected any stop nearer than 12.5% — i.e. a 2xATR stop on a 3%-ATR
+        # name, which is entirely ordinary. That returned zero recommendations
+        # for nearly every real candidate.
+        r = size_position(ACCOUNT, 100.0, 94.0, 1.0, cap_fraction=0.08)
+        assert r.quantity > 0
 
     def test_a_position_exactly_at_the_cap_is_allowed(self):
         # 8% of $100k = $8,000 = 160 shares at $50; a $6.25 stop asks for 160.
