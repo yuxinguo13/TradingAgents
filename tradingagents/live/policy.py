@@ -139,10 +139,117 @@ _SPECULATION = re.compile(
     r"markets? (?:await|brace)|\beyes\b|\bawaits?\b|"
     r"could|would|may not|explained)\b", re.IGNORECASE)
 
-# "May" is a month and "may" is a hedge, and in a headline the capital letter is
-# the only cheap way to tell them apart — so this branch is deliberately not
-# case-insensitive.
+# "May" is a month and "may" is a hedge. In a sentence-case headline the capital
+# letter tells them apart, so this branch is deliberately case-sensitive. It
+# only settles the sentence-case convention; the title-case one is below.
 _SPECULATION_LOWER = re.compile(r"\b(may|might)\b")
+
+# Title Case is the house style of the aggregators that fill much of Google
+# News RSS (MarketBeat, Benzinga, Zacks, Investing.com), and there the capital
+# letter above discriminates nothing: "Fed May Cut Rates In September" scored 8
+# and spent an LLM call while the identical sentence-case story was correctly
+# capped at 3. Pure speculation clearing the trigger because of the publisher's
+# house style is exactly what _SPECULATION_CAP exists to stop, so on a
+# title-cased headline the modal is read case-insensitively and the month is
+# excluded by its own context instead of by its capital letter.
+_TITLE_HEDGE = re.compile(r"\b(?:may|might)\b", re.IGNORECASE)
+
+# The date reading of "May": the month follows a time preposition, or precedes a
+# number or the thing scheduled, where the modal precedes a verb. Without this,
+# the branch above would cap "Fed Cuts Rates At May Meeting" — a decision that
+# happened — and lose a month of policy every year.
+#
+# The trailing list is deliberately generous. A modal is followed by a bare
+# verb; the month is followed by a noun, and enumerating every policy noun is
+# hopeless. So the rule is inverted below in _month_reading(): a capitalised
+# word after "May" that is not a known verb reads as the month. This regex
+# stays for the unambiguous cases it already catches.
+_MONTH_MAY = re.compile(
+    r"\b(?:in|at|by|on|since|until|through|after|before|from|during|for|"
+    r"early|late|mid|this|last|next|of)\s+May\b|"
+    r"\bMay\s+(?:\d|FOMC|CPI|meeting|decision|deadline|report|data|"
+    r"jobs|payrolls|inflation|tariffs?|rate|rates|ruling|quarter|session)\b",
+    re.IGNORECASE)
+
+# Verbs a modal actually takes in a policy headline. Anything else following
+# "May"/"Might" in title case is a noun, and therefore the month or the noun
+# "might" rather than the hedge.
+_MODAL_VERBS = frozenset(
+    "be been being cut cuts raise raises hike hikes lower lowers hold holds "
+    "pause pauses impose imposes lift lifts ease eases tighten tightens "
+    "approve approves reject rejects delay delays extend extends end ends "
+    "start starts begin begins face faces see sees get gets make makes take "
+    "takes push pushes drive drives boost boosts hurt hurts help helps "
+    "trigger triggers signal signals announce announces consider considers "
+    "move moves go goes come comes fall falls rise rises slow slows".split())
+
+# The words Title Case leaves lowercase. They must not count as evidence that a
+# headline is *not* title-cased, or "Fed May Cut Rates in September" reads as
+# sentence case and escapes the cap again.
+_TITLE_MINORS = frozenset(
+    "a an the and or but nor for so yet of to in on at by from with as into "
+    "over under after before amid vs via per than that its his her their this "
+    "these those up out off is are was were be been".split())
+
+_WORDS = re.compile(r"[A-Za-z][A-Za-z’'.-]*")
+
+
+def _title_cased(headline: str) -> bool:
+    """True when the headline capitalises its content words.
+
+    The first word is skipped because sentence case capitalises it too, and
+    minor words are skipped because title case does not capitalise them. The
+    thresholds — three content words, four fifths capitalised — are deliberately
+    conservative: the only thing this decides is whether a capitalised "May" may
+    be read as the hedge, and calling a sentence-case headline title-cased would
+    cap real events that happened in the month of May.
+    """
+    content = [w for w in _WORDS.findall(headline)[1:]
+               if w.lower() not in _TITLE_MINORS]
+    if len(content) < 3:
+        return False
+    caps = sum(1 for w in content if w[0].isupper())
+    return caps * 5 >= len(content) * 4
+
+
+def _title_modal(headline: str) -> bool:
+    """True when a title-cased "May"/"Might" is the modal, not a noun.
+
+    Two readings have to be excluded, and both were capping real events:
+
+    * **The month leading the headline.** "May Rate Cut Confirmed By Fed
+      Officials" and "May Tariffs Hit Chinese Imports" are decisions that
+      happened. A modal never opens a headline — there is no subject in front
+      of it — so word zero is never the hedge.
+    * **The noun.** "Military Might Of China Grows" is not speculation.
+
+    What remains is decided by what follows: a modal takes a bare verb, a month
+    and a noun take neither. Checking the follower against a verb list is
+    cruder than a tagger and cheaper than one, and the failure it prevents —
+    capping a severity-9 ruling to 3, below the trigger, so it is never read —
+    is worse than the occasional column that slips through.
+    """
+    words = _WORDS.findall(headline)
+    for i, w in enumerate(words):
+        if w.lower() not in ("may", "might"):
+            continue
+        if i == 0:
+            continue                      # a modal never opens a headline
+        nxt = words[i + 1].lower() if i + 1 < len(words) else ""
+        if nxt and nxt not in _MODAL_VERBS:
+            continue                      # followed by a noun: month, or "might" the noun
+        return True
+    return False
+
+
+def _hedged(headline: str) -> bool:
+    """True when the headline is a hedge or a column rather than an event."""
+    if _SPECULATION.search(headline) or _SPECULATION_LOWER.search(headline):
+        return True
+    return (_title_cased(headline)
+            and _title_modal(headline)
+            and not _MONTH_MAY.search(headline))
+
 
 # Contemplated rather than done. Distinct from speculation: a proposed rule is
 # a real object with a real market effect, just a smaller one than an adopted
@@ -521,9 +628,16 @@ IMPACT_RULES: tuple[PolicyRule, ...] = (
 
     # --- geopolitical ------------------------------------------------------
     PolicyRule(
+        # The second and third alternatives carry the oil context the rule is
+        # named for. Unanchored, `(?:production|output|supply) cuts?` matched
+        # "Samsung announces memory production cuts" — severity 8, above the
+        # trigger, tilting Energy long on a chipmaker's capacity decision.
         "opec_cut", "geopolitical",
         r"OPEC\+?[^.]{0,40}(?:cuts?|reduc\w*|curbs?|trims?)|"
-        r"(?:production|output|supply) cuts?",
+        r"\b(?:oil|crude|petroleum|barrels?)\b[^.]{0,40}"
+        r"(?:production|output|supply) cuts?|"
+        r"(?:production|output|supply) cuts?[^.]{0,40}"
+        r"\b(?:oil|crude|petroleum|barrels?)\b",
         {ENERGY: +1, INDUSTRIALS: -1, CONSUMER_CYCLICAL: -1},
         7,
         "Less crude lifts the price the producers sell at and taxes everyone who "
@@ -532,9 +646,14 @@ IMPACT_RULES: tuple[PolicyRule, ...] = (
         fixed_sign=True,
     ),
     PolicyRule(
+        # Anchored for the reason the row above is: "Boeing output increase
+        # planned for 737 line" is not an oil event.
         "opec_raise", "geopolitical",
         r"OPEC\+?[^.]{0,40}(?:raises?|increases?|boosts?|hikes?|unwinds?)|"
-        r"(?:production|output) (?:increase|hike|boost)",
+        r"\b(?:oil|crude|petroleum|barrels?)\b[^.]{0,40}"
+        r"(?:production|output|supply) (?:increases?|hikes?|boosts?)|"
+        r"(?:production|output|supply) (?:increases?|hikes?|boosts?)"
+        r"[^.]{0,40}\b(?:oil|crude|petroleum|barrels?)\b",
         {ENERGY: -1, INDUSTRIALS: +1, CONSUMER_CYCLICAL: +1},
         7,
         "The mirror of the row above.",
@@ -670,17 +789,39 @@ def classify(headline: str, url: str = "", published: str = "",
 
     pol = _polarity(headline)
     impact: dict[str, int] = {}
+    # A sector whose sign two rows actually disputed is latched here. Without
+    # it the merge cannot tell "exposed, sign unknown" 0 from "two rows
+    # conflicted" 0, so a third rule overwrites a settled conflict and the
+    # result depends on rule order: {+1, -1, -1} resolved to 0 or -1 depending
+    # on which row matched first. "Powell defends rate cut, says rate hikes
+    # possible if inflation accelerates" is a real headline of that shape, and
+    # it should leave Real Estate unsigned rather than bearish.
+    conflicted: set[str] = set()
     for rule in matched:
         flip = -1 if (pol < 0 and not rule.fixed_sign) else 1
         for sector, sign in rule.sectors.items():
             signed = sign * flip
-            if sector in impact and impact[sector] != signed:
-                # Two rows disagree about this sector — a sanctions row and a
-                # conflict row on the same headline, say. That is a real
-                # two-sided exposure, not an error to resolve by picking one.
-                impact[sector] = 0
-            else:
+            if sector in conflicted:
+                continue          # already settled as two-sided; nothing re-signs it
+            if sector not in impact or impact[sector] == signed:
                 impact[sector] = signed
+            elif signed == 0 or impact[sector] == 0:
+                # A zero is "exposed, sign genuinely unknown" (see
+                # PolicyRule), not a contrary claim, so it must not cancel a
+                # sign another row asserted. Treating it as disagreement
+                # zeroed Real Estate, Utilities and Technology on "Powell says
+                # the Fed will cut rates" — the fomc row marks those three 0
+                # and fires on any headline naming the venue — so the tilt for
+                # the highest-severity rows in the table survived only when
+                # the publisher left "Powell" and "FOMC" out of the headline.
+                impact[sector] = impact[sector] or signed
+            else:
+                # Two rows genuinely disagree about this sector — a sanctions
+                # row (-1) and a conflict row (+1) on the same headline, say.
+                # That is a real two-sided exposure, not an error to resolve by
+                # picking one, and it stays unsigned for the rest of the merge.
+                impact[sector] = 0
+                conflicted.add(sector)
 
     severity = lead.severity
     if _ACTION.search(headline):
@@ -694,7 +835,7 @@ def classify(headline: str, url: str = "", published: str = "",
     if _PROPOSED.search(headline):
         severity -= _PROPOSAL_PENALTY
     severity = max(1, min(MAX_SEVERITY, severity))
-    if _SPECULATION.search(headline) or _SPECULATION_LOWER.search(headline):
+    if _hedged(headline):
         severity = min(severity, _SPECULATION_CAP)
 
     # Only an event whose affected sectors all point the same way gets a
@@ -762,17 +903,28 @@ class PolicyMonitor:
 
     def _load(self) -> dict[str, str]:
         try:
-            return json.loads(self.state_path.read_text(encoding="utf-8"))
+            raw = json.loads(self.state_path.read_text(encoding="utf-8"))
         except Exception:
             return {}
+        if not isinstance(raw, dict):
+            return {}
+        # Shape, not just parseability. A file that parses but holds something
+        # else got past this function and detonated in _save's prune instead:
+        # `[1, 2, 3]` as AttributeError, `{"abc": 123}` as TypeError comparing
+        # int to str. That is a hard exit from a loop meant to run for weeks,
+        # so the state is filtered down to the pairs the prune can handle.
+        return {k: v for k, v in raw.items() if isinstance(v, str)}
 
     def _save(self) -> None:
         cutoff = (datetime.now(timezone.utc) - timedelta(hours=self.retain_hours)).isoformat()
-        self.seen = {k: v for k, v in self.seen.items() if v >= cutoff}
-        # Atomic: the loop can be killed at any moment, and a half-written seen
-        # set is read back as an empty one, which replays the whole feed.
+        # Prune and write together inside the suppress. The prune is the line
+        # that used to be able to raise out of poll(); nothing in here is worth
+        # stopping the loop for, and a failed save costs one replayed cycle.
         with suppress(Exception):
+            self.seen = {k: v for k, v in self.seen.items() if v >= cutoff}
             self.state_path.parent.mkdir(parents=True, exist_ok=True)
+            # Atomic: the loop can be killed at any moment, and a half-written
+            # seen set is read back as an empty one, which replays the whole feed.
             tmp = self.state_path.with_suffix(".tmp")
             tmp.write_text(json.dumps(self.seen), encoding="utf-8")
             os.replace(tmp, self.state_path)

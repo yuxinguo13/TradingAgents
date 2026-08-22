@@ -318,6 +318,116 @@ class TestSectorDirections:
 
 
 # ---------------------------------------------------------------------------
+# what happens when two rows fire on one headline
+# ---------------------------------------------------------------------------
+
+@pytest.mark.unit
+class TestOverlappingRules:
+    """A zero and a sign are not two claims about the same thing.
+
+    Zero means "exposed, sign genuinely unknown", so it must never cancel a
+    sign another row asserted. Two opposite signs are a genuine disagreement
+    and must still net to zero.
+    """
+
+    def test_an_unsigned_row_does_not_erase_the_signed_row_it_overlaps(self):
+        # "Powell" fires the fomc row, which marks Real Estate, Utilities and
+        # Technology 0 by design. Counting that as disagreement zeroed the
+        # three legs the rate_cut row exists for, so the highest-severity
+        # event in the table produced no tilt at all.
+        ev = classify("Powell says the Fed will cut rates twice this year",
+                      published=iso(1))
+        assert ev is not None
+        assert ev.sector_impact[REAL_ESTATE] == 1
+        assert ev.sector_impact[UTILITIES] == 1
+        assert ev.sector_impact[TECHNOLOGY] == 1
+        assert ev.direction == "bullish"
+        assert sector_pressure([ev])[REAL_ESTATE] > 0
+
+    def test_naming_the_venue_does_not_change_the_tilt(self):
+        # One event, two house styles. The signs used to turn on whether the
+        # publisher put "FOMC" or "Powell" in the headline.
+        bare = classify("Fed cuts interest rates", published=iso(1))
+        venue = classify("FOMC statement confirms a quarter-point rate cut",
+                         published=iso(1))
+        assert bare is not None and venue is not None
+        assert bare.sector_impact == venue.sector_impact
+        assert bare.direction == venue.direction == "bullish"
+
+    def test_an_unsigned_row_does_not_erase_a_rate_hike(self):
+        # The mirror of the case above: "Fed decision" fires the unsigned fomc
+        # row over the top of rate_hike's signed one.
+        ev = classify("Fed decision: policymakers vote to raise rates",
+                      published=iso(1))
+        assert ev is not None
+        assert ev.sector_impact[REAL_ESTATE] == -1
+        assert ev.sector_impact[UTILITIES] == -1
+        assert ev.direction == "bearish"
+
+    def test_an_unsigned_regulatory_row_does_not_erase_a_signed_one(self):
+        # crypto_rules marks Financial Services 0, sec_rules marks it -1. The
+        # zero used to erase the compliance-cost sign.
+        ev = classify("SEC adopts crypto rules", published=iso(1))
+        assert ev is not None
+        assert ev.sector_impact[FINANCIALS] == -1
+        assert ev.direction == "bearish"
+
+    def test_an_unsigned_health_row_does_not_erase_the_drug_pricing_sign(self):
+        # fda_policy is Healthcare 0, drug_pricing is Healthcare -1.
+        ev = classify("FDA guidance overhaul targets drug pricing", published=iso(1))
+        assert ev is not None
+        assert ev.sector_impact[HEALTHCARE] == -1
+        assert ev.direction == "bearish"
+
+    def test_a_sector_no_row_signed_stays_unsigned(self):
+        # The exemption must not invent a sign: Financial Services is 0 in
+        # both rows that touch it here, and reporting it as +1 would claim
+        # something no row in the table says.
+        ev = classify("Powell says the Fed will cut rates twice this year",
+                      published=iso(1))
+        assert ev is not None
+        assert ev.sector_impact[FINANCIALS] == 0
+
+    def test_opposite_signs_still_resolve_to_unsigned(self):
+        # The exemption is for zeros only. Sanctions (Industrials -1) and
+        # conflict (Industrials +1) remain a real two-sided exposure.
+        ev = classify("US announces sanctions and airstrikes", published=iso(1))
+        assert ev is not None
+        assert ev.sector_impact["Industrials"] == 0
+        assert ev.direction == "neutral"
+
+
+# ---------------------------------------------------------------------------
+# the OPEC rows are about crude, and only about crude
+# ---------------------------------------------------------------------------
+
+@pytest.mark.unit
+class TestOilRowsRequireOilContext:
+    @pytest.mark.parametrize("headline", [
+        "Samsung announces memory production cuts",
+        "TSMC announces output cuts amid weak demand",
+        "Boeing output increase planned for 737 line",
+    ])
+    def test_a_manufacturer_changing_output_is_not_an_oil_event(self, headline):
+        # The unanchored `(?:production|output) cuts?` alternative made a
+        # chipmaker's capacity decision a severity-8 geopolitical event: over
+        # the trigger, so it spent an LLM call, and it tilted Energy long.
+        assert classify(headline, published=iso(1)) is None
+
+    def test_an_oil_cut_is_still_an_energy_event_without_the_word_opec(self):
+        # Anchoring must not cost the headlines the row exists for.
+        ev = classify("Saudi Arabia extends crude output cuts through June",
+                      published=iso(1))
+        assert ev is not None
+        assert ev.sector_impact[ENERGY] == 1
+
+    def test_the_oil_context_may_follow_the_cut(self):
+        ev = classify("Production cuts push crude prices higher", published=iso(1))
+        assert ev is not None
+        assert ev.sector_impact[ENERGY] == 1
+
+
+# ---------------------------------------------------------------------------
 # polarity: escalation vs rollback
 # ---------------------------------------------------------------------------
 
@@ -386,6 +496,36 @@ class TestSpeculationSuppression:
                       published=iso(1))
         assert ev is not None
         assert ev.severity > policy._SPECULATION_CAP
+
+    @pytest.mark.parametrize("headline", [
+        "Fed May Cut Rates In September",
+        "Powell Says Fed Might Pause Hikes",
+        "Trump May Impose New Tariffs On EU Goods",
+    ])
+    def test_a_title_cased_hedge_is_capped_like_a_lowercase_one(self, headline):
+        # The aggregators that fill much of Google News RSS publish in Title
+        # Case, where the capital letter no longer separates the modal from
+        # the month. "Fed May Cut Rates In September" scored 8 and cleared the
+        # trigger while the same story in sentence case was capped at 3 — pure
+        # speculation spending an LLM call on the publisher's house style.
+        ev = classify(headline, published=iso(1))
+        assert ev is not None
+        assert ev.severity <= policy._SPECULATION_CAP
+        assert ev.severity < POLICY_SEVERITY_TRIGGER
+
+    def test_a_title_cased_month_is_still_the_month(self):
+        # The title-case branch must not cap a decision that happened, or the
+        # fix for the hedge costs a month of real policy every year.
+        ev = classify("Fed Cuts Rates At May Meeting", published=iso(1))
+        assert ev is not None
+        assert ev.severity > policy._SPECULATION_CAP
+
+    def test_proper_nouns_do_not_make_a_sentence_case_headline_title_cased(self):
+        # If the detector fired on sentence case, the case-insensitive branch
+        # would take over and cap every real event published in May.
+        assert not policy._title_cased(
+            "Powell announces the decision at Jackson Hole in May")
+        assert policy._title_cased("Fed May Cut Rates In September")
 
     def test_a_proposal_scores_below_the_enacted_version(self):
         # A proposed rule is a real object with a real effect, just a smaller
@@ -554,6 +694,43 @@ class TestPolicyMonitorFaultTolerance:
         p = tmp_path / "s.json"
         p.write_text("{not json")
         assert PolicyMonitor(state_path=p).seen == {}
+
+    @pytest.mark.parametrize("body", [
+        "[1, 2, 3]", '{"abc": 123}', '"hello"', "null", '{"a": null}',
+    ])
+    def test_a_state_file_of_the_wrong_shape_reads_as_empty(self, tmp_path, body):
+        # _load caught only unparseable JSON. A file that parsed but was not
+        # dict[str, str] got through and detonated in _save's prune instead:
+        # AttributeError on a list, TypeError comparing an int to the cutoff.
+        p = tmp_path / "s.json"
+        p.write_text(body)
+        assert PolicyMonitor(state_path=p).seen == {}
+
+    def test_a_partly_wrong_state_file_keeps_the_usable_fingerprints(self, tmp_path):
+        # Dropping the whole file on one bad value would replay every story it
+        # still remembered, which is the failure the seen set exists to stop.
+        stamp = iso(1)
+        p = tmp_path / "s.json"
+        p.write_text(json.dumps({"good": stamp, "bad": 123}))
+        assert PolicyMonitor(state_path=p).seen == {"good": stamp}
+
+    def test_a_wrong_shape_state_file_does_not_kill_the_poll(self, tmp_path, monkeypatch):
+        # The failure prevented is a hard exit from a loop meant to run
+        # unattended for weeks, on the strength of one bad state file.
+        p = tmp_path / "s.json"
+        p.write_text(json.dumps({"deadbeef": 123}))
+        monkeypatch.setattr(policy, "fetch_rss",
+                            feed_of("US imposes new tariffs on Chinese imports"))
+        assert len(PolicyMonitor(state_path=p).poll(pause=0)) == 1
+        assert json.loads(p.read_text())        # rewritten in a shape it can read
+
+    def test_a_seen_set_corrupted_in_memory_does_not_raise(self, tmp_path, monkeypatch):
+        # The prune line used to sit outside the suppress, so a non-string
+        # stamp reaching it raised straight out of poll().
+        monkeypatch.setattr(policy, "fetch_rss", lambda url, timeout=20: [])
+        m = PolicyMonitor(state_path=tmp_path / "s.json")
+        m.seen = {"deadbeef": 123}              # type: ignore[dict-item]
+        assert m.poll(pause=0) == []
 
     def test_a_feed_row_missing_fields_is_tolerated(self, tmp_path, monkeypatch):
         monkeypatch.setattr(policy, "fetch_rss", lambda url, timeout=20: [{}, {"title": ""}])
@@ -749,3 +926,79 @@ class TestSectorPressure:
         p = sector_pressure(evs)
         assert p[TECHNOLOGY] < 0
         assert p[ENERGY] > 0
+
+
+@pytest.mark.unit
+class TestConflictLatching:
+    """A sector two rules genuinely disputed must stay unsigned.
+
+    The first fix made zero ("exposed, sign unknown") stop cancelling a signed
+    impact. That reintroduced a subtler bug: the merge could no longer tell
+    that zero from a zero meaning "two rows conflicted", so a third rule
+    overwrote a settled conflict and the answer depended on rule order.
+    """
+
+    HEADLINES = [
+        "Powell defends rate cut, says rate hikes possible if inflation accelerates",
+        "Fed cuts rates but signals rate hikes if inflation accelerates",
+        "Rate cut now, rate hikes later as tariffs push prices up",
+    ]
+
+    @pytest.mark.parametrize("headline", HEADLINES)
+    def test_a_two_sided_headline_leaves_the_disputed_sector_unsigned(self, headline):
+        ev = classify(headline)
+        assert ev is not None
+        for sector in ("Real Estate", "Technology"):
+            if sector in ev.sector_impact:
+                assert ev.sector_impact[sector] == 0, (
+                    f"{sector} was re-signed after a genuine conflict")
+
+    @pytest.mark.parametrize("headline", HEADLINES)
+    def test_a_disputed_sector_contributes_no_tilt(self, headline):
+        ev = classify(headline)
+        assert sector_pressure([ev]).get("Real Estate", 0.0) == 0.0
+
+    def test_an_unsigned_row_still_does_not_cancel_a_signed_one(self):
+        # The guard the first fix installed must survive the second.
+        ev = classify("Powell says the Fed will cut rates twice this year")
+        assert ev.sector_impact["Real Estate"] == 1
+        assert ev.sector_impact["Technology"] == 1
+
+    def test_a_real_two_rule_disagreement_still_resolves_to_unsigned(self):
+        ev = classify("US announces sanctions and airstrikes")
+        assert ev.sector_impact.get("Industrials") == 0
+
+
+@pytest.mark.unit
+class TestTitleCasedMayIsUsuallyTheMonth:
+    """Capping a real event to 3 puts it below the trigger, so it is never read.
+
+    The title-case branch read every capitalised "May"/"Might" as the hedge.
+    A modal never opens a headline and is always followed by a bare verb; the
+    month and the noun "might" are followed by nouns.
+    """
+
+    @pytest.mark.parametrize("headline", [
+        "May Rate Cut Confirmed By Fed Officials",
+        "May Tariffs Hit Chinese Imports",
+        "May Jobs Report Shows Hiring Slowdown As Fed Cuts Rates",
+        "White House Confirms May Tariff Rollout",
+        "Supreme Court Rules On Tariffs, May Ruling Ends Dispute",
+        "Military Might Of China Grows As Taiwan Tensions Rise",
+        "Fed Cuts Rates At May Meeting",
+    ])
+    def test_a_real_event_is_not_capped_as_speculation(self, headline):
+        ev = classify(headline)
+        assert ev is not None and ev.severity >= POLICY_SEVERITY_TRIGGER, (
+            f"{headline!r} was demoted below the trigger")
+
+    @pytest.mark.parametrize("headline", [
+        "Fed May Cut Rates In September",
+        "Powell Says Fed Might Pause Hikes",
+        "Trump May Impose New Tariffs On EU Goods",
+        "Fed may cut rates in September",
+    ])
+    def test_a_genuine_hedge_is_still_capped(self, headline):
+        ev = classify(headline)
+        assert ev is None or ev.severity < POLICY_SEVERITY_TRIGGER, (
+            f"{headline!r} is speculation and cleared the trigger")

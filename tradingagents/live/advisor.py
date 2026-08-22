@@ -13,10 +13,14 @@ once, off the full day's data, and read once. Produced continuously it stops
 being a list and becomes a feed, and a feed of buy ideas is how an account ends
 up holding forty names nobody chose.
 
-So this runs once a day, after the close, against the day's finished bars, and
-prints a page for a human to act on at the next open. Nothing here places an
-order. Every idea is written into :mod:`recommendations` at the levels it was
-issued with, which is what makes it checkable a month later.
+So this runs once a day, after the close, against the last completed session's
+bars, and prints a page for a human to act on at the next open. Those are two
+different sessions and the report prints both dates: an idea dated for Monday's
+open was produced from Friday's close, and a page that named one date for both
+would be claiming it read Friday's close before Friday's open. Nothing here
+places an order. Every idea is written into :mod:`recommendations` at the levels
+it was issued with, and every exit the review calls for is written back to the
+same book, which is what makes the record checkable a month later.
 
 Three ordering decisions in :meth:`DailyAdvisor.run` are load-bearing:
 
@@ -25,21 +29,24 @@ Three ordering decisions in :meth:`DailyAdvisor.run` are load-bearing:
   known; and an agent that generates ideas before managing what it already
   holds will accumulate positions forever, because nothing in the buy path ever
   asks what the book already contains.
-* **The R filter runs after sizing, not before.** A share count comes from the
-  stop distance, and the stop is also half of R — computing them in the other
-  order means rejecting on a number the size was not derived from.
+* **The R filter runs before sizing.** R is made of the three levels and
+  nothing else, so no share count can change it. Checking it first rejects a
+  name for the price of three subtractions instead of a full sizing pass, and
+  the number the report rejects on is the same number it would have ranked on.
 * **Policy tilts the ranking; it never creates or destroys a candidate.**
   :func:`~.policy.sector_pressure` says so about itself, and it is right: the
-  sector map is a table of hand-written priors, not a model. Here it may move a
-  name a few places, bounded by ``MAX_TILT_SHIFT``, and nothing more.
+  sector map is a table of hand-written priors, not a model. Here it subtracts
+  at most ``MAX_TILT_SHIFT`` from a rank, which reorders neighbours and can
+  never put a name on the list that the screen did not.
 
-The honest caveat, stated once here and printed on every report: this is a
-shortlist produced by a model reading public information. It is not advice, it
-knows nothing about the reader's circumstances, and every convention in it —
-the two-ATR stop, the trend-extrapolated target, the minimum R — is written
-down in this repository rather than established by anyone. The track record at
-the foot of the report is the only part that is checkable, which is why every
-idea goes into the book whether it works or not.
+The honest caveat, spelled out in ``CAVEAT`` and printed at the foot of every
+report: this is a shortlist produced by a model reading public information. It
+is not advice, it knows nothing about the reader's circumstances, and every
+convention in it — the two-ATR stop, the trend-extrapolated target, the minimum
+R — is written down in this repository rather than established by anyone. The
+track record at the foot of the report is the only part that is checkable,
+which is why every idea goes into the book whether it works or not, and why
+every exit goes in with it.
 
     python -m tradingagents.live.advisor --top 8 --risk-pct 1.0
     python -m tradingagents.live.advisor --use-cache --no-llm --dry-run
@@ -49,10 +56,13 @@ from __future__ import annotations
 
 import argparse
 import csv
+import datetime as _dt
 import logging
+import re
 import math
 import os
 import sys
+import textwrap
 from dataclasses import dataclass, field
 from datetime import date as _date, datetime, timedelta
 from pathlib import Path
@@ -65,6 +75,7 @@ from .policy import PolicyEvent, PolicyMonitor, policy_brief, sector_pressure
 from .recommendations import (
     BUY as ADVICE_BUY,
     DEFAULT_CONVICTION,
+    REASON_MANUAL,
     ExitRules,
     ExitSignal,
     Recommendation,
@@ -77,6 +88,9 @@ from .secretary import RiskLimits, Secretary, TradeLedger
 from .sizing import DEFAULT_RISK_PCT, r_multiple, size_position, stop_from_atr
 
 logger = logging.getLogger(__name__)
+
+# Report filenames are built from this; anything else is rejected.
+_ISO_DATE = re.compile(r"\d{4}-\d{2}-\d{2}")
 
 # --- windows ----------------------------------------------------------------
 # The user's requirement, spelled as a constant because it is a promise the
@@ -92,11 +106,19 @@ NEWS_WINDOW_HOURS = 24.0
 POLICY_WINDOW_HOURS = 48.0
 
 # --- ranking ----------------------------------------------------------------
-# The most places a sector tilt of +/-1.0 may move a name on the shortlist.
-# Bounded rather than weighted: an additive score adjustment can promote the
-# fortieth name over the first if the tilt is large enough, and this table of
-# hand-written priors has not earned that. Five places reorders neighbours,
-# which is exactly what sector_pressure's own docstring says it is for.
+# What a sector tilt of +/-1.0 subtracts from a name's rank. Bounded rather
+# than weighted: an additive score adjustment can promote the fortieth name
+# over the first if the tilt is large enough, and this table of hand-written
+# priors has not earned that.
+#
+# The bound is on the adjustment, not on the displacement, and the difference
+# is worth stating because the two are not the same number: other names move
+# the other way at the same time. A name is overtaken only by names whose
+# screen rank is fewer than MAX_TILT_SHIFT * (their tilt - its tilt) below its
+# own, so on the screen's consecutive ranking, with tilts of +1 and -1 pulling
+# against each other, a name falls at most 2 * MAX_TILT_SHIFT - 1 places. That
+# is still neighbours reordered rather than the list rewritten, which is what
+# sector_pressure's own docstring says the tilt is for.
 MAX_TILT_SHIFT = 5.0
 
 # --- levels -----------------------------------------------------------------
@@ -195,23 +217,66 @@ def screens_dirs() -> list[Path]:
     return out
 
 
-def data_date_for(report_day: _date, now: datetime | None = None) -> _date:
-    """The session whose bars this report may read.
+def last_completed_session(now: datetime | None = None) -> _date:
+    """The most recent session whose regular hours have ended.
 
-    For today this is :func:`clock.last_trading_day`, which is *not* today
-    before 09:30: no bar exists yet, and asking for one returns yesterday's
-    data labelled with today's date — the look-ahead confusion the verified
-    loader exists to prevent. For a past date it is that date, walked back to
-    the previous session if it was a weekend or a holiday.
+    Deliberately not :func:`clock.last_trading_day`, which returns a session
+    that has merely *started*: at 12:00 its bars are half a day of trading that
+    has not happened yet, and a report built on them would rank names on an
+    unfinished close and call it the close. Half-days go through
+    ``clock.close_time``, so the Friday after Thanksgiving is complete at 13:00.
     """
-    if report_day >= _date.today():
-        return clock.last_trading_day(now)
-    d = report_day
+    et_now = now.astimezone(clock.ET) if now else datetime.now(clock.ET)
+    d = et_now.date()
+    if clock.is_trading_day(d) and et_now.time() >= clock.close_time(d):
+        return d
+    d -= timedelta(days=1)
     for _ in range(10):
         if clock.is_trading_day(d):
             return d
         d -= timedelta(days=1)
     return d
+
+
+def sessions_for(when: str | _date | None = None, now: datetime | None = None
+                 ) -> tuple[_date, _date]:
+    """(the session the orders are for, the session the data comes from).
+
+    ``when`` names the session the orders are FOR and defaults to the next
+    open, so a Saturday run is dated Monday rather than dated a Saturday with
+    no session. The data is always the last completed session, which is why the
+    two dates are never equal.
+
+    Raises ValueError when the data session is not strictly before the order
+    session — the case of a ``when`` whose session has already closed. Answered
+    instead of refused, it would hand back the bars of the very session it
+    claims to be advising on, which is the look-ahead this report exists to
+    keep out of the record.
+    """
+    data_day = last_completed_session(now)
+    if when is None or when == "":
+        order_day = clock.next_open(now).date()
+    else:
+        if isinstance(when, datetime):
+            order_day = when.date()
+        elif isinstance(when, _date):
+            order_day = when
+        else:
+            try:
+                order_day = _date.fromisoformat(str(when).strip())
+            except ValueError:
+                raise ValueError(
+                    f"{when!r} is not an ISO date (YYYY-MM-DD)") from None
+        for _ in range(10):
+            if clock.is_trading_day(order_day):
+                break
+            order_day += timedelta(days=1)
+    if data_day >= order_day:
+        raise ValueError(
+            f"the {order_day} session has already closed (the last completed "
+            f"session is {data_day}): this report is produced from a completed "
+            f"session for the next open, and cannot be dated backwards")
+    return order_day, data_day
 
 
 def estimated_cost(rec: Recommendation) -> float:
@@ -223,6 +288,68 @@ def estimated_cost(rec: Recommendation) -> float:
 def planned_risk(rec: Recommendation) -> float:
     """Dollars lost if the stop as issued fills. NaN when it cannot be read."""
     return rec.risk_amount()
+
+
+def _wrapped(text: str, width: int, indent: str = "  ") -> list[str]:
+    """Fold one paragraph to the report width. Never returns an empty list."""
+    return textwrap.wrap(text, width=max(20, width), initial_indent=indent,
+                         subsequent_indent=indent) or [indent + text]
+
+
+def _no_stop_reason(entry: float, atr_pct: float, k: float) -> str:
+    """Which of :func:`stop_from_atr`'s refusals actually happened.
+
+    It refuses for a missing ATR, a non-positive entry or multiple, a stop that
+    a very wide ATR pushes to or below zero, and a stop that rounds inside the
+    tick. The message always named the last one, so a name with no ATR at all
+    was reported as "ATR is nan% of price, which puts the stop inside the tick".
+    """
+    e, a, mult = _num(entry), _num(atr_pct), _num(k)
+    if math.isnan(e) or e <= 0:
+        return (f"no stop could be derived: the reference price {entry!r} is not "
+                f"a positive number")
+    if math.isnan(mult) or mult <= 0:
+        return (f"no stop could be derived: the ATR multiple {k!r} is not a "
+                f"positive number")
+    if math.isnan(a) or a <= 0:
+        return ("no stop could be derived: this name has no usable ATR, so there "
+                "is no measure of its own noise to place a stop outside of")
+    if e - mult * a * e <= 0:
+        return (f"no stop could be derived: {mult:g} ATRs of {a:.2%} is the whole "
+                f"price, so the stop lands at or below zero")
+    return (f"no stop could be derived: an ATR of {a:.2%} of ${e:,.2f} puts the "
+            f"{mult:g}-ATR stop inside the cent the shares quote in")
+
+
+def _poll_standing(monitor, call):
+    """Poll a stateful monitor for what is standing now, without eating its backlog.
+
+    Both monitors answer "what is new since I last looked" and this report needs
+    "what is standing right now" — run twice in one morning it must not have an
+    empty backdrop the second time. Clearing ``seen`` gets that, but ``poll``
+    persists the set it ends with, so clearing an *injected* monitor writes the
+    emptied set to that monitor's own state file and its next cycle replays days
+    of coverage as breaking: the exact failure ``NewsMonitor.prime`` exists to
+    prevent. The previous fingerprints are therefore put back and re-persisted.
+    """
+    previous = dict(getattr(monitor, "seen", None) or {})
+    monitor.seen = {}
+    try:
+        return call()
+    finally:
+        merged = dict(getattr(monitor, "seen", None) or {})
+        for fingerprint, stamp in previous.items():
+            # setdefault, not update: a fingerprint seen again in this poll keeps
+            # its newer timestamp and so survives the monitor's age prune longer.
+            merged.setdefault(fingerprint, stamp)
+        monitor.seen = merged
+        save = getattr(monitor, "_save", None)
+        if previous and callable(save):
+            try:
+                save()
+            except Exception as exc:
+                logger.warning("could not restore the seen-set of %s: %s",
+                               type(monitor).__name__, exc)
 
 
 # ---------------------------------------------------------------------------
@@ -470,6 +597,9 @@ class DailyReport:
 
     buys: list[Recommendation] = field(default_factory=list)
     sells: list[ExitSignal] = field(default_factory=list)
+    # What the sells above actually did to the book. Empty on a dry run, and
+    # empty when a signal named an idea the book no longer has open.
+    closed: list[Recommendation] = field(default_factory=list)
 
     policy_summary: str = ""
     policy_events: list[PolicyEvent] = field(default_factory=list)
@@ -493,6 +623,11 @@ class DailyReport:
     # trusted — collapsing them would bury the second in the first.
     notes: list[str] = field(default_factory=list)
     warnings: list[str] = field(default_factory=list)
+
+    # Set when no report could be produced at all — a --date whose session has
+    # already closed. Rendered as a refusal rather than returned as an empty
+    # page, because an empty page reads exactly like a day with nothing to do.
+    refused: str = ""
 
     @property
     def total_cost(self) -> float:
@@ -602,13 +737,9 @@ class DailyAdvisor:
 
     def poll_policy(self, report: DailyReport) -> list[PolicyEvent]:
         """Policy events inside the window. A dead feed yields none, loudly."""
-        # Cleared rather than loaded, for the same reason the news seen-set is:
-        # the loop's question is "what is new since I last looked" and this
-        # report's is "what is standing right now". A report that ran twice in
-        # one morning must not have an empty backdrop the second time.
-        self.policy.seen = {}
         try:
-            events = self.policy.poll(pause=self.cfg.feed_pause)
+            events = _poll_standing(
+                self.policy, lambda: self.policy.poll(pause=self.cfg.feed_pause))
         except Exception as exc:
             report.warnings.append(
                 f"policy feeds unavailable ({type(exc).__name__}: {exc}); the "
@@ -620,9 +751,10 @@ class DailyAdvisor:
 
     def poll_news(self, symbols: list[str], report: DailyReport) -> list[NewsItem]:
         """Headlines for ``symbols`` plus the macro feeds, inside the window."""
-        self.news.seen = {}
         try:
-            items = self.news.poll(symbols, macro=True, pause=self.cfg.feed_pause)
+            items = _poll_standing(
+                self.news,
+                lambda: self.news.poll(symbols, macro=True, pause=self.cfg.feed_pause))
         except Exception as exc:
             report.warnings.append(
                 f"news feeds unavailable ({type(exc).__name__}: {exc}); exits "
@@ -639,15 +771,21 @@ class DailyAdvisor:
 
     # --- 1. the sell side -------------------------------------------------
 
-    def review_exits(self, news_by_symbol: dict[str, list[NewsItem]], when: _date,
-                     data_date: str, report: DailyReport) -> list[ExitSignal]:
+    def review_exits(self, news_by_symbol: dict[str, list[NewsItem]],
+                     data_day: _date, report: DailyReport) -> list[ExitSignal]:
         """Price every open idea and say which are done.
 
         Runs before a single buy is generated. The proceeds of these sales are
         the budget the buy side spends, and an advisor that produced ideas
         first would never look at what it already holds — which is how a book
         becomes forty names nobody chose.
+
+        The review is dated by the data session, not by the session the orders
+        are for: the marks are that session's closes, and dating it by the next
+        open would add up to three calendar days to every horizon over a
+        weekend and time-stop ideas a day or two early.
         """
+        data_date = data_day.isoformat()
         prices: dict[str, float] = {}
         for rec in self.book.open_recommendations():
             snap = self.snapshot(rec.symbol, data_date)
@@ -656,7 +794,7 @@ class DailyAdvisor:
                 report.marks[rec.symbol] = snap.price
         try:
             signals = self.book.review(
-                prices, news_by_symbol, as_of=when, rules=self.exit_rules,
+                prices, news_by_symbol, as_of=data_day, rules=self.exit_rules,
                 # A dry run must not move a stop on disk. review applies the
                 # trailing rule in memory either way, so the printed page is
                 # the same page a real run would print.
@@ -669,9 +807,66 @@ class DailyAdvisor:
             return []
         return signals
 
+    def apply_exits(self, signals: list[ExitSignal], data_day: _date,
+                    report: DailyReport) -> list[Recommendation]:
+        """Write the closing signals back to the book. Never raises.
+
+        Without this the book only ever grows: buys are recorded unconditionally
+        as if taken and sells never are, and that asymmetry breaks three things
+        at once by the second day. ``track_record.closed`` stays 0, so the one
+        checkable part of the report permanently prints "nothing has been closed
+        yet"; every symbol ever recommended stays banned from the shortlist, so
+        the candidate pool only shrinks; and a stopped-out idea re-emits the
+        same SELL every morning forever.
+
+        A closing signal with no usable price is expired rather than closed: it
+        has no exit price, and a closed row with no P&L counts in the sample
+        while contributing nothing to it.
+        """
+        if not signals:
+            return []
+        closing = [s for s in signals if s.closes_position]
+        if not closing:
+            return []
+        if self.cfg.dry_run:
+            report.notes.append(
+                "dry run: the book was not touched, so "
+                + ", ".join(sorted({s.symbol for s in closing}))
+                + " stay open and will be signalled again tomorrow")
+            return []
+
+        closed: list[Recommendation] = []
+        for sig in closing:
+            px = _num(sig.price)
+            try:
+                if math.isnan(px) or px <= 0:
+                    rec = self.book.expire(
+                        sig.rec_id, reason=(sig.exit_reason or sig.reason)[:200], exit_date=data_day)
+                else:
+                    rec = self.book.close(
+                        sig.rec_id, px, sig.exit_reason or REASON_MANUAL,
+                        exit_date=data_day)
+            except Exception as exc:
+                report.warnings.append(
+                    f"{sig.symbol} could not be closed in the book "
+                    f"({type(exc).__name__}: {exc}); it stays open and the same "
+                    f"exit will be signalled again tomorrow")
+                continue
+            if rec is None:
+                report.warnings.append(
+                    f"{sig.symbol} ({sig.rec_id}) was not open in the book, so the "
+                    f"exit above changed nothing")
+                continue
+            closed.append(rec)
+        if closed:
+            report.notes.append(
+                f"{len(closed)} recommendation(s) closed in the book: "
+                + ", ".join(f"{r.symbol} ({r.exit_reason or 'exit'})" for r in closed))
+        return closed
+
     # --- 2. candidates ----------------------------------------------------
 
-    def candidates(self, when: _date, data_date: str, report: DailyReport) -> list[Candidate]:
+    def candidates(self, data_day: _date, report: DailyReport) -> list[Candidate]:
         """The universe cut, from a cached screen where one will do.
 
         A screen is built from daily bars, so a second scan of the same session
@@ -680,12 +875,21 @@ class DailyAdvisor:
         at most once a day. So a saved CSV for this exact session is used even
         when ``use_cache`` is off; ``use_cache`` additionally accepts an older
         one rather than scanning.
+
+        The comparison is against the *data* session, never against the session
+        the orders are for. Those two are different dates on every run, and
+        comparing against the latter never matched: it re-downloaded the whole
+        universe for a session already saved on disk, and then, when the rescan
+        failed, reported that same up-to-date screen as a degraded fallback.
         """
         exchange = self.cfg.exchange
-        path, saved_date = find_saved_screen(when, exchange)
+        data_date = data_day.isoformat()
+        path, saved_date = find_saved_screen(data_day, exchange)
 
-        if path is not None and saved_date == when:
-            report.notes.append(f"screen: reusing today's saved scan ({path.name})")
+        if path is not None and saved_date == data_day:
+            report.notes.append(
+                f"screen: reusing the saved scan of the {data_date} session "
+                f"({path.name})")
             return candidates_from_csv(path)
 
         if self.cfg.use_cache:
@@ -694,7 +898,7 @@ class DailyAdvisor:
                     f"--use-cache was asked for but no saved {exchange} screen exists "
                     f"in {screens_dirs()[0]}; there are no buy candidates today")
                 return []
-            stale = (when - saved_date).days if saved_date else 0
+            stale = (data_day - saved_date).days if saved_date else 0
             report.warnings.append(
                 f"screen is {stale} day(s) old ({path.name}); the ranking is from "
                 f"{saved_date} and nothing in it has been re-scored since")
@@ -711,18 +915,23 @@ class DailyAdvisor:
             report.warnings.append(f"falling back to the saved screen from {saved_date}")
             return candidates_from_csv(path)
 
+        # A stub or a future screener may return anything as its second value,
+        # and a report must not die on a counter it only prints.
+        counts = stats if isinstance(stats, dict) else {}
         report.notes.append(
-            f"screen: {stats.get('universe', '?')} listed names → "
-            f"{stats.get('passed_filters', '?')} passed the filters")
+            f"screen: {counts.get('universe', '?')} listed names → "
+            f"{counts.get('passed_filters', '?')} passed the filters")
         return candidates_from_frame(frame)
 
     def rank(self, cands: list[Candidate], tilt: dict[str, float]) -> list[Candidate]:
         """Apply the policy tilt to the screen's order, bounded by MAX_TILT_SHIFT.
 
-        A bounded shift in rank space rather than a weighted score, so the
-        arithmetic can be stated in one sentence a reader can check: policy
-        moves a name at most five places, and it can never put a name on the
-        list that the screen did not.
+        A bounded shift in rank space rather than a weighted score. The bound is
+        on the adjustment, not on the displacement — see MAX_TILT_SHIFT. On the
+        screen's consecutive ranking a name falls at most 2 * MAX_TILT_SHIFT - 1
+        places, and only against a sector tilted the opposite way at full
+        strength. Policy therefore reorders neighbours, and can never put a name
+        on the list that the screen did not.
         """
         for i, c in enumerate(cands, start=1):
             if not c.rank:
@@ -744,8 +953,13 @@ class DailyAdvisor:
         which is a different question from the one this report answers, and an
         advisor that re-issues its own open ideas every morning compounds one
         view into an accidental concentration.
+
+        A name this same report just closed is rejected too. Closing an idea
+        frees its symbol the instant the book is written, and a page that says
+        SELL AAA above and BUY AAA below is not a considered list.
         """
         open_ideas = {r.symbol for r in self.book.open_recommendations()}
+        exited_today = {r.symbol for r in report.closed}
         held = {h.symbol for h in account.holdings}
         out: list[Candidate] = []
         for c in cands:
@@ -753,6 +967,9 @@ class DailyAdvisor:
                 continue
             if c.symbol in open_ideas:
                 c.reason = "already open in the recommendation book"
+            elif c.symbol in exited_today:
+                c.reason = ("exited on this same report; re-entering it in the "
+                            "same breath is a different decision")
             elif c.symbol in held:
                 c.reason = "already held; adding to a position is a different decision"
             else:
@@ -780,26 +997,41 @@ class DailyAdvisor:
         keeps by writing out a materiality constant instead of importing brain
         and its numeric stack.
         """
-        snap = cand.snap or self.snapshot(cand.symbol, data_date)
-        trigs = triggers(cand.symbol, snap, news, account, cand.rank)
-        if not trigs:
-            trigs = [Trigger(cand.symbol, "daily_review",
-                             f"rank #{cand.rank} on the {self.cfg.exchange} screen"
-                             + (f", sector tilt {cand.tilt:+.2f}" if cand.tilt else ""),
-                             urgency=0)]
-        evidence = build_evidence(cand.symbol, snap, news, account, trigs, macro,
-                                  phase="daily report, for the next open")
-        if events:
-            evidence += "\n\n" + policy_brief(events)
-
         if self.panel is None:
             # No panel configured. The idea is still produced — a missing API
             # key must not turn the daily list into an empty page — but it is
             # marked, so a later reader of the book can separate ideas a panel
             # reviewed from ideas only the screen and the sizing rule saw.
+            # Checked first: with no panel the evidence pack is built and
+            # thrown away, and it is the most expensive thing in this method.
             return True, DEFAULT_CONVICTION, (
                 f"unreviewed: no panel ran. Rank #{cand.rank} on the "
                 f"{self.cfg.exchange} momentum and accumulation screen.")
+
+        snap = cand.snap or self.snapshot(cand.symbol, data_date)
+        try:
+            trigs = triggers(cand.symbol, snap, news, account, cand.rank)
+        except Exception as exc:
+            # brain reaches pandas and the news scorer; a report that runs
+            # unattended must not end on one of their edge cases.
+            logger.warning("triggers failed on %s: %s", cand.symbol, exc)
+            trigs = []
+        if not trigs:
+            trigs = [Trigger(cand.symbol, "daily_review",
+                             f"rank #{cand.rank} on the {self.cfg.exchange} screen"
+                             + (f", sector tilt {cand.tilt:+.2f}" if cand.tilt else ""),
+                             urgency=0)]
+        try:
+            evidence = build_evidence(cand.symbol, snap, news, account, trigs, macro,
+                                      phase="daily report, for the next open")
+            if events:
+                evidence += "\n\n" + policy_brief(events)
+        except Exception as exc:
+            # Not taken rather than taken unreviewed: the panel is configured,
+            # and an idea it never saw must not be printed as one it approved.
+            return False, 0.0, (f"the evidence pack could not be built "
+                                f"({type(exc).__name__}: {exc}); nothing was put "
+                                f"to the panel")
 
         try:
             result = self.panel.deliberate(cand.symbol, evidence, account, snap.price)
@@ -831,9 +1063,7 @@ class DailyAdvisor:
 
         stop = stop_from_atr(entry, atr_pct=snap.atr_pct, k=self.cfg.atr_stop_mult)
         if stop is None:
-            return None, (f"no stop could be derived: ATR is "
-                          f"{snap.atr_pct:.2%} of price, which puts the stop inside "
-                          f"the tick the shares quote in")
+            return None, _no_stop_reason(entry, snap.atr_pct, self.cfg.atr_stop_mult)
 
         target = project_target(entry, snap, self.cfg.horizon_days)
         if target is None:
@@ -1002,28 +1232,34 @@ class DailyAdvisor:
                             f"this report has no read on the broad tape")
         return "\n".join(lines)
 
-    def run(self, when: str | _date | None = None) -> DailyReport:
+    def run(self, when: str | _date | None = None,
+            now: datetime | None = None) -> DailyReport:
         """Produce one day's report. Never raises.
 
-        The order below is the argument of the module docstring in code: read
-        the account, gather, decide the exits, and only then look for something
-        to buy with what the exits freed.
+        ``when`` is the session the orders are FOR, defaulting to the next open;
+        the numbers always come from the last completed session. The order below
+        is the argument of the module docstring in code: read the account,
+        gather, decide the exits, write them back, and only then look for
+        something to buy with what the exits freed.
         """
-        if isinstance(when, _date):
-            report_day = when
-        elif when:
-            try:
-                report_day = _date.fromisoformat(str(when))
-            except ValueError:
-                logger.warning("unreadable date %r; using today", when)
-                report_day = _date.today()
-        else:
-            report_day = _date.today()
-        data_day = data_date_for(report_day)
+        try:
+            order_day, data_day = sessions_for(when, now)
+        except ValueError as exc:
+            # A refusal is rendered, not raised: main() prints whatever comes
+            # back, and an empty report reads exactly like a quiet day.
+            asked = when.isoformat() if isinstance(when, (_date, datetime)) else str(when)
+            report = DailyReport(
+                date=asked, data_date=last_completed_session(now).isoformat(),
+                generated_at=datetime.now().isoformat(),
+                risk_pct=self.cfg.risk_pct, dry_run=self.cfg.dry_run,
+                panel_ran=self.panel is not None, refused=str(exc),
+            )
+            report.warnings.append(str(exc))
+            return report
         data_date = data_day.isoformat()
 
         report = DailyReport(
-            date=report_day.isoformat(), data_date=data_date,
+            date=order_day.isoformat(), data_date=data_date,
             generated_at=datetime.now().isoformat(),
             risk_pct=self.cfg.risk_pct, dry_run=self.cfg.dry_run,
             panel_ran=self.panel is not None,
@@ -1039,11 +1275,19 @@ class DailyAdvisor:
 
         events = self.poll_policy(report)
         report.policy_events = events
-        report.policy_summary = policy_brief(events)
-        report.sector_tilt = sector_pressure(events) if events else {}
+        try:
+            report.policy_summary = policy_brief(events)
+            report.sector_tilt = sector_pressure(events) if events else {}
+        except Exception as exc:
+            # Both read a hand-written table over feed text. A malformed event
+            # costs the backdrop and the tilt, never the report.
+            report.warnings.append(
+                f"the policy backdrop could not be summarised "
+                f"({type(exc).__name__}: {exc}); the ranking has no sector tilt")
+            report.policy_summary = ""
+            report.sector_tilt = {}
 
-        cands = self.rank(self.candidates(report_day, data_date, report),
-                          report.sector_tilt)
+        cands = self.rank(self.candidates(data_day, report), report.sector_tilt)
         report.candidates = cands
 
         # One poll for both halves of the report. Open ideas come first in the
@@ -1069,16 +1313,18 @@ class DailyAdvisor:
             cand.news = by_symbol.get(cand.symbol, [])
 
         # --- sells first ---
-        report.sells = self.review_exits(by_symbol, report_day, data_date, report)
+        report.sells = self.review_exits(by_symbol, data_day, report)
+        report.closed = self.apply_exits(report.sells, data_day, report)
 
         # Only a closing signal frees capital. A TRIM does too, but partially,
         # and this book stores one exit per idea and so cannot tell whether a
         # trim was taken — counting it would spend money that may still be in
         # the position.
         proceeds = 0.0
-        for sig in report.sells:
-            if sig.closes_position and not math.isnan(sig.price):
-                proceeds += sig.price * sig.shares
+        for sig in report.sells_closing():
+            px = _num(sig.price)
+            if not math.isnan(px):
+                proceeds += px * sig.shares
         budget = max(0.0, (account.buying_power or account.cash)) + proceeds
         report.buy_budget = budget
         if proceeds:
@@ -1088,16 +1334,24 @@ class DailyAdvisor:
 
         # --- then buys ---
         report.buys = self.generate_buys(cands, account, news, macro, events,
-                                         budget, report_day, data_date, report)
+                                         budget, order_day, data_date, report)
 
         for rec in report.buys:
             report.marks[rec.symbol] = rec.reference_price
         try:
-            report.track_record = self.book.track_record(report.marks, report_day)
+            # Marked and aged as of the data session: the open ideas are marked
+            # at that session's closes, and dating them by the next open would
+            # add days to every holding period the record reports.
+            report.track_record = self.book.track_record(report.marks, data_day)
         except Exception as exc:
             report.warnings.append(f"the track record could not be computed: {exc}")
 
-        report.market_context = self.market_context(data_date)
+        try:
+            report.market_context = self.market_context(data_date, now)
+        except Exception as exc:
+            report.warnings.append(
+                f"the market context could not be read ({type(exc).__name__}: "
+                f"{exc}); this report has no read on the broad tape")
         return report
 
 
@@ -1109,17 +1363,22 @@ def _sess(report: "DailyReport") -> str:
     """The two dates that must never be confused.
 
     The report is built from a *completed* session's data and acted on at the
-    *next* open. Printing only one of them is how a track record later becomes
-    unauditable — "did it know this before or after the move" is the only
-    question that matters when reviewing a call.
+    *next* open, so these are always two different sessions. Printing only one
+    of them is how a track record later becomes unauditable — "did it know this
+    before or after the move" is the only question that matters when reviewing
+    a call.
     """
-    return (f"数据截至 analysis as of {report.data_date} close"
-            f"   →   下单于 orders for {report.date} open")
+    return (f"data through the {report.data_date} close"
+            f"   →   orders for the {report.date} open")
 
 
 def format_report(report: "DailyReport") -> str:
     """The morning read. Terminal-friendly, aligned, no colour."""
     W = 104
+    if report.refused:
+        return "\n".join(["=" * W, "  DAILY ADVISOR — no report", "-" * W]
+                         + _wrapped(report.refused, W - 4) + ["=" * W])
+
     out = [
         "=" * W,
         f"  DAILY ADVISOR — {report.date}",
@@ -1149,6 +1408,10 @@ def format_report(report: "DailyReport") -> str:
             out.append(f" {flag}{s.symbol:<8}{s.action:<7}{s.shares:>8.0f}"
                        f"{s.price:>11,.2f}{s.pnl:>+12,.2f}{s.r_multiple:>+7.2f}"
                        f"  {s.reason[:44]}")
+        if report.closed:
+            out.append("  closed in the book: " + ", ".join(
+                f"{r.symbol} ({r.exit_reason or 'exit'})" for r in report.closed)
+                + " — these now score in the track record below")
     else:
         out.append("  (nothing to exit)")
 
@@ -1157,7 +1420,9 @@ def format_report(report: "DailyReport") -> str:
         out.append(f"  {'SYMBOL':<8}{'SHARES':>7}{'REF':>10}{'LIMIT':>10}"
                    f"{'STOP':>10}{'TARGET':>10}{'R':>6}{'COST':>11}{'RISK':>9}  WHY")
         for r in report.buys:
-            rr = r_multiple(r.reference_price, r.stop_price, r.target_price)
+            # planned_r, not the live stop: the trailing rule moves stop_price,
+            # and the R this table shows must be the R the list was ranked on.
+            rr = r.planned_r()
             lim = f"{r.limit_price:,.2f}" if r.limit_price else "MKT"
             out.append(
                 f"  {r.symbol:<8}{r.shares:>7.0f}{r.reference_price:>10,.2f}"
@@ -1166,14 +1431,24 @@ def format_report(report: "DailyReport") -> str:
                 f"  {(r.catalyst or r.rationale)[:32]}")
         out.append("-" * W)
         out.append(f"  {'TOTAL':<8}{'':>7}{'':>10}{'':>10}{'':>10}{'':>10}{'':>6}"
-                   f"{sum(estimated_cost(r) for r in report.buys):>11,.2f}"
-                   f"{sum(planned_risk(r) for r in report.buys):>9,.2f}")
+                   f"{report.total_cost:>11,.2f}{report.total_risk:>9,.2f}")
+        out += _wrapped(REFERENCE_NOTE, W - 4)
     else:
         out.append("  (no candidate cleared the bar — this is a normal outcome)")
 
     out += ["", "ACCOUNT", "-" * W,
             f"  equity ${report.account_value:,.2f}   cash ${report.cash:,.2f}   "
-            f"buy budget ${report.buy_budget:,.2f}   risk/trade {report.risk_pct:.2f}%"]
+            f"buy budget ${report.buy_budget:,.2f}   "
+            f"risk budget {report.risk_pct:.2f}%/trade"]
+    if report.buys:
+        # The budget is not what the rows risk: the position cap trims any
+        # trade whose stop is near, which is most of them, so the header
+        # percentage alone reads as a promise the table does not keep.
+        risk = report.total_risk
+        share = (f" ({risk / report.account_value:.2%} of equity)"
+                 if report.account_value > 0 else "")
+        out.append(f"  planned risk ${risk:,.2f}{share} across "
+                   f"{len(report.buys)} idea(s), after the position cap")
 
     if report.track_record:
         out += ["", "TRACK RECORD", "-" * W]
@@ -1189,14 +1464,14 @@ def format_report(report: "DailyReport") -> str:
     if report.dry_run:
         out += ["", "  [DRY RUN — nothing was written to the recommendation book]"]
 
-    out += ["", "=" * W,
-            "  Not financial advice. A model reading public information.",
-            "  The track record above is the only thing that makes it checkable.",
-            "=" * W]
+    out += ["", "=" * W] + _wrapped(CAVEAT, W - 4) + ["=" * W]
     return "\n".join(out)
 
 
 def to_markdown(report: "DailyReport") -> str:
+    if report.refused:
+        return "\n".join(["# Daily Advisor — no report", "", report.refused, ""])
+
     md = [f"# Daily Advisor — {report.date}", "", f"_{_sess(report)}_", ""]
     if report.market_context:
         md += ["## Market", "", report.market_context.strip(), ""]
@@ -1210,6 +1485,9 @@ def to_markdown(report: "DailyReport") -> str:
         md += [f"| {s.symbol} | {s.action} | {s.shares:.0f} | {s.price:,.2f} | "
                f"{s.pnl:+,.2f} | {s.r_multiple:+.2f} | {s.reason} |"
                for s in sorted(report.sells, key=lambda x: -x.urgency)]
+        if report.closed:
+            md += ["", "Closed in the book: " + ", ".join(
+                f"{r.symbol} ({r.exit_reason or 'exit'})" for r in report.closed)]
     else:
         md.append("_Nothing to exit._")
 
@@ -1218,43 +1496,70 @@ def to_markdown(report: "DailyReport") -> str:
         md += ["| Symbol | Shares | Ref | Limit | Stop | Target | R | Cost | Risk | Why |",
                "|---|---:|---:|---:|---:|---:|---:|---:|---:|---|"]
         for r in report.buys:
-            rr = r_multiple(r.reference_price, r.stop_price, r.target_price)
+            # See format_report: the R shown is the R as issued.
+            rr = r.planned_r()
             lim = f"{r.limit_price:,.2f}" if r.limit_price else "MKT"
             md.append(f"| {r.symbol} | {r.shares:.0f} | {r.reference_price:,.2f} | {lim} | "
                       f"{r.stop_price:,.2f} | {r.target_price:,.2f} | {rr:.2f} | "
                       f"{estimated_cost(r):,.2f} | {planned_risk(r):,.2f} | "
                       f"{(r.catalyst or r.rationale)} |")
+        md += ["", f"_{REFERENCE_NOTE}_"]
     else:
         md.append("_No candidate cleared the bar._")
 
     md += ["", "## Account", "",
            f"- Equity **${report.account_value:,.2f}**, cash ${report.cash:,.2f}",
-           f"- Buy budget ${report.buy_budget:,.2f}, risk/trade {report.risk_pct:.2f}%"]
+           f"- Buy budget ${report.buy_budget:,.2f}, risk budget "
+           f"{report.risk_pct:.2f}%/trade"]
+    if report.buys:
+        share = (f" ({report.total_risk / report.account_value:.2%} of equity)"
+                 if report.account_value > 0 else "")
+        md.append(f"- Planned risk ${report.total_risk:,.2f}{share} across "
+                  f"{len(report.buys)} idea(s), after the position cap")
     if report.notes:
         md += ["", "## Notes", ""] + [f"- {n}" for n in report.notes]
     if report.warnings:
         md += ["", "## Warnings", ""] + [f"- {w}" for w in report.warnings]
-    md += ["", "---", "",
-           "_Not financial advice. A model reading public information._"]
+    md += ["", "---", "", f"_{CAVEAT}_"]
     return "\n".join(md)
 
 
 def save_report(report: "DailyReport") -> Path:
-    path = reports_dir() / f"{report.date}.md"
+    """Write the page, atomically.
+
+    Same tmp+replace as :meth:`RecommendationBook.save`: a run killed mid-write
+    would otherwise leave a truncated page that reads as a complete one, and
+    the reader has no way to tell which half is missing.
+    """
+    # report.date is normally an ISO date, but the refusal path echoes back the
+    # raw --date the user typed, and that string reaches the filename. A
+    # traversal ("../../etc/passwd") would then escape the reports directory.
+    # Validating here rather than only in the caller keeps the guard attached to
+    # the operation it protects.
+    stem = str(report.date or "").strip()
+    if not _ISO_DATE.fullmatch(stem):
+        stem = f"invalid-date-{_dt.datetime.now():%Y%m%d-%H%M%S}"
+        logger.warning("report date %r is not an ISO date; writing as %s",
+                       report.date, stem)
+    path = reports_dir() / f"{stem}.md"
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(to_markdown(report), encoding="utf-8")
+    tmp = path.with_name(path.name + ".tmp")
+    tmp.write_text(to_markdown(report), encoding="utf-8")
+    os.replace(tmp, path)
     return path
 
 
 def main(argv=None) -> int:
-    import argparse
     p = argparse.ArgumentParser(
         prog="advisor",
         description="Daily buy/sell list for the next session.")
     p.add_argument("--date", default=None,
-                   help="Session the orders are FOR (default: the next one). "
-                        "Data is always taken from the last completed session.")
-    p.add_argument("--top", type=int, default=None, help="candidates to consider")
+                   help="Session the orders are FOR (default: the next open). "
+                        "Data is always taken from the last completed session, so "
+                        "a session that has already closed is refused.")
+    p.add_argument("--top", type=int, default=None,
+                   help="ideas printed and recorded, at most (default 8); the "
+                        "panel budget follows it unless --max-candidates is given")
     p.add_argument("--risk-pct", type=float, default=None,
                    help="percent of equity risked per trade (default 1.0)")
     p.add_argument("--min-r", type=float, default=None,
@@ -1277,12 +1582,20 @@ def main(argv=None) -> int:
     for noisy in ("urllib3", "yfinance", "peewee", "httpx", "httpcore"):
         logging.getLogger(noisy).setLevel(logging.WARNING)
 
-    cfg = AdvisorConfig()
+    # from_env, not the bare default: the report tells the reader to set
+    # TRADINGAGENTS_ACCOUNT_VALUE, and every share count on the page scales
+    # with the number it was ignoring.
+    cfg = AdvisorConfig.from_env()
     for src, dst in (("top", "top"), ("risk_pct", "risk_pct"), ("min_r", "min_r"),
                      ("max_candidates", "max_candidates"), ("exchange", "exchange")):
         v = getattr(a, src, None)
         if v is not None and hasattr(cfg, dst):
             setattr(cfg, dst, v)
+    # A list of N ideas needs at least N names in front of the panel:
+    # generate_buys cuts to max_candidates before a single idea is produced, so
+    # --top 20 on its own printed at most the default 8 and said nothing.
+    if a.max_candidates is None and cfg.top > cfg.max_candidates:
+        cfg.max_candidates = cfg.top
     for flag, attr in (("use_cache", "use_cache"), ("dry_run", "dry_run")):
         if getattr(a, flag, False) and hasattr(cfg, attr):
             setattr(cfg, attr, True)
@@ -1298,11 +1611,19 @@ def main(argv=None) -> int:
     report = DailyAdvisor(cfg, llm=llm).run(a.date)
     print()
     print(format_report(report))
+    if report.refused:
+        return 2
     if not report.dry_run:
-        print(f"\nsaved: {save_report(report)}")
+        # Guarded: the ideas are already printed and already in the book, and a
+        # read-only reports directory must not end the run in a traceback that
+        # looks like the report itself failed.
+        try:
+            print(f"\nsaved: {save_report(report)}")
+        except Exception as exc:
+            print(f"\nthe report could not be saved ({type(exc).__name__}: {exc}); "
+                  f"the ideas above are still in the recommendation book")
     return 0
 
 
 if __name__ == "__main__":
-    import sys
     sys.exit(main())

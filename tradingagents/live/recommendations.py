@@ -44,7 +44,7 @@ import logging
 import math
 import os
 from dataclasses import asdict, dataclass, field, fields
-from datetime import date, datetime
+from datetime import date, datetime, timezone
 from pathlib import Path
 
 from .sizing import LONG, SHORT, r_multiple
@@ -112,6 +112,14 @@ OPEN_SHARE_WARN = 0.50
 EXPIRED_SHARE_WARN = 0.25
 FLATTERY_WARN_R = 0.10
 
+# How old a review price may be and still stand in for a quote. Five calendar
+# days is a convention, not a result: it keeps the last print before a long
+# weekend usable on the session that follows, and rejects a price with a whole
+# trading week behind it. Without a bound, an idea last priced in January is
+# still marked at that price in August, where its paper profit counts as an
+# open win and moves the one number published to expose optimistic marking.
+MAX_MARK_AGE_DAYS = 5
+
 
 def book_path() -> Path:
     """Default location. Overridable so a second book can run alongside.
@@ -142,6 +150,42 @@ def _num(value: object, default: float = float("nan")) -> float:
     except (TypeError, ValueError):
         return default
     return f if math.isfinite(f) else default
+
+
+def _is_inf(value: object) -> bool:
+    """True for an infinite input. Must be asked *before* :func:`_num`.
+
+    ``_num`` maps every non-finite value onto its default, so a test for
+    infinity after that coercion can never fire. The profit factor really is
+    infinite when no closed recommendation has lost money, and the report used
+    to print ``n/a`` beside a note saying the number was infinite.
+    """
+    try:
+        return math.isinf(float(value))  # type: ignore[arg-type]
+    except (TypeError, ValueError):
+        return False
+
+
+def _as_date(value: object, default: date | None = None) -> date | None:
+    """A plain ``date`` from a date, a datetime or an ISO string.
+
+    ``datetime`` is a subclass of ``date``, so every ``as_of: date | None``
+    parameter here accepts ``datetime.now()`` and no type checker objects — but
+    ``datetime - date`` raises TypeError. Passing one turned every open
+    recommendation into an UNAVAILABLE signal, which is the whole book silently
+    going unchecked, and wrote a full timestamp into ``last_reviewed`` where
+    every other writer puts a date.
+    """
+    if isinstance(value, datetime):
+        return value.date()
+    if isinstance(value, date):
+        return value
+    if isinstance(value, str) and value:
+        try:
+            return date.fromisoformat(value[:10])
+        except ValueError:
+            return default
+    return default
 
 
 def _action(value: object) -> str | None:
@@ -232,11 +276,17 @@ class Recommendation:
     # The stop as issued. Realised R is measured against this and only this;
     # see the module docstring. Without it, moving a stop rewrites history.
     initial_stop_price: float = float("nan")
+    # The size as issued. ``shares`` shrinks when the trim at the target is
+    # booked, so the risk that R is measured against has to be kept separately:
+    # dividing by the half still held would print 2R for an idea that made 1R.
+    initial_shares: int = 0
     issued_at: str = ""               # full timestamp, for ordering within a day
 
     # --- review state, maintained by RecommendationBook.review ---
     stop_raised: bool = False         # the breakeven rule has already fired
     target_taken: bool = False        # the target instruction has been issued once
+    trimmed_shares: int = 0           # shares already taken off at the target
+    trimmed_pnl: float = 0.0          # dollars those shares locked in
     peak_r: float = 0.0               # best R this idea ever reached
     last_price: float | None = None
     last_reviewed: str = ""
@@ -244,6 +294,8 @@ class Recommendation:
     def __post_init__(self) -> None:
         if not math.isfinite(_num(self.initial_stop_price)):
             self.initial_stop_price = self.stop_price
+        if int(_num(self.initial_shares, 0.0)) <= 0:
+            self.initial_shares = self.shares
 
     # --- direction and levels ----------------------------------------------
 
@@ -269,6 +321,15 @@ class Recommendation:
             return f"shares {self.shares!r} is not a positive whole number"
         if math.isnan(_num(self.reference_price)) or self.reference_price <= 0:
             return f"reference price {self.reference_price!r} is not a positive number"
+        live_stop = _num(self.stop_price)
+        if math.isnan(live_stop) or live_stop <= 0:
+            # The *live* stop, not the stop as issued: this is the level
+            # :func:`_stop_hit` compares a price against, and it silently
+            # answers "not hit" when it is missing. The file is meant to be
+            # hand-edited, so a stop deleted or blanked there is an ordinary
+            # input — and without this check the book reported nothing at all
+            # while the price ran past a stop nobody was holding.
+            return f"live stop {self.stop_price!r} is not a positive number"
         if math.isnan(self.planned_r()):
             return (f"levels do not describe a {self.action} idea (entry "
                     f"{self.reference_price!r}, stop {self.initial_stop_price!r}, "
@@ -293,19 +354,34 @@ class Recommendation:
         return abs(e - s)
 
     def risk_amount(self) -> float:
-        """Dollars at stake if the stop as issued had filled. NaN if unusable."""
+        """Dollars at stake if the stop as issued had filled. NaN if unusable.
+
+        Against the size as issued, not the size still held. A trim at the
+        target halves ``shares``, and R measured against half the risk would
+        report an idea that made 1R as 2R.
+        """
         rps = self.risk_per_share()
-        return float("nan") if math.isnan(rps) else rps * self.shares
+        n = int(_num(self.initial_shares, 0.0))
+        if n <= 0:
+            n = self.shares
+        return float("nan") if math.isnan(rps) else rps * n
 
     # --- marks --------------------------------------------------------------
 
     def pnl_at(self, price: float) -> float:
-        """Dollar P&L of the advice at ``price``. NaN when it cannot be priced."""
+        """Dollar P&L of the advice at ``price``. NaN when it cannot be priced.
+
+        The shares still held marked at ``price``, plus what the trim at the
+        target already locked in. Both halves are needed: marking the issued
+        size at ``price`` credits the whole position with a move half of it did
+        not take, and marking only what is left drops the trim's profit out of
+        the record entirely.
+        """
         p, e = _num(price), _num(self.reference_price)
         if math.isnan(p) or math.isnan(e) or p <= 0:
             return float("nan")
         move = (p - e) if self.direction == LONG else (e - p)
-        return move * self.shares
+        return move * self.shares + _num(self.trimmed_pnl, 0.0)
 
     def r_at(self, price: float) -> float:
         """P&L in R units, against the risk as issued. NaN when unpriceable."""
@@ -325,7 +401,37 @@ class Recommendation:
             issued = date.fromisoformat(self.issued_date)
         except (TypeError, ValueError):
             return None
-        return max(0, ((as_of or date.today()) - issued).days)
+        # Through _as_date because a datetime passes the annotation and then
+        # raises TypeError on the subtraction; see :func:`_as_date`.
+        when = _as_date(as_of) or date.today()
+        return max(0, (when - issued).days)
+
+    # --- partial exits ------------------------------------------------------
+
+    def take_off(self, shares: int, price: float) -> int:
+        """Book a partial exit: fewer shares held, its P&L locked in.
+
+        Returns the number actually taken off, 0 when the request is unusable.
+
+        Called by :meth:`RecommendationBook.review` when the trim at the target
+        fires. Without it ``shares`` stayed at the issued size and every later
+        signal — and :meth:`RecommendationBook.close` — scored the whole
+        position at the final price: a 100-share idea trimmed by half at its
+        120 target and closed at 150 was recorded as +5.00R when following that
+        instruction returned +3.50R.
+        """
+        n = int(_num(shares, 0.0))
+        px, e = _num(price), _num(self.reference_price)
+        if n <= 0 or math.isnan(px) or math.isnan(e) or px <= 0:
+            return 0
+        n = min(n, self.shares)
+        if n <= 0:
+            return 0
+        move = (px - e) if self.direction == LONG else (e - px)
+        self.trimmed_pnl = _num(self.trimmed_pnl, 0.0) + move * n
+        self.trimmed_shares = int(_num(self.trimmed_shares, 0.0)) + n
+        self.shares -= n
+        return n
 
     # --- serialisation ------------------------------------------------------
 
@@ -385,9 +491,14 @@ class Recommendation:
         # Falling back to the stored stop is the only available answer and it is
         # correct for every such row, because nothing had moved a stop yet.
         rec.initial_stop_price = _num(d.get("initial_stop_price"), rec.stop_price)
+        # Same for books written before the trim was booked against ``shares``:
+        # nothing had ever reduced it, so the stored count is the issued size.
+        rec.initial_shares = int(_num(d.get("initial_shares"), float(rec.shares)))
         rec.issued_at = str(d.get("issued_at", "") or "")
         rec.stop_raised = bool(d.get("stop_raised", False))
         rec.target_taken = bool(d.get("target_taken", False))
+        rec.trimmed_shares = int(_num(d.get("trimmed_shares"), 0.0))
+        rec.trimmed_pnl = _num(d.get("trimmed_pnl"), 0.0)
         rec.peak_r = _num(d.get("peak_r"), 0.0)
         last = _num(d.get("last_price"))
         rec.last_price = None if math.isnan(last) else last
@@ -474,6 +585,51 @@ def _target_hit(rec: Recommendation, price: float) -> bool:
     return price >= target if rec.direction == LONG else price <= target
 
 
+def _published_age_hours(published: object, now: datetime | None = None) -> float:
+    """Age in hours from an ISO timestamp; infinity when it cannot be read.
+
+    In the same terms as ``newsfeed.NewsItem.age_hours`` but not delegated to
+    it, because what arrives here is often a plain mapping — ``asdict`` of a
+    NewsItem, or LLM JSON — with no object to call the method on. The one
+    deliberate difference is the answer for an unreadable timestamp: newsfeed
+    returns 0.0, and 0.0 here would mean "breaking news".
+    """
+    if not isinstance(published, str) or not published:
+        return float("inf")
+    try:
+        pub = datetime.fromisoformat(published)
+    except ValueError:
+        return float("inf")
+    if pub.tzinfo is None:
+        pub = pub.replace(tzinfo=timezone.utc)
+    now = now or datetime.now(timezone.utc)
+    return max(0.0, (now - pub).total_seconds() / 3600)
+
+
+def _age_hours(item: object) -> float:
+    """Hours since publication, or infinity when the age cannot be established.
+
+    Unknown has to mean stale. The age bound in :func:`_thesis_break` is what
+    stops last quarter's earnings from closing a position, and defaulting a
+    missing age to 0.0 made it fail open — a 200-day-old bearish headline read
+    as breaking news and sold the idea. ``dataclasses.asdict(NewsItem)``, the
+    obvious way to hand this function a mapping, is exactly that case: on the
+    object ``age_hours`` is a method, so the dict carries only ``published``.
+    """
+    if isinstance(item, dict):
+        raw = item.get("age_hours")
+        published = item.get("published")
+    else:
+        raw = getattr(item, "age_hours", None)
+        published = getattr(item, "published", None)
+    if callable(raw):
+        raw = raw()
+    age = _num(raw)
+    if not math.isnan(age):
+        return max(0.0, age)
+    return _published_age_hours(published)
+
+
 def _headline(item: object) -> tuple[int, str, str, float] | None:
     """(materiality, lean, title, age_hours) from a NewsItem or a mapping.
 
@@ -487,16 +643,14 @@ def _headline(item: object) -> tuple[int, str, str, float] | None:
             mat = int(_num(item.get("materiality"), 0.0))
             lean = str(item.get("lean", "neutral"))
             title = str(item.get("title", ""))
-            age = _num(item.get("age_hours"), 0.0)
         else:
             mat = int(_num(getattr(item, "materiality", 0), 0.0))
             lean = str(getattr(item, "lean", "neutral"))
             title = str(getattr(item, "title", ""))
-            raw_age = getattr(item, "age_hours", 0.0)
-            age = _num(raw_age(), 0.0) if callable(raw_age) else _num(raw_age, 0.0)
+        age = _age_hours(item)
     except Exception:
         return None
-    return mat, lean, title, (0.0 if math.isnan(age) else age)
+    return mat, lean, title, age
 
 
 def _thesis_break(rec: Recommendation, news: object,
@@ -508,7 +662,8 @@ def _thesis_break(rec: Recommendation, news: object,
     Google News returns a quarter of back-coverage: without an age bound this
     rule would close a position on last quarter's earnings the first time the
     seen-set was pruned. That is the same guard ``brain.triggers`` applies, for
-    the same reason.
+    the same reason. A headline whose age cannot be established is treated as
+    old, so the guard fails closed.
     """
     if not rules.thesis_break or not isinstance(news, (list, tuple)):
         return None
@@ -555,6 +710,10 @@ class TrackRecord:
     expectancy_dollars: float = float("nan")
     profit_factor: float = float("nan")
     total_pnl: float = 0.0
+    # Closed at a price that could not be read: counted in ``closed``, absent
+    # from every scored figure. Reported so that ending an idea without a price
+    # cannot quietly do what expiring a loser does.
+    unscored_closed: int = 0
     best: Recommendation | None = None
     worst: Recommendation | None = None
 
@@ -563,8 +722,13 @@ class TrackRecord:
     superseded_count: int = 0
     open_share: float = 0.0
     open_marked: int = 0
+    # Includes what a trim on a still-open idea already locked in: that money
+    # is realised, but the idea it belongs to has not ended.
     open_unrealized: float = float("nan")
     unpriced: list[str] = field(default_factory=list)
+    # A subset of ``unpriced``: these have a last price, but one too old to
+    # stand in for a quote.
+    stale_marks: list[str] = field(default_factory=list)
 
     win_rate_with_open: float = float("nan")
     expectancy_r_with_open: float = float("nan")
@@ -587,9 +751,54 @@ def _mean(values: list[float]) -> float:
     return sum(values) / len(values) if values else float("nan")
 
 
+def _usable_mark(rec: Recommendation, when: date) -> tuple[float, bool]:
+    """(price, stale) — the last review price, if it is recent enough to use.
+
+    ``last_price`` carries the date it was taken in ``last_reviewed`` and
+    nothing read it, so an idea last priced in January was still being marked
+    at that price in August. Its paper profit counted as an open win and moved
+    ``flattery_r``, which is the number this module publishes specifically to
+    expose optimistic marking. A mark with no readable ``last_reviewed`` cannot
+    be dated at all, so it is stale too.
+    """
+    px = _num(rec.last_price)
+    if math.isnan(px):
+        return float("nan"), False
+    taken = _as_date(rec.last_reviewed)
+    if taken is None or (when - taken).days > MAX_MARK_AGE_DAYS:
+        return float("nan"), True
+    return px, False
+
+
 # ---------------------------------------------------------------------------
 # the book
 # ---------------------------------------------------------------------------
+
+def _as_date_str(when: date | str | None) -> str:
+    """Normalise an exit stamp to an ISO date string, defaulting to today."""
+    if when is None:
+        return date.today().isoformat()
+    if isinstance(when, str):
+        return when[:10]
+    return _as_date(when).isoformat()
+
+
+def _keep_booked_trim(rec: "Recommendation") -> None:
+    """Carry a realised trim onto an idea that ends without an exit price.
+
+    An expiry or a supersede scores nothing on the shares still held, which is
+    correct — there is no price to score them at. But a trim that already
+    happened is money that was actually made, and dropping it understates the
+    record.
+    """
+    booked = _num(getattr(rec, "trimmed_pnl", None), 0.0)
+    if not booked or not math.isfinite(booked):
+        return
+    rec.realized_pnl = booked
+    risk = rec.risk_amount()
+    if risk and math.isfinite(risk) and risk > 0:
+        rec.realized_r = booked / risk
+
 
 class RecommendationBook:
     """Every recommendation ever issued, plus the rules that end them."""
@@ -781,18 +990,33 @@ class RecommendationBook:
         # denominator and inflate every winner.
         r = rec.r_at(px)
         rec.realized_r = None if math.isnan(r) else r
+        if rec.realized_pnl is None:
+            # A closed idea with no P&L is counted as closed and left out of the
+            # win rate and the total — the same hole an expiry leaves, and the
+            # route a losing position nobody can price takes by default. The
+            # track record reports these separately; this line puts it in the
+            # log at the moment it happens.
+            logger.warning("closed %s at an unusable price (%r): it counts as "
+                           "closed but cannot be scored", rec.id, exit_price)
         if save:
             self._save_quietly()
         return rec
 
     def expire(self, rec_id: str, reason: str = "horizon passed",
-               save: bool = True) -> Recommendation | None:
+               save: bool = True, exit_date: date | str | None = None
+               ) -> Recommendation | None:
         """End an idea with no exit price: it was never actionable or priceable.
 
-        Kept distinct from :meth:`close` because an expired idea has no P&L and
-        must not be averaged into one. The track record counts expiries
-        separately and warns when there are many, since "expire the losers,
-        close the winners" is the easiest way to fake a record.
+        Kept distinct from :meth:`close` because an expired idea has no P&L on
+        its *remaining* shares and must not be averaged into one. The track
+        record counts expiries separately and warns when there are many, since
+        "expire the losers, close the winners" is the easiest way to fake a
+        record.
+
+        ``exit_date`` defaults to today, but a caller working from a completed
+        session must pass that session's date: dating a close by the data day
+        and an expiry by the wall clock puts two ends of the same book on
+        different calendars.
         """
         rec = self.get(rec_id)
         if rec is None or rec.status != OPEN:
@@ -801,12 +1025,17 @@ class RecommendationBook:
             return None
         rec.status = EXPIRED
         rec.exit_reason = str(reason or "")
-        rec.exit_date = date.today().isoformat()
+        rec.exit_date = _as_date_str(exit_date)
+        # A trim already booked real money. Discarding it because the remainder
+        # expired unscored would hide a realised profit and understate the
+        # record — the opposite of the self-flattery this module guards against.
+        _keep_booked_trim(rec)
         if save:
             self._save_quietly()
         return rec
 
-    def supersede(self, rec_id: str, by: str = "", save: bool = True
+    def supersede(self, rec_id: str, by: str = "", save: bool = True,
+                  exit_date: date | str | None = None
                   ) -> Recommendation | None:
         """Replace an idea with a newer one on the same name.
 
@@ -820,7 +1049,8 @@ class RecommendationBook:
             return None
         rec.status = SUPERSEDED
         rec.exit_reason = f"superseded by {by}" if by else "superseded"
-        rec.exit_date = date.today().isoformat()
+        rec.exit_date = _as_date_str(exit_date)
+        _keep_booked_trim(rec)
         if save:
             self._save_quietly()
         return rec
@@ -829,9 +1059,11 @@ class RecommendationBook:
                    ) -> Recommendation | None:
         """Act on a position-closing signal. Trims and stop raises are ignored.
 
-        A TRIM changes the size of a live idea, not its outcome, and this book
-        stores one entry and one exit per recommendation; partial exits would
-        need a fill history, which is the portfolio's job, not this one.
+        Ignored because there is nothing left to do with them: a RAISE_STOP
+        moves no shares, and a TRIM has already been booked against the
+        recommendation by :meth:`review` — the shares it took off are out and
+        the profit they locked in is recorded, so what a later close scores is
+        only what is still held.
         """
         if not signal.closes_position:
             return None
@@ -863,7 +1095,9 @@ class RecommendationBook:
         3. **Target hit.** Trims by default rather than selling everything: the
            target was chosen before anything was known about how the move would
            behave, and closing the whole position caps a trade that is working.
-           The remainder rides behind a breakeven stop.
+           The remainder rides behind a breakeven stop, and the shares taken
+           off are booked against the recommendation there and then — an exit
+           the book does not record is an exit the book keeps scoring.
         4. **Time stop.** Past the horizon without ever reaching 1R. Capital
            tied up in a thesis that has not worked is the cost nobody accounts
            for: it never shows up as a loss, so it is never counted, but it is
@@ -876,13 +1110,17 @@ class RecommendationBook:
            threshold; it is a convention.
 
         This is the one method that mutates a recommendation: it applies the
-        trailing stop and updates ``peak_r`` and the last mark. The raise is
-        applied rather than merely suggested because a stop that depends on the
-        caller remembering to write it back is not a stop — one forgetful cycle
-        and the winner is exposed to a full-R loss again.
+        trailing stop, books the trim at the target, and updates ``peak_r`` and
+        the last mark. Both the raise and the trim are applied rather than
+        merely suggested, for the same reason: this book grades the advice, so
+        it has to hold the position the advice describes. A stop that depends
+        on the caller writing it back is not a stop, and a trim that is never
+        booked leaves the idea scored on shares its own instruction sold.
         """
         rules = rules or ExitRules()
-        when = as_of or date.today()
+        # Not ``as_of or date.today()``: a datetime passes the annotation and
+        # then raises on every date subtraction below. See :func:`_as_date`.
+        when = _as_date(as_of) or date.today()
         prices = prices or {}
         news_by_symbol = news_by_symbol or {}
 
@@ -979,18 +1217,19 @@ class RecommendationBook:
 
         # 3. target hit
         #
-        # Issued once, not every cycle. This book stores one entry and one exit
-        # per idea, so it cannot see whether a trim happened; repeating the same
+        # Issued once, not every cycle. The book records the trim it instructs,
+        # but it cannot see whether the user took it; repeating the same
         # instruction every two minutes teaches the reader to skim the report,
         # which is paid for by the urgent signals losing their urgency. After
         # the instruction has been given the position rides on its breakeven
-        # stop, which is a rule the book *can* still enforce.
+        # stop, which is a rule the book enforces on every later cycle.
         if priced and levels_ok and not rec.target_taken and _target_hit(rec, price):
             rec.target_taken = True
             changed = True
             if rules.trim_at_target and rec.shares > 1:
-                n = int(round(rec.shares * rules.trim_fraction))
-                n = max(1, min(rec.shares - 1, n))
+                size = rec.shares
+                n = int(round(size * rules.trim_fraction))
+                n = max(1, min(size - 1, n))
                 # Free by construction: the price is beyond the target, which
                 # is beyond the entry, so moving the stop to the entry cannot
                 # be a stop already hit. Done even when planned R was below 1
@@ -999,10 +1238,24 @@ class RecommendationBook:
                     rec.stop_price = rec.reference_price
                     rec.stop_raised = True
                     changed = True
+                # Book the shares this instruction sells. Left unbooked, the
+                # idea kept its issued size and was scored on all of it: 100
+                # shares trimmed by half at a 120 target and closed at 150 were
+                # recorded as +5.00R, where following the instruction returned
+                # +3.50R.
+                #
+                # Booked at the target, not at the price this poll happened to
+                # see. The instruction is "sell at the target"; a print a
+                # dollar past it is what the poll caught, not what the advice
+                # earned, and crediting it is the flattery this book exists to
+                # measure. The signal itself still carries the mark of the
+                # whole position at ``price``, which is what the reader holds
+                # at the moment they act on it.
+                rec.take_off(n, rec.target_price)
                 signals.append(signal(
                     TRIM, n,
                     f"target {rec.target_price:,.2f} reached at {price:,.2f}; take "
-                    f"{n:,} of {rec.shares:,} off and let the rest run behind a "
+                    f"{n:,} of {size:,} off and let the rest run behind a "
                     f"breakeven stop at {rec.reference_price:,.2f}",
                     2, REASON_TARGET, new_stop=rec.reference_price))
             else:
@@ -1050,8 +1303,15 @@ class RecommendationBook:
         hits its target while a loser sits open hoping. So the same statistics
         are computed a second time with open positions marked to market, and
         the difference between the two is published as ``flattery_r``.
+
+        ``as_of`` is the date those marks are read on. An open idea with no
+        price in ``prices`` falls back to its last review price only while that
+        review is at most ``MAX_MARK_AGE_DAYS`` old; past that it is reported as
+        unpriced, because a marked-to-market figure built from a quote of
+        unknown age is not a mark.
         """
         prices = prices or {}
+        when = _as_date(as_of) or date.today()
         tr = TrackRecord()
 
         closed = self.closed_recommendations()
@@ -1063,6 +1323,7 @@ class RecommendationBook:
                                   if r.status == SUPERSEDED)
 
         scored = [r for r in closed if r.realized_pnl is not None]
+        tr.unscored_closed = len(closed) - len(scored)
         wins = [r for r in scored if (r.realized_pnl or 0.0) > 0]
         losses = [r for r in scored if (r.realized_pnl or 0.0) < 0]
         tr.wins, tr.losses = len(wins), len(losses)
@@ -1096,7 +1357,11 @@ class RecommendationBook:
         open_r: list[float] = []
         open_wins = 0
         for rec in open_recs:
-            px = _num(prices.get(rec.symbol), _num(rec.last_price))
+            px = _num(prices.get(rec.symbol))
+            if math.isnan(px):
+                px, stale = _usable_mark(rec, when)
+                if stale:
+                    tr.stale_marks.append(rec.symbol)
             pnl = rec.pnl_at(px) if not math.isnan(px) else float("nan")
             if math.isnan(pnl):
                 tr.unpriced.append(rec.symbol)
@@ -1152,6 +1417,22 @@ class RecommendationBook:
                        f"{'' if len(tr.unpriced) == 1 else 's'} could not be priced "
                        f"({names}); they are excluded from the marked-to-market "
                        f"figures rather than counted as flat.")
+        if tr.stale_marks:
+            names = ", ".join(sorted(set(tr.stale_marks))[:8])
+            one = len(tr.stale_marks) == 1
+            out.append(f"{len(tr.stale_marks)} of those ({names}) "
+                       f"{'has' if one else 'have'} a last price, but it is more "
+                       f"than {MAX_MARK_AGE_DAYS} days old and "
+                       f"is not used. Marking at a quote that old is how a position "
+                       f"that has since halved keeps showing an open profit.")
+        if tr.unscored_closed:
+            out.append(f"{tr.unscored_closed} closed recommendation"
+                       f"{'' if tr.unscored_closed == 1 else 's'} ended at a price "
+                       f"that could not be read, so no P&L was recorded and "
+                       f"{'it is' if tr.unscored_closed == 1 else 'they are'} "
+                       f"excluded from the win rate and the total. That leaves the "
+                       f"same hole as an expiry: an idea that went wrong and could "
+                       f"not be priced disappears from the record.")
         ended = tr.closed + tr.expired_count + tr.superseded_count
         if ended and tr.expired_count / ended >= EXPIRED_SHARE_WARN:
             out.append(f"{tr.expired_count} of {ended} finished recommendations were "
@@ -1174,19 +1455,46 @@ def _money(x: float | None, width: int = 10) -> str:
 
 
 def _r(x: float | None, width: int = 7) -> str:
+    # Infinity is tested before _num, which flattens every non-finite value
+    # onto its default and left this branch unreachable.
+    if _is_inf(x):
+        return f"{'+inf' if float(x) > 0 else '-inf':>{width}}"  # type: ignore[arg-type]
     v = _num(x)
-    if math.isnan(v):
-        return f"{'n/a':>{width}}"
-    if math.isinf(v):
-        return f"{'inf':>{width}}"
-    return f"{v:>+{width - 1}.2f}R"
+    return f"{'n/a':>{width}}" if math.isnan(v) else f"{v:>+{width - 1}.2f}R"
 
 
 def _ratio(x: float | None, width: int = 12) -> str:
+    """A plain ratio. Prints ``inf`` when the value really is infinite.
+
+    The profit factor is infinite whenever no closed recommendation has lost
+    money, and the report used to print ``n/a`` here directly above a note
+    saying the number was infinite — the table contradicting its own warning.
+    """
+    if _is_inf(x):
+        return f"{'inf' if float(x) > 0 else '-inf':>{width}}"  # type: ignore[arg-type]
     v = _num(x)
-    if math.isnan(v):
-        return f"{'n/a':>{width}}"
-    return f"{'inf':>{width}}" if math.isinf(v) else f"{v:>{width},.2f}"
+    return f"{'n/a':>{width}}" if math.isnan(v) else f"{v:>{width},.2f}"
+
+
+def _pct(x: float | None, width: int = 8) -> str:
+    """A rate, or ``n/a`` — never ``nan%``.
+
+    A book whose only closed idea could not be priced has no win rate, and
+    printing ``nan%`` beside "1W / 0L" reads as a broken report rather than as
+    the absence of a number.
+    """
+    v = _num(x)
+    return f"{'n/a':>{width}}" if math.isnan(v) else f"{v:>{width}.0%}"
+
+
+def _level(x: object, width: int = 9) -> str:
+    """A price level, or ``n/a`` — never ``0.00``.
+
+    A missing stop printed as ``0.00`` reads as a stop at zero, which is a
+    position shown as protected by a level that does not exist.
+    """
+    v = _num(x)
+    return f"{'n/a':>{width}}" if math.isnan(v) or v <= 0 else f"{v:>{width},.2f}"
 
 
 def format_open_book(recs: list[Recommendation],
@@ -1200,28 +1508,42 @@ def format_open_book(recs: list[Recommendation],
     if not recs:
         return "(no open recommendations)"
     prices = prices or {}
-    when = as_of or date.today()
+    when = _as_date(as_of) or date.today()
     hdr = (f"{'ID':<18}{'Act':<5}{'Shr':>6}{'Entry':>9}{'Stop':>9}{'Target':>9}"
            f"{'Last':>9}{'P&L':>10}{'R':>7}{'Peak':>7}{'Held':>8}  Catalyst")
     lines = [hdr, "-" * len(hdr)]
+    any_stale = False
     for rec in sorted(recs, key=lambda r: (r.symbol, r.id)):
-        px = _num(prices.get(rec.symbol), _num(rec.last_price))
+        px = _num(prices.get(rec.symbol))
+        stale = False
+        if math.isnan(px):
+            px, stale = _usable_mark(rec, when)
+            if stale:
+                # Still shown: "the last thing we saw was 118" is worth
+                # knowing. Flagged, because it is not a price today, and the
+                # P&L and R on this row are marked at it.
+                px = _num(rec.last_price)
+                any_stale = True
         held = rec.days_held(when)
         held_s = "n/a" if held is None else f"{held}/{rec.horizon_days}"
         # A star marks a stop the trailing rule has already moved, so a reader
         # can tell a breakeven stop from the one the idea was issued with.
         flag = "*" if rec.stop_raised else " "
+        mark = "?" if stale else " "
         last_s = "n/a" if math.isnan(px) else f"{px:,.2f}"
         lines.append(
             f"{rec.id:<18}{rec.action:<5}{rec.shares:>6,}"
-            f"{_num(rec.reference_price, 0.0):>9,.2f}"
-            f"{_num(rec.stop_price, 0.0):>8,.2f}{flag}"
-            f"{_num(rec.target_price, 0.0):>9,.2f}{last_s:>9}"
+            f"{_level(rec.reference_price)}"
+            f"{_level(rec.stop_price, 8)}{flag}"
+            f"{_level(rec.target_price)}{last_s:>8}{mark}"
             f"{_money(rec.pnl_at(px))}{_r(rec.r_at(px))}{_r(rec.peak_r)}"
             f"{held_s:>8}  {rec.catalyst[:40]}"
         )
     if any(r.stop_raised for r in recs):
         lines.append("  * stop already moved to breakeven")
+    if any_stale:
+        lines.append(f"  ? last price is more than {MAX_MARK_AGE_DAYS} days old; "
+                     f"the P&L beside it is marked at a stale quote")
     return "\n".join(lines)
 
 
@@ -1243,7 +1565,7 @@ def format_track_record(tr: TrackRecord) -> str:
     lines = [f"Closed recommendations   {tr.closed:>8,}"]
     if tr.closed:
         lines += [
-            f"  win rate               {tr.win_rate:>8.0%}   "
+            f"  win rate               {_pct(tr.win_rate)}   "
             f"({tr.wins}W / {tr.losses}L"
             + (f" / {tr.scratches} scratch" if tr.scratches else "") + ")",
             f"  average win        {_money(tr.avg_win)}   {_r(tr.avg_win_r).strip()}",
@@ -1253,6 +1575,9 @@ def format_track_record(tr: TrackRecord) -> str:
             f"  profit factor      {_ratio(tr.profit_factor)}",
             f"  total P&L          {_money(tr.total_pnl)}",
         ]
+        if tr.unscored_closed:
+            lines.append(f"  unscored           {tr.unscored_closed:>10,}   "
+                         f"closed at a price that could not be read")
         if tr.best:
             lines.append(f"  best   {tr.best.id:<18}{_money(tr.best.realized_pnl)}"
                          f"{_r(tr.best.realized_r)}")
@@ -1266,7 +1591,7 @@ def format_track_record(tr: TrackRecord) -> str:
     if tr.open_marked:
         lines.append(f"  marked to market   {_money(tr.open_unrealized)}")
         lines += ["", "Same book, including open positions marked to market",
-                  f"  win rate               {tr.win_rate_with_open:>8.0%}",
+                  f"  win rate               {_pct(tr.win_rate_with_open)}",
                   f"  expectancy         {_r(tr.expectancy_r_with_open, 10)} per idea",
                   f"  total P&L          {_money(tr.total_pnl_with_open)}"]
         if not math.isnan(tr.flattery_r):
@@ -1291,7 +1616,7 @@ def format_report(book: RecommendationBook,
     itself, because review moves stops and persists — printing a report must
     not change the book.
     """
-    when = as_of or date.today()
+    when = _as_date(as_of) or date.today()
     parts = [f"# Recommendation book — {when:%Y-%m-%d} ({book.path})", ""]
     parts += ["## Open ideas", format_open_book(book.open_recommendations(),
                                                 prices, when)]
