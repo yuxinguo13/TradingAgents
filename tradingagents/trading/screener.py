@@ -32,11 +32,14 @@ The output is a shortlist for analysis, not a buy list.
 
 from __future__ import annotations
 
+import hashlib
 import io
+import json
 import os
 import re
 import time
 import warnings
+from datetime import date as date_cls
 from pathlib import Path
 
 import numpy as np
@@ -58,6 +61,29 @@ _EXCLUDE_NAME = re.compile(
     r"depositary shares?,? each representing .*(?:preferred|interest in)",
     re.IGNORECASE,
 )
+
+# Nasdaq fifth-letter codes that mark a non-common instrument. Deliberately
+# short: every letter added here silently deletes a share class.
+_INSTRUMENT_SUFFIX = frozenset("WURP")
+
+# A watchlist entry with this tag is a yardstick, not a candidate: it is scored
+# and shown, every other row is measured against it, and it is never judged
+# pass/fail — asking whether SPY clears a momentum screen is a category error.
+BASE_TAG = "base"
+
+# ---------------------------------------------------------------------------
+# Qualification pool. The daily filters (above the 200-day, dollar volume,
+# realized vol) move week to week, so they cannot decide who is worth
+# downloading — a name below its 200-day today is exactly the name that
+# reappears after a base. The pool filters only on what will not change
+# within a month: penny prices, no liquidity at all, not enough history to
+# score. Measured on the 2026-08-25 panel: 3181 names → 1431 qualify (45%),
+# and all 534 that passed the full daily filter were inside the pool.
+# ---------------------------------------------------------------------------
+_POOL_MIN_PRICE = 3.0
+_POOL_MIN_DOLLAR_VOL = 3e6
+_POOL_MIN_ROWS = 200
+_POOL_MAX_AGE_DAYS = 30
 
 
 # ----------------------------------------------------------------------------
@@ -97,11 +123,17 @@ def fetch_universe(exchange: str = "nasdaq") -> pd.DataFrame:
     # Preferred / special-class markers on non-Nasdaq feeds use '$' and '.'.
     u = u[~u["symbol"].str.contains(r"\$", regex=True)]
     u["symbol"] = u["symbol"].str.replace(".", "-", regex=False)
-    # Nasdaq 5-letter symbols carry an instrument suffix (W/U/R/P...). Real
-    # five-letter common stocks exist but are rare; the trade-off favours
-    # removing the far larger warrant/unit population.
+    # Nasdaq 5-letter symbols carry a fifth-letter suffix, but only some of
+    # those letters mark a non-common instrument. Dropping every 5-letter
+    # symbol removed 920 names to exclude 880 that _EXCLUDE_NAME already
+    # catches by name — and took 39 real common stocks with them, including
+    # GOOGL, CMCSA, FCNCA, RYAAY and the whole Liberty complex. Filter on the
+    # suffix that actually means something instead:
+    #   W = warrant   U = unit   R = right   P = first preferred issue
+    # Class letters (A/B/K/L) and Y (ADR) stay, which is the entire point.
     is_nasdaq = u["exchange"] == "NASDAQ"
-    u = u[~(is_nasdaq & (u["symbol"].str.len() == 5))]
+    instrument_suffix = (u["symbol"].str.len() == 5) & u["symbol"].str[-1].isin(_INSTRUMENT_SUFFIX)
+    u = u[~(is_nasdaq & instrument_suffix)]
     u = u[~u["name"].fillna("").str.contains(_EXCLUDE_NAME)]
     return u.drop_duplicates("symbol").reset_index(drop=True)
 
@@ -328,28 +360,302 @@ def diversify(ranked: pd.DataFrame, top: int, max_per_sector: int) -> pd.DataFra
     return out
 
 
+# ----------------------------------------------------------------------------
+# 3b. qualification pool and watchlist
+# ----------------------------------------------------------------------------
+
+def _pool_path(exchange: str) -> Path:
+    return _cache_dir() / f"universe_{exchange}.json"
+
+
+def watchlist_path() -> Path:
+    """Where the always-analysed names live.
+
+    Sits beside the other desk state rather than in the screen cache: the
+    cache is derived data that may be deleted at any time, the watchlist is
+    a hand-maintained input that must not be.
+    """
+    env = os.getenv("TRADINGAGENTS_WATCHLIST_PATH")
+    if env:
+        return Path(env).expanduser()
+    home = Path(os.getenv("TRADINGAGENTS_HOME", Path.home() / ".tradingagents"))
+    return home / "watchlist.json"
+
+
+def load_watchlist(path: Path | None = None) -> dict[str, str]:
+    """``{symbol: tag}`` from the watchlist file; ``{}`` when there isn't one.
+
+    Never raises. A malformed watchlist must degrade to "no watchlist" rather
+    than take down a scan — the screen is still useful without it.
+    """
+    p = path or watchlist_path()
+    try:
+        raw = json.loads(p.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+    if not isinstance(raw, dict):
+        return {}
+    out = {}
+    for sym, tag in raw.items():
+        sym = str(sym).strip().upper()
+        if sym:
+            out[sym] = str(tag) if tag is not None else ""
+    return out
+
+
+def _pool_is_fresh(meta: dict, on: str, max_age_days: int) -> bool:
+    built = meta.get("built")
+    if not built:
+        return False
+    try:
+        age = (date_cls.fromisoformat(on) - date_cls.fromisoformat(built)).days
+    except (TypeError, ValueError):
+        return False
+    # A pool built *after* the date being screened is a backtest reading the
+    # future's liquidity. Rebuild rather than quietly use it.
+    return 0 <= age <= max_age_days
+
+
+def qualified_universe(date: str, exchange: str = "nasdaq",
+                       max_age_days: int = _POOL_MAX_AGE_DAYS,
+                       refresh: bool = False, log=print) -> tuple[list[str], dict]:
+    """Symbols worth downloading daily, rebuilt about once a month.
+
+    Returns ``(symbols, meta)``. ``meta`` carries ``built``, ``listed`` and
+    ``qualified`` so a caller can report what it is standing on; a rebuild
+    also sets ``rebuilt=True``.
+
+    The rebuild is the expensive path — it downloads the whole exchange, the
+    thing this exists to avoid — so it happens on a monthly cadence, not per
+    run. Between rebuilds a newly-listed name is invisible; that is the price,
+    and ``refresh=True`` pays it early.
+    """
+    path = _pool_path(exchange)
+    meta: dict = {}
+    if not refresh:
+        try:
+            meta = json.loads(path.read_text(encoding="utf-8"))
+        except Exception:
+            meta = {}
+        syms = meta.get("symbols") or []
+        if syms and _pool_is_fresh(meta, date, max_age_days):
+            log(f"[pool] {len(syms)} qualified names (built {meta.get('built')})")
+            return list(syms), {k: v for k, v in meta.items() if k != "symbols"}
+
+    log(f"[pool] rebuilding the qualification pool for {exchange} ...")
+    uni = fetch_universe(exchange)
+    tickers = uni["symbol"].tolist()
+    panel = download_panel(tickers, date, cache_key=exchange, refresh=refresh, log=log)
+    f = compute_factors(panel).drop(index="SPY", errors="ignore")
+    mask = (
+        (f["price"] >= _POOL_MIN_PRICE)
+        & (f["dollar_vol_50"] >= _POOL_MIN_DOLLAR_VOL)
+        & (f["rows"] >= _POOL_MIN_ROWS)
+    )
+    symbols = sorted(f.index[mask.fillna(False)].tolist())
+    meta = {
+        "built": date,
+        "exchange": exchange,
+        "listed": len(uni),
+        "qualified": len(symbols),
+        "criteria": {
+            "min_price": _POOL_MIN_PRICE,
+            "min_dollar_vol_50": _POOL_MIN_DOLLAR_VOL,
+            "min_rows": _POOL_MIN_ROWS,
+        },
+    }
+    try:
+        path.parent.mkdir(parents=True, exist_ok=True)
+        tmp = path.with_name(path.name + ".tmp")
+        tmp.write_text(json.dumps({**meta, "symbols": symbols}, indent=1), encoding="utf-8")
+        os.replace(tmp, path)
+    except Exception as exc:
+        # An unwritable cache costs speed on the next run, not correctness now.
+        log(f"[pool] could not save the pool: {exc}")
+    log(f"[pool] {len(symbols)} of {len(uni)} listed names qualified")
+    return symbols, {**meta, "rebuilt": True}
+
+
+def screen_watchlist(date: str, exchange: str = "nasdaq",
+                     watchlist: dict | list | None = None,
+                     min_price: float = 5.0, min_dollar_vol: float = 20e6,
+                     max_rvol: float = 1.20, min_rvol: float = 0.08,
+                     max_ext_200: float = 1.00, require_above_200: bool = True,
+                     refresh: bool = False, log=print) -> pd.DataFrame:
+    """Score the watchlist and nothing else.
+
+    Deliberately independent of :func:`screen`: the watchlist has to be there
+    on days the universe scan was cached, skipped or failed, which is most of
+    them. Thirty-odd symbols is one batched download, so the independence is
+    close to free.
+
+    ``passes_filter`` records whether each name would have cleared the daily
+    hard filters. It is reported, not applied — the column exists so a reader
+    can see that a name is in a drawdown, which is when they most want to look
+    at it.
+    """
+    if watchlist is None:
+        wl = load_watchlist()
+    elif isinstance(watchlist, dict):
+        wl = {str(k).strip().upper(): str(v) for k, v in watchlist.items()}
+    else:
+        wl = {str(k).strip().upper(): "" for k in watchlist}
+    if not wl:
+        return pd.DataFrame()
+
+    syms = sorted(wl)
+    # Key the cache by *which* names, not only by date. Keyed on the date
+    # alone, adding a symbol to the watchlist returned the earlier panel
+    # without it and the new name silently never appeared — the same failure
+    # mode as the universe filter, one layer down.
+    fingerprint = hashlib.sha1(",".join(syms).encode()).hexdigest()[:8]
+    wanted = syms if "SPY" in syms else syms + ["SPY"]
+    panel = download_panel(wanted, date, cache_key=f"watchlist_{fingerprint}",
+                           refresh=refresh, log=log)
+    f = compute_factors(panel)
+    # SPY is dropped as scaffolding for the relative-strength factor — unless
+    # it is one of the names being watched, in which case dropping it would
+    # delete a row that was explicitly asked for.
+    if "SPY" not in syms:
+        f = f.drop(index="SPY", errors="ignore")
+    f = f.reindex([s for s in syms if s in f.index])
+    if f.empty:
+        return f
+
+    bases = [s for s in f.index if wl.get(s, "").strip().lower() == BASE_TAG]
+
+    deal_pinned = f["rvol_20"] < min_rvol
+    mask = (
+        (f["price"] >= min_price)
+        & (f["dollar_vol_50"] >= min_dollar_vol)
+        & (f["rows"] >= 200)
+        & (f["rvol_20"] <= max_rvol)
+        & ~deal_pinned
+        & (f["ext_200"] <= max_ext_200)
+    )
+    if require_above_200:
+        mask &= f["above_200"].fillna(False)
+    # A yardstick is not a candidate. Left in the mask it would report SPY as
+    # "failing the screen", which says nothing about SPY and quietly inflates
+    # the count of names in trouble.
+    for b in bases:
+        mask.loc[b] = True
+
+    # Excess return over each base, which is the question actually being asked
+    # of a watchlist: is this name's drawdown its own, or the market's? A
+    # semiconductor down 8% while QQQM is down 9% has not broken; the same
+    # name down 8% against a flat index has.
+    for b in bases:
+        for window in ("ret_1m", "ret_3m"):
+            col = f"vs_{b}_{window.split('_')[1]}"
+            f[col] = f[window] - float(f.loc[b, window])
+            f.loc[b, col] = float("nan")   # a base against itself is not news
+
+    # Why a name failed, not merely that it did. "Below the bar" sends the
+    # reader to look it up; "not enough dollar volume" ends the question.
+    reasons = []
+    for sym in f.index:
+        row = f.loc[sym]
+        if require_above_200 and not bool(row.get("above_200")):
+            reasons.append("below the 200-day")
+        elif row["price"] < min_price:
+            reasons.append(f"under ${min_price:g}")
+        elif row["dollar_vol_50"] < min_dollar_vol:
+            reasons.append(f"thin (${row['dollar_vol_50'] / 1e6:.0f}M/day)")
+        elif row["rvol_20"] > max_rvol:
+            reasons.append("too volatile")
+        elif row["rvol_20"] < min_rvol:
+            reasons.append("deal-pinned")
+        elif row["ext_200"] > max_ext_200:
+            reasons.append("parabolic vs the 200-day")
+        elif row["rows"] < 200:
+            reasons.append("too little history")
+        else:
+            reasons.append("")
+
+    f.insert(0, "tag", [wl.get(s, "") for s in f.index])
+    f["is_base"] = [s in bases for s in f.index]
+    f["passes_filter"] = mask.fillna(False)
+    f["fail_reason"] = ["" if s in bases else r for s, r in zip(f.index, reasons, strict=True)]
+    f.attrs["bases"] = bases
+    missing = sorted(set(syms) - set(f.index))
+    if missing:
+        # Named, not dropped: a watchlist entry that could not be priced is a
+        # gap in the coverage you asked for, and silence would hide it.
+        log(f"[watchlist] no price data for: {', '.join(missing)}")
+    f.attrs["missing"] = missing
+    return f
+
+
 def screen(date: str, exchange: str = "nasdaq", top: int = 50,
            min_price: float = 5.0, min_dollar_vol: float = 20e6,
            max_rvol: float = 1.20, min_rvol: float = 0.08, require_above_200: bool = True,
            max_ext_200: float = 1.00, max_per_sector: int | None = 8,
-           candidate_pool: int | None = None, refresh: bool = False, log=print):
+           candidate_pool: int | None = None, refresh: bool = False,
+           use_pool: bool = True, pool_max_age_days: int = _POOL_MAX_AGE_DAYS,
+           watchlist: dict | list | None = None, return_watchlist: bool = False,
+           log=print):
     """Run the full pipeline; returns (ranked DataFrame, stats dict).
 
     ``max_per_sector`` caps how many names one sector may place in the final
     list (None disables). Sectors are looked up only for the candidate pool
     (default ``max(3*top, 150)`` best-scoring names), not the whole universe.
+
+    ``use_pool`` downloads only the monthly qualification pool (plus the
+    watchlist) instead of the whole exchange. ``return_watchlist`` adds a third
+    return value: the watchlist names with their factors and whether each would
+    have passed the hard filters. Watchlist names are reported but never
+    injected into the ranking — a name you follow daily is not thereby a name
+    the screen chose.
     """
     uni = fetch_universe(exchange)
     log(f"[screen] universe ({exchange}): {len(uni)} common stocks")
-    tickers = uni["symbol"].tolist()
-    if "SPY" not in tickers:
-        tickers.append("SPY")
-    panel = download_panel(tickers, date, cache_key=exchange, refresh=refresh, log=log)
+
+    if watchlist is None:
+        wl = load_watchlist()
+    elif isinstance(watchlist, dict):
+        wl = {str(k).strip().upper(): str(v) for k, v in watchlist.items()}
+    else:
+        wl = {str(k).strip().upper(): "" for k in watchlist}
+    wl_syms = sorted(wl)
+
+    pool_meta: dict = {}
+    if use_pool:
+        pool, pool_meta = qualified_universe(
+            date, exchange=exchange, max_age_days=pool_max_age_days,
+            refresh=refresh, log=log)
+        wanted = sorted(set(pool) | set(wl_syms))
+    else:
+        wanted = sorted(set(uni["symbol"].tolist()) | set(wl_syms))
+    tickers = wanted + ([] if "SPY" in wanted else ["SPY"])
+
+    # A full-universe panel for this date may already be on disk (a pool
+    # rebuild just wrote one). Downloading a subset of what we already have
+    # would be the one thing this code exists to avoid.
+    full_cache = _cache_dir() / f"panel_{exchange}_{date}.pkl"
+    if use_pool and full_cache.exists() and not refresh:
+        panel = pd.read_pickle(full_cache)
+        log(f"[screen] reusing the full local panel: {panel['Close'].shape[1]} tickers")
+    else:
+        panel = download_panel(
+            tickers, date, cache_key=(f"{exchange}_pool" if use_pool else exchange),
+            refresh=refresh, log=log)
+
     f = compute_factors(panel)
     f = f.join(uni.set_index("symbol")[["name", "exchange"]], how="left")
     f = f.drop(index="SPY", errors="ignore")
+    if use_pool:
+        # Score exactly the intended set, whatever the panel happens to hold,
+        # so a day that reused a full panel ranks the same names as a day that
+        # downloaded only the pool.
+        f = f.reindex([t for t in wanted if t in f.index])
 
-    stats = {"universe": len(uni), "priced": int(f["price"].notna().sum())}
+    stats = {"universe": len(uni), "priced": int(f["price"].notna().sum()),
+             "scored": len(f), "watchlist": len(wl_syms)}
+    if pool_meta:
+        stats["pool_size"] = pool_meta.get("qualified")
+        stats["pool_built"] = pool_meta.get("built")
+        stats["pool_rebuilt"] = bool(pool_meta.get("rebuilt"))
     # Deal-pinned stubs: a takeover gap followed by near-zero volatility scores
     # beautifully on every momentum factor (at the high, no distribution days,
     # low vol) while offering nothing but the arb spread. No freely trading
@@ -371,8 +677,24 @@ def screen(date: str, exchange: str = "nasdaq", top: int = 50,
         mask &= f["above_200"].fillna(False)
     g = f[mask].copy()
     stats["passed_filters"] = len(g)
+
+    # The watchlist is built from the same factors and the same mask, but it
+    # bypasses the mask on the way out: a semiconductor that just lost its
+    # 200-day is precisely the one worth looking at that morning, and a report
+    # that drops it exactly then is a report that hides drawdowns.
+    wl_rows = [s for s in wl_syms if s in f.index]
+    wl_frame = f.reindex(wl_rows).copy()
+    if len(wl_frame):
+        wl_frame.insert(0, "tag", [wl.get(s, "") for s in wl_frame.index])
+        wl_frame["passes_filter"] = mask.reindex(wl_frame.index).fillna(False)
+    stats["watchlist_scored"] = len(wl_frame)
+    stats["watchlist_missing"] = sorted(set(wl_syms) - set(wl_rows))
+
+    def _ret(frame):
+        return (frame, stats, wl_frame) if return_watchlist else (frame, stats)
+
     if g.empty:
-        return g, stats
+        return _ret(g)
 
     # percentile ranks within the filtered set; higher = better everywhere
     r = pd.DataFrame(index=g.index)
@@ -394,8 +716,11 @@ def screen(date: str, exchange: str = "nasdaq", top: int = 50,
     g = g.sort_values("score", ascending=False)
     g.insert(0, "rank", range(1, len(g) + 1))
 
+    if len(wl_frame):
+        wl_frame["screen_rank"] = g["rank"].reindex(wl_frame.index)
+
     if max_per_sector is None:
-        return g.head(top), stats
+        return _ret(g.head(top))
 
     pool_n = candidate_pool or max(3 * top, 150)
     pool = g.head(pool_n).copy()
@@ -406,7 +731,10 @@ def screen(date: str, exchange: str = "nasdaq", top: int = 50,
     stats["sector_counts_in_pool"] = pool["sector"].value_counts().to_dict()
     out = diversify(pool, top=top, max_per_sector=max_per_sector)
     stats["sector_counts_in_top"] = out["sector"].value_counts().to_dict()
-    return out, stats
+    if len(wl_frame):
+        known = {**{t: sec[t][0] for t in pool.index}}
+        wl_frame["sector"] = [known.get(t, "") for t in wl_frame.index]
+    return _ret(out)
 
 
 def format_table(g: pd.DataFrame) -> str:

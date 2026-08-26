@@ -153,6 +153,83 @@ python -m tradingagents.live.cli trade NVDA buy 10 --dry-run
 
 ---
 
+## Coverage: the pool and the watchlist
+
+Two lists feed the desk, and they answer different questions.
+
+**The qualification pool** (`~/.tradingagents/cache/screens/universe_<exchange>.json`)
+is who is worth downloading. Rebuilt about once a month, it filters only on what
+cannot change inside a month — a penny price, no liquidity at all, not enough
+history to score. Measured on the 2026-08-25 panel: 3215 listed names → 1465
+qualify, and every one of the 534 that passed the *daily* filter was inside it.
+
+The daily filters are deliberately **not** used to build the pool. A name below
+its 200-day today is exactly the name that reappears after a base; qualifying on
+trend would mean the monthly refresh could never rediscover anything. 481 of the
+pool's members are below their 200-day right now, and that is the point.
+
+```bash
+# force an early rebuild (a month is the default cadence)
+python -c "from tradingagents.trading.screener import qualified_universe; \
+           qualified_universe('2026-08-25', refresh=True)"
+```
+
+**The watchlist** (`~/.tradingagents/watchlist.json`) is who gets looked at
+whatever the screen thinks. `{"NVDA": "semi", "GOOGL": "tech", ...}` — the tag is
+free text and only groups the report.
+
+It is scored on its own path, so it survives every way the universe scan can go:
+cached, skipped, or failed. And it **bypasses the hard filters on the way out**.
+On 2026-08-25 nine of thirty-one — AVGO, QCOM, NXPI, ON, META, TSLA, ORCL, CRWV,
+AXTI — would have been filtered out of the report entirely, eight of them for
+losing their 200-day. A semiconductor in a drawdown is precisely the one worth
+reading that morning, so the section names each one and why it failed rather
+than dropping it.
+
+What the watchlist is not: a buy list. Watchlist names are reported, never
+injected into the ranking, never sized, and never written to the recommendation
+book. Following a name daily is not a reason to own it.
+
+### Bases
+
+An entry tagged `base` is a yardstick rather than a candidate:
+
+```json
+{"SPY": "base", "QQQM": "base", "NVDA": "semi", "GOOGL": "tech"}
+```
+
+Bases are shown first, never judged pass/fail — asking whether SPY clears a
+momentum screen is a category error — and every other row is reported as an
+**excess return over each of them**.
+
+That column is what makes the section readable, because "below the 200-day"
+covers two opposite situations. On 2026-08-25:
+
+| | trend | 1M vs SPY | reading |
+|---|---|---:|---|
+| ORCL | below the 200-day | **+17.1%** | climbing out of a hole (3M: −24.8%) |
+| NXPI | below the 200-day | **−19.7%** | simply broken |
+| AMAT | passes every filter | **−10.7%** | trend looks fine, badly lagging |
+
+Without a base, the first two look identical and the third looks healthy.
+
+Bases are data, not code: retag the file and the comparison changes.
+
+### A silent universe bug, for the record
+
+`fetch_universe` used to drop every 5-letter Nasdaq symbol, on the reasoning that
+the fifth letter marks warrants and units. It does — but only for some letters.
+The rule removed 920 symbols to exclude 880 that the security-name filter already
+caught, and took 39 real common stocks with them: **GOOGL, CMCSA, FCNCA, RYAAY**
+and the entire Liberty complex. Nothing ever errored; the names simply never
+appeared in a screen.
+
+The rule now tests the suffix that actually means something — `W` warrant,
+`U` unit, `R` right, `P` first preferred — so class letters (A/B/K/L) and `Y`
+(ADR) survive. `tests/test_screener_universe_pool.py` pins it.
+
+---
+
 ## Risk limits
 
 Every order from every source passes the Secretary. Override any of these with
@@ -228,6 +305,8 @@ Everything under `~/.tradingagents/` (override with `TRADINGAGENTS_HOME`).
 | `live_journal.jsonl` | one line per cycle |
 | `live_state.json` | screen ranking and coverage |
 | `recommendations.json` | the advisor's own track record |
+| `watchlist.json` | names analysed every day regardless of rank |
+| `cache/screens/universe_*.json` | the monthly qualification pool |
 | `news_seen.json` | story fingerprints, pruned at 72h |
 | `company_names.json` | ticker → company name cache |
 | `screens/` | ranked exchange scans |

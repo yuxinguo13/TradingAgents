@@ -176,6 +176,39 @@ REFERENCE_NOTE = (
     "carry it."
 )
 
+def _pctn(x: float) -> str:
+    """Compact signed percent for the fixed-width table; blank when absent."""
+    try:
+        if x is None or math.isnan(float(x)):
+            return "-"
+    except (TypeError, ValueError):
+        return "-"
+    return f"{float(x) * 100:+.1f}"
+
+
+def _pct(x: float) -> str:
+    """A fraction as a signed percentage, or an em dash when it is not a number.
+
+    Blank would read as zero in a markdown table; an em dash reads as absent,
+    which is what a missing factor actually means.
+    """
+    try:
+        if x is None or math.isnan(float(x)):
+            return "—"
+    except (TypeError, ValueError):
+        return "—"
+    return f"{float(x) * 100:+.1f}%"
+
+
+WATCHLIST_NOTE = (
+    "These are followed every day by request, not proposed by the screen. A "
+    "name marked BELOW 200 would have been filtered out of the buy list "
+    "today — it is shown because a drawdown in something you follow is "
+    "information, and a report that hides it exactly then is worth less than "
+    "no report. Nothing in this section is sized, and nothing is recorded in "
+    "the book."
+)
+
 
 # ---------------------------------------------------------------------------
 # small helpers
@@ -526,6 +559,61 @@ def run_screen(when: str, exchange: str, top: int, log=logger.debug):
     return frame, stats
 
 
+def run_watchlist(when: str, exchange: str = "nasdaq", log=logger.debug):
+    """Seam over :func:`screener.screen_watchlist`.
+
+    Separate from :func:`run_screen` because the watchlist must survive every
+    path the screen can take — cached, skipped, or failed. A name you follow
+    daily that only appears on days the universe scan happened is not a name
+    you follow daily.
+    """
+    from tradingagents.trading.screener import screen_watchlist
+    return screen_watchlist(when, exchange=exchange, log=log)
+
+
+def watch_rows_from_frame(frame, log=logger.debug) -> list[WatchRow]:
+    """Rows of the screener's watchlist frame, bases first then tag and symbol."""
+    out: list[WatchRow] = []
+    try:
+        rows = list(frame.iterrows())
+        bases = list(getattr(frame, "attrs", {}).get("bases") or [])
+    except Exception:
+        return out
+
+    def _f(row, key):
+        try:
+            return _num(row.get(key))
+        except Exception:
+            return float("nan")
+
+    for symbol, row in rows:
+        try:
+            out.append(WatchRow(
+                symbol=str(symbol),
+                tag=str(row.get("tag") or ""),
+                name=str(row.get("name") or ""),
+                price=_f(row, "price"),
+                ret_1m=_f(row, "ret_1m"),
+                ret_3m=_f(row, "ret_3m"),
+                off_high=_f(row, "off_high"),
+                ext_200=_f(row, "ext_200"),
+                above_50=bool(row.get("above_50")),
+                above_200=bool(row.get("above_200")),
+                dollar_vol=_f(row, "dollar_vol_50"),
+                is_base=bool(row.get("is_base")),
+                passes_filter=bool(row.get("passes_filter")),
+                fail_reason=str(row.get("fail_reason") or ""),
+                excess_1m={b: _f(row, f"vs_{b}_1m") for b in bases},
+                screen_rank=_f(row, "screen_rank"),
+            ))
+        except Exception as exc:
+            logger.warning("skipped an unreadable watchlist row for %r: %s", symbol, exc)
+    # Bases first: every other row is read against them, so they have to be
+    # on the page before the rows that reference them.
+    out.sort(key=lambda w: (not w.is_base, w.tag, w.symbol))
+    return out
+
+
 # ---------------------------------------------------------------------------
 # levels
 # ---------------------------------------------------------------------------
@@ -588,6 +676,39 @@ def limit_price(reference: float, buffer: float = DEFAULT_LIMIT_BUFFER) -> float
 # ---------------------------------------------------------------------------
 
 @dataclass
+class WatchRow:
+    """One always-analysed name, whether or not the screen liked it today.
+
+    Carried separately from :class:`Candidate` on purpose: a candidate is
+    something the screen proposed, a watch row is something you asked to see.
+    Merging them would let a name you follow drift into a name you are being
+    advised to buy.
+    """
+
+    symbol: str
+    tag: str = ""
+    name: str = ""
+    price: float = float("nan")
+    # The screener's own column names. Naming these ret_1d/ret_21d produced two
+    # columns of NaN that rendered as an em dash in every row — the report
+    # looked complete and said nothing.
+    ret_1m: float = float("nan")
+    ret_3m: float = float("nan")
+    off_high: float = float("nan")
+    ext_200: float = float("nan")
+    above_50: bool = False
+    above_200: bool = False
+    dollar_vol: float = float("nan")
+    is_base: bool = False
+    passes_filter: bool = False
+    fail_reason: str = ""
+    screen_rank: float = float("nan")
+    # {base symbol: excess return over that base, one month}. Empty when no
+    # watchlist entry is tagged as a base.
+    excess_1m: dict = field(default_factory=dict)
+
+
+@dataclass
 class DailyReport:
     """One day's output. Rendered by :func:`format_report` and :func:`to_markdown`."""
 
@@ -608,6 +729,7 @@ class DailyReport:
 
     track_record: TrackRecord | None = None
     candidates: list[Candidate] = field(default_factory=list)
+    watchlist: list[WatchRow] = field(default_factory=list)
     marks: dict[str, float] = field(default_factory=dict)
 
     account_value: float = 0.0
@@ -922,6 +1044,37 @@ class DailyAdvisor:
             f"screen: {counts.get('universe', '?')} listed names → "
             f"{counts.get('passed_filters', '?')} passed the filters")
         return candidates_from_frame(frame)
+
+    def watch(self, data_date: str, report: DailyReport) -> list[WatchRow]:
+        """The always-analysed names, scored fresh every run.
+
+        Runs whatever the screen did — a cached screen, a skipped one, a failed
+        one. A failure here costs the section and nothing else: the buy list
+        does not depend on it.
+        """
+        try:
+            frame = run_watchlist(data_date, self.cfg.exchange)
+        except Exception as exc:
+            report.warnings.append(
+                f"the watchlist could not be scored ({type(exc).__name__}: {exc})")
+            return []
+        rows = watch_rows_from_frame(frame)
+        if not rows:
+            return []
+        missing = list(getattr(frame, "attrs", {}).get("missing") or [])
+        if missing:
+            report.notes.append(
+                f"watchlist: no price data for {', '.join(missing)}")
+        # Bases are excluded from both sides of the count: a yardstick is not
+        # one of the names being judged, and counting it would disagree with
+        # the section header two lines below.
+        judged = [r for r in rows if not r.is_base]
+        weak = [r.symbol for r in judged if not r.passes_filter]
+        if weak:
+            report.notes.append(
+                f"watchlist: {len(weak)} of {len(judged)} are below the screen's own "
+                f"bar today ({', '.join(weak)}) — shown anyway, which is the point")
+        return rows
 
     def rank(self, cands: list[Candidate], tilt: dict[str, float]) -> list[Candidate]:
         """Apply the policy tilt to the screen's order, bounded by MAX_TILT_SHIFT.
@@ -1289,6 +1442,7 @@ class DailyAdvisor:
 
         cands = self.rank(self.candidates(data_day, report), report.sector_tilt)
         report.candidates = cands
+        report.watchlist = self.watch(data_date, report)
 
         # One poll for both halves of the report. Open ideas come first in the
         # list: if the cap bites, it must bite on a candidate whose news is
@@ -1436,6 +1590,36 @@ def format_report(report: "DailyReport") -> str:
     else:
         out.append("  (no candidate cleared the bar — this is a normal outcome)")
 
+    if report.watchlist:
+        rows = report.watchlist
+        bases = [r.symbol for r in rows if r.is_base]
+        weak = sum(1 for r in rows if not r.is_base and not r.passes_filter)
+        watched = sum(1 for r in rows if not r.is_base)
+        out += ["", f"WATCHLIST  ({watched}, {weak} below the screen's bar)", "-" * W]
+        head = (f"  {'SYMBOL':<8}{'TAG':<6}{'PRICE':>10}{'1M%':>7}{'3M%':>7}")
+        for b in bases:
+            head += f"{'vs ' + b:>9}"
+        head += f"{'OFF HIGH':>10}{'vs200':>7}  STATUS"
+        out.append(head)
+        for i, r in enumerate(rows):
+            if i and rows[i - 1].is_base and not r.is_base:
+                out.append("  " + "·" * (W - 4))
+            status = (r.fail_reason.upper() if not r.is_base and not r.passes_filter
+                      and r.fail_reason
+                      else "benchmark" if r.is_base
+                      else "above 50 & 200" if r.above_50 and r.above_200
+                      else "above 200" if r.above_200
+                      else "BELOW 200")
+            if not math.isnan(r.screen_rank):
+                status += f"   screen #{int(r.screen_rank)}"
+            line = (f"  {r.symbol:<8}{r.tag:<6}{r.price:>10,.2f}"
+                    f"{_pctn(r.ret_1m):>7}{_pctn(r.ret_3m):>7}")
+            for b in bases:
+                line += f"{_pctn(r.excess_1m.get(b, float('nan'))):>9}"
+            line += (f"{_pctn(r.off_high):>10}{_pctn(r.ext_200):>7}  {status}")
+            out.append(line)
+        out += _wrapped(WATCHLIST_NOTE, W - 4)
+
     out += ["", "ACCOUNT", "-" * W,
             f"  equity ${report.account_value:,.2f}   cash ${report.cash:,.2f}   "
             f"buy budget ${report.buy_budget:,.2f}   "
@@ -1506,6 +1690,37 @@ def to_markdown(report: "DailyReport") -> str:
         md += ["", f"_{REFERENCE_NOTE}_"]
     else:
         md.append("_No candidate cleared the bar._")
+
+    if report.watchlist:
+        rows = report.watchlist
+        bases = [r.symbol for r in rows if r.is_base]
+        weak = sum(1 for r in rows if not r.is_base and not r.passes_filter)
+        watched = sum(1 for r in rows if not r.is_base)
+        md += ["", f"## Watchlist ({watched})", "",
+               f"_{weak} of {watched} would not have cleared the screen's own bar today._", ""]
+        header = "| Symbol | Tag | Price | 1M | 3M |"
+        divide = "|---|---|---:|---:|---:|"
+        for b in bases:
+            header += f" vs {b} |"
+            divide += "---:|"
+        header += " Off high | vs SMA200 | Status |"
+        divide += "---:|---:|---|"
+        md += [header, divide]
+        for r in rows:
+            status = ("_benchmark_" if r.is_base
+                      else f"**{r.fail_reason}**" if not r.passes_filter and r.fail_reason
+                      else "above 50 & 200" if r.above_50 and r.above_200
+                      else "above 200" if r.above_200
+                      else "**below 200**")
+            if not math.isnan(r.screen_rank):
+                status += f" · screen #{int(r.screen_rank)}"
+            row = (f"| {r.symbol} | {r.tag} | {r.price:,.2f} | "
+                   f"{_pct(r.ret_1m)} | {_pct(r.ret_3m)} |")
+            for b in bases:
+                row += f" {_pct(r.excess_1m.get(b, float('nan')))} |"
+            row += f" {_pct(r.off_high)} | {_pct(r.ext_200)} | {status} |"
+            md.append(row)
+        md += ["", f"_{WATCHLIST_NOTE}_"]
 
     md += ["", "## Account", "",
            f"- Equity **${report.account_value:,.2f}**, cash ${report.cash:,.2f}",
