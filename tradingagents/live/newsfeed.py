@@ -80,7 +80,10 @@ _MATERIAL_RE = [(w, re.compile(p, re.IGNORECASE)) for w, p in _MATERIAL]
 # genuine stop-loss for the cycle's LLM budget. Matching headlines are capped
 # below the trigger threshold rather than dropped, so they still show up in a
 # news listing.
-_NOISE_CAP = 2
+# Public: other modules need to ask "is this headline merely a filing?" and
+# must not reach for a private name to do it.
+NOISE_CAP = 2
+_NOISE_CAP = NOISE_CAP
 _NOISE = re.compile(
     r"(acquires?|buys?|sells?|purchases?|takes?)\s+(new\s+)?(a\s+)?"
     r"[\d,]*\s*(shares?|stake|position)|"

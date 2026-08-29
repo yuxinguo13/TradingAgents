@@ -70,7 +70,7 @@ from pathlib import Path
 from . import clock
 from .brain import Panel, Snapshot, Trigger, build_evidence, snapshot, triggers
 from .broker import BUY as VENUE_BUY, Account
-from .newsfeed import NewsItem, NewsMonitor
+from .newsfeed import NOISE_CAP, NewsItem, NewsMonitor
 from .policy import PolicyEvent, PolicyMonitor, policy_brief, sector_pressure
 from .recommendations import (
     BUY as ADVICE_BUY,
@@ -1246,9 +1246,7 @@ class DailyAdvisor:
             return None, sized.reason
 
         lim = limit_price(entry, self.cfg.limit_buffer)
-        catalyst = cand.news[0].title[:140] if cand.news else (
-            f"rank #{cand.rank} on the {self.cfg.exchange} screen"
-            + (f"; sector tilt {cand.tilt:+.2f}" if cand.tilt else ""))
+        catalyst = self._catalyst(cand)
 
         rec = Recommendation(
             id=make_id(cand.symbol, issued),
@@ -1268,6 +1266,36 @@ class DailyAdvisor:
             issued_at=datetime.now().isoformat(),
         )
         return rec, sized.reason
+
+    def _catalyst(self, cand: Candidate) -> str:
+        """The strongest checkable reason to look at this name, or none claimed.
+
+        This used to be ``cand.news[0].title`` — the first headline the feed
+        happened to return. Institutional-flow filings are capped at
+        ``NOISE_CAP`` materiality rather than dropped (they belong in a news
+        listing, just not in a trigger), so the first item was routinely
+        "76,221 Shares in Roku Bought by ..." or "Meros Investment Management
+        LP Invests $1.2 Million in BJ's Restaurants". A 13F filing is not a
+        reason to buy anything, and printing one in the WHY column dresses a
+        rank-driven entry as a news-driven one.
+
+        Source and age travel with the headline so the claim can be checked
+        without searching for it. When nothing clears the noise floor the line
+        says so, because "ranked #7, no company news" is honest and a filing
+        headline is not.
+        """
+        rank_line = (f"rank #{cand.rank} on the {self.cfg.exchange} screen"
+                     + (f"; sector tilt {cand.tilt:+.2f}" if cand.tilt else ""))
+        usable = [n for n in cand.news if getattr(n, "materiality", 0) > NOISE_CAP]
+        if not usable:
+            if cand.news:
+                return f"{rank_line} — no company news above filing noise"
+            return rank_line
+        # Materiality first, then freshness. A 9 from yesterday beats a 7 from
+        # an hour ago; two 9s are separated by which one is newer.
+        best = max(usable, key=lambda n: (n.materiality, -n.age_hours()))
+        stamp = f"{best.source}, {best.age_hours():.0f}h" if best.source else f"{best.age_hours():.0f}h"
+        return f"{best.title[:120]} [{stamp}]"
 
     def _record(self, rec: Recommendation) -> Recommendation:
         """Write one idea into the book and return the stored object.
