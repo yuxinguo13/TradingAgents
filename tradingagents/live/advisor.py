@@ -176,6 +176,37 @@ REFERENCE_NOTE = (
     "carry it."
 )
 
+def _md_catalyst(rec) -> str:
+    """Markdown cell: the same line, hyperlinked when a URL survived.
+
+    Pipes are escaped because a headline containing one would silently split
+    the row into extra columns.
+    """
+    text = catalyst_line(rec).replace("|", "\\|")
+    url = getattr(rec, "catalyst_url", "")
+    if not url:
+        return text
+    return f"[{text}]({url})"
+
+
+def catalyst_line(rec, width: int | None = None) -> str:
+    """The catalyst with its provenance attached, or bare when none is claimed.
+
+    One function for both renderers: a headline that reads as sourced in the
+    terminal and unsourced in the markdown would be worse than either.
+    """
+    text = rec.catalyst or rec.rationale or ""
+    bits = []
+    if getattr(rec, "catalyst_source", ""):
+        bits.append(rec.catalyst_source)
+    age = rec.catalyst_age_hours() if hasattr(rec, "catalyst_age_hours") else float("nan")
+    if age == age:
+        bits.append(f"{age:.0f}h")
+    if bits:
+        text = f"{text} [{', '.join(bits)}]"
+    return text if width is None else text[:width]
+
+
 def _pctn(x: float) -> str:
     """Compact signed percent for the fixed-width table; blank when absent."""
     try:
@@ -1246,7 +1277,7 @@ class DailyAdvisor:
             return None, sized.reason
 
         lim = limit_price(entry, self.cfg.limit_buffer)
-        catalyst = self._catalyst(cand)
+        catalyst, cat_source, cat_url, cat_at = self._catalyst(cand)
 
         rec = Recommendation(
             id=make_id(cand.symbol, issued),
@@ -1263,11 +1294,14 @@ class DailyAdvisor:
             rationale=rationale[:1000],
             sector=cand.sector,
             catalyst=catalyst,
+            catalyst_source=cat_source,
+            catalyst_url=cat_url,
+            catalyst_at=cat_at,
             issued_at=datetime.now().isoformat(),
         )
         return rec, sized.reason
 
-    def _catalyst(self, cand: Candidate) -> str:
+    def _catalyst(self, cand: Candidate) -> tuple[str, str, str, str]:
         """The strongest checkable reason to look at this name, or none claimed.
 
         This used to be ``cand.news[0].title`` — the first headline the feed
@@ -1279,23 +1313,28 @@ class DailyAdvisor:
         reason to buy anything, and printing one in the WHY column dresses a
         rank-driven entry as a news-driven one.
 
-        Source and age travel with the headline so the claim can be checked
-        without searching for it. When nothing clears the noise floor the line
-        says so, because "ranked #7, no company news" is honest and a filing
-        headline is not.
+        Returns ``(text, source, url, published)``. Source, link and the
+        absolute publication time travel with the headline rather than being
+        formatted into it: an undated headline cannot be told apart from one
+        that predates the move it is offered as the explanation for, and a
+        claim the reader cannot open is one they have to go and re-find.
+
+        The three trailing values are empty for a rank-driven idea, which is
+        itself the signal that no news is being claimed.
         """
         rank_line = (f"rank #{cand.rank} on the {self.cfg.exchange} screen"
                      + (f"; sector tilt {cand.tilt:+.2f}" if cand.tilt else ""))
         usable = [n for n in cand.news if getattr(n, "materiality", 0) > NOISE_CAP]
         if not usable:
             if cand.news:
-                return f"{rank_line} — no company news above filing noise"
-            return rank_line
+                return (f"{rank_line} — no company news above filing noise", "", "", "")
+            return (rank_line, "", "", "")
         # Materiality first, then freshness. A 9 from yesterday beats a 7 from
         # an hour ago; two 9s are separated by which one is newer.
         best = max(usable, key=lambda n: (n.materiality, -n.age_hours()))
-        stamp = f"{best.source}, {best.age_hours():.0f}h" if best.source else f"{best.age_hours():.0f}h"
-        return f"{best.title[:120]} [{stamp}]"
+        return (best.title[:200], str(getattr(best, "source", "") or ""),
+                str(getattr(best, "link", "") or ""),
+                str(getattr(best, "published", "") or ""))
 
     def _record(self, rec: Recommendation) -> Recommendation:
         """Write one idea into the book and return the stored object.
@@ -1610,7 +1649,7 @@ def format_report(report: "DailyReport") -> str:
                 f"  {r.symbol:<8}{r.shares:>7.0f}{r.reference_price:>10,.2f}"
                 f"{lim:>10}{r.stop_price:>10,.2f}{r.target_price:>10,.2f}"
                 f"{rr:>6.2f}{estimated_cost(r):>11,.2f}{planned_risk(r):>9,.2f}"
-                f"  {(r.catalyst or r.rationale)[:32]}")
+                f"  {catalyst_line(r, 46)}")
         out.append("-" * W)
         out.append(f"  {'TOTAL':<8}{'':>7}{'':>10}{'':>10}{'':>10}{'':>10}{'':>6}"
                    f"{report.total_cost:>11,.2f}{report.total_risk:>9,.2f}")
@@ -1714,7 +1753,7 @@ def to_markdown(report: "DailyReport") -> str:
             md.append(f"| {r.symbol} | {r.shares:.0f} | {r.reference_price:,.2f} | {lim} | "
                       f"{r.stop_price:,.2f} | {r.target_price:,.2f} | {rr:.2f} | "
                       f"{estimated_cost(r):,.2f} | {planned_risk(r):,.2f} | "
-                      f"{(r.catalyst or r.rationale)} |")
+                      f"{_md_catalyst(r)} |")
         md += ["", f"_{REFERENCE_NOTE}_"]
     else:
         md.append("_No candidate cleared the bar._")

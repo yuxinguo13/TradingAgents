@@ -264,6 +264,14 @@ class Recommendation:
     rationale: str = ""
     sector: str = ""
     catalyst: str = ""                # what should make it work, in one line
+    # Traceability for the line above. A claim the reader cannot date or open
+    # is a claim they have to go and re-find, and an undated headline is
+    # indistinguishable from one that predates the move it is offered as the
+    # explanation for. Empty on a rank-driven idea, which is itself the signal
+    # that no news is being claimed.
+    catalyst_source: str = ""         # publisher, as the feed named it
+    catalyst_url: str = ""            # direct link
+    catalyst_at: str = ""             # ISO8601 publication time, absolute
 
     status: str = OPEN
     exit_date: str = ""
@@ -435,6 +443,23 @@ class Recommendation:
 
     # --- serialisation ------------------------------------------------------
 
+    def catalyst_age_hours(self, now: datetime | None = None) -> float:
+        """Hours between the catalyst's publication and ``now``; NaN if unknown.
+
+        NaN rather than 0.0: an unknown age must not render as "just now",
+        which is exactly the misreading this field exists to prevent.
+        """
+        if not self.catalyst_at:
+            return float("nan")
+        try:
+            pub = datetime.fromisoformat(self.catalyst_at)
+        except (TypeError, ValueError):
+            return float("nan")
+        ref = now or datetime.now(pub.tzinfo) if pub.tzinfo else (now or datetime.now())
+        if pub.tzinfo and ref.tzinfo is None:
+            return float("nan")
+        return max(0.0, (ref - pub).total_seconds() / 3600)
+
     def to_dict(self) -> dict:
         return {k: _jsonable(v) for k, v in asdict(self).items()}
 
@@ -475,6 +500,11 @@ class Recommendation:
         rec.rationale = str(d.get("rationale", "") or "")
         rec.sector = str(d.get("sector", "") or "")
         rec.catalyst = str(d.get("catalyst", "") or "")
+        # Absent in books written before these fields existed; the default is
+        # "no source claimed", which is the honest reading of an old row.
+        rec.catalyst_source = str(d.get("catalyst_source", "") or "")
+        rec.catalyst_url = str(d.get("catalyst_url", "") or "")
+        rec.catalyst_at = str(d.get("catalyst_at", "") or "")
 
         status = str(d.get("status", OPEN) or OPEN).strip().lower()
         rec.status = status if status in STATUSES else OPEN
@@ -909,6 +939,9 @@ class RecommendationBook:
         rationale: str = "",
         sector: str = "",
         catalyst: str = "",
+        catalyst_source: str = "",
+        catalyst_url: str = "",
+        catalyst_at: str = "",
         issued_date: str | date | None = None,
         rec_id: str | None = None,
         save: bool = True,
@@ -944,6 +977,9 @@ class RecommendationBook:
             rationale=str(rationale or "")[:1000],
             sector=str(sector or ""),
             catalyst=str(catalyst or "")[:300],
+            catalyst_source=str(catalyst_source or "")[:120],
+            catalyst_url=str(catalyst_url or "")[:500],
+            catalyst_at=str(catalyst_at or ""),
             issued_at=datetime.now().isoformat(),
         )
         problem = rec.problem()
