@@ -69,6 +69,7 @@ from pathlib import Path
 
 from . import clock
 from .brain import Panel, Snapshot, Trigger, build_evidence, snapshot, triggers
+from .earnings import Earnings, EarningsBook, summarise as summarise_earnings
 from .broker import BUY as VENUE_BUY, Account
 from .newsfeed import NOISE_CAP, NewsItem, NewsMonitor
 from .policy import PolicyEvent, PolicyMonitor, policy_brief, sector_pressure
@@ -484,6 +485,7 @@ class Candidate:
     adjusted_rank: float = 0.0
     snap: Snapshot | None = None
     news: list[NewsItem] = field(default_factory=list)
+    earnings: Earnings | None = None
     reason: str = ""                  # why it was skipped, when it was
 
 
@@ -761,6 +763,9 @@ class DailyReport:
     track_record: TrackRecord | None = None
     candidates: list[Candidate] = field(default_factory=list)
     watchlist: list[WatchRow] = field(default_factory=list)
+    # symbol → Earnings, for every name the report priced. Kept on the report
+    # rather than only on the candidates so the watchlist section can use it.
+    earnings: dict = field(default_factory=dict)
     marks: dict[str, float] = field(default_factory=dict)
 
     account_value: float = 0.0
@@ -1107,6 +1112,76 @@ class DailyAdvisor:
                 f"bar today ({', '.join(weak)}) — shown anyway, which is the point")
         return rows
 
+    def _with_earnings(self, cand: Candidate, catalyst: str, ref: _date) -> str:
+        """Append the earnings facts that change how this idea should be read.
+
+        Two of them, and only these two, because only these two are facts
+        rather than opinions about a number:
+
+        * a report inside the holding horizon — the stop cannot cover the gap;
+        * the last surprise — a name topping a momentum screen days after a
+          large miss is momentum running against the fundamentals.
+
+        Silence when the calendar is unknown. "No earnings due" and "we could
+        not find out" must not read the same, and the missing names are listed
+        separately in the report's notes.
+        """
+        e = cand.earnings
+        if e is None or not (e.next_date or e.last_date):
+            return catalyst
+        bits = []
+        days = e.days_to_next(ref)
+        if days == days and 0 <= days <= self.cfg.horizon_days:
+            bits.append(f"reports in {days:.0f}d, inside the {self.cfg.horizon_days}d "
+                        f"horizon — the stop does not cover a gap")
+        beat = e.beat()
+        since = e.days_since_last(ref)
+        if beat is not None and since == since and since <= 45:
+            word = "beat" if beat else "missed"
+            bits.append(f"{word} by {abs(e.surprise_pct):.0f}% {since:.0f}d ago")
+        return f"{catalyst}　| {'; '.join(bits)}" if bits else catalyst
+
+    def attach_earnings(self, cands: list[Candidate], report: DailyReport,
+                        data_day: _date, order_day: _date) -> None:
+        """Earnings facts for the candidates and the watchlist.
+
+        A two-ATR stop is not a defence against an earnings gap — the gap opens
+        through it — so a report that sizes a position without knowing the date
+        is sizing against a risk it cannot see. And a name topping a momentum
+        screen right after a large miss is momentum running against the
+        fundamentals, which is worth saying out loud rather than leaving for
+        the reader to discover next quarter.
+
+        Never fatal: the buy list does not depend on this, and a calendar that
+        cannot be read is reported as a gap rather than assumed benign.
+        """
+        symbols = [c.symbol for c in cands] + [
+            w.symbol for w in report.watchlist if not w.is_base]
+        symbols = list(dict.fromkeys(s for s in symbols if s))
+        if not symbols:
+            return
+        try:
+            book = EarningsBook().get(symbols, data_day, log=logger.debug)
+        except Exception as exc:
+            report.warnings.append(
+                f"earnings dates could not be read ({type(exc).__name__}: {exc}); "
+                f"nothing below accounts for a report landing inside its holding period")
+            return
+
+        report.earnings = book
+        for c in cands:
+            c.earnings = book.get(c.symbol)
+
+        # Fetched as of the data session — a report published after the data
+        # cut must not be visible as "the last one". Counted from the order
+        # session, which is when the holding period actually starts.
+        stats = summarise_earnings(book, order_day, self.cfg.horizon_days)
+        if stats["missing"]:
+            report.notes.append(
+                f"no earnings calendar for {', '.join(stats['missing'])} — "
+                f"those names are sized as if no report were due, which is an "
+                f"assumption, not a finding")
+
     def rank(self, cands: list[Candidate], tilt: dict[str, float]) -> list[Candidate]:
         """Apply the policy tilt to the screen's order, bounded by MAX_TILT_SHIFT.
 
@@ -1278,6 +1353,10 @@ class DailyAdvisor:
 
         lim = limit_price(entry, self.cfg.limit_buffer)
         catalyst, cat_source, cat_url, cat_at = self._catalyst(cand)
+        # ``issued`` — the session the order is for — not the data session:
+        # the countdown a reader acts on starts when they own the position.
+        # (Fetching still uses the data session; see attach_earnings.)
+        catalyst = self._with_earnings(cand, catalyst, issued)
 
         rec = Recommendation(
             id=make_id(cand.symbol, issued),
@@ -1510,6 +1589,7 @@ class DailyAdvisor:
         cands = self.rank(self.candidates(data_day, report), report.sector_tilt)
         report.candidates = cands
         report.watchlist = self.watch(data_date, report)
+        self.attach_earnings(cands, report, data_day, order_day)
 
         # One poll for both halves of the report. Open ideas come first in the
         # list: if the cap bites, it must bite on a candidate whose news is
@@ -1556,6 +1636,17 @@ class DailyAdvisor:
         # --- then buys ---
         report.buys = self.generate_buys(cands, account, news, macro, events,
                                          budget, order_day, data_date, report)
+
+        inside = []
+        for rec in report.buys:
+            e = report.earnings.get(rec.symbol) if report.earnings else None
+            if e is not None and e.reports_within(self.cfg.horizon_days, order_day):
+                inside.append(f"{rec.symbol}({e.days_to_next(order_day):.0f}d)")
+        if inside:
+            report.warnings.append(
+                f"earnings land inside the holding horizon for {', '.join(inside)}: "
+                f"a two-ATR stop does not survive a gap, so the risk shown for "
+                f"those is a floor, not a bound")
 
         for rec in report.buys:
             report.marks[rec.symbol] = rec.reference_price
