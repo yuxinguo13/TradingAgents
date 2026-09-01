@@ -67,7 +67,7 @@ from dataclasses import dataclass, field
 from datetime import date as _date, datetime, timedelta
 from pathlib import Path
 
-from . import clock
+from . import charting, clock, deepdive, fundamentals as fund, horizons, research
 from .brain import Panel, Snapshot, Trigger, build_evidence, snapshot, triggers
 from .earnings import Earnings, EarningsBook, summarise as summarise_earnings
 from .broker import BUY as VENUE_BUY, Account
@@ -87,6 +87,7 @@ from .recommendations import (
 )
 from .secretary import RiskLimits, Secretary, TradeLedger
 from .sizing import DEFAULT_RISK_PCT, r_multiple, size_position, stop_from_atr
+from .zhnames import DERIVED_MARK, ZhNames
 
 logger = logging.getLogger(__name__)
 
@@ -446,6 +447,22 @@ class AdvisorConfig:
     min_price: float = RiskLimits().min_price
 
     max_new_per_sector: int = 2       # one policy theme must not own the list
+
+    # --- horizons ---------------------------------------------------------
+    # The swing book's slot count is the churn control: new ideas only fill
+    # empty slots, so a full book proposes nothing and the page stops looking
+    # like a fresh portfolio every morning. See :mod:`~.horizons`.
+    swing_slots: int = 6
+    core_seed: bool = True            # write a first core.json when none exists
+    daytrade_top: int = 5             # names published as intraday levels, at most
+
+    # --- the pages --------------------------------------------------------
+    write_pages: bool = True          # one deep-dive markdown page per symbol
+    with_fundamentals: bool = True    # pull statements for the pages
+    # Statements are one network call per symbol on a cold cache. Buys, sells,
+    # open ideas and the core are always covered; the watchlist fills whatever
+    # is left, and the report says so when it ran out.
+    max_fundamentals: int = 45
     news_window_hours: float = NEWS_WINDOW_HOURS
     policy_window_hours: float = POLICY_WINDOW_HOURS
     max_news_symbols: int = 25        # RSS calls are the slow part of a run
@@ -768,6 +785,21 @@ class DailyReport:
     earnings: dict = field(default_factory=dict)
     marks: dict[str, float] = field(default_factory=dict)
 
+    # --- the three horizons -------------------------------------------
+    # Carried separately from ``buys`` because they answer different
+    # questions on different clocks; see :mod:`~.horizons`.
+    open_ideas: list = field(default_factory=list)     # horizons.OpenIdea
+    core: list = field(default_factory=list)           # horizons.CoreLine
+    core_seeded: bool = False
+    core_review_day: bool = False
+    daytrade: list = field(default_factory=list)       # horizons.DayTradeIdea
+    swing_slots: int = horizons.DEFAULT_SWING_SLOTS
+    # symbol -> deepdive.SymbolAnalysis, for every name the page links to.
+    # Each analysis carries its own ``page`` path once write_pages has run;
+    # until then page_link() emits nothing, so the daily page never links to a
+    # file nobody wrote.
+    analysis: dict = field(default_factory=dict)
+
     account_value: float = 0.0
     cash: float = 0.0
     buy_budget: float = 0.0
@@ -814,7 +846,8 @@ class DailyAdvisor:
     def __init__(self, cfg: AdvisorConfig | None = None, *, book: RecommendationBook | None = None,
                  llm=None, broker=None, secretary: Secretary | None = None,
                  news: NewsMonitor | None = None, policy_monitor: PolicyMonitor | None = None,
-                 exit_rules: ExitRules | None = None):
+                 exit_rules: ExitRules | None = None, fundamentals=None,
+                 bars_loader=None):
         self.cfg = cfg or AdvisorConfig.from_env()
         self.book = book if book is not None else RecommendationBook()
         self.llm = llm
@@ -836,6 +869,16 @@ class DailyAdvisor:
             max_age_hours=int(self.cfg.policy_window_hours))
         self.exit_rules = exit_rules or ExitRules()
         self._snaps: dict[str, Snapshot] = {}
+        self._bars: dict[str, deepdive.Bars] = {}
+        # Both are seams for the same reason the venue and the feeds are:
+        # statements and OHLCV are network reads, and a report generator that
+        # can only be exercised online is one nobody tests.
+        self._fundamentals = fundamentals
+        self._bars_loader = bars_loader
+        # Kept so the core section can read position weights without a second
+        # venue call; set by run() and never used for a decision.
+        self._account = None
+        self._news_items: list = []
 
     # --- data -------------------------------------------------------------
 
@@ -1436,8 +1479,21 @@ class DailyAdvisor:
                       news: list[NewsItem], macro: list[NewsItem],
                       events: list[PolicyEvent], budget: float,
                       issued: _date, data_date: str,
-                      report: DailyReport) -> list[Recommendation]:
-        """The shortlist: filter, deliberate, size, rank by R, then fit the budget."""
+                      report: DailyReport, limit: int | None = None) -> list[Recommendation]:
+        """The shortlist: filter, deliberate, size, rank by R, then fit the budget.
+
+        ``limit`` is the number of *free swing slots*, not a display cap. A book
+        already carrying its full complement proposes nothing, and that is the
+        intended behaviour: the alternative is a position count that grows every
+        day the screen has an opinion, which is how a considered list becomes a
+        feed.
+        """
+        cap = self.cfg.top if limit is None else max(0, min(self.cfg.top, limit))
+        if cap <= 0:
+            report.notes.append(
+                f"没有新增波段建议：{self.cfg.swing_slots} 个仓位槽已经占满。"
+                f"这不是「今天没机会」，是「先把手上的处理完」")
+            return []
         eligible = self._eligible(cands, account, data_date, report)
         if not eligible:
             return []
@@ -1470,10 +1526,11 @@ class DailyAdvisor:
         remaining = budget
         out: list[Recommendation] = []
         for rec in proposals:
-            if len(out) >= self.cfg.top:
+            if len(out) >= cap:
                 report.notes.append(
                     f"{rec.symbol} ({rec.planned_r():.2f}R) cut: the list is capped "
-                    f"at {self.cfg.top}")
+                    f"at {cap}" + ("" if limit is None or cap == self.cfg.top
+                                   else f" (free swing slots, of {self.cfg.swing_slots})"))
                 continue
             sector = rec.sector or "Unknown"
             if by_sector.get(sector, 0) >= self.cfg.max_new_per_sector:
@@ -1531,6 +1588,227 @@ class DailyAdvisor:
                             f"this report has no read on the broad tape")
         return "\n".join(lines)
 
+    # --- horizons and the pages -------------------------------------------
+
+    def bars(self, symbol: str, when: str) -> deepdive.Bars:
+        """Memoised daily history. Same disk cache :meth:`snapshot` reads."""
+        key = (symbol or "").upper()
+        if key not in self._bars:
+            self._bars[key] = deepdive.load_bars(key, when, loader=self._bars_loader)
+        return self._bars[key]
+
+    def facts(self, symbols: list[str], when: str) -> dict:
+        """``{symbol: facts}`` for the horizon modules, computed once per name."""
+        out: dict[str, dict] = {}
+        for sym in symbols:
+            key = (sym or "").upper()
+            if not key or key in out:
+                continue
+            try:
+                got = self.bars(key, when).facts()
+            except Exception as exc:
+                logger.debug("facts for %s failed: %s", key, exc)
+                got = {}
+            if got:
+                out[key] = got
+        return out
+
+    def review_open(self, data_day: _date, report: DailyReport) -> list:
+        """The swing positions still open after today's exits were applied.
+
+        This section is the answer to "why is it a different list every day":
+        it was not — the report simply never printed what it was already
+        holding. Nothing here decides anything; the exit engine owns that.
+        """
+        try:
+            closed_today = {r.id for r in report.closed}
+            live = [r for r in self.book.open_recommendations()
+                    if getattr(r, "id", None) not in closed_today]
+            marks = dict(report.marks)
+            for rec in live:
+                if rec.symbol not in marks:
+                    snap = self.snapshot(rec.symbol, data_day.isoformat())
+                    if snap.ok and snap.price > 0:
+                        marks[rec.symbol] = snap.price
+            return horizons.open_swing(live, marks, data_day)
+        except Exception as exc:
+            report.warnings.append(
+                f"the open-position section could not be built "
+                f"({type(exc).__name__}: {exc}); the swing book is still in "
+                f"recommendations.json")
+            return []
+
+    def core_section(self, report: DailyReport, data_date: str,
+                     order_day: _date) -> list:
+        """The long-term book: read every day, acted on monthly.
+
+        Seeds a first ``core.json`` when the reader has none, because an empty
+        section teaches nothing and a proposal can be edited. The seeding is
+        announced in the notes and the file is never touched again.
+        """
+        try:
+            holdings = horizons.load_core()
+            report.core_review_day = horizons.is_review_day(order_day)
+            if not holdings and self.cfg.core_seed:
+                pool = list(report.watchlist) + list(report.candidates)[:40]
+                syms = [getattr(x, "symbol", "") for x in pool
+                        if not getattr(x, "is_base", False)]
+                seeded = horizons.propose_core(syms, self.facts(syms, data_date))
+                if seeded and not self.cfg.dry_run:
+                    path = horizons.save_core(seeded)
+                    report.core_seeded = True
+                    report.notes.append(
+                        f"核心长仓名单是空的，已按长期规则（站上 200 日线、近一年为正、"
+                        f"成交额充足）初选 {len(seeded)} 只写入 {path}——"
+                        f"这是一份草稿，请按你自己的判断改写它，之后本报告只跟踪不重选")
+                holdings = seeded
+            if not holdings:
+                return []
+            facts = self.facts([h.symbol for h in holdings], data_date)
+            weights = {}
+            try:
+                for h in getattr(self._account, "holdings", []) or []:
+                    value = _num(getattr(h, "market_value", None))
+                    if not math.isnan(value) and report.account_value > 0:
+                        weights[h.symbol] = value / report.account_value
+            except Exception:
+                weights = {}
+            return horizons.review_core(holdings, facts, held_weights=weights,
+                                        review_day=report.core_review_day)
+        except Exception as exc:
+            report.warnings.append(
+                f"the core section could not be built ({type(exc).__name__}: {exc})")
+            return []
+
+    def daytrade_section(self, report: DailyReport, data_date: str) -> list:
+        """Levels for the next session, off the watchlist and today's screen.
+
+        Deliberately drawn from names already on the page rather than from a
+        fresh scan: an intraday list assembled from a different universe than
+        the rest of the report is a second desk, not a section of this one.
+        """
+        try:
+            pool = [w.symbol for w in report.watchlist if not w.is_base]
+            pool += [c.symbol for c in report.candidates[:30]]
+            return horizons.daytrade_candidates(
+                self.facts(pool, data_date), count=self.cfg.daytrade_top)
+        except Exception as exc:
+            report.warnings.append(
+                f"the intraday section could not be built "
+                f"({type(exc).__name__}: {exc})")
+            return []
+
+    def _page_symbols(self, report: DailyReport) -> list[str]:
+        """Every name the daily page will link to, in priority order.
+
+        Priority is the order the fundamentals budget is spent in: the names
+        being acted on first, the ones merely watched last.
+        """
+        order: list[str] = []
+        for group in ([r.symbol for r in report.buys],
+                      [s.symbol for s in report.sells],
+                      [o.symbol for o in report.open_ideas],
+                      [c.holding.symbol for c in report.core],
+                      [d.symbol for d in report.daytrade],
+                      [w.symbol for w in report.watchlist]):
+            for sym in group:
+                sym = (sym or "").upper()
+                if sym and sym not in order:
+                    order.append(sym)
+        return order
+
+    def _roles(self, symbol: str, report: DailyReport) -> list[str]:
+        roles = []
+        if any(r.symbol == symbol for r in report.buys):
+            roles.append("buy")
+        if any(s.symbol == symbol for s in report.sells):
+            roles.append("sell")
+        if any(o.symbol == symbol for o in report.open_ideas):
+            roles.append("open")
+        if any(c.holding.symbol == symbol for c in report.core):
+            roles.append("core")
+        if any(d.symbol == symbol for d in report.daytrade):
+            roles.append("daytrade")
+        if any(w.symbol == symbol for w in report.watchlist):
+            roles.append("watch")
+        return roles
+
+    def build_analyses(self, report: DailyReport, data_date: str) -> dict:
+        """Assemble one :class:`~.deepdive.SymbolAnalysis` per linked name.
+
+        Runs last and swallows everything: a page that fails to build must cost
+        that page and nothing else. The daily report is already complete by the
+        time this is called.
+        """
+        wanted = self._page_symbols(report)
+        if not wanted:
+            return {}
+        names = ZhNames()
+        by_symbol: dict[str, list] = {}
+        for item in getattr(self, "_news_items", []) or []:
+            if getattr(item, "ticker", ""):
+                by_symbol.setdefault(item.ticker, []).append(item)
+
+        stats = {}
+        if self.cfg.with_fundamentals:
+            budget = wanted[:max(0, self.cfg.max_fundamentals)]
+            if len(wanted) > len(budget):
+                report.notes.append(
+                    f"财报数据只拉取了 {len(budget)}/{len(wanted)} 只"
+                    f"（max_fundamentals）；其余个股页面没有财报一节")
+            try:
+                book = self._fundamentals
+                if book is None:
+                    book = self._fundamentals = fund.FundamentalsBook()
+                stats = book.get(budget, log=logger.debug)
+            except Exception as exc:
+                report.warnings.append(
+                    f"财报数据源不可用（{type(exc).__name__}: {exc}）；"
+                    f"个股页面只有价格与消息")
+
+        watch_by = {w.symbol: w for w in report.watchlist}
+        cand_by = {c.symbol: c for c in report.candidates}
+        core_by = {c.holding.symbol: c for c in report.core}
+        out: dict[str, deepdive.SymbolAnalysis] = {}
+        for sym in wanted:
+            try:
+                cand = cand_by.get(sym)
+                watch = watch_by.get(sym)
+                english = (getattr(cand, "name", "") or getattr(watch, "name", "")
+                           or getattr(stats.get(sym), "name", "") or "")
+                bars = self.bars(sym, data_date)
+                snap = self.snapshot(sym, data_date) if bars.ok else None
+                excess = dict(getattr(watch, "excess_1m", {}) or {})
+                a = deepdive.SymbolAnalysis(
+                    symbol=sym,
+                    zh=names.get(sym, english),
+                    roles=self._roles(sym, report),
+                    sector=(getattr(cand, "sector", "") or
+                            getattr(stats.get(sym), "sector", "") or ""),
+                    tag=getattr(watch, "tag", "") or "",
+                    bars=bars,
+                    snap=snap,
+                    fundamentals=stats.get(sym),
+                    earnings=(report.earnings or {}).get(sym),
+                    news=by_symbol.get(sym, []),
+                    rec=next((r for r in report.buys if r.symbol == sym), None),
+                    open_idea=next((o for o in report.open_ideas if o.symbol == sym), None),
+                    exit_signal=next((s for s in report.sells if s.symbol == sym), None),
+                    watch=watch,
+                    core=core_by.get(sym),
+                    daytrade=next((d for d in report.daytrade if d.symbol == sym), None),
+                    tilt=_num(getattr(cand, "tilt", 0.0), 0.0),
+                    screen_rank=_num(getattr(watch, "screen_rank", float("nan"))),
+                    excess=excess,
+                )
+                if bars.ok:
+                    a.trend = deepdive.build_trend(bars, snap, excess,
+                                                   self.cfg.atr_stop_mult)
+                out[sym] = a
+            except Exception as exc:
+                logger.warning("could not analyse %s: %s", sym, exc)
+        return out
+
     def run(self, when: str | _date | None = None,
             now: datetime | None = None) -> DailyReport:
         """Produce one day's report. Never raises.
@@ -1561,7 +1839,7 @@ class DailyAdvisor:
             date=order_day.isoformat(), data_date=data_date,
             generated_at=datetime.now().isoformat(),
             risk_pct=self.cfg.risk_pct, dry_run=self.cfg.dry_run,
-            panel_ran=self.panel is not None,
+            panel_ran=self.panel is not None, swing_slots=self.cfg.swing_slots,
         )
         if self.panel is None:
             report.warnings.append(
@@ -1569,6 +1847,7 @@ class DailyAdvisor:
                 "only screened and sized")
 
         account = self.account(report)
+        self._account = account
         report.account_value = account.account_value
         report.cash = account.cash
 
@@ -1605,6 +1884,7 @@ class DailyAdvisor:
                 f"news was polled for {len(polled)} of {len(wanted)} symbols "
                 f"(max_news_symbols); the rest were judged on price alone")
         news = self.poll_news(polled, report)
+        self._news_items = news
         macro = [n for n in news if not n.ticker]
         by_symbol: dict[str, list[NewsItem]] = {}
         for item in news:
@@ -1616,6 +1896,9 @@ class DailyAdvisor:
         # --- sells first ---
         report.sells = self.review_exits(by_symbol, data_day, report)
         report.closed = self.apply_exits(report.sells, data_day, report)
+        # Before the buys, because the number still open is what decides how
+        # many new ones the book has room for.
+        report.open_ideas = self.review_open(data_day, report)
 
         # Only a closing signal frees capital. A TRIM does too, but partially,
         # and this book stores one exit per idea and so cannot tell whether a
@@ -1634,8 +1917,14 @@ class DailyAdvisor:
                 f"which only exist if you take them")
 
         # --- then buys ---
+        slots = horizons.free_slots(len(report.open_ideas), self.cfg.swing_slots)
+        if report.open_ideas:
+            report.notes.append(
+                f"波段仓位槽：{len(report.open_ideas)}/{self.cfg.swing_slots} 已占用，"
+                f"今天最多再开 {slots} 个")
         report.buys = self.generate_buys(cands, account, news, macro, events,
-                                         budget, order_day, data_date, report)
+                                         budget, order_day, data_date, report,
+                                         limit=slots)
 
         inside = []
         for rec in report.buys:
@@ -1664,6 +1953,17 @@ class DailyAdvisor:
             report.warnings.append(
                 f"the market context could not be read ({type(exc).__name__}: "
                 f"{exc}); this report has no read on the broad tape")
+
+        # The long and the intraday books, last: both read the sections above,
+        # and neither may change a single number in them.
+        report.core = self.core_section(report, data_date, order_day)
+        report.daytrade = self.daytrade_section(report, data_date)
+        try:
+            report.analysis = self.build_analyses(report, data_date)
+        except Exception as exc:
+            report.warnings.append(
+                f"个股详情页无法生成（{type(exc).__name__}: {exc}）；"
+                f"当日报告本身不受影响")
         return report
 
 
@@ -1684,6 +1984,167 @@ def _sess(report: "DailyReport") -> str:
             f"   →   orders for the {report.date} open")
 
 
+# --- shared by both renderers ----------------------------------------------
+
+# The swing section's own horizon, printed so the reader knows which clock a
+# row is on. See :mod:`~.horizons`.
+SWING_NOTE = (
+    "这一节的持有期是 1–4 周，不是当天。仓位槽满了就不再新增——"
+    "报告每天看起来「换了一批股票」，通常是因为它只印了当天新发的建议，"
+    "而没有印它一直拿着的那些。上面那一节就是它一直拿着的。"
+)
+
+CORE_NOTE = (
+    "核心长仓不参与每日排名，也不因为今天跌了就动。它只在两种情况下改变："
+    "每月复核时权重偏离超过 ±25%，或者触发成文的破位规则"
+    "（收在 200 日线下方超过 4%，或近一年跌超 15%）。"
+    "规则触发只意味着「该重新想一遍」，不等于卖出指令。"
+)
+
+NAME_NOTE = (
+    f"公司名带 {DERIVED_MARK} 的，是按英文名后缀机械转写的（例如 Therapeutics→制药），"
+    f"不是通用译名；想改成你习惯的叫法，编辑 ~/.tradingagents/company_names_zh.json。"
+)
+
+
+def _names(report: "DailyReport") -> ZhNames:
+    """One resolver per render, reused across every section of the page."""
+    cached = getattr(report, "_zh_resolver", None)
+    if cached is None:
+        cached = ZhNames()
+        report._zh_resolver = cached          # noqa: SLF001 - render-local cache
+    return cached
+
+
+def zh_label(report: "DailyReport", symbol: str) -> str:
+    """The Chinese name for a symbol, from the analysis if it was built."""
+    a = (report.analysis or {}).get((symbol or "").upper())
+    if a is not None and a.zh is not None:
+        return a.zh.label()
+    return _names(report).label(symbol)
+
+
+def page_link(report: "DailyReport", symbol: str) -> str:
+    """Relative path to the symbol's page, or "" when no page was written.
+
+    Read off the analysis rather than rebuilt from the date, because
+    :func:`write_pages` sets it only for the symbols whose page actually
+    rendered. A link to a file that does not exist is worse than no link: it
+    reads as a promise the report keeps everywhere else.
+    """
+    a = (report.analysis or {}).get((symbol or "").upper())
+    return getattr(a, "page", "") if a is not None else ""
+
+
+def _linked(report: "DailyReport", symbol: str, text: str = "") -> str:
+    """``text`` (default: the Chinese name) as a link to the symbol's page."""
+    label = (text or zh_label(report, symbol) or symbol).replace("|", "\\|")
+    href = page_link(report, symbol)
+    return f"[{label}]({href})" if href else label
+
+
+def _spark(report: "DailyReport", symbol: str, width: int = 14) -> str:
+    a = (report.analysis or {}).get((symbol or "").upper())
+    if a is None or a.bars is None or not a.bars.closes:
+        return ""
+    return charting.sparkline(a.bars.closes[-63:], width)
+
+
+def _breadth(rows: list) -> list[str]:
+    """What the watchlist as a whole is doing — the read a row-by-row table hides."""
+    watched = [r for r in rows if not r.is_base]
+    if not watched:
+        return []
+    rets = sorted((r.ret_1m for r in watched if not math.isnan(_num(r.ret_1m))))
+    above200 = sum(1 for r in watched if r.above_200)
+    both = sum(1 for r in watched if r.above_50 and r.above_200)
+    out = [f"跟踪的 {len(watched)} 只里，{above200} 只在 200 日线上方、"
+           f"{both} 只同时站上 50 与 200 日线。"]
+    if rets:
+        mid = rets[len(rets) // 2]
+        out.append(f"近一月收益的中位数是 {mid * 100:+.1f}%，"
+                   f"区间 {rets[0] * 100:+.1f}% 到 {rets[-1] * 100:+.1f}%——"
+                   f"{'离散度很大，说明这是选股行情而不是板块行情' if rets[-1] - rets[0] > 0.4 else '离散度不大，板块内部走势比较一致'}。")
+    by_1m = sorted((r for r in watched if not math.isnan(_num(r.ret_1m))),
+                   key=lambda r: -r.ret_1m)
+    if len(by_1m) >= 3:
+        lead = "、".join(f"{r.symbol} {r.ret_1m * 100:+.0f}%" for r in by_1m[:3])
+        lag = "、".join(f"{r.symbol} {r.ret_1m * 100:+.0f}%" for r in by_1m[-3:])
+        out.append(f"领涨：{lead}；落后：{lag}。")
+    tags = {}
+    for r in watched:
+        if r.tag and not math.isnan(_num(r.ret_1m)):
+            tags.setdefault(r.tag, []).append(r.ret_1m)
+    if len(tags) > 1:
+        parts = [f"{tag} 组均值 {sum(v) / len(v) * 100:+.1f}%（{len(v)} 只）"
+                 for tag, v in sorted(tags.items(),
+                                      key=lambda kv: -sum(kv[1]) / len(kv[1]))]
+        out.append("按标签分组：" + "、".join(parts) + "。")
+    return out
+
+
+def _summary(report: "DailyReport") -> list[str]:
+    """The paragraph that says what today's page actually is.
+
+    Written because the previous page opened with a policy dump and a table:
+    a reader had to assemble the answer to "what changed and what do I do"
+    from six sections. This states it once, in order of what needs a decision.
+    """
+    out: list[str] = []
+    ctx = (report.market_context or "").strip().splitlines()
+    if ctx:
+        out.append(f"**大盘**：{ctx[0].strip()}")
+
+    urgent = [s for s in report.sells if s.urgency >= 3]
+    breached = [c for c in report.core if getattr(c, "breached", False)]
+    near_stop = [o for o in report.open_ideas if o.status == "贴近止损"]
+    todo = []
+    if urgent:
+        todo.append(f"{len(urgent)} 笔紧急离场（{'、'.join(s.symbol for s in urgent)}）")
+    if report.sells and not urgent:
+        todo.append(f"{len(report.sells)} 笔常规离场")
+    if report.buys:
+        todo.append(f"{len(report.buys)} 笔新增波段建议")
+    if near_stop:
+        todo.append(f"{len(near_stop)} 个在场仓位贴近止损")
+    if breached:
+        todo.append(f"{len(breached)} 只核心长仓触发破位规则"
+                    f"（{'、'.join(c.holding.symbol for c in breached)}）")
+    out.append("**今天需要动的**：" + ("；".join(todo) + "。" if todo
+               else "没有。持有的继续持有，这是最常见的一天。"))
+
+    held = len(report.open_ideas)
+    out.append(f"**书上的仓位**：核心长仓 {len(report.core)} 只（月度复核，"
+               f"{'本月是复核月' if report.core_review_day else '本月不复核'}）、"
+               f"在场波段 {held}/{report.swing_slots} 个仓位槽、"
+               f"今日新增 {len(report.buys)} 个。核心与波段是两本账，不要互相挪用仓位。")
+
+    if report.buys:
+        risk = report.total_risk
+        share = (f"，占净值 {risk / report.account_value * 100:.2f}%"
+                 if report.account_value > 0 else "")
+        rs = [r.planned_r() for r in report.buys if not math.isnan(r.planned_r())]
+        rline = (f"，R 从 {min(rs):.2f} 到 {max(rs):.2f}" if rs else "")
+        out.append(f"**新增建议的风险**：全部止损同时被打掉会亏约 ${risk:,.0f}{share}"
+                   f"{rline}。成本合计 ${report.total_cost:,.0f}。")
+
+    tilt = {k: v for k, v in (report.sector_tilt or {}).items() if abs(v) > 0.2}
+    if tilt:
+        best = sorted(tilt.items(), key=lambda kv: -kv[1])
+        up = "、".join(f"{k} {v:+.2f}" for k, v in best[:3] if v > 0)
+        down = "、".join(f"{k} {v:+.2f}" for k, v in best[-3:] if v < 0)
+        out.append(f"**政策倾斜**：顺风 {up or '无'}；逆风 {down or '无'}。"
+                   f"它只挪动排名，不会凭空造出或否决一个候选。")
+
+    if report.watchlist:
+        out += ["**关注列表的结构**：" + " ".join(_breadth(report.watchlist))]
+
+    out.append("**这份报告不知道的事**：你的税、你的其它持仓、你的现金需求，"
+               "以及任何没有出现在价格、财报和过去 24 小时新闻里的东西。"
+               "每一节下面都留了原始数据和外部链接，是给你自己复核用的。")
+    return out
+
+
 def format_report(report: "DailyReport") -> str:
     """The morning read. Terminal-friendly, aligned, no colour."""
     W = 104
@@ -1701,6 +2162,12 @@ def format_report(report: "DailyReport") -> str:
     if report.market_context:
         out += ["", report.market_context.strip()]
 
+    summary = _summary(report)
+    if summary:
+        out += ["", "今日综述 / SUMMARY", "-" * W]
+        for line in summary:
+            out += _wrapped(line.replace("**", ""), W - 4)
+
     if report.policy_summary:
         out += ["", "POLICY BACKDROP", "-" * W, report.policy_summary.strip()]
 
@@ -1709,8 +2176,36 @@ def format_report(report: "DailyReport") -> str:
         out.append("  sector tilt: " + "  ".join(
             f"{k} {v:+.2f}" for k, v in sorted(tilt.items(), key=lambda kv: -abs(kv[1]))))
 
-    # Sells first: freed capital funds the buys, and a book nobody prunes only
-    # ever grows.
+    # Core first: it is the book that should not change, and printing it above
+    # the day's activity is the whole point of separating the horizons.
+    if report.core:
+        out += ["", f"CORE — 核心长仓 ({len(report.core)}, "
+                    f"{'本月复核' if report.core_review_day else '月度复核，本月不动'})",
+                "-" * W,
+                f"  {'SYMBOL':<8}{'PRICE':>10}{'vs200':>8}{'6M':>8}{'12M':>8}"
+                f"  {'TREND':<16}{'STATUS':<10}ACTION / 公司"]
+        for c in sorted(report.core, key=lambda x: (not x.breached, x.holding.symbol)):
+            flag = "!" if c.breached else " "
+            out.append(f" {flag}{c.holding.symbol:<8}{c.price:>10,.2f}"
+                       f"{_pctn(c.ext_200):>8}{_pctn(c.ret_6m):>8}{_pctn(c.ret_12m):>8}"
+                       f"  {(c.spark or '')[:14]:<16}{c.status:<10}"
+                       f"{c.action}  {zh_label(report, c.holding.symbol)}")
+        out += _wrapped(CORE_NOTE, W - 4)
+
+    if report.open_ideas:
+        out += ["", f"OPEN SWING — 在场的波段建议 ({len(report.open_ideas)})", "-" * W,
+                f"  {'SYMBOL':<8}{'DAYS':>5}{'PRICE':>10}{'STOP':>10}{'TARGET':>10}"
+                f"{'R':>7}{'→STOP':>8}{'→TGT':>8}  STATUS / 公司"]
+        for o in report.open_ideas:
+            out.append(f"  {o.symbol:<8}{o.days_held:>5}{o.price:>10,.2f}"
+                       f"{_num(getattr(o.rec, 'stop_price', None)):>10,.2f}"
+                       f"{_num(getattr(o.rec, 'target_price', None)):>10,.2f}"
+                       f"{o.r_now:>+7.2f}{_pctn(o.to_stop):>8}{_pctn(o.to_target):>8}"
+                       f"  {o.status}  {zh_label(report, o.symbol)}")
+        out += _wrapped(SWING_NOTE, W - 4)
+
+    # Sells before buys: freed capital funds the buys, and a book nobody prunes
+    # only ever grows.
     out += ["", f"SELL / EXIT  ({len(report.sells)})", "-" * W]
     if report.sells:
         out.append(f"  {'SYMBOL':<8}{'ACTION':<7}{'SHARES':>8}{'PRICE':>11}"
@@ -1745,8 +2240,23 @@ def format_report(report: "DailyReport") -> str:
         out.append(f"  {'TOTAL':<8}{'':>7}{'':>10}{'':>10}{'':>10}{'':>10}{'':>6}"
                    f"{report.total_cost:>11,.2f}{report.total_risk:>9,.2f}")
         out += _wrapped(REFERENCE_NOTE, W - 4)
+        # The narrative, after the table on purpose: the table is what a reader
+        # acts on, the paragraphs are what they argue with.
+        for r in report.buys:
+            out += [""] + _buy_terminal(report, r, W)
     else:
         out.append("  (no candidate cleared the bar — this is a normal outcome)")
+
+    if report.daytrade:
+        out += ["", f"DAY TRADE — 日内盯盘 ({len(report.daytrade)})", "-" * W,
+                f"  {'SYMBOL':<8}{'CLOSE':>10}{'PDH':>10}{'PDL':>10}{'TRIGGER':>10}"
+                f"{'STOP':>10}{'TARGET':>10}{'ATR%':>7}{'RVOL':>6}  公司"]
+        for d in report.daytrade:
+            out.append(f"  {d.symbol:<8}{d.price:>10,.2f}{d.prev_high:>10,.2f}"
+                       f"{d.prev_low:>10,.2f}{d.long_trigger:>10,.2f}"
+                       f"{d.long_stop:>10,.2f}{d.long_target:>10,.2f}"
+                       f"{_pctn(d.atr_pct):>7}{d.rvol:>6.1f}  {zh_label(report, d.symbol)}")
+        out += _wrapped(horizons.DAYTRADE_CAVEAT, W - 4)
 
     if report.watchlist:
         rows = report.watchlist
@@ -1754,10 +2264,13 @@ def format_report(report: "DailyReport") -> str:
         weak = sum(1 for r in rows if not r.is_base and not r.passes_filter)
         watched = sum(1 for r in rows if not r.is_base)
         out += ["", f"WATCHLIST  ({watched}, {weak} below the screen's bar)", "-" * W]
+        for line in _breadth(rows):
+            out += _wrapped(line, W - 4)
+        out.append("")
         head = (f"  {'SYMBOL':<8}{'TAG':<6}{'PRICE':>10}{'1M%':>7}{'3M%':>7}")
         for b in bases:
             head += f"{'vs ' + b:>9}"
-        head += f"{'OFF HIGH':>10}{'vs200':>7}  STATUS"
+        head += f"{'OFF HIGH':>10}{'vs200':>7}  {'TREND':<16}STATUS"
         out.append(head)
         for i, r in enumerate(rows):
             if i and rows[i - 1].is_base and not r.is_base:
@@ -1774,7 +2287,8 @@ def format_report(report: "DailyReport") -> str:
                     f"{_pctn(r.ret_1m):>7}{_pctn(r.ret_3m):>7}")
             for b in bases:
                 line += f"{_pctn(r.excess_1m.get(b, float('nan'))):>9}"
-            line += (f"{_pctn(r.off_high):>10}{_pctn(r.ext_200):>7}  {status}")
+            line += (f"{_pctn(r.off_high):>10}{_pctn(r.ext_200):>7}  "
+                     f"{_spark(report, r.symbol, 14):<16}{status}")
             out.append(line)
         out += _wrapped(WATCHLIST_NOTE, W - 4)
 
@@ -1810,21 +2324,135 @@ def format_report(report: "DailyReport") -> str:
     return "\n".join(out)
 
 
+def _buy_terminal(report: "DailyReport", rec, width: int) -> list[str]:
+    """One buy's reasoning, for the terminal. The markdown gets a richer version."""
+    a = (report.analysis or {}).get(rec.symbol)
+    head = f"  {rec.symbol} · {zh_label(report, rec.symbol)}"
+    if a is not None and a.spark:
+        head += f"   {a.spark}"
+    out = [head]
+    if a is not None and a.trend is not None and not a.trend.error:
+        out += _wrapped(f"图形：{a.trend.ma_stack}｜{a.trend.structure}｜"
+                        f"{a.trend.momentum}", width - 4)
+        out += _wrapped(f"读图结论：{a.trend.verdict}", width - 4)
+    r = rec.planned_r()
+    if not math.isnan(r):
+        out += _wrapped(
+            f"算术：{r:.2f}R，盈亏平衡胜率 {1 / (1 + r) * 100:.0f}%；"
+            f"止损 {rec.stop_price:,.2f} 在参考价下方 "
+            f"{(1 - rec.stop_price / rec.reference_price) * 100:.1f}%，"
+            f"打掉约亏 ${planned_risk(rec):,.0f}", width - 4)
+    if a is not None:
+        risk = deepdive.risks(a)
+        if risk:
+            out += _wrapped(f"风险：{risk[0]}", width - 4)
+    link = page_link(report, rec.symbol)
+    if link:
+        out.append(f"    完整分析：{link}")
+    return out
+
+
+def _md_buy_narrative(report: "DailyReport", rec) -> list[str]:
+    """The paragraph under the buy table: what the row cannot say."""
+    sym = rec.symbol
+    a = (report.analysis or {}).get(sym)
+    out = [f"#### {sym} · {zh_label(report, sym)}", ""]
+    if a is not None and a.spark:
+        out += [f"近三个月走势 `{a.spark}`  ", ""]
+    if a is not None and a.trend is not None and not a.trend.error:
+        out += [f"> {a.trend.verdict}", ""]
+        for k, v in a.trend.bullets()[:4]:
+            out.append(f"- **{k}**：{v}")
+    r = rec.planned_r()
+    if not math.isnan(r) and rec.reference_price:
+        out.append(
+            f"- **这笔交易的算术**：R = {r:.2f}，盈亏平衡胜率 "
+            f"{1 / (1 + r) * 100:.0f}%；止损 {rec.stop_price:,.2f} 在参考价下方 "
+            f"{(1 - rec.stop_price / rec.reference_price) * 100:.1f}%，"
+            f"止损被打掉约亏 ${planned_risk(rec):,.0f}"
+            + (f"（净值的 {planned_risk(rec) / report.account_value * 100:.2f}%）"
+               if report.account_value > 0 else "") + "。")
+    cat = catalyst_line(rec)
+    if cat:
+        url = getattr(rec, "catalyst_url", "")
+        out.append(f"- **催化剂**：{f'[{cat}]({url})' if url else cat}")
+    e = (report.earnings or {}).get(sym)
+    if e is not None and getattr(e, "next_date", ""):
+        out.append(f"- **财报日历**：下次 {e.next_date}（约 {e.days_to_next():.0f} 天后）"
+                   f"{'——落在持有期内，跳空会直接穿过止损' if e.reports_within(rec.horizon_days) else ''}")
+    if a is not None:
+        for line in deepdive.risks(a)[:2]:
+            out.append(f"- **反方**：{line}")
+    link = page_link(report, sym)
+    if link:
+        out += ["", f"[→ {sym} 完整分析：图形、财报、消息、原始数据与外部链接]({link})"]
+    out.append("")
+    return out
+
+
 def to_markdown(report: "DailyReport") -> str:
     if report.refused:
         return "\n".join(["# Daily Advisor — no report", "", report.refused, ""])
 
-    md = [f"# Daily Advisor — {report.date}", "", f"_{_sess(report)}_", ""]
-    if report.market_context:
-        md += ["## Market", "", report.market_context.strip(), ""]
-    if report.policy_summary:
-        md += ["## Policy backdrop", "", report.policy_summary.strip(), ""]
+    md = [f"# Daily Advisor — {report.date} · 每日投研简报", "",
+          f"_{_sess(report)}_", ""]
 
-    md += [f"## Sell / exit ({len(report.sells)})", ""]
+    summary = _summary(report)
+    if summary:
+        md += ["## 今日综述", ""] + [f"- {line}" for line in summary] + [""]
+
+    if report.market_context:
+        md += ["## 市场环境 Market", "", "```text",
+               report.market_context.strip(), "```", ""]
+    if report.policy_summary:
+        md += ["## 政策与政治背景 Policy backdrop", "",
+               report.policy_summary.strip(), ""]
+
+    # --- 核心长仓 ---
+    md += [f"## 一、核心长仓（长期 · {'本月复核' if report.core_review_day else '月度复核，本月不动'}）", ""]
+    if report.core:
+        md += ["| 代码 | 公司 | 目标权重 | 现价 | 近 3 月走势 | 距 200 日 | 近 6 月 | 近 12 月 | 状态 | 动作 |",
+               "|---|---|---:|---:|---|---:|---:|---:|---|---|"]
+        for c in sorted(report.core, key=lambda x: (not x.breached, x.holding.symbol)):
+            sym = c.holding.symbol
+            md.append(f"| {sym} | {_linked(report, sym)} | "
+                      f"{c.holding.weight * 100:.1f}% | {c.price:,.2f} | "
+                      f"`{_spark(report, sym, 16) or ' '}` | {_pct(c.ext_200)} | "
+                      f"{_pct(c.ret_6m)} | {_pct(c.ret_12m)} | "
+                      f"{'**' + c.status + '**' if c.breached else c.status} | {c.action} |")
+        breached = [c for c in report.core if c.breached]
+        if breached:
+            md += [""] + [f"- **{c.holding.symbol}**：{c.note}" for c in breached]
+        md += ["", f"_{CORE_NOTE}_", ""]
+    else:
+        md += ["_还没有核心长仓名单。_ 在 `~/.tradingagents/core.json` 里写上你要长期持有的"
+               "代码与目标权重（例如 `{\"MSFT\": 0.08}`），这一节就会每天跟踪它们，"
+               "并且只在月度复核或破位时才提出改动。", ""]
+
+    # --- 在场波段 ---
+    md += [f"## 二、在场的波段建议（{len(report.open_ideas)} 个仓位，继续持有）", ""]
+    if report.open_ideas:
+        md += ["| 代码 | 公司 | 建议日 | 持有 | 现价 | 止损 | 目标 | 浮动 R | 距止损 | 距目标 | 状态 |",
+               "|---|---|---|---:|---:|---:|---:|---:|---:|---:|---|"]
+        for o in report.open_ideas:
+            rec = o.rec
+            md.append(f"| {o.symbol} | {_linked(report, o.symbol)} | "
+                      f"{getattr(rec, 'issued_date', '—')} | {o.days_held}天 | "
+                      f"{o.price:,.2f} | {_num(getattr(rec, 'stop_price', None)):,.2f} | "
+                      f"{_num(getattr(rec, 'target_price', None)):,.2f} | "
+                      f"{o.r_now:+.2f} | {_pct(o.to_stop)} | {_pct(o.to_target)} | "
+                      f"{o.status} |")
+        md += ["", f"_{SWING_NOTE}_", ""]
+    else:
+        md += ["_书上没有在场的波段建议。_", ""]
+
+    # --- 卖出 ---
+    md += [f"## 三、卖出 / 离场 Sell ({len(report.sells)})", ""]
     if report.sells:
-        md += ["| Symbol | Action | Shares | Price | P&L | R | Reason |",
-               "|---|---|---:|---:|---:|---:|---|"]
-        md += [f"| {s.symbol} | {s.action} | {s.shares:.0f} | {s.price:,.2f} | "
+        md += ["| Symbol | 公司 | Action | Shares | Price | P&L | R | Reason |",
+               "|---|---|---|---:|---:|---:|---:|---|"]
+        md += [f"| {s.symbol} | {_linked(report, s.symbol)} | {s.action} | "
+               f"{s.shares:.0f} | {s.price:,.2f} | "
                f"{s.pnl:+,.2f} | {s.r_multiple:+.2f} | {s.reason} |"
                for s in sorted(report.sells, key=lambda x: -x.urgency)]
         if report.closed:
@@ -1833,31 +2461,51 @@ def to_markdown(report: "DailyReport") -> str:
     else:
         md.append("_Nothing to exit._")
 
-    md += ["", f"## Buy ({len(report.buys)})", ""]
+    # --- 新增波段 ---
+    md += ["", f"## 四、新增波段建议 Buy ({len(report.buys)}) · 持有 1–4 周", ""]
     if report.buys:
-        md += ["| Symbol | Shares | Ref | Limit | Stop | Target | R | Cost | Risk | Why |",
-               "|---|---:|---:|---:|---:|---:|---:|---:|---:|---|"]
+        md += ["| Symbol | 公司 | 走势 | Shares | Ref | Limit | Stop | Target | R | Cost | Risk | Why |",
+               "|---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---|"]
         for r in report.buys:
             # See format_report: the R shown is the R as issued.
             rr = r.planned_r()
             lim = f"{r.limit_price:,.2f}" if r.limit_price else "MKT"
-            md.append(f"| {r.symbol} | {r.shares:.0f} | {r.reference_price:,.2f} | {lim} | "
+            md.append(f"| {r.symbol} | {_linked(report, r.symbol)} | "
+                      f"`{_spark(report, r.symbol, 12) or ' '}` | "
+                      f"{r.shares:.0f} | {r.reference_price:,.2f} | {lim} | "
                       f"{r.stop_price:,.2f} | {r.target_price:,.2f} | {rr:.2f} | "
                       f"{estimated_cost(r):,.2f} | {planned_risk(r):,.2f} | "
                       f"{_md_catalyst(r)} |")
-        md += ["", f"_{REFERENCE_NOTE}_"]
+        md += ["", f"_{REFERENCE_NOTE}_", "", "### 逐只分析", ""]
+        for r in report.buys:
+            md += _md_buy_narrative(report, r)
     else:
         md.append("_No candidate cleared the bar._")
 
+    # --- 日内 ---
+    if report.daytrade:
+        md += ["", f"## 五、日内盯盘 Day trade ({len(report.daytrade)})", "",
+               "| 代码 | 公司 | 收盘 | 昨日高 | 昨日低 | 向上触发 | 止损 | 目标 | 向下触发 | ATR% | 相对量 |",
+               "|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|"]
+        for d in report.daytrade:
+            md.append(f"| {d.symbol} | {_linked(report, d.symbol)} | {d.price:,.2f} | "
+                      f"{d.prev_high:,.2f} | {d.prev_low:,.2f} | "
+                      f"**{d.long_trigger:,.2f}** | {d.long_stop:,.2f} | "
+                      f"{d.long_target:,.2f} | {d.short_trigger:,.2f} | "
+                      f"{_pct(d.atr_pct).lstrip('+')} | {d.rvol:.1f}× |")
+        md += ["", f"_{horizons.DAYTRADE_CAVEAT}_", ""]
+
+    # --- 关注列表 ---
     if report.watchlist:
         rows = report.watchlist
         bases = [r.symbol for r in rows if r.is_base]
         weak = sum(1 for r in rows if not r.is_base and not r.passes_filter)
         watched = sum(1 for r in rows if not r.is_base)
-        md += ["", f"## Watchlist ({watched})", "",
-               f"_{weak} of {watched} would not have cleared the screen's own bar today._", ""]
-        header = "| Symbol | Tag | Price | 1M | 3M |"
-        divide = "|---|---|---:|---:|---:|"
+        md += ["", f"## 六、长期关注列表 Watchlist ({watched})", ""]
+        md += [f"- {line}" for line in _breadth(rows)]
+        md += ["", f"_{weak} of {watched} would not have cleared the screen's own bar today._", ""]
+        header = "| Symbol | 公司 | Tag | Price | 走势 | 1M | 3M |"
+        divide = "|---|---|---|---:|---|---:|---:|"
         for b in bases:
             header += f" vs {b} |"
             divide += "---:|"
@@ -1872,7 +2520,8 @@ def to_markdown(report: "DailyReport") -> str:
                       else "**below 200**")
             if not math.isnan(r.screen_rank):
                 status += f" · screen #{int(r.screen_rank)}"
-            row = (f"| {r.symbol} | {r.tag} | {r.price:,.2f} | "
+            row = (f"| {r.symbol} | {_linked(report, r.symbol)} | {r.tag} | "
+                   f"{r.price:,.2f} | `{_spark(report, r.symbol, 12) or ' '}` | "
                    f"{_pct(r.ret_1m)} | {_pct(r.ret_3m)} |")
             for b in bases:
                 row += f" {_pct(r.excess_1m.get(b, float('nan')))} |"
@@ -1880,7 +2529,7 @@ def to_markdown(report: "DailyReport") -> str:
             md.append(row)
         md += ["", f"_{WATCHLIST_NOTE}_"]
 
-    md += ["", "## Account", "",
+    md += ["", "## 账户 Account", "",
            f"- Equity **${report.account_value:,.2f}**, cash ${report.cash:,.2f}",
            f"- Buy budget ${report.buy_budget:,.2f}, risk budget "
            f"{report.risk_pct:.2f}%/trade"]
@@ -1889,16 +2538,60 @@ def to_markdown(report: "DailyReport") -> str:
                  if report.account_value > 0 else "")
         md.append(f"- Planned risk ${report.total_risk:,.2f}{share} across "
                   f"{len(report.buys)} idea(s), after the position cap")
+    if report.track_record:
+        try:
+            md += ["", "## 战绩 Track record", "", "```text",
+                   format_track_record(report.track_record), "```"]
+        except Exception:
+            pass
     if report.notes:
-        md += ["", "## Notes", ""] + [f"- {n}" for n in report.notes]
+        md += ["", "## 说明 Notes", ""] + [f"- {n}" for n in report.notes]
     if report.warnings:
-        md += ["", "## Warnings", ""] + [f"- {w}" for w in report.warnings]
-    md += ["", "---", "", f"_{CAVEAT}_"]
+        md += ["", "## 警告 Warnings", ""] + [f"- {w}" for w in report.warnings]
+    md += ["", "---", "", f"_{NAME_NOTE}_", "", f"_{CAVEAT}_"]
     return "\n".join(md)
 
 
+def write_pages(report: "DailyReport", directory: Path) -> list[Path]:
+    """One deep-dive page per analysed symbol. Returns what was written.
+
+    Written *before* the daily page and recorded on the report, because
+    :func:`page_link` refuses to link to a file that does not exist: a broken
+    link in the one section a reader is told to click is worse than no link.
+
+    A page that fails is skipped and logged. The daily report is already
+    complete by this point and must not be lost to a rendering error in one
+    symbol's chart.
+    """
+    written: list[Path] = []
+    if not report.analysis:
+        return written
+    directory.mkdir(parents=True, exist_ok=True)
+    back = f"../{report.date}.md"
+    for symbol, analysis in report.analysis.items():
+        try:
+            text = deepdive.render_page(
+                analysis, report_date=report.date, data_date=report.data_date,
+                account_value=report.account_value,
+                atr_stop_mult=DEFAULT_ATR_STOP_MULT, back_link=back)
+        except Exception as exc:
+            logger.warning("could not render the page for %s: %s", symbol, exc)
+            continue
+        path = directory / f"{symbol}.md"
+        tmp = path.with_name(path.name + ".tmp")
+        try:
+            tmp.write_text(text, encoding="utf-8")
+            os.replace(tmp, path)
+        except Exception as exc:
+            logger.warning("could not write %s: %s", path, exc)
+            continue
+        analysis.page = f"{directory.name}/{symbol}.md"
+        written.append(path)
+    return written
+
+
 def save_report(report: "DailyReport") -> Path:
-    """Write the page, atomically.
+    """Write the page and its per-symbol pages, atomically.
 
     Same tmp+replace as :meth:`RecommendationBook.save`: a run killed mid-write
     would otherwise leave a truncated page that reads as a complete one, and
@@ -1916,6 +2609,15 @@ def save_report(report: "DailyReport") -> Path:
                        report.date, stem)
     path = reports_dir() / f"{stem}.md"
     path.parent.mkdir(parents=True, exist_ok=True)
+
+    # The symbol pages first: the daily page links to them, and page_link()
+    # emits a link only for a symbol that has one.
+    if report.analysis and not report.refused:
+        try:
+            write_pages(report, path.parent / stem)
+        except Exception as exc:
+            logger.warning("the per-symbol pages could not be written: %s", exc)
+
     tmp = path.with_name(path.name + ".tmp")
     tmp.write_text(to_markdown(report), encoding="utf-8")
     os.replace(tmp, path)

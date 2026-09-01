@@ -294,6 +294,63 @@ reading only ticker news is repeatedly blindsided by moves it had no way to see.
 
 ---
 
+## The daily report: three horizons, one page per name
+
+The advisor used to print only the ideas issued *that morning*. It carried the
+older ones in `recommendations.json` and never showed them, so the page read as
+a brand-new portfolio every day even when nothing had changed. The report is now
+split by holding period, and the sections are ordered by how rarely they move:
+
+| Section | Clock | Where the list comes from | Sized? |
+|---|---|---|---|
+| 核心长仓 core | months–years, reviewed monthly | `core.json`, hand-maintained | no — weights are the reader's |
+| 在场的波段 open swing | 1–4 weeks | `recommendations.json`, still open | already sized when issued |
+| 新增波段 new buys | 1–4 weeks | today's screen, into *free slots only* | yes |
+| 日内 day trade | one session | watchlist ∪ screen, filtered on range and liquidity | no — levels, not orders |
+
+Two rules do the work:
+
+- **Slots, not a top-N.** `swing_slots` (default 6) caps concurrent swing ideas.
+  New buys fill whatever is free, so a full book proposes nothing — which is the
+  intended answer, not a bug.
+- **Hysteresis on the core.** A core name leaves only on a stated rule: closing
+  more than 4% below its 200-day, or a twelve-month loss past 15%. It never
+  leaves because it slipped in this week's ranking. Weight drift is actioned
+  only on a review day (the first four days of a month).
+
+`core.json` is seeded on the first run that finds it missing, from a durability
+screen — above the 200-day, a positive year, `$100M`+ daily turnover, not
+already 35% off its high, under 5% ATR — ranked on *capped* twelve-month return
+blended with size. The cap matters: ranking on the raw return makes "长期" a
+momentum screen, and puts the year's hottest microcap at the top of the one
+section that is supposed to stay still. Edit the file; nothing overwrites it.
+
+### One page per symbol
+
+`reports/<date>.md` links every name to `reports/<date>/<SYMBOL>.md`, written by
+`live/deepdive.py`. Each page carries, in this order: two ASCII price charts
+with the 50/200-day averages and the trade's own stop/entry/target drawn as
+levels; the chart read (均线排列, swing structure, momentum, volatility,
+position, support/resistance) from `live/charting.py`; the trade's arithmetic
+spelled out — stop distance in ATRs, R, the break-even win rate `1/(1+R)`, and
+what one stop costs the account; the financial statements from
+`live/fundamentals.py` (quarterly and annual income, margins, valuation,
+balance sheet, the earnings-surprise record); the 24-hour news with links; a
+rule-generated bear case; the raw OHLCV the page computed from; and the primary
+sources from `live/research.py` — Yahoo, Finviz, TradingView, SEC EDGAR,
+OpenInsider, plus Chinese-language relays.
+
+The bear case is generated rather than written on purpose: a hand-written one
+gets skipped on the names where it is least convenient.
+
+### Language and names
+
+Narrative analysis is in Chinese; tables, tickers, levels and the R/ATR/SMA
+vocabulary stay in English. Company names resolve through
+`live/zhnames.py`: `company_names_zh.json` (yours, wins) → a curated table → a
+mechanical gloss off the English suffix, marked `°` so a guess can never be
+mistaken for a checked name.
+
 ## State
 
 Everything under `~/.tradingagents/` (override with `TRADINGAGENTS_HOME`).
@@ -309,8 +366,12 @@ Everything under `~/.tradingagents/` (override with `TRADINGAGENTS_HOME`).
 | `cache/screens/universe_*.json` | the monthly qualification pool |
 | `news_seen.json` | story fingerprints, pruned at 72h |
 | `company_names.json` | ticker → company name cache |
+| `company_names_zh.json` | your Chinese names; wins over the built-in table |
+| `core.json` | the long-term book — hand-maintained, seeded once |
+| `fundamentals.json` | statements cache, 20h TTL |
+| `earnings.json` | next report date and last surprise, 20h TTL |
 | `screens/` | ranked exchange scans |
-| `reports/` | daily advisor reports |
+| `reports/` | daily advisor reports, plus `reports/<date>/<SYMBOL>.md` |
 | `STOP` | the kill switch |
 
 ---
@@ -321,6 +382,17 @@ Everything under `~/.tradingagents/` (override with `TRADINGAGENTS_HOME`).
   deliberate act, not a config flag.
 - **The panel sees a compact pack** — price, trend, position, fresh headlines.
   Not filings, not transcripts.
+- **The chart read is lagging by construction.** Moving averages, RSI and swing
+  structure all describe what already happened. They say what state a name is
+  in, never what it does next, and the verdict line is a summary of the bullets
+  above it rather than a forecast.
+- **The financial statements are a vendor's transcription**, not the filing.
+  They are restated, they lag, and the TTM window is Yahoo's rather than the
+  company's. Every page prints the EDGAR link beside them for that reason.
+- **The intraday section has no intraday data.** Daily bars cannot produce an
+  entry inside a session, so that section publishes the levels the next session
+  will be measured against — the prior day's high and low — and never an order.
+  Nothing in it enters the recommendation book or the track record.
 - **Local paper fills are optimistic.** No slippage, no partial fills, no queue
   position. A strategy that depends on getting filled at the touch will look
   better here than anywhere real.

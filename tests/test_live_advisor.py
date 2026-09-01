@@ -22,6 +22,7 @@ snapshots, the news feeds, the policy feeds and the venue are all injected.
 
 import math
 import os
+import re
 from datetime import date, datetime
 from pathlib import Path
 
@@ -132,6 +133,59 @@ ROWS = [
 ]
 
 
+class StubBars:
+    """The subset of :class:`deepdive.Bars` the report and the pages read."""
+
+    def __init__(self, symbol, closes):
+        self.symbol = symbol
+        self.closes = list(closes)
+        self.opens = list(closes)
+        self.highs = [c * 1.01 for c in closes]
+        self.lows = [c * 0.99 for c in closes]
+        self.volumes = [1_000_000.0 + 1000 * i for i in range(len(closes))]
+        self.dates = [f"2026-{1 + i % 12:02d}-{1 + i % 28:02d}" for i in range(len(closes))]
+
+    def __len__(self):
+        return len(self.closes)
+
+    @property
+    def ok(self):
+        return len(self.closes) >= 30
+
+    def tail(self, n):
+        return StubBars(self.symbol, self.closes[-n:])
+
+    def ret(self, sessions):
+        return (self.closes[-1] / self.closes[-sessions - 1] - 1.0
+                if len(self.closes) > sessions else float("nan"))
+
+    def dollar_volume(self, window=50):
+        return 5e8
+
+    def atr(self, window=14):
+        return self.closes[-1] * 0.02
+
+    def facts(self):
+        from tradingagents.live import charting
+        price = self.closes[-1]
+        return {"price": price, "sma200": charting.sma(self.closes, 200)[-1],
+                "ret_1m": self.ret(21), "ret_3m": self.ret(63),
+                "ret_6m": self.ret(126), "ret_12m": self.ret(252),
+                "off_high": price / max(self.closes[-252:]) - 1.0,
+                "atr": self.atr(), "atr_pct": 0.02,
+                "prev_high": self.highs[-1], "prev_low": self.lows[-1],
+                "change_pct": 0.004, "vol_ratio": 1.4,
+                "dollar_vol": 5e8,
+                "spark": charting.sparkline(self.closes[-63:], 20)}
+
+
+class StubFundamentals:
+    """A fundamentals book that answers nothing, without touching a network."""
+
+    def get(self, symbols, refresh=False, log=None):
+        return {}
+
+
 class Desk:
     """One advisor plus the mutable stubs behind it."""
 
@@ -158,9 +212,29 @@ class Desk:
     def snapshot(self, symbol, when):
         return self.snaps.get(symbol, Snapshot(symbol=symbol, error="no data"))
 
+    def bars(self, symbol, when):
+        """Deterministic daily history, so the pages render without a network.
+
+        A gentle uptrend with a fixed shape: enough rows for the moving
+        averages and the swing structure, and identical on every run so a
+        chart assertion is stable.
+        """
+        base = (self.snaps.get(symbol).price if symbol in self.snaps else 100.0)
+        rows = 260
+        closes = [round(base * (0.72 + 0.28 * i / (rows - 1))
+                        * (1 + 0.01 * ((i % 7) - 3) / 3), 4) for i in range(rows)]
+        return StubBars(symbol, closes)
+
+    def fundamentals(self, symbols, refresh=False, log=None):
+        return {}
+
     def advisor(self, **kw):
-        return DailyAdvisor(self.cfg, broker=StubBroker(self.account),
+        kw.setdefault("fundamentals", StubFundamentals())
+        kw.setdefault("bars_loader", None)
+        desk = DailyAdvisor(self.cfg, broker=StubBroker(self.account),
                             news=self.news, policy_monitor=self.policy, **kw)
+        desk.bars = self.bars
+        return desk
 
     def run(self, when=None, now=FRIDAY_AFTER_CLOSE, **kw):
         return self.advisor(**kw).run(when, now=now)
@@ -279,16 +353,24 @@ class TestSessionDates:
         assert "data through the 2026-08-21 close" in text
         assert "orders for the 2026-08-24 open" in text
 
-    def test_the_english_report_contains_no_chinese(self, desk):
-        """The session line was the only CJK in the package, printed always.
+    def test_the_two_session_dates_are_stated_in_english_on_both_renderers(
+            self, desk):
+        """The session line is data provenance, and it stays in the data language.
 
-        It rendered into the terminal report and every saved .md regardless of
-        output_language, which is the mixed-language report tests/
-        test_i18n_coverage.py exists to forbid.
+        This file used to forbid CJK anywhere in the report: the session line
+        was hardcoded Chinese in an otherwise English page, which is the mixed
+        report tests/test_i18n_coverage.py exists to prevent. The report is now
+        deliberately bilingual — Chinese analysis over English tables and
+        terminology — so the invariant that survives is narrower and more
+        useful: the line that names *which two sessions produced this page* is
+        unambiguous English, and both dates appear in it.
         """
         report = desk.run()
+        line = advisor._sess(report)
+        assert not any("一" <= ch <= "鿿" for ch in line)
+        assert report.data_date in line and report.date in line
         for text in (format_report(report), to_markdown(report)):
-            assert not any("一" <= ch <= "鿿" for ch in text)
+            assert line in text
 
 
 # ---------------------------------------------------------------------------
@@ -607,6 +689,49 @@ class TestSizingRefusals:
 # ---------------------------------------------------------------------------
 
 @pytest.mark.unit
+class TestHorizons:
+    """The three books, and the slot count that stops the daily churn."""
+
+    def test_a_full_swing_book_proposes_nothing_and_says_why(self, desk):
+        """The page looked like a fresh portfolio daily because it printed only
+        the ideas issued that morning and never the ones it was holding."""
+        desk.cfg.swing_slots = 0
+        report = desk.run()
+        assert report.buys == []
+        assert any("仓位槽已经占满" in n for n in report.notes)
+
+    def test_new_ideas_only_fill_the_free_slots(self, desk):
+        desk.cfg.swing_slots = 1
+        report = desk.run()
+        assert len(report.buys) == 1
+        assert any("free swing slots" in n for n in report.notes)
+
+    def test_the_positions_already_open_are_printed_before_the_new_ones(self, desk):
+        """The continuity the old page hid: what the book is already holding."""
+        first = desk.run()
+        assert first.buys and not first.open_ideas
+        second = desk.run()
+        assert {o.symbol for o in second.open_ideas} == {r.symbol for r in first.buys}
+        text = to_markdown(second)
+        assert text.index("## 二、在场的波段建议") < text.index("## 四、新增波段建议")
+
+    def test_a_missing_core_list_is_seeded_once_and_announced(self, desk, tmp_path):
+        report = desk.run()
+        assert report.core_seeded and (tmp_path / "core.json").exists()
+        assert any("核心长仓名单是空的" in n for n in report.notes)
+
+    def test_a_dry_run_never_writes_the_core_list(self, desk, tmp_path):
+        desk.cfg.dry_run = True
+        desk.run()
+        assert not (tmp_path / "core.json").exists()
+
+    def test_the_intraday_section_is_never_presented_as_an_order(self, desk):
+        report = desk.run()
+        if report.daytrade:
+            assert "不是下单指令" in to_markdown(report)
+
+
+@pytest.mark.unit
 class TestRendering:
     def test_the_caveat_is_printed_on_every_report(self, desk):
         """It was defined, documented as printed on every report, and dead."""
@@ -638,14 +763,19 @@ class TestRendering:
         planned = aaa.planned_r()
         aaa.stop_price = aaa.reference_price          # the breakeven rule fires
 
-        # Assert against AAA's own row, not the whole page. A substring search
-        # over the report passed against the broken code, because another row
-        # happened to carry the same R and matched while AAA rendered "nan".
+        # Assert against AAA's own row *in the buy table*, not the whole page.
+        # A substring search over the report passed against the broken code,
+        # because another row happened to carry the same R and matched while
+        # AAA rendered "nan" — and the page now names AAA in several sections
+        # (core, watchlist, the per-name narrative), so "the first line
+        # mentioning AAA" is no longer the row under test.
         def row(text: str, sep: str) -> str:
-            line = next(ln for ln in text.splitlines()
+            lines = text.splitlines()
+            start = next(i for i, ln in enumerate(lines)
+                         if ln.strip().startswith("BUY") or ln.strip().startswith("| Symbol"))
+            return next(ln for ln in lines[start:]
                         if ln.strip().startswith(sep + "AAA") or " AAA " in ln
                         or ln.strip().startswith("AAA"))
-            return line
 
         assert f"{planned:.2f}" in row(format_report(report), "")
         assert "nan" not in row(format_report(report), "").lower()
@@ -795,3 +925,32 @@ class TestSaveReport:
     def test_the_page_is_named_for_the_session_the_orders_are_for(self, desk):
         report = desk.run()
         assert save_report(report).name == "2026-08-24.md"
+
+    def test_every_linked_symbol_gets_a_page_and_every_link_resolves(self, desk):
+        """A link to a file nobody wrote is worse than no link at all.
+
+        The daily page tells the reader to click through for the reasoning, so
+        a dead link there is a broken promise in exactly the section that
+        exists to be checked.
+        """
+        report = desk.run()
+        path = save_report(report)
+        pages = path.parent / report.date
+        assert pages.is_dir() and {p.stem for p in pages.glob("*.md")}
+
+        text = path.read_text(encoding="utf-8")
+        links = re.findall(r"\]\((%s/[A-Z.]+\.md)\)" % report.date, text)
+        assert links, "the daily page linked to no symbol pages"
+        for href in set(links):
+            assert (path.parent / href).exists(), href
+
+    def test_a_symbol_page_carries_the_chart_the_arithmetic_and_the_bear_case(
+            self, desk):
+        report = desk.run()
+        path = save_report(report)
+        page = (path.parent / report.date / "AAA.md").read_text(encoding="utf-8")
+        assert "## 一、价格与图形" in page and "```text" in page
+        assert "## 二、这笔交易的算术" in page
+        assert "## 五、反方观点与风险" in page
+        assert "## 七、自己去查" in page
+        assert f"](../{report.date}.md)" in page
