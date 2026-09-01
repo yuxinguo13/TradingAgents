@@ -74,6 +74,48 @@ CORE_RET_CAP = 1.0             # credit for the year's return stops at +100%
 CORE_MAX_DRAWDOWN = -0.35      # already 35% off its high is a different question
 CORE_MAX_ATR_PCT = 0.05        # 5%/day is a trading vehicle, not a holding
 
+# Two filters the price data cannot supply, and both were missing from the
+# first draft this module produced.
+#
+# *Profitability.* The seed list came back holding a diagnostics company with a
+# TTM EPS of -3.51 and a consensus that has it still losing money next year —
+# while the swing engine, reading the same symbol on the same morning, refused
+# it for having too little reward per unit of risk. Two halves of one report
+# disagreeing about one name is the tell: a core holding is a claim about a
+# business, and a business that does not earn anything cannot support one.
+CORE_REQUIRE_PROFIT = True
+# *Concentration.* Ranking eight names off one screen returned NVDA, AMD, ASML
+# and TSM — a GPU designer, its competitor, the foundry that makes both, and
+# the sole supplier of that foundry's lithography. Four slots, one supply
+# chain. Equal weights across correlated names is not diversification; it is
+# the same bet placed four times at 7.5% each.
+CORE_MAX_PER_SECTOR = 2
+
+# Cash held back on top of what the swing book can claim. The seeded core used
+# a flat 60%, which collided with a full swing book: six slots at the 8%
+# position cap is 48% of equity, and 60 + 48 = 108% of an account that does not
+# have 108% to spend. The invested fraction is derived from those two numbers
+# instead — see :func:`core_budget` — so the two books cannot be allocated past
+# the account again.
+CORE_CASH_BUFFER = 0.10
+CORE_MIN_INVESTED = 0.20
+CORE_MAX_INVESTED = 0.60
+
+
+def core_budget(slots: int, position_cap: float,
+                buffer: float = CORE_CASH_BUFFER) -> float:
+    """What fraction of equity the core may hold, given the swing book's claim.
+
+    ``slots * position_cap`` is the most the swing book can be holding at once;
+    the rest, less a cash buffer, is what a long-term list may occupy. Bounded
+    at both ends: a desk with a huge swing book still gets a core worth having,
+    and one with no swing book does not get its whole account allocated to
+    eight names it was handed rather than chose.
+    """
+    reserved = max(0.0, _num(slots, 0.0)) * max(0.0, _num(position_cap, 0.0))
+    free = 1.0 - reserved - max(0.0, _num(buffer, 0.0))
+    return round(max(CORE_MIN_INVESTED, min(CORE_MAX_INVESTED, free)), 4)
+
 # --- swing rules ------------------------------------------------------------
 DEFAULT_SWING_SLOTS = 6            # concurrent swing ideas the book may carry
 SWING_HOLD_DAYS = (7, 28)          # the horizon this section claims
@@ -278,33 +320,62 @@ def review_core(holdings: list[CoreHolding], facts: dict, *,
 
 
 def propose_core(symbols: list, facts: dict, *, count: int = 8,
+                 fundamentals: dict | None = None, sectors: dict | None = None,
                  min_dollar_vol: float = CORE_MIN_DOLLAR_VOL,
                  ret_cap: float = CORE_RET_CAP,
                  max_drawdown: float = CORE_MAX_DRAWDOWN,
-                 max_atr_pct: float = CORE_MAX_ATR_PCT) -> list[CoreHolding]:
+                 max_atr_pct: float = CORE_MAX_ATR_PCT,
+                 require_profit: bool = CORE_REQUIRE_PROFIT,
+                 max_per_sector: int = CORE_MAX_PER_SECTOR,
+                 invested: float = 0.6) -> list[CoreHolding]:
     """A first draft of a core list, for a reader who has not written one.
 
-    Long-horizon and deliberately dull. Four hard filters — above the 200-day, a
-    positive year, liquid enough to leave, and not already deep in a drawdown or
-    swinging 5% a day — then a blend of *capped* twelve-month return and size.
+    Long-horizon and deliberately dull. Price filters first — above the 200-day,
+    a positive year, liquid enough to leave, not already deep in a drawdown or
+    swinging 5% a day — then a blend of *capped* twelve-month return and size,
+    and finally the two filters that need something price cannot tell you:
+    the company earns money, and no sector takes more than
+    ``max_per_sector`` slots.
 
-    The cap is the point. Ranking on the raw return sorts a Nasdaq universe by
-    which microcap repriced hardest, which is a momentum screen with a long-term
-    label on it; capping the credit at ``ret_cap`` means a good year and a
-    spectacular one score the same, and liquidity breaks the tie toward the
-    larger business. Dollar volume stands in for size because this function runs
-    before any statement is fetched — it is a proxy, and a poor one for a
-    heavily traded small cap, which is one more reason the output is a proposal.
+    The return cap is the point of the ranking. Sorting on the raw
+    twelve-month number sorts a Nasdaq universe by which microcap repriced
+    hardest, which is a momentum screen with a long-term label on it; capping
+    the credit at ``ret_cap`` means a good year and a spectacular one score the
+    same, and liquidity breaks the tie toward the larger business.
 
-    ``symbols`` is tickers in any order; ``facts`` is the same mapping
-    :func:`review_core` takes. Equal weights, because a conviction weighting
-    would be inventing convictions the reader has not stated. The caller must
-    present the result as a draft.
+    The sector cap is the point of the *selection*. It is applied after the
+    ranking rather than inside it so the reason a name was dropped is
+    reportable: "third-best in a sector already holding two" is a sentence, and
+    a penalty term buried in a score is not. Note what it cannot do: the label
+    is an industry classification, and the concentration that matters is a
+    *theme*. Nothing here knows that a GPU designer, a foundry and a
+    lithography supplier are one bet on AI capex. That judgement is the
+    reader's, and it is the main reason this output is a draft.
+
+    ``roe`` joins the ranking whenever statements are supplied. Ranking a list
+    meant to be held for years on price alone, while holding the income
+    statement, leaves the better evidence unused — and it showed: on capped
+    return and liquidity alone the seeder preferred a 10%-ROE name to a
+    117%-ROE one in the same industry, purely because the first had the larger
+    twelve-month move.
+
+    ``symbols`` is tickers in any order. ``facts`` is the same mapping
+    :func:`review_core` takes. ``fundamentals`` is ``{symbol: obj}`` where the
+    object exposes ``profitable``; a symbol missing from it is dropped when
+    ``require_profit`` is set, because "not checked" and "checked and earning"
+    must not resolve the same way in a list meant to be held for years.
+    ``sectors`` is ``{symbol: label}``; anything unlabelled shares one bucket.
+
+    Weights are equal and sum to ``invested``. The caller must present the
+    result as a draft: an equal weight is the only allocation this program can
+    justify, because a conviction weighting would be inventing convictions the
+    reader has not stated.
     """
     kept: list[tuple[str, float, float]] = []       # symbol, capped return, size
+    seen: set[str] = set()
     for raw in symbols:
         sym = str(raw or "").strip().upper()
-        if not sym:
+        if not sym or sym in seen:
             continue
         f = facts.get(sym) or {}
         price, sma200 = _num(f.get("price")), _num(f.get("sma200"))
@@ -321,8 +392,9 @@ def propose_core(symbols: list, facts: dict, *, count: int = 8,
             continue
         if _ok(atr_pct) and atr_pct > max_atr_pct:
             continue
-        if any(sym == k for k, _, _ in kept):
+        if require_profit and not _earns(sym, fundamentals):
             continue
+        seen.add(sym)
         kept.append((sym, min(r12, ret_cap), math.log10(dv)))
     if not kept:
         return []
@@ -334,21 +406,59 @@ def propose_core(symbols: list, facts: dict, *, count: int = 8,
 
     rets = _scaled([r for _, r, _ in kept])
     sizes = _scaled([z for _, _, z in kept])
-    ranked = sorted(
-        ((0.5 * rets[i] + 0.5 * sizes[i], kept[i][0]) for i in range(len(kept))),
-        key=lambda t: (-t[0], t[1]))
-    picked = [sym for _, sym in ranked[:max(0, count)]]
+    quality = [_num(getattr((fundamentals or {}).get(sym), "roe", None))
+               for sym, _, _ in kept]
+    if any(_ok(q) for q in quality):
+        # Capped so one extraordinary ROE cannot carry a name past every
+        # filter, for the same reason the twelve-month return is capped.
+        qs = _scaled([min(q, 0.5) if _ok(q) else 0.0 for q in quality])
+        scores = [0.4 * rets[i] + 0.3 * sizes[i] + 0.3 * qs[i] for i in range(len(kept))]
+    else:
+        scores = [0.5 * rets[i] + 0.5 * sizes[i] for i in range(len(kept))]
+    ranked = sorted(((scores[i], kept[i][0]) for i in range(len(kept))),
+                    key=lambda t: (-t[0], t[1]))
+
+    # Industry when the statement carries one: "Technology" puts a phone maker,
+    # a GPU designer and a lithography monopoly in one bucket, which makes the
+    # cap fire on the wrong pair.
+    labels = {}
+    for sym, _, _ in kept:
+        got = (fundamentals or {}).get(sym)
+        label = (str(getattr(got, "industry", "") or "").strip()
+                 or str((sectors or {}).get(sym, "") or "").strip() or "Unknown")
+        labels[sym] = label
+    used: dict[str, int] = {}
+    picked: list[str] = []
+    for _, sym in ranked:
+        if len(picked) >= max(0, count):
+            break
+        bucket = labels.get(sym, "Unknown")
+        if max_per_sector > 0 and used.get(bucket, 0) >= max_per_sector:
+            continue
+        used[bucket] = used.get(bucket, 0) + 1
+        picked.append(sym)
     if not picked:
         return []
-    # 60% invested; the remaining 40% is the reader's cash and swing book, and
-    # this function has no business allocating either.
-    weight = round(1.0 / len(picked) * 0.6, 4)
+    weight = round(invested / len(picked), 4)
     today = _date.today().isoformat()
     return [CoreHolding(symbol=sym, weight=weight, added=today,
-                        thesis="按长期规则初选：站上 200 日线、近一年为正、成交额充足、"
-                               "回撤与波动都在核心持仓可接受的范围内",
+                        thesis="按长期规则初选：站上 200 日线、近一年为正、TTM 盈利为正、"
+                               "成交额充足、回撤与波动在核心可接受范围内，"
+                               f"且同一行业最多 {max_per_sector} 只",
                         tag="seed")
             for sym in picked]
+
+
+def _earns(symbol: str, fundamentals: dict | None) -> bool:
+    """Whether ``symbol`` has positive trailing earnings, as far as we know.
+
+    Unknown counts as no. The alternative — treating an unfetched statement as
+    a pass — makes the filter silently optional exactly when the network is
+    slow, which is the failure mode a long-term list can least afford.
+    """
+    got = (fundamentals or {}).get(str(symbol).upper())
+    return bool(getattr(got, "profitable", False))
+
 
 
 # ===========================================================================

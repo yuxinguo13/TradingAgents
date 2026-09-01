@@ -30,6 +30,7 @@ import pytest
 
 from tradingagents.live import advisor
 from tradingagents.live import clock
+from tradingagents.live import horizons
 from tradingagents.live.advisor import (
     AdvisorConfig,
     CAVEAT,
@@ -45,6 +46,7 @@ from tradingagents.live.advisor import (
     to_markdown,
 )
 from tradingagents.live.brain import Snapshot
+from tradingagents.live.fundamentals import Fundamentals
 from tradingagents.live.broker import Account, Holding
 from tradingagents.live.recommendations import (
     CLOSED,
@@ -180,10 +182,32 @@ class StubBars:
 
 
 class StubFundamentals:
-    """A fundamentals book that answers nothing, without touching a network."""
+    """A fundamentals book answering from a table, without touching a network.
+
+    Real :class:`Fundamentals` objects rather than duck-typed stand-ins: the
+    renderers read a dozen fields off these, and a stub that carries only the
+    two the seeder needs tests a code path production never takes.
+    """
+
+    def __init__(self, sectors=None, unprofitable=()):
+        self.sectors = dict(sectors or {})
+        self.unprofitable = set(unprofitable)
 
     def get(self, symbols, refresh=False, log=None):
-        return {}
+        out = {}
+        for sym in symbols:
+            f = Fundamentals(symbol=sym, name=f"{sym} Co",
+                             sector=self.sectors.get(sym, "Technology"),
+                             market_cap=8.0e10, revenue_ttm=1.2e10,
+                             pe_trailing=24.0, pe_forward=19.0,
+                             gross_margin=0.51, operating_margin=0.18,
+                             profit_margin=0.15, roe=0.21,
+                             debt_to_equity=40.0, current_ratio=2.1,
+                             free_cashflow=9.0e8, total_cash=3.0e9,
+                             total_debt=1.0e9)
+            f.eps_trailing = -1.5 if sym in self.unprofitable else 4.0
+            out[sym] = f
+        return out
 
 
 class Desk:
@@ -229,7 +253,8 @@ class Desk:
         return {}
 
     def advisor(self, **kw):
-        kw.setdefault("fundamentals", StubFundamentals())
+        kw.setdefault("fundamentals", StubFundamentals(
+            {r[0]: r[1].get("sector", "Technology") for r in self.rows}))
         kw.setdefault("bars_loader", None)
         desk = DailyAdvisor(self.cfg, broker=StubBroker(self.account),
                             news=self.news, policy_monitor=self.policy, **kw)
@@ -720,6 +745,44 @@ class TestHorizons:
         assert report.core_seeded and (tmp_path / "core.json").exists()
         assert any("核心长仓名单是空的" in n for n in report.notes)
 
+    def test_the_seeded_core_and_a_full_swing_book_fit_inside_the_account(self):
+        """A flat 60% core plus six 8% swing slots allocated 108% of equity."""
+        budget = horizons.core_budget(AdvisorConfig().swing_slots,
+                                      AdvisorConfig().cap_fraction)
+        claim = AdvisorConfig().swing_slots * AdvisorConfig().cap_fraction
+        assert budget + claim <= 1.0
+
+    def test_no_core_is_seeded_when_the_statements_cannot_be_read(self, desk):
+        """Without statements the profit test cannot be made, and seeding an
+        unfiltered list is exactly what the test exists to prevent."""
+        class Broken:
+            def get(self, symbols, refresh=False, log=None):
+                raise RuntimeError("vendor down")
+
+        report = desk.run(fundamentals=Broken())
+        assert report.core == [] and not report.core_seeded
+        assert any("拿不到财报数据" in w for w in report.warnings)
+
+    def test_one_sector_cannot_take_more_than_half_the_swing_book(self, desk):
+        """max_new_per_sector counts one report at a time, so two healthcare
+        ideas a day for three days never tripped it — and the six-slot book
+        ended up holding six biotech names, six bets on one financing
+        environment wearing the costume of a diversified book.
+        """
+        desk.rows.append(("CCC", {"rank": 3, "name": "C Co", "sector": "Technology",
+                                  "score": 7.0, "price": 200.0}))
+        desk.snaps["CCC"] = snap("CCC", 200.0)
+        desk.cfg.max_open_per_sector = 1
+
+        first = desk.run()
+        assert {r.symbol for r in first.buys} == {"AAA", "BBB"}      # one per sector
+
+        # CCC is a fresh candidate on day two — the book, not the page, is what
+        # must stop it.
+        second = desk.run()
+        assert "CCC" not in {r.symbol for r in second.buys}
+        assert any("Technology 已经有 1 个仓位" in n for n in second.notes)
+
     def test_a_dry_run_never_writes_the_core_list(self, desk, tmp_path):
         desk.cfg.dry_run = True
         desk.run()
@@ -799,6 +862,21 @@ class TestRendering:
         assert "risk budget 1.00%/trade" in text
         assert f"planned risk ${report.total_risk:,.2f}" in text
         assert "0.80% of equity" in text
+
+    def test_a_risk_bullet_that_raises_costs_the_bullet_not_the_page(self, desk):
+        """main() prints format_report unwrapped, so a renderer that raises
+        loses the whole page — including the sells, which have a deadline."""
+        def boom(analysis):
+            raise AttributeError("half-built statement")
+
+        monkeypatch = pytest.MonkeyPatch()
+        monkeypatch.setattr(advisor.deepdive, "risks", boom)
+        try:
+            report = desk.run()
+            assert "AAA" in format_report(report)
+            assert "| AAA |" in to_markdown(report)
+        finally:
+            monkeypatch.undo()
 
     def test_a_refusal_renders_as_a_refusal_in_both_formats(self, desk):
         report = desk.run(when="2026-08-21", now=FRIDAY_AFTER_CLOSE)

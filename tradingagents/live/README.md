@@ -318,12 +318,25 @@ Two rules do the work:
   leaves because it slipped in this week's ranking. Weight drift is actioned
   only on a review day (the first four days of a month).
 
-`core.json` is seeded on the first run that finds it missing, from a durability
-screen — above the 200-day, a positive year, `$100M`+ daily turnover, not
-already 35% off its high, under 5% ATR — ranked on *capped* twelve-month return
-blended with size. The cap matters: ranking on the raw return makes "长期" a
-momentum screen, and puts the year's hottest microcap at the top of the one
-section that is supposed to stay still. Edit the file; nothing overwrites it.
+`core.json` is seeded on the first run that finds it missing. Two passes: a free
+price screen — above the 200-day, a positive year, `$100M`+ daily turnover, not
+already 35% off its high, under 5% ATR — then statements are fetched for the
+survivors and the two tests price cannot make are applied: **the company must
+earn money**, and **no industry may take more than two slots**. Ranking is
+capped twelve-month return (40%), size (30%) and ROE (30%). Both caps matter:
+ranking on the raw return makes "长期" a momentum screen, and equal weights
+across four names in one supply chain is the same bet placed four times.
+
+The invested fraction is *derived*, not fixed: `slots × position_cap` is the
+most the swing book can be holding, and the core gets what is left less a 10%
+cash buffer. At the defaults that is 42%, so a full swing book (6 × 8% = 48%)
+and a full core come to 90% rather than the 108% a flat 60% produced.
+
+What the seeder still cannot do: the concentration that matters is a *theme*,
+and an industry label does not know that a GPU designer, a foundry and a
+lithography supplier are one bet on AI capex. That judgement is why the file is
+hand-editable, and why the output is announced as a draft. Edit it; nothing
+overwrites it.
 
 ### One page per symbol
 

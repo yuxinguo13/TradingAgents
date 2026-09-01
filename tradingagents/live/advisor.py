@@ -447,6 +447,13 @@ class AdvisorConfig:
     min_price: float = RiskLimits().min_price
 
     max_new_per_sector: int = 2       # one policy theme must not own the list
+    # And the same cap across the *whole* open book, not just today's page.
+    # max_new_per_sector counts one report at a time, so two healthcare ideas a
+    # day for three days is six healthcare positions and never trips it — which
+    # is exactly what happened: a six-slot swing book ended up holding six
+    # biotech names, six bets on one financing environment wearing the costume
+    # of a diversified book. Half the slots is the convention.
+    max_open_per_sector: int = 3
 
     # --- horizons ---------------------------------------------------------
     # The swing book's slot count is the churn control: new ideas only fill
@@ -1522,7 +1529,16 @@ class DailyAdvisor:
         # sizing.py makes at length for preferring it to expectancy.
         proposals.sort(key=lambda r: (-r.planned_r(), r.symbol))
 
+        # Seeded from what the book already holds, so the cap counts positions
+        # rather than page rows. See AdvisorConfig.max_open_per_sector.
         by_sector: dict[str, int] = {}
+        held_by_sector: dict[str, int] = {}
+        closed_today = {r.id for r in report.closed}
+        for open_rec in self.book.open_recommendations():
+            if getattr(open_rec, "id", None) in closed_today:
+                continue
+            key = open_rec.sector or "Unknown"
+            held_by_sector[key] = held_by_sector.get(key, 0) + 1
         remaining = budget
         out: list[Recommendation] = []
         for rec in proposals:
@@ -1537,6 +1553,13 @@ class DailyAdvisor:
                 report.notes.append(
                     f"{rec.symbol} cut: {sector} already has "
                     f"{self.cfg.max_new_per_sector} ideas on this list")
+                continue
+            open_here = held_by_sector.get(sector, 0) + by_sector.get(sector, 0)
+            if open_here >= self.cfg.max_open_per_sector:
+                report.notes.append(
+                    f"{rec.symbol} cut: 账本里 {sector} 已经有 {open_here} 个仓位"
+                    f"（上限 {self.cfg.max_open_per_sector}/{self.cfg.swing_slots}）——"
+                    f"同一个板块占满半数仓位就不是分散，是同一个赌注下了几次")
                 continue
             cost = estimated_cost(rec)
             if cost > remaining:
@@ -1650,17 +1673,15 @@ class DailyAdvisor:
             holdings = horizons.load_core()
             report.core_review_day = horizons.is_review_day(order_day)
             if not holdings and self.cfg.core_seed:
-                pool = list(report.watchlist) + list(report.candidates)[:40]
-                syms = [getattr(x, "symbol", "") for x in pool
-                        if not getattr(x, "is_base", False)]
-                seeded = horizons.propose_core(syms, self.facts(syms, data_date))
+                seeded = self.seed_core(report, data_date)
                 if seeded and not self.cfg.dry_run:
                     path = horizons.save_core(seeded)
                     report.core_seeded = True
                     report.notes.append(
-                        f"核心长仓名单是空的，已按长期规则（站上 200 日线、近一年为正、"
-                        f"成交额充足）初选 {len(seeded)} 只写入 {path}——"
-                        f"这是一份草稿，请按你自己的判断改写它，之后本报告只跟踪不重选")
+                        f"核心长仓名单是空的，已按长期规则初选 {len(seeded)} 只"
+                        f"（合计 {sum(h.weight for h in seeded) * 100:.0f}% 仓位）"
+                        f"写入 {path}——这是一份草稿，请按你自己的判断改写它，"
+                        f"之后本报告只跟踪不重选")
                 holdings = seeded
             if not holdings:
                 return []
@@ -1679,6 +1700,59 @@ class DailyAdvisor:
             report.warnings.append(
                 f"the core section could not be built ({type(exc).__name__}: {exc})")
             return []
+
+    def seed_core(self, report: DailyReport, data_date: str) -> list:
+        """A first core list, in two passes.
+
+        The price filters are free and the statements are not, so the cheap
+        pass runs first and the fetch is paid only for the names it already
+        likes. The second pass is the one that decides: it adds the two tests
+        price cannot make — the company earns money, and no sector takes more
+        than :data:`~.horizons.CORE_MAX_PER_SECTOR` slots.
+
+        The invested fraction is derived from the swing book's own claim on the
+        account rather than fixed, so the two books cannot add up to more than
+        the account holds.
+        """
+        pool = [w.symbol for w in report.watchlist if not w.is_base]
+        pool += [c.symbol for c in report.candidates[:40]]
+        facts = self.facts(pool, data_date)
+
+        shortlist = [h.symbol for h in horizons.propose_core(
+            pool, facts, count=30, require_profit=False, max_per_sector=0)]
+        if not shortlist:
+            return []
+
+        stats: dict = {}
+        try:
+            book = self._fundamentals
+            if book is None:
+                book = self._fundamentals = fund.FundamentalsBook()
+            stats = book.get(shortlist, log=logger.debug)
+        except Exception as exc:
+            # Without statements the profitability test cannot be made, and
+            # _earns() reads "not checked" as "no". Seeding nothing is the
+            # right answer: an unfiltered list would be exactly the one this
+            # method exists to stop producing.
+            report.warnings.append(
+                f"核心名单没有初始化：拿不到财报数据（{type(exc).__name__}: {exc}），"
+                f"无法确认盈利。请自己编辑 core.json")
+            return []
+
+        sectors = {c.symbol: c.sector for c in report.candidates if c.sector}
+        for sym, f in stats.items():
+            if getattr(f, "sector", ""):
+                sectors[sym] = f.sector
+
+        seeded = horizons.propose_core(
+            shortlist, facts, count=8, fundamentals=stats, sectors=sectors,
+            invested=horizons.core_budget(self.cfg.swing_slots, self.cfg.cap_fraction))
+        dropped = [s for s in shortlist[:12] if s not in {h.symbol for h in seeded}]
+        if dropped:
+            report.notes.append(
+                "核心初选里被剔除的（未盈利，或所属行业已占满 "
+                f"{horizons.CORE_MAX_PER_SECTOR} 个名额）：{'、'.join(dropped[:8])}")
+        return seeded
 
     def daytrade_section(self, report: DailyReport, data_date: str) -> list:
         """Levels for the next session, off the watchlist and today's screen.
@@ -2050,6 +2124,25 @@ def _spark(report: "DailyReport", symbol: str, width: int = 14) -> str:
     return charting.sparkline(a.bars.closes[-63:], width)
 
 
+def _risks(analysis, limit: int) -> list[str]:
+    """The bear case for one name, or nothing.
+
+    Guarded because both renderers are the last thing standing: ``main`` prints
+    :func:`format_report` unwrapped, and a report that raises while formatting a
+    single risk bullet loses the whole page — including the sells, which are the
+    part with a deadline. The absence of a bullet is a small loss; the absence
+    of the page is not.
+    """
+    if analysis is None:
+        return []
+    try:
+        return deepdive.risks(analysis)[:limit]
+    except Exception as exc:
+        logger.warning("could not read the risks for %s: %s",
+                       getattr(analysis, "symbol", "?"), exc)
+        return []
+
+
 def _breadth(rows: list) -> list[str]:
     """What the watchlist as a whole is doing — the read a row-by-row table hides."""
     watched = [r for r in rows if not r.is_base]
@@ -2342,10 +2435,8 @@ def _buy_terminal(report: "DailyReport", rec, width: int) -> list[str]:
             f"止损 {rec.stop_price:,.2f} 在参考价下方 "
             f"{(1 - rec.stop_price / rec.reference_price) * 100:.1f}%，"
             f"打掉约亏 ${planned_risk(rec):,.0f}", width - 4)
-    if a is not None:
-        risk = deepdive.risks(a)
-        if risk:
-            out += _wrapped(f"风险：{risk[0]}", width - 4)
+    for line in _risks(a, 1):
+        out += _wrapped(f"风险：{line}", width - 4)
     link = page_link(report, rec.symbol)
     if link:
         out.append(f"    完整分析：{link}")
@@ -2380,9 +2471,8 @@ def _md_buy_narrative(report: "DailyReport", rec) -> list[str]:
     if e is not None and getattr(e, "next_date", ""):
         out.append(f"- **财报日历**：下次 {e.next_date}（约 {e.days_to_next():.0f} 天后）"
                    f"{'——落在持有期内，跳空会直接穿过止损' if e.reports_within(rec.horizon_days) else ''}")
-    if a is not None:
-        for line in deepdive.risks(a)[:2]:
-            out.append(f"- **反方**：{line}")
+    for line in _risks(a, 2):
+        out.append(f"- **反方**：{line}")
     link = page_link(report, sym)
     if link:
         out += ["", f"[→ {sym} 完整分析：图形、财报、消息、原始数据与外部链接]({link})"]

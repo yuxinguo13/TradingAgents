@@ -18,6 +18,7 @@ import pytest
 from tradingagents.live import horizons
 from tradingagents.live.horizons import (
     CoreHolding,
+    core_budget,
     DayTradeIdea,
     daytrade_candidates,
     free_slots,
@@ -143,6 +144,34 @@ class TestReviewCore:
         assert not is_review_day(date(2026, 9, 5))
 
 
+class Fund:
+    """The one attribute propose_core reads off a statement."""
+
+    def __init__(self, profitable=True, sector="Technology"):
+        self.profitable = profitable
+        self.sector = sector
+
+
+def profitable(*symbols, sector="Technology"):
+    return {s: Fund(True, sector) for s in symbols}
+
+
+@pytest.mark.unit
+class TestCoreBudget:
+    def test_the_core_leaves_room_for_a_full_swing_book(self):
+        """A flat 60% core plus a full 48% swing book allocated 108% of an
+        account that does not have 108% to spend."""
+        got = core_budget(slots=6, position_cap=0.08)
+        assert got == pytest.approx(0.42)
+        assert got + 6 * 0.08 <= 1.0
+
+    def test_a_desk_with_no_swing_book_is_still_not_fully_allocated(self):
+        assert core_budget(slots=0, position_cap=0.08) == horizons.CORE_MAX_INVESTED
+
+    def test_a_swing_book_claiming_everything_still_leaves_a_core(self):
+        assert core_budget(slots=20, position_cap=0.08) == horizons.CORE_MIN_INVESTED
+
+
 @pytest.mark.unit
 class TestProposeCore:
     def test_a_twentyfold_microcap_does_not_outrank_a_real_business(self):
@@ -151,29 +180,74 @@ class TestProposeCore:
             ["MOON", "BIGCO"],
             {"MOON": facts(ret_12m=19.0, dollar_vol=1.2e8),
              "BIGCO": facts(ret_12m=0.35, dollar_vol=9e9)},
-            count=1)
+            count=1, fundamentals=profitable("MOON", "BIGCO"))
         assert [h.symbol for h in got] == ["BIGCO"]
 
+    def test_a_company_that_earns_nothing_is_never_a_core_holding(self):
+        """The first seed held a diagnostics firm at TTM EPS -3.51 — while the
+        swing engine refused the same symbol the same morning."""
+        got = propose_core(["LOSS", "EARNS"], {s: facts() for s in ("LOSS", "EARNS")},
+                           fundamentals={"LOSS": Fund(profitable=False),
+                                         "EARNS": Fund(profitable=True)})
+        assert [h.symbol for h in got] == ["EARNS"]
+
+    def test_an_unchecked_statement_counts_as_unprofitable(self):
+        """"not fetched" and "fetched and earning" must not resolve the same."""
+        assert propose_core(["AAA"], {"AAA": facts()}, fundamentals={}) == []
+        assert propose_core(["AAA"], {"AAA": facts()}) == []
+
+    def test_the_profit_test_can_be_turned_off_for_the_cheap_first_pass(self):
+        got = propose_core(["AAA"], {"AAA": facts()}, require_profit=False)
+        assert [h.symbol for h in got] == ["AAA"]
+
+    def test_one_supply_chain_cannot_take_four_of_eight_slots(self):
+        """The seed returned NVDA, AMD, ASML and TSM: a GPU designer, its
+        competitor, the foundry that makes both, and that foundry's sole
+        lithography supplier. Four slots, one bet."""
+        syms = ["CHIP1", "CHIP2", "CHIP3", "CHIP4", "BANK1", "DRUG1"]
+        f = {s: facts() for s in syms}
+        stats = {s: Fund(True, "Semiconductors") for s in syms[:4]}
+        stats["BANK1"] = Fund(True, "Financial Services")
+        stats["DRUG1"] = Fund(True, "Healthcare")
+        got = [h.symbol for h in propose_core(
+            syms, f, count=8, fundamentals=stats,
+            sectors={s: v.sector for s, v in stats.items()})]
+        assert sum(1 for s in got if s.startswith("CHIP")) == 2
+        assert {"BANK1", "DRUG1"} <= set(got)
+
+    def test_the_sector_cap_can_be_lifted_for_the_shortlist_pass(self):
+        syms = ["CHIP1", "CHIP2", "CHIP3"]
+        stats = {s: Fund(True, "Semiconductors") for s in syms}
+        got = propose_core(syms, {s: facts() for s in syms}, fundamentals=stats,
+                           sectors={s: "Semiconductors" for s in syms},
+                           max_per_sector=0)
+        assert len(got) == 3
+
     def test_an_illiquid_name_is_never_proposed_as_a_core_holding(self):
-        assert propose_core(["THIN"], {"THIN": facts(dollar_vol=1e6)}) == []
+        assert propose_core(["THIN"], {"THIN": facts(dollar_vol=1e6)},
+                            fundamentals=profitable("THIN")) == []
 
     def test_a_name_below_its_200_day_is_never_proposed(self):
-        assert propose_core(["AAA"], {"AAA": facts(price=70.0, sma200=100.0)}) == []
+        assert propose_core(["AAA"], {"AAA": facts(price=70.0, sma200=100.0)},
+                            fundamentals=profitable("AAA")) == []
 
     def test_a_name_already_deep_in_a_drawdown_is_never_proposed(self):
-        assert propose_core(["AAA"], {"AAA": facts(off_high=-0.55)}) == []
+        assert propose_core(["AAA"], {"AAA": facts(off_high=-0.55)},
+                            fundamentals=profitable("AAA")) == []
 
     def test_a_five_percent_a_day_mover_is_a_trading_vehicle_not_a_holding(self):
-        assert propose_core(["AAA"], {"AAA": facts(atr_pct=0.09)}) == []
+        assert propose_core(["AAA"], {"AAA": facts(atr_pct=0.09)},
+                            fundamentals=profitable("AAA")) == []
 
-    def test_the_weights_are_equal_and_leave_room_for_the_rest_of_the_book(self):
-        got = propose_core(["A", "B", "C"],
-                           {s: facts() for s in "ABC"}, count=3)
+    def test_the_weights_are_equal_and_sum_to_the_budget_they_were_given(self):
+        got = propose_core(["A", "B", "C"], {s: facts() for s in "ABC"}, count=3,
+                           fundamentals=profitable("A", "B", "C"),
+                           sectors={s: s for s in "ABC"}, invested=0.42)
         assert len({h.weight for h in got}) == 1
-        assert sum(h.weight for h in got) == pytest.approx(0.6, abs=1e-3)
+        assert sum(h.weight for h in got) == pytest.approx(0.42, abs=1e-3)
 
     def test_a_universe_with_nothing_qualifying_proposes_nothing(self):
-        assert propose_core(["AAA"], {}) == []
+        assert propose_core(["AAA"], {}, fundamentals=profitable("AAA")) == []
 
 
 # ---------------------------------------------------------------------------
