@@ -480,6 +480,19 @@ class AdvisorConfig:
     # be a worse answer than producing one against a stated assumption.
     fallback_account_value: float = 100_000.0
 
+    # Fields settable from the environment, and the type each is read as.
+    # Everything here changes *what the report proposes*, so it belongs
+    # alongside the risk limits in being adjustable without editing code —
+    # a knob whose only interface is a source edit is a knob nobody turns.
+    _ENV_FIELDS = {
+        "top": int, "max_candidates": int, "screen_top": int,
+        "risk_pct": float, "min_r": float, "atr_stop_mult": float,
+        "horizon_days": int, "limit_buffer": float,
+        "swing_slots": int, "max_new_per_sector": int, "max_open_per_sector": int,
+        "daytrade_top": int, "max_fundamentals": int, "max_news_symbols": int,
+        "core_seed": bool, "write_pages": bool, "with_fundamentals": bool,
+    }
+
     @classmethod
     def from_env(cls) -> AdvisorConfig:
         cfg = cls()
@@ -488,6 +501,26 @@ class AdvisorConfig:
             v = _num(raw)
             if not math.isnan(v) and v > 0:
                 cfg.fallback_account_value = v
+        for field_name, kind in cls._ENV_FIELDS.items():
+            raw = os.getenv(f"TRADINGAGENTS_ADVISOR_{field_name.upper()}")
+            if raw is None or not raw.strip():
+                continue
+            try:
+                if kind is bool:
+                    value = raw.strip().lower() in ("1", "true", "yes", "on")
+                else:
+                    value = kind(_num(raw))
+                    # A negative slot count or a zero risk budget is a typo, and
+                    # silently accepting it produces a report that is empty for
+                    # no stated reason.
+                    if value < 0 or (kind is float and value == 0
+                                     and field_name in ("risk_pct", "min_r")):
+                        raise ValueError(raw)
+            except (TypeError, ValueError):
+                logger.warning("ignoring TRADINGAGENTS_ADVISOR_%s=%r: not a %s",
+                               field_name.upper(), raw, kind.__name__)
+                continue
+            setattr(cfg, field_name, value)
         return cfg
 
 
@@ -2732,6 +2765,11 @@ def main(argv=None) -> int:
     p.add_argument("--max-candidates", type=int, default=None,
                    help="LLM budget: how many names reach the panel")
     p.add_argument("--exchange", default=None, choices=["nasdaq", "all"])
+    p.add_argument("--swing-slots", type=int, default=None,
+                   help="concurrent swing positions the book may carry (default 6); "
+                        "new ideas only fill free slots")
+    p.add_argument("--no-pages", action="store_true",
+                   help="skip the per-symbol deep-dive pages and their statement fetch")
     p.add_argument("--use-cache", action="store_true",
                    help="reuse the most recent saved screen instead of rescanning")
     p.add_argument("--no-llm", action="store_true",
@@ -2752,7 +2790,8 @@ def main(argv=None) -> int:
     # with the number it was ignoring.
     cfg = AdvisorConfig.from_env()
     for src, dst in (("top", "top"), ("risk_pct", "risk_pct"), ("min_r", "min_r"),
-                     ("max_candidates", "max_candidates"), ("exchange", "exchange")):
+                     ("max_candidates", "max_candidates"), ("exchange", "exchange"),
+                     ("swing_slots", "swing_slots")):
         v = getattr(a, src, None)
         if v is not None and hasattr(cfg, dst):
             setattr(cfg, dst, v)
@@ -2764,6 +2803,9 @@ def main(argv=None) -> int:
     for flag, attr in (("use_cache", "use_cache"), ("dry_run", "dry_run")):
         if getattr(a, flag, False) and hasattr(cfg, attr):
             setattr(cfg, attr, True)
+    if getattr(a, "no_pages", False):
+        cfg.write_pages = False
+        cfg.with_fundamentals = False
 
     llm = None
     if not a.no_llm:

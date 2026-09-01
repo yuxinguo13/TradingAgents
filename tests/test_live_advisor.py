@@ -714,6 +714,36 @@ class TestSizingRefusals:
 # ---------------------------------------------------------------------------
 
 @pytest.mark.unit
+class TestConfigFromEnv:
+    """A knob whose only interface is a source edit is a knob nobody turns."""
+
+    def test_the_horizon_knobs_are_settable_without_editing_code(self, monkeypatch):
+        monkeypatch.setenv("TRADINGAGENTS_ADVISOR_SWING_SLOTS", "3")
+        monkeypatch.setenv("TRADINGAGENTS_ADVISOR_MAX_OPEN_PER_SECTOR", "1")
+        monkeypatch.setenv("TRADINGAGENTS_ADVISOR_DAYTRADE_TOP", "0")
+        cfg = AdvisorConfig.from_env()
+        assert (cfg.swing_slots, cfg.max_open_per_sector, cfg.daytrade_top) == (3, 1, 0)
+
+    def test_a_boolean_reads_the_words_a_human_types(self, monkeypatch):
+        monkeypatch.setenv("TRADINGAGENTS_ADVISOR_WRITE_PAGES", "false")
+        assert AdvisorConfig.from_env().write_pages is False
+        monkeypatch.setenv("TRADINGAGENTS_ADVISOR_WRITE_PAGES", "yes")
+        assert AdvisorConfig.from_env().write_pages is True
+
+    def test_a_typo_is_ignored_with_a_warning_not_silently_applied(self, monkeypatch):
+        """A zero risk budget produces an empty report for no stated reason."""
+        monkeypatch.setenv("TRADINGAGENTS_ADVISOR_SWING_SLOTS", "six")
+        monkeypatch.setenv("TRADINGAGENTS_ADVISOR_RISK_PCT", "0")
+        cfg = AdvisorConfig.from_env()
+        assert cfg.swing_slots == AdvisorConfig().swing_slots
+        assert cfg.risk_pct == AdvisorConfig().risk_pct
+
+    def test_an_unset_variable_leaves_the_default(self, monkeypatch):
+        monkeypatch.delenv("TRADINGAGENTS_ADVISOR_TOP", raising=False)
+        assert AdvisorConfig.from_env().top == AdvisorConfig().top
+
+
+@pytest.mark.unit
 class TestHorizons:
     """The three books, and the slot count that stops the daily churn."""
 

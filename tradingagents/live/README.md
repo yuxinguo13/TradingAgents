@@ -356,6 +356,16 @@ OpenInsider, plus Chinese-language relays.
 The bear case is generated rather than written on purpose: a hand-written one
 gets skipped on the names where it is least convenient.
 
+### Turning the knobs
+
+Anything that changes *what the report proposes* is settable as
+`TRADINGAGENTS_ADVISOR_<FIELD>` — `SWING_SLOTS`, `MAX_OPEN_PER_SECTOR`,
+`DAYTRADE_TOP`, `TOP`, `RISK_PCT`, `MIN_R`, `ATR_STOP_MULT`, `HORIZON_DAYS`,
+`WRITE_PAGES`, `WITH_FUNDAMENTALS`, `MAX_FUNDAMENTALS`, `CORE_SEED` and the
+rest of `AdvisorConfig._ENV_FIELDS`. A value that will not parse logs a warning
+and keeps the default rather than silently applying a zero. `--swing-slots` and
+`--no-pages` are also CLI flags, the two worth reaching for mid-session.
+
 ### Language and names
 
 Narrative analysis is in Chinese; tables, tickers, levels and the R/ATR/SMA
