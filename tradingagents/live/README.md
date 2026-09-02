@@ -374,6 +374,45 @@ vocabulary stay in English. Company names resolve through
 mechanical gloss off the English suffix, marked `°` so a guess can never be
 mistaken for a checked name.
 
+## Execution: the gap between the book and the account
+
+There are two decision systems here and, until `live/execute.py`, no path from
+either to the venue. `advisor` decides without a model and writes
+`recommendations.json`, but its own docstring says *nothing here places an
+order*. `monitor` can place orders, but only after a persona panel votes, and
+with `--no-llm` it never decides. A desk run the way this one is — advisor
+daily, monitor as a sentinel — therefore produces a full book and executes none
+of it, forever, without erroring.
+
+That is invisible from either side: the track record scores ideas as though
+they were taken while the venue holds something else. On 2026-09-01 the three
+books had **no symbol in common** — six open recommendations, five local paper
+positions seeded as a demo on day one, and an empty Alpaca account.
+
+    python -m tradingagents.live.execute            # what it would do
+    python -m tradingagents.live.execute --submit   # do it
+
+Four properties, each chosen so the bridge cannot cause the failure it exists
+to prevent:
+
+- **Reporting is the default.** An execution bridge that trades by default is
+  one you learn about after it has traded.
+- **Every order goes through the same Secretary** the panel's orders do. A
+  second path to the venue would be a second set of risk limits.
+- **Positions the book does not recognise are reported, never touched.** A hand
+  trade, another strategy, an old demo seed — selling those because one book
+  omits them is the bridge deciding it owns the whole account.
+- **Stale entries are quarantined.** An unfilled idea is priced off one close
+  and meant for the next open; after `ENTRY_FRESH_DAYS` its limit, stop and R
+  all refer to a price that moved. Those get their own section with R
+  recomputed at the current price *and the distance to the stop beside it* —
+  because R rises as a name falls toward its stop, and an 8R entry sitting 1%
+  above its own stop is not an 8R trade.
+
+The bridge never writes to the book. The advisor owns those records; a bridge
+that edited them could make the account and the track record agree by changing
+the wrong one.
+
 ## State
 
 Everything under `~/.tradingagents/` (override with `TRADINGAGENTS_HOME`).
