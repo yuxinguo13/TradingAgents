@@ -832,6 +832,58 @@ class TestHorizons:
         for text in (format_report(second), to_markdown(second)):
             assert "账本与账户" in text or "BOOK vs ACCOUNT" in text
 
+    def test_todays_sell_is_an_order_not_an_unrecognised_position(self, tmp_path,
+                                                                  monkeypatch):
+        """The report cannot say "sell this" and "never touch this" at once.
+
+        ``apply_exits`` writes today's closes back to the book before the
+        reconciliation runs, so those symbols are no longer open in it. Matched
+        on the open rows alone they came back as positions the book does not
+        recognise — the one bucket the bridge promises never to touch. The SELL
+        section says get out, the section below it says leave it alone,
+        ``execute --submit`` never sells it, and the track record books the
+        loss as cut while the account keeps riding it.
+        """
+        monkeypatch.setenv("TRADINGAGENTS_HOME", str(tmp_path))
+        d = Desk(tmp_path)
+        monkeypatch.setattr(advisor, "screens_dirs", lambda: [tmp_path / "screens"])
+        monkeypatch.setattr(advisor, "snapshot", d.snapshot)
+        monkeypatch.setattr(advisor, "run_screen", d.screen)
+
+        first = d.run()
+        assert first.buys
+        d.account.holdings = [Holding(symbol=r.symbol, quantity=float(r.shares),
+                                      avg_cost=r.reference_price,
+                                      market_value=r.shares * r.reference_price)
+                              for r in first.buys]
+        for r in first.buys:                       # straight through every stop
+            old = d.snaps[r.symbol]
+            d.snaps[r.symbol] = snap(r.symbol, r.stop_price * 0.80,
+                                     atr_pct=old.atr_pct, ret_3m=old.ret_3m)
+
+        second = d.run(now=MONDAY_AFTER_CLOSE)
+        sold = {s.symbol for s in second.sells if s.closes_position}
+        assert sold and {r.symbol for r in second.closed} == sold
+        rc = second.reconcile
+        assert sold <= {i.symbol for i in rc.to_close}
+        assert sold.isdisjoint({h.symbol for h in rc.unmanaged})
+        for text in (format_report(second), to_markdown(second)):
+            assert "要卖出" in text
+
+    def test_a_core_holding_is_not_reported_as_unrecognised(self, tmp_path,
+                                                            monkeypatch):
+        """It is held on purpose, on a clock this section has no part in."""
+        monkeypatch.setenv("TRADINGAGENTS_HOME", str(tmp_path))
+        (tmp_path / "core.json").write_text('{"MSFT": 0.08}', encoding="utf-8")
+        d = Desk(tmp_path, holdings=[Holding(symbol="MSFT", quantity=30.0,
+                                             avg_cost=400.0, market_value=12_000.0)])
+        monkeypatch.setattr(advisor, "screens_dirs", lambda: [tmp_path / "screens"])
+        monkeypatch.setattr(advisor, "snapshot", d.snapshot)
+        monkeypatch.setattr(advisor, "run_screen", d.screen)
+        rc = d.run().reconcile
+        assert [h.symbol for h in rc.core_held] == ["MSFT"]
+        assert rc.unmanaged == []
+
     def test_a_position_the_book_does_not_know_is_reported_not_sold(self, tmp_path,
                                                                     monkeypatch):
         monkeypatch.setenv("TRADINGAGENTS_HOME", str(tmp_path))

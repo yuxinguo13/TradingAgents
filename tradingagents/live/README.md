@@ -392,22 +392,46 @@ positions seeded as a demo on day one, and an empty Alpaca account.
     python -m tradingagents.live.execute            # what it would do
     python -m tradingagents.live.execute --submit   # do it
 
-Four properties, each chosen so the bridge cannot cause the failure it exists
-to prevent:
+Properties, each chosen so the bridge cannot cause the failure it exists to
+prevent:
 
 - **Reporting is the default.** An execution bridge that trades by default is
   one you learn about after it has traded.
 - **Every order goes through the same Secretary** the panel's orders do. A
-  second path to the venue would be a second set of risk limits.
+  second path to the venue would be a second set of risk limits — and the gate
+  is asked about the *real* session, `clock.market_state().is_tradeable`, the
+  same reading `monitor` takes. Fails closed.
+- **It sells as readily as it buys.** Entries come out of the book on their
+  own; exits have to be computed, so they are, by default. Behind a flag they
+  never were, and a bridge that can only open positions is worse than none
+  because it looks like both. `--no-exits` turns them off.
 - **Positions the book does not recognise are reported, never touched.** A hand
   trade, another strategy, an old demo seed — selling those because one book
-  omits them is the bridge deciding it owns the whole account.
+  omits them is the bridge deciding it owns the whole account. The core list is
+  named as itself rather than lumped in there: it is held on purpose, on a
+  monthly clock, and calling it unrecognised every day is how the section stops
+  being read.
+- **An exit the book already took is not an unrecognised position.** This is
+  the one a reader of open rows alone gets backwards. The advisor writes its
+  closes back to the book *before* the reconciliation runs, so the symbol it
+  just told you to sell is no longer open there — filed under "never touch",
+  it is never sold, and the record shows the loss cut while the account keeps
+  riding it. Held positions are matched against closed rows too, for
+  `EXIT_WINDOW_DAYS`; past that the exit is still printed, with its date, but
+  is not an order — a name exited months ago and bought back by hand is not
+  this bridge's to sell.
+- **A trim is an order.** `review()` books the shares off the idea the moment
+  it instructs the trim, so the book holds the post-trim size and the venue
+  still holds all of it. That difference is this morning's own instruction;
+  read as drift it waits for a human nobody told.
 - **Stale entries are quarantined.** An unfilled idea is priced off one close
-  and meant for the next open; after `ENTRY_FRESH_DAYS` its limit, stop and R
-  all refer to a price that moved. Those get their own section with R
-  recomputed at the current price *and the distance to the stop beside it* —
-  because R rises as a name falls toward its stop, and an 8R entry sitting 1%
-  above its own stop is not an 8R trade.
+  and meant for one open; once that open has gone by, its limit, stop and R all
+  refer to a price that moved. The clock is the session being *planned*, not
+  the session the data came from — those are always one apart, and counting
+  from the data day handed every entry an extra session. Stale ones get their
+  own section with R recomputed at the current price *and the distance to the
+  stop beside it* — because R rises as a name falls toward its stop, and an 8R
+  entry sitting 1% above its own stop is not an 8R trade.
 
 The reconciliation also runs inside the daily report, as its own section, every
 day. Behind a command it would be a command nobody remembers; on the page it is

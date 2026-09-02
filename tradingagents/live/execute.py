@@ -26,8 +26,15 @@ it exists to prevent:
   through. A second path to the venue would be a second set of risk limits.
 * **Positions the book does not know about are reported, never touched.** The
   venue may hold things this desk did not choose — a hand trade, an older
-  strategy, a demo seed. Selling them because they are absent from one book is
-  the bridge deciding it owns the whole account.
+  strategy, the long-term book on its own monthly clock, a demo seed. Selling
+  them because they are absent from one book is the bridge deciding it owns
+  the whole account. *Absent* has to mean absent, though: a position the book
+  already closed is not unrecognised, it is an exit that never reached the
+  venue, and reading only the open rows files that under "never touch" — which
+  leaves the record showing the loss cut while the account keeps riding it.
+* **It sells as readily as it buys.** Entries come out of the book on their
+  own; exits have to be computed. Behind a flag, they never were, and the only
+  thing the bridge could do was open positions.
 * **It never writes to the book.** The advisor owns those records; a bridge
   that edited them could make the track record agree with the account by
   changing the wrong one.
@@ -43,12 +50,14 @@ import logging
 import math
 import os
 import sys
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, replace
 from datetime import date as _date
 
 from . import clock
 from .broker import BUY, SELL, Account, Holding, LIMIT, MARKET, open_broker
-from .recommendations import Recommendation, RecommendationBook
+from .recommendations import (
+    CLOSED, EXPIRED, TRIM, Recommendation, RecommendationBook,
+)
 from .secretary import Order, RiskLimits, Secretary, TradeLedger, kill_switch_engaged
 
 logger = logging.getLogger(__name__)
@@ -58,9 +67,15 @@ logger = logging.getLogger(__name__)
 # both produce sub-share differences that are not a reconciliation problem.
 SHARE_TOLERANCE = 1.0
 
-# How long an unfilled entry stays actionable, in calendar days from the date it
-# was issued for. An idea is priced off one close and meant for the next open;
-# after that its limit, its stop and its R all refer to a price that has moved.
+# How many days past the session it was issued FOR an unfilled entry stays
+# actionable. Zero: an idea is priced off one close and meant for one open, so
+# once that open has gone by, its limit, its stop and its R all refer to a
+# price that has moved.
+#
+# The clock this counts against is the session being planned, not the session
+# the data came from — those are always one apart, and counting from the data
+# day quietly granted every entry an extra session of life it was never
+# supposed to have.
 #
 # This is the failure the method document records happening for real: NRIX and
 # NTRA were issued at 2.42R and 2.41R, both names rose ~2.6% before the open,
@@ -69,7 +84,19 @@ SHARE_TOLERANCE = 1.0
 # days later at a six-day-old limit and never mention it — so stale entries are
 # reported in their own section with R recomputed at the current price, and are
 # never submitted.
-ENTRY_FRESH_DAYS = 1
+ENTRY_FRESH_DAYS = 0
+
+# How long the book's own exit stays an order rather than a remark, in calendar
+# days. A position the book has already closed while the account still holds it
+# is not an unrecognised position — the decision was taken and never reached
+# the venue, which is the precise failure this module exists for.
+#
+# It is bounded because the opposite reading is also a real account: a name
+# exited months ago and since bought back by hand is not this bridge's to sell.
+# Past the window the holding is still named, with the exit and its date
+# attached, so the bounded case degrades into a printed remark and never into
+# silence.
+EXIT_WINDOW_DAYS = 10
 
 
 def _num(v, default: float = float("nan")) -> float:
@@ -117,12 +144,22 @@ class Reconciliation:
 
     to_open: list = field(default_factory=list)      # Intent
     to_close: list = field(default_factory=list)     # Intent
+    # Partial sells the book has already booked against the idea. Separate from
+    # to_close because they are a different instruction: conflating the two is
+    # how the trim went missing — the book shrank the position, the venue did
+    # not, and the difference was filed as an unexplained share gap.
+    to_trim: list = field(default_factory=list)      # Intent
     # Entries whose levels have gone stale: (Intent, days_old, R_now).
     # Reported, never submitted — see ENTRY_FRESH_DAYS.
     stale: list = field(default_factory=list)
     drift: list = field(default_factory=list)        # (symbol, book_shares, venue_shares)
     matched: list = field(default_factory=list)      # (symbol, shares)
     unmanaged: list = field(default_factory=list)    # Holding
+    # Held by the long-term book, which runs on its own monthly clock. Not
+    # unmanaged: naming a core position "unrecognised" every single day is how
+    # that section stops being read, and the one day it says something new goes
+    # by unnoticed with it.
+    core_held: list = field(default_factory=list)    # Holding
     notes: list = field(default_factory=list)
 
     @property
@@ -130,12 +167,15 @@ class Reconciliation:
         """Exits first: the proceeds of a sale are what fund a purchase, and a
         bridge that buys before it sells can be rejected for cash it is about
         to have."""
-        return sorted(self.to_close, key=lambda i: -i.urgency) + self.to_open
+        return (sorted(self.to_close, key=lambda i: -i.urgency)
+                + sorted(self.to_trim, key=lambda i: -i.urgency)
+                + self.to_open)
         # 过期未成交刻意不在这里：它们要重新定量，不是补单
 
     @property
     def clean(self) -> bool:
-        return not (self.to_open or self.to_close or self.drift or self.stale)
+        return not (self.to_open or self.to_close or self.to_trim
+                    or self.drift or self.stale)
 
 
 def _r_now(rec: Recommendation, price: float) -> float:
@@ -167,25 +207,79 @@ def _to_stop(rec: Recommendation, price: float) -> float:
     return price / stop - 1.0
 
 
+def _sell_intent(sym: str, have: int, sig, rec_id: str) -> Intent:
+    """A sell of what is actually held, never of what the signal imagined."""
+    n = int(_num(getattr(sig, "shares", have), have))
+    return Intent(SELL, sym, min(have, n) if n > 0 else have, None,
+                  f"{getattr(sig, 'action', 'SELL')}：{getattr(sig, 'reason', '')}",
+                  rec_id, int(_num(getattr(sig, "urgency", 1), 1)))
+
+
+def _recent_exits(book, as_of: _date | None, window_days: int) -> dict:
+    """Symbols the book has exited, newest exit per symbol.
+
+    A holding whose book record is a *closed* recommendation is the one case a
+    reader of open rows alone gets exactly backwards. The book closed it, the
+    order was never placed, and from then on the symbol is absent from
+    ``open_recommendations`` — so a bridge that matches only open rows files it
+    under "not recognised, never touched" and never sells it again. The record
+    shows the loss cut; the account keeps riding it. That is this module's own
+    failure mode, printed as reassurance.
+
+    Returns every exit, dated. The caller decides which are recent enough to be
+    orders — see :data:`EXIT_WINDOW_DAYS`.
+    """
+    out: dict = {}
+    for rec in list(getattr(book, "recommendations", None) or []):
+        if getattr(rec, "status", "") not in (CLOSED, EXPIRED):
+            continue
+        sym = str(getattr(rec, "symbol", "") or "").upper()
+        if not sym:
+            continue
+        try:
+            exited = _date.fromisoformat(str(rec.exit_date))
+        except (TypeError, ValueError):
+            continue
+        prev = out.get(sym)
+        if prev is None or exited >= prev[1]:
+            out[sym] = (rec, exited)
+    return out
+
+
 def plan(book: RecommendationBook, account: Account, *,
          exits=None, as_of: _date | None = None, quote=None,
-         fresh_days: int = ENTRY_FRESH_DAYS) -> Reconciliation:
-    """Compare the open book to the account and say what would close the gap.
+         fresh_days: int = ENTRY_FRESH_DAYS, core=None,
+         exit_window_days: int = EXIT_WINDOW_DAYS) -> Reconciliation:
+    """Compare the book to the account and say what would close the gap.
+
+    ``as_of`` is the session being planned — the one the orders are FOR, not
+    the one the data came from. Every age below counts against it.
 
     ``exits`` is the exit-signal list the advisor already computed for today;
     passing it keeps one exit engine rather than two. Without it, the plan
     covers entries and drift only, and says so.
+
+    ``core`` is the long-term book's symbols. They are held deliberately, on a
+    monthly clock this module has no part in, and listing them as unrecognised
+    every day is how a warning section becomes wallpaper.
     """
     out = Reconciliation()
     out._book = {}
+    when = as_of or _date.today()
     held = {h.symbol.upper(): h for h in (account.holdings or [])}
     open_recs = [r for r in book.open_recommendations() if r.symbol]
     booked = {r.symbol.upper(): r for r in open_recs}
+    core_syms = {str(s).upper() for s in (core or ()) if str(s).strip()}
 
-    closing = {}
+    closing, trimming = {}, {}
     for sig in (exits or []):
+        sym = str(getattr(sig, "symbol", "") or "").upper()
+        if not sym:
+            continue
         if getattr(sig, "closes_position", False):
-            closing[sig.symbol.upper()] = sig
+            closing[sym] = sig
+        elif str(getattr(sig, "action", "")) == TRIM:
+            trimming[sym] = sig
     if exits is None:
         out.notes.append("没有传入离场信号，本次只对账入场与股数差异；"
                          "离场要由 advisor 的规则算出来，不能在这里另起一套")
@@ -198,19 +292,27 @@ def plan(book: RecommendationBook, account: Account, *,
         sig = closing.get(sym)
         if sig is not None:
             if have > 0:
-                out.to_close.append(Intent(
-                    SELL, sym, min(have, int(_num(sig.shares, have))),
-                    None, f"{sig.action}：{sig.reason}", rec.id,
-                    int(_num(getattr(sig, "urgency", 1), 1))))
+                out.to_close.append(_sell_intent(sym, have, sig, rec.id))
             else:
                 out.notes.append(f"{sym}：账本要离场，但账户里本来就没有仓位")
+            continue
+        tsig = trimming.get(sym)
+        if tsig is not None:
+            # The book already took these shares off the idea, so ``want`` is
+            # the post-trim size and the venue still holds the pre-trim one.
+            # Read as drift the difference reads as "someone traded this by
+            # hand"; it is this morning's own instruction.
+            if have > 0:
+                out.to_trim.append(_sell_intent(sym, have, tsig, rec.id))
+            else:
+                out.notes.append(f"{sym}：账本要减仓，但账户里本来就没有仓位")
             continue
         if want <= 0:
             continue
         if have == 0:
             intent = Intent(BUY, sym, want, _num(rec.limit_price, None) or None,
                             f"账本 {rec.issued_date} 发出，尚未建仓", rec.id)
-            age = _age_days(rec, as_of)
+            age = _age_days(rec, when)
             if age is not None and age > fresh_days:
                 px = float("nan")
                 if quote is not None:
@@ -227,10 +329,107 @@ def plan(book: RecommendationBook, account: Account, *,
         else:
             out.matched.append((sym, have))
 
+    exited = _recent_exits(book, when, exit_window_days)
     for sym, h in held.items():
-        if sym not in booked:
+        if sym in booked:
+            continue
+        have = int(_num(getattr(h, "quantity", 0.0), 0.0))
+        sig = closing.get(sym)
+        gone = exited.get(sym)
+        if sig is not None and have > 0:
+            # The advisor writes its exits back to the book before this runs,
+            # so today's sell is already closed there and its symbol is no
+            # longer open. The signal is the instruction; the book row is only
+            # where it was recorded.
+            rec_id = str(getattr(sig, "rec_id", "") or "")
+            out.to_close.append(_sell_intent(sym, have, sig, rec_id))
+        elif gone is not None and have > 0 and (when - gone[1]).days <= exit_window_days:
+            rec, day = gone
+            out._book[rec.id] = rec
+            out.to_close.append(Intent(
+                SELL, sym, have, None,
+                f"账本 {day.isoformat()} 已记为离场"
+                f"（{getattr(rec, 'exit_reason', '') or 'exit'}），但仓位还在账户里",
+                rec.id, 3))
+        elif sym in core_syms:
+            out.core_held.append(h)
+        else:
+            if gone is not None:
+                out.notes.append(
+                    f"{sym}：账本 {gone[1].isoformat()} 就记为离场了，超过 "
+                    f"{exit_window_days} 天，这里只提不下单——它可能是后来手工买回的")
             out.unmanaged.append(h)
     return out
+
+
+def market_is_open(log=logger.info) -> bool:
+    """Whether the regular session is open — the reading :mod:`monitor` takes.
+
+    Fails closed. The guard this replaces asked ``clock`` for an
+    ``is_market_open`` that has never existed, got ``False`` from ``hasattr``
+    every single time, and passed ``market_open=True`` to the gate — which
+    switched ``require_market_open`` off for every order this bridge placed,
+    while reading like a careful check.
+    """
+    try:
+        return bool(clock.market_state().is_tradeable)
+    except Exception as exc:
+        log(f"读不出市场状态（{type(exc).__name__}: {exc}）；按休市处理")
+        return False
+
+
+def _applied(account: Account, order: Order, price: float) -> Account:
+    """``account`` with one fill applied, erring tight.
+
+    A buy debits cash and adds the shares. A sell removes the shares and
+    credits nothing: unsettled proceeds are not room to buy with, and the only
+    error that matters here is the one that lets the next order through.
+    """
+    px, qty = _num(price, 0.0), int(_num(order.quantity, 0))
+    if not (px > 0) or qty <= 0:
+        return account
+    notional, sym = qty * px, order.symbol.upper()
+    holdings = list(account.holdings or [])
+    i = next((n for n, h in enumerate(holdings) if h.symbol.upper() == sym), None)
+    cash, power = account.cash, account.buying_power
+    if order.action == BUY:
+        if i is None:
+            holdings.append(Holding(symbol=sym, quantity=float(qty), avg_cost=px,
+                                    last=px, market_value=notional))
+        else:
+            h = holdings[i]
+            holdings[i] = replace(h, quantity=h.quantity + qty,
+                                  market_value=h.market_value + notional)
+        cash = max(0.0, cash - notional)
+        power = max(0.0, (power or cash) - notional)
+    elif i is not None:
+        h = holdings[i]
+        left = max(0.0, h.quantity - qty)
+        if left <= 0:
+            holdings.pop(i)
+        else:
+            holdings[i] = replace(h, quantity=left,
+                                  market_value=max(0.0, h.market_value - notional))
+    return replace(account, cash=cash, buying_power=power, holdings=holdings)
+
+
+def _after(broker, account: Account, order: Order, price: float, log) -> Account:
+    """The account the *next* order is checked against.
+
+    One snapshot vetting a whole basket is a gate that reads as strict and
+    approves more than the account can pay for: six buys each measured against
+    the same untouched cash and the same untouched gross exposure. The venue's
+    own books are the truth, so they are asked first; when they cannot be
+    reached the fill is applied locally, and only in the direction that
+    tightens what comes next.
+    """
+    try:
+        fresh = broker.account()
+        if fresh is not None and _num(getattr(fresh, "account_value", 0.0), 0.0) > 0:
+            return fresh
+    except Exception as exc:
+        log(f"下单后读不回账户（{type(exc).__name__}: {exc}）；按本地估算继续")
+    return _applied(account, order, price)
 
 
 def submit(rec: Reconciliation, broker, secretary: Secretary, account: Account,
@@ -240,9 +439,13 @@ def submit(rec: Reconciliation, broker, secretary: Secretary, account: Account,
     Returns ``(Intent, Verdict, OrderResult | None)`` triples so the caller can
     print exactly what happened to each one — including the ones the gate
     resized or refused, which are the interesting rows.
+
+    The account is re-read after every fill. This function places a whole book
+    at once, which is the case where a stale snapshot stops being a rounding
+    error and becomes a basket the account cannot fund.
     """
     if market_open is None:
-        market_open = clock.is_market_open() if hasattr(clock, "is_market_open") else True
+        market_open = market_is_open(log)
     out = []
     for intent in rec.intents:
         price = 0.0
@@ -264,11 +467,14 @@ def submit(rec: Reconciliation, broker, secretary: Secretary, account: Account,
             out.append((intent, verdict, None))
             continue
         try:
+            # record() persists on its own; a second save() here wrote the
+            # whole ledger twice per fill.
             secretary.ledger.record(order, price, bool(getattr(result, "ok", False)),
                                     str(getattr(result, "message", "")))
-            secretary.ledger.save()
         except Exception as exc:
             log(f"成交流水没写进去 ({exc})")
+        if getattr(result, "ok", False):
+            account = _after(broker, account, order, price, log)
         out.append((intent, verdict, result))
     return out
 
@@ -309,6 +515,12 @@ def format_plan(rec: Reconciliation, account: Account, venue: str) -> str:
         for i in rec.to_close:
             flag = "!" if i.urgency >= 3 else " "
             out.append(f" {flag}卖出 {i.symbol:<7}{i.shares:>7} 股   {i.reason[:58]}")
+    if rec.to_trim:
+        out += ["", f"减仓 ({len(rec.to_trim)})", "-" * W,
+                "  账本已经把这些股数从这笔建议上扣掉了，账户还没有。它不是股数对不上，"
+                "是今早自己发出的减仓指令。"]
+        for i in rec.to_trim:
+            out.append(f"  卖出 {i.symbol:<7}{i.shares:>7} 股   {i.reason[:58]}")
     if rec.to_open:
         out += ["", f"建仓 ({len(rec.to_open)})", "-" * W]
         for i in rec.to_open:
@@ -347,6 +559,11 @@ def format_plan(rec: Reconciliation, account: Account, venue: str) -> str:
             val = _num(getattr(h, "market_value", None), 0.0)
             out.append(f"  {h.symbol:<7}{_num(h.quantity, 0):>9,.0f} 股   "
                        f"成本 {_num(h.avg_cost, 0):>9,.2f}   市值 ${val:>11,.2f}")
+    if rec.core_held:
+        out += ["", f"核心长仓 ({len(rec.core_held)})", "-" * W,
+                "  这些在 core.json 里，按月复核，不归这本波段账管，也不会在这里下单。"]
+        out.append("  " + "  ".join(
+            f"{h.symbol}×{_num(h.quantity, 0):,.0f}" for h in rec.core_held))
     if rec.notes:
         out += ["", "说明", "-" * W] + [f"  - {n}" for n in rec.notes]
     out += ["", "=" * W]
@@ -378,6 +595,29 @@ def format_results(results: list) -> str:
 # cli
 # ---------------------------------------------------------------------------
 
+def _sessions() -> tuple[_date, _date]:
+    """(the session being planned, the session the data comes from).
+
+    Imported inside the call because :mod:`advisor` imports this module.
+    """
+    try:
+        from .advisor import sessions_for
+        return sessions_for(None, None)
+    except Exception:
+        today = _date.today()
+        return today, today
+
+
+def _core_symbols() -> list:
+    """The long-term book's names, or none. Never raises."""
+    try:
+        from . import horizons
+        return [h.symbol for h in horizons.load_core()]
+    except Exception as exc:
+        logger.info("读不到核心长仓名单（%s）；这次不区分它们", exc)
+        return []
+
+
 def main(argv=None) -> int:
     p = argparse.ArgumentParser(
         prog="execute",
@@ -386,8 +626,10 @@ def main(argv=None) -> int:
                    help="真的下单。不给这个参数就只打印会下什么")
     p.add_argument("--venue", default=None,
                    help="覆盖 TRADINGAGENTS_BROKER（alpaca / paper）")
+    p.add_argument("--no-exits", action="store_true",
+                   help="不算离场信号，只对账入场与股数差异（默认是算的）")
     p.add_argument("--with-exits", action="store_true",
-                   help="同时算今天的离场信号（会按上一收盘给账本定价）")
+                   help=argparse.SUPPRESS)          # 现在是默认行为，留着不报错
     p.add_argument("-q", "--quiet", action="store_true")
     a = p.parse_args(argv)
 
@@ -409,6 +651,8 @@ def main(argv=None) -> int:
         print(f"连不上 {venue}：{type(exc).__name__}: {exc}")
         return 2
 
+    order_day, data_day = _sessions()
+
     with broker if hasattr(broker, "__enter__") else _null(broker) as b:
         try:
             account = b.account()
@@ -416,34 +660,26 @@ def main(argv=None) -> int:
             print(f"读不到账户：{type(exc).__name__}: {exc}")
             return 2
 
+        # Exits are computed by default. Off by default, the only thing this
+        # bridge could ever do was open positions: the entries were read from
+        # the book and the sells needed a flag nobody passed. A one-way bridge
+        # is worse than none, because it looks like both.
         exits = None
-        if a.with_exits:
-            try:
-                data_day = clock.last_completed_session() if hasattr(
-                    clock, "last_completed_session") else _date.today()
-            except Exception:
-                data_day = _date.today()
-            try:
-                from .advisor import last_completed_session
-                data_day = last_completed_session()
-            except Exception:
-                pass
+        if not a.no_exits:
             prices = {}
             for rec in book.open_recommendations():
                 px = _num(b.quote(rec.symbol), 0.0)
                 if px > 0:
                     prices[rec.symbol] = px
             try:
+                # persist=False: the advisor owns these records. Nothing here
+                # may write to them.
                 exits = book.review(prices, {}, as_of=data_day, persist=False)
             except Exception as exc:
                 print(f"离场信号算不出来（{type(exc).__name__}: {exc}）；本次只对账入场")
 
-        try:
-            from .advisor import last_completed_session
-            today = last_completed_session()
-        except Exception:
-            today = _date.today()
-        rec = plan(book, account, exits=exits, as_of=today, quote=b.quote)
+        rec = plan(book, account, exits=exits, as_of=order_day, quote=b.quote,
+                   core=_core_symbols())
         print()
         print(format_plan(rec, account, venue))
 
@@ -454,6 +690,11 @@ def main(argv=None) -> int:
         if not rec.intents:
             print("\n  没有要下的单。")
             return 0
+
+        if not market_is_open(print):
+            print("\n  现在不是常规交易时段。风控的 require_market_open 会逐笔拒掉，"
+                  "\n  这是它该做的事——要在盘前排队下单，把它显式关掉"
+                  "（TRADINGAGENTS_RISK_REQUIRE_MARKET_OPEN=false）。")
 
         secretary = Secretary(limits=RiskLimits.from_env(), ledger=TradeLedger())
         results = submit(rec, b, secretary, account)

@@ -1825,14 +1825,30 @@ class DailyAdvisor:
         scoring ideas as taken while the account holds something else. It cost
         this desk eleven days and three books with no symbol in common.
 
+        ``report.sells`` is passed in rather than recomputed, and it has to be:
+        :meth:`apply_exits` has already run by this point and written today's
+        closes back to the book, so those symbols are no longer open in it.
+        Matched on the open rows alone, the position the report just told the
+        reader to sell comes back as one the book does not recognise — the one
+        bucket this module promises never to touch.
+
+        Dated by ``report.date``, the session the orders are FOR. That is the
+        clock an unfilled entry ages against; ``data_date`` is a session
+        earlier and would hand every stale entry an extra day of life.
+
         Read-only. :mod:`~.execute` places the orders, and only when asked.
         """
         if not self._account_live or self._account is None:
             return None
         try:
+            core = [c.symbol for c in horizons.load_core()]
+        except Exception:
+            core = []
+        try:
             return execute.plan(self.book, self._account, exits=report.sells,
-                                as_of=_date.fromisoformat(report.data_date),
-                                quote=getattr(self.broker, "quote", None))
+                                as_of=_date.fromisoformat(report.date),
+                                quote=getattr(self.broker, "quote", None),
+                                core=core)
         except Exception as exc:
             report.warnings.append(
                 f"账本与账户对不上账（{type(exc).__name__}: {exc}）；"
@@ -2477,13 +2493,15 @@ def format_report(report: "DailyReport") -> str:
 
     rc = report.reconcile
     if rc is not None:
-        n = len(rc.to_open) + len(rc.to_close)
-        out += ["", f"BOOK vs ACCOUNT — 账本与账户", "-" * W]
+        out += ["", "BOOK vs ACCOUNT — 账本与账户", "-" * W]
         if rc.clean and not rc.unmanaged:
             out.append("  一致：账户持有的正是账本上还开着的那些。")
         if rc.to_close:
             out.append(f"  要卖出 {len(rc.to_close)}：" + "、".join(
                 f"{i.symbol} {i.shares}股" for i in rc.to_close))
+        if rc.to_trim:
+            out.append(f"  要减仓 {len(rc.to_trim)}：" + "、".join(
+                f"{i.symbol} {i.shares}股" for i in rc.to_trim))
         if rc.to_open:
             out.append(f"  要建仓 {len(rc.to_open)}：" + "、".join(
                 f"{i.symbol} {i.shares}股" for i in rc.to_open))
@@ -2493,6 +2511,9 @@ def format_report(report: "DailyReport") -> str:
         if rc.drift:
             out.append("  股数对不上：" + "、".join(
                 f"{s_} 账本{w}/账户{h_}" for s_, w, h_ in rc.drift))
+        if rc.core_held:
+            out.append(f"  核心长仓 {len(rc.core_held)}（按月复核，不在这里对账）："
+                       + "、".join(h.symbol for h in rc.core_held))
         if rc.unmanaged:
             out.append(f"  账户里有、账本不认识 {len(rc.unmanaged)}（不会动）：" + "、".join(
                 h.symbol for h in rc.unmanaged))
@@ -2735,6 +2756,8 @@ def to_markdown(report: "DailyReport") -> str:
         rows = []
         for i in rc.to_close:
             rows.append(("要卖出", i.symbol, f"{i.shares:,} 股", i.reason))
+        for i in rc.to_trim:
+            rows.append(("要减仓", i.symbol, f"{i.shares:,} 股", i.reason))
         for i in rc.to_open:
             rows.append(("要建仓", i.symbol, f"{i.shares:,} 股",
                          (f"限价 {i.limit:,.2f}" if i.limit else "市价") + "　" + i.reason))
@@ -2745,6 +2768,9 @@ def to_markdown(report: "DailyReport") -> str:
                          if math.isfinite(px) else "定不了价"))
         for sym, want, have in rc.drift:
             rows.append(("股数对不上", sym, f"账本 {want:,} / 账户 {have:,}", "手工核对"))
+        for h in rc.core_held:
+            rows.append(("核心长仓", h.symbol, f"{_num(h.quantity, 0):,.0f} 股",
+                         "在 core.json 里，按月复核，不归这本波段账管"))
         for h in rc.unmanaged:
             rows.append(("账本不认识", h.symbol, f"{_num(h.quantity, 0):,.0f} 股",
                          "不会被动——仅因不在这本账里就卖掉，等于这座桥认为整个账户都归它管"))
