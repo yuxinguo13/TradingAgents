@@ -183,6 +183,32 @@ class TestExitsThatNeverReachedTheVenue:
         assert [h.symbol for h in got.unmanaged] == ["AAA"]
         assert any("2026-06-01" in n for n in got.notes)
 
+    def test_a_reentered_name_is_reconciled_against_its_open_row(self):
+        """An old exit must not outvote the position the book currently carries."""
+        got = plan(Book([Rec("AAA", shares=100)],
+                        closed=[exited("AAA", "2026-08-31")]),
+                   account([Holding(symbol="AAA", quantity=100.0)]),
+                   exits=[], as_of=TODAY)
+        assert got.to_close == [] and got.matched == [("AAA", 100)]
+
+    def test_the_newest_exit_wins_when_a_name_was_traded_twice(self):
+        got = plan(Book([], closed=[exited("AAA", "2026-06-01", "old"),
+                                    exited("AAA", "2026-09-01", "recent")]),
+                   account([Holding(symbol="AAA", quantity=10.0)]),
+                   exits=[], as_of=TODAY)
+        assert [i.reason.count("2026-09-01") for i in got.to_close] == [1]
+
+    def test_an_exit_with_an_unreadable_date_orders_nothing(self):
+        got = plan(Book([], closed=[exited("AAA", None)]),
+                   account([Holding(symbol="AAA", quantity=10.0)]),
+                   exits=[], as_of=TODAY)
+        assert got.to_close == [] and [h.symbol for h in got.unmanaged] == ["AAA"]
+
+    def test_a_signal_for_a_name_with_no_book_row_still_sells_what_is_held(self):
+        got = plan(Book([]), account([Holding(symbol="AAA", quantity=10.0)]),
+                   exits=[Signal("AAA")], as_of=TODAY)
+        assert [(i.symbol, i.shares) for i in got.to_close] == [("AAA", 10)]
+
     def test_a_position_with_no_book_record_at_all_stays_untouched(self):
         got = plan(Book([]), account([Holding(symbol="ZZZ", quantity=5.0)]),
                    exits=[], as_of=TODAY)
@@ -216,6 +242,27 @@ class TestTrims:
                    exits=[Signal("AAA", shares=50, action="TRIM")], as_of=TODAY)
         assert [i.symbol for i in got.intents] == ["AAA"]
 
+    def test_a_trim_with_no_size_never_becomes_a_full_sell(self):
+        """The one way a take-some-profit turns into an exit nobody asked for.
+
+        A close falls back to everything held — the instruction is "get out"
+        and the number is only how the book remembers the size. A trim has no
+        such fallback: a partial sell whose size did not survive is not a
+        licence to sell the lot.
+        """
+        got = plan(Book([Rec("AAA", shares=100)]),
+                   account([Holding(symbol="AAA", quantity=100.0)]),
+                   exits=[Signal("AAA", shares=0, action="TRIM")], as_of=TODAY)
+        assert got.to_trim == []
+        assert any("不下单" in n for n in got.notes)
+
+    def test_a_trim_that_cannot_be_sized_still_reports_the_gap(self):
+        """Not being able to price it is no reason to also go quiet about it."""
+        got = plan(Book([Rec("AAA", shares=50)]),
+                   account([Holding(symbol="AAA", quantity=100.0)]),
+                   exits=[Signal("AAA", shares=0, action="TRIM")], as_of=TODAY)
+        assert got.drift == [("AAA", 50, 100)]
+
     def test_a_trim_of_a_position_nobody_holds_is_a_note(self):
         got = plan(Book([Rec("AAA", shares=50)]), account(),
                    exits=[Signal("AAA", shares=50, action="TRIM")], as_of=TODAY)
@@ -242,6 +289,12 @@ class TestTheCoreBook:
                    exits=[], as_of=TODAY, core=["MSFT"])
         assert [h.symbol for h in got.core_held] == ["MSFT"]
         assert got.unmanaged == [] and got.intents == []
+
+    def test_a_core_name_the_swing_book_also_holds_is_reconciled_once(self):
+        got = plan(Book([Rec("MSFT", shares=30)]),
+                   account([Holding(symbol="MSFT", quantity=30.0)]),
+                   exits=[], as_of=TODAY, core=["MSFT"])
+        assert got.matched == [("MSFT", 30)] and got.core_held == []
 
     def test_a_core_name_the_swing_book_also_exited_is_still_a_sell(self):
         """Membership of the core list does not cancel an exit that was taken."""
@@ -302,6 +355,15 @@ class TestStaleEntries:
         assert r_now > 20                      # flattering
         assert to_stop == pytest.approx(0.0084, abs=1e-3)
         assert "止损贴脸" in execute._stale_verdict(r_now, to_stop)
+
+    def test_a_price_already_through_the_stop_is_told_to_be_withdrawn(self):
+        """Through the stop is not "close to" it. The level was named as the
+        price the idea is wrong at, and it has been passed."""
+        rec = Rec("AAA", entry=100.0, stop=95.0, target=115.0, issued="2026-08-27")
+        got = plan(Book([rec]), account(), as_of=TODAY, quote=lambda s: 90.0)
+        _, _, r_now, _, to_stop = got.stale[0]
+        assert math.isnan(r_now) and to_stop < 0
+        assert "作废" in execute._stale_verdict(r_now, to_stop)
 
     def test_a_stale_entry_below_the_minimum_is_told_to_be_withdrawn(self):
         assert "应作废" in execute._stale_verdict(1.1, 0.08)
@@ -389,6 +451,15 @@ class TestSubmit:
                    account(), as_of=TODAY)
         out = submit(rec, Boom(), sec, account(), market_open=True)
         assert len(out) == 2 and all(r is None for _, _, r in out)
+
+    def test_a_venue_that_answers_with_nothing_is_reported(self, tmp_path):
+        class Silent(StubBroker):
+            def place_order(self, *a, **k):
+                return None
+        rec = plan(Book([Rec("AAA", shares=10, limit=None)]), account(), as_of=TODAY)
+        sec = Secretary(RiskLimits(), TradeLedger(tmp_path / "l.json"))
+        out = submit(rec, Silent(), sec, account(), market_open=True)
+        assert "没能提交" in execute.format_results(out)
 
     def test_a_quote_that_raises_still_reaches_the_gate(self, tmp_path):
         class NoQuote(StubBroker):
@@ -487,6 +558,25 @@ class TestTheAccountBetweenOrders:
                account(cash=12_000.0), market_open=True)
         assert {o[0]: o[2] for o in b.placed}["BBB"] == 3      # $300 of re-read cash
 
+    def test_a_buy_is_charged_to_cash_exactly_once(self):
+        after = execute._applied(account(cash=10_000.0, equity=10_000.0),
+                                 Order("AAA", BUY, 10), 100.0)
+        assert (after.cash, after.buying_power) == (9_000.0, 9_000.0)
+
+    def test_a_venue_reporting_no_buying_power_is_still_charged_once(self):
+        """``power or cash`` is the Secretary's own reading of a zero — taken
+        after cash was debited it charges the same fill twice."""
+        acct = account(cash=10_000.0, equity=10_000.0)
+        acct.buying_power = 0.0
+        after = execute._applied(acct, Order("AAA", BUY, 10), 100.0)
+        assert after.buying_power == 9_000.0
+
+    def test_a_nonsense_account_read_does_not_replace_a_good_one(self):
+        b = StubBroker(acct=account(cash=0.0, equity=0.0))
+        out = execute._after(b, account(cash=12_000.0, equity=100_000.0),
+                             Order("AAA", BUY, 100), 100.0, log=lambda m: None)
+        assert out.account_value > 0 and out.cash == 2_000.0
+
     def test_a_sale_frees_shares_but_not_cash_before_it_settles(self):
         acct = account([Holding(symbol="AAA", quantity=100.0, market_value=10_000.0)],
                        cash=500.0)
@@ -542,3 +632,92 @@ class TestRendering:
                    as_of=TODAY, quote=lambda s: 100.0)
         text = execute.format_plan(got, account(), "paper")
         assert "过期未成交" in text and "这些不会下单" in text
+
+
+@pytest.mark.unit
+class TestTheWholeLoop:
+    """book → venue → book → venue, on the real classes.
+
+    Everything above stubs the pieces around the bridge. This does not: a real
+    :class:`RecommendationBook`, a real :class:`LocalPaperBroker`, a real
+    :class:`Secretary`, and only the quotes injected. The defect worth a test
+    at this level is the one that needs three steps to appear — the book exits
+    a name on day two and the sell only goes missing on day three, when the
+    row is no longer open and nothing is passing signals in.
+    """
+
+    D1, D2, D3 = date(2026, 9, 2), date(2026, 9, 3), date(2026, 9, 4)
+
+    def broker(self, tmp_path, prices):
+        from tradingagents.live.paper import LocalPaperBroker
+        b = LocalPaperBroker(starting_cash=100_000.0, path=tmp_path / "pf.json")
+        b._quotes = dict(prices)
+        return b
+
+    def book(self, tmp_path):
+        from tradingagents.live.recommendations import RecommendationBook
+        return RecommendationBook(tmp_path / "recs.json")
+
+    def secretary(self, tmp_path):
+        return Secretary(
+            RiskLimits(max_position_weight=0.30, max_new_position_weight=0.30,
+                       max_order_value_pct=0.30, symbol_cooldown_minutes=0,
+                       min_price=1.0),
+            TradeLedger(tmp_path / "ledger.json"))
+
+    def test_the_desk_converges_over_four_sessions(self, tmp_path, monkeypatch):
+        monkeypatch.setenv("TRADINGAGENTS_HOME", str(tmp_path))
+        book = self.book(tmp_path)
+        book.add("AAA", "Buy", 100, 100.0, 95.0, 115.0, issued_date=self.D1)
+        book.add("BBB", "Buy", 200, 50.0, 47.0, 60.0, issued_date=self.D1)
+
+        b = self.broker(tmp_path, {"AAA": 100.0, "BBB": 50.0})
+        rc = plan(book, b.account(), exits=[], as_of=self.D1, quote=b.quote)
+        assert {i.symbol for i in rc.to_open} == {"AAA", "BBB"}
+        out = submit(rc, b, self.secretary(tmp_path), b.account(), market_open=True)
+        assert all(getattr(r, "ok", False) for _, _, r in out)
+
+        rc = plan(book, b.account(), exits=[], as_of=self.D2, quote=b.quote)
+        assert rc.clean and not rc.unmanaged
+        assert sorted(rc.matched) == [("AAA", 100), ("BBB", 200)]
+
+        # AAA goes through its stop and the advisor writes that back.
+        b2 = self.broker(tmp_path, {"AAA": 92.0, "BBB": 51.0})
+        signals = book.review({"AAA": 92.0, "BBB": 51.0}, {}, as_of=self.D2)
+        closing = [s for s in signals if s.closes_position]
+        assert [s.symbol for s in closing] == ["AAA"]
+        for s in closing:
+            book.close(s.rec_id, s.price, s.exit_reason, exit_date=self.D2)
+        assert [r.symbol for r in book.open_recommendations()] == ["BBB"]
+
+        # A plain run the next session, nothing passing signals in. The sell
+        # has to survive the round trip through the book on its own.
+        rc = plan(book, b2.account(), exits=[], as_of=self.D3, quote=b2.quote)
+        assert [i.symbol for i in rc.to_close] == ["AAA"] and rc.unmanaged == []
+        out = submit(rc, b2, self.secretary(tmp_path), b2.account(), market_open=True)
+        assert all(getattr(r, "ok", False) for _, _, r in out)
+
+        b3 = self.broker(tmp_path, {"BBB": 51.0})
+        rc = plan(book, b3.account(), exits=[], as_of=self.D3, quote=b3.quote)
+        assert rc.clean and rc.unmanaged == [] and rc.matched == [("BBB", 200)]
+
+    def test_a_target_hit_trims_the_venue_to_the_size_the_book_kept(self, tmp_path,
+                                                                    monkeypatch):
+        monkeypatch.setenv("TRADINGAGENTS_HOME", str(tmp_path))
+        book = self.book(tmp_path)
+        book.add("AAA", "Buy", 100, 100.0, 95.0, 115.0, issued_date=self.D1)
+
+        b = self.broker(tmp_path, {"AAA": 100.0})
+        rc = plan(book, b.account(), exits=[], as_of=self.D1, quote=b.quote)
+        submit(rc, b, self.secretary(tmp_path), b.account(), market_open=True)
+        assert b.account().position("AAA").quantity == 100
+
+        b2 = self.broker(tmp_path, {"AAA": 118.0})
+        signals = book.review({"AAA": 118.0}, {}, as_of=self.D2)
+        rc = plan(book, b2.account(), exits=signals, as_of=self.D2, quote=b2.quote)
+        assert [(i.symbol, i.shares) for i in rc.to_trim] == [("AAA", 50)]
+        assert rc.drift == []
+
+        submit(rc, b2, self.secretary(tmp_path), b2.account(), market_open=True)
+        assert b2.account().position("AAA").quantity == 50
+        assert book.open_recommendations()[0].shares == 50

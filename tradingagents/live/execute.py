@@ -207,10 +207,23 @@ def _to_stop(rec: Recommendation, price: float) -> float:
     return price / stop - 1.0
 
 
-def _sell_intent(sym: str, have: int, sig, rec_id: str) -> Intent:
-    """A sell of what is actually held, never of what the signal imagined."""
-    n = int(_num(getattr(sig, "shares", have), have))
-    return Intent(SELL, sym, min(have, n) if n > 0 else have, None,
+def _sell_intent(sym: str, have: int, sig, rec_id: str, *,
+                 whole: bool = True) -> Intent | None:
+    """A sell of what is actually held, never of what the signal imagined.
+
+    ``whole`` decides what an unusable share count means, and the two answers
+    are not interchangeable. For a close it means everything held: the
+    instruction is "get out", and the number is only how the book remembers
+    the size. For a trim it means nothing can be placed — a partial sell whose
+    size did not survive is not a licence to sell the lot, and treating it as
+    one turns a take-some-profit into a full exit nobody asked for.
+    """
+    n = int(_num(getattr(sig, "shares", 0), 0))
+    if n <= 0:
+        if not whole:
+            return None
+        n = have
+    return Intent(SELL, sym, min(have, n), None,
                   f"{getattr(sig, 'action', 'SELL')}：{getattr(sig, 'reason', '')}",
                   rec_id, int(_num(getattr(sig, "urgency", 1), 1)))
 
@@ -302,11 +315,16 @@ def plan(book: RecommendationBook, account: Account, *,
             # the post-trim size and the venue still holds the pre-trim one.
             # Read as drift the difference reads as "someone traded this by
             # hand"; it is this morning's own instruction.
-            if have > 0:
-                out.to_trim.append(_sell_intent(sym, have, tsig, rec.id))
-            else:
+            if have <= 0:
                 out.notes.append(f"{sym}：账本要减仓，但账户里本来就没有仓位")
-            continue
+                continue
+            trim = _sell_intent(sym, have, tsig, rec.id, whole=False)
+            if trim is not None:
+                out.to_trim.append(trim)
+                continue
+            # 说不出减多少就不下单，也绝不当成「全卖」。差额照样往下走，
+            # 按股数差异报出来——不能因为定不了量就连差额也不提。
+            out.notes.append(f"{sym}：账本说要减仓却没给股数，这里只报差额、不下单")
         if want <= 0:
             continue
         if have == 0:
@@ -400,8 +418,12 @@ def _applied(account: Account, order: Order, price: float) -> Account:
             h = holdings[i]
             holdings[i] = replace(h, quantity=h.quantity + qty,
                                   market_value=h.market_value + notional)
+        # Read off the pre-fill pair. A venue that reports no buying power
+        # falls back to cash, the same reading the Secretary takes — but taken
+        # after cash was already debited it charges the same fill twice.
+        room = power or cash
         cash = max(0.0, cash - notional)
-        power = max(0.0, (power or cash) - notional)
+        power = max(0.0, room - notional)
     elif i is not None:
         h = holdings[i]
         left = max(0.0, h.quantity - qty)
@@ -489,6 +511,12 @@ MIN_R = 1.5
 
 
 def _stale_verdict(r_now: float, to_stop: float) -> str:
+    # Through the stop is not "close to" the stop. The level was named as the
+    # price at which the idea is wrong, and it has been passed: there is no R
+    # left to quote and nothing to re-size. Folded into the "too close" branch
+    # it read as a ratio worth a second look.
+    if math.isfinite(to_stop) and to_stop <= 0:
+        return "已经跌破当初的止损：这条作废，不是按新价再发一次"
     if math.isfinite(to_stop) and to_stop < STOP_TOO_CLOSE:
         return "离止损太近：R 高是止损贴脸算出来的，不是赔率好"
     if not math.isfinite(r_now):
