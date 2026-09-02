@@ -67,7 +67,7 @@ from dataclasses import dataclass, field
 from datetime import date as _date, datetime, timedelta
 from pathlib import Path
 
-from . import charting, clock, deepdive, fundamentals as fund, horizons, research
+from . import charting, clock, deepdive, execute, fundamentals as fund, horizons, research
 from .brain import Panel, Snapshot, Trigger, build_evidence, snapshot, triggers
 from .earnings import Earnings, EarningsBook, summarise as summarise_earnings
 from .broker import BUY as VENUE_BUY, Account
@@ -834,6 +834,10 @@ class DailyReport:
     core_review_day: bool = False
     daytrade: list = field(default_factory=list)       # horizons.DayTradeIdea
     swing_slots: int = horizons.DEFAULT_SWING_SLOTS
+    # What the venue actually holds against what the book says it should.
+    # None when the account could not be read — see DailyAdvisor.account.
+    reconcile: object = None
+
     # symbol -> deepdive.SymbolAnalysis, for every name the page links to.
     # Each analysis carries its own ``page`` path once write_pages has run;
     # until then page_link() emits nothing, so the daily page never links to a
@@ -918,6 +922,7 @@ class DailyAdvisor:
         # Kept so the core section can read position weights without a second
         # venue call; set by run() and never used for a decision.
         self._account = None
+        self._account_live = False
         self._news_items: list = []
 
     # --- data -------------------------------------------------------------
@@ -947,6 +952,10 @@ class DailyAdvisor:
         report is against an assumed balance.
         """
         acct: Account | None = None
+        # Whether the numbers below came from a venue or from an assumption.
+        # The reconciliation section is only meaningful against a real account:
+        # run against the fallback it would report every open idea as missing.
+        self._account_live = False
         if self.broker is not None:
             try:
                 acct = self.broker.account()
@@ -968,6 +977,8 @@ class DailyAdvisor:
                     f"could not reach the venue ({type(exc).__name__}: {exc}); "
                     f"sizes are against an assumed account value")
 
+        if acct is not None and (acct.account_value or 0) > 0:
+            self._account_live = True
         if acct is None or (acct.account_value or 0) <= 0:
             av = self.cfg.fallback_account_value
             report.warnings.append(
@@ -1805,6 +1816,29 @@ class DailyAdvisor:
                 f"({type(exc).__name__}: {exc})")
             return []
 
+    def reconcile_account(self, report: DailyReport) -> object:
+        """What the venue holds, against what the book says it should.
+
+        On the page every day rather than behind a command, because this is the
+        gap nobody notices: the advisor records decisions, ``--no-llm`` keeps
+        the monitor from acting on anything, and the track record goes on
+        scoring ideas as taken while the account holds something else. It cost
+        this desk eleven days and three books with no symbol in common.
+
+        Read-only. :mod:`~.execute` places the orders, and only when asked.
+        """
+        if not self._account_live or self._account is None:
+            return None
+        try:
+            return execute.plan(self.book, self._account, exits=report.sells,
+                                as_of=_date.fromisoformat(report.data_date),
+                                quote=getattr(self.broker, "quote", None))
+        except Exception as exc:
+            report.warnings.append(
+                f"账本与账户对不上账（{type(exc).__name__}: {exc}）；"
+                f"报告本身不受影响，但今天没有核对过持仓")
+            return None
+
     def _page_symbols(self, report: DailyReport) -> list[str]:
         """Every name the daily page will link to, in priority order.
 
@@ -2063,6 +2097,7 @@ class DailyAdvisor:
 
         # The long and the intraday books, last: both read the sections above,
         # and neither may change a single number in them.
+        report.reconcile = self.reconcile_account(report)
         report.core = self.core_section(report, data_date, order_day)
         report.daytrade = self.daytrade_section(report, data_date)
         try:
@@ -2111,6 +2146,14 @@ CORE_NOTE = (
 NAME_NOTE = (
     f"公司名带 {DERIVED_MARK} 的，是按英文名后缀机械转写的（例如 Therapeutics→制药），"
     f"不是通用译名；想改成你习惯的叫法，编辑 ~/.tradingagents/company_names_zh.json。"
+)
+
+
+RECONCILE_NOTE = (
+    "这一节比对的是「账本说该持有什么」和「券商账户里实际有什么」。它每天都在，"
+    "因为这个缺口不会自己报错：advisor 只记录决策不下单，monitor 带 --no-llm 时"
+    "永远不决策，于是战绩照常按「已成交」计分，而账户里可能是完全不同的东西。"
+    "要真的补上差额，用 python -m tradingagents.live.execute --submit。"
 )
 
 
@@ -2432,6 +2475,29 @@ def format_report(report: "DailyReport") -> str:
         out.append(f"  planned risk ${risk:,.2f}{share} across "
                    f"{len(report.buys)} idea(s), after the position cap")
 
+    rc = report.reconcile
+    if rc is not None:
+        n = len(rc.to_open) + len(rc.to_close)
+        out += ["", f"BOOK vs ACCOUNT — 账本与账户", "-" * W]
+        if rc.clean and not rc.unmanaged:
+            out.append("  一致：账户持有的正是账本上还开着的那些。")
+        if rc.to_close:
+            out.append(f"  要卖出 {len(rc.to_close)}：" + "、".join(
+                f"{i.symbol} {i.shares}股" for i in rc.to_close))
+        if rc.to_open:
+            out.append(f"  要建仓 {len(rc.to_open)}：" + "、".join(
+                f"{i.symbol} {i.shares}股" for i in rc.to_open))
+        if rc.stale:
+            out.append(f"  过期未成交 {len(rc.stale)}（不会自动补单）：" + "、".join(
+                f"{i.symbol} 放了{age}天" for i, age, *_ in rc.stale))
+        if rc.drift:
+            out.append("  股数对不上：" + "、".join(
+                f"{s_} 账本{w}/账户{h_}" for s_, w, h_ in rc.drift))
+        if rc.unmanaged:
+            out.append(f"  账户里有、账本不认识 {len(rc.unmanaged)}（不会动）：" + "、".join(
+                h.symbol for h in rc.unmanaged))
+        out += _wrapped(RECONCILE_NOTE, W - 4)
+
     if report.track_record:
         out += ["", "TRACK RECORD", "-" * W]
         try:
@@ -2661,6 +2727,32 @@ def to_markdown(report: "DailyReport") -> str:
                  if report.account_value > 0 else "")
         md.append(f"- Planned risk ${report.total_risk:,.2f}{share} across "
                   f"{len(report.buys)} idea(s), after the position cap")
+    rc = report.reconcile
+    if rc is not None:
+        md += ["", "## 账本与账户 Book vs account", ""]
+        if rc.clean and not rc.unmanaged:
+            md.append("_一致：账户持有的正是账本上还开着的那些。_")
+        rows = []
+        for i in rc.to_close:
+            rows.append(("要卖出", i.symbol, f"{i.shares:,} 股", i.reason))
+        for i in rc.to_open:
+            rows.append(("要建仓", i.symbol, f"{i.shares:,} 股",
+                         (f"限价 {i.limit:,.2f}" if i.limit else "市价") + "　" + i.reason))
+        for i, age, r_now, px, to_stop in rc.stale:
+            rows.append(("过期未成交", i.symbol, f"放了 {age} 天",
+                         f"现价 {px:,.2f} · 现在 {r_now:.2f}R · 距止损 "
+                         f"{to_stop * 100:+.1f}% — {execute._stale_verdict(r_now, to_stop)}"
+                         if math.isfinite(px) else "定不了价"))
+        for sym, want, have in rc.drift:
+            rows.append(("股数对不上", sym, f"账本 {want:,} / 账户 {have:,}", "手工核对"))
+        for h in rc.unmanaged:
+            rows.append(("账本不认识", h.symbol, f"{_num(h.quantity, 0):,.0f} 股",
+                         "不会被动——仅因不在这本账里就卖掉，等于这座桥认为整个账户都归它管"))
+        if rows:
+            md += ["| 类别 | 代码 | 数量 | 说明 |", "|---|---|---|---|"]
+            md += [f"| {a} | {b} | {c} | {d} |" for a, b, c, d in rows]
+        md += ["", f"_{RECONCILE_NOTE}_"]
+
     if report.track_record:
         try:
             md += ["", "## 战绩 Track record", "", "```text",

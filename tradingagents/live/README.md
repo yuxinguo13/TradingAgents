@@ -409,6 +409,13 @@ to prevent:
   because R rises as a name falls toward its stop, and an 8R entry sitting 1%
   above its own stop is not an 8R trade.
 
+The reconciliation also runs inside the daily report, as its own section, every
+day. Behind a command it would be a command nobody remembers; on the page it is
+the one place the gap is visible before it is eleven days old. That section is
+read-only — `execute --submit` is still the only thing that places an order —
+and it is omitted entirely when the account could not be read, because against
+the fallback balance it would report every open idea as missing.
+
 The bridge never writes to the book. The advisor owns those records; a bridge
 that edited them could make the account and the track record agree by changing
 the wrong one.

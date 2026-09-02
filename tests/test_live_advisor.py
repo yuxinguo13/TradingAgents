@@ -818,6 +818,47 @@ class TestHorizons:
         desk.run()
         assert not (tmp_path / "core.json").exists()
 
+    def test_the_report_reconciles_the_book_against_the_account(self, desk):
+        """The gap nobody notices: the record scores ideas as taken while the
+        account holds something else. It has to be on the page, not behind a
+        command, or it is found eleven days later."""
+        first = desk.run()
+        assert first.buys                       # recorded, but the venue holds none
+        second = desk.run()
+        rc = second.reconcile
+        assert rc is not None
+        assert {i.symbol for i in rc.to_open} | {i.symbol for i, *_ in rc.stale} \
+            >= {r.symbol for r in first.buys}
+        for text in (format_report(second), to_markdown(second)):
+            assert "账本与账户" in text or "BOOK vs ACCOUNT" in text
+
+    def test_a_position_the_book_does_not_know_is_reported_not_sold(self, tmp_path,
+                                                                    monkeypatch):
+        monkeypatch.setenv("TRADINGAGENTS_HOME", str(tmp_path))
+        d = Desk(tmp_path, holdings=[Holding(symbol="ZZZ", quantity=40.0,
+                                             avg_cost=9.0, market_value=380.0)])
+        monkeypatch.setattr(advisor, "screens_dirs", lambda: [tmp_path / "screens"])
+        monkeypatch.setattr(advisor, "snapshot", d.snapshot)
+        monkeypatch.setattr(advisor, "run_screen", d.screen)
+        rc = d.run().reconcile
+        assert [h.symbol for h in rc.unmanaged] == ["ZZZ"]
+        assert rc.to_close == []
+
+    def test_no_reconciliation_is_shown_against_an_assumed_account(self, desk):
+        """Run against the fallback it would report every open idea as missing."""
+        def unreachable(self, report):
+            report.warnings.append("venue down")
+            self._account_live = False
+            return Account(account_value=100_000.0, cash=100_000.0, buying_power=100_000.0)
+
+        desk.run()
+        monkeypatch = pytest.MonkeyPatch()
+        monkeypatch.setattr(advisor.DailyAdvisor, "account", unreachable)
+        try:
+            assert desk.run().reconcile is None
+        finally:
+            monkeypatch.undo()
+
     def test_the_intraday_section_is_never_presented_as_an_order(self, desk):
         report = desk.run()
         if report.daytrade:
