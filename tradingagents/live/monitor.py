@@ -275,7 +275,8 @@ class LiveDesk:
 
         res = broker.place_order(order.symbol, order.action, order.quantity,
                                  order.order_type, order.limit_price)
-        self.secretary.ledger.record(order, price, res.ok, res.message)
+        self.secretary.ledger.record(order, price, res.ok, res.message,
+                                     venue=getattr(self.secretary, "venue", ""))
         if res.ok:
             logger.info("ORDER PLACED: %s %d %s — %s", order.action, order.quantity,
                         order.symbol, res.message)
@@ -294,6 +295,9 @@ class LiveDesk:
                     _home() / "STOP")
         cycles = 0
         venue = configured_venue()
+        # The daily budgets are a fraction of *this* account's value, so they
+        # are counted from this venue's rows only. See TradeLedger._for.
+        self.secretary.venue = venue
         with open_broker(venue, headless=self.cfg.headless) as broker:
             if not broker.is_logged_in():
                 logger.error(

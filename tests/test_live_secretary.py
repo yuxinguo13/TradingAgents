@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 
 import pytest
 
-from tradingagents.live.investopedia import Account, Holding
+from tradingagents.live.investopedia import BUY, SELL, Account, Holding
 from tradingagents.live.secretary import (
     Order, RiskLimits, Secretary, TradeLedger,
 )
@@ -184,3 +184,74 @@ class TestLedgerPersistence:
         monkeypatch.setenv("TRADINGAGENTS_RISK_ALLOW_SHORT", "true")
         lim = RiskLimits.from_env()
         assert lim.max_trades_per_day == 3 and lim.allow_short is True
+
+
+@pytest.mark.unit
+class TestBudgetsAreScopedToTheVenue:
+    """One ledger, more than one account behind it.
+
+    ``max_turnover_per_day`` is a fraction of *account value*, and each venue
+    is a separate account with its own. Summed across venues and divided by one
+    of them the number means nothing — and it locks a venue out over trades
+    that never touched it. Found live: five cleanup sells on the local paper
+    book spent $38,258 and shut the Alpaca bridge for the day against a $35,000
+    limit it had not used a cent of.
+
+    The churn cooldown is the same story one symbol at a time: selling NVDA on
+    paper must not stop the desk buying NVDA at the broker.
+    """
+
+    def secretary(self, ledger, tmp_path, monkeypatch, **limits):
+        monkeypatch.setenv("TRADINGAGENTS_HOME", str(tmp_path))
+        return Secretary(limits=RiskLimits(**limits), ledger=ledger, venue="alpaca")
+
+    def test_another_venues_turnover_does_not_spend_this_ones(self, ledger):
+        ledger.record(Order("NVDA", SELL, 400), 100.0, True, venue="paper")
+        assert ledger.turnover_today("alpaca") == 0.0
+        assert ledger.turnover_today("paper") == 40_000.0
+
+    def test_another_venues_trade_count_does_not_spend_this_ones(
+            self, ledger, account, tmp_path, monkeypatch):
+        for i in range(20):
+            ledger.record(Order(f"A{i}", BUY, 1), 10.0, True, venue="paper")
+        sec = self.secretary(ledger, tmp_path, monkeypatch, max_trades_per_day=2)
+        v = sec.check(Order("AAA", BUY, 10), account, 100.0)
+        assert v.ok, v.reason
+
+    def test_another_venues_turnover_does_not_refuse_this_ones_order(
+            self, ledger, account, tmp_path, monkeypatch):
+        ledger.record(Order("NVDA", SELL, 400), 100.0, True, venue="paper")
+        sec = self.secretary(ledger, tmp_path, monkeypatch, max_turnover_per_day=0.05)
+        v = sec.check(Order("AAA", BUY, 10), account, 100.0)
+        assert v.ok, v.reason
+
+    def test_a_cooldown_on_one_venue_does_not_bind_the_other(
+            self, ledger, account, tmp_path, monkeypatch):
+        ledger.record(Order("AAA", BUY, 10), 100.0, True, venue="paper")
+        sec = self.secretary(ledger, tmp_path, monkeypatch,
+                             symbol_cooldown_minutes=45)
+        v = sec.check(Order("AAA", BUY, 10), account, 100.0)
+        assert v.ok, v.reason
+
+    def test_the_same_venue_still_binds(self, ledger, account, tmp_path, monkeypatch):
+        ledger.record(Order("AAA", BUY, 10), 100.0, True, venue="alpaca")
+        sec = self.secretary(ledger, tmp_path, monkeypatch,
+                             symbol_cooldown_minutes=45)
+        v = sec.check(Order("AAA", BUY, 10), account, 100.0)
+        assert not v.ok and "cooldown" in v.reason
+
+    def test_a_row_with_no_venue_still_counts_everywhere(self, ledger):
+        """It predates the field and cannot be attributed. Over-counting
+        refuses trades that were allowed; under-counting allows trades that
+        were not, and only one of those is recoverable."""
+        ledger.entries.append({"at": datetime.now().isoformat(), "symbol": "NVDA",
+                               "action": SELL, "quantity": 400, "price": 100.0,
+                               "notional": 40_000.0, "ok": True, "message": "",
+                               "source": "cleanup"})
+        assert ledger.turnover_today("alpaca") == 40_000.0
+        assert ledger.turnover_today("paper") == 40_000.0
+
+    def test_a_caller_that_names_no_venue_counts_everything(self, ledger):
+        ledger.record(Order("NVDA", SELL, 400), 100.0, True, venue="paper")
+        ledger.record(Order("MSFT", SELL, 100), 100.0, True, venue="alpaca")
+        assert ledger.turnover_today() == 50_000.0

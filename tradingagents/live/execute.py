@@ -585,7 +585,8 @@ def submit(rec: Reconciliation, broker, secretary: Secretary, account: Account,
             # whole ledger twice per fill.
             secretary.ledger.record(_as_filled(order, result), price,
                                     bool(getattr(result, "ok", False)),
-                                    str(getattr(result, "message", "")))
+                                    str(getattr(result, "message", "")),
+                                    venue=getattr(secretary, "venue", ""))
         except Exception as exc:
             log(f"成交流水没写进去 ({exc})")
         if getattr(result, "ok", False):
@@ -745,6 +746,32 @@ def _core_symbols() -> list:
         return []
 
 
+def _day_budget_note(venue: str, account: Account) -> str:
+    """Whether a day-level limit already refuses everything, said up front.
+
+    These two refuse every order in the sweep, so learning about them from
+    identical verdicts after ``--submit`` is learning it in the least useful
+    place. Everything else in the gate is per-order and belongs on its row.
+    """
+    try:
+        limits, ledger = RiskLimits.from_env(), TradeLedger()
+        equity = _num(getattr(account, "account_value", 0.0), 0.0)
+        trades = ledger.trades_today(venue)
+        if trades >= limits.max_trades_per_day:
+            return (f"今天在 {venue} 已经成交 {trades} 笔，达到上限 "
+                    f"{limits.max_trades_per_day}：加 --submit 也会逐笔被拒。")
+        turn = ledger.turnover_today(venue)
+        cap = limits.max_turnover_per_day * equity
+        if equity > 0 and turn >= cap:
+            return (f"今天记在 {venue} 名下的成交额 ${turn:,.0f} 已达上限 "
+                    f"${cap:,.0f}（净值的 {limits.max_turnover_per_day:.0%}）："
+                    f"加 --submit 也会逐笔被拒。没有 venue 字段的旧流水会同时计入"
+                    f"每个场所——它跨过午夜就清掉。")
+    except Exception as exc:
+        logger.info("读不出当日预算（%s）", exc)
+    return ""
+
+
 def main(argv=None) -> int:
     p = argparse.ArgumentParser(
         prog="execute",
@@ -810,6 +837,10 @@ def main(argv=None) -> int:
         print()
         print(format_plan(rec, account, venue))
 
+        blocked = _day_budget_note(venue, account)
+        if blocked:
+            print(f"\n  {blocked}")
+
         if not a.submit:
             n = len(rec.intents)
             print(f"\n  这是对账，不是下单。要真的下这 {n} 笔，加 --submit。")
@@ -823,7 +854,8 @@ def main(argv=None) -> int:
                   "\n  这是它该做的事——要在盘前排队下单，把它显式关掉"
                   "（TRADINGAGENTS_RISK_REQUIRE_MARKET_OPEN=false）。")
 
-        secretary = Secretary(limits=RiskLimits.from_env(), ledger=TradeLedger())
+        secretary = Secretary(limits=RiskLimits.from_env(), ledger=TradeLedger(),
+                              venue=venue)
         results = submit(rec, b, secretary, account)
         print()
         print(format_results(results))

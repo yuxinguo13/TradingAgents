@@ -138,28 +138,55 @@ class TradeLedger:
         tmp.write_text(json.dumps(self.entries, indent=2), encoding="utf-8")
         os.replace(tmp, self.path)
 
-    def record(self, order: Order, price: float, ok: bool, message: str = "") -> None:
+    def record(self, order: Order, price: float, ok: bool, message: str = "",
+               venue: str = "") -> None:
         self.entries.append({
             "at": datetime.now().isoformat(), "symbol": order.symbol,
             "action": order.action, "quantity": order.quantity, "price": price,
             "notional": order.notional(price), "ok": ok, "message": message,
-            "source": order.source, "rationale": order.rationale[:400],
+            "source": order.source, "venue": str(venue or ""),
+            "rationale": order.rationale[:400],
         })
         self.save()
 
-    def today(self) -> list[dict]:
+    def _for(self, venue: str) -> list[dict]:
+        """The rows that count against one venue's budgets.
+
+        There is one ledger and more than one venue behind it, and the daily
+        limits are not venue-neutral: ``max_turnover_per_day`` is a fraction of
+        *account value*, and each venue is a separate account with its own.
+        Summed across venues and divided by one of them, the number means
+        nothing — and it locks a venue out over trades that never touched it.
+        Five cleanup sells on the local paper book spent $38,258 and shut the
+        Alpaca bridge for the day against a $35,000 limit it had not used.
+
+        The churn cooldown is the same story one symbol at a time: selling NVDA
+        on paper should not stop the desk buying NVDA at the broker.
+
+        A row with no venue recorded predates this field and cannot be
+        attributed, so it counts everywhere. Over-counting refuses trades that
+        were allowed; under-counting allows trades that were not, and only one
+        of those is recoverable. The ambiguity ages out with the day.
+        """
+        if not venue:
+            return self.entries
+        v = str(venue).strip().lower()
+        return [e for e in self.entries
+                if not e.get("venue") or str(e["venue"]).strip().lower() == v]
+
+    def today(self, venue: str = "") -> list[dict]:
         today = date.today().isoformat()
-        return [e for e in self.entries if e.get("at", "").startswith(today)
+        return [e for e in self._for(venue) if e.get("at", "").startswith(today)
                 and e.get("ok")]
 
-    def trades_today(self) -> int:
-        return len(self.today())
+    def trades_today(self, venue: str = "") -> int:
+        return len(self.today(venue))
 
-    def turnover_today(self) -> float:
-        return sum(abs(e.get("notional", 0.0)) for e in self.today())
+    def turnover_today(self, venue: str = "") -> float:
+        return sum(abs(e.get("notional", 0.0)) for e in self.today(venue))
 
-    def last_trade_at(self, symbol: str) -> datetime | None:
-        stamps = [e["at"] for e in self.entries
+    def last_trade_at(self, symbol: str, venue: str = "") -> datetime | None:
+        stamps = [e["at"] for e in self._for(venue)
                   if e.get("symbol") == symbol.upper() and e.get("ok")]
         if not stamps:
             return None
@@ -172,9 +199,14 @@ class TradeLedger:
 class Secretary:
     """Validate, then risk-check. Nothing else may call the broker."""
 
-    def __init__(self, limits: RiskLimits | None = None, ledger: TradeLedger | None = None):
+    def __init__(self, limits: RiskLimits | None = None,
+                 ledger: TradeLedger | None = None, venue: str = ""):
         self.limits = limits or RiskLimits.from_env()
         self.ledger = ledger or TradeLedger()
+        # Which account the budgets below are being spent from. Empty means
+        # "every row counts", which is the old behaviour and the right default
+        # for a caller that does not know. See :meth:`TradeLedger._for`.
+        self.venue = str(venue or "")
 
     # --- 1. format validation ----------------------------------------------
 
@@ -280,16 +312,16 @@ class Secretary:
             return Verdict(False, "account value is zero — cannot size anything")
 
         # --- daily budget ---
-        if self.ledger.trades_today() >= L.max_trades_per_day:
+        if self.ledger.trades_today(self.venue) >= L.max_trades_per_day:
             return Verdict(False, f"daily trade budget spent "
                                   f"({L.max_trades_per_day} trades)")
-        turn = self.ledger.turnover_today()
+        turn = self.ledger.turnover_today(self.venue)
         if turn >= L.max_turnover_per_day * equity:
             return Verdict(False, f"daily turnover budget spent "
                                   f"({turn:,.0f} / {L.max_turnover_per_day:.0%} of equity)")
 
         # --- churn cooldown ---
-        last = self.ledger.last_trade_at(order.symbol)
+        last = self.ledger.last_trade_at(order.symbol, self.venue)
         if last and (datetime.now() - last) < timedelta(minutes=L.symbol_cooldown_minutes):
             mins = (datetime.now() - last).total_seconds() / 60
             return Verdict(False, f"{order.symbol} traded {mins:.0f}m ago; "
