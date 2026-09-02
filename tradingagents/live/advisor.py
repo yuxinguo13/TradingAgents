@@ -2511,6 +2511,9 @@ def format_report(report: "DailyReport") -> str:
         if rc.drift:
             out.append("  股数对不上：" + "、".join(
                 f"{s_} 账本{w}/账户{h_}" for s_, w, h_ in rc.drift))
+        if rc.conflicts:
+            out.append(f"  ! 方向相反 {len(rc.conflicts)}（不下任何单）：" + "、".join(
+                h.symbol for h, _ in rc.conflicts))
         if rc.core_held:
             out.append(f"  核心长仓 {len(rc.core_held)}（按月复核，不在这里对账）："
                        + "、".join(h.symbol for h in rc.core_held))
@@ -2768,6 +2771,8 @@ def to_markdown(report: "DailyReport") -> str:
                          if math.isfinite(px) else "定不了价"))
         for sym, want, have in rc.drift:
             rows.append(("股数对不上", sym, f"账本 {want:,} / 账户 {have:,}", "手工核对"))
+        for h, why in rc.conflicts:
+            rows.append(("方向相反", h.symbol, f"{_num(h.quantity, 0):,.0f} 股", why))
         for h in rc.core_held:
             rows.append(("核心长仓", h.symbol, f"{_num(h.quantity, 0):,.0f} 股",
                          "在 core.json 里，按月复核，不归这本波段账管"))

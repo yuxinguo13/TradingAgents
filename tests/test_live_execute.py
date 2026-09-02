@@ -306,6 +306,57 @@ class TestTheCoreBook:
 
 
 @pytest.mark.unit
+class TestWhatTheVenueActuallyReturns:
+    """Holdings are not a clean list, and every deviation here is silent."""
+
+    def test_a_short_is_never_read_as_a_matching_long(self):
+        """The worst reading available: the account is positioned the opposite
+        way and the reconciliation reports agreement."""
+        got = plan(Book([Rec("AAA", shares=100)]),
+                   account([Holding(symbol="AAA", quantity=100.0, side="short")]),
+                   exits=[], as_of=TODAY)
+        assert got.matched == [] and got.drift == []
+        assert [h.symbol for h, _ in got.conflicts] == ["AAA"]
+        assert not got.clean
+
+    def test_a_direction_conflict_is_never_an_order(self):
+        """Buying closes the short, selling deepens it. Both are this module
+        taking a position on a trade it has no record of."""
+        got = plan(Book([Rec("AAA", shares=100)]),
+                   account([Holding(symbol="AAA", quantity=100.0, side="short")]),
+                   exits=[Signal("AAA")], as_of=TODAY)
+        assert got.intents == []
+
+    def test_a_short_the_book_never_mentioned_is_reported_untouched(self):
+        got = plan(Book([]),
+                   account([Holding(symbol="ZZZ", quantity=10.0, side="short")]),
+                   exits=[], as_of=TODAY)
+        assert [h.symbol for h in got.unmanaged] == ["ZZZ"] and got.intents == []
+
+    def test_two_rows_for_one_symbol_are_summed_not_overwritten(self):
+        """Keyed naively the later row wins and a 150-share position reads as
+        50 — a drift the account does not have."""
+        got = plan(Book([Rec("AAA", shares=150)]),
+                   account([Holding(symbol="AAA", quantity=100.0),
+                            Holding(symbol="AAA", quantity=50.0)]),
+                   exits=[], as_of=TODAY)
+        assert got.matched == [("AAA", 150)] and got.drift == []
+
+    def test_a_row_with_no_shares_is_not_a_holding(self):
+        got = plan(Book([], closed=[exited("AAA", "2026-09-01")]),
+                   account([Holding(symbol="AAA", quantity=0.0)]),
+                   exits=[], as_of=TODAY)
+        assert got.to_close == [] and got.unmanaged == []
+
+    def test_a_book_row_with_no_share_count_says_so(self):
+        """Skipped in silence it reads as "nothing to do"; it is a
+        recommendation whose sizing produced nothing."""
+        got = plan(Book([Rec("AAA", shares=0)]), account(), exits=[], as_of=TODAY)
+        assert got.to_open == []
+        assert any("没有股数" in n for n in got.notes)
+
+
+@pytest.mark.unit
 class TestStaleEntries:
     """An unfilled idea is priced off one close and meant for the next open."""
 
@@ -577,6 +628,28 @@ class TestTheAccountBetweenOrders:
                              Order("AAA", BUY, 100), 100.0, log=lambda m: None)
         assert out.account_value > 0 and out.cash == 2_000.0
 
+    def test_a_venue_that_has_not_registered_the_fill_cannot_widen_the_room(self):
+        """The case this guard exists for: the venue answers with room that is
+        already committed, one order too late to matter."""
+        stale = account(cash=12_000.0)
+        b = StubBroker(acct=stale)                 # answers 12,000 forever
+        rec = plan(Book([Rec("AAA", shares=100, limit=None),
+                         Rec("BBB", shares=100, limit=None)]),
+                   account(cash=12_000.0), as_of=TODAY)
+        submit(rec, b, self.secretary_for(), account(cash=12_000.0),
+               market_open=True, log=lambda m: None)
+        spent = sum(q * 100.0 for _, _, q, _, _ in b.placed)
+        assert spent <= 12_000.0, "a lagging account read let it overbuy"
+
+    def secretary_for(self):
+        import tempfile
+        from pathlib import Path
+        return Secretary(
+            RiskLimits(max_position_weight=1.0, max_new_position_weight=1.0,
+                       max_gross_exposure=1.0, max_order_value_pct=1.0,
+                       symbol_cooldown_minutes=0, min_price=1.0),
+            TradeLedger(Path(tempfile.mkdtemp()) / "l.json"))
+
     def test_a_sale_frees_shares_but_not_cash_before_it_settles(self):
         acct = account([Holding(symbol="AAA", quantity=100.0, market_value=10_000.0)],
                        cash=500.0)
@@ -586,6 +659,34 @@ class TestTheAccountBetweenOrders:
 
 @pytest.mark.unit
 class TestTheLedger:
+    def test_a_partial_fill_is_booked_at_what_filled(self, tmp_path, monkeypatch):
+        """The daily budgets are spent from this row. Booked at the size that
+        was asked for, 30 of 100 filled charges the day for all 100."""
+        monkeypatch.setenv("TRADINGAGENTS_HOME", str(tmp_path))
+        class Partial(StubBroker):
+            def place_order(self, symbol, action, quantity, **k):
+                self.placed.append((symbol, action, quantity, "Market", None))
+                r = OrderResult(ok=True, symbol=symbol, action=action,
+                                quantity=quantity, message="partially filled")
+                r.filled_quantity = quantity * 0.3
+                return r
+        sec = Secretary(RiskLimits(), TradeLedger(tmp_path / "l.json"))
+        rec = plan(Book([Rec("AAA", shares=100, limit=None)]), account(), as_of=TODAY)
+        b = Partial()
+        submit(rec, b, sec, account(), market_open=True)
+        sent = b.placed[0][2]                      # after the gate resized it
+        assert [e["quantity"] for e in sec.ledger.entries] == [int(sent * 0.3)]
+        assert sec.ledger.entries[0]["notional"] == int(sent * 0.3) * 100.0
+
+    def test_an_order_accepted_without_a_fill_keeps_its_full_size(self):
+        """Live at the venue: the exposure is committed whether or not it has
+        printed."""
+        booked = execute._as_filled(
+            Order("AAA", BUY, 100),
+            OrderResult(ok=True, symbol="AAA", action=BUY, quantity=100,
+                        status="new"))
+        assert booked.quantity == 100
+
     def test_a_fill_is_written_once(self, tmp_path, monkeypatch):
         """``record()`` persists on its own; the extra save wrote it all twice."""
         monkeypatch.setenv("TRADINGAGENTS_HOME", str(tmp_path))
@@ -620,6 +721,13 @@ class TestRendering:
                    exits=[Signal("AAA", shares=50, action="TRIM")], as_of=TODAY)
         text = execute.format_plan(got, account(), "paper")
         assert "减仓 (1)" in text and "股数对不上 (" not in text
+
+    def test_a_direction_conflict_is_printed_with_its_reason(self):
+        got = plan(Book([Rec("AAA", shares=100)]),
+                   account([Holding(symbol="AAA", quantity=100.0, side="short")]),
+                   exits=[], as_of=TODAY)
+        text = execute.format_plan(got, account(), "paper")
+        assert "方向相反" in text and "不下任何单" in text
 
     def test_the_core_book_is_named_as_itself(self):
         got = plan(Book([]), account([Holding(symbol="MSFT", quantity=30.0)]),

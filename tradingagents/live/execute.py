@@ -160,6 +160,11 @@ class Reconciliation:
     # that section stops being read, and the one day it says something new goes
     # by unnoticed with it.
     core_held: list = field(default_factory=list)    # Holding
+    # The account holds the opposite of what the book says. Its own bucket
+    # because it is the one disagreement that must never be resolved by this
+    # module: buying to "close the gap" against a short would cover it, and
+    # selling would open one.
+    conflicts: list = field(default_factory=list)    # (Holding, why)
     notes: list = field(default_factory=list)
 
     @property
@@ -175,7 +180,7 @@ class Reconciliation:
     @property
     def clean(self) -> bool:
         return not (self.to_open or self.to_close or self.to_trim
-                    or self.drift or self.stale)
+                    or self.drift or self.stale or self.conflicts)
 
 
 def _r_now(rec: Recommendation, price: float) -> float:
@@ -259,6 +264,38 @@ def _recent_exits(book, as_of: _date | None, window_days: int) -> dict:
     return out
 
 
+def _positions(account: Account) -> tuple[dict, dict]:
+    """The account's long and short books, keyed by symbol.
+
+    Three things a venue does that a dict comprehension over ``holdings`` gets
+    wrong, all of them silently:
+
+    * **Two rows for one symbol.** Keyed naively the later row wins and the
+      earlier size vanishes, so a 150-share position reads as 50 and the
+      reconciliation invents a drift that is not there. Summed instead.
+    * **A row with no shares.** A closed position some venues still return. It
+      is not a holding, and printed as one it says the account holds something
+      the book does not recognise — of nothing.
+    * **A short.** Held apart, because as a positive quantity it matches a long
+      of the same size and the reconciliation reports agreement while the
+      account is positioned the opposite way.
+    """
+    long_: dict = {}
+    short: dict = {}
+    for h in (account.holdings or []):
+        sym = str(getattr(h, "symbol", "") or "").upper()
+        qty = _num(getattr(h, "quantity", 0.0), 0.0)
+        if not sym or not (abs(qty) > 0):
+            continue
+        book = short if str(getattr(h, "side", "long")).lower() == "short" else long_
+        prev = book.get(sym)
+        book[sym] = h if prev is None else replace(
+            prev, quantity=_num(prev.quantity, 0.0) + qty,
+            market_value=_num(getattr(prev, "market_value", 0.0), 0.0)
+            + _num(getattr(h, "market_value", 0.0), 0.0))
+    return long_, short
+
+
 def plan(book: RecommendationBook, account: Account, *,
          exits=None, as_of: _date | None = None, quote=None,
          fresh_days: int = ENTRY_FRESH_DAYS, core=None,
@@ -279,7 +316,7 @@ def plan(book: RecommendationBook, account: Account, *,
     out = Reconciliation()
     out._book = {}
     when = as_of or _date.today()
-    held = {h.symbol.upper(): h for h in (account.holdings or [])}
+    held, short = _positions(account)
     open_recs = [r for r in book.open_recommendations() if r.symbol]
     booked = {r.symbol.upper(): r for r in open_recs}
     core_syms = {str(s).upper() for s in (core or ()) if str(s).strip()}
@@ -300,6 +337,14 @@ def plan(book: RecommendationBook, account: Account, *,
     for sym, rec in booked.items():
         out._book[rec.id] = rec
         want = int(_num(rec.shares, 0.0))
+        if sym in short:
+            # Never an order. Buying to close the gap would cover the short;
+            # selling would deepen it. Either way this module would be taking a
+            # position on a trade it has no record of.
+            out.conflicts.append((short[sym],
+                                  f"账户是空头 {_num(short[sym].quantity, 0):,.0f} 股，"
+                                  f"账本却是多头 {want:,} 股——这里不下任何单"))
+            continue
         h = held.get(sym)
         have = int(_num(getattr(h, "quantity", 0.0), 0.0)) if h else 0
         sig = closing.get(sym)
@@ -326,6 +371,9 @@ def plan(book: RecommendationBook, account: Account, *,
             # 按股数差异报出来——不能因为定不了量就连差额也不提。
             out.notes.append(f"{sym}：账本说要减仓却没给股数，这里只报差额、不下单")
         if want <= 0:
+            # Silence here reads as "nothing to do". It is a recommendation
+            # whose sizing produced no shares, which is a different thing.
+            out.notes.append(f"{sym}：账本里这条没有股数，无法对账，也不会下单")
             continue
         if have == 0:
             intent = Intent(BUY, sym, want, _num(rec.limit_price, None) or None,
@@ -348,6 +396,9 @@ def plan(book: RecommendationBook, account: Account, *,
             out.matched.append((sym, have))
 
     exited = _recent_exits(book, when, exit_window_days)
+    for sym, h in short.items():
+        if sym not in booked:
+            out.unmanaged.append(h)
     for sym, h in held.items():
         if sym in booked:
             continue
@@ -445,13 +496,54 @@ def _after(broker, account: Account, order: Order, price: float, log) -> Account
     reached the fill is applied locally, and only in the direction that
     tightens what comes next.
     """
+    local = _applied(account, order, price)
     try:
         fresh = broker.account()
-        if fresh is not None and _num(getattr(fresh, "account_value", 0.0), 0.0) > 0:
-            return fresh
     except Exception as exc:
         log(f"下单后读不回账户（{type(exc).__name__}: {exc}）；按本地估算继续")
-    return _applied(account, order, price)
+        return local
+    if fresh is None or _num(getattr(fresh, "account_value", 0.0), 0.0) <= 0:
+        return local
+    # The venue is the truth about what is held, and the estimate is the floor
+    # under what is left to spend. A venue that has not yet registered the
+    # order it just accepted answers with room that is already committed — and
+    # that answer arriving one order too late is exactly the case this guard
+    # exists for, so it is never allowed to read looser than the estimate.
+    return replace(fresh,
+                   cash=min(_num(fresh.cash, 0.0), _num(local.cash, 0.0)),
+                   buying_power=min(_num(fresh.buying_power, 0.0),
+                                    _num(local.buying_power, 0.0)),
+                   holdings=_wider(fresh.holdings, local.holdings))
+
+
+def _wider(venue: list, local: list) -> list:
+    """Per symbol, whichever book shows the larger position.
+
+    Gross exposure is a limit, and a venue that has not yet booked the fill
+    reports less of it than the account carries.
+    """
+    out = {str(h.symbol).upper(): h for h in (venue or [])}
+    for h in (local or []):
+        sym = str(h.symbol).upper()
+        cur = out.get(sym)
+        if cur is None or _num(h.quantity, 0.0) > _num(cur.quantity, 0.0):
+            out[sym] = h
+    return list(out.values())
+
+
+def _as_filled(order: Order, result) -> Order:
+    """The order as the venue actually executed it.
+
+    The daily trade and turnover budgets are spent from this row, so a
+    partial fill booked at the size that was *asked for* spends budget on
+    shares nobody owns — 30 of 100 filled charges the day for all 100. An
+    order accepted without a fill keeps its full size: it is live at the
+    venue, and the exposure is committed whether or not it has printed.
+    """
+    filled = _num(getattr(result, "filled_quantity", 0.0), 0.0)
+    if filled <= 0 or int(filled) == int(order.quantity):
+        return order
+    return replace(order, quantity=int(filled))
 
 
 def submit(rec: Reconciliation, broker, secretary: Secretary, account: Account,
@@ -491,7 +583,8 @@ def submit(rec: Reconciliation, broker, secretary: Secretary, account: Account,
         try:
             # record() persists on its own; a second save() here wrote the
             # whole ledger twice per fill.
-            secretary.ledger.record(order, price, bool(getattr(result, "ok", False)),
+            secretary.ledger.record(_as_filled(order, result), price,
+                                    bool(getattr(result, "ok", False)),
                                     str(getattr(result, "message", "")))
         except Exception as exc:
             log(f"成交流水没写进去 ({exc})")
@@ -587,6 +680,12 @@ def format_plan(rec: Reconciliation, account: Account, venue: str) -> str:
             val = _num(getattr(h, "market_value", None), 0.0)
             out.append(f"  {h.symbol:<7}{_num(h.quantity, 0):>9,.0f} 股   "
                        f"成本 {_num(h.avg_cost, 0):>9,.2f}   市值 ${val:>11,.2f}")
+    if rec.conflicts:
+        out += ["", f"方向相反 ({len(rec.conflicts)})", "-" * W,
+                "  账户和账本在同一只票上方向相反。这一节永远不下单：买进去是平掉空头，",
+                "  卖出去是加深它，两个都是这座桥在替一笔它没有记录的交易做决定。"]
+        for h, why in rec.conflicts:
+            out.append(f"  {h.symbol:<7} {why}")
     if rec.core_held:
         out += ["", f"核心长仓 ({len(rec.core_held)})", "-" * W,
                 "  这些在 core.json 里，按月复核，不归这本波段账管，也不会在这里下单。"]
