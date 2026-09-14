@@ -1908,10 +1908,17 @@ class DailyAdvisor:
 
         stats = {}
         if self.cfg.with_fundamentals:
-            budget = wanted[:max(0, self.cfg.max_fundamentals)]
-            if len(wanted) > len(budget):
+            # SPY and QQQM are yardsticks, not companies: an ETF has no income
+            # statement and no earnings date, so asking for one spends two
+            # slots of the budget and makes yfinance log
+            # "No earnings dates found, symbol may be delisted" at ERROR — a
+            # line that reads like the run broke when nothing did.
+            bases = {w.symbol.upper() for w in report.watchlist if w.is_base}
+            eligible = [s for s in wanted if s not in bases]
+            budget = eligible[:max(0, self.cfg.max_fundamentals)]
+            if len(eligible) > len(budget):
                 report.notes.append(
-                    f"财报数据只拉取了 {len(budget)}/{len(wanted)} 只"
+                    f"财报数据只拉取了 {len(budget)}/{len(eligible)} 只"
                     f"（max_fundamentals）；其余个股页面没有财报一节")
             try:
                 book = self._fundamentals
@@ -2066,7 +2073,17 @@ class DailyAdvisor:
             px = _num(sig.price)
             if not math.isnan(px):
                 proceeds += px * sig.shares
-        budget = max(0.0, (account.buying_power or account.cash)) + proceeds
+        # Unlevered on purpose, and the venue's own field will not say so.
+        # Alpaca reports `buying_power` as *day-trading* buying power — four
+        # times equity on a margin account — while `paper` and every test
+        # report it equal to cash. Reading it straight printed a $407,221
+        # budget beside $100,000 of cash on the one venue that is the default,
+        # and turned the cap on the day's new ideas into a number that can
+        # never bind. This book does not borrow, so when a venue reports both
+        # numbers the smaller one is the spendable one.
+        spendable = [v for v in (account.cash, account.buying_power)
+                     if isinstance(v, (int, float)) and v > 0]
+        budget = (min(spendable) if spendable else 0.0) + proceeds
         report.buy_budget = budget
         if proceeds:
             report.notes.append(

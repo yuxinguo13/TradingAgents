@@ -97,6 +97,22 @@ class TestNovelty:
         items = NewsMonitor(state_path=tmp_path / "seen.json").poll(["ACME"], macro=False)
         assert items[0].materiality > items[-1].materiality
 
+    def test_equal_materiality_is_ordered_newest_first(self, tmp_path, monkeypatch):
+        # A Google query for a ticker returns years of back coverage, and old
+        # M&A coverage scores as high as a deal announced this morning. When
+        # the tier tie broke toward the *oldest* item, a 2023 merger headline
+        # led the feed and the story that broke today sat below it.
+        feed = [
+            {"title": "BigCo to acquire ACME for $4B in cash", "link": "old",
+             "published": "2023-09-01T12:00:00+00:00", "source": ""},
+            {"title": "ACME to acquire SmallCo for $2B in cash", "link": "new",
+             "published": "2026-09-14T12:00:00+00:00", "source": ""},
+        ]
+        monkeypatch.setattr(newsfeed, "fetch_rss", lambda url, timeout=20: feed)
+        items = NewsMonitor(state_path=tmp_path / "seen.json").poll(["ACME"], macro=False)
+        assert [i.materiality for i in items] == [items[0].materiality] * 2
+        assert items[0].link == "new"
+
     def test_stale_fingerprints_are_pruned(self, tmp_path, monkeypatch):
         p = tmp_path / "seen.json"
         old = (datetime.now(timezone.utc) - timedelta(days=30)).isoformat()

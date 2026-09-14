@@ -361,8 +361,17 @@ class NewsMonitor:
             out += self.poll_ticker(tkr)
             time.sleep(pause)
         self._save()
-        out.sort(key=lambda i: (-i.materiality, i.published), reverse=False)
-        return sorted(out, key=lambda i: -i.materiality)
+        # Materiality first, then *newest* first inside a tier. Two passes
+        # because a timestamp string cannot be negated inside one key tuple,
+        # and Python's sort is stable, so the second pass keeps the first
+        # pass's order among equals. The earlier one-tuple version sorted
+        # publication time *ascending*, which put the oldest story at the top
+        # of every tier: a Google query for a ticker returns years of back
+        # coverage, so a 2023 merger headline led the feed while the story
+        # that actually broke today sat below it.
+        out.sort(key=lambda i: i.published, reverse=True)
+        out.sort(key=lambda i: -i.materiality)
+        return out
 
     def prime(self, tickers: list[str]) -> int:
         """Mark everything currently in the feeds as seen, without acting.

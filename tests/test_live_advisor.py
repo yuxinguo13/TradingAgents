@@ -39,6 +39,7 @@ from tradingagents.live.advisor import (
     MAX_TILT_SHIFT,
     REFERENCE_NOTE,
     Candidate,
+    WatchRow,
     format_report,
     last_completed_session,
     save_report,
@@ -1102,6 +1103,53 @@ class TestInjectedMonitors:
 
 # ---------------------------------------------------------------------------
 # persistence
+# ---------------------------------------------------------------------------
+
+@pytest.mark.unit
+class TestTheBudgetIsNotLeverage:
+    """The venue's own field is not the amount this book may spend."""
+
+    def test_margin_buying_power_does_not_become_the_buy_budget(self, desk):
+        """Alpaca reports day-trading buying power — four times equity.
+
+        Every other venue and every fixture reports it equal to cash, so
+        reading it straight printed "buy budget $407,221" beside "cash
+        $100,000" on the one venue that is the default, and left the cap on
+        the day's new ideas unable to bind.
+        """
+        desk.account.cash = 100_000.0
+        desk.account.buying_power = 400_000.0
+        assert desk.run().buy_budget == pytest.approx(100_000.0)
+
+    def test_a_venue_that_reports_no_buying_power_still_gets_its_cash(self, desk):
+        desk.account.cash = 60_000.0
+        desk.account.buying_power = 0.0
+        assert desk.run().buy_budget == pytest.approx(60_000.0)
+
+
+@pytest.mark.unit
+class TestBasesAreNotCompanies:
+    def test_no_statement_is_requested_for_a_benchmark(self, desk):
+        """SPY and QQQM have no income statement and no earnings date.
+
+        Asking for one spent two slots of the fundamentals budget and made
+        yfinance log "No earnings dates found, symbol may be delisted" at
+        ERROR — a line that reads like the run broke when nothing did.
+        """
+        asked: list[str] = []
+
+        class Recording(StubFundamentals):
+            def get(self, symbols, refresh=False, log=None):
+                asked.extend(symbols)
+                return super().get(symbols, refresh=refresh, log=log)
+
+        report = DailyReport(date="2026-08-24", data_date="2026-08-21")
+        report.watchlist = [WatchRow(symbol="SPY", tag="base", is_base=True),
+                            WatchRow(symbol="AAA", tag="tech")]
+        desk.advisor(fundamentals=Recording()).build_analyses(report, "2026-08-21")
+        assert "SPY" not in asked and "AAA" in asked
+
+
 # ---------------------------------------------------------------------------
 
 @pytest.mark.unit
