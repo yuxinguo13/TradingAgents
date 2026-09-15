@@ -56,7 +56,7 @@ case "$MODE" in
   submit) "$PY" -m tradingagents.live.execute --submit >>"$LOG" 2>&1 ;;
   *)      print -r -- "unknown mode: $MODE (want report|submit)" >>"$LOG"; exit 2 ;;
 esac
-status=$?
+rc=$?
 
-print -r -- "-------- exit $status --------" >>"$LOG"
-exit $status
+print -r -- "-------- exit $rc --------" >>"$LOG"
+exit $rc
