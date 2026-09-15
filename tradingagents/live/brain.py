@@ -77,6 +77,10 @@ class Snapshot:
     ret_1m: float = float("nan")
     ret_3m: float = float("nan")
     off_high_52w: float = float("nan")
+    # The session the last bar belongs to. The date asked for is not evidence
+    # of the date received: a vendor with no close published yet hands back a
+    # frame one session short, and nothing else on this object would say so.
+    bar_date: str = ""
     ok: bool = False
     error: str = ""
 
@@ -101,6 +105,11 @@ def snapshot(symbol: str, date: str) -> Snapshot:
         s.price = float(c.iloc[-1])
         s.prev_close = float(c.iloc[-2])
         s.change_pct = s.price / s.prev_close - 1.0
+        if "Date" in df.columns:
+            try:
+                s.bar_date = pd.to_datetime(df["Date"].iloc[-1]).date().isoformat()
+            except Exception:
+                s.bar_date = ""
 
         pc = c.shift(1)
         tr = pd.concat([h - l, (h - pc).abs(), (l - pc).abs()], axis=1).max(axis=1)
@@ -319,6 +328,20 @@ class PanelResult:
         return s
 
 
+def _hold_reason(raw: str) -> tuple[float, str]:
+    """(confidence, rationale) from a Hold reply; (0.0, "") when unreadable."""
+    import json
+    m = re.search(r"\{.*\}", raw or "", re.DOTALL)
+    if not m:
+        return 0.0, ""
+    try:
+        d = json.loads(m.group(0))
+        conf = float(d.get("confidence") or 0.0)
+        return max(0.0, min(1.0, conf)), str(d.get("rationale") or "")[:400]
+    except Exception:
+        return 0.0, ""
+
+
 class Panel:
     """Runs the personas against one evidence pack and reconciles their votes."""
 
@@ -352,6 +375,10 @@ class Panel:
                 return v
             if parsed.order is None:          # a well-formed Hold
                 v.action = "Hold"
+                # Kept for the page. A Hold's confidence never enters the tally
+                # (only backers' does), but its sentence is the only record of
+                # why a seat declined, and the order parser discards it.
+                v.confidence, v.rationale = _hold_reason(raw)
                 return v
             o = parsed.order
             v.action, v.quantity = o.action, o.quantity

@@ -145,6 +145,25 @@ def _needs_same_day_refresh(data_file, curr_date_dt, today_date) -> bool:
     return time.time() - os.path.getmtime(data_file) > OHLCV_CACHE_TTL_SECONDS
 
 
+def _last_complete_date(data: pd.DataFrame | None):
+    """The latest date that carries a close, or None."""
+    if data is None or data.empty or "Close" not in data.columns:
+        return None
+    frame = _ensure_date_column(data.copy())
+    if "Date" not in frame.columns:
+        return None
+    dates = pd.to_datetime(frame["Date"], errors="coerce", utc=True)
+    closes = pd.to_numeric(frame["Close"], errors="coerce")
+    usable = dates[closes.notna() & dates.notna()]
+    return None if usable.empty else usable.max().normalize()
+
+
+def _completes_later(cached: pd.DataFrame | None, downloaded: pd.DataFrame) -> bool:
+    """Whether the file on disk has a close for a later day than the download."""
+    have, got = _last_complete_date(cached), _last_complete_date(downloaded)
+    return have is not None and (got is None or have > got)
+
+
 def load_ohlcv(symbol: str, curr_date: str) -> pd.DataFrame:
     """Fetch OHLCV data with caching, filtered to prevent look-ahead bias.
 
@@ -180,6 +199,7 @@ def load_ohlcv(symbol: str, curr_date: str) -> pd.DataFrame:
     # transient rate limit). Treat an empty/columnless cache as a miss and
     # re-fetch rather than serving the poisoned file forever.
     data = None
+    cached = None
     if os.path.exists(data_file):
         cached = pd.read_csv(data_file, on_bad_lines="skip", encoding="utf-8")
         # Serve the cache only when it is usable and not a stale snapshot of the
@@ -206,8 +226,20 @@ def load_ohlcv(symbol: str, curr_date: str) -> pd.DataFrame:
             raise NoMarketDataError(
                 symbol, canonical, "Yahoo Finance returned no rows"
             )
-        downloaded.to_csv(data_file, index=False, encoding="utf-8")
-        data = downloaded
+        if _completes_later(cached, downloaded):
+            # The refetch is worse than the file it would replace. Yahoo can
+            # publish a day's bar with a close and later serve that same day
+            # back as a placeholder — volume only, no open, high, low or close
+            # (OMER, RVMD and NESR on 2026-09-14, two hours after a complete
+            # bar). Written over the cache, the cleaned frame ended a session
+            # short for every later caller, and nothing said so. Keep the
+            # complete file and restart its TTL, so the next attempt waits
+            # rather than hammering the vendor.
+            os.utime(data_file, None)
+            data = cached
+        else:
+            downloaded.to_csv(data_file, index=False, encoding="utf-8")
+            data = downloaded
 
     data = _clean_dataframe(data)
 

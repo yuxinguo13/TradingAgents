@@ -387,6 +387,24 @@ def _no_stop_reason(entry: float, atr_pct: float, k: float) -> str:
             f"{mult:g}-ATR stop inside the cent the shares quote in")
 
 
+def _seat_reasons(result) -> str:
+    """Each seat's vote and its own sentence, for the page.
+
+    "panel consensus was Hold" is a verdict. This report is read for its
+    evidence, and a seat's reason is the evidence for the verdict.
+    """
+    bits = []
+    for v in getattr(result, "votes", None) or []:
+        seat = (str(getattr(v, "persona", "")).split() or ["?"])[0]
+        if getattr(v, "error", ""):
+            bits.append(f"{seat} abstained ({str(v.error)[:60]})")
+            continue
+        conf = f" {v.confidence:.1f}" if getattr(v, "confidence", 0.0) else ""
+        why = str(getattr(v, "rationale", "") or "").strip()
+        bits.append(f"{seat} {v.action}{conf}" + (f": {why[:160]}" if why else ""))
+    return " | ".join(bits)
+
+
 def _poll_standing(monitor, call):
     """Poll a stateful monitor for what is standing now, without eating its backlog.
 
@@ -1039,11 +1057,19 @@ class DailyAdvisor:
         """
         data_date = data_day.isoformat()
         prices: dict[str, float] = {}
+        stale_marks: list[str] = []
         for rec in self.book.open_recommendations():
             snap = self.snapshot(rec.symbol, data_date)
             if snap.ok and snap.price > 0:
                 prices[rec.symbol] = snap.price
                 report.marks[rec.symbol] = snap.price
+                if getattr(snap, "bar_date", "") and snap.bar_date < data_date:
+                    stale_marks.append(f"{rec.symbol} ({snap.bar_date})")
+        if stale_marks:
+            report.warnings.append(
+                f"open ideas marked on a close older than {data_date}: "
+                f"{', '.join(stale_marks)} — their stops and targets were checked "
+                f"against that older price")
         try:
             signals = self.book.review(
                 prices, news_by_symbol, as_of=data_day, rules=self.exit_rules,
@@ -1315,6 +1341,7 @@ class DailyAdvisor:
         exited_today = {r.symbol for r in report.closed}
         held = {h.symbol for h in account.holdings}
         out: list[Candidate] = []
+        stale: list[str] = []
         for c in cands:
             if not c.symbol:
                 continue
@@ -1330,6 +1357,11 @@ class DailyAdvisor:
                 c.snap = snap
                 if not snap.ok:
                     c.reason = f"no usable price history ({snap.error or 'unknown'})"
+                elif getattr(snap, "bar_date", "") and snap.bar_date < data_date:
+                    stale.append(c.symbol)
+                    c.reason = (f"price history ends {snap.bar_date}, not the {data_date} "
+                                f"session — the vendor has no close for it yet, and every "
+                                f"level would be priced off the session before")
                 elif snap.price < self.cfg.min_price:
                     c.reason = (f"${snap.price:,.2f} is below the ${self.cfg.min_price:,.2f} "
                                 f"price floor")
@@ -1337,11 +1369,124 @@ class DailyAdvisor:
                     out.append(c)
                     continue
             report.notes.append(f"{c.symbol} skipped: {c.reason}")
+        if stale:
+            report.warnings.append(
+                f"price history for {len(stale)} candidate(s) stops before the {data_date} "
+                f"session ({', '.join(stale[:12])}{'…' if len(stale) > 12 else ''}); they "
+                f"were skipped rather than sized off an older close")
+        return out
+
+    def _trade_context(self, cand: Candidate, plan, account: Account,
+                       issued: _date) -> str:
+        """What the panel is actually asked to approve, in this report's numbers."""
+        entry, stop, target = plan.reference_price, plan.stop_price, plan.target_price
+        r = plan.planned_r()
+        risk = plan.shares * (entry - stop)
+        equity = account.account_value or account.cash or 0.0
+        tilt = f" · policy tilt on {cand.sector} {cand.tilt:+.2f}" if cand.tilt else ""
+        lines = [
+            "## The trade you are voting on",
+            f"- Screen: rank #{cand.rank} on the {self.cfg.exchange} momentum and "
+            f"accumulation screen · sector {cand.sector}{tilt}",
+            f"- Entry: reference {entry:,.2f} (the last close), limit {plan.limit_price:,.2f}",
+            f"- Stop {stop:,.2f} ({stop / entry - 1:+.1%}, {self.cfg.atr_stop_mult:g} ATR) · "
+            f"target {target:,.2f} ({target / entry - 1:+.1%}, the recent trend carried "
+            f"{plan.horizon_days} days) · {r:.2f}R, which breaks even at a "
+            f"{1 / (1 + r):.0%} win rate",
+            f"- Size: {plan.shares:,} shares, ${plan.shares * entry:,.0f}"
+            + (f" ({plan.shares * entry / equity:.1%} of equity)" if equity else "")
+            + f", risking ${risk:,.0f} to the stop",
+            f"- If you vote Buy, give quantity {plan.shares}. The desk sizes from the stop "
+            f"whatever you write, but a Buy with no quantity counts as no vote.",
+            "", "## Earnings",
+        ]
+        lines += self._earnings_lines(cand, issued)
+        company = self._company_lines(cand, entry)
+        if company:
+            lines += ["", "## Company"] + company
+        return "\n".join(lines)
+
+    def _earnings_lines(self, cand: Candidate, issued: _date) -> list[str]:
+        """Counted from the order session: the holding period starts there."""
+        e = cand.earnings
+        if e is None or not (e.next_date or e.last_date):
+            why = f" ({e.error})" if e is not None and e.error else ""
+            return [f"- Calendar unknown{why}. The size above assumes no report is due; "
+                    f"that is an assumption, not a finding."]
+        out = []
+        days = e.days_to_next(issued)
+        if days == days:
+            inside = 0 <= days <= self.cfg.horizon_days
+            out.append(f"- Next report {e.next_date}, {days:.0f} days from the order "
+                       f"session — " + (f"inside the {self.cfg.horizon_days}-day horizon; "
+                                        f"a gap opens through the stop" if inside
+                                        else "outside the holding horizon"))
+        if e.last_date:
+            beat = e.beat()
+            since = e.days_since_last(issued)
+            ago = f", {since:.0f} days ago" if since == since else ""
+            if beat is None:
+                out.append(f"- Last report {e.last_date}{ago}: surprise unknown")
+            else:
+                est = f"{e.eps_estimate:.2f}" if e.eps_estimate == e.eps_estimate else "n/a"
+                act = f"{e.eps_actual:.2f}" if e.eps_actual == e.eps_actual else "n/a"
+                out.append(f"- Last report {e.last_date}{ago}: EPS {act} against {est} "
+                           f"expected ({'beat' if beat else 'missed'} by "
+                           f"{abs(e.surprise_pct):.0f}%)")
+        return out or ["- No usable earnings dates."]
+
+    def _company_lines(self, cand: Candidate, price: float) -> list[str]:
+        """Statements, compact. What is missing is said, never guessed."""
+        try:
+            book = self._fundamentals
+            if book is None:
+                book = self._fundamentals = fund.FundamentalsBook()
+            f = book.get([cand.symbol], log=logger.debug).get(cand.symbol)
+        except Exception as exc:
+            return [f"- Statements unavailable ({type(exc).__name__}); judge on price "
+                    f"and earnings alone."]
+        if f is None:
+            return ["- Statements unavailable; judge on price and earnings alone."]
+        ok, money, pct, ratio = fund.ok, fund.money, fund.pct, fund.ratio
+
+        def joined(*parts):
+            return " · ".join(x for x in parts if x)
+
+        out = []
+        head = joined(f.name or cand.name,
+                      "/".join(x for x in (f.sector, f.industry) if x),
+                      f"market cap {money(f.market_cap)}" if ok(f.market_cap) else "",
+                      f"beta {ratio(f.beta, 2)}" if ok(f.beta) else "",
+                      f"short interest {pct(f.short_pct_float)} of float"
+                      if ok(f.short_pct_float) else "")
+        if head:
+            out.append(f"- {head}")
+        figures = joined(f"revenue TTM {money(f.revenue_ttm)}" if ok(f.revenue_ttm) else "",
+                         f"EPS TTM {ratio(f.eps_trailing, 2)}" if ok(f.eps_trailing) else "",
+                         f"gross margin {pct(f.gross_margin)}" if ok(f.gross_margin) else "",
+                         f"operating margin {pct(f.operating_margin)}"
+                         if ok(f.operating_margin) else "",
+                         f"net margin {pct(f.profit_margin)}" if ok(f.profit_margin) else "")
+        if figures:
+            out.append(f"- {figures}")
+        out.append(f"- Valuation: {fund.valuation_read(f)}")
+        out.append(f"- Growth: {fund.growth_read(f)}")
+        sheet = joined(f"cash {money(f.total_cash)}" if ok(f.total_cash) else "",
+                       f"debt {money(f.total_debt)}" if ok(f.total_debt) else "",
+                       f"free cash flow {money(f.free_cashflow)}" if ok(f.free_cashflow) else "",
+                       f"current ratio {ratio(f.current_ratio, 2)}"
+                       if ok(f.current_ratio) else "")
+        if sheet:
+            out.append(f"- Balance sheet: {sheet}")
+        if ok(f.analysts) and f.analysts > 0:
+            up = f.upside(price)
+            out.append(f"- Street: {f.analysts:.0f} analyst(s), mean target "
+                       f"{ratio(f.target_mean, 2)}" + (f" ({up:+.0%} from here)" if ok(up) else ""))
         return out
 
     def deliberate(self, cand: Candidate, account: Account, news: list[NewsItem],
                    macro: list[NewsItem], events: list[PolicyEvent],
-                   data_date: str) -> tuple[bool, float, str]:
+                   data_date: str, issued: _date | None = None) -> tuple[bool, float, str]:
         """Put one candidate in front of the panel. Returns (approved, conviction, why).
 
         The evidence pack is :func:`brain.build_evidence` with the policy brief
@@ -1362,6 +1507,18 @@ class DailyAdvisor:
                 f"{self.cfg.exchange} momentum and accumulation screen.")
 
         snap = cand.snap or self.snapshot(cand.symbol, data_date)
+        cand.snap = snap
+        # The trade itself, from the same rules that size it afterwards. Shown
+        # only the tape, a panel is asked whether the stock looks good, not
+        # whether this entry, this stop and this share count are worth taking —
+        # and on 576 characters of tape every seat of eight candidates on
+        # 2026-09-14 answered Hold. A candidate the rules cannot turn into a
+        # plan never reaches the panel: sizing would refuse it after the vote
+        # anyway, and every seat is a separate process.
+        when = issued or _date.fromisoformat(data_date)
+        plan, refusal = self.size(cand, account, when, DEFAULT_CONVICTION, "")
+        if plan is None:
+            return False, 0.0, f"no plan to put to the panel: {refusal}"
         try:
             trigs = triggers(cand.symbol, snap, news, account, cand.rank)
         except Exception as exc:
@@ -1379,6 +1536,7 @@ class DailyAdvisor:
                                       phase="daily report, for the next open")
             if events:
                 evidence += "\n\n" + policy_brief(events)
+            evidence += "\n\n" + self._trade_context(cand, plan, account, when)
         except Exception as exc:
             # Not taken rather than taken unreviewed: the panel is configured,
             # and an idea it never saw must not be printed as one it approved.
@@ -1395,7 +1553,8 @@ class DailyAdvisor:
         logger.info("%s", result.summary())
         if result.order is None or result.consensus != VENUE_BUY:
             why = result.concern or f"panel consensus was {result.consensus}"
-            return False, 0.0, why
+            seats = _seat_reasons(result)
+            return False, 0.0, (f"{why} — {seats}" if seats else why)
         # The panel's own share count is discarded on purpose. It is a view
         # expressed in the wrong unit: the panel does not know where the stop
         # is, and the stop is the only thing that decides how many shares a
@@ -1558,7 +1717,7 @@ class DailyAdvisor:
         proposals: list[Recommendation] = []
         for cand in considered:
             approved, conviction, why = self.deliberate(
-                cand, account, news, macro, events, data_date)
+                cand, account, news, macro, events, data_date, issued=issued)
             if not approved:
                 report.notes.append(f"{cand.symbol} not taken: {why}")
                 continue
@@ -1637,9 +1796,14 @@ class DailyAdvisor:
         """Two lines about the tape, or a sentence saying they are unavailable."""
         state = clock.market_state(now)
         nxt = clock.next_open(now)
-        lines = [f"Session: {state.session} · next open {nxt:%a %Y-%m-%d %H:%M} ET "
-                 f"· bars from {data_date}"]
         snap = self.snapshot(BENCHMARK, data_date)
+        bars = data_date
+        if snap.ok and getattr(snap, "bar_date", "") and snap.bar_date < data_date:
+            # This line printed the date it asked for, not the date it got —
+            # the one line on the page that tells the reader the bars are current.
+            bars = f"{snap.bar_date} (the {data_date} close is not published yet)"
+        lines = [f"Session: {state.session} · next open {nxt:%a %Y-%m-%d %H:%M} ET "
+                 f"· bars from {bars}"]
         if snap.ok:
             head = f"{BENCHMARK} {snap.price:,.2f} ({snap.change_pct:+.2%})"
             trend = []
@@ -2914,6 +3078,10 @@ def main(argv=None) -> int:
                    help="reuse the most recent saved screen instead of rescanning")
     p.add_argument("--no-llm", action="store_true",
                    help="rules only — no panel, no API calls")
+    p.add_argument("--panel", choices=["claude"], default=None,
+                   help="who sits on the panel: 'claude' runs every seat as its own "
+                        "isolated local Claude Code call (your subscription, no "
+                        "external model API). Omitted: no panel")
     p.add_argument("--dry-run", action="store_true",
                    help="print the report but do not record it to the book")
     p.add_argument("-q", "--quiet", action="store_true")
@@ -2948,7 +3116,14 @@ def main(argv=None) -> int:
         cfg.with_fundamentals = False
 
     llm = None
-    if not a.no_llm:
+    if a.panel == "claude":
+        # Checked first and independent of --no-llm. That flag means "never call
+        # an external model API", and this calls none: each seat is a local
+        # Claude Code process, so the two combine as `--no-llm --panel claude`.
+        # The provider block in .env is not read on this path.
+        from .claude_panel import ClaudeCodeLLM
+        llm = ClaudeCodeLLM()
+    elif not a.no_llm:
         try:
             from .monitor import build_llm
             llm = build_llm()

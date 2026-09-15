@@ -628,6 +628,45 @@ class TestCommandLine:
         monkeypatch.setattr(advisor, "save_report", boom)
         assert advisor.main(["--no-llm"]) == 0
 
+    @staticmethod
+    def _capture_llm(monkeypatch):
+        seen = []
+
+        class Stub:
+            def __init__(self, cfg=None, llm=None, **kwargs):
+                seen.append(llm)
+
+            def run(self, when=None, now=None):
+                return DailyReport(date="2026-08-24", data_date="2026-08-21",
+                                   dry_run=True)
+
+        monkeypatch.setattr(advisor, "DailyAdvisor", Stub)
+        return seen
+
+    def test_panel_claude_seats_claude_code_and_never_builds_the_env_provider(
+            self, monkeypatch):
+        """--no-llm forbids an external model API, and --panel claude calls none.
+
+        The provider block in .env must not be read on this path even without
+        --no-llm: building that client is the paid call this desk runs without.
+        """
+        from tradingagents.live import claude_panel, monitor
+
+        built = []
+        monkeypatch.setattr(monitor, "build_llm",
+                            lambda *a, **k: built.append(1) or object())
+        seen = self._capture_llm(monkeypatch)
+        advisor.main(["--no-llm", "--panel", "claude", "--dry-run"])
+        advisor.main(["--panel", "claude", "--dry-run"])
+        assert built == []
+        assert len(seen) == 2
+        assert all(isinstance(x, claude_panel.ClaudeCodeLLM) for x in seen)
+
+    def test_without_the_panel_flag_no_llm_still_means_no_panel(self, monkeypatch):
+        seen = self._capture_llm(monkeypatch)
+        advisor.main(["--no-llm", "--dry-run"])
+        assert seen == [None]
+
 
 # ---------------------------------------------------------------------------
 # the policy tilt
@@ -1203,3 +1242,100 @@ class TestSaveReport:
         assert "## 五、反方观点与风险" in page
         assert "## 七、自己去查" in page
         assert f"](../{report.date}.md)" in page
+
+
+# ---------------------------------------------------------------------------
+# bars from the session they claim, and a panel that sees the trade
+# ---------------------------------------------------------------------------
+
+class FakeSeats:
+    """An LLM for brain.Panel: answers from a script and keeps every prompt."""
+
+    def __init__(self, action="Buy", qty=10, conf=0.8, why="because", veto=False):
+        self.action, self.qty, self.conf, self.why, self.veto = action, qty, conf, why, veto
+        self.prompts: list[tuple[str, str]] = []
+
+    def invoke(self, messages):
+        import json
+        from types import SimpleNamespace
+
+        system, user = messages[0].content, messages[1].content
+        self.prompts.append((system, user))
+        if "Risk Officer" in system:
+            body = {"veto": self.veto, "concern": "c", "scale": 1.0}
+        else:
+            m = re.search(r"^# (\S+) — decision pack", user, re.M)
+            body = {"action": self.action, "symbol": m.group(1) if m else "AAA",
+                    "quantity": self.qty, "order_type": "Market", "limit_price": None,
+                    "confidence": self.conf, "rationale": self.why}
+        return SimpleNamespace(content=json.dumps(body))
+
+
+def _known_earnings(monkeypatch):
+    from tradingagents.live.earnings import Earnings
+
+    class Book:
+        def get(self, symbols, as_of, log=None, **kw):
+            return {s: Earnings(symbol=s, as_of=str(as_of), next_date="2026-09-01",
+                                last_date="2026-07-30", eps_estimate=1.00,
+                                eps_actual=1.25, surprise_pct=25.0) for s in symbols}
+
+    monkeypatch.setattr(advisor, "EarningsBook", Book)
+
+
+@pytest.mark.unit
+class TestBarsFromTheSessionTheyClaim:
+    def test_a_candidate_a_session_short_is_skipped_and_named(self, desk):
+        """Yahoo served the day back with no close; the frame ended a day early."""
+        desk.snaps["AAA"] = snap("AAA", 100.0, bar_date="2026-08-20")
+        report = desk.run()
+        assert all(r.symbol != "AAA" for r in report.buys)
+        assert any("AAA skipped" in n and "ends 2026-08-20" in n for n in report.notes)
+        assert any("stops before the 2026-08-21 session" in w and "AAA" in w
+                   for w in report.warnings)
+
+    def test_bars_from_the_data_session_pass(self, desk):
+        desk.snaps["AAA"] = snap("AAA", 100.0, bar_date="2026-08-21")
+        report = desk.run()
+        assert not any("stops before" in w for w in report.warnings)
+
+    def test_the_header_prints_the_date_it_got(self, desk):
+        desk.snaps["SPY"] = snap("SPY", 500.0, atr_pct=0.01, sma50=490.0, sma200=450.0,
+                                 bar_date="2026-08-20")
+        text = desk.advisor().market_context("2026-08-21", now=FRIDAY_AFTER_CLOSE)
+        assert "bars from 2026-08-20 (the 2026-08-21 close is not published yet)" in text
+
+
+@pytest.mark.unit
+class TestThePanelSeesTheTrade:
+    def test_each_seat_is_shown_the_levels_the_size_earnings_and_statements(
+            self, desk, monkeypatch):
+        """On 576 characters of tape, every seat of eight candidates said Hold."""
+        _known_earnings(monkeypatch)
+        seats = FakeSeats()
+        report = desk.run(llm=seats)
+        packs = [u for s, u in seats.prompts if "Risk Officer" not in s]
+        assert packs, "the panel was never asked"
+        for needle in ("## The trade you are voting on", "- Stop ", "target ",
+                       "R, which breaks even", "If you vote Buy, give quantity",
+                       "## Earnings", "Next report 2026-09-01", "beat by 25%",
+                       "## Company", "market cap"):
+            assert needle in packs[0], needle
+        assert report.buys, "a unanimous Buy on a real plan must produce an idea"
+
+    def test_a_hold_puts_each_seats_reason_on_the_page(self, desk, monkeypatch):
+        _known_earnings(monkeypatch)
+        report = desk.run(llm=FakeSeats(action="Hold", qty=0, conf=0.3,
+                                        why="thin tape, no catalyst"))
+        assert report.buys == []
+        declined = [n for n in report.notes if "not taken" in n]
+        assert declined and all("thin tape, no catalyst" in n for n in declined)
+
+    def test_a_candidate_with_no_plan_never_reaches_the_panel(self, desk, monkeypatch):
+        """Sizing would refuse it after the vote, and each seat is a process."""
+        _known_earnings(monkeypatch)
+        desk.cfg.min_r = 99.0
+        seats = FakeSeats()
+        report = desk.run(llm=seats)
+        assert seats.prompts == []
+        assert any("no plan to put to the panel" in n for n in report.notes)

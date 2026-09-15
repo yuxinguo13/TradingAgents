@@ -1,7 +1,7 @@
 #!/bin/zsh
 # One entry point for both of the desk's LaunchAgents.
 #
-#   desk_cron.sh report   # write the next session's page   (weekdays 15:00 PT)
+#   desk_cron.sh report   # next session's page, panel seated (weekdays 15:00 PT)
 #   desk_cron.sh submit   # place what the book is missing  (weekdays 06:25 PT, places ~06:35)
 #
 # Three things launchd will not do for you, each of which fails silently:
@@ -83,8 +83,12 @@ print(f"waiting {wait / 60:.1f} min for the open to settle", flush=True)
 time.sleep(wait)
 '
 
+# The panel sits on the evening report, not the morning order: every seat is a
+# separate Claude Code process (claude_panel.py), a full report is dozens of
+# them, and the morning run has ten minutes and nobody watching. --no-llm stays:
+# it forbids an external model API, and the panel uses none.
 case "$MODE" in
-  report) "$PY" -m tradingagents.live.advisor --no-llm >>"$LOG" 2>&1 ;;
+  report) "$PY" -m tradingagents.live.advisor --no-llm --panel claude >>"$LOG" 2>&1 ;;
   submit) "$PY" -c "$WAIT_FOR_OPEN" >>"$LOG" 2>&1 &&
           "$PY" -m tradingagents.live.execute --submit >>"$LOG" 2>&1 ;;
   *)      print -r -- "unknown mode: $MODE (want report|submit)" >>"$LOG"; exit 2 ;;

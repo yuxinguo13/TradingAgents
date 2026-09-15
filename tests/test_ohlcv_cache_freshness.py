@@ -107,3 +107,70 @@ def test_load_ohlcv_reuses_fresh_same_day_cache(tmp_path, monkeypatch):
 
     monkeypatch.setattr(su.yf, "download", _fail_download)
     su.load_ohlcv("AAPL", TODAY.strftime("%Y-%m-%d"))
+
+
+def _seed(tmp_path, dates, closes, *, aged=True):
+    start = (TODAY - pd.DateOffset(years=5)).strftime("%Y-%m-%d")
+    end = (TODAY + pd.Timedelta(days=1)).strftime("%Y-%m-%d")
+    f = tmp_path / f"AAPL-YFin-data-{start}-{end}.csv"
+    pd.DataFrame({"Date": dates, "Close": closes}).to_csv(f, index=False)
+    if aged:
+        old = time.time() - STALE
+        os.utime(f, (old, old))
+    return f
+
+
+@pytest.mark.unit
+def test_a_refetch_that_lost_the_close_does_not_overwrite_a_complete_cache(tmp_path, monkeypatch):
+    """Yahoo served a complete bar, then the same day back as volume only.
+
+    Written over the cache, the cleaned frame ended a session short for every
+    later caller and nothing said so (OMER, RVMD and NESR on 2026-09-14).
+    """
+    monkeypatch.setattr(su, "get_config", lambda: {"data_cache_dir": str(tmp_path)})
+    monkeypatch.setattr(su.pd.Timestamp, "today", staticmethod(lambda: TODAY))
+    cache_file = _seed(tmp_path, ["2026-07-16", "2026-07-17", "2026-07-18"], [99.0, 100.0, 222.0])
+
+    def _placeholder(*a, **k):
+        return pd.DataFrame(
+            {"Date": pd.to_datetime(["2026-07-16", "2026-07-17", "2026-07-18"]),
+             "Close": [99.0, 100.0, float("nan")], "Volume": [1, 2, 3]}
+        ).set_index("Date")
+
+    monkeypatch.setattr(su.yf, "download", _placeholder)
+    out = su.load_ohlcv("AAPL", TODAY.strftime("%Y-%m-%d"))
+
+    assert out["Close"].iloc[-1] == 222.0, "the complete close must reach the caller"
+    assert pd.read_csv(cache_file)["Close"].iloc[-1] == 222.0, "the file must not be replaced"
+    assert time.time() - os.path.getmtime(cache_file) < 60, "the TTL restarts"
+
+
+@pytest.mark.unit
+def test_a_refetch_that_adds_a_close_still_replaces_the_cache(tmp_path, monkeypatch):
+    monkeypatch.setattr(su, "get_config", lambda: {"data_cache_dir": str(tmp_path)})
+    monkeypatch.setattr(su.pd.Timestamp, "today", staticmethod(lambda: TODAY))
+    cache_file = _seed(tmp_path, ["2026-07-16", "2026-07-17", "2026-07-18"], [99.0, 100.0, None])
+
+    def _complete(*a, **k):
+        return pd.DataFrame(
+            {"Date": pd.to_datetime(["2026-07-16", "2026-07-17", "2026-07-18"]),
+             "Close": [99.0, 100.0, 222.0]}
+        ).set_index("Date")
+
+    monkeypatch.setattr(su.yf, "download", _complete)
+    out = su.load_ohlcv("AAPL", TODAY.strftime("%Y-%m-%d"))
+
+    assert out["Close"].iloc[-1] == 222.0
+    assert pd.read_csv(cache_file)["Close"].iloc[-1] == 222.0
+
+
+@pytest.mark.unit
+def test_completeness_is_compared_across_naive_and_zoned_dates():
+    """A CSV reads back naive; a fresh yfinance frame can be tz-aware."""
+    cached = pd.DataFrame({"Date": ["2026-09-11", "2026-09-14"], "Close": [18.28, 17.46]})
+    downloaded = pd.DataFrame({
+        "Date": pd.to_datetime(["2026-09-11", "2026-09-14"]).tz_localize("America/New_York"),
+        "Close": [18.28, float("nan")]})
+    assert su._completes_later(cached, downloaded)
+    assert not su._completes_later(downloaded, cached)
+    assert not su._completes_later(None, downloaded)
