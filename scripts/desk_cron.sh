@@ -2,7 +2,7 @@
 # One entry point for both of the desk's LaunchAgents.
 #
 #   desk_cron.sh report   # write the next session's page   (weekdays 15:00 PT)
-#   desk_cron.sh submit   # place what the book is missing  (weekdays 06:35 PT)
+#   desk_cron.sh submit   # place what the book is missing  (weekdays 06:25 PT, places ~06:35)
 #
 # Three things launchd will not do for you, each of which fails silently:
 #
@@ -51,9 +51,42 @@ fi
   print -r -- "======== $(date '+%F %T %Z')  $MODE ========"
 } >>"$LOG"
 
+# Hold the machine awake for as long as this script lives. The pmset wake only
+# gets the Mac up; with `sleep 1` it is back asleep a minute later — before the
+# open, and long before a ten-minute report finishes. -w on our own PID
+# releases the assertion however the script ends. (-s only counts on AC power;
+# -i is what holds on battery.)
+/usr/bin/caffeinate -i -s -w $$ &
+
+# The submit agent fires at 06:25 PT, the same minute as the pmset wake,
+# because a calendar job whose minute passes while the Mac sleeps waits for the
+# *next* wake — hours later if nobody opens the lid. So it launches before the
+# open and waits here until five minutes after 09:30 ET, when the opening
+# prints have settled. If no session opens within twenty minutes (a holiday, a
+# wake that came after the close) it exits 3 and places nothing. A machine that
+# wakes mid-session places at once; the Secretary's 5% limit-deviation rule is
+# what refuses a price that has run away from the book.
+WAIT_FOR_OPEN='
+import sys, time
+from tradingagents.live import clock
+SETTLE, MAX_WAIT = 5 * 60, 20 * 60
+st = clock.market_state()
+if st.is_open:
+    wait = max(0.0, SETTLE - (st.minutes_from_open or 0.0) * 60)
+else:
+    wait = clock.seconds_until_open() + SETTLE
+    if wait > MAX_WAIT + SETTLE:
+        print(f"no session opens within {MAX_WAIT // 60} min "
+              f"(next {clock.next_open():%a %F %H:%M %Z}); nothing placed")
+        sys.exit(3)
+print(f"waiting {wait / 60:.1f} min for the open to settle", flush=True)
+time.sleep(wait)
+'
+
 case "$MODE" in
   report) "$PY" -m tradingagents.live.advisor --no-llm >>"$LOG" 2>&1 ;;
-  submit) "$PY" -m tradingagents.live.execute --submit >>"$LOG" 2>&1 ;;
+  submit) "$PY" -c "$WAIT_FOR_OPEN" >>"$LOG" 2>&1 &&
+          "$PY" -m tradingagents.live.execute --submit >>"$LOG" 2>&1 ;;
   *)      print -r -- "unknown mode: $MODE (want report|submit)" >>"$LOG"; exit 2 ;;
 esac
 rc=$?
