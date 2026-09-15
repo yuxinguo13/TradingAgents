@@ -50,13 +50,16 @@ import logging
 import math
 import os
 import sys
+import tempfile
 from dataclasses import dataclass, field, replace
 from datetime import date as _date
+from pathlib import Path
 
 from . import clock
 from .broker import BUY, SELL, Account, Holding, LIMIT, MARKET, open_broker
+from .newsfeed import NewsMonitor
 from .recommendations import (
-    CLOSED, EXPIRED, TRIM, Recommendation, RecommendationBook,
+    CLOSED, EXPIRED, REASON_THESIS, TRIM, Recommendation, RecommendationBook,
 )
 from .secretary import Order, RiskLimits, Secretary, TradeLedger, kill_switch_engaged
 
@@ -152,6 +155,11 @@ class Reconciliation:
     # Entries whose levels have gone stale: (Intent, days_old, R_now).
     # Reported, never submitted — see ENTRY_FRESH_DAYS.
     stale: list = field(default_factory=list)
+    # Entries this morning's news has already broken: the exit engine issued a
+    # thesis break against an idea the account never filled. (Intent, why).
+    # Reported, never submitted — buying at the open what the book's own rule
+    # sells at the next review is a round trip paid for a headline already out.
+    held_back: list = field(default_factory=list)
     drift: list = field(default_factory=list)        # (symbol, book_shares, venue_shares)
     matched: list = field(default_factory=list)      # (symbol, shares)
     unmanaged: list = field(default_factory=list)    # Holding
@@ -180,7 +188,8 @@ class Reconciliation:
     @property
     def clean(self) -> bool:
         return not (self.to_open or self.to_close or self.to_trim
-                    or self.drift or self.stale or self.conflicts)
+                    or self.drift or self.stale or self.conflicts
+                    or self.held_back)
 
 
 def _r_now(rec: Recommendation, price: float) -> float:
@@ -349,8 +358,18 @@ def plan(book: RecommendationBook, account: Account, *,
         have = int(_num(getattr(h, "quantity", 0.0), 0.0)) if h else 0
         sig = closing.get(sym)
         if sig is not None:
+            age = _age_days(rec, when)
             if have > 0:
                 out.to_close.append(_sell_intent(sym, have, sig, rec.id))
+            elif (str(getattr(sig, "exit_reason", "")) == REASON_THESIS and want > 0
+                  and not (age is not None and age > fresh_days)):
+                # Not "nothing to sell". The idea was never filled and the news
+                # that breaks it arrived before the buy did: this is a buy being
+                # withheld, and filed as a remark it read as a quiet morning.
+                out.held_back.append((
+                    Intent(BUY, sym, want, _num(rec.limit_price, None) or None,
+                           f"账本 {rec.issued_date} 发出，尚未建仓", rec.id),
+                    str(getattr(sig, "reason", "") or "thesis break")))
             else:
                 out.notes.append(f"{sym}：账本要离场，但账户里本来就没有仓位")
             continue
@@ -428,6 +447,33 @@ def plan(book: RecommendationBook, account: Account, *,
                     f"{sym}：账本 {gone[1].isoformat()} 就记为离场了，超过 "
                     f"{exit_window_days} 天，这里只提不下单——它可能是后来手工买回的")
             out.unmanaged.append(h)
+    return out
+
+
+def fresh_news(symbols, *, monitor=None, pause: float = 0.4) -> dict:
+    """The headlines standing this morning for ``symbols``, grouped by symbol.
+
+    Polled through a throwaway novelty set, never the desk's own. The advisor's
+    and the monitor's seen-files answer "new since I last looked"; this needs
+    "what is out there now", and polling through either would mark the
+    morning's headlines as already seen — so the evening report would skip the
+    very headline this check acted on.
+
+    A dead feed does not raise: NewsMonitor degrades it to no headlines, which
+    reads exactly like a quiet night. The count is the only way to tell the two
+    apart, so the caller has to print it.
+    """
+    syms = sorted({str(s).strip().upper() for s in symbols if str(s).strip()})
+    if not syms:
+        return {}
+    out: dict = {}
+    with tempfile.TemporaryDirectory() as tmp:
+        m = monitor if monitor is not None else NewsMonitor(
+            state_path=Path(tmp) / "seen.json")
+        for item in m.poll(syms, macro=False, pause=pause):
+            sym = str(getattr(item, "ticker", "") or "").upper()
+            if sym:
+                out.setdefault(sym, []).append(item)
     return out
 
 
@@ -648,6 +694,14 @@ def format_plan(rec: Reconciliation, account: Account, venue: str) -> str:
         for i in rec.to_open:
             px = f"限价 {i.limit:,.2f}" if i.limit else "市价"
             out.append(f"  买入 {i.symbol:<7}{i.shares:>7} 股   {px:<12} {i.reason[:44]}")
+    if rec.held_back:
+        out += ["", f"开盘前新闻暂缓 ({len(rec.held_back)})", "-" * W,
+                "  今天本该建仓，但开盘前出了重大利空（重要度≥7、24 小时内）。离场规则会在下一次",
+                "  复核时让账本卖掉它——现在买进去，就是为一条已经出来的标题白走一个来回。",
+                "  不下单，也不改账本：晚上的报告会用同一条规则再读一遍。"]
+        for intent, why in rec.held_back:
+            px = f"限价 {intent.limit:,.2f}" if intent.limit else "市价"
+            out.append(f"  暂缓 {intent.symbol:<7}{intent.shares:>7} 股   {px:<12} {why[:52]}")
     if rec.stale:
         out += ["", f"过期未成交 ({len(rec.stale)})", "-" * W,
                 "  这些不会下单。它们是按发出当天的收盘定的价：限价、止损、R 都指向一个",
@@ -784,6 +838,9 @@ def main(argv=None) -> int:
                    help="不算离场信号，只对账入场与股数差异（默认是算的）")
     p.add_argument("--with-exits", action="store_true",
                    help=argparse.SUPPRESS)          # 现在是默认行为，留着不报错
+    p.add_argument("--no-news", action="store_true",
+                   help="开盘前不重新拉新闻（默认会拉：持仓遇到重大利空离场，"
+                        "未成交的计划买入遇到重大利空暂缓）")
     p.add_argument("-q", "--quiet", action="store_true")
     a = p.parse_args(argv)
 
@@ -814,6 +871,27 @@ def main(argv=None) -> int:
             print(f"读不到账户：{type(exc).__name__}: {exc}")
             return 2
 
+        # This morning's news, read by the exit engine's own thesis-break rule.
+        # The review below used to be handed no news at all, so a headline that
+        # broke overnight could neither close a position at the open nor stop an
+        # unfilled buy from going in: the evening report was its only reader,
+        # and that runs after the session it would have mattered for.
+        news_by_symbol: dict = {}
+        news_note = ""
+        if not (a.no_exits or a.no_news):
+            watched = sorted({r.symbol.upper() for r in book.open_recommendations()
+                              if r.symbol})
+            try:
+                news_by_symbol = fresh_news(watched)
+                n = sum(len(v) for v in news_by_symbol.values())
+                news_note = f"开盘前新闻：查了 {len(watched)} 只，读到 {n} 条标题"
+                if watched and n == 0:
+                    news_note += ("——一条都没有。这更像是新闻源没有响应而不是真没消息，"
+                                  "本次等于没做新闻检查")
+            except Exception as exc:
+                news_note = (f"开盘前新闻拉不到（{type(exc).__name__}: {exc}）；"
+                             f"本次没有新闻检查，按晚上的计划执行")
+
         # Exits are computed by default. Off by default, the only thing this
         # bridge could ever do was open positions: the entries were read from
         # the book and the sells needed a flag nobody passed. A one-way bridge
@@ -828,12 +906,15 @@ def main(argv=None) -> int:
             try:
                 # persist=False: the advisor owns these records. Nothing here
                 # may write to them.
-                exits = book.review(prices, {}, as_of=data_day, persist=False)
+                exits = book.review(prices, news_by_symbol, as_of=data_day,
+                                    persist=False)
             except Exception as exc:
                 print(f"离场信号算不出来（{type(exc).__name__}: {exc}）；本次只对账入场")
 
         rec = plan(book, account, exits=exits, as_of=order_day, quote=b.quote,
                    core=_core_symbols())
+        if news_note:
+            rec.notes.insert(0, news_note)
         print()
         print(format_plan(rec, account, venue))
 

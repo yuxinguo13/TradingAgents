@@ -829,3 +829,75 @@ class TestTheWholeLoop:
         submit(rc, b2, self.secretary(tmp_path), b2.account(), market_open=True)
         assert b2.account().position("AAA").quantity == 50
         assert book.open_recommendations()[0].shares == 50
+
+
+class ThesisSignal(Signal):
+    """The exit engine's thesis break, carrying its REASON_* code as the real one does."""
+
+    def __init__(self, symbol, headline="[9/bearish] ACME cuts guidance (3h ago)", **kw):
+        super().__init__(symbol, reason=f"thesis break — {headline}", urgency=3, **kw)
+        self.exit_reason = "thesis_break"
+
+
+@pytest.mark.unit
+class TestTheMorningNews:
+    def test_a_thesis_break_on_an_unfilled_idea_holds_the_buy_back(self):
+        """Filed as "nothing to sell", a withheld buy read as a quiet morning."""
+        book = Book([Rec("ACME", issued=TODAY.isoformat())])
+        out = plan(book, account(), exits=[ThesisSignal("ACME")], as_of=TODAY)
+        assert out.to_open == [] and out.intents == []
+        (intent, why), = out.held_back
+        assert (intent.action, intent.symbol, intent.shares) == (BUY, "ACME", 100)
+        assert "thesis break" in why
+        assert not any("本来就没有仓位" in n for n in out.notes)
+        assert not out.clean
+
+    def test_a_stop_on_an_unfilled_idea_is_still_only_a_remark(self):
+        book = Book([Rec("ACME", issued=TODAY.isoformat())])
+        out = plan(book, account(), exits=[Signal("ACME")], as_of=TODAY)
+        assert out.held_back == [] and out.to_open == []
+        assert any("本来就没有仓位" in n for n in out.notes)
+
+    def test_a_stale_idea_is_not_relabelled_as_held_back(self):
+        """It was never going to be placed, so the news is not why it wasn't."""
+        book = Book([Rec("ACME", issued="2026-08-20")])
+        out = plan(book, account(), exits=[ThesisSignal("ACME")], as_of=TODAY)
+        assert out.held_back == []
+
+    def test_the_plan_prints_what_it_held_back(self):
+        book = Book([Rec("ACME", issued=TODAY.isoformat())])
+        out = plan(book, account(), exits=[ThesisSignal("ACME")], as_of=TODAY)
+        page = execute.format_plan(out, account(), "paper")
+        assert "开盘前新闻暂缓 (1)" in page and "暂缓 ACME" in page
+
+    def test_the_poll_never_touches_the_desks_own_seen_file(self, tmp_path, monkeypatch):
+        """Through the advisor's novelty set, this morning's headlines would be
+        marked seen and the evening report would skip them."""
+        from pathlib import Path
+
+        monkeypatch.setenv("TRADINGAGENTS_HOME", str(tmp_path))
+        paths = []
+
+        class Monitor:
+            def __init__(self, state_path=None, **kw):
+                paths.append(state_path)
+
+            def poll(self, tickers, macro=True, pause=0.4):
+                assert macro is False and tickers == ["ACME"]
+                return [SimpleNamespace(ticker="ACME", title="t1"),
+                        SimpleNamespace(ticker="acme", title="t2"),
+                        SimpleNamespace(ticker="", title="macro")]
+
+        monkeypatch.setattr(execute, "NewsMonitor", Monitor)
+        out = execute.fresh_news(["acme", "ACME", " "], pause=0)
+        assert {k: [i.title for i in v] for k, v in out.items()} == {"ACME": ["t1", "t2"]}
+        (path,) = paths
+        assert path is not None and tmp_path not in Path(path).parents
+
+    def test_nothing_to_watch_means_no_poll(self, monkeypatch):
+        def boom(**kw):
+            raise AssertionError("polled with nothing to poll")
+
+        monkeypatch.setattr(execute, "NewsMonitor", boom)
+        assert execute.fresh_news([]) == {}
+
