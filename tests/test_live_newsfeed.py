@@ -266,3 +266,79 @@ class TestCompanyNameQueries:
         cache = {}
         assert newsfeed.company_name("ZZZZ", cache) == ""
         assert cache == {"ZZZZ": ""}
+
+
+@pytest.mark.unit
+class TestNamesakeOnAnotherExchange:
+    """A company name is not unique across exchanges; a Google search is by name.
+
+    On 2026-09-18, 13 of the 95 headlines collected for NEOG (Neogen Corp,
+    Nasdaq) were about Neogen Chemicals on the NSE. One of them — a ₹600 crore
+    QIP — scored materiality 9 and led the evidence pack, and three panel seats
+    spent their vote saying the catalyst was the wrong company.
+    """
+
+    @pytest.mark.parametrize("title", [
+        "Rs.600 cr Neogen QIP: Floor price, key dates, discount option",
+        "Neogen shares rise 4% as board approves ₹600 crore fundraise",
+        "Neogen Chemicals gets SEBI nod; stock hits upper circuit on BSE",
+        "Neogen jumps 7% on NSE after Q1 profit doubles to Rs 42 crore",
+    ])
+    def test_a_namesake_on_another_exchange_is_dropped(self, title):
+        assert newsfeed._about_another_listing(title, "NEOG") is True
+
+    @pytest.mark.parametrize("title", [
+        "Neogen Corporation stock hits 52-week high at 12.86 USD",
+        "Neogen Stock Surges After Earnings Beat and Higher 2026 Guidance",
+        "A business transformation plan will take center stage at Neogen's Oct. 7 event",
+    ])
+    def test_the_company_s_own_news_is_kept(self, title):
+        assert newsfeed._about_another_listing(title, "NEOG") is False
+
+    def test_a_headline_naming_our_ticker_is_ours_whatever_it_quotes(self):
+        # A US company's Indian capex is still that company's news.
+        title = "Neogen (NEOG) to invest Rs 250 crore in a new Pune plant"
+        assert newsfeed._about_another_listing(title, "NEOG") is False
+
+    def test_words_that_merely_contain_a_marker_are_not_markers(self):
+        # "bse"/"nse" inside ordinary words, and a name that starts with Rs.
+        for title in ("Absentee ballots weigh on Neogen's annual meeting",
+                      "Consensus builds around Neogen's guidance hike",
+                      "Rsquared Capital initiates coverage of Neogen"):
+            assert newsfeed._about_another_listing(title, "NEOG") is False
+
+    def test_the_wrong_company_never_reaches_the_seen_set(self, tmp_path, monkeypatch):
+        """Filtered before the fingerprint: it is not one of this ticker's stories.
+
+        Remembered as seen, the drop would also silence the *macro* feed's copy
+        of the same story, which is a legitimate item there.
+        """
+        raw = [{"title": "Rs.600 cr Neogen QIP: Floor price and key dates",
+                "link": "https://example.test/1", "source": "Trendlyne",
+                "published": "2026-09-18T10:00:00+00:00"},
+               {"title": "Neogen Stock Surges After Earnings Beat",
+                "link": "https://example.test/2", "source": "Barron's",
+                "published": "2026-09-18T11:00:00+00:00"}]
+        monkeypatch.setattr(newsfeed, "fetch_rss", lambda url, timeout=20: raw)
+        m = NewsMonitor(state_path=tmp_path / "seen.json")
+        m._names = {"NEOG": "Neogen"}
+        got = m.poll_ticker("NEOG")
+        assert [i.title for i in got] == ["Neogen Stock Surges After Earnings Beat"]
+        assert not any("QIP" in _fingerprint(r["title"], "NEOG") for r in raw[:1]
+                       if _fingerprint(r["title"], "NEOG") in m.seen)
+
+    def test_a_namesake_is_caught_by_its_own_trade_without_any_currency(self):
+        """"Neogen Chemicals posts Q1 profit beat" scored 8 with no rupee in it."""
+        t = "Earnings call transcript: Neogen Chemicals posts Q1 2027 profit beat"
+        assert newsfeed._about_another_listing(t, "NEOG", "Neogen") is True
+
+    def test_our_own_trade_word_does_not_filter_our_own_news(self):
+        # Olin *is* a chemicals company: the rule must not fire on its name.
+        t = "Olin Chemicals announces a buyback"
+        assert newsfeed._about_another_listing(t, "OLN", "Olin Chemicals") is False
+
+    def test_title_case_after_the_name_is_not_a_namesake(self):
+        for t in ("Neogen Stock Surges After Earnings Beat",
+                  "Neogen Corporation Sets New 1-Year High - Time to Buy?",
+                  "Neogen Jumps 5.1% Amid Sector-Wide Rally"):
+            assert newsfeed._about_another_listing(t, "NEOG", "Neogen") is False

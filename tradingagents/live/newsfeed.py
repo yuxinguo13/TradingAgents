@@ -205,6 +205,49 @@ class NewsItem:
         return max(0.0, (now - pub).total_seconds() / 3600)
 
 
+# A company name is not unique across exchanges, and Google News is searched
+# by name. "Neogen" is NEOG on Nasdaq and Neogen Chemicals on the NSE: on
+# 2026-09-18 the Indian company's ₹600 crore QIP scored materiality 9 in NEOG's
+# evidence pack, and three of the four panel seats spent their vote pointing
+# out that the catalyst belonged to a different company. A pack can be wrong
+# the other way just as easily — a foreign namesake's good news reading as this
+# one's — and then nobody is there to catch it.
+#
+# Only these markers, and only as whole words: they name a market this desk
+# does not trade, so a story told in them is not this ticker's story.
+_OTHER_MARKET = re.compile(
+    r"(₹|\brs\.?\s?\d|\bcrore\b|\blakh\b|\bqip\b|\bsebi\b|\bbse\b|\bnse\b"
+    r"|\bsensex\b|\bnifty\b)", re.I)
+
+
+# The other half of the same problem, and the half a currency marker misses:
+# "Earnings call transcript: Neogen Chemicals posts Q1 2027 profit beat" scored
+# materiality 8 with no rupee in sight. A namesake usually carries its line of
+# business in its name, so the name plus one of these words is a *different*
+# company — unless our own company's name contains that word too, which is
+# checked before the rule is applied.
+_NAMESAKE_TRADE = (
+    r"chemicals?|pharmaceuticals?|pharma|industries|motors|bank|cement|"
+    r"textiles?|steel|mills|minerals?|agritech|infra(?:structure)?|"
+    r"petrochemicals?|fertilizers?|plantations?")
+
+
+def _about_another_listing(title: str, ticker: str, name: str = "") -> bool:
+    """Whether a name-matched headline is about a namesake on another exchange.
+
+    A headline that names our ticker is ours whatever currency it quotes — a US
+    company announcing a plant in India is still news about the US company.
+    """
+    if ticker and re.search(rf"\b{re.escape(ticker)}\b", title, re.I):
+        return False
+    if _OTHER_MARKET.search(title):
+        return True
+    if name and not re.search(_NAMESAKE_TRADE, name, re.I):
+        if re.search(rf"\b{re.escape(name)}\s+({_NAMESAKE_TRADE})\b", title, re.I):
+            return True
+    return False
+
+
 def _fingerprint(title: str, ticker: str) -> str:
     """Identity of a *story*, not of a URL.
 
@@ -311,10 +354,16 @@ class NewsMonitor:
 
     # --- polling ------------------------------------------------------------
 
-    def _collect(self, ticker: str, urls: list[tuple[str, str]]) -> list[NewsItem]:
+    def _collect(self, ticker: str, urls: list[tuple[str, str]],
+                 name: str = "") -> list[NewsItem]:
         items: list[NewsItem] = []
         for source, url in urls:
             for raw in fetch_rss(url):
+                # Dropped before the seen-set, not after: an item that never
+                # belonged to this ticker should not be remembered as one of
+                # its stories, and re-testing a title costs a regex.
+                if ticker and _about_another_listing(raw["title"], ticker, name):
+                    continue
                 fp = _fingerprint(raw["title"], ticker)
                 if fp in self.seen:
                     continue
@@ -338,7 +387,7 @@ class NewsMonitor:
         return self._collect(ticker, [
             ("yahoo", YAHOO_TICKER.format(t=urllib.parse.quote(ticker))),
             ("google", GOOGLE_QUERY.format(q=urllib.parse.quote(query))),
-        ])
+        ], name=name)
 
     def poll_macro(self) -> list[NewsItem]:
         urls = [("google", GOOGLE_QUERY.format(q=urllib.parse.quote(q)))
