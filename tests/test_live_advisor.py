@@ -1339,3 +1339,42 @@ class TestThePanelSeesTheTrade:
         report = desk.run(llm=seats)
         assert seats.prompts == []
         assert any("no plan to put to the panel" in n for n in report.notes)
+
+    def test_a_name_refused_on_arithmetic_does_not_spend_a_panel_slot(
+            self, desk, monkeypatch):
+        """The budget is a budget of seats, not of names.
+
+        The screen ranks by momentum, so the names at its top are the most
+        extended — the ones whose stop is too far away to make the minimum R.
+        On 2026-09-18 all eight slots went to names like TVTX (0.89R, rank 2),
+        refused before any vote, while the two that could actually be sized sat
+        at ranks 23 and 30 and were never looked at.
+        """
+        _known_earnings(monkeypatch)
+        desk.cfg.max_candidates = 1
+        seen: list[str] = []
+        real = advisor.DailyAdvisor.deliberate
+
+        def refuse_first(self, cand, *a, **kw):
+            seen.append(cand.symbol)
+            if len(seen) == 1:                       # unsizeable: no seat spent
+                return False, 0.0, "no plan to put to the panel: 0.89R", False
+            return real(self, cand, *a, **kw)
+
+        monkeypatch.setattr(advisor.DailyAdvisor, "deliberate", refuse_first)
+        desk.run(llm=FakeSeats())
+        assert len(seen) > 1, "the walk stopped on a name no seat ever saw"
+
+    def test_the_walk_is_bounded_when_nothing_can_be_sized(self, desk, monkeypatch):
+        """A screen with nothing tradeable must not be sized end to end."""
+        _known_earnings(monkeypatch)
+        desk.cfg.max_candidates = 1
+        seen: list[str] = []
+
+        def refuse_all(self, cand, *a, **kw):
+            seen.append(cand.symbol)
+            return False, 0.0, "no plan to put to the panel: 0.89R", False
+
+        monkeypatch.setattr(advisor.DailyAdvisor, "deliberate", refuse_all)
+        desk.run(llm=FakeSeats())
+        assert len(seen) <= 1 * advisor.EXAMINE_MULTIPLE

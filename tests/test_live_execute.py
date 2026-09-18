@@ -923,3 +923,91 @@ class TestTheMorningNews:
         monkeypatch.setattr(execute, "NewsMonitor", boom)
         assert execute.fresh_news([]) == {}
 
+
+
+@pytest.mark.unit
+class TestTheCoreBookIsBuilt:
+    """The core book was never executed: five names, none of them in the account.
+
+    ``plan`` was told the core symbols only so it could keep them out of the
+    unmanaged list, so the daily page said 持有 · 不动 for seventeen sessions
+    while the account held nothing at all.
+    """
+
+    class Core:
+        def __init__(self, symbol, weight):
+            self.symbol, self.weight = symbol, weight
+
+    def core(self, **kw):
+        return [self.Core(s, w) for s, w in kw.items()]
+
+    def test_a_core_name_the_account_does_not_hold_is_bought(self):
+        got = plan(Book([]), account(equity=100_000.0), as_of=TODAY,
+                   quote=lambda s: 200.0, core=self.core(NVDA=0.08))
+        (intent, target, now_w), = got.core_build
+        assert (intent.action, intent.symbol) == (BUY, "NVDA")
+        assert intent.shares == int(0.08 * 100_000 / round(200.0 * 1.002, 2))
+        assert (target, now_w) == (0.08, 0.0)
+        assert not got.clean
+
+    def test_the_limit_is_marketable_but_not_a_blank_cheque(self):
+        got = plan(Book([]), account(equity=100_000.0), as_of=TODAY,
+                   quote=lambda s: 200.0, core=self.core(NVDA=0.08))
+        assert got.core_build[0][0].limit == 200.40
+
+    def test_a_position_already_at_its_weight_is_left_alone(self):
+        acct = account([Holding(symbol="NVDA", quantity=40, avg_cost=200.0,
+                                market_value=8_000.0)], equity=100_000.0)
+        got = plan(Book([]), acct, as_of=TODAY, quote=lambda s: 200.0,
+                   core=self.core(NVDA=0.08))
+        assert got.core_build == []
+
+    def test_a_position_inside_the_band_is_not_topped_up_daily(self):
+        # 7.5% against an 8% target: half a point is noise, not a decision.
+        acct = account([Holding(symbol="NVDA", quantity=37, avg_cost=200.0,
+                                market_value=7_500.0)], equity=100_000.0)
+        got = plan(Book([]), acct, as_of=TODAY, quote=lambda s: 200.0,
+                   core=self.core(NVDA=0.08))
+        assert got.core_build == []
+
+    def test_only_the_gap_is_bought_not_the_whole_target(self):
+        acct = account([Holding(symbol="NVDA", quantity=20, avg_cost=200.0,
+                                market_value=4_000.0)], equity=100_000.0)
+        got = plan(Book([]), acct, as_of=TODAY, quote=lambda s: 200.0,
+                   core=self.core(NVDA=0.08))
+        intent = got.core_build[0][0]
+        assert intent.shares == int(0.04 * 100_000 / 200.40)
+
+    def test_an_overweight_core_position_is_never_sold_here(self):
+        """The monthly review knows why the weight was set; this module does not."""
+        acct = account([Holding(symbol="NVDA", quantity=100, avg_cost=200.0,
+                                market_value=20_000.0)], equity=100_000.0)
+        got = plan(Book([]), acct, as_of=TODAY, quote=lambda s: 200.0,
+                   core=self.core(NVDA=0.08))
+        assert got.core_build == [] and got.to_close == [] and got.to_trim == []
+
+    def test_a_name_the_swing_book_also_wants_is_left_to_the_swing_book(self):
+        got = plan(Book([Rec("NVDA", shares=10)]), account(equity=100_000.0),
+                   as_of=TODAY, quote=lambda s: 200.0, core=self.core(NVDA=0.08))
+        assert got.core_build == []
+        assert [i.symbol for i in got.to_open] == ["NVDA"]
+        assert any("核心长仓这次不动" in n for n in got.notes)
+
+    def test_bare_symbols_still_work_and_buy_nothing(self):
+        # A caller that only wants them kept out of `unmanaged`.
+        acct = account([Holding(symbol="NVDA", quantity=10, avg_cost=200.0,
+                                market_value=2_000.0)], equity=100_000.0)
+        got = plan(Book([]), acct, as_of=TODAY, quote=lambda s: 200.0,
+                   core=["NVDA"])
+        assert got.core_build == [] and [h.symbol for h in got.core_held] == ["NVDA"]
+
+    def test_an_unpriceable_name_is_said_out_loud_not_skipped_silently(self):
+        got = plan(Book([]), account(equity=100_000.0), as_of=TODAY,
+                   quote=lambda s: float("nan"), core=self.core(NVDA=0.08))
+        assert got.core_build == []
+        assert any("取不到价格" in n for n in got.notes)
+
+    def test_the_core_build_is_placed_after_the_swing_entries(self):
+        got = plan(Book([Rec("AAA", shares=10)]), account(equity=100_000.0),
+                   as_of=TODAY, quote=lambda s: 200.0, core=self.core(NVDA=0.08))
+        assert [i.symbol for i in got.intents] == ["AAA", "NVDA"]

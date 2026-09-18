@@ -101,6 +101,24 @@ ENTRY_FRESH_DAYS = 0
 # silence.
 EXIT_WINDOW_DAYS = 10
 
+# How far under its target weight a core name must sit before this module buys
+# the difference, as a fraction of equity. The core book is a weighted list on
+# a monthly clock, not a signal: without a band, every wiggle in price is an
+# order, and five names would produce a trade a day between them.
+#
+# It exists because the core book was never executed at all. It carried five
+# names from 2026-09-01 and the account held none of them: this module
+# reconciles the *recommendation* book, and the core list is a different file
+# that nothing ever placed. The daily page said 持有 · 不动 for seventeen
+# sessions against an empty account, and neither side of it was wrong on its
+# own terms.
+CORE_BAND = 0.01
+
+# Core buys are placed a hair through the last price: marketable, so the build
+# actually happens, but a bad print cannot fill it. The Secretary's 5%
+# deviation rule is the outer bound; this is the inner one.
+CORE_PREMIUM = 1.002
+
 
 def _num(v, default: float = float("nan")) -> float:
     try:
@@ -168,6 +186,11 @@ class Reconciliation:
     # that section stops being read, and the one day it says something new goes
     # by unnoticed with it.
     core_held: list = field(default_factory=list)    # Holding
+    # Core names under their target weight by more than CORE_BAND. Buys only:
+    # an overweight core position is trimmed by the monthly review, which knows
+    # why the weight was set, and not by a bridge that only knows it moved.
+    # (Intent, target_weight, current_weight).
+    core_build: list = field(default_factory=list)
     # The account holds the opposite of what the book says. Its own bucket
     # because it is the one disagreement that must never be resolved by this
     # module: buying to "close the gap" against a short would cover it, and
@@ -182,14 +205,18 @@ class Reconciliation:
         to have."""
         return (sorted(self.to_close, key=lambda i: -i.urgency)
                 + sorted(self.to_trim, key=lambda i: -i.urgency)
-                + self.to_open)
+                + self.to_open
+                # Last on purpose: a swing entry is priced for this open and
+                # the core build is not priced for any particular day, so when
+                # the day's turnover budget runs out it is the core that waits.
+                + [i for i, *_ in self.core_build])
         # 过期未成交刻意不在这里：它们要重新定量，不是补单
 
     @property
     def clean(self) -> bool:
         return not (self.to_open or self.to_close or self.to_trim
                     or self.drift or self.stale or self.conflicts
-                    or self.held_back)
+                    or self.held_back or self.core_build)
 
 
 def _r_now(rec: Recommendation, price: float) -> float:
@@ -328,7 +355,15 @@ def plan(book: RecommendationBook, account: Account, *,
     held, short = _positions(account)
     open_recs = [r for r in book.open_recommendations() if r.symbol]
     booked = {r.symbol.upper(): r for r in open_recs}
-    core_syms = {str(s).upper() for s in (core or ()) if str(s).strip()}
+    # Accepts the long-term book's entries (symbol + weight) or bare symbols:
+    # a caller that only wants them kept out of the unmanaged list still can.
+    core_targets: dict[str, float] = {}
+    for c in (core or ()):
+        sym = str(getattr(c, "symbol", c) or "").strip().upper()
+        if sym:
+            core_targets[sym] = _num(getattr(c, "weight", float("nan")),
+                                     float("nan"))
+    core_syms = set(core_targets)
 
     closing, trimming = {}, {}
     for sig in (exits or []):
@@ -447,7 +482,56 @@ def plan(book: RecommendationBook, account: Account, *,
                     f"{sym}：账本 {gone[1].isoformat()} 就记为离场了，超过 "
                     f"{exit_window_days} 天，这里只提不下单——它可能是后来手工买回的")
             out.unmanaged.append(h)
+
+    _plan_core(out, core_targets, held, booked, short, account, quote)
     return out
+
+
+def _plan_core(out: Reconciliation, targets: dict, held: dict, booked: dict,
+               short: dict, account: Account, quote) -> None:
+    """Buy each core name up to its target weight, and nothing else.
+
+    Skipped where the swing book has an opinion on the same symbol: two books
+    sizing one position between them is how a 7% idea becomes a 15% position
+    that neither of them thinks it owns.
+    """
+    equity = _num(getattr(account, "account_value", 0.0), 0.0)
+    if not (equity > 0):
+        if targets:
+            out.notes.append("读不到净值，核心长仓这次不补仓")
+        return
+    for sym, target in sorted(targets.items()):
+        if not (target > 0):
+            continue                      # a symbol with no weight: informational
+        if sym in booked or sym in short:
+            out.notes.append(f"{sym}：波段账本今天也有它，核心长仓这次不动")
+            continue
+        h = held.get(sym)
+        value = _num(getattr(h, "market_value", 0.0), 0.0) if h else 0.0
+        now_w = value / equity
+        gap = target - now_w
+        if gap <= CORE_BAND:
+            continue
+        px = float("nan")
+        if quote is not None:
+            try:
+                px = _num(quote(sym), float("nan"))
+            except Exception:
+                px = float("nan")
+        if not (px > 0) and h is not None:
+            qty = _num(getattr(h, "quantity", 0.0), 0.0)
+            px = value / qty if qty > 0 else float("nan")
+        if not (px > 0):
+            out.notes.append(f"{sym}：核心长仓要补到 {target:.0%}，但取不到价格，这次不下单")
+            continue
+        limit = round(px * CORE_PREMIUM, 2)
+        shares = int(gap * equity / limit)
+        if shares <= 0:
+            continue
+        out.core_build.append((
+            Intent(BUY, sym, shares, limit,
+                   f"核心长仓建到目标 {target:.0%}（现在 {now_w:.0%}）", f"core-{sym}"),
+            target, now_w))
 
 
 def fresh_news(symbols, *, monitor=None, pause: float = 0.4) -> dict:
@@ -743,9 +827,19 @@ def format_plan(rec: Reconciliation, account: Account, venue: str) -> str:
             out.append(f"  {h.symbol:<7} {why}")
     if rec.core_held:
         out += ["", f"核心长仓 ({len(rec.core_held)})", "-" * W,
-                "  这些在 core.json 里，按月复核，不归这本波段账管，也不会在这里下单。"]
+                "  这些在 core.json 里，按月复核，不归这本波段账管；"
+                "这里只把权重补到目标，不减仓。"]
         out.append("  " + "  ".join(
             f"{h.symbol}×{_num(h.quantity, 0):,.0f}" for h in rec.core_held))
+    if rec.core_build:
+        out += ["", f"核心长仓 建仓/补仓 ({len(rec.core_build)})", "-" * W,
+                "  按 core.json 的目标权重补足差额。单只新仓上限与当日成交额上限都在"
+                "风控里，补不满的部分留到下一个交易日。"]
+        for intent, target, now_w in rec.core_build:
+            cost = intent.shares * (intent.limit or 0.0)
+            out.append(f"  买入 {intent.symbol:<6} {intent.shares:>6,} 股  "
+                       f"限价 {intent.limit:>9,.2f}  ${cost:>10,.2f}  "
+                       f"{now_w:>5.1%} → 目标 {target:.0%}")
     if rec.notes:
         out += ["", "说明", "-" * W] + [f"  - {n}" for n in rec.notes]
     out += ["", "=" * W]
@@ -800,10 +894,14 @@ def _sessions(now: datetime | None = None) -> tuple[_date, _date]:
 
 
 def _core_symbols() -> list:
-    """The long-term book's names, or none. Never raises."""
+    """The long-term book's entries, or none. Never raises.
+
+    The entries themselves, not their symbols: the weight on each is what says
+    how far the position is from where the book wants it.
+    """
     try:
         from . import horizons
-        return [h.symbol for h in horizons.load_core()]
+        return list(horizons.load_core())
     except Exception as exc:
         logger.info("读不到核心长仓名单（%s）；这次不区分它们", exc)
         return []

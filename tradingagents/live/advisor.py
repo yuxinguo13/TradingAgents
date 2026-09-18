@@ -123,6 +123,13 @@ POLICY_WINDOW_HOURS = 48.0
 # sector_pressure's own docstring says the tilt is for.
 MAX_TILT_SHIFT = 5.0
 
+# How far down the screen one report may walk while the panel budget goes
+# unspent, as a multiple of that budget. Names refused on arithmetic cost no
+# panel call, so without a bound a screen with nothing tradeable on it would be
+# sized end to end; with one, the sweep reaches about rank 32 on the default
+# budget of 8, which is where the sizeable names were found on 2026-09-18.
+EXAMINE_MULTIPLE = 4
+
 # --- levels -----------------------------------------------------------------
 DEFAULT_ATR_STOP_MULT = 2.0        # same convention as sizing.stop_from_atr
 DEFAULT_MIN_R = 1.5
@@ -1486,8 +1493,14 @@ class DailyAdvisor:
 
     def deliberate(self, cand: Candidate, account: Account, news: list[NewsItem],
                    macro: list[NewsItem], events: list[PolicyEvent],
-                   data_date: str, issued: _date | None = None) -> tuple[bool, float, str]:
-        """Put one candidate in front of the panel. Returns (approved, conviction, why).
+                   data_date: str, issued: _date | None = None
+                   ) -> tuple[bool, float, str, bool]:
+        """Put one candidate in front of the panel.
+
+        Returns (approved, conviction, why, consulted). ``consulted`` is
+        whether a panel call was actually spent: a candidate the sizing rule
+        refuses never reaches a seat, and the caller's budget is a budget of
+        seats, not of names.
 
         The evidence pack is :func:`brain.build_evidence` with the policy brief
         appended rather than folded in. :mod:`brain` has no policy dependency
@@ -1504,7 +1517,7 @@ class DailyAdvisor:
             # thrown away, and it is the most expensive thing in this method.
             return True, DEFAULT_CONVICTION, (
                 f"unreviewed: no panel ran. Rank #{cand.rank} on the "
-                f"{self.cfg.exchange} momentum and accumulation screen.")
+                f"{self.cfg.exchange} momentum and accumulation screen."), False
 
         snap = cand.snap or self.snapshot(cand.symbol, data_date)
         cand.snap = snap
@@ -1518,7 +1531,7 @@ class DailyAdvisor:
         when = issued or _date.fromisoformat(data_date)
         plan, refusal = self.size(cand, account, when, DEFAULT_CONVICTION, "")
         if plan is None:
-            return False, 0.0, f"no plan to put to the panel: {refusal}"
+            return False, 0.0, f"no plan to put to the panel: {refusal}", False
         try:
             trigs = triggers(cand.symbol, snap, news, account, cand.rank)
         except Exception as exc:
@@ -1540,26 +1553,29 @@ class DailyAdvisor:
         except Exception as exc:
             # Not taken rather than taken unreviewed: the panel is configured,
             # and an idea it never saw must not be printed as one it approved.
+            # Counted as consulted even though no seat saw it: a pack that
+            # cannot be built is a failure to look at, and one that fails for
+            # every name must stop the sweep rather than run it down the list.
             return False, 0.0, (f"the evidence pack could not be built "
                                 f"({type(exc).__name__}: {exc}); nothing was put "
-                                f"to the panel")
+                                f"to the panel"), True
 
         try:
             result = self.panel.deliberate(cand.symbol, evidence, account, snap.price)
         except Exception as exc:
             logger.warning("panel failed on %s: %s", cand.symbol, exc)
-            return False, 0.0, f"panel failed ({type(exc).__name__}: {exc})"
+            return False, 0.0, f"panel failed ({type(exc).__name__}: {exc})", True
 
         logger.info("%s", result.summary())
         if result.order is None or result.consensus != VENUE_BUY:
             why = result.concern or f"panel consensus was {result.consensus}"
             seats = _seat_reasons(result)
-            return False, 0.0, (f"{why} — {seats}" if seats else why)
+            return False, 0.0, (f"{why} — {seats}" if seats else why), True
         # The panel's own share count is discarded on purpose. It is a view
         # expressed in the wrong unit: the panel does not know where the stop
         # is, and the stop is the only thing that decides how many shares a
         # fixed risk budget buys.
-        return True, result.order.confidence, result.order.rationale
+        return True, result.order.confidence, result.order.rationale, True
 
     def size(self, cand: Candidate, account: Account, issued: _date,
              conviction: float, rationale: str) -> tuple[Recommendation | None, str]:
@@ -1708,16 +1724,28 @@ class DailyAdvisor:
         if not eligible:
             return []
 
-        considered = eligible[:max(0, self.cfg.max_candidates)]
-        if len(eligible) > len(considered):
-            report.notes.append(
-                f"{len(eligible) - len(considered)} eligible candidates were not "
-                f"reviewed: the panel budget is {self.cfg.max_candidates} per report")
-
+        # The budget is spent on *deliberations*, not on names. A candidate the
+        # sizing rule refuses never reaches a seat — deliberate checks the
+        # arithmetic first — so counting names let an unsizeable one burn a
+        # slot. On 2026-09-18 the top eight by screen rank held TVTX at 0.89R,
+        # refused before any vote, while the two names that could actually be
+        # sized sat at ranks 23 and 30 and were never looked at: the screen
+        # ranks by momentum, and the most extended names are exactly the ones
+        # whose stop is too far away to make the minimum R.
+        #
+        # The screen's order is kept. Only the counting changes, and the walk
+        # is bounded: a screen with nothing tradeable on it must not turn into
+        # an evening of snapshots.
+        panel_budget = max(0, self.cfg.max_candidates)
         proposals: list[Recommendation] = []
-        for cand in considered:
-            approved, conviction, why = self.deliberate(
+        spent = looked = 0
+        for cand in eligible:
+            if spent >= panel_budget or looked >= panel_budget * EXAMINE_MULTIPLE:
+                break
+            looked += 1
+            approved, conviction, why, consulted = self.deliberate(
                 cand, account, news, macro, events, data_date, issued=issued)
+            spent += int(consulted)
             if not approved:
                 report.notes.append(f"{cand.symbol} not taken: {why}")
                 continue
@@ -1726,6 +1754,13 @@ class DailyAdvisor:
                 report.notes.append(f"{cand.symbol} sized to nothing: {reason}")
                 continue
             proposals.append(rec)
+
+        if len(eligible) > looked:
+            report.notes.append(
+                f"{len(eligible) - looked} eligible candidates were not reviewed: "
+                f"the panel budget is {panel_budget} deliberations per report"
+                + (f"（另有 {looked - spent} 个候选在算术上就被否了，没占用名额）"
+                   if looked > spent else ""))
 
         # Ranked by R, which is made only of the three levels the idea itself
         # asserts and needs no opinion about how often it works — the argument
