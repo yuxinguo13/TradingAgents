@@ -52,7 +52,7 @@ import os
 import sys
 import tempfile
 from dataclasses import dataclass, field, replace
-from datetime import date as _date
+from datetime import date as _date, datetime
 from pathlib import Path
 
 from . import clock
@@ -777,14 +777,23 @@ def format_results(results: list) -> str:
 # cli
 # ---------------------------------------------------------------------------
 
-def _sessions() -> tuple[_date, _date]:
+def _sessions(now: datetime | None = None) -> tuple[_date, _date]:
     """(the session being planned, the session the data comes from).
+
+    While a session is in progress, the session being planned is that one.
+    ``sessions_for`` names the next *open*, which from 09:30 on is tomorrow's:
+    right for the evening report, wrong for a bridge that places after the
+    open. On 2026-09-16 it dated the 09:37 run the 17th, aged KNSA — issued
+    for the 16th — one day, and filed the book's only buy as stale in the one
+    session it was meant for. Nothing errored; the page said "没有要下的单".
 
     Imported inside the call because :mod:`advisor` imports this module.
     """
     try:
         from .advisor import sessions_for
-        return sessions_for(None, None)
+        state = clock.market_state(now)
+        when = state.trading_day if state.is_open else None
+        return sessions_for(when, now)
     except Exception:
         today = _date.today()
         return today, today

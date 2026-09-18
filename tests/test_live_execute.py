@@ -389,6 +389,28 @@ class TestStaleEntries:
         assert got.to_open == []
         assert [(i.symbol, age) for i, age, *_ in got.stale] == [("AAA", 1)]
 
+    @pytest.mark.parametrize("hm, order_day, data_day", [
+        ((6, 0), date(2026, 9, 16), date(2026, 9, 15)),     # before the open
+        ((9, 37), date(2026, 9, 16), date(2026, 9, 15)),    # the scheduled run
+        ((15, 59), date(2026, 9, 16), date(2026, 9, 15)),   # last minute
+        ((16, 30), date(2026, 9, 17), date(2026, 9, 16)),   # after the close
+    ])
+    def test_the_session_in_progress_is_the_one_being_planned(self, hm, order_day,
+                                                               data_day):
+        """Mid-session, the next open is tomorrow's; the session planned is not."""
+        from datetime import datetime
+        now = datetime(2026, 9, 16, *hm, tzinfo=execute.clock.ET)
+        assert execute._sessions(now) == (order_day, data_day)
+
+    def test_the_morning_run_places_the_idea_issued_for_its_own_session(self):
+        """KNSA-20260916, 09:37 ET on the 16th: stale then, an order now."""
+        from datetime import datetime
+        now = datetime(2026, 9, 16, 9, 37, tzinfo=execute.clock.ET)
+        order_day, _ = execute._sessions(now)
+        got = plan(Book([Rec("KNSA", issued="2026-09-16")]), account(),
+                   as_of=order_day, quote=lambda s: 100.0)
+        assert [i.symbol for i in got.to_open] == ["KNSA"] and got.stale == []
+
     def test_r_is_recomputed_against_the_stop_as_issued(self):
         """A later entry with an unchanged stop buys less upside for the same risk."""
         rec = Rec("AAA", entry=100.0, stop=95.0, target=115.0, issued="2026-08-27")
