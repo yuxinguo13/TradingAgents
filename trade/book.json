@@ -279,6 +279,26 @@
    "stop_raised": false,
    "sleeve": "core",
    "triggers": []
+  },
+  "APA": {
+   "symbol": "APA",
+   "shares": 137,
+   "entry": 42.43,
+   "stop": 40.6,
+   "target": 47.0,
+   "opened": "2026-09-25",
+   "horizon_days": 30,
+   "sector": "",
+   "thesis": "接管：第一次 40.86 被风控以「不足 1 ATR」拒；ATR 3.6%，改放在 50 日线 40.53 上方、距现价 1.2 ATR。保护单放宽止损不是绕风控，是按风控要求的最小距离重放",
+   "invalidation": "",
+   "principles": [],
+   "regime": "",
+   "parent_id": "742fec0f-2d43-4e87-a4aa-2b66be781082",
+   "legs": {},
+   "adopted": true,
+   "stop_raised": false,
+   "sleeve": "core",
+   "triggers": []
   }
  },
  "closed": []
