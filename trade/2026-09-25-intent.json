@@ -1,0 +1,19 @@
+{"date": "2026-09-25",
+ "regime": "标普 7,704 在 50/200 日线上，VIX 15.7，10 年期 5.16% 且在升，油价 95；正常日，非防守日",
+ "orders": [
+  {"action": "protect", "symbol": "AAPL", "stop": 315.88, "target": 365.01, "reason": "接管：止损在摆动低点 319.07 之下 1%（3.3 ATR），目标按趋势外推", "principles": ["四·止损在结构之下"]},
+  {"action": "protect", "symbol": "ADP", "stop": 253.40, "target": 282.93, "reason": "接管：最近的摆动低点 238.87 在 10% 之外，改用 2 ATR 止损；图形偏弱，跌破即走", "principles": ["四·止损不少于1 ATR", "二·结构之外用ATR"]},
+  {"action": "protect", "symbol": "AMZN", "stop": 241.86, "target": 258.54, "reason": "接管：止损在摆动低点 244.30 之下 1%（1.5 ATR）", "principles": ["四·止损在结构之下"]},
+  {"action": "protect", "symbol": "APA", "stop": 40.86, "target": 47.00, "reason": "接管：止损在摆动低点 42.73 和 50 日线 40.53 之间的结构下沿（1 ATR）；能源政策正倾向", "principles": ["四·止损在结构之下", "五·政策看板块"]},
+  {"action": "protect", "symbol": "GOOGL", "stop": 334.90, "target": 372.00, "reason": "接管：结构震荡，止损放在摆动低点 340.66 与 200 日线 337.66 之下 1.05 ATR；趋势外推给不出目标，目标取 +8%", "principles": ["四·止损不少于1 ATR"]},
+  {"action": "protect", "symbol": "JNJ", "stop": 261.19, "target": 282.03, "reason": "接管：止损在 50 日线 263.36 / 摆动低点 263.83 之下 1%（1.7 ATR）", "principles": ["四·止损在结构之下"]},
+  {"action": "protect", "symbol": "JPM", "stop": 322.49, "target": 352.84, "reason": "接管：价格在 20/50 日线下方，止损在摆动低点 325.75 之下 1%；反弹到 50 日线附近即目标", "principles": ["四·止损在结构之下"]},
+  {"action": "protect", "symbol": "KO", "stop": 86.02, "target": 90.96, "reason": "接管：止损在 50 日线 86.86 / 摆动低点 86.89 之下 1%（1.6 ATR）", "principles": ["四·止损在结构之下"]},
+  {"action": "protect", "symbol": "LLY", "stop": 1128.00, "target": 1197.04, "reason": "接管：摆动低点 1163.5 就在脚下，止损放在其下 1.2 ATR 以免被正常波动扫掉", "principles": ["四·止损不少于1 ATR"]},
+  {"action": "protect", "symbol": "MA", "stop": 556.50, "target": 594.78, "reason": "接管：止损在摆动低点 563.17 之下 1.2%（1.2 ATR）", "principles": ["四·止损在结构之下"]},
+  {"action": "protect", "symbol": "MSFT", "stop": 481.14, "target": 587.65, "reason": "接管：止损在摆动低点 486 之下 1%（3.3 ATR）；今天 +3% 追上同板块，趋势完整", "principles": ["四·止损在结构之下"]},
+  {"action": "protect", "symbol": "NVDA", "stop": 213.80, "target": 236.52, "reason": "接管：止损在 50 日线 215.44 / 摆动低点 215.96 之下 1%（2.1 ATR）；结构震荡，仓位已偏大", "principles": ["四·止损在结构之下"]},
+  {"action": "protect", "symbol": "SPY", "stop": 752.55, "target": 793.98, "reason": "接管：止损在 50 日线 759.46 / 摆动低点 760.15 之下 1%（2.6 ATR）", "principles": ["四·止损在结构之下"]},
+  {"action": "protect", "symbol": "TSM", "stop": 413.89, "target": 466.36, "reason": "接管：止损在 50 日线 418.40 / 摆动低点 418.07 之下 1%（3.6 ATR）；已有 5% 浮盈，到 1R 后上移", "principles": ["四·止损在结构之下"]},
+  {"action": "protect", "symbol": "V", "stop": 360.50, "target": 380.40, "reason": "接管：止损在摆动低点 365.52 之下 1.4%（1.1 ATR）；价格在 20 日线下方，偏弱", "principles": ["四·止损不少于1 ATR"]}
+ ]}
