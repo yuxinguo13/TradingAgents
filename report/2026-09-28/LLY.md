@@ -1,6 +1,6 @@
 # LLY · 礼来（Eli Lilly and）
 
-_医疗 · 数据截至 2026-09-24 收盘 → 面向 2026-09-28 开盘_
+_医疗 · 数据截至 2026-09-25 收盘 → 面向 2026-09-28 开盘_
 
 [← 回到 2026-09-28 当日报告](../2026-09-28.md)
 
@@ -10,51 +10,51 @@ _医疗 · 数据截至 2026-09-24 收盘 → 面向 2026-09-28 开盘_
 
 ```text
        LLY · 近 126 个交易日（日线收盘）
-1,253 ┤                                                            ╭──╮
-1,222 ┤                                      ╭─╮ ╭─╮      ╭╮   ╭──╮│  ╰╮
-1,191 ┤                                      │ ╰─╯ ╰╮   ╭─╯│  ╭╯  ╰╯···╰╮··········
-1,160 ┤                                ╭╮    │      ╰───╯  ╰╮·│·····    ╰──╮   ╭───
-1,129 ┤                          ╭╮ ╭──╯╰─╮ ╭╯         ·····╰─╯            ╰───╯
-1,097 ┤                          │╰╮│     ╰─╯      ····
-1,066 ┤                        ╭─╯ ╰╯           ···                   :::::::::::::
-1,035 ┤                        │            ····            ::::::::::
-1,004 ┤·····               ╭───╯       ·····      ::::::::::
-  973 ┤     ········   ╭───╯       ····  :::::::::
-  942 ┤   ╭╮╭─╮     ··╭╯···········::::::
-  911 ┤  ╭╯╰╯:╰─────╮:│:::::::::
-  880 ┤──╯::        ╰╮│
-  849 ┤              ╰╯
+1,262 ┤                                                            ╭─╮
+1,231 ┤                                      ╭╮ ╭╮             ╭╮  │ ╰╮
+1,200 ┤                                      │╰─╯╰─╮    ╭─╮    │╰╮╭╯  │·····
+1,169 ┤                                     ╭╯     ╰────╯ ╰╮ ╭─╯·╰╯···╰───╮ ····╭──
+1,139 ┤                             ╭────╮  │           ···╰╮│            ╰─╮╭──╯
+1,108 ┤                         ╭─╮╭╯    ╰──╯      ·····    ╰╯              ╰╯
+1,077 ┤                        ╭╯ ╰╯            ···                         :::::::
+1,046 ┤                       ╭╯             ···               :::::::::::::
+1,015 ┤··                 ╭─╮╭╯         ·····       :::::::::::
+  984 ┤  ········      ╭─╮│ ╰╯      ····    ::::::::
+  953 ┤  ╭╮╭─╮   ·····╭╯·╰╯  ·······::::::::
+  922 ┤  │╰╯ ╰─╮╭──╮ ╭╯:::···::::::
+  891 ┤──╯:::::╰╯::│:│
+  860 ┤            ╰─╯
       └────────────────────────────────────────────────────────────────────────────
-       2026-03-26                       2026-06-26                       2026-09-24
+       2026-03-27                       2026-06-29                       2026-09-25
        · SMA50   : SMA200   ─ close
 ```
 
 ```text
          LLY · 近 21 个交易日（放大看最近节奏）
-1,189.4 ┤─╮
-1,180.2 ┤ ╰╮                 ╭
-1,171.0 ┤  ╰╮              ╭╮│
-1,161.8 ┤   │╭──╮         ╭╯││
-1,152.6 ┤   ╰╯  ╰╮      ╭─╯ ╰╯
-1,143.3 ┤        │      │
-1,134.1 ┤        │   ╭──╯
-1,124.9 ┤        ╰──╮│
-1,115.7 ┤           ╰╯
+1,183.5 ┤                   ╭─
+1,175.0 ┤──╮                │
+1,166.5 ┤  │             ╭─╮│
+1,158.0 ┤  ╰───╮         │ ││
+1,149.6 ┤      ╰╮      ╭─╯ ╰╯
+1,141.1 ┤       │   ╭╮╭╯
+1,132.6 ┤       │   │╰╯
+1,124.2 ┤       ╰──╮│
+1,115.7 ┤          ╰╯
         └─────────────────────
-         2026-08-26 2026-09-24
+         2026-08-27 2026-09-25
 ```
 
-成交量近 63 日： `█▃▂▂▂▂▁▂▂▂▂▁▁▁▂▂▂▃▇▃▃▁▁▁▂▃▂▁▃▂▃▂▂▂▁▁▂▁▁▃▂▂`
+成交量近 63 日： `▅▄▄▃▃▂▂▃▃▃▂▁▂▂▂▄▃█▄▄▂▂▂▂▇▃▁▃▃▃▃▃▂▂▂▂▁▁▇▃▂▂`
 
 ### 图形读数
 
-- **均线排列**：均线偏多 — 现价距 20 日 1,150.44（+2.7%）、50 日 1,176.42（+0.5%）、200 日 1,066.54（+10.8%）
+- **均线排列**：均线偏多 — 现价距 20 日 1,150.81（+2.8%）、50 日 1,176.74（+0.6%）、200 日 1,067.50（+10.9%）
 - **形态结构**：下降结构 — 更低的高点 + 更低的低点；前高 1,292.65 → 1,161.00（-10.2%）、前低 1,163.50 → 1,113.29（-4.3%）
-- **动能**：RSI(14) 55，偏强；近一月的斜率慢于近三月（月 -4.2% vs 季 +5.0%），涨势在放缓
-- **波动**：日均真实波幅约为价格的 2.4%；按本报告 2 ATR 的止损惯例，一个 R 相当于 4.9% 的价格距离
-- **位置**：距 52 周高点 -7.7%，距 52 周低点 +66.4%
-- **量能**：最新一日成交量为 20 日均量的 1.0 倍，量能正常
-- **相对强度**：近一月跑输 标普500 4.6 个百分点
+- **动能**：RSI(14) 56，偏强；月 -0.5%、季 -1.9%，节奏平稳
+- **波动**：日均真实波幅约为价格的 2.5%；按本报告 2 ATR 的止损惯例，一个 R 相当于 4.9% 的价格距离
+- **位置**：距 52 周高点 -7.6%，距 52 周低点 +66.7%
+- **量能**：最新一日成交量为 20 日均量的 0.8 倍，量能正常
+- **相对强度**：近一月跑输 标普500 1.4 个百分点
 - **支撑 / 阻力**：最近的摆动低点 1,163.50，摆动高点 1,230.24（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
 
 **我的读图结论**：趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌
@@ -69,7 +69,7 @@ _以上每一条都是对已经发生的价格的描述。均线、RSI、摆动�
 - **增长**：最新季度营收同比 +47.7%；盈利同比 +26.2%；最近三个季度营收连续环比上升；最近 7 次财报里 6 次超预期。
 - **盈利质量**：毛利率 83.4%、营业利润率 54.2%、净利率 33.5%、ROE 102.3%。
 - **资产负债**：现金 $89.50亿；有息负债 $549.08亿；负债/权益 162.1%（负债偏重）；流动比率 1.35；自由现金流 $110.66亿，为正。
-- **卖方预期**：29 位分析师覆盖；平均评级「买入」（1.63/5，1 为最看多）；目标价均值 1,325.39（较现价 +12.1%），区间 930.00–1,600.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
+- **卖方预期**：29 位分析师覆盖；平均评级「买入」（1.63/5，1 为最看多）；目标价均值 1,325.39（较现价 +12.0%），区间 930.00–1,600.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
 
 **分季度损益**（季度数据，最新在左）
 
@@ -110,23 +110,13 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 4h 前 | 9 | 中性 | [Eli Lilly stock gains 2.86 percent as guidance rises - AD HOC NEWS](https://news.google.com/rss/articles/CBMitgFBVV95cUxNTkY3dnJPaTBlelBqMENCZUZ2YmRJQXEycFp1VkQ4cHB0QlZZWUkxUGVkaE9ESmVybUZJVm0tZG45ekdQQm5KbGcycVV3OUtjRnBnTkpROWNMVVZLRVRoVjRhVjhkb0lfSkMwVVIxeGVhRUpoVkJFSDl3QzFJWFdNUHpkaDQ2bzVBcG1YY3JBUEY0MWhfaTB5ZUIxSWV5X2ZnVHdldTM1VjJOX1U2aF8yMTFiLUluUQ?oc=5) | AD HOC NEWS |
-| 2h 前 | 0 | 中性 | [Why Is Eli Lilly (NYSE:LLY) Drawing Fresh NYSE Attention? - Kalkine Media](https://news.google.com/rss/articles/CBMioAFBVV95cUxNWmJ0Z0hOenpSd1NKZkVlZmIwQThBQXNRSldTNjFYY2NhWmdWeTRMUmZBQmtkMENXZ3RvXzllUEVuN19tYURzMXVqYTJmcTUwY3cxa005aVo2WXdpNzJQMlF1U0tKTFBVXzREZ3ZDMUxGOG9VNDBnbXhoVm1GX1BQMjFaRFZrc3EzME9NTHdWdVVyckI5b3RCQ1dNWW5NSFI2?oc=5) | Kalkine Media |
-| 4h 前 | 0 | 中性 | [Nektar Therapeutics stock rises on $90M jury verdict vs Lilly - Investing.com](https://news.google.com/rss/articles/CBMiuAFBVV95cUxNbWtuLTJLa2JOVmtId0tnbGprOWVFTWdIV2diNWdJWE56X3BFU2JsVlFGMXFxZ1pYZkYtd25VRWMzbTZOVGR4bEpiLUNhOGs1RHRPT0Y5ZzFXUGpoaDI4Yl8zQXpuZ0w4eW94X2xVU05zbUFrbGNJdTVsNjZVdW42akx4bklHVnFzSDAwZVZaU1RkaUhKaGl3WFlnZU56T1ptWUVPeUVaWnlDWjE5elR3QThEZGIzSjFO?oc=5) | Investing.com |
-| 6h 前 | 0 | 中性 | [Eli Lilly (LLY) Shares Just Moved, So What Is Driving Attention Now? - simplywall.st](https://news.google.com/rss/articles/CBMi1wFBVV95cUxNamZKWm12eGtyNDJ4dlZLN1hLQ0xNa0xXcEFzZHJRVnNzU2JIb0QxeUhpcGxzek90ZTBnS2RXaVIyQ3NHSjFBQUNhZ0NJWnlZX1JtNGkxRlJLdllvOHJIcmF2akNrQ3FwRDU3SnA2NWUySEc2THV0X0RKTWdnQXJLSkVoUjhfRkZ4TndrdUh2WTd6Y3JSeGoyYWh6STltOTZHSWpBQkpLLXFyMWUxTW5sdmR1TUVIZzU4dGE4RkRPRlc5UHNpM013SDV6b0FyYXYzVGNWMWdaZ9IB3AFBVV95cUxPRk9aM1BtM0llY0lQN1l5M2drVHh4NFZ2SHd1eFpRbmxwQkNkbkEwRVE0YWRUelBZZnVJYk45T3RDbk9Ia2NpXzQ2MWNaazdCb0pUcWpVZHhmVVE0Yk9GOEZIN0N1dWhjSkt3bHRaX3JCYXJPU2pySWdjWDlKZTllT2lYS1loWkcyOHZ3NS02TGRMeUotZndzTTFXc01TTjJBS1JDNnhWM2dOOS1BZ0JsM25ORVFRclA4X0EzTEhscEVzb21CbTJMZ1NNZEV5Y01McnJld1ZYMjBVRENG?oc=5) | simplywall.st |
-| 24h 前 | 0 | 中性 | [Eli Lilly (LLY) Stock Is Up, What You Need To Know - StockStory](https://news.google.com/rss/articles/CBMirAFBVV95cUxPWlBneEwwQXhVVVZPSnNZSmlGc2gtWFRBbDdWbmx4TU50LXdXcjJWUXZwaUN6b2MxOC1qbnlxVjJOUlZNbU1uVjdHSVJfMnZsODlXUVUtUE92ekhKUllvWVhQUDZCa0NDck5fQm1WSHpiN2YwMkEyQl9LdW1FLWhDRHB2LVNvVm13WEJ2YnJ6SFV0SkpUU3RVOGdHMmhhczNSUDAwQVZldnV3YjJi?oc=5) | StockStory |
-| 44h 前 | 0 | 偏空 | [Eli Lilly & Co. stock underperforms Wednesday when compared to competitors - MarketWatch](https://news.google.com/rss/articles/CBMi4wFBVV95cUxNODl6RG5aOEMyNkVaamVJWUcyTWNWdmFfS3E2MWZLSDY4QWpmalBXX3djTzdBLVgzX0MtaDExYVh0UTFZcndzTVpGUlh2NmEtQlhqbHRoTk02Y2ZiU1VYdnRPRVB4RGdHUTNra3dIb0V3QUZEOGhYSUc3ek1tQ1lPbEVxczB3SzVGVWt3ZERQUVZ1MUxib0VBSThVZHZwR2FzSjI5b1FwdTA0Z3FNbER1MHYyMEpXRnBMdXNoYl9PQWdrTkdYN2Jod0VLTXhIVzJYM3BQWmhKUjZlWGRMMndVTW93dw?oc=5) | MarketWatch |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
 - 摆动高低点都在下移，属于下降结构；在出现一个更高的低点之前，任何反弹都还只是反弹。
-- 政策面对该板块的倾向为 -0.33（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -134,7 +124,6 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 | 日期 | 开 | 高 | 低 | 收 | 涨跌 | 成交量 |
 |---|---:|---:|---:|---:|---:|---:|
-| 2026-09-03 | 1,170.00 | 1,171.66 | 1,137.50 | **1,159.60** | -0.0% | 2,550,500 |
 | 2026-09-04 | 1,150.61 | 1,158.44 | 1,138.31 | **1,149.36** | -0.9% | 2,218,900 |
 | 2026-09-08 | 1,133.00 | 1,134.53 | 1,113.55 | **1,123.91** | -2.2% | 2,400,500 |
 | 2026-09-09 | 1,127.61 | 1,138.79 | 1,119.00 | **1,124.21** | +0.0% | 2,045,000 |
@@ -149,6 +138,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-09-22 | 1,146.15 | 1,180.53 | 1,139.26 | **1,170.14** | +0.5% | 2,453,100 |
 | 2026-09-23 | 1,174.71 | 1,188.88 | 1,145.98 | **1,150.99** | -1.6% | 2,154,100 |
 | 2026-09-24 | 1,156.67 | 1,197.79 | 1,151.00 | **1,181.89** | +2.7% | 2,417,700 |
+| 2026-09-25 | 1,185.32 | 1,190.00 | 1,160.84 | **1,183.46** | +0.1% | 1,801,747 |
 
 ## 七、自己去查（本页不做独立验证）
 

@@ -1,63 +1,63 @@
 # NVDA · 英伟达（NVIDIA）
 
-_科技 · 数据截至 2026-09-24 收盘 → 面向 2026-09-28 开盘_
+_科技 · 数据截至 2026-09-25 收盘 → 面向 2026-09-28 开盘_
 
 [← 回到 2026-09-28 当日报告](../2026-09-28.md)
 
-> 均线与结构互相矛盾，属于震荡；这种形态里止损容易被扫，仓位应比顺势时更小。
+> 趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌。
 
 ## 一、价格与图形
 
 ```text
        NVDA · 近 126 个交易日（日线收盘）
-230.0 ┤                     ╭╮                                         ╭╮ ╭─╮    ╭╮
-225.1 ┤                    ╭╯│╭╮                                 ╭─╮   ││ │ │    │╰
-220.2 ┤                   ╭╯ ╰╯│   ╭─╮                        ╭──╯ ╰╮  │╰─╯ ╰─╮ ╭╯
-215.2 ┤             ╭╮   ╭╯    ╰───╯ │                       ╭╯     ╰╮ │      │╭╯··
-210.3 ┤             │╰╮  │           │  ╭╮╭╮········╭╮·╭─╮   │       ╰─╯······╰╯
-205.4 ┤            ╭╯ │ ╭╯           ╰──╯╰╯╰╮      ╭╯╰╮│ │··╭╯·········
-200.4 ┤        ╭───╯  ╰╮│        ····       │    ╭─╯  ╰╯ ╰╮ │                   :::
-195.5 ┤        │       ╰╯    ····           ╰╮╭──╯        ╰─╯:::::::::::::::::::
-190.6 ┤       ╭╯          ···        ::::::::╰╯::::::::::::::
-185.7 ┤·     ╭╯  ·········:::::::::::
-180.7 ┤:····╭╯···:::::
-175.8 ┤  ╭──╯
-170.9 ┤─╮│
-166.0 ┤ ╰╯
+235.2 ┤                    ╭╮
+230.0 ┤                    ││                                             ╭╮    ╭╮
+224.7 ┤                   ╭╯╰╮    ╭╮                          ╭╮╭──╮     ╭╯╰╮   │╰─
+219.5 ┤                   │  ╰─╮  ││                         ╭╯╰╯  ╰╮ ╭──╯  ╰╮ ╭╯
+214.3 ┤            ╭╮    ╭╯    ╰─╮│╰╮                        │      ╰╮│     ·│╭╯···
+209.0 ┤            │╰╮  ╭╯       ╰╯ │╭╮·╭──╮······╭──╮·╭─╮· ╭╯    ···╰╯····· ╰╯
+203.8 ┤         ╭╮ │ │ ╭╯          ·╰╯╰─╯  │     ╭╯  ╰─╯ │ ·│·····
+198.6 ┤       ╭─╯╰─╯ ╰─╯       ····        ╰╮ ╭╮╭╯       ╰╮╭╯            ::::::::::
+193.3 ┤       │            ····             ╰─╯╰╯:::::::::╰╯:::::::::::::
+188.1 ┤      ╭╯     ······· ::::::::::::::::::::
+182.8 ┤·····╭╯······::::::::
+177.6 ┤::╭──╯
+172.4 ┤  │
+167.1 ┤──╯
       └────────────────────────────────────────────────────────────────────────────
-       2026-03-26                       2026-06-26                       2026-09-24
+       2026-03-27                       2026-06-29                       2026-09-25
        · SMA50   : SMA200   ─ close
 ```
 
 ```text
        NVDA · 近 21 个交易日（放大看最近节奏）
-230.1 ┤       ╭╮         ╭╮
-227.5 ┤ ╭╮   ╭╯│        ╭╯│
-224.9 ┤ ││  ╭╯ ╰╮       │ ╰─
-222.3 ┤ ││  │   ╰╮     ╭╯
-219.8 ┤ ││╭╮│    │    ╭╯
-217.2 ┤ │╰╯╰╯    ╰─╮  │
-214.6 ┤ │          │ ╭╯
-212.0 ┤ │          ╰─╯
-209.4 ┤─╯
+230.1 ┤      ╭╮
+227.7 ┤─╮   ╭╯│        ╭─╮
+225.3 ┤ │  ╭╯ ╰╮       │ ╰──
+222.9 ┤ │  │   ╰╮     ╭╯
+220.5 ┤ │╭╮│    │    ╭╯
+218.1 ┤ ╰╯╰╯    ╰─╮  │
+215.7 ┤           │  │
+213.4 ┤           │╭─╯
+211.0 ┤           ╰╯
       └─────────────────────
-       2026-08-26 2026-09-24
+       2026-08-27 2026-09-25
 ```
 
-成交量近 63 日： `▅▄▄▃▃▃▄▃▃▃▁▃▂▃▃▃▃▃▄▂▂▂▂▁▂▁▂▃▅█▃▃▃▃▁▂▃▁▁▄▂▁`
+成交量近 63 日： `▃▄▃▂▃▃▂▃▂▂▂▃▂▃▃▃▃▃▂▂▂▂▁▂▂▂▃▃█▄▂▃▃▂▂▂▁▂▅▂▁▁`
 
 ### 图形读数
 
-- **均线排列**：多头排列 — 现价距 20 日 221.79（+1.3%）、50 日 215.44（+4.2%）、200 日 198.93（+12.9%）
-- **形态结构**：扩张震荡 — 高点抬高但低点下移，波动在放大；前高 230.21 → 234.50（+1.9%）、前低 214.86 → 208.93（-2.8%）
-- **动能**：RSI(14) 55，中性；月 +5.5%、季 +14.9%，节奏平稳
-- **波动**：日均真实波幅约为价格的 2.4%；按本报告 2 ATR 的止损惯例，一个 R 相当于 4.8% 的价格距离
-- **位置**：距 52 周高点 -4.5%，距 52 周低点 +36.3%
-- **量能**：最新一日成交量仅为 20 日均量的 0.6 倍，缩量
-- **相对强度**：近一月跑赢 标普500 5.1 个百分点
+- **均线排列**：多头排列 — 现价距 20 日 221.65（+1.5%）、50 日 215.79（+4.3%）、200 日 199.13（+13.0%）
+- **形态结构**：下降结构 — 更低的高点 + 更低的低点；前高 234.50 → 229.98（-1.9%）、前低 214.86 → 208.93（-2.8%）
+- **动能**：RSI(14) 55，偏强；近一月的斜率快于近三月（月 +7.5% vs 季 +17.0%），趋势在加速
+- **波动**：日均真实波幅约为价格的 2.3%；按本报告 2 ATR 的止损惯例，一个 R 相当于 4.6% 的价格距离
+- **位置**：距 52 周高点 -4.3%，距 52 周低点 +36.6%
+- **量能**：最新一日成交量为 20 日均量的 0.7 倍，量能正常
+- **相对强度**：近一月跑赢 标普500 6.5 个百分点
 - **支撑 / 阻力**：最近的摆动低点 215.96，摆动高点 227.67（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
 
-**我的读图结论**：均线与结构互相矛盾，属于震荡；这种形态里止损容易被扫，仓位应比顺势时更小
+**我的读图结论**：趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌
 
 _以上每一条都是对已经发生的价格的描述。均线、RSI、摆动结构全部是滞后指标，它们能说明现在处于什么状态，不能说明下一步。你自己在图上看到的东西，和这里写的不一致时，以你看到的为准——然后去查是哪个数字有问题。_
 
@@ -69,7 +69,7 @@ _以上每一条都是对已经发生的价格的描述。均线、RSI、摆动�
 - **增长**：最新季度营收同比 +105.9%；盈利同比 +127.8%；最近三个季度营收连续环比上升；最近 7 次财报里 7 次超预期。
 - **盈利质量**：毛利率 74.7%、营业利润率 66.2%、净利率 63.7%、ROE 117.2%。
 - **资产负债**：现金 $624.69亿；有息负债 $388.60亿；负债/权益 17.0%（负债很轻）；流动比率 4.59；自由现金流 $418.10亿，为正。
-- **卖方预期**：59 位分析师覆盖；平均评级「强烈买入」（1.30/5，1 为最看多）；目标价均值 327.70（较现价 +45.9%），区间 180.00–515.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
+- **卖方预期**：59 位分析师覆盖；平均评级「强烈买入」（1.30/5，1 为最看多）；目标价均值 327.70（较现价 +45.6%），区间 180.00–515.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
 
 **分季度损益**（季度数据，最新在左）
 
@@ -112,18 +112,14 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 9h 前 | 8 | 中性 | [NVIDIA Corporation $NVDA Stock Sold by Montag A & Associates Inc. - MarketBeat](https://news.google.com/rss/articles/CBMivwFBVV95cUxOTkhvVkVHMUxrUC15WlNTWWN3OEdQWlJUcjVLR2hUaWZZLWJYVlFxUk4yM1BOeFpDakRVQWp6dlJ1RjI1aTB0bFFrM25HSndWRUwydjFyV1dvSi01dXNGNEdRZ0JhODNvQnZRM0JEZEZtamh3UjZJLWJYc3lkbi02bUdEUEE1U0kybWtKTXB6UnhpcXhTSFRNX2xwMEUzcW9vVFp6VGhlUUFnb3NGTm1JajJqMUlVNFNQcWtMRjYzdw?oc=5) | MarketBeat |
-| 22h 前 | 7 | 偏空 | [Nvidia Stock Drops as CEO Huang Suggests Drastic Alternative to AI Regulation - Barron's](https://news.google.com/rss/articles/CBMilgFBVV95cUxPQjd6OU5hSXN5TW9nRnB0OGhIWG1jNU9FNk5iQ2RhNkhRbl9nSVc3RXBxcnJWZGhpUzU2Um8ta0NzOU5XV2lGNUZ3STBncXpBNlk2QnRhbDVXYXRzNGs1Sl9RRnNmSlpMb3FoVWNxMDV6VUt2VklXbFN3ZVl5SzF4eTRLRXpXbmJEaVpXNUFKNUtUbmRfSEE?oc=5) | Barron's |
-| 8h 前 | 6 | 偏多 | [Nvidia Raised Its Dividend 2,400%, but a $10,000 Investment Still Pays Just $44 a Year - The Motley Fool](https://news.google.com/rss/articles/CBMimAFBVV95cUxNTllCckRyM3dhODdYZTZDYTZhdEUzTGE5NnN2dUdOZVIyUGNTc1pnci1VR2JnaXdUZGpVVGU2VU9aV0w1N0RBdE5fU0Q3YzhqczNtRER2YXdYMUwtcHktZUtqamxtUHdKVzN3bzZIb1RtZkxJRzNqQlFidWNmM09SSEhEWThJUnlRSUJjTHRoeUpjMFRIRjFINw?oc=5) | The Motley Fool |
-| 0h 前 | 0 | 中性 | [Nvidia Stock Moves Lower as Einride Scales Physical AI - GuruFocus](https://news.google.com/rss/articles/CBMimAFBVV95cUxQLWhzeUM4QVRXX3EwR1hicVEtWG82a0VhZHJZeWlpLUdIM0Ftcmo3RFdRMjY4NTZKWFRoWlI4VlpHNzE0OEdZVjlOdjhuQU15eGc5UklNSTFLTVdIQk1XblpuOFdkemlTSlBwSmlSTzMzaGVWdFpnanpJdzZqM2NkVkhBakRVTUUteXkyUUl4enltWTh3d2ZmNA?oc=5) | GuruFocus |
-| 1h 前 | 0 | 中性 | [If You Invest $500 a Month in Nvidia Starting Now, This is What You’d Have in 2030 - Yahoo Finance](https://news.google.com/rss/articles/CBMingFBVV95cUxQZ1lqMzVKemZKMy1fR2VIMFRSVVYyR0Y5VC1TN1d5UjFOS2huc3V4QS01TkxqYlBXZXducWxWdmVrTUZSY3g4VF8xWGYtUmZkT1U1Tk1KSW1VRDVkb0xDVW10UmZaWk9LODYzXy1IR0YtN0hYOWkyVk55SVZEM3JrRWt3ck1oOUpHSG5vbi1jSlRBd0V4VE9oX1FqYUlmZw?oc=5) | Yahoo Finance |
-| 1h 前 | 0 | 中性 | [If You Invest $500 a Month in Nvidia Starting Now, This is What You’d Have in 2030 - 24/7 Wall St.](https://news.google.com/rss/articles/CBMiwAFBVV95cUxOU3pIMkZqd3hLZzJDeFFTcXJzV2x5ZUNHd0NydVA0bTZmcHVQNm1WZ2xVamY0eWNvNDU5VmNUN1BYU1RZd2pEYU8ySExWOXZ3dlRoYk1CRmpFUkR6UVg3OTVvOXZIaS1sRzRrcDFqaFdPLUFyMTV6Y1NLSThoUFd6M21RR3RqR0NxMFNrNExlSFVybm1pdFFNbEJRN3hpemJsMTlTdTNqdU9UV3ZfZHNYd0ZxZkpsX2xhdHJPT3NweS0?oc=5) | 24/7 Wall St. |
-| 2h 前 | 0 | 中性 | [Nvidia Stock: Here’s How Many AI Chips SpaceX Is Buying. - Barron's](https://news.google.com/rss/articles/CBMihAFBVV95cUxQZEoxQzk3Mno1cFg0Mm1RbEJ6RklMRUJrSWdQeHo3aE52czJ6VDJuNzZSaWpudmIwdURaVmxCSXk2MkZDalM2MXRIVU40ck5ZeFJFak05OUk4MzJuM3FoU1JJYTVDN3JBcHJKT1htT0pjaFBFY2liRVFJM2xlUlZaZXduOVM?oc=5) | Barron's |
-| 2h 前 | 0 | 中性 | [This Magnificent Seven Stock Could Deliver Outsized Returns Over the Next 5 Years - Yahoo Finance](https://news.google.com/rss/articles/CBMipAFBVV95cUxQNFN3LTNmWHI1S1N4OGVaZkpkeU83V1FnRzV6RnJWTVFXYWlLQ1FqZHZZdUVwdVpNVnFyMWNBQTRjM2Zfb2xycm1Kc3V4QkgyTjJoR3RWS1laRTdnSlZUTzdIWXM0Wms0RmFWYVgzS2JJT2N0emtBaUtEYWhueFY4Yk41aHIzMmxlQXBabFNaMDUxdlc2dHVsTjllQ0h6UkxaUzdsUA?oc=5) | Yahoo Finance |
-| 2h 前 | 0 | 中性 | [NVIDIA computers will power AI built inside six countries home to over 700 million people. - Stock Titan](https://news.google.com/rss/articles/CBMiqAFBVV95cUxPVDVfSHlEclUwMFZhbHQ3MzJGazZuLUNkelhlRmxCMExqN1NOdS1QazNrOFYxeXV0dUJZRGN3TFhpVlN4X3doYllhRk5MdDNxLVliWVhpdjF3MUMyb1cweGRleURKZ0JGSHRCMHhfX2N6UHlsMTZTNVhPTXBkUDlvdWJtOFl2cWdfaGIzM3IxeWF4RU1SUUhyTDJycUVIN2hWODl3N1lobks?oc=5) | Stock Titan |
-| 3h 前 | 0 | 中性 | [Nvidia, Meta, Akamai, Comcast, Zscaler, Nike, and More Stocks That Explain Today's Market -- Barrons.com - 富途牛牛](https://news.google.com/rss/articles/CBMipgFBVV95cUxOaWx4di1KV0NkaHlOa0p4VzZUbVFsMEZKcDY5bjhkdm54dkNMVXhIcmxPbnB5alY3Vm9DNjNITDZmLUZWQklvQl9od0M3VXhDdDgzd0FMY0hjYWF6WG50YzVwdERYT0Z1UnlRVFVvbnpoRGNpOVhMd2JUTjlYQnVBd1FYZ2o2cHVSN2ZtbURtSVN1eFgzcnpESGlzZ3FjUm5LWHpmU0JR?oc=5) | 富途牛牛 |
-| 3h 前 | 0 | 中性 | [Nvidia, Meta, Akamai, Comcast, Zscaler, Nike, and More Stocks That Explain Today’s Market - Barron's](https://news.google.com/rss/articles/CBMiZEFVX3lxTFBQTW9Nd21zOTJhWVVUdUZmbWd0Wlp6RzNDUlRSSmZ1MlVmY0lWa1BmbF9RNHZJd2ZpQ3hKN0ppVVJrcERWMUdMSVR5QWxkTGpGSXRCdFlKNlVLdGVmZEdBUjZVSTg?oc=5) | Barron's |
-| 3h 前 | 0 | 中性 | [Better Quantum Computing Stock: Nvidia vs. IonQ - The Motley Fool](https://news.google.com/rss/articles/CBMikgFBVV95cUxOcmFWV1daa3FjNFhibElmVUlEQ0lCdUhDVTIzeVNtS29tN3ZoTUN4enFuZ2JYSkVUcVlrdWJIeVdDcEhrcVBab0VPM0NyOEFpM05NNHFfSktMUHYwb2NSZXdXMEZoWFNTRXdOb0NrbGdsbDNiUVN2ckVqeldOQlRQQlhuM21JeTlMM1V1ODhzbUtSdw?oc=5) | The Motley Fool |
+| 0h 前 | 0 | 中性 | [Meet the Magnificent Semiconductor Stock Crushing Nvidia in 2026 - Yahoo Finance](https://news.google.com/rss/articles/CBMirwFBVV95cUxQMWhjckVwUWVQeTcwN0pBNnZHdkJwSjRvNG9qYWpQOFcyM3pQVlZoMndfLVBjOFRUN1FsdlFpaVV4Y1FTTHh0VkhOajh2X1pzb3F6Sl9OM3VMRDZQTE5pNUxuUTlZTUdYZDlPTVFyMWJRTWhyMGhwRUphanJYQ1RGUTVCWHQxTnZzaDBhWlNkeGN1M3FUQWhGcnpKeUFzdGZwc0llVDFHa0FtOFh1OThv?oc=5) | Yahoo Finance |
+| 0h 前 | 0 | 中性 | [Micron vs. NVIDIA: 1 AI Stock to Buy Now and 1 to Watch - The Globe and Mail](https://news.google.com/rss/articles/CBMi1AFBVV95cUxNQ0VtaFctOTlWV0xLMTVtd1RPQmQ4UVhRamFmU1FnSTNIWlhaX2JiRDB5bVJ2TF9SamZBYmdrZDNkVGpUVGpIeVNGNU5KTkFtTW1QM0hRYy1XVDBTNHViNGZLZWdMNnhLSzhvTkRGU01Oa3VUZXVFZzZqSzdBTzJPR2xvMk0yenFSdjdZN2c3SldocEJBV0piQnVzMnFUd3gxVTRoX3lzemszaGJQd3dIZTN4MjA5Y0tDbzZOTFZIMmYxX0txMFBOYUk2ZUdnWVU2a2w3UA?oc=5) | The Globe and Mail |
+| 1h 前 | 0 | 中性 | [Credo vs. Nvidia: Which AI Chip Stock Is a Better Buy in 2026? - The Motley Fool](https://news.google.com/rss/articles/CBMinwFBVV95cUxPY1dqTjdmMjJjS2NYT2RVX1EtaEdBSzZKZTgwdXBLRnRuR3dEbmVBRkxpTjd4Nkk0QTh1Nlp4Q3BmTFVNTDJVd1c3ZVhyaTR4bVZHcmxrcEU0S2ZJeDIxR0MtZkZJYWhaMUprNHRlSlJ1cXlUeWdrd090VHRqcC1LbURhSzVFY3Ntbjh6amtxTFBGakFTSGR5dk5qSlNrajA?oc=5) | The Motley Fool |
+| 2h 前 | 0 | 中性 | [Top chip stocks: AXT and NVIDIA lead on technical signals - Investing.com](https://news.google.com/rss/articles/CBMiugFBVV95cUxQcXNOZk5fZ2N0Qmo1NzV0aXV6a09lTmRzWTZ4RE52SG9pb0daaVRkUnJDSXlvai1GRUZjbUV2MzJORW5HQjMwUVROdnNyVzNuSzdnQnhHSEI3dlotQ1pBdFNQd1lCekw5Q2hfZGMtVHpOZklQblF3SDNnY0NKZk00b1ZGM3U3SjBnQ0JOQjM1cVNtbjFfMjBERkdzblhfSGpHaGs3UVA0aE1uLXJkT1VsZjJHTWhSQ3ItSmc?oc=5) | Investing.com |
+| 3h 前 | 0 | 中性 | [NVIDIA Has GPUs If You Have Coin - GamersNexus](https://news.google.com/rss/articles/CBMibkFVX3lxTE5kb1VSYi1nalVxQTVsdzd6T1BXR3ZuejhpRFVtQWxzRFZvMWhPa2Flb1VTYzJPVlFHMndkbUJKd1JGb0JBMEl2UllxaDV3UUVfbGlJaHNzU3RTaURvUmV5dENsZXA3NkplWWtlOGNR?oc=5) | GamersNexus |
+| 3h 前 | 0 | 中性 | [Where Will Nvidia Be in 5 Years? - Yahoo Finance](https://news.google.com/rss/articles/CBMijAFBVV95cUxNMXZCczJ2TmcxTmZrN1FSMERjTkVzYURkekNQek1kMTNlRUxGT3FVSzROTUkySjliU2tKQTBrSmdnOG51dWE1OVRKUmh3Q2VDQU9KT2lVWU9pdGEydk9rQ0JpbkJFWmxYZElrcXR6a1M0VlZoZTdSZEpzc2toVHVGWnUxeTk4Rm1OeWJsdQ?oc=5) | Yahoo Finance |
+| 4h 前 | 0 | 中性 | [Nvidia Tests Key Level Amid Trump-Xi Talks, China Challenge - Investor's Business Daily](https://news.google.com/rss/articles/CBMikAFBVV95cUxNekRWNTUxQnMzZXJGTFFKVzJIUEZFX05MYkJwbmFsVWdjT2dQNEFaRWdRZWs4ZHVGTDdkaUkzbzdOcEdBNHZjQ3g4cmZ5YmNyeTBjWnZLWUpaS3ZDWDFoYVFMVXJWZWFiRTdNSFl5YlF4ZkFwZnZ3QldoN1QyajJFanRiLVJJNktscHRVSzVJUXc?oc=5) | Investor's Business Daily |
+| 8h 前 | 0 | 中性 | [Technology Stocks Are Back, Because Nothing Else Is - Investor's Business Daily](https://news.google.com/rss/articles/CBMipAFBVV95cUxQN2NwSGRMclhjbHJSTGg4a1pkWHBQcXFhRWp1Y0xhM2xwcG9YYWo1Wm5LZWVYN29RSWNzeVZIbFZ1R09wVlQ0T3FvTG9IN1VjLXF0U1FMaFNVd1hpQVlvUHdHejhpY3NzS2lYejVHeHBxZGNrNXBSNXF6NVMxTWlFRnZHVG5waE9NWGVscjYtLXNxNlpHeTNWQk9aVlpUWEpEV3BlZw?oc=5) | Investor's Business Daily |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -131,9 +127,9 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
+- 摆动高低点都在下移，属于下降结构；在出现一个更高的低点之前，任何反弹都还只是反弹。
 - 卖方目标价区间 180.00–515.00，宽度超过均值——分歧极大，共识在这只股票上没有信息量。
-- 24 小时内的利空标题：Nvidia Stock Drops as CEO Huang Suggests Drastic Alternative to AI Regulation - Barron's（Barron's）
-- 政策面对该板块的倾向为 -0.93（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.79（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -141,7 +137,6 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 | 日期 | 开 | 高 | 低 | 收 | 涨跌 | 成交量 |
 |---|---:|---:|---:|---:|---:|---:|
-| 2026-09-03 | 225.77 | 230.14 | 224.50 | **228.19** | +1.8% | 134,681,600 |
 | 2026-09-04 | 230.83 | 234.50 | 229.37 | **230.10** | +0.8% | 135,352,400 |
 | 2026-09-08 | 232.85 | 233.45 | 224.60 | **225.48** | -2.0% | 122,965,600 |
 | 2026-09-09 | 225.03 | 225.93 | 223.21 | **223.42** | -0.9% | 82,955,500 |
@@ -155,7 +150,8 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-09-21 | 222.94 | 228.50 | 221.56 | **227.38** | +2.3% | 109,806,100 |
 | 2026-09-22 | 226.85 | 229.98 | 226.50 | **228.87** | +0.7% | 95,746,700 |
 | 2026-09-23 | 228.03 | 228.95 | 224.02 | **225.51** | -1.5% | 89,547,300 |
-| 2026-09-24 | 222.08 | 224.94 | 221.09 | **224.58** | -0.4% | 77,305,200 |
+| 2026-09-24 | 222.08 | 224.94 | 221.09 | **224.58** | -0.4% | 77,469,900 |
+| 2026-09-25 | 225.15 | 226.94 | 223.13 | **225.07** | +0.2% | 87,234,141 |
 
 ## 七、自己去查（本页不做独立验证）
 

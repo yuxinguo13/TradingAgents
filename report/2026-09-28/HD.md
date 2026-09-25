@@ -1,6 +1,6 @@
 # HD · 家得宝（The Home Depot）
 
-_可选消费 · 数据截至 2026-09-24 收盘 → 面向 2026-09-28 开盘_
+_可选消费 · 数据截至 2026-09-25 收盘 → 面向 2026-09-28 开盘_
 
 [← 回到 2026-09-28 当日报告](../2026-09-28.md)
 
@@ -10,51 +10,51 @@ _可选消费 · 数据截至 2026-09-24 收盘 → 面向 2026-09-28 开盘_
 
 ```text
        HD · 近 126 个交易日（日线收盘）
-364.6 ┤:::::::::::::::
-359.2 ┤····           ::::::::::::
-353.8 ┤    ···                    :::::::::     ╭╮
-348.4 ┤       ·····                        :::╭─╯│::::        ╭──╮
-343.0 ┤          ╭╮···                       ╭╯  ╰╮   ╭╮:::::╭╯::╰╮:╭╮
-337.6 ┤        ╭╮│╰╮  ···                    │    │╭──╯│  ╭─╮│    ╰─╯│╭╮·····::::::
-332.2 ┤      ╭─╯╰╯ ╰╮    ··              ╭╮ ╭╯    ╰╯   ╰╮ │ ╰╯····   ╰╯╰╮    ····
-326.7 ┤─╮ ╭╮ │      ╰─╮    ···          ╭╯╰─╯           ╰─╯···          ╰╮       ··
-321.3 ┤ ╰─╯╰╮│        ╰╮      ·······   │ ·   ···········                ╰╮╭╮
-315.9 ┤     ╰╯         ╰╮╭╮       ╭╮ ··╭╯· ···                            ╰╯│
-310.5 ┤                 ╰╯╰╮     ╭╯│╭──╯                                    ╰╮╭╮
-305.1 ┤                    ╰╮  ╭─╯ ╰╯                                        ╰╯╰─╮
-299.7 ┤                     ╰╮╭╯                                                 ╰╮
-294.3 ┤                      ╰╯                                                   ╰
+364.3 ┤::::::::::::::::
+358.8 ┤···             :::::::::::
+353.3 ┤   ···                     :::::::::    ╭╮             ╭╮
+347.8 ┤      ···╭╮                         ::╭─╯╰╮::::       ╭╯╰╮
+342.3 ┤         ││···                       ╭╯   │╭╮╭╮::::::╭╯::╰╮::::::
+336.8 ┤     ╭──╮│╰─╮ ···                    │    ╰╯╰╯╰╮  ╭╮ │   ·╰──╮╭╮······::::::
+331.3 ┤     │  ╰╯  ╰╮   ···             ╭╮ ╭╯         ╰╮╭╯╰─╯···    ╰╯╰╮     ····
+325.7 ┤  ╭╮ │       │╭╮    ···         ╭╯╰─╯          ·╰╯···           ╰╮        ··
+320.2 ┤ ╭╯╰─╯       ╰╯│ ╭╮    ········╭╯··············                  ╰╮╭╮
+314.7 ┤─╯             ╰─╯│      ╭─╮  ╭╯                                  ╰╯╰╮
+309.2 ┤                  ╰╮   ╭─╯ ╰──╯                                      ╰─╮
+303.7 ┤                   ╰╮ ╭╯                                               ╰─╮╭╮
+298.2 ┤                    ╰╮│                                                  ╰╯│
+292.7 ┤                     ╰╯                                                    ╰
       └────────────────────────────────────────────────────────────────────────────
-       2026-03-25                       2026-06-25                       2026-09-24
+       2026-03-27                       2026-06-29                       2026-09-25
        · SMA50   : SMA200   ─ close
 ```
 
 ```text
        HD · 近 21 个交易日（放大看最近节奏）
-335.4 ┤─╮
-330.0 ┤ ╰╮╭╮
-324.6 ┤  ╰╯╰╮
-319.2 ┤     ╰╮╭─╮
-313.8 ┤      ╰╯ ╰╮
-308.4 ┤          ╰───╮
-303.0 ┤              ╰──╮
-297.6 ┤                 ╰──╮
-292.2 ┤                    ╰
+327.8 ┤──╮
+323.3 ┤  ╰╮
+318.9 ┤   ╰╮╭─╮
+314.4 ┤    ╰╯ ╰╮
+310.0 ┤        ╰╮╭─╮
+305.5 ┤         ╰╯ ╰╮   ╭╮
+301.1 ┤             ╰──╮││
+296.6 ┤                ╰╯╰╮
+292.2 ┤                   ╰─
       └─────────────────────
-       2026-08-25 2026-09-24
+       2026-08-27 2026-09-25
 ```
 
-成交量近 63 日： `██▄▃▄▃▁▂▁▃▄▃▂▄▃▄▇▃▄▂▃▁▃▁▆▆▃▂▁▃▂▃▃▁▆▃▃▄▃▇▆▆`
+成交量近 63 日： `▅▃▂▃▃▂▃▂▃▃▂▃▃▃▃▅▂▃▁▂▁▂▂▆▄▃▂▂▃▂▂▂▁▄▄▃▄▃█▅▄▆`
 
 ### 图形读数
 
-- **均线排列**：空头排列 — 现价距 20 日 311.53（-6.2%）、50 日 327.26（-10.7%）、200 日 336.60（-13.2%）
+- **均线排列**：空头排列 — 现价距 20 日 308.52（-5.0%）、50 日 325.54（-9.9%）、200 日 336.14（-12.8%）
 - **形态结构**：下降结构 — 更低的高点 + 更低的低点；前高 355.74 → 347.84（-2.2%）、前低 328.27 → 304.30（-7.3%）
-- **动能**：RSI(14) 25，超卖区；月 -12.8%、季 -14.2%，节奏平稳
-- **波动**：日均真实波幅约为价格的 2.2%；按本报告 2 ATR 的止损惯例，一个 R 相当于 4.3% 的价格距离
-- **位置**：距 52 周高点 -26.9%，距 52 周低点 +0.0%
-- **量能**：最新一日成交量为 20 日均量的 1.7 倍，量能正常
-- **相对强度**：近一月跑输 标普500 13.2 个百分点
+- **动能**：RSI(14) 32，偏弱；月 -11.8%、季 -15.3%，节奏平稳
+- **波动**：日均真实波幅约为价格的 2.3%；按本报告 2 ATR 的止损惯例，一个 R 相当于 4.5% 的价格距离
+- **位置**：距 52 周高点 -26.5%，距 52 周低点 +0.3%
+- **量能**：最新一日成交量为 20 日均量的 1.3 倍，量能正常
+- **相对强度**：近一月跑输 标普500 12.7 个百分点
 - **支撑 / 阻力**：最近的摆动低点 284.85，摆动高点 317.36（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
 
 **我的读图结论**：趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌
@@ -69,7 +69,7 @@ _以上每一条都是对已经发生的价格的描述。均线、RSI、摆动�
 - **增长**：最新季度营收同比 +5.7%；盈利同比 +4.6%；最近三个季度营收连续环比上升；最近 7 次财报里 3 次超预期。
 - **盈利质量**：毛利率 32.8%、营业利润率 12.9%、净利率 8.4%、ROE 104.3%。
 - **资产负债**：现金 $20.85亿；有息负债 $631.88亿；负债/权益 380.3%（负债偏重）；流动比率 1.08；自由现金流 $107.63亿，为正。
-- **卖方预期**：32 位分析师覆盖；平均评级「买入」（1.94/5，1 为最看多）；目标价均值 377.19（较现价 +29.1%），区间 310.00–425.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
+- **卖方预期**：32 位分析师覆盖；平均评级「买入」（1.94/5，1 为最看多）；目标价均值 377.19（较现价 +28.6%），区间 310.00–425.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
 
 **分季度损益**（季度数据，最新在左）
 
@@ -110,31 +110,16 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 42h 前 | 8 | 中性 | [The Home Depot, Inc. $HD Position Boosted by Envestnet Asset Management Inc. - MarketBeat](https://news.google.com/rss/articles/CBMizgFBVV95cUxNaU1JemNZNlRWaDkzQl9zTHZRWjdSSEMzU0htd2FPUS13a0dZU1Y2Sk9VMC1xekN6TzRYRVhNUFFXU3hfeWFwZlNrVW5jYVJRUlZwekM3a2VMdDlRa243NEx4N3lCUXVlT3E5c1I0bW5IdnlBRjNEMVVRWW1IbXlnXy1TNWVGRExqZGVnaHdjV1V6TVRnbm13Wl9zcVk1Nnh4Tlp4ejFESml3bm96VU9hOUVXSGtQZWhGNUFweVN6V3VmTmJVbVF6VjVnYWI0dw?oc=5) | MarketBeat |
-| 33h 前 | 2 | 中性 | [The Home Depot, Inc. $HD Shares Acquired by Envestnet Portfolio Solutions Inc. - MarketBeat](https://news.google.com/rss/articles/CBMi0AFBVV95cUxNaDl3V1NIZkplR2tNbXhVYTYwNUlVUi1sOEFsTnZicW5jc3hEWkJzTFhyN0Z5VVNHOHVIN2RGbXlKdi1xSC1wRE14YVZPcTBUaDRRTzhTMnZJWTdYTGRvNWxyMFJrRFREdVgwQlpIV0p2c0FKb1Q3NVpmT0ljdnd6aWctWm05SFQyN1U2STU0V0RVVUR6WXFDU3czdV92M0pQWC1sTWhGUkRNVTBUYkh3M0hMbl9RYV9nbjdIVGRJUTZ6OU9RODkzd194UHZIaTE0?oc=5) | MarketBeat |
-| 42h 前 | 2 | 中性 | [QRG Capital Management Inc. Has $60.97 Million Holdings in The Home Depot, Inc. $HD - MarketBeat](https://news.google.com/rss/articles/CBMi1AFBVV95cUxNRkRQUy1famYzamtQQlNWMXQ0RFVFc3FMOVNXTy1pd19RaGFxMFBySlZWS3BaaENmTktVeC1JLXNUUkpsdnd0aUxMd25hNE01SnRoTHF2QVVCcERGeUo4ZFoxVzk0QlJwUHhGNXU4bEJiZ2FDcG03SFhUYThUaFdvcWItSlM5dGFhWlVLdEs1UU9fU3RrR21lMS1wOUlGZUYxcWlwX1RNZTBXRlRPRE8ya1RCc0lQREJROUpEUTFQbjh0RV80Mzg0TXhNb2txd2NMdHdabQ?oc=5) | MarketBeat |
-| 0h 前 | 0 | 中性 | [Home Depot Near 52-Week Lows: Why A 3.2% Yield Makes Me Look Twice (NYSE:HD) - Seeking Alpha](https://news.google.com/rss/articles/CBMiswFBVV95cUxQcHhkQ2JrdEVyeUt0cnVSbV9kTE9kYWgxRzhwRHJBUUVlMzhpZGRCQUhoMGt1bmp5X1p4eE5EWkNwWURZcGpHM3dZYXFNWnczeWE1V0RIU3REbGo1OFFBRFU5NHBEbVBhNzlLUnY1emQ1ZkpSNEMtTUFYWjg1Z21wVUpSbWdpdjN6RDRqLWtnMDd1d1BRbmpIQ3VqRnZRaktIQVlLM1g5N0dSMlJzX1BQYVJ6Yw?oc=5) | Seeking Alpha |
-| 1h 前 | 0 | 中性 | [Home Depot stock last at USD 293.20 in New York trading - AD HOC NEWS](https://news.google.com/rss/articles/CBMitAFBVV95cUxPdHhIMllNTldwN0lWZWZ2SHZxSFBNem9FZFVvT1BBcWVocmEycTVqU29zM2FQWDVSLTdwX3UzekdZa3lLSDRqdlc1OVFvQVdLQnpwa180R0VFbUx4aGpwVzY4dVFUQ1JLc2lFMjAxcUlLZDZYTjNwMGJmT01SaFVDb3VXa3ZnUk1ZRnNUWHNVZHp4SFRVWW5teFFxakk4b3o4aWZpTi1TOVlMZGNxS3J6NkVpNGo?oc=5) | AD HOC NEWS |
-| 3h 前 | 0 | 中性 | [Home Depot vs. Floor & Decor: Which Stock Looks More Attractive? - TradingView](https://news.google.com/rss/articles/CBMitgFBVV95cUxPVDZ5U1dBRFJZcGxqdE8xTjAzMV9yUFJPWTVOb01YQy03S1FBMTJKR0FvbWNqRXQyRm9FSGEzRWZzWjByVUpNTEcyTkl4eVY3czJfN1MwWXBFS2ZPTlJmODRhRndrMWhEdFZiTGRfU2JCY0pxb19UVktHZGFKU0c5dVFRdDJDTm9qZXhwWmpyMl9INWprSkdxWnV3UV9nZURNSHFkXzYwRmMySU9zbEJEbzZScmNOZw?oc=5) | TradingView |
-| 8h 前 | 0 | 偏空 | [Home Depot stock falls 1.53 percent near its yearly low.??‹ - AD HOC NEWS](https://news.google.com/rss/articles/CBMiugFBVV95cUxQYmV0a2NaeW1TOTNlWndGcmM4YnkxOWpIZnFNVTFEOHVDY1FPcHdCTUFVTUJTS2c2NmFrMHI3Um5XZlVVNGxYWEhsNy1kSFA4YWNBMXRGX0U0UldQVnlLVlRJZi1iSFNFMmt6SVZ6ck1FTl84TjV4d0pBb0w5c2psMTZ4MkpJMmdrTEhOUC01d252V2JLRE5Lal9Eem9NY2lZZTBDSElUa3NMY1J0SGk2Mk1OMTYya3JDeHc?oc=5) | AD HOC NEWS |
-| 9h 前 | 0 | 中性 | [Home Depot: There Is Not Much To Be Optimistic About In The Near Term (NYSE:HD) - Seeking Alpha](https://news.google.com/rss/articles/CBMirgFBVV95cUxPVHRXSjFDdS1iTjFocm1nMFlTZklmUnJxYkRVZ3Q2aGxlb0FvY1hTV0JORFlKRl9nb1VEWWl4NzlUQTkteHFFZzA2aVc4QWVDU19RUS0yX0tPWUh3ZkJNOVJERTZmVUtLcTkzSVBkOElSVFdRNnF5MXFHbXduRC1ZMktqN2ZoTHRya21NUTRySFUwRnNXUWxaU09iTFhOOU5ybldVQkVFV3k1TnpmMmc?oc=5) | Seeking Alpha |
-| 13h 前 | 0 | 偏空 | [Home Depot stock heads into the open after a 1.1 percent drop - AD HOC NEWS](https://news.google.com/rss/articles/CBMiuwFBVV95cUxNbDFBZ3ZqUnV1dk9BN1VtMVRxaVlVSnpLU1pHdWxHZG5FYnJacEE5RW5KclE0STFGTHFKeU9jZmdiMXVwSTFxUnVfTGlDMU1hYTZhdzgyTmFPMHI1R01YYUZjZHVqQ2xzNGh0eWdIMEp3VThDdTFNaFpWRWlJYWRsS1hFLU1uMzBjQmNIWTNlNTlGWnlQSUhvTDl1YzN1dzdmU1lraXE4NHI2MFR0TWh6Y09iZWE0bWQ0QU5r?oc=5) | AD HOC NEWS |
-| 21h 前 | 0 | 中性 | [Home Depot (HD) Stock Could Be 7% Overvalued Following Gig Delivery Cost Questions - Yahoo Finance](https://news.google.com/rss/articles/CBMilAFBVV95cUxPVGpYbHAwRF9lbEZfTF9md3hhRUhOOUpEa2lMelBCdXNsYU9zVUxyVDFRel9IUEVOdy10SUhPd0ZmVXhrcERJWjFJQnNoT0ZxOEFoNWxqV2xYMm1VX0NSSjRwVmQycDV2ZE5lVDIzUm5keGtUME9Qc0poNkpTYlQ5UFVvTml1ZUZHdVNCVWdiRVlPM295?oc=5) | Yahoo Finance |
-| 24h 前 | 0 | 中性 | [Is HD Stock Worth Buying as Pro Growth Battles Housing Headwinds? - TradingView](https://news.google.com/rss/articles/CBMivAFBVV95cUxOTHNyenN4VjdONWVNR2VPd3oxM2tHeUhFWHhBZEZxMUJFX2w2amlPQmxkdkt4aXpDUmI4bE1PMXFtMzh3dUd1cDdjSks5T3EtTE43X0UwV09vZ3V4ZS1kMHVCTktyY0JHTHpUWnBhU2lNSGNpNzZNbEZxWUZNM2pzWUtyZ2V2ekoxVF82N3NyYVIzTHJ3MWplU0x6ODdWQlIweVpmUERSb2JmY3pZOXQ5Yl9pdjlIVHE0dWNITg?oc=5) | TradingView |
-| 24h 前 | 0 | 偏空 | [HD Stock Falls 11.4% in a Month. Does the Pullback Offer Opportunity? - TradingView](https://news.google.com/rss/articles/CBMivwFBVV95cUxOSWxjcG4xeUlmZk5SMzhKdmpEVG9FMWZ0OTd1NVdqaVl2eW1fZ0dVaDdCN1Y3UGRiMUtUZVJxZF84WklKSXoxZmNOVXFPMi1JMktJS3A4azUtOUhpSUkzX3RCc3FldkJUMzZmd2hDU0hQcGxYMzlfekJKRVo2V2dmQ1FhMHZLZVdyVy1yM1h1M1JuVEdPbXZaSk9CZ0FGYjBnUUxqaERyektxV1FGZlcyeklMNzlWV2UtZS14WXJ3QQ?oc=5) | TradingView |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
-- 图形上是空头排列——现价距 20 日 311.53（-6.2%）、50 日 327.26（-10.7%）、200 日 336.60（-13.2%）。本报告的买入规则本身会过滤掉这种形态。
+- 图形上是空头排列——现价距 20 日 308.52（-5.0%）、50 日 325.54（-9.9%）、200 日 336.14（-12.8%）。本报告的买入规则本身会过滤掉这种形态。
 - 摆动高低点都在下移，属于下降结构；在出现一个更高的低点之前，任何反弹都还只是反弹。
 - 负债/权益 380%，杠杆高；利率或再融资条件变化对它的影响会被放大。
-- 政策面对该板块的倾向为 -0.93（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.79（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -142,8 +127,6 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 | 日期 | 开 | 高 | 低 | 收 | 涨跌 | 成交量 |
 |---|---:|---:|---:|---:|---:|---:|
-| 2026-09-02 | 319.15 | 319.81 | 315.39 | **316.18** | -0.4% | 3,499,300 |
-| 2026-09-03 | 318.21 | 320.44 | 315.21 | **318.07** | +0.6% | 3,377,700 |
 | 2026-09-04 | 316.70 | 321.80 | 316.10 | **321.05** | +0.9% | 2,261,000 |
 | 2026-09-08 | 320.73 | 321.50 | 313.24 | **313.70** | -2.3% | 5,655,700 |
 | 2026-09-09 | 310.47 | 313.39 | 309.84 | **310.45** | -1.0% | 3,611,700 |
@@ -155,8 +138,10 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-09-17 | 307.01 | 310.40 | 302.50 | **302.51** | +0.0% | 4,152,600 |
 | 2026-09-18 | 298.68 | 302.25 | 298.25 | **299.98** | -0.8% | 8,191,600 |
 | 2026-09-21 | 301.00 | 301.74 | 295.39 | **297.20** | -0.9% | 5,434,300 |
-| 2026-09-23 | 303.43 | 304.13 | 296.67 | **296.72** | -0.2% | 4,684,900 |
+| 2026-09-22 | 302.09 | 306.31 | 300.18 | **305.35** | +2.7% | 5,456,100 |
+| 2026-09-23 | 303.43 | 304.13 | 296.67 | **296.72** | -2.8% | 4,684,900 |
 | 2026-09-24 | 296.00 | 299.10 | 291.07 | **292.18** | -1.5% | 7,053,800 |
+| 2026-09-25 | 292.69 | 297.14 | 291.42 | **293.20** | +0.3% | 5,893,927 |
 
 ## 七、自己去查（本页不做独立验证）
 

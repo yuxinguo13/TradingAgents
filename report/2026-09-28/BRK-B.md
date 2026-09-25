@@ -1,6 +1,6 @@
 # BRK-B · 伯克希尔(B类)（Berkshire Hathaway）
 
-_金融 · 数据截至 2026-09-24 收盘 → 面向 2026-09-28 开盘_
+_金融 · 数据截至 2026-09-25 收盘 → 面向 2026-09-28 开盘_
 
 [← 回到 2026-09-28 当日报告](../2026-09-28.md)
 
@@ -10,52 +10,52 @@ _金融 · 数据截至 2026-09-24 收盘 → 面向 2026-09-28 开盘_
 
 ```text
        BRK-B · 近 126 个交易日（日线收盘）
-523.2 ┤                                                        ╭─╮
-518.8 ┤                                                       ╭╯ │             ╭╮
-514.3 ┤                                                      ╭╯  │            ╭╯│
-509.9 ┤                                                    ╭─╯   ╰╮           │ ╰╮
-505.5 ┤                                         ╭─╮       ╭╯      ╰╮  ╭──╮╭───╯··╰─
-501.0 ┤                                        ╭╯ │       │        ╰─╮│··╰╯·
-496.6 ┤                                  ╭╮   ╭╯  ╰─╮     │    ····  ╰╯
-492.1 ┤···::::::::::          :::::::::::│╰╮╭╮│:::::╰╮╭─╮╭╯····::::::::::::::::::::
-487.7 ┤   ··········:::::::::╭╮       ╭╮╭╯ ╰╯╰╯     ·╰╯·╰╯·
-483.3 ┤      ╭╮     ·····  ╭─╯│ ╭╮   ╭╯╰╯      ·····
-478.8 ┤   ╭──╯╰─╮    ╭╮  ·╭╯··╰─╯╰╮· │·········
-474.4 ┤─╮╭╯     ╰─╮  │╰╮ ╭╯       ╰╮╭╯
-470.0 ┤ ╰╯        ╰──╯ ╰╮│         ╰╯
-465.5 ┤                 ╰╯
+522.9 ┤                                                      ╭──╮
+518.6 ┤                                                      │  │             ╭╮
+514.3 ┤                                                     ╭╯  │            ╭╯│
+510.0 ┤                                                   ╭─╯   ╰╮          ╭╯ ╰╮
+505.7 ┤                                        ╭─╮       ╭╯      ╰╮  ╭──╮╭──╯···│╭─
+501.4 ┤                                       ╭╯ │       │        ╰╮·│··╰╯··    ╰╯
+497.1 ┤                                 ╭╮   ╭╯  ╰╮     ╭╯    ···· ╰─╯
+492.8 ┤:::                              ││ ╭─╯    ╰───╮ │  ···:::::::::::::::::::::
+488.5 ┤···········::::::::::::::::::╭─╮╭╯╰─╯::::::::··╰─╯··::
+484.2 ┤     ╭╮    ·····   ╭──╮ ╭╮   │ ╰╯       ·····
+479.9 ┤  ╭╮╭╯╰╮        ··╭╯··╰─╯╰╮  │  ········
+475.6 ┤ ╭╯╰╯  ╰─╮   ╭─╮ ╭╯      ·╰╮╭╯··
+471.3 ┤ │       ╰╮╭─╯ ╰╮│         ╰╯
+466.9 ┤─╯        ╰╯    ╰╯
       └────────────────────────────────────────────────────────────────────────────
-       2026-03-25                       2026-06-25                       2026-09-24
+       2026-03-27                       2026-06-29                       2026-09-25
        · SMA50   : SMA200   ─ close
 ```
 
 ```text
        BRK-B · 近 21 个交易日（放大看最近节奏）
-519.8 ┤               ╭╮
-517.6 ┤              ╭╯│
-515.4 ┤             ╭╯ │
-513.1 ┤             │  │
-510.9 ┤            ╭╯  │
-508.7 ┤       ╭╮   │   ╰─╮
-506.5 ┤       │╰───╯     │╭╮
-504.2 ┤─────╮╭╯          ││╰
-502.0 ┤     ╰╯           ╰╯
+519.8 ┤             ╭╮
+517.6 ┤            ╭╯│
+515.4 ┤           ╭╯ │
+513.1 ┤           │  │
+510.9 ┤          ╭╯  │
+508.7 ┤     ╭╮   │   ╰─╮
+506.5 ┤     │╰───╯     │ ╭╮╭
+504.2 ┤───╮╭╯          │╭╯╰╯
+502.0 ┤   ╰╯           ╰╯
       └─────────────────────
-       2026-08-25 2026-09-24
+       2026-08-27 2026-09-25
 ```
 
-成交量近 63 日： `▆▅▄▂▂▂▁▁▂▃▄▂▁▁▂▄▂▂▃▂▂▄▃▃▃▂▁▂▁▃▃▃▁▂▃▂▂▂▄█▃▂`
+成交量近 63 日： `▃▃▂▂▂▁▁▂▂▂▂▁▂▃▃▂▂▂▂▂▂▂▂▂▂▂▁▁▄▃▂▂▁▂▂▂▂▃█▂▃▁`
 
 ### 图形读数
 
-- **均线排列**：均线偏多 — 现价距 20 日 507.71（-0.5%）、50 日 505.74（-0.1%）、200 日 492.61（+2.6%）
-- **形态结构**：上升结构 — 更高的高点 + 更高的低点；前高 506.70 → 523.74（+3.4%）、前低 495.68 → 500.70（+1.0%）
-- **动能**：RSI(14) 48，中性；近一月的斜率慢于近三月（月 +0.2% vs 季 +2.1%），涨势在放缓
+- **均线排列**：均线偏多 — 现价距 20 日 507.72（-0.4%）、50 日 506.29（-0.2%）、200 日 492.65（+2.6%）
+- **形态结构**：上升结构 — 更高的高点 + 更高的低点；前高 506.70 → 523.74（+3.4%）、前低 500.70 → 501.41（+0.1%）
+- **动能**：RSI(14) 48，中性；近一月的斜率慢于近三月（月 +0.1% vs 季 +1.4%），涨势在放缓
 - **波动**：日均真实波幅约为价格的 1.3%；按本报告 2 ATR 的止损惯例，一个 R 相当于 2.6% 的价格距离
-- **位置**：距 52 周高点 -4.6%，距 52 周低点 +8.5%
-- **量能**：最新一日成交量仅为 20 日均量的 0.6 倍，缩量
-- **相对强度**：近一月跑输 标普500 0.2 个百分点
-- **支撑 / 阻力**：最近的摆动低点 500.70，摆动高点 506.70（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
+- **位置**：距 52 周高点 -4.5%，距 52 周低点 +8.6%
+- **量能**：最新一日成交量为 20 日均量的 0.6 倍，量能正常
+- **相对强度**：近一月跑输 标普500 0.8 个百分点
+- **支撑 / 阻力**：最近的摆动低点 501.41，摆动高点 506.70（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
 
 **我的读图结论**：趋势向上且结构完整，且贴近 52 周高点——追高的代价是止损离得远；顺势的一侧在上方，风险在于结构一旦破位就要认
 
@@ -69,7 +69,7 @@ _以上每一条都是对已经发生的价格的描述。均线、RSI、摆动�
 - **增长**：最新季度营收同比 +19.2%；盈利同比 +107.8%；最近 6 次财报里 4 次超预期。
 - **盈利质量**：毛利率 30.3%、营业利润率 32.6%、净利率 22.3%、ROE 12.1%。
 - **资产负债**：现金 $3,655.14亿；有息负债 $1,285.99亿；负债/权益 17.1%（负债很轻）；流动比率 2.89；自由现金流 $719.75亿，为正。
-- **卖方预期**：3 位分析师覆盖；平均评级「买入」（2.00/5，1 为最看多）；目标价均值 547.67（较现价 +8.4%），区间 510.00–604.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
+- **卖方预期**：3 位分析师覆盖；平均评级「买入」（2.00/5，1 为最看多）；目标价均值 547.67（较现价 +8.3%），区间 510.00–604.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
 
 **分季度损益**（季度数据，最新在左）
 
@@ -110,27 +110,13 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 2h 前 | 6 | 中性 | [Berkshire's Buyback Engine Roars Back as Abel Era Begins - AD HOC NEWS](https://news.google.com/rss/articles/CBMixwFBVV95cUxNX2JTcWR0c0d1UnBGZXNxam9rV0JCMG5sLUZlOXhob2J3YWtzU1NwSzZzTWkyakViUnpiVHFEX3puQlprbXFXemQzNGNSSUYtbnBoZ2xlUG90RmlrdkJNUTNyc0d2Ti1zVTdpLUIybFRSdmdYWGluZmpKMDA4eV9fX0JUMDBrU0hod3RoVmNmOEVTQ1FjQ1RaeFE4cTJZMEpaT0dXeFJCZzZDTjI2RWwyOERHRVZvYzlzcE1tTVpxQkYycUdrWWRv?oc=5) | AD HOC NEWS |
-| 25h 前 | 6 | 中性 | [Berkshire Hathaway Owns 400 Million Shares of Coca-Cola. Here Is What That Dividend Is Worth Now. - 24/7 Wall St.](https://news.google.com/rss/articles/CBMi1gFBVV95cUxNYzliREkyQVc4V1dBSUpBUEVVakU0d1BtWEtTcGpRd2xOeW1IdVMwWVpibVZzTS04NGNwX1g4anJfQjhrdHJ4ZEwxbnhzVVlYNDk5LTVibWxkbHB5VXBPelZKMDhGXy1UNzByWU1XamZ4QzBwRzBFclV5OV9kZHlCNmJPbkZ2MDNLT3Bub1FqeTJhUXpPVTJGZGVKTWhkVTRQdXFFVW8wTkFQSkd1bnpBXzJ6VW5fTmNnUkJOaUdsUWJmY0JuUlJOZTlfMHZsQ2ZNS2dTQnp3?oc=5) | 24/7 Wall St. |
-| 2h 前 | 0 | 中性 | [Berkshire Hathaway stock remains flat near $500 amid leadership change and strategic shifts. - Pluang](https://news.google.com/rss/articles/CBMinAFBVV95cUxQT1lvdDVBVlJ0UU9PaVpCc0xXV3M5XzAyLTBfYlBucjR3c09NUzFJanRTWE4tRk43NVBrcDFBbmRSMUh4T3lpVmZTa0FvaFgyOGlqU3JWQnByMy1nd1JfLTcxNERsZmtJc0JBd3V3dkdJay1KZU1MbjNQeXF3M3NGUnp5Y1poUVg0LVg1eGltRFdVVlBMOUl0NlBNSXo?oc=5) | Pluang |
-| 3h 前 | 0 | 中性 | [Is Berkshire Hathaway Stock a Buy, Hold, or Sell Above $500? - AOL.com](https://news.google.com/rss/articles/CBMigwFBVV95cUxPQmU0VXFZaXA2V21ETzZPdVZFemp6SUJvTEJIZC1KUVNVR3dBSTl0Q2U3QlNLYUllQTg1YXZvRExrWlRMZHhJT1ZMd19kenRGWklfTXBlalRfeXNZWWdQdUdWdHFHRVBzYVJfel81MFpTX1JoWU5Oek91TWhwR0RIZG5MZw?oc=5) | AOL.com |
-| 3h 前 | 0 | 中性 | [Is Berkshire Hathaway Stock a Buy, Hold, or Sell Above $500? - 24/7 Wall St.](https://news.google.com/rss/articles/CBMiogFBVV95cUxPTHQ3SjByZ1B3bWw1OUlMdG9WWG9DUTAtMXNiSDVNNThNbmdQS3M3VGdtT1hRUFhub0JRTmUtQWV3djJGaU43WTV2bXUwaUVTVFloNUVoUUtUdm1TaFhNaTFCbUZsLS1VRk55dDZzQ2tka0toYlFoNTZSVTZMdGFlajV2S0xTdTNPVW50Z0hhQ3pLTlQ1U1ZaVXpWOG9pbWNRekE?oc=5) | 24/7 Wall St. |
-| 3h 前 | 0 | 中性 | [Warren Buffett Helps Berkshire Hathaway Make $848M From Coca-Cola Stock Each Year, Even if the Price Does - Benzinga](https://news.google.com/rss/articles/CBMihwJBVV95cUxOa29KNDNCLWRRV1M5R3ZqNl9nWXhnaE02VC14TXpJRnIyRkpKVEVDMURJWV80YnRtVnNjTkVzajVoWDdsMU9uMVAyWVNjQmc3VnJUdU9NR0Y0V0xTYTNmcmh4U3Q0bTVncWVHUGxyLXRjdWZVWXhxYlphNkZLZ2YyVDNlV1c1MUg4dmlnSU9qT1hhclg1WVdDcWR4OWNkNVpzZWRPckZGV0R4QXhqYjFsZUVhYUs2cW13WEp6OHowNnhWR0FBMl9oMHhCVmlWVGMwMUxMQVNlc3EtaVRXeHJmQmhPS01jZ0lzbDktTzJFZFVsQzM3OUhkQnUxM1dCNEZIX3VnRWUzTQ?oc=5) | Benzinga |
-| 4h 前 | 0 | 中性 | [Can AI Upstart Lemonade Topple Berkshire Hathaway? - The Motley Fool](https://news.google.com/rss/articles/CBMipAFBVV95cUxNZDJHQU1SWUJGRHJSRnZvdHB6cVpwbW1BcUlnblYyNmRzcUNDbDJBa05PSFl3amRRSm5TSWViR0tNUnBkYnNIbUNva0VJTlB3SXFUQWVTVUY1aVZEdFdVOEVkZWlEMloyWlY3TzNwczd5WUVCMzluTlVlb1hVUDhTcjBwX3JzSEFEcTBRUFJuWnUtU25sRVc4RnNJWV9Nd01MOHAyVA?oc=5) | The Motley Fool |
-| 5h 前 | 0 | 中性 | [Buffett's Succession Plan Shows What Makes Berkshire Hathaway Unique (NYSE:BRK.A) - Seeking Alpha](https://news.google.com/rss/articles/CBMitAFBVV95cUxOWEEwZTJETVBRM3FYVThEYXo4WFQ0U09TczRqWXkyUEVMOVJwQ0Z1LVdPX1A5ZHpNeFl3R180cWRSaXlfeUZhSjFWTmU4Mjl6bkE1SWl6Z3RhZlEyUUxEcUJLMnRLN0k0UFp1Nmh5Smh0bWxycGtmMFFteEpuV0FDZTlBWEx2Slh0RFZrLWNLVHZTRURlX3JJeDk5UVlaT3VaZXljY2NBbkdHaXBZRDRBeDlTMVU?oc=5) | Seeking Alpha |
-| 6h 前 | 0 | 偏多 | [Berkshire Hathaway Just Bought $212 Million of This Beaten Down Stock in 3 Days, and Its Stake Has Increased 81% This Quarter - Yahoo Finance](https://news.google.com/rss/articles/CBMioAFBVV95cUxNaEpEOEc1NUQwVEY3NC1IRktoRjJPX2J5eHFCam5xSGNRTG56aGZkeW15OTUtRDlfMWs1S0t5cC1FR2YzWllZT3lkZmEyZ2t2X3UzcFdFUk1mLWpyM2p1N1ZhMDJqYXB3aEZEWUxFN3BPUVJZYkZRRzRrSDB2ZzV4R28yMW02RzhoY1ctQWpkUTU4d1NPcmFoakxwV0diX2Vu?oc=5) | Yahoo Finance |
-| 7h 前 | 0 | 中性 | [Warren Buffett's Successor, Greg Abel, Has 55% of Berkshire Hathaway's $360 Billion Portfolio Invested in 4 Standout Stocks - The Motley Fool](https://news.google.com/rss/articles/CBMi2gFBVV95cUxOZzdGVldlNTMzNVJZWEJmM3VhNzdRejMyNUEya24wY1pDYzVjdWxQQWNBMld2U2RMRFNXWVdZaUNvTXF0eVBfVVFHb0RDZ3hvd0ZVZWMxclBJRm0tWEZlRldUUDJocTZpeG5hY1lkUl9Ma1dKNUsyZmhLaDhYcGJ4LVNGRms0U2xJWWsxVkp3aTVqbnA1VzN5N19NYmJvY0tWQW9icHBDLUdrXzhLb3dHRVFYRDJiWWUtM04ydElKMHdpZXRFNHk2bzAydzBrdzVlb2JQN3ByMzZQZw?oc=5) | The Motley Fool |
-| 45h 前 | 0 | 偏多 | [Berkshire Hathaway Now Owns Over 10% of This Beaten-Down Homebuilder - 24/7 Wall St.](https://news.google.com/rss/articles/CBMisAFBVV95cUxPUGZ3enZjUGxrUm9fTzNuYko2MDhqN2hJYUUySEVBRnlFVjFESGZPOGVtTUUwSFhJXzBVZC1oUmcyZzQ5OG5wQ2J2dGZUWUFZTFRKUFd3clpES3NGT0JhUGJObk4wY1pRYUJFV2paclBrWHFNMnJsOEtydXYtdlg4UTMyS21wdFJJeTUxeGFzS0xDNFB3WFpoeng4djJwNzVjRXVTLVk0SG1KNVY3U2k3Qw?oc=5) | 24/7 Wall St. |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
-- 政策面对该板块的倾向为 -0.95（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.83（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -138,8 +124,6 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 | 日期 | 开 | 高 | 低 | 收 | 涨跌 | 成交量 |
 |---|---:|---:|---:|---:|---:|---:|
-| 2026-09-02 | 503.46 | 508.93 | 502.60 | **505.24** | +0.6% | 3,298,400 |
-| 2026-09-03 | 506.60 | 508.95 | 505.21 | **508.13** | +0.6% | 3,847,300 |
 | 2026-09-04 | 505.31 | 507.50 | 504.30 | **506.03** | -0.4% | 3,277,400 |
 | 2026-09-08 | 503.00 | 507.30 | 500.70 | **505.83** | -0.0% | 4,398,000 |
 | 2026-09-09 | 504.10 | 509.51 | 501.21 | **506.72** | +0.2% | 3,359,600 |
@@ -151,8 +135,10 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-09-17 | 518.95 | 520.00 | 508.78 | **509.20** | -2.0% | 5,993,400 |
 | 2026-09-18 | 507.16 | 512.07 | 506.13 | **509.77** | +0.1% | 12,497,100 |
 | 2026-09-21 | 507.93 | 510.50 | 501.98 | **502.01** | -1.5% | 4,807,400 |
-| 2026-09-23 | 503.86 | 511.28 | 502.81 | **507.17** | +1.0% | 5,400,400 |
+| 2026-09-22 | 503.33 | 505.58 | 501.41 | **503.49** | +0.3% | 4,704,000 |
+| 2026-09-23 | 503.86 | 511.28 | 502.81 | **507.17** | +0.7% | 5,400,400 |
 | 2026-09-24 | 509.58 | 510.00 | 504.98 | **505.18** | -0.4% | 2,701,200 |
+| 2026-09-25 | 505.25 | 505.83 | 502.24 | **505.48** | +0.1% | 2,910,287 |
 
 ## 七、自己去查（本页不做独立验证）
 

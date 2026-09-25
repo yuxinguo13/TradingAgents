@@ -1,6 +1,6 @@
 # WMT · 沃尔玛（Walmart）
 
-_必需消费 · 数据截至 2026-09-24 收盘 → 面向 2026-09-28 开盘_
+_必需消费 · 数据截至 2026-09-25 收盘 → 面向 2026-09-28 开盘_
 
 [← 回到 2026-09-28 当日报告](../2026-09-28.md)
 
@@ -10,51 +10,51 @@ _必需消费 · 数据截至 2026-09-24 收盘 → 面向 2026-09-28 开盘_
 
 ```text
        WMT · 近 126 个交易日（日线收盘）
-133.5 ┤                      ╭╮
-131.1 ┤            ╭╮ ╭─╮  ╭─╯╰╮
-128.7 ┤          ╭─╯│ │ ╰──╯   │
-126.3 ┤     ╭─╮ ╭╯  ╰─╯········│········
-124.0 ┤··╭──╯·╰─╯······        │        ········
-121.6 ┤──╯                     ╰╮       ╭╮      ····
-119.2 ┤                         ╰─╮  ╭──╯╰╮         ····                :::::::::::
-116.9 ┤                           │ ╭╯    ╰──╮::::::::::····::::::::::::
-114.5 ┤                      :::::╰─╯:::::   ╰─╮   ╭╮╭╮   ╭╮····╭───╮
-112.1 ┤             :::::::::                  │╭──╯╰╯╰╮  ││ ╭──╯   │·····
-109.7 ┤    :::::::::                           ╰╯      ╰╮╭╯╰─╯      │     ····╭╮·╭─
-107.4 ┤::::                                             ╰╯          │     ╭─╮╭╯╰─╯
-105.0 ┤                                                             │╭─╮╭─╯ ╰╯
-102.6 ┤                                                             ╰╯ ╰╯
+132.2 ┤           ╭╮ ╭╮    ╭──╮
+130.0 ┤          ╭╯│ │╰──╮╭╯  │
+127.7 ┤     ╭╮  ╭╯ ╰─╯   ╰╯   │
+125.5 ┤   ╭╮│╰─╮│·············│············
+123.2 ┤───╯╰╯  ╰╯             │            ·····
+121.0 ┤                       ╰╮      ╭──╮      ····
+118.8 ┤                        ╰─╮  ╭─╯  │ ╭╮       ····        :::::::::::::::::::
+116.5 ┤                          ╰╮╭╯   :╰─╯╰╮::::::::::···:::::╭╮
+114.3 ┤                     ::::::╰╯::::     ╰╮   ╭───╮    ·····│╰─╮·
+112.0 ┤             ::::::::                  │╭╮╭╯   ╰╮ ╭──╮╭──╯  │ ·····
+109.8 ┤    :::::::::                          ╰╯╰╯     │╭╯  ╰╯     ╰╮     ···╭╮··╭╮
+107.6 ┤::::                                            ╰╯           │    ╭─╮ │╰──╯╰
+105.3 ┤                                                             │╭╮ ╭╯ ╰─╯
+103.1 ┤                                                             ╰╯╰─╯
       └────────────────────────────────────────────────────────────────────────────
-       2026-03-26                       2026-06-26                       2026-09-24
+       2026-03-27                       2026-06-29                       2026-09-25
        · SMA50   : SMA200   ─ close
 ```
 
 ```text
         WMT · 近 21 个交易日（放大看最近节奏）
-110.53 ┤                  ╭─╮
-109.54 ┤            ╭╮    │ │
-108.55 ┤      ╭╮    │╰╮   │ │
-107.57 ┤      │╰╮  ╭╯ ╰╮ ╭╯ ╰
-106.58 ┤     ╭╯ │  │   ╰─╯
-105.59 ┤    ╭╯  ╰──╯
-104.60 ┤─╮ ╭╯
-103.62 ┤ │ │
-102.63 ┤ ╰─╯
+110.53 ┤                 ╭─╮
+109.54 ┤           ╭╮    │ │
+108.55 ┤     ╭╮    │╰╮   │ │
+107.57 ┤     │╰╮  ╭╯ ╰╮ ╭╯ ╰─
+106.58 ┤    ╭╯ │  │   ╰─╯
+105.59 ┤   ╭╯  ╰──╯
+104.60 ┤  ╭╯
+103.62 ┤  │
+102.63 ┤──╯
        └─────────────────────
-        2026-08-26 2026-09-24
+        2026-08-27 2026-09-25
 ```
 
-成交量近 63 日： `▅▂▅▄▂▂▁▂▂▃▂▃▂▂▃▃▃▃▂▂▂▂▂▂▂█▆▄▃▃▄▃▃▂▁▂▃▂▂▄▂▃`
+成交量近 63 日： `▂▃▃▂▂▁▁▁▂▂▂▂▂▂▂▃▂▃▂▂▁▂▁▂▄█▄▃▃▃▂▃▂▂▁▂▂▁▅▂▂▂`
 
 ### 图形读数
 
-- **均线排列**：跌破 200 日线 — 现价距 20 日 106.84（+0.7%）、50 日 109.38（-1.6%）、200 日 118.13（-8.9%）
+- **均线排列**：跌破 200 日线 — 现价距 20 日 107.11（+0.8%）、50 日 109.25（-1.2%）、200 日 118.11（-8.6%）
 - **形态结构**：上升结构 — 更高的高点 + 更高的低点；前高 109.35 → 109.74（+0.4%）、前低 105.16 → 106.08（+0.9%）
-- **动能**：RSI(14) 48，中性；季线仍为负（-6.9%）但近一月已转正（+2.1%），属于反弹初期而非既成趋势
-- **波动**：日均真实波幅约为价格的 1.7%；按本报告 2 ATR 的止损惯例，一个 R 相当于 3.5% 的价格距离
-- **位置**：距 52 周高点 -19.6%，距 52 周低点 +7.8%
-- **量能**：最新一日成交量为 20 日均量的 1.1 倍，量能正常
-- **相对强度**：近一月跑赢 标普500 1.7 个百分点
+- **动能**：RSI(14) 49，中性；季线仍为负（-6.4%）但近一月已转正（+3.5%），属于反弹初期而非既成趋势
+- **波动**：日均真实波幅约为价格的 1.7%；按本报告 2 ATR 的止损惯例，一个 R 相当于 3.4% 的价格距离
+- **位置**：距 52 周高点 -19.3%，距 52 周低点 +8.2%
+- **量能**：最新一日成交量为 20 日均量的 0.8 倍，量能正常
+- **相对强度**：近一月跑赢 标普500 2.6 个百分点
 - **支撑 / 阻力**：最近的摆动低点 106.99，摆动高点 109.35（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
 
 **我的读图结论**：趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌
@@ -69,7 +69,7 @@ _以上每一条都是对已经发生的价格的描述。均线、RSI、摆动�
 - **增长**：最新季度营收同比 +5.9%；盈利同比 -9.1%；最近 7 次财报里 6 次超预期。
 - **盈利质量**：毛利率 24.8%、营业利润率 3.5%、净利率 3.0%、ROE 22.3%。
 - **资产负债**：现金 $115.29亿；有息负债 $750.92亿；负债/权益 71.7%（负债适中）；流动比率 0.77（短期偿付紧）；自由现金流 $71.28亿，为正。
-- **卖方预期**：40 位分析师覆盖；平均评级「买入」（1.53/5，1 为最看多）；目标价均值 127.42（较现价 +18.4%），区间 81.00–155.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
+- **卖方预期**：40 位分析师覆盖；平均评级「买入」（1.53/5，1 为最看多）；目标价均值 127.42（较现价 +18.0%），区间 81.00–155.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
 
 **分季度损益**（季度数据，最新在左）
 
@@ -112,13 +112,9 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 2h 前 | 5 | 偏空 | [Walmart's Multi-Pronged Commerce Growth Initiatives Meet Premium Valuation Risks (Rating Downgrade) - Seeking Alpha](https://news.google.com/rss/articles/CBMivAFBVV95cUxOMy03bGZwdnM3cE83dkhYdDV2YVF0WU5xbjRBeFp3QVNzRW5pYUFKY3lPQzJJZDVDc0tyNFRhbGlld25MUjBiUmowSEhER3EzV3VqNWV4aTYxUUZ3VDY5aVFyOEpPYWtUMWNMTXg3WUZYcXhHY0NBcTRJdXZiRUFfbE9fSnZYSEJXa2l6bHBuNWdodUtRTUd3ZlJJWEx2SXI4STdnNGxuTEZpcjR6UEVnbVhrYXV6c3Y1RktJdg?oc=5) | Seeking Alpha |
-| 0h 前 | 0 | 中性 | [Billionaire Walmart heiress’ wealth grew $33B. Now she’s funding med school - The Independent](https://news.google.com/rss/articles/CBMiowFBVV95cUxQNjVrMFFxc0htV25jeVo2S1dYZFlIaTBNUGw4bWN3NU10aVB2OE9IaUJKQnJXRWtvRlpTWGFhMnRucnRubndoX3B0elpYUy1TbjROMDF1b2tUeTZmZEJEYlhJUHpOTWNEX2lvLVYzQlJoX1p6WGZUM3Rxc0RQbUt0TjJSeFB1aVJ3Nm1WQ1ZHS1VmeEhjd3ZjejRDUjRwWFpHVVdJ?oc=5) | The Independent |
-| 2h 前 | 0 | 中性 | [Walmart (WMT) Stock Looks Fully Valued On Digital Payments News - simplywall.st](https://news.google.com/rss/articles/CBMi0AFBVV95cUxQMkd0ZldpSjc0VGVVb203NnZrOFFCWGVRYXB1dkc2R1lMOTBpSjdqc0tDSVJpSjVqbTFVM2RyenJIaWZIcFVsTkFVMldseXFKWmxGNFJYeFNKSzFGVWxnMnduRkVCbE54WnJaaVZqcXg3YlZuMkd4a3dJOE9OVGxQcERaYlV1OXNpMEJpLVdWNDhYYXBxd1U4TTNvRWRyc094clFBbTA5aFpYSjRXOG5yOGlsTEhOOW1PMUxRWXplVXVIVHBDa2JvY3FqMjk0ZVdy0gHWAUFVX3lxTE1hY1RkakQxWEFQS29LNlEtWEZsSmFLb3BZN1I0aHJHVk82aFl5ZW5iNGM5UTJOTW9wVnI0dDNmTUExRHRDV3VjRmRKdmhVZ3NyWm5rZXpwQlNlYU5jOThmQ09EYWVqV2p2NWJTbXdldDg4NURFbjRyVEstRWowejd6a1hyZUd5a0FmSGtfc21QVjBzak41RjF2amtaR1l3UTdWWmpXbmVCVzlCc05EZkJQUm12aFN2ZlhyWFE4M1pGWUhUY0tSaVpoM3BHSlpzZS1lOFVHS1E?oc=5) | simplywall.st |
-| 5h 前 | 0 | 中性 | [Apple, Berkshire, and Walmart All Have New CEOs. Which One Will Do Best? - Barron's](https://news.google.com/rss/articles/CBMikgFBVV95cUxQSXl3UVY2UHlqTS1HMGZ4M0dzMmdYWk9wNDJhaEV1Z1BROXYxSnBNRldUMmFFamIwa2ItLXFjVHQ5UDg5UWc2d1BZbXpiSWN0QVNsQVYzQkw0dGh0SnZZZ2NVYWEycGZfZnVUMzRhTTJ4dzZVcjB4cl9xMVlCbXZtRkY4eWxKbWZwRmk0NUpHTGZaQQ?oc=5) | Barron's |
-| 6h 前 | 0 | 中性 | [Walmart awards Edible Garden a third hub for fresh herbs. More stores are expected to carry them. - Stock Titan](https://news.google.com/rss/articles/CBMivwFBVV95cUxPU3RMaXhzelFnZkx1N19RTkRQNzNQbldpOFB1U0QzU1EyR2ZoMEw1ZnJnSnhfeW9wRXR0Y0NIdWVjdDFwSFdXX2MtdHhTVVEweGZCcWM4UEVac1N0OHpiQWx1N2dDRDg1LTJ1djBoZVYtdVBEZHRtUjhjeldUTHF6b2k5ZVNTOUFCSk94YzBMbXFzQnlIa2o4ejZja1JFOTN5bWlPaU5pem5xT0JRZWJUWXBQd05ycGRKMVQtSEUyMA?oc=5) | Stock Titan |
-| 10h 前 | 0 | 中性 | [Alice Walton got $33 billion richer last year without running a company - Fortune](https://news.google.com/rss/articles/CBMi6gFBVV95cUxQdTAwR0REM19PT1VBakdQU2E3NUQ2T1NrZVRaRF9VRHdaVVZwWks0bFprR2tqZnY0akJqei13T1h0YVFkQmdrcGFqa3lmRnl1YlJQOHdTU2dWRDA3R2JKWTVfeVhfd0twOTlGNEFnVU92bENCNFd1TF9KMFJKbjgzRmdKZ3NIeUJfNFJUaUM4amFOaWJZVVM4T3EtaFU4MWVmRF93eG0wMnhjVHU5R2pBUUQ3R2RNQWRVWlFfZkp3SHRBWWc1bDFncW85a1FUVGxLMEw5Z0hoRmxjSDBlQmNTekFWdndrYkdNeUE?oc=5) | Fortune |
-| 46h 前 | 0 | 中性 | [Walmart Stock (WMT) Climbs as New Look Neighborhood Market Opens in Texas - TipRanks](https://news.google.com/rss/articles/CBMiqwFBVV95cUxNcEpWdEJ1Y2dyTGU3ZUNIT3lNUDV2MW85X0JJSlNuVEF2M2ZveDdrNUgtWnNRYTJOVnN3NVpVQk5IcUtDcDAyRkdoZGpjQWFUZXlMQ2FuRHVsSDdJY28tbGVfR1VVWjRMa19USUJVcHlFNDRHUlIxdlo1ZmhJMWl6ZFVOaU1KVkh1TmxzeGx0bjJ6cjFIdnViOTNadDFrVjVmUXgybHJMQVdHMWc?oc=5) | TipRanks |
+| 2h 前 | 0 | 中性 | [Walmart stock last at USD 107.92, up 0.31 percent in New York trading - AD HOC NEWS](https://news.google.com/rss/articles/CBMixgFBVV95cUxQbk9vU1c0bzRIc3ZUSUdLalZGaUFqRXBmMUxNRndUeXltRmRhWmxzaFpqSzU2SzY4OFBKdDN1X3cyY0RUZHJiRHVwNnlXZF9Qd1F1d1V0el90bElpRnVwN3ZZY0JEUDF6U2FsU3pndVhVclVUWFpNUXVMWnVNTktvVGNjN285OXJrRWhsX0k0OFpPVTRZU2RIME5UbVVaMG9lSU5lQ0Y4dy1GV2J2M3Rxak9HSTJfQVdtd2hOWFNZSDU2Z2ItcFE?oc=5) | AD HOC NEWS |
+| 3h 前 | 0 | 中性 | [Billionaire Walmart heiress using her $33B wealth to fund tuition-free medical school - The Independent](https://news.google.com/rss/articles/CBMiowFBVV95cUxQNjVrMFFxc0htV25jeVo2S1dYZFlIaTBNUGw4bWN3NU10aVB2OE9IaUJKQnJXRWtvRlpTWGFhMnRucnRubndoX3B0elpYUy1TbjROMDF1b2tUeTZmZEJEYlhJUHpOTWNEX2lvLVYzQlJoX1p6WGZUM3Rxc0RQbUt0TjJSeFB1aVJ3Nm1WQ1ZHS1VmeEhjd3ZjejRDUjRwWFpHVVdJ?oc=5) | The Independent |
+| 5h 前 | 0 | 偏多 | [Walton Family Cashes Out $534M In Walmart Stock — Retail Traders Cry 'Zero Trust' As WMT Slips From Record Highs - Stocktwits](https://news.google.com/rss/articles/CBMiggJBVV95cUxNa3BVelZFQm5GY0xYMGxFVDQ0cjBqOW5BVjZPdEFXRVBXN0JyRVM5dm81QUtldGlTdmpWbUJVQ3lkcHAtX0JFQjNEWG1TSXJjV1FoNGRMd09kZjd4cUhIdUZTRHNvSXNiX1EyblRUcVFRd1FGS05ZdjhheHNBNDVRZTRlcDltYmpjOEgxUE5BcEw3VDM1eFJuYVZFRGZVa0ZZMmRwQVpzcjJkYmo1WUVxNGVZQjdKZUFiR0tRU1h2VGpUeWNGclZST281azBOWXIySE1CR1Q1RDlJd3U3LUhkbGxUaXJHTjlCUldwVlBMQkFxc2trdFJ6czlKQWc1ZHNqbWc?oc=5) | Stocktwits |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -126,8 +122,8 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
-- 图形上是跌破 200 日线——现价距 20 日 106.84（+0.7%）、50 日 109.38（-1.6%）、200 日 118.13（-8.9%）。本报告的买入规则本身会过滤掉这种形态。
-- 政策面对该板块的倾向为 -0.96（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 图形上是跌破 200 日线——现价距 20 日 107.11（+0.8%）、50 日 109.25（-1.2%）、200 日 118.11（-8.6%）。本报告的买入规则本身会过滤掉这种形态。
+- 政策面对该板块的倾向为 -0.83（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -135,7 +131,6 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 | 日期 | 开 | 高 | 低 | 收 | 涨跌 | 成交量 |
 |---|---:|---:|---:|---:|---:|---:|
-| 2026-09-03 | 106.42 | 109.35 | 106.02 | **108.42** | +2.2% | 25,541,200 |
 | 2026-09-04 | 108.20 | 109.23 | 106.93 | **107.14** | -1.2% | 20,540,500 |
 | 2026-09-08 | 106.78 | 106.90 | 105.66 | **106.05** | -1.0% | 22,664,800 |
 | 2026-09-09 | 105.69 | 106.15 | 105.16 | **105.83** | -0.2% | 15,460,800 |
@@ -149,7 +144,8 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-09-21 | 106.16 | 107.76 | 106.08 | **107.44** | +0.7% | 23,966,900 |
 | 2026-09-22 | 108.12 | 110.19 | 107.61 | **110.12** | +2.5% | 19,372,800 |
 | 2026-09-23 | 110.22 | 111.23 | 109.49 | **110.53** | +0.4% | 22,770,800 |
-| 2026-09-24 | 111.17 | 111.17 | 107.51 | **107.59** | -2.7% | 26,152,600 |
+| 2026-09-24 | 111.17 | 111.17 | 107.51 | **107.59** | -2.7% | 26,174,000 |
+| 2026-09-25 | 107.08 | 108.15 | 106.45 | **107.98** | +0.4% | 18,716,235 |
 
 ## 七、自己去查（本页不做独立验证）
 

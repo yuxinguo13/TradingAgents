@@ -1,6 +1,6 @@
 # NKE · 耐克（NIKE）
 
-_可选消费 · 数据截至 2026-09-24 收盘 → 面向 2026-09-28 开盘_
+_可选消费 · 数据截至 2026-09-25 收盘 → 面向 2026-09-28 开盘_
 
 [← 回到 2026-09-28 当日报告](../2026-09-28.md)
 
@@ -10,52 +10,52 @@ _可选消费 · 数据截至 2026-09-24 收盘 → 面向 2026-09-28 开盘_
 
 ```text
       NKE · 近 126 个交易日（日线收盘）
-64.8 ┤:::::::::
+64.7 ┤:::::::::
 62.5 ┤         ::::::::::
-60.3 ┤                   :::::::::
-58.0 ┤·····                       :::::::::
-55.8 ┤     ···                             ::::::::::
-53.5 ┤        ····                                   :::::::::::
-51.3 ┤───╮        ····                                          :::::::::::
-49.0 ┤   │            ···                                                  :::::::
-46.8 ┤   │               ·····  ╭╮
-44.5 ┤   ╰╮   ╭───────╮ ╭╮    ╭─╯╰╮··╭────╮··     ╭╮╭╮
-42.3 ┤    ╰───╯       ╰─╯╰────╯   ╰──╯    ╰╮ ·╭───╯╰╯╰─╮╭──────╮··········
-40.0 ┤                                     ╰──╯        ╰╯      ╰─────╮ ╭╮ ········
-37.8 ┤                                                               ╰─╯╰────╮
-35.5 ┤                                                                       ╰────
+60.3 ┤                   ::::::::
+58.1 ┤····                       :::::::::
+55.8 ┤    ···                             ::::::::::
+53.6 ┤       ·····                                  :::::::::::
+51.4 ┤──╮         ···                                          :::::::::::
+49.2 ┤  │            ····                                                 ::::::::
+47.0 ┤  │                ····
+44.7 ┤  ╰╮   ╭──────╮        ·╭───╮··╭───╮       ╭╮
+42.5 ┤   ╰───╯      ╰─────╮ ╭─╯   ╰──╯···╰─╮·╭───╯╰───╮·╭─╮╭─╮·········
+40.3 ┤                    ╰─╯              ╰─╯        ╰─╯ ╰╯ ╰───╮╭──╮ ···········
+38.1 ┤                                                           ╰╯  ╰─────╮╭╮
+35.9 ┤                                                                     ╰╯╰────
      └────────────────────────────────────────────────────────────────────────────
-      2026-03-26                       2026-06-26                       2026-09-24
+      2026-03-27                       2026-06-29                       2026-09-25
       · SMA50   : SMA200   ─ close
 ```
 
 ```text
        NKE · 近 21 个交易日（放大看最近节奏）
-39.18 ┤  ╭╮
-38.73 ┤  │╰╮ ╭╮
-38.27 ┤──╯ ╰─╯╰─╮
-37.81 ┤         │
-37.35 ┤         ╰╮
-36.89 ┤          │╭─╮
-36.43 ┤          ╰╯ ╰╮╭╮
-35.97 ┤              ╰╯│╭───
-35.51 ┤                ╰╯
+39.18 ┤ ╭╮
+38.73 ┤ │╰╮ ╭╮
+38.27 ┤─╯ ╰─╯╰─╮
+37.81 ┤        │
+37.35 ┤        ╰╮
+36.89 ┤         │╭─╮
+36.43 ┤         ╰╯ ╰╮╭╮
+35.97 ┤             ╰╯│╭────
+35.51 ┤               ╰╯
       └─────────────────────
-       2026-08-26 2026-09-24
+       2026-08-27 2026-09-25
 ```
 
-成交量近 63 日： `▃▅█▃▂▂▂▁▁▁▁▁▂▂▂▁▂▂▂▂▂▃▂▄▄▂▁▃▄▃▂▂▃▂▄▂▃▃▄▅▃▄`
+成交量近 63 日： `▃█▃▂▂▂▁▁▁▁▁▂▃▂▁▂▂▂▂▂▂▃▂▅▂▁▂▄▄▃▂▂▂▄▃▂▃▄▅▄▄▄`
 
 ### 图形读数
 
-- **均线排列**：空头排列 — 现价距 20 日 37.17（-3.2%）、50 日 39.57（-9.1%）、200 日 48.74（-26.2%）
-- **形态结构**：下降结构 — 更低的高点 + 更低的低点；前高 40.91 → 39.46（-3.5%）、前低 37.77 → 35.35（-6.4%）
-- **动能**：RSI(14) 37，偏弱；月 -7.9%、季 -11.1%，节奏平稳
-- **波动**：日均真实波幅约为价格的 2.5%；按本报告 2 ATR 的止损惯例，一个 R 相当于 5.0% 的价格距离
-- **位置**：距 52 周高点 -50.1%，距 52 周低点 +1.4%
+- **均线排列**：空头排列 — 现价距 20 日 37.06（-3.5%）、50 日 39.41（-9.3%）、200 日 48.61（-26.5%）
+- **形态结构**：下降结构 — 更低的高点 + 更低的低点；前高 39.46 → 37.04（-6.1%）、前低 37.77 → 35.35（-6.4%）
+- **动能**：RSI(14) 36，偏弱；月 -6.4%、季 -11.3%，节奏平稳
+- **波动**：日均真实波幅约为价格的 2.5%；按本报告 2 ATR 的止损惯例，一个 R 相当于 5.1% 的价格距离
+- **位置**：距 52 周高点 -50.5%，距 52 周低点 +0.7%
 - **量能**：最新一日成交量为 20 日均量的 1.2 倍，量能正常
-- **相对强度**：近一月跑输 标普500 8.3 个百分点
-- **支撑 / 阻力**：最近的摆动低点 35.35，摆动高点 39.46（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
+- **相对强度**：近一月跑输 标普500 7.3 个百分点
+- **支撑 / 阻力**：最近的摆动低点 35.35，摆动高点 37.04（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
 
 **我的读图结论**：趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌
 
@@ -69,7 +69,7 @@ _以上每一条都是对已经发生的价格的描述。均线、RSI、摆动�
 - **增长**：最新季度营收同比 -1.1%；盈利同比 +428.0%；最近三个季度营收连续环比下滑——这是趋势买入最该警惕的组合；最近 7 次财报里 7 次超预期。
 - **盈利质量**：毛利率 43.2%、营业利润率 12.7%、净利率 6.7%、ROE 22.1%。
 - **资产负债**：现金 $90.27亿；有息负债 $110.43亿；负债/权益 74.3%（负债适中）；流动比率 1.96；自由现金流 $18.89亿，为正。
-- **卖方预期**：36 位分析师覆盖；平均评级「持有」（2.74/5，1 为最看多）；目标价均值 47.32（较现价 +31.5%），区间 23.00–94.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
+- **卖方预期**：36 位分析师覆盖；平均评级「持有」（2.74/5，1 为最看多）；目标价均值 47.32（较现价 +32.4%），区间 23.00–94.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
 
 **分季度损益**（季度数据，最新在左）
 
@@ -112,18 +112,12 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 2h 前 | 8 | 中性 | [Nike Trades at a 12-Year Low Into Q1 Earnings: Here’s What Has to Go Right on October 1 - TIKR.com](https://news.google.com/rss/articles/CBMisAFBVV95cUxPaUtaUVpkbWdjZklCcG9BVHRJUW9IeEQ2aWpGSGt5bjM1MW5wQ2l6b2tfSE1saU80UmluRkM4dTItSnlTdl9zMXhERlMwY1hpZ05HUUN0SnF2UFRTZEhsZk5vaER6MWM3d292ZzVJOVhsWWlma0NZMVZTM0FFekowVG1OLU5zRnZUMFo4aUdDNkdnR2VDeWRZS2JYR0VQX3RVV0pHSjZmRzJzT1pSZ05hSg?oc=5) | TIKR.com |
-| 4h 前 | 8 | 偏空 | [Nike’s Turnaround Faces Another Test: BofA Cuts Price Target To $30 Ahead Of Earnings Next Week - Stocktwits](https://news.google.com/rss/articles/CBMi2gFBVV95cUxPUDFyZy15OXBqZGFubVJlRE9salFQU1J6RVBCa08zNGQ3TmQ0NzVvSGduNjZlWTFxM2p4M0EtdkxRa2lkTWFCQzR0LXcyYzhzU0I2VXJGVE5JWTNMeEhvNlFjRXRwbGZPMU9wb1ZRQm5fTWpMVkk1ckQ2MTZCWjY5TmEtbjl3WGZ3bWtIVFVIeVlsdjh6QkZQdTFqMGRhb0pxVVZsSlFkbk1aU3VNZmRkSEtFa0JuQ2l4ODFVLXNHZDJfYWZXNFZaRGFkaWh5M2hkZDlaYnV1NlF3dw?oc=5) | Stocktwits |
-| 5h 前 | 8 | 偏空 | [NIKE (NYSE:NKE) Earns "Underperform" Rating from Bank of America - MarketBeat](https://news.google.com/rss/articles/CBMivwFBVV95cUxPeXhqM3d1VUY0b25GZ21NODk1cnlPbk5rMXd6OGxXWjJTUHdiclh6dG9CVU5kN2Foai1BR00ybEROam44S043MktubGRfUUM4Y3pFXzJEcU1xTmMzZE15Z2NFZW1pMjAtREFBQ2N1YWJiZk8wcDJ4aFZLUExVVllqWllyek5xRjdNMjhKVGxCcGlLSHZlVm1kNVo1cGhvQjRxU0pLcHdKTUdqZ1d2dFlrYmxrUjFEaExZQUtwcmhLdw?oc=5) | MarketBeat |
-| 5h 前 | 8 | 中性 | [Nike Stock: Tread Carefully As FQ1 Earnings Loom (NYSE:NKE) - Seeking Alpha](https://news.google.com/rss/articles/CBMikAFBVV95cUxPTzNiMmdoN3R0UHo0SEItb0QxaFBacWJINVhPZDZZWVFPaHNTT2JsUEtEUFhWaVJubkhzVFZoVWk2SXhXUU1IQ254STBFWUo1VTNGUGFsekVOUDhBVGl0Y0RoeHZCVHJjbGdUYzNOTF8zdzIwVG0tWGxfNU1QeUhReXpvODNZMlFfV05PbGVDUko?oc=5) | Seeking Alpha |
-| 1h 前 | 5 | 偏空 | [BofA downgrades Nike citing sales pressure and China market challenges, cuts price target to $30. - Pluang](https://news.google.com/rss/articles/CBMioAFBVV95cUxPNldzY01IWXJ1cDN4WE9BRnRDbkRsamdBSUJlTnFfQW53OThEaDJLTmpkbmFVeTFjUTB0Y3ZQT2EtNW43Z3BqZ1FxX0x5eEtrLXJ4dG1EWnZKWExjUU5sSDBrN3pkLWF6cFVQRGM2WS01dnhFZzk2d0k5bXctSEg2RnJZVGlCZXVST3hzcjFMWmZrbWNMd1NYSVJadDVhempG?oc=5) | Pluang |
-| 1h 前 | 5 | 偏空 | [Nike Slumps After Downgrade. Why the Stock Is in Trouble. - Barron's](https://news.google.com/rss/articles/CBMigAFBVV95cUxPLTI3WUktUFRrTVJsWWdoMWFXVXV5Z0JJUTBEaThGLU9xMmdBS3R2T3JJQkpmaXp6RnVIZEM3VFAwM2Uza0pnN1drQXJqSVktRWlrRThhX1lSVXJlRzVrbmVfU1loS1M3eGJrNjhTdnFwNzBGMjlNSl9HS2lqTHltQg?oc=5) | Barron's |
-| 1h 前 | 5 | 偏空 | [Nike downgraded by BofA as channel and China pressures weigh on recovery - Yahoo Finance](https://news.google.com/rss/articles/CBMioAFBVV95cUxNam5WOVJyYW80V3g0T3ZHVHg4akcwQ0k5WE9BNVhQcjkyUWtVWkRhRHZqUXhyemlzY0NTNjdkeUlWZ0hSMHJTZVdNV2hDQkFqa2QtcllFS2NGdnhDZnVzWm8wZE1nQlFYdVQzNkFwemZ5SjhpcWFiZWZrblBLUHg1Y3hzUjRtcGYzVmw3WlB1RnRsT3pkenlXWURpNHBoMFlj?oc=5) | Yahoo Finance |
-| 3h 前 | 5 | 中性 | [Nike stock takes another beating after BofA downgrade: Can NKE recover? - Investing.com](https://news.google.com/rss/articles/CBMiywFBVV95cUxQSXN4YUxlQnRrck5Oc3Z2RDJSTERxV2pqQy1SZEZ5eUxyM0VpTDJrcEdSZUR2LWtINHJvRWRjQ3JzenpxajdoUU9DbE5XS3pvWnozVE82cWlOYnNvd1MxNm9DWmVRTnlkWlE2R3RfbWpXdmFXYTY1VlY2WXVISGQ2ZzFNcGEyVV9SejJLSmpmODh6MGlma21aSnZaZVlVbHR0elJsTGZRVW90MmlTckhZRUhKNXBpbWtyRVA3b01iTG0wMkwtVjNjT2diWQ?oc=5) | Investing.com |
-| 3h 前 | 5 | 偏空 | [Nike Pulls Back on Bank of America Downgrade and $30 Price Objective; Dick's Ticks Up, On Holding Holds Flat - 24/7 Wall St.](https://news.google.com/rss/articles/CBMi4gFBVV95cUxPUkhrSmFTSjZDWFdqWTJyUU9nMDBfblRUSTdRbWhhbmpuMTNTYWdCSDhESmJSN1NENThURmRKakZfYlBxOFdXdkJIXzVQMHdVcUEwOHFaemdUMWVsc0RYOXhlRldaVlA1VkZRRVNVZDFGYjNpaU54QUEzX1FUbnpzejVLc3ZTMVJQREE4alpmZjRBbTE4QjVmamRRc1R1SHhhT0h3ZnNtNF9jOHlJck9lVFhuYmQxRml0WXhjMFhpVmZSWnpqdXRZekp3UVA2T2M4TjlsNnZ6cHBuMjQ2NFVUOEJR?oc=5) | 24/7 Wall St. |
-| 4h 前 | 5 | 偏空 | [Nike dips as BofA downgrades stock on longer-than-expected turnaround - Investing.com](https://news.google.com/rss/articles/CBMiwgFBVV95cUxPVHFzNkNMUUl0UWtCbUVGNmdndU16dUJTbjNsWC1GMHo1cmVlOFFBTmN2c0JyRGRpeTNKaTl4aWl1UXA0VkE4TzZ3V2hHYVZEMFQ5N3liYXpHTVFabTQxSzFKaFlXckFtOXNCUDh0ZklMd1REMW9wcG5xaFVoS2w1MWpzbmhaM1F4TFg4ZDg0QXo3VVZsTXFGRXV4cGdpZTFWSm1aQW5zNEUwVkU3eU13VDJvSWRsMWlHYjB0UGJZMjl1QQ?oc=5) | Investing.com |
-| 5h 前 | 5 | 偏空 | [BofA downgrades Nike to Underperform, cuts PT to $30 (NKE:NYSE) - Seeking Alpha](https://news.google.com/rss/articles/CBMikgFBVV95cUxPRzFJTHZVSFlCekFwb3N4TEJSZjJOZmV5OFl6MTlIYldpeVRJNTMzb2FrOE10WmI3a0UwalUtUkdibDY3VDlpbEMtTEozZTBmOFpIdEZqS2tkYUJWSkkyUkpGN1VqYW41WloxUlY5ZnFIYnVlMjNpQll4LTlmWEdTblhjSko0NU50Tm5vQ1NPU3dUUQ?oc=5) | Seeking Alpha |
-| 1h 前 | 0 | 中性 | [BofA Turns Bearish on Nike Stock, Sees More Pressure Ahead - Yahoo Finance Singapore](https://news.google.com/rss/articles/CBMihAFBVV95cUxPYmp2M0F2NEIycFRob3lKYTNxQk00T1pnUmpZV0NqSkxEeFdOWkE4MEZXb1dubFRuNHh1RUgyemhncVhJXzY1OFE1UEt0YUhfU3NadmJoeUFSUGNwWUZuUDhUbmVPcmhyVDE3N2VwWnR0TDNvX2lpN0RBWEpRUnF1OFZEeUQ?oc=5) | Yahoo Finance Singapore |
+| 2h 前 | 8 | 中性 | [Micron Headlines Earnings Calendar; Jabil, Nike Also On Deck - Investor's Business Daily](https://news.google.com/rss/articles/CBMimwFBVV95cUxPY25hcnZwQl93aW8zR3NLQWl5TFVkemc0TW13bm1NM2FFZGtUM3Bwel9ETUZnOWJlMGRDWEVzRW1Yd2wzWV9Dczk0VDF1UnlVLXZ4OXEzOU5KM0dwNUhPNUxKeU02VnYwRUxNUGs2M3FnNU5NTXFDRjRmc0RyQVRNYnY1QTFZN2ZpazVoYkNVdUN3S2NQNDV4S2UyTQ?oc=5) | Investor's Business Daily |
+| 2h 前 | 5 | 偏空 | [This Nike Analyst Turns Bearish; Here Are Top 5 Downgrades For Friday - Benzinga](https://news.google.com/rss/articles/CBMi2AFBVV95cUxPdk92N0RGeDAyQnctRlMwQTlXWTBRQ2hDblFrNkpoMkFxT1VqSzI3TEUtMm9pWnF3Q1Y0ZHdLWkVRT1BWUlVCd0VZVWtLTWU5b2VmekVRQ2ZzMk9GVV8wRDRLS0xqOW1raTFTNDN0ZUVjVk85dzBfYTJfMUd4THVKRHJQV1V1RTJpWlhwM2JXaTEwT0R5RnV4UzVUVkY3WkR3M2xMTnBFU3JxeTlKN010MlNmZUl4NEhMZlhfd3lpLWVpaHdBRTNjanBJNUl0VnJRcU1hWFJibGY?oc=5) | Benzinga |
+| 0h 前 | 0 | 偏空 | [Analyst Predicts Nike Stock Could Fall to $30 After S&P 100 Drop - wwd.com](https://news.google.com/rss/articles/CBMirwFBVV95cUxQSzFOdXlrVVM2ZXI5b2RmQ2R1VHVja1oxN3MtM1ZBUGQ2LVdhRFYwR01xRnd3Vy1lWUFGcWZ5OUlLUFpBRTR2NGd6d0I5b2dxV2lkWkt4eFFZdlp0ZDBWdHYyLXFRVVNnT2FhUlM4MWZOclJ1akdRREdNNjdSWGpWaTF6ZndTcmVDd0ttZ3RPQ0JEdE1yaS13LV92QVlfTkcxVy1tck9sSm5rN1haV0Nv?oc=5) | wwd.com |
+| 2h 前 | 0 | 中性 | [Nike’s stock is one of the worst in the S&P 500 — and BofA says it’s not done sliding - MarketWatch](https://news.google.com/rss/articles/CBMiwgFBVV95cUxPWnozNVNMekQ0Z3ZHa3lKQzB1X0hOYk5acGs5b1lOOEJ3VlJ1Z3F2c2FCWkUzT0xmSmR3cENBSWM1Q2V0ZmMxQ0pMNTFGYkMtMFlnbTFfSmRJTGdNY2I3TnZfbHpKTWlMWnNhamdDQ1AwT3QzWEN6UFBackVMS0dKLUItcU5KeUU5SklzZ21sRlpHYU5ISEVoMkdValFQcXRUQk5qRjFyOTVmMFgwLVh3MEl2WWNvM01pZktyaDhtY0xfQQ?oc=5) | MarketWatch |
+| 2h 前 | 0 | 中性 | [Bank of America Harshly Resets Nike Stock Target For 2026 - Yahoo Finance](https://news.google.com/rss/articles/CBMingFBVV95cUxQc1UzTndhLWlPY3hqaHhKbFdnbjB0eTE2bHV3OUNxT2dydktTeEpGaGN0UmR4OHFxelNkQ0p0b3UxUFBsZXRid1NJRVdvM041emVMQVFQTXEyX1A3TllaSERFcWZ4U2tsOEE4V0x1WkRPOTF3UVFVRXlqRVlpQnowUld2YUNfQ1ppNGdnY1RXTlRUYXFBWF9Yc3p0R0tLdw?oc=5) | Yahoo Finance |
+| 4h 前 | 0 | 中性 | [Nike's Near-Term Turnaround Prospects Dim, BofA Says - Yahoo Finance](https://news.google.com/rss/articles/CBMimwFBVV95cUxQUlIzSUxMYWMxaUozZ25vbVk5cURHOWkzMU13enJfMDFZU2tFUnp4YVVWOUtHRFJmQUR4S0QzYTBhekVaMFBNaU9ZVHBpTC1nakZXYjBIOGhYWUlDcWZfbFozVEFJV19HbDd4bUhOS3ljMjNJV1pXVHV1b1EtYV9MVUNxMUxJOWEwM25GbUdNdFd4SUhBbW9ybzQ5dw?oc=5) | Yahoo Finance |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -131,13 +125,11 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
-- 图形上是空头排列——现价距 20 日 37.17（-3.2%）、50 日 39.57（-9.1%）、200 日 48.74（-26.2%）。本报告的买入规则本身会过滤掉这种形态。
+- 图形上是空头排列——现价距 20 日 37.06（-3.5%）、50 日 39.41（-9.3%）、200 日 48.61（-26.5%）。本报告的买入规则本身会过滤掉这种形态。
 - 摆动高低点都在下移，属于下降结构；在出现一个更高的低点之前，任何反弹都还只是反弹。
 - 下次财报在 6 天后，落在持有期内。财报跳空会直接穿过止损——那一晚的风险不是 1R，是没有上限的。
 - 卖方目标价区间 23.00–94.00，宽度超过均值——分歧极大，共识在这只股票上没有信息量。
-- 24 小时内的利空标题：Nike’s Turnaround Faces Another Test: BofA Cuts Price Target To $30 Ahead Of Earnings Next Week - Stocktwits（Stocktwits）
-- 24 小时内的利空标题：NIKE (NYSE:NKE) Earns "Underperform" Rating from Bank of America - MarketBeat（MarketBeat）
-- 政策面对该板块的倾向为 -0.93（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.79（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -145,7 +137,6 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 | 日期 | 开 | 高 | 低 | 收 | 涨跌 | 成交量 |
 |---|---:|---:|---:|---:|---:|---:|
-| 2026-09-03 | 38.52 | 38.93 | 37.95 | **38.77** | +1.4% | 29,597,500 |
 | 2026-09-04 | 38.22 | 38.66 | 37.98 | **38.40** | -1.0% | 20,631,600 |
 | 2026-09-08 | 38.52 | 38.74 | 37.90 | **38.10** | -0.8% | 31,672,300 |
 | 2026-09-09 | 37.79 | 37.85 | 36.85 | **37.35** | -2.0% | 41,088,800 |
@@ -159,7 +150,8 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-09-21 | 35.52 | 36.36 | 35.35 | **36.10** | +1.7% | 42,128,800 |
 | 2026-09-22 | 36.95 | 37.04 | 35.94 | **36.10** | +0.0% | 31,524,800 |
 | 2026-09-23 | 36.42 | 36.62 | 35.61 | **36.05** | -0.1% | 40,581,400 |
-| 2026-09-24 | 36.00 | 36.14 | 35.52 | **35.99** | -0.2% | 39,138,000 |
+| 2026-09-24 | 36.00 | 36.14 | 35.52 | **35.99** | -0.2% | 39,238,500 |
+| 2026-09-25 | 35.25 | 36.18 | 35.22 | **35.75** | -0.7% | 38,051,806 |
 
 ## 七、自己去查（本页不做独立验证）
 

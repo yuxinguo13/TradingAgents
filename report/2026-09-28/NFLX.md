@@ -1,6 +1,6 @@
 # NFLX · 奈飞（Netflix）
 
-_通信 · 数据截至 2026-09-24 收盘 → 面向 2026-09-28 开盘_
+_通信 · 数据截至 2026-09-25 收盘 → 面向 2026-09-28 开盘_
 
 [← 回到 2026-09-28 当日报告](../2026-09-28.md)
 
@@ -10,51 +10,51 @@ _通信 · 数据截至 2026-09-24 收盘 → 面向 2026-09-28 开盘_
 
 ```text
        NFLX · 近 126 个交易日（日线收盘）
-107.8 ┤::::::::╭╮
-104.7 ┤       ╭╯│:::::::::
-101.7 ┤      ╭╯ ╰╮        :::::::::::
- 98.7 ┤    ╭─╯   │                   ::::::::
- 95.6 ┤  ╭─╯     │    ········               ::::::::
- 92.6 ┤──╯      ·╰─────╮      ··········             ::::::::
- 89.5 ┤   ······       ╰─╮   ╭──╮       ····                 ::::::::::
- 86.5 ┤···               ╰───╯  ╰──╮        ···                        :::::::::::
- 83.5 ┤                            ╰╮╭╮        ·····                      ╭╮      :
- 80.4 ┤                             ╰╯╰──╮          ·····          ╭──────╯│  ╭╮
- 77.4 ┤                                  ╰─╮    ╭─╮      ······  ╭─╯       ╰──╯│
- 74.4 ┤                                    ╰╮╭╮╭╯ ╰───╮   ╭─╮╭───╯·············╰╮··
- 71.3 ┤                                     ╰╯╰╯      │  ╭╯ ╰╯                  ╰──
- 68.3 ┤                                               ╰──╯
+107.8 ┤:::::::╭─╮
+104.7 ┤       │:│:::::::::
+101.7 ┤     ╭─╯ │         :::::::::::
+ 98.6 ┤   ╭─╯   │                    ::::::::
+ 95.6 ┤ ╭─╯     ╰╮   ········                ::::::::
+ 92.5 ┤─╯      ··╰─────╮     ··········              :::::::
+ 89.5 ┤   ·····        ╰─╮  ╭───╮      ····                 ::::::::::
+ 86.4 ┤···               ╰──╯   ╰─╮        ···                        ::::::::::::
+ 83.4 ┤                           ╰╮╭─╮       ·····                      ╭╮       :
+ 80.3 ┤                            ╰╯ ╰──╮         ·····           ╭─────╯│  ╭╮
+ 77.3 ┤                                  ╰╮    ╭─╮      ······  ╭──╯      ╰──╯╰╮
+ 74.2 ┤                                   ╰╮ ╭─╯ ╰───╮    ╭╮╭───╯············· ╰─╮·
+ 71.2 ┤                                    ╰─╯       │  ╭─╯╰╯                    ╰─
+ 68.1 ┤                                              ╰──╯
       └────────────────────────────────────────────────────────────────────────────
-       2026-03-26                       2026-06-26                       2026-09-24
+       2026-03-27                       2026-06-29                       2026-09-25
        · SMA50   : SMA200   ─ close
 ```
 
 ```text
       NFLX · 近 21 个交易日（放大看最近节奏）
-82.7 ┤     ╭─╮
-81.3 ┤─╮╭──╯ │
-79.9 ┤ ╰╯    │    ╭╮
-78.5 ┤       ╰╮   │╰╮
-77.0 ┤        ╰╮ ╭╯ ╰╮
-75.6 ┤         ╰─╯   ╰╮
-74.2 ┤                │
-72.8 ┤                │╭─╮
-71.4 ┤                ╰╯ ╰─
+82.7 ┤    ╭─╮
+81.3 ┤ ╭──╯ │
+79.8 ┤─╯    │    ╭╮
+78.4 ┤      ╰╮   │╰╮
+76.9 ┤       ╰╮ ╭╯ ╰╮
+75.5 ┤        ╰─╯   ╰╮
+74.0 ┤               │╭╮
+72.6 ┤               ││╰╮
+71.1 ┤               ╰╯ ╰──
      └─────────────────────
-      2026-08-26 2026-09-24
+      2026-08-27 2026-09-25
 ```
 
-成交量近 63 日： `▅▃▃▃▂▂▃▂▂█▄▃▃▂▃▃▂▂▂▁▁▁▃▂▂▂▁▁▁▂▂▁▁▂▁▁▂▁▂▅▂▂`
+成交量近 63 日： `▃▃▄▂▂▃▂▂▅▇▄▃▂▃▃▃▂▂▂▁▂▂▁▂▂▁▁▁▂▂▁▁▂▂▁▁▂▁█▂▂▁`
 
 ### 图形读数
 
-- **均线排列**：跌破 200 日线 — 现价距 20 日 77.18（-7.1%）、50 日 75.60（-5.1%）、200 日 84.84（-15.5%）
+- **均线排列**：跌破 200 日线 — 现价距 20 日 76.75（-7.3%）、50 日 75.54（-5.8%）、200 日 84.71（-16.0%）
 - **形态结构**：下降结构 — 更低的高点 + 更低的低点；前高 83.60 → 81.02（-3.1%）、前低 75.03 → 70.11（-6.6%）
-- **动能**：RSI(14) 38，偏弱；近一月的斜率慢于近三月（月 -12.8% vs 季 +1.2%），涨势在放缓
-- **波动**：日均真实波幅约为价格的 3.2%；按本报告 2 ATR 的止损惯例，一个 R 相当于 6.3% 的价格距离
-- **位置**：距 52 周高点 -42.2%，距 52 周低点 +6.1%
-- **量能**：最新一日成交量为 20 日均量的 0.9 倍，量能正常
-- **相对强度**：近一月跑输 标普500 13.2 个百分点
+- **动能**：RSI(14) 37，偏弱；月 -12.7%、季 -3.6%，节奏平稳
+- **波动**：日均真实波幅约为价格的 2.8%；按本报告 2 ATR 的止损惯例，一个 R 相当于 5.7% 的价格距离
+- **位置**：距 52 周高点 -42.7%，距 52 周低点 +5.2%
+- **量能**：最新一日成交量为 20 日均量的 0.7 倍，量能正常
+- **相对强度**：近一月跑输 标普500 13.6 个百分点
 - **支撑 / 阻力**：最近的摆动低点 70.86，摆动高点 73.76（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
 
 **我的读图结论**：趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌
@@ -69,7 +69,7 @@ _以上每一条都是对已经发生的价格的描述。均线、RSI、摆动�
 - **增长**：最新季度营收同比 +13.4%；盈利同比 +11.1%；最近三个季度营收连续环比上升；最近 7 次财报里 5 次超预期。
 - **盈利质量**：毛利率 49.1%、营业利润率 33.4%、净利率 28.2%、ROE 49.5%。
 - **资产负债**：现金 $91.28亿；有息负债 $166.55亿；负债/权益 55.2%（负债适中）；流动比率 1.14；自由现金流 $253.88亿，为正。
-- **卖方预期**：45 位分析师覆盖；平均评级「买入」（1.84/5，1 为最看多）；目标价均值 92.93（较现价 +29.6%），区间 57.00–135.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
+- **卖方预期**：45 位分析师覆盖；平均评级「买入」（1.84/5，1 为最看多）；目标价均值 92.93（较现价 +30.6%），区间 57.00–135.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
 
 **分季度损益**（季度数据，最新在左）
 
@@ -112,11 +112,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 24h 前 | 5 | 中性 | [Netflix Lost 22% This Year After Its WBD Deal Collapsed. Is NFLX Stock Now a Buying Opportunity? - Yahoo Finance](https://news.google.com/rss/articles/CBMikwFBVV95cUxNRk9GZmV4WkhOU0ZNYmxDbktHdkUwRDdhdzRNWVptMHZfVGQzb0RMTzBBbnhTTjlCVUp4V2JsbTF4TEJFVGZZUlBnYW84cGxhZnJSU0xQTi1SeTY3emxHUDc0QUJzRU9sV0JmNklENmFCQmNvTjlENnp2LVlTb0xFR2xSdEN2RF9qWG4tdnI2WUc2R0k?oc=5) | Yahoo Finance |
-| 41h 前 | 5 | 中性 | [Netflix (NFLX) Stock May Be A Bargain On Fresh Price Target News - simplywall.st](https://news.google.com/rss/articles/CBMiwAFBVV95cUxPeUxnX3hqbkJQbzNrQzRfY2FsbDN6bnFaY1dtRnl2REJGTlNfSVF6Qk1JSUlKeWZja0dIcERlOEh4OGtfc1JNU2R4M2d2cEhiYzRGLU9sWWhpSFFKSmRVTVhOT01qZWdYWGFQZWxlUm1DSXJZQW1qdVFYc2tzM2lzR0RZMFowTXN0YjlVc05aVExvYlQyeG9BRG9lUjlvUm5STVNyVUJad2tINUtMZGxvNEVYeWRGNldDSl9qS0tHZnTSAcYBQVVfeXFMT2VTVUE4Z2RwY3lMZGx5cnFZaDJRY2NNbXJDelpmb0VOdFI2U1ZjWi1MRGNKQm5RNllxcDNqUkk1anJJVWd0aHFuYk9tQjl5T1ExMXNRWWYySFBIdTJFUFRjc3hOWXBIcmFYM3ljeloteENZNG1na2JjN2ZteWxBZjB3WXpLWlJwRENkZHZhN3EtLXZjeUp2SldzVVNvX2JOSHk0VFc3ckVoYjZCZzh1TUZRN2tIZjUwRWJfVlNidWJLOEttS0pn?oc=5) | simplywall.st |
-| 8h 前 | 0 | 偏空 | [How Steeply Does Netflix Stock Plunge? - Trefis](https://news.google.com/rss/articles/CBMirAFBVV95cUxPS2JYNXJSNGppVW84Q3BYR0kxcGdCdXFISWJNZmRxdmlDa2pUMFA5N1lxOWpWR0RvMjhVcGRob2VvYlhualJtaS1MNzUzelNDeEJqSExleU5XOERSbEJGOEwxbEt3MVhERHR4OWk2NHdWSHhzbWhuZG4tSklvR3V5Z0FaM1cyZ1VVc1dXcTJtT3F1Y2dCSUFQNm5YblltanBuazlLNGFZUXFiYTQz?oc=5) | Trefis |
-| 41h 前 | 0 | 中性 | [Netflix Is Down 42% in a Year and the Investor Who Exited in June Just Bought Back In - Yahoo Finance](https://news.google.com/rss/articles/CBMinAFBVV95cUxNZ0VZZWM5TXluVWE3a252NHFFdFJiMkZTQURBTFNXaEdPWDNxZFRhWmdzUWxUQlNuUWRVNVVGSXc4aTNtSHZYeGZlYWhuR3F4d1oyTERrTW9ZX2FLaWVibE1jNWhrTmJaaERjSGtNSklzWUZBMDhNaU0wT3ZVX0pNNWcxc1pPT1RqZDNyZWJOdU9zejdHcjlVZWt5TzY?oc=5) | Yahoo Finance |
-| 44h 前 | 0 | 中性 | [Ackman’s $1 billion Netflix return has a remarkable twist - thestreet.com](https://news.google.com/rss/articles/CBMikAFBVV95cUxNdmhmbnY0Y3BIREJZTVF6SjlpRGR1N3B3aHhRZWRtbnU4MTQ3dXJVZ0NRenNpcTVTbnJURU1wbU9jWkEwejdmdW5EbU1kcExrZzhNbWcyc0dST1kydDN4SFVrbF9xcVZYZWhBZGttNG1BSjRPTlpIODlHTmNfeEtMX2xRbmFJdUxuYWpZYVlvdHM?oc=5) | thestreet.com |
+| 0h 前 | 0 | 中性 | [1 Wall Street Analyst Just Called Netflix a Sell. Is It Time To Dump the Streaming Stock? - The Motley Fool](https://news.google.com/rss/articles/CBMiygFBVV95cUxOQi1mbmJNWjViWE85LW5leXRkczZzSDhsZ3E3Y1ZtWmZYQUVRREdfSmZLTGtuM3FhQTZka0tKTHVzVVU2OXlaTkZncHppY3ZpUS1jYXg0RU94c0xVRG44UmkxTk14TlN6RXhncl9IaXVkUGtrUWRIUE9PdjJPUFFXQlpYRkFpOUlpWmR0ZkFoNVhmWWNpWDFiWl9aV1Q4M0FiOGZfbXZEOWVRYkZKd3puT19md1M1ZTF0cm9zQ3RrWGdLeUF2RFJUYnRR?oc=5) | The Motley Fool |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -124,10 +120,9 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
-- 图形上是跌破 200 日线——现价距 20 日 77.18（-7.1%）、50 日 75.60（-5.1%）、200 日 84.84（-15.5%）。本报告的买入规则本身会过滤掉这种形态。
+- 图形上是跌破 200 日线——现价距 20 日 76.75（-7.3%）、50 日 75.54（-5.8%）、200 日 84.71（-16.0%）。本报告的买入规则本身会过滤掉这种形态。
 - 摆动高低点都在下移，属于下降结构；在出现一个更高的低点之前，任何反弹都还只是反弹。
 - 下次财报在 25 天后，落在持有期内。财报跳空会直接穿过止损——那一晚的风险不是 1R，是没有上限的。
-- 政策面对该板块的倾向为 -0.33（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -135,7 +130,6 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 | 日期 | 开 | 高 | 低 | 收 | 涨跌 | 成交量 |
 |---|---:|---:|---:|---:|---:|---:|
-| 2026-09-03 | 83.18 | 83.60 | 81.63 | **82.67** | -0.1% | 24,006,400 |
 | 2026-09-04 | 82.17 | 82.69 | 78.23 | **78.25** | -5.3% | 40,190,000 |
 | 2026-09-08 | 77.55 | 77.73 | 75.92 | **76.77** | -1.9% | 33,865,500 |
 | 2026-09-09 | 76.34 | 76.72 | 75.87 | **76.03** | -1.0% | 22,779,600 |
@@ -149,7 +143,8 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-09-21 | 71.82 | 73.87 | 71.79 | **73.36** | +2.2% | 36,948,000 |
 | 2026-09-22 | 73.69 | 73.76 | 71.58 | **72.16** | -1.6% | 34,372,500 |
 | 2026-09-23 | 72.08 | 72.37 | 71.07 | **71.36** | -1.1% | 32,807,500 |
-| 2026-09-24 | 71.62 | 72.04 | 71.21 | **71.72** | +0.5% | 28,189,100 |
+| 2026-09-24 | 71.62 | 72.04 | 71.21 | **71.72** | +0.5% | 28,223,900 |
+| 2026-09-25 | 71.57 | 71.83 | 70.98 | **71.14** | -0.8% | 22,320,107 |
 
 ## 七、自己去查（本页不做独立验证）
 

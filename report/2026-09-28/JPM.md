@@ -1,6 +1,6 @@
 # JPM · 摩根大通（JPMorgan Chase &）
 
-_金融 · 数据截至 2026-09-24 收盘 → 面向 2026-09-28 开盘_
+_金融 · 数据截至 2026-09-25 收盘 → 面向 2026-09-28 开盘_
 
 [← 回到 2026-09-28 当日报告](../2026-09-28.md)
 
@@ -10,52 +10,52 @@ _金融 · 数据截至 2026-09-24 收盘 → 面向 2026-09-28 开盘_
 
 ```text
        JPM · 近 126 个交易日（日线收盘）
-363.6 ┤                                                         ╭──╮      ╭╮
-357.2 ┤                                                  ╭╮  ╭──╯  ╰╮ ╭───╯╰──╮
-350.8 ┤                                                 ╭╯╰──╯      ╰─╯  ·····╰──╮·
-344.5 ┤                                             ╭─╮╭╯          ······        ╰╮
-338.1 ┤                                         ╭───╯ ╰╯        ···               ╰
-331.7 ┤                                  ╭╮╭─╮ ╭╯            ···
-325.3 ┤                                  │╰╯ ╰─╯          ···
-318.9 ┤                                 ╭╯           ·····                :::::::::
-312.5 ┤       ╭╮ ╭─╮╭╮╭╮╭╮          ╭───╯    ········       ::::::::::::::
-306.1 ┤     ╭─╯╰─╯ ╰╯╰╯╰╯│     ╭╮   │ ·······:::::::::::::::
-299.8 ┤··:::│············╰─────╯╰╮╭─╯·:
-293.4 ┤  ╭──╯                    ╰╯
-287.0 ┤─╮│
-280.6 ┤ ╰╯
+364.1 ┤                                                        ╭───╮
+357.7 ┤                                                  ╭╮ ╭──╯   │ ╭─────╮╭╮
+351.2 ┤                                                ╭─╯│╭╯      ╰─╯   ··╰╯╰───╮·
+344.8 ┤                                             ╭╮╭╯  ╰╯       ······        │
+338.3 ┤                                         ╭╮╭─╯╰╯         ···              ╰─
+331.8 ┤                                   ╭──╮╭─╯╰╯          ···
+325.4 ┤                                 ╭─╯  ╰╯          ····
+318.9 ┤                                ╭╯           ·····                ::::::::::
+312.4 ┤      ╭╮ ╭──╮ ╭╮╭╮           ╭──╯    ········       ::::::::::::::
+306.0 ┤     ╭╯╰─╯  ╰─╯╰╯╰╮     ╭╮  ╭╯·······:::::::::::::::
+299.5 ┤···:╭╯············╰─────╯╰──╯·
+293.1 ┤  ╭─╯
+286.6 ┤ ╭╯
+280.1 ┤─╯
       └────────────────────────────────────────────────────────────────────────────
-       2026-03-26                       2026-06-26                       2026-09-24
+       2026-03-27                       2026-06-29                       2026-09-25
        · SMA50   : SMA200   ─ close
 ```
 
 ```text
        JPM · 近 21 个交易日（放大看最近节奏）
-362.1 ┤      ╭╮
-359.0 ┤  ╭╮  │╰╮
-355.9 ┤─╮│╰──╯ │╭╮╭╮
-352.9 ┤ ╰╯     ╰╯╰╯│╭╮  ╭╮
-349.8 ┤            ╰╯╰──╯│
-346.7 ┤                  │
-343.7 ┤                  │
-340.6 ┤                  ╰╮
-337.5 ┤                   ╰─
+362.1 ┤     ╭╮
+359.0 ┤ ╭╮  │╰╮
+355.9 ┤ │╰──╯ │╭╮╭╮
+352.9 ┤─╯     ╰╯╰╯│╭╮  ╭╮
+349.8 ┤           ╰╯╰──╯│
+346.7 ┤                 │
+343.7 ┤                 │  ╭
+340.6 ┤                 ╰╮ │
+337.5 ┤                  ╰─╯
       └─────────────────────
-       2026-08-26 2026-09-24
+       2026-08-27 2026-09-25
 ```
 
-成交量近 63 日： `█▃▇▃▂█▂▄▄▄▃▂▄▃▂▃▂▃▁▁▂▁▁▁▂▂▃▁▂▁▃▁▂▁▂▁▄▅▂▅▅▂`
+成交量近 63 日： `▃▅▃▃█▄▂▅▅▃▂▄▃▂▃▂▂▂▂▁▁▁▁▂▂▃▁▁▂▂▁▂▁▂▁▃▆▃█▃▂▃`
 
 ### 图形读数
 
-- **均线排列**：均线偏多 — 现价距 20 日 351.82（-3.8%）、50 日 353.35（-4.2%）、200 日 319.38（+6.0%）
+- **均线排列**：均线偏多 — 现价距 20 日 351.26（-2.3%）、50 日 353.34（-2.9%）、200 日 319.54（+7.4%）
 - **形态结构**：下降结构 — 更低的高点 + 更低的低点；前高 366.50 → 362.86（-1.0%）、前低 350.37 → 343.07（-2.1%）
-- **动能**：RSI(14) 35，偏弱；近一月的斜率慢于近三月（月 -5.1% vs 季 +1.5%），涨势在放缓
-- **波动**：日均真实波幅约为价格的 2.2%；按本报告 2 ATR 的止损惯例，一个 R 相当于 4.3% 的价格距离
-- **位置**：距 52 周高点 -7.3%，距 52 周低点 +20.9%
-- **量能**：最新一日成交量为 20 日均量的 0.9 倍，量能正常
-- **相对强度**：近一月跑输 标普500 5.5 个百分点
-- **支撑 / 阻力**：最近的摆动低点 325.75，摆动高点 341.40（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
+- **动能**：RSI(14) 42，偏弱；近一月的斜率慢于近三月（月 -3.8% vs 季 +4.7%），涨势在放缓
+- **波动**：日均真实波幅约为价格的 2.1%；按本报告 2 ATR 的止损惯例，一个 R 相当于 4.2% 的价格距离
+- **位置**：距 52 周高点 -6.1%，距 52 周低点 +22.5%
+- **量能**：最新一日成交量为 20 日均量的 1.3 倍，量能正常
+- **相对强度**：近一月跑输 标普500 4.7 个百分点
+- **支撑 / 阻力**：最近的摆动低点 325.75，摆动高点 351.24（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
 
 **我的读图结论**：趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌
 
@@ -69,7 +69,7 @@ _以上每一条都是对已经发生的价格的描述。均线、RSI、摆动�
 - **增长**：最新季度营收同比 +17.8%；盈利同比 +46.9%；最近三个季度营收连续环比上升；最近 7 次财报里 6 次超预期。
 - **盈利质量**：毛利率 0.0%、营业利润率 50.4%、净利率 34.9%、ROE 17.8%。
 - **资产负债**：现金 $1.53万亿；有息负债 $1.34万亿。
-- **卖方预期**：21 位分析师覆盖；平均评级「买入」（2.08/5，1 为最看多）；目标价均值 374.24（较现价 +10.5%），区间 305.00–436.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
+- **卖方预期**：21 位分析师覆盖；平均评级「买入」（2.08/5，1 为最看多）；目标价均值 374.24（较现价 +9.1%），区间 305.00–436.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
 
 **分季度损益**（季度数据，最新在左）
 
@@ -110,22 +110,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 2h 前 | 8 | 中性 | [Constellation Brands (NYSE:STZ) Given New $133.00 Price Target at JPMorgan Chase & Co. - MarketBeat](https://news.google.com/rss/articles/CBMi2AFBVV95cUxNdU0xUlkzX2E1eGdZY3ZVWmRJb242OEc5bWJ6a3dmeGpLb3p1Z3dLN0ItVkNfOW5RU1VTazRGM2VMNnMxOVB0THRTTVBSaDBONG1iOHZQYmVNRHMybUZjUHc1RnJld0FBOXJ3NTZMc2xRVDNEMjFiSHlnbHVaTGdxQ0FCdjNRTXdocFJ3T1NLaXJMZmplLVZNQm9fbTJ3SHdQSU95ZGt5XzFXNWFXVEUyODlaaE5FcjA1VV85eWE2NlVuUHpGa0ZhNE03aWVDSmdUU0FodG5yaUs?oc=5) | MarketBeat |
-| 2h 前 | 8 | 中性 | [JPMorgan Chase & Co. Has Lowered Expectations for Costco Wholesale (NASDAQ:COST) Stock Price - MarketBeat](https://news.google.com/rss/articles/CBMi4wFBVV95cUxQTUU3UHdZTXpEc2FNb2ZBcGZUZE85M3d5VG9zN1FiVVFBNGlWR3RXNnItYzdsOUNXWWdkME90SExCTmJUNjVxY2JGdXZpSWg4TEtrY3Z4X3QxV3hRYTdobzRvQXYxMm5jM1ZZWndHRkNzbVZrMFFicFd3WkVBLVE2NUhWc09xNzc4TnUxajFMWThsdl9yTkxnUlI5VHVoZzFidURDdWl0dHNaVUR4STNMdG5GQ25PVmpvS29VLVZTZkxxYzU3cHRwSV95WjJDSGtxWHcwNUNvVjJYQzBUeERhNmJQYw?oc=5) | MarketBeat |
-| 2h 前 | 8 | 中性 | [Akamai Technologies (NASDAQ:AKAM) Given New $167.00 Price Target at JPMorgan Chase & Co. - MarketBeat](https://news.google.com/rss/articles/CBMi2wFBVV95cUxNZ3dkVkRTUHE5VWY4YkVKbXFOdWVzMm0zLXlEWVFOVHh3QzRDRFFQVTM2bXBHMGF2eUlmYUJMakVZcGtrbTY5UTNsUFVHU1pxcHM0TEN6ckExYkZsNDUxVG1qOE9uYmwtVF9GbEtnZFA2YzNwVGdzMjIyQ2dEeXhKUXJqYlRHWnZ0VTU3bVd3UzdLQWlmMjIzWnVfWk9aVE9qR3FJakxpZmRMaF9HMjdPS0RxUWRPZ1A2eEhPTkpCR1k0VDJMWGE2TTBlU2J6N3JWd1JTdUpTd096ekU?oc=5) | MarketBeat |
-| 3h 前 | 8 | 中性 | [JPMorgan Chase & Co. Begins Coverage on Genius Sports (NYSE:GENI) - MarketBeat](https://news.google.com/rss/articles/CBMivwFBVV95cUxPa1ZvUVNaZGVtdC12LTU1UUdlOTFFTDhMZ2kyeTNPV2tCbFFybktDY2EyLUl3TGVKdUU1bXJ4LVB6cWdNRktWajc5dDNDclpTUmZyc2E2aEx1VHRSNE8zNkdiWDk3ZzRKNjNXUDFmaXFuVHJWZUNFZ2JHSGdVVDNNZEg2QkpOb3JDb1p5R013VXBTeUFmRkpseWx4MjhqVXgtcC1tUDY0TFpoNGRqN1dYazUxMzhWMi1oMXdwQUFrRQ?oc=5) | MarketBeat |
-| 9h 前 | 8 | 中性 | [JPMorgan Chase & Co. $JPM Stock Position Lessened by Royal London Asset Management Ltd. - MarketBeat](https://news.google.com/rss/articles/CBMi2wFBVV95cUxOZDQ1LXF2Si1TVlRubkoxYm1Ca1p5VXNNU1pHX1RzTVdXMXB5UDU3TnFuLXU0TGdSSF9SZ0ZhMjB6VmM2QmFtXzZGTzVMaVpKc1F2a05YWkZoQWRBcDVmV1BEWDdaSzJRdzVLeTBWNDhxMWNEM3A4T1M1THJsMDlGVGJKOUk3ZjRfRUs1M2ZTZHBfOEVKR3dFVXVoR3VvSUlKRmx3N1VFTW9td2pBUVRkOXBWUWlCY0N4NEFtRWN5aF81WVhCN1VoQXRhMTlqVW5iTmJSbzdKeGFNa1U?oc=5) | MarketBeat |
-| 9h 前 | 8 | 偏空 | [Ancora Advisors LLC Cuts Position in JPMorgan Chase & Co. $JPM - MarketBeat](https://news.google.com/rss/articles/CBMiuwFBVV95cUxOTW9OeVNxZFlHX1RCcWNaRnFrcmlmSGc2dnRUZG5HZXpMYUpJNWNINmVYYklYUUZacG1BNFBoaTNub2M3RFU4ZXNVbkdTS0wyRkJPQlpxeFJtUk9fdnpqaW9yVzRqclI1eURGMEJLQVpVMUl5dVJNNjBrM0hLV2FIX2hZNFZHYXU3cDVKUnAzNlFDdjgzWmRfUkFQZEdONXZPWkYtRGNTNlRnalgtRmtvb3pGTmk2QzhrN1ln?oc=5) | MarketBeat |
-| 10h 前 | 8 | 中性 | [JPMorgan Chase & Co. $JPM Position Lowered by GTS Securities LLC - MarketBeat](https://news.google.com/rss/articles/CBMivgFBVV95cUxOOUhXZzFqaHNnYW5ZdGxkd19aTkEtSU1VLWpfeHZReWkyd2FFU3FIcXB0VEFJOGE2UXQyT3FCeFRwWjFndEJrQ2VoUWtlc1ZWd2VEY1hWSmRwa0hrVVY3a0FrRmZfcWVKaGpoc1p5TzVUdUZLc3lqYy1ZaTBvQ2p6eTZ0cmdJUTU0cUJkUVV0UnhGdnYxNWpmUjdtaF9PNzdLc1BONXloQ0c1cWVXUVZoRE5TVUJxUFAwdTF3djNB?oc=5) | MarketBeat |
-| 25h 前 | 8 | 偏空 | [Norwegian Cruise Line (NYSE:NCLH) Price Target Cut to $13.00 by Analysts at JPMorgan Chase & Co. - MarketBeat](https://news.google.com/rss/articles/CBMi5gFBVV95cUxPSURGQTloQlNSblR3SDdPbXRWdW1YaHdFVFF5VkMzVy02OTZZRXpfX01mV2p2X29Ib2QxUDVTdHd5RmV3ZVVoZUZZWU5HYWtNcDJBSVJRWElzQm1fLUM2TWNacU04cmhJQXhYWUlPMm9nNkNnMXhLbXhzNmdOMkFHSjdwZ1FZVnM1RklKY2trVFQ4WllEaFJKMFFIS2xjT2JnOXZZVXRueVBuaVZ1OFluQi1VWXJITkhDNkl3WVJLcHpzRkRDMTI0c2xjSmR1RVBoSVFGbXlFR0x3a0U2Wk1VNUhvR0Z1QQ?oc=5) | MarketBeat |
-| 25h 前 | 8 | 中性 | [JPMorgan Chase & Co. Issues Positive Forecast for Meta Platforms (NASDAQ:META) Stock Price - MarketBeat](https://news.google.com/rss/articles/CBMi4AFBVV95cUxPSVNuQ2JKbnBoUHcxbkNLNnpSeTlCRDh2N055VmZvckhacHdjTVNSSnJ6OTdrMlh2U25ydUJhSndOZG1GSkRQWlJOVGFyN1NrSy1DV3BWa1lSLUxvdFJoSXIzOXpoNFotRjBRaWg5U19KNXVJR3JuZGJ5b2F4bVFaWUUtNnVneGdOMXhVSm03bmRVWXhpMnFieTdOekZmZGs2VDFkbGRvQ1hBdGVmZktweU1sYkxUOFVEeWoweEZxSTRYajdCNjVQeV9rUHREaUZjSGk1WE54MWctcV9Ydlh0eg?oc=5) | MarketBeat |
-| 25h 前 | 8 | 中性 | [Carnival (NYSE:CCL) Price Target Lowered to $39.00 at JPMorgan Chase & Co. - MarketBeat](https://news.google.com/rss/articles/CBMiyAFBVV95cUxNX1NLZ3IzNDRQS2ozTnRSXzlxYnhpdlZXS1ktbkNKRzR5RFZZNlB5Y3R2M1lyU0tVV2hMazNjck5WZTJaY25qZXBuX1VnQll1eWxsbm5xdmUtZlFrRlUwV29NSUxCU0V4dElaM0pEYXlZWGVpVFljRF9HUm5nZll2c1picHcyTElHNXZldkZjTVlrY0dRdFpjUTdlSl9DVG5mRzFpV0pxMlQtUVJoN2F3WHppMWppOTNyVkJzUXl2WmtUYm1SWkdDXw?oc=5) | MarketBeat |
-| 25h 前 | 8 | 中性 | [McDonald's (NYSE:MCD) Given New $260.00 Price Target at JPMorgan Chase & Co. - MarketBeat](https://news.google.com/rss/articles/CBMiygFBVV95cUxPOWc5ZTYyb0RjUFVXNThqdXFjQ29mTVk2a3daa1BVaTFEM05xTnV4ZDNTQ3hMN1c2cGdwRVVxeDc5NXNOLUxrX1dRc2VaR0I3cW1ZUzBDTC16Sk5paG5TUWktM19jNFJ3LVlOaEx1Q05temZ1elI1YS0xNTFJRTZYZHRZbkdWZHMya3dzWnVXRFR1TWRvVDM4UzBoQjItdHpIcjFoZXBPQTJMeW1rMEdHZEg3Vnk4MGJtX21KNzZreE0xZ0cxSGVmdHh3?oc=5) | MarketBeat |
-| 25h 前 | 8 | 偏多 | [Regency Centers (NASDAQ:REG) Upgraded by JPMorgan Chase & Co. to "Overweight" Rating - MarketBeat](https://news.google.com/rss/articles/CBMi1gFBVV95cUxPbXhlQ0lXVXFEMGgtMFZJeFZqYmlzem1OTU0yOG9VdnE5RTUzMDJSN3AzSG54cHMyNVVrMzhTbzNZN2hBNmtrLURFYlJpT2owRGJpbVNOZmpLRmRzdy1MRzk2VWpzR2doOFByU0RfVHdfaS1aaVpxSGRSZ0JadFh0bXRBcnhoVlJYTGJ6N3hKRHlJSTdfY21MZTJYSU4zWnMzanI0OUFqNVV6R1RXc1pFTXdFZHVzZFJNVF9nQkZvYldtRHJnbTZRa1hUSF9NcDhwYU1wcl93?oc=5) | MarketBeat |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
@@ -133,9 +118,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 - 摆动高低点都在下移，属于下降结构；在出现一个更高的低点之前，任何反弹都还只是反弹。
 - 下次财报在 18 天后，落在持有期内。财报跳空会直接穿过止损——那一晚的风险不是 1R，是没有上限的。
-- 24 小时内的利空标题：Ancora Advisors LLC Cuts Position in JPMorgan Chase & Co. $JPM - MarketBeat（MarketBeat）
-- 24 小时内的利空标题：Norwegian Cruise Line (NYSE:NCLH) Price Target Cut to $13.00 by Analysts at JPMorgan Chase & Co. - MarketBeat（MarketBeat）
-- 政策面对该板块的倾向为 -0.95（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.83（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -143,7 +126,6 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 | 日期 | 开 | 高 | 低 | 收 | 涨跌 | 成交量 |
 |---|---:|---:|---:|---:|---:|---:|
-| 2026-09-03 | 358.68 | 362.85 | 356.39 | **362.06** | +1.6% | 5,414,200 |
 | 2026-09-04 | 361.00 | 362.86 | 355.20 | **358.64** | -0.9% | 4,873,500 |
 | 2026-09-08 | 357.10 | 358.55 | 353.23 | **353.51** | -1.4% | 5,631,400 |
 | 2026-09-09 | 352.00 | 356.33 | 348.69 | **354.71** | +0.3% | 6,318,200 |
@@ -158,6 +140,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-09-22 | 352.00 | 352.10 | 337.30 | **340.00** | -3.4% | 11,485,600 |
 | 2026-09-23 | 337.61 | 341.44 | 336.98 | **337.53** | -0.7% | 7,068,500 |
 | 2026-09-24 | 338.12 | 339.37 | 335.28 | **338.56** | +0.3% | 6,934,300 |
+| 2026-09-25 | 340.77 | 343.27 | 338.64 | **343.06** | +1.3% | 9,834,443 |
 
 ## 七、自己去查（本页不做独立验证）
 

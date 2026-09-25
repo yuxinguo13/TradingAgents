@@ -1,63 +1,63 @@
 # CRM · 赛富时（Salesforce）
 
-_科技 · 数据截至 2026-09-24 收盘 → 面向 2026-09-28 开盘_
+_科技 · 数据截至 2026-09-25 收盘 → 面向 2026-09-28 开盘_
 
 [← 回到 2026-09-28 当日报告](../2026-09-28.md)
 
-> 趋势向上且结构完整；顺势的一侧在上方，风险在于结构一旦破位就要认。
+> 趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌。
 
 ## 一、价格与图形
 
 ```text
      CRM · 近 126 个交易日（日线收盘）
-261 ┤                                                                  ╭╮╭╮
-253 ┤                                                                 ╭╯╰╯│ ╭─╮
-244 ┤                                                                 │   ╰─╯ ╰╮
-236 ┤::::::::::                                                       │        ╰─
-227 ┤          ::::::::::::                                           │
-219 ┤                      :::::::::::::::                            │
-210 ┤                                     :::::::::::::           ╭──╮│        ··
-201 ┤··                          ╭╮                    :::::::╭╮╭╮│::╰╯:::::···::
-193 ┤  ······                    │╰╮                        ╭─╯╰╯╰╯      ···
-184 ┤──────╮ ··╭──╮╭╮╭──╮·······╭╯·╰╮·                   ╭──╯          ··
-176 ┤      ╰╮ ╭╯  ╰╯╰╯  ╰╮ ╭────╯   ╰╮··············╭─╮ ╭╯   ··········
-167 ┤       ╰─╯          ╰─╯         ╰──╮     ╭──╮╭─╯·│·│····
-158 ┤                                   ╰╮  ╭─╯  ╰╯   ╰─╯
-150 ┤                                    ╰──╯
+260 ┤                                                                 ╭──╮ ╭╮
+252 ┤                                                                ╭╯  │ │╰╮
+243 ┤                                                                │   ╰─╯ ╰╮
+235 ┤::::::::::                                                      │        ╰──
+226 ┤          ::::::::::::                                         ╭╯
+218 ┤                      :::::::::::::::                          │
+209 ┤                                     :::::::::::::          ╭──╯        ····
+201 ┤··                         ╭╮                     ::::::╭─╮:│::::::::···::::
+192 ┤  ·····                   ╭╯╰╮                       ╭──╯ ╰─╯      ··
+184 ┤ ╭──╮  ·╭──╮·╭╮╭──╮·······│··╰╮·                   ╭─╯          ···
+175 ┤─╯  ╰╮ ╭╯  ╰─╯╰╯  ╰╮ ╭────╯   ╰╮·············· ╭╮ ╭╯  ··········
+167 ┤     ╰─╯           ╰─╯         ╰──╮     ╭──────╯│╭╯···
+158 ┤                                  │   ╭─╯       ╰╯
+150 ┤                                  ╰───╯
     └────────────────────────────────────────────────────────────────────────────
-     2026-03-25                       2026-06-25                       2026-09-24
+     2026-03-27                       2026-06-29                       2026-09-25
      · SMA50   : SMA200   ─ close
 ```
 
 ```text
        CRM · 近 21 个交易日（放大看最近节奏）
-264.0 ┤       ╭╮
-256.6 ┤   ╭───╯╰╮   ╭─╮
-249.3 ┤  ╭╯     ╰╮ ╭╯ ╰╮
-242.0 ┤  │       ╰─╯   ╰╮
-234.6 ┤  │              ╰───
-227.3 ┤  │
-219.9 ┤  │
-212.6 ┤  │
-205.3 ┤──╯
+264.0 ┤     ╭╮
+260.1 ┤     │╰╮   ╭╮
+256.3 ┤ ╭───╯ │   │╰╮
+252.5 ┤─╯     │   │ │
+248.6 ┤       ╰╮ ╭╯ ╰╮
+244.8 ┤        ╰╮│   │
+241.0 ┤         ╰╯   ╰╮
+237.1 ┤               ╰─╮╭─╮
+233.3 ┤                 ╰╯ ╰
       └─────────────────────
-       2026-08-25 2026-09-24
+       2026-08-27 2026-09-25
 ```
 
-成交量近 63 日： `▂▃▂▂▁▂▂▁▂▂▁▂▂▂▃▃▂▂▁▂▂▁▂▂▂▃▂▁▁██▄▂▂▃▂▁▂▁▄▁▂`
+成交量近 63 日： `▂▂▁▁▁▁▂▂▂▁▂▂▁▂▂▁▂▁▂▁▁▂▁▂▂▁▁▂█▄▂▂▁▂▁▁▁▂▃▂▂▁`
 
 ### 图形读数
 
-- **均线排列**：均线偏多 — 现价距 20 日 247.30（-3.7%）、50 日 210.80（+13.0%）、200 日 200.60（+18.8%）
-- **形态结构**：收敛整理 — 高点走低但低点抬高，区间在收窄；前高 267.80 → 261.88（-2.2%）、前低 198.60 → 241.33（+21.5%）
-- **动能**：RSI(14) 54，中性；近一月的斜率慢于近三月（月 +14.1% vs 季 +56.2%），涨势在放缓
-- **波动**：日均真实波幅约为价格的 3.5%；按本报告 2 ATR 的止损惯例，一个 R 相当于 7.1% 的价格距离
-- **位置**：距 52 周高点 -9.9%，距 52 周低点 +59.0%
-- **量能**：最新一日成交量为 20 日均量的 0.7 倍，量能正常
-- **相对强度**：近一月跑赢 标普500 13.7 个百分点
-- **支撑 / 阻力**：最近的摆动低点 198.60，摆动高点 261.88（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
+- **均线排列**：均线偏多 — 现价距 20 日 247.82（-5.6%）、50 日 213.37（+9.7%）、200 日 200.36（+16.8%）
+- **形态结构**：下降结构 — 更低的高点 + 更低的低点；前高 267.80 → 261.88（-2.2%）、前低 241.33 → 229.81（-4.8%）
+- **动能**：RSI(14) 50，中性；月 +14.0%、季 +48.0%，节奏平稳
+- **波动**：日均真实波幅约为价格的 3.6%；按本报告 2 ATR 的止损惯例，一个 R 相当于 7.3% 的价格距离
+- **位置**：距 52 周高点 -11.5%，距 52 周低点 +56.2%
+- **量能**：最新一日成交量仅为 20 日均量的 0.5 倍，缩量
+- **相对强度**：近一月跑赢 标普500 13.1 个百分点
+- **支撑 / 阻力**：最近的摆动低点 229.81，摆动高点 261.88（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
 
-**我的读图结论**：趋势向上且结构完整；顺势的一侧在上方，风险在于结构一旦破位就要认
+**我的读图结论**：趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌
 
 _以上每一条都是对已经发生的价格的描述。均线、RSI、摆动结构全部是滞后指标，它们能说明现在处于什么状态，不能说明下一步。你自己在图上看到的东西，和这里写的不一致时，以你看到的为准——然后去查是哪个数字有问题。_
 
@@ -69,7 +69,7 @@ _以上每一条都是对已经发生的价格的描述。均线、RSI、摆动�
 - **增长**：最新季度营收同比 +10.8%；盈利同比 +118.9%；最近 7 次财报里 7 次超预期。
 - **盈利质量**：毛利率 77.3%、营业利润率 21.4%、净利率 22.0%、ROE 19.4%。
 - **资产负债**：现金 $114.03亿；有息负债 $423.76亿；负债/权益 110.4%（负债适中）；流动比率 0.84（短期偿付紧）；自由现金流 $177.32亿，为正。
-- **卖方预期**：53 位分析师覆盖；平均评级「买入」（1.74/5，1 为最看多）；目标价均值 281.08（较现价 +18.0%），区间 160.00–475.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
+- **卖方预期**：53 位分析师覆盖；平均评级「买入」（1.74/5，1 为最看多）；目标价均值 281.08（较现价 +20.1%），区间 160.00–475.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
 
 **分季度损益**（季度数据，最新在左）
 
@@ -112,15 +112,10 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 5h 前 | 9 | 中性 | [Salesforce stock reports 11 percent Q2 revenue growth and higher guidance - AD HOC NEWS](https://news.google.com/rss/articles/CBMi0gFBVV95cUxQb2hmSUZrbjNGM1RDUkI4M05lajUxZndmNDVlMERFdm1zNTBSeHV5QkU2TmUxN0p4a2c3X2xCNGNRLWN5a0ZSMk8tSUloM3FDS1JVTlNhcHVVelB1UUxqMXo4Nl92c2tRT1otWmRRcF9JdnFQaXRRbmkwckwzZFJ5d05DX0IzUW1FZFB3Q01pbm82c2ZyZzlNWWlqbFNLSVBpd0RzRWRXNHBFblAtSk85MnB5S0otdWhHem5LOGJETmQ4ODdiMTJkSEpNQ3ZId2hKd0E?oc=5) | AD HOC NEWS |
-| 32h 前 | 2 | 中性 | [QRG Capital Management Inc. Sells 13,152 Shares of Salesforce Inc. $CRM - MarketBeat](https://news.google.com/rss/articles/CBMixwFBVV95cUxPdkgyMk4xUVpLUzZha0Q5RXNxSTdWZWZMTUpEdE9iMWpRQ0FEUVdZWUZtVkdUTkQ4NjJGY2NUYUhrRmRQbVB5RnJWbkU3VzR3ejR2ZG5Jazh5Z1FYNU1KVGxSb0JvcmVNZkp0eEhfM3RQLVhrbkZKcG5WMHRZbFo1ZzZmZzlZazJBNVRRVWxWZVBSSUhhbG5XUTRKeElFaGpxV2kzdVk2SE5rTzQ1RkZxcHBLRFFTdnBwOV9wQWlGWTNGR05kSUdn?oc=5) | MarketBeat |
-| 2h 前 | 0 | 中性 | [Here’s The Actual Reason I Keep Buying Salesforce On Repeat - Yahoo Finance](https://news.google.com/rss/articles/CBMiowFBVV95cUxQSHZKeWlEdUp5M1UtV01GbFV6TDJIbktnbWtyQ0htOExhOGs2SnptTDViWGNFOXYzaVo3SmNUOFdVRHdRcE9YemE5MEQ3eV9DR2hjcFlUaUxhQkxfbEplZ1Y0S2R0ODJrZ0xqdVhadVJmT0Rrd2x4U2JSTTY2LTc4c0kwNXR4SHlWcTZLZURnSFFPS2pvODZibDZmVXNMZy12YUQ4?oc=5) | Yahoo Finance |
-| 2h 前 | 0 | 中性 | [Here’s The Actual Reason I Keep Buying Salesforce On Repeat - 24/7 Wall St.](https://news.google.com/rss/articles/CBMipAFBVV95cUxOOGE3X1lsRG1lblcyd3QwMzJaQ2FLSDlTRkhITGZmRjNmQTEydzJRbFk2eVpxajItQnZkTE5JODc3MElYTDhzTlhWRmlidUJWTXF2b2dFUVA5RmtpUllkUEFfRjRscjFPdVNRLV9WMFN6TGtoMVoyaVBWYnZoYUVzazQ2eGp2M3NrMDBzaXF4MGpfVzY4Z1V6Z1NYZW9iSnVCRnlHQw?oc=5) | 24/7 Wall St. |
-| 7h 前 | 0 | 偏多 | [Salesforce stock faces a stronger fiscal 2027 outlook - AD HOC NEWS](https://news.google.com/rss/articles/CBMitwFBVV95cUxPNnd6UmpkdEJreGZwaGdRUzZPS0Q5dU4yUl9RdlNMOGQtWXBkX1c3aUFURFFIR2lrVTlLWF9PWHI5WGJIVVdKYWVxSW5hcGQ0ME5XZkdOSkh2cmxWd2Y5WXlRakJVdGJRWjN5UXRBT3JJUEtEOXB2TmZBX0lPZDA1anN0YXpCVmkyaTYzcmRiaGpQd1QxM09EeFBaM2ZSREx1eWFKSGdxU0VNeElteU4tMmhXYUszSTA?oc=5) | AD HOC NEWS |
-| 12h 前 | 0 | 中性 | [2 Large-Cap Stocks with Exciting Potential and 1 Facing Headwinds - The Globe and Mail](https://news.google.com/rss/articles/CBMi4wFBVV95cUxQaFJTNklIS1JWVURZRW5yZTBVaGl1RzdVQ3V3VUwzWVhuUmlTRzFIWVhtc1pES0xZVlJ3Q19nT0FZcUI4Z3JEeTNuLUlSbFI5QmZIV3dtWFNxUmZiUzdVd0ZpZUVZYTdjckttQ0RGOXpMRVlJVkdtZ1UySDdzaVdwU2lXNmJ4amlnVFp0SlZHbXFCcWVuNndBNTl1MkIyTWx4bGFuMXNPVS1QZDAxQjFfV1lPS2szT3B6eE41V1B5WExHRjB2LTE3M1dJa0JoYUNQX2xDMXAzaVpNTE1iT24yZ1phaw?oc=5) | The Globe and Mail |
-| 41h 前 | 0 | 中性 | [Salesforce (CRM) co-founder has 630 and 631 shares withheld for stock-award taxes - Stock Titan](https://news.google.com/rss/articles/CBMiqwFBVV95cUxOdWtJcFV3NTFnOHV1TnpwZU1YaV9GSEJlUkVVck1VM3I5NXpuUUlld1NIUVJMcV9RTFpXWVl0SUFwZnFOOUplY0M1R0p6b2pUZkw0ZkpudXZLbVhhTFJFSk1SZjdpLXYxU0hCdFF3UXVqa01vSFFoTFZlZ19fN21zOVZpaGtlSFlmSlhsMVZEbHpvT2JLT2hwbFBkRjc4d2prTXJVcFJ6c0R2aEU?oc=5) | Stock Titan |
-| 42h 前 | 0 | 中性 | [Salesforce (CRM) president Niles Sabastian has shares withheld to cover taxes on stock awards - Stock Titan](https://news.google.com/rss/articles/CBMiqwFBVV95cUxOb2RWMEo4TzZJZ3Jfa29iWHhzRk1wa1BtWk8xc0JQUkxzMDl0bU9VeTF1TXVtQ3JzZFM5YXpVZjhaaGxxLUNKaWVUYTNQRVVwMDdtWVhpVG10dFgzQW1fZFc4Y3dIQzdWT21iRHAyS21UVzFhb3AtcmJlci1VTmpxdk01c3lsZEp2Zm8tTXhmUmkxaF9Hc2pMbFI0WHU1MzRza1gxb3ZneW03dmM?oc=5) | Stock Titan |
-| 43h 前 | 0 | 中性 | [Salesforce (CRM) withholds 1,001 of COO Miguel Milano’s shares for taxes at $233.28 each - Stock Titan](https://news.google.com/rss/articles/CBMiqwFBVV95cUxNRWhWSUY1aHMxYU1pbTNqYXY3R3VSaGNyTDRndWhaYlIzNXJBd3htZnR1UGVSNENIRGo5eHo1bEsxNjNtR3p3YUlwNjdDMnRKRXE1MWJrbUJZV0EwRC1ITG9ldHdqVzJGMHpvdTR3aU4zQjJDNG9wSjZCcHN5a0pNcmY3UG9EVURuUzVndXZheUlQcWlWbjRWUnIyOGE5WTdhb3ZuWWRoS0tnMUE?oc=5) | Stock Titan |
+| 3h 前 | 6 | 中性 | [Salesforce: Anthropic Stake Gives Optionality To Retire $25 Billion Share Repurchase Debt - Seeking Alpha](https://news.google.com/rss/articles/CBMixwFBVV95cUxNNkxpajlaMTBHTFBBeEc0S2VTRzh5OTU2aFlBdTl0UjNNM0lrWWV1eDNJZnd3dVBrRVBOVkNhSlZCSU4xTkdpcEQzcEE5YmtVYmQ4enZRd2NTUE1NR3p2aGhzb29STm5OMzItcTRobk5RYVplWVJpUjFSVWRjQ1NTX2xZNWY0ZlBPZTVnQmNBSzNRanZ0OU4wbEJVX3lGc00tbG9LcUxES05PRHNEYnU4ckFhRTZlOU04U3ZpSy05ZnFVMFB4OFlJ?oc=5) | Seeking Alpha |
+| 0h 前 | 0 | 中性 | [Here's How Much $100 Invested In Salesforce 15 Years Ago Would Be Worth Today - Benzinga](https://news.google.com/rss/articles/CBMiugFBVV95cUxOTjhCdWZBNy1RRlZMbVlSU2VoVi1EdnZZV1ZTWmhQME9OYTR5R3RMVjJCbzVEdDFOMUthTE1sc0JvY182RWZkTjBwWTVJcTVtNklFQS16cjJfanppMXpuZ01JNG9LVlp6elA5d0hiTXFFVjVZcDFqdlhLUXRsempzREJnSEwzVG85UXBtS3lrclBBMmd6eFdWLXppVURseDVRU3ZZZDVudDk4QmtGekM2UnNMS0p6bDllMHc?oc=5) | Benzinga |
+| 2h 前 | 0 | 偏空 | [Salesforce repurchases $25B stock, cuts shares 10%, eyes Anthropic stake to retire debt and boost finances - pluang.com](https://news.google.com/rss/articles/CBMisgFBVV95cUxQTDFDekdVMzJSaEZ0TXRSR0FVbG5ObDRjZ1dwNGpoYy1JZHZGcmZDTm9FYUNCOXNVdDNla1VXNW1aZHJzdGdqY2RLZzN5ZWh0NVR4YlNIajMyR01UX21maDVhWDlCQ21iY0hFMEcxZnJWZEI2QVhUSUktdmMxSlRjc0hpbmNRMW4zNWFwTUpQTi1uQTR6bXA0Y3UxY3lCa0R2b002VUxXeFg5MjVvdkh5VGZR?oc=5) | pluang.com |
+| 5h 前 | 0 | 偏空 | [Investor keeps buying Salesforce shares despite 10% drop, betting on its AI-driven cash flow growth. - pluang.com](https://news.google.com/rss/articles/CBMie0FVX3lxTE1rc1Q2bThldFRJQXN3NkVjLTRHaW9PMmRtVkVZbUtjMU04UFloTTVoTm1fd29ma0FaeFRaLUozNEc3TmhaV012X1JaUnE1Q2ozNWRjb2VnX2xiNmJYVGRCVlBfM3AyT0czb0hBU3Vnc2RkVVJWb3lnMkZ1UQ?oc=5) | pluang.com |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -128,9 +123,9 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
-- 离最近的支撑 198.60 还有 20%——这段距离里没有明显的接盘位置。
+- 摆动高低点都在下移，属于下降结构；在出现一个更高的低点之前，任何反弹都还只是反弹。
 - 卖方目标价区间 160.00–475.00，宽度超过均值——分歧极大，共识在这只股票上没有信息量。
-- 政策面对该板块的倾向为 -0.93（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.79（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -138,8 +133,6 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 | 日期 | 开 | 高 | 低 | 收 | 涨跌 | 成交量 |
 |---|---:|---:|---:|---:|---:|---:|
-| 2026-09-02 | 258.92 | 264.09 | 253.15 | **256.48** | -0.5% | 14,393,700 |
-| 2026-09-03 | 261.52 | 267.80 | 261.14 | **263.97** | +2.9% | 16,028,300 |
 | 2026-09-04 | 262.90 | 263.14 | 257.37 | **258.77** | -2.0% | 10,490,600 |
 | 2026-09-08 | 253.27 | 253.55 | 245.46 | **248.68** | -3.9% | 17,482,700 |
 | 2026-09-09 | 249.34 | 254.35 | 243.02 | **243.73** | -2.0% | 11,853,700 |
@@ -151,8 +144,10 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-09-17 | 244.18 | 247.00 | 241.52 | **242.85** | -2.9% | 16,611,300 |
 | 2026-09-18 | 244.25 | 244.25 | 236.55 | **237.92** | -2.0% | 21,962,400 |
 | 2026-09-21 | 239.80 | 241.34 | 236.25 | **236.42** | -0.6% | 10,581,900 |
-| 2026-09-23 | 234.42 | 241.12 | 234.24 | **237.58** | +0.5% | 12,353,500 |
-| 2026-09-24 | 240.64 | 242.09 | 237.00 | **238.22** | +0.3% | 11,060,900 |
+| 2026-09-22 | 241.50 | 242.44 | 229.81 | **233.28** | -1.3% | 13,635,600 |
+| 2026-09-23 | 234.42 | 241.12 | 234.24 | **237.58** | +1.8% | 12,353,500 |
+| 2026-09-24 | 240.64 | 242.09 | 237.00 | **238.22** | +0.3% | 11,074,000 |
+| 2026-09-25 | 237.03 | 239.37 | 233.38 | **234.02** | -1.8% | 8,481,640 |
 
 ## 七、自己去查（本页不做独立验证）
 

@@ -1,6 +1,6 @@
 # META · Meta(脸书)（Meta Platforms）
 
-_通信 · 数据截至 2026-09-24 收盘 → 面向 2026-09-28 开盘_
+_通信 · 数据截至 2026-09-25 收盘 → 面向 2026-09-28 开盘_
 
 [← 回到 2026-09-28 当日报告](../2026-09-28.md)
 
@@ -10,51 +10,51 @@ _通信 · 数据截至 2026-09-24 收盘 → 面向 2026-09-28 开盘_
 
 ```text
      META · 近 126 个交易日（日线收盘）
-761 ┤                                                                           ╭
-743 ┤                                                                          ╭╯
-725 ┤                                                                          │
-708 ┤                                                                          │
-690 ┤::::::   ╭╮                                                               │
-672 ┤      ::╭╯╰────╮::::::::::::                 ╭─╮                       ╭──╯
-654 ┤       ╭╯      │            :::::::::::::   ╭╯ │                     ╭─╯
-637 ┤······╭╯·······│·         ╭╮             ::╭╯::╰─╮::::::::           │
-619 ┤     ╭╯        │ ╭─╮╭─╮··╭╯╰╮╭╮········ ╭╮ │     │        :::::::::╭─╯:::::·
-601 ┤     │         ╰─╯ ╰╯ ╰──╯  ╰╯│        ·││╭╯·····╰─╮····╭╮╭╮···    │·······
-583 ┤   ╭╮│                        ╰─╮╭──╮   │╰╯        ╰╮ ╭─╯╰╯╰╮  ··╭─╯
-566 ┤  ╭╯╰╯                          ╰╯  ╰╮ ╭╯           │╭╯     │  ╭─╯
-548 ┤─╮│                                  ╰─╯            ││      ╰──╯
-530 ┤ ╰╯                                                 ╰╯
+765 ┤                                                                           ╭
+746 ┤                                                                         ╭─╯
+728 ┤                                                                         │
+709 ┤                                                                         │
+691 ┤::::                                                                     │
+672 ┤    :::╭───╮╭─╮:::::::::::::               ╭╮╭╮                       ╭──╯
+654 ┤       │   ╰╯ │             :::::::::::::  │╰╯╰╮                     ╭╯
+635 ┤·····╭─╯······│···       ╭─╮             ::│:::╰╮::::::::::         ╭╯
+617 ┤     │        ╰───╮╭──╮·╭╯·│╭╮·········   ╭╯    ╰╮         ::::::::╭╯::::···
+599 ┤    ╭╯            ╰╯  ╰─╯  ╰╯╰╮  ╭╮    ··╭╯······╰─╮···╭─╮╭╮······╭╯·····
+580 ┤  ╭─╯                         ╰╮ │╰╮   ╭─╯         │ ╭─╯ ╰╯│   ╭──╯
+562 ┤ ╭╯                            ╰─╯ ╰─╮╭╯           ╰─╯     ╰╮ ╭╯
+543 ┤ │                                   ╰╯                     ╰─╯
+525 ┤─╯
     └────────────────────────────────────────────────────────────────────────────
-     2026-03-26                       2026-06-26                       2026-09-24
+     2026-03-27                       2026-06-29                       2026-09-25
      · SMA50   : SMA200   ─ close
 ```
 
 ```text
      META · 近 21 个交易日（放大看最近节奏）
-778 ┤                    ╭
-752 ┤                 ╭╮╭╯
-726 ┤                 │╰╯
-700 ┤                 │
-674 ┤            ╭────╯
-648 ┤         ╭──╯
-622 ┤      ╭──╯
-597 ┤     ╭╯
-571 ┤─────╯
+778 ┤                   ╭╮
+752 ┤                ╭╮╭╯╰
+726 ┤                │╰╯
+700 ┤                │
+674 ┤           ╭────╯
+648 ┤        ╭──╯
+622 ┤     ╭──╯
+597 ┤    ╭╯
+571 ┤────╯
     └─────────────────────
-     2026-08-26 2026-09-24
+     2026-08-27 2026-09-25
 ```
 
-成交量近 63 日： `▃▂█▃▃▃▇▃▃▃▁▁▂▁▁▅▄▃▂▁▂▂▁▂▄▂▂▁▅▂▂▂▃▂▆▃▃▃▂▇▅▅`
+成交量近 63 日： `▂▆▄▃▂▇▄▃▃▃▁▂▂▂▄▇▅▃▂▂▂▂▁▄▃▂▂▄▃▂▃▃▃▅▄▃▄▃▅█▆▆`
 
 ### 图形读数
 
-- **均线排列**：均线纠缠 — 现价距 20 日 651.44（+19.4%）、50 日 613.57（+26.7%）、200 日 624.99（+24.4%）
+- **均线排列**：均线纠缠 — 现价距 20 日 660.49（+13.8%）、50 日 615.32（+22.2%）、200 日 625.42（+20.2%）
 - **形态结构**：收敛整理 — 高点走低但低点抬高，区间在收窄；前高 611.95 → 592.87（-3.1%）、前低 536.85 → 555.66（+3.5%）
-- **动能**：RSI(14) 81，超买区；近一月的斜率快于近三月（月 +36.5% vs 季 +43.3%），趋势在加速
-- **波动**：日均真实波幅约为价格的 3.6%；按本报告 2 ATR 的止损惯例，一个 R 相当于 7.3% 的价格距离
-- **位置**：距 52 周高点 +0.0%，距 52 周低点 +48.2%
-- **量能**：最新一日成交量为 20 日均量的 1.6 倍，量能正常
-- **相对强度**：近一月跑赢 标普500 36.1 个百分点
+- **动能**：RSI(14) 71，超买区；近一月的斜率快于近三月（月 +30.6% vs 季 +36.7%），趋势在加速
+- **波动**：日均真实波幅约为价格的 3.9%；按本报告 2 ATR 的止损惯例，一个 R 相当于 7.9% 的价格距离
+- **位置**：距 52 周高点 -3.3%，距 52 周低点 +43.2%
+- **量能**：最新一日成交量为 20 日均量的 1.1 倍，量能正常
+- **相对强度**：近一月跑赢 标普500 29.6 个百分点
 - **支撑 / 阻力**：最近的摆动低点 651.93，摆动高点 —（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
 
 **我的读图结论**：均线与结构互相矛盾，属于震荡；这种形态里止损容易被扫，仓位应比顺势时更小
@@ -69,7 +69,7 @@ _以上每一条都是对已经发生的价格的描述。均线、RSI、摆动�
 - **增长**：最新季度营收同比 +28.0%；盈利同比 -13.4%；最近 7 次财报里 6 次超预期。
 - **盈利质量**：毛利率 81.7%、营业利润率 34.8%、净利率 29.8%、ROE 29.8%。
 - **资产负债**：现金 $902.60亿；有息负债 $1,123.18亿；负债/权益 43.0%（负债很轻）；流动比率 2.23；自由现金流 $215.54亿，为正。
-- **卖方预期**：57 位分析师覆盖；平均评级「强烈买入」（1.34/5，1 为最看多）；目标价均值 786.80（较现价 +1.2%），区间 580.00–1,000.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
+- **卖方预期**：57 位分析师覆盖；平均评级「强烈买入」（1.34/5，1 为最看多）；目标价均值 786.80（较现价 +4.7%），区间 580.00–1,000.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
 
 **分季度损益**（季度数据，最新在左）
 
@@ -112,18 +112,18 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 3h 前 | 8 | 中性 | [Meta Platforms (NASDAQ:META) Stock Gets Price Target Increase from Deutsche Bank Aktiengesellschaft - MarketBeat](https://news.google.com/rss/articles/CBMi8AFBVV95cUxOaS1kaUp2YWlMQ2JlUUhFeS1SWHJLSWlBbFlTcndjVlFCdFhIWVRsejMxbno3YThIQmhRQmdWVVg0dDExVU5tQXd6bU9CTXl1dWRRck52YU1hT3d4UElMN3NiVUdseXR0b0YyUTFvdXRkZ05vYjlfZy13MGJIeXFnMXF5bkt3ZTBZVzBqRWxHcFlDd0N6OTNUMDNEcVhwSUZsZG02X1BSZ05raGo4T1l6ZVgwMV9qYXQ1VS1pQW5MMEFTWEktS1BZZHRrRzhnWUVrQjJDQlM0SS0xQW1uUXhlZ2pjd0VQQnppNFNJR1YtTHk?oc=5) | MarketBeat |
-| 3h 前 | 8 | 偏多 | [TD Cowen Forecasts Strong Price Appreciation for Meta Platforms (NASDAQ:META) Stock - MarketBeat](https://news.google.com/rss/articles/CBMi2wFBVV95cUxQTDNweFdxVnNkRndYdUlIdW5BbW01OC1ENUx0V3E4aUxaMmRkWnZINEhySEJGMHJFWUJYeUFmRnBYcFVRX3JZYnlnbG9QRXFIRWlTRk9SbzYtNzd5MTRUZ1kxMjk0a0ozbmM0UURGWGFBSG84MDZPSnp2THlmcHhOYkRNcklyUS1pa3lIWGZ5Nmd6QVZKUVFZV1g1dnlUNkp3dktLWVlhN2NXdS0tZjRtaXVNVnFyNzNjYWFvX3NVVVFvRjBBNGFlYTQ0d2oyeGRBQ3VVdWh2b2tHNGM?oc=5) | MarketBeat |
-| 3h 前 | 8 | 偏多 | [Canaccord Genuity Group Forecasts Strong Price Appreciation for Meta Platforms (NASDAQ:META) Stock - MarketBeat](https://news.google.com/rss/articles/CBMi7wFBVV95cUxPZHdiX2tNMnZqVHZpVlVoY1ZaZHpaM2VyTHNvZmhNdGVoandwbEQzZ3NYRThlNjZnQzhzRmpacS1OTWU5ajFmSHdDZEpNNDdYV3BqbDlRbHM2Zks5bFVfSWtybkYzVXBLTWppaGRsOGVIajFmZkdsSlY4YTBXdmJqRm1zY2V2T1ZxREp4ekstZTVmcWhpS0ZqbC1xV1FRVlBXZHk0RWpJWEROWDkzMHh3QWt1aVRESlhzLXhJb3duQUV3NjhGVlhtSUdZTVRZRS1RNmFjbjVJSVJZODMwX2lqX1RNbmQtb2tHMFlTcElVNA?oc=5) | MarketBeat |
-| 9h 前 | 8 | 中性 | [Meta Platforms, Inc. $META Stock Bought by InTrack Investment Management Inc - MarketBeat](https://news.google.com/rss/articles/CBMizwFBVV95cUxQamY0dDRoWFZMcXN1UjRLbjA2V3BHQWY1VjJpNWd6REkxUHJfb0tZaW5GcHNaLVpndDFJRDJON1NGaDFWZ0NqMlRtMkxZZ05JWDJDZGlUTFNDNmN6bjBZVUs5cDhrcFRycXpMeXBqVEhtcm81d29LdGpWRjBqTjdDcE41OF9rVmFNaDlGZkhZZTRJc1ljbXd2MmNNOGZsVGc3MHZNWGdSSlFaQjlfamh0Z1hyMEZ5TUs0dEZwVk9DMWRGaDdPS195WGs0cmpmWHc?oc=5) | MarketBeat |
-| 9h 前 | 2 | 中性 | [581,385 Shares of Meta Platforms, Inc. $META Bought by Nykredit A S - MarketBeat](https://news.google.com/rss/articles/CBMiwgFBVV95cUxNT2l1YnktUkNvUkJPa2lfNUtGRTJJTUZUVUs2Ujdfb2tNbENOdHZZVi1pdkh2dEszeUF6VDBjSGk3ZngtS3pDU1l5b0Q3T0JqWm5DbUtOdWhKREllUDFwcWNlWVpCU21GT182VnZjQ2h6RTNkZXJmOUFtQ01ZVUdXWE12bmZYMmhJYlpnRkRzUzJsTmN6RWR6Y2lrUU5zOV9hNjBTRXFaUUo2SEpuSlE4UUUtS1BicXZmU0RGVFNDQWVvUQ?oc=5) | MarketBeat |
-| 9h 前 | 2 | 中性 | [Prosperitas Financial LLC Grows Stock Holdings in Meta Platforms, Inc. $META - MarketBeat](https://news.google.com/rss/articles/CBMizwFBVV95cUxNbzhoWFhnQ1lmeWlWYTRJNC1VbWVOcEVqWnNIbUhlcHgxSXFrcGZIR2NSN0pUbkI2QlQtRkFMbndJVkVBNUI3YXZVdDhickszSUd0bk5IYzRSZWV1S3dpOHJBRG5lNHB2YUg1SkVTWTVRUmM5cGpLQThZbHlzdHd0anNtZlM4RWxobTI3X0xUV015U3NWU2pVd1czdTB0R0ItWWMteTJPVmMwSGxtNVJfTnhjTkkxaXpNTnM5S3JQbGw1N3pjcGoxSGwwTFlXZ2s?oc=5) | MarketBeat |
-| 9h 前 | 2 | 中性 | [NEOS Investment Management LLC Purchases 99,835 Shares of Meta Platforms, Inc. $META - MarketBeat](https://news.google.com/rss/articles/CBMi2AFBVV95cUxQZTM1ZVFoYXk1UTVBcjNjVU0waUdQV19QZXNXVHBqbDgxUnFpdFhlYjZCaEUtRXVSbUk1NVQyTHlkVHRWVFJXZncxVW5INm1HVUJFV1E0cW5leE9IS1ZjYnk4dTBLakExZzRsMDAwakR2eTdRUGhEeGF2WDNha0huc1h5aEZGMzFwY1hSZS1TMW1pQkE4ZHZaVy14ZVNLRU5oNzZBZjJiQ3YxWmdudl95ZnkzSzY4LVhQVUpsN2c5dEVtUkdVelcxTzN6MUVwTXB4cHlTYlhtbzk?oc=5) | MarketBeat |
-| 9h 前 | 2 | 中性 | [3,960 Meta Platforms, Inc. $META Shares Sold by Maestria Partners LLC - MarketBeat](https://news.google.com/rss/articles/CBMixAFBVV95cUxOclRqdTlLaFZ5NVlWbE9mTlA4VkF4SWg3SjhBVmo5QS1pMzVId0tDcUlxZEJUOURCUWxJMk15aTlKSFcwenltSXBlS3pnenNNX2NHSndzVnRKeXdEVVlfUUdpSnMtQldrdGVMOVlqcE9QMk5PbkV4TGYxS0pWbWM2cnBLcXBxTFBLeXhsQ2pqYmJTUFR6TXBJWUtpVGRlMk9MNE11MDZkZ2ZLZUhwek5LaENFbUVJbWZPTlpaMEdSTElEa3dL?oc=5) | MarketBeat |
-| 9h 前 | 2 | 中性 | [996 Meta Platforms, Inc. $META Shares Acquired by KFG Wealth Management LLC - MarketBeat](https://news.google.com/rss/articles/CBMizgFBVV95cUxPMU1Lb1RWQnhaZWNuSDFjYVFkRThwZ0NpeGVyLTJpRHJ3M2pSX1ZNQWNwc2dvYl92WHJaeUxYcFQ0elRjRzBacFRFYl9EZW5EV2lEdklXSmZQWVV5YmltR3NPU1JpajdXaklrMTRFR1VMRUt6U0NiLVpZdzhCckQwWjd4MDdMV2VRYk9ZRTloUmhWMkhWX29YY2RkLVk0YW12MzJQUjA1UElMSk5iNWFsWVE1SVhXWVFRbmh4LTAtdjRXYXlCT1JxNzhSYk1ZUQ?oc=5) | MarketBeat |
-| 9h 前 | 2 | 中性 | [Meta Platforms, Inc. $META Shares Purchased by Concurrent Investment Advisors LLC - MarketBeat](https://news.google.com/rss/articles/CBMi1gFBVV95cUxQNEY4WjJkT0QwcFpiV1lhVGdyWnhaOTI5T0NYWDVqVlJLdGowa1ZBN2hHN2VHR3BQSnh0dVY4M2JTcTlLUHRpRTBvZkV0RHc0YjVsS1VzUmdDdnY3ZDM4QTFzTkhiZnFqMDJuQlZZa1lzWV9aZEJ2XzhIY21tRWVmdFVIc0w3bmFRN3MwT1dSOG1oZnB4RkdlX0piOFYtNVczbE9PY0dXQ2NFSHV4UUw5dFAwS0JSQlFyNWF3N3pTTE1jMHhWbF9SSnZXTVEydWtwNzVkcXVR?oc=5) | MarketBeat |
-| 1h 前 | 0 | 中性 | [Why is Meta Platforms stock sliding today? - Investing.com](https://news.google.com/rss/articles/CBMipgFBVV95cUxQUXpGMW15Y09qWWhhdWJ2Slc2VTFjbW9IZVBBNlJGYlhEZ0NvX1g3bEhUY0NIT0FjMUswTkJXdUd3NGZIOHJ1eWkwaUFoN1VtSVdfcGpRQlE3OTMwSl8yemVBN19fSHZSVDRmaHNsdDB2Q1V0MG9FN3BuQms4RjFFMHZpY3lOamk5blVxRUZBQjNTT1BCTWhJU1c5MS1CdHc3NlQxWjV3?oc=5) | Investing.com |
-| 2h 前 | 0 | 中性 | [Why Meta Platforms Stock Reversed Today - The Motley Fool](https://news.google.com/rss/articles/CBMiigFBVV95cUxPTVdpVXdMbXBGYjdpRndOUXdfNUtXa0t2UHQ3QmtfVU9YaWtRMmlUNGlWLUFMbjJnc1YwS3N1OHFGaFJPaEJCekJuMllXZ3FrWGt3SnFCbDRWLUdGbkRILXVrTW5iQkl1ekxic25fblp3MUVWN0lrWkd5bExaXzVEaHpwS1VMNV9lRUE?oc=5) | The Motley Fool |
+| 3h 前 | 5 | 中性 | [Why Meta Stock Could Spike if It Crosses This Price Target - barrons.com](https://news.google.com/rss/articles/CBMicEFVX3lxTE54VlAwN3FqWkVGbXROblBWNmticzEyU2FxdW9JTGRZY1VwU093aHpNMFVWczhRMG9UQkVocU9lNzE3NHZCWnQ5NmRYZm9yQ2hPeG9DWEVsclkyMXN1YjlsTDFTMENCMm5Jd3pEQW03SEM?oc=5) | barrons.com |
+| 33h 前 | 5 | 偏多 | [JPMorgan raises Meta price target to $920 after Muse AI launch - Yahoo Finance](https://news.google.com/rss/articles/CBMinwFBVV95cUxQSU9ZT0k1Wmp4OExsTW1RWFZsQy14Zk9Jc0taVVRBOUQtNXhxdXZrMmVyMmp0YVV2c2FoTWhXQmpHbDlfSHl6VF84YWpOVGZaalZkZTVIT3dxamdkQTQybWNJeWRBRjRHNnZRZUNWVk01SlctREltTTF2SWtrQWRSRU9NdjJvMVpObDVNNTE3ellOdkJNZktrZC1CSE1PREk?oc=5) | Yahoo Finance |
+| 1h 前 | 0 | 中性 | [AMD Hits $1 Trillion, Muse Spooks Subscription Stocks: This Week on Wall Street - Benzinga](https://news.google.com/rss/articles/CBMinAFBVV95cUxQeEFpN2Zsa3ZoVjMzSFgwV3BiNXF0YWJvemR2OGdfTzllY2I1X0NOV3hFWTE0azRKMDc4NUpHUEt1YXFuSmpJN2RWWGlvVmhUd0tsQ0lINjU4YlZHamdPSWdrWWl0Y1RUdlRDR0dFYXRmNE0wcWFZZV9kYTJtOW1EZUJIT2RXR1VPSnJNMG94Xzd3dlFRMW9qU1hhNUw?oc=5) | Benzinga |
+| 1h 前 | 0 | 偏空 | [Meta’s Loudest AI Bull Just Cut His Own Stock Exposure and It Is Not Because of AI - Yahoo Finance](https://news.google.com/rss/articles/CBMilAFBVV95cUxQTVpLeEtPYlU5c2k1VGEzenhFdVdVeEdyWHdELUE2Q0hzS1hseVNDT2YxSjNRWGNzWS1vQUhSSFhxclVGT1pJN1cxckZhOC1KaEVKZW05eWVONGJpRTVrZXdXaXNTY0hKRHJZRHp6eEdPWmdJenJRMkRnUWxfcUZtZm9pdXRhUjQ3THdjeFN3VHRHaU5P?oc=5) | Yahoo Finance |
+| 3h 前 | 0 | 中性 | [Is Meta the Best Magnificent Seven Stock to Buy After Its AI Agent Topped the App Store? - The Motley Fool](https://news.google.com/rss/articles/CBMiygFBVV95cUxObVQ5ellVQlMtbWtjN1I5UE9UMThjYVY2U1JyczRQN3JBb3R6MmRsdWRmMEVjX19IOVhmbEQwaFlIUzI5cUtqUFJVUW44ZkZwUGlMRWRzQnY4UGc0eVhEZC1lY29wNk0teTI5b01DSEtvblhoZV8zYnFkVFdHSFN2YU1JYlFoTFFpbHEwTG9GWlNkVHM2c1Jsb0gwSjEybElLNnU5QUJUdjZ0cXpaenpxdGRubk0tVldvcTI0TXRYUC11TVg5al9vY0F3?oc=5) | The Motley Fool |
+| 3h 前 | 0 | 中性 | [Meta Platforms stock trades at USD 751.54, down 3.35 percent in New York trading - AD HOC NEWS](https://news.google.com/rss/articles/CBMiygFBVV95cUxPUUt3aGozdzNxcTJhWGFEcVI4MVdzSE5GV19IX0IxZzAyV0pXMjFpVHQtUGJHRTFFSVNiX0k0N0tYWGYzUEVMcmo0UDh2eDFrUEdTWUVVTm8wdUZ0dDd2bDZqZEVTZDNNeUxBenNnUGNFZ1ZPLS1FZS1RejhKbTd2YXN0dXQzdVpubmNjU0ZWM1pHNDJrYlh5ZmNrYk51NW9PbHB5aEVETFI3amZlU0hxNlQ4VUI4cU9aWWtXTGZ0S1lId1RjcEpuVmFB?oc=5) | AD HOC NEWS |
+| 3h 前 | 0 | 中性 | [As Meta Platforms Launches New VR Glasses, This Is How You Should Play META Stock - Barchart.com](https://news.google.com/rss/articles/CBMiwgFBVV95cUxOZURGQVdGcVhrMGxOVzUwMFk3WDV3M3ctN3UxRTB3YU80YmQ5empOb0RXSzk3SmJqTmt1U2RMNXZQSnlYSVFBelJsbkNPZjRpbnQxTGhpX3BtRDdfeUxGeExWc0xVUjVhekNFNjQzR0xrNWVEdXluN2U5R0g2SG8wMlZJZXhHUDRYUFFNaFV0RG4wTGJ2TU5SWWVVOHdfVmhQbC1qSHdqVUVSdFlTNUZjckNZQXNKVTd2M0JOZTdrRUJEZw?oc=5) | Barchart.com |
+| 6h 前 | 0 | 中性 | [Meta Stock Shows ‘Clearest Signs to Date’ of Potential AI Returns, Says 4.5-Star Analyst; Ups META Stock Forecast - TipRanks](https://news.google.com/rss/articles/CBMi0wFBVV95cUxQMU9ENHBFbmM3YXRsSEVZdWs3Vk9taVpxb2NGQzdSSDFrS0pCOFByR0lXeFp5WktYRG9OWmFoVUdDVHNZSlJFVENHUTBQWGR4WHpCWUE3ZXFLU042RXNBOEl5djFNRnhHeUlkeWkwLXEtUGFRRXI3WHBhcWhvenpnNnR0aE9qaVdJQzRMdUtfMlBzYzR1eTlLc3dCQU5uYkIzY0tudzdYeV96WHhvd2xoWlhjNkp1ek9kQndlcGwxTzlmeU9lUUJXdlZqQnkwRkJLYTk0?oc=5) | TipRanks |
+| 6h 前 | 0 | 中性 | [Meta's Muse Shakes Up The AI Battle. Here's What Investors Should Know. - Investor's Business Daily](https://news.google.com/rss/articles/CBMigwFBVV95cUxOdGhSYW9nSjJicHpKWk44bjlkYVZ6bl9lNkVlYTk3NmhCSGQ4SXJSTEUtNlcyQmpSelpzQUpubmVpRW1rSFRaS3NuSnZrYkxVa0dmQ08zUmxKRlZUcVYwLWoxUDk1VTJwVTRLQThzZVVhckpvQzRvTzRseWlTRW5TTlNLUQ?oc=5) | Investor's Business Daily |
+| 7h 前 | 0 | 中性 | [Meta Connect Just Started and the Stock Is Already at a 52 Week High - 24/7 Wall St.](https://news.google.com/rss/articles/CBMisgFBVV95cUxQOXdpWGVLTHoxbG1iUHcxREFGa05tcVhDZVBtSFNsSUVuajFSMHItdUlzS3BRZU9JVGFLdWpERk8wNk9qSW1JbVlGMTMxdEpGMExtYklCemhzSHQ0ZXoxeVQzcm4teENkRjVHWUlMNkVJRHdMeWFYNTZ6c19PX0RfYm1tblFuQTQzam5KQXdVZnhKd2ZYaTA4bGtLa052cEE0MTZQdTFTbWgzR2pwSmluU3Z3?oc=5) | 24/7 Wall St. |
+| 7h 前 | 0 | 中性 | [Meta's Stock May Plunge As Credit Market Warns Against Massive Rally (NASDAQ:META) - Seeking Alpha](https://news.google.com/rss/articles/CBMiqwFBVV95cUxNUVhHUVVBZC00eVplbVh5WWtJdHdNNXd5RFVCZ3d2ZXVrVmg2N0toc3pOLXZZdGZsSVlnQm5lNk5LX3djYTVFYmxDcmVkRTkzeC1WUmlycVc2WUhiX1JPSVdPNFFpcElJUEtONVB1VXFNaXFIVFlITHNEY3ZlbFJfMVFDOGxkRGZHVnNBTXZvREd5Ulh0ak1qSHZ6MTViQXFqZW5zWVdCMXlkZms?oc=5) | Seeking Alpha |
+| 8h 前 | 0 | 中性 | [I'm Riding Meta Through This Run - Seeking Alpha](https://news.google.com/rss/articles/CBMif0FVX3lxTE1DSEdLWk5HTTFQYV9Fckg4OXRuNktfbTY3YlMxTUwwRWxiOWpRcDVrRGExck9ERjR0S1pEUDc2QXpFUkNnazJ0M1dNQXFZSUp6WTg2UlRMQmVIdVZTSVItaDYwUzF0ZjFSVEJnSUhObF9EdUg4LXlBVGNjREw5MVU?oc=5) | Seeking Alpha |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -131,9 +131,7 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
-- 离最近的支撑 651.93 还有 19%——这段距离里没有明显的接盘位置。
-- RSI 81 已在极端超买区，短期回撤概率高于起涨阶段。
-- 政策面对该板块的倾向为 -0.33（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 离最近的支撑 651.93 还有 15%——这段距离里没有明显的接盘位置。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -141,7 +139,6 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 | 日期 | 开 | 高 | 低 | 收 | 涨跌 | 成交量 |
 |---|---:|---:|---:|---:|---:|---:|
-| 2026-09-03 | 604.01 | 618.97 | 603.87 | **610.20** | +3.0% | 19,737,100 |
 | 2026-09-04 | 611.87 | 616.97 | 604.79 | **616.28** | +1.0% | 15,966,200 |
 | 2026-09-08 | 615.72 | 624.31 | 609.26 | **613.00** | -0.5% | 18,909,700 |
 | 2026-09-09 | 648.13 | 657.34 | 638.06 | **653.17** | +6.6% | 35,900,700 |
@@ -155,7 +152,8 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-09-21 | 680.30 | 753.00 | 679.60 | **741.25** | +11.4% | 48,720,500 |
 | 2026-09-22 | 731.40 | 757.27 | 730.00 | **736.60** | -0.6% | 28,122,100 |
 | 2026-09-23 | 747.60 | 763.90 | 739.51 | **744.10** | +1.0% | 30,829,200 |
-| 2026-09-24 | 744.36 | 779.82 | 743.01 | **777.59** | +4.5% | 34,744,400 |
+| 2026-09-24 | 744.36 | 779.82 | 743.01 | **777.59** | +4.5% | 34,808,500 |
+| 2026-09-25 | 768.84 | 769.57 | 746.54 | **751.66** | -3.3% | 25,459,873 |
 
 ## 七、自己去查（本页不做独立验证）
 

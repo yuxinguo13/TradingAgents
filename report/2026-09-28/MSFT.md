@@ -1,63 +1,63 @@
 # MSFT · 微软（Microsoft）
 
-_科技 · 数据截至 2026-09-24 收盘 → 面向 2026-09-28 开盘_
+_科技 · 数据截至 2026-09-25 收盘 → 面向 2026-09-28 开盘_
 
 [← 回到 2026-09-28 当日报告](../2026-09-28.md)
 
-> 趋势向上且结构完整；顺势的一侧在上方，风险在于结构一旦破位就要认。
+> 趋势向上且结构完整，且贴近 52 周高点——追高的代价是止损离得远；顺势的一侧在上方，风险在于结构一旦破位就要认。
 
 ## 一、价格与图形
 
 ```text
      MSFT · 近 126 个交易日（日线收盘）
-510 ┤                                                                ╭─╮╭╮
-499 ┤                                                       ╭───╮   ╭╯ ╰╯╰╮╭─────
-487 ┤                                                      ╭╯   ╰───╯     ╰╯
-475 ┤:::::::::                                            ╭╯                    ·
-463 ┤         ::::::::::::::::                            │                  ···
-451 ┤                         ::╭╮::::::::::             ╭╯               ···
-439 ┤                           │╰╮         :::::::::::: │             ···
-427 ┤           ╭╮╭─╮          ╭╯ ╰╮                    :│::::::::::···::::::::::
-416 ┤·        ╭─╯╰╯ │╭──╮ ╭────╯   ╰╮·······             │     ·····
-404 ┤ ····   ╭╯     ╰╯  ╰─╯ ········╰╮      ·······╭╮··· │·····
-392 ┤     ··╭╯··············         ╰─╮      ╭╮ ╭─╯╰─╮ ╭╯
-380 ┤       │                          ╰─╮   ╭╯╰─╯    ╰─╯
-368 ┤─╮╭────╯                            ╰╮╭─╯
-356 ┤ ╰╯                                  ╰╯
+514 ┤                                                                ╭╮
+501 ┤                                                       ╭─╮     ╭╯╰──╮ ╭╮╭───
+489 ┤                                                     ╭─╯ ╰─╮ ╭─╯    ╰─╯╰╯
+477 ┤::::::                                               │     ╰─╯             ·
+465 ┤      ::::::::::::::::                              ╭╯                  ···
+453 ┤                      ::::╭─╮::::::::               │               ····
+441 ┤                          │ │        ::::::::::::   │             ··
+428 ┤          ╭╮╭─╮           │ ╰╮                   :::│::::::::::···::::::::::
+416 ┤        ╭─╯╰╯ │╭───╮ ╭────╯  ╰╮ ······             ╭╯     ·····
+404 ┤····   ╭╯     ╰╯   ╰─╯········╰╮      ·········╭╮· │······
+392 ┤    ···│··············         ╰──╮     ╭─╮ ╭──╯│ ╭╯
+380 ┤      ╭╯                          ╰╮   ╭╯ ╰─╯   ╰─╯
+367 ┤ ╭────╯                            ╰───╯
+355 ┤─╯
     └────────────────────────────────────────────────────────────────────────────
-     2026-03-26                       2026-06-26                       2026-09-24
+     2026-03-27                       2026-06-29                       2026-09-25
      · SMA50   : SMA200   ─ close
 ```
 
 ```text
        MSFT · 近 21 个交易日（放大看最近节奏）
-513.5 ┤  ╭╮
-510.6 ┤  ││  ╭╮
-507.7 ┤  │╰╮ ││
-504.8 ┤ ╭╯ │ ││    ╭╮
-501.9 ┤ │  ╰╮││    ││   ╭╮╭╮
-499.0 ┤ │   ││╰╮   ││ ╭╮│╰╯╰
-496.1 ┤─╯   ╰╯ │  ╭╯╰╮│││
-493.2 ┤        ╰╮╭╯  ││╰╯
-490.3 ┤         ╰╯   ╰╯
+516.2 ┤                    ╭
+512.9 ┤ ╭╮                 │
+509.7 ┤ ││  ╭╮             │
+506.5 ┤─╯╰╮ ││    ╭╮       │
+503.2 ┤   │ ││    ││       │
+500.0 ┤   ╰╮│╰╮   ││   ╭╮╭╮│
+496.8 ┤    ╰╯ │  ╭╯╰╮╭╮│╰╯╰╯
+493.5 ┤       ╰╮╭╯  ││╰╯
+490.3 ┤        ╰╯   ╰╯
       └─────────────────────
-       2026-08-26 2026-09-24
+       2026-08-27 2026-09-25
 ```
 
-成交量近 63 日： `█▂▂▂▂▂▁▂▂▂▂▂▂▂▂▄▃▃▂▂▂▂▁▁▁▁▁▁▁▂▂▁▁▁▁▁▁▁▁▂▁▁`
+成交量近 63 日： `▅▄▄▃▂▂▂▃▃▂▂▂▂▂▄█▆▄▃▂▂▂▁▂▁▂▁▁▂▂▂▁▁▁▁▁▁▁▃▂▁▂`
 
 ### 图形读数
 
-- **均线排列**：均线偏多 — 现价距 20 日 499.49（-0.3%）、50 日 473.09（+5.3%）、200 日 430.47（+15.7%）
+- **均线排列**：多头排列 — 现价距 20 日 500.04（+3.2%）、50 日 475.40（+8.6%）、200 日 430.61（+19.9%）
 - **形态结构**：收敛整理 — 高点走低但低点抬高，区间在收窄；前高 517.78 → 509.95（-1.5%）、前低 476.25 → 486.00（+2.0%）
-- **动能**：RSI(14) 54，中性；近一月的斜率慢于近三月（月 +1.3% vs 季 +41.4%），涨势在放缓
-- **波动**：日均真实波幅约为价格的 2.0%；按本报告 2 ATR 的止损惯例，一个 R 相当于 4.1% 的价格距离
-- **位置**：距 52 周高点 -7.4%，距 52 周低点 +41.4%
-- **量能**：最新一日成交量为 20 日均量的 0.8 倍，量能正常
-- **相对强度**：近一月跑赢 标普500 0.9 个百分点
-- **支撑 / 阻力**：最近的摆动低点 486.00，摆动高点 509.95（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
+- **动能**：RSI(14) 63，偏强；近一月的斜率慢于近三月（月 +4.0% vs 季 +38.7%），涨势在放缓
+- **波动**：日均真实波幅约为价格的 2.1%；按本报告 2 ATR 的止损惯例，一个 R 相当于 4.2% 的价格距离
+- **位置**：距 52 周高点 -4.0%，距 52 周低点 +46.6%
+- **量能**：最新一日成交量为 20 日均量的 1.8 倍，量能正常
+- **相对强度**：近一月跑赢 标普500 3.1 个百分点
+- **支撑 / 阻力**：最近的摆动低点 486.00，摆动高点 517.78（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
 
-**我的读图结论**：趋势向上且结构完整；顺势的一侧在上方，风险在于结构一旦破位就要认
+**我的读图结论**：趋势向上且结构完整，且贴近 52 周高点——追高的代价是止损离得远；顺势的一侧在上方，风险在于结构一旦破位就要认
 
 _以上每一条都是对已经发生的价格的描述。均线、RSI、摆动结构全部是滞后指标，它们能说明现在处于什么状态，不能说明下一步。你自己在图上看到的东西，和这里写的不一致时，以你看到的为准——然后去查是哪个数字有问题。_
 
@@ -69,7 +69,7 @@ _以上每一条都是对已经发生的价格的描述。均线、RSI、摆动�
 - **增长**：最新季度营收同比 +17.7%；盈利同比 +31.7%；最近三个季度营收连续环比上升；最近 7 次财报里 7 次超预期。
 - **盈利质量**：毛利率 67.9%、营业利润率 45.1%、净利率 40.3%、ROE 34.0%。
 - **资产负债**：现金 $768.43亿；有息负债 $1,288.13亿；负债/权益 29.1%（负债很轻）；流动比率 1.23；自由现金流 $165.46亿，为正。
-- **卖方预期**：52 位分析师覆盖；平均评级「强烈买入」（1.33/5，1 为最看多）；目标价均值 577.26（较现价 +15.9%），区间 440.00–870.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
+- **卖方预期**：52 位分析师覆盖；平均评级「强烈买入」（1.33/5，1 为最看多）；目标价均值 577.26（较现价 +11.8%），区间 440.00–870.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
 
 **分季度损益**（季度数据，最新在左）
 
@@ -112,18 +112,18 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 6h 前 | 6 | 中性 | [Microsoft stock gets an 8 percent dividend increase - AD HOC NEWS](https://news.google.com/rss/articles/CBMitAFBVV95cUxQbUlFWkN4eWphbFlvdWdfRzZNYi1NLWZCU2liQmMwQlQyb2xmVWRIc2d2aHJ1dG95OE9uVGgybUVpTmdpMEh1ME5jT05mNlpPRzFCUzduVFJtTGQ5VlMwYUIyZUU0SGlGUmI1bHFNUGJZVW5OY1J2TG9wbXQwY203ZjladzNtT0RLWmhuVmUzVVRHcnlkUnBmRUJJdlBjV3ZELVN5a3RNeGl4bnVqaXFSRzBpeVE?oc=5) | AD HOC NEWS |
-| 5h 前 | 5 | 中性 | [Oppenheimer resets Microsoft stock price target after HQ visit - thestreet.com](https://news.google.com/rss/articles/CBMiqAFBVV95cUxNWEJDZndHS05hcDUzakZOZUxfajZpLXpjTEQ4bXNVR1lvRW96SlZqMFJjT2J6bVdxYVhhMTEyVENQZjRHMy1LZUhvelZLNXlHLUhhbm14UWJXTHItZkxuR0lZY0dldzA3RHY1LXpOTUdsTUxkOEFtdXJvMzhreVFnaTVpZTctdmJCX2w0QlV1eGZjMGVKZjRRclZQdzVmcE0yek1YNlVVMFk?oc=5) | thestreet.com |
-| 45h 前 | 5 | 偏多 | [Microsoft Stock Gets Another Upgrade, Price-Target Hike - Investor's Business Daily](https://news.google.com/rss/articles/CBMingFBVV95cUxQV2RNcUc4QXVxb3RQbXdpcG9PM2Q3a0EzS3p3SkdqVVNSRS1nbjRpTlF4SzdwQWxTRGgwMlRqb1RPMENYa0hVdmVQdnFYcGJQT2w3RTJFdVRocFRIb3lrcDhHZGM4RDdkSFRyVGt6TGkyMmtyS0VEamhUbHBZOWZuOW1HX29XSXRKUDR5S0hNVnJsc3ZwUmxjU21FSk83dw?oc=5) | Investor's Business Daily |
-| 0h 前 | 0 | 中性 | [What's Going On With Microsoft Stock Friday? - Microsoft (NASDAQ:MSFT) - Benzinga](https://news.google.com/rss/articles/CBMinAFBVV95cUxQSTlqREx0R0NNdl9wR3JwOFItYnZPV3VxaG1hV3IyQXR0ZEQwRmFzWHNYZHRLSlBlQmVzSTJ1ZHZnSVRuTi1zSl8xZHBYU0l4Ry1lLUNYYTNZQ3FHdDFlTkxiaHJuRXlfUnBfNHUtOWFqeDgzUFlnNjM3Ums2WmN5UzVvdnR3Q0FsaFowQ0JLNy1oc3cwU01ta3NsNzc?oc=5) | Benzinga |
-| 1h 前 | 0 | 偏多 | [Microsoft shares jump 4% as Oppenheimer raises target to $570 on new Copilot enterprise AI strategy. - Pluang](https://news.google.com/rss/articles/CBMinAFBVV95cUxQdml4RWVhSVJCdEk3ZDlVU3FKdU10OXlRV0ViRW84MzVWSkFaVDhHcWU3THdFdVA2UzZweW40RVJzUElIdlBrZ2t4SHVSdTQyNUxyazNCMjFQVGFlYlNnUks1LVdIcHU5SGJWMGxhdUJxeXlWUElxUFFHOXl4anlUQUluTFZOWGJFOHcwV1dlU1RHdkJsMXkxQ1JXRmU?oc=5) | Pluang |
-| 1h 前 | 0 | 中性 | [Microsoft Climbs 3% as Oppenheimer Lifts Target to $570 on Copilot Enterprise Pivot; Alphabet Ticks Up - Yahoo Finance](https://news.google.com/rss/articles/CBMiogFBVV95cUxNU1ZJLTEyQVUxaGN2OFZzeXFFbldqSlpuYVFmeGlmWWUxQzhwRXVSYXdKNDhMNE5DOElOUG9rMU5OeXZXVFktUWhEMS1NQkdRdExDNUlHNGZFSXp2d1BFQlpZYjJzSWJXazFWNzJLMnJZOVNhYy1FVUxCTFZuOFB2blBLWDJSOU1iMVVzR0s1amdrVVNlMUh5RUZzQ1B5dlI1S3c?oc=5) | Yahoo Finance |
-| 1h 前 | 0 | 中性 | [Microsoft Climbs 4% as Oppenheimer Lifts Target to $570 on Copilot Enterprise Pivot; Alphabet Ticks Up - 24/7 Wall St.](https://news.google.com/rss/articles/CBMi2wFBVV95cUxPWl9JZ3Z1dVc2YW5GVkZtRWEtUEkzUi1SQ01uTzRBaEozaHp4cC1wSV9QUXZFYjdYTlJSMWZvU0trR0xZX3RwbUhzbW43OGZIb2F2VFVNT1d3dG9fNlE3VklYczNJaUp2VkhUMnhzSi1GLTZyN0dWUl9mN1JtM2IyVUFSZnMzeXNzeFJrZHBSREYyUkNYS2hfS08yLVZRSzhVTVBFMEJaRE8yQkVMcWR0bV8zemRPOWNna0c0Q1h1RjY1dkJXT05seHlPbFNlOU1YN3F4X3ZhTGNKZDQ?oc=5) | 24/7 Wall St. |
-| 1h 前 | 0 | 中性 | [Microsoft Stock Is on Pace for Its Highest Close in More Than 10 Months. Here's Why. - 富途牛牛](https://news.google.com/rss/articles/CBMimgFBVV95cUxOVk1FR2EzMS13Z1lNV1BCSHBkczlJVFlHd21FNnJDd1JGamZFc2ZwalZzTkQ5MnU4RjZWWENUWG1YazVaMjJFTkprMThGMHZEUUx4MU1xZDdmNU9XdVdzTGhrcEV4VmFvTklxY2NCYjc3OEttQm9CU3BHYXNhcW1MazhkaFRqbUNJTjYxRk8xY29rd0xOOE1KT1R3?oc=5) | 富途牛牛 |
-| 2h 前 | 0 | 中性 | [Microsoft shares rise over 3% after expanded Copilot release - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMigwFBVV95cUxOMVljRFVDa0ZIeFNLR01ERjVsQVQ0WFVoNDJqZ19DVUo1MVJCWEFIR2tocVh3Z2VsREtfbEtVWEZFd2ViWVNMVmUzN3FmYmtZaS1sTGN1TndmVXB5b0ZRY1RtNDQ5RGxIRTV3THplbWhyaGVEYnZvZjRFSEphVFBhUENEUQ?oc=5) | Yahoo! Finance Canada |
-| 2h 前 | 0 | 中性 | [Microsoft stock rises as analysts warm to Azure and AI growth outlook - Quiver Quantitative](https://news.google.com/rss/articles/CBMipAFBVV95cUxPdHFya3ZRYk8wcF9DZ3h5MEJzRDRGTHdiaG5kV1plelpKY3k1dDhNdEl3SnMtbG5NV0hkU0JXOTJmWXhoT3RpRG9IbnZnYzNpT0QwTThJLWFxVmJnU05PeWVtWmUtZFlhcTJzLWQ3V3RyeFVxVERITlBKWktHOS1Ya3A0RTkxVE5ENjhhc1FOa2kwSUdPdzhQLS1sYzZOeEZrblpvdQ?oc=5) | Quiver Quantitative |
-| 2h 前 | 0 | 中性 | [Microsoft Introduced An Updated App To Include More Features. Its Stock Is Climbing. - International Business Times](https://news.google.com/rss/articles/CBMiqAFBVV95cUxNcGhjTTljRlVqOUg0eG5NUm1vbzVWaktmTEVKRVJZSURsMGFnd1o0SWx1ZHB3eXBYd3dXVkN5aVFFZUJTVy1oNmZmV0NIVUdFYkFTLWw0bmd4aldzd1E2dHNQSEU4M0RueWx4OURhdUpnM2psSVVaVkhhOUxONUtmYUVDd0tFWElCVi1PeUZSZW83bzVuY0Mwd0pTWldnR1gtSGhjWTlzcVg?oc=5) | International Business Times |
-| 3h 前 | 0 | 偏多 | [Why is Microsoft stock rallying today? - Investing.com](https://news.google.com/rss/articles/CBMioAFBVV95cUxPYlhlTU5DZ3MxYmJ3MmZzWTRiYW9rMjY1ejE3V2h6MXI0RmhLYlV2Qm9HM3g1a0dSWlNFZnR1VnJsT01uWmxEYnhnMUpTRzN0SEZxS1JvRWkwR05HeXpoVGpkUEFxSzhTVGM4VjhiYjlLTzlPSm10STlNT0xoU3J0Z29WSGNRNmlRQVhJMFFtOTdfR2Jyb2FvZ0ktLUV3YmpJ?oc=5) | Investing.com |
+| 1h 前 | 6 | 偏多 | [Microsoft Just Raised Its Dividend by 8%: Is It the Best Magnificent Seven Dividend to Own? - The Motley Fool](https://news.google.com/rss/articles/CBMiygFBVV95cUxNeVFnTlFTV0VkMGJ3OGhGa0ZvbDRVNzROdFNmUk1KNGdKcTkzTGQ2Ty1KV1REa2M1ZFBsdGRkaThkU2JldnZRT2lTWHRwck9nX2xLX2lhX2JsN1ZWR2RIQjhzU05jMUdPdkpSc01jZUgtV3JzY183SUwxd1ZiNUx1S1Q1ekhyMlR3bEI2N2lLUVQ2Z005bThpSW5oWWRaM1FLOFFFUk1ZQTNmdXZqd3JlLVBXeTRnUGdXNllZMlhES2lnWU9FVnlUU0ln?oc=5) | The Motley Fool |
+| 2h 前 | 5 | 偏空 | [Top Bank Tweaks Microsoft Stock Price Target for 2027 - TradingView](https://news.google.com/rss/articles/CBMiswFBVV95cUxPaDNMeS02OFpDbm1tR0JoY2doTGs3T0pzNGVNdnc1V25oZlNpSzdrQTN5OHZWTGlxMEUtckIzanRNT3F6REtHOVlveXRIMm1iZThacWZlM2UzdlhjWF81R3ZyazNpbnpfdjk1djZDYTNDN2ZvWGhSV2RSdjFtT1ZRQlZrMThGenRySEp6VVhYSzExelczOWFNVVEwTnAzN2RZMkRWQjRYbllPNVdDaEMtNTRUVQ?oc=5) | TradingView |
+| 0h 前 | 0 | 中性 | [Wall Street ends higher as investors buy AI stocks; Microsoft rallies - Reuters](https://news.google.com/rss/articles/CBMiwAFBVV95cUxOazZwSUsxTDltUG1palRCRG1iQnVRWFQxSGRoVFNKbnVoWExJYk13bVFFMEtkSndpTlh5eVNGYVJlTXpWSmtJZXpTVXRDazdBaUw1eFlUcjdob21NWF9hT2NNWDllOW1fc0lHdjBrQVBmeXY0ZWJLS25xdEJZMFJMUkVsa3NwRS0xSG1LUGVJVkVuSEVOVDlQR2pwWnZjRzliZXNQSTdyREhFVlBuQ185VEYxUWRab01zcThMWUtvOFI?oc=5) | Reuters |
+| 1h 前 | 0 | 中性 | [Microsoft’s stock has roared back to life and is now headed for its highest close of the year - MarketWatch](https://news.google.com/rss/articles/CBMi0AFBVV95cUxOeno5SkZJZ0c4YjA0cmY0S1NUY253azVmWldZSmlpUjVkcUhsZWFZNXVqU0JuRE1OcW1XekFKaDF5RDNBTDZJa0R2cm1KSFNQM25QajQyUHdON3R0ZWtsOXo4SEFuTG9XU3FUWkNvYjhlb21CakVlSE1VZXZnNkJQVVhBRnNxV0luNDBnUjRiQ0JLRUFEX1lGeU1vZ3dWajg1bHdrMmluM25ESEZ5QVp0X0U2WXlMUWU1Y2NWbFQ0aWZzR3RVTnBWLXR4M2pjc0FU?oc=5) | MarketWatch |
+| 2h 前 | 0 | 中性 | [Microsoft Stock Is on Pace for Its Highest Close in Nearly 11 Months. Here’s Why. - barrons.com](https://news.google.com/rss/articles/CBMif0FVX3lxTE9iSmFEbEwwM0dCd0ViUmNXdEN2Wl9JQjdpTlhqWUMxWjdyQ3JTMVhwcmNOa1diczk3R1BBN2xUT0cya3NrdHA5RGlhVUV2bGsyQ2hjbkFGYUlTSnZCQUpiNWpHT29wcmpmWmZ3ME1sdWZ6ZXlvNlhOX3Q4eml3ZVk?oc=5) | barrons.com |
+| 2h 前 | 0 | 偏多 | [Microsoft gives Copilot a much-needed overhaul, and the stock deservedly soars - cnbc.com](https://news.google.com/rss/articles/CBMitAFBVV95cUxPUjdfSnQzcEdXalBJMlVyTldYb0Vzdkpqb1poTEdPVWFVbHowODBseHJSZHhLTkl3U0JHVGhYbUNuTWFPZmxSYVF6Vjl2Nmc2NXhQV2tLM0dtQWtkdGoxV2NNTmhIcU5BWUlqY3Bja1N2QU44UmhGaWVpd2RPcm1rSnZ6bjA1RXJrM3VhQlZ0RDNNN1J5TlN4MGMtZjR5c1ZFaXdGYnNGMVF5LThoQ2xpdktxbXY?oc=5) | cnbc.com |
+| 2h 前 | 0 | 中性 | [Unusual Options Activity in Microsoft Stock Is Already Paying Off (and 3 Other Stocks to Watch) - Barchart.com](https://news.google.com/rss/articles/CBMi0wFBVV95cUxOZVBMQ1hqeWZkQ1AxSFBxTHoySUx5MXlZWHhmbm1EN2lQYzdKNHNLRUVmLVFpODI1OVRYQ2syNnZ5ZWRvTkxvWFkxbFkxOWw4bGVMd0dfcng5Yi03N0pmMnlaY2djNWZLOHRzdUU5QU1zYUVJeV9lWEs1cl9lSEEtWWN5T3JEblU5Q2hrZ0FJbUoxeXVRNllUVzFtTXRUYlgzbUdDVjlkTFdVdzM0TW80RVdkWjJZdmJaaWxIX3UySl9QdFUzSWJwQ1JhQ3BCb09VT1BZ?oc=5) | Barchart.com |
+| 2h 前 | 0 | 中性 | [Microsoft, Arm among market cap stock movers on Friday - Investing.com](https://news.google.com/rss/articles/CBMitgFBVV95cUxQRFJXWWpuMUUyazh5dnJyMUlsS2xRRDE4T0UwUFZwcmhKYy11Y1V4UTZWaWx6NTFIeTZKTF9rMHV6Wmh3amJOWEkwOHJKVkNJQzZKUVpUX0M2LVFFaHNJcHJPWGZEQjJBZDJueDI4YjVBNlNKdTRmUTF2MFJZQ19veXhueFNCSVlQX1Jycm0ySmo2ajVwSDBhUDFZaFBSeXNGVVlKV0pYU3luUmpuMHVmbTVxZllvQQ?oc=5) | Investing.com |
+| 3h 前 | 0 | 中性 | [The Dow Leads Market Indexes Higher as Microsoft Adds 120 Points - The Motley Fool](https://news.google.com/rss/articles/CBMihwFBVV95cUxQeGFlSTNQVEN3dG9Yd3pZcXJKUWM3SVJvbXNoTkt6TFZLYlNuZmYyWDVmZnR3YWJDSFNGdHlZOEdIaFhKTFB0VEJOZ2VkZ1pRbW1tNnVmZ2dMVGRRT2R1WVlodUt1S0V2X0tGYjd3M1JUQXRDX0U3RjM4N0hleU9JZHB0QVVRVVE?oc=5) | The Motley Fool |
+| 3h 前 | 0 | 中性 | [Microsoft Launches Copilot ‘Super App’ in Push to Monetize AI - barrons.com](https://news.google.com/rss/articles/CBMid0FVX3lxTE1SWFUyYkNkY2hQWjVnTFdxdlVacndRdDNWWVotWEx3RDJrVzhsTnhsQXBvTzNNS0xTN3NXVUJiTjBhNnZqYktRbmxyQTl4QVEzOC1hQ1dEa3FVbF9KOFMzTFhiYW1wZDVuSUc4TmNMSU1oNE9VaWp3?oc=5) | barrons.com |
+| 4h 前 | 0 | 中性 | [If You Invest $10,000 in Microsoft Today, Here’s What It Could Be Worth by 2030 - 24/7 Wall St.](https://news.google.com/rss/articles/CBMiuwFBVV95cUxPWnRYN3ZnclhoM0xHc2k5ZThSbF9TUGY1b1E1b3pfdC01WTg4LU5VREdjSFQ0Njd0bnpzemNkN3J6WEduYU1RSjVWcWhMNjY4TzNyOXF1UEdFcVlJS2xoZXBoWWN3VFdCck1aRmZuamctVGY3bFo1NzJaQnlNWlBFSzFqdkNGbFdPTzcxdHVDeHRCcWN6Y2wwS2JKNWl0R1FZSlBwam9IcVFvYk4yNFlUcjQ1bUU1a2tHZ1Jz?oc=5) | 24/7 Wall St. |
+| 4h 前 | 0 | 中性 | [Microsoft, Meta, Akamai, Zscaler, Comcast, and More Stocks That Explain Today’s Market - barrons.com](https://news.google.com/rss/articles/CBMiZEFVX3lxTFBQTW9Nd21zOTJhWVVUdUZmbWd0Wlp6RzNDUlRSSmZ1MlVmY0lWa1BmbF9RNHZJd2ZpQ3hKN0ppVVJrcERWMUdMSVR5QWxkTGpGSXRCdFlKNlVLdGVmZEdBUjZVSTg?oc=5) | barrons.com |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -131,7 +131,7 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
-- 政策面对该板块的倾向为 -0.93（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.79（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -139,7 +139,6 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 | 日期 | 开 | 高 | 低 | 收 | 涨跌 | 成交量 |
 |---|---:|---:|---:|---:|---:|---:|
-| 2026-09-03 | 501.66 | 515.65 | 500.80 | **510.12** | +2.7% | 24,125,900 |
 | 2026-09-04 | 510.00 | 511.00 | 499.36 | **499.70** | -2.0% | 18,101,800 |
 | 2026-09-08 | 493.01 | 495.19 | 490.15 | **493.95** | -1.2% | 18,882,300 |
 | 2026-09-09 | 493.07 | 494.39 | 489.80 | **491.65** | -0.5% | 12,889,600 |
@@ -153,7 +152,8 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-09-21 | 494.95 | 501.87 | 491.33 | **501.61** | +1.6% | 27,959,900 |
 | 2026-09-22 | 507.32 | 508.50 | 493.65 | **498.00** | -0.7% | 21,652,800 |
 | 2026-09-23 | 500.76 | 509.44 | 495.88 | **500.59** | +0.5% | 19,445,600 |
-| 2026-09-24 | 495.07 | 498.90 | 491.22 | **497.93** | -0.5% | 16,637,200 |
+| 2026-09-24 | 495.07 | 498.90 | 491.22 | **497.93** | -0.5% | 16,657,600 |
+| 2026-09-25 | 499.14 | 519.40 | 497.30 | **516.17** | +3.7% | 37,897,460 |
 
 ## 七、自己去查（本页不做独立验证）
 

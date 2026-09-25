@@ -1,6 +1,6 @@
 # GOOGL · 谷歌(A类)（Alphabet）
 
-_通信 · 数据截至 2026-09-24 收盘 → 面向 2026-09-28 开盘_
+_通信 · 数据截至 2026-09-25 收盘 → 面向 2026-09-28 开盘_
 
 [← 回到 2026-09-28 当日报告](../2026-09-28.md)
 
@@ -10,51 +10,51 @@ _通信 · 数据截至 2026-09-24 收盘 → 面向 2026-09-28 开盘_
 
 ```text
      GOOGL · 近 126 个交易日（日线收盘）
-402 ┤                 ╭─╮╭─╮
-391 ┤                 │ ╰╯ ╰─╮╭─╮
-381 ┤               ╭─╯      ╰╯ ╰╮
-370 ┤               │            │╭─╮  ╭─╮········╭╮···   ╭─╮
-359 ┤               │            ╰╯·╰──╯ │  ╭─────╯╰╮  ···│·╰─╮·
-348 ┤             ╭─╯         ·····      ╰─╮│       ╰─╮   │   ╰───╮╭─╮╭╮····╭───╮
-337 ┤        ╭────╯        ···             ╰╯         │ ╭─╯       ╰╯:╰╯╰──╮╭╯:::╰
-326 ┤       ╭╯         ····                         ::│╭╯:::::::::        ╰╯
-316 ┤···  ╭─╯     ·····                 ::::::::::::  ╰╯
-305 ┤   ·╭╯·······              ::::::::
-294 ┤   ╭╯               :::::::
-283 ┤─╮╭╯          ::::::
-272 ┤ ╰╯   ::::::::
+401 ┤                 ╭╮ ╭─╮
+390 ┤                ╭╯╰─╯ ╰───╮
+379 ┤              ╭─╯         ╰╮                         ╭╮
+369 ┤              │            ╰───╮ ╭─╮·····╭╮·······   ││
+358 ┤              │              ··╰─╯ │  ╭──╯╰───╮   ··╭╯╰─╮···             ╭╮
+347 ┤            ╭─╯          ····      ╰─╮│       ╰─╮   │   ╰──────╮╭╮····╭──╯╰─
+337 ┤       ╭────╯        ····            ╰╯         │  ╭╯      ::::╰╯╰────╯:::::
+326 ┤       │         ····                         ::╰╮╭╯:::::::
+315 ┤··· ╭──╯     ····                 ::::::::::::   ╰╯
+305 ┤   ·│········              :::::::
+294 ┤  ╭─╯               :::::::
+283 ┤ ╭╯           ::::::
+273 ┤─╯    ::::::::
 262 ┤::::::
     └────────────────────────────────────────────────────────────────────────────
-     2026-03-26                       2026-06-26                       2026-09-24
+     2026-03-27                       2026-06-29                       2026-09-25
      · SMA50   : SMA200   ─ close
 ```
 
 ```text
        GOOGL · 近 21 个交易日（放大看最近节奏）
-355.0 ┤                 ╭╮
-351.9 ┤                 │╰╮
-348.9 ┤            ╭╮  ╭╯ │
-345.8 ┤  ╭╮        │╰╮╭╯  │
-342.8 ┤─╮││  ╭╮    │ ╰╯   │╭
-339.8 ┤ ╰╯╰╮ │╰─╮ ╭╯      ││
-336.7 ┤    │╭╯  │ │       ╰╯
-333.7 ┤    ╰╯   │╭╯
-330.6 ┤         ╰╯
+355.0 ┤                ╭╮
+351.9 ┤                │╰╮
+348.9 ┤           ╭╮  ╭╯ │
+345.8 ┤ ╭╮        │╰╮╭╯  │
+342.8 ┤ ││  ╭╮    │ ╰╯   │╭─
+339.8 ┤─╯╰╮ │╰─╮ ╭╯      ││
+336.7 ┤   │╭╯  │ │       ╰╯
+333.7 ┤   ╰╯   │╭╯
+330.6 ┤        ╰╯
       └─────────────────────
-       2026-08-26 2026-09-24
+       2026-08-27 2026-09-25
 ```
 
-成交量近 63 日： `█▂▂▂▁▁▁▁▂▂▂▂▅▂▂▂▃▂▃▁▁▂▁▁▁▁▁▁▁▂▂▁▁▁▂▂▂▁▁▃▂▂`
+成交量近 63 日： `▄▄▃▃▂▂▁▂▆▃▂█▄▃▃▅▅▆▃▂▃▂▁▂▂▂▃▂▂▃▂▂▂▃▂▄▂▂▇▄▅▂`
 
 ### 图形读数
 
-- **均线排列**：均线偏多 — 现价距 20 日 341.94（+0.1%）、50 日 344.34（-0.6%）、200 日 337.66（+1.4%）
-- **形态结构**：扩张震荡 — 高点抬高但低点下移，波动在放大；前高 344.46 → 349.91（+1.6%）、前低 332.61 → 327.74（-1.5%）
-- **动能**：RSI(14) 49，中性；月 -1.3%、季 -0.3%，节奏平稳
-- **波动**：日均真实波幅约为价格的 2.7%；按本报告 2 ATR 的止损惯例，一个 R 相当于 5.3% 的价格距离
-- **位置**：距 52 周高点 -14.9%，距 52 周低点 +45.1%
-- **量能**：最新一日成交量为 20 日均量的 0.9 倍，量能正常
-- **相对强度**：近一月跑输 标普500 1.7 个百分点
+- **均线排列**：均线偏多 — 现价距 20 日 342.12（+0.5%）、50 日 344.14（-0.1%）、200 日 337.82（+1.8%）
+- **形态结构**：扩张震荡 — 高点抬高但低点下移，波动在放大；前高 349.91 → 364.17（+4.1%）、前低 332.61 → 327.74（-1.5%）
+- **动能**：RSI(14) 50，中性；月 +0.6%、季 +2.0%，节奏平稳
+- **波动**：日均真实波幅约为价格的 2.6%；按本报告 2 ATR 的止损惯例，一个 R 相当于 5.3% 的价格距离
+- **位置**：距 52 周高点 -14.5%，距 52 周低点 +45.8%
+- **量能**：最新一日成交量为 20 日均量的 0.8 倍，量能正常
+- **相对强度**：近一月跑输 标普500 0.3 个百分点
 - **支撑 / 阻力**：最近的摆动低点 340.66，摆动高点 344.46（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
 
 **我的读图结论**：均线与结构互相矛盾，属于震荡；这种形态里止损容易被扫，仓位应比顺势时更小
@@ -69,7 +69,7 @@ _以上每一条都是对已经发生的价格的描述。均线、RSI、摆动�
 - **增长**：最新季度营收同比 +24.2%；盈利同比 +294.0%；最近 7 次财报里 7 次超预期。
 - **盈利质量**：毛利率 60.9%、营业利润率 34.0%、净利率 54.8%、ROE 48.7%。
 - **资产负债**：现金 $2,424.74亿；有息负债 $1,207.91亿；负债/权益 18.9%（负债很轻）；流动比率 2.72；自由现金流 $226.65亿，为正。
-- **卖方预期**：54 位分析师覆盖；平均评级「强烈买入」（1.38/5，1 为最看多）；目标价均值 429.46（较现价 +25.4%），区间 340.00–515.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
+- **卖方预期**：54 位分析师覆盖；平均评级「强烈买入」（1.38/5，1 为最看多）；目标价均值 429.46（较现价 +24.9%），区间 340.00–515.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
 
 **分季度损益**（季度数据，最新在左）
 
@@ -112,18 +112,12 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 5h 前 | 8 | 中性 | [Alphabet Trades for 17 Times Earnings. The S&P 500 Trades for 25 Times Earnings. Is This the Best Stock to Buy in the Market? - The Motley Fool](https://news.google.com/rss/articles/CBMimAFBVV95cUxPdmZqdHZWbHdUSVdBNVhQWGR0YTZOZnZsZXRNaV9JNFRsVDBJUmR2T0tSa3VsR0g2ZkVWNmFqc2N6QXJlSHNNNTVKMkxsUmM3MmN1RFdTLXJyOHdpcldLYlRBSWdOZzdPcF9RUUVCdFVMZXByX2s4c3BiNENBMFVoSXhqYkFqSVpRM2cycTVWOVJheG9NdXc4RA?oc=5) | The Motley Fool |
-| 3h 前 | 7 | 中性 | [Elon Musk Responds With Two Emojis as Google CEO Sundar Pichai Says Project Suncatcher Heads to Space: 'C - Benzinga](https://news.google.com/rss/articles/CBMihgJBVV95cUxNWTRDUUVJdUppMXFJZnkydDlxcjVEMXpyNU9LMEExVjB4MmhTWWU5dXpCMTl4U0x4OTdwbUc0dGd0MldYOXBIbDRaUXNYUVduYnFTVWRManZjMHplTDVxM2k1LUNXQi1SVkx1YUM5MFlSOERhSEdKQllOQ1FqQWkzU0h1aXpxb2V3Q0JUVE1YVDdPRGRrVUplTGdfVVVnWXN5eGc1aW1yVG5RUVBueGtINWRmbzFieVhrSUVndnI3N0VkVFhJNzJmRzF1b1Z3eWgwc244QzZ6VEdEYWlIeGlkMjNWX2VZUURwSE9FSEpIaHdXb1J4X1N1UThPWmJtLTg3UFVfMUlB?oc=5) | Benzinga |
-| 4h 前 | 4 | 偏多 | [Alphabet remains a strong buy despite cost and regulatory challenges ahead. - Pluang](https://news.google.com/rss/articles/CBMilwFBVV95cUxNdG5LaVhHWU5UTDBnemg4cE9zOFNJcXFTSVEtLWNBbnhsWDVJa3RkMmFpYzlEenRzRDlMZ3I2ZnRYTDdsbUlVMkk1ajdZWXAycDNMSmhPUXV2UmZkRTRyNW5raV9uSGk4bFhZRmxjT2c3VVJkaXdNTFBFSGNCR0xSWmNYd0M2SENqOGp3eXc2cjJicUZfUDBr?oc=5) | Pluang |
-| 0h 前 | 0 | 中性 | [Meta Vs. Alphabet: The Agentic AI Each Builds Will Be Very Different in 2027 - 24/7 Wall St.](https://news.google.com/rss/articles/CBMiugFBVV95cUxNNHdhSUVtWlpqTkhDNEpnUDN6OG9rWlVxMkhrN3dFWUl0b0NUd0ZYWURxb3RtS1dHbXFiNnVETkk0X1FOTVpNUGJHMmNVZWNQTkVZTzFvbm5wTVRMbzdNYkV6ekExcGU4U2Y3MGtrWC1QUjFUR3h4aUJ1SFpST3RXNTlBSHVlLUZvRjlhX21qYXZTOU9UOXZ1LXRuNUZESno2YVVxbUI3cUZmOFE5RUtpSF9KN05kUWszSGc?oc=5) | 24/7 Wall St. |
-| 1h 前 | 0 | 中性 | [Alphabet stock last at USD 339.41, up 0.12 percent in New York trading - AD HOC NEWS](https://news.google.com/rss/articles/CBMixwFBVV95cUxOOUQwZnF1MVFiMDlPSjhsZ3I1dEQ3U2pjRDczQ0J6N01PZ1FqYUpRR0xrUmlTTGtyNVdoR3lKOW5rSmFSbW9aMkUxOVFISndKVWsySm5IdjZJQXQyMHh1OFlFQVVXQTdyNE5UZVpXTVNqVWlteW45eDhVeXhsVUFpMHh5V0d1U3pzUTIwcF9MX1NYejJSeGVlOTl4ZGNhd2lwRURYRURWa3NBbHd2cHFSRVhWeE5nVF9KTllvS0R6ZmVDbkdHdEtR?oc=5) | AD HOC NEWS |
-| 2h 前 | 0 | 中性 | [Alphabet Stands Out as Prime Investment Among Magnificent Seven - Intellectia AI](https://news.google.com/rss/articles/CBMingFBVV95cUxNb21mTnozZWt6RFFvbjYyUEx6TFNSY0xxbC10clZmZTFJLUc5ZEtjRzd4QWFYT3ZWc3phSkxBTEt2TWI3WC1rRVRFRFp6c3hLNTNxdWl6MW9SaTZTeG1EWFVDQ3FpQ3NiRVd2dXFVWEFoQlU0N1NaUHdiTUQtSVZYSHI5aGJob2c4MlVOeUZrZW1iZXp3akNLQVF3Tmo5Zw?oc=5) | Intellectia AI |
-| 2h 前 | 0 | 中性 | [Alphabet vs. Tesla: One Mag 7 Stock Is a Winner, the Other Faces Too Many Questions, Says Investor - TipRanks](https://news.google.com/rss/articles/CBMiugFBVV95cUxQNm5nVS1Cb0ctWEEyQVBDeGlrNzhHX2FuZnNyYUVROGNqdjN2elZ0NUtla0FVMi1ZcWd4cTNVRy16QkJFVVNSVXd3eTcyM3VRV0kyaHFwYjJHUEFMeW8wdHlJb3NHcDNTakQtMldQZHpNWGJ0NDR5cmE1X1FZN2tncHZBM2FJQlgtWDU3dWF4bUJzcVk5dnhEMnRMVndsSGVJcWJtODVRRUZFMDF0NzhHOTFnVXJiMUpiTEE?oc=5) | TipRanks |
-| 2h 前 | 0 | 偏空 | [Alphabet Stock Fell Nearly 4% in a Day on Muse and AI Price Cuts. Here’s What Google’s Chip Math Says - TIKR.com](https://news.google.com/rss/articles/CBMiwAFBVV95cUxOcEEwWUptX0xzb0RuUGdYTS1SY2Q1dXpBQlNKZjlqTUVJM0dWcVhoVnpHWHBQT0RvRVBOR2ZLd2dETDZqVWV4TkREckUwZmZyd0puU0hHcnhVaDEweDhqVlU3cENJZWhqVXhVRjdIZGE2Y2xrc041TmM3aXBwVncyQzFQaDBUaE1wbDJDVTV0ZEM3cGNhREpVTEVKUzN4T2xjQmk1T29tUWZhU2xfUVBXVG9zek5walI1TmpNdkJiYzI?oc=5) | TIKR.com |
-| 2h 前 | 0 | 中性 | [The 200-Day Moving Average: The Worst-Kept Secret for Investing - TradingView](https://news.google.com/rss/articles/CBMiugFBVV95cUxQeFBEUTF2Ylp2ek84MmNyRmwydGtVYTdpRGh5VGJjUnVrenFkaFVQVjVVZkhtQlF5cUJMbDRMcVpVVVZqNzhIWmN6d3MtT005eVhWT1pwQnNnclVjNjJRTDFjaE9jVDVCNUtoeXFuQ1FJemR2TzBKV2xqMzZMd1BmRVB4NHd3dWJxZWVoLUJRZjEyQlgweTYzM2RfN1YxT2NMR01lNldZYkFMWDJkZy1RTnBWWlNtRjZxdmc?oc=5) | TradingView |
-| 3h 前 | 0 | 中性 | [The "Magnificent Seven" Stocks: Here's the 1 I'm Buying Hand Over Fist Right Now - The Motley Fool](https://news.google.com/rss/articles/CBMimAFBVV95cUxNRWJRMVhDUFBwT09QbVNIRFVBdW1SUnRLNm9yZzU5TDBtRnpheXlTTWJvazlOV3czZ0NTNlNfaVB5SmlxMjlfMjE2TG1jSkhuYlNVemIzR091djZUUWVPNjZ6OVRtcGg4WXpnYmg0WGIyWmw5Y1VjZjd3bzExbnlCb0c3N0hnTVVvMlBsaFgtVjlOa21UZFQ4UA?oc=5) | The Motley Fool |
-| 4h 前 | 0 | 中性 | [Google Stock Forecast: TPU Growth Strengthens Alphabet’s Challenge to Nvidia - TradingKey](https://news.google.com/rss/articles/CBMiwAFBVV95cUxPMDV2VFpvS205NzRlQ0t5Snd2Y3lMenFicUNwQlYyRF9HYWpyZ2Z4N3QxX2tVZWk5OEVIZnN0M2tYU0U4LWxMSkZsdThlWlZRYTE2NDVYQm9XRVhma2lSYjluaHpEWi1XRmdaVDhxQ3F6aXp1ZHJVc2Vta25lTW9uNkxYVmNqMFZkVUM3bU1pNm9ZSHVrRWd0R1VaUWhaa29lWHVUOXdmLV9wZ1JWNWl4a2doZjVYN1pteUZpLTl0RTU?oc=5) | TradingKey |
-| 5h 前 | 0 | 中性 | [Alphabet's $30 Billion SpaceX Bill Isn't What It Looks Like (NASDAQ:GOOG) - Seeking Alpha](https://news.google.com/rss/articles/CBMingFBVV95cUxPVXFZaDZRYkU5QTJBMUdReDEwczFyV0RoWTEtUURVRzc0dXUta0h4ekNMemZUNEs2aXEtTXBMYllNYkt0ZTcweUtSb2RjVVNHSjFvZmFwWkxpV082RWNvekxHRXpWMHVVOE1hMjVUX05yWFRFc2FYMnpnSWZyRVF6cDdYbllHZUdFejlyZEN5RUMyMGRnQVRCelB6OHdVUQ?oc=5) | Seeking Alpha |
+| 2h 前 | 0 | 中性 | [Sundar Pichai Reported Alphabet's Cloud Backlog Hit $514 Billion After 82% Revenue Growth Last Quarter, With Nearly 90% of the Fortune 100 Using Gemini Enterprise. Is Google Cloud Becoming a Bigger Growth Driver Than Search? - Yahoo Finance](https://news.google.com/rss/articles/CBMioAFBVV95cUxQcENpbllFNWhfSXItV2l1NkZpRHFDRXUwczlZU0NyaVFyVzhPR3dRWVkxYnNsT1EwU0p2SWRRWHZTRUVITkFyMzZ1ZTNsTTZfNmFGYlcwX3FHaW9oNUx2anVTa28zZVZLd0hRaEs1anp4Vy1jVDhFcE1MRTJJOUZIajFiWlJaM2JOd044dEpZb2NyeUR4OWF2b0ZQR0x4T1Vj?oc=5) | Yahoo Finance |
+| 4h 前 | 0 | 中性 | [Alphabet vs. Apple: Which Consumer AI Tech Stock Has an Edge Now? - TradingView](https://news.google.com/rss/articles/CBMiugFBVV95cUxQQXZKbXNYS0ZwTzJvb21RZjFwZHJ0QXJlN2VvRzJjVE11TXY4c0pYUGhuT0lhU01wMFR4VGFfRWhibVdicXVnaHdEampwODZHZ2g2MnZNSDVEWW9Zc0s0UTZnS1hoQ3hGcjRuUHFUSnFCbVg4T3JUWUc2UUVRZGE1RW9NTFJPbzladHFFSU8zVzAxcDM5Q3VycnBBR1ppVHJCVGcxTnhMSmg4YjZtZjJvYzFDdWZIMFFwUnc?oc=5) | TradingView |
+| 4h 前 | 0 | 中性 | [Alphabet stock last at USD 337.72 in New York trading, down 3.83 percent - AD HOC NEWS](https://news.google.com/rss/articles/CBMiygFBVV95cUxPRDZHMmpkM0dJYXA5eUo0T245YnZ1amx4WGNEZ1dneW1LQlJaSW9yV0NIT2F4am1FQTdEM2xWd2NfS1BIcTRaMF9OWUpVVEFtOG5lRk9jUWJVUk1pTXJkYzVsQ1dreWFVaWpXcHJ1RHh6VHhjMUlBN3ZpYUhQdXY1Z04yZ1E3SmhoTXN2TTRhZ2YyQ2pLVnZwQmpJek8wejZpMHNUMHhQZTlzMkJ6VjFJUlFaVFpVbHZKS1JtT0NJcVdUS0hXVkdpeVZR?oc=5) | AD HOC NEWS |
+| 5h 前 | 0 | 中性 | [META Strengthens VR Portfolio: Can It Stay Ahead of AAPL and GOOGL? - TradingView](https://news.google.com/rss/articles/CBMivgFBVV95cUxNcjRZeXFNMm1uVEhfcXdqdjh2RVo1aU13eWNHbGhoUXZSYlB0MGstZnk4WmJKbjBhSnRNMFhJWXFQY2RrODFKZnFoV3ZnVTE5Y2djcEt0YktBckdhb2FaNVpBaDQ3SExlaDlNNzdCazBzNzgzR1M0OXZyMUdxRVpHbXBaNkFyeFp4YzJ1Qjl2SlRzMDU2SVNDRkF4V2J1X2lUemZPUU5tTVc0cHdfa2J4SE5kaExlNnlOcVdsVlZB?oc=5) | TradingView |
+| 6h 前 | 0 | 中性 | [Serve Robotics Targets a $450B Market: How Big Is Its Growth Runway? - TradingView](https://news.google.com/rss/articles/CBMivgFBVV95cUxQc1VfajEwSHRwWHVPdzJpMlU0ZjFxMjM2WEJLTUx2WC1obGZYS3B0UzNxNGh6NU1QMm9jMTJKQmNBRl9BLWxvSHZibU9uQ2FjYkNTcGFaZi12cGlCY0RuWXFKNGZnejlwN2dGSE5XTmUyNWd6a18tbVU4aHNzbk44YjFjWGJMYm03SWVqQl9mRm93MWNxemszUkltazhlX0doaE1ES19CVzdEV3BNY2d4Z1NRVk5EeVFLc3R2aGJn?oc=5) | TradingView |
+| 31h 前 | 0 | 中性 | [Why Cathie Wood Is Trimming the World’s Biggest Tech Stock to Bet on a Space Company - 24/7 Wall St.](https://news.google.com/rss/articles/CBMixgFBVV95cUxQeEI3endaSU92X3U5R21zVFpqeUVsTzd1b3hxOVVuQy1VUXRrNlotc2Y0NnhJYUtIYUprZTkyQmdsd0FCZjJWeHVvWkVOa0p6TkswT3BlaUZmRFNpRGpIX0Ixd2kxOVExYjZjVkpkb0V6REtsdWZyUVcyX0FSR0Ztb3V3VlQ0MkEwa2xKVU9MN0duNUZCNE5kdExNa3daaEZyY3lJYUhhVS1sZTdrNXp6YW0xTzdDOTdjdnY0RjNyZFNtZy1lU0E?oc=5) | 24/7 Wall St. |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -131,7 +125,7 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
-- 政策面对该板块的倾向为 -0.33（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 按本报告掌握的数据，没有触发任何一条成文的风险规则。这不等于没有风险——它只等于「这台机器读到的东西里没有」。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -139,7 +133,6 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 | 日期 | 开 | 高 | 低 | 收 | 涨跌 | 成交量 |
 |---|---:|---:|---:|---:|---:|---:|
-| 2026-09-03 | 340.34 | 344.46 | 339.84 | **342.26** | +1.6% | 20,726,900 |
 | 2026-09-04 | 342.47 | 343.53 | 337.09 | **338.46** | -1.1% | 23,189,300 |
 | 2026-09-08 | 335.42 | 339.68 | 333.22 | **338.36** | -0.0% | 22,915,800 |
 | 2026-09-09 | 331.65 | 331.85 | 327.90 | **330.65** | -2.3% | 33,151,600 |
@@ -153,7 +146,8 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-09-21 | 350.64 | 357.61 | 349.10 | **354.97** | +1.6% | 30,455,400 |
 | 2026-09-22 | 357.65 | 364.17 | 350.22 | **351.16** | -1.1% | 29,788,600 |
 | 2026-09-23 | 349.86 | 350.00 | 337.45 | **337.83** | -3.8% | 35,576,200 |
-| 2026-09-24 | 336.22 | 343.09 | 336.02 | **342.36** | +1.3% | 23,746,900 |
+| 2026-09-24 | 336.22 | 343.09 | 336.02 | **342.36** | +1.3% | 23,777,200 |
+| 2026-09-25 | 342.41 | 347.03 | 341.11 | **343.92** | +0.5% | 21,242,195 |
 
 ## 七、自己去查（本页不做独立验证）
 

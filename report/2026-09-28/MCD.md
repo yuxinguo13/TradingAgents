@@ -1,6 +1,6 @@
 # MCD · 麦当劳（McDonald's）
 
-_可选消费 · 数据截至 2026-09-24 收盘 → 面向 2026-09-28 开盘_
+_可选消费 · 数据截至 2026-09-25 收盘 → 面向 2026-09-28 开盘_
 
 [← 回到 2026-09-28 当日报告](../2026-09-28.md)
 
@@ -10,52 +10,52 @@ _可选消费 · 数据截至 2026-09-24 收盘 → 面向 2026-09-28 开盘_
 
 ```text
        MCD · 近 126 个交易日（日线收盘）
-316.2 ┤············
-310.1 ┤            ·····
-304.1 ┤───────╮╭─╮::::::···::::::::
-298.0 ┤       ╰╯ ╰──╮      ····    ::::::::::::::::::::::::::::
-292.0 ┤             │          ·····                           :::::::::::::::::::
-286.0 ┤             ╰──╮            ····╭─╮                                       :
-279.9 ┤                ╰─╮   ╭╮╭╮     ╭─╯ │·····╭─╮
-273.9 ┤                  ╰───╯╰╯╰───╮╭╯   ╰╮    │·╰─╮╭╮·······╭──╮··
-267.9 ┤                             ╰╯     ╰────╯   ╰╯╰╮ ╭────╯  ╰─────╮·······
-261.8 ┤                                                ╰─╯             │╭──╮   ····
-255.8 ┤                                                                ╰╯  ╰─╮╭╮
-249.7 ┤                                                                      ╰╯╰──╮
-243.7 ┤                                                                           │
-237.7 ┤                                                                           ╰
+316.1 ┤············
+310.0 ┤            ·····
+303.9 ┤───────╮╭─╮::::::···::::::::
+297.8 ┤       ╰╯ ╰─╮       ····    ::::::::::::::::::::::::::::
+291.7 ┤            ╰╮╭╮        ····                            :::::::::::::::::::
+285.6 ┤             ╰╯│            ····╭─╮·                                       :
+279.5 ┤               ╰──╮   ╭──╮   ╭──╯ ╰╮····╭─╮
+273.4 ┤                  ╰───╯  ╰───╯     │╭╮  │ ╰─╮·········╭────╮··
+267.3 ┤                                   ╰╯╰──╯   ╰──╮  ╭───╯    ╰───╮·········
+261.2 ┤                                               ╰──╯            ╰───╮     ···
+255.1 ┤                                                                   ╰───╮
+249.0 ┤                                                                       ╰──╮
+242.9 ┤                                                                          ╰╮
+236.8 ┤                                                                           ╰
       └────────────────────────────────────────────────────────────────────────────
-       2026-03-26                       2026-06-26                       2026-09-24
+       2026-03-27                       2026-06-29                       2026-09-25
        · SMA50   : SMA200   ─ close
 ```
 
 ```text
        MCD · 近 21 个交易日（放大看最近节奏）
-265.0 ┤─╮
-261.5 ┤ │╭───╮
-258.0 ┤ ╰╯   ╰╮    ╭╮
-254.5 ┤       ╰───╮││
-251.0 ┤           ╰╯╰╮   ╭╮
-247.5 ┤              ╰───╯│
-244.0 ┤                   │
-240.5 ┤                   │
-237.0 ┤                   ╰─
+263.1 ┤ ╭─╮
+259.8 ┤─╯ ╰──╮
+256.5 ┤      ╰─╮  ╭╮
+253.1 ┤        ╰──╯╰╮
+249.8 ┤             ╰──╮╭╮
+246.5 ┤                ╰╯│
+243.2 ┤                  │
+239.8 ┤                  ╰╮
+236.5 ┤                   ╰─
       └─────────────────────
-       2026-08-26 2026-09-24
+       2026-08-27 2026-09-25
 ```
 
-成交量近 63 日： `▄▂▂▄▂▂▁▂▃▂▂▂▃▂▃▂▃▄▂▂▂▂▂▂▁▂▂▂▂▃▃▂▂▂▂▂▂▃▃▅▃█`
+成交量近 63 日： `▂▂▃▂▂▁▂▂▂▂▁▂▁▂▁▂▃▃▂▂▁▂▁▂▂▁▂▁▃▂▁▂▂▂▂▂▂▃▄▂█▃`
 
 ### 图形读数
 
-- **均线排列**：空头排列 — 现价距 20 日 253.22（-6.4%）、50 日 262.00（-9.5%）、200 日 288.56（-17.9%）
-- **形态结构**：下降结构 — 更低的高点 + 更低的低点；前高 264.50 → 258.45（-2.3%）、前低 263.27 → 258.02（-2.0%）
-- **动能**：RSI(14) 25，超卖区；月 -11.0%、季 -9.8%，节奏平稳
+- **均线排列**：空头排列 — 现价距 20 日 252.13（-6.2%）、50 日 261.30（-9.5%）、200 日 288.22（-17.9%）
+- **形态结构**：下降结构 — 更低的高点 + 更低的低点；前高 258.45 → 252.06（-2.5%）、前低 263.27 → 258.02（-2.0%）
+- **动能**：RSI(14) 25，超卖区；月 -10.8%、季 -11.7%，节奏平稳
 - **波动**：日均真实波幅约为价格的 2.0%；按本报告 2 ATR 的止损惯例，一个 R 相当于 4.0% 的价格距离
-- **位置**：距 52 周高点 -29.1%，距 52 周低点 +0.0%
-- **量能**：最新一日成交量为 20 日均量的 1.3 倍，量能正常
-- **相对强度**：近一月跑输 标普500 11.4 个百分点
-- **支撑 / 阻力**：最近的摆动低点 —，摆动高点 258.45（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
+- **位置**：距 52 周高点 -29.3%，距 52 周低点 +0.0%
+- **量能**：最新一日成交量为 20 日均量的 1.1 倍，量能正常
+- **相对强度**：近一月跑输 标普500 11.7 个百分点
+- **支撑 / 阻力**：最近的摆动低点 —，摆动高点 252.06（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
 
 **我的读图结论**：趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌
 
@@ -69,7 +69,7 @@ _以上每一条都是对已经发生的价格的描述。均线、RSI、摆动�
 - **增长**：最新季度营收同比 +3.8%；盈利同比 +5.7%；最近 7 次财报里 4 次超预期。
 - **盈利质量**：毛利率 57.4%、营业利润率 46.5%、净利率 31.7%。
 - **资产负债**：现金 $8.22亿；有息负债 $546.04亿；流动比率 1.08；自由现金流 $62.62亿，为正。
-- **卖方预期**：30 位分析师覆盖；平均评级「买入」（2.09/5，1 为最看多）；目标价均值 299.80（较现价 +26.5%），区间 250.00–390.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
+- **卖方预期**：30 位分析师覆盖；平均评级「买入」（2.09/5，1 为最看多）；目标价均值 299.80（较现价 +26.8%），区间 250.00–390.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
 
 **分季度损益**（季度数据，最新在左）
 
@@ -112,18 +112,9 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 4h 前 | 7 | 中性 | [McDonald’s Stock Hits Lowest Level Since 2022 as CEO Warns of Flat Traffic at Investor Day - TIKR.com](https://news.google.com/rss/articles/CBMiigFBVV95cUxPMllocFRSVjBBY291Um5DRmVWQk5OYWtvOTFUT0NncGVaT1hMZnJiUktpMzNnOWlwNDViZDZsOC15ZmctMTljd19nTng2dDYta3c2cWEzQWZCSUpLa0pNcURTM3dFdFdyektLUHh6dUVKcGszbTZxeTBLTE4wZmpFcGtLRWdIX0V4QXc?oc=5) | TIKR.com |
-| 17h 前 | 7 | 偏多 | [McDonald's CEO Warns Elevated Inflation Will Stick Around Just Days After Fed Raises Rates - 24/7 Wall St.](https://news.google.com/rss/articles/CBMizgFBVV95cUxQOTRtaHBiWVpKQWJ3WWhWUmVlVUk5YVFOYjVXV2lEYTUydnRPV0xKVzM4NFhETklLSGQ1NDN4RE9YV0FsUXVxaFN3LXFocndyZ0g2QmxvMndzYXJSbENabXpNOGhOeW42a3p1MXN5amtyZ0ZrYlVhWG1tZDZjRzhrX3J4dHl0QXZkb3Y0TG42OFYzcVpRMlhvLVRENDQzSUFuZDVJdTl2UmQyTnJmWTdTTHdqeEI4STU3VDdxcV93TEdWcnRWZGZTRDQxelhPZw?oc=5) | 24/7 Wall St. |
-| 21h 前 | 7 | 中性 | [McDonald's Breaks to a New 52-Week Low After the CEO Says Tough Conditions Are Here to Stay - 24/7 Wall St.](https://news.google.com/rss/articles/CBMiygFBVV95cUxONTNucGNLaEQ3ME1FVU13UmE3eEd5ai01MkF6M2pCTFJkaDNFQ05TVWE1SzE3SUtqU3dVdExwYjZld3RrN19zdUZ1RU5DRHhtUEhJNU0yVHJRdUs5X0hQMVhoQldsenRYYzRILVRtbVVuN1JHa0ZfR2kybkVWOFFuX0stc3dMVnYySHdSR05oWGJpZDhORFFHTUg3UnQ5RTZKUWZfbFJDVkRnaURXSWxTa0s3VlNEUF9IaDRtNEtMUXJXZUVaejRTN2hn?oc=5) | 24/7 Wall St. |
-| 21h 前 | 7 | 中性 | [McDonald's Breaks to a New 52-Week Low After the CEO Says Things Are Not Getting Better - 24/7 Wall St.](https://news.google.com/rss/articles/CBMi-AFBVV95cUxNcU9Rd1lBZ1cyTndXTmliZmo1MkZxQ0tRU1cxZFlPeUFIYXNsTVBucGkzcFJtcTZ0Q1dFY1VJazhPUkpBUmRBUjk1dV9lXzNSN2U5TzVBblVMOVZCclh3VFZQVlQxUWU5d1NDOGhHQXZuWnZVTXVaVHJyS0x6Z3BMZDlxdjRKYVAxQ3FWSnpxZVo5S0lMV0ptWV9hajR2NXFrU3RsNk1CbElyeWtmNWEtWHI5RzlKczBib0F0LTg1SE1Fd1RuZ3dzYTg4SkRYS2hvSmRjb1BROW9GVzVEODNXaDRTSXFBWG9sX2Z4NFdFblpqNXdpVW9EbA?oc=5) | 24/7 Wall St. |
-| 4h 前 | 5 | 偏空 | [Baird cuts McDonald’s stock price target on consumer headwinds - Investing.com](https://news.google.com/rss/articles/CBMivgFBVV95cUxQX0NLN25lSzB2eDRuNGdhMUpBZzlIQk96Ql9jWVNTOUNRUXZXMnVvVGl4UmEyZ05DQ3B1MFBOai16U2hJOUFFbnlMVV9lTVNxUFNsN295VzVOVWFjX1lEQzE3cG1SZG5aYUpTSERZUjNtV0dWNXRGTURlR2xiTjY3bEYtN21za3BRQzJYc2IzOC1hSDdLSE9PeU1aYzFzQ2Vab1NnTDdWRTl3WDduYjBmY2lMNEFZSmhVSzRNSEF3?oc=5) | Investing.com |
-| 7h 前 | 5 | 偏空 | [BTIG cuts McDonald’s stock price target on sales pressures, investment costs By Investing.com - Investing.com India](https://news.google.com/rss/articles/CBMi0AFBVV95cUxOMy1ZOER1WXN6eUlTWlZOMkdHNl8wSVpWRm1wMHh6UERnbXpjQmZ6U3hkRnFXY2k4Mmhqakp5QVFkOENxVG83Tmg0SjVtYTVMcXlTMVVTT3FDSFZoZFdDYTQwOV9iQVhiZk16UkVXai1uN3V2TTZRejE1T3l6MENQaXZEckdIa1hKN2licUtuc0l0QThDWk1HTVBHMm5fbFVLVm5rZGRVcUY1OHlQN2dMMXlPZkNmdC1HOEZyeHJFMlUtRHhrdHZuZFBwSm9vZ2xC?oc=5) | Investing.com India |
-| 1h 前 | 0 | 偏多 | [McDonald's stock down 20% in 2026 amid economic squeeze but still generates strong cash flow. - Pluang](https://news.google.com/rss/articles/CBMilAFBVV95cUxNWUNLQVFwQmFlRHUxWGx5NG1JZ1YwVVhQY2ZyU0lWWVhJYmpwYkV1eVU5cEN1aUY0bHFTSkJwcG15aTN6b3lNNUx2bGVvSTR0XzJYbUV6ZGRPZTlzQzh1WUN4YUdURHc5ZElxeHo5T3ZrODVzcXVBeU1IQkJEa0VmSmIyR2dMN3hFYld4SDl6UlI2Mk5u?oc=5) | Pluang |
-| 1h 前 | 0 | 中性 | [McDonald’s Will Wiggle Its Way Out of Today’s Classic Economic Squeeze…Eventually - 24/7 Wall St.](https://news.google.com/rss/articles/CBMiwAFBVV95cUxQUmFNM1RHR1N1NGlDejNULUhuY1BHY2c1SGNMaXhxS3FJeXBNNnJ1QWgtc09rVVZZbFptZ3dPQkgtR3JkYjlYZ0ZFN3VpdEkzSzVIREtxcHNDektocjRCejR5aGk1SUQ2cEtPaDRoUWpXLVZLMnR1VUpwS3RnTWI5dUxYTXExTW43YmluaFkzRi1iS25QVi1JRkFXaGtsaXVadGZhWGpKdmt6bFdVbmt6aW95LWdpLUJid2ljZjdTb2k?oc=5) | 24/7 Wall St. |
-| 1h 前 | 0 | 中性 | [McDonald’s Will Wiggle Its Way Out of Today’s Classic Economic Squeeze…Eventually - Yahoo Finance](https://news.google.com/rss/articles/CBMinwFBVV95cUxQdUE4SFRZTU9kcG52OW83dEhKaTVLc0d2aTVlU2I1dmR6WGFQZkQzQ2FhLTAyaVlDSGZUcVRUMjhiQ3FyZnloV3AtTXc1bTllYnNLdVRtYjVnNUxqdE1FUkUzZENsLUQ1b0loRUphTWZ6YXJjTUF2RkRLaFJ4NVR0YjdfUk1xRk1GYmh4THgxTTA1SERnN1FrVUF5QlJoWk0?oc=5) | Yahoo Finance |
-| 4h 前 | 0 | 中性 | [McDonald’s stock holds Market Perform rating at Bernstein on investment concerns By Investing.com - Investing.com](https://news.google.com/rss/articles/CBMi1gFBVV95cUxPOGdaWldweUtaOXlBd0tSamJQeERkYXN6dEpicERkcUdCdGZYTWZtSUVQYzJmVVJlZURlb3pXaGVtTVdPN3UydVlFQm1rZ1dJTUlvenRxSGY3YUhfXzVHMXNicldLUnpOMHpsSl9zVzRhYXBpWUR2RV8waW9OX3JlWWp2WVZlLVM0cGJwVGJ1bFIwMWo0d09MQ1VjZEFHZFM4QWR5RExBR0o4eS1uemxQQ05MVEllNTN5QUdGX1Y2M0pVUFNvaEJpUWVDa0Zoai1SdUZVYVl3?oc=5) | Investing.com |
-| 6h 前 | 0 | 中性 | [McDonald’s Stock Is Down 29%—Its Comeback Plan Could Make Things Worse - Forbes](https://news.google.com/rss/articles/CBMiuAFBVV95cUxQR0oyMUdqek12RGt2bENwX3ViSXJfS1RBWFFFWjVHSXJlU29tT19FUmVoWGtVS1dPLUxRZEl5UHptWEdvZXk5NEJweEVmZVZCVTRxTWJSUzI3TzlIM1plYVkzZEJSb2d3eVhEbmpaRk9IRWNXUGVTc2FaaG5YZk94UGw1VlprcnFtWVZFNFVaQWpTZnRDRGYzTDYxeGpjQlM0ajJBcEZ6QllCZDdEWEpjZ0VlTnNUc2RF?oc=5) | Forbes |
-| 8h 前 | 0 | 中性 | [Zacks Market Edge Highlights: McDonald's, Sandisk and NVIDIA - TradingView](https://news.google.com/rss/articles/CBMitAFBVV95cUxPa3dhQlhlcUJ5Wk1GRmpoUDVuQTF0SXVMWGlHYk5uTEZhWUZXSUVOLWZKNFE4YXBtU3NYbDNJMkV1Y3dJYm5oNVRYeGU4Tl9paE9KREtFZk5neTdYRklKaFFMWS1mWWJtQk54WVJiTXQ0cEw2TjIzMnk5cmRkV1NjNXhsb2M3V0NVMnNZV3YxWmVHaVZlNWUxd3Y3THpWX2tlYUYycHdEZ0lxLXU0X0lzVDQ3U1k?oc=5) | TradingView |
+| 9h 前 | 5 | 偏空 | [Baird cuts McDonald’s stock price target on consumer headwinds By Investing.com - Investing.com UK](https://news.google.com/rss/articles/CBMivwFBVV95cUxQbUk1c1ktOThnaUxQbXNpdHY4Uld6d0lOdTY4TTA1ekpmZXk0bnY5UUFGUXFPR3p4czRpVThFM1FVbVV6bVF5UGNTN2dSRDlEY1FaeDVWSDViaXRPa0FPekJIZWJJY0RyUTBvbjd4cTZNMUxyNWlCZmlRM0ZXZmhWRjBXMWZFaVh4WmcwQ184R2Q2WWhZTG41LWc2YTNpd2JhbjJUOVRwMGhiU29ya2FzbGRabkI1aURQYlpCZWFtcw?oc=5) | Investing.com UK |
+| 5h 前 | 0 | 中性 | [McDonald’s turns to AI for drive-thru, inventory management, order accuracy - Restaurant Dive](https://news.google.com/rss/articles/CBMirgFBVV95cUxPMDJPc1FuckQzMlRpdUpITWdkZEhydTRhMVA4Nk9fTU9samh1ZnNXQ2F5WThrd056eERoRTFkMmtIVE9MaWotR2QxSm9JVlFmbkp6S0c0c3VjcE5kbXFpOGxTNkNPQjJYRmU4UXNsRExGbVNFa2EzRFFFR2RnNG5nTGJVQW1OSmZpbzAwcUFneE5HT1F6RURkMUxtdGFlTlhMZHVvb3M5MGU5YWFLNFE?oc=5) | Restaurant Dive |
+| 30h 前 | 0 | 中性 | [UBS reiterates Buy on McDonald’s stock, cites growth strategy - Investing.com](https://news.google.com/rss/articles/CBMiuwFBVV95cUxQeWZSWHk4T21rU1liWF9Wd3FhaUhPSjRGbnBLNlBmdlhFOFdxbkg3ZFhXVEdZZ2JaZWpHN3RLa1c4ancxSXdTcDdNWWUxQ2o3YVA3M25uNlM1NGZtWlJKZzIwYWlLWnNvTmJ6Y3FXckhzSk9YcDFtLWVfM0FROGFIcFNHZXZPX3hIU3BuSDNyNzJVRFNBZldIVVh6bXpCaUg5RUUtSkZHYVpOd1VtbGlzLUU1VWQ4ZlIzOG1R?oc=5) | Investing.com |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -131,9 +122,9 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
-- 图形上是空头排列——现价距 20 日 253.22（-6.4%）、50 日 262.00（-9.5%）、200 日 288.56（-17.9%）。本报告的买入规则本身会过滤掉这种形态。
+- 图形上是空头排列——现价距 20 日 252.13（-6.2%）、50 日 261.30（-9.5%）、200 日 288.22（-17.9%）。本报告的买入规则本身会过滤掉这种形态。
 - 摆动高低点都在下移，属于下降结构；在出现一个更高的低点之前，任何反弹都还只是反弹。
-- 政策面对该板块的倾向为 -0.93（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.79（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -141,7 +132,6 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 | 日期 | 开 | 高 | 低 | 收 | 涨跌 | 成交量 |
 |---|---:|---:|---:|---:|---:|---:|
-| 2026-09-03 | 261.57 | 262.09 | 256.12 | **259.63** | -0.5% | 4,576,000 |
 | 2026-09-04 | 258.01 | 258.50 | 255.49 | **255.69** | -1.5% | 4,225,500 |
 | 2026-09-08 | 254.39 | 256.81 | 254.28 | **255.81** | +0.0% | 4,197,600 |
 | 2026-09-09 | 255.50 | 256.50 | 253.35 | **253.48** | -0.9% | 4,434,000 |
@@ -155,7 +145,8 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-09-21 | 249.41 | 250.38 | 246.52 | **247.88** | -0.1% | 6,334,600 |
 | 2026-09-22 | 250.68 | 252.06 | 249.37 | **250.35** | +1.0% | 5,016,800 |
 | 2026-09-23 | 250.29 | 250.32 | 234.03 | **238.32** | -4.8% | 16,605,700 |
-| 2026-09-24 | 239.70 | 242.56 | 237.02 | **237.02** | -0.5% | 7,355,900 |
+| 2026-09-24 | 239.70 | 242.56 | 237.02 | **237.02** | -0.5% | 7,387,500 |
+| 2026-09-25 | 236.78 | 238.00 | 235.29 | **236.50** | -0.2% | 6,456,811 |
 
 ## 七、自己去查（本页不做独立验证）
 

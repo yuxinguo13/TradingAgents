@@ -1,6 +1,6 @@
 # PEP · 百事可乐（PepsiCo）
 
-_必需消费 · 数据截至 2026-09-24 收盘 → 面向 2026-09-28 开盘_
+_必需消费 · 数据截至 2026-09-25 收盘 → 面向 2026-09-28 开盘_
 
 [← 回到 2026-09-28 当日报告](../2026-09-28.md)
 
@@ -10,52 +10,52 @@ _必需消费 · 数据截至 2026-09-24 收盘 → 面向 2026-09-28 开盘_
 
 ```text
        PEP · 近 126 个交易日（日线收盘）
-156.3 ┤     ········
-154.3 ┤··╭╮╭╮   ╭─╮ ··╭╮··
-152.2 ┤  │╰╯│╭──╯ ╰───╯╰──╮·····
-150.1 ┤  │  ╰╯            │     ······
-148.0 ┤──╯                ╰─╮ ╭╮      ······
-145.9 ┤                :::::╰─╯╰─╮::::::::::·····::::::::::::::::::::::::::::::::::
-143.8 ┤       :::::::::          ╰╮    ╭╮╭╮      ····
-141.7 ┤:::::::                    ╰╮   │╰╯│     ╭──╮ ····  ╭╮       ╭───╮
-139.6 ┤                            ╰───╯  ╰──╮  │  │     ·╭╯│·····╭╮│·  ╰──╮
-137.5 ┤                                      ╰─╮│  │  ╭╮  │ ╰─────╯╰╯ ·····╰──╮····
-135.4 ┤                                        ││  ╰─╮││  │                   ╰─╮
-133.3 ┤                                        ╰╯    ╰╯╰──╯                     ╰╮
-131.3 ┤                                                                          │
-129.2 ┤                                                                          ╰─
+156.4 ┤    ········
+154.2 ┤···╭╮╭─╮╭─╮ ··╭╮··
+152.1 ┤ ╭─╯││ ╰╯ ╰───╯╰──╮·····
+149.9 ┤─╯  ╰╯            ╰╮    ·······
+147.8 ┤                   ╰╮ ╭╮       ······
+145.6 ┤             :::::::╰─╯╰─╮:::::::╭╮::·····::::::::::::::::::::::::::::::::::
+143.5 ┤    :::::::::            ╰╮    ╭─╯│     ╭─╮···
+141.3 ┤::::                      ╰╮ ╭─╯  ╰╮╭╮  │ │   ···· ╭╮       ╭──╮
+139.1 ┤                           ╰─╯     ╰╯╰╮ │ ╰╮      ╭╯╰╮···╭─╮│··╰───╮··
+137.0 ┤                                      ╰─╯  ╰╮╭╮   │  ╰───╯ ╰╯      ╰───╮····
+134.8 ┤                                            ╰╯╰───╯                    ╰╮
+132.7 ┤                                                                        ╰╮
+130.5 ┤                                                                         ╰─╮
+128.4 ┤                                                                           ╰
       └────────────────────────────────────────────────────────────────────────────
-       2026-03-25                       2026-06-25                       2026-09-24
+       2026-03-27                       2026-06-29                       2026-09-25
        · SMA50   : SMA200   ─ close
 ```
 
 ```text
        PEP · 近 21 个交易日（放大看最近节奏）
-140.8 ┤──╮
-139.2 ┤  │╭─╮╭─╮╭╮
-137.6 ┤  ╰╯ ╰╯ ╰╯│
-136.0 ┤          ╰────╮
-134.5 ┤               ╰╮
-132.9 ┤                ╰╮
-131.3 ┤                 │
-129.7 ┤                 ╰──╮
-128.1 ┤                    ╰
+139.6 ┤ ╭╮ ╭╮
+138.2 ┤─╯╰─╯╰──╮
+136.7 ┤        ╰───╮
+135.3 ┤            ╰╮
+133.9 ┤             ╰─╮
+132.4 ┤               │
+131.0 ┤               │ ╭╮
+129.6 ┤               ╰─╯╰╮
+128.1 ┤                   ╰─
       └─────────────────────
-       2026-08-25 2026-09-24
+       2026-08-27 2026-09-25
 ```
 
-成交量近 63 日： `▂▄▆▄▃▃█▃▃▃▃▃▂▃▂▃▃▃▃▂▁▂▁▁▂▂▁▂▄▂▁▂▂▃▄▂▃▃▂▇▅▃`
+成交量近 63 日： `▃▄▄▃▃▅▂▃▂▃▂▂▂▃▃▃▂▂▃▂▂▂▁▂▂▂▂▃▂▂▂▃▂▃▂▃▃▃█▃▃▃`
 
 ### 图形读数
 
-- **均线排列**：空头排列 — 现价距 20 日 135.83（-5.7%）、50 日 137.05（-6.5%）、200 日 145.11（-11.7%）
-- **形态结构**：下降结构 — 更低的高点 + 更低的低点；前高 140.21 → 138.80（-1.0%）、前低 135.68 → 135.28（-0.3%）
-- **动能**：RSI(14) 25，超卖区；月 -10.5%、季 -9.0%，节奏平稳
-- **波动**：日均真实波幅约为价格的 1.7%；按本报告 2 ATR 的止损惯例，一个 R 相当于 3.4% 的价格距离
-- **位置**：距 52 周高点 -22.5%，距 52 周低点 +0.0%
-- **量能**：最新一日成交量为 20 日均量的 1.1 倍，量能正常
-- **相对强度**：近一月跑输 标普500 10.9 个百分点
-- **支撑 / 阻力**：最近的摆动低点 —，摆动高点 138.80（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
+- **均线排列**：空头排列 — 现价距 20 日 134.87（-4.6%）、50 日 136.81（-6.0%）、200 日 144.99（-11.3%）
+- **形态结构**：下降结构 — 更低的高点 + 更低的低点；前高 140.21 → 138.80（-1.0%）、前低 135.28 → 127.98（-5.4%）
+- **动能**：RSI(14) 30，超卖区；月 -8.6%、季 -8.1%，节奏平稳
+- **波动**：日均真实波幅约为价格的 1.7%；按本报告 2 ATR 的止损惯例，一个 R 相当于 3.3% 的价格距离
+- **位置**：距 52 周高点 -22.3%，距 52 周低点 +0.4%
+- **量能**：最新一日成交量为 20 日均量的 0.7 倍，量能正常
+- **相对强度**：近一月跑输 标普500 9.5 个百分点
+- **支撑 / 阻力**：最近的摆动低点 127.98，摆动高点 138.80（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
 
 **我的读图结论**：趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌
 
@@ -69,7 +69,7 @@ _以上每一条都是对已经发生的价格的描述。均线、RSI、摆动�
 - **增长**：最新季度营收同比 +6.4%；盈利同比 +137.0%；最近 7 次财报里 5 次超预期。
 - **盈利质量**：毛利率 54.2%、营业利润率 16.8%、净利率 10.8%、ROE 51.5%。
 - **资产负债**：现金 $107.16亿；有息负债 $532.14亿；负债/权益 238.9%（负债偏重）；流动比率 0.93（短期偿付紧）；自由现金流 $78.32亿，为正。
-- **卖方预期**：22 位分析师覆盖；平均评级「持有」（2.62/5，1 为最看多）；目标价均值 153.86（较现价 +20.1%），区间 124.00–180.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
+- **卖方预期**：22 位分析师覆盖；平均评级「持有」（2.62/5，1 为最看多）；目标价均值 153.86（较现价 +19.6%），区间 124.00–180.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
 
 **分季度损益**（季度数据，最新在左）
 
@@ -112,14 +112,9 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 4h 前 | 8 | 中性 | [PepsiCo Earnings Are Imminent; These Most Accurate Analysts Revise Forecasts Ahead Of Earnings Call - Benzinga](https://news.google.com/rss/articles/CBMihgJBVV95cUxPOWJBMktSZkE4MS1xMHRKcC1iVGY4ekZyZi15N2VDejNTOUhsZnkwdHM4ZUZoai1ONW1hWjFCVVpEcW1ON3JLZXhNR21pd01YTFEySFZtSmhnaThNV2l3ekhCM3lpS0xGSGxxdDdXbXg1UkFWZjh3X0twVUFKUW1pbGpvZzFNaklGMkZKLWtkVXNScExob3Rwc2NMbHRLZmMtdkdGUUNpQmxwc0NieGpPUGVBdGFPQWt2U1U5YVF3QldTTDNoTlJKQVVKTlVZbl8yRmdPU0Y3NWhNTXphZUYwS0dUbjNCSVFFY184QlJRWldYSG8xMWRkNFJJb1JwOVpjUEtYcEFB?oc=5) | Benzinga |
-| 17h 前 | 8 | 偏多 | [PepsiCo Stock Rebounds From 52-Week Lows; Can Q2 Earnings Fuel a Bigger Rally? - TradingKey](https://news.google.com/rss/articles/CBMi1AFBVV95cUxQSWtjeVctTnZoWm9PWVFQc3Zrc3NwRmJXbml5WTV4aVR4eFlFNWF3MTZFQTBQaEpEZm0zSE9DNk1FR2M5a3BmUXZQREZTT1hBMm5lNlVqWTdfZklLNHVXZ0ZGVktobTU1NXJ2WEpmdmliNk1scks2b3Zid0MzMlBadnJ6TE9BWm5DTnFVU2swMUg4SWNRcE9DUmhvX0dDcnREaHhHZlRPLUwyREZDTzdNUnVJLVJiNk9tWUNSTGRGdFcyNEI1WkZoNUl3WGVrZURHN1lldw?oc=5) | TradingKey |
-| 3h 前 | 0 | 中性 | [PepsiCo stock hits 52-week low at 127.55 USD - Investing.com](https://news.google.com/rss/articles/CBMioAFBVV95cUxPYjROOW1ac3VBUnRDcjJaWDAzeHlZUVhLM2JUSnJIZFdYVXoxakVncTVoV0Z0aFk2M0NtWW5fb1VXeHMyeFB0b0JwWXlsbkZjcG02OVZCUnBvZEk5OTJPYVBPSXowQTBmclg5SWIycE1RSzB5dlN4WDBrRFg0aUVRdFFJRkFLYU1fM1ZyVDJuSmlmYVBnMmNabS1hT21GcTh5?oc=5) | Investing.com |
-| 4h 前 | 0 | 中性 | [PepsiCo (PEP) Pushes New Growth Moves As The Undervalued Debate Stays Open - simplywall.st](https://news.google.com/rss/articles/CBMi1AFBVV95cUxPM1RSM3N6bXA1UGZWaFVhMS12UHVEOVF5NmwzcjZEMkVRUEM1d2N1VEJCbjA4R1c2cTAybDhGUmx2bm5oNDZiUEhPMU5CSGhtN3pfYmJucmlXT3djc2dBMWh6N1hsNjRiNnVRcHlBVE1JQzhURUxZMUlPTm83T1djRWpaYW1WY2VRdGdXWThKTlZ1ekdURkdKb0JMY3JpbFgyTko0X1d2RWhsY185dW9mb0FfdllWQ1BEdm45cXMtWjZ4dzJCMy1HUWo0WXloYm83WTktSNIB2gFBVV95cUxNMWxOeThiZnpsa1ZLdmNUODRWLW1VdEpoamRFRlRlVlBCdmdlekUybUtWNVkzSTdmNXZDTmRyLW8yUUtNTmlFUE0zVEtlSm5rTVdjTWJBSXRkd1d1akFnT2oyalFRS1J3T0MzRGxOQkU4WklsenR4WUpCbm5IbTNwXzFQOUJvcmo5UTVDNDdsblRHOUwzTWlzYUdrdlh5WmI3TVI3Z0pKSndfcmczSU1vbjBRWjZMQ2NjQlRoeHJqcFJIbmZuNHNTUWdPSFNpSkU2eEUwVW5DbEhIdw?oc=5) | simplywall.st |
-| 4h 前 | 0 | 中性 | [PepsiCo's Two-Front Battle: Labeling Laws in Texas and California, Price Hikes on Doritos and Ruffle - AD HOC NEWS](https://news.google.com/rss/articles/CBMi2gFBVV95cUxNblpSMWpmbUFqa0tybDdYeUMyejFndHNweHNZNHA0X2UxOFBhNHJCamthc0xEQUVoRTcxNllJOXdtMjhmejVRRWVnZ3Y0MnBHLUl5VXZucl9ONWF5UVBqSjZ3aTVQdHAyT1NROGJvQXoxUFp2Y3E0cnZORlRDWW1sVGRmaFducDV2eUd1Zndjd1RMMENwdmlYaXNXVERES1EtRjRUempBcmFHS2ZraGRQaGxvNXdGQ1BuNk10YUlKYUJGeXpnT3hEcU5EWVFCcExxNDhUbDFYM05VQQ?oc=5) | AD HOC NEWS |
-| 5h 前 | 0 | 偏空 | [PepsiCo's Pricing Puzzle: Wall Street Cuts Targets as Washington and Statehouses Turn Up the Heat - AD HOC NEWS](https://news.google.com/rss/articles/CBMi1gFBVV95cUxQYU1uMFFpWjNNVThUZFdiMDlaTllnaTllZWVFT2ZyNjJRbVBtSlg5eWlJbjF1R29qb1RZSUdSNUlURG1zUlc3ZlhhNW5sSTlfWm9xcXdteGdFdnpSVzBQQ2l3UWRmN3N2eXZLaG8yZHFmdEowaExYYXdoWXVYWHJfVUhSVTRXMmMyc1dNQ1pPeDdKYzg3anRWNkJraF9rc2w1NElvUk80TEo2MGUxRW0zMFlGa3NHX3JIZ3pIQnRVZTM5bXlMLXIySlVENndQdzhCOGdCYXNR?oc=5) | AD HOC NEWS |
-| 6h 前 | 0 | 偏空 | [PepsiCo stock falls 1.56 percent as chip prices rise - AD HOC NEWS](https://news.google.com/rss/articles/CBMitgFBVV95cUxOWkZXMGRsY29HN2ZBY2lRNHhxQV84ZTgzM2ZvWVRjZTZKNUFRZ25PbURiN1FPT0d4ZFlaNEtZc2ktS0dsamhaNGFacUtDTWx5TTBkdE5KTTB2RWxVRGhSbU9lNWUycDFjc0VVc3hqa2Z4Zng2cnpreHIxcjVvWmZfV3BEa0JIZEFzRU1reVRZbDNSc1ZtSks3YnpBLWVpM0xiOVM3QzZ4R2FUYUphQ2RFd0I2R3drZw?oc=5) | AD HOC NEWS |
-| 34h 前 | 0 | 中性 | [Own Pepsi Stock? Here’s How You Can Help Bulls - peta.org](https://news.google.com/rss/articles/CBMi1AJBVV95cUxPQjN0eGJFVlZ2MUd4ZWctNE9JX3NoREVTazN6ZUliOXdUQVdZVmxQNk9NVDJaVVpnZGFjdVpQSXRNUmFVd1k0TDJmaTkwR2RGdWJDNmlBOHJSN1BSWl9CaFNYTDN6Yk5DMmxEck44T0NlTGVxTGk1WjNJMjlzbElkRnhNdXlqMnlEN09ILXdxb2h0aS0zLW1ydk1wU3N3N2EwbE5sRkVacUc4SlM5TWYxSFdmSUE5RkEzR1FWWktRcm1WNXJsd3V5cjBQX1EyZ243REFiQ1lZbFJ5c0RDZUZ2UkU5aERiZXBxaGlKWFJIbUJBWW50RkRiQmZFSEx4bjZ3YVVjMGQwWVRDSGdrUWZXOXpUc0l5Nmw1MF9uQWtwVDMyOUJ1cko3TkNZVzkwR1Z1bTIxNzN1MVhPbzI3WElQanNVcG5EQV9mVUFHNFJZVEN4Ymg4?oc=5) | peta.org |
+| 4h 前 | 0 | 中性 | [Tesla (TSLA Stock) Leads 2,500 Electric Class 8 Trucks. Microsoft, PepsiCo Back U.S. Freight Decarbonization - CarbonCredits.com](https://news.google.com/rss/articles/CBMiyAFBVV95cUxOLW5aSXU4eFdCWFMwc2VkaExjWE15dTVMM2pLdElwY2JOMGIxejJhZ2lRV2RIWWhJalU2eGd4V2hDbGFOcHNJdWdoR1hKVy1FMEtTel81ekVzU3JJR3BQdWQ1OWZVUWg1b2VwRDRWZWtJVXYxdFJtNTh5ZEt1SWE5SV9ncmxLejVYZGpLeExIZWhyM2s3a0Ffc2JZdHZPMk53eUF0OExXQXRLVnJKR1FJYzQxeWFVYjE5YWdNUmJlWW51cF9Wd19Scw?oc=5) | CarbonCredits.com |
+| 26h 前 | 0 | 偏空 | [PepsiCo Stock Falls as Chip Prices Rise Again Only Months After Cuts - TipRanks](https://news.google.com/rss/articles/CBMinwFBVV95cUxNZ0ozeVF5dzNIN3lOdXd0ZHA0VDhlX0Z2eXVkWVQybmRGNzFOOW1mMy1vM2NWam9yQnVuclZlUFFsTVdyZXpYaTJxeTh2Nk1weWU2ZjZZdENSeW5fNnpPZUZCcHBnVzB3T3F1MUQySmJZOGxDWmFISUFaZnBLMDZSWEMwck9Uc3o3RkNMNjJhakQ5MFpuTzk4OHM5WHVMMDg?oc=5) | TipRanks |
+| 27h 前 | 0 | 中性 | [Soft drink stocks by Quant rating as PepsiCo plans price hikes (XLP:NYSEARCA) - Seeking Alpha](https://news.google.com/rss/articles/CBMiogFBVV95cUxNbHI3dExxODlTVXZTNl8xR0l3b0xFbWZzc0xVeWxfNEZVX3R0b2VyR3JLNExhSE40cWJvTTRHQ2tLNVpPY1NKUzdFN21ZR2hKY3FsNzlqWFZZbnc3V0h1UDY4NzlGX2VMZ2d0NHlzQ05GZXFmNldZSDBrclp1azM1QURnbjJPZ01GWVV0NVJCQXBDMGVrNTVXWDRlM00wSUlOenc?oc=5) | Seeking Alpha |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -127,11 +122,11 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
-- 图形上是空头排列——现价距 20 日 135.83（-5.7%）、50 日 137.05（-6.5%）、200 日 145.11（-11.7%）。本报告的买入规则本身会过滤掉这种形态。
+- 图形上是空头排列——现价距 20 日 134.87（-4.6%）、50 日 136.81（-6.0%）、200 日 144.99（-11.3%）。本报告的买入规则本身会过滤掉这种形态。
 - 摆动高低点都在下移，属于下降结构；在出现一个更高的低点之前，任何反弹都还只是反弹。
 - 下次财报在 13 天后，落在持有期内。财报跳空会直接穿过止损——那一晚的风险不是 1R，是没有上限的。
 - 负债/权益 239%，杠杆高；利率或再融资条件变化对它的影响会被放大。
-- 政策面对该板块的倾向为 -0.96（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.83（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -139,8 +134,6 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 | 日期 | 开 | 高 | 低 | 收 | 涨跌 | 成交量 |
 |---|---:|---:|---:|---:|---:|---:|
-| 2026-09-02 | 138.79 | 140.21 | 137.83 | **139.03** | +0.5% | 7,054,500 |
-| 2026-09-03 | 138.84 | 139.26 | 137.12 | **138.54** | -0.4% | 10,320,000 |
 | 2026-09-04 | 137.74 | 139.47 | 137.43 | **137.63** | -0.7% | 6,138,900 |
 | 2026-09-08 | 137.00 | 138.98 | 137.00 | **138.45** | +0.6% | 10,086,300 |
 | 2026-09-09 | 138.01 | 138.12 | 136.33 | **136.69** | -1.3% | 7,371,700 |
@@ -152,8 +145,10 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-09-17 | 134.78 | 134.91 | 132.93 | **133.66** | -0.5% | 10,553,600 |
 | 2026-09-18 | 132.21 | 132.30 | 129.55 | **129.75** | -2.9% | 23,539,900 |
 | 2026-09-21 | 129.65 | 130.22 | 127.98 | **129.59** | -0.1% | 12,011,300 |
-| 2026-09-23 | 131.09 | 131.39 | 129.22 | **130.18** | +0.5% | 8,173,400 |
-| 2026-09-24 | 131.02 | 131.19 | 128.11 | **128.15** | -1.6% | 9,622,600 |
+| 2026-09-22 | 130.41 | 131.41 | 129.93 | **131.19** | +1.2% | 7,740,400 |
+| 2026-09-23 | 131.09 | 131.39 | 129.22 | **130.18** | -0.8% | 8,173,400 |
+| 2026-09-24 | 131.02 | 131.19 | 128.11 | **128.15** | -1.6% | 9,642,900 |
+| 2026-09-25 | 127.75 | 128.72 | 126.90 | **128.63** | +0.4% | 6,685,792 |
 
 ## 七、自己去查（本页不做独立验证）
 

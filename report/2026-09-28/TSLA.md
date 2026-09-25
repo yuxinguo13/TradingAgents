@@ -1,6 +1,6 @@
 # TSLA · 特斯拉（Tesla）
 
-_可选消费 · 数据截至 2026-09-24 收盘 → 面向 2026-09-28 开盘_
+_可选消费 · 数据截至 2026-09-25 收盘 → 面向 2026-09-28 开盘_
 
 [← 回到 2026-09-28 当日报告](../2026-09-28.md)
 
@@ -10,51 +10,51 @@ _可选消费 · 数据截至 2026-09-24 收盘 → 面向 2026-09-28 开盘_
 
 ```text
      TSLA · 近 126 个交易日（日线收盘）
-445 ┤                    ╭╮    ╭╮
-434 ┤                   ╭╯╰╮  ╭╯│
-423 ┤                  ╭╯  │ ╭╯ ╰──╮       ::╭╮:::
-412 ┤··                │  :╰─╯:::::│::╭╮::: ╭╯│·······:::::::::
-401 ┤ :····:::::::::::╭╯::         ╰╮╭╯╰─╮··│·╰───╮   ··       ::::::::::::::::::
-391 ┤:     ··╭───╮· ╭─╯  ···········╰╯   ╰╮ │     ╰─╮   ····
-380 ┤        │   ╰─╮│····                 ╰─╯       ╰─╮     ···         ╭╮     ╭─
-369 ┤─╮╭─╮   │     ╰╯                                 │        ·····    ││╭─╮ ╭╯
-358 ┤ ╰╯ │  ╭╯                                        │            ╭╮╭──╯╰╯·╰─╯
-347 ┤    ╰──╯                                         │          ╭─╯╰╯       ····
-336 ┤                                                 │        ╭─╯
-325 ┤                                                 ╰╮   ╭───╯
-314 ┤                                                  ╰╮╭─╯
-303 ┤                                                   ╰╯
+443 ┤                   ╭─╮   ╭╮
+433 ┤                  ╭╯ │  ╭╯╰╮
+422 ┤                  │  │ ╭╯  ╰─╮    :::::╭╮:::::::
+411 ┤··               ╭╯::╰─╯:::::│::╭─╮   ╭╯│╭╮╭╮····::::::::::
+400 ┤::····:::╭╮::::::│:          │╭╮│·╰─╮·│ ││╰╯╰╮   ··        :::::::::::::::::
+390 ┤      ··╭╯╰╮·· ╭─╯ ··········╰╯╰╯   │ │ ╰╯   ╰╮    ···
+379 ┤  ╭╮   ╭╯  ╰───╯···                 ╰─╯       ╰─╮     ····               ╭──
+368 ┤ ╭╯│   │                                        │         ···╭╮   ╭╮╭─╮ ╭╯
+357 ┤─╯ ╰╮  │                                        │            ││··╭╯╰╯·╰─╯
+347 ┤    ╰──╯                                        ╰╮        ╭╮╭╯╰──╯      ····
+336 ┤                                                 │      ╭─╯╰╯
+325 ┤                                                 │   ╭──╯
+314 ┤                                                 ╰╮ ╭╯
+304 ┤                                                  ╰─╯
     └────────────────────────────────────────────────────────────────────────────
-     2026-03-26                       2026-06-26                       2026-09-24
+     2026-03-27                       2026-06-29                       2026-09-25
      · SMA50   : SMA200   ─ close
 ```
 
 ```text
        TSLA · 近 21 个交易日（放大看最近节奏）
-380.1 ┤                  ╭─╮
-375.8 ┤      ╭╮         ╭╯ ╰
-371.5 ┤      ││         │
-367.3 ┤   ╭╮ ││╭─╮╭╮  ╭╮│
-363.0 ┤   ││ │││ ╰╯│  │╰╯
-358.7 ┤   ││╭╯││   ╰──╯
-354.4 ┤ ╭╮│╰╯ ╰╯
-350.1 ┤ │╰╯
-345.8 ┤─╯
+380.1 ┤                 ╭─╮
+376.2 ┤     ╭╮         ╭╯ ╰╮
+372.3 ┤     ││         │   ╰
+368.4 ┤  ╭╮ ││╭─╮      │
+364.4 ┤  ││ │││ ╰─╮  ╭─╯
+360.5 ┤  ││ │││   ╰╮ │
+356.6 ┤─╮│╰─╯││    ╰─╯
+352.7 ┤ ││   ╰╯
+348.8 ┤ ╰╯
       └─────────────────────
-       2026-08-26 2026-09-24
+       2026-08-27 2026-09-25
 ```
 
-成交量近 63 日： `▃▃▂▄▂▂▂▁▂▁▂▂█▃▂▂▂▂▁▂▁▁▂▂▁▂▄▂▁▂▄▂▄▄▂▁▂▁▂▂▁▁`
+成交量近 63 日： `▆▄█▄▂▃▂▂▂▂▂█▆▄▃▃▃▂▁▂▁▂▄▂▃▄▃▂▂▄▃▅▇▄▂▂▂▃▅▂▂▃`
 
 ### 图形读数
 
-- **均线排列**：跌破 200 日线 — 现价距 20 日 364.82（+3.6%）、50 日 348.63（+8.4%）、200 日 395.96（-4.6%）
+- **均线排列**：跌破 200 日线 — 现价距 20 日 365.68（+1.8%）、50 日 348.25（+6.9%）、200 日 395.62（-5.9%）
 - **形态结构**：上升结构 — 更高的高点 + 更高的低点；前高 366.50 → 384.04（+4.8%）、前低 342.53 → 354.05（+3.4%）
-- **动能**：RSI(14) 59，偏强；近一月的斜率快于近三月（月 +7.9% vs 季 +0.8%），趋势在加速
-- **波动**：日均真实波幅约为价格的 3.1%；按本报告 2 ATR 的止损惯例，一个 R 相当于 6.2% 的价格距离
-- **位置**：距 52 周高点 -22.9%，距 52 周低点 +26.7%
-- **量能**：最新一日成交量为 20 日均量的 0.7 倍，量能正常
-- **相对强度**：近一月跑赢 标普500 7.5 个百分点
+- **动能**：RSI(14) 55，偏强；季线仍为负（-2.0%）但近一月已转正（+7.6%），属于反弹初期而非既成趋势
+- **波动**：日均真实波幅约为价格的 3.0%；按本报告 2 ATR 的止损惯例，一个 R 相当于 6.0% 的价格距离
+- **位置**：距 52 周高点 -24.0%，距 52 周低点 +24.7%
+- **量能**：最新一日成交量为 20 日均量的 1.1 倍，量能正常
+- **相对强度**：近一月跑赢 标普500 6.7 个百分点
 - **支撑 / 阻力**：最近的摆动低点 368.60，摆动高点 383.14（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
 
 **我的读图结论**：趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌
@@ -69,7 +69,7 @@ _以上每一条都是对已经发生的价格的描述。均线、RSI、摆动�
 - **增长**：最新季度营收同比 +25.5%；盈利同比 -3.0%；最近 7 次财报里 2 次超预期。
 - **盈利质量**：毛利率 18.9%、营业利润率 1.4%、净利率 3.7%、ROE 4.7%。
 - **资产负债**：现金 $435.24亿；有息负债 $160.80亿；负债/权益 18.4%（负债很轻）；流动比率 1.94；自由现金流 $48.36亿，为正。
-- **卖方预期**：38 位分析师覆盖；平均评级「买入」（2.35/5，1 为最看多）；目标价均值 396.62（较现价 +4.9%），区间 125.00–600.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
+- **卖方预期**：38 位分析师覆盖；平均评级「买入」（2.35/5，1 为最看多）；目标价均值 396.62（较现价 +6.6%），区间 125.00–600.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
 
 **分季度损益**（季度数据，最新在左）
 
@@ -112,18 +112,14 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 1h 前 | 8 | 中性 | [Tesla’s Optimus Reportedly Hits Production Snags — StoneX Stays Bullish Ahead Of Q3 Vehicle Deliveries - Yahoo Finance](https://news.google.com/rss/articles/CBMiqAFBVV95cUxOdjBQY2ZuRlBjZXVHcnVIUjNnXzNpaWFjRlVQYnluUEdNaFRydkUwc1lEVkFMNVlxUm5oOHBDNHM3S05MOUR4anhKeXdTbnBhaGY3ZVZ5d19GSFB0bktMRDNyYU5FUnozbVl6YjBQZnM3M19qMmxudkE3MzJyaEVJMnk0V0tfNGlyN0k4ZHhQRGlUTFZneDRjSGh6cFZzbnczWDA5MUJwRFA?oc=5) | Yahoo Finance |
-| 4h 前 | 8 | 中性 | [StoneX reiterates Buy rating on Tesla stock ahead of Q3 deliveries - Investing.com](https://news.google.com/rss/articles/CBMixAFBVV95cUxPc1E3QVdRS1F1U0VYanFrX2tMRzlEVldGdHhRVWl6cVk4TDBJRHVLSDlsYUIwZUJ3UFVnb3M3VTk5QXotWC1wdXYtSF9ZWFJWSFRONk94cTd6TzlrcVVFcnE0c0dBZ0hEYmRLMm05dFNSdEJrcnYwOTV4YlZiRHladzlGOURBN3BWM1FDamNCQTltbVhQeGYzYXJXd3BVX2ZDckVWLTltekRpSzRoNzdlQk5zTFlwQUl5c3FHbEtka3dFRExq?oc=5) | Investing.com |
-| 6h 前 | 6 | 中性 | [Tesla stock faces split analyst signals after UBS holds Neutral - AD HOC NEWS](https://news.google.com/rss/articles/CBMixAFBVV95cUxNOFJxakVuRV9EUzE1SW1JVkR6cGstYndCNk11SzZEdWM2OEJDVHdvQW40SnEweWdfenN1Vk8yZThtR19URktTLUpiQ3JKRUx2bklQcXIwTDU2VGtmNFRLYkNTSGRkbFQ0R01PTXdzRjEwZVh6RkFRYzN0UjN1enFjNi04a1NZeXNQQjA4TVFNdF82cXBVSVVQSUJVZVVCd1UtaHhPTl9IVkJ2T2h3a0FUVFBIVlZKTFVfYm10WWJ4ZkdaTnlU?oc=5) | AD HOC NEWS |
-| 1h 前 | 5 | 中性 | [Wall Street analysts set Tesla stock price target for 12 months - Finbold](https://news.google.com/rss/articles/CBMijAFBVV95cUxORHFOQ0pjUmhsT3YwT0hPMy0xSmN5ME9vYWo3SmhuQzctS0FIWWlLMHZXbV9QMHUxMFF3MUVDWFJYUUdUbFEtUkYyMXJnUURxR2xfaXp5Z0dHU2NNRkZ4ZmZzeWc3bGh4dUFTZWxRWXBsXzA5WlB0NVp3cGhWUmhacDNJTGFxSTRQZjBhaQ?oc=5) | Finbold |
-| 0h 前 | 0 | 中性 | [Whether You Buy Tesla Depends On The Chances That Tesla Actually Becomes an AI Firm - 24/7 Wall St.](https://news.google.com/rss/articles/CBMixgFBVV95cUxNbTBEOFlyUzJodlVQalVDR0tiazZMWGlSTFNxTnVHZFQtVzVqYmFpanZyNzNOd09laU0ycF93SXJraEhWV19UMTlGQ1k5SU1YWGNqNW5fQ01Rc3VkeDJXeGJOU3ZzM1FJd3puYWgzeDJackhNSWxtZzdXSmZ5Y19CRjNEdlpqN1pWd3Vhc21vMVdjZVFRVXdscExKYVFtUjg5V21NalVIR0NscW9PdnBMX1VYcHJWMWh5Snl6M0lRa0RuVFlCc3c?oc=5) | 24/7 Wall St. |
-| 1h 前 | 0 | 偏空 | [Tesla Stock Drops as Europe Delays FSD Scale - GuruFocus](https://news.google.com/rss/articles/CBMiiwFBVV95cUxPclFfV2g4aHE4NFpBVkVvUVpMRHkwOEhPRXNrb2JrbElRN1dXc0R6UmVpbjJpTWhMZ0VzeklQSWJZX1pVVkl4Nk5pVGFjNDhjbHk0QjR1U3JuQ3dYeE9LZTJzaE42U2lLRUlrb21xdE9rVURhQWtUMUxiT3NhcFA0Qll5NS16MVVWVGpV?oc=5) | GuruFocus |
-| 1h 前 | 0 | 偏多 | [Tesla stock seen rallying 30% in 12 months desp... - Pluang](https://news.google.com/rss/articles/CBMimAFBVV95cUxNU3pKWnlVVG9fZm1FZXBwbDBabGtsRFIwdjBxNGdUSGZxbXdJVVV4X0lEMjBZS3FtQkpzNmpPMjRHVVVyTHpwNU4tQXFHNmRqWmZoRVhqRHhOU2JkYzhISXoyTmQyWjRCME5rVmZFbnJ6cnJydzBOV3BCOU5VUXpBYTBlSFhaTTN4a29WT3J6a2FRZ3JHWWJBcg?oc=5) | Pluang |
-| 1h 前 | 0 | 偏空 | [Tesla’s stock falls as Semi launch fails to excite investors - MarketWatch](https://news.google.com/rss/articles/CBMipAFBVV95cUxQRFR3VGlTaWt1dVBiNXh2TkZpM3RhTFBkdzNIVHFsNlJIOFJIbklublQ0ZHMwSFd5dTF5V01NenNOUGZLVDNwYU8zeWNPZEJCb2ZqYVV4TjlwQnkxb3U3ejJUUmJwUXdaZnBzd3VucjN2Q2pKS0dZb29lSWJnSjM5aWNfeUFvU2pzRFpSRlkwOEJsQzVUQno3WGxjRWpMeU82bmJnbA?oc=5) | MarketWatch |
-| 2h 前 | 0 | 中性 | [Tesla Stock Outlook: Investment-Grade Rating Meets $25 Billion AI Spending Push - TradingKey](https://news.google.com/rss/articles/CBMiyAFBVV95cUxOOHpxc0YteVlVdWhFMmxiZEFFZmdpajdLS3hzS0trYS1jeGlwcFpoRHlnU0ZqYXJsT0Q5a1RaTDVvRk9GeHRGUnl1T056ZF9QVXoyQi1hcXM3Q3Zpa2JDSTdLUXd6Q0dNVzl6ZUhDdHQxZHd0a0hLWFBXbzhfdkEwMV9oNEs1M3phMWdzX1Z3S1hwN0VadDRrM3lUSnRWcnFRQTduWnVIRFFCdXNNN0NjVUFkNmxoeWhRY0d1RzNyalBia2xQSzNvYg?oc=5) | TradingKey |
-| 2h 前 | 0 | 中性 | [Tesla starts high-volume production of Semi ele... - Pluang](https://news.google.com/rss/articles/CBMijwFBVV95cUxOVTNwNGtNQ1NzQU1CakVEMUFLWGtJNjZhVkdpbmYtRG1YbnlGdnh5bW8zaEhDNTlGVTdRbF9MV0Z5Q0paS25zTlVQUVF3RlNKaWpfY1U0YVVfVTRNRkFBWk9GQ3d2bFpGNTdBOGFuVjk5bXIzSzVmbkVBejFoWHNEdi1YVGhxMDVSN3JqNGRPNA?oc=5) | Pluang |
-| 3h 前 | 0 | 中性 | [Tesla Launches the Semi Truck. The New Roadster Is Up Next. - Barron's](https://news.google.com/rss/articles/CBMijwFBVV95cUxNTkFtcTE0YXFZY3dYYTlhV29sX0g5aUx5LUMzcHAwZi1vWXZNbHREeVhmNzNvSFJ4ZXFGZWtuaUdHWVhrM2p1S3Y5Q2JhcTFYU3ZLQWc5V21vLWVFVzBfXzZJWGZpaHdVWjQtdjREdDdPbEFQdDBja0dKZnBTbFdGS0ZtQnFucUlnQkJXZXZQYw?oc=5) | Barron's |
-| 3h 前 | 0 | 偏空 | [Tesla Stock Falls as Optimus Hand Snags Overshadow Semi Launch - eletric-vehicles.com](https://news.google.com/rss/articles/CBMinwFBVV95cUxNZmJncTduWE1Oa0dGUGZfbGhhRmhNcVIta0UzU1lIVHc2ZHQxZEF0aHBGSlFKN0k3R0dtNU1Pc21jS21vaTRMa0VtcGJGSEpNT0stci1uWTNuOGdQQThQbm9RV2loMFZKVnFxaDRJbUhvUndlNnQ2YVpDUFA0Zy1lNHROcm1nbjZVTlF1eWkzYndYeW1fYUZTalk4bkVQNDA?oc=5) | eletric-vehicles.com |
+| 1h 前 | 0 | 中性 | [Wall Street Loves This EV Stock. Here's Why I'm Not Buying - The Motley Fool](https://news.google.com/rss/articles/CBMimAFBVV95cUxQV1J0VVkzZjM5ZXFKdGFzcnBleGIyb2VVTjdIbGFqeW1EMUNvUVd5VFQ2Y1R5dGZ3Y1BKc2M1bXFqcjhKVDNhMEV1a3hoZGhFeU1rU2ZzOUFmd0l6c3BKZGxpazVUVGhKcl9pN2NvMUFLSExQaVg1OTk1QnppZjhlZUZHUk12bDMwUVBCemo3ODg4RUI5dFJNWQ?oc=5) | The Motley Fool |
+| 3h 前 | 0 | 中性 | [Tesla Makes Its Biggest Semi Push Yet. Nevada Factory Opens With 50,000-Truck Annual Goal. - International Business Times](https://news.google.com/rss/articles/CBMitAFBVV95cUxONEFQemEzVWNNQzRfWnZTMjh4UHZwQl91MzJRckpGazZ4Mi1RdE5URmpvRllVQXpFSmpid0RUeGxrNTcyNERaMERyYTBXSVNKeTUtUnFLQlV6YkRYb0R4Ul8zeDJfMjJnVzFyN3dZS0tNcmtQSXVjclBNSkhTZzZaa2ZmdTdFZ0FwWjExT3ZVeExvTkR5X0FrTjd2emotSWpvQlBnUmktYlcwa2xwQ081Y1EyaXo?oc=5) | International Business Times |
+| 4h 前 | 0 | 中性 | [Tesla stock hinges on AI success amid current c... - pluang.com](https://news.google.com/rss/articles/CBMisAFBVV95cUxPbExZYWdJNU93eEFLZi1uYWdtM2hVTm8yZW5scGFFRW1wbUNyZ1FJdHQ5OXltdjdLZUNBQzZ4T3lIM3dsTE9ISDhkZllYek1ybk0zaEhHQ3E3Vkd4LWg4dDlJY0lyYVNUVXY5QWRCQ0JtQlZMYXN5VmdleC10VkxnMG9QRGJqNHA2MnF0TkNuTTVOdXp2OUR3MEZOS2dJbDNmQzNDbGEwWnA4Qnk2VDRQSg?oc=5) | pluang.com |
+| 4h 前 | 0 | 中性 | [What Musk’s Tesla and SpaceX Stocks Are Doing After That White House State Dinner - barrons.com](https://news.google.com/rss/articles/CBMihgFBVV95cUxNc093WlV0Zk41RVRmMm9kQVdGaXp2dFB6azhCZkJJYlFmcll1T0xsa0tSdUEzaGhqTk9FVWIzMnBZVkVlQUU1WlJyQnFVZXlmR2dQS3hwbXB3c1NlbEtSZWxKbVFQNFdVOXA2djBBRDJ3Q1lLLV83S2ZzUEJ1dGJ6Q3BFY1VUZw?oc=5) | barrons.com |
+| 4h 前 | 0 | 中性 | [Tesla (TSLA Stock) Leads 2,500 Electric Class 8 Trucks. Microsoft, PepsiCo Back U.S. Freight Decarbonization - CarbonCredits.com](https://news.google.com/rss/articles/CBMiyAFBVV95cUxOLW5aSXU4eFdCWFMwc2VkaExjWE15dTVMM2pLdElwY2JOMGIxejJhZ2lRV2RIWWhJalU2eGd4V2hDbGFOcHNJdWdoR1hKVy1FMEtTel81ekVzU3JJR3BQdWQ1OWZVUWg1b2VwRDRWZWtJVXYxdFJtNTh5ZEt1SWE5SV9ncmxLejVYZGpLeExIZWhyM2s3a0Ffc2JZdHZPMk53eUF0OExXQXRLVnJKR1FJYzQxeWFVYjE5YWdNUmJlWW51cF9Wd19Scw?oc=5) | CarbonCredits.com |
+| 4h 前 | 0 | 中性 | [Whether You Buy Tesla Depends On The Chances That Tesla Actually Becomes an AI Firm - Yahoo Finance](https://news.google.com/rss/articles/CBMingFBVV95cUxOWkJ0N3VhUW1na0pjcDNRYnByeE5YcTBaR1VEWk1MS01pdm45NGw5OHB5NUt0Vy1iWU1keVRoQ2NfdzRodmN3Ym1tQjU1WWdMLXVueWx2VmE2a2cxQ1U1bGVIT0E4bmpKOFJpTExlSzZCNHVrcVBSSlpHLVA2X0ZFQzVRdFpUem4zZG9mb1llUDM4OExaRmw5aHlOYkdwUQ?oc=5) | Yahoo Finance |
+| 4h 前 | 0 | 中性 | [Tesla Stock (TSLA) Slips Over 1% Today Despite a New Roadster Tease - TipRanks](https://news.google.com/rss/articles/CBMimgFBVV95cUxNOGJoMTRBbGRWMHdmOHpIRFVud3RXb0gyZzBYZ0VmU3haT0Mya216X0t4anc2d3lnSHFaUEdZcl9FUkI0M2prOHQzbWhjWFV1b0h6anZUcHV0bGtfS1lQWDlxNXJ2Ni1oS0ROR29XSHVtWS1OTnBhWXN2X1dwd2Z5Y1JJQlpvYjZPTjIyQUxBS3l5dXZmUUFxMWN3?oc=5) | TipRanks |
+| 5h 前 | 0 | 偏空 | [Tesla’s stock falls as launch of Semi truck fails to excite investors - MarketWatch](https://news.google.com/rss/articles/CBMipAFBVV95cUxQRFR3VGlTaWt1dVBiNXh2TkZpM3RhTFBkdzNIVHFsNlJIOFJIbklublQ0ZHMwSFd5dTF5V01NenNOUGZLVDNwYU8zeWNPZEJCb2ZqYVV4TjlwQnkxb3U3ejJUUmJwUXdaZnBzd3VucjN2Q2pKS0dZb29lSWJnSjM5aWNfeUFvU2pzRFpSRlkwOEJsQzVUQno3WGxjRWpMeU82bmJnbA?oc=5) | MarketWatch |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -131,11 +127,11 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
-- 图形上是跌破 200 日线——现价距 20 日 364.82（+3.6%）、50 日 348.63（+8.4%）、200 日 395.96（-4.6%）。本报告的买入规则本身会过滤掉这种形态。
+- 图形上是跌破 200 日线——现价距 20 日 365.68（+1.8%）、50 日 348.25（+6.9%）、200 日 395.62（-5.9%）。本报告的买入规则本身会过滤掉这种形态。
 - 下次财报在 26 天后，落在持有期内。财报跳空会直接穿过止损——那一晚的风险不是 1R，是没有上限的。
 - TTM 市盈率 357 倍，价格里已经计入了不少增长；增长只要减速，杀估值的幅度会大于业绩本身的降幅。
 - 卖方目标价区间 125.00–600.00，宽度超过均值——分歧极大，共识在这只股票上没有信息量。
-- 政策面对该板块的倾向为 -0.93（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.79（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -143,7 +139,6 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 | 日期 | 开 | 高 | 低 | 收 | 涨跌 | 成交量 |
 |---|---:|---:|---:|---:|---:|---:|
-| 2026-09-03 | 365.82 | 384.04 | 365.82 | **376.37** | +5.4% | 63,601,000 |
 | 2026-09-04 | 362.07 | 364.69 | 351.32 | **354.08** | -5.9% | 65,018,200 |
 | 2026-09-08 | 357.10 | 370.00 | 355.75 | **368.16** | +4.0% | 51,078,800 |
 | 2026-09-09 | 368.25 | 375.44 | 366.00 | **367.81** | -0.1% | 32,564,300 |
@@ -157,7 +152,8 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-09-21 | 371.64 | 378.36 | 371.07 | **375.30** | +3.0% | 36,599,600 |
 | 2026-09-22 | 379.07 | 380.42 | 372.88 | **378.90** | +1.0% | 28,229,900 |
 | 2026-09-23 | 380.10 | 386.70 | 377.58 | **380.12** | +0.3% | 33,522,500 |
-| 2026-09-24 | 377.35 | 383.33 | 375.70 | **377.94** | -0.6% | 26,088,000 |
+| 2026-09-24 | 377.35 | 383.33 | 375.70 | **377.94** | -0.6% | 26,165,700 |
+| 2026-09-25 | 384.62 | 386.83 | 367.67 | **372.11** | -1.5% | 44,502,151 |
 
 ## 七、自己去查（本页不做独立验证）
 
