@@ -55,7 +55,10 @@ If a pull or push reports a failure, say so in the reply; do not retry by hand.
    `tradingagents/desk/orders.py`): `sell` / `trim` / `raise_stop` / `protect`
    / `buy`, each with its reason, and for buys the thesis, the invalidation
    condition, the principles it rests on, and the regime line. Levels only;
-   no share counts. On a day the manual calls defensive (VIX ≥ 30, SPX under
+   no share counts. A breakout trade (MANUAL §10) carries
+   `"sleeve": "aggressive"` and `"triggers"` naming at least two of
+   `volume` / `catalyst` / `pattern`, with the stop at the breakout-day low;
+   the pack's 进攻仓候选 table lists what the bars show. At most 2, half size. On a day the manual calls defensive (VIX ≥ 30, SPX under
    its 200-day) take at most half the usual new positions.
 5. `python -m tradingagents.desk order ~/.tradingagents/desk/trade/<date>-intent.json`.
    Read every line of the result. A refusal is final: do not edit numbers and
@@ -78,8 +81,10 @@ If a pull or push reports a failure, say so in the reply; do not retry by hand.
 3. Write the report yourself, the structure in MANUAL §6, as
    `~/.tradingagents/desk/report/<date>-final.md`: your scores per dimension
    with the reasons, the charts from the pack, entry/stop/target/R, the
-   sector read, the policy and macro context with links, the names to avoid,
-   and 今日要闻与判断. Where your score differs from the reference score, say why.
+   sector read, the policy and macro context with links, a
+   进攻仓候选与突破跟踪 section (the pack's breakout table plus which of the
+   three triggers each name meets and the breakout-day low), the names to
+   avoid, and 今日要闻与判断. Where your score differs from the reference score, say why.
    This task never reads any account or portfolio.
 4. `python -m tradingagents.desk site --date <date>` — builds the report as
    a web site under `~/.tradingagents/desk/report/site/<date>/` (index plus a

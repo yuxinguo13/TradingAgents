@@ -243,6 +243,68 @@ class TestGate:
         assert not v.ok and "closed" in v.reason
 
 
+@pytest.mark.unit
+class TestAggressiveSleeve:
+    """MANUAL §10: breakouts on half size, two of three triggers, no cushion."""
+
+    def buy(self, g, **kw):
+        args = dict(price=100.5, atr_pct=0.02, sector="Technology", earnings_days=30, sleeve="aggressive",
+                    triggers=["volume", "catalyst"], vol_ratio=2.0)
+        args.update(kw)
+        return g.buy("AAA", args.pop("entry", 100.0), args.pop("stop", 97.0), args.pop("target", 105.0), **args)
+
+    def test_a_breakout_with_two_triggers_passes_on_half_size(self, home):
+        v = self.buy(gate(home))
+        assert v.ok and v.shares == 50            # 0.5% of 100k = $500 ÷ $3 = 166, capped by 5% = $5,000 ÷ 100
+        assert v.risk == 150.0
+
+    def test_one_trigger_is_not_a_breakout(self, home):
+        v = self.buy(gate(home), triggers=["catalyst"])
+        assert not v.ok and "2 of" in v.reason
+
+    def test_a_claimed_volume_trigger_is_checked_against_the_bar(self, home):
+        v = self.buy(gate(home), triggers=["volume", "pattern"], vol_ratio=1.1)
+        assert not v.ok and "volume ratio is 1.1" in v.reason
+        assert self.buy(gate(home), triggers=["catalyst", "pattern"], vol_ratio=1.1).ok
+
+    def test_the_sleeve_has_its_own_r_chase_and_stop_rules(self, home):
+        assert self.buy(gate(home), target=104.6).ok                      # R 1.53 ≥ 1.5
+        assert not self.buy(gate(home), target=104.0).ok                  # R 1.33
+        assert self.buy(gate(home), entry=104.5, price=100.0, stop=101.4, target=109.5).ok   # 4.5% chase allowed
+        assert not self.buy(gate(home), entry=106.0, price=100.0, stop=102.8, target=111.0).ok   # 6% is not
+        assert self.buy(gate(home), stop=98.8, target=102.0).ok            # 1.2% stop = 0.6 ATR, allowed here
+        assert not self.buy(gate(home), stop=91.0, target=115.0).ok        # 9% stop, over the 8% cap
+
+    def test_two_sleeve_seats_and_no_double_sleeve_on_one_name(self, home):
+        book = DeskBook(home / "desk" / "trade" / "book.json")
+        book.positions["X1"] = Position("X1", 1, 10, 9, 12, "2026-08-20", sleeve="aggressive")
+        book.positions["X2"] = Position("X2", 1, 10, 9, 12, "2026-08-20", sleeve="aggressive")
+        v = self.buy(gate(home, book=book))
+        assert not v.ok and "2 aggressive" in v.reason
+        book.positions.pop("X2"); book.positions["AAA"] = Position("AAA", 1, 10, 9, 12, "2026-08-20")
+        assert not self.buy(gate(home, book=book)).ok                     # already a core position
+
+    def test_core_keeps_six_seats(self, home):
+        book = DeskBook(home / "desk" / "trade" / "book.json")
+        for i in range(6):
+            book.positions[f"C{i}"] = Position(f"C{i}", 1, 10, 9, 12, "2026-08-20", sector=f"S{i}")
+        v = gate(home, book=book).buy("AAA", 100.0, 97.0, 107.0, price=100.5, atr_pct=0.02, sector="", earnings_days=30)
+        assert not v.ok and "6 core" in v.reason
+        assert self.buy(gate(home, book=book)).ok                          # the sleeve's seats are still free
+
+    def test_the_executor_books_the_sleeve_with_a_15_day_horizon(self, home):
+        shape("AAA", 100.0, drift=0.6)
+        v = FakeVenue(acct())
+        px = v.quote("AAA")
+        out = executor(v, home).run({"orders": [buy("AAA", round(px, 2), round(px * 0.97, 2), round(px * 1.06, 2),
+                                                     sleeve="aggressive", triggers=["catalyst", "pattern"])]})
+        assert out[0].ok, out[0].reason
+        p = DeskBook(home / "desk" / "trade" / "book.json").positions["AAA"]
+        assert p.sleeve == "aggressive" and p.horizon_days == 15 and p.triggers == ["catalyst", "pattern"]
+        line = json.loads((home / "desk" / "trade" / "decisions.jsonl").read_text().splitlines()[-1])
+        assert line["sleeve"] == "aggressive" and "进攻仓" in orders.format_outcomes(out)
+
+
 # ---------------------------------------------------------------------------
 # the executor
 # ---------------------------------------------------------------------------

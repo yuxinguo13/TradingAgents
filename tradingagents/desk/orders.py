@@ -13,6 +13,9 @@ The intent file::
     {"date": "2026-09-25", "orders": [
       {"action": "buy", "symbol": "NVDA", "entry": 141.7, "stop": 139.4, "target": 150.3,
        "thesis": "...", "invalidation": "...", "principles": ["一·多头排列", "二·回调到20日线"]},
+      {"action": "buy", "symbol": "META", "sleeve": "aggressive", "triggers": ["volume", "catalyst"],
+       "entry": 780.0, "stop": 744.0, "target": 840.0, "thesis": "放量突破 + Connect 发布会",
+       "invalidation": "收盘跌回突破日最低价 744"},
       {"action": "sell", "symbol": "XOM", "reason": "论点失效：..."},
       {"action": "trim", "symbol": "AAPL", "fraction": 0.5, "reason": "到目标先卖一半"},
       {"action": "raise_stop", "symbol": "AAPL", "stop": 130.0, "reason": "1R，移到成本"},
@@ -62,6 +65,21 @@ REENTRY_DAYS = 10
 MIN_PRICE = 5.0
 MIN_CASH_LEFT = 0.0
 
+# --- the aggressive sleeve (MANUAL.md §10): breakouts, half size, no cushion --
+CORE, AGGRESSIVE = "core", "aggressive"
+SLEEVE = {
+    CORE: dict(risk_pct=RISK_PCT, max_name_weight=MAX_NAME_WEIGHT, max_limit_deviation=MAX_LIMIT_DEVIATION,
+               min_r=MIN_R, min_stop_atrs=MIN_STOP_ATRS, max_stop_pct=MAX_STOP_PCT, horizon_days=30,
+               max_positions=MAX_POSITIONS),
+    AGGRESSIVE: dict(risk_pct=0.005, max_name_weight=0.05, max_limit_deviation=0.05,
+                     min_r=1.5, min_stop_atrs=0.5, max_stop_pct=0.08, horizon_days=15,
+                     max_positions=2),
+}
+MAX_AGGRESSIVE = SLEEVE[AGGRESSIVE]["max_positions"]
+TRIGGERS = ("volume", "catalyst", "pattern")     # a breakout needs two of the three
+TRIGGERS_NEEDED = 2
+BREAKOUT_VOLUME_RATIO = 1.5                       # breakout-day volume vs the 20-day average
+
 
 # ---------------------------------------------------------------------------
 # the book
@@ -85,6 +103,8 @@ class Position:
     legs: dict = field(default_factory=dict)
     adopted: bool = False
     stop_raised: bool = False
+    sleeve: str = "core"
+    triggers: list = field(default_factory=list)
 
     def risk(self) -> float:
         return self.shares * max(0.0, self.entry - self.stop)
@@ -185,13 +205,14 @@ class Verdict:
 
 
 def size(equity: float, entry: float, stop: float, cash: float,
-         held_value: float = 0.0) -> Verdict:
+         held_value: float = 0.0, sleeve: str = CORE) -> Verdict:
     """The manual's formula, exactly: min(risk budget, name cap, cash)."""
     per_share = entry - stop
     if per_share <= 0:
         return Verdict(False, "stop is not below the entry")
-    by_risk = int(equity * RISK_PCT // per_share)
-    by_cap = int(max(0.0, equity * MAX_NAME_WEIGHT - held_value) // entry)
+    lim = SLEEVE.get(sleeve, SLEEVE[CORE])
+    by_risk = int(equity * lim["risk_pct"] // per_share)
+    by_cap = int(max(0.0, equity * lim["max_name_weight"] - held_value) // entry)
     by_cash = int(max(0.0, cash - MIN_CASH_LEFT) // entry)
     n = max(0, min(by_risk, by_cap, by_cash))
     if n <= 0:
@@ -220,7 +241,11 @@ class Gate:
 
     def buy(self, symbol: str, entry: float, stop: float, target: float, *,
             price: float, atr_pct: float, sector: str, earnings_days: float,
-            sma200: float = float("nan")) -> Verdict:
+            sma200: float = float("nan"), sleeve: str = CORE, triggers: list | None = None,
+            vol_ratio: float = float("nan")) -> Verdict:
+        if sleeve not in SLEEVE:
+            return Verdict(False, f"unknown sleeve {sleeve!r}; core or aggressive")
+        lim = SLEEVE[sleeve]
         if not self.market_open:
             return Verdict(False, "the market is closed; buys only in the session")
         if _ok(sma200) and _ok(price) and price > 0 and price < sma200:
@@ -228,11 +253,23 @@ class Gate:
             # headline, however good, buys a name under its 200-day line.
             return Verdict(False, f"price {price:.2f} is under the 200-day line {sma200:.2f}")
         if symbol in self.book.positions:
+            # One name, one sleeve: a core position cannot also be a breakout trade.
             return Verdict(False, f"{symbol} is already a position; raise its stop or leave it")
         if symbol in self.book.recently_closed(self.today):
             return Verdict(False, f"{symbol} was stopped out within {REENTRY_DAYS} days")
         if len(self.book.positions) >= MAX_POSITIONS:
             return Verdict(False, f"{MAX_POSITIONS} positions already")
+        if sleeve == AGGRESSIVE:
+            have = sum(1 for p in self.book.positions.values() if p.sleeve == AGGRESSIVE)
+            if have >= MAX_AGGRESSIVE:
+                return Verdict(False, f"{MAX_AGGRESSIVE} aggressive positions already")
+            claimed = [t for t in (triggers or []) if t in TRIGGERS]
+            if "volume" in claimed and _ok(vol_ratio) and vol_ratio < BREAKOUT_VOLUME_RATIO:
+                return Verdict(False, f"the volume trigger is claimed but the last bar's volume ratio is {vol_ratio:.1f} (needs {BREAKOUT_VOLUME_RATIO})")
+            if len(claimed) < TRIGGERS_NEEDED:
+                return Verdict(False, f"a breakout needs {TRIGGERS_NEEDED} of {TRIGGERS}; got {claimed or 'none'}")
+        elif len([p for p in self.book.positions.values() if p.sleeve != AGGRESSIVE]) >= MAX_POSITIONS - MAX_AGGRESSIVE:
+            return Verdict(False, f"{MAX_POSITIONS - MAX_AGGRESSIVE} core positions already (the other {MAX_AGGRESSIVE} seats are the sleeve's)")
         same = sum(1 for p in self.book.positions.values() if p.sector and p.sector == sector)
         if sector and same >= MAX_PER_SECTOR:
             return Verdict(False, f"{MAX_PER_SECTOR} positions in {sector} already")
@@ -244,19 +281,19 @@ class Gate:
             return Verdict(False, f"levels do not bracket the entry (stop {stop}, entry {entry}, target {target})")
         if entry < MIN_PRICE:
             return Verdict(False, f"price under ${MIN_PRICE:.0f}")
-        if _ok(price) and price > 0 and abs(entry - price) / price > MAX_LIMIT_DEVIATION:
-            return Verdict(False, f"entry {entry:.2f} is {abs(entry - price) / price * 100:.1f}% from the last price {price:.2f} (max {MAX_LIMIT_DEVIATION * 100:.0f}%)")
+        if _ok(price) and price > 0 and abs(entry - price) / price > lim["max_limit_deviation"]:
+            return Verdict(False, f"entry {entry:.2f} is {abs(entry - price) / price * 100:.1f}% from the last price {price:.2f} (max {lim['max_limit_deviation'] * 100:.0f}%)")
         dist = (entry - stop) / entry
-        if dist > MAX_STOP_PCT:
-            return Verdict(False, f"stop is {dist * 100:.1f}% below the entry (max {MAX_STOP_PCT * 100:.0f}%)")
-        if _ok(atr_pct) and atr_pct > 0 and dist < MIN_STOP_ATRS * atr_pct:
-            return Verdict(False, f"stop is {dist / atr_pct:.2f} ATR from the entry (min {MIN_STOP_ATRS:.0f} ATR)")
+        if dist > lim["max_stop_pct"]:
+            return Verdict(False, f"stop is {dist * 100:.1f}% below the entry (max {lim['max_stop_pct'] * 100:.0f}%)")
+        if _ok(atr_pct) and atr_pct > 0 and dist < lim["min_stop_atrs"] * atr_pct:
+            return Verdict(False, f"stop is {dist / atr_pct:.2f} ATR from the entry (min {lim['min_stop_atrs']:g} ATR)")
         r = (target - entry) / (entry - stop)
-        if r < MIN_R:
-            return Verdict(False, f"R {r:.2f} is under {MIN_R:.1f}")
+        if r < lim["min_r"]:
+            return Verdict(False, f"R {r:.2f} is under {lim['min_r']:.1f}")
         if _ok(earnings_days) and 0 <= earnings_days <= EARNINGS_BLACKOUT_DAYS:
             return Verdict(False, f"earnings in {earnings_days:.0f} day(s)")
-        v = size(self.equity, entry, stop, self.cash, self.holdings.get(symbol, 0.0))
+        v = size(self.equity, entry, stop, self.cash, self.holdings.get(symbol, 0.0), sleeve)
         if not v.ok:
             return v
         if self.risk_today + v.risk > self.equity * MAX_DAILY_NEW_RISK:
@@ -300,6 +337,7 @@ class Outcome:
     stop: float = float("nan")
     target: float = float("nan")
     venue: str = ""
+    sleeve: str = "core"
 
 
 def log_entry(entry: dict, path: Path | None = None) -> Path:
@@ -414,9 +452,12 @@ class Executor:
             with contextlib.suppress(Exception):
                 earnings_days = _num(e.days_to_next(today))
         sector = str(o.get("sector") or f.sector or "")
+        sleeve = str(o.get("sleeve") or CORE).lower()
+        triggers = [str(t).lower() for t in (o.get("triggers") or [])]
         v = gate.buy(sym, entry, stop, target, price=price, atr_pct=_num(f.snap.atr_pct),
-                     sector=sector, earnings_days=earnings_days, sma200=_num(f.snap.sma200))
-        out = Outcome("buy", sym, v.ok, v.reason, v.shares, entry, stop, target)
+                     sector=sector, earnings_days=earnings_days, sma200=_num(f.snap.sma200),
+                     sleeve=sleeve, triggers=triggers, vol_ratio=_num(f.snap.vol_ratio))
+        out = Outcome("buy", sym, v.ok, v.reason, v.shares, entry, stop, target, sleeve=sleeve)
         if not v.ok:
             return out
         res = self.broker.place_bracket(sym, v.shares, entry, stop, target, dry_run=self.dry_run)
@@ -430,11 +471,12 @@ class Executor:
         if not self.dry_run:
             self.book.positions[sym] = Position(
                 symbol=sym, shares=v.shares, entry=entry, stop=stop, target=target,
-                opened=today.isoformat(), horizon_days=int(o.get("horizon_days") or 30),
+                opened=today.isoformat(),
+                horizon_days=int(o.get("horizon_days") or SLEEVE[sleeve]["horizon_days"]),
                 sector=sector, thesis=str(o.get("thesis") or ""),
                 invalidation=str(o.get("invalidation") or ""),
                 principles=list(o.get("principles") or []), regime=str(o.get("regime") or ""),
-                parent_id=res.broker_order_id or "", legs=legs)
+                parent_id=res.broker_order_id or "", legs=legs, sleeve=sleeve, triggers=triggers)
             self.book.save()
         return out
 
@@ -534,7 +576,7 @@ class Executor:
                  "entry": out.entry, "stop": out.stop, "target": out.target,
                  "risk": round(out.shares * (out.entry - out.stop), 2)
                  if out.action == "buy" and _ok(out.entry) and _ok(out.stop) else 0.0,
-                 "dry_run": self.dry_run,
+                 "dry_run": self.dry_run, "sleeve": out.sleeve, "triggers": o.get("triggers") or [],
                  "thesis": o.get("thesis") or o.get("reason") or "",
                  "invalidation": o.get("invalidation") or "",
                  "principles": o.get("principles") or [], "regime": o.get("regime") or ""}
@@ -563,7 +605,8 @@ def format_outcomes(outcomes: list[Outcome]) -> str:
             levels = f" 入场 {o.entry:,.2f} 止损 {o.stop:,.2f} 目标 {o.target:,.2f}"
         elif o.action == "raise_stop":
             levels = f" 止损 → {o.stop:,.2f}"
-        lines.append(f"- {mark} {o.action} {o.symbol} {o.shares or ''}{levels} — {o.reason}"
+        tag = "（进攻仓）" if o.sleeve == AGGRESSIVE else ""
+        lines.append(f"- {mark} {o.action} {o.symbol}{tag} {o.shares or ''}{levels} — {o.reason}"
                      + (f"（{o.venue}）" if o.venue else ""))
     return "\n".join(lines)
 

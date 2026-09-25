@@ -30,8 +30,8 @@ in the tree but is not what runs.
 | Claude | Code |
 |---|---|
 | reads the pack, the news, the charts | computes every indicator and the reference levels |
-| decides what to buy, sell, trim, protect; where the stop and target go; why | computes the share count: `min(equity × 1% ÷ |entry − stop|, equity × 10% ÷ entry, cash ÷ entry)` |
-| writes the thesis, the invalidation condition, the principles, the regime | refuses: price under its 200-day line, R < 2, stop under 1 ATR or over 10%, entry > 3% from the last price, earnings within 1 day, 8 positions, 3 per sector, 10% per name, 3% new risk per day, 3% daily drawdown halt, re-entry within 10 days, market closed, kill switch |
+| decides what to buy, sell, trim, protect; where the stop and target go; why; whether a trade is core or a breakout (`sleeve: aggressive`, MANUAL §10) | computes the share count: `min(equity × 1% ÷ |entry − stop|, equity × 10% ÷ entry, cash ÷ entry)` |
+| writes the thesis, the invalidation condition, the principles, the regime | refuses: price under its 200-day line, R < 2, stop under 1 ATR or over 10%, entry > 3% from the last price, earnings within 1 day, 8 positions, 3 per sector, 10% per name, 3% new risk per day, 3% daily drawdown halt, re-entry within 10 days, market closed, kill switch; for the aggressive sleeve: 2 of 3 triggers (volume checked against the bar), 0.5% risk, 5% per name, 5% chase, R ≥ 1.5, 2 seats of the 8 |
 | answers the post-mortem questions | places bracket orders (stop + take-profit resting at the venue, GTC); raises stops, never lowers or cancels them; the one cancel is inside a close |
 | writes the report and the advice | keeps `decisions.jsonl` and `book.json` |
 

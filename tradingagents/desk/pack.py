@@ -88,6 +88,7 @@ class HeldRow:
     invalidation: str = ""
     earnings_in: float = float("nan")
     verdict: str = ""
+    sleeve: str = "core"
     news: list = field(default_factory=list)
 
 
@@ -104,6 +105,7 @@ class TradePack:
     postmortems: list = field(default_factory=list)      # Closed rows awaiting review
     fills: list = field(default_factory=list)
     candidates: list = field(default_factory=list)
+    breakouts: list = field(default_factory=list)     # (symbol, triggers, breakout-day low)
     regime: list = field(default_factory=list)
     macro_news: list = field(default_factory=list)
     policy_brief: str = ""
@@ -264,6 +266,7 @@ class Packer:
                 p = self.book.positions.get(sym)
                 if p is not None:
                     row.stop, row.target, row.opened = p.stop, p.target, p.opened
+                    row.sleeve = getattr(p, "sleeve", "core")
                     row.r_now = p.r_at(px) if _ok(px) else float("nan")
                     row.days_left = (p.deadline() - today).days
                     row.thesis, row.invalidation = p.thesis, p.invalidation
@@ -287,6 +290,16 @@ class Packer:
                 row.verdict = f"（{pack.limits['reentry_days']} 天内刚止损，不可买）" + row.verdict
             pack.candidates.append(row)
         pack.candidates.sort(key=lambda r: (r.ref_score if _ok(r.ref_score) else -999), reverse=True)
+        from .report import breakout_triggers
+        for s in alive:
+            if s in held_syms:
+                continue
+            t = breakout_triggers(facts[s])
+            if any(x in ("volume", "pattern") for x in t):
+                low = facts[s].bars.lows[-1] if facts[s].bars.lows else float("nan")
+                pack.breakouts.append({"symbol": s, "triggers": t, "breakout_low": round(_num(low), 2) if _ok(_num(low)) else None,
+                                       "price": round(facts[s].price, 2), "vol_ratio": round(_num(facts[s].snap.vol_ratio), 2)})
+        pack.breakouts.sort(key=lambda b: len(b["triggers"]), reverse=True)
         self.save(pack, facts)
         return pack
 
@@ -391,7 +404,7 @@ def format_pack(pack: TradePack, facts: dict | None = None) -> str:
     out += ["## 硬限制（代码执行，见手册 §3）",
             f"单笔风险 {L.get('risk_pct', 0) * 100:.0f}% · 单票 ≤ {L.get('max_name_weight', 0) * 100:.0f}% · "
             f"单日新增风险 ≤ {L.get('max_daily_new_risk', 0) * 100:.0f}% · 当日回撤 {L.get('daily_drawdown_halt', 0) * 100:.0f}% 熔断 · "
-            f"最多 {L.get('max_positions', 0)} 仓 · 同板块 ≤ {L.get('max_per_sector', 0)} · R ≥ {L.get('min_r', 0):.1f} · "
+            f"最多 {L.get('max_positions', 0)} 仓（主 6 + 进攻 2） · 同板块 ≤ {L.get('max_per_sector', 0)} · R ≥ {L.get('min_r', 0):.1f} · "
             f"止损 ≥ {L.get('min_stop_atrs', 0):.0f} ATR 且 ≤ {L.get('max_stop_pct', 0) * 100:.0f}% · "
             f"财报前 {L.get('earnings_blackout_days', 0)} 天不开仓 · 止损后 {L.get('reentry_days', 0)} 天不回头", ""]
 
@@ -410,11 +423,11 @@ def format_pack(pack: TradePack, facts: dict | None = None) -> str:
 
     out.append(f"## 持仓（{len(pack.held)}/{L.get('max_positions', MAX_POSITIONS)}）")
     if pack.held:
-        out += ["| 代码 | 股数 | 成本 | 现价 | 盈亏 | 止损 | 目标 | 当前R | 剩余天数 | 止损挂着 | 财报 | 图形 |",
-                "|---|---:|---:|---:|---:|---:|---:|---:|---:|---|---|---|"]
+        out += ["| 代码 | 账 | 股数 | 成本 | 现价 | 盈亏 | 止损 | 目标 | 当前R | 剩余天数 | 止损挂着 | 财报 | 图形 |",
+                "|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---|---|---|"]
         for h in pack.held:
             earn = f"{h.earnings_in:.0f}d" if _ok(h.earnings_in) else "—"
-            out.append(f"| {h.symbol} | {h.shares} | {_f(h.avg_cost)} | {_f(h.price)} | {_pct(h.pnl_pct)} | {_f(h.stop)} "
+            out.append(f"| {h.symbol} | {'进攻' if h.sleeve == 'aggressive' else '主'} | {h.shares} | {_f(h.avg_cost)} | {_f(h.price)} | {_pct(h.pnl_pct)} | {_f(h.stop)} "
                        f"| {_f(h.target)} | {_f(h.r_now, 1)} | {h.days_left if h.days_left is not None else '—'} "
                        f"| {'是' if h.protected else '**否**'} | {earn} | {h.verdict[:40]} |")
         for h in pack.held:
@@ -440,6 +453,15 @@ def format_pack(pack: TradePack, facts: dict | None = None) -> str:
         out.append(f"- [{n.title}]({n.link})（{n.source}）")
     out.append("")
 
+    out.append("## 进攻仓候选（突破跟踪，手册第十节）")
+    if pack.breakouts:
+        out += ["| 代码 | 现价 | 量比 | 图上看到的触发 | 突破日低（止损位） |", "|---|---:|---:|---|---:|"]
+        for b in pack.breakouts[:8]:
+            out.append(f"| {b['symbol']} | {_f(b['price'])} | {_f(b['vol_ratio'], 1)} | {'、'.join(b['triggers'])} | {_f(b['breakout_low'])} |")
+        out.append("三条触发至少两条才能进；`catalyst?` 只是说有分量 ≥7 的利好标题，是否算重大催化剂你来判断，并在 intent 里写明。")
+    else:
+        out.append("- 今天没有放量创新高或突破平台的候选。")
+    out.append("")
     out.append(f"## 候选（{len(pack.candidates)}）")
     out += table(pack.candidates)
     out.append("")

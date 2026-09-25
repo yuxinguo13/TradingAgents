@@ -82,6 +82,7 @@ class Idea:
     spark: str = ""
     source: str = ""
     page: str = ""
+    triggers: list = field(default_factory=list)
     facts: Facts | None = field(default=None, repr=False, compare=False)
 
     def to_dict(self) -> dict:
@@ -121,6 +122,7 @@ class MarketReport:
     scored: list = field(default_factory=list)      # every Idea, best first
     ideas: list = field(default_factory=list)
     avoid: list = field(default_factory=list)
+    breakouts: list = field(default_factory=list)   # Idea rows that look like breakouts today
     warnings: list = field(default_factory=list)
     notes: list = field(default_factory=list)
     path: str = ""
@@ -141,6 +143,7 @@ class MarketReport:
             "sectors": [asdict(s) for s in self.sectors],
             "ideas": [i.to_dict() for i in self.ideas],
             "avoid": [i.to_dict() for i in self.avoid],
+            "breakouts": [i.to_dict() for i in self.breakouts],
             "scored": [i.to_dict() for i in self.scored],
             "warnings": self.warnings, "notes": self.notes,
         }
@@ -252,6 +255,40 @@ def score(f: Facts, tilt: float = 0.0, spy_ret_3m: float = float("nan")) -> tupl
     return round(s, 1), why, warn
 
 
+def breakout_triggers(f: Facts) -> list[str]:
+    """Which of the manual's three breakout triggers the bars themselves show.
+
+    ``catalyst`` cannot be read off a chart; it is claimed by whoever writes the
+    intent and judged by the reader. ``volume`` and ``pattern`` can.
+    """
+    out = []
+    snap = f.snap
+    vr, chg = _num(snap.vol_ratio), _num(snap.change_pct)
+    if _ok(vr) and vr >= 1.5 and _ok(chg) and chg > 0:
+        out.append("volume")
+    off = _num(snap.off_high_52w)
+    if _ok(off) and off >= -0.02 and f.above("sma50") and f.above("sma200"):
+        out.append("pattern")
+    bull = [n for n in f.bullish_news() if int(getattr(n, "materiality", 0) or 0) >= 7]
+    if bull:
+        out.append("catalyst?")
+    return out
+
+
+def breakouts(scored: list) -> list:
+    """Names showing at least one bar-readable trigger, strongest first."""
+    out = []
+    for i in scored:
+        if i.facts is None or not i.facts.ok:
+            continue
+        t = breakout_triggers(i.facts)
+        if any(x in ("volume", "pattern") for x in t):
+            i.triggers = t
+            out.append(i)
+    out.sort(key=lambda i: (len(i.triggers), i.score), reverse=True)
+    return out[:8]
+
+
 # ---------------------------------------------------------------------------
 # the reporter
 # ---------------------------------------------------------------------------
@@ -330,6 +367,7 @@ class Reporter:
         report.scored.sort(key=lambda i: i.score, reverse=True)
         report.ideas = [i for i in report.scored if i.score > 0][:self.cfg.top_ideas]
         report.avoid = [i for i in reversed(report.scored) if i.score < 0][:self.cfg.avoid]
+        report.breakouts = breakouts(report.scored)
         report.sectors = self.sector_lines(report)
 
         # 5. pages
@@ -488,6 +526,19 @@ def format_report(report: MarketReport) -> str:
         out.append("今天没有得分为正的名字。")
     for i, idea in enumerate(report.ideas, 1):
         out += idea_block(i, idea, report)
+    out.append("")
+
+    out.append("## 进攻仓候选与突破跟踪")
+    if not report.breakouts:
+        out.append("- 今天没有放量创新高或突破平台的名字。")
+    else:
+        out += ["规则见手册第十节：三条触发至少两条才能进进攻仓；`catalyst?` 表示近两天有分量 ≥7 的利好标题，是否算重大催化剂由读者判断。止损放在突破日最低价（表中的「突破日低」）。",
+                "| 代码 | 板块 | 现价 | 日 | 量比 | 距52周高 | 触发 | 突破日低 | 参考分 |", "|---|---|---:|---:|---:|---:|---|---:|---:|"]
+        for i in report.breakouts:
+            f = i.facts
+            low = _num(f.bars.lows[-1]) if f and f.bars.lows else float("nan")
+            out.append(f"| {i.symbol} | {SECTOR_ZH.get(i.sector, i.sector)} | {_f(i.price)} | {_pct(i.change_pct)} | {_f(i.vol_ratio, 1)} "
+                       f"| {_pct(_num(f.snap.off_high_52w) if f else float('nan'))} | {'、'.join(i.triggers)} | {_f(low)} | {i.score:+.0f} |")
     out.append("")
 
     out.append("## 五、走弱 / 回避")
