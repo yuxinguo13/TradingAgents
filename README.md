@@ -93,6 +93,18 @@ Our framework decomposes complex trading tasks into specialized roles.
   <img src="assets/risk.png" width="70%" style="display: inline-block; margin: 0 2%;">
 </p>
 
+## The daily desk
+
+Three rule-based commands over the live engine, each with its own state:
+
+```bash
+python -m tradingagents.desk trade    # paper-trade the Alpaca account, then say where it stands
+python -m tradingagents.desk report   # the market, sector by sector, with no account in view
+python -m tradingagents.desk advise   # keep / add / trim / sell for a portfolio you typed in
+```
+
+See [`tradingagents/desk/README.md`](tradingagents/desk/README.md).
+
 ## Installation and CLI
 
 ### Installation
