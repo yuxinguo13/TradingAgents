@@ -6,9 +6,12 @@ import sys
 
 USAGE = """usage: python -m tradingagents.desk <task> [options]
 
-  trade    paper-trade the Alpaca account by rule, then say where it stands
+  pack     the tables Claude reads before deciding (pack trade | pack facts A,B,C)
+  order    place what an intent file asks for, through the gate (order intent.json)
+  log      append a decision / post-mortem entry to the decision log
   report   the market, sector by sector, with no account in view
   advise   what to do with a portfolio you typed in
+  trade    the rule-based trader (fallback when nobody is reading the pack)
 
 Each task takes --help. State: $TRADINGAGENTS_HOME/desk/<task>/
 """
@@ -22,6 +25,12 @@ def main(argv: list[str] | None = None) -> int:
     task, rest = argv[0], argv[1:]
     if task == "trade":
         from .trade import main as run
+    elif task == "pack":
+        from .pack import main as run
+    elif task == "order":
+        from .orders import main as run
+    elif task == "log":
+        from .orders import main_log as run
     elif task == "report":
         from .report import main as run
     elif task == "advise":

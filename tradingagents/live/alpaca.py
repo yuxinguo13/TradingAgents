@@ -31,14 +31,24 @@ intent without a side.
 
 from __future__ import annotations
 
+import json
 import logging
 import os
 from contextlib import suppress
 from datetime import datetime
 
 from .broker import (
-    ACTIONS, BUY, COVER, LIMIT, MARKET, SELL, SHORT, STOP,
-    Account, Holding, OrderResult,
+    ACTIONS,
+    BUY,
+    COVER,
+    LIMIT,
+    MARKET,
+    SELL,
+    SHORT,
+    STOP,
+    Account,
+    Holding,
+    OrderResult,
 )
 
 logger = logging.getLogger(__name__)
@@ -191,6 +201,7 @@ class AlpacaBroker:
         # session, but a stale price the gate can sanity-check beats no price.
         with suppress(Exception):
             from tradingagents.dataflows.stockstats_utils import load_ohlcv
+
             from . import clock
             df = load_ohlcv(sym, clock.last_trading_day().isoformat())
             if df is not None and not df.empty:
@@ -206,18 +217,20 @@ class AlpacaBroker:
                        order_type: str, limit_price: float | None):
         from alpaca.trading.enums import OrderSide, PositionIntent, TimeInForce
         from alpaca.trading.requests import (
-            LimitOrderRequest, MarketOrderRequest, StopOrderRequest,
+            LimitOrderRequest,
+            MarketOrderRequest,
+            StopOrderRequest,
         )
         side_name, intent_name = _INTENT[action]
-        common = dict(
-            symbol=symbol,
-            qty=quantity,
-            side=OrderSide[side_name],
-            position_intent=PositionIntent[intent_name],
+        common = {
+            "symbol": symbol,
+            "qty": quantity,
+            "side": OrderSide[side_name],
+            "position_intent": PositionIntent[intent_name],
             # DAY, not GTC: an order the desk placed on a thesis it formed this
             # morning should not quietly fill days later on a different one.
-            time_in_force=TimeInForce.DAY,
-        )
+            "time_in_force": TimeInForce.DAY,
+        }
         if order_type == LIMIT:
             return LimitOrderRequest(limit_price=limit_price, **common)
         if order_type == STOP:
@@ -277,6 +290,181 @@ class AlpacaBroker:
                        + (f" @ {res.filled_avg_price:,.2f}" if res.filled_avg_price else "")
                        + ")")
         return res
+
+    # --- bracket orders: the stop lives at the venue, not in a file ----------
+
+    def place_bracket(self, symbol: str, quantity: int, limit_price: float,
+                      stop_price: float, target_price: float,
+                      dry_run: bool = False) -> OrderResult:
+        """A buy with its stop-loss and take-profit attached, GTC.
+
+        GTC rather than DAY on purpose: the two child legs are what protect the
+        position between desk runs, and DAY legs would expire at the close of
+        the day they were placed. The parent is a limit so the fill price is
+        bounded; Alpaca activates the legs when it fills.
+        """
+        from alpaca.trading.enums import OrderClass, OrderSide, TimeInForce
+        from alpaca.trading.requests import LimitOrderRequest, StopLossRequest, TakeProfitRequest
+        symbol = symbol.upper()
+        res = OrderResult(ok=False, symbol=symbol, action=BUY, quantity=quantity,
+                          order_type=LIMIT, limit_price=limit_price,
+                          submitted_at=datetime.now().isoformat())
+        if quantity <= 0 or not limit_price or not stop_price or not target_price:
+            res.message = "bracket needs a quantity, a limit, a stop and a target"
+            return res
+        if not (stop_price < limit_price < target_price):
+            res.message = f"levels do not bracket the entry (stop {stop_price}, limit {limit_price}, target {target_price})"
+            return res
+        req = LimitOrderRequest(
+            symbol=symbol, qty=int(quantity), side=OrderSide.BUY,
+            time_in_force=TimeInForce.GTC, limit_price=round(limit_price, 2),
+            order_class=OrderClass.BRACKET,
+            take_profit=TakeProfitRequest(limit_price=round(target_price, 2)),
+            stop_loss=StopLossRequest(stop_price=round(stop_price, 2)),
+        )
+        if dry_run:
+            res.ok = True
+            with suppress(Exception):
+                res.message = f"DRY RUN — {req.model_dump(exclude_none=True)}"
+            return res
+        try:
+            o = self.trading.submit_order(req)
+        except Exception as exc:
+            res.message = f"rejected by Alpaca: {exc}"
+            return res
+        status = getattr(o.status, "value", str(o.status))
+        res.broker_order_id = str(o.id)
+        res.status = status
+        res.ok = status not in ("rejected", "canceled", "expired")
+        legs = {}
+        for leg in getattr(o, "legs", None) or []:
+            kind = getattr(getattr(leg, "order_type", None), "value", str(getattr(leg, "order_type", "")))
+            legs[kind] = str(leg.id)
+        res.message = f"{status}; legs {legs}" if legs else status
+        res.artifact = json.dumps(legs)
+        return res
+
+    def protect(self, symbol: str, quantity: int, stop_price: float,
+                target_price: float, dry_run: bool = False) -> OrderResult:
+        """A stop and a take-profit on shares already held (an OCO sell).
+
+        For positions the desk did not open, and for what is left after a
+        trim: the bracket only exists on a buy, so a held position gets its
+        protection this way. GTC, like the bracket legs.
+        """
+        from alpaca.trading.enums import OrderClass, OrderSide, TimeInForce
+        from alpaca.trading.requests import LimitOrderRequest, StopLossRequest, TakeProfitRequest
+        symbol = symbol.upper()
+        res = OrderResult(ok=False, symbol=symbol, action=SELL, quantity=quantity,
+                          order_type=LIMIT, limit_price=target_price,
+                          submitted_at=datetime.now().isoformat())
+        if quantity <= 0 or not stop_price or not target_price or stop_price >= target_price:
+            res.message = "protect needs a quantity and a stop below a target"
+            return res
+        req = LimitOrderRequest(
+            symbol=symbol, qty=int(quantity), side=OrderSide.SELL,
+            time_in_force=TimeInForce.GTC, limit_price=round(target_price, 2),
+            order_class=OrderClass.OCO,
+            take_profit=TakeProfitRequest(limit_price=round(target_price, 2)),
+            stop_loss=StopLossRequest(stop_price=round(stop_price, 2)),
+        )
+        if dry_run:
+            res.ok, res.message = True, "DRY RUN — OCO built, not submitted"
+            return res
+        try:
+            o = self.trading.submit_order(req)
+        except Exception as exc:
+            res.message = f"rejected by Alpaca: {exc}"
+            return res
+        status = getattr(o.status, "value", str(o.status))
+        res.broker_order_id, res.status = str(o.id), status
+        res.ok = status not in ("rejected", "canceled", "expired")
+        res.message = status
+        return res
+
+    def equity_today(self) -> tuple[float, float]:
+        """(equity now, equity at yesterday's close) — the day's drawdown."""
+        try:
+            a = self.trading.get_account()
+            return _f(a.equity), _f(a.last_equity)
+        except Exception:
+            return float("nan"), float("nan")
+
+    def stop_leg(self, symbol: str) -> dict | None:
+        """The open stop order protecting ``symbol``, or None."""
+        for o in self.open_orders():
+            if o["symbol"].upper() == symbol.upper() and o["side"] == "sell" \
+                    and o["type"] in ("stop", "stop_limit"):
+                return o
+        return None
+
+    def raise_stop(self, symbol: str, new_stop: float) -> tuple[bool, str]:
+        """Move the resting stop *up*. A lower stop is refused here, not just
+        by the gate: this adapter never widens a stop for anyone."""
+        from alpaca.trading.requests import ReplaceOrderRequest
+        leg = self.stop_leg(symbol)
+        if leg is None:
+            return False, f"no resting stop for {symbol}"
+        try:
+            cur = float(self.trading.get_order_by_id(leg["id"]).stop_price or 0)
+        except Exception as exc:
+            return False, f"could not read the stop for {symbol}: {exc}"
+        if new_stop <= cur:
+            return False, f"{symbol}: new stop {new_stop:.2f} is not above the resting {cur:.2f}"
+        try:
+            self.trading.replace_order_by_id(leg["id"], ReplaceOrderRequest(stop_price=round(new_stop, 2)))
+        except Exception as exc:
+            return False, f"{symbol}: replace refused: {exc}"
+        return True, f"{symbol}: stop {cur:.2f} → {new_stop:.2f}"
+
+    def close_now(self, symbol: str) -> OrderResult:
+        """Flatten a position at market, cancelling its bracket legs first.
+
+        The only place this adapter cancels a stop, and only because the
+        position it protected is being closed in the same call: Alpaca holds
+        the shares against the resting legs, so a sell without cancelling them
+        is refused for insufficient quantity.
+        """
+        symbol = symbol.upper()
+        res = OrderResult(ok=False, symbol=symbol, action=SELL, quantity=0, order_type=MARKET,
+                          submitted_at=datetime.now().isoformat())
+        for o in self.open_orders():
+            if o["symbol"].upper() == symbol and o["side"] == "sell":
+                self.cancel(o["id"])
+        try:
+            o = self.trading.close_position(symbol)
+        except Exception as exc:
+            res.message = f"close refused by Alpaca: {exc}"
+            return res
+        status = getattr(o.status, "value", str(o.status))
+        res.broker_order_id, res.status = str(o.id), status
+        res.quantity = _f(o.qty)
+        res.ok = status not in ("rejected", "canceled", "expired")
+        res.message = status
+        return res
+
+    def fills_since(self, since: datetime) -> list[dict]:
+        """Filled orders after ``since``: what the venue did while nobody watched."""
+        from alpaca.trading.enums import QueryOrderStatus
+        from alpaca.trading.requests import GetOrdersRequest
+        try:
+            orders = self.trading.get_orders(GetOrdersRequest(
+                status=QueryOrderStatus.CLOSED, after=since, limit=200, nested=True))
+        except Exception as exc:
+            logger.warning("could not list fills: %s", exc)
+            return []
+        out = []
+        for o in orders:
+            if _f(o.filled_qty) <= 0:
+                continue
+            out.append({
+                "id": str(o.id), "symbol": o.symbol,
+                "side": getattr(o.side, "value", str(o.side)),
+                "qty": _f(o.filled_qty), "price": _f(o.filled_avg_price),
+                "type": getattr(o.order_type, "value", str(o.order_type)),
+                "filled_at": str(getattr(o, "filled_at", "")),
+            })
+        return out
 
     def open_orders(self) -> list[dict]:
         from alpaca.trading.enums import QueryOrderStatus
