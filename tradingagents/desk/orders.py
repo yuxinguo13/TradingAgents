@@ -79,6 +79,7 @@ MAX_AGGRESSIVE = SLEEVE[AGGRESSIVE]["max_positions"]
 TRIGGERS = ("volume", "catalyst", "pattern")     # a breakout needs two of the three
 TRIGGERS_NEEDED = 2
 BREAKOUT_VOLUME_RATIO = 1.5                       # breakout-day volume vs the 20-day average
+BREAKOUT_FADE_ATRS = 1.0                          # live price this far under the breakout close = fading, refuse
 
 
 # ---------------------------------------------------------------------------
@@ -242,7 +243,7 @@ class Gate:
     def buy(self, symbol: str, entry: float, stop: float, target: float, *,
             price: float, atr_pct: float, sector: str, earnings_days: float,
             sma200: float = float("nan"), sleeve: str = CORE, triggers: list | None = None,
-            vol_ratio: float = float("nan")) -> Verdict:
+            vol_ratio: float = float("nan"), last_close: float = float("nan")) -> Verdict:
         if sleeve not in SLEEVE:
             return Verdict(False, f"unknown sleeve {sleeve!r}; core or aggressive")
         lim = SLEEVE[sleeve]
@@ -268,6 +269,12 @@ class Gate:
                 return Verdict(False, f"the volume trigger is claimed but the last bar's volume ratio is {vol_ratio:.1f} (needs {BREAKOUT_VOLUME_RATIO})")
             if len(claimed) < TRIGGERS_NEEDED:
                 return Verdict(False, f"a breakout needs {TRIGGERS_NEEDED} of {TRIGGERS}; got {claimed or 'none'}")
+            # 2026-09-25, META: the breakout day closed at 777.59 and the next
+            # session traded 747 by noon. A breakout that has already given
+            # back an ATR is a failed breakout, whatever the triggers said.
+            if _ok(last_close) and _ok(price) and _ok(atr_pct) and atr_pct > 0 \
+                    and price < last_close * (1 - BREAKOUT_FADE_ATRS * atr_pct):
+                return Verdict(False, f"the breakout is fading: {price:.2f} is {(1 - price / last_close) / atr_pct:.1f} ATR under the breakout close {last_close:.2f}")
         elif len([p for p in self.book.positions.values() if p.sleeve != AGGRESSIVE]) >= MAX_POSITIONS - MAX_AGGRESSIVE:
             return Verdict(False, f"{MAX_POSITIONS - MAX_AGGRESSIVE} core positions already (the other {MAX_AGGRESSIVE} seats are the sleeve's)")
         same = sum(1 for p in self.book.positions.values() if p.sector and p.sector == sector)
@@ -456,7 +463,8 @@ class Executor:
         triggers = [str(t).lower() for t in (o.get("triggers") or [])]
         v = gate.buy(sym, entry, stop, target, price=price, atr_pct=_num(f.snap.atr_pct),
                      sector=sector, earnings_days=earnings_days, sma200=_num(f.snap.sma200),
-                     sleeve=sleeve, triggers=triggers, vol_ratio=_num(f.snap.vol_ratio))
+                     sleeve=sleeve, triggers=triggers, vol_ratio=_num(f.snap.vol_ratio),
+                     last_close=f.price)
         out = Outcome("buy", sym, v.ok, v.reason, v.shares, entry, stop, target, sleeve=sleeve)
         if not v.ok:
             return out

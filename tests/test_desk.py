@@ -206,6 +206,24 @@ class TestReport:
         pack = json.loads((home / "desk" / "report" / "2026-08-24.json").read_text())
         assert pack["ideas"][0]["symbol"] == "AAA" and "macro" in pack and "sectors" in pack
 
+    def test_the_next_report_marks_yesterdays_calls(self, home):
+        """A call with its levels is a claim the market answers; the next
+        pack prints the answer next to it so the review cannot be skipped."""
+        shape("AAA", 100.0, drift=0.40)
+        shape("BBB", 100.0, drift=0.40, last_move=-0.06)      # gaps under its stop on the last bar
+        (home / "desk" / "report").mkdir(parents=True, exist_ok=True)
+        (home / "desk" / "report" / "2026-08-21-final.md").write_text(
+            "# 市场日报\n\n| 排名 | 代码 | 我的分 | 参考分 | 入场 | 止损 | 目标 | R | 财报 | 一句话 |\n"
+            "|---:|---|---:|---:|---:|---:|---:|---:|---|---|\n"
+            "| 1 | AAA | 70 | 60 | 50.0 | 48.0 | 60.0 | 5.0 | — | 等回调 |\n"
+            "| 2 | BBB | 65 | 60 | 118.0 | 115.0 | 130.0 | 4.0 | — | 试试 |\n", encoding="utf-8")
+        rep = report.Reporter(report.ReportConfig(with_pages=False), market=mkt(), now=FRIDAY_AFTER_CLOSE,
+                              names=names(("AAA", "Technology", "screen"), ("BBB", "Energy", "screen"))).run()
+        by = {c["symbol"]: c for c in rep.review}
+        assert by["AAA"]["status"] == "跑远了（没等到回调）" and by["AAA"]["report"] == "2026-08-21"
+        assert by["BBB"]["status"] == "入场后止损"
+        assert "## 昨日复盘" in report.format_report(rep) and "| BBB | 65 |" in report.format_report(rep)
+
     def test_prominent_merges_bellwethers_with_screen_leaders(self, monkeypatch):
         rows = [("ZZZ", {"rank": 1, "sector": "Energy", "name": "Zed", "score": 9.0, "price": 10}),
                 ("AAPL", {"rank": 2, "sector": "Technology", "name": "Apple", "score": 8.0, "price": 200})]

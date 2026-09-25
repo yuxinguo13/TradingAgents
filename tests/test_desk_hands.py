@@ -275,6 +275,16 @@ class TestAggressiveSleeve:
         assert self.buy(gate(home), stop=98.8, target=102.0).ok            # 1.2% stop = 0.6 ATR, allowed here
         assert not self.buy(gate(home), stop=91.0, target=115.0).ok        # 9% stop, over the 8% cap
 
+    def test_a_breakout_already_fading_on_day_two_is_refused(self, home):
+        """META, 2026-09-25: closed 777.59 on the breakout day, traded 747 the
+        next noon. Whatever the triggers said, that is a failed breakout."""
+        v = self.buy(gate(home), price=747.5, entry=750.0, stop=743.0, target=800.0, atr_pct=0.036,
+                     last_close=777.59)
+        assert not v.ok and "fading" in v.reason
+        v = self.buy(gate(home), price=772.0, entry=775.0, stop=743.0, target=830.0, atr_pct=0.036,
+                     last_close=777.59)
+        assert v.ok
+
     def test_two_sleeve_seats_and_no_double_sleeve_on_one_name(self, home):
         book = DeskBook(home / "desk" / "trade" / "book.json")
         book.positions["X1"] = Position("X1", 1, 10, 9, 12, "2026-08-20", sleeve="aggressive")

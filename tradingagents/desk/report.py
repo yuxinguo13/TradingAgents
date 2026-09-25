@@ -123,6 +123,7 @@ class MarketReport:
     ideas: list = field(default_factory=list)
     avoid: list = field(default_factory=list)
     breakouts: list = field(default_factory=list)   # Idea rows that look like breakouts today
+    review: list = field(default_factory=list)      # yesterday's calls against today's closes
     warnings: list = field(default_factory=list)
     notes: list = field(default_factory=list)
     path: str = ""
@@ -144,6 +145,7 @@ class MarketReport:
             "ideas": [i.to_dict() for i in self.ideas],
             "avoid": [i.to_dict() for i in self.avoid],
             "breakouts": [i.to_dict() for i in self.breakouts],
+            "review": self.review,
             "scored": [i.to_dict() for i in self.scored],
             "warnings": self.warnings, "notes": self.notes,
         }
@@ -368,6 +370,7 @@ class Reporter:
         report.ideas = [i for i in report.scored if i.score > 0][:self.cfg.top_ideas]
         report.avoid = [i for i in reversed(report.scored) if i.score < 0][:self.cfg.avoid]
         report.breakouts = breakouts(report.scored)
+        report.review = self.review_previous(report, data_day)
         report.sectors = self.sector_lines(report)
 
         # 5. pages
@@ -389,6 +392,46 @@ class Reporter:
         idea.target = _num(target)
         if _ok(idea.stop) and _ok(idea.target) and idea.entry > idea.stop:
             idea.r = (idea.target - idea.entry) / (idea.entry - idea.stop)
+
+    def review_previous(self, report: MarketReport, data_day: date) -> list[dict]:
+        """The last final report's ranking table, marked against today's bars.
+
+        Written so the record cannot be quietly forgotten: every call carries
+        its own entry, stop and target, and the next report says which of
+        them the market has already answered.
+        """
+        from .site import my_scores
+        rdir = task_dir(TASK)
+        finals = sorted(p for p in rdir.glob("*-final.md") if p.name[:10] < report.date)
+        if not finals:
+            return []
+        prev = finals[-1]
+        try:
+            calls = my_scores(prev.read_text(encoding="utf-8"))
+        except Exception:
+            return []
+        out = []
+        for sym, (score, entry, stop, target, r) in calls.items():
+            f = self.market.facts(sym, data_day)
+            if not f.ok:
+                continue
+            then = f.bars.closes[-2] if len(f.bars.closes) > 1 else float("nan")
+            now, low = f.price, (f.bars.lows[-1] if f.bars.lows else float("nan"))
+            high = f.bars.highs[-1] if f.bars.highs else float("nan")
+            status = "未触发"
+            if entry and _ok(low) and low <= entry:
+                status = "已到入场位"
+                if stop and low <= stop:
+                    status = "入场后止损"
+                elif target and _ok(high) and high >= target:
+                    status = "入场后到目标"
+            elif entry and _ok(now) and now > entry * 1.03:
+                status = "跑远了（没等到回调）"
+            out.append({"symbol": sym, "score": score, "entry": entry, "stop": stop, "target": target,
+                        "then": round(then, 2) if _ok(then) else None, "now": round(now, 2),
+                        "change": round(now / then - 1, 4) if _ok(then) and then else None,
+                        "status": status, "report": prev.name[:10]})
+        return out
 
     def sector_lines(self, report: MarketReport) -> list[SectorLine]:
         rows = {r.symbol: r for r in (report.macro.sectors if report.macro else [])}
@@ -452,16 +495,16 @@ class Reporter:
 # rendering
 # ---------------------------------------------------------------------------
 
-def _pct(v: float, digits: int = 1) -> str:
-    return f"{v * 100:+.{digits}f}%" if _ok(v) else "—"
+def _pct(v, digits: int = 1) -> str:
+    return f"{v * 100:+.{digits}f}%" if isinstance(v, (int, float)) and _ok(float(v)) else "—"
 
 
 def _pts(v: float) -> str:
     return f"{v:+.2f}" if _ok(v) else "—"
 
 
-def _f(v: float, digits: int = 2) -> str:
-    return f"{v:,.{digits}f}" if _ok(v) else "—"
+def _f(v, digits: int = 2) -> str:
+    return f"{v:,.{digits}f}" if isinstance(v, (int, float)) and _ok(float(v)) else "—"
 
 
 def chart_for(idea: Idea, width: int = 72) -> list[str]:
@@ -540,6 +583,13 @@ def format_report(report: MarketReport) -> str:
             out.append(f"| {i.symbol} | {SECTOR_ZH.get(i.sector, i.sector)} | {_f(i.price)} | {_pct(i.change_pct)} | {_f(i.vol_ratio, 1)} "
                        f"| {_pct(_num(f.snap.off_high_52w) if f else float('nan'))} | {'、'.join(i.triggers)} | {_f(low)} | {i.score:+.0f} |")
     out.append("")
+
+    if report.review:
+        out.append(f"## 昨日复盘（{report.review[0]['report']} 的前排 vs 今天）")
+        out += ["| 代码 | 昨日分 | 入场 | 止损 | 目标 | 昨收 | 今收 | 变化 | 状态 |", "|---|---:|---:|---:|---:|---:|---:|---:|---|"]
+        for c in report.review:
+            out.append(f"| {c['symbol']} | {c['score']} | {_f(c['entry'])} | {_f(c['stop'])} | {_f(c['target'])} | {_f(c['then'])} | {_f(c['now'])} | {_pct(c['change'])} | {c['status']} |")
+        out += ["", "三句话写在终稿里：哪个判断被证伪了、为什么、下次改哪条。", ""]
 
     out.append("## 五、走弱 / 回避")
     if not report.avoid:

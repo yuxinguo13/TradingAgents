@@ -83,8 +83,10 @@ If a pull or push reports a failure, say so in the reply; do not retry by hand.
    with the reasons, the charts from the pack, entry/stop/target/R, the
    sector read, the policy and macro context with links, a
    进攻仓候选与突破跟踪 section (the pack's breakout table plus which of the
-   three triggers each name meets and the breakout-day low), the names to
-   avoid, and 今日要闻与判断. Where your score differs from the reference score, say why.
+   three triggers each name meets and the breakout-day low), a 昨日复盘
+   section (the pack's table of the previous report's calls against today's
+   closes, plus three sentences: which call the market has falsified, why,
+   and which rule you would change), the names to avoid, and 今日要闻与判断. Where your score differs from the reference score, say why.
    This task never reads any account or portfolio.
 4. `python -m tradingagents.desk site --date <date> --out ./site-<date>` —
    builds the report as a web site in that folder inside the repo checkout
