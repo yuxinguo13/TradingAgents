@@ -169,10 +169,21 @@ def get_global_news_yfinance(
         limit = config["global_news_article_limit"]
     search_queries = config["global_news_queries"]
 
-    all_news = []
+    kept_articles = []
     seen_titles = set()
+    searched_any = False
 
     try:
+        # Calculate date range up front: the window filter must run while
+        # collecting, not after. Yahoo search returns mostly back-coverage, so
+        # the first query alone can fill `limit` with months-old articles;
+        # truncating to `limit` before filtering then starved the window of
+        # every fresh article the later queries would have found, and the tool
+        # reported "no global news" on days with plenty of it.
+        curr_dt = datetime.strptime(curr_date, "%Y-%m-%d")
+        start_dt = curr_dt - relativedelta(days=look_back_days)
+        start_date = start_dt.strftime("%Y-%m-%d")
+
         for query in search_queries:
             search = yf_retry(lambda q=query: yf.Search(
                 query=q,
@@ -180,51 +191,40 @@ def get_global_news_yfinance(
                 enable_fuzzy_query=True,
             ))
 
-            if search.news:
-                for article in search.news:
-                    # Handle both flat and nested structures
-                    if "content" in article:
-                        data = _extract_article_data(article)
-                        title = data["title"]
-                    else:
-                        title = article.get("title", "")
+            for article in search.news or []:
+                searched_any = True
+                # Extract uniformly (flat + nested) and apply the same
+                # look-ahead-safe window filter, so flat articles can't leak
+                # future news (#1007). Only in-window articles count toward
+                # `limit` — stale back-coverage must not spend the budget.
+                data = _extract_article_data(article)
+                title = data["title"] if "content" in article else article.get("title", "")
+                if not title or title in seen_titles:
+                    continue
+                seen_titles.add(title)
+                if not _in_news_window(data["pub_date"], start_dt, curr_dt):
+                    continue
+                kept_articles.append(data)
 
-                    # Deduplicate by title
-                    if title and title not in seen_titles:
-                        seen_titles.add(title)
-                        all_news.append(article)
-
-            if len(all_news) >= limit:
+            if len(kept_articles) >= limit:
                 break
 
-        if not all_news:
+        if not searched_any:
             return f"No global news found for {curr_date}"
 
-        # Calculate date range
-        curr_dt = datetime.strptime(curr_date, "%Y-%m-%d")
-        start_dt = curr_dt - relativedelta(days=look_back_days)
-        start_date = start_dt.strftime("%Y-%m-%d")
+        # All candidates fell outside the window -> say so rather than return an
+        # empty-bodied report (#993).
+        if not kept_articles:
+            return f"No global news found between {start_date} and {curr_date}"
 
         news_str = ""
-        kept = 0
-        for article in all_news[:limit]:
-            # Extract uniformly (flat + nested) and apply the same look-ahead-safe
-            # window filter, so flat articles can't leak future news (#1007).
-            data = _extract_article_data(article)
-            if not _in_news_window(data["pub_date"], start_dt, curr_dt):
-                continue
+        for data in kept_articles[:limit]:
             news_str += f"### {data['title']} (source: {data['publisher']})\n"
             if data["summary"]:
                 news_str += f"{data['summary']}\n"
             if data["link"]:
                 news_str += f"Link: {data['link']}\n"
             news_str += "\n"
-            kept += 1
-
-        # All candidates fell outside the window -> say so rather than return an
-        # empty-bodied report (#993).
-        if kept == 0:
-            return f"No global news found between {start_date} and {curr_date}"
 
         return f"## Global Market News, from {start_date} to {curr_date}:\n\n{news_str}"
 

@@ -102,3 +102,46 @@ def test_global_news_empty_after_filter_is_informative(monkeypatch):
     out = ynews.get_global_news_yfinance("2025-05-09", look_back_days=7, limit=10)
     assert "No global news found" in out
     assert "###" not in out  # no empty article body
+
+
+@pytest.mark.unit
+def test_global_news_stale_backfill_does_not_starve_the_window(monkeypatch):
+    # Truncating to `limit` BEFORE the window filter let one query's stale
+    # back-coverage spend the whole budget: 10 months-old articles arrived
+    # first, the fresh ones from later queries were sliced off unseen, and the
+    # tool reported "no global news" on a day with plenty. Only in-window
+    # articles may count toward `limit`.
+    stale = [{"title": f"STALE {i}", "publisher": "P", "link": "l",
+              "providerPublishTime": _epoch("2025-02-01")} for i in range(10)]
+    fresh = [{"title": "FRESH A", "publisher": "P", "link": "l",
+              "providerPublishTime": _epoch("2025-05-05")},
+             {"title": "FRESH B", "publisher": "P", "link": "l",
+              "providerPublishTime": _epoch("2025-05-06")}]
+    batches = [stale, fresh]  # later queries: nothing
+
+    class FakeSearch:
+        def __init__(self, *a, **k):
+            self.news = batches.pop(0) if batches else []
+
+    monkeypatch.setattr(ynews.yf, "Search", FakeSearch)
+    out = ynews.get_global_news_yfinance("2025-05-09", look_back_days=7, limit=10)
+    assert "FRESH A" in out
+    assert "FRESH B" in out
+    assert "STALE" not in out
+    assert "No global news found" not in out
+
+
+@pytest.mark.unit
+def test_global_news_limit_still_caps_the_output(monkeypatch):
+    # The fix moves the slice after the filter; `limit` must still bound what
+    # is printed, not become advisory.
+    fresh = [{"title": f"FRESH {i}", "publisher": "P", "link": "l",
+              "providerPublishTime": _epoch("2025-05-05")} for i in range(5)]
+
+    class FakeSearch:
+        def __init__(self, *a, **k):
+            self.news = fresh
+
+    monkeypatch.setattr(ynews.yf, "Search", FakeSearch)
+    out = ynews.get_global_news_yfinance("2025-05-09", look_back_days=7, limit=2)
+    assert out.count("###") == 2

@@ -1,0 +1,599 @@
+# Live desk
+
+Two ways to use it, sharing one engine.
+
+| | What it is | When it runs |
+|---|---|---|
+| **Live agent** | Autonomous loop. Watches, decides, places orders. | Continuously, all session |
+| **Daily advisor** | One considered buy/sell list for you to act on. | Once a day |
+
+Both read the same market data, the same news, and the same reasoning panel.
+The difference is who pulls the trigger.
+
+---
+
+## How it works
+
+```
+                    ┌─ screener ──── whole exchange, ranked nightly
+                    ├─ newsfeed ──── ticker news, 24h, novelty-tracked
+   DATA ────────────┼─ policy ────── Fed / tariffs / regulation / geopolitics
+                    ├─ technicals ── price, trend, ATR, volume
+                    └─ broker ────── account, positions, quotes
+                              │
+                              ▼
+   TRIGGERS ─── deterministic arithmetic. Free. Answers one question:
+                has anything happened that could change a position?
+                              │  (usually: no)
+                              ▼
+   EVIDENCE ─── compact pack: position, trend, fresh news, policy backdrop
+                              │
+                              ▼
+   PANEL ────── 4 analysts with different mandates vote independently
+                Conservative · Aggressive · Balanced · Growth
+                              │
+                              ▼
+   RISK OFFICER  reviews the consensus. May veto or scale.
+                              │
+                              ▼
+   SECRETARY ── hard limits. Not prompts — code. Cannot be argued with.
+                              │
+                              ▼
+   VENUE ────── alpaca | paper | investopedia
+```
+
+### Why it's split this way
+
+**Triggers are rules, decisions are judgement.** An agent that asks an LLM about
+every name every cycle burns its quota by 10am concluding "nothing changed". So
+arithmetic decides *when* to think, and the panel decides *what* to do. On a
+quiet cycle nothing fires and nothing is spent.
+
+**The panel votes by seat, not by conviction.** Confidence sizes the trade; it
+does not win the vote. Weighting the tally by confidence lets one emphatic
+member outvote two calm ones — and since "Hold" is naturally reported at low
+confidence, that scheme makes a panel structurally unable to decline a trade.
+
+A trade needs a weighted majority **and** mean backer confidence ≥ 0.55.
+Agreement without conviction is a mood, not a trade. Size is the **median** of
+the backers' quantities, so one enthusiastic persona cannot set the position.
+
+**The Secretary is code, not instruction.** A limit an LLM can talk itself past
+is not a limit. Oversized orders are *resized*, not rejected — the view is
+valid, the size wasn't. Everything else (no cash, no shares, wrong session,
+kill switch) is a flat no.
+
+---
+
+## Venues
+
+Selected by `TRADINGAGENTS_BROKER`. Everything above the adapter is
+venue-agnostic — swapping venues changes nothing else.
+
+| Venue | Status | Needs |
+|---|---|---|
+| `paper` | **works now** | nothing |
+| `alpaca` | default | free paper API keys |
+| `investopedia` | not recommended | a browser session |
+
+**`paper`** — local book, real prices, no account. Fills are immediate and
+complete at the quote: no slippage, no partial fills, no queue. Good for judging
+whether the *reasoning* is any good; not for judging execution.
+
+**`alpaca`** — the sanctioned API. Free paper account, keys issued instantly,
+global. Two traps handled in the adapter: every number Alpaca returns is a
+*string*, and `OrderSide` has only BUY/SELL — so "Sell Short" on a name you hold
+long would sell the long unless `PositionIntent` disambiguates it.
+
+**`investopedia`** — works, but its terms forbid it. People Inc. ToS §3.3(e)
+bars robots and scrapers; §3.3(f) bars using site data to develop software or
+train an AI system; §5.2 permits termination "for any reason or no reason". Kept
+because it proves the abstraction, not because you should use it.
+
+---
+
+## Running the live agent
+
+```bash
+# safest first run — reasons out loud, never submits
+TRADINGAGENTS_BROKER=paper python -m tradingagents.live.cli run --dry-run
+
+# for real
+TRADINGAGENTS_BROKER=paper python -m tradingagents.live.cli run
+
+# watch only: full monitoring and triggers, no LLM, no orders
+python -m tradingagents.live.cli run --no-llm
+```
+
+Useful flags: `--once` (single cycle), `--interval 120`, `--max-panels 4`
+(LLM budget per cycle), `--no-screen`, `--trade-when-closed` (paper only).
+
+**Stop it instantly, from any shell, without touching the process:**
+
+```bash
+python -m tradingagents.live.cli stop          # or: touch ~/.tradingagents/STOP
+python -m tradingagents.live.cli stop --clear
+```
+
+### Cadence follows the clock, not a timer
+
+| Session | Every | What happens |
+|---|---|---|
+| Regular 09:30–16:00 ET | 120s (60s in the last half hour) | full cycle |
+| Pre / after hours | 10 min | news only — nothing is tradeable, but the headlines that move the open arrive now |
+| Closed | ≤30 min | nightly rescan, news, sleep toward the open |
+
+NYSE holidays and half-days are in the calendar, so it never waits for a 16:00
+close that isn't coming.
+
+### Triggers
+
+| Trigger | Fires when | Urgency |
+|---|---|---|
+| `stop_loss` | held position ≥8% below cost | 3 |
+| `news` | fresh headline ≥7 materiality, **<24h old** | 2–3 |
+| `trend_break` | held name loses SMA50 on a negative month | 2 |
+| `take_profit` | held position ≥20% above cost | 2 |
+| `price_move` | ≥1.2 ATR since prior close | 1–2 |
+| `volume` | ≥2× the 20-day average | 1 |
+| `screen_entry` | top-15 screen name you don't own | **0** |
+
+Screen entries rank last deliberately: they aren't news, they'll still be true
+next cycle, and they must never take the budget from a stop-loss.
+
+### Other commands
+
+```bash
+python -m tradingagents.live.cli portfolio    # account, positions, P&L
+python -m tradingagents.live.cli scan         # coverage + news + triggers, no trading
+python -m tradingagents.live.cli status       # clock, limits, kill switch, today's trades
+python -m tradingagents.live.cli news NVDA MU
+python -m tradingagents.live.cli trade NVDA buy 10 --dry-run
+```
+
+---
+
+## Coverage: the pool and the watchlist
+
+Two lists feed the desk, and they answer different questions.
+
+**The qualification pool** (`~/.tradingagents/cache/screens/universe_<exchange>.json`)
+is who is worth downloading. Rebuilt about once a month, it filters only on what
+cannot change inside a month — a penny price, no liquidity at all, not enough
+history to score. Measured on the 2026-08-25 panel: 3215 listed names → 1465
+qualify, and every one of the 534 that passed the *daily* filter was inside it.
+
+The daily filters are deliberately **not** used to build the pool. A name below
+its 200-day today is exactly the name that reappears after a base; qualifying on
+trend would mean the monthly refresh could never rediscover anything. 481 of the
+pool's members are below their 200-day right now, and that is the point.
+
+```bash
+# force an early rebuild (a month is the default cadence)
+python -c "from tradingagents.trading.screener import qualified_universe; \
+           qualified_universe('2026-08-25', refresh=True)"
+```
+
+**The watchlist** (`~/.tradingagents/watchlist.json`) is who gets looked at
+whatever the screen thinks. `{"NVDA": "semi", "GOOGL": "tech", ...}` — the tag is
+free text and only groups the report.
+
+It is scored on its own path, so it survives every way the universe scan can go:
+cached, skipped, or failed. And it **bypasses the hard filters on the way out**.
+On 2026-08-25 nine of thirty-one — AVGO, QCOM, NXPI, ON, META, TSLA, ORCL, CRWV,
+AXTI — would have been filtered out of the report entirely, eight of them for
+losing their 200-day. A semiconductor in a drawdown is precisely the one worth
+reading that morning, so the section names each one and why it failed rather
+than dropping it.
+
+What the watchlist is not: a buy list. Watchlist names are reported, never
+injected into the ranking, never sized, and never written to the recommendation
+book. Following a name daily is not a reason to own it.
+
+### Bases
+
+An entry tagged `base` is a yardstick rather than a candidate:
+
+```json
+{"SPY": "base", "QQQM": "base", "NVDA": "semi", "GOOGL": "tech"}
+```
+
+Bases are shown first, never judged pass/fail — asking whether SPY clears a
+momentum screen is a category error — and every other row is reported as an
+**excess return over each of them**.
+
+That column is what makes the section readable, because "below the 200-day"
+covers two opposite situations. On 2026-08-25:
+
+| | trend | 1M vs SPY | reading |
+|---|---|---:|---|
+| ORCL | below the 200-day | **+17.1%** | climbing out of a hole (3M: −24.8%) |
+| NXPI | below the 200-day | **−19.7%** | simply broken |
+| AMAT | passes every filter | **−10.7%** | trend looks fine, badly lagging |
+
+Without a base, the first two look identical and the third looks healthy.
+
+Bases are data, not code: retag the file and the comparison changes.
+
+### A silent universe bug, for the record
+
+`fetch_universe` used to drop every 5-letter Nasdaq symbol, on the reasoning that
+the fifth letter marks warrants and units. It does — but only for some letters.
+The rule removed 920 symbols to exclude 880 that the security-name filter already
+caught, and took 39 real common stocks with them: **GOOGL, CMCSA, FCNCA, RYAAY**
+and the entire Liberty complex. Nothing ever errored; the names simply never
+appeared in a screen.
+
+The rule now tests the suffix that actually means something — `W` warrant,
+`U` unit, `R` right, `P` first preferred — so class letters (A/B/K/L) and `Y`
+(ADR) survive. `tests/test_screener_universe_pool.py` pins it.
+
+---
+
+## Risk limits
+
+Every order from every source passes the Secretary. Override any of these with
+`TRADINGAGENTS_RISK_<NAME>`.
+
+| Limit | Default |
+|---|---|
+| max position weight | 12% |
+| max **new** position weight | 8% |
+| max gross exposure | 95% |
+| max trades / day | 12 |
+| max turnover / day | 35% of equity |
+| min order value | $250 |
+| max single order | 10% of equity |
+| per-symbol cooldown | 45 min |
+| limit-price deviation | 5% from last |
+| shorting | **off** |
+| min price | $3 |
+
+---
+
+## Position sizing
+
+Share count comes from the van Tharp rule:
+
+```
+quantity = account_value × risk% / |entry − stop|
+```
+
+This sizes so that being stopped out costs a **fixed fraction of the account**
+regardless of which stock it is — equalising *risk* rather than *exposure*. A
+10%-ATR name and a 2%-ATR name given the same dollar weight are not the same
+bet, and sizing them identically is how a book quietly becomes a volatility bet.
+
+Guarded hard against `stop == entry` (division by zero → infinite size, the
+classic way this formula blows up an account) and wrong-side stops.
+
+`r_multiple` (reward ÷ risk) is preferred over `expectancy` for ranking, because
+expectancy is linear in a win-probability that is an unvalidated guess.
+
+### Where the entry and the stop are
+
+Until 2026-09-22 the entry was the last close (limit a hair through it, so it
+filled at the open every morning) and the stop was 2 ATR under that. Emily's
+verdict on the first board built that way: 建议价位有点高，止损价位有点低. She
+was right on the arithmetic — 12–15% of risk paid before the trade had any
+structure under it, and DELL came out at 0R because its target was the price.
+
+The default is now `entry_rule = pullback` (`live/sizing.py`):
+
+- **The bid** is the highest structure — the 20-day line, the 50-day line, or
+  a hair above any swing low (`charting.pivots`) — that sits between
+  `MIN_PULLBACK_ATRS` (1) and `MAX_PULLBACK_ATRS` (3) ATR under the close.
+  Nearer than that an ordinary morning fills it (the first cut took the
+  *nearest* swing low and put 24 of 50 bids inside one ATR of the print);
+  farther is a different trade. Nothing in the band means no bid, and the page
+  says so. The bid *is* the limit and *is* the reference price: R and P&L are
+  measured from it, and a bid the tape never reaches expires unfilled and is
+  not scored at all.
+- **The stop** sits `STRUCTURE_BUFFER` (1%) under the nearest swing low
+  *below the bid* and never nearer than `STOP_ATR_FLOOR` ATRs — the floor is
+  what stops a support one tick under the entry from manufacturing a 30R trade.
+- **The bid stands** for `ENTRY_WINDOW_DAYS` sessions (`Recommendation.
+  entry_window_days`); `execute` keeps placing it until the window ends or the
+  quote goes through the stop, whichever first.
+
+`entry_rule = close` (`TRADINGAGENTS_ADVISOR_ENTRY_RULE=close`) is the old
+behaviour, kept for comparison, not for use. Core top-ups changed the same
+day for the same reason: `execute.CORE_LIMIT` bids 0.995× the print instead
+of 1.002× through it (`TRADINGAGENTS_CORE_LIMIT`).
+
+---
+
+## News and policy
+
+**Ticker news** — Yahoo (ticker-scoped) + Google News (searched by *company
+name*, not ticker: "AMD stock" returns age-related macular degeneration trials,
+which score 9/12 and would put a decision about the wrong company in front of
+the panel).
+
+Every story is fingerprinted so only genuinely *new* headlines count, and the
+seen-set persists across restarts. A cold start primes instead of acting —
+otherwise the first run treats a quarter of backlog as breaking news.
+
+Institutional 13F noise is suppressed. Aggregators publish thousands of
+"Ninepoint Partners LP Makes New Investment in X" headlines that match the M&A
+pattern and score 10, which is enough to preempt a real stop-loss for the
+cycle's LLM budget.
+
+**Policy news** — monetary, fiscal, trade, regulatory, geopolitical. Company
+news reprices one stock; policy reprices a whole sector at once. An agent
+reading only ticker news is repeatedly blindsided by moves it had no way to see.
+
+---
+
+## The daily report: three horizons, one page per name
+
+The advisor used to print only the ideas issued *that morning*. It carried the
+older ones in `recommendations.json` and never showed them, so the page read as
+a brand-new portfolio every day even when nothing had changed. The report is now
+split by holding period, and the sections are ordered by how rarely they move:
+
+| Section | Clock | Where the list comes from | Sized? |
+|---|---|---|---|
+| 核心长仓 core | months–years, reviewed monthly | `core.json`, hand-maintained | no — weights are the reader's |
+| 在场的波段 open swing | 1–4 weeks | `recommendations.json`, still open | already sized when issued |
+| 新增波段 new buys | 1–4 weeks | today's screen, into *free slots only* | yes |
+| 日内 day trade | one session | watchlist ∪ screen, filtered on range and liquidity | no — levels, not orders |
+
+Two rules do the work:
+
+- **Slots, not a top-N.** `swing_slots` (default 6) caps concurrent swing ideas.
+  New buys fill whatever is free, so a full book proposes nothing — which is the
+  intended answer, not a bug.
+- **Hysteresis on the core.** A core name leaves only on a stated rule: closing
+  more than 4% below its 200-day, or a twelve-month loss past 15%. It never
+  leaves because it slipped in this week's ranking. Weight drift is actioned
+  only on a review day (the first four days of a month).
+
+`core.json` is seeded on the first run that finds it missing. Two passes: a free
+price screen — above the 200-day, a positive year, `$100M`+ daily turnover, not
+already 35% off its high, under 5% ATR — then statements are fetched for the
+survivors and the two tests price cannot make are applied: **the company must
+earn money**, and **no industry may take more than two slots**. Ranking is
+capped twelve-month return (40%), size (30%) and ROE (30%). Both caps matter:
+ranking on the raw return makes "长期" a momentum screen, and equal weights
+across four names in one supply chain is the same bet placed four times.
+
+The invested fraction is *derived*, not fixed: `slots × position_cap` is the
+most the swing book can be holding, and the core gets what is left less a 10%
+cash buffer. At the defaults that is 42%, so a full swing book (6 × 8% = 48%)
+and a full core come to 90% rather than the 108% a flat 60% produced.
+
+What the seeder still cannot do: the concentration that matters is a *theme*,
+and an industry label does not know that a GPU designer, a foundry and a
+lithography supplier are one bet on AI capex. That judgement is why the file is
+hand-editable, and why the output is announced as a draft. Edit it; nothing
+overwrites it.
+
+### One page per symbol
+
+`reports/<date>.md` links every name to `reports/<date>/<SYMBOL>.md`, written by
+`live/deepdive.py`. Each page carries, in this order: two ASCII price charts
+with the 50/200-day averages and the trade's own stop/entry/target drawn as
+levels; the chart read (均线排列, swing structure, momentum, volatility,
+position, support/resistance) from `live/charting.py`; the trade's arithmetic
+spelled out — stop distance in ATRs, R, the break-even win rate `1/(1+R)`, and
+what one stop costs the account; the financial statements from
+`live/fundamentals.py` (quarterly and annual income, margins, valuation,
+balance sheet, the earnings-surprise record); the 24-hour news with links; a
+rule-generated bear case; the raw OHLCV the page computed from; and the primary
+sources from `live/research.py` — Yahoo, Finviz, TradingView, SEC EDGAR,
+OpenInsider, plus Chinese-language relays.
+
+The bear case is generated rather than written on purpose: a hand-written one
+gets skipped on the names where it is least convenient.
+
+### Turning the knobs
+
+Anything that changes *what the report proposes* is settable as
+`TRADINGAGENTS_ADVISOR_<FIELD>` — `SWING_SLOTS`, `MAX_OPEN_PER_SECTOR`,
+`DAYTRADE_TOP`, `TOP`, `RISK_PCT`, `MIN_R`, `ATR_STOP_MULT`, `HORIZON_DAYS`,
+`ENTRY_RULE`, `STOP_ATR_FLOOR`, `MAX_PULLBACK_ATRS`, `ENTRY_WINDOW_DAYS`,
+`WRITE_PAGES`, `WITH_FUNDAMENTALS`, `MAX_FUNDAMENTALS`, `CORE_SEED` and the
+rest of `AdvisorConfig._ENV_FIELDS`. A value that will not parse logs a warning
+and keeps the default rather than silently applying a zero. `--swing-slots` and
+`--no-pages` are also CLI flags, the two worth reaching for mid-session.
+
+**A hand list instead of the screen.** `--symbols MU,ANET,SNDK` replaces the
+universe screen with those names in that order and runs everything else on
+them unchanged — the morning's news, the policy backdrop, earnings, the
+sizing rule, and every seat of the panel. Every cap that could cut the list
+(slots, sector, panel budget) is lifted to its length, and the watchlist is
+skipped. With `--dry-run` nothing is booked: it is the way to put a list you
+wrote yourself in front of the analysts before deciding anything.
+
+    python -m tradingagents.live.advisor --no-llm --panel claude \
+        --symbols MU,ANET,SNDK,MSFT --dry-run --no-pages
+
+**When the vendor is late.** The data session is always the last completed
+one, and a name whose history stops a session short is skipped rather than
+priced off an older close. That is right by default and useless on the night
+the vendor never publishes the close at all (2026-09-22: volume-only bars
+until past midnight, every candidate skipped). `--data-date 2026-09-21` pins
+the data session to the last close that *is* published; it can only point
+earlier, never at a session that has not closed, and the page carries a
+warning that every level on it is a session old.
+
+### Language and names
+
+Narrative analysis is in Chinese; tables, tickers, levels and the R/ATR/SMA
+vocabulary stay in English. Company names resolve through
+`live/zhnames.py`: `company_names_zh.json` (yours, wins) → a curated table → a
+mechanical gloss off the English suffix, marked `°` so a guess can never be
+mistaken for a checked name.
+
+## Execution: the gap between the book and the account
+
+There are two decision systems here and, until `live/execute.py`, no path from
+either to the venue. `advisor` decides without a model and writes
+`recommendations.json`, but its own docstring says *nothing here places an
+order*. `monitor` can place orders, but only after a persona panel votes, and
+with `--no-llm` it never decides. A desk run the way this one is — advisor
+daily, monitor as a sentinel — therefore produces a full book and executes none
+of it, forever, without erroring.
+
+That is invisible from either side: the track record scores ideas as though
+they were taken while the venue holds something else. On 2026-09-01 the three
+books had **no symbol in common** — six open recommendations, five local paper
+positions seeded as a demo on day one, and an empty Alpaca account.
+
+    python -m tradingagents.live.execute            # what it would do
+    python -m tradingagents.live.execute --submit   # do it
+
+Properties, each chosen so the bridge cannot cause the failure it exists to
+prevent:
+
+- **Reporting is the default.** An execution bridge that trades by default is
+  one you learn about after it has traded.
+- **Every order goes through the same Secretary** the panel's orders do. A
+  second path to the venue would be a second set of risk limits — and the gate
+  is asked about the *real* session, `clock.market_state().is_tradeable`, the
+  same reading `monitor` takes. Fails closed.
+- **It sells as readily as it buys.** Entries come out of the book on their
+  own; exits have to be computed, so they are, by default. Behind a flag they
+  never were, and a bridge that can only open positions is worse than none
+  because it looks like both. `--no-exits` turns them off.
+- **Positions the book does not recognise are reported, never touched.** A hand
+  trade, another strategy, an old demo seed — selling those because one book
+  omits them is the bridge deciding it owns the whole account. The core list is
+  named as itself rather than lumped in there: it is held on purpose, on a
+  monthly clock, and calling it unrecognised every day is how the section stops
+  being read.
+- **An exit the book already took is not an unrecognised position.** This is
+  the one a reader of open rows alone gets backwards. The advisor writes its
+  closes back to the book *before* the reconciliation runs, so the symbol it
+  just told you to sell is no longer open there — filed under "never touch",
+  it is never sold, and the record shows the loss cut while the account keeps
+  riding it. Held positions are matched against closed rows too, for
+  `EXIT_WINDOW_DAYS`; past that the exit is still printed, with its date, but
+  is not an order — a name exited months ago and bought back by hand is not
+  this bridge's to sell.
+- **A trim is an order.** `review()` books the shares off the idea the moment
+  it instructs the trim, so the book holds the post-trim size and the venue
+  still holds all of it. That difference is this morning's own instruction;
+  read as drift it waits for a human nobody told.
+- **Stale entries are quarantined.** An unfilled idea is priced off one close
+  and meant for one open; once that open has gone by, its limit, stop and R all
+  refer to a price that moved. The clock is the session being *planned*, not
+  the session the data came from — those are always one apart, and counting
+  from the data day handed every entry an extra session. Stale ones get their
+  own section with R recomputed at the current price *and the distance to the
+  stop beside it* — because R rises as a name falls toward its stop, and an 8R
+  entry sitting 1% above its own stop is not an 8R trade. An idea issued under
+  the pullback rule carries `entry_window_days`: a bid at the 20-day line means
+  the same thing for days, so it is placed again each session inside the
+  window — unless the quote has gone through the stop, when the structure it
+  leaned on is gone and the bid is refuted, not cheap.
+
+The reconciliation also runs inside the daily report, as its own section, every
+day. Behind a command it would be a command nobody remembers; on the page it is
+the one place the gap is visible before it is eleven days old. That section is
+read-only — `execute --submit` is still the only thing that places an order —
+and it is omitted entirely when the account could not be read, because against
+the fallback balance it would report every open idea as missing.
+
+The bridge never writes to the book. The advisor owns those records; a bridge
+that edited them could make the account and the track record agree by changing
+the wrong one.
+
+## Scheduling: two LaunchAgents, and the Mac underneath them
+
+    scripts/desk_cron.sh report   # weekdays 15:00 PT — next session's page, panel seated
+    scripts/desk_cron.sh submit   # weekdays 06:25 PT — places what the book is missing, ~09:35 ET
+    scripts/desk_cron.sh close    # weekdays 12:30 PT — exits before the bell; retries what the morning missed
+
+`com.tradingagents.desk-report`, `com.tradingagents.desk-submit` and
+`com.tradingagents.desk-close` all call that one script; the logs are
+`~/.tradingagents/logs/desk-{report,submit,close}.log`. What actually reached
+the venue each day is also filed as `~/.tradingagents/reports/<date>-orders.log`,
+next to that session's page — the page says what *should* have been placed,
+this is the only record of what *was*. Off switch, instant and independent of
+launchd: `touch ~/.tradingagents/STOP`.
+
+The `close` run exists for two things the morning run cannot do: an exit
+signal that fires against the day's prices becomes a sell in the same session
+it fired, and a core top-up the morning failed to place — the first order after
+a wake was refused by the venue two mornings running — gets a second attempt.
+Same `execute --submit`, same gate; nothing about it is a new rule. Its plist
+is written but must be loaded by hand once
+(`launchctl load ~/Library/LaunchAgents/com.tradingagents.desk-close.plist`).
+
+The scheduling is not the hard part. macOS is, and each of these failed
+silently before it was handled:
+
+- **launchd defers; it does not catch up.** An event whose minute passes while
+  the Mac is asleep fires at the *next* wake — on 2026-09-15 the 15:00 report
+  started at 15:07. The submit job is on time only because
+  `pmset repeat wakeorpoweron MTWRF 06:25:00` wakes the machine in that minute.
+- **A wake is not staying awake.** This Mac re-sleeps a minute later, so the
+  script holds `caffeinate -i -s -w $$` for its whole life. On battery with the
+  lid closed that holds nothing: `-s` counts only on AC, and `-i` stops idle
+  sleep, not the clamshell and maintenance sleeps that actually fire. The script
+  now says so in the log when it starts on battery, because the symptom
+  otherwise is just a run that looks slow.
+- **Awake time is not wall time.** `time.sleep` counts only seconds the machine
+  was awake, so a ten-minute wait for the open took seven hours and started
+  `execute` twenty minutes after the close. `live/waitopen.py` waits against the
+  wall clock instead and tells the caller which of three things happened: place
+  (0), no session within twenty minutes (3), or the session ended while we slept
+  (4) — that last one reconciles read-only rather than feeding the gate a column
+  of `market is closed` refusals.
+- **Not under Desktop/Documents/Downloads.** macOS TCC gives a LaunchAgent
+  `Operation not permitted` there and the job dies before Python starts, while
+  the same script runs fine from a terminal that was granted access long ago.
+  Hence `~/Stock/TradingAgents`. Do not fix this by granting Full Disk Access
+  to `/bin/zsh`.
+
+## State
+
+Everything under `~/.tradingagents/` (override with `TRADINGAGENTS_HOME`).
+
+| File | What |
+|---|---|
+| `live_portfolio.json` | the paper book |
+| `live_ledger.json` | every order attempted, with rationale — feeds the daily budgets |
+| `live_journal.jsonl` | one line per cycle |
+| `live_state.json` | screen ranking and coverage |
+| `recommendations.json` | the advisor's own track record |
+| `watchlist.json` | names analysed every day regardless of rank |
+| `cache/screens/universe_*.json` | the monthly qualification pool |
+| `news_seen.json` | story fingerprints, pruned at 72h |
+| `company_names.json` | ticker → company name cache |
+| `company_names_zh.json` | your Chinese names; wins over the built-in table |
+| `core.json` | the long-term book — hand-maintained, seeded once |
+| `fundamentals.json` | statements cache, 20h TTL |
+| `earnings.json` | next report date and last surprise, 20h TTL |
+| `screens/` | ranked exchange scans |
+| `reports/` | daily advisor reports, plus `reports/<date>/<SYMBOL>.md` |
+| `STOP` | the kill switch |
+
+---
+
+## Honest limitations
+
+- **Paper only.** Routing to real money means writing a new adapter — a
+  deliberate act, not a config flag.
+- **The panel sees a compact pack** — price, trend, position, fresh headlines.
+  Not filings, not transcripts.
+- **The chart read is lagging by construction.** Moving averages, RSI and swing
+  structure all describe what already happened. They say what state a name is
+  in, never what it does next, and the verdict line is a summary of the bullets
+  above it rather than a forecast.
+- **The financial statements are a vendor's transcription**, not the filing.
+  They are restated, they lag, and the TTM window is Yahoo's rather than the
+  company's. Every page prints the EDGAR link beside them for that reason.
+- **The intraday section has no intraday data.** Daily bars cannot produce an
+  entry inside a session, so that section publishes the levels the next session
+  will be measured against — the prior day's high and low — and never an order.
+  Nothing in it enters the recommendation book or the track record.
+- **Local paper fills are optimistic.** No slippage, no partial fills, no queue
+  position. A strategy that depends on getting filled at the touch will look
+  better here than anywhere real.
+- **Policy impact is directional heuristics**, not modelled relationships. A
+  rate cut is good for growth unless it signals recession.
+- **This is not financial advice.** It is a model reading public information.
+  The track record is the only thing that makes it checkable.
