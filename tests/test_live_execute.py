@@ -16,7 +16,7 @@ import pytest
 
 from tradingagents.live import execute
 from tradingagents.live.broker import BUY, SELL, Account, Holding, OrderResult
-from tradingagents.live.execute import Intent, plan, submit
+from tradingagents.live.execute import plan, submit
 from tradingagents.live.recommendations import CLOSED, OPEN
 from tradingagents.live.secretary import Order, RiskLimits, Secretary, TradeLedger, Verdict
 
@@ -26,7 +26,7 @@ class Rec:
 
     def __init__(self, symbol, shares=100, entry=100.0, stop=95.0, target=115.0,
                  limit=100.3, issued="2026-09-02", rid=None, status=OPEN,
-                 exit_date="", exit_reason=""):
+                 exit_date="", exit_reason="", window=0):
         self.id = rid or f"{symbol}-{issued.replace('-', '')}"
         self.symbol = symbol
         self.shares = shares
@@ -35,6 +35,7 @@ class Rec:
         self.stop_price = stop
         self.target_price = target
         self.limit_price = limit
+        self.entry_window_days = window
         self.issued_date = issued
         self.status = status
         self.exit_date = exit_date
@@ -946,14 +947,16 @@ class TestTheCoreBookIsBuilt:
                    quote=lambda s: 200.0, core=self.core(NVDA=0.08))
         (intent, target, now_w), = got.core_build
         assert (intent.action, intent.symbol) == (BUY, "NVDA")
-        assert intent.shares == int(0.08 * 100_000 / round(200.0 * 1.002, 2))
+        assert intent.shares == int(0.08 * 100_000 / round(200.0 * execute.CORE_LIMIT, 2))
         assert (target, now_w) == (0.08, 0.0)
         assert not got.clean
 
-    def test_the_limit_is_marketable_but_not_a_blank_cheque(self):
+    def test_the_limit_bids_under_the_print_not_through_it(self):
+        """1.002× filled at the open every morning and was the highest price of
+        the day more often than not; a monthly book re-plans tomorrow anyway."""
         got = plan(Book([]), account(equity=100_000.0), as_of=TODAY,
                    quote=lambda s: 200.0, core=self.core(NVDA=0.08))
-        assert got.core_build[0][0].limit == 200.40
+        assert got.core_build[0][0].limit == round(200.0 * execute.CORE_LIMIT, 2) < 200.0
 
     def test_a_position_already_at_its_weight_is_left_alone(self):
         acct = account([Holding(symbol="NVDA", quantity=40, avg_cost=200.0,
@@ -976,7 +979,7 @@ class TestTheCoreBookIsBuilt:
         got = plan(Book([]), acct, as_of=TODAY, quote=lambda s: 200.0,
                    core=self.core(NVDA=0.08))
         intent = got.core_build[0][0]
-        assert intent.shares == int(0.04 * 100_000 / 200.40)
+        assert intent.shares == int(0.04 * 100_000 / round(200.0 * execute.CORE_LIMIT, 2))
 
     def test_an_overweight_core_position_is_never_sold_here(self):
         """The monthly review knows why the weight was set; this module does not."""
@@ -1011,3 +1014,36 @@ class TestTheCoreBookIsBuilt:
         got = plan(Book([Rec("AAA", shares=10)]), account(equity=100_000.0),
                    as_of=TODAY, quote=lambda s: 200.0, core=self.core(NVDA=0.08))
         assert [i.symbol for i in got.intents] == ["AAA", "NVDA"]
+
+
+@pytest.mark.unit
+class TestEntryWindow:
+    """A bid at a level (the 20-day line, a swing low) means the same thing for
+    days, so an idea issued with an entry window keeps asking that long — and
+    no longer, and never once the tape has gone through its stop."""
+
+    def test_a_bid_at_a_level_stands_for_its_window(self):
+        got = plan(Book([Rec("AAA", issued="2026-08-28", window=5)]), account(),
+                   as_of=TODAY, quote=lambda s: 100.0)
+        assert [i.symbol for i in got.to_open] == ["AAA"] and got.stale == []
+
+    def test_it_is_placed_at_the_level_not_at_a_fresh_close(self):
+        got = plan(Book([Rec("AAA", issued="2026-08-28", limit=97.0, window=5)]),
+                   account(), as_of=TODAY, quote=lambda s: 100.0)
+        assert [i.limit for i in got.to_open] == [97.0]
+
+    def test_past_the_window_it_is_stale(self):
+        got = plan(Book([Rec("AAA", issued="2026-08-27", window=5)]), account(),
+                   as_of=TODAY, quote=lambda s: 100.0)
+        assert got.to_open == [] and [i.symbol for i, *_ in got.stale] == ["AAA"]
+
+    def test_a_bid_whose_stop_the_tape_has_crossed_is_stale_inside_the_window(self):
+        """The structure the bid leaned on is gone; the level is refuted, not cheap."""
+        got = plan(Book([Rec("AAA", issued="2026-08-30", stop=95.0, window=5)]),
+                   account(), as_of=TODAY, quote=lambda s: 94.0)
+        assert got.to_open == [] and [i.symbol for i, *_ in got.stale] == ["AAA"]
+
+    def test_without_a_window_the_old_one_session_rule_holds(self):
+        got = plan(Book([Rec("AAA", issued="2026-09-01", window=0)]), account(),
+                   as_of=TODAY, quote=lambda s: 100.0)
+        assert got.to_open == [] and [i.symbol for i, *_ in got.stale] == ["AAA"]

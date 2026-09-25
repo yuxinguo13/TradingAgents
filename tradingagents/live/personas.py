@@ -97,7 +97,10 @@ RISK_OFFICER = Persona(
     "the evidence, and you look for the specific way it goes wrong: concentration in "
     "one theme, an event inside the holding period, a position being added to after "
     "it has already run, a thesis that rests on a single headline, or a trade that "
-    "is really the same bet the book already has.",
+    "is really the same bet the book already has. The proposed trade names a limit "
+    "price; a limit under the last print is a resting bid that fills there or not "
+    "at all, so its reward and risk are measured from the limit, never from the last "
+    "price.",
 )
 
 RISK_OFFICER_SCHEMA = """Reply with EXACTLY ONE JSON object and no other text:

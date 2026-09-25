@@ -67,7 +67,7 @@ from dataclasses import dataclass, field
 from datetime import date as _date, datetime, timedelta
 from pathlib import Path
 
-from . import charting, clock, deepdive, execute, fundamentals as fund, horizons, research
+from . import charting, clock, deepdive, execute, fundamentals as fund, horizons
 from .brain import Panel, Snapshot, Trigger, build_evidence, snapshot, triggers
 from .earnings import Earnings, EarningsBook, summarise as summarise_earnings
 from .broker import BUY as VENUE_BUY, Account
@@ -86,7 +86,10 @@ from .recommendations import (
     make_id,
 )
 from .secretary import RiskLimits, Secretary, TradeLedger
-from .sizing import DEFAULT_RISK_PCT, r_multiple, size_position, stop_from_atr
+from .sizing import (
+    DEFAULT_RISK_PCT, pullback_entry, r_multiple, size_position, stop_from_atr,
+    structural_stop,
+)
 from .zhnames import DERIVED_MARK, ZhNames
 
 logger = logging.getLogger(__name__)
@@ -135,6 +138,35 @@ DEFAULT_ATR_STOP_MULT = 2.0        # same convention as sizing.stop_from_atr
 DEFAULT_MIN_R = 1.5
 DEFAULT_HORIZON_DAYS = 30
 
+# Where the entry is bid and where the stop goes, as one rule.
+#
+# ``close``: the old rule. Reference = the last close, limit a hair through it
+# (DEFAULT_LIMIT_BUFFER), stop DEFAULT_ATR_STOP_MULT ATRs under it. Fills at the
+# open every day, which is the problem: on 2026-09-22 the book's proposals had
+# limits 2% under the print and stops 12–15% under it — the whole risk budget
+# spent before the trade had any structure to lean on — and R against a real
+# target came out at 0.9 (ETN), 1.4 (SNDK) and 0 (DELL, whose target was the
+# price). Emily's words: 建议价位有点高，止损价位有点低.
+#
+# ``pullback``: reference = the bid, which is the nearer of the 20-day line and
+# a hair above the last swing low, capped DEFAULT_MAX_PULLBACK_ATRS under the
+# close so a level from another regime is not waited for. The stop goes a
+# STRUCTURE_BUFFER under that swing low, never nearer than
+# DEFAULT_STOP_ATR_FLOOR ATRs (sizing.structural_stop). The bid is good for
+# DEFAULT_ENTRY_WINDOW_DAYS sessions and then expires unfilled — it is a bid
+# at a level, and a level means the same thing for days; a bid the tape never
+# reaches is a trade not taken, not a trade scored.
+ENTRY_PULLBACK = "pullback"
+ENTRY_CLOSE = "close"
+DEFAULT_ENTRY_RULE = ENTRY_PULLBACK
+DEFAULT_STOP_ATR_FLOOR = 1.0
+# The pullback band: a bid nearer than the lower bound fills on an ordinary
+# morning (on 2026-09-22, 24 of 50 sat inside one ATR of the print), a bid
+# farther than the upper one is a different trade. Nothing inside means no bid.
+DEFAULT_MIN_PULLBACK_ATRS = 1.0
+DEFAULT_MAX_PULLBACK_ATRS = 3.0
+DEFAULT_ENTRY_WINDOW_DAYS = 5
+
 # The target is extrapolated from the trend, and the extrapolation is bounded
 # at both ends. The floor stops a flat name producing a target inside the
 # spread; the cap stops a name that tripled in a quarter claiming it will do it
@@ -180,9 +212,11 @@ CAVEAT = (
 )
 
 REFERENCE_NOTE = (
-    "R and P&L are measured from the reference price (the last close). Filling "
-    "at the limit costs up to the buffer above that, and the record does not "
-    "carry it."
+    "R and P&L are measured from the reference price, which is the bid: the "
+    "20-day line or a hair above the last swing low, not the last close. A fill "
+    "is at the bid or better, so nothing above the reference reaches the "
+    "record; a bid the tape never comes down to expires unfilled and is not "
+    "scored at all."
 )
 
 def _md_catalyst(rec) -> str:
@@ -311,14 +345,22 @@ def last_completed_session(now: datetime | None = None) -> _date:
     return d
 
 
-def sessions_for(when: str | _date | None = None, now: datetime | None = None
-                 ) -> tuple[_date, _date]:
+def sessions_for(when: str | _date | None = None, now: datetime | None = None,
+                 data: str | _date | None = None) -> tuple[_date, _date]:
     """(the session the orders are for, the session the data comes from).
 
     ``when`` names the session the orders are FOR and defaults to the next
     open, so a Saturday run is dated Monday rather than dated a Saturday with
     no session. The data is always the last completed session, which is why the
     two dates are never equal.
+
+    ``data`` pins the data session to an earlier one, for the case where the
+    last completed session's close has not been published: on 2026-09-22 the
+    vendor served the whole day volume-only until past midnight, the evening
+    report skipped every candidate as a session short, and the 09-21 close —
+    complete, published, one session old — sat unused. Pinned data is stated on
+    the page. It can never be pinned *later* than the last completed session:
+    that would be asking for a close that does not exist yet.
 
     Raises ValueError when the data session is not strictly before the order
     session — the case of a ``when`` whose session has already closed. Answered
@@ -327,6 +369,24 @@ def sessions_for(when: str | _date | None = None, now: datetime | None = None
     keep out of the record.
     """
     data_day = last_completed_session(now)
+    if data is not None and data != "":
+        if isinstance(data, datetime):
+            pinned = data.date()
+        elif isinstance(data, _date):
+            pinned = data
+        else:
+            try:
+                pinned = _date.fromisoformat(str(data).strip())
+            except ValueError:
+                raise ValueError(
+                    f"{data!r} is not an ISO date (YYYY-MM-DD)") from None
+        if pinned > data_day:
+            raise ValueError(
+                f"the data session cannot be pinned to {pinned}: the last completed "
+                f"session is {data_day}, and a later close does not exist yet")
+        if not clock.is_trading_day(pinned):
+            raise ValueError(f"{pinned} is not a trading session")
+        data_day = pinned
     if when is None or when == "":
         order_day = clock.next_open(now).date()
     else:
@@ -462,6 +522,14 @@ class AdvisorConfig:
     exchange: str = "nasdaq"
     use_cache: bool = False           # never rescan; read a saved screen
     dry_run: bool = False             # do not write to the recommendation book
+    # A hand list in place of the screen (see candidates()). Ranked in the
+    # order given; everything downstream runs unchanged. Set by --symbols.
+    symbols: tuple = ()
+    with_watchlist: bool = True       # the always-analysed names section
+    # 只做推荐: judge every name as a fresh position. Nothing is skipped for
+    # being held and the panel is not shown the holdings; the balance stays
+    # real because the sizes must be. Set by --ignore-holdings.
+    ignore_holdings: bool = False
 
     risk_pct: float = DEFAULT_RISK_PCT
     cap_fraction: float = RiskLimits().max_new_position_weight
@@ -469,6 +537,11 @@ class AdvisorConfig:
     atr_stop_mult: float = DEFAULT_ATR_STOP_MULT
     horizon_days: int = DEFAULT_HORIZON_DAYS
     limit_buffer: float = DEFAULT_LIMIT_BUFFER
+    entry_rule: str = DEFAULT_ENTRY_RULE          # see ENTRY_PULLBACK
+    stop_atr_floor: float = DEFAULT_STOP_ATR_FLOOR
+    min_pullback_atrs: float = DEFAULT_MIN_PULLBACK_ATRS
+    max_pullback_atrs: float = DEFAULT_MAX_PULLBACK_ATRS
+    entry_window_days: int = DEFAULT_ENTRY_WINDOW_DAYS
     min_price: float = RiskLimits().min_price
 
     max_new_per_sector: int = 2       # one policy theme must not own the list
@@ -513,6 +586,9 @@ class AdvisorConfig:
         "top": int, "max_candidates": int, "screen_top": int,
         "risk_pct": float, "min_r": float, "atr_stop_mult": float,
         "horizon_days": int, "limit_buffer": float,
+        "entry_rule": str, "stop_atr_floor": float, "min_pullback_atrs": float,
+        "max_pullback_atrs": float,
+        "entry_window_days": int,
         "swing_slots": int, "max_new_per_sector": int, "max_open_per_sector": int,
         "daytrade_top": int, "max_fundamentals": int, "max_news_symbols": int,
         "core_seed": bool, "write_pages": bool, "with_fundamentals": bool,
@@ -1167,6 +1243,19 @@ class DailyAdvisor:
         universe for a session already saved on disk, and then, when the rescan
         failed, reported that same up-to-date screen as a degraded fallback.
         """
+        if self.cfg.symbols:
+            # A hand list replaces the screen: the names are the user's, ranked
+            # in the order given, and everything after this point — news,
+            # policy, earnings, the sizing rule, the panel — runs on them
+            # exactly as it would on a screen's output. Sector stays unknown,
+            # so no tilt moves them and main() lifts the sector caps: a list
+            # someone wrote by hand is already their diversification decision.
+            names = list(self.cfg.symbols)
+            report.notes.append(
+                f"screen: replaced by a hand list of {len(names)} names "
+                f"({', '.join(names)}); no sector tilt or cap applies to them")
+            return [Candidate(symbol=s, rank=i + 1) for i, s in enumerate(names)]
+
         exchange = self.cfg.exchange
         data_date = data_day.isoformat()
         path, saved_date = find_saved_screen(data_day, exchange)
@@ -1391,12 +1480,25 @@ class DailyAdvisor:
         risk = plan.shares * (entry - stop)
         equity = account.account_value or account.cash or 0.0
         tilt = f" · policy tilt on {cand.sector} {cand.tilt:+.2f}" if cand.tilt else ""
+        close = _num(getattr(cand.snap, "price", None), entry)
+        window = int(getattr(plan, "entry_window_days", 0) or 0)
+        if window > 0:
+            entry_line = (f"- Entry: last close {close:,.2f}; the desk bids {entry:,.2f} "
+                          f"({entry / close - 1:+.1%}), at {self._entry_basis(cand, entry)}. "
+                          f"The bid stands for {window} sessions and expires unfilled if "
+                          f"the pullback never comes")
+            stop_line = (f"- Stop {stop:,.2f} ({stop / entry - 1:+.1%} from the bid): "
+                         f"under the swing low the entry leans on, never nearer than "
+                         f"{self.cfg.stop_atr_floor:g} ATR")
+        else:
+            entry_line = f"- Entry: reference {entry:,.2f} (the last close), limit {plan.limit_price:,.2f}"
+            stop_line = f"- Stop {stop:,.2f} ({stop / entry - 1:+.1%}, {self.cfg.atr_stop_mult:g} ATR)"
         lines = [
             "## The trade you are voting on",
             f"- Screen: rank #{cand.rank} on the {self.cfg.exchange} momentum and "
             f"accumulation screen · sector {cand.sector}{tilt}",
-            f"- Entry: reference {entry:,.2f} (the last close), limit {plan.limit_price:,.2f}",
-            f"- Stop {stop:,.2f} ({stop / entry - 1:+.1%}, {self.cfg.atr_stop_mult:g} ATR) · "
+            entry_line,
+            f"{stop_line} · "
             f"target {target:,.2f} ({target / entry - 1:+.1%}, the recent trend carried "
             f"{plan.horizon_days} days) · {r:.2f}R, which breaks even at a "
             f"{1 / (1 + r):.0%} win rate",
@@ -1561,7 +1663,12 @@ class DailyAdvisor:
                                 f"to the panel"), True
 
         try:
-            result = self.panel.deliberate(cand.symbol, evidence, account, snap.price)
+            # The plan's price, not the close. On 2026-09-22 the risk officer
+            # was handed the last print while the plan bid 9% under it, read
+            # "fills at ~1,766.64", and vetoed a unanimous SNDK for a target it
+            # had already reached — at a price the order could never fill at.
+            result = self.panel.deliberate(cand.symbol, evidence, account,
+                                           plan.reference_price)
         except Exception as exc:
             logger.warning("panel failed on %s: %s", cand.symbol, exc)
             return False, 0.0, f"panel failed ({type(exc).__name__}: {exc})", True
@@ -1577,21 +1684,90 @@ class DailyAdvisor:
         # fixed risk budget buys.
         return True, result.order.confidence, result.order.rationale, True
 
+    def _supports(self, symbol: str, snap: Snapshot) -> list[float]:
+        """Every swing low under the close, highest first, off the bars the
+        pages draw — the same pivots :func:`charting.levels_near` reads, all of
+        them rather than the nearest.
+
+        Empty when the snapshot carries no bar date to load against or the
+        history cannot be read: an entry with no structure under it is refused
+        by :func:`sizing.pullback_entry`, and the page says so.
+        """
+        when = str(getattr(snap, "bar_date", "") or "")
+        price = _num(getattr(snap, "price", None))
+        if not when or math.isnan(price) or price <= 0:
+            return []
+        try:
+            bars = self.bars(symbol, when)
+            _, lows = charting.pivots(bars.highs, bars.lows)
+            lows = charting._thin(lows, 5, highs=False)
+            return sorted({p for _, p in lows if 0 < p < price}, reverse=True)
+        except Exception as exc:
+            logger.debug("no swing structure for %s: %s", symbol, exc)
+            return []
+
+    def _entry_basis(self, cand: Candidate, entry: float) -> str:
+        """Which level the bid is at, for the page and the panel."""
+        snap = cand.snap
+        close = _num(getattr(snap, "price", None))
+        if math.isnan(close) or close <= 0:
+            return "the last close"
+        if abs(entry - close) < 0.005 * close:
+            return "the last close (no ATR to draw the pullback band with)"
+        sma20 = _num(getattr(snap, "sma20", None))
+        if not math.isnan(sma20) and abs(entry - sma20) < 0.005 * entry:
+            return f"the 20-day line ({sma20:,.2f})"
+        sma50 = _num(getattr(snap, "sma50", None))
+        if not math.isnan(sma50) and abs(entry - sma50) < 0.005 * entry:
+            return f"the 50-day line ({sma50:,.2f})"
+        for low in self._supports(cand.symbol, snap):
+            if abs(entry - low * 1.005) < 0.005 * entry:
+                return f"just above the swing low at {low:,.2f}"
+        return "a structural level under the close"
+
     def size(self, cand: Candidate, account: Account, issued: _date,
              conviction: float, rationale: str) -> tuple[Recommendation | None, str]:
         """Levels, share count and R for one approved candidate.
 
         Returns the recommendation *unrecorded*, or None and the sentence that
         explains the refusal. Every refusal here is a number, not a judgement.
+
+        Under ENTRY_PULLBACK the entry is the bid — the structure under the
+        close — and the stop is under that structure; the close itself only
+        bounds the bid from above. Under ENTRY_CLOSE both are measured from the
+        close, as they were before 2026-09-22.
         """
         snap = cand.snap
         if snap is None or not snap.ok:
             return None, "no usable price history"
-        entry = snap.price
+        close = snap.price
+        pullback = self.cfg.entry_rule == ENTRY_PULLBACK
 
-        stop = stop_from_atr(entry, atr_pct=snap.atr_pct, k=self.cfg.atr_stop_mult)
+        if pullback:
+            lows = self._supports(cand.symbol, snap)
+            entry = pullback_entry(close, snap.sma20, lows[0] if lows else None,
+                                   sma50=getattr(snap, "sma50", None), supports=lows[1:],
+                                   atr_pct=snap.atr_pct,
+                                   min_atrs_below=self.cfg.min_pullback_atrs,
+                                   max_atrs_below=self.cfg.max_pullback_atrs)
+            if entry is None:
+                return None, (f"no level to bid at between {self.cfg.min_pullback_atrs:g} and "
+                              f"{self.cfg.max_pullback_atrs:g} ATR under the close "
+                              f"({close:,.2f}): the nearest structure is inside a normal "
+                              f"day's range, or too far to be this trade")
+            # The stop leans on the nearest swing low *under the bid*, not under
+            # the close: a low between the two is exactly the one the bid
+            # skipped over as too near.
+            lean = next((s for s in lows if s < entry), None)
+            stop = structural_stop(entry, lean, atr_pct=snap.atr_pct,
+                                   k_min=self.cfg.stop_atr_floor)
+            k_used = self.cfg.stop_atr_floor
+        else:
+            entry = close
+            stop = stop_from_atr(entry, atr_pct=snap.atr_pct, k=self.cfg.atr_stop_mult)
+            k_used = self.cfg.atr_stop_mult
         if stop is None:
-            return None, _no_stop_reason(entry, snap.atr_pct, self.cfg.atr_stop_mult)
+            return None, _no_stop_reason(entry, snap.atr_pct, k_used)
 
         target = project_target(entry, snap, self.cfg.horizon_days)
         if target is None:
@@ -1620,7 +1796,10 @@ class DailyAdvisor:
         if not sized:
             return None, sized.reason
 
-        lim = limit_price(entry, self.cfg.limit_buffer)
+        # A pullback bid *is* the limit: pricing it through the level would buy
+        # at the close again by another name. The close rule keeps its buffer.
+        lim = entry if pullback else limit_price(entry, self.cfg.limit_buffer)
+        window = max(0, int(self.cfg.entry_window_days)) if pullback else 0
         catalyst, cat_source, cat_url, cat_at = self._catalyst(cand)
         # ``issued`` — the session the order is for — not the data session:
         # the countdown a reader acts on starts when they own the position.
@@ -1638,6 +1817,7 @@ class DailyAdvisor:
             target_price=target,
             limit_price=lim,
             horizon_days=self.cfg.horizon_days,
+            entry_window_days=window,
             conviction=conviction,
             rationale=rationale[:1000],
             sector=cand.sector,
@@ -1696,8 +1876,14 @@ class DailyAdvisor:
             rec.symbol, rec.action, rec.shares, rec.reference_price,
             rec.stop_price, rec.target_price,
             limit_price=rec.limit_price, horizon_days=rec.horizon_days,
+            # Dropped here until 2026-09-22: size() set the window and the
+            # catalyst's provenance, and this call rebuilt the row without
+            # them, so the book never held either.
+            entry_window_days=rec.entry_window_days,
             conviction=rec.conviction, rationale=rec.rationale,
             sector=rec.sector, catalyst=rec.catalyst,
+            catalyst_source=rec.catalyst_source, catalyst_url=rec.catalyst_url,
+            catalyst_at=rec.catalyst_at,
             issued_date=rec.issued_date,
         )
 
@@ -2173,17 +2359,19 @@ class DailyAdvisor:
         return out
 
     def run(self, when: str | _date | None = None,
-            now: datetime | None = None) -> DailyReport:
+            now: datetime | None = None,
+            data: str | _date | None = None) -> DailyReport:
         """Produce one day's report. Never raises.
 
         ``when`` is the session the orders are FOR, defaulting to the next open;
-        the numbers always come from the last completed session. The order below
-        is the argument of the module docstring in code: read the account,
-        gather, decide the exits, write them back, and only then look for
-        something to buy with what the exits freed.
+        the numbers always come from the last completed session unless ``data``
+        pins an earlier one (see :func:`sessions_for`). The order below is the
+        argument of the module docstring in code: read the account, gather,
+        decide the exits, write them back, and only then look for something to
+        buy with what the exits freed.
         """
         try:
-            order_day, data_day = sessions_for(when, now)
+            order_day, data_day = sessions_for(when, now, data)
         except ValueError as exc:
             # A refusal is rendered, not raised: main() prints whatever comes
             # back, and an empty report reads exactly like a quiet day.
@@ -2204,12 +2392,33 @@ class DailyAdvisor:
             risk_pct=self.cfg.risk_pct, dry_run=self.cfg.dry_run,
             panel_ran=self.panel is not None, swing_slots=self.cfg.swing_slots,
         )
+        latest = last_completed_session(now)
+        if data_day < latest:
+            report.warnings.append(
+                f"data pinned to the {data_date} session by request; the last "
+                f"completed session is {latest.isoformat()} and its close is in "
+                f"none of these numbers — every level here is one session old")
         if self.panel is None:
             report.warnings.append(
                 "no LLM configured: the ideas below were not reviewed by the panel, "
                 "only screened and sized")
 
         account = self.account(report)
+        if self.cfg.ignore_holdings and getattr(account, "holdings", None):
+            # Emily, 2026-09-22, on a review that had skipped four names as
+            # "already held" and halved a fifth for concentration against
+            # them: 你不用考虑我已经有什么，只做推荐. So: the same balance,
+            # no holdings. A seat that cannot see the account cannot vote
+            # "adds to what you own", which is the point.
+            from copy import copy
+            held = ", ".join(sorted(str(getattr(h, "symbol", "") or "")
+                                    for h in account.holdings)) or "none named"
+            account = copy(account)
+            account.holdings = []
+            report.notes.append(
+                f"holdings ignored by request ({held}): every name below is judged "
+                f"as a fresh position, and the book-vs-account and core sections "
+                f"read the account as empty")
         self._account = account
         report.account_value = account.account_value
         report.cash = account.cash
@@ -2230,7 +2439,7 @@ class DailyAdvisor:
 
         cands = self.rank(self.candidates(data_day, report), report.sector_tilt)
         report.candidates = cands
-        report.watchlist = self.watch(data_date, report)
+        report.watchlist = self.watch(data_date, report) if self.cfg.with_watchlist else []
         self.attach_earnings(cands, report, data_day, order_day)
 
         # One poll for both halves of the report. Open ideas come first in the
@@ -3094,6 +3303,11 @@ def main(argv=None) -> int:
                    help="Session the orders are FOR (default: the next open). "
                         "Data is always taken from the last completed session, so "
                         "a session that has already closed is refused.")
+    p.add_argument("--ignore-holdings", action="store_true",
+                   help="只做推荐：不因为已持有而跳过，也不把现有持仓给面板看；净值照旧")
+    p.add_argument("--data-date", default=None,
+                   help="把数据日钉在更早的一个已收盘交易日（供应商还没发最新收盘时用）；"
+                        "页面会标注这些数字旧了一天。不能钉到还没收盘的日子")
     p.add_argument("--top", type=int, default=None,
                    help="ideas printed and recorded, at most (default 8); the "
                         "panel budget follows it unless --max-candidates is given")
@@ -3104,6 +3318,9 @@ def main(argv=None) -> int:
     p.add_argument("--max-candidates", type=int, default=None,
                    help="LLM budget: how many names reach the panel")
     p.add_argument("--exchange", default=None, choices=["nasdaq", "all"])
+    p.add_argument("--symbols", default=None,
+                   help="逗号分隔的手工名单，代替全市场筛选：新闻、政策、财报、"
+                        "定价、面板照常跑在这些名字上；配 --dry-run 只审不记账")
     p.add_argument("--swing-slots", type=int, default=None,
                    help="concurrent swing positions the book may carry (default 6); "
                         "new ideas only fill free slots")
@@ -3149,6 +3366,21 @@ def main(argv=None) -> int:
     if getattr(a, "no_pages", False):
         cfg.write_pages = False
         cfg.with_fundamentals = False
+    if getattr(a, "ignore_holdings", False):
+        cfg.ignore_holdings = True
+    if getattr(a, "symbols", None):
+        syms = tuple(dict.fromkeys(
+            s.strip().upper() for s in str(a.symbols).split(",") if s.strip()))
+        cfg.symbols = syms
+        n = max(1, len(syms))
+        # Every name on a hand list is to be looked at and may be printed: no
+        # slot count, sector cap or panel budget cuts it. The watchlist is
+        # skipped — it is the other, standing list, and its earnings lookups
+        # are what turned a report into a four-hour run on 2026-09-21.
+        cfg.top = cfg.max_candidates = cfg.max_news_symbols = n
+        cfg.swing_slots = max(cfg.swing_slots, n)
+        cfg.max_new_per_sector = cfg.max_open_per_sector = n
+        cfg.with_watchlist = False
 
     llm = None
     if a.panel == "claude":
@@ -3165,7 +3397,12 @@ def main(argv=None) -> int:
         except Exception as exc:
             print(f"LLM unavailable ({exc}); ranking on rules alone.")
 
-    report = DailyAdvisor(cfg, llm=llm).run(a.date)
+    desk = DailyAdvisor(cfg, llm=llm)
+    pinned = getattr(a, "data_date", None)
+    # The keyword only travels when the flag was given: without it this is the
+    # same call it always was, which is what every stand-in for DailyAdvisor in
+    # the tests (and any wrapper of it) expects.
+    report = desk.run(a.date, data=pinned) if pinned else desk.run(a.date)
     print()
     print(format_report(report))
     if report.refused:

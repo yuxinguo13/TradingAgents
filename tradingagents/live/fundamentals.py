@@ -35,7 +35,6 @@ import math
 import os
 import time
 from dataclasses import asdict, dataclass, field
-from datetime import date
 from pathlib import Path
 
 logger = logging.getLogger(__name__)

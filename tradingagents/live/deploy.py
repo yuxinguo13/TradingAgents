@@ -426,7 +426,7 @@ def uninstall(label: str = LABEL, path: str | Path | None = None,
 
 def restart(label: str = LABEL, dry_run: bool = False) -> list[Step]:
     """Kill and respawn without unloading. Also the way to reopen the log files
-    after :func:`rotate_logs` — launchd holds those descriptors open."""
+    after truncating them — launchd holds those descriptors open."""
     return [_run([LAUNCHCTL, "kickstart", "-k", f"{domain()}/{label}"], dry_run)]
 
 
@@ -532,29 +532,6 @@ def tail_logs(lines: int = 40, label: str = LABEL, stream: str = "both",
         tail = "".join(text.splitlines(keepends=True)[-lines:])
         chunks.append(f"--- {p} ---\n{tail.rstrip()}")
     return "\n\n".join(chunks)
-
-
-def rotate_logs(label: str = LABEL, max_bytes: int = 32 * 1024 * 1024) -> list[str]:
-    """Truncate the job's logs in place once they pass ``max_bytes``.
-
-    In place, not renamed: launchd opened these files and holds the
-    descriptors, so renaming leaves the job writing into the renamed inode
-    while the fresh file stays empty forever. Truncation keeps the descriptor
-    valid. Follow with :func:`restart` if you want the offsets reset too —
-    otherwise the job may keep writing at its old offset and the file reads
-    back with a run of NULs until it catches up.
-    """
-    done = []
-    for p in (out_log(label), err_log(label)):
-        try:
-            if p.exists() and p.stat().st_size > max_bytes:
-                keep = p.read_text(encoding="utf-8", errors="replace")[-max_bytes // 8:]
-                p.with_suffix(p.suffix + ".1").write_text(keep, encoding="utf-8")
-                os.truncate(p, 0)
-                done.append(str(p))
-        except OSError as exc:
-            done.append(f"{p}: could not rotate ({exc})")
-    return done
 
 
 # --- preflight --------------------------------------------------------------
@@ -819,12 +796,6 @@ def format_checks(checks: list[Check]) -> str:
 
 
 # --- tier 1: foreground / nohup ---------------------------------------------
-
-def foreground_command(cfg: DeployConfig | None = None) -> str:
-    """Tier 0: watch it work in front of you. Dies with the terminal."""
-    cfg = cfg or DeployConfig()
-    return f"cd {cfg.repo} && " + " ".join(program_arguments(cfg))
-
 
 def nohup_command(cfg: DeployConfig | None = None) -> str:
     """Survives the terminal. Not a reboot, not a logout, not sleep-with-lid-shut."""

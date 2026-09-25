@@ -320,6 +320,137 @@ def stop_from_atr(
     return stop
 
 
+# How far under the swing low the structural stop sits. On the low itself the
+# stop is the first price a normal retest prints; one percent under it is the
+# smallest gap that survives that retest on daily bars.
+STRUCTURE_BUFFER = 0.01
+
+
+def structural_stop(
+    entry: float,
+    support: float | None,
+    atr: float | None = None,
+    *,
+    atr_pct: float | None = None,
+    k_min: float = 1.0,
+    buffer: float = STRUCTURE_BUFFER,
+    direction: str = LONG,
+) -> float | None:
+    """A stop just under the structure the entry leans on, never nearer than
+    ``k_min`` ATRs. None if one cannot be derived.
+
+    :func:`stop_from_atr` measures the stop from wherever the entry happens to
+    be. Measured from the last close that gave the book on 2026-09-22 a limit
+    2% under the print and a stop 12–15% under it: the whole risk budget spent
+    before the trade had any structure to lean on, and R against the target
+    came out at 0.9 (ETN), 1.4 (SNDK), 0 (DELL, target = price). The entry
+    that fixes it is the one at the structure — the 20-day line or the last
+    swing low — and then the stop belongs *under that structure*, which is
+    where the pattern is wrong, not k ATRs under a price that meant nothing.
+
+    Two levels, and the farther of them wins: ``support × (1 − buffer)`` so a
+    retest of the low does not stop the trade out, and ``entry − k_min·ATR``
+    so a support one tick under the entry cannot manufacture a 30R trade out
+    of a stop that ordinary noise reaches by lunch (the ATAI note in the
+    method document is that failure). With no usable support the ATR floor is
+    the stop, and a caller wanting the old behaviour passes ``k_min=2``.
+    """
+    e, kmin, buf = _as_float(entry), _as_float(k_min), _as_float(buffer)
+    if math.isnan(e) or e <= 0 or math.isnan(kmin) or kmin <= 0 or math.isnan(buf) or buf < 0:
+        return None
+    a = _as_float(atr)
+    if math.isnan(a):
+        pct = _as_float(atr_pct)
+        if math.isnan(pct) or pct <= 0:
+            return None
+        a = pct * e
+    if a <= 0:
+        return None
+    d = _direction(direction)
+    if d is None:
+        return None
+
+    floor_stop = e - kmin * a if d == LONG else e + kmin * a
+    s = _as_float(support)
+    stop = floor_stop
+    if not math.isnan(s) and s > 0:
+        if d == LONG and s < e:
+            stop = min(floor_stop, s * (1.0 - buf))
+        elif d == SHORT and s > e:
+            stop = max(floor_stop, s * (1.0 + buf))
+    stop = round(stop, 2)
+    if stop <= 0 or abs(e - stop) < STOP_TICK:
+        return None
+    return stop
+
+
+def pullback_entry(
+    close: float,
+    sma20: float | None,
+    support: float | None,
+    *,
+    sma50: float | None = None,
+    supports=(),
+    atr_pct: float | None = None,
+    support_buffer: float = 0.005,
+    min_atrs_below: float = 1.0,
+    max_atrs_below: float = 3.0,
+) -> float | None:
+    """The price to bid: the highest structure that sits between ``min`` and
+    ``max`` ATRs under the close, or None when there is none.
+
+    This is the other half of :func:`structural_stop`. A limit a hair *through*
+    the last close is a market order with a ceiling: it fills at the open every
+    day, so the desk never gets the pullback it then sizes as if it had. The
+    entry here is the level the trade is actually a trade at. It can go
+    unfilled — that is the point, and the book's entry window says for how many
+    sessions to keep asking.
+
+    The candidates are the 20-day line, the 50-day line, the nearest swing low
+    and any others handed in (each a hair above the low). Two bounds, and they
+    are the whole rule:
+
+    * **not nearer than** ``min_atrs_below`` ATRs. The first version of this
+      took the *nearest* swing low, and on daily bars that is routinely a minor
+      pivot 1–2% under the close — on 2026-09-22, 24 of 50 bids sat inside one
+      ATR of the print and five sat on it. A bid an ordinary morning reaches is
+      not a pullback, it is the close with extra steps;
+    * **not farther than** ``max_atrs_below``. A swing low from another regime
+      is not a level to wait for, and a bid that far down is a different trade
+      with a different stop.
+
+    Nothing inside the band means no bid, not a bid at the close. Without an
+    ATR the band cannot be drawn and the close is returned; the caller's stop
+    rule refuses a no-ATR name anyway.
+    """
+    c = _as_float(close)
+    if math.isnan(c) or c <= 0:
+        return None
+    buf = _as_float(support_buffer)
+    cands = []
+    for m in (_as_float(sma20), _as_float(sma50)):
+        if not math.isnan(m) and 0 < m < c:
+            cands.append(m)
+    lows = [_as_float(support)] + [_as_float(x) for x in (supports or ())]
+    for s in lows:
+        if not math.isnan(s) and 0 < s < c:
+            cands.append(s * (1.0 + buf))
+    pct = _as_float(atr_pct)
+    if math.isnan(pct) or pct <= 0:
+        return round(max(cands) if cands else c, 2)
+    ceiling = c * (1.0 - _as_float(min_atrs_below) * pct)
+    floor_px = c * (1.0 - _as_float(max_atrs_below) * pct)
+    if ceiling <= 0:
+        # An ATR wider than the price: the band is meaningless. Hand back the
+        # best structure and let the stop rule say what is wrong.
+        return round(max(cands) if cands else c, 2) if cands else None
+    inside = [x for x in cands if floor_px - 1e-9 <= x <= ceiling + 1e-9]
+    if not inside:
+        return None
+    entry = round(max(inside), 2)
+    return entry if entry > 0 else None
+
+
 # ---------------------------------------------------------------------------
 # ranking statistics
 # ---------------------------------------------------------------------------

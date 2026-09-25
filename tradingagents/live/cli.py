@@ -13,7 +13,6 @@
 from __future__ import annotations
 
 import argparse
-import json
 import logging
 import sys
 from datetime import date
@@ -125,7 +124,7 @@ def cmd_news(a) -> int:
 
 def cmd_scan(a) -> int:
     """Everything the loop does except deciding and trading."""
-    from .brain import build_evidence, snapshot, triggers
+    from .brain import snapshot, triggers
     from .broker import configured_venue, open_broker
     from .monitor import LiveDesk, MonitorConfig
     from .newsfeed import format_items

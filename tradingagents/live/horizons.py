@@ -38,7 +38,7 @@ import json
 import logging
 import math
 import os
-from dataclasses import asdict, dataclass, field
+from dataclasses import asdict, dataclass
 from datetime import date as _date
 from pathlib import Path
 
@@ -57,10 +57,6 @@ CORE_MAX_12M_LOSS = -0.15
 # How far a position may drift from its target weight before a rebalance is
 # even mentioned. Below this the transaction cost is the larger number.
 CORE_DRIFT_BAND = 0.25
-# Reviewed on the first session of a month. Any cadence is arbitrary; what
-# matters is that it is *not* daily, and that the report says which it is.
-CORE_REVIEW_NOTE = "核心组合每月复核一次；两次复核之间只在破位规则触发时才动"
-
 # --- what may be proposed as a core holding --------------------------------
 # A core list is a bet on businesses, and the first draft of one must not be a
 # momentum screen wearing a different heading. Ranking on the twelve-month
@@ -118,7 +114,6 @@ def core_budget(slots: int, position_cap: float,
 
 # --- swing rules ------------------------------------------------------------
 DEFAULT_SWING_SLOTS = 6            # concurrent swing ideas the book may carry
-SWING_HOLD_DAYS = (7, 28)          # the horizon this section claims
 
 # --- day-trade filters ------------------------------------------------------
 DT_MIN_ATR_PCT = 0.025             # under this the intraday range pays no one

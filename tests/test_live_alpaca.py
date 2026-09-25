@@ -12,7 +12,7 @@ import pytest
 
 from tradingagents.live import alpaca as A
 from tradingagents.live.broker import (
-    BUY, COVER, LIMIT, MARKET, SELL, SHORT, STOP, Account,
+    BUY, COVER, LIMIT, MARKET, SELL, SHORT, STOP,
 )
 
 
@@ -285,7 +285,6 @@ class TestCredentialsAndSelection:
             open_broker("robinhood")
 
     def test_adapter_satisfies_the_broker_protocol(self):
-        from tradingagents.live.broker import Broker
         from tradingagents.live.investopedia import InvestopediaBroker
         for cls in (A.AlpacaBroker, InvestopediaBroker):
             for m in ("is_logged_in", "account", "quote", "place_order"):

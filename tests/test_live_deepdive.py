@@ -12,9 +12,9 @@ import math
 
 import pytest
 
-from tradingagents.live import charting, deepdive
+from tradingagents.live import deepdive
 from tradingagents.live.deepdive import Bars, SymbolAnalysis, render_page, risks
-from tradingagents.live.fundamentals import Fundamentals, Quarter
+from tradingagents.live.fundamentals import Fundamentals
 from tradingagents.live.zhnames import ZhNames
 
 

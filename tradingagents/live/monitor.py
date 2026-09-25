@@ -29,8 +29,8 @@ import logging
 import os
 import time
 import traceback
-from dataclasses import dataclass, field
-from datetime import date, datetime, timedelta
+from dataclasses import dataclass
+from datetime import date, datetime
 from pathlib import Path
 
 from tradingagents.default_config import DEFAULT_CONFIG

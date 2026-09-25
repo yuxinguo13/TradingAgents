@@ -114,10 +114,15 @@ EXIT_WINDOW_DAYS = 10
 # own terms.
 CORE_BAND = 0.01
 
-# Core buys are placed a hair through the last price: marketable, so the build
-# actually happens, but a bad print cannot fill it. The Secretary's 5%
-# deviation rule is the outer bound; this is the inner one.
-CORE_PREMIUM = 1.002
+# Core buys bid a little *under* the last print, not through it. They used to
+# be placed at 1.002× — marketable, so the build happened at the open — and
+# on 2026-09-22 Emily's objection to the whole book was that its buys were
+# always the highest price of the morning. A monthly book has no reason to pay
+# up: an order that does not fill today is re-planned tomorrow at 06:25 and
+# again at 12:30, and the weight gap it is closing is the same gap either
+# way. The Secretary's 5% deviation rule is the outer bound; this is the inner
+# one. Set TRADINGAGENTS_CORE_LIMIT=1.002 to get the old behaviour back.
+CORE_LIMIT = float(os.getenv("TRADINGAGENTS_CORE_LIMIT", "0.995"))
 
 
 def _num(v, default: float = float("nan")) -> float:
@@ -269,7 +274,7 @@ def _sell_intent(sym: str, have: int, sig, rec_id: str, *,
                   rec_id, int(_num(getattr(sig, "urgency", 1), 1)))
 
 
-def _recent_exits(book, as_of: _date | None, window_days: int) -> dict:
+def _recent_exits(book) -> dict:
     """Symbols the book has exited, newest exit per symbol.
 
     A holding whose book record is a *closed* recommendation is the one case a
@@ -433,13 +438,24 @@ def plan(book: RecommendationBook, account: Account, *,
             intent = Intent(BUY, sym, want, _num(rec.limit_price, None) or None,
                             f"账本 {rec.issued_date} 发出，尚未建仓", rec.id)
             age = _age_days(rec, when)
-            if age is not None and age > fresh_days:
-                px = float("nan")
-                if quote is not None:
-                    try:
-                        px = _num(quote(sym), float("nan"))
-                    except Exception:
-                        px = float("nan")
+            # An idea issued with an entry window is a bid at a level, and a
+            # level means the same thing for as many sessions as the window
+            # says — provided the price is still above it (it is still a
+            # pullback) and above the stop (the structure it leans on is still
+            # standing). Past the window, or through the stop, it is stale and
+            # reported as such; it is never placed at a level the tape has
+            # already refuted.
+            window = max(int(fresh_days), int(_num(getattr(rec, "entry_window_days", 0), 0.0)))
+            px = float("nan")
+            if age is not None and age > fresh_days and quote is not None:
+                try:
+                    px = _num(quote(sym), float("nan"))
+                except Exception:
+                    px = float("nan")
+            stop = _num(getattr(rec, "stop_price", None), float("nan"))
+            broken = (age is not None and age > fresh_days
+                      and not math.isnan(px) and not math.isnan(stop) and px <= stop)
+            if age is not None and (age > window or broken):
                 out.stale.append((intent, age, _r_now(rec, px), px,
                                   _to_stop(rec, px)))
             else:
@@ -449,7 +465,7 @@ def plan(book: RecommendationBook, account: Account, *,
         else:
             out.matched.append((sym, have))
 
-    exited = _recent_exits(book, when, exit_window_days)
+    exited = _recent_exits(book)
     for sym, h in short.items():
         if sym not in booked:
             out.unmanaged.append(h)
@@ -524,7 +540,7 @@ def _plan_core(out: Reconciliation, targets: dict, held: dict, booked: dict,
         if not (px > 0):
             out.notes.append(f"{sym}：核心长仓要补到 {target:.0%}，但取不到价格，这次不下单")
             continue
-        limit = round(px * CORE_PREMIUM, 2)
+        limit = round(px * CORE_LIMIT, 2)
         shares = int(gap * equity / limit)
         if shares <= 0:
             continue

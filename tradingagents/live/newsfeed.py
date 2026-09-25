@@ -35,7 +35,7 @@ import time
 import urllib.parse
 import urllib.request
 from contextlib import suppress
-from dataclasses import asdict, dataclass, field
+from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from xml.etree import ElementTree as ET

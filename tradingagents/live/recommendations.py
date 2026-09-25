@@ -260,6 +260,13 @@ class Recommendation:
 
     limit_price: float | None = None  # None means "at the market"
     horizon_days: int = DEFAULT_HORIZON_DAYS
+    # How many sessions after ``issued_date`` the entry may still be placed.
+    # Zero is the old rule — the limit was a hair through one session's close
+    # and meant nothing the next morning. A limit at a structural level (the
+    # 20-day line, the last swing low) means the same thing for days, so an
+    # idea issued with one keeps asking that long, and expires unfilled rather
+    # than being scored as if it had been bought. See execute.ENTRY_FRESH_DAYS.
+    entry_window_days: int = 0
     conviction: float = DEFAULT_CONVICTION
     rationale: str = ""
     sector: str = ""
@@ -496,6 +503,7 @@ class Recommendation:
         lim = _num(d.get("limit_price"))
         rec.limit_price = None if math.isnan(lim) else lim
         rec.horizon_days = int(_num(d.get("horizon_days"), float(DEFAULT_HORIZON_DAYS)))
+        rec.entry_window_days = int(_num(d.get("entry_window_days"), 0.0))
         rec.conviction = _num(d.get("conviction"), DEFAULT_CONVICTION)
         rec.rationale = str(d.get("rationale", "") or "")
         rec.sector = str(d.get("sector", "") or "")
@@ -567,10 +575,6 @@ class ExitSignal:
     r_multiple: float = float("nan")
     new_stop: float | None = None    # RAISE_STOP only
     exit_reason: str = ""            # the REASON_* to record if this is taken
-
-    @property
-    def is_urgent(self) -> bool:
-        return self.urgency >= 3
 
     @property
     def closes_position(self) -> bool:
@@ -908,10 +912,6 @@ class RecommendationBook:
     def closed_recommendations(self) -> list[Recommendation]:
         return [r for r in self.recommendations if r.status == CLOSED]
 
-    def for_symbol(self, symbol: str) -> list[Recommendation]:
-        sym = symbol.strip().upper()
-        return [r for r in self.recommendations if r.symbol == sym]
-
     def _unique_id(self, base: str) -> str:
         if not self.get(base):
             return base
@@ -935,6 +935,7 @@ class RecommendationBook:
         *,
         limit_price: float | None = None,
         horizon_days: int = DEFAULT_HORIZON_DAYS,
+        entry_window_days: int = 0,
         conviction: float = DEFAULT_CONVICTION,
         rationale: str = "",
         sector: str = "",
@@ -973,6 +974,7 @@ class RecommendationBook:
             target_price=_num(target_price),
             limit_price=None if limit_price is None else _num(limit_price),
             horizon_days=int(_num(horizon_days, float(DEFAULT_HORIZON_DAYS))),
+            entry_window_days=max(0, int(_num(entry_window_days, 0.0))),
             conviction=_num(conviction, DEFAULT_CONVICTION),
             rationale=str(rationale or "")[:1000],
             sector=str(sector or ""),

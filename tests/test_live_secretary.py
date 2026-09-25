@@ -1,6 +1,5 @@
 """The risk gate. Every limit here is one an LLM must not be able to argue past."""
 
-import json
 from datetime import datetime, timedelta
 
 import pytest
@@ -255,3 +254,29 @@ class TestBudgetsAreScopedToTheVenue:
         ledger.record(Order("NVDA", SELL, 400), 100.0, True, venue="paper")
         ledger.record(Order("MSFT", SELL, 100), 100.0, True, venue="alpaca")
         assert ledger.turnover_today() == 50_000.0
+
+
+from tradingagents.live.investopedia import LIMIT as _LIMIT
+
+
+@pytest.mark.unit
+class TestLimitDeviationIsOneSided:
+    """A buy under the last fills at the limit or better, so the 5% bound
+    protects nobody there — it was refusing the advisor's own pullback bids
+    (PLTR, 2026-09-24: "limit 177.46 is 7.4% from last 191.56; max 5%")."""
+
+    def test_a_resting_buy_well_under_the_last_passes(self, sec, account):
+        v = sec.check(Order("MU", "Buy", 10, order_type=_LIMIT, limit_price=110.0), account, 120.0)
+        assert v.ok, v.reason                                   # 8.3% under
+
+    def test_a_marketable_buy_far_above_the_last_is_refused(self, sec, account):
+        v = sec.check(Order("MU", "Buy", 10, order_type=_LIMIT, limit_price=130.0), account, 120.0)
+        assert not v.ok and "marketable" in v.reason            # 8.3% above
+
+    def test_a_fat_finger_on_the_resting_side_is_still_refused(self, sec, account):
+        v = sec.check(Order("MU", "Buy", 10, order_type=_LIMIT, limit_price=90.0), account, 120.0)
+        assert not v.ok and "resting" in v.reason               # 25% under
+
+    def test_a_sell_above_the_last_is_the_resting_side(self, sec, account):
+        v = sec.check(Order("NVDA", "Sell", 10, order_type=_LIMIT, limit_price=232.0), account, 215.0)
+        assert v.ok, v.reason                                   # 7.9% above, held 100

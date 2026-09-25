@@ -6,7 +6,6 @@ a renderer that prints 0.00 for "unknowable" turns a missing fact into a bad
 one. Most of this file is that distinction.
 """
 
-import json
 import math
 import time
 

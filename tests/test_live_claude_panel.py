@@ -125,6 +125,25 @@ class TestReplies:
         with pytest.raises(PanelCallError):
             ask(llm)
 
+    def test_the_cli_reason_survives_the_envelope(self, tmp_path):
+        """The reason lives inside the JSON, behind keys long enough to eat the
+        truncation. 2026-09-21: 32 seats, every one of them logged only
+        `exit 1: {"is_error":true,"duration_api_ms":0` while the panel sat
+        empty for want of a login."""
+        body = json.dumps({"is_error": True, "duration_api_ms": 0, "num_turns": 1,
+                           "session_id": "x" * 36, "total_cost_usd": 0,
+                           "usage": {"input_tokens": 0, "output_tokens": 0},
+                           "result": "Failed to authenticate: OAuth session expired"})
+        llm, _ = seat(tmp_path, SimpleNamespace(returncode=1, stdout=body, stderr=""))
+        with pytest.raises(PanelCallError, match="OAuth session expired"):
+            ask(llm)
+
+    def test_a_non_json_failure_still_reports_what_it_printed(self, tmp_path):
+        llm, _ = seat(tmp_path, SimpleNamespace(returncode=127, stdout="",
+                                                stderr="claude: command not found"))
+        with pytest.raises(PanelCallError, match="command not found"):
+            ask(llm)
+
 
 @pytest.mark.unit
 class TestThePanelItSits:

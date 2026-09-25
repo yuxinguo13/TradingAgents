@@ -467,8 +467,11 @@ class Panel:
         import json
         try:
             body = (f"{evidence}\n\n## Proposed trade\n"
-                    f"{order.action} {order.quantity} {order.symbol} at ~${price:,.2f} "
-                    f"(${order.quantity * price:,.0f} notional)\n"
+                    f"{order.action} {order.quantity} {order.symbol}, limit ${price:,.2f} "
+                    f"(${order.quantity * price:,.0f} notional at the limit)\n"
+                    f"This is a resting limit order: it fills at ${price:,.2f} or better, "
+                    f"or not at all. It never fills at the last price when that is "
+                    f"higher — judge the trade at the limit, not at the last print.\n"
                     f"Panel rationale: {order.rationale}")
             raw = self._ask(risk_officer_prompt(), body)
             m = re.search(r"\{.*\}", raw, re.DOTALL)

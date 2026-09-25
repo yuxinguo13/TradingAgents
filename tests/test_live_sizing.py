@@ -21,12 +21,14 @@ from tradingagents.live.sizing import (
     Trade,
     breakeven_win_chance,
     expectancy,
+    pullback_entry,
     r_multiple,
     rank_by_expectancy,
     rank_by_r_multiple,
     risk_based_quantity,
     size_position,
     stop_from_atr,
+    structural_stop,
 )
 
 ACCOUNT = 100_000.0
@@ -479,3 +481,89 @@ class TestRanking:
         # A cycle's output has to be reproducible from one run to the next.
         a, b, c = trade("AAA"), trade("BBB"), trade("CCC")
         assert [t.symbol for t in rank_by_expectancy([c, a, b])] == ["CCC", "AAA", "BBB"]
+
+
+# ---------------------------------------------------------------------------
+# the structural entry and stop (2026-09-22)
+# ---------------------------------------------------------------------------
+
+@pytest.mark.unit
+class TestStructuralStop:
+    """The stop goes under the structure the entry leans on, not k ATRs under
+    wherever the entry happened to be."""
+
+    def test_sits_a_buffer_under_the_swing_low(self):
+        assert structural_stop(100.0, 95.0, atr_pct=0.02, k_min=1.0) == 94.05
+
+    def test_never_nearer_than_the_atr_floor(self):
+        """A support one tick under the entry must not manufacture a 30R trade."""
+        assert structural_stop(100.0, 99.9, atr_pct=0.02, k_min=1.0) == 98.0
+
+    def test_falls_back_to_the_atr_floor_without_support(self):
+        for junk in JUNK:
+            assert structural_stop(100.0, junk, atr_pct=0.02, k_min=1.0) == 98.0
+
+    def test_a_support_above_the_entry_is_not_a_support(self):
+        assert structural_stop(100.0, 105.0, atr_pct=0.02, k_min=1.0) == 98.0
+
+    def test_no_atr_means_no_stop(self):
+        assert structural_stop(100.0, 95.0, atr_pct=float("nan")) is None
+        assert structural_stop(100.0, 95.0, atr_pct=0.0) is None
+
+    def test_the_short_side_mirrors(self):
+        assert structural_stop(100.0, 105.0, atr_pct=0.02, k_min=1.0, direction=SHORT) == 106.05
+
+    def test_the_old_rule_is_one_argument_away(self):
+        assert structural_stop(100.0, None, atr_pct=0.02, k_min=2.0) == stop_from_atr(100.0, atr_pct=0.02, k=2.0)
+
+
+@pytest.mark.unit
+class TestPullbackEntry:
+    """The bid is the highest structure between 1 and 3 ATR under the close.
+    Nearer fills on noise; farther is a different trade; none means no bid."""
+
+    def test_bids_the_20_day_line_when_it_is_the_highest_structure_in_the_band(self):
+        assert pullback_entry(100.0, 97.0, 90.0, atr_pct=0.03) == 97.0
+
+    def test_bids_a_hair_above_the_swing_low_when_that_is_the_highest_in_the_band(self):
+        assert pullback_entry(100.0, 90.0, 96.0, atr_pct=0.03) == 96.48
+
+    def test_a_swing_low_inside_a_days_range_is_not_a_bid(self):
+        """The nearest pivot under the close is routinely 1–2% away, which an
+        ordinary morning reaches; the bid goes to the next structure instead."""
+        assert pullback_entry(100.0, 99.5, 99.2, sma50=95.0, atr_pct=0.02) == 95.0
+
+    def test_deeper_swing_lows_are_candidates_too(self):
+        assert pullback_entry(100.0, None, 99.0, supports=(96.0, 80.0), atr_pct=0.02) == 96.48
+
+    def test_nothing_in_the_band_means_no_bid_not_the_close(self):
+        assert pullback_entry(100.0, 99.5, 99.4, atr_pct=0.02) is None          # all too near
+        assert pullback_entry(100.0, 80.0, 70.0, atr_pct=0.02) is None          # all too far
+        assert pullback_entry(100.0, None, None, atr_pct=0.02) is None          # nothing at all
+
+    def test_a_structure_above_the_close_is_not_a_bid(self):
+        assert pullback_entry(100.0, 103.0, 104.0, atr_pct=0.02) is None
+
+    def test_without_an_atr_the_band_cannot_be_drawn(self):
+        """The caller's stop rule refuses a no-ATR name; here the best structure
+        (or the close) is handed back so the refusal names the real cause."""
+        assert pullback_entry(100.0, 97.0, 95.0) == 97.0
+        for junk in JUNK:
+            assert pullback_entry(100.0, junk, junk) == 100.0
+
+    def test_no_close_means_no_entry(self):
+        for junk in JUNK:
+            assert pullback_entry(junk, 97.0, 95.0) is None
+
+    def test_the_stop_under_that_entry_gives_the_r_the_page_prints(self):
+        """End to end: close 100, 20-day 97, swing low 95, target 110.
+
+        Old rule: entry 100, stop 94 (2 ATR at 3%), R = 10/6 = 1.67.
+        New rule: bid 97, stop 94.05 (under the low), R = 13/2.95 = 4.4.
+        Same target, same stock: the difference is entirely where it is bought.
+        """
+        bid = pullback_entry(100.0, 97.0, 95.0, atr_pct=0.03)
+        stop = structural_stop(bid, 95.0, atr_pct=0.03, k_min=1.0)
+        assert (bid, stop) == (97.0, 94.05)
+        assert round(r_multiple(bid, stop, 110.0), 2) == 4.41
+        assert round(r_multiple(100.0, stop_from_atr(100.0, atr_pct=0.03, k=2.0), 110.0), 2) == 1.67

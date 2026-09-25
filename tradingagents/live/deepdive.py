@@ -32,7 +32,6 @@ from __future__ import annotations
 import logging
 import math
 from dataclasses import dataclass, field
-from datetime import date as _date
 
 from . import charting, fundamentals as fund, research
 from .zhnames import ZhName

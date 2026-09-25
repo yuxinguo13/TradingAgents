@@ -63,7 +63,7 @@ def quote_links(symbol: str) -> list[Link]:
 
 
 def financial_links(symbol: str) -> list[Link]:
-    s, d = _q(symbol), _q(_dotted(symbol))
+    s = _q(symbol)
     return [
         Link("StockAnalysis 财务报表", f"https://stockanalysis.com/stocks/{s}/financials/",
              "十年利润表/资产负债表/现金流，免费且不用登录"),

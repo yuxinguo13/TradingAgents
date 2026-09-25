@@ -12,7 +12,7 @@ import json
 
 import pytest
 
-from tradingagents.live.earnings import Earnings, EarningsBook, summarise
+from tradingagents.live.earnings import Earnings, summarise
 
 AS_OF = dt.date(2026, 8, 28)
 

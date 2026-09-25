@@ -134,6 +134,33 @@ class ClaudeCodeLLM:
         env["PATH"] = "/usr/bin:/bin:/usr/sbin:/sbin"
         return env
 
+    @staticmethod
+    def _reason(proc) -> str:
+        """Why a call failed, in the CLI's own words.
+
+        A failing ``claude -p --output-format json`` exits non-zero *and* prints
+        its reason on stdout, inside the JSON, with ``is_error`` set. Reading
+        that stream raw puts the envelope first and truncates the reason away:
+        on 2026-09-21 all 32 of the day's seats logged
+
+            exit 1: {"is_error":true,"duration_api_ms":0
+
+        and nothing more, while ``result`` — three keys further in, past the
+        token counts — read "Failed to authenticate: OAuth session expired and
+        could not be refreshed". A whole report ran with an empty panel and no
+        line in the log said why. So: parse first, truncate second.
+        """
+        for raw in (proc.stdout, proc.stderr):
+            try:
+                data = json.loads(raw)
+            except (TypeError, ValueError):
+                continue
+            if isinstance(data, dict):
+                text = str(data.get("result") or data.get("error") or "").strip()
+                if text:
+                    return text[:300]
+        return (proc.stderr or proc.stdout or "").strip()[:300]
+
     def invoke(self, messages) -> Reply:
         system, user = _split(messages)
         self.calls += 1
@@ -147,8 +174,7 @@ class ClaudeCodeLLM:
         except OSError as exc:
             raise PanelCallError(f"could not start {self.binary}: {exc}") from exc
         if proc.returncode != 0:
-            detail = (proc.stderr or proc.stdout or "").strip()[:300]
-            raise PanelCallError(f"exit {proc.returncode}: {detail}")
+            raise PanelCallError(f"exit {proc.returncode}: {self._reason(proc)}")
         try:
             data = json.loads(proc.stdout)
         except (TypeError, ValueError) as exc:

@@ -26,7 +26,7 @@ from __future__ import annotations
 import json
 import os
 import re
-from dataclasses import asdict, dataclass, field
+from dataclasses import asdict, dataclass
 from datetime import date, datetime, timedelta
 from pathlib import Path
 
@@ -47,7 +47,13 @@ class RiskLimits:
     min_order_value: float = 250.0        # below this, fees-equivalent noise
     max_order_value_pct: float = 0.10     # no single order larger than this
     symbol_cooldown_minutes: int = 45     # do not re-trade a name immediately
-    max_limit_deviation: float = 0.05     # limit price within 5% of last
+    max_limit_deviation: float = 0.05     # a *marketable* limit within 5% of last
+    # A limit on the resting side — a buy under the last, a sell above it —
+    # cannot fill worse than itself, so the 5% bound is not protecting anyone
+    # there; it was refusing the advisor's own pullback bids, which sit 1–3 ATR
+    # under the close by design (PLTR, 2026-09-24: "7.4% from last; max 5%").
+    # This is the sanity bound for that side: a fat finger, not a strategy.
+    max_resting_deviation: float = 0.15
     allow_short: bool = False             # shorting is off unless switched on
     min_price: float = 3.00               # no sub-$3 names
     require_market_open: bool = True
@@ -329,10 +335,19 @@ class Secretary:
 
         # --- limit sanity ---
         if order.order_type == LIMIT and order.limit_price:
-            dev = abs(order.limit_price - price) / price
-            if dev > L.max_limit_deviation:
-                return Verdict(False, f"limit {order.limit_price:.2f} is {dev:.1%} from "
-                                      f"last {price:.2f}; max {L.max_limit_deviation:.0%}")
+            dev = (order.limit_price - price) / price
+            buying = order.action in (BUY, COVER)
+            # Marketable side: a buy above the last or a sell below it fills at
+            # once and a mistyped limit costs the difference. Resting side: the
+            # order waits for the price and fills at the limit or better, so the
+            # only thing to guard against is a fat finger. See RiskLimits.
+            marketable = dev > 0 if buying else dev < 0
+            bound = L.max_limit_deviation if marketable else L.max_resting_deviation
+            if abs(dev) > bound:
+                return Verdict(False, f"limit {order.limit_price:.2f} is {abs(dev):.1%} "
+                                      f"{'above' if dev > 0 else 'below'} last {price:.2f}; "
+                                      f"max {bound:.0%} on the "
+                                      f"{'marketable' if marketable else 'resting'} side")
 
         held = account.position(order.symbol)
         held_qty = held.quantity if held else 0.0
@@ -384,12 +399,3 @@ class Secretary:
         return Verdict(True, f"approved{resized}",
                        order=Order(**{**order.to_dict(), "quantity": qty}))
 
-    # --- convenience --------------------------------------------------------
-
-    def vet(self, raw: str | dict, account: Account, price: float,
-            market_open: bool = True) -> Verdict:
-        """parse + risk-check in one call."""
-        v = self.parse_order(raw)
-        if not v.ok or v.order is None:
-            return v
-        return self.check(v.order, account, price, market_open)

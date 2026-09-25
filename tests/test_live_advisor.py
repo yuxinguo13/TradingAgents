@@ -21,7 +21,6 @@ snapshots, the news feeds, the policy feeds and the venue are all injected.
 """
 
 import math
-import os
 import re
 from datetime import date, datetime
 from pathlib import Path
@@ -117,13 +116,20 @@ class StubPanel:
     def __init__(self, result=None):
         self.result = result
         self.calls: list[str] = []
+        self.prices: list[float] = []
 
     def deliberate(self, symbol, evidence, account, price):
         self.calls.append(symbol)
+        self.prices.append(price)
         return self.result
 
 
 def snap(symbol, price, atr_pct=0.03, ret_3m=0.60, **kw):
+    # A 20-day line one ATR under the close unless the test says otherwise:
+    # the pullback rule bids only at a level inside its 1–3 ATR band, and a
+    # snapshot with no structure under it is a refusal, not a trade.
+    if "sma20" not in kw and atr_pct == atr_pct and 0 < atr_pct < 1:
+        kw["sma20"] = round(price * (1.0 - atr_pct), 4)
     return Snapshot(symbol=symbol, price=price, atr_pct=atr_pct, ret_3m=ret_3m,
                     ok=True, **kw)
 
@@ -218,8 +224,13 @@ class Desk:
         self.tmp_path = tmp_path
         self.snaps = {
             "SPY": snap("SPY", 500.0, atr_pct=0.01, sma50=490.0, sma200=450.0),
+            # snap() puts a 20-day line one ATR under the close, so the pullback
+            # rule has a level to bid at: AAA bids 97 (stop 94.09), BBB bids 49
+            # (stop 48.02). AAA's projected target hits the MAX_CREDIBLE_R
+            # ceiling (5R); BBB's trend is kept weak enough that its target does
+            # not, so AAA ranks first by R and not by a floating-point tie.
             "AAA": snap("AAA", 100.0),
-            "BBB": snap("BBB", 50.0, atr_pct=0.02, ret_3m=0.40),
+            "BBB": snap("BBB", 50.0, atr_pct=0.02, ret_3m=0.20),
         }
         self.rows = list(ROWS)
         self.stats = {"universe": 3000, "passed_filters": 42}
@@ -430,7 +441,8 @@ class TestExitsReachTheBook:
         assert aaa.exit_reason == REASON_STOP
         assert aaa.exit_price == 90.0
         assert aaa.exit_date == "2026-08-24"        # the session the mark is from
-        assert aaa.realized_pnl == pytest.approx(-800.0)
+        # 82 shares bid at the 20-day line (97, the 8% cap), stopped at 90.
+        assert aaa.realized_pnl == pytest.approx(82 * (90.0 - 97.0))
 
     def test_a_closed_idea_stops_re_emitting_its_sell(self, desk):
         """Every stopped-out idea used to re-emit the same SELL every morning."""
@@ -445,7 +457,7 @@ class TestExitsReachTheBook:
         report = desk.run(now=MONDAY_AFTER_CLOSE)
         assert report.track_record.closed == 1
         assert report.track_record.losses == 1
-        assert report.track_record.total_pnl == pytest.approx(-800.0)
+        assert report.track_record.total_pnl == pytest.approx(82 * (90.0 - 97.0))
         assert "Nothing has been closed yet" not in format_report(report)
 
     def test_a_closed_symbol_can_be_a_candidate_again(self, desk):
@@ -728,12 +740,25 @@ class TestSizingRefusals:
         assert "nan%" not in reason and "tick" not in reason
 
     def test_a_tick_sized_stop_is_still_reported_as_one(self, desk):
-        rec, reason = self._size(desk, snap("AAA", 100.0, atr_pct=0.00001))
+        rec, reason = self._size(desk, snap("AAA", 100.0, atr_pct=0.00001, sma20=99.998))
         assert rec is None and "inside the cent" in reason
 
     def test_an_atr_wider_than_the_price_says_so(self, desk):
-        rec, reason = self._size(desk, snap("AAA", 100.0, atr_pct=0.80))
+        """0.80 used to do it under the 2-ATR rule (100 − 160 < 0). The
+        structural stop's floor is 1 ATR, so only an ATR genuinely wider than
+        the price now pushes the stop through zero — which is what the name
+        of this test always claimed."""
+        rec, reason = self._size(desk, snap("AAA", 100.0, atr_pct=1.20, sma20=97.0))
         assert rec is None and "at or below zero" in reason
+
+    def test_a_wide_but_sane_atr_gets_a_wide_stop_not_a_refusal(self, desk):
+        rec, reason = self._size(desk, snap("AAA", 100.0, atr_pct=0.10, ret_3m=0.60, sma20=90.0))
+        # Bid at the 20-day line; the ATR floor is measured from the bid (9.0).
+        assert rec is not None and (rec.reference_price, rec.stop_price) == (90.0, 81.0)
+
+    def test_a_close_with_no_level_in_the_band_is_not_a_trade(self, desk):
+        rec, reason = self._size(desk, snap("AAA", 100.0, atr_pct=0.02, sma20=99.5))
+        assert rec is None and "no level to bid at" in reason
 
     def test_the_r_filter_runs_before_sizing(self, desk, monkeypatch):
         """The docstring claimed the opposite order for a load-bearing decision.
@@ -745,7 +770,7 @@ class TestSizingRefusals:
             raise AssertionError("sizing must not run on a rejected R")
 
         monkeypatch.setattr(advisor, "size_position", boom)
-        rec, reason = self._size(desk, snap("AAA", 100.0), min_r=99.0)
+        rec, reason = self._size(desk, snap("AAA", 100.0, sma20=97.0), min_r=99.0)
         assert rec is None and "below the 99.00R minimum" in reason
 
 
@@ -966,17 +991,26 @@ class TestRendering:
         assert opening in " ".join(format_report(report).split())
         assert opening in " ".join(to_markdown(report).split())
 
-    def test_the_reference_note_discloses_the_limit_buffer(self, desk):
-        """RISK 480.00 is measured at the reference; a fill at 100.30 risks 504.
-
-        REFERENCE_NOTE was written to disclose exactly that gap and never
-        reached the page.
+    def test_the_reference_note_says_what_the_reference_is(self, desk):
+        """REFERENCE_NOTE was written to disclose the gap between the reference
+        and the fill and never reached the page. Under the pullback rule the
+        reference *is* the bid, so the limit equals it and nothing above it can
+        reach the record; with no structure under the stub's close the bid is
+        the close itself.
         """
         report = desk.run()
         text = " ".join(format_report(report).split())
         assert " ".join(REFERENCE_NOTE.split()) in text
         aaa = next(r for r in report.buys if r.symbol == "AAA")
-        assert aaa.limit_price > aaa.reference_price
+        assert aaa.limit_price == aaa.reference_price == 97.0
+        assert aaa.entry_window_days == advisor.DEFAULT_ENTRY_WINDOW_DAYS
+
+    def test_the_close_rule_still_prices_the_limit_through_the_close(self, desk):
+        desk.cfg.entry_rule = advisor.ENTRY_CLOSE
+        report = desk.run()
+        aaa = next(r for r in report.buys if r.symbol == "AAA")
+        assert aaa.reference_price == 100.0 and aaa.limit_price > 100.0
+        assert aaa.entry_window_days == 0
 
     def test_the_r_column_is_the_r_the_list_was_ranked_on(self, desk):
         """The renderers recomputed R against the live stop the trailing rule moves.
@@ -1015,16 +1049,24 @@ class TestRendering:
         assert not math.isnan(report.total_risk)
         total = next(line for line in format_report(report).splitlines()
                      if line.strip().startswith("TOTAL"))
-        assert "nan" not in total.lower() and "320.00" in total
+        readable = advisor.planned_risk(report.buys[1])
+        assert "nan" not in total.lower() and f"{readable:,.2f}" in total
 
     def test_the_account_line_calls_the_risk_a_budget_and_prints_the_real_one(
             self, desk):
-        """"risk/trade 1.00%" described rows that risk 0.80% after the position cap."""
+        """"risk/trade 1.00%" described rows that risk less after the position cap.
+
+        The cap binds on both stub names, so the risk actually taken is below
+        the budget — 0.80% under the old 2-ATR stop, less under the structural
+        one — and the page must print the real figure, not the budget.
+        """
         report = desk.run()
         text = format_report(report)
         assert "risk budget 1.00%/trade" in text
         assert f"planned risk ${report.total_risk:,.2f}" in text
-        assert "0.80% of equity" in text
+        actual = report.total_risk / report.account_value
+        assert actual < 0.01
+        assert f"{actual:.2%} of equity" in text
 
     def test_a_risk_bullet_that_raises_costs_the_bullet_not_the_page(self, desk):
         """main() prints format_report unwrapped, so a renderer that raises
@@ -1378,3 +1420,101 @@ class TestThePanelSeesTheTrade:
         monkeypatch.setattr(advisor.DailyAdvisor, "deliberate", refuse_all)
         desk.run(llm=FakeSeats())
         assert len(seen) <= 1 * advisor.EXAMINE_MULTIPLE
+
+
+# ---------------------------------------------------------------------------
+# a hand list in place of the screen (2026-09-22)
+# ---------------------------------------------------------------------------
+
+@pytest.mark.unit
+class TestHandList:
+    def test_a_hand_list_replaces_the_screen_and_keeps_its_order(self, desk):
+        desk.cfg.symbols = ("BBB", "AAA")
+        report = desk.run()
+        assert desk.screens == []
+        assert [(c.symbol, c.rank) for c in report.candidates] == [("BBB", 1), ("AAA", 2)]
+        assert any("hand list" in n for n in report.notes)
+
+    def test_the_hand_list_still_goes_through_sizing(self, desk):
+        desk.cfg.symbols = ("AAA",)
+        report = desk.run()
+        assert [r.symbol for r in report.buys] == ["AAA"]
+
+    def test_the_flag_lifts_every_cap_that_would_cut_the_list(self, monkeypatch, capsys):
+        seen = {}
+
+        class Stub:
+            def __init__(self, cfg, llm=None):
+                seen["cfg"] = cfg
+            def run(self, when, **kw):
+                from tradingagents.live.advisor import DailyReport
+                return DailyReport(date="2026-09-23", dry_run=True)
+
+        monkeypatch.setattr(advisor, "DailyAdvisor", Stub)
+        advisor.main(["--no-llm", "--dry-run", "--symbols", "mu, anet,MU,sndk"])
+        cfg = seen["cfg"]
+        assert cfg.symbols == ("MU", "ANET", "SNDK")
+        assert cfg.top == cfg.max_candidates == cfg.max_new_per_sector == 3
+        assert cfg.swing_slots >= 3 and cfg.with_watchlist is False
+
+
+# ---------------------------------------------------------------------------
+# pinning the data session when the vendor is late (2026-09-22)
+# ---------------------------------------------------------------------------
+
+@pytest.mark.unit
+class TestPinnedDataSession:
+    def test_the_data_session_can_be_pinned_earlier(self):
+        order, data = sessions_for("2026-08-24", now=FRIDAY_AFTER_CLOSE, data="2026-08-20")
+        assert (order, data) == (date(2026, 8, 24), date(2026, 8, 20))
+
+    def test_it_cannot_be_pinned_to_a_close_that_does_not_exist_yet(self):
+        with pytest.raises(ValueError, match="does not exist yet"):
+            sessions_for("2026-08-25", now=FRIDAY_AFTER_CLOSE, data="2026-08-24")
+
+    def test_it_cannot_be_pinned_to_a_non_session(self):
+        with pytest.raises(ValueError, match="not a trading session"):
+            sessions_for("2026-08-24", now=FRIDAY_AFTER_CLOSE, data="2026-08-16")
+
+    def test_the_page_says_the_numbers_are_a_session_old(self, desk):
+        report = desk.advisor().run(None, now=FRIDAY_AFTER_CLOSE, data="2026-08-20")
+        assert report.data_date == "2026-08-20" and report.date == "2026-08-24"
+        assert any("pinned to the 2026-08-20 session" in w for w in report.warnings)
+
+    def test_unpinned_runs_say_nothing_about_it(self, desk):
+        report = desk.run()
+        assert not any("pinned" in w for w in report.warnings)
+
+
+@pytest.mark.unit
+class TestIgnoreHoldings:
+    """只做推荐: the account's balance sizes the ideas; what it holds must not
+    veto or shrink them."""
+
+    def test_by_default_a_held_name_is_skipped(self, desk):
+        desk.account.holdings.append(Holding(symbol="AAA", quantity=100.0))
+        report = desk.run()
+        assert "AAA" not in [r.symbol for r in report.buys]
+
+    def test_a_held_name_is_still_proposed_when_holdings_are_ignored(self, desk):
+        desk.account.holdings.append(Holding(symbol="AAA", quantity=100.0))
+        desk.cfg.ignore_holdings = True
+        report = desk.run()
+        assert "AAA" in [r.symbol for r in report.buys]
+        assert any("holdings ignored by request (AAA)" in n for n in report.notes)
+        assert report.account_value == 100_000.0
+
+
+@pytest.mark.unit
+class TestThePanelSeesThePlanPrice:
+    def test_the_panel_is_handed_the_bid_not_the_close(self, desk):
+        """The risk officer read "at ~$1,766.64" for a plan that bid 1,599.95
+        and vetoed a unanimous Buy for having already reached its target."""
+        from tradingagents.live.brain import PanelResult
+        desk.snaps["AAA"] = snap("AAA", 100.0, sma20=97.0)
+        adv = desk.advisor()
+        panel = StubPanel(PanelResult(symbol="AAA"))
+        adv.panel = panel
+        adv.run(now=FRIDAY_AFTER_CLOSE)
+        assert "AAA" in panel.calls
+        assert panel.prices[panel.calls.index("AAA")] == 97.0

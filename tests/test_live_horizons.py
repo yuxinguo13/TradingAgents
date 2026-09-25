@@ -19,7 +19,6 @@ from tradingagents.live import horizons
 from tradingagents.live.horizons import (
     CoreHolding,
     core_budget,
-    DayTradeIdea,
     daytrade_candidates,
     free_slots,
     is_review_day,

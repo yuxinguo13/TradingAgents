@@ -26,7 +26,7 @@ confidence is worth less than one read out loud with its assumptions attached.
 from __future__ import annotations
 
 import math
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 
 # ---------------------------------------------------------------------------
 # primitives

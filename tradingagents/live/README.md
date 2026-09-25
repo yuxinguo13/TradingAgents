@@ -270,6 +270,37 @@ classic way this formula blows up an account) and wrong-side stops.
 `r_multiple` (reward ÷ risk) is preferred over `expectancy` for ranking, because
 expectancy is linear in a win-probability that is an unvalidated guess.
 
+### Where the entry and the stop are
+
+Until 2026-09-22 the entry was the last close (limit a hair through it, so it
+filled at the open every morning) and the stop was 2 ATR under that. Emily's
+verdict on the first board built that way: 建议价位有点高，止损价位有点低. She
+was right on the arithmetic — 12–15% of risk paid before the trade had any
+structure under it, and DELL came out at 0R because its target was the price.
+
+The default is now `entry_rule = pullback` (`live/sizing.py`):
+
+- **The bid** is the highest structure — the 20-day line, the 50-day line, or
+  a hair above any swing low (`charting.pivots`) — that sits between
+  `MIN_PULLBACK_ATRS` (1) and `MAX_PULLBACK_ATRS` (3) ATR under the close.
+  Nearer than that an ordinary morning fills it (the first cut took the
+  *nearest* swing low and put 24 of 50 bids inside one ATR of the print);
+  farther is a different trade. Nothing in the band means no bid, and the page
+  says so. The bid *is* the limit and *is* the reference price: R and P&L are
+  measured from it, and a bid the tape never reaches expires unfilled and is
+  not scored at all.
+- **The stop** sits `STRUCTURE_BUFFER` (1%) under the nearest swing low
+  *below the bid* and never nearer than `STOP_ATR_FLOOR` ATRs — the floor is
+  what stops a support one tick under the entry from manufacturing a 30R trade.
+- **The bid stands** for `ENTRY_WINDOW_DAYS` sessions (`Recommendation.
+  entry_window_days`); `execute` keeps placing it until the window ends or the
+  quote goes through the stop, whichever first.
+
+`entry_rule = close` (`TRADINGAGENTS_ADVISOR_ENTRY_RULE=close`) is the old
+behaviour, kept for comparison, not for use. Core top-ups changed the same
+day for the same reason: `execute.CORE_LIMIT` bids 0.995× the print instead
+of 1.002× through it (`TRADINGAGENTS_CORE_LIMIT`).
+
 ---
 
 ## News and policy
@@ -361,10 +392,31 @@ gets skipped on the names where it is least convenient.
 Anything that changes *what the report proposes* is settable as
 `TRADINGAGENTS_ADVISOR_<FIELD>` — `SWING_SLOTS`, `MAX_OPEN_PER_SECTOR`,
 `DAYTRADE_TOP`, `TOP`, `RISK_PCT`, `MIN_R`, `ATR_STOP_MULT`, `HORIZON_DAYS`,
+`ENTRY_RULE`, `STOP_ATR_FLOOR`, `MAX_PULLBACK_ATRS`, `ENTRY_WINDOW_DAYS`,
 `WRITE_PAGES`, `WITH_FUNDAMENTALS`, `MAX_FUNDAMENTALS`, `CORE_SEED` and the
 rest of `AdvisorConfig._ENV_FIELDS`. A value that will not parse logs a warning
 and keeps the default rather than silently applying a zero. `--swing-slots` and
 `--no-pages` are also CLI flags, the two worth reaching for mid-session.
+
+**A hand list instead of the screen.** `--symbols MU,ANET,SNDK` replaces the
+universe screen with those names in that order and runs everything else on
+them unchanged — the morning's news, the policy backdrop, earnings, the
+sizing rule, and every seat of the panel. Every cap that could cut the list
+(slots, sector, panel budget) is lifted to its length, and the watchlist is
+skipped. With `--dry-run` nothing is booked: it is the way to put a list you
+wrote yourself in front of the analysts before deciding anything.
+
+    python -m tradingagents.live.advisor --no-llm --panel claude \
+        --symbols MU,ANET,SNDK,MSFT --dry-run --no-pages
+
+**When the vendor is late.** The data session is always the last completed
+one, and a name whose history stops a session short is skipped rather than
+priced off an older close. That is right by default and useless on the night
+the vendor never publishes the close at all (2026-09-22: volume-only bars
+until past midnight, every candidate skipped). `--data-date 2026-09-21` pins
+the data session to the last close that *is* published; it can only point
+earlier, never at a session that has not closed, and the page carries a
+warning that every level on it is a session old.
 
 ### Language and names
 
@@ -431,7 +483,11 @@ prevent:
   from the data day handed every entry an extra session. Stale ones get their
   own section with R recomputed at the current price *and the distance to the
   stop beside it* — because R rises as a name falls toward its stop, and an 8R
-  entry sitting 1% above its own stop is not an 8R trade.
+  entry sitting 1% above its own stop is not an 8R trade. An idea issued under
+  the pullback rule carries `entry_window_days`: a bid at the 20-day line means
+  the same thing for days, so it is placed again each session inside the
+  window — unless the quote has gone through the stop, when the structure it
+  leaned on is gone and the bid is refuted, not cheap.
 
 The reconciliation also runs inside the daily report, as its own section, every
 day. Behind a command it would be a command nobody remembers; on the page it is
@@ -443,6 +499,54 @@ the fallback balance it would report every open idea as missing.
 The bridge never writes to the book. The advisor owns those records; a bridge
 that edited them could make the account and the track record agree by changing
 the wrong one.
+
+## Scheduling: two LaunchAgents, and the Mac underneath them
+
+    scripts/desk_cron.sh report   # weekdays 15:00 PT — next session's page, panel seated
+    scripts/desk_cron.sh submit   # weekdays 06:25 PT — places what the book is missing, ~09:35 ET
+    scripts/desk_cron.sh close    # weekdays 12:30 PT — exits before the bell; retries what the morning missed
+
+`com.tradingagents.desk-report`, `com.tradingagents.desk-submit` and
+`com.tradingagents.desk-close` all call that one script; the logs are
+`~/.tradingagents/logs/desk-{report,submit,close}.log`. What actually reached
+the venue each day is also filed as `~/.tradingagents/reports/<date>-orders.log`,
+next to that session's page — the page says what *should* have been placed,
+this is the only record of what *was*. Off switch, instant and independent of
+launchd: `touch ~/.tradingagents/STOP`.
+
+The `close` run exists for two things the morning run cannot do: an exit
+signal that fires against the day's prices becomes a sell in the same session
+it fired, and a core top-up the morning failed to place — the first order after
+a wake was refused by the venue two mornings running — gets a second attempt.
+Same `execute --submit`, same gate; nothing about it is a new rule. Its plist
+is written but must be loaded by hand once
+(`launchctl load ~/Library/LaunchAgents/com.tradingagents.desk-close.plist`).
+
+The scheduling is not the hard part. macOS is, and each of these failed
+silently before it was handled:
+
+- **launchd defers; it does not catch up.** An event whose minute passes while
+  the Mac is asleep fires at the *next* wake — on 2026-09-15 the 15:00 report
+  started at 15:07. The submit job is on time only because
+  `pmset repeat wakeorpoweron MTWRF 06:25:00` wakes the machine in that minute.
+- **A wake is not staying awake.** This Mac re-sleeps a minute later, so the
+  script holds `caffeinate -i -s -w $$` for its whole life. On battery with the
+  lid closed that holds nothing: `-s` counts only on AC, and `-i` stops idle
+  sleep, not the clamshell and maintenance sleeps that actually fire. The script
+  now says so in the log when it starts on battery, because the symptom
+  otherwise is just a run that looks slow.
+- **Awake time is not wall time.** `time.sleep` counts only seconds the machine
+  was awake, so a ten-minute wait for the open took seven hours and started
+  `execute` twenty minutes after the close. `live/waitopen.py` waits against the
+  wall clock instead and tells the caller which of three things happened: place
+  (0), no session within twenty minutes (3), or the session ended while we slept
+  (4) — that last one reconciles read-only rather than feeding the gate a column
+  of `market is closed` refusals.
+- **Not under Desktop/Documents/Downloads.** macOS TCC gives a LaunchAgent
+  `Operation not permitted` there and the job dies before Python starts, while
+  the same script runs fine from a terminal that was granted access long ago.
+  Hence `~/Stock/TradingAgents`. Do not fix this by granting Full Disk Access
+  to `/bin/zsh`.
 
 ## State
 

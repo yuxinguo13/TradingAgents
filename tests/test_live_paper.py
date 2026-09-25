@@ -3,7 +3,7 @@
 import pytest
 
 from tradingagents.live import paper as P
-from tradingagents.live.broker import BUY, COVER, LIMIT, MARKET, SELL, SHORT
+from tradingagents.live.broker import BUY, COVER, LIMIT, SELL, SHORT
 
 
 @pytest.fixture

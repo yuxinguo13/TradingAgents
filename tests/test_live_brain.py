@@ -10,7 +10,7 @@ from datetime import datetime, timedelta, timezone
 import pytest
 
 from tradingagents.live.brain import (
-    Panel, PanelResult, Snapshot, Trigger, Vote, build_evidence, triggers,
+    Panel, Snapshot, Trigger, Vote, build_evidence, triggers,
 )
 from tradingagents.live.investopedia import Account, Holding
 from tradingagents.live.newsfeed import NewsItem

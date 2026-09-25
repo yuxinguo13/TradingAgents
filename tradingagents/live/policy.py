@@ -103,8 +103,6 @@ CATEGORIES: dict[str, tuple[str, ...]] = {
     ),
 }
 
-POLICY_CATEGORIES: tuple[str, ...] = tuple(CATEGORIES)
-
 # Every policy story shares one fingerprint namespace. NewsMonitor namespaces
 # by ticker on purpose — the same chip-rally headline is a separate story for
 # MU and for NVDA — but a tariff announcement returned by both the "trade" and
