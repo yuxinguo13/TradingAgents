@@ -1,0 +1,20 @@
+{
+ "date": "2026-09-25",
+ "trades": {},
+ "principles": {},
+ "calls": {},
+ "calls_all": {
+  "n": 0,
+  "hits": 0,
+  "r_sum": 0.0,
+  "alpha_sum": 0.0,
+  "alpha_n": 0
+ },
+ "reports": 0,
+ "settled": [],
+ "closed": [],
+ "notes": [
+  "账上还没有平掉的仓位；交易这一栏要等第一笔出场",
+  "还没有满 5 个交易日的日报可以结算"
+ ]
+}
