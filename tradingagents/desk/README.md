@@ -12,6 +12,7 @@ scheduled sessions are in the repo's `CLAUDE.md`.
 | `python -m tradingagents.desk log entry.json` | Append a decision or post-mortem to `desk/trade/decisions.jsonl`. |
 | `python -m tradingagents.desk report` | The report pack: macro board, policy, sectors, every prominent name scored on the reference rule, charts, a page per name. Never reads an account. |
 | `python -m tradingagents.desk advise` | The advice pack for a portfolio typed into a file: rule verdicts, levels, alerts. |
+| `python -m tradingagents.desk site [--date D]` | The report as a web site under `desk/report/site/<date>/`: an index with every ticker linked, and a page per name with the interactive chart, Claude's write-up, the code's reading and the full analysis. `files.json` lists what to publish. |
 | `python -m tradingagents.desk state pull\|push` | Sync `~/.tradingagents/desk/` with the `desk-state` branch, so a fresh cloud machine every morning still has the book, the log and the portfolio file. |
 | `python -m tradingagents.desk trade` | The old fully rule-based trader. Kept as a fallback when nobody is reading the pack. |
 

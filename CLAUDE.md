@@ -81,8 +81,15 @@ If a pull or push reports a failure, say so in the reply; do not retry by hand.
    sector read, the policy and macro context with links, the names to avoid,
    and 今日要闻与判断. Where your score differs from the reference score, say why.
    This task never reads any account or portfolio.
-4. `python -m tradingagents.desk state push`, then reply with the final
-   report in full and attach the pages for the top ideas.
+4. `python -m tradingagents.desk site --date <date>` — builds the report as
+   a web site under `~/.tradingagents/desk/report/site/<date>/` (index plus a
+   page per name with the chart, your write-up, the code's reading and the
+   full analysis). Publish it with the Artifact tool: `file_path` is that
+   folder's `index.html`, `root` is the folder, `files` is the list in its
+   `files.json`; icon `chart`. If this session has no Artifact tool, say so
+   and skip the publish.
+5. `python -m tradingagents.desk state push`, then reply with the artifact
+   link first, followed by the final report in full.
 
 ### Task 3 — advise (weekdays, after the report)
 

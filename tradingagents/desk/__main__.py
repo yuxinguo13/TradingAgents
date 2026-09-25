@@ -10,6 +10,7 @@ USAGE = """usage: python -m tradingagents.desk <task> [options]
   order    place what an intent file asks for, through the gate (order intent.json)
   log      append a decision / post-mortem entry to the decision log
   state    pull | push the desk's state directory from / to the desk-state branch
+  site     the report as a web site (index + a page per name), ready to publish
   report   the market, sector by sector, with no account in view
   advise   what to do with a portfolio you typed in
   trade    the rule-based trader (fallback when nobody is reading the pack)
@@ -34,6 +35,8 @@ def main(argv: list[str] | None = None) -> int:
         from .orders import main_log as run
     elif task == "state":
         from .state import main as run
+    elif task == "site":
+        from .site import main as run
     elif task == "report":
         from .report import main as run
     elif task == "advise":
