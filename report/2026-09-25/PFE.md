@@ -1,0 +1,196 @@
+# PFE · 辉瑞（Pfizer）
+
+_医疗 · 数据截至 2026-09-24 收盘 → 面向 2026-09-25 开盘_
+
+[← 回到 2026-09-25 当日报告](../2026-09-25.md)
+
+> 趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌。
+
+## 一、价格与图形
+
+```text
+       PFE · 近 126 个交易日（日线收盘）
+29.02 ┤                                                                   ╭╮
+28.58 ┤                                                                  ╭╯╰╮
+28.13 ┤                                                             ╭────╯  │     ╭
+27.69 ┤                                                             │       ╰─────╯
+27.25 ┤   ╭─╮                                                      ╭╯
+26.81 ┤  ╭╯ │    ╭╮                                             ╭╮╭╯              ·
+26.36 ┤──╯  ╰────╯╰╮·······                                    ╭╯╰╯           ····
+25.92 ┤·····       ╰─╮     ······╭─╮····╭╮                    ╭╯           ···
+25.48 ┤              ╰───────╮ ╭─╯ │ ╭╮ │╰─╮····              │        ····::::::::
+25.03 ┤                      ╰─╯   ╰─╯╰─╯  │   :·······:::╭───╯:::·····
+24.59 ┤               :::::::::::::::::::::╰╮::      ╭────╯·······
+24.15 ┤ ::::::::::::::                      ╰╮      ╭╯
+23.71 ┤:                                     │╭──╮╭─╯
+23.26 ┤                                      ╰╯  ╰╯
+      └────────────────────────────────────────────────────────────────────────────
+       2026-03-25                       2026-06-25                       2026-09-24
+       · SMA50   : SMA200   ─ close
+```
+
+```text
+       PFE · 近 21 个交易日（放大看最近节奏）
+29.02 ┤      ╭╮
+28.83 ┤      │╰╮
+28.63 ┤─╮   ╭╯ │
+28.43 ┤ │  ╭╯  ╰╮          ╭
+28.24 ┤ ╰╮ │    │         ╭╯
+28.04 ┤  ╰─╯    │         │
+27.85 ┤         ╰─╮       │
+27.65 ┤           ╰──╮ ╭──╯
+27.46 ┤              ╰─╯
+      └─────────────────────
+       2026-08-25 2026-09-24
+```
+
+成交量近 63 日： `▇▆█▆▇▄▂▃▄▅▅▂▂▂▃▄▅▄█▆▄▅▂▂▂▅▂▂▂▂▁▅▄▁▂▂▁▃▁▆▂▃`
+
+### 图形读数
+
+- **均线排列**：多头排列 — 现价距 20 日 28.04（+1.3%）、50 日 26.79（+6.0%）、200 日 25.67（+10.7%）
+- **形态结构**：下降结构 — 更低的高点 + 更低的低点；前高 29.21 → 28.19（-3.5%）、前低 27.64 → 27.25（-1.4%）
+- **动能**：RSI(14) 63，偏强；近一月的斜率慢于近三月（月 +1.6% vs 季 +20.2%），涨势在放缓
+- **波动**：日均真实波幅约为价格的 1.7%；按本报告 2 ATR 的止损惯例，一个 R 相当于 3.4% 的价格距离
+- **位置**：距 52 周高点 -2.1%，距 52 周低点 +28.8%
+- **量能**：最新一日成交量为 20 日均量的 1.0 倍，量能正常
+- **相对强度**：近一月跑赢 标普500 1.2 个百分点
+- **支撑 / 阻力**：最近的摆动低点 27.64，摆动高点 28.58（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
+
+**我的读图结论**：趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌
+
+_以上每一条都是对已经发生的价格的描述。均线、RSI、摆动结构全部是滞后指标，它们能说明现在处于什么状态，不能说明下一步。你自己在图上看到的东西，和这里写的不一致时，以你看到的为准——然后去查是哪个数字有问题。_
+
+## 三、财报与基本面
+
+市值 $1,619.28亿 · 行业 Healthcare / Drug Manufacturers - General · TTM 营收 $636.96亿 · TTM EPS 0.77 · 股息率 6.10% · Beta 0.30 · 空头占流通股 2.7%
+
+- **估值**：TTM 市盈率 36.9 倍；前瞻市盈率 9.8 倍（市场预期未来一年盈利上升）；市销率 2.5 倍；EV/EBITDA 8.4 倍；PEG 12.89（高于 2，价格已经计入了不少增长）。
+- **增长**：最新季度营收同比 +2.6%；最近 7 次财报里 7 次超预期。
+- **盈利质量**：毛利率 74.7%、营业利润率 27.9%、净利率 6.8%、ROE 5.0%。
+- **资产负债**：现金 $117.04亿；有息负债 $634.80亿；负债/权益 74.3%（负债适中）；流动比率 1.27；自由现金流 $124.86亿，为正。
+- **卖方预期**：26 位分析师覆盖；平均评级「买入」（2.46/5，1 为最看多）；目标价均值 28.88（较现价 +1.6%），区间 25.00–35.75。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
+
+**分季度损益**（季度数据，最新在左）
+
+| 指标 | 2026-06-30 | 2026-03-31 | 2025-12-31 | 2025-09-30 | 2025-06-30 |
+|---|---:|---:|---:|---:|---:|
+| 营收 | $150.34亿 | $144.50亿 | $175.57亿 | $166.54亿 | $146.53亿 |
+| 毛利率 | 72.8% | 75.4% | 70.0% | 74.9% | 74.2% |
+| 营业利润率 | 23.5% | 29.5% | 21.0% | 33.2% | 25.7% |
+| 净利率 | -1.6% | 18.6% | -9.4% | 21.3% | 19.9% |
+| 净利润 | -$2.48亿 | $26.87亿 | -$16.48亿 | $35.41亿 | $29.10亿 |
+| 摊薄EPS | -0.04 | 0.47 | -0.29 | 0.62 | 0.51 |
+
+**分年度损益**（年度数据，最新在左）
+
+| 指标 | 2025-12-31 | 2024-12-31 | 2023-12-31 | 2022-12-31 |
+|---|---:|---:|---:|---:|
+| 营收 | $625.79亿 | $636.27亿 | $595.54亿 | $1,011.75亿 |
+| 毛利率 | 74.3% | 71.9% | 58.1% | 66.1% |
+| 营业利润率 | 27.8% | 23.5% | 7.4% | 37.7% |
+| 净利率 | 12.4% | 12.6% | 3.6% | 31.0% |
+| 净利润 | $77.71亿 | $80.31亿 | $21.19亿 | $313.72亿 |
+| 摊薄EPS | 1.36 | 1.41 | 0.37 | 5.47 |
+
+**财报兑现记录**
+
+| 财报日 | 预期EPS | 实际EPS | 超预期 |
+|---|---:|---:|---:|
+| 2026-11-03 | 0.76 | — | 尚未公布 |
+| 2026-08-04 | 0.68 | 0.77 | +12.9% |
+| 2026-05-05 | 0.72 | 0.75 | +3.9% |
+| 2026-02-03 | 0.57 | 0.66 | +16.2% |
+| 2025-11-04 | 0.63 | 0.87 | +37.4% |
+| 2025-08-05 | 0.57 | 0.78 | +35.9% |
+
+_财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会滞后，TTM 窗口是厂商口径而非公司财年口径。以上任何一个数字如果会改变你的决定，请点开本页下方的 SEC EDGAR 链接看原文。_
+
+**财报日历**：下次财报 **2026-11-03**（约 39 天后）；上次财报 2026-08-04，超预期 +12.9%。财报日是这套止损体系唯一无法覆盖的风险：跳空会直接穿过止损价。
+
+## 四、消息面（过去 24 小时）
+
+| 时间 | 材料度 | 倾向 | 标题 | 来源 |
+|---|---:|---|---|---|
+| 7h 前 | 12 | 偏空 | [Pfizer’s Lyme disease vaccine shows 70% efficacy; Texas man sentenced to 12.5 years in $61.5M Medicare telemarketing fraud scheme; Novo Nordisk launches Wegovy subscription model – Morning Medical Update - Medical Economics](https://news.google.com/rss/articles/CBMi1gJBVV95cUxPVnU1X0hLdnNoem8xSWwtUm9LQ28wXzM4aUFsUUN2U1ZsM0Fwb2dIWmNPdGphRVd3cm9RUzBtT0gzYVlyYUV5aHBnOEt4ck9CVnV0NEs5NTJkV2d1WnZSaGs3bUJYUHlzVVBMV2xwRDhnakZiWVlkNG5kTFBmTm0zNHJGNDlhdHhNcVNEQUtaX0ppdlZ1SFlXekZ0Z0Rtemh4TktrWGdPN1VIYnhGZmZnWURLWlhQTjNhUXN0RkV5eE01ZnhhVHd0RXlFNm5PNDBQTjQyOWpHMWRpTUJfV0Y5NjBqcmJvZ0FGWGtZQjdtZW5LcFI4S3U5ZHV6Zl9uc0NZQkpEcDQ1TjRiTnk3MjBGYS1RdjhNaVhvQjVveW5FRFpWQkVicHE1MVlLbURUZTFObTZtS19qN3JrdDF5c0RHb19WZzNTQW5OcWU2MEdGR3pqREVjQWc?oc=5) | Medical Economics |
+| 18h 前 | 8 | 中性 | [Pfizer stock gains as Q1 profit rises 6.6 percent - AD HOC NEWS](https://news.google.com/rss/articles/CBMirAFBVV95cUxNdjZpTm9QcU5XUkNWbnB5OHNGYy1TUTFTdFd5Uk10RzVPU1JtQ3ZkTkNBSm9VWDd3cDNfMzE0U3RWZlRJdmUyZjkwanBPcXdWclNnbk5QZFFTc1UtTFNkajktSDhXQVZ3cGpZSEJKTHlBNjVadmNyaUk2dTI1dm1fQmVZLUpBZlJHdm40VW8ySG9XZTVlc3RyU2hzNDBvV0J4alVpOXpocjgtWThi?oc=5) | AD HOC NEWS |
+| 45h 前 | 6 | 中性 | [Pfizer, Kraft, and UPS All Yield More Than 6%. Which of These Dividend Stocks Is the Safest Option Today? - The Motley Fool](https://news.google.com/rss/articles/CBMi2wFBVV95cUxQMVNJRTA1SkFtdWFDaUdiWGVWOXVzU3V5cExHNGFiZDVSU1k3MWZuV3lGaWEwSng5RFBPODNsWERxMk5lUnJLSmpxOFNQOUs5eEdwQkNzb3E3WHFMSVhKYXVobkJJbElPSGpOQV9XZVc2MXozM1J3bVZlRWRFQ3p1QjltSk45bEJXTUFMWk9QYVJyN1FWZTNkQ2xJSC1VUXYzX2plU0laSng5X1FCRHBOMWJnTGFVV1MwQ2tkVVE5cnkzYVhZUG54U1c1SW8zYWJZSDJtbkR5bGQ1bTg?oc=5) | The Motley Fool |
+| 46h 前 | 5 | 中性 | [Pfizer (PFE) Stock May Be Overvalued After Overseas Pricing Deal - Yahoo Finance](https://news.google.com/rss/articles/CBMinAFBVV95cUxNcHo4Q19nNUItc0JqTXpBakZydkN0YkZfZW1xdWxDbGN3dy1DcHItV2RMdnZnSzBqN0E1TVN6T1V3SDUzS3puOTNEZ2tvcE9wWXUxakUxNVZVNWxtcHdLZ2N6T05DVFRUc1c0S2c4cm1meW81LWtIZWFGLUlfQjV6bzJSM3k2TlBjSE05S3pSdzd5WUtUTWc4VFQ5c3o?oc=5) | Yahoo Finance |
+| 3h 前 | 0 | 中性 | [Pfizer stock heads into the open after a 0.82 percent gain - AD HOC NEWS](https://news.google.com/rss/articles/CBMitwFBVV95cUxPUmROR2tWZkFKc2RwOHh4dldRWGVOelAyaHA3M2lhNVNIb3lxWllSaHpiUXpIc3F5NVlyczdncUlKNGN1NXMzTHloZWJwU3pFM0M0R2hQcTJ1THAwajVNTzVvRUd6eDRHSm83V1lBNVRaZDI3dG11d3VjbWN6SThKTzl6T2RlVVRrb1Q1SHJRazJMTjZFUkpTSWZVMVljT0ZOSnBhcWZraFFxNmZ2SUR1WW9idjBQVEk?oc=5) | AD HOC NEWS |
+| 11h 前 | 0 | 中性 | [Pfizer: Poised For Gains With A New Drug Pipeline And Cost-Cutting Plans (NYSE:PFE) - Seeking Alpha](https://news.google.com/rss/articles/CBMisgFBVV95cUxQbUd0SWZQS081VXkyWDNSbk8zNmJPM0xKY3ZpdXhwVlFyS3I5MmcxMnRXVS11b0ZvRmhoVjU3UDdsdTFPei1aZ1Q2amFlZXlTTEhZOEJtdmJhWF9YaGdqOUx6SG44cVNtSFgtME0tRHo4RHpqWnRuNHI5a291ZDdvdXFLTHptZDE1bWhHb0tQNW9vNG0wblVXaThTVjUxeEl1Nmwyc3NTMkZNbGVPMXZlME9R?oc=5) | Seeking Alpha |
+| 16h 前 | 0 | 中性 | [Pfizer or AbbVie: Which Big Pharma Stock Is the Better Pick? - TradingView](https://news.google.com/rss/articles/CBMitAFBVV95cUxPeno4X29ZakZpQ1hMYVh6Z040bDJzTVlONVhaT1A1bDZLQjNmMV9pd25tY0JnbmcydC1KdlBFM2xUYU8xbGZjOTVfUUNIS3oxRVc5TENHcUVXdU42UTdYcW5ydU8yeXFocWlHR0tFR3ZqRDlZT0VUaVRXYU1kdmxXMFhIS3hCVlFZTVM5WVNaVC0ySUFuZUdzRndnQ09CVGFiemYzNmRoeE80QThXc0Mtendpei0?oc=5) | TradingView |
+| 19h 前 | 0 | 中性 | [Bristol Myers Squibb vs. Pfizer: Which Healthcare Stock Is a Better Buy in 2026? - Yahoo Finance](https://news.google.com/rss/articles/CBMilgFBVV95cUxQaG4xTTFLNVotTkxrWXBqbjlxcVg4MEVfZVd4RkhtY2RLYTJzNzBiX09YN0dNZkpCUThOOVlxQmR4ckZyWGozT0xVWFpUejA3Uk5OMC1GaG9CRjdYenVxaGZDSnN3b2VaNFphUTlia21YUy1XbHNDUWJvSE9la2h0Y1N1UEJRUkhWdTZrR2o5TkcxYVhIb2c?oc=5) | Yahoo Finance |
+| 26h 前 | 0 | 中性 | [Pfizer stock heads into the open after a 0.23 percent gain - AD HOC NEWS](https://news.google.com/rss/articles/CBMivgFBVV95cUxOMnc3eG92clpvSFRkTk1rU0NhUVBWS2ZvbEhsRDdIaGI4VUthZVFRM3o1Mm82VzUtX2p0eElwWFpfTFlodXVRMHc3bmdUYzYzN05aTnhYRm1oMERPcGY4YnYta0hMT1pLcUNDMXBiaE94VjdSZUdMb0syYzBXa0hIU25vVDdjdG51UW1RSWZKbjZrRjh3SjFHUFQyNmVya1A1WWFuU0ZLYjZEMGFjTkxLd2xMRDZTLU52ME1FNnd3?oc=5) | AD HOC NEWS |
+| 34h 前 | 0 | 中性 | [Pfizer stock ends the day at USD 27.94 at the close - AD HOC NEWS](https://news.google.com/rss/articles/CBMirwFBVV95cUxOU1FZWVN1RlJhelNjNURMSGRlWTNWQ0dDLUc4Ni1MXzZXbHJDQnpLN19jMXFEc2ZjSUw0NHlrRElwMzdQUVB5ZDdpaEgzMGs1eE5QNEMwSDFXTU15MGdkMl9ua2VoNllqYk1WTEk5UnVmX3RacmVOMm9WMFpZTmc4T3N4Q1kwRnpxWWluRTdaQVUxZWpGMk1wdlpfUG5XSno5Z3NjNmp1QWNYa1JZSUE0?oc=5) | AD HOC NEWS |
+| 37h 前 | 0 | 中性 | [Pfizer stock trades at INR 4,025.50 after India drug crackdown - AD HOC NEWS](https://news.google.com/rss/articles/CBMivgFBVV95cUxPNzdZclppYnItbG1Xc0pXcldXZ08wSVZyMEJWMmZXTWJ0bXJCMXd4ajdFVWxQc1Q2YU9VekdHcXU2SUFiOFQ1cnk5LTVSQXZpb1NWOGh2Sm1rN3BmQ0FObkI1NmdBS3hnQjRaVE1MbmRlcThqUFVIN0NYX0JtRXJjZFBwU0pkNlkwaC1JbW5jaE1Tb2x1NGpuOFNtY0dKbDY5RkpLWmFqdVZPWl92SG9PX3hEaThCUDFBa1hobGR3?oc=5) | AD HOC NEWS |
+| 39h 前 | 0 | 中性 | [What Is The Best Case For Pfizer Stock? - Trefis](https://news.google.com/rss/articles/CBMinwFBVV95cUxNRVJmSl9LbzJmeGFuN19iTkFMLS1FX1NqNUp3UGREYXFnX2Q2T0g2ZGVqVlktSVNaT0RKYXo5NThSMHZrOExKM1dFS3g3RDZRODd4Zk80elpJWDVyYnZ5amQzMFA3MDFjNEVUQXNPVy1oaDdwX0pyM3RXUWNJSUhkcXU5b0l1QnBLWGNPSlRpOU1mSmNCcEJoV0pCQXNDdnc?oc=5) | Trefis |
+
+_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+
+## 五、反方观点与风险
+
+_以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
+
+- 摆动高低点都在下移，属于下降结构；在出现一个更高的低点之前，任何反弹都还只是反弹。
+- 24 小时内的利空标题：Pfizer’s Lyme disease vaccine shows 70% efficacy; Texas man sentenced to 12.5 years in $61.5M Medicare telemarketing fraud scheme; Novo Nordisk launches Wegovy subscription model – Morning Medical Update - Medical Economics（Medical Economics）
+
+## 六、原始数据（本页所有计算的来源）
+
+最近 15 个交易日的 OHLCV：
+
+| 日期 | 开 | 高 | 低 | 收 | 涨跌 | 成交量 |
+|---|---:|---:|---:|---:|---:|---:|
+| 2026-09-02 | 28.79 | 29.09 | 28.71 | **29.02** | +1.6% | 39,277,900 |
+| 2026-09-03 | 29.09 | 29.21 | 28.44 | **28.81** | -0.7% | 26,724,300 |
+| 2026-09-04 | 28.58 | 28.69 | 28.38 | **28.45** | -1.2% | 23,782,900 |
+| 2026-09-08 | 28.02 | 28.15 | 27.72 | **27.79** | -2.3% | 31,772,900 |
+| 2026-09-09 | 27.76 | 27.98 | 27.57 | **27.78** | -0.0% | 29,128,600 |
+| 2026-09-10 | 27.69 | 27.75 | 27.40 | **27.65** | -0.5% | 28,805,300 |
+| 2026-09-11 | 27.80 | 27.85 | 27.42 | **27.72** | +0.3% | 25,557,200 |
+| 2026-09-14 | 28.08 | 28.19 | 27.69 | **27.72** | +0.0% | 28,571,600 |
+| 2026-09-15 | 27.62 | 27.66 | 27.25 | **27.55** | -0.6% | 40,426,600 |
+| 2026-09-16 | 27.64 | 27.69 | 27.36 | **27.46** | -0.3% | 26,040,900 |
+| 2026-09-17 | 27.62 | 27.81 | 27.55 | **27.64** | +0.7% | 29,013,800 |
+| 2026-09-18 | 27.64 | 27.66 | 27.34 | **27.66** | +0.1% | 75,593,400 |
+| 2026-09-21 | 27.65 | 27.92 | 27.53 | **27.74** | +0.3% | 28,769,800 |
+| 2026-09-23 | 27.96 | 28.23 | 27.84 | **28.18** | +1.6% | 33,812,900 |
+| 2026-09-24 | 28.20 | 28.85 | 28.20 | **28.41** | +0.8% | 34,745,900 |
+
+## 七、自己去查（本页不做独立验证）
+
+**行情与图形**
+- [Yahoo Finance 行情](https://finance.yahoo.com/quote/PFE) — 本报告所有价格与均线的来源，先对这里
+- [TradingView 图表](https://www.tradingview.com/chart/?symbol=PFE) — 可画线、可换周期，用来复核本页的 ASCII 图
+- [Finviz 快照](https://finviz.com/quote.ashx?t=PFE) — 一屏看完估值、技术与同业对比
+- [StockCharts 技术面](https://stockcharts.com/h-sc/ui?s=PFE)
+- [Barchart 观点](https://www.barchart.com/stocks/quotes/PFE/opinion) — 把十几个技术指标折算成一个多空票数
+
+**财务与估值**
+- [StockAnalysis 财务报表](https://stockanalysis.com/stocks/PFE/financials/) — 十年利润表/资产负债表/现金流，免费且不用登录
+- [Yahoo 财务](https://finance.yahoo.com/quote/PFE/financials) — 本页财报数字的来源
+- [Yahoo 关键统计](https://finance.yahoo.com/quote/PFE/key-statistics) — 估值倍数、利润率、资产负债的完整版
+- [Macrotrends 长期趋势](https://www.macrotrends.net/stocks/charts/PFE/x/revenue) — 营收与利润的十年折线，看结构性变化
+- [Wisesheets/Koyfin 替代：GuruFocus](https://www.gurufocus.com/stock/PFE/summary)
+
+**原始文件（无中介）**
+- [SEC EDGAR 全部文件](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&ticker=PFE&type=&dateb=&owner=include&count=40) — 10-K/10-Q/8-K 原文；财报电话会与风险因素只在这里
+- [SEC 全文检索](https://efts.sec.gov/LATEST/search-index?q=%22PFE%22&forms=8-K) — 按关键词搜文件正文
+- [OpenInsider 内部人交易](http://openinsider.com/search?q=PFE) — 高管自己在买还是在卖，是少数不靠解读的信号
+- [13F 机构持仓](https://whalewisdom.com/stock/PFE) — 注意：13F 滞后 45 天，不能当作买入理由
+
+**消息与预期**
+- [Yahoo 新闻](https://finance.yahoo.com/quote/PFE/news)
+- [Google News 搜索](https://news.google.com/search?q=Pfizer+stock&hl=en-US)
+- [财报日历与预期](https://stockanalysis.com/stocks/PFE/forecast/) — 下次财报日、市场一致预期、历史超预期记录
+- [Seeking Alpha 讨论](https://seekingalpha.com/symbol/PFE) — 观点密度高，但是买方与卖方混杂，当作反方意见读
+- [公司投资者关系](https://www.google.com/search?q=Pfizer+investor+relations) — 财报原始 PPT 与电话会记录
+
+**中文渠道（转载源，不作独立验证）**
+- [雪球](https://xueqiu.com/S/PFE) — 中文讨论与财报摘要
+- [富途牛牛](https://www.futunn.com/stock/PFE-US) — 中文行情与公告翻译
+- [东方财富](https://quote.eastmoney.com/us/PFE.html) — 中文财务报表
+- [同花顺](http://stock.10jqka.com.cn/usstock/PFE/) — 中文资讯
+
+---
+
+_这一页是一台程序按成文规则读公开数据的结果，不是投资建议。它不知道你的资金、税务和其它持仓。图形结论来自滞后指标，财报数字来自厂商转录，新闻材料度来自关键词打分——三者都会错。把它当作一份整理好的证据，而不是一个答案。_
