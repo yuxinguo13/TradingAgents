@@ -65,8 +65,11 @@ dollar, oil, gold, bitcoin), policy & news (the policy monitor's brief and
 per-sector tilt, macro headlines), sectors (each ETF's week and month, the
 tilt, how many leaders sit above their 50-day), the ideas (score, ASCII chart
 with the averages and the levels, reasons, cautions, entry/stop/target, next
-earnings, fundamentals line, headlines), the names to avoid, and the full
-scoreboard.
+earnings, fundamentals line, insider line, headlines), the names to avoid,
+the full scoreboard, and two tables that keep score: 昨日复盘 (the previous
+final report's calls against today's close, with a SPY-relative column) and
+五日结算 (the calls from five sessions ago, scored in R if the entry was
+reached and against SPY either way — `review.settle_call`).
 
 The score is one published rule (`report.score`): trend ≤ 40, momentum ±20,
 volume ±5, relative strength vs SPY ±10, policy tilt ±10, news ±15, and
@@ -102,6 +105,18 @@ weeks, and the names to handle today.
 
 Writes `desk/advise/<date>.md`, `.json`, and a page per name.
 
+## 4 · review (the score-keeper)
+
+```
+python -m tradingagents.desk review                 # hit rate, R, alpha vs SPY
+```
+
+Settles every closed trade in the book (per sleeve, per principle) and every
+call in every past final report whose five-session window has traded, and
+writes `desk/trade/review-<date>.md`. Nothing is scored by its own move
+alone: each row carries its return relative to SPY over the same window. This
+is the sample MANUAL §11 asks for before a rule changes.
+
 ## Scheduling
 
 On a Mac, `scripts/desk_cron.sh trade|report|advise` (see the header for the
@@ -112,10 +127,12 @@ keys and outbound access to `query2.finance.yahoo.com`, `fc.yahoo.com`,
 
 ## What the code does not do
 
-- It does not place stop orders at the venue. Stops live in `desk/trade/book.json`
-  and are checked once per run. A gap through the stop between runs is sold at
-  the next run's price.
-- It does not read filings or transcripts. News is headlines from RSS.
+- Stops rest at the venue as the stop leg of a bracket or OCO order; the book
+  only remembers them. A stop the venue does not hold is listed in the pack as
+  unprotected, and `protect` is the fix.
+- It does not read transcripts or full filings. News is headlines from RSS;
+  the only filing data is the insider-transaction summary from Yahoo
+  (`live/insiders.py`: open-market buys and sells in the last 90 days).
 - Rates come from the Treasury yield tickers; there is no Fed-funds series
   unless `FRED_API_KEY` is set for the analysis framework, which the desk does
   not call.

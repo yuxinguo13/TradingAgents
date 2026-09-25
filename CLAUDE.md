@@ -45,8 +45,11 @@ If a pull or push reports a failure, say so in the reply; do not retry by hand.
    the pack (last close); the gate checks each entry against the live price
    at order time, so an open that gapped past your entry refuses itself.
 3. Post-mortems first. For every name under 需要复盘, answer the three
-   questions in MANUAL §8 and log each with
+   questions in MANUAL §8 (the line carries the trade's move relative to SPY;
+   judge against that, not the raw P&L) and log each with
    `python -m tradingagents.desk log -` (stdin JSON, `"kind": "postmortem"`).
+   Before writing any `"kind": "proposal"`, run
+   `python -m tradingagents.desk review` and quote its counts (MANUAL §11).
 4. Positions, then candidates, per the checklists in MANUAL §4 and §1–2.
    You may add up to 5 news-driven names with
    `python -m tradingagents.desk pack facts A,B,C` after a web search of the
@@ -85,8 +88,9 @@ If a pull or push reports a failure, say so in the reply; do not retry by hand.
    进攻仓候选与突破跟踪 section (the pack's breakout table plus which of the
    three triggers each name meets and the breakout-day low), a 昨日复盘
    section (the pack's table of the previous report's calls against today's
-   closes, plus three sentences: which call the market has falsified, why,
-   and which rule you would change), the names to avoid, and 今日要闻与判断. Where your score differs from the reference score, say why.
+   closes with the SPY-relative column, plus the pack's 五日结算 table of the
+   calls from five sessions ago scored in R, plus three sentences: which call
+   the market has falsified, why, and which rule you would change), the names to avoid, and 今日要闻与判断. Where your score differs from the reference score, say why.
    This task never reads any account or portfolio.
 4. `python -m tradingagents.desk site --date <date> --out ./site-<date>` —
    builds the report as a web site in that folder inside the repo checkout

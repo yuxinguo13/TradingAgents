@@ -37,7 +37,7 @@ from tradingagents.live.deepdive import SymbolAnalysis, render_page
 from tradingagents.live.policy import policy_brief, sector_pressure
 from tradingagents.live.sizing import pullback_entry, structural_stop
 
-from . import task_dir, universe
+from . import review as settle, task_dir, universe
 from .market import SECTOR_ETFS, SECTOR_ZH, Facts, MacroBoard, Market, _num, _ok
 
 logger = logging.getLogger(__name__)
@@ -91,6 +91,8 @@ class Idea:
         d["news"] = [{"title": n.title, "link": n.link, "source": n.source,
                       "published": n.published, "lean": n.lean, "materiality": n.materiality}
                      for n in (self.facts.news if self.facts else [])[:5]]
+        ins = self.facts.insiders if self.facts else None
+        d["insiders"] = ins.read() if ins is not None and hasattr(ins, "read") else ""
         return d
 
 
@@ -124,6 +126,8 @@ class MarketReport:
     avoid: list = field(default_factory=list)
     breakouts: list = field(default_factory=list)   # Idea rows that look like breakouts today
     review: list = field(default_factory=list)      # yesterday's calls against today's closes
+    settled: list = field(default_factory=list)     # calls from HOLD sessions ago, scored in R and vs SPY
+    settled_report: str = ""
     warnings: list = field(default_factory=list)
     notes: list = field(default_factory=list)
     path: str = ""
@@ -146,6 +150,7 @@ class MarketReport:
             "avoid": [i.to_dict() for i in self.avoid],
             "breakouts": [i.to_dict() for i in self.breakouts],
             "review": self.review,
+            "settled": {"report": self.settled_report, "calls": self.settled},
             "scored": [i.to_dict() for i in self.scored],
             "warnings": self.warnings, "notes": self.notes,
         }
@@ -227,6 +232,15 @@ def score(f: Facts, tilt: float = 0.0, spy_ret_3m: float = float("nan")) -> tupl
     if bear:
         s -= min(15.0, bear * 1.5)
         warn.append(f"近两天有利空消息 {len(f.bearish_news())} 条")
+
+    # Open-market buying by several insiders is evidence about the business;
+    # it supports a chart, it does not replace one. Selling is not: at a large
+    # company several insiders sell every quarter on plans, so it is printed
+    # on the name's insider line, never as a caution (a live check on
+    # 2026-09-25 had MSFT and PLTR "clusters").
+    ins = f.insiders
+    if ins is not None and getattr(ins, "ok", False) and getattr(ins, "cluster_buying", False):
+        why.append(ins.read())
 
     rsi = _num(snap.rsi14)
     if _ok(rsi) and rsi >= 75:
@@ -342,13 +356,15 @@ class Reporter:
         syms = [n.symbol for n in alive]
         earnings = self.market.earnings(syms, data_day)
         fundamentals = self.market.fundamentals(syms)
+        insiders = self.market.insiders(syms, as_of=data_day)
         by_symbol, macro_news = self.market.headlines(syms[:self.cfg.news_symbols], macro=True)
         report.macro_news = macro_news[:12]
         for n in alive:
             f = facts[n.symbol]
             f.sector = n.sector if n.sector != "Unknown" else f.sector
             f.name = n.name
-            self.market.attach(f, earnings=earnings, fundamentals=fundamentals, news=by_symbol)
+            self.market.attach(f, earnings=earnings, fundamentals=fundamentals, news=by_symbol,
+                               insiders=insiders)
             if not f.sector or f.sector == "Unknown":
                 f.sector = universe.sector_of(n.symbol)
 
@@ -371,7 +387,12 @@ class Reporter:
         report.avoid = [i for i in reversed(report.scored) if i.score < 0][:self.cfg.avoid]
         report.breakouts = breakouts(report.scored)
         report.review = self.review_previous(report, data_day)
+        final, settled = settle.latest_settleable(self.market, data_day, report.date)
+        if final is not None:
+            report.settled_report = final.name[:10]
+            report.settled = [asdict(s) for s in settled]
         report.sectors = self.sector_lines(report)
+        report.warnings += [w for w in self.market.errors if w not in report.warnings]
 
         # 5. pages
         if self.cfg.with_pages:
@@ -411,7 +432,9 @@ class Reporter:
         except Exception:
             return []
         out = []
-        for sym, (score, entry, stop, target, r) in calls.items():
+        spy = self.market.bars(self.market.spy, data_day)
+        spy_change = spy.ret(1) if spy.closes else float("nan")
+        for sym, (score, entry, stop, target, _r) in calls.items():
             f = self.market.facts(sym, data_day)
             if not f.ok:
                 continue
@@ -430,6 +453,9 @@ class Reporter:
             out.append({"symbol": sym, "score": score, "entry": entry, "stop": stop, "target": target,
                         "then": round(then, 2) if _ok(then) else None, "now": round(now, 2),
                         "change": round(now / then - 1, 4) if _ok(then) and then else None,
+                        "spy": round(spy_change, 4) if _ok(spy_change) else None,
+                        "alpha": round(now / then - 1 - spy_change, 4)
+                        if _ok(then) and then and _ok(spy_change) else None,
                         "status": status, "report": prev.name[:10]})
         return out
 
@@ -586,10 +612,25 @@ def format_report(report: MarketReport) -> str:
 
     if report.review:
         out.append(f"## 昨日复盘（{report.review[0]['report']} 的前排 vs 今天）")
-        out += ["| 代码 | 昨日分 | 入场 | 止损 | 目标 | 昨收 | 今收 | 变化 | 状态 |", "|---|---:|---:|---:|---:|---:|---:|---:|---|"]
+        out += ["| 代码 | 昨日分 | 入场 | 止损 | 目标 | 昨收 | 今收 | 变化 | 相对标普 | 状态 |", "|---|---:|---:|---:|---:|---:|---:|---:|---:|---|"]
         for c in report.review:
-            out.append(f"| {c['symbol']} | {c['score']} | {_f(c['entry'])} | {_f(c['stop'])} | {_f(c['target'])} | {_f(c['then'])} | {_f(c['now'])} | {_pct(c['change'])} | {c['status']} |")
-        out += ["", "三句话写在终稿里：哪个判断被证伪了、为什么、下次改哪条。", ""]
+            out.append(f"| {c['symbol']} | {c['score']} | {_f(c['entry'])} | {_f(c['stop'])} | {_f(c['target'])} | {_f(c['then'])} | {_f(c['now'])} | {_pct(c['change'])} | {_pct(c.get('alpha'))} | {c['status']} |")
+        out += ["", "三句话写在终稿里：哪个判断被证伪了、为什么、下次改哪条。看相对标普的一栏：跟着指数涨的不算判断对。", ""]
+
+    if report.settled:
+        out.append(f"## 五日结算（{report.settled_report} 的判断，满 {settle.HOLD_SESSIONS} 个交易日）")
+        out += ["| 代码 | 当日分 | 入场 | 止损 | 目标 | 五日 | 相对标普 | 结果 | R |", "|---|---:|---:|---:|---:|---:|---:|---|---:|"]
+        for s in report.settled:
+            out.append(f"| {s['symbol']} | {s['score']} | {_f(s['entry'])} | {_f(s['stop'])} | {_f(s['target'])} "
+                       f"| {_pct(s['raw'])} | {_pct(s['alpha'])} | {s['outcome']} | {_f(s['r'], 1)} |")
+        entered = [s for s in report.settled if s["entered"]]
+        if entered:
+            rs = [s["r"] for s in entered if _ok(_num(s["r"]))]
+            hits = sum(1 for r in rs if r > 0)
+            out.append("")
+            out.append(f"触发入场 {len(entered)} 个，其中 {hits} 个为正 R，合计 {sum(rs):+.1f}R。"
+                       f"累计的样本用 `desk review` 看。")
+        out.append("")
 
     out.append("## 五、走弱 / 回避")
     if not report.avoid:
@@ -655,6 +696,11 @@ def idea_block(i: int, idea: Idea, report: MarketReport) -> list[str]:
             bits.append(f"机构目标价空间 {_num(up) * 100:+.0f}%")
         if bits:
             out.append("- 基本面：" + "，".join(bits))
+    if f and f.insiders is not None and getattr(f.insiders, "ok", False):
+        ins = f.insiders
+        if ins.buys or ins.sells:
+            out.append(f"- 内部人（近 {ins.window_days} 天）：买 {ins.buys} 笔 ${ins.buy_value / 1e6:.1f}M · "
+                       f"卖 {ins.sells} 笔 ${ins.sell_value / 1e6:.1f}M")
     if f and f.news:
         for n in f.news[:3]:
             lean = {"bullish": "利好", "bearish": "利空"}.get(n.lean, "")

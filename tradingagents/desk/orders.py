@@ -132,6 +132,7 @@ class Closed:
     pnl: float = 0.0
     r: float = float("nan")
     reviewed: bool = False          # a post-mortem has been logged
+    sleeve: str = "core"
 
 
 class DeskBook:
@@ -168,7 +169,8 @@ class DeskBook:
         c = Closed(symbol=symbol, shares=n, entry=p.entry, exit=exit_price, opened=p.opened,
                    closed=when.isoformat(), reason=reason, thesis=p.thesis,
                    invalidation=p.invalidation, principles=list(p.principles),
-                   pnl=round(n * (exit_price - p.entry), 2), r=p.r_at(exit_price))
+                   pnl=round(n * (exit_price - p.entry), 2), r=p.r_at(exit_price),
+                   sleeve=p.sleeve or "core")
         self.closed.append(c)
         if n >= p.shares:
             del self.positions[symbol]

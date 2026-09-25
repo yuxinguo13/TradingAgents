@@ -114,6 +114,7 @@ class Facts:
     sector: str = ""
     earnings: object = None
     fundamentals: object = None
+    insiders: object = None
     news: list = field(default_factory=list)
 
     @property
@@ -308,7 +309,7 @@ class Market:
     """
 
     def __init__(self, *, task: str = "desk", bars_loader=None, news=None,
-                 policy=None, earnings=None, fundamentals=None, names=None,
+                 policy=None, earnings=None, fundamentals=None, insiders=None, names=None,
                  spy: str = "SPY"):
         self.task = task
         self._loader = bars_loader
@@ -316,6 +317,7 @@ class Market:
         self._policy = policy
         self._earnings = earnings
         self._fundamentals = fundamentals
+        self._insiders = insiders
         self._names = names
         self.spy = spy
         self._facts: dict[tuple[str, str], Facts] = {}
@@ -385,6 +387,12 @@ class Market:
         except Exception as exc:
             self.errors.append(f"news feeds unavailable ({type(exc).__name__}: {exc})")
             return by_symbol, macro_items
+        if symbols and not items:
+            # Google News and the RSS feeds answer an outage with an empty
+            # body, not an error. An empty poll across a whole batch is the
+            # feed, not the news: say so, so a blank column is not read as
+            # "nothing happened" (upstream's coverage-gap rule).
+            self.errors.append("新闻源没有返回任何条目：各名字的消息栏是空白，不是没有消息")
         now = datetime.now(timezone.utc)
         for item in items:
             if item.age_hours(now) > max_age_hours:
@@ -434,6 +442,19 @@ class Market:
             self.errors.append(f"fundamentals unavailable ({type(exc).__name__}: {exc})")
             return {}
 
+    def insiders(self, symbols: list[str], as_of: date | None = None) -> dict:
+        """Open-market insider buys and sells per symbol; empty when unavailable."""
+        if not symbols:
+            return {}
+        try:
+            if self._insiders is None:
+                from tradingagents.live.insiders import InsidersBook
+                self._insiders = InsidersBook(path=self.state_dir() / "insiders.json")
+            return dict(self._insiders.get(list(symbols), as_of=as_of))
+        except Exception as exc:
+            self.errors.append(f"insiders unavailable ({type(exc).__name__}: {exc})")
+            return {}
+
     def names(self):
         if self._names is None:
             from tradingagents.live.zhnames import ZhNames
@@ -441,7 +462,8 @@ class Market:
         return self._names
 
     def attach(self, facts: Facts, *, earnings: dict | None = None,
-               fundamentals: dict | None = None, news: dict | None = None) -> Facts:
+               fundamentals: dict | None = None, news: dict | None = None,
+               insiders: dict | None = None) -> Facts:
         """Fill the slow fields from the books already fetched for the batch."""
         sym = facts.symbol
         if earnings is not None:
@@ -454,4 +476,6 @@ class Market:
                 facts.name = facts.name or str(getattr(f, "name", "") or "")
         if news is not None:
             facts.news = list(news.get(sym, []))
+        if insiders is not None:
+            facts.insiders = insiders.get(sym)
         return facts
