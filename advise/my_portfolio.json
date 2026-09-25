@@ -1,0 +1,16 @@
+{
+  "cash": 10000,
+  "holdings": [
+    {
+      "symbol": "AAPL",
+      "shares": 10,
+      "cost": 180.0,
+      "note": "示例，改成你自己的"
+    },
+    {
+      "symbol": "MSFT",
+      "shares": 5,
+      "cost": 400.0
+    }
+  ]
+}
