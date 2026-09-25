@@ -154,12 +154,13 @@ def build(when: str | date | None = None, *, market: Market | None = None, out_d
     if re.search(r'<h2 id="s6">', body):
         body = re.sub(r'(<h2 id="s6">[^<]*</h2>\n)(?:<p>.*?</p>)?(?:<table>.*?</table>)?', lambda mm: mm.group(1) + intro + "\n".join(rows), body, count=1, flags=re.S)
     body = _link_syms(body, known)
+    featured = [x for x in re.findall(r'data-sym="([^"]+)"', body) if x in bars]
     lede = "面向下一个交易日。分数是我打的，代码算的参考分只做起点；不看任何账户。红涨绿跌。"
     index = (f"<title>市场日报 · {when}</title>\n{FONTS}\n<link rel=\"stylesheet\" href=\"desk.css\">\n"
              + HEAD % {"eyebrow": f"Trading desk · 市场日报 · 数据截至 {data_date} 收盘", "title": H.escape(re.sub(r"^市场日报[：:·\s]*", "", title)), "lede": lede}
              + f"<article>\n{body}\n</article>\n"
              + "<footer class=\"foot\"><p>由交易台生成：代码出数据（K 线、指标、参考位、财报日期、新闻），Claude 做分析（搜索当天的宏观、政策、全球市场、个股财报与舆论），按操盘手册的维度打分并写理由。所有链接为写稿时可核实的来源。这不是投资建议。</p></footer>\n</div>\n"
-             + f'<script id="chartdata" type="application/json">{json.dumps({"stocks": {s: bars[s] for s in re.findall(r\'data-sym="([^"]+)"\', body) if s in bars}, "macro": macro})}</script>\n<script src="desk.js"></script>\n')
+             + f'<script id="chartdata" type="application/json">{json.dumps({"stocks": {s: bars[s] for s in featured}, "macro": macro})}</script>\n<script src="desk.js"></script>\n')
     (out / "index.html").write_text(index, encoding="utf-8")
     (out / "desk.css").write_text(CSS, encoding="utf-8")
     (out / "desk.js").write_text(JS, encoding="utf-8")
