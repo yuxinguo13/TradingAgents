@@ -30,7 +30,7 @@ from tradingagents.live.advisor import last_completed_session
 
 from . import task_dir, universe
 from .market import SECTOR_ZH, Facts, Market, _num, _ok
-from .orders import MAX_POSITIONS, DeskBook
+from .orders import MAX_POSITIONS, DeskBook, Position
 from .report import Idea, chart_for, score
 
 logger = logging.getLogger(__name__)
@@ -200,6 +200,9 @@ class Packer:
 
         # what the venue did since the last run: a stop that fired closes the book row
         self.reconcile(account, today, pack)
+        # a held position the book has lost but the venue still protects is
+        # rebuilt from its resting orders, so a lost file never means a lost stop
+        self.recover(account, today, pack)
 
         # regime
         try:
@@ -286,6 +289,40 @@ class Packer:
         pack.candidates.sort(key=lambda r: (r.ref_score if _ok(r.ref_score) else -999), reverse=True)
         self.save(pack, facts)
         return pack
+
+    def recover(self, account, today: date, pack: TradePack) -> None:
+        """Rebuild book rows from the venue's resting orders when the file lost them."""
+        if account is None or not hasattr(self.broker(), "open_orders"):
+            return
+        resting: dict[str, dict] = {}
+        targets: dict[str, float] = {}
+        for o in self.broker().open_orders():
+            sym = str(o.get("symbol", "")).upper()
+            if o.get("side") != "sell":
+                continue
+            if o.get("type") in ("stop", "stop_limit"):
+                resting[sym] = o
+            elif o.get("type") == "limit":
+                targets[sym] = _num(o.get("limit_price"))
+        for h in account.holdings or []:
+            sym = str(h.symbol).upper()
+            if sym in self.book.positions or sym not in resting:
+                continue
+            stop = _num(resting[sym].get("stop_price"))
+            if not _ok(stop):
+                continue
+            entry = _num(h.avg_cost)
+            target = targets.get(sym, float("nan"))
+            if not _ok(target):
+                target = round(entry * 1.10, 2) if _ok(entry) else float("nan")
+            opened = str(resting[sym].get("submitted_at", ""))[:10] or today.isoformat()
+            self.book.positions[sym] = Position(
+                symbol=sym, shares=int(_num(h.quantity, 0.0)), entry=entry, stop=stop, target=target,
+                opened=opened, thesis="（记录丢失，按交易所挂单恢复；论点未知）", adopted=True,
+                legs={"stop": str(resting[sym].get("id", ""))})
+            pack.warnings.append(f"{sym}: 账本里没有记录，已按交易所挂着的止损 {stop:,.2f} 恢复")
+        if any(w.endswith("恢复") for w in pack.warnings):
+            self.book.save()
 
     def reconcile(self, account, today: date, pack: TradePack) -> None:
         """Book positions the account no longer holds were closed by the venue."""
@@ -473,6 +510,8 @@ def main(argv=None) -> int:
     p.add_argument("-q", "--quiet", action="store_true")
     args = p.parse_args(argv)
     logging.basicConfig(level=logging.INFO, format="%(message)s")
+    from . import state
+    print(state.pull())
     if args.what == "facts":
         print(facts_table([s for s in args.symbols.split(",") if s]))
         return 0

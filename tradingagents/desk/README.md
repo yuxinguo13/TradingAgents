@@ -12,10 +12,15 @@ scheduled sessions are in the repo's `CLAUDE.md`.
 | `python -m tradingagents.desk log entry.json` | Append a decision or post-mortem to `desk/trade/decisions.jsonl`. |
 | `python -m tradingagents.desk report` | The report pack: macro board, policy, sectors, every prominent name scored on the reference rule, charts, a page per name. Never reads an account. |
 | `python -m tradingagents.desk advise` | The advice pack for a portfolio typed into a file: rule verdicts, levels, alerts. |
+| `python -m tradingagents.desk state pull\|push` | Sync `~/.tradingagents/desk/` with the `desk-state` branch, so a fresh cloud machine every morning still has the book, the log and the portfolio file. |
 | `python -m tradingagents.desk trade` | The old fully rule-based trader. Kept as a fallback when nobody is reading the pack. |
 
-State lives under `$TRADINGAGENTS_HOME/desk/<task>/` (default `~/.tradingagents/desk/`).
-No task opens another task's files. The older combined flow (`live/advisor.py`
+State lives under `$TRADINGAGENTS_HOME/desk/<task>/` (default `~/.tradingagents/desk/`)
+and is mirrored on the `desk-state` branch of this repository: `pack trade`,
+`report` and `advise` pull before reading, `order` and `log` push after
+writing. The stops never depend on it — they rest at the venue, and `pack`
+rebuilds a lost book row from the resting orders. No task opens another
+task's files. The older combined flow (`live/advisor.py`
 writing a book that `live/execute.py` reconciled against the account) is still
 in the tree but is not what runs.
 

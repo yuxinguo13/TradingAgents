@@ -582,6 +582,8 @@ def main(argv=None) -> int:
     cfg.use_cache = args.use_cache
     cfg.with_pages = not args.no_pages
     logging.basicConfig(level=logging.INFO, format="%(message)s")
+    from . import state
+    print(state.pull())
     report = Reporter(cfg).run(args.date)
     print(report.path if args.quiet else format_report(report))
     return 0

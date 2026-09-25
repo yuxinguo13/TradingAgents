@@ -509,6 +509,8 @@ def main(argv=None) -> int:
         path = write_template(Path(args.portfolio) if args.portfolio else None)
         print(f"template written to {path}; edit it, then run again without --init")
         return 0
+    from . import state
+    print(state.pull())
     try:
         pf = load_portfolio(args.portfolio)
     except FileNotFoundError:

@@ -484,6 +484,8 @@ class AlpacaBroker:
                 "type": getattr(o.order_type, "value", str(o.order_type)),
                 "status": getattr(o.status, "value", str(o.status)),
                 "submitted_at": str(getattr(o, "submitted_at", "")),
+                "stop_price": _f(getattr(o, "stop_price", None)),
+                "limit_price": _f(getattr(o, "limit_price", None)),
             })
         return out
 

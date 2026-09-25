@@ -574,9 +574,12 @@ def main(argv=None) -> int:
     intent = json.loads(Path(args.intent).read_text(encoding="utf-8"))
     from tradingagents.live.broker import open_broker
     broker = open_broker(args.venue)
+    from . import state
+    print(state.pull())
     ex = Executor(broker=broker, dry_run=args.dry_run)
     outcomes = ex.run(intent)
     print(format_outcomes(outcomes))
+    print(state.push(message=f"orders {intent.get('date', '')}"))
     return 0 if all(o.ok for o in outcomes) else 1
 
 
@@ -593,4 +596,6 @@ def main_log(argv=None) -> int:
     for e in entries:
         path = log_entry(e)
     print(f"logged {len(entries)} entr{'y' if len(entries) == 1 else 'ies'} to {path}")
+    from . import state
+    print(state.push(message="decision log"))
     return 0

@@ -392,6 +392,22 @@ class TestPack:
                          screen=screen_of(), now=MONDAY_OPEN).run()
         assert not pk.held[0].protected and "没有止损挂在交易所" in pack.format_pack(pk)
 
+    def test_a_lost_book_row_is_rebuilt_from_the_venues_resting_stop(self, home):
+        """The morning after a machine with no state: the venue still holds the
+        stop, so the pack rebuilds the row instead of calling the position unmanaged."""
+        shape("HLD", 100.0, drift=0.3)
+        v = FakeVenue(acct(cash=90_000, holdings=[held("HLD", 10, 90.0, 100.0)]))
+        v.resting["HLD"] = 95.0
+        v.open_orders = lambda: [{"id": "s-HLD", "symbol": "HLD", "side": "sell", "type": "stop",
+                                  "stop_price": 95.0, "limit_price": float("nan"), "submitted_at": "2026-08-12T14:00"},
+                                 {"id": "t-HLD", "symbol": "HLD", "side": "sell", "type": "limit",
+                                  "stop_price": float("nan"), "limit_price": 120.0, "submitted_at": "2026-08-12T14:00"}]
+        book = DeskBook(home / "desk" / "trade" / "book.json")
+        pk = pack.Packer(broker=v, market=mkt(task="trade"), book=book, screen=screen_of(), now=MONDAY_OPEN).run()
+        p = DeskBook(home / "desk" / "trade" / "book.json").positions["HLD"]
+        assert p.stop == 95.0 and p.target == 120.0 and p.entry == 90.0 and p.opened == "2026-08-12" and p.adopted
+        assert pk.held[0].protected and pk.held[0].in_book and any("恢复" in w for w in pk.warnings)
+
     def test_facts_for_hand_picked_names(self, home):
         shape("NEW", 100.0, drift=0.6)
         text = pack.facts_table(["NEW", "NOPE"], market=mkt(task="trade"), now=MONDAY_OPEN)

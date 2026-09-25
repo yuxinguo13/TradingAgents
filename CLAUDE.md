@@ -24,6 +24,12 @@ Before any task: `git fetch origin feat/live-desk && git checkout feat/live-desk
 `pip install -q -e ".[dev]" alpaca-py` if `python -c "import tradingagents.desk"` fails.
 Read `tradingagents/desk/MANUAL.md` in full.
 
+State survives between sessions on the `desk-state` branch (`tradingagents/desk/state.py`):
+`pack trade`, `report` and `advise` pull it before reading; `order` and `log`
+push after writing. **The last step of every task is
+`python -m tradingagents.desk state push`** so the day's final files are kept.
+If a pull or push reports a failure, say so in the reply; do not retry by hand.
+
 ### Task 1 — trade (weekdays, fires ~09:20 ET, places ~09:35 ET)
 
 1. `python -m tradingagents.live.waitopen` — exit 0: the session is open and
@@ -50,10 +56,10 @@ Read `tradingagents/desk/MANUAL.md` in full.
 5. `python -m tradingagents.desk order ~/.tradingagents/desk/trade/<date>-intent.json`.
    Read every line of the result. A refusal is final: do not edit numbers and
    resend. Log one `"kind": "decision"` entry per order you sent (MANUAL §8).
-6. Reply with: the portfolio table from the pack (updated for today's fills),
-   today's orders with the gate's verdicts, and the plan for each position
-   (stop, target, days left, invalidation). One line of reason per order.
-   No further analysis.
+6. `python -m tradingagents.desk state push`, then reply with: the portfolio
+   table from the pack (updated for today's fills), today's orders with the
+   gate's verdicts, and the plan for each position (stop, target, days left,
+   invalidation). One line of reason per order. No further analysis.
 
 ### Task 2 — report (weekdays, after the close)
 
@@ -71,7 +77,8 @@ Read `tradingagents/desk/MANUAL.md` in full.
    sector read, the policy and macro context with links, the names to avoid,
    and 今日要闻与判断. Where your score differs from the reference score, say why.
    This task never reads any account or portfolio.
-4. Reply with the final report in full and attach the pages for the top ideas.
+4. `python -m tradingagents.desk state push`, then reply with the final
+   report in full and attach the pages for the top ideas.
 
 ### Task 3 — advise (weekdays, after the report)
 
@@ -83,4 +90,4 @@ Read `tradingagents/desk/MANUAL.md` in full.
    `~/.tradingagents/desk/advise/<date>-final.md`: the table of actions with
    levels, one to three sentences per name, and the portfolio-level alerts.
    This task never reads the Alpaca account.
-3. Reply with the final advice in full.
+3. `python -m tradingagents.desk state push`, then reply with the final advice in full.
