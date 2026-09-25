@@ -218,9 +218,10 @@ def main(argv=None) -> int:
     import argparse
     p = argparse.ArgumentParser(prog="tradingagents.desk site", description="the report as a web site")
     p.add_argument("--date", default=None)
+    p.add_argument("--out", default=None, help="write the site here (the Artifact publish needs a folder under the repo)")
     args = p.parse_args(argv)
     logging.basicConfig(level=logging.INFO, format="%(message)s")
-    out = build(args.date)
+    out = build(args.date, out_dir=Path(args.out) if args.out else None)
     print(out)
     print("publish: file_path=" + str(out / "index.html") + " root=" + str(out) + " files=" + str(out / "files.json"))
     return 0
