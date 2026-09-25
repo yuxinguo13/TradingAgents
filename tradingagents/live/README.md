@@ -1,5 +1,10 @@
 # Live desk
 
+> **The daily desk moved.** `tradingagents/desk/` is what runs now: three
+> separate commands (`trade`, `report`, `advise`) over this engine, each with
+> its own state, none reading another's. See `tradingagents/desk/README.md`.
+> Everything below describes the engine and the older combined advisor flow.
+
 Two ways to use it, sharing one engine.
 
 | | What it is | When it runs |
