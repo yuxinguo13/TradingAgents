@@ -219,9 +219,14 @@ class Gate:
         return 0.0
 
     def buy(self, symbol: str, entry: float, stop: float, target: float, *,
-            price: float, atr_pct: float, sector: str, earnings_days: float) -> Verdict:
+            price: float, atr_pct: float, sector: str, earnings_days: float,
+            sma200: float = float("nan")) -> Verdict:
         if not self.market_open:
             return Verdict(False, "the market is closed; buys only in the session")
+        if _ok(sma200) and _ok(price) and price > 0 and price < sma200:
+            # The manual's first hard negative, enforced here too so that no
+            # headline, however good, buys a name under its 200-day line.
+            return Verdict(False, f"price {price:.2f} is under the 200-day line {sma200:.2f}")
         if symbol in self.book.positions:
             return Verdict(False, f"{symbol} is already a position; raise its stop or leave it")
         if symbol in self.book.recently_closed(self.today):
@@ -410,7 +415,7 @@ class Executor:
                 earnings_days = _num(e.days_to_next(today))
         sector = str(o.get("sector") or f.sector or "")
         v = gate.buy(sym, entry, stop, target, price=price, atr_pct=_num(f.snap.atr_pct),
-                     sector=sector, earnings_days=earnings_days)
+                     sector=sector, earnings_days=earnings_days, sma200=_num(f.snap.sma200))
         out = Outcome("buy", sym, v.ok, v.reason, v.shares, entry, stop, target)
         if not v.ok:
             return out

@@ -187,6 +187,22 @@ class TestGate:
                            atr_pct=args["atr_pct"], sector=args["sector"], earnings_days=args["earnings_days"])
         assert not v.ok and text in v.reason
 
+    def test_no_headline_buys_a_name_under_its_200_day_line(self, home):
+        v = gate(home).buy("AAA", 100.0, 97.0, 107.0, price=100.5, atr_pct=0.02, sector="",
+                           earnings_days=30, sma200=110.0)
+        assert not v.ok and "200-day" in v.reason
+        v = gate(home).buy("AAA", 100.0, 97.0, 107.0, price=100.5, atr_pct=0.02, sector="",
+                           earnings_days=30, sma200=90.0)
+        assert v.ok
+
+    def test_the_executor_refuses_a_broken_name_even_with_a_thesis(self, home):
+        shape("DOWN", 100.0, drift=-0.30)
+        v = FakeVenue(acct())
+        px = v.quote("DOWN")
+        out = executor(v, home).run({"orders": [buy("DOWN", round(px, 2), round(px * 0.97, 2), round(px * 1.10, 2),
+                                                     thesis="huge news")]})
+        assert not out[0].ok and "200-day" in out[0].reason and v.placed == []
+
     def test_the_daily_new_risk_budget(self, home):
         g = gate(home, risk_committed_today=2_800)
         v = g.buy("AAA", 100.0, 97.0, 107.0, price=100.0, atr_pct=0.02, sector="", earnings_days=30)

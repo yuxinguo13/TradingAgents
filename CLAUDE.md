@@ -32,14 +32,18 @@ If a pull or push reports a failure, say so in the reply; do not retry by hand.
 
 ### Task 1 — trade (weekdays, fires ~09:20 ET, places ~09:35 ET)
 
-1. `python -m tradingagents.live.waitopen` — exit 0: the session is open and
+1. `python -m tradingagents.desk pack trade` first — it reads last session's
+   closes, not the opening prints, and on a fresh machine it takes ~15 min,
+   which is exactly the time before the open. Read the whole pack
+   (`~/.tradingagents/desk/trade/<date>-pack.md`): the account, the book with
+   each position's thesis and invalidation, the post-mortem queue, positions
+   with no stop resting at the venue, the regime, and the candidate table
+   with reference levels and charts.
+2. `python -m tradingagents.live.waitopen` — exit 0: the session is open and
    settled. Exit 3: no session today; reply so and stop. Exit 4: the open was
-   missed; do steps 2–6 but call step 5 with `--dry-run`.
-2. `python -m tradingagents.desk pack trade` — read the whole pack
-   (`~/.tradingagents/desk/trade/<date>-pack.md`). It has the account, the
-   book with each position's thesis and invalidation, the post-mortem queue,
-   positions with no stop resting at the venue, the regime, and the candidate
-   table with reference levels and charts.
+   missed; do steps 3–6 but call step 5 with `--dry-run`. Levels come from
+   the pack (last close); the gate checks each entry against the live price
+   at order time, so an open that gapped past your entry refuses itself.
 3. Post-mortems first. For every name under 需要复盘, answer the three
    questions in MANUAL §8 and log each with
    `python -m tradingagents.desk log -` (stdin JSON, `"kind": "postmortem"`).
