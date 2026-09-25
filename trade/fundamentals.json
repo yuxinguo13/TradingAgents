@@ -1,0 +1,5664 @@
+{
+ "AAPL": {
+  "symbol": "AAPL",
+  "fetched_at": 1790319704.7584174,
+  "name": "Apple Inc.",
+  "sector": "Technology",
+  "industry": "Consumer Electronics",
+  "website": "https://www.apple.com",
+  "market_cap": 4902477103104.0,
+  "pe_trailing": 38.611496,
+  "pe_forward": 35.033268,
+  "ps": 10.50179,
+  "ev_ebitda": 29.319,
+  "peg": 2.71,
+  "eps_trailing": 8.7,
+  "eps_forward": 9.5886,
+  "dividend_yield": 0.003115542,
+  "beta": 1.085,
+  "revenue_ttm": 466822987776.0,
+  "revenue_growth": 0.164,
+  "earnings_growth": 0.287,
+  "gross_margin": 0.48653,
+  "operating_margin": 0.32623002,
+  "profit_margin": 0.27618998,
+  "roe": 1.4875101,
+  "debt_to_equity": 78.445,
+  "current_ratio": 1.003,
+  "total_cash": 62399000576.0,
+  "total_debt": 84343996416.0,
+  "free_cashflow": 107721875456.0,
+  "target_mean": 328.22205,
+  "target_high": 405.0,
+  "target_low": 215.0,
+  "rating_mean": 2.20455,
+  "analysts": 39.0,
+  "short_pct_float": 0.0088,
+  "held_institutions": 0.66344,
+  "quarters": [
+   {
+    "label": "2026-06-30",
+    "revenue": 109417000000.0,
+    "gross": 54770000000.0,
+    "operating": 35695000000.0,
+    "net": 29789000000.0,
+    "eps": 2.02
+   },
+   {
+    "label": "2026-03-31",
+    "revenue": 111184000000.0,
+    "gross": 54781000000.0,
+    "operating": 35885000000.0,
+    "net": 29578000000.0,
+    "eps": 2.01
+   },
+   {
+    "label": "2025-12-31",
+    "revenue": 143756000000.0,
+    "gross": 69231000000.0,
+    "operating": 50852000000.0,
+    "net": 42097000000.0,
+    "eps": 2.84
+   },
+   {
+    "label": "2025-09-30",
+    "revenue": 102466000000.0,
+    "gross": 48341000000.0,
+    "operating": 32427000000.0,
+    "net": 27466000000.0,
+    "eps": 1.85
+   },
+   {
+    "label": "2025-06-30",
+    "revenue": 94036000000.0,
+    "gross": 43718000000.0,
+    "operating": 28202000000.0,
+    "net": 23434000000.0,
+    "eps": 1.57
+   }
+  ],
+  "years": [
+   {
+    "label": "2025-09-30",
+    "revenue": 416161000000.0,
+    "gross": 195201000000.0,
+    "operating": 133050000000.0,
+    "net": 112010000000.0,
+    "eps": 7.46
+   },
+   {
+    "label": "2024-09-30",
+    "revenue": 391035000000.0,
+    "gross": 180683000000.0,
+    "operating": 123216000000.0,
+    "net": 93736000000.0,
+    "eps": 6.08
+   },
+   {
+    "label": "2023-09-30",
+    "revenue": 383285000000.0,
+    "gross": 169148000000.0,
+    "operating": 114301000000.0,
+    "net": 96995000000.0,
+    "eps": 6.13
+   },
+   {
+    "label": "2022-09-30",
+    "revenue": 394328000000.0,
+    "gross": 170782000000.0,
+    "operating": 119437000000.0,
+    "net": 99803000000.0,
+    "eps": 6.11
+   }
+  ],
+  "surprises": [
+   {
+    "when": "2026-10-29",
+    "estimate": 1.98,
+    "actual": NaN,
+    "surprise_pct": NaN
+   },
+   {
+    "when": "2026-07-30",
+    "estimate": 1.89,
+    "actual": 2.02,
+    "surprise_pct": 0.0674
+   },
+   {
+    "when": "2026-04-30",
+    "estimate": 1.94,
+    "actual": 2.01,
+    "surprise_pct": 0.0346
+   },
+   {
+    "when": "2026-01-29",
+    "estimate": 2.67,
+    "actual": 2.84,
+    "surprise_pct": 0.0625
+   },
+   {
+    "when": "2025-10-30",
+    "estimate": 1.77,
+    "actual": 1.85,
+    "surprise_pct": 0.0452
+   },
+   {
+    "when": "2025-07-31",
+    "estimate": 1.43,
+    "actual": 1.57,
+    "surprise_pct": 0.09480000000000001
+   },
+   {
+    "when": "2025-05-01",
+    "estimate": 1.62,
+    "actual": 1.65,
+    "surprise_pct": 0.0169
+   },
+   {
+    "when": "2025-01-30",
+    "estimate": 2.35,
+    "actual": 2.4,
+    "surprise_pct": 0.0226
+   }
+  ],
+  "error": ""
+ },
+ "ADP": {
+  "symbol": "ADP",
+  "fetched_at": 1790319706.0500476,
+  "name": "Automatic Data Processing, Inc.",
+  "sector": "Technology",
+  "industry": "Software - Application",
+  "website": "https://www.adp.com",
+  "market_cap": 104523800576.0,
+  "pe_trailing": 24.09432,
+  "pe_forward": 19.63736,
+  "ps": 4.7624683,
+  "ev_ebitda": 16.504,
+  "peg": 2.45,
+  "eps_trailing": 10.92,
+  "eps_forward": 13.39844,
+  "dividend_yield": 0.025182039,
+  "beta": 0.83,
+  "revenue_ttm": 21947400192.0,
+  "revenue_growth": 0.068,
+  "earnings_growth": 0.098,
+  "gross_margin": 0.48653,
+  "operating_margin": 0.23459,
+  "profit_margin": 0.20109,
+  "roe": 0.72239,
+  "debt_to_equity": 91.436,
+  "current_ratio": 1.051,
+  "total_cash": 4230099968.0,
+  "total_debt": 5514699776.0,
+  "free_cashflow": 5243049984.0,
+  "target_mean": 287.6,
+  "target_high": 322.0,
+  "target_low": 225.0,
+  "rating_mean": 2.72222,
+  "analysts": 15.0,
+  "short_pct_float": 0.0296,
+  "held_institutions": 0.91510004,
+  "quarters": [
+   {
+    "label": "2026-06-30",
+    "revenue": 5473800000.0,
+    "gross": 2511300000.0,
+    "operating": 1259100000.0,
+    "net": 978600000.0,
+    "eps": 2.45
+   },
+   {
+    "label": "2026-03-31",
+    "revenue": 5939200000.0,
+    "gross": 2867200000.0,
+    "operating": 1785500000.0,
+    "net": 1359800000.0,
+    "eps": 3.38
+   },
+   {
+    "label": "2025-12-31",
+    "revenue": 5359300000.0,
+    "gross": 2469600000.0,
+    "operating": 1401500000.0,
+    "net": 1062000000.0,
+    "eps": 2.62
+   },
+   {
+    "label": "2025-09-30",
+    "revenue": 5175200000.0,
+    "gross": 2339100000.0,
+    "operating": 1332800000.0,
+    "net": 1013000000.0,
+    "eps": 2.49
+   },
+   {
+    "label": "2025-06-30",
+    "revenue": 5126800000.0,
+    "gross": 2309900000.0,
+    "operating": 1206800000.0,
+    "net": 910700000.0,
+    "eps": 2.23
+   },
+   {
+    "label": "2025-03-31",
+    "revenue": NaN,
+    "gross": NaN,
+    "operating": NaN,
+    "net": NaN,
+    "eps": NaN
+   }
+  ],
+  "years": [
+   {
+    "label": "2026-06-30",
+    "revenue": 21947400000.0,
+    "gross": 10187200000.0,
+    "operating": 5779000000.0,
+    "net": 4413500000.0,
+    "eps": NaN
+   },
+   {
+    "label": "2025-06-30",
+    "revenue": 20560900000.0,
+    "gross": 9463600000.0,
+    "operating": 5411900000.0,
+    "net": 4079700000.0,
+    "eps": 9.98
+   },
+   {
+    "label": "2024-06-30",
+    "revenue": 19202600000.0,
+    "gross": 8725900000.0,
+    "operating": 4947000000.0,
+    "net": 3752000000.0,
+    "eps": 9.1
+   },
+   {
+    "label": "2023-06-30",
+    "revenue": 18012200000.0,
+    "gross": 8058800000.0,
+    "operating": 4507400000.0,
+    "net": 3412000000.0,
+    "eps": 8.21
+   }
+  ],
+  "surprises": [
+   {
+    "when": "2026-10-28",
+    "estimate": 2.77,
+    "actual": NaN,
+    "surprise_pct": NaN
+   },
+   {
+    "when": "2026-07-28",
+    "estimate": 2.6,
+    "actual": 2.64,
+    "surprise_pct": 0.0158
+   },
+   {
+    "when": "2026-04-29",
+    "estimate": 3.3,
+    "actual": 3.37,
+    "surprise_pct": 0.0226
+   },
+   {
+    "when": "2026-01-28",
+    "estimate": 2.57,
+    "actual": 2.62,
+    "surprise_pct": 0.02
+   },
+   {
+    "when": "2025-10-29",
+    "estimate": 2.44,
+    "actual": 2.49,
+    "surprise_pct": 0.0194
+   },
+   {
+    "when": "2025-07-30",
+    "estimate": 2.23,
+    "actual": 2.26,
+    "surprise_pct": 0.015
+   },
+   {
+    "when": "2025-04-30",
+    "estimate": 2.97,
+    "actual": 3.06,
+    "surprise_pct": 0.029300000000000003
+   },
+   {
+    "when": "2025-01-29",
+    "estimate": 2.3,
+    "actual": 2.35,
+    "surprise_pct": 0.023799999999999998
+   }
+  ],
+  "error": ""
+ },
+ "AMZN": {
+  "symbol": "AMZN",
+  "fetched_at": 1790319707.0864122,
+  "name": "Amazon.com, Inc.",
+  "sector": "Consumer Cyclical",
+  "industry": "Internet Retail",
+  "website": "https://www.amazon.com",
+  "market_cap": 2689890779136.0,
+  "pe_trailing": 20.046625,
+  "pe_forward": 24.005484,
+  "ps": 3.467784,
+  "ev_ebitda": 16.686,
+  "peg": 1.48,
+  "eps_trailing": 12.44,
+  "eps_forward": 10.38846,
+  "dividend_yield": 0.0,
+  "beta": 1.443,
+  "revenue_ttm": 775680032768.0,
+  "revenue_growth": 0.196,
+  "earnings_growth": 2.423,
+  "gross_margin": 0.5077,
+  "operating_margin": 0.13689,
+  "profit_margin": 0.1744,
+  "roe": 0.30558002,
+  "debt_to_equity": 45.617,
+  "current_ratio": 1.033,
+  "total_cash": 122988003328.0,
+  "total_debt": 251635007488.0,
+  "free_cashflow": 3219124992.0,
+  "target_mean": 329.5393,
+  "target_high": 405.0,
+  "target_low": 230.0,
+  "rating_mean": 1.32203,
+  "analysts": 57.0,
+  "short_pct_float": 0.0083,
+  "held_institutions": 0.68711,
+  "quarters": [
+   {
+    "label": "2026-06-30",
+    "revenue": NaN,
+    "gross": NaN,
+    "operating": NaN,
+    "net": NaN,
+    "eps": 5.75
+   },
+   {
+    "label": "2026-03-31",
+    "revenue": 181519000000.0,
+    "gross": 94056000000.0,
+    "operating": 23852000000.0,
+    "net": 30255000000.0,
+    "eps": 2.78
+   },
+   {
+    "label": "2025-12-31",
+    "revenue": 213386000000.0,
+    "gross": 103427000000.0,
+    "operating": 24977000000.0,
+    "net": 21192000000.0,
+    "eps": 1.95
+   },
+   {
+    "label": "2025-09-30",
+    "revenue": 180169000000.0,
+    "gross": 91499000000.0,
+    "operating": 17422000000.0,
+    "net": 21187000000.0,
+    "eps": 1.95
+   },
+   {
+    "label": "2025-06-30",
+    "revenue": 167702000000.0,
+    "gross": 86893000000.0,
+    "operating": 19171000000.0,
+    "net": 18164000000.0,
+    "eps": 1.68
+   },
+   {
+    "label": "2025-03-31",
+    "revenue": 155667000000.0,
+    "gross": 78691000000.0,
+    "operating": 18405000000.0,
+    "net": 17127000000.0,
+    "eps": NaN
+   }
+  ],
+  "years": [
+   {
+    "label": "2025-12-31",
+    "revenue": 716924000000.0,
+    "gross": 360510000000.0,
+    "operating": 79975000000.0,
+    "net": 77670000000.0,
+    "eps": 7.17
+   },
+   {
+    "label": "2024-12-31",
+    "revenue": 637959000000.0,
+    "gross": 311671000000.0,
+    "operating": 68593000000.0,
+    "net": 59248000000.0,
+    "eps": 5.53
+   },
+   {
+    "label": "2023-12-31",
+    "revenue": 574785000000.0,
+    "gross": 270046000000.0,
+    "operating": 36852000000.0,
+    "net": 30425000000.0,
+    "eps": 2.9
+   },
+   {
+    "label": "2022-12-31",
+    "revenue": 513983000000.0,
+    "gross": 225152000000.0,
+    "operating": 12248000000.0,
+    "net": -2722000000.0,
+    "eps": -0.27
+   }
+  ],
+  "surprises": [
+   {
+    "when": "2026-10-29",
+    "estimate": 1.95,
+    "actual": NaN,
+    "surprise_pct": NaN
+   },
+   {
+    "when": "2026-07-30",
+    "estimate": 1.83,
+    "actual": 5.75,
+    "surprise_pct": 2.1502
+   },
+   {
+    "when": "2026-04-29",
+    "estimate": 1.64,
+    "actual": 2.78,
+    "surprise_pct": 0.6901999999999999
+   },
+   {
+    "when": "2026-02-05",
+    "estimate": 1.95,
+    "actual": 1.95,
+    "surprise_pct": 0.0022
+   },
+   {
+    "when": "2025-10-30",
+    "estimate": 1.56,
+    "actual": 1.95,
+    "surprise_pct": 0.252
+   },
+   {
+    "when": "2025-07-31",
+    "estimate": 1.32,
+    "actual": 1.68,
+    "surprise_pct": 0.27190000000000003
+   },
+   {
+    "when": "2025-05-01",
+    "estimate": 1.36,
+    "actual": 1.59,
+    "surprise_pct": 0.1677
+   },
+   {
+    "when": "2025-02-06",
+    "estimate": 1.48,
+    "actual": 1.86,
+    "surprise_pct": 0.2529
+   }
+  ],
+  "error": ""
+ },
+ "APA": {
+  "symbol": "APA",
+  "fetched_at": 1790319708.1217277,
+  "name": "APA Corporation",
+  "sector": "Energy",
+  "industry": "Oil & Gas E&P",
+  "website": "https://www.apacorp.com",
+  "market_cap": 15303354368.0,
+  "pe_trailing": 9.21519,
+  "pe_forward": 9.771375,
+  "ps": 1.7852722,
+  "ev_ebitda": 3.438,
+  "peg": 1.18,
+  "eps_trailing": 4.74,
+  "eps_forward": 4.4702,
+  "dividend_yield": 0.022883294,
+  "beta": 0.366,
+  "revenue_ttm": 8572000256.0,
+  "revenue_growth": 0.092,
+  "earnings_growth": 0.263,
+  "gross_margin": 0.78255,
+  "operating_margin": 0.56331,
+  "profit_margin": 0.19564,
+  "roe": 0.26659,
+  "debt_to_equity": 48.854,
+  "current_ratio": 0.946,
+  "total_cash": 444000000.0,
+  "total_debt": 3880999936.0,
+  "free_cashflow": 2146749952.0,
+  "target_mean": 45.96,
+  "target_high": 62.0,
+  "target_low": 36.0,
+  "rating_mean": 2.55556,
+  "analysts": 25.0,
+  "short_pct_float": 0.0921,
+  "held_institutions": 1.10145,
+  "quarters": [
+   {
+    "label": "2026-06-30",
+    "revenue": 2373000000.0,
+    "gross": 1551000000.0,
+    "operating": 1321000000.0,
+    "net": 747000000.0,
+    "eps": 2.11
+   },
+   {
+    "label": "2026-03-31",
+    "revenue": 2327000000.0,
+    "gross": 1246000000.0,
+    "operating": 1007000000.0,
+    "net": 446000000.0,
+    "eps": 1.26
+   },
+   {
+    "label": "2025-12-31",
+    "revenue": 1991000000.0,
+    "gross": 857000000.0,
+    "operating": 640000000.0,
+    "net": 279000000.0,
+    "eps": 0.79
+   },
+   {
+    "label": "2025-09-30",
+    "revenue": 2115000000.0,
+    "gross": 880000000.0,
+    "operating": 672000000.0,
+    "net": 205000000.0,
+    "eps": 0.57
+   },
+   {
+    "label": "2025-06-30",
+    "revenue": 2178000000.0,
+    "gross": 873000000.0,
+    "operating": 671000000.0,
+    "net": 603000000.0,
+    "eps": 1.67
+   },
+   {
+    "label": "2025-03-31",
+    "revenue": NaN,
+    "gross": NaN,
+    "operating": NaN,
+    "net": NaN,
+    "eps": NaN
+   }
+  ],
+  "years": [
+   {
+    "label": "2025-12-31",
+    "revenue": 8920000000.0,
+    "gross": 3618000000.0,
+    "operating": 2750000000.0,
+    "net": 1434000000.0,
+    "eps": 3.99
+   },
+   {
+    "label": "2024-12-31",
+    "revenue": 9737000000.0,
+    "gross": 4302000000.0,
+    "operating": 3199000000.0,
+    "net": 804000000.0,
+    "eps": 2.27
+   },
+   {
+    "label": "2023-12-31",
+    "revenue": 8279000000.0,
+    "gross": 4227000000.0,
+    "operating": 3358000000.0,
+    "net": 2855000000.0,
+    "eps": 9.25
+   },
+   {
+    "label": "2022-12-31",
+    "revenue": 11075000000.0,
+    "gross": 6255000000.0,
+    "operating": 5082000000.0,
+    "net": 3604000000.0,
+    "eps": 11.02
+   }
+  ],
+  "surprises": [
+   {
+    "when": "2026-11-04",
+    "estimate": 1.37,
+    "actual": NaN,
+    "surprise_pct": NaN
+   },
+   {
+    "when": "2026-08-05",
+    "estimate": 1.87,
+    "actual": 1.89,
+    "surprise_pct": 0.0101
+   },
+   {
+    "when": "2026-05-06",
+    "estimate": 1.14,
+    "actual": 1.38,
+    "surprise_pct": 0.209
+   },
+   {
+    "when": "2026-02-25",
+    "estimate": 0.64,
+    "actual": 0.91,
+    "surprise_pct": 0.41729999999999995
+   },
+   {
+    "when": "2025-11-05",
+    "estimate": 0.79,
+    "actual": 0.93,
+    "surprise_pct": 0.1759
+   },
+   {
+    "when": "2025-08-05",
+    "estimate": 0.48,
+    "actual": 0.87,
+    "surprise_pct": 0.7946
+   },
+   {
+    "when": "2025-05-06",
+    "estimate": 0.82,
+    "actual": 1.06,
+    "surprise_pct": 0.2918
+   },
+   {
+    "when": "2025-02-25",
+    "estimate": 0.95,
+    "actual": 0.79,
+    "surprise_pct": -0.1668
+   }
+  ],
+  "error": ""
+ },
+ "GOOGL": {
+  "symbol": "GOOGL",
+  "fetched_at": 1790319709.3013906,
+  "name": "Alphabet Inc.",
+  "sector": "Communication Services",
+  "industry": "Internet Content & Information",
+  "website": "https://abc.xyz",
+  "market_cap": 4187040514048.0,
+  "pe_trailing": 16.948513,
+  "pe_forward": 22.9784,
+  "ps": 9.390805,
+  "ev_ebitda": 23.581,
+  "peg": 1.21,
+  "eps_trailing": 20.2,
+  "eps_forward": 14.89921,
+  "dividend_yield": 0.0025160585,
+  "beta": 1.225,
+  "revenue_ttm": 445865984000.0,
+  "revenue_growth": 0.242,
+  "earnings_growth": 2.94,
+  "gross_margin": 0.60897,
+  "operating_margin": 0.34033,
+  "profit_margin": 0.54771,
+  "roe": 0.48676,
+  "debt_to_equity": 18.859,
+  "current_ratio": 2.724,
+  "total_cash": 242473992192.0,
+  "total_debt": 120790999040.0,
+  "free_cashflow": 22665000960.0,
+  "target_mean": 429.45557,
+  "target_high": 515.0,
+  "target_low": 340.0,
+  "rating_mean": 1.37705,
+  "analysts": 54.0,
+  "short_pct_float": 0.0149,
+  "held_institutions": 0.80994004,
+  "quarters": [
+   {
+    "label": "2026-06-30",
+    "revenue": 119796000000.0,
+    "gross": 73853000000.0,
+    "operating": 40770000000.0,
+    "net": 112193000000.0,
+    "eps": 9.11
+   },
+   {
+    "label": "2026-03-31",
+    "revenue": 109896000000.0,
+    "gross": 68625000000.0,
+    "operating": 39696000000.0,
+    "net": 62578000000.0,
+    "eps": 5.11
+   },
+   {
+    "label": "2025-12-31",
+    "revenue": 113829000000.0,
+    "gross": 68062000000.0,
+    "operating": 35934000000.0,
+    "net": 34455000000.0,
+    "eps": 2.82
+   },
+   {
+    "label": "2025-09-30",
+    "revenue": 102346000000.0,
+    "gross": 60977000000.0,
+    "operating": 31228000000.0,
+    "net": 34979000000.0,
+    "eps": 2.87
+   },
+   {
+    "label": "2025-06-30",
+    "revenue": 96428000000.0,
+    "gross": 57389000000.0,
+    "operating": 31271000000.0,
+    "net": 28196000000.0,
+    "eps": 2.31
+   },
+   {
+    "label": "2025-03-31",
+    "revenue": NaN,
+    "gross": NaN,
+    "operating": NaN,
+    "net": NaN,
+    "eps": NaN
+   }
+  ],
+  "years": [
+   {
+    "label": "2025-12-31",
+    "revenue": 402836000000.0,
+    "gross": 240301000000.0,
+    "operating": 129039000000.0,
+    "net": 132170000000.0,
+    "eps": 10.81
+   },
+   {
+    "label": "2024-12-31",
+    "revenue": 350018000000.0,
+    "gross": 203712000000.0,
+    "operating": 112390000000.0,
+    "net": 100118000000.0,
+    "eps": 8.04
+   },
+   {
+    "label": "2023-12-31",
+    "revenue": 307394000000.0,
+    "gross": 174062000000.0,
+    "operating": 84293000000.0,
+    "net": 73795000000.0,
+    "eps": 5.8
+   },
+   {
+    "label": "2022-12-31",
+    "revenue": 282836000000.0,
+    "gross": 156633000000.0,
+    "operating": 74842000000.0,
+    "net": 59972000000.0,
+    "eps": 4.56
+   }
+  ],
+  "surprises": [
+   {
+    "when": "2026-10-28",
+    "estimate": 3.02,
+    "actual": NaN,
+    "surprise_pct": NaN
+   },
+   {
+    "when": "2026-07-22",
+    "estimate": 2.9,
+    "actual": 9.11,
+    "surprise_pct": 2.1423
+   },
+   {
+    "when": "2026-04-29",
+    "estimate": 2.63,
+    "actual": 5.11,
+    "surprise_pct": 0.943
+   },
+   {
+    "when": "2026-02-04",
+    "estimate": 2.64,
+    "actual": 2.82,
+    "surprise_pct": 0.0701
+   },
+   {
+    "when": "2025-10-29",
+    "estimate": 2.26,
+    "actual": 2.87,
+    "surprise_pct": 0.2688
+   },
+   {
+    "when": "2025-07-23",
+    "estimate": 2.19,
+    "actual": 2.31,
+    "surprise_pct": 0.0567
+   },
+   {
+    "when": "2025-04-24",
+    "estimate": 2.01,
+    "actual": 2.81,
+    "surprise_pct": 0.39840000000000003
+   },
+   {
+    "when": "2025-02-04",
+    "estimate": 2.13,
+    "actual": 2.15,
+    "surprise_pct": 0.0118
+   }
+  ],
+  "error": ""
+ },
+ "JNJ": {
+  "symbol": "JNJ",
+  "fetched_at": 1790319710.378006,
+  "name": "Johnson & Johnson",
+  "sector": "Healthcare",
+  "industry": "Drug Manufacturers - General",
+  "website": "https://www.jnj.com",
+  "market_cap": 652311330816.0,
+  "pe_trailing": 31.256351,
+  "pe_forward": 22.300215,
+  "ps": 6.6610637,
+  "ev_ebitda": 19.517,
+  "peg": 2.82,
+  "eps_trailing": 8.66,
+  "eps_forward": 12.138,
+  "dividend_yield": 0.01946725,
+  "beta": 0.235,
+  "revenue_ttm": 97929003008.0,
+  "revenue_growth": 0.066,
+  "earnings_growth": -0.009,
+  "gross_margin": 0.6814,
+  "operating_margin": 0.2919,
+  "profit_margin": 0.21482,
+  "roe": 0.25742,
+  "debt_to_equity": 57.709,
+  "current_ratio": 1.089,
+  "total_cash": 20757999616.0,
+  "total_debt": 49036001280.0,
+  "free_cashflow": 16885125120.0,
+  "target_mean": 277.9091,
+  "target_high": 320.0,
+  "target_low": 190.0,
+  "rating_mean": 1.91304,
+  "analysts": 22.0,
+  "short_pct_float": 0.0098,
+  "held_institutions": 0.76724,
+  "quarters": [
+   {
+    "label": "2026-06-30",
+    "revenue": 25310000000.0,
+    "gross": 17259000000.0,
+    "operating": 7174000000.0,
+    "net": 5534000000.0,
+    "eps": 2.27
+   },
+   {
+    "label": "2026-03-31",
+    "revenue": 24062000000.0,
+    "gross": 15956000000.0,
+    "operating": 6395000000.0,
+    "net": 5235000000.0,
+    "eps": 2.14
+   },
+   {
+    "label": "2025-12-31",
+    "revenue": 24564000000.0,
+    "gross": 16596000000.0,
+    "operating": 5591000000.0,
+    "net": 5116000000.0,
+    "eps": 2.1
+   },
+   {
+    "label": "2025-09-30",
+    "revenue": 23993000000.0,
+    "gross": 16690000000.0,
+    "operating": 7096000000.0,
+    "net": 5152000000.0,
+    "eps": 2.12
+   },
+   {
+    "label": "2025-06-30",
+    "revenue": 23743000000.0,
+    "gross": 16115000000.0,
+    "operating": 6710000000.0,
+    "net": 5537000000.0,
+    "eps": 2.29
+   },
+   {
+    "label": "2025-03-31",
+    "revenue": NaN,
+    "gross": NaN,
+    "operating": NaN,
+    "net": NaN,
+    "eps": NaN
+   }
+  ],
+  "years": [
+   {
+    "label": "2025-12-31",
+    "revenue": 94193000000.0,
+    "gross": 63937000000.0,
+    "operating": 25596000000.0,
+    "net": 26804000000.0,
+    "eps": 11.03
+   },
+   {
+    "label": "2024-12-31",
+    "revenue": 88821000000.0,
+    "gross": 61350000000.0,
+    "operating": 21249000000.0,
+    "net": 14066000000.0,
+    "eps": 5.79
+   },
+   {
+    "label": "2023-12-31",
+    "revenue": 85159000000.0,
+    "gross": 58606000000.0,
+    "operating": 22009000000.0,
+    "net": 35153000000.0,
+    "eps": 13.72
+   },
+   {
+    "label": "2022-12-31",
+    "revenue": 79990000000.0,
+    "gross": 55394000000.0,
+    "operating": 21013000000.0,
+    "net": 17941000000.0,
+    "eps": 6.73
+   }
+  ],
+  "surprises": [
+   {
+    "when": "2026-10-13",
+    "estimate": 2.45,
+    "actual": NaN,
+    "surprise_pct": NaN
+   },
+   {
+    "when": "2026-07-15",
+    "estimate": 2.85,
+    "actual": 2.9,
+    "surprise_pct": 0.0158
+   },
+   {
+    "when": "2026-04-14",
+    "estimate": 2.68,
+    "actual": 2.7,
+    "surprise_pct": 0.0085
+   },
+   {
+    "when": "2026-01-21",
+    "estimate": 2.46,
+    "actual": 2.46,
+    "surprise_pct": -0.0011
+   },
+   {
+    "when": "2025-10-14",
+    "estimate": 2.76,
+    "actual": 2.8,
+    "surprise_pct": 0.0149
+   },
+   {
+    "when": "2025-07-16",
+    "estimate": 2.68,
+    "actual": 2.77,
+    "surprise_pct": 0.0321
+   },
+   {
+    "when": "2025-04-15",
+    "estimate": 2.58,
+    "actual": 2.77,
+    "surprise_pct": 0.0738
+   },
+   {
+    "when": "2025-01-22",
+    "estimate": 2.01,
+    "actual": 2.04,
+    "surprise_pct": 0.0138
+   }
+  ],
+  "error": ""
+ },
+ "JPM": {
+  "symbol": "JPM",
+  "fetched_at": 1790319711.3576074,
+  "name": "JPMorgan Chase & Co.",
+  "sector": "Financial Services",
+  "industry": "Banks - Diversified",
+  "website": "https://www.jpmorganchase.com",
+  "market_cap": 899955556352.0,
+  "pe_trailing": 14.474562,
+  "pe_forward": 13.548909,
+  "ps": 4.829953,
+  "ev_ebitda": NaN,
+  "peg": 1.57,
+  "eps_trailing": 23.39,
+  "eps_forward": 24.98799,
+  "dividend_yield": 0.017776197,
+  "beta": 0.975,
+  "revenue_ttm": 186328006656.0,
+  "revenue_growth": 0.304,
+  "earnings_growth": 0.469,
+  "gross_margin": 0.0,
+  "operating_margin": 0.50394,
+  "profit_margin": 0.34921002,
+  "roe": 0.17789,
+  "debt_to_equity": NaN,
+  "current_ratio": NaN,
+  "total_cash": 1526419030016.0,
+  "total_debt": 1343306989568.0,
+  "free_cashflow": NaN,
+  "target_mean": 374.2381,
+  "target_high": 436.0,
+  "target_low": 305.0,
+  "rating_mean": 2.08333,
+  "analysts": 21.0,
+  "short_pct_float": 0.0091,
+  "held_institutions": 0.75688004,
+  "quarters": [
+   {
+    "label": "2026-06-30",
+    "revenue": 52852000000.0,
+    "gross": NaN,
+    "operating": NaN,
+    "net": 21155000000.0,
+    "eps": 7.7
+   },
+   {
+    "label": "2026-03-31",
+    "revenue": 49833000000.0,
+    "gross": NaN,
+    "operating": NaN,
+    "net": 16494000000.0,
+    "eps": 5.94
+   },
+   {
+    "label": "2025-12-31",
+    "revenue": 45796000000.0,
+    "gross": NaN,
+    "operating": NaN,
+    "net": 13025000000.0,
+    "eps": 4.63
+   },
+   {
+    "label": "2025-09-30",
+    "revenue": 46430000000.0,
+    "gross": NaN,
+    "operating": NaN,
+    "net": 14393000000.0,
+    "eps": 5.07
+   },
+   {
+    "label": "2025-06-30",
+    "revenue": 44882000000.0,
+    "gross": NaN,
+    "operating": NaN,
+    "net": 14987000000.0,
+    "eps": 5.24
+   },
+   {
+    "label": "2025-03-31",
+    "revenue": NaN,
+    "gross": NaN,
+    "operating": NaN,
+    "net": NaN,
+    "eps": NaN
+   }
+  ],
+  "years": [
+   {
+    "label": "2025-12-31",
+    "revenue": 181847000000.0,
+    "gross": NaN,
+    "operating": NaN,
+    "net": 57048000000.0,
+    "eps": 20.02
+   },
+   {
+    "label": "2024-12-31",
+    "revenue": 169439000000.0,
+    "gross": NaN,
+    "operating": NaN,
+    "net": 58471000000.0,
+    "eps": 19.75
+   },
+   {
+    "label": "2023-12-31",
+    "revenue": 154952000000.0,
+    "gross": NaN,
+    "operating": NaN,
+    "net": 49552000000.0,
+    "eps": 16.23
+   },
+   {
+    "label": "2022-12-31",
+    "revenue": 127727000000.0,
+    "gross": NaN,
+    "operating": NaN,
+    "net": 37676000000.0,
+    "eps": 12.09
+   }
+  ],
+  "surprises": [
+   {
+    "when": "2026-10-13",
+    "estimate": 5.91,
+    "actual": NaN,
+    "surprise_pct": NaN
+   },
+   {
+    "when": "2026-07-14",
+    "estimate": 5.8,
+    "actual": 6.14,
+    "surprise_pct": 0.058600000000000006
+   },
+   {
+    "when": "2026-04-14",
+    "estimate": 5.51,
+    "actual": 5.94,
+    "surprise_pct": 0.07780000000000001
+   },
+   {
+    "when": "2026-01-13",
+    "estimate": 4.82,
+    "actual": 4.63,
+    "surprise_pct": -0.0391
+   },
+   {
+    "when": "2025-10-14",
+    "estimate": 4.87,
+    "actual": 5.07,
+    "surprise_pct": 0.0401
+   },
+   {
+    "when": "2025-07-15",
+    "estimate": 4.48,
+    "actual": 4.96,
+    "surprise_pct": 0.10619999999999999
+   },
+   {
+    "when": "2025-04-11",
+    "estimate": 4.64,
+    "actual": 5.07,
+    "surprise_pct": 0.0915
+   },
+   {
+    "when": "2025-01-15",
+    "estimate": 4.04,
+    "actual": 4.81,
+    "surprise_pct": 0.1918
+   }
+  ],
+  "error": ""
+ },
+ "KO": {
+  "symbol": "KO",
+  "fetched_at": 1790319712.2895331,
+  "name": "The Coca-Cola Company",
+  "sector": "Consumer Defensive",
+  "industry": "Beverages - Non-Alcoholic",
+  "website": "https://www.coca-colacompany.com",
+  "market_cap": 379054555136.0,
+  "pe_trailing": 26.456457,
+  "pe_forward": 24.983126,
+  "ps": 7.5615826,
+  "ev_ebitda": 24.068,
+  "peg": 4.0,
+  "eps_trailing": 3.33,
+  "eps_forward": 3.52638,
+  "dividend_yield": 0.023612214,
+  "beta": 0.342,
+  "revenue_ttm": 50128998400.0,
+  "revenue_growth": 0.067,
+  "earnings_growth": 0.169,
+  "gross_margin": 0.61888003,
+  "operating_margin": 0.34873,
+  "profit_margin": 0.28558,
+  "roe": 0.42054,
+  "debt_to_equity": 115.519,
+  "current_ratio": 1.305,
+  "total_cash": 16371000320.0,
+  "total_debt": 44260999168.0,
+  "free_cashflow": 5218749952.0,
+  "target_mean": 94.69565,
+  "target_high": 104.0,
+  "target_low": 75.0,
+  "rating_mean": 1.75,
+  "analysts": 23.0,
+  "short_pct_float": 0.0095,
+  "held_institutions": 0.68226,
+  "quarters": [
+   {
+    "label": "2026-06-30",
+    "revenue": 13380000000.0,
+    "gross": 8415000000.0,
+    "operating": 4695000000.0,
+    "net": 4425000000.0,
+    "eps": 1.03
+   },
+   {
+    "label": "2026-03-31",
+    "revenue": 12472000000.0,
+    "gross": 7852000000.0,
+    "operating": 4372000000.0,
+    "net": 3924000000.0,
+    "eps": 0.91
+   },
+   {
+    "label": "2025-12-31",
+    "revenue": 11822000000.0,
+    "gross": 7099000000.0,
+    "operating": 2862000000.0,
+    "net": 2271000000.0,
+    "eps": 0.53
+   },
+   {
+    "label": "2025-09-30",
+    "revenue": 12455000000.0,
+    "gross": 7658000000.0,
+    "operating": 4012000000.0,
+    "net": 3696000000.0,
+    "eps": 0.86
+   },
+   {
+    "label": "2025-06-30",
+    "revenue": 12535000000.0,
+    "gross": 7821000000.0,
+    "operating": 4351000000.0,
+    "net": 3810000000.0,
+    "eps": 0.88
+   },
+   {
+    "label": "2025-03-31",
+    "revenue": NaN,
+    "gross": NaN,
+    "operating": NaN,
+    "net": NaN,
+    "eps": NaN
+   }
+  ],
+  "years": [
+   {
+    "label": "2025-12-31",
+    "revenue": 47941000000.0,
+    "gross": 29544000000.0,
+    "operating": 14911000000.0,
+    "net": 13107000000.0,
+    "eps": 3.04
+   },
+   {
+    "label": "2024-12-31",
+    "revenue": 47061000000.0,
+    "gross": 28737000000.0,
+    "operating": 14022000000.0,
+    "net": 10631000000.0,
+    "eps": 2.46
+   },
+   {
+    "label": "2023-12-31",
+    "revenue": 45754000000.0,
+    "gross": 27234000000.0,
+    "operating": 13098000000.0,
+    "net": 10714000000.0,
+    "eps": 2.47
+   },
+   {
+    "label": "2022-12-31",
+    "revenue": 43004000000.0,
+    "gross": 25004000000.0,
+    "operating": 12042000000.0,
+    "net": 9542000000.0,
+    "eps": 2.19
+   }
+  ],
+  "surprises": [
+   {
+    "when": "2026-10-20",
+    "estimate": 0.88,
+    "actual": NaN,
+    "surprise_pct": NaN
+   },
+   {
+    "when": "2026-07-28",
+    "estimate": 0.93,
+    "actual": 0.97,
+    "surprise_pct": 0.0405
+   },
+   {
+    "when": "2026-04-28",
+    "estimate": 0.81,
+    "actual": 0.86,
+    "surprise_pct": 0.0588
+   },
+   {
+    "when": "2026-02-10",
+    "estimate": 0.56,
+    "actual": 0.58,
+    "surprise_pct": 0.0269
+   },
+   {
+    "when": "2025-10-21",
+    "estimate": 0.78,
+    "actual": 0.82,
+    "surprise_pct": 0.053200000000000004
+   },
+   {
+    "when": "2025-07-22",
+    "estimate": 0.84,
+    "actual": 0.87,
+    "surprise_pct": 0.0393
+   },
+   {
+    "when": "2025-04-29",
+    "estimate": 0.72,
+    "actual": 0.73,
+    "surprise_pct": 0.0195
+   },
+   {
+    "when": "2025-02-11",
+    "estimate": 0.52,
+    "actual": 0.55,
+    "surprise_pct": 0.0638
+   }
+  ],
+  "error": ""
+ },
+ "LLY": {
+  "symbol": "LLY",
+  "fetched_at": 1790319713.3204482,
+  "name": "Eli Lilly and Company",
+  "sector": "Healthcare",
+  "industry": "Drug Manufacturers - General",
+  "website": "https://www.lilly.com",
+  "market_cap": 1053940252672.0,
+  "pe_trailing": 38.611237,
+  "pe_forward": 24.963701,
+  "ps": 13.2294855,
+  "ev_ebitda": 26.361,
+  "peg": 1.14,
+  "eps_trailing": 30.61,
+  "eps_forward": 47.34434,
+  "dividend_yield": 0.0056125596,
+  "beta": 0.502,
+  "revenue_ttm": 79666003968.0,
+  "revenue_growth": 0.477,
+  "earnings_growth": 0.262,
+  "gross_margin": 0.83399004,
+  "operating_margin": 0.54222,
+  "profit_margin": 0.33528998,
+  "roe": 1.02286,
+  "debt_to_equity": 162.071,
+  "current_ratio": 1.355,
+  "total_cash": 8949999616.0,
+  "total_debt": 54907998208.0,
+  "free_cashflow": 11065900032.0,
+  "target_mean": 1325.3855,
+  "target_high": 1600.0,
+  "target_low": 930.0,
+  "rating_mean": 1.63333,
+  "analysts": 29.0,
+  "short_pct_float": 0.0084,
+  "held_institutions": 0.8532,
+  "quarters": [
+   {
+    "label": "2026-06-30",
+    "revenue": 22974000000.0,
+    "gross": 19706000000.0,
+    "operating": 12457000000.0,
+    "net": 7095000000.0,
+    "eps": 7.94
+   },
+   {
+    "label": "2026-03-31",
+    "revenue": 19799000000.0,
+    "gross": 16222000000.0,
+    "operating": 9778000000.0,
+    "net": 7396000000.0,
+    "eps": 8.26
+   },
+   {
+    "label": "2025-12-31",
+    "revenue": 19292000000.0,
+    "gross": 15920300000.0,
+    "operating": 8987400000.0,
+    "net": 6637700000.0,
+    "eps": 7.39
+   },
+   {
+    "label": "2025-09-30",
+    "revenue": 17600800000.0,
+    "gross": 14592500000.0,
+    "operating": 8386100000.0,
+    "net": 5582500000.0,
+    "eps": 6.21
+   },
+   {
+    "label": "2025-06-30",
+    "revenue": 15558000000.0,
+    "gross": 13110000000.0,
+    "operating": 7021000000.0,
+    "net": 5661000000.0,
+    "eps": 6.29
+   },
+   {
+    "label": "2025-03-31",
+    "revenue": NaN,
+    "gross": NaN,
+    "operating": NaN,
+    "net": NaN,
+    "eps": NaN
+   }
+  ],
+  "years": [
+   {
+    "label": "2025-12-31",
+    "revenue": 65179000000.0,
+    "gross": 54127000000.0,
+    "operating": 29696000000.0,
+    "net": 20640000000.0,
+    "eps": 22.95
+   },
+   {
+    "label": "2024-12-31",
+    "revenue": 45043000000.0,
+    "gross": 36625000000.0,
+    "operating": 17040000000.0,
+    "net": 10590000000.0,
+    "eps": 11.71
+   },
+   {
+    "label": "2023-12-31",
+    "revenue": 34124000000.0,
+    "gross": 27042000000.0,
+    "operating": 10325000000.0,
+    "net": 5240000000.0,
+    "eps": 5.8
+   },
+   {
+    "label": "2022-12-31",
+    "revenue": 28541400000.0,
+    "gross": 21911600000.0,
+    "operating": 8280400000.0,
+    "net": 6244800000.0,
+    "eps": 6.572215
+   }
+  ],
+  "surprises": [
+   {
+    "when": "2026-10-29",
+    "estimate": 9.93,
+    "actual": NaN,
+    "surprise_pct": NaN
+   },
+   {
+    "when": "2026-08-05",
+    "estimate": 6.58,
+    "actual": 8.38,
+    "surprise_pct": 0.2727
+   },
+   {
+    "when": "2026-04-30",
+    "estimate": 6.79,
+    "actual": 8.55,
+    "surprise_pct": 0.259
+   },
+   {
+    "when": "2026-02-04",
+    "estimate": 6.91,
+    "actual": 7.54,
+    "surprise_pct": 0.09140000000000001
+   },
+   {
+    "when": "2025-10-30",
+    "estimate": 5.89,
+    "actual": 7.02,
+    "surprise_pct": 0.19149999999999998
+   },
+   {
+    "when": "2025-08-07",
+    "estimate": 5.59,
+    "actual": 6.31,
+    "surprise_pct": 0.12890000000000001
+   },
+   {
+    "when": "2025-05-01",
+    "estimate": 3.46,
+    "actual": 3.34,
+    "surprise_pct": -0.0339
+   },
+   {
+    "when": "2025-02-06",
+    "estimate": 5.07,
+    "actual": 5.32,
+    "surprise_pct": 0.05
+   }
+  ],
+  "error": ""
+ },
+ "MA": {
+  "symbol": "MA",
+  "fetched_at": 1790319714.4375157,
+  "name": "Mastercard Incorporated",
+  "sector": "Financial Services",
+  "industry": "Credit Services",
+  "website": "https://www.mastercard.com",
+  "market_cap": 495891709952.0,
+  "pe_trailing": 30.765219,
+  "pe_forward": 24.585653,
+  "ps": 14.134814,
+  "ev_ebitda": 22.923,
+  "peg": 1.46,
+  "eps_trailing": 18.4,
+  "eps_forward": 23.02481,
+  "dividend_yield": 0.006018717,
+  "beta": 0.735,
+  "revenue_ttm": 35083001856.0,
+  "revenue_growth": 0.141,
+  "earnings_growth": 0.221,
+  "gross_margin": 1.0,
+  "operating_margin": 0.61108,
+  "profit_margin": 0.46339,
+  "roe": 2.41202,
+  "debt_to_equity": 439.583,
+  "current_ratio": 1.061,
+  "total_cash": 11608999936.0,
+  "total_debt": 24643000320.0,
+  "free_cashflow": 16961250304.0,
+  "target_mean": 666.7138,
+  "target_high": 740.0,
+  "target_low": 550.0,
+  "rating_mean": 1.425,
+  "analysts": 37.0,
+  "short_pct_float": 0.0083,
+  "held_institutions": 0.91173,
+  "quarters": [
+   {
+    "label": "2026-06-30",
+    "revenue": 9277000000.0,
+    "gross": 7330000000.0,
+    "operating": 5728000000.0,
+    "net": 4388000000.0,
+    "eps": 4.97
+   },
+   {
+    "label": "2026-03-31",
+    "revenue": 8398000000.0,
+    "gross": 6361000000.0,
+    "operating": 4965000000.0,
+    "net": 3882000000.0,
+    "eps": 4.35
+   },
+   {
+    "label": "2025-12-31",
+    "revenue": 8806000000.0,
+    "gross": 6988000000.0,
+    "operating": 5129000000.0,
+    "net": 4060000000.0,
+    "eps": 4.52
+   },
+   {
+    "label": "2025-09-30",
+    "revenue": 8602000000.0,
+    "gross": 6709000000.0,
+    "operating": 5170000000.0,
+    "net": 3927000000.0,
+    "eps": 4.34
+   },
+   {
+    "label": "2025-06-30",
+    "revenue": 8133000000.0,
+    "gross": 6281000000.0,
+    "operating": 4914000000.0,
+    "net": 3701000000.0,
+    "eps": NaN
+   },
+   {
+    "label": "2025-03-31",
+    "revenue": NaN,
+    "gross": NaN,
+    "operating": NaN,
+    "net": NaN,
+    "eps": 3.59
+   }
+  ],
+  "years": [
+   {
+    "label": "2025-12-31",
+    "revenue": 32791000000.0,
+    "gross": 25540000000.0,
+    "operating": 19514000000.0,
+    "net": 14968000000.0,
+    "eps": 16.52
+   },
+   {
+    "label": "2024-12-31",
+    "revenue": 28167000000.0,
+    "gross": 21494000000.0,
+    "operating": 16327000000.0,
+    "net": 12874000000.0,
+    "eps": 13.89
+   },
+   {
+    "label": "2023-12-31",
+    "revenue": 25098000000.0,
+    "gross": 19076000000.0,
+    "operating": 14630000000.0,
+    "net": 11195000000.0,
+    "eps": 11.83
+   },
+   {
+    "label": "2022-12-31",
+    "revenue": 22237000000.0,
+    "gross": 16974000000.0,
+    "operating": 12722000000.0,
+    "net": 9930000000.0,
+    "eps": 10.22
+   }
+  ],
+  "surprises": [
+   {
+    "when": "2026-10-29",
+    "estimate": 5.15,
+    "actual": NaN,
+    "surprise_pct": NaN
+   },
+   {
+    "when": "2026-07-30",
+    "estimate": 4.78,
+    "actual": 5.04,
+    "surprise_pct": 0.0553
+   },
+   {
+    "when": "2026-04-30",
+    "estimate": 4.41,
+    "actual": 4.6,
+    "surprise_pct": 0.042300000000000004
+   },
+   {
+    "when": "2026-01-29",
+    "estimate": 4.24,
+    "actual": 4.76,
+    "surprise_pct": 0.1226
+   },
+   {
+    "when": "2025-10-30",
+    "estimate": 4.31,
+    "actual": 4.38,
+    "surprise_pct": 0.0152
+   },
+   {
+    "when": "2025-07-31",
+    "estimate": 4.02,
+    "actual": 4.15,
+    "surprise_pct": 0.031200000000000002
+   },
+   {
+    "when": "2025-05-01",
+    "estimate": 3.56,
+    "actual": 3.73,
+    "surprise_pct": 0.048
+   },
+   {
+    "when": "2025-01-30",
+    "estimate": 3.69,
+    "actual": 3.82,
+    "surprise_pct": 0.0354
+   }
+  ],
+  "error": ""
+ },
+ "MSFT": {
+  "symbol": "MSFT",
+  "fetched_at": 1790319716.1412258,
+  "name": "Microsoft Corporation",
+  "sector": "Technology",
+  "industry": "Software - Infrastructure",
+  "website": "https://www.microsoft.com",
+  "market_cap": 3697401921536.0,
+  "pe_trailing": 27.848434,
+  "pe_forward": 21.031107,
+  "ps": 11.142156,
+  "ev_ebitda": 19.303,
+  "peg": 1.63,
+  "eps_trailing": 17.88,
+  "eps_forward": 23.67588,
+  "dividend_yield": 0.00727142,
+  "beta": 1.108,
+  "revenue_ttm": 331839012864.0,
+  "revenue_growth": 0.177,
+  "earnings_growth": 0.317,
+  "gross_margin": 0.67944,
+  "operating_margin": 0.45111,
+  "profit_margin": 0.40305,
+  "roe": 0.34039003,
+  "debt_to_equity": 29.118,
+  "current_ratio": 1.23,
+  "total_cash": 76842999808.0,
+  "total_debt": 128812998656.0,
+  "free_cashflow": 16545500160.0,
+  "target_mean": 577.26135,
+  "target_high": 870.0,
+  "target_low": 440.0,
+  "rating_mean": 1.32727,
+  "analysts": 52.0,
+  "short_pct_float": 0.0091,
+  "held_institutions": 0.758,
+  "quarters": [
+   {
+    "label": "2026-06-30",
+    "revenue": 90007000000.0,
+    "gross": 60482000000.0,
+    "operating": 40603000000.0,
+    "net": 35766000000.0,
+    "eps": 4.81
+   },
+   {
+    "label": "2026-03-31",
+    "revenue": 82886000000.0,
+    "gross": 56058000000.0,
+    "operating": 38398000000.0,
+    "net": 31778000000.0,
+    "eps": 4.27
+   },
+   {
+    "label": "2025-12-31",
+    "revenue": 81273000000.0,
+    "gross": 55295000000.0,
+    "operating": 38275000000.0,
+    "net": 38458000000.0,
+    "eps": 5.16
+   },
+   {
+    "label": "2025-09-30",
+    "revenue": 77673000000.0,
+    "gross": 53630000000.0,
+    "operating": 37961000000.0,
+    "net": 27747000000.0,
+    "eps": 3.72
+   },
+   {
+    "label": "2025-06-30",
+    "revenue": 76441000000.0,
+    "gross": 52427000000.0,
+    "operating": 34323000000.0,
+    "net": 27233000000.0,
+    "eps": 3.65
+   }
+  ],
+  "years": [
+   {
+    "label": "2026-06-30",
+    "revenue": 331839000000.0,
+    "gross": 225465000000.0,
+    "operating": 155237000000.0,
+    "net": 133749000000.0,
+    "eps": 17.95
+   },
+   {
+    "label": "2025-06-30",
+    "revenue": 281724000000.0,
+    "gross": 193893000000.0,
+    "operating": 128528000000.0,
+    "net": 101832000000.0,
+    "eps": 13.64
+   },
+   {
+    "label": "2024-06-30",
+    "revenue": 245122000000.0,
+    "gross": 171008000000.0,
+    "operating": 109433000000.0,
+    "net": 88136000000.0,
+    "eps": 11.8
+   },
+   {
+    "label": "2023-06-30",
+    "revenue": 211915000000.0,
+    "gross": 146052000000.0,
+    "operating": 88523000000.0,
+    "net": 72361000000.0,
+    "eps": 9.68
+   }
+  ],
+  "surprises": [
+   {
+    "when": "2026-10-28",
+    "estimate": 4.72,
+    "actual": NaN,
+    "surprise_pct": NaN
+   },
+   {
+    "when": "2026-07-29",
+    "estimate": 4.24,
+    "actual": 4.74,
+    "surprise_pct": 0.11810000000000001
+   },
+   {
+    "when": "2026-04-29",
+    "estimate": 4.07,
+    "actual": 4.27,
+    "surprise_pct": 0.049
+   },
+   {
+    "when": "2026-01-28",
+    "estimate": 3.92,
+    "actual": 4.14,
+    "surprise_pct": 0.056900000000000006
+   },
+   {
+    "when": "2025-10-29",
+    "estimate": 3.66,
+    "actual": 4.13,
+    "surprise_pct": 0.1273
+   },
+   {
+    "when": "2025-07-30",
+    "estimate": 3.38,
+    "actual": 3.65,
+    "surprise_pct": 0.0809
+   },
+   {
+    "when": "2025-04-30",
+    "estimate": 3.22,
+    "actual": 3.46,
+    "surprise_pct": 0.07400000000000001
+   },
+   {
+    "when": "2025-01-29",
+    "estimate": 3.12,
+    "actual": 3.23,
+    "surprise_pct": 0.0347
+   }
+  ],
+  "error": ""
+ },
+ "NVDA": {
+  "symbol": "NVDA",
+  "fetched_at": 1790319717.5503943,
+  "name": "NVIDIA Corporation",
+  "sector": "Technology",
+  "industry": "Semiconductors",
+  "website": "https://www.nvidia.com",
+  "market_cap": 5422933082112.0,
+  "pe_trailing": 28.5,
+  "pe_forward": 14.320303,
+  "ps": 17.89924,
+  "ev_ebitda": 26.774,
+  "peg": 0.48,
+  "eps_trailing": 7.88,
+  "eps_forward": 15.68263,
+  "dividend_yield": 0.0012416302,
+  "beta": 2.217,
+  "revenue_ttm": 302970011648.0,
+  "revenue_growth": 1.059,
+  "earnings_growth": 1.278,
+  "gross_margin": 0.74674004,
+  "operating_margin": 0.66236997,
+  "profit_margin": 0.63663,
+  "roe": 1.17211,
+  "debt_to_equity": 16.971,
+  "current_ratio": 4.589,
+  "total_cash": 62469001216.0,
+  "total_debt": 38860001280.0,
+  "free_cashflow": 41809874944.0,
+  "target_mean": 327.7,
+  "target_high": 515.0,
+  "target_low": 180.0,
+  "rating_mean": 1.29508,
+  "analysts": 59.0,
+  "short_pct_float": 0.0127,
+  "held_institutions": 0.71416,
+  "quarters": [
+   {
+    "label": "2026-07-31",
+    "revenue": 96221000000.0,
+    "gross": 72142000000.0,
+    "operating": 63734000000.0,
+    "net": 59688000000.0,
+    "eps": 2.46
+   },
+   {
+    "label": "2026-04-30",
+    "revenue": 81615000000.0,
+    "gross": 61157000000.0,
+    "operating": 53536000000.0,
+    "net": 58321000000.0,
+    "eps": 2.39
+   },
+   {
+    "label": "2026-01-31",
+    "revenue": 68127000000.0,
+    "gross": 51093000000.0,
+    "operating": 44299000000.0,
+    "net": 42960000000.0,
+    "eps": 1.76
+   },
+   {
+    "label": "2025-10-31",
+    "revenue": 57006000000.0,
+    "gross": 41849000000.0,
+    "operating": 36010000000.0,
+    "net": 31910000000.0,
+    "eps": 1.3
+   },
+   {
+    "label": "2025-07-31",
+    "revenue": 46743000000.0,
+    "gross": 33853000000.0,
+    "operating": 28440000000.0,
+    "net": 26422000000.0,
+    "eps": 1.08
+   }
+  ],
+  "years": [
+   {
+    "label": "2026-01-31",
+    "revenue": 215938000000.0,
+    "gross": 153463000000.0,
+    "operating": 130387000000.0,
+    "net": 120067000000.0,
+    "eps": 4.9
+   },
+   {
+    "label": "2025-01-31",
+    "revenue": 130497000000.0,
+    "gross": 97858000000.0,
+    "operating": 81453000000.0,
+    "net": 72880000000.0,
+    "eps": 2.94
+   },
+   {
+    "label": "2024-01-31",
+    "revenue": 60922000000.0,
+    "gross": 44301000000.0,
+    "operating": 32972000000.0,
+    "net": 29760000000.0,
+    "eps": 1.19
+   },
+   {
+    "label": "2023-01-31",
+    "revenue": 26974000000.0,
+    "gross": 15356000000.0,
+    "operating": 5577000000.0,
+    "net": 4368000000.0,
+    "eps": 0.174
+   }
+  ],
+  "surprises": [
+   {
+    "when": "2026-11-17",
+    "estimate": 2.47,
+    "actual": NaN,
+    "surprise_pct": NaN
+   },
+   {
+    "when": "2026-08-26",
+    "estimate": 2.09,
+    "actual": 2.22,
+    "surprise_pct": 0.0616
+   },
+   {
+    "when": "2026-05-20",
+    "estimate": 1.77,
+    "actual": 1.87,
+    "surprise_pct": 0.0554
+   },
+   {
+    "when": "2026-02-25",
+    "estimate": 1.54,
+    "actual": 1.62,
+    "surprise_pct": 0.053200000000000004
+   },
+   {
+    "when": "2025-11-19",
+    "estimate": 1.26,
+    "actual": 1.3,
+    "surprise_pct": 0.0346
+   },
+   {
+    "when": "2025-08-27",
+    "estimate": 1.01,
+    "actual": 1.05,
+    "surprise_pct": 0.040999999999999995
+   },
+   {
+    "when": "2025-05-28",
+    "estimate": 0.75,
+    "actual": 0.81,
+    "surprise_pct": 0.0802
+   },
+   {
+    "when": "2025-02-26",
+    "estimate": 0.85,
+    "actual": 0.89,
+    "surprise_pct": 0.0525
+   }
+  ],
+  "error": ""
+ },
+ "SPY": {
+  "symbol": "SPY",
+  "fetched_at": 1790319719.0377836,
+  "name": "State Street SPDR S&P 500 ETF Trust",
+  "sector": "",
+  "industry": "",
+  "website": "",
+  "market_cap": NaN,
+  "pe_trailing": 24.787346,
+  "pe_forward": NaN,
+  "ps": NaN,
+  "ev_ebitda": NaN,
+  "peg": NaN,
+  "eps_trailing": NaN,
+  "eps_forward": NaN,
+  "dividend_yield": 0.0073742205,
+  "beta": NaN,
+  "revenue_ttm": NaN,
+  "revenue_growth": NaN,
+  "earnings_growth": NaN,
+  "gross_margin": NaN,
+  "operating_margin": NaN,
+  "profit_margin": NaN,
+  "roe": NaN,
+  "debt_to_equity": NaN,
+  "current_ratio": NaN,
+  "total_cash": NaN,
+  "total_debt": NaN,
+  "free_cashflow": NaN,
+  "target_mean": NaN,
+  "target_high": NaN,
+  "target_low": NaN,
+  "rating_mean": NaN,
+  "analysts": NaN,
+  "short_pct_float": NaN,
+  "held_institutions": NaN,
+  "quarters": [],
+  "years": [],
+  "surprises": [],
+  "error": "该代码没有可用的财务数据（可能是 ETF、ADR 或新上市）"
+ },
+ "TSM": {
+  "symbol": "TSM",
+  "fetched_at": 1790319720.4449053,
+  "name": "Taiwan Semiconductor Manufacturing Company Limited",
+  "sector": "Technology",
+  "industry": "Semiconductors",
+  "website": "https://www.tsmc.com",
+  "market_cap": 2339877683200.0,
+  "pe_trailing": 33.22165,
+  "pe_forward": 20.576872,
+  "ps": 0.52694106,
+  "ev_ebitda": 5.15,
+  "peg": 0.85,
+  "eps_trailing": 13.58,
+  "eps_forward": 21.9251,
+  "dividend_yield": 0.058221556,
+  "beta": 1.247,
+  "revenue_ttm": 4440492343296.0,
+  "revenue_growth": 0.36,
+  "earnings_growth": 0.774,
+  "gross_margin": 0.6423,
+  "operating_margin": 0.60344005,
+  "profit_margin": 0.49923,
+  "roe": 0.39969003,
+  "debt_to_equity": 16.504,
+  "current_ratio": 2.458,
+  "total_cash": 3518010228736.0,
+  "total_debt": 1068558516224.0,
+  "free_cashflow": 730826014720.0,
+  "target_mean": 552.2594,
+  "target_high": 700.0,
+  "target_low": 440.0,
+  "rating_mean": 1.38095,
+  "analysts": 20.0,
+  "short_pct_float": 0.0057,
+  "held_institutions": 0.15481,
+  "quarters": [
+   {
+    "label": "2026-06-30",
+    "revenue": 1270380250000.0,
+    "gross": 860310695000.0,
+    "operating": 766568191000.0,
+    "net": 706561938000.0,
+    "eps": 136.25
+   },
+   {
+    "label": "2026-03-31",
+    "revenue": 1134103440000.0,
+    "gross": 751295421000.0,
+    "operating": 658948859000.0,
+    "net": 572479752000.0,
+    "eps": 110.4
+   },
+   {
+    "label": "2025-12-31",
+    "revenue": 1046090449000.0,
+    "gross": 651986857000.0,
+    "operating": 564880854000.0,
+    "net": 485465363000.0,
+    "eps": 97.5
+   },
+   {
+    "label": "2025-09-30",
+    "revenue": 989918318000.0,
+    "gross": 588542829000.0,
+    "operating": 500685080000.0,
+    "net": 452301407000.0,
+    "eps": 87.2
+   },
+   {
+    "label": "2025-06-30",
+    "revenue": 933791869000.0,
+    "gross": 547369238000.0,
+    "operating": 463440498000.0,
+    "net": 398273102000.0,
+    "eps": 76.8
+   },
+   {
+    "label": "2025-03-31",
+    "revenue": NaN,
+    "gross": NaN,
+    "operating": NaN,
+    "net": NaN,
+    "eps": NaN
+   }
+  ],
+  "years": [
+   {
+    "label": "2025-12-31",
+    "revenue": 3809054300000.0,
+    "gross": 2281294000000.0,
+    "operating": 1936095600000.0,
+    "net": 1697604000000.0,
+    "eps": 331.25
+   },
+   {
+    "label": "2024-12-31",
+    "revenue": 2894307700000.0,
+    "gross": 1624353600000.0,
+    "operating": 1322003100000.0,
+    "net": 1158380200000.0,
+    "eps": 226.25
+   },
+   {
+    "label": "2023-12-31",
+    "revenue": 2161735800000.0,
+    "gross": 1175110600000.0,
+    "operating": 921429900000.0,
+    "net": 851740000000.0,
+    "eps": 161.7
+   },
+   {
+    "label": "2022-12-31",
+    "revenue": 2263891300000.0,
+    "gross": 1348354800000.0,
+    "operating": 1121226500000.0,
+    "net": 992923400000.0,
+    "eps": 196.0
+   }
+  ],
+  "surprises": [
+   {
+    "when": "2026-10-15",
+    "estimate": 4.46,
+    "actual": NaN,
+    "surprise_pct": NaN
+   },
+   {
+    "when": "2026-07-16",
+    "estimate": 3.89,
+    "actual": 4.31,
+    "surprise_pct": 0.10890000000000001
+   },
+   {
+    "when": "2026-04-15",
+    "estimate": 3.33,
+    "actual": 3.49,
+    "surprise_pct": 0.046799999999999994
+   },
+   {
+    "when": "2026-01-15",
+    "estimate": 2.98,
+    "actual": 3.14,
+    "surprise_pct": 0.0553
+   },
+   {
+    "when": "2025-10-15",
+    "estimate": 2.63,
+    "actual": 2.92,
+    "surprise_pct": 0.11230000000000001
+   },
+   {
+    "when": "2025-07-17",
+    "estimate": 2.31,
+    "actual": 2.47,
+    "surprise_pct": 0.0679
+   },
+   {
+    "when": "2025-04-17",
+    "estimate": 2.05,
+    "actual": 2.12,
+    "surprise_pct": 0.0321
+   },
+   {
+    "when": "2025-01-16",
+    "estimate": 2.22,
+    "actual": 2.24,
+    "surprise_pct": 0.0068000000000000005
+   }
+  ],
+  "error": ""
+ },
+ "V": {
+  "symbol": "V",
+  "fetched_at": 1790319722.04933,
+  "name": "Visa Inc.",
+  "sector": "Financial Services",
+  "industry": "Credit Services",
+  "website": "https://www.visa.com",
+  "market_cap": 690829197312.0,
+  "pe_trailing": 30.76756,
+  "pe_forward": 24.52497,
+  "ps": 15.5284395,
+  "ev_ebitda": 22.092,
+  "peg": 1.64,
+  "eps_trailing": 11.96,
+  "eps_forward": 15.0043,
+  "dividend_yield": 0.0074131447,
+  "beta": 0.761,
+  "revenue_ttm": 44487999488.0,
+  "revenue_growth": 0.144,
+  "earnings_growth": 0.102,
+  "gross_margin": 0.97725,
+  "operating_margin": 0.66130996,
+  "profit_margin": 0.50782,
+  "roe": 0.6119,
+  "debt_to_equity": 67.821,
+  "current_ratio": 0.985,
+  "total_cash": 13792000000.0,
+  "total_debt": 23857999872.0,
+  "free_cashflow": 20404000768.0,
+  "target_mean": 419.36163,
+  "target_high": 466.0,
+  "target_low": 330.0,
+  "rating_mean": 1.45,
+  "analysts": 37.0,
+  "short_pct_float": 0.0109,
+  "held_institutions": 0.90169996,
+  "quarters": [
+   {
+    "label": "2026-06-30",
+    "revenue": 11633000000.0,
+    "gross": 8895000000.0,
+    "operating": 7130000000.0,
+    "net": 5628000000.0,
+    "eps": 2.97
+   },
+   {
+    "label": "2026-03-31",
+    "revenue": 11230000000.0,
+    "gross": 9129000000.0,
+    "operating": 7563000000.0,
+    "net": 6021000000.0,
+    "eps": 3.14
+   },
+   {
+    "label": "2025-12-31",
+    "revenue": 10901000000.0,
+    "gross": 8904000000.0,
+    "operating": 7445000000.0,
+    "net": 5853000000.0,
+    "eps": 3.03
+   },
+   {
+    "label": "2025-09-30",
+    "revenue": 10724000000.0,
+    "gross": 8743000000.0,
+    "operating": 7051000000.0,
+    "net": 5090000000.0,
+    "eps": 2.62
+   },
+   {
+    "label": "2025-06-30",
+    "revenue": 10172000000.0,
+    "gross": 8199000000.0,
+    "operating": 6792000000.0,
+    "net": 5272000000.0,
+    "eps": 2.69
+   },
+   {
+    "label": "2025-03-31",
+    "revenue": NaN,
+    "gross": NaN,
+    "operating": NaN,
+    "net": NaN,
+    "eps": NaN
+   }
+  ],
+  "years": [
+   {
+    "label": "2025-09-30",
+    "revenue": 40000000000.0,
+    "gross": 32145000000.0,
+    "operating": 26556000000.0,
+    "net": 20058000000.0,
+    "eps": 10.2
+   },
+   {
+    "label": "2024-09-30",
+    "revenue": 35926000000.0,
+    "gross": 28884000000.0,
+    "operating": 24057000000.0,
+    "net": 19743000000.0,
+    "eps": 9.73
+   },
+   {
+    "label": "2023-09-30",
+    "revenue": 32653000000.0,
+    "gross": 26086000000.0,
+    "operating": 21927000000.0,
+    "net": 17273000000.0,
+    "eps": 8.28
+   },
+   {
+    "label": "2022-09-30",
+    "revenue": 29310000000.0,
+    "gross": 23577000000.0,
+    "operating": 19681000000.0,
+    "net": 14957000000.0,
+    "eps": 7.0
+   }
+  ],
+  "surprises": [
+   {
+    "when": "2026-10-27",
+    "estimate": 3.43,
+    "actual": NaN,
+    "surprise_pct": NaN
+   },
+   {
+    "when": "2026-07-28",
+    "estimate": 3.23,
+    "actual": 3.32,
+    "surprise_pct": 0.0276
+   },
+   {
+    "when": "2026-04-28",
+    "estimate": 3.1,
+    "actual": 3.31,
+    "surprise_pct": 0.0679
+   },
+   {
+    "when": "2026-01-29",
+    "estimate": 3.14,
+    "actual": 3.17,
+    "surprise_pct": 0.0088
+   },
+   {
+    "when": "2025-10-28",
+    "estimate": 2.97,
+    "actual": 2.98,
+    "surprise_pct": 0.0028000000000000004
+   },
+   {
+    "when": "2025-07-29",
+    "estimate": 2.85,
+    "actual": 2.98,
+    "surprise_pct": 0.046799999999999994
+   },
+   {
+    "when": "2025-04-29",
+    "estimate": 2.68,
+    "actual": 2.76,
+    "surprise_pct": 0.03
+   },
+   {
+    "when": "2025-01-30",
+    "estimate": 2.66,
+    "actual": 2.75,
+    "surprise_pct": 0.0334
+   }
+  ],
+  "error": ""
+ },
+ "ZETA": {
+  "symbol": "ZETA",
+  "fetched_at": 1790319723.9015121,
+  "name": "Zeta Global Holdings Corp.",
+  "sector": "Technology",
+  "industry": "Software - Infrastructure",
+  "website": "https://www.zetaglobal.com",
+  "market_cap": 7370547712.0,
+  "pe_trailing": NaN,
+  "pe_forward": 24.463085,
+  "ps": 4.691995,
+  "ev_ebitda": 63.246,
+  "peg": 0.77,
+  "eps_trailing": 0.0,
+  "eps_forward": 1.20876,
+  "dividend_yield": 0.0,
+  "beta": 1.436,
+  "revenue_ttm": 1570877056.0,
+  "revenue_growth": 0.435,
+  "earnings_growth": NaN,
+  "gross_margin": 0.59478,
+  "operating_margin": 0.03822,
+  "profit_margin": -0.0013799999,
+  "roe": -0.00271,
+  "debt_to_equity": 23.772,
+  "current_ratio": 2.382,
+  "total_cash": 309952000.0,
+  "total_debt": 220248000.0,
+  "free_cashflow": 252155632.0,
+  "target_mean": 31.35714,
+  "target_high": 44.0,
+  "target_low": 25.0,
+  "rating_mean": NaN,
+  "analysts": 14.0,
+  "short_pct_float": 0.08,
+  "held_institutions": 0.87426,
+  "quarters": [
+   {
+    "label": "2026-06-30",
+    "revenue": 442766000.0,
+    "gross": 261769000.0,
+    "operating": 16924000.0,
+    "net": 8173000.0,
+    "eps": 0.032646
+   },
+   {
+    "label": "2026-03-31",
+    "revenue": 396304000.0,
+    "gross": 233858000.0,
+    "operating": -10421000.0,
+    "net": -13247000.0,
+    "eps": -0.053264
+   },
+   {
+    "label": "2025-12-31",
+    "revenue": 394638000.0,
+    "gross": 234751000.0,
+    "operating": 31637000.0,
+    "net": 6539000.0,
+    "eps": 0.026709
+   },
+   {
+    "label": "2025-09-30",
+    "revenue": 337169000.0,
+    "gross": 203945000.0,
+    "operating": 15234000.0,
+    "net": -3634000.0,
+    "eps": -0.01528
+   },
+   {
+    "label": "2025-06-30",
+    "revenue": 308442000.0,
+    "gross": 191454000.0,
+    "operating": -5105000.0,
+    "net": -12814000.0,
+    "eps": -0.053986
+   },
+   {
+    "label": "2025-03-31",
+    "revenue": NaN,
+    "gross": NaN,
+    "operating": NaN,
+    "net": NaN,
+    "eps": NaN
+   }
+  ],
+  "years": [
+   {
+    "label": "2025-12-31",
+    "revenue": 1304668000.0,
+    "gross": 791081000.0,
+    "operating": 28805000.0,
+    "net": -31509000.0,
+    "eps": -0.128702
+   },
+   {
+    "label": "2024-12-31",
+    "revenue": 1005754000.0,
+    "gross": 606202000.0,
+    "operating": -59686000.0,
+    "net": -69771000.0,
+    "eps": -0.38
+   },
+   {
+    "label": "2023-12-31",
+    "revenue": 728723000.0,
+    "gross": 454241000.0,
+    "operating": -164637000.0,
+    "net": -187481000.0,
+    "eps": -1.2
+   },
+   {
+    "label": "2022-12-31",
+    "revenue": 590961000.0,
+    "gross": 375495000.0,
+    "operating": -258690000.0,
+    "net": -279239000.0,
+    "eps": -2.01
+   }
+  ],
+  "surprises": [
+   {
+    "when": "2026-11-03",
+    "estimate": 0.28,
+    "actual": NaN,
+    "surprise_pct": NaN
+   },
+   {
+    "when": "2026-08-04",
+    "estimate": 0.19,
+    "actual": 0.27,
+    "surprise_pct": 0.39840000000000003
+   },
+   {
+    "when": "2026-05-01",
+    "estimate": 0.12,
+    "actual": 0.16,
+    "surprise_pct": 0.3918
+   },
+   {
+    "when": "2026-02-25",
+    "estimate": 0.23,
+    "actual": 0.37,
+    "surprise_pct": 0.5813
+   },
+   {
+    "when": "2025-11-05",
+    "estimate": 0.18,
+    "actual": 0.27,
+    "surprise_pct": 0.4722
+   },
+   {
+    "when": "2025-08-05",
+    "estimate": 0.12,
+    "actual": 0.14,
+    "surprise_pct": 0.1275
+   },
+   {
+    "when": "2025-05-01",
+    "estimate": 0.11,
+    "actual": 0.11,
+    "surprise_pct": -0.016
+   },
+   {
+    "when": "2025-02-25",
+    "estimate": 0.22,
+    "actual": 0.25,
+    "surprise_pct": 0.1144
+   }
+  ],
+  "error": ""
+ },
+ "RUM": {
+  "symbol": "RUM",
+  "fetched_at": 1790319725.48877,
+  "name": "RUM Group Inc.",
+  "sector": "Communication Services",
+  "industry": "Internet Content & Information",
+  "website": "https://www.rum.group",
+  "market_cap": 4263968000.0,
+  "pe_trailing": NaN,
+  "pe_forward": -27.741936,
+  "ps": 36.240532,
+  "ev_ebitda": -42.128,
+  "peg": NaN,
+  "eps_trailing": -0.61,
+  "eps_forward": -0.31,
+  "dividend_yield": 0.0,
+  "beta": 1.217,
+  "revenue_ttm": 117657432.0,
+  "revenue_growth": 0.609,
+  "earnings_growth": NaN,
+  "gross_margin": 0.078600004,
+  "operating_margin": -0.99171996,
+  "profit_margin": -1.34603,
+  "roe": -0.18409,
+  "debt_to_equity": 35.194,
+  "current_ratio": 2.118,
+  "total_cash": 203269520.0,
+  "total_debt": 501775360.0,
+  "free_cashflow": -152408928.0,
+  "target_mean": 22.0,
+  "target_high": 22.0,
+  "target_low": 22.0,
+  "rating_mean": NaN,
+  "analysts": 1.0,
+  "short_pct_float": 0.1673,
+  "held_institutions": 0.20533001,
+  "quarters": [
+   {
+    "label": "2026-06-30",
+    "revenue": 40366736.0,
+    "gross": 9759669.0,
+    "operating": -40032388.0,
+    "net": -80935185.0,
+    "eps": -0.28
+   },
+   {
+    "label": "2026-03-31",
+    "revenue": 25459796.0,
+    "gross": -1537387.0,
+    "operating": -30184212.0,
+    "net": -30270370.0,
+    "eps": -0.12
+   },
+   {
+    "label": "2025-12-31",
+    "revenue": 27068454.0,
+    "gross": 1482433.0,
+    "operating": -24211328.0,
+    "net": -32693477.0,
+    "eps": -0.13
+   },
+   {
+    "label": "2025-09-30",
+    "revenue": 24762445.0,
+    "gross": -456886.0,
+    "operating": -24361677.0,
+    "net": -16261762.0,
+    "eps": -0.06
+   },
+   {
+    "label": "2025-06-30",
+    "revenue": 25084631.0,
+    "gross": -1457676.0,
+    "operating": -29443577.0,
+    "net": -30224930.0,
+    "eps": -0.12
+   }
+  ],
+  "years": [
+   {
+    "label": "2025-12-31",
+    "revenue": 100622320.0,
+    "gross": -6761513.0,
+    "operating": -112700435.0,
+    "net": -81830362.0,
+    "eps": -0.32
+   },
+   {
+    "label": "2024-12-31",
+    "revenue": 95488190.0,
+    "gross": -42984076.0,
+    "operating": -129499214.0,
+    "net": -338362779.0,
+    "eps": -1.66
+   },
+   {
+    "label": "2023-12-31",
+    "revenue": 80963451.0,
+    "gross": -65193283.0,
+    "operating": -136318075.0,
+    "net": -116420462.0,
+    "eps": -0.58
+   },
+   {
+    "label": "2022-12-31",
+    "revenue": 39384284.0,
+    "gross": -4361234.0,
+    "operating": -34484255.0,
+    "net": -11403994.0,
+    "eps": -0.05
+   }
+  ],
+  "surprises": [
+   {
+    "when": "2026-11-09",
+    "estimate": -0.1,
+    "actual": NaN,
+    "surprise_pct": NaN
+   },
+   {
+    "when": "2026-08-10",
+    "estimate": -0.1,
+    "actual": -0.28,
+    "surprise_pct": -1.8
+   },
+   {
+    "when": "2026-05-14",
+    "estimate": -0.09,
+    "actual": -0.12,
+    "surprise_pct": -0.3333
+   },
+   {
+    "when": "2026-03-05",
+    "estimate": -0.09,
+    "actual": -0.13,
+    "surprise_pct": -0.36840000000000006
+   },
+   {
+    "when": "2025-11-10",
+    "estimate": -0.06,
+    "actual": -0.06,
+    "surprise_pct": -0.0588
+   },
+   {
+    "when": "2025-08-10",
+    "estimate": -0.07,
+    "actual": -0.12,
+    "surprise_pct": -0.7998999999999999
+   },
+   {
+    "when": "2025-05-08",
+    "estimate": -0.1,
+    "actual": -0.01,
+    "surprise_pct": 0.9
+   },
+   {
+    "when": "2025-03-25",
+    "estimate": -0.12,
+    "actual": -1.15,
+    "surprise_pct": -8.583300000000001
+   }
+  ],
+  "error": ""
+ },
+ "PLTR": {
+  "symbol": "PLTR",
+  "fetched_at": 1790319726.883148,
+  "name": "Palantir Technologies Inc.",
+  "sector": "Technology",
+  "industry": "Software - Infrastructure",
+  "website": "https://www.palantir.com",
+  "market_cap": 462805008384.0,
+  "pe_trailing": 164.60684,
+  "pe_forward": 82.90608,
+  "ps": 75.18022,
+  "ev_ebitda": 170.402,
+  "peg": 1.85,
+  "eps_trailing": 1.17,
+  "eps_forward": 2.32299,
+  "dividend_yield": 0.0,
+  "beta": 1.621,
+  "revenue_ttm": 6155940864.0,
+  "revenue_growth": 0.928,
+  "earnings_growth": 2.154,
+  "gross_margin": 0.84796,
+  "operating_margin": 0.47120997,
+  "profit_margin": 0.49005002,
+  "roe": 0.38097,
+  "debt_to_equity": 2.139,
+  "current_ratio": 7.228,
+  "total_cash": 9409098752.0,
+  "total_debt": 211400000.0,
+  "free_cashflow": 2159104512.0,
+  "target_mean": 195.56538,
+  "target_high": 255.0,
+  "target_low": 80.0,
+  "rating_mean": 1.83871,
+  "analysts": 26.0,
+  "short_pct_float": 0.027999999,
+  "held_institutions": 0.64755,
+  "quarters": [
+   {
+    "label": "2026-06-30",
+    "revenue": 1935464000.0,
+    "gross": 1638594000.0,
+    "operating": 912004000.0,
+    "net": 1061890000.0,
+    "eps": 0.41
+   },
+   {
+    "label": "2026-03-31",
+    "revenue": 1632583000.0,
+    "gross": 1416785000.0,
+    "operating": 753998000.0,
+    "net": 870527000.0,
+    "eps": 0.34
+   },
+   {
+    "label": "2025-12-31",
+    "revenue": 1406802000.0,
+    "gross": 1190836000.0,
+    "operating": 575394000.0,
+    "net": 608676000.0,
+    "eps": 0.24
+   },
+   {
+    "label": "2025-09-30",
+    "revenue": 1181092000.0,
+    "gross": 973785000.0,
+    "operating": 393256000.0,
+    "net": 475599000.0,
+    "eps": 0.180263
+   },
+   {
+    "label": "2025-06-30",
+    "revenue": 1003697000.0,
+    "gross": 810763000.0,
+    "operating": 269317000.0,
+    "net": 326727000.0,
+    "eps": 0.13019
+   }
+  ],
+  "years": [
+   {
+    "label": "2025-12-31",
+    "revenue": 4475446000.0,
+    "gross": 3686269000.0,
+    "operating": 1414015000.0,
+    "net": 1625033000.0,
+    "eps": 0.63
+   },
+   {
+    "label": "2024-12-31",
+    "revenue": 2865507000.0,
+    "gross": 2299517000.0,
+    "operating": 310403000.0,
+    "net": 462190000.0,
+    "eps": 0.190277
+   },
+   {
+    "label": "2023-12-31",
+    "revenue": 2225012000.0,
+    "gross": 1793907000.0,
+    "operating": 119966000.0,
+    "net": 209825000.0,
+    "eps": 0.090131
+   },
+   {
+    "label": "2022-12-31",
+    "revenue": 1905871000.0,
+    "gross": 1497322000.0,
+    "operating": -161201000.0,
+    "net": -373705000.0,
+    "eps": -0.180263
+   }
+  ],
+  "surprises": [
+   {
+    "when": "2026-11-02",
+    "estimate": 0.41,
+    "actual": NaN,
+    "surprise_pct": NaN
+   },
+   {
+    "when": "2026-08-03",
+    "estimate": 0.35,
+    "actual": 0.41,
+    "surprise_pct": 0.18510000000000001
+   },
+   {
+    "when": "2026-05-04",
+    "estimate": 0.28,
+    "actual": 0.33,
+    "surprise_pct": 0.1808
+   },
+   {
+    "when": "2026-02-02",
+    "estimate": 0.23,
+    "actual": 0.25,
+    "surprise_pct": 0.086
+   },
+   {
+    "when": "2025-11-03",
+    "estimate": 0.17,
+    "actual": 0.21,
+    "surprise_pct": 0.2546
+   },
+   {
+    "when": "2025-08-04",
+    "estimate": 0.14,
+    "actual": 0.16,
+    "surprise_pct": 0.1557
+   },
+   {
+    "when": "2025-05-05",
+    "estimate": 0.13,
+    "actual": 0.13,
+    "surprise_pct": 0.0111
+   },
+   {
+    "when": "2025-02-03",
+    "estimate": 0.11,
+    "actual": 0.14,
+    "surprise_pct": 0.2372
+   }
+  ],
+  "error": ""
+ },
+ "TEM": {
+  "symbol": "TEM",
+  "fetched_at": 1790319728.5506575,
+  "name": "Tempus AI, Inc.",
+  "sector": "Healthcare",
+  "industry": "Health Information Services",
+  "website": "https://www.tempus.com",
+  "market_cap": 14838953984.0,
+  "pe_trailing": NaN,
+  "pe_forward": -10128.078,
+  "ps": 10.362261,
+  "ev_ebitda": -79.99,
+  "peg": NaN,
+  "eps_trailing": -1.55,
+  "eps_forward": -0.00812,
+  "dividend_yield": 0.0,
+  "beta": 3.724,
+  "revenue_ttm": 1432018944.0,
+  "revenue_growth": 0.216,
+  "earnings_growth": NaN,
+  "gross_margin": 0.63979,
+  "operating_margin": -0.20106001,
+  "profit_margin": -0.17767,
+  "roe": -0.67442,
+  "debt_to_equity": 324.58,
+  "current_ratio": 3.297,
+  "total_cash": 815990976.0,
+  "total_debt": 1444167936.0,
+  "free_cashflow": -93493376.0,
+  "target_mean": 68.55556,
+  "target_high": 100.0,
+  "target_low": 35.0,
+  "rating_mean": 2.2,
+  "analysts": 18.0,
+  "short_pct_float": 0.2778,
+  "held_institutions": 0.59283,
+  "quarters": [
+   {
+    "label": "2026-06-30",
+    "revenue": 382486000.0,
+    "gross": 246498000.0,
+    "operating": -75913000.0,
+    "net": 5642000.0,
+    "eps": 0.03
+   },
+   {
+    "label": "2026-03-31",
+    "revenue": 348116000.0,
+    "gross": 222041000.0,
+    "operating": -84711000.0,
+    "net": -125919000.0,
+    "eps": -0.71
+   },
+   {
+    "label": "2025-12-31",
+    "revenue": 367211000.0,
+    "gross": 237713000.0,
+    "operating": -61413000.0,
+    "net": -54166000.0,
+    "eps": NaN
+   },
+   {
+    "label": "2025-09-30",
+    "revenue": 334206000.0,
+    "gross": 209942000.0,
+    "operating": -60996000.0,
+    "net": -79982000.0,
+    "eps": -0.46
+   },
+   {
+    "label": "2025-06-30",
+    "revenue": 314635000.0,
+    "gross": 195039000.0,
+    "operating": -61774000.0,
+    "net": -42843000.0,
+    "eps": -0.25
+   },
+   {
+    "label": "2025-03-31",
+    "revenue": NaN,
+    "gross": NaN,
+    "operating": NaN,
+    "net": NaN,
+    "eps": -0.4
+   }
+  ],
+  "years": [
+   {
+    "label": "2025-12-31",
+    "revenue": 1271789000.0,
+    "gross": 797897000.0,
+    "operating": -252872000.0,
+    "net": -245028000.0,
+    "eps": -1.41
+   },
+   {
+    "label": "2024-12-31",
+    "revenue": 693398000.0,
+    "gross": 381113000.0,
+    "operating": -691082000.0,
+    "net": -705809000.0,
+    "eps": -6.23
+   },
+   {
+    "label": "2023-12-31",
+    "revenue": 531822000.0,
+    "gross": 286175000.0,
+    "operating": -196083000.0,
+    "net": -214118000.0,
+    "eps": -1.61354
+   },
+   {
+    "label": "2022-12-31",
+    "revenue": 320668000.0,
+    "gross": 130186000.0,
+    "operating": -265442000.0,
+    "net": -289811000.0,
+    "eps": -2.077855
+   }
+  ],
+  "surprises": [
+   {
+    "when": "2026-11-03",
+    "estimate": -0.08,
+    "actual": NaN,
+    "surprise_pct": NaN
+   },
+   {
+    "when": "2026-07-30",
+    "estimate": -0.15,
+    "actual": -0.04,
+    "surprise_pct": 0.7363
+   },
+   {
+    "when": "2026-05-05",
+    "estimate": -0.2,
+    "actual": -0.13,
+    "surprise_pct": 0.35350000000000004
+   },
+   {
+    "when": "2026-02-24",
+    "estimate": -0.05,
+    "actual": -0.04,
+    "surprise_pct": 0.2206
+   },
+   {
+    "when": "2025-11-04",
+    "estimate": -0.18,
+    "actual": -0.11,
+    "surprise_pct": 0.3726
+   },
+   {
+    "when": "2025-08-08",
+    "estimate": -0.25,
+    "actual": -0.22,
+    "surprise_pct": 0.13
+   },
+   {
+    "when": "2025-05-06",
+    "estimate": -0.27,
+    "actual": -0.24,
+    "surprise_pct": 0.102
+   },
+   {
+    "when": "2025-02-24",
+    "estimate": -0.15,
+    "actual": -0.18,
+    "surprise_pct": -0.17489999999999997
+   }
+  ],
+  "error": ""
+ },
+ "MRVI": {
+  "symbol": "MRVI",
+  "fetched_at": 1790319730.0038188,
+  "name": "Maravai LifeSciences Holdings, Inc.",
+  "sector": "Healthcare",
+  "industry": "Biotechnology",
+  "website": "https://www.maravai.com",
+  "market_cap": 2833236480.0,
+  "pe_trailing": NaN,
+  "pe_forward": -72.7809,
+  "ps": 13.570765,
+  "ev_ebitda": -72.866,
+  "peg": NaN,
+  "eps_trailing": -0.55,
+  "eps_forward": -0.10511,
+  "dividend_yield": 0.0,
+  "beta": 0.605,
+  "revenue_ttm": 208775008.0,
+  "revenue_growth": 0.085,
+  "earnings_growth": NaN,
+  "gross_margin": 0.35707,
+  "operating_margin": -0.29396,
+  "profit_margin": -0.37067002,
+  "roe": -0.33046,
+  "debt_to_equity": 61.335,
+  "current_ratio": 4.052,
+  "total_cash": 70091000.0,
+  "total_debt": 218099008.0,
+  "free_cashflow": -3623125.0,
+  "target_mean": 7.41667,
+  "target_high": 8.0,
+  "target_low": 6.5,
+  "rating_mean": NaN,
+  "analysts": 6.0,
+  "short_pct_float": 0.098400004,
+  "held_institutions": 0.96787,
+  "quarters": [
+   {
+    "label": "2026-06-30",
+    "revenue": 51442000.0,
+    "gross": 20650000.0,
+    "operating": -15122000.0,
+    "net": -12416000.0,
+    "eps": -0.08
+   },
+   {
+    "label": "2026-03-31",
+    "revenue": 65837000.0,
+    "gross": 33701000.0,
+    "operating": 720000.0,
+    "net": -3733000.0,
+    "eps": -0.02
+   },
+   {
+    "label": "2025-12-31",
+    "revenue": 49866000.0,
+    "gross": 12842000.0,
+    "operating": -22529000.0,
+    "net": -35681000.0,
+    "eps": -0.24
+   },
+   {
+    "label": "2025-09-30",
+    "revenue": 41630000.0,
+    "gross": 5655000.0,
+    "operating": -33585000.0,
+    "net": -25556000.0,
+    "eps": -0.18
+   },
+   {
+    "label": "2025-06-30",
+    "revenue": 47397000.0,
+    "gross": 7768000.0,
+    "operating": -35829000.0,
+    "net": -39591000.0,
+    "eps": -0.27
+   }
+  ],
+  "years": [
+   {
+    "label": "2025-12-31",
+    "revenue": 185743000.0,
+    "gross": 33990000.0,
+    "operating": -128530000.0,
+    "net": -130773000.0,
+    "eps": -0.9
+   },
+   {
+    "label": "2024-12-31",
+    "revenue": 259185000.0,
+    "gross": 108309000.0,
+    "operating": -72683000.0,
+    "net": -144846000.0,
+    "eps": -1.05
+   },
+   {
+    "label": "2023-12-31",
+    "revenue": 288945000.0,
+    "gross": 140202000.0,
+    "operating": -28468000.0,
+    "net": -119029000.0,
+    "eps": -0.9
+   },
+   {
+    "label": "2022-12-31",
+    "revenue": 883001000.0,
+    "gross": 714044000.0,
+    "operating": 566416000.0,
+    "net": 220205000.0,
+    "eps": 1.67
+   }
+  ],
+  "surprises": [
+   {
+    "when": "2026-11-05",
+    "estimate": -0.09,
+    "actual": NaN,
+    "surprise_pct": NaN
+   },
+   {
+    "when": "2026-08-06",
+    "estimate": -0.04,
+    "actual": -0.02,
+    "surprise_pct": 0.5451
+   },
+   {
+    "when": "2026-05-07",
+    "estimate": -0.05,
+    "actual": 0.01,
+    "surprise_pct": 1.2102
+   },
+   {
+    "when": "2026-02-25",
+    "estimate": -0.07,
+    "actual": -0.04,
+    "surprise_pct": 0.43
+   },
+   {
+    "when": "2025-11-06",
+    "estimate": -0.08,
+    "actual": -0.08,
+    "surprise_pct": 0.0275
+   },
+   {
+    "when": "2025-08-11",
+    "estimate": -0.07,
+    "actual": -0.08,
+    "surprise_pct": -0.0823
+   },
+   {
+    "when": "2025-05-12",
+    "estimate": -0.07,
+    "actual": -0.08,
+    "surprise_pct": -0.1186
+   },
+   {
+    "when": "2025-03-18",
+    "estimate": -0.04,
+    "actual": -0.06,
+    "surprise_pct": -0.4959
+   }
+  ],
+  "error": ""
+ },
+ "SBET": {
+  "symbol": "SBET",
+  "fetched_at": 1790319731.5658348,
+  "name": "Sharplink, Inc.",
+  "sector": "Financial Services",
+  "industry": "Capital Markets",
+  "website": "https://www.sharplink.com",
+  "market_cap": 2161374720.0,
+  "pe_trailing": NaN,
+  "pe_forward": 82.916664,
+  "ps": 43.05356,
+  "ev_ebitda": -1.378,
+  "peg": NaN,
+  "eps_trailing": -4.56,
+  "eps_forward": 0.12,
+  "dividend_yield": 0.0,
+  "beta": 10.551,
+  "revenue_ttm": 50202000.0,
+  "revenue_growth": 15.539,
+  "earnings_growth": NaN,
+  "gross_margin": 0.97024,
+  "operating_margin": -27.52949,
+  "profit_margin": 0.0,
+  "roe": -1.83566,
+  "debt_to_equity": NaN,
+  "current_ratio": 10.455,
+  "total_cash": 56195000.0,
+  "total_debt": 0.0,
+  "free_cashflow": -933652480.0,
+  "target_mean": 17.14286,
+  "target_high": 30.0,
+  "target_low": 8.0,
+  "rating_mean": 1.14286,
+  "analysts": 7.0,
+  "short_pct_float": 0.14130001,
+  "held_institutions": 0.51596,
+  "quarters": [
+   {
+    "label": "2026-06-30",
+    "revenue": 11528000.0,
+    "gross": 11270000.0,
+    "operating": 2210000.0,
+    "net": -394274000.0,
+    "eps": -1.88
+   },
+   {
+    "label": "2026-03-31",
+    "revenue": 24063000.0,
+    "gross": -483033000.0,
+    "operating": -492909000.0,
+    "net": -685561000.0,
+    "eps": -3.25
+   },
+   {
+    "label": "2025-12-31",
+    "revenue": 15772411.0,
+    "gross": 15399118.0,
+    "operating": -11556956.0,
+    "net": -734459577.0,
+    "eps": NaN
+   },
+   {
+    "label": "2025-09-30",
+    "revenue": 10843567.0,
+    "gross": 10412998.0,
+    "operating": -1763054.0,
+    "net": 104270205.0,
+    "eps": 0.62
+   },
+   {
+    "label": "2025-06-30",
+    "revenue": 697000.0,
+    "gross": 209000.0,
+    "operating": -18557000.0,
+    "net": -103423000.0,
+    "eps": -4.27
+   },
+   {
+    "label": "2025-03-31",
+    "revenue": NaN,
+    "gross": NaN,
+    "operating": NaN,
+    "net": NaN,
+    "eps": -1.84
+   }
+  ],
+  "years": [
+   {
+    "label": "2025-12-31",
+    "revenue": 28055000.0,
+    "gross": 26153000.0,
+    "operating": -32749000.0,
+    "net": -734587000.0,
+    "eps": -7.37
+   },
+   {
+    "label": "2024-12-31",
+    "revenue": 3662000.0,
+    "gross": 906000.0,
+    "operating": -4763000.0,
+    "net": 10099000.0,
+    "eps": 27.62
+   },
+   {
+    "label": "2023-12-31",
+    "revenue": 4952725.0,
+    "gross": 1532663.0,
+    "operating": -6428470.0,
+    "net": -14243182.0,
+    "eps": -62.04
+   },
+   {
+    "label": "2022-12-31",
+    "revenue": 3489948.0,
+    "gross": 1316113.0,
+    "operating": -9556838.0,
+    "net": -15233378.0,
+    "eps": -73.56
+   }
+  ],
+  "surprises": [
+   {
+    "when": "2026-11-12",
+    "estimate": 0.03,
+    "actual": NaN,
+    "surprise_pct": NaN
+   },
+   {
+    "when": "2026-08-07",
+    "estimate": 0.01,
+    "actual": -1.88,
+    "surprise_pct": -142.0353
+   },
+   {
+    "when": "2026-05-08",
+    "estimate": -0.62,
+    "actual": -3.25,
+    "surprise_pct": -4.2419
+   },
+   {
+    "when": "2026-03-09",
+    "estimate": 0.02,
+    "actual": -7.37,
+    "surprise_pct": -442.99160000000006
+   },
+   {
+    "when": "2025-11-12",
+    "estimate": 1.3,
+    "actual": 0.67,
+    "surprise_pct": -0.488
+   }
+  ],
+  "error": ""
+ },
+ "META": {
+  "symbol": "META",
+  "fetched_at": 1790319733.1618419,
+  "name": "Meta Platforms, Inc.",
+  "sector": "Communication Services",
+  "industry": "Internet Content & Information",
+  "website": "https://www.meta.com",
+  "market_cap": 1980915384320.0,
+  "pe_trailing": 28.011168,
+  "pe_forward": 22.262783,
+  "ps": 8.678823,
+  "ev_ebitda": 18.266,
+  "peg": 0.98,
+  "eps_trailing": 27.76,
+  "eps_forward": 34.9278,
+  "dividend_yield": 0.0028222012,
+  "beta": 1.243,
+  "revenue_ttm": 228246994944.0,
+  "revenue_growth": 0.28,
+  "earnings_growth": -0.134,
+  "gross_margin": 0.81747,
+  "operating_margin": 0.34827,
+  "profit_margin": 0.29834998,
+  "roe": 0.29848,
+  "debt_to_equity": 42.997,
+  "current_ratio": 2.226,
+  "total_cash": 90259996672.0,
+  "total_debt": 112317997056.0,
+  "free_cashflow": 21553625088.0,
+  "target_mean": 786.8021,
+  "target_high": 1000.0,
+  "target_low": 580.0,
+  "rating_mean": 1.33871,
+  "analysts": 57.0,
+  "short_pct_float": 0.014099999,
+  "held_institutions": 0.79019,
+  "quarters": [
+   {
+    "label": "2026-06-30",
+    "revenue": 60801000000.0,
+    "gross": 49471000000.0,
+    "operating": 18775000000.0,
+    "net": 15848000000.0,
+    "eps": 6.18
+   },
+   {
+    "label": "2026-03-31",
+    "revenue": 56311000000.0,
+    "gross": 46093000000.0,
+    "operating": 22872000000.0,
+    "net": 26773000000.0,
+    "eps": 10.44
+   },
+   {
+    "label": "2025-12-31",
+    "revenue": 59893000000.0,
+    "gross": 48987000000.0,
+    "operating": 24745000000.0,
+    "net": 22768000000.0,
+    "eps": 8.88
+   },
+   {
+    "label": "2025-09-30",
+    "revenue": 51242000000.0,
+    "gross": 42036000000.0,
+    "operating": 20535000000.0,
+    "net": 2709000000.0,
+    "eps": 1.05
+   },
+   {
+    "label": "2025-06-30",
+    "revenue": 47516000000.0,
+    "gross": 39025000000.0,
+    "operating": 20441000000.0,
+    "net": 18337000000.0,
+    "eps": 7.14
+   },
+   {
+    "label": "2025-03-31",
+    "revenue": NaN,
+    "gross": NaN,
+    "operating": NaN,
+    "net": NaN,
+    "eps": NaN
+   }
+  ],
+  "years": [
+   {
+    "label": "2025-12-31",
+    "revenue": 200966000000.0,
+    "gross": 164791000000.0,
+    "operating": 83276000000.0,
+    "net": 60458000000.0,
+    "eps": 23.49
+   },
+   {
+    "label": "2024-12-31",
+    "revenue": 164501000000.0,
+    "gross": 134340000000.0,
+    "operating": 69380000000.0,
+    "net": 62360000000.0,
+    "eps": 23.86
+   },
+   {
+    "label": "2023-12-31",
+    "revenue": 134902000000.0,
+    "gross": 108943000000.0,
+    "operating": 46751000000.0,
+    "net": 39098000000.0,
+    "eps": 14.87
+   },
+   {
+    "label": "2022-12-31",
+    "revenue": 116609000000.0,
+    "gross": 91360000000.0,
+    "operating": 28944000000.0,
+    "net": 23200000000.0,
+    "eps": 8.59
+   }
+  ],
+  "surprises": [
+   {
+    "when": "2026-10-28",
+    "estimate": 6.4,
+    "actual": NaN,
+    "surprise_pct": NaN
+   },
+   {
+    "when": "2026-07-29",
+    "estimate": 7.22,
+    "actual": 6.18,
+    "surprise_pct": -0.1442
+   },
+   {
+    "when": "2026-04-29",
+    "estimate": 6.82,
+    "actual": 7.31,
+    "surprise_pct": 0.07200000000000001
+   },
+   {
+    "when": "2026-01-28",
+    "estimate": 8.22,
+    "actual": 8.88,
+    "surprise_pct": 0.08
+   },
+   {
+    "when": "2025-10-29",
+    "estimate": 6.67,
+    "actual": 7.25,
+    "surprise_pct": 0.0866
+   },
+   {
+    "when": "2025-07-30",
+    "estimate": 5.86,
+    "actual": 7.14,
+    "surprise_pct": 0.2182
+   },
+   {
+    "when": "2025-04-30",
+    "estimate": 5.21,
+    "actual": 6.43,
+    "surprise_pct": 0.2353
+   },
+   {
+    "when": "2025-01-29",
+    "estimate": 6.74,
+    "actual": 8.02,
+    "surprise_pct": 0.19
+   }
+  ],
+  "error": ""
+ },
+ "ASST": {
+  "symbol": "ASST",
+  "fetched_at": 1790319735.0583606,
+  "name": "Strive, Inc.",
+  "sector": "Financial Services",
+  "industry": "Asset Management",
+  "website": "https://www.strive.com",
+  "market_cap": 2904259328.0,
+  "pe_trailing": NaN,
+  "pe_forward": -27.59447,
+  "ps": 341.6374,
+  "ev_ebitda": -3.81,
+  "peg": NaN,
+  "eps_trailing": -1.21,
+  "eps_forward": -1.085,
+  "dividend_yield": 0.0,
+  "beta": 13.345,
+  "revenue_ttm": 8501000.0,
+  "revenue_growth": 0.946,
+  "earnings_growth": NaN,
+  "gross_margin": 0.0,
+  "operating_margin": -84.83033,
+  "profit_margin": 0.0,
+  "roe": -1.3705701,
+  "debt_to_equity": 0.246,
+  "current_ratio": 7.623,
+  "total_cash": 188320000.0,
+  "total_debt": 3319000.0,
+  "free_cashflow": -455054496.0,
+  "target_mean": 33.2,
+  "target_high": 44.0,
+  "target_low": 21.0,
+  "rating_mean": 1.2,
+  "analysts": 5.0,
+  "short_pct_float": 0.2832,
+  "held_institutions": 0.51959,
+  "quarters": [
+   {
+    "label": "2026-06-30",
+    "revenue": 2941000.0,
+    "gross": -14862000.0,
+    "operating": -21455000.0,
+    "net": -257603000.0,
+    "eps": -75.4
+   },
+   {
+    "label": "2026-03-31",
+    "revenue": 2760000.0,
+    "gross": -11717000.0,
+    "operating": -17861000.0,
+    "net": -265906000.0,
+    "eps": -90.6
+   },
+   {
+    "label": "2025-12-31",
+    "revenue": 1512000.0,
+    "gross": -27994000.0,
+    "operating": -31897000.0,
+    "net": -393598000.0,
+    "eps": -180.8
+   },
+   {
+    "label": "2025-06-30",
+    "revenue": 1511000.0,
+    "gross": -2082000.0,
+    "operating": -3690000.0,
+    "net": -8875000.0,
+    "eps": -0.279378
+   },
+   {
+    "label": "2025-03-31",
+    "revenue": 1423000.0,
+    "gross": -2054000.0,
+    "operating": -4073000.0,
+    "net": -3749000.0,
+    "eps": -32.610776
+   }
+  ],
+  "years": [
+   {
+    "label": "2024-12-31",
+    "revenue": 3650000.0,
+    "gross": -10352000.0,
+    "operating": -22654000.0,
+    "net": -21580000.0,
+    "eps": -187.714201
+   },
+   {
+    "label": "2023-12-31",
+    "revenue": 2449739.0,
+    "gross": -10273069.0,
+    "operating": -18021877.0,
+    "net": -16910416.0,
+    "eps": -147.095701
+   }
+  ],
+  "surprises": [
+   {
+    "when": "2026-11-10",
+    "estimate": -0.22,
+    "actual": NaN,
+    "surprise_pct": NaN
+   },
+   {
+    "when": "2026-08-10",
+    "estimate": -0.24,
+    "actual": -3.65,
+    "surprise_pct": -13.898
+   },
+   {
+    "when": "2026-05-14",
+    "estimate": -2.4,
+    "actual": -5.19,
+    "surprise_pct": -1.1625
+   }
+  ],
+  "error": ""
+ },
+ "BMNR": {
+  "symbol": "BMNR",
+  "fetched_at": 1790319736.4420874,
+  "name": "Bitmine Immersion Technologies, Inc.",
+  "sector": "Financial Services",
+  "industry": "Capital Markets",
+  "website": "https://bitminetech.io",
+  "market_cap": 16908435456.0,
+  "pe_trailing": NaN,
+  "pe_forward": 29.819149,
+  "ps": 276.3042,
+  "ev_ebitda": -56.349,
+  "peg": NaN,
+  "eps_trailing": -4.59,
+  "eps_forward": 0.94,
+  "dividend_yield": 0.00036416607,
+  "beta": 1.355,
+  "revenue_ttm": 61195000.0,
+  "revenue_growth": 21.678,
+  "earnings_growth": NaN,
+  "gross_margin": 0.84438,
+  "operating_margin": 0.08424,
+  "profit_margin": 0.0,
+  "roe": -1.50905,
+  "debt_to_equity": 0.011,
+  "current_ratio": 36.683,
+  "total_cash": 340288992.0,
+  "total_debt": 1320000.0,
+  "free_cashflow": -518096224.0,
+  "target_mean": 45.86667,
+  "target_high": 63.6,
+  "target_low": 34.0,
+  "rating_mean": 1.0,
+  "analysts": 3.0,
+  "short_pct_float": 0.0674,
+  "held_institutions": 0.41425,
+  "quarters": [
+   {
+    "label": "2026-05-31",
+    "revenue": 46535000.0,
+    "gross": 40809000.0,
+    "operating": -11865000.0,
+    "net": -83576000.0,
+    "eps": -0.15
+   },
+   {
+    "label": "2026-02-28",
+    "revenue": 11041000.0,
+    "gross": 9615000.0,
+    "operating": -3862089000.0,
+    "net": -3818413000.0,
+    "eps": -8.4
+   },
+   {
+    "label": "2025-11-30",
+    "revenue": 2293000.0,
+    "gross": 1269000.0,
+    "operating": -5454202000.0,
+    "net": -5204095000.0,
+    "eps": -15.98
+   },
+   {
+    "label": "2025-08-31",
+    "revenue": 1324891.0,
+    "gross": -605794.0,
+    "operating": -360342674.0,
+    "net": 351331391.0,
+    "eps": NaN
+   },
+   {
+    "label": "2025-05-31",
+    "revenue": 2052000.0,
+    "gross": 310000.0,
+    "operating": -468000.0,
+    "net": -623000.0,
+    "eps": -0.31
+   },
+   {
+    "label": "2025-02-28",
+    "revenue": NaN,
+    "gross": NaN,
+    "operating": NaN,
+    "net": NaN,
+    "eps": -0.58
+   }
+  ],
+  "years": [
+   {
+    "label": "2025-08-31",
+    "revenue": 6095000.0,
+    "gross": 310000.0,
+    "operating": -362633000.0,
+    "net": 348577000.0,
+    "eps": 13.39
+   },
+   {
+    "label": "2024-08-31",
+    "revenue": 3310000.0,
+    "gross": -163000.0,
+    "operating": -2442000.0,
+    "net": -3293000.0,
+    "eps": -1.32
+   },
+   {
+    "label": "2023-08-31",
+    "revenue": 645278.0,
+    "gross": 222469.0,
+    "operating": -2308294.0,
+    "net": -2464884.0,
+    "eps": -1.0
+   },
+   {
+    "label": "2022-08-31",
+    "revenue": 427669.0,
+    "gross": -129030.0,
+    "operating": -1702648.0,
+    "net": -2005233.0,
+    "eps": -1.0
+   }
+  ],
+  "surprises": [
+   {
+    "when": "2026-11-20",
+    "estimate": 0.2,
+    "actual": NaN,
+    "surprise_pct": NaN
+   },
+   {
+    "when": "2026-07-14",
+    "estimate": 0.18,
+    "actual": -0.13,
+    "surprise_pct": -1.7125
+   },
+   {
+    "when": "2026-04-14",
+    "estimate": 0.17,
+    "actual": -0.08,
+    "surprise_pct": -1.4706000000000001
+   },
+   {
+    "when": "2026-01-13",
+    "estimate": 0.15,
+    "actual": -0.19,
+    "surprise_pct": -2.2906999999999997
+   },
+   {
+    "when": "2025-11-21",
+    "estimate": -0.1,
+    "actual": 16.01,
+    "surprise_pct": 161.1
+   }
+  ],
+  "error": ""
+ },
+ "CLF": {
+  "symbol": "CLF",
+  "fetched_at": 1790319737.867338,
+  "name": "Cleveland-Cliffs Inc.",
+  "sector": "Basic Materials",
+  "industry": "Steel",
+  "website": "https://www.clevelandcliffs.com",
+  "market_cap": 7131750400.0,
+  "pe_trailing": NaN,
+  "pe_forward": 18.28956,
+  "ps": 0.37154207,
+  "ev_ebitda": 29.124,
+  "peg": 0.43,
+  "eps_trailing": -1.53,
+  "eps_forward": 0.68345,
+  "dividend_yield": 0.0,
+  "beta": 2.11,
+  "revenue_ttm": 19195000832.0,
+  "revenue_growth": 0.059,
+  "earnings_growth": NaN,
+  "gross_margin": -0.01052,
+  "operating_margin": 0.0034400001,
+  "profit_margin": -0.045640003,
+  "roe": -0.13862,
+  "debt_to_equity": 132.743,
+  "current_ratio": 1.89,
+  "total_cash": 70000000.0,
+  "total_debt": 7722999808.0,
+  "free_cashflow": 6125000.0,
+  "target_mean": 12.3,
+  "target_high": 15.0,
+  "target_low": 10.0,
+  "rating_mean": 2.92308,
+  "analysts": 10.0,
+  "short_pct_float": 0.1421,
+  "held_institutions": 0.84463,
+  "quarters": [
+   {
+    "label": "2026-06-30",
+    "revenue": 5226000000.0,
+    "gross": 132000000.0,
+    "operating": -46000000.0,
+    "net": -145000000.0,
+    "eps": -0.25
+   },
+   {
+    "label": "2026-03-31",
+    "revenue": 4922000000.0,
+    "gross": -82000000.0,
+    "operating": -213000000.0,
+    "net": -237000000.0,
+    "eps": -0.42
+   },
+   {
+    "label": "2025-12-31",
+    "revenue": 4313000000.0,
+    "gross": -206000000.0,
+    "operating": -337000000.0,
+    "net": -243000000.0,
+    "eps": -0.44
+   },
+   {
+    "label": "2025-09-30",
+    "revenue": 4734000000.0,
+    "gross": -46000000.0,
+    "operating": -201000000.0,
+    "net": -251000000.0,
+    "eps": -0.51
+   },
+   {
+    "label": "2025-06-30",
+    "revenue": 4934000000.0,
+    "gross": -212000000.0,
+    "operating": -376000000.0,
+    "net": -486000000.0,
+    "eps": -0.98
+   },
+   {
+    "label": "2025-03-31",
+    "revenue": NaN,
+    "gross": NaN,
+    "operating": NaN,
+    "net": NaN,
+    "eps": NaN
+   }
+  ],
+  "years": [
+   {
+    "label": "2025-12-31",
+    "revenue": 18610000000.0,
+    "gross": -860000000.0,
+    "operating": -1453000000.0,
+    "net": -1478000000.0,
+    "eps": -2.91
+   },
+   {
+    "label": "2024-12-31",
+    "revenue": 19185000000.0,
+    "gross": 63000000.0,
+    "operating": -511000000.0,
+    "net": -760000000.0,
+    "eps": -1.57
+   },
+   {
+    "label": "2023-12-31",
+    "revenue": 21996000000.0,
+    "gross": 1373000000.0,
+    "operating": 796000000.0,
+    "net": 385000000.0,
+    "eps": 0.78
+   },
+   {
+    "label": "2022-12-31",
+    "revenue": 22989000000.0,
+    "gross": 2518000000.0,
+    "operating": 1972000000.0,
+    "net": 1335000000.0,
+    "eps": 2.55
+   }
+  ],
+  "surprises": [
+   {
+    "when": "2026-10-19",
+    "estimate": 0.23,
+    "actual": NaN,
+    "surprise_pct": NaN
+   },
+   {
+    "when": "2026-07-23",
+    "estimate": -0.22,
+    "actual": -0.2,
+    "surprise_pct": 0.0725
+   },
+   {
+    "when": "2026-04-20",
+    "estimate": -0.42,
+    "actual": -0.4,
+    "surprise_pct": 0.0385
+   },
+   {
+    "when": "2026-02-09",
+    "estimate": -0.62,
+    "actual": -0.43,
+    "surprise_pct": 0.3014
+   },
+   {
+    "when": "2025-10-20",
+    "estimate": -0.45,
+    "actual": -0.45,
+    "surprise_pct": 0.0055000000000000005
+   },
+   {
+    "when": "2025-07-21",
+    "estimate": -0.67,
+    "actual": -0.5,
+    "surprise_pct": 0.2593
+   },
+   {
+    "when": "2025-05-07",
+    "estimate": -0.81,
+    "actual": -0.92,
+    "surprise_pct": -0.1358
+   },
+   {
+    "when": "2025-02-24",
+    "estimate": -0.67,
+    "actual": -0.68,
+    "surprise_pct": -0.009899999999999999
+   }
+  ],
+  "error": ""
+ },
+ "NBIS": {
+  "symbol": "NBIS",
+  "fetched_at": 1790319739.3231163,
+  "name": "Nebius Group N.V.",
+  "sector": "Communication Services",
+  "industry": "Internet Content & Information",
+  "website": "https://nebius.com",
+  "market_cap": 66191310848.0,
+  "pe_trailing": NaN,
+  "pe_forward": -69.67301,
+  "ps": 48.84607,
+  "ev_ebitda": 267.022,
+  "peg": 0.51,
+  "eps_trailing": -0.07,
+  "eps_forward": -3.49461,
+  "dividend_yield": 0.0,
+  "beta": 1.436,
+  "revenue_ttm": 1355100032.0,
+  "revenue_growth": 4.54,
+  "earnings_growth": NaN,
+  "gross_margin": 0.7426,
+  "operating_margin": -0.00223,
+  "profit_margin": 0.03129,
+  "roe": 0.00601,
+  "debt_to_equity": 98.596,
+  "current_ratio": 4.03,
+  "total_cash": 8042100224.0,
+  "total_debt": 10195300352.0,
+  "free_cashflow": -9614650368.0,
+  "target_mean": 283.57895,
+  "target_high": 415.0,
+  "target_low": 84.0,
+  "rating_mean": 2.0,
+  "analysts": 19.0,
+  "short_pct_float": 0.1981,
+  "held_institutions": 0.69393,
+  "quarters": [
+   {
+    "label": "2026-06-30",
+    "revenue": 582300000.0,
+    "gross": 448700000.0,
+    "operating": -175900000.0,
+    "net": -190400000.0,
+    "eps": -0.68
+   },
+   {
+    "label": "2026-03-31",
+    "revenue": 399000000.0,
+    "gross": 295200000.0,
+    "operating": -128000000.0,
+    "net": 621200000.0,
+    "eps": 2.11
+   },
+   {
+    "label": "2025-12-31",
+    "revenue": 227700000.0,
+    "gross": 159200000.0,
+    "operating": -250000000.0,
+    "net": -268800000.0,
+    "eps": -0.986495
+   },
+   {
+    "label": "2025-09-30",
+    "revenue": 146100000.0,
+    "gross": 103200000.0,
+    "operating": -130200000.0,
+    "net": -119600000.0,
+    "eps": -0.5
+   },
+   {
+    "label": "2025-06-30",
+    "revenue": 105100000.0,
+    "gross": 75000000.0,
+    "operating": -111200000.0,
+    "net": 584400000.0,
+    "eps": 2.38
+   }
+  ],
+  "years": [
+   {
+    "label": "2025-12-31",
+    "revenue": 529800000.0,
+    "gross": 363600000.0,
+    "operating": -611700000.0,
+    "net": 82500000.0,
+    "eps": 0.33
+   },
+   {
+    "label": "2024-12-31",
+    "revenue": 91500000.0,
+    "gross": 47800000.0,
+    "operating": -399600000.0,
+    "net": -641400000.0,
+    "eps": -2.28
+   },
+   {
+    "label": "2023-12-31",
+    "revenue": 9800000.0,
+    "gross": -9800000.0,
+    "operating": -285700000.0,
+    "net": 241300000.0,
+    "eps": 0.65
+   },
+   {
+    "label": "2022-12-31",
+    "revenue": 13500000.0,
+    "gross": -14900000.0,
+    "operating": -158000000.0,
+    "net": 745600000.0,
+    "eps": 1.59
+   }
+  ],
+  "surprises": [
+   {
+    "when": "2026-11-10",
+    "estimate": -1.46,
+    "actual": NaN,
+    "surprise_pct": NaN
+   },
+   {
+    "when": "2026-08-12",
+    "estimate": -0.86,
+    "actual": -0.68,
+    "surprise_pct": 0.21239999999999998
+   },
+   {
+    "when": "2026-05-13",
+    "estimate": -0.71,
+    "actual": 2.11,
+    "surprise_pct": 3.9614
+   },
+   {
+    "when": "2026-02-12",
+    "estimate": -0.6,
+    "actual": -0.99,
+    "surprise_pct": -0.6306
+   },
+   {
+    "when": "2025-11-11",
+    "estimate": -0.52,
+    "actual": -0.4,
+    "surprise_pct": 0.23329999999999998
+   },
+   {
+    "when": "2025-08-07",
+    "estimate": -0.42,
+    "actual": -0.38,
+    "surprise_pct": 0.0874
+   },
+   {
+    "when": "2025-05-20",
+    "estimate": -0.44,
+    "actual": -0.39,
+    "surprise_pct": 0.127
+   },
+   {
+    "when": "2025-02-20",
+    "estimate": -0.39,
+    "actual": -0.37,
+    "surprise_pct": 0.0482
+   }
+  ],
+  "error": ""
+ },
+ "BFLY": {
+  "symbol": "BFLY",
+  "fetched_at": 1790319740.7510335,
+  "name": "Butterfly Network, Inc.",
+  "sector": "Healthcare",
+  "industry": "Medical Devices",
+  "website": "https://www.butterflynetwork.com",
+  "market_cap": 2505743616.0,
+  "pe_trailing": NaN,
+  "pe_forward": -188.2,
+  "ps": 22.343983,
+  "ev_ebitda": -51.267,
+  "peg": NaN,
+  "eps_trailing": -0.29,
+  "eps_forward": -0.05,
+  "dividend_yield": 0.0,
+  "beta": 2.091,
+  "revenue_ttm": 112144000.0,
+  "revenue_growth": 0.395,
+  "earnings_growth": NaN,
+  "gross_margin": 0.68158996,
+  "operating_margin": -0.30897,
+  "profit_margin": -0.66745,
+  "roe": -0.35457,
+  "debt_to_equity": 10.083,
+  "current_ratio": 4.06,
+  "total_cash": 124659000.0,
+  "total_debt": 19097000.0,
+  "free_cashflow": 925625.0,
+  "target_mean": 10.5,
+  "target_high": 11.0,
+  "target_low": 10.0,
+  "rating_mean": 1.2,
+  "analysts": 4.0,
+  "short_pct_float": 0.16700001,
+  "held_institutions": 0.61513,
+  "quarters": [
+   {
+    "label": "2026-06-30",
+    "revenue": 32612000.0,
+    "gross": 23288000.0,
+    "operating": -13664000.0,
+    "net": -12910000.0,
+    "eps": -0.05
+   },
+   {
+    "label": "2026-03-31",
+    "revenue": 26530000.0,
+    "gross": 18285000.0,
+    "operating": -13873000.0,
+    "net": -12677000.0,
+    "eps": -0.05
+   },
+   {
+    "label": "2025-12-31",
+    "revenue": 31514000.0,
+    "gross": 21221000.0,
+    "operating": -16712000.0,
+    "net": -15292000.0,
+    "eps": -0.06
+   },
+   {
+    "label": "2025-09-30",
+    "revenue": 21489000.0,
+    "gross": -3757000.0,
+    "operating": -35134000.0,
+    "net": -33971000.0,
+    "eps": -0.13
+   },
+   {
+    "label": "2025-06-30",
+    "revenue": 23383000.0,
+    "gross": 14891000.0,
+    "operating": -16100000.0,
+    "net": -13834000.0,
+    "eps": -0.06
+   },
+   {
+    "label": "2025-03-31",
+    "revenue": NaN,
+    "gross": NaN,
+    "operating": NaN,
+    "net": NaN,
+    "eps": NaN
+   }
+  ],
+  "years": [
+   {
+    "label": "2025-12-31",
+    "revenue": 97610000.0,
+    "gross": 45734000.0,
+    "operating": -86415000.0,
+    "net": -77064000.0,
+    "eps": -0.31
+   },
+   {
+    "label": "2024-12-31",
+    "revenue": 82056000.0,
+    "gross": 48831000.0,
+    "operating": -74411000.0,
+    "net": -72492000.0,
+    "eps": -0.34
+   },
+   {
+    "label": "2023-12-31",
+    "revenue": 65900000.0,
+    "gross": 16856000.0,
+    "operating": -145610000.0,
+    "net": -133700000.0,
+    "eps": -0.65
+   },
+   {
+    "label": "2022-12-31",
+    "revenue": 73390000.0,
+    "gross": 39460000.0,
+    "operating": -193020000.0,
+    "net": -168723000.0,
+    "eps": -0.84
+   }
+  ],
+  "surprises": [
+   {
+    "when": "2026-10-30",
+    "estimate": -0.03,
+    "actual": NaN,
+    "surprise_pct": NaN
+   },
+   {
+    "when": "2026-07-30",
+    "estimate": -0.03,
+    "actual": -0.01,
+    "surprise_pct": 0.6667000000000001
+   },
+   {
+    "when": "2026-04-30",
+    "estimate": -0.05,
+    "actual": -0.03,
+    "surprise_pct": 0.4
+   },
+   {
+    "when": "2026-02-26",
+    "estimate": -0.04,
+    "actual": -0.02,
+    "surprise_pct": 0.5556
+   },
+   {
+    "when": "2025-10-31",
+    "estimate": -0.05,
+    "actual": -0.04,
+    "surprise_pct": 0.2
+   },
+   {
+    "when": "2025-08-01",
+    "estimate": -0.05,
+    "actual": -0.03,
+    "surprise_pct": 0.4286
+   },
+   {
+    "when": "2025-05-02",
+    "estimate": -0.07,
+    "actual": -0.04,
+    "surprise_pct": 0.4286
+   },
+   {
+    "when": "2025-02-28",
+    "estimate": -0.08,
+    "actual": -0.08,
+    "surprise_pct": NaN
+   }
+  ],
+  "error": ""
+ },
+ "SHEL": {
+  "symbol": "SHEL",
+  "fetched_at": 1790319742.2408237,
+  "name": "Shell plc",
+  "sector": "Energy",
+  "industry": "Oil & Gas Integrated",
+  "website": "https://www.shell.com",
+  "market_cap": 272713400320.0,
+  "pe_trailing": 10.563536,
+  "pe_forward": 9.231666,
+  "ps": 0.9194622,
+  "ev_ebitda": 5.364,
+  "peg": 1.61,
+  "eps_trailing": 9.05,
+  "eps_forward": 10.35566,
+  "dividend_yield": 0.015836915,
+  "beta": -0.22,
+  "revenue_ttm": 296600993792.0,
+  "revenue_growth": 0.447,
+  "earnings_growth": 2.2,
+  "gross_margin": 0.26093,
+  "operating_margin": 0.16691,
+  "profit_margin": 0.08756,
+  "roe": 0.14341,
+  "debt_to_equity": 40.2,
+  "current_ratio": 1.435,
+  "total_cash": 31374000128.0,
+  "total_debt": 73075998720.0,
+  "free_cashflow": 21458374656.0,
+  "target_mean": 100.68,
+  "target_high": 120.6,
+  "target_low": 83.0,
+  "rating_mean": 2.1875,
+  "analysts": 15.0,
+  "short_pct_float": 0.0124,
+  "held_institutions": 0.13387999,
+  "quarters": [
+   {
+    "label": "2026-06-30",
+    "revenue": 94664000000.0,
+    "gross": 18475000000.0,
+    "operating": 15177000000.0,
+    "net": 10821000000.0,
+    "eps": 3.84
+   },
+   {
+    "label": "2026-03-31",
+    "revenue": 69691000000.0,
+    "gross": 13434000000.0,
+    "operating": 10366000000.0,
+    "net": 5694000000.0,
+    "eps": 2.0
+   },
+   {
+    "label": "2025-12-31",
+    "revenue": 64093000000.0,
+    "gross": 7280000000.0,
+    "operating": 3159000000.0,
+    "net": 4134000000.0,
+    "eps": 1.42
+   },
+   {
+    "label": "2025-09-30",
+    "revenue": 68153000000.0,
+    "gross": 11576000000.0,
+    "operating": 7734000000.0,
+    "net": 5322000000.0,
+    "eps": 1.8
+   },
+   {
+    "label": "2025-06-30",
+    "revenue": 65406000000.0,
+    "gross": 9728000000.0,
+    "operating": 6013000000.0,
+    "net": 3601000000.0,
+    "eps": 1.2
+   },
+   {
+    "label": "2025-03-31",
+    "revenue": NaN,
+    "gross": NaN,
+    "operating": NaN,
+    "net": NaN,
+    "eps": NaN
+   }
+  ],
+  "years": [
+   {
+    "label": "2025-12-31",
+    "revenue": 266886000000.0,
+    "gross": 42495000000.0,
+    "operating": 27582000000.0,
+    "net": 17837000000.0,
+    "eps": 6.0
+   },
+   {
+    "label": "2024-12-31",
+    "revenue": 284312000000.0,
+    "gross": 45941000000.0,
+    "operating": 29992000000.0,
+    "net": 16094000000.0,
+    "eps": 5.06
+   },
+   {
+    "label": "2023-12-31",
+    "revenue": 316620000000.0,
+    "gross": 47207000000.0,
+    "operating": 30737000000.0,
+    "net": 19359000000.0,
+    "eps": 5.7
+   },
+   {
+    "label": "2022-12-31",
+    "revenue": 381314000000.0,
+    "gross": 78779000000.0,
+    "operating": 63109000000.0,
+    "net": 42309000000.0,
+    "eps": 11.42
+   }
+  ],
+  "surprises": [
+   {
+    "when": "2026-10-29",
+    "estimate": 3.15,
+    "actual": NaN,
+    "surprise_pct": NaN
+   },
+   {
+    "when": "2026-07-30",
+    "estimate": 3.18,
+    "actual": 3.52,
+    "surprise_pct": 0.1063
+   },
+   {
+    "when": "2026-05-07",
+    "estimate": 2.21,
+    "actual": 2.44,
+    "surprise_pct": 0.1018
+   },
+   {
+    "when": "2026-02-05",
+    "estimate": 1.29,
+    "actual": 1.14,
+    "surprise_pct": -0.1183
+   },
+   {
+    "when": "2025-10-30",
+    "estimate": 1.74,
+    "actual": 1.86,
+    "surprise_pct": 0.0708
+   },
+   {
+    "when": "2025-07-31",
+    "estimate": 1.27,
+    "actual": 1.44,
+    "surprise_pct": 0.13720000000000002
+   },
+   {
+    "when": "2025-05-02",
+    "estimate": 1.61,
+    "actual": 1.84,
+    "surprise_pct": 0.1438
+   },
+   {
+    "when": "2025-01-30",
+    "estimate": 1.49,
+    "actual": 1.2,
+    "surprise_pct": -0.19649999999999998
+   }
+  ],
+  "error": ""
+ },
+ "GME": {
+  "symbol": "GME",
+  "fetched_at": 1790319743.7695043,
+  "name": "GameStop Corp.",
+  "sector": "Consumer Cyclical",
+  "industry": "Specialty Retail",
+  "website": "https://www.gamestop.com",
+  "market_cap": 12622615552.0,
+  "pe_trailing": 15.936305,
+  "pe_forward": 13.451613,
+  "ps": 3.5548654,
+  "ev_ebitda": 23.518,
+  "peg": 0.31,
+  "eps_trailing": 1.57,
+  "eps_forward": 1.86,
+  "dividend_yield": 0.0,
+  "beta": 1.714,
+  "revenue_ttm": 3550799872.0,
+  "revenue_growth": -0.187,
+  "earnings_growth": 0.645,
+  "gross_margin": 0.37893,
+  "operating_margin": 0.19982,
+  "profit_margin": 0.25158,
+  "roe": 0.15786,
+  "debt_to_equity": 70.557,
+  "current_ratio": 8.718,
+  "total_cash": 5060299776.0,
+  "total_debt": 4333199872.0,
+  "free_cashflow": 85450000.0,
+  "target_mean": NaN,
+  "target_high": NaN,
+  "target_low": NaN,
+  "rating_mean": NaN,
+  "analysts": NaN,
+  "short_pct_float": 0.084,
+  "held_institutions": 0.32949,
+  "quarters": [
+   {
+    "label": "2026-07-31",
+    "revenue": 790200000.0,
+    "gross": 345000000.0,
+    "operating": 157900000.0,
+    "net": 298700000.0,
+    "eps": 0.51
+   },
+   {
+    "label": "2026-04-30",
+    "revenue": 835300000.0,
+    "gross": 340300000.0,
+    "operating": 138700000.0,
+    "net": 389600000.0,
+    "eps": 0.66
+   },
+   {
+    "label": "2026-01-31",
+    "revenue": 1104300000.0,
+    "gross": 386800000.0,
+    "operating": 144900000.0,
+    "net": 127900000.0,
+    "eps": 0.22
+   },
+   {
+    "label": "2025-10-31",
+    "revenue": 821000000.0,
+    "gross": 273400000.0,
+    "operating": 52000000.0,
+    "net": 77100000.0,
+    "eps": 0.13
+   },
+   {
+    "label": "2025-07-31",
+    "revenue": 972200000.0,
+    "gross": 283100000.0,
+    "operating": 64300000.0,
+    "net": 168600000.0,
+    "eps": 0.31
+   },
+   {
+    "label": "2025-04-30",
+    "revenue": NaN,
+    "gross": NaN,
+    "operating": NaN,
+    "net": NaN,
+    "eps": NaN
+   }
+  ],
+  "years": [
+   {
+    "label": "2026-01-31",
+    "revenue": 3629900000.0,
+    "gross": 1196100000.0,
+    "operating": 285900000.0,
+    "net": 418400000.0,
+    "eps": 0.77
+   },
+   {
+    "label": "2025-01-31",
+    "revenue": 3823000000.0,
+    "gross": 1113900000.0,
+    "operating": -16500000.0,
+    "net": 131300000.0,
+    "eps": 0.33
+   },
+   {
+    "label": "2024-01-31",
+    "revenue": 5272800000.0,
+    "gross": 1294200000.0,
+    "operating": -29700000.0,
+    "net": 6700000.0,
+    "eps": 0.02
+   },
+   {
+    "label": "2023-01-31",
+    "revenue": 5927200000.0,
+    "gross": 1372100000.0,
+    "operating": -308900000.0,
+    "net": -313100000.0,
+    "eps": -1.03
+   }
+  ],
+  "surprises": [
+   {
+    "when": "2026-12-08",
+    "estimate": 0.2,
+    "actual": NaN,
+    "surprise_pct": NaN
+   },
+   {
+    "when": "2026-09-08",
+    "estimate": 0.27,
+    "actual": 0.27,
+    "surprise_pct": NaN
+   },
+   {
+    "when": "2026-06-02",
+    "estimate": 0.16,
+    "actual": 0.3,
+    "surprise_pct": 0.875
+   },
+   {
+    "when": "2025-12-09",
+    "estimate": 0.2,
+    "actual": 0.24,
+    "surprise_pct": 0.2
+   },
+   {
+    "when": "2025-09-09",
+    "estimate": 0.16,
+    "actual": 0.25,
+    "surprise_pct": 0.6129
+   },
+   {
+    "when": "2025-06-10",
+    "estimate": 0.04,
+    "actual": 0.17,
+    "surprise_pct": 3.25
+   },
+   {
+    "when": "2025-03-25",
+    "estimate": 0.08,
+    "actual": 0.3,
+    "surprise_pct": 2.75
+   },
+   {
+    "when": "2024-12-10",
+    "estimate": -0.03,
+    "actual": 0.06,
+    "surprise_pct": 3.0
+   }
+  ],
+  "error": ""
+ },
+ "TTE": {
+  "symbol": "TTE",
+  "fetched_at": 1790319745.3303385,
+  "name": "TotalEnergies SE",
+  "sector": "Energy",
+  "industry": "Oil & Gas Integrated",
+  "website": "https://totalenergies.com",
+  "market_cap": 202988224512.0,
+  "pe_trailing": 11.4719095,
+  "pe_forward": 8.61584,
+  "ps": 1.0336397,
+  "ev_ebitda": 6.006,
+  "peg": 0.82,
+  "eps_trailing": 8.01,
+  "eps_forward": 10.66524,
+  "dividend_yield": 0.04420203,
+  "beta": 0.06,
+  "revenue_ttm": 196381999104.0,
+  "revenue_growth": 0.278,
+  "earnings_growth": 1.06,
+  "gross_margin": 0.37682,
+  "operating_margin": 0.12788999,
+  "profit_margin": 0.09083,
+  "roe": 0.14479999,
+  "debt_to_equity": 48.045,
+  "current_ratio": 1.061,
+  "total_cash": 31716999168.0,
+  "total_debt": 62917001216.0,
+  "free_cashflow": 13531374592.0,
+  "target_mean": 96.7,
+  "target_high": 108.0,
+  "target_low": 81.0,
+  "rating_mean": 1.66667,
+  "analysts": 10.0,
+  "short_pct_float": 0.0022,
+  "held_institutions": 0.54216,
+  "quarters": [
+   {
+    "label": "2026-06-30",
+    "revenue": 57097000000.0,
+    "gross": 15714000000.0,
+    "operating": 7581000000.0,
+    "net": 5438000000.0,
+    "eps": 2.41
+   },
+   {
+    "label": "2026-03-31",
+    "revenue": 49516000000.0,
+    "gross": 18963000000.0,
+    "operating": 10155000000.0,
+    "net": 5810000000.0,
+    "eps": 2.64
+   },
+   {
+    "label": "2025-12-31",
+    "revenue": 45925000000.0,
+    "gross": 12168000000.0,
+    "operating": 3477000000.0,
+    "net": 2906000000.0,
+    "eps": 1.3
+   },
+   {
+    "label": "2025-09-30",
+    "revenue": 43844000000.0,
+    "gross": 13373000000.0,
+    "operating": 5718000000.0,
+    "net": 3683000000.0,
+    "eps": 1.64
+   },
+   {
+    "label": "2025-06-30",
+    "revenue": 44676000000.0,
+    "gross": 12260000000.0,
+    "operating": 4329000000.0,
+    "net": 2687000000.0,
+    "eps": 1.17
+   },
+   {
+    "label": "2025-03-31",
+    "revenue": NaN,
+    "gross": NaN,
+    "operating": NaN,
+    "net": NaN,
+    "eps": NaN
+   }
+  ],
+  "years": [
+   {
+    "label": "2025-12-31",
+    "revenue": 182344000000.0,
+    "gross": 51847000000.0,
+    "operating": 19925000000.0,
+    "net": 13127000000.0,
+    "eps": 5.78
+   },
+   {
+    "label": "2024-12-31",
+    "revenue": 195610000000.0,
+    "gross": 55532000000.0,
+    "operating": 24105000000.0,
+    "net": 15758000000.0,
+    "eps": 6.69
+   },
+   {
+    "label": "2023-12-31",
+    "revenue": 218945000000.0,
+    "gross": 62373000000.0,
+    "operating": 30857000000.0,
+    "net": 21384000000.0,
+    "eps": 8.67
+   },
+   {
+    "label": "2022-12-31",
+    "revenue": 263310000000.0,
+    "gross": 81211000000.0,
+    "operating": 49693000000.0,
+    "net": 20526000000.0,
+    "eps": 7.85
+   }
+  ],
+  "surprises": [
+   {
+    "when": "2026-10-29",
+    "estimate": 3.09,
+    "actual": NaN,
+    "surprise_pct": NaN
+   },
+   {
+    "when": "2026-07-23",
+    "estimate": 2.64,
+    "actual": 2.68,
+    "surprise_pct": 0.0152
+   },
+   {
+    "when": "2026-04-28",
+    "estimate": 2.16,
+    "actual": 2.45,
+    "surprise_pct": 0.1343
+   },
+   {
+    "when": "2026-02-11",
+    "estimate": 1.77,
+    "actual": 1.73,
+    "surprise_pct": -0.0212
+   },
+   {
+    "when": "2025-10-30",
+    "estimate": 1.78,
+    "actual": 1.77,
+    "surprise_pct": -0.0067
+   },
+   {
+    "when": "2025-07-24",
+    "estimate": 1.35,
+    "actual": 1.17,
+    "surprise_pct": -0.1333
+   },
+   {
+    "when": "2025-04-30",
+    "estimate": 1.84,
+    "actual": 1.83,
+    "surprise_pct": -0.0027
+   },
+   {
+    "when": "2025-02-05",
+    "estimate": 1.82,
+    "actual": 1.9,
+    "surprise_pct": 0.046799999999999994
+   }
+  ],
+  "error": ""
+ },
+ "RDW": {
+  "symbol": "RDW",
+  "fetched_at": 1790319746.820053,
+  "name": "Redwire Corporation",
+  "sector": "Industrials",
+  "industry": "Aerospace & Defense",
+  "website": "https://www.rdw.com",
+  "market_cap": 2899914240.0,
+  "pe_trailing": NaN,
+  "pe_forward": -34.11765,
+  "ps": 6.8029666,
+  "ev_ebitda": -19.967,
+  "peg": NaN,
+  "eps_trailing": -1.24,
+  "eps_forward": -0.34,
+  "dividend_yield": 0.0,
+  "beta": 3.094,
+  "revenue_ttm": 426272000.0,
+  "revenue_growth": 0.896,
+  "earnings_growth": NaN,
+  "gross_margin": 0.22729,
+  "operating_margin": -0.18858999,
+  "profit_margin": -0.57263,
+  "roe": -0.18153,
+  "debt_to_equity": 5.539,
+  "current_ratio": 3.919,
+  "total_cash": 556966976.0,
+  "total_debt": 90275000.0,
+  "free_cashflow": -25958376.0,
+  "target_mean": 14.6875,
+  "target_high": 20.0,
+  "target_low": 8.0,
+  "rating_mean": 1.9,
+  "analysts": 8.0,
+  "short_pct_float": 0.1981,
+  "held_institutions": 0.69408,
+  "quarters": [
+   {
+    "label": "2026-06-30",
+    "revenue": 117074000.0,
+    "gross": 32544000.0,
+    "operating": -22079000.0,
+    "net": -40971000.0,
+    "eps": -0.19
+   },
+   {
+    "label": "2026-03-31",
+    "revenue": 96972000.0,
+    "gross": 25808000.0,
+    "operating": -69661000.0,
+    "net": -76502000.0,
+    "eps": -0.4
+   },
+   {
+    "label": "2025-12-31",
+    "revenue": 108794000.0,
+    "gross": 10498000.0,
+    "operating": -46822000.0,
+    "net": -85473000.0,
+    "eps": -0.58
+   },
+   {
+    "label": "2025-09-30",
+    "revenue": 103432000.0,
+    "gross": 16810000.0,
+    "operating": -41168000.0,
+    "net": -41152000.0,
+    "eps": -0.29
+   },
+   {
+    "label": "2025-06-30",
+    "revenue": 61760000.0,
+    "gross": -19064000.0,
+    "operating": -75248000.0,
+    "net": -96979000.0,
+    "eps": -1.41
+   },
+   {
+    "label": "2025-03-31",
+    "revenue": NaN,
+    "gross": NaN,
+    "operating": NaN,
+    "net": NaN,
+    "eps": NaN
+   }
+  ],
+  "years": [
+   {
+    "label": "2025-12-31",
+    "revenue": 335381000.0,
+    "gross": 17285000.0,
+    "operating": -173756000.0,
+    "net": -226552000.0,
+    "eps": -2.28
+   },
+   {
+    "label": "2024-12-31",
+    "revenue": 304101000.0,
+    "gross": 44455000.0,
+    "operating": -33071000.0,
+    "net": -114315000.0,
+    "eps": -2.35
+   },
+   {
+    "label": "2023-12-31",
+    "revenue": 243800000.0,
+    "gross": 57969000.0,
+    "operating": -15535000.0,
+    "net": -27263000.0,
+    "eps": -0.73
+   },
+   {
+    "label": "2022-12-31",
+    "revenue": 160549000.0,
+    "gross": 28695000.0,
+    "operating": -46588000.0,
+    "net": -130617000.0,
+    "eps": -2.09
+   }
+  ],
+  "surprises": [
+   {
+    "when": "2026-11-04",
+    "estimate": -0.09,
+    "actual": NaN,
+    "surprise_pct": NaN
+   },
+   {
+    "when": "2026-08-05",
+    "estimate": -0.13,
+    "actual": -0.09,
+    "surprise_pct": 0.3077
+   },
+   {
+    "when": "2026-05-06",
+    "estimate": -0.17,
+    "actual": -0.12,
+    "surprise_pct": 0.2847
+   },
+   {
+    "when": "2026-02-25",
+    "estimate": -0.16,
+    "actual": -0.22,
+    "surprise_pct": -0.37560000000000004
+   },
+   {
+    "when": "2025-11-05",
+    "estimate": -0.13,
+    "actual": -0.19,
+    "surprise_pct": -0.4692
+   },
+   {
+    "when": "2025-08-06",
+    "estimate": -0.15,
+    "actual": -1.41,
+    "surprise_pct": -8.4
+   },
+   {
+    "when": "2025-05-12",
+    "estimate": -0.35,
+    "actual": -0.09,
+    "surprise_pct": 0.7447
+   },
+   {
+    "when": "2025-03-10",
+    "estimate": -0.08,
+    "actual": -0.24,
+    "surprise_pct": -1.9687000000000001
+   }
+  ],
+  "error": ""
+ },
+ "BE": {
+  "symbol": "BE",
+  "fetched_at": 1790319748.3004398,
+  "name": "Bloom Energy Corporation",
+  "sector": "Industrials",
+  "industry": "Electrical Equipment & Parts",
+  "website": "https://www.bloomenergy.com",
+  "market_cap": 78535720960.0,
+  "pe_trailing": 355.53333,
+  "pe_forward": 54.101376,
+  "ps": 25.227093,
+  "ev_ebitda": 187.972,
+  "peg": 0.62,
+  "eps_trailing": 0.75,
+  "eps_forward": 4.92871,
+  "dividend_yield": 0.0,
+  "beta": 3.811,
+  "revenue_ttm": 3113149952.0,
+  "revenue_growth": 1.655,
+  "earnings_growth": NaN,
+  "gross_margin": 0.31651,
+  "operating_margin": 0.17106001,
+  "profit_margin": 0.07868,
+  "roe": 0.22213,
+  "debt_to_equity": 171.578,
+  "current_ratio": 4.087,
+  "total_cash": 2716858880.0,
+  "total_debt": 2815023104.0,
+  "free_cashflow": 531637504.0,
+  "target_mean": 280.23846,
+  "target_high": 390.0,
+  "target_low": 97.0,
+  "rating_mean": 2.24138,
+  "analysts": 26.0,
+  "short_pct_float": 0.0734,
+  "held_institutions": 0.86109,
+  "quarters": [
+   {
+    "label": "2026-06-30",
+    "revenue": 1065365000.0,
+    "gross": 355572000.0,
+    "operating": 182237000.0,
+    "net": 196290000.0,
+    "eps": 0.62
+   },
+   {
+    "label": "2026-03-31",
+    "revenue": 751054000.0,
+    "gross": 225544000.0,
+    "operating": 72190000.0,
+    "net": 70653000.0,
+    "eps": 0.23
+   },
+   {
+    "label": "2025-12-31",
+    "revenue": 777683000.0,
+    "gross": 239895000.0,
+    "operating": 87529000.0,
+    "net": 1092000.0,
+    "eps": 0.0
+   },
+   {
+    "label": "2025-09-30",
+    "revenue": 519048000.0,
+    "gross": 151675000.0,
+    "operating": 7846000.0,
+    "net": -23093000.0,
+    "eps": -0.1
+   },
+   {
+    "label": "2025-06-30",
+    "revenue": 401242000.0,
+    "gross": 107123000.0,
+    "operating": -3503000.0,
+    "net": -42619000.0,
+    "eps": -0.18
+   },
+   {
+    "label": "2024-12-31",
+    "revenue": NaN,
+    "gross": NaN,
+    "operating": NaN,
+    "net": NaN,
+    "eps": NaN
+   }
+  ],
+  "years": [
+   {
+    "label": "2025-12-31",
+    "revenue": 2023994000.0,
+    "gross": 587400000.0,
+    "operating": 72802000.0,
+    "net": -88434000.0,
+    "eps": -0.37
+   },
+   {
+    "label": "2024-12-31",
+    "revenue": 1473856000.0,
+    "gross": 404648000.0,
+    "operating": 22909000.0,
+    "net": -29227000.0,
+    "eps": -0.13
+   },
+   {
+    "label": "2023-12-31",
+    "revenue": 1333470000.0,
+    "gross": 197794000.0,
+    "operating": -208907000.0,
+    "net": -302116000.0,
+    "eps": -1.42
+   },
+   {
+    "label": "2022-12-31",
+    "revenue": 1199125000.0,
+    "gross": 148288000.0,
+    "operating": -260992000.0,
+    "net": -301408000.0,
+    "eps": -1.62
+   }
+  ],
+  "surprises": [
+   {
+    "when": "2026-10-27",
+    "estimate": 0.67,
+    "actual": NaN,
+    "surprise_pct": NaN
+   },
+   {
+    "when": "2026-07-28",
+    "estimate": 0.41,
+    "actual": 0.78,
+    "surprise_pct": 0.9183
+   },
+   {
+    "when": "2026-04-28",
+    "estimate": 0.13,
+    "actual": 0.44,
+    "surprise_pct": 2.4244
+   },
+   {
+    "when": "2026-02-05",
+    "estimate": 0.3,
+    "actual": 0.45,
+    "surprise_pct": 0.5038
+   },
+   {
+    "when": "2025-10-28",
+    "estimate": 0.1,
+    "actual": 0.15,
+    "surprise_pct": 0.4704
+   },
+   {
+    "when": "2025-07-31",
+    "estimate": 0.02,
+    "actual": 0.1,
+    "surprise_pct": 4.571000000000001
+   },
+   {
+    "when": "2025-04-30",
+    "estimate": -0.06,
+    "actual": 0.03,
+    "surprise_pct": 1.4737
+   },
+   {
+    "when": "2025-02-27",
+    "estimate": 0.31,
+    "actual": 0.43,
+    "surprise_pct": 0.3993
+   }
+  ],
+  "error": ""
+ },
+ "BP": {
+  "symbol": "BP",
+  "fetched_at": 1790319749.7043858,
+  "name": "BP p.l.c.",
+  "sector": "Energy",
+  "industry": "Oil & Gas Integrated",
+  "website": "https://www.bp.com",
+  "market_cap": 114373713920.0,
+  "pe_trailing": 21.248804,
+  "pe_forward": 9.0334,
+  "ps": 0.5308227,
+  "ev_ebitda": 13.088,
+  "peg": 0.06,
+  "eps_trailing": 2.09,
+  "eps_forward": 4.9162,
+  "dividend_yield": 0.0075522587,
+  "beta": -0.22,
+  "revenue_ttm": 215465000960.0,
+  "revenue_growth": 0.482,
+  "earnings_growth": 1.389,
+  "gross_margin": 0.28304002,
+  "operating_margin": 0.13149999,
+  "profit_margin": 0.02549,
+  "roe": 0.08868,
+  "debt_to_equity": 95.123,
+  "current_ratio": 1.272,
+  "total_cash": 37225000960.0,
+  "total_debt": 72692998144.0,
+  "free_cashflow": 12878874624.0,
+  "target_mean": 48.59444,
+  "target_high": 64.0,
+  "target_low": 41.0,
+  "rating_mean": 2.36842,
+  "analysts": 18.0,
+  "short_pct_float": 0.0028,
+  "held_institutions": 0.14094,
+  "quarters": [
+   {
+    "label": "2026-06-30",
+    "revenue": 69105000000.0,
+    "gross": 14224000000.0,
+    "operating": 9032000000.0,
+    "net": 3911000000.0,
+    "eps": 1.4724
+   },
+   {
+    "label": "2026-03-31",
+    "revenue": 52255000000.0,
+    "gross": 12629000000.0,
+    "operating": 7959000000.0,
+    "net": 3842000000.0,
+    "eps": 1.4718
+   },
+   {
+    "label": "2025-12-31",
+    "revenue": 47383000000.0,
+    "gross": 7678000000.0,
+    "operating": 3004000000.0,
+    "net": -3422000000.0,
+    "eps": -1.3326
+   },
+   {
+    "label": "2025-09-30",
+    "revenue": 48420000000.0,
+    "gross": 8866000000.0,
+    "operating": 4371000000.0,
+    "net": 1161000000.0,
+    "eps": 0.4428
+   },
+   {
+    "label": "2025-06-30",
+    "revenue": 46627000000.0,
+    "gross": 8544000000.0,
+    "operating": 4163000000.0,
+    "net": 1629000000.0,
+    "eps": 0.6162
+   }
+  ],
+  "years": [
+   {
+    "label": "2025-12-31",
+    "revenue": 189335000000.0,
+    "gross": 33529000000.0,
+    "operating": 15808000000.0,
+    "net": 55000000.0,
+    "eps": 0.0204
+   },
+   {
+    "label": "2024-12-31",
+    "revenue": 189185000000.0,
+    "gross": 30239000000.0,
+    "operating": 13615000000.0,
+    "net": 381000000.0,
+    "eps": 0.1392
+   },
+   {
+    "label": "2023-12-31",
+    "revenue": 210130000000.0,
+    "gross": 48072000000.0,
+    "operating": 31049000000.0,
+    "net": 15239000000.0,
+    "eps": 5.151
+   },
+   {
+    "label": "2022-12-31",
+    "revenue": 241392000000.0,
+    "gross": 55096000000.0,
+    "operating": 41447000000.0,
+    "net": -2487000000.0,
+    "eps": -0.786
+   }
+  ],
+  "surprises": [
+   {
+    "when": "2026-10-30",
+    "estimate": 1.87,
+    "actual": NaN,
+    "surprise_pct": NaN
+   },
+   {
+    "when": "2026-08-04",
+    "estimate": 1.78,
+    "actual": 2.22,
+    "surprise_pct": 0.2464
+   },
+   {
+    "when": "2026-04-28",
+    "estimate": 0.93,
+    "actual": 1.24,
+    "surprise_pct": 0.3325
+   },
+   {
+    "when": "2026-02-10",
+    "estimate": 0.6,
+    "actual": 0.6,
+    "surprise_pct": -0.005
+   },
+   {
+    "when": "2025-11-04",
+    "estimate": 0.77,
+    "actual": 0.85,
+    "surprise_pct": 0.09880000000000001
+   },
+   {
+    "when": "2025-08-05",
+    "estimate": 0.66,
+    "actual": 0.9,
+    "surprise_pct": 0.3611
+   },
+   {
+    "when": "2025-04-29",
+    "estimate": 0.56,
+    "actual": 0.53,
+    "surprise_pct": -0.057800000000000004
+   },
+   {
+    "when": "2025-02-11",
+    "estimate": 0.45,
+    "actual": 0.44,
+    "surprise_pct": -0.030299999999999997
+   }
+  ],
+  "error": ""
+ },
+ "HMY": {
+  "symbol": "HMY",
+  "fetched_at": 1790319751.2801821,
+  "name": "Harmony Gold Mining Company Limited",
+  "sector": "Basic Materials",
+  "industry": "Gold",
+  "website": "https://www.harmony.co.za",
+  "market_cap": 11614382080.0,
+  "pe_trailing": 6.578014,
+  "pe_forward": 5.664883,
+  "ps": 0.11703563,
+  "ev_ebitda": 0.281,
+  "peg": 0.03,
+  "eps_trailing": 2.82,
+  "eps_forward": 3.27456,
+  "dividend_yield": 0.6833956,
+  "beta": 0.814,
+  "revenue_ttm": 99238002688.0,
+  "revenue_growth": 0.492,
+  "earnings_growth": 1.988,
+  "gross_margin": 0.49622002,
+  "operating_margin": 0.47175,
+  "profit_margin": 0.29574,
+  "roe": 0.48049,
+  "debt_to_equity": 12.572,
+  "current_ratio": 0.838,
+  "total_cash": 8624000000.0,
+  "total_debt": 9475999744.0,
+  "free_cashflow": 9850250240.0,
+  "target_mean": 21.51947,
+  "target_high": 23.5,
+  "target_low": 19.05842,
+  "rating_mean": 2.33333,
+  "analysts": 3.0,
+  "short_pct_float": 0.0226,
+  "held_institutions": 0.16356,
+  "quarters": [],
+  "years": [
+   {
+    "label": "2026-06-30",
+    "revenue": NaN,
+    "gross": NaN,
+    "operating": NaN,
+    "net": NaN,
+    "eps": 46.32
+   },
+   {
+    "label": "2025-06-30",
+    "revenue": NaN,
+    "gross": NaN,
+    "operating": NaN,
+    "net": NaN,
+    "eps": NaN
+   },
+   {
+    "label": "2024-06-30",
+    "revenue": 61379000000.0,
+    "gross": 14146000000.0,
+    "operating": 11533000000.0,
+    "net": 8587000000.0,
+    "eps": 13.64
+   },
+   {
+    "label": "2023-06-30",
+    "revenue": 49275000000.0,
+    "gross": 9740000000.0,
+    "operating": 7985000000.0,
+    "net": 4820000000.0,
+    "eps": 7.77
+   }
+  ],
+  "surprises": [
+   {
+    "when": "2027-03-04",
+    "estimate": NaN,
+    "actual": NaN,
+    "surprise_pct": NaN
+   },
+   {
+    "when": "2011-05-05",
+    "estimate": 0.21,
+    "actual": 0.09,
+    "surprise_pct": -0.5619
+   },
+   {
+    "when": "2011-02-07",
+    "estimate": 0.17,
+    "actual": 0.1,
+    "surprise_pct": -0.4374
+   },
+   {
+    "when": "2010-11-01",
+    "estimate": 0.17,
+    "actual": 0.07,
+    "surprise_pct": -0.5867
+   },
+   {
+    "when": "2010-08-16",
+    "estimate": 0.13,
+    "actual": 0.02,
+    "surprise_pct": -0.8493999999999999
+   },
+   {
+    "when": "2010-05-10",
+    "estimate": 0.13,
+    "actual": 0.09,
+    "surprise_pct": -0.3147
+   },
+   {
+    "when": "2010-02-08",
+    "estimate": 0.08,
+    "actual": 0.06,
+    "surprise_pct": -0.1577
+   },
+   {
+    "when": "2009-08-17",
+    "estimate": 0.09,
+    "actual": 0.13,
+    "surprise_pct": 0.469
+   }
+  ],
+  "error": ""
+ },
+ "SATL": {
+  "symbol": "SATL",
+  "fetched_at": 1790319752.8716862,
+  "name": "Satellogic Inc.",
+  "sector": "Industrials",
+  "industry": "Aerospace & Defense",
+  "website": "https://satellogic.com",
+  "market_cap": 913215040.0,
+  "pe_trailing": NaN,
+  "pe_forward": -198.0,
+  "ps": 28.622047,
+  "ev_ebitda": -57.596,
+  "peg": NaN,
+  "eps_trailing": -0.8,
+  "eps_forward": -0.03,
+  "dividend_yield": 0.0,
+  "beta": 1.358,
+  "revenue_ttm": 31906000.0,
+  "revenue_growth": 2.585,
+  "earnings_growth": NaN,
+  "gross_margin": 0.78929,
+  "operating_margin": 0.01671,
+  "profit_margin": 0.0,
+  "roe": NaN,
+  "debt_to_equity": 284.771,
+  "current_ratio": 2.336,
+  "total_cash": 112809000.0,
+  "total_debt": 96486000.0,
+  "free_cashflow": -18836376.0,
+  "target_mean": 10.2,
+  "target_high": 11.0,
+  "target_low": 9.0,
+  "rating_mean": 1.0,
+  "analysts": 5.0,
+  "short_pct_float": 0.16280001,
+  "held_institutions": 0.76492995,
+  "quarters": [
+   {
+    "label": "2026-06-30",
+    "revenue": 15919000.0,
+    "gross": 13097000.0,
+    "operating": 266000.0,
+    "net": -20049000.0,
+    "eps": -0.13
+   },
+   {
+    "label": "2026-03-31",
+    "revenue": 6107000.0,
+    "gross": 4656000.0,
+    "operating": -6361000.0,
+    "net": -118302000.0,
+    "eps": -0.84
+   },
+   {
+    "label": "2025-12-31",
+    "revenue": 6247000.0,
+    "gross": 4968000.0,
+    "operating": -7137000.0,
+    "net": 30483000.0,
+    "eps": NaN
+   },
+   {
+    "label": "2025-09-30",
+    "revenue": 3633000.0,
+    "gross": 2462000.0,
+    "operating": -8082000.0,
+    "net": 3967000.0,
+    "eps": -0.02
+   },
+   {
+    "label": "2025-06-30",
+    "revenue": 4440000.0,
+    "gross": 3251000.0,
+    "operating": -6285000.0,
+    "net": -6652000.0,
+    "eps": -0.06
+   },
+   {
+    "label": "2025-03-31",
+    "revenue": NaN,
+    "gross": NaN,
+    "operating": NaN,
+    "net": NaN,
+    "eps": -0.34
+   }
+  ],
+  "years": [
+   {
+    "label": "2025-12-31",
+    "revenue": 17707000.0,
+    "gross": 12831000.0,
+    "operating": -31019000.0,
+    "net": -4783000.0,
+    "eps": -0.18
+   },
+   {
+    "label": "2024-12-31",
+    "revenue": 12870000.0,
+    "gross": 7846000.0,
+    "operating": -49762000.0,
+    "net": -116272000.0,
+    "eps": -1.28
+   },
+   {
+    "label": "2023-12-31",
+    "revenue": 10074000.0,
+    "gross": 5018000.0,
+    "operating": -69403000.0,
+    "net": -61018000.0,
+    "eps": -0.68
+   },
+   {
+    "label": "2022-12-31",
+    "revenue": 6012000.0,
+    "gross": 2728000.0,
+    "operating": -90867000.0,
+    "net": -36641000.0,
+    "eps": -0.66
+   }
+  ],
+  "surprises": [
+   {
+    "when": "2026-11-12",
+    "estimate": -0.02,
+    "actual": NaN,
+    "surprise_pct": NaN
+   },
+   {
+    "when": "2026-08-05",
+    "estimate": -0.02,
+    "actual": NaN,
+    "surprise_pct": 0.8146
+   },
+   {
+    "when": "2026-05-11",
+    "estimate": -0.05,
+    "actual": -0.04,
+    "surprise_pct": 0.2188
+   },
+   {
+    "when": "2026-03-19",
+    "estimate": -0.05,
+    "actual": 0.31,
+    "surprise_pct": 7.2
+   }
+  ],
+  "error": ""
+ }
+}
