@@ -51,6 +51,38 @@ NEAR_STOP = 0.03
 EARNINGS_SOON_DAYS = 14
 
 
+@dataclass(frozen=True)
+class Rules:
+    """One horizon's thresholds. The swing set is the manual's §7 as written;
+    the long set is for money that is not traded — a retirement or HSA account —
+    where a quarter's drawdown is not a reason to sell and an index fund is not
+    a single-name risk. Every number has a name so the reader can argue with it."""
+
+    name: str
+    max_weight: float            # a single stock above this is trimmed…
+    trim_to: float               # …down to this
+    index_max_weight: float      # a broad index fund may be this large
+    add_below: float             # add only while the name is smaller than this
+    stretch: float               # this far above the 200-day, take a third off
+    broken_below_200: float      # this far under the 200-day is a sell
+    break_on_ma_cross: bool      # losing both averages with a negative quarter is a sell
+    bear_news_sells: bool        # a hard bearish headline sells when under the 200-day (else trims)
+    pull_tolerance: float        # how close to the average a pullback must come to add
+    add_cap: float               # one add is at most this share of the book
+    zh: str
+
+
+SWING = Rules("swing", MAX_WEIGHT, TRIM_TO, MAX_WEIGHT, ADD_BELOW_WEIGHT, STRETCH, BROKEN_BELOW_200,
+              True, True, 0.02, 0.08, "波段（手册 §7 原文）")
+LONG = Rules("long", 0.30, 0.25, 0.60, 0.10, 1.00, -0.20, False, False, 0.05, 0.05,
+             "长线（退休/HSA 账户：只在论点变了或 200 日线下 20% 才卖）")
+RULESETS = {"swing": SWING, "long": LONG}
+
+# Broad index funds: a big weight in one of these is diversification, not concentration.
+INDEX_ETFS = {"SPY", "VOO", "IVV", "SPLG", "QQQ", "QQQM", "VTI", "ITOT", "VT", "VXUS", "VEA", "VWO",
+              "IWM", "DIA", "SCHD", "VIG", "VUG", "VTV", "IEFA", "IEMG", "BND", "AGG"}
+
+
 # ---------------------------------------------------------------------------
 # the portfolio file
 # ---------------------------------------------------------------------------
@@ -61,6 +93,11 @@ class Holding:
     shares: float
     cost: float = float("nan")
     note: str = ""
+    kind: str = ""               # "index" for a broad index fund; blank for a stock
+
+    @property
+    def is_index(self) -> bool:
+        return self.kind == "index" or self.symbol.upper() in INDEX_ETFS
 
 
 @dataclass
@@ -68,6 +105,11 @@ class Portfolio:
     cash: float = 0.0
     holdings: list = field(default_factory=list)
     source: str = ""
+    horizon: str = "swing"       # "swing" (the manual as written) or "long"
+
+    @property
+    def rules(self) -> Rules:
+        return RULESETS.get((self.horizon or "swing").lower(), SWING)
 
     def symbols(self) -> list[str]:
         return [h.symbol for h in self.holdings]
@@ -79,6 +121,7 @@ def default_path() -> Path:
 
 TEMPLATE = {
     "cash": 10000,
+    "horizon": "swing",
     "holdings": [
         {"symbol": "AAPL", "shares": 10, "cost": 180.0, "note": "示例，改成你自己的"},
         {"symbol": "MSFT", "shares": 5, "cost": 400.0},
@@ -100,6 +143,7 @@ def parse_portfolio(text: str, kind: str = "json") -> Portfolio:
         if isinstance(data, list):
             data = {"holdings": data}
         pf.cash = _num(data.get("cash", 0), 0.0)
+        pf.horizon = str(data.get("horizon") or "swing").strip().lower()
         rows = data.get("holdings") or []
         for r in rows:
             if isinstance(r, dict):
@@ -107,7 +151,7 @@ def parse_portfolio(text: str, kind: str = "json") -> Portfolio:
                 if sym:
                     pf.holdings.append(Holding(sym, _num(r.get("shares") or r.get("quantity"), 0.0),
                                                _num(r.get("cost") or r.get("avg_cost")),
-                                               str(r.get("note") or "")))
+                                               str(r.get("note") or ""), str(r.get("kind") or "").lower()))
         return pf
     if kind == "csv":
         for row in csv.DictReader(text.splitlines()):
@@ -128,6 +172,9 @@ def parse_portfolio(text: str, kind: str = "json") -> Portfolio:
         sym = parts[0].upper()
         if sym == "CASH" and len(parts) > 1:
             pf.cash = _num(parts[1], 0.0)
+            continue
+        if sym == "HORIZON" and len(parts) > 1:
+            pf.horizon = parts[1].lower()
             continue
         shares = _num(parts[1], 0.0) if len(parts) > 1 else 0.0
         cost = _num(parts[2]) if len(parts) > 2 else float("nan")
@@ -170,6 +217,7 @@ class Line:
     verdict: str = ""
     spark: str = ""
     page: str = ""
+    is_index: bool = False
     facts: Facts | None = field(default=None, repr=False, compare=False)
 
     def to_dict(self) -> dict:
@@ -184,6 +232,7 @@ class Advice:
     data_date: str
     generated_at: str = ""
     source: str = ""
+    horizon: str = "swing"
     total: float = float("nan")
     cash: float = 0.0
     lines: list = field(default_factory=list)
@@ -201,7 +250,7 @@ class Advice:
 
     def to_dict(self) -> dict:
         return {"date": self.date, "data_date": self.data_date, "generated_at": self.generated_at,
-                "source": self.source, "total": self.total, "cash": self.cash,
+                "source": self.source, "horizon": self.horizon, "total": self.total, "cash": self.cash,
                 "cash_pct": self.cash_pct, "lines": [ln.to_dict() for ln in self.lines],
                 "sector_weights": self.sector_weights, "tilt": self.tilt,
                 "policy_brief": self.policy_brief, "macro_read": self.macro_read,
@@ -209,13 +258,16 @@ class Advice:
 
 
 def decide(line: Line, f: Facts, *, total: float, cash: float, today: date,
-           tilt: float = 0.0) -> None:
+           tilt: float = 0.0, rules: Rules = SWING) -> None:
     """Keep, add, trim or sell — the rules, in the order they are tested.
 
     Sell beats trim beats add beats hold: the first rule that fires names the
-    action, and the ones after it only add reasons. Every threshold is a
-    module constant with a name, not a number in a condition.
+    action, and the ones after it only add reasons. Every threshold lives in
+    ``rules`` under a name, not as a number in a condition; ``SWING`` is the
+    manual's §7 as written and ``LONG`` is the set for money that is held,
+    not traded.
     """
+    R = rules
     snap = f.snap
     px = f.price
     a50, a200 = f.above("sma50"), f.above("sma200")
@@ -239,33 +291,47 @@ def decide(line: Line, f: Facts, *, total: float, cash: float, today: date,
         with contextlib.suppress(Exception):
             line.earnings_in = _num(f.earnings.days_to_next(today))
 
-    broken = (a200 is False and a50 is False and _ok(r3) and r3 < 0) or \
-             (_ok(ext) and ext < BROKEN_BELOW_200)
-    if broken:
+    ma_cross = a200 is False and a50 is False and _ok(r3) and r3 < 0
+    deep = _ok(ext) and ext < R.broken_below_200
+    max_w = R.index_max_weight if line.is_index else R.max_weight
+    if R.name == "long" and _ok(s200) and s200 > 0:
+        # The long set's exit is the deep break under the 200-day; show that
+        # line, not a swing stop the holder is not going to act on.
+        line.stop = s200 * (1 + R.broken_below_200)
+    if deep or (ma_cross and R.break_on_ma_cross):
         line.action, line.act_shares, line.urgent = SELL, int(line.shares), True
         line.reasons.append(f"趋势已坏：价格 {px:,.2f} 在 50 日和 200 日线（{s200:,.2f}）下方"
-                            + (f"，近三月 {r3 * 100:+.0f}%" if _ok(r3) else ""))
+                            + (f"，近三月 {r3 * 100:+.0f}%" if _ok(r3) else "")
+                            + (f"，低于 200 日线 {abs(ext) * 100:.0f}%" if deep else ""))
     elif hard_bear:
-        line.action, line.urgent = (SELL if a200 is False else TRIM), True
-        line.act_shares = int(line.shares) if line.action == SELL else max(1, int(line.shares // 2))
+        sell = R.bear_news_sells and a200 is False
+        line.action, line.urgent = (SELL if sell else TRIM), True
+        line.act_shares = int(line.shares) if sell else max(1, int(line.shares // 2))
         line.reasons.append(f"近两天有重大利空：{hard_bear[0].title}")
-    elif w > MAX_WEIGHT:
+    elif w > max_w:
         line.action = TRIM
-        line.act_shares = max(1, int(line.shares * (1 - TRIM_TO / w)))
-        line.reasons.append(f"单一持仓占 {w * 100:.0f}%，超过 {MAX_WEIGHT * 100:.0f}% 的上限，减到 {TRIM_TO * 100:.0f}%")
-    elif (_ok(ext) and ext > STRETCH) or (_ok(rsi) and rsi >= 80):
+        trim_to = R.trim_to if not line.is_index else R.index_max_weight
+        line.act_shares = max(1, int(line.shares * (1 - trim_to / w)))
+        line.reasons.append(f"{'指数基金' if line.is_index else '单一持仓'}占 {w * 100:.0f}%，"
+                            f"超过 {max_w * 100:.0f}% 的上限，减到 {trim_to * 100:.0f}%")
+    elif (_ok(ext) and ext > R.stretch) or (_ok(rsi) and rsi >= 80):
         line.action = TRIM
         line.act_shares = max(1, int(line.shares // 3))
-        line.reasons.append(("高出 200 日线 %.0f%%" % (ext * 100)) if _ok(ext) and ext > STRETCH
+        line.reasons.append(("高出 200 日线 %.0f%%" % (ext * 100)) if _ok(ext) and ext > R.stretch
                             else f"RSI {rsi:.0f}，短线过热" + "，先落袋三分之一")
     else:
+        if ma_cross:
+            line.cautions.append(f"50 日和 200 日线都失守、近三月 {r3 * 100:+.0f}%；长线账户不按此卖，"
+                                 f"复核线在 200 日线下 {abs(R.broken_below_200) * 100:.0f}%（{line.stop:,.2f}），"
+                                 "论点变了才走")
         pull = pullback_entry(px, _num(snap.sma20), support, sma50=_num(snap.sma50), atr_pct=atr_pct) \
             if _ok(atr_pct) and atr_pct > 0 else None
-        near_pull = pull is not None and abs(px - pull) / px <= 0.02
+        near_pull = pull is not None and abs(px - pull) / px <= R.pull_tolerance
         soon = _ok(line.earnings_in) and 0 <= line.earnings_in <= EARNINGS_SOON_DAYS
-        if a50 and a200 and w < ADD_BELOW_WEIGHT and cash > 0 and near_pull and not soon and not bear:
-            sized = size_position(total, px, line.stop, risk_pct=1.0, cap_fraction=0.08) \
-                if _ok(line.stop) and line.stop < px else None
+        if a50 and a200 and w < R.add_below and cash > 0 and near_pull and not soon and not bear:
+            add_stop = structural_stop(px, support, atr_pct=atr_pct) if _ok(atr_pct) and atr_pct > 0 else None
+            sized = size_position(total, px, add_stop, risk_pct=1.0, cap_fraction=R.add_cap) \
+                if add_stop is not None and _ok(add_stop) and add_stop < px else None
             want = sized.quantity if sized else 0
             room = int(cash // px) if px else 0
             add = min(want, room)
@@ -308,7 +374,7 @@ class Adviser:
         today = clock.market_state(now).trading_day
         advice = Advice(date=today.isoformat(), data_date=data_day.isoformat(),
                         generated_at=datetime.now().isoformat(), source=portfolio.source,
-                        cash=_num(portfolio.cash, 0.0))
+                        horizon=portfolio.rules.name, cash=_num(portfolio.cash, 0.0))
         if not portfolio.holdings:
             advice.warnings.append("组合里没有持仓")
             return self.save(advice)
@@ -341,7 +407,7 @@ class Adviser:
         for h in portfolio.holdings:
             f = facts[h.symbol]
             ln = Line(symbol=h.symbol, name=f.name, sector=f.sector or "Unknown",
-                      shares=h.shares, cost=h.cost, price=f.price, facts=f)
+                      shares=h.shares, cost=h.cost, price=f.price, facts=f, is_index=h.is_index)
             if not f.ok:
                 ln.action, ln.cautions = HOLD, ["拿不到行情，无法判断"]
                 advice.warnings.append(f"{h.symbol}: 拿不到行情")
@@ -359,20 +425,22 @@ class Adviser:
         for ln in lines:
             if ln.facts is not None and ln.facts.ok:
                 decide(ln, ln.facts, total=total, cash=advice.cash, today=today,
-                       tilt=advice.tilt.get(ln.sector, 0.0))
+                       tilt=advice.tilt.get(ln.sector, 0.0), rules=portfolio.rules)
         order = {SELL: 0, TRIM: 1, ADD: 2, HOLD: 3}
         lines.sort(key=lambda ln: (order.get(ln.action, 9), not ln.urgent, -(ln.weight if _ok(ln.weight) else 0)))
         advice.lines = lines
-        self.portfolio_alerts(advice)
+        self.portfolio_alerts(advice, portfolio.rules)
         if self.with_pages:
             self.write_pages(advice)
         return self.save(advice)
 
-    def portfolio_alerts(self, advice: Advice) -> None:
+    def portfolio_alerts(self, advice: Advice, rules: Rules = SWING) -> None:
         weights = sorted((ln.weight for ln in advice.lines if _ok(ln.weight)), reverse=True)
-        if weights and weights[0] > MAX_WEIGHT:
-            top = next(ln for ln in advice.lines if ln.weight == weights[0])
-            advice.alerts.append(f"{top.symbol} 一个名字占了 {weights[0] * 100:.0f}%")
+        over = [ln for ln in advice.lines if _ok(ln.weight)
+                and ln.weight > (rules.index_max_weight if ln.is_index else rules.max_weight)]
+        if over:
+            top = max(over, key=lambda ln: ln.weight)
+            advice.alerts.append(f"{top.symbol} 一个名字占了 {top.weight * 100:.0f}%")
         if len(weights) >= 3 and sum(weights[:3]) > 0.60:
             advice.alerts.append(f"前三大持仓合计 {sum(weights[:3]) * 100:.0f}%，集中度高")
         for sector, w in sorted(advice.sector_weights.items(), key=lambda kv: -kv[1]):
@@ -442,13 +510,15 @@ def _share(v: float) -> str:
 
 
 def format_advice(advice: Advice) -> str:
+    rules = RULESETS.get(advice.horizon, SWING)
     out = [f"# 持仓建议 · {advice.date}", "",
            f"数据截至 {advice.data_date} 收盘。组合来自 `{advice.source or '（未指定）'}`；"
-           f"总值 ${_f(advice.total)}，现金 ${_f(advice.cash)}（{_share(advice.cash_pct)}）。", ""]
+           f"总值 ${_f(advice.total)}，现金 ${_f(advice.cash)}（{_share(advice.cash_pct)}）。"
+           f"规则集：{rules.zh}。", ""]
     if advice.alerts:
         out += ["## 先看这里"] + [f"- {a}" for a in advice.alerts] + [""]
     out += ["## 每个持仓", "",
-            "| 代码 | 板块 | 股数 | 成本 | 现价 | 盈亏 | 占比 | 建议 | 数量 | 止损 | 目标 |",
+            f"| 代码 | 板块 | 股数 | 成本 | 现价 | 盈亏 | 占比 | 建议 | 数量 | {'复核线' if rules.name == 'long' else '止损'} | 目标 |",
             "|---|---|---:|---:|---:|---:|---:|---|---:|---:|---:|"]
     for ln in advice.lines:
         act = f"**{ln.action}**" if ln.action != HOLD else ln.action
@@ -489,10 +559,12 @@ def format_advice(advice: Advice) -> str:
     if advice.warnings:
         out += ["## 说明"] + [f"- ⚠ {w}" for w in advice.warnings] + [""]
     out += ["---",
-            f"规则：跌破 200 日线 {abs(BROKEN_BELOW_200) * 100:.0f}% 或同时失守 50/200 日线且三月为负 → 卖出；"
-            f"重大利空 → 卖出/减半；单一持仓 > {MAX_WEIGHT * 100:.0f}% → 减到 {TRIM_TO * 100:.0f}%；"
-            f"高出 200 日线 {STRETCH * 100:.0f}% 或 RSI ≥ 80 → 减三分之一；"
-            f"趋势完好、回调到均线、占比 < {ADD_BELOW_WEIGHT * 100:.0f}%、有现金、两周内无财报 → 加仓。这不是投资建议。", ""]
+            f"规则（{rules.zh}）：跌破 200 日线 {abs(rules.broken_below_200) * 100:.0f}%"
+            + ("或同时失守 50/200 日线且三月为负" if rules.break_on_ma_cross else "")
+            + f" → 卖出；重大利空 → {'卖出/减半' if rules.bear_news_sells else '减半'}；"
+            f"单一持仓 > {rules.max_weight * 100:.0f}% → 减到 {rules.trim_to * 100:.0f}%（指数基金上限 {rules.index_max_weight * 100:.0f}%）；"
+            f"高出 200 日线 {rules.stretch * 100:.0f}% 或 RSI ≥ 80 → 减三分之一；"
+            f"趋势完好、回调到均线、占比 < {rules.add_below * 100:.0f}%、有现金、两周内无财报 → 加仓。这不是投资建议。", ""]
     return "\n".join(out)
 
 

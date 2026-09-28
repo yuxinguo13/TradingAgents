@@ -105,6 +105,12 @@ weeks, and the names to handle today.
 
 Writes `desk/advise/<date>.md`, `.json`, and a page per name.
 
+The portfolio file may carry `"horizon": "long"` for money that is held rather
+than traded (a retirement or HSA account): the adviser then uses `advise.LONG`
+— sell only 20% under the 200-day or on a hard bearish headline, a stock may
+be 30% and a broad index fund (`"kind": "index"`, or one of `INDEX_ETFS`) 60%,
+trim only 100% above the 200-day. Without it the manual's §7 swing rules apply.
+
 ## 4 · review (the score-keeper)
 
 ```

@@ -420,3 +420,45 @@ class TestTrade:
     def test_the_cli_dispatches(self, capsys):
         from tradingagents.desk.__main__ import main
         assert main([]) == 2 and "trade" in capsys.readouterr().out
+
+
+@pytest.mark.unit
+class TestAdviseHorizon:
+    """Retirement money is held, not traded: the long rule set sells only on a
+    deep break or a changed thesis, and an index fund is not concentration."""
+
+    def test_the_long_set_holds_through_a_lost_average_and_sells_a_deep_break(self):
+        shape("DOWN", 100.0, drift=-0.30)                  # ~12% under the 200-day: swing sells, long holds
+        shape("DEEP", 100.0, drift=-0.60)                  # far under it: both sell
+        pf = advise.Portfolio(cash=5000, horizon="long",
+                              holdings=[advise.Holding("DOWN", 10, 120.0), advise.Holding("DEEP", 10, 150.0)])
+        adv = advise.Adviser(market=mkt(), now=FRIDAY_AFTER_CLOSE, with_pages=False).run(pf)
+        by = {ln.symbol: ln for ln in adv.lines}
+        assert by["DOWN"].action == advise.HOLD and any("复核线" in c for c in by["DOWN"].cautions)
+        assert by["DEEP"].action == advise.SELL and "低于 200 日线" in by["DEEP"].reasons[0]
+        assert adv.horizon == "long" and "长线" in advise.format_advice(adv)
+        swing = advise.Adviser(market=mkt(), now=FRIDAY_AFTER_CLOSE, with_pages=False).run(
+            advise.Portfolio(cash=1000, holdings=[advise.Holding("DOWN", 10, 120.0)]))
+        assert swing.lines[0].action == advise.SELL
+
+    def test_an_index_fund_may_be_large_but_a_stock_may_not(self):
+        shape("QQQM", 100.0, drift=0.20)
+        shape("BIG", 100.0, drift=0.20)
+        pf = advise.Portfolio(cash=0, horizon="long",
+                              holdings=[advise.Holding("QQQM", 50, 90.0), advise.Holding("BIG", 50, 90.0)])
+        adv = advise.Adviser(market=mkt(), now=FRIDAY_AFTER_CLOSE, with_pages=False).run(pf)
+        by = {ln.symbol: ln for ln in adv.lines}
+        assert by["QQQM"].is_index and by["QQQM"].action == advise.HOLD          # 50% in an index fund is fine
+        assert by["BIG"].action == advise.TRIM and "单一持仓占 50%" in by["BIG"].reasons[0]
+        assert any("BIG 一个名字" in a for a in adv.alerts) and not any("QQQM" in a for a in adv.alerts)
+
+    def test_the_horizon_and_kind_read_from_the_file(self, tmp_path):
+        j = tmp_path / "p.json"
+        j.write_text(json.dumps({"cash": 1, "horizon": "Long",
+                                 "holdings": [{"symbol": "vti", "shares": 1, "kind": "index"},
+                                              {"symbol": "abc", "shares": 1}]}))
+        pf = advise.load_portfolio(j)
+        assert pf.rules is advise.LONG and pf.holdings[0].is_index and not pf.holdings[1].is_index
+        t = tmp_path / "p.txt"
+        t.write_text("horizon long\nABC 1 10\n")
+        assert advise.load_portfolio(t).rules is advise.LONG
