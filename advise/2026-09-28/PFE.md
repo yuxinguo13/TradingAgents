@@ -110,23 +110,13 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 3h 前 | 12 | 偏空 | [Pfizer’s Lyme disease vaccine shows 70% efficacy; Texas man sentenced to 12.5 years in $61.5M Medicare telemarketing fraud scheme; Novo Nordisk launches Wegovy subscription model – Morning Medical Update - Medical Economics](https://news.google.com/rss/articles/CBMi1gJBVV95cUxPVnU1X0hLdnNoem8xSWwtUm9LQ28wXzM4aUFsUUN2U1ZsM0Fwb2dIWmNPdGphRVd3cm9RUzBtT0gzYVlyYUV5aHBnOEt4ck9CVnV0NEs5NTJkV2d1WnZSaGs3bUJYUHlzVVBMV2xwRDhnakZiWVlkNG5kTFBmTm0zNHJGNDlhdHhNcVNEQUtaX0ppdlZ1SFlXekZ0Z0Rtemh4TktrWGdPN1VIYnhGZmZnWURLWlhQTjNhUXN0RkV5eE01ZnhhVHd0RXlFNm5PNDBQTjQyOWpHMWRpTUJfV0Y5NjBqcmJvZ0FGWGtZQjdtZW5LcFI4S3U5ZHV6Zl9uc0NZQkpEcDQ1TjRiTnk3MjBGYS1RdjhNaVhvQjVveW5FRFpWQkVicHE1MVlLbURUZTFObTZtS19qN3JrdDF5c0RHb19WZzNTQW5OcWU2MEdGR3pqREVjQWc?oc=5) | Medical Economics |
-| 31h 前 | 6 | 中性 | [Kevin Warsh Just Signaled Higher-for-Longer Rates. Here's What That Means for Big Pharma Dividend Stocks. - AOL.com](https://news.google.com/rss/articles/CBMiggFBVV95cUxPcEc5Snd1RkQ0bGVWQTVlUWJFenlpNUptLUIxQlJHa3BOUnJBbDU0cmRoOENzU25faG81VzJjaWstWUh5UllwT1RMOW1ZNTJfSldaLVpjTWtsaFpsbk85RGd1V3VLRjlxZFNFRUdsVDhqQkJVdTYxblk1MlpKeXdXbFFB?oc=5) | AOL.com |
-| 3h 前 | 0 | 偏空 | [Pfizer Balances Cost Cuts and Portfolio Growth as US Pricing Rules Take Shape - AD HOC NEWS](https://news.google.com/rss/articles/CBMi2wFBVV95cUxOLUM0elB3ZDhnR3A3ei16T1NsOVg2blg3YnVyOXlZZWxLeFhTYTAza2lNY3RmQkxKS0lMUnFKYUVONUdTN05SV2JvRDhua1Ywd3BudF85cWthMDVGbFNiMHBQSEg1MjFRVk1oN09ueW1BMWdFclZZVHpucW9RZi1BNUtQMEM0LVZFaUFVYmgyY1V3ZjM5WUVtMFFiZDlVbXhMeWI5c2RGcVQwWGUwMTJRcFRfanNtWlVZUk9hSk1ESy0xUkZ3TFRSbnFNTmVYTEpVcHJjcDA5eFJMQmM?oc=5) | AD HOC NEWS |
-| 11h 前 | 0 | 中性 | [Pfizer stock at USD 28.67 on September 25, 2026 - AD HOC NEWS](https://news.google.com/rss/articles/CBMipwFBVV95cUxORHdySWZGSGxKNFVWdk9hU2FmQXhmVi1yb2ZpcUdZSzIzQVVXbWlzQnZERnNiT2ZXRVhRbzJzOXA5SjlBOFpTTXA5SHJYVjFNWlJKYWlEbVhubTR6ZVVLV1o0NUEzRnl2TVFzM0dwQjJFYjhISUo1SklSd2c1Qzg1SVFPNE1Fd2JUOFgzdEkxTG5Wd3A4aWFUZTdlUnpIZXVVbDRhNFJENA?oc=5) | AD HOC NEWS |
-| 21h 前 | 0 | 中性 | [Pfizer (PFE) Balances Global Pricing Opportunity with New Revenue Sharing - Yahoo Finance](https://news.google.com/rss/articles/CBMimwFBVV95cUxPTWtQeS15SEl1ZVdudmxGYmZraWRnbHRWUzhGOXFIUkZsMGxjUUZXMEl1V3I1Z2NCSFNiUHc3aHpDVmpKaXlURExnSzRacl83LV9MMUZmUk5QYnVOdXZHamdwNHprRGtzWFZMTE1RNzFyVC1la2FiRVRGTkVFVFVReVZLQzFxMWtHUTl3aHR5eEFSc3QwbTJBdkhYUQ?oc=5) | Yahoo Finance |
-| 40h 前 | 0 | 中性 | [Pfizer (PFE) Heads Into Its London Conference, Is The Stock Fully Priced? - simplywall.st](https://news.google.com/rss/articles/CBMi0wFBVV95cUxQUnZNQTM0YnVfb19zZkxvWHlTWi14RkhkOEZ1R2RYR0w5SHlOc2JLTXRMcktMMmtkcHlmQ18wWFdPSUlsVnc0RENwdFd2WEp2OWtxNkFTczNCV2JySEd1UWUwMlR3REtoclhUV21PSm5BNjdjcG53eWNaZE9XZkZBc3pQRXFwYW4yLWVnWDBfTUhLNXdFNzF2YmtKMGZ1cF9sRHVzTkR6TGhCQnIwbVNMb0gyRDNfeFpPSFVMSjEtRXhReE4zMzZKaFV3ckRtaGIxa0RN0gHYAUFVX3lxTE4zbkFaSGVBc3RhVko1cF9kOHlBOG9mZHMzSlFHei1sZF9MY3FDMTBuUGVzYkVRYldyU0UyZzZmMENvd2RzNGx3X0dMZWx5Vks4NGxaeUFuZ0pEYjRqWTZhOWFwM2VMUmxlWXZIdHlFWUZEUnI2ZVZVZzdDZ0RiOGduWG1Ba2hGS2pLc2VIaHUteEwtaWRYc0duM0hsZVlaOFZYMG0wTWtTckd5Wjg1ZDRSQ0FIczhQWW92NW5jd1pLTENVNmExWThjUGpDdDI5TnVISHk2T0JXaA?oc=5) | simplywall.st |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
 - 摆动高低点都在下移，属于下降结构；在出现一个更高的低点之前，任何反弹都还只是反弹。
-- 24 小时内的利空标题：Pfizer’s Lyme disease vaccine shows 70% efficacy; Texas man sentenced to 12.5 years in $61.5M Medicare telemarketing fraud scheme; Novo Nordisk launches Wegovy subscription model – Morning Medical Update - Medical Economics（Medical Economics）
 
 ## 六、原始数据（本页所有计算的来源）
 

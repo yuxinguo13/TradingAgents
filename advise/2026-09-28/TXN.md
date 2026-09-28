@@ -112,10 +112,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 4h 前 | 8 | 中性 | [Texas Instruments stock rises 2.74 percent on Q2 growth - AD HOC NEWS](https://news.google.com/rss/articles/CBMiugFBVV95cUxOeHdCMDRfY29UR01rdVdLX1VzQlVkaHBOcHR6UHAzTVpHREtsTjdkdG9GbkNSMUhDdmltZnEyYzc5eWdOYXpmZnllWTIxem4yZHZNcVJ4TmwzVXgxUHdaTGc0a0ZRLTFuWW5NekxNX3Z2ZTc2dHdwMExPbHkwVFBFeXFnTVJXTmYwYWJkQS1VTGFISkVwamt6MGpKUjNTeXgwYTVLRVBfRmtjZ2daWmJhdGp1enh6VWFxQ0E?oc=5) | AD HOC NEWS |
-| 3h 前 | 0 | 中性 | [Texas Instruments Stock Forecast: Can Industrial Demand Sustain TXN’s Recovery? - TradingKey](https://news.google.com/rss/articles/CBMi4AFBVV95cUxPbWZybjJ0WjFycGFGMENaNC1FdmozXzl6dGIxejJZM25sYkZLZTJMaTNfTGFrZlR6SzIzbjVUODV6dEltSWpOOWpLa3pXM1hHYVZFSVZnajdfbFh0Z3hOMVZpbUVWNEZacWFpeEx0LXo5YkliLWZfNEw4WnVPeGpyLU5PamloYkR0MjNLWkhjQm1MY3ZGX3gza1JpeE5hVHNzR1YwODFKalNRZm1NV21kS1JteC1wYlBkQV93Ukl2cllGdXB6YlNzUVhTMjRmaUlQRDlsUHFibDBfZ0ZxaTJHZg?oc=5) | TradingKey |
-| 14h 前 | 0 | 中性 | [Texas Instruments Tokenized Stock (Ondo) USD (TXNON-USD) Cryptocurrency Forum & Discussion - Yahoo Finance - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMiZkFVX3lxTE1ONlNEZTVIVVcxTlVwOWVfQk9OTEZYaDVEOU9HcGI2bDAzMWExTlU4dnlSTENBV0l6QVVMZERNcVk1ZmlITU5md1JMVXZGYlg4M1BPTC1uY0Nlc1I3UWwtYmhrN3NpQQ?oc=5) | Yahoo! Finance Canada |
-| 40h 前 | 0 | 中性 | [AI Demand Outlook Could Be A Key Test For Texas Instruments Stock (TXN) - simplywall.st](https://news.google.com/rss/articles/CBMi1wFBVV95cUxPR1VCa08tRkRyRjd0U1BNc0RRT08wVUh0ZXdXN05RQnhXZklVaFh0UENsdnBfWUNYaTNsTzk0SnRHMldEOFNnQThoSHMtQ2o5dklMYmVaRlhUaVlvNW9CWmhJUENDaEU0MURMRndIZkd2QXoxWEZ0R1NLNzhsQi00WkVaWUdfZ0VLRzAydllFR0gwVTV1bF9GVWV4SHAyQkluRE1faFZ5cjd5aThpbVIwQzNiX1FzNkQ2d00tNk55ZlIxQ09Lbnh3djMzRk1KMEk5UXdFeENHa9IB3AFBVV95cUxNSG5Mc1FmWjFMZlBfZVJfM2dlYlpZeXZjcXQ2ZTIzVHR4Z3hYNVBHRDMtSzg4bXpqb1JKRHlfUGs4LUdrTWh0QVJvbmtzYUxMUEdJenlPZm83TDhfb0lsNHVlMUM0c0x1NFY1OENsRFhJLXpObUtSV1pzYjRpLUxKN3dIVUEtNkt4QlY3ZVRzSjVGaXdBbGhMTjRyeHh4bVZWam5GOFJ6V2hRcExadTVhZUFLQ2xWOEt2cW1aX1BEYTJvWldjbXhPMzFsQVhURl96REFHWUlrZGdSbXR0?oc=5) | simplywall.st |
+| 4h 前 | 8 | 中性 | [Texas Instruments stock rises 2.74 percent on Q2 growth - ad-hoc-news.de](https://news.google.com/rss/articles/CBMiugFBVV95cUxOeHdCMDRfY29UR01rdVdLX1VzQlVkaHBOcHR6UHAzTVpHREtsTjdkdG9GbkNSMUhDdmltZnEyYzc5eWdOYXpmZnllWTIxem4yZHZNcVJ4TmwzVXgxUHdaTGc0a0ZRLTFuWW5NekxNX3Z2ZTc2dHdwMExPbHkwVFBFeXFnTVJXTmYwYWJkQS1VTGFISkVwamt6MGpKUjNTeXgwYTVLRVBfRmtjZ2daWmJhdGp1enh6VWFxQ0E?oc=5) | ad-hoc-news.de |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -124,6 +121,7 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
 - 下次财报在 29 天后，落在持有期内。财报跳空会直接穿过止损——那一晚的风险不是 1R，是没有上限的。
+- 政策面对该板块的倾向为 -0.76（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 

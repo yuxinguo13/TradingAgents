@@ -110,7 +110,11 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
+| 时间 | 材料度 | 倾向 | 标题 | 来源 |
+|---|---:|---|---|---|
+| 0h 前 | 0 | 中性 | [Why TTM Technologies (TTMI) Stock Is Nosediving - StockStory](https://news.google.com/rss/articles/CBMiqwFBVV95cUxNRTFmQlBPZmVud19raW5zOVdlaXNIZ3RXWXJEU1Y5TjBCaWtHMmNEdlZtQjF1RV91LWxjMlVEMUZFNFE5OTZ1YlZ2ZHJKMFhQdWVNaWJoVWRubmM1SFdjZDJpUFA3OHRvZlQ2S2s1OUxPNk9kd2ZpVGd2a0tsemszWnN5d0FqbDlGdWgzaG9FcVNLYk5XVmlXR2xoVkh3alhGRHpqbi11SFoyMTg?oc=5) | StockStory |
+
+_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
 ## 五、反方观点与风险
 

@@ -110,11 +110,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 41h 前 | 0 | 中性 | [RDDT Stock Set For Worst Day On Record — Reddit Advances Copyright Suit Against Perplexity In Crusade Against AI Data Scraping - Stocktwits](https://news.google.com/rss/articles/CBMi4wFBVV95cUxNMlJnSWU2Mzl5MFdxMUdWN0pZSE5FcVpUbDJBU3AxbnJSOV8xcTBCbml1cDB2WHNoLUJPaTRaMDhTa0lNR3BSUzdpOFdJTnp1RTdqdUZycmRRa2JwY2p5MW5wdzZHSm41NDBoZGZET0o5YUJIbzBtclBzMHhteGNiZjVwZWRzN2NYY3hwZnIwb2s1RTNaMHdTVC1uTkQ3Y1BabFhydjdjRmZrYXQ1Z2xyemR3UmlPZVdMQUQ0bkZDdUlGWUFTV1NET2RRaFRIelVoVzQwZi1pX1NGTkRxblJMdy1nYw?oc=5) | Stocktwits |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
@@ -123,6 +119,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 - 日均波幅 8.0%，属于高波动：同样的仓位金额，这只股票的日常噪音就能触发大多数人的心理止损。
 - 自由现金流为负（-$4,441.70万），意味着经营本身在消耗现金，未来可能需要再融资摊薄。
 - TTM 市盈率 2,430 倍，价格里已经计入了不少增长；增长只要减速，杀估值的幅度会大于业绩本身的降幅。
+- 政策面对该板块的倾向为 -0.76（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 

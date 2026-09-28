@@ -67,12 +67,7 @@ _读不到财务数据：该代码没有可用的财务数据（可能是 ETF、
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 8h 前 | 0 | 中性 | [Should Invesco QQQ (QQQ) Be on Your Investing Radar? - Yahoo Finance](https://news.google.com/rss/articles/CBMinAFBVV95cUxNM0ZpR0JwSm5hc28zc1plSTF0OWZXSEo1ZmdXQnk1M3dUYldST3BwbE4yU2JzNkVURzdOTDBRVjh1eFBfMEc0UllNUVNxdkZ5dmNpUHJZY3pyT3Z4VWxlaWdiNWlEUzJwTEdQYjVsakJIVEJjYjF6aWVfejFUOF9KemQyQUZLWnBJRWJ0ZG1wRWJvYVZfaDQ4NDVnSnU?oc=5) | Yahoo Finance |
-| 40h 前 | 0 | 偏多 | [This 17% Yield Nasdaq Covered Call ETF Is Somehow Outperforming QQQ - 24/7 Wall St.](https://news.google.com/rss/articles/CBMitAFBVV95cUxOZ2NtTldfRGZjY1RzNUN0ZWlKb19MWFNPQzk4VTRLTVZoc3Y2OFBTRnFCemJqRy1PMlUxMnpPUXg3WHdoVWdpS0VJRnBPMW8zQURhVG5GVmVvbUNicl9NUmlLeUFWZlExbGpyckZNcDE4UW44WlNCOVRGdzcyNDdtZEgzUUdENGtUSHpramtOT3d4YTUwdVFRV094SGJhRUp2Q1I0U1EzWkgzcVNFYklLWHpIZjM?oc=5) | 24/7 Wall St. |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 

@@ -110,16 +110,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 5h 前 | 10 | 中性 | [Eight Shell (NYSE: SHEL) executives acquired shares through dividend arrangements - Stock Titan](https://news.google.com/rss/articles/CBMiqAFBVV95cUxPdVZqeVl4QUUyX2EwTjdDVmk4eWRUbGJQX1RlT2VuQVRTNlRpTmE5VFNvNlNFeHY4aFByd0VHTzRob2JVVFNJZkZiYnBtU09PZ1lURnp5LVJEYVdyOG9kMTFXeUpQdktod1NfMDhCVl9HOGdENUdKT3NucmhGRDlHanViM1owaDVPZ0gyQXF6cDlTcUtBVlhadk90X0lnWW9BZWppb2NLdi0?oc=5) | Stock Titan |
-| 8h 前 | 7 | 中性 | [Shell's CEO received dividend shares tied to past bonus and employee plans - Stock Titan](https://news.google.com/rss/articles/CBMid0FVX3lxTE5BRmxQZTkyalh0OUo3dXFLc1lmMHNvaDFqWmZqUFVPcDBDNFZDMUdOMWgyLVlHYThNRFpMeXhkb2ltZlJTenF6elM2OUd3U25talZZQzNzY1loODR6SWt1T1ppZTNhS3dacFlRZ1ZlY0JoaXF0aG1R?oc=5) | Stock Titan |
-| 34h 前 | 2 | 中性 | [42,478 Shell PLC Unsponsored ADR $SHEL Shares Sold by State Street Corp - MarketBeat](https://news.google.com/rss/articles/CBMiygFBVV95cUxQZGp5ZWZlbHhPNEk0VXlLd1VkTGFIRHlQeFl6d0xERmxkY24wb0RGVFlWVzJ1YVl1bm9JZkQxNG5jSUYzYzB2REd4S1JsaHhfa3QyOHVBa1dKb19TTXBpUkxha3h1YzM2NDJzMmpQc3ItaWM2b04yNW0ySjdrS1BFUzVnSlMxZU83SkxkMWlQZVdOMlFwYm5QSElINDkza0FQd1lEMHpkSEZUeHl3U2YxZ1hBNEpoX3NTQ280cWtnTE1oT1luT2NNZDVn?oc=5) | MarketBeat |
-| 2h 前 | 0 | 中性 | [Shell stock trades at GBp 3,611 after portfolio moves - AD HOC NEWS](https://news.google.com/rss/articles/CBMitwFBVV95cUxPTHJHM3NHUi1MMUY3cldsdWNlaTNtc2cwV3FTOUhGSS1LMGNmRUVKZjdQdUZsTnJRY2VmOVpuS2xQbmdaT0tfN09qd0VfQXMzWVljek5VdlE4WnYzN2h1XzB2TVg4SjJaZFFNYkpjSWpUdzR5WC14eEVwWHUwbUQ2a05vanVod1lnVzJ0ejNFOXJLb0dqMlEwdzRyenJRazNwTjZOUzhQY3J6cGVadHVBbV95aGJTbmM?oc=5) | AD HOC NEWS |
-| 5h 前 | 0 | 中性 | [Integral Acquisition Corporation 1 stock stays 13.33 percent below its high - AD HOC NEWS](https://news.google.com/rss/articles/CBMiyAFBVV95cUxQU1pDRU1SRVJYZzF3cTBaVTZyWFlsSDZ0dFhldXhIWWVMLXBXc2NrNEljVmlBS1BKbjBfTnEzZmJKa3A4ellyY3lKM0JTSno2cVR1TC1pWmJLa0hISUFsb1UzRE12NVRRTXpCNGZLOHY3TzF6QWpEdXB0aUlWOGx1UDVKekwwaVIzR2lkcmxtWUFZREVuTGpLSWNIeV9JQXUtM1d2TXgta0h2TUJlSC1LZEtWYnZ6c2NGZ2l4RTB6R3JoWVhyOUdObA?oc=5) | AD HOC NEWS |
-| 7h 前 | 0 | 中性 | [Shell bought 300,000 shares for cancellation at an average €41.95 each. - Stock Titan](https://news.google.com/rss/articles/CBMifkFVX3lxTFBreEh6WmhKeDM0cU1vZVpzZzdqVVdFeWdrMllJUFdoTS1MSEtKNmNUUU1Gb2VZOC1LWmxfNmg0TkduMkRpS21QNGkyV3lqVVhIM0J4VmdFQ3BrcmQxMlVPbVFFcUJQSDhnbVV4bDNNYTRncGNIblJrQ2wzN0YtZw?oc=5) | Stock Titan |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 

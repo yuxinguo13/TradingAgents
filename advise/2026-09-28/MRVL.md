@@ -112,13 +112,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 1h 前 | 5 | 偏多 | [Marvell stock surges over 200% YTD, boosted by a new Google deal and strong AI data center growth. - Pluang](https://news.google.com/rss/articles/CBMijAFBVV95cUxQX3ItMUUzamI0N0RMMVpob21XemdKaVYwTnA5WXhGU09rMmZIYVZ2RnJ6Z19jTjBPSC1hVG1QWjc2aWhDSHdxYjhrUGZQRmFHR3pEbWRQVV9QMEZlb19LelVTZjV3M2lnTURnaGQycEpOcENaS2x3OWlJcy1RTE9qdG03OWdxZkVUSVpINw?oc=5) | Pluang |
-| 27h 前 | 5 | 偏多 | [Stock Market: Akamai Jumps 20% on $11.6B Anthropic Deal, Marvell Climbs 1.2% - CryptoRank](https://news.google.com/rss/articles/CBMiqwFBVV95cUxNUnQ0Szh0MWlmcVl6eFdmZWZtRmZkcnowUXdmd2ZyRmgyQ3IzLUUyODgyYm12N1J3RVV4ZlV5X2NPcXlpaWFuU1ZZeVVLWkUtdTVyUUFtUjN3Uk9nN3M5YjUxWWM5SWxLMmtfb3NPX0dyaGdzaWFEWjh3U21BTVNNY0xwNUJoSEREU29tVmdtNmk1LXVLa0xacmtKdWN2b1RpMjIwcEZDajJlUWs?oc=5) | CryptoRank |
-| 1h 前 | 0 | 中性 | [Marvell Technology (MRVL) Stock Looks Reasonable On Its 384% Three Year Run - simplywall.st](https://news.google.com/rss/articles/CBMi2wFBVV95cUxNRnZvUS1IVTdhY3ZrTFR5YlE5ZXdxdnY0aXlHbEtHMVFGQnlrZ29xN01qRnlzYW9HX1FsOWxKSDVlUklzdHUwTTVrSDQ1dFVLb3BNeDJRX29jT3VuTWNnOGlJYXg0REUwWnJTTFVLSUx5bGZWTDZRVzF3M1ZZZDEtNHN1MlFuM1VjbHc3ODktS29oOHAxQnBKcEZ6Qjh4M3NzbGJabmNNR3NUM1lDNHRYZ1Mwb3pPNVpBcFdadEpDblZLZzV1OUtvNkJuRWVqSHN1dm9NemxwakR4RzDSAeABQVVfeXFMTkdMU1hrc3U0bGRFSDA2YTVUV0o2QmlyN2M1cEtkZDd5aGhGanlOb3REUnpsTkVNMjJ0UEp3NHAyRDRteEJVMWRhcWZFUktuekdkV0RLanpjYW45Ykd2WmlQcno1UGF2RVZiRk5ESUNxczZhTE1tSmNNdVQtZ3FaYVpQV1R4Y215RzFuOUhQZHEwVUNKRVo2elBsWjFiUjNLLVpPTEFtcFlnV3RqNU5zUjU3QURHUlFOQjZ1VGZMR1BRdGdiMFh6dzdlZkpCbVN3M0paQmpScl8tSXZjU3ZLNTE?oc=5) | simplywall.st |
-| 2h 前 | 0 | 中性 | [Why Marvell Technology (MRVL) Stock Is Down Today - Quiver Quantitative](https://news.google.com/rss/articles/CBMijwFBVV95cUxOMVNVYklvNHZ4azQzQjRoTzlESFk0dGd5R0ZRTkxQOVBOZjVENjl3TEt4bVh0T0lydURnMkdBVWxUeG1YMFhOVnhxNFdrbkNUS0NIenJRWFJzZEV0Q0tHaTduZjhkV3ZlbGNzaV9QSW51Q0pJR3pfSWFCOV9DZFZHTnN2LUNrNGhzYmNKUUZlTQ?oc=5) | Quiver Quantitative |
-| 3h 前 | 0 | 中性 | [Marvell Technology Inc Stock (MRVL) Moved Down by 3.90% on Sep 28: Drivers Behind the Movement - TradingKey](https://news.google.com/rss/articles/CBMiiwFBVV95cUxQRzBjcE0tam03YkU4QmZzWUZoalhCNDJmdXFwT2o0VkhHaWEwanA3T3I4ek5zeWRHeXlPamJtMGFKWXZmNjYybmh3eDBSckdvYmtSNkRjWUh3cGliMzYwajZkRnVwV05zZWNoVjZiNGZuSDVLb2FzeFJCdzZGczhwT055VnllOFBra0pz?oc=5) | TradingKey |
-| 6h 前 | 0 | 中性 | [Dear Marvell Stock Fans, Mark Your Calendars for Oct. 6 - Barchart.com](https://news.google.com/rss/articles/CBMingFBVV95cUxOUERTQkVNeVpjZkxvT1NEOXQzbGdaSVByZXo5QTV2ZUFsb05iRFVUVHVheUZDMHpMTm9OQWRfR1JaZ0Vta3AxQ0M5c3FsOGZmejRLWHNWN05KWXU2ZEdJRTVRb1B0SktPUUNJbTBxTk5MaERGZHFlT3RRT014cEtkempUUnJhUTJMYmRHSllaTkR5andoVEJUUENmaUdkQQ?oc=5) | Barchart.com |
-| 11h 前 | 0 | 中性 | [Marvell Technology stock at USD 261.94 on September 25, 2026, up 1.15 percent - AD HOC NEWS](https://news.google.com/rss/articles/CBMiwwFBVV95cUxNUS10Nnl6SUFwQWM1UjN5Qmk2NFBsVVNyd21wcFVYdlNQVXRMZTV4dUNjY28xRzZXY2lhZVB5SnRJUGZfb0hmZ012U1g3RFVHYzkyRHJMakxjTEFPdFdjUHNpcEFuUVFBZU1qQ0NQQ1dubXE5a2dYYVRpcmY5amFmRTgyaHZkcUM5Tk1TMjBFM21UOC1ib0JWZEJwdGlxa0RQemMxdVRrU0RGVzFiVDJtejJPbkhzd2UxOXRRNXNKWloxV28?oc=5) | AD HOC NEWS |
+| 0h 前 | 0 | 中性 | [Marvell Technology stock at USD 253.81 on September 28, 2026 - AD HOC NEWS](https://news.google.com/rss/articles/CBMiugFBVV95cUxOWDgzbVBBVUFMV3BJaGR6VkpFa3N6MHhRUkpPc0NscldUSFREaFhkRXZFU3o0ODV6cW1HVURCa0lHWktOTF9ReXM3R1N5dmFvWnU1aWRYaFRibklxY2h2Ym56TEk0M0JfWkNXVVVaVHJiY0tFVDhYdzJJeDA0RTlKb0FIZk9RdjctTmx6LTN5ZnYwYWs2aWo2a1E3ZkljUzhERXdSdXN3dDRUX3FTTW1tUzY1VVhLSmJtd0E?oc=5) | AD HOC NEWS |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -127,6 +121,7 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
 - TTM 市盈率 84 倍，价格里已经计入了不少增长；增长只要减速，杀估值的幅度会大于业绩本身的降幅。
+- 政策面对该板块的倾向为 -0.76（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
