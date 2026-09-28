@@ -1,0 +1,190 @@
+# JNJ · 强生（Johnson & Johnson）
+
+_医疗 · 数据截至 2026-09-28 收盘 → 面向 2026-09-29 开盘_
+
+[← 回到 2026-09-29 当日报告](../2026-09-29.md)
+
+> 趋势向上且结构完整，且贴近 52 周高点——追高的代价是止损离得远；顺势的一侧在上方，风险在于结构一旦破位就要认。
+
+## 一、价格与图形
+
+```text
+       JNJ · 近 126 个交易日（日线收盘）
+276.8 ┤                                                                  ╭╮
+270.4 ┤                                                           ╭───╮ ╭╯╰╮ ╭─────
+264.0 ┤                                         ╭╮      ╭─╮      ╭╯   ╰─╯ ·╰─╯·····
+257.5 ┤                                     ╭╮╭─╯╰─╮   ╭╯ ╰╮╭────╯   ·····
+251.1 ┤                                     │╰╯    ╰─╮╭╯   ╰╯  ······
+244.7 ┤ ╭╮                                 ╭╯        ╰╯  ······
+238.2 ┤─╯╰────╮········              ╭─╮  ╭╯      ·······                   :::::::
+231.8 ┤·      ╰─╮      ·······╭─╮··╭─╯·╰──╯ ······                 :::::::::
+225.4 ┤         ╰──────╮  ╭───╯ ╰─╮│     ···            :::::::::::
+218.9 ┤                ╰──╯       ╰╯           :::::::::
+212.5 ┤                            ::::::::::::
+206.1 ┤               :::::::::::::
+199.6 ┤     ::::::::::
+193.2 ┤:::::
+      └────────────────────────────────────────────────────────────────────────────
+       2026-03-30                       2026-06-30                       2026-09-28
+       · SMA50   : SMA200   ─ close
+```
+
+```text
+       JNJ · 近 21 个交易日（放大看最近节奏）
+278.4 ┤    ╭╮
+276.8 ┤    ││
+275.2 ┤   ╭╯╰╮
+273.6 ┤   │  │
+272.0 ┤   │  │            ╭─
+270.4 ┤  ╭╯  │      ╭─╮  ╭╯
+268.8 ┤─╮│   ╰╮     │ ╰──╯
+267.2 ┤ ││    ╰╮  ╭─╯
+265.6 ┤ ╰╯     ╰──╯
+      └─────────────────────
+       2026-08-28 2026-09-28
+```
+
+成交量近 63 日： `▅▄▃▄▃▂▅▇▇▄▆▄▆▅▅▄▄▃▃▄▁▁▂▄▃▂▁▄▂▃▄▂▅▂▁▂▁█▁▃▃▂`
+
+### 图形读数
+
+- **均线排列**：多头排列 — 现价距 20 日 269.84（+0.8%）、50 日 264.68（+2.7%）、200 日 238.64（+14.0%）
+- **形态结构**：收敛整理 — 高点走低但低点抬高，区间在收窄；前高 281.07 → 271.55（-3.4%）、前低 260.68 → 265.04（+1.7%）
+- **动能**：RSI(14) 59，偏强；近一月的斜率快于近三月（月 +2.3% vs 季 +5.7%），趋势在加速
+- **波动**：日均真实波幅约为价格的 1.8%；按本报告 2 ATR 的止损惯例，一个 R 相当于 3.5% 的价格距离
+- **位置**：距 52 周高点 -2.3%，距 52 周低点 +54.7%
+- **量能**：最新一日成交量为 20 日均量的 1.1 倍，量能正常
+- **相对强度**：近一月跑赢 标普500 2.8 个百分点
+- **支撑 / 阻力**：最近的摆动低点 265.04，摆动高点 273.55（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
+
+**我的读图结论**：趋势向上且结构完整，且贴近 52 周高点——追高的代价是止损离得远；顺势的一侧在上方，风险在于结构一旦破位就要认
+
+_以上每一条都是对已经发生的价格的描述。均线、RSI、摆动结构全部是滞后指标，它们能说明现在处于什么状态，不能说明下一步。你自己在图上看到的东西，和这里写的不一致时，以你看到的为准——然后去查是哪个数字有问题。_
+
+## 三、财报与基本面
+
+市值 $6,553.72亿 · 行业 Healthcare / Drug Manufacturers - General · TTM 营收 $979.29亿 · TTM EPS 8.62 · 股息率 1.93% · Beta 0.23 · 空头占流通股 1.0%
+
+- **估值**：TTM 市盈率 31.5 倍；前瞻市盈率 22.4 倍（市场预期未来一年盈利上升）；市销率 6.7 倍；EV/EBITDA 19.6 倍；PEG 2.84（高于 2，价格已经计入了不少增长）。
+- **增长**：最新季度营收同比 +6.6%；盈利同比 -0.9%；最近 7 次财报里 6 次超预期。
+- **盈利质量**：毛利率 68.1%、营业利润率 29.2%、净利率 21.5%、ROE 25.7%。
+- **资产负债**：现金 $207.58亿；有息负债 $490.36亿；负债/权益 57.7%（负债适中）；流动比率 1.09；自由现金流 $168.85亿，为正。
+- **卖方预期**：22 位分析师覆盖；平均评级「买入」（1.91/5，1 为最看多）；目标价均值 277.91（较现价 +2.2%），区间 190.00–320.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
+
+**分季度损益**（季度数据，最新在左）
+
+| 指标 | 2026-06-30 | 2026-03-31 | 2025-12-31 | 2025-09-30 | 2025-06-30 |
+|---|---:|---:|---:|---:|---:|
+| 营收 | $253.10亿 | $240.62亿 | $245.64亿 | $239.93亿 | $237.43亿 |
+| 毛利率 | 68.2% | 66.3% | 67.6% | 69.6% | 67.9% |
+| 营业利润率 | 28.3% | 26.6% | 22.8% | 29.6% | 28.3% |
+| 净利率 | 21.9% | 21.8% | 20.8% | 21.5% | 23.3% |
+| 净利润 | $55.34亿 | $52.35亿 | $51.16亿 | $51.52亿 | $55.37亿 |
+| 摊薄EPS | 2.27 | 2.14 | 2.10 | 2.12 | 2.29 |
+
+**分年度损益**（年度数据，最新在左）
+
+| 指标 | 2025-12-31 | 2024-12-31 | 2023-12-31 | 2022-12-31 |
+|---|---:|---:|---:|---:|
+| 营收 | $941.93亿 | $888.21亿 | $851.59亿 | $799.90亿 |
+| 毛利率 | 67.9% | 69.1% | 68.8% | 69.3% |
+| 营业利润率 | 27.2% | 23.9% | 25.8% | 26.3% |
+| 净利率 | 28.5% | 15.8% | 41.3% | 22.4% |
+| 净利润 | $268.04亿 | $140.66亿 | $351.53亿 | $179.41亿 |
+| 摊薄EPS | 11.03 | 5.79 | 13.72 | 6.73 |
+
+**财报兑现记录**
+
+| 财报日 | 预期EPS | 实际EPS | 超预期 |
+|---|---:|---:|---:|
+| 2026-10-13 | 2.45 | — | 尚未公布 |
+| 2026-07-15 | 2.85 | 2.90 | +1.6% |
+| 2026-04-14 | 2.68 | 2.70 | +0.9% |
+| 2026-01-21 | 2.46 | 2.46 | -0.1% |
+| 2025-10-14 | 2.76 | 2.80 | +1.5% |
+| 2025-07-16 | 2.68 | 2.77 | +3.2% |
+
+_财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会滞后，TTM 窗口是厂商口径而非公司财年口径。以上任何一个数字如果会改变你的决定，请点开本页下方的 SEC EDGAR 链接看原文。_
+
+**财报日历**：下次财报 **2026-10-13**（约 15 天后）；上次财报 2026-07-15，超预期 +1.6%。财报日是这套止损体系唯一无法覆盖的风险：跳空会直接穿过止损价。
+
+## 四、消息面（过去 24 小时）
+
+| 时间 | 材料度 | 倾向 | 标题 | 来源 |
+|---|---:|---|---|---|
+| 9h 前 | 5 | 中性 | [Johnson & Johnson stock carries a USD 320 UBS price target - ad-hoc-news.de](https://news.google.com/rss/articles/CBMiwAFBVV95cUxQX3NUTGxKTkx5VENjN1RmU1JxS2ZkaXJwQjNqRjhKbFNoZzRhTWRGSDBvLWRFM2FPODdhUU8telhlb0xPY0FDLU1TRmlZUGE3bFQ3VFRFdjhFMHdTRDE2VmdibVlHQzN1aW9qSUVDVzZMUi1zeXZIMVlmNGdfdk5EVmMxR2dpY09IR1NXY2I1Qm15UnVFQk5ZUmpkRnBXOGtuYW0yVWJybEtnT2VId0NkVGhhQWlzcHp5bEg3WlhKb0c?oc=5) | ad-hoc-news.de |
+| 2h 前 | 0 | 中性 | [Johnson & Johnson stock last trades at USD 272.24 on September 28, 2026 - ad-hoc-news.de](https://news.google.com/rss/articles/CBMixAFBVV95cUxOMlAtVGFUV2hFOTY2NjBYQTc2Q3hGX0RIWnJwSnZFbmtUdVNEU1RUYzZ2Zm5ON2c2eWxUQ19Bdk1RWHl2REVFRHh1MUNRUkRPQUl5QjNCV3lwdEYyVm9UNnBRSzF6dkE3WmszLXJ2QzV3MFVXTVRPaksyM0RqdUI2YmNvcTdSblRwT0Vka0RQdHFVM2E4SmpWU3NlREJXLXRDcVl1c3ZESkxweU1yUTAzb21TX3ZfYWRRckRNNF8wR0FDRklp?oc=5) | ad-hoc-news.de |
+| 2h 前 | 0 | 中性 | [Johnson & Johnson’s Next Growth Engine Is Taking Shape - 247wallst.com](https://news.google.com/rss/articles/CBMimwFBVV95cUxNZWlDRGlUSmt1OGJHUVNiZ2cxMklEOXNZRFdid2tCSEU2T3VGYmpzM042MURtdnNPbGxhOFkxOUhVeGpsLUhfdTdodkJjOU9KQUtvUk9Ia0pBOXJSazhxR0ozLUlMWDhXT0IyYVZkS3VubzVYY0I1ZUVacmhyeVJhWG9MTm83akUtYldMaFc5a2haSEtwUnJoMUVhaw?oc=5) | 247wallst.com |
+| 3h 前 | 0 | 中性 | [How Does Johnson & Johnson (NYSE:JNJ) Keep Its Distribution Streak Intact? - Kalkine Media](https://news.google.com/rss/articles/CBMisgFBVV95cUxNaTR3MlZMR1NoWVZ5WDctVjFyVnNEYS1QeWRxOGlXTVc5cXEwYy1CQURxMDMweGJkTDN1SEZqQXc5bkI3VTJ2dmxYamNqcUIwdERWQXhvN08zTU5MWk1KdHJFUWpZcVZGVVA4M213bnRUN0pzWVVjaTJYcVYxSEdlMHpaQVBMM0tReUwyRzBobnp0M0U2X1VLbTlDczhxNHFHTENTMGtKLVhaVmplc3hLZ3FB?oc=5) | Kalkine Media |
+| 14h 前 | 0 | 中性 | [Johnson & Johnson stock at USD 271.22 on September 25, 2026 - ad-hoc-news.de](https://news.google.com/rss/articles/CBMiugFBVV95cUxOanhqOWI4TUFzTlpVUnZDMFV5bmpkbjBHY2szMHczMWdfMGVxdlp2WGY5VzhUZXNIRmtxZi1KWC1RcndtZl9iXy1RaTNoS2ZnYnU2QVVTVndZTHZWMWg4NU5sclB0NklxVGp3SU9hS2NyMENha2lwVEYwN1JYLWtEeHRCc3VZYzlFWEROZjNBcnZQMFJlQXVQbVNxeHN6VEJsQzlBenN0RHZ4alFtWUU2NEd3TVpGNENCdkE?oc=5) | ad-hoc-news.de |
+| 21h 前 | 0 | 中性 | [Gilead or Johnson & Johnson: Is Faster Growth Better than Greater Diversification? - finance.yahoo.com](https://news.google.com/rss/articles/CBMingFBVV95cUxPQjBsMlpVNkZWVzZfcUpEY0FsSVpxRGxYWHBfcWx5a042YUFMTllTdDhMNTkwUDRYU0lMUG9HdGd0Vl9HamJZY2tBNzRnV29icVhqSTRmNHgxTnp1NWRYaTVmbGJTc3l4VWdrSzhTeE9ZOWpLdVV2QU1LTTZNSWZfY3BxYncxSmxrRDV1ZTY1bTZmNDRIOF8wOUtaU0ZrZw?oc=5) | finance.yahoo.com |
+| 41h 前 | 0 | 中性 | [How New TREMFYA Data At Johnson & Johnson Stock Has Changed Its Investment Story - simplywall.st](https://news.google.com/rss/articles/CBMi3wFBVV95cUxOaExka3ZwcHY3RVh4elU1MnFfZjBVejQ4MmxCM09UV2hRRUpUQWNYUWJPOERNS2E3NjZUalRSUlh1U1BPaGdYZUUwSFFVcGo4Y2xrb013S1JsdUJqWFFIVUtkU1JjSmNVd1FjS2xkYUw1ell6LWhralNsY29YUjNKeEhxVHREZ3pxZ1Z2eXh2anREajRoSXlBSUh4UEVINHVYSGI5UExaQUpnVXlWM3JESGtCWWJNN2F0T1IyNV9TTjdWdnlqR1hMdFV0ZjlhT0pBU1BDUFJENUMzOWFzbkJJ0gHkAUFVX3lxTFBkQnBVbWxpMzdnN0xHM3JHRUtFNnRrcFcyV0Z5RzJoNkJ6bUZEbnRfR3RKdS1LWngwb0FTR1F2bFZLUFRBOEh1YVJUQmdJNC01UzU4dkVjNzRRd2VwWGZRYW5OVnBZdnNHbFNzQnNqc1JnWTVOQTdOR0c0a01HVHhTSGJPM0tKLU81enlkam5rbUVMcGx1R3ozZEFCQUQ0dUtENXhSOXV3MVNuSVc5QXlEblYwVVR6UkI4Vzdhc2tCWThHRTd3cXlqbkJ6YktEcy1LM0loaVBOVVpyajdkc1JHaDkxcg?oc=5) | simplywall.st |
+
+_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+
+## 五、反方观点与风险
+
+_以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
+
+- 下次财报在 15 天后，落在持有期内。财报跳空会直接穿过止损——那一晚的风险不是 1R，是没有上限的。
+
+## 六、原始数据（本页所有计算的来源）
+
+最近 15 个交易日的 OHLCV：
+
+| 日期 | 开 | 高 | 低 | 收 | 涨跌 | 成交量 |
+|---|---:|---:|---:|---:|---:|---:|
+| 2026-09-08 | 271.28 | 271.99 | 266.88 | **269.12** | -2.2% | 8,084,700 |
+| 2026-09-09 | 268.51 | 270.10 | 266.73 | **267.08** | -0.8% | 6,124,600 |
+| 2026-09-10 | 270.21 | 271.27 | 265.72 | **266.35** | -0.3% | 4,929,500 |
+| 2026-09-11 | 268.03 | 270.40 | 265.25 | **265.58** | -0.3% | 4,701,200 |
+| 2026-09-14 | 271.00 | 271.55 | 266.19 | **266.32** | +0.3% | 4,740,800 |
+| 2026-09-15 | 265.81 | 267.20 | 260.68 | **267.20** | +0.3% | 5,283,500 |
+| 2026-09-16 | 266.81 | 268.65 | 266.30 | **267.28** | +0.0% | 4,887,300 |
+| 2026-09-17 | 268.00 | 270.87 | 267.11 | **270.22** | +1.1% | 6,568,800 |
+| 2026-09-18 | 269.45 | 272.11 | 267.20 | **269.99** | -0.1% | 16,428,400 |
+| 2026-09-21 | 271.74 | 273.73 | 268.50 | **269.47** | -0.2% | 4,485,300 |
+| 2026-09-22 | 267.51 | 270.10 | 265.04 | **269.19** | -0.1% | 5,680,700 |
+| 2026-09-23 | 269.47 | 272.14 | 266.50 | **269.17** | -0.0% | 6,632,700 |
+| 2026-09-24 | 269.52 | 275.23 | 269.01 | **270.68** | +0.6% | 6,320,600 |
+| 2026-09-25 | 271.70 | 272.25 | 269.26 | **271.22** | +0.2% | 4,085,700 |
+| 2026-09-28 | 270.17 | 273.78 | 269.27 | **271.95** | +0.3% | 6,947,503 |
+
+## 七、自己去查（本页不做独立验证）
+
+**行情与图形**
+- [Yahoo Finance 行情](https://finance.yahoo.com/quote/JNJ) — 本报告所有价格与均线的来源，先对这里
+- [TradingView 图表](https://www.tradingview.com/chart/?symbol=JNJ) — 可画线、可换周期，用来复核本页的 ASCII 图
+- [Finviz 快照](https://finviz.com/quote.ashx?t=JNJ) — 一屏看完估值、技术与同业对比
+- [StockCharts 技术面](https://stockcharts.com/h-sc/ui?s=JNJ)
+- [Barchart 观点](https://www.barchart.com/stocks/quotes/JNJ/opinion) — 把十几个技术指标折算成一个多空票数
+
+**财务与估值**
+- [StockAnalysis 财务报表](https://stockanalysis.com/stocks/JNJ/financials/) — 十年利润表/资产负债表/现金流，免费且不用登录
+- [Yahoo 财务](https://finance.yahoo.com/quote/JNJ/financials) — 本页财报数字的来源
+- [Yahoo 关键统计](https://finance.yahoo.com/quote/JNJ/key-statistics) — 估值倍数、利润率、资产负债的完整版
+- [Macrotrends 长期趋势](https://www.macrotrends.net/stocks/charts/JNJ/x/revenue) — 营收与利润的十年折线，看结构性变化
+- [Wisesheets/Koyfin 替代：GuruFocus](https://www.gurufocus.com/stock/JNJ/summary)
+
+**原始文件（无中介）**
+- [SEC EDGAR 全部文件](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&ticker=JNJ&type=&dateb=&owner=include&count=40) — 10-K/10-Q/8-K 原文；财报电话会与风险因素只在这里
+- [SEC 全文检索](https://efts.sec.gov/LATEST/search-index?q=%22JNJ%22&forms=8-K) — 按关键词搜文件正文
+- [OpenInsider 内部人交易](http://openinsider.com/search?q=JNJ) — 高管自己在买还是在卖，是少数不靠解读的信号
+- [13F 机构持仓](https://whalewisdom.com/stock/JNJ) — 注意：13F 滞后 45 天，不能当作买入理由
+
+**消息与预期**
+- [Yahoo 新闻](https://finance.yahoo.com/quote/JNJ/news)
+- [Google News 搜索](https://news.google.com/search?q=Johnson+%26+Johnson+stock&hl=en-US)
+- [财报日历与预期](https://stockanalysis.com/stocks/JNJ/forecast/) — 下次财报日、市场一致预期、历史超预期记录
+- [Seeking Alpha 讨论](https://seekingalpha.com/symbol/JNJ) — 观点密度高，但是买方与卖方混杂，当作反方意见读
+- [公司投资者关系](https://www.google.com/search?q=Johnson+%26+Johnson+investor+relations) — 财报原始 PPT 与电话会记录
+
+**中文渠道（转载源，不作独立验证）**
+- [雪球](https://xueqiu.com/S/JNJ) — 中文讨论与财报摘要
+- [富途牛牛](https://www.futunn.com/stock/JNJ-US) — 中文行情与公告翻译
+- [东方财富](https://quote.eastmoney.com/us/JNJ.html) — 中文财务报表
+- [同花顺](http://stock.10jqka.com.cn/usstock/JNJ/) — 中文资讯
+
+---
+
+_这一页是一台程序按成文规则读公开数据的结果，不是投资建议。它不知道你的资金、税务和其它持仓。图形结论来自滞后指标，财报数字来自厂商转录，新闻材料度来自关键词打分——三者都会错。把它当作一份整理好的证据，而不是一个答案。_
