@@ -1,6 +1,6 @@
 # LLY · 礼来（Eli Lilly and）
 
-_医疗 · 数据截至 2026-09-25 收盘 → 面向 2026-09-28 开盘_
+_医疗 · 数据截至 2026-09-28 收盘 → 面向 2026-09-28 开盘_
 
 [← 回到 2026-09-28 当日报告](../2026-09-28.md)
 
@@ -10,51 +10,51 @@ _医疗 · 数据截至 2026-09-25 收盘 → 面向 2026-09-28 开盘_
 
 ```text
        LLY · 近 126 个交易日（日线收盘）
-1,262 ┤                                                            ╭─╮
-1,231 ┤                                      ╭╮ ╭╮             ╭╮  │ ╰╮
-1,200 ┤                                      │╰─╯╰─╮    ╭─╮    │╰╮╭╯  │·····
-1,169 ┤                                     ╭╯     ╰────╯ ╰╮ ╭─╯·╰╯···╰───╮ ····╭──
-1,139 ┤                             ╭────╮  │           ···╰╮│            ╰─╮╭──╯
-1,108 ┤                         ╭─╮╭╯    ╰──╯      ·····    ╰╯              ╰╯
-1,077 ┤                        ╭╯ ╰╯            ···                         :::::::
-1,046 ┤                       ╭╯             ···               :::::::::::::
-1,015 ┤··                 ╭─╮╭╯         ·····       :::::::::::
-  984 ┤  ········      ╭─╮│ ╰╯      ····    ::::::::
-  953 ┤  ╭╮╭─╮   ·····╭╯·╰╯  ·······::::::::
-  922 ┤  │╰╯ ╰─╮╭──╮ ╭╯:::···::::::
-  891 ┤──╯:::::╰╯::│:│
-  860 ┤            ╰─╯
+1,253 ┤                                                           ╭──╮
+1,223 ┤                                     ╭╮  ╭╮       ╭╮   ╭─╮ │  ╰╮
+1,194 ┤                                     │╰──╯╰─╮   ╭─╯│  ╭╯ ╰─╯ ··│·······    ╭
+1,164 ┤                                     │      ╰─╮╭╯  ╰╮·│······  ╰───╮   ·╭──╯
+1,135 ┤                            ╭────╮  ╭╯        ╰╯····│╭╯            ╰────╯
+1,105 ┤                         ╭╮ │    ╰──╯      ·····    ╰╯
+1,076 ┤                       ╭─╯╰─╯            ··                        :::::::::
+1,046 ┤                       │             ····              ::::::::::::
+1,016 ┤                   ╭───╯         ····        ::::::::::
+  987 ┤········       ╭─╮╭╯         ····    ::::::::
+  957 ┤    ╭╮  ······╭╯ ╰╯     ·····::::::::
+  928 ┤ ╭──╯╰─╮╭╮╭╮  │ ········::::
+  898 ┤─╯:::::╰╯╰╯│:╭╯:::
+  868 ┤           ╰─╯
       └────────────────────────────────────────────────────────────────────────────
-       2026-03-27                       2026-06-29                       2026-09-25
+       2026-03-30                       2026-06-30                       2026-09-28
        · SMA50   : SMA200   ─ close
 ```
 
 ```text
          LLY · 近 21 个交易日（放大看最近节奏）
-1,183.5 ┤                   ╭─
-1,175.0 ┤──╮                │
-1,166.5 ┤  │             ╭─╮│
-1,158.0 ┤  ╰───╮         │ ││
-1,149.6 ┤      ╰╮      ╭─╯ ╰╯
-1,141.1 ┤       │   ╭╮╭╯
-1,132.6 ┤       │   │╰╯
-1,124.2 ┤       ╰──╮│
-1,115.7 ┤          ╰╯
+1,184.8 ┤                  ╭──
+1,176.1 ┤─╮                │
+1,167.5 ┤ │             ╭─╮│
+1,158.9 ┤ ╰───╮         │ ││
+1,150.2 ┤     ╰╮      ╭─╯ ╰╯
+1,141.6 ┤      │   ╭╮╭╯
+1,133.0 ┤      │   │╰╯
+1,124.3 ┤      ╰──╮│
+1,115.7 ┤         ╰╯
         └─────────────────────
-         2026-08-27 2026-09-25
+         2026-08-28 2026-09-28
 ```
 
-成交量近 63 日： `▅▄▄▃▃▂▂▃▃▃▂▁▂▂▂▄▃█▄▄▂▂▂▂▇▃▁▃▃▃▃▃▂▂▂▂▁▁▇▃▂▂`
+成交量近 63 日： `▆▄▃▄▂▂▃▃▄▃▁▂▁▃▄▄▆█▄▃▂▂▂▅▃▂▂▄▃▄▃▃▃▂▂▂▁▅▃▃▃▂`
 
 ### 图形读数
 
-- **均线排列**：均线偏多 — 现价距 20 日 1,150.81（+2.8%）、50 日 1,176.74（+0.6%）、200 日 1,067.50（+10.9%）
+- **均线排列**：均线偏多 — 现价距 20 日 1,151.32（+2.9%）、50 日 1,176.88（+0.7%）、200 日 1,068.53（+10.9%）
 - **形态结构**：下降结构 — 更低的高点 + 更低的低点；前高 1,292.65 → 1,161.00（-10.2%）、前低 1,163.50 → 1,113.29（-4.3%）
-- **动能**：RSI(14) 56，偏强；月 -0.5%、季 -1.9%，节奏平稳
-- **波动**：日均真实波幅约为价格的 2.5%；按本报告 2 ATR 的止损惯例，一个 R 相当于 4.9% 的价格距离
-- **位置**：距 52 周高点 -7.6%，距 52 周低点 +66.7%
+- **动能**：RSI(14) 56，偏强；季线仍为负（-3.5%）但近一月已转正（+0.7%），属于反弹初期而非既成趋势
+- **波动**：日均真实波幅约为价格的 2.4%；按本报告 2 ATR 的止损惯例，一个 R 相当于 4.8% 的价格距离
+- **位置**：距 52 周高点 -7.5%，距 52 周低点 +64.6%
 - **量能**：最新一日成交量为 20 日均量的 0.8 倍，量能正常
-- **相对强度**：近一月跑输 标普500 1.4 个百分点
+- **相对强度**：近一月跑赢 标普500 1.2 个百分点
 - **支撑 / 阻力**：最近的摆动低点 1,163.50，摆动高点 1,230.24（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
 
 **我的读图结论**：趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌
@@ -69,7 +69,7 @@ _以上每一条都是对已经发生的价格的描述。均线、RSI、摆动�
 - **增长**：最新季度营收同比 +47.7%；盈利同比 +26.2%；最近三个季度营收连续环比上升；最近 7 次财报里 6 次超预期。
 - **盈利质量**：毛利率 83.4%、营业利润率 54.2%、净利率 33.5%、ROE 102.3%。
 - **资产负债**：现金 $89.50亿；有息负债 $549.08亿；负债/权益 162.1%（负债偏重）；流动比率 1.35；自由现金流 $110.66亿，为正。
-- **卖方预期**：29 位分析师覆盖；平均评级「买入」（1.63/5，1 为最看多）；目标价均值 1,328.83（较现价 +12.3%），区间 930.00–1,600.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
+- **卖方预期**：29 位分析师覆盖；平均评级「买入」（1.63/5，1 为最看多）；目标价均值 1,328.83（较现价 +12.2%），区间 930.00–1,600.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
 
 **分季度损益**（季度数据，最新在左）
 
@@ -112,7 +112,15 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 0h 前 | 0 | 中性 | [What Is Fueling the Momentum at Eli Lilly (NYSE:LLY)? - Kalkine Media](https://news.google.com/rss/articles/CBMimwFBVV95cUxQTFVMMW51cUZFV1JlamFUT1I2dlVtaWZjZXJ4ejBlRXRHMjQzTWdIblpvRkVPWkc5OUhyQnVQX1dla1NoS0xKTkJNWTNlaVVuN3JLWFdvRXc2QkY5Vm5TS0dxa0pPa2JtOVB2LTJBWnJtTkgtdkRLTDRjQnhMaUxpRVc1eWZ1Qllhd1VkT21IZnhsS3NNaFRnQ3lzNA?oc=5) | Kalkine Media |
+| 8h 前 | 9 | 偏多 | [Eli Lilly Wins FDA Approval for Weekly Insulin. Here’s What Comes Next - TIKR.com](https://news.google.com/rss/articles/CBMimgFBVV95cUxOLTc2bkZnMkw0VXB2UXFIc1NWYV9OOExlTW1oTG9CY3pwbkNQSzRNRWJOakpscEhuUnJEbnhJSHNyc3JCYjhYc0VFZ2ZmLVg5LW5UbHRiNmthZlZBT1ZNRnhBS2xmV1JpdHJ0TlU2UWhMcjFDeVRsYmxyLTRCT1RTMDFyczRubnFWTXFaTzFtUFF4b3o1TDV0aDNB?oc=5) | TIKR.com |
+| 26h 前 | 9 | 偏多 | [Eli Lilly Just Won FDA Approval for a Once Weekly Insulin and the Stock Is Knocking on $1,200 - AOL.com](https://news.google.com/rss/articles/CBMidEFVX3lxTFBUdHlDaHM5Q2JsdTUwU3dHalZHU0dnQWoyWTIwQnBTZXBvOWRHWlF3VlRtSmdEcEVTaWZqcTFENmpSV1FtY01lTUZ3OG9xbXVnSllOa00tN205SHR0bHoyRnM3d2lqaTJjdDRKWFYyd3l3MWMx?oc=5) | AOL.com |
+| 26h 前 | 9 | 偏多 | [Eli Lilly Just Won FDA Approval for a Once Weekly Insulin and the Stock Is Knocking on $1,200 - 24/7 Wall St.](https://news.google.com/rss/articles/CBMi0AFBVV95cUxQaU1qdHUtVXAta05Od1pVemJfVzNaN19lcU5uVlZuYXlYQ1gyNG01R01IRW44VEpsZjA1Tk9nc2ZWdkRscWlKTDJLM2NjMEZXUUc1MVBYWllGZkxBekVmT0RxZEhHMUxsVmxqLXlnS093VzdhMmNlMjZxQktIdVEwaWJfejlCNk9LTFhBQUxOenlycEJTLTBlR1l1eVZ3dlZGTHVyNGdvTU04THlqMXNmZFJSSUNkS015OHNkWkJ6NmFUWWpmR2dKUElsZi1tZWZ2?oc=5) | 24/7 Wall St. |
+| 23h 前 | 8 | 偏多 | [LLY Stock Climbs As Oral GLP-1 Pill Beats Novo Nordisk, AstraZeneca’s Therapies In Diabetes Trials - Stocktwits](https://news.google.com/rss/articles/CBMizgFBVV95cUxOZjFOMlBSOTRwNmJDWXItMk1IcVpBdUNoUGFXVXp5bVdzSzl4U3hPLXFndXdrWklJcjFRY3NyZjBWYTFpTlRrMVN4dDZYbFlFazMxNjRBYmhHQlk2MVNRRVRpRjR1SVN2RTNQckR1N1N3a1U5aVBDejVJRmRsTnFkRF9LdWNUYWZGbUVSVlg4NTJxdzZFLURjSW9BM096YjZZc3V1QlpCV0dEazRsRk9FUzl2bWtKT2xuZHJpZkpMSEpvdXpPQ3ZCU3RGd21Edw?oc=5) | Stocktwits |
+| 43h 前 | 8 | 偏多 | [VKTX Stock On Track To Beat LLY, NVO This Month After Obesity Drug Data — Can Viking Win Over Wegovy And Zepbound Users? - Stocktwits](https://news.google.com/rss/articles/CBMi7wFBVV95cUxPRHMtUW5BTmZJU2pPQ0tqT182WGdkYkotLWEtZ0hqY1EwV1R3TDZaZ0NDOTJwNUp6WXljckVZeDdXcTVySnY1NW1Ccjg0Z0JNRjB4anU5SjB1akxZSFVxY0NVdG5HYlNBYlFDZUpyNWI4SlFYWFh5STlXTnBEcDh0MDBnR1lOSHpfbWl5RmJ2X0JZZTRqU19SRHk0aGNwS2F0ZVVKb2FFNE51ZjBsbmVwQTVHRC1yV1NiZHVFTkZXQXhlVVFLV1BFazh0RVJEUkNjeVZMM3VncFAzZk9EdDBxM1RsRVEwQmdCZDFuRC1ydw?oc=5) | Stocktwits |
+| 1h 前 | 7 | 中性 | [Eli Lilly CEO Ricks says drugmaker on hunt for bigger deals: Bloomberg - Seeking Alpha](https://news.google.com/rss/articles/CBMilAFBVV95cUxNNE91NDI0TGM2TXh1eTVtQjlBeU85Yml3eEpKTDBJbE85VlZUV0s1S1EydW13eTVwa3hKWkcta1JYbXoteENoNUxaVmZrbmx1OHhaRE1CcWpSOTlWeWM4RWxDTzBoNUpfQUFrbEx1LUpyY09LZ1VrbTVlSkp4MmVkYzh4N1FLRWxzSlA1azBfR2NZaU9I?oc=5) | Seeking Alpha |
+| 2h 前 | 5 | 偏多 | [LLY Maintains Overweight Rating -- Price Target Raised to $1500 - GuruFocus](https://news.google.com/rss/articles/CBMinwFBVV95cUxOOFd5czUtVUkxN1RvZzVhYUhnbzV4RVpTYm9XamhXOGVsM0JWZXp3U29qeHFCM055QzJqNzg4NW5vazR6M0xWcklSb0ZDR3VDX2x0YndkUWJnMkZVaEhLTjhmTUhfUTVTc3poYzBkZHhJMFR4Q2U3Rkt3Y1dWRWZrdGtoTk5kajE1cTdyNTFJTXhlX0xoN3dFOUNFRGlvMDA?oc=5) | GuruFocus |
+| 8h 前 | 0 | 偏空 | [Stock Market Today: S&P 500, Dow, Nasdaq 100 Futures Fall as Rising Yields and Trump's Rejection of Hormu - Benzinga](https://news.google.com/rss/articles/CBMinAJBVV95cUxQTHYtNHZSakdwYzNPNUJ0NXd2WHA5bi1TRjY1VWVKVV8yMk5LWTJ4dnl0ZVd5eDlzdkozcUtQTVNGUTJrSldNTjVENHhEUlN1QmdhNnNUTmkwVHNUWnlINllMdGtzWkFMaG1GamtnRnZWa0ZsQ1hHQzFkc2p6XzdwdjNmUnFCUXI0UVYyOVBGdkt3NHBQZEl4NXpWZG8zTERXQlFISXFLcWwzTXZKM1gxdFJjb3lUXzdydGRJMWYxMDc4Nkp2NGhGSl9obDJvVEdNMmJPcWNkdUdJMFJGRWlWRTJPNzR0WGpVSXhyeGgzeXBLaHFYQVVWRlo3UlAybWcxQVpCRGlxR0ZvZ1dXVmdGY0dCYUY3YXcyWEVWSg?oc=5) | Benzinga |
+| 17h 前 | 0 | 中性 | [Stocktwits Pharma Pulse: Lilly, Novo Lead A Busy Week — Here Are The Stocks And Readouts To Watch - tradingview.com](https://news.google.com/rss/articles/CBMi6gFBVV95cUxPUTJzWDUtWkVqY1N5YzF0bDRnZnpfMFZfMzkyUkIxcS1KR2ttaGtVRWxUTGRxYXhCRGlJakZZV05JQmpzSWZQT0h4VTN1RU1tazZCXzJGZ0J1bW1QQmFlaUEtQTYxVGpJMmlRRnBGaFJ2b0VRdG45X0dSdWxoS3M1aWo1MjFDRFZJN0toWnRlX0E5NzlvR0x4VFpzVWtuRUFoTU93cXF5OG02SlFuMlhQcHE5RVlwZUFFaTVTRkQzMkVqT2lkUFo4SVBEMjRSOVpaVkpxcjNUalJEaVNPdGNmdGoyR1R2VzcxM2c?oc=5) | tradingview.com |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -128,7 +136,6 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 | 日期 | 开 | 高 | 低 | 收 | 涨跌 | 成交量 |
 |---|---:|---:|---:|---:|---:|---:|
-| 2026-09-04 | 1,150.61 | 1,158.44 | 1,138.31 | **1,149.36** | -0.9% | 2,218,900 |
 | 2026-09-08 | 1,133.00 | 1,134.53 | 1,113.55 | **1,123.91** | -2.2% | 2,400,500 |
 | 2026-09-09 | 1,127.61 | 1,138.79 | 1,119.00 | **1,124.21** | +0.0% | 2,045,000 |
 | 2026-09-10 | 1,126.08 | 1,133.79 | 1,120.52 | **1,123.00** | -0.1% | 1,995,600 |
@@ -143,6 +150,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-09-23 | 1,174.71 | 1,188.88 | 1,145.98 | **1,150.99** | -1.6% | 2,154,100 |
 | 2026-09-24 | 1,156.67 | 1,197.79 | 1,151.00 | **1,181.89** | +2.7% | 2,417,700 |
 | 2026-09-25 | 1,185.32 | 1,190.00 | 1,160.84 | **1,183.46** | +0.1% | 1,923,200 |
+| 2026-09-28 | 1,180.30 | 1,194.09 | 1,172.56 | **1,184.78** | +0.1% | 1,965,961 |
 
 ## 七、自己去查（本页不做独立验证）
 

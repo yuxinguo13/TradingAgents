@@ -1,6 +1,6 @@
 # AXTI · AXT晶体（AXT）
 
-_科技 · 数据截至 2026-09-25 收盘 → 面向 2026-09-28 开盘_
+_科技 · 数据截至 2026-09-28 收盘 → 面向 2026-09-28 开盘_
 
 [← 回到 2026-09-28 当日报告](../2026-09-28.md)
 
@@ -10,52 +10,52 @@ _科技 · 数据截至 2026-09-25 收盘 → 面向 2026-09-28 开盘_
 
 ```text
      AXTI · 近 126 个交易日（日线收盘）
-137 ┤                        ╭╮
-127 ┤                        ││
-118 ┤                  ╭───╮╭╯╰╮
-108 ┤                ╭─╯   ╰╯  │╭─╮
- 99 ┤               ╭╯         ╰╯ │  ╭─╮··········
- 89 ┤               │          ···╰╮╭╯ ╰─╮        ····      ╭╮  ╭╮
- 80 ┤        ╭───╮ ╭╯      ····    ╰╯    │            ····· ││╭─╯│            ╭──
- 70 ┤        │   ╰─╯    ···              ╰───╮            ╭─╯╰╯··╰───╮   ╭╮  ╭╯
- 61 ┤─╮   ╭──╯      ····                     ╰───╮       ╭╯          ╰───╯╰──╯···
- 52 ┤ ╰───╯    ·····                             ╰─╮╭──╮ │::::::::::::::::::
- 42 ┤    ······                       :::::::::::::╰╯::╰─╯
- 33 ┤····                  :::::::::::
- 23 ┤          ::::::::::::
+141 ┤                       ╭╮
+131 ┤                       │╰╮
+121 ┤                  ╭──╮ │ │
+112 ┤               ╭╮╭╯  ╰─╯ ╰──╮   ╭╮
+102 ┤               │╰╯          ╰╮  ││ ····
+ 92 ┤              ╭╯           ··╰╮╭╯╰─╮   ·········          ╭╮
+ 82 ┤        ╭╮╭╮  │        ····   ╰╯   ╰╮           ····  ╭╮ ╭╯╰╮            ╭╮
+ 73 ┤       ╭╯╰╯╰──╯    ····             ╰──╮            ╭╮│╰─╯··╰╮     ╭╮   ╭╯╰─
+ 63 ┤    ╭──╯       ····                    ╰───╮        │╰╯      ╰───╮╭╯╰─╮╭╯···
+ 53 ┤───╮│     ·····                            ╰─╮╭──╮ ╭╯ :::::::::::╰╯:::╰╯::
+ 43 ┤   ╰╯·····                        :::::::::::╰╯::╰─╯::
+ 33 ┤····                  ::::::::::::
+ 24 ┤          ::::::::::::
  14 ┤::::::::::
     └────────────────────────────────────────────────────────────────────────────
-     2026-03-27                       2026-06-29                       2026-09-25
+     2026-03-30                       2026-06-30                       2026-09-28
      · SMA50   : SMA200   ─ close
 ```
 
 ```text
       AXTI · 近 21 个交易日（放大看最近节奏）
-79.9 ┤                ╭╮  ╭
-77.0 ┤                │╰╮╭╯
-74.0 ┤                │ ╰╯
-71.0 ┤       ╭╮      ╭╯
-68.0 ┤─╮     │╰╮    ╭╯
-65.0 ┤ │     │ ╰─╮ ╭╯
-62.1 ┤ │╭╮  ╭╯   │ │
-59.1 ┤ ╰╯│  │    │╭╯
-56.1 ┤   ╰──╯    ╰╯
+79.9 ┤               ╭╮  ╭╮
+77.0 ┤               │╰╮╭╯│
+74.0 ┤               │ ╰╯ ╰
+71.0 ┤      ╭╮      ╭╯
+68.0 ┤      │╰╮    ╭╯
+65.0 ┤      │ ╰─╮ ╭╯
+62.1 ┤ ╭╮  ╭╯   │ │
+59.1 ┤─╯│  │    │╭╯
+56.1 ┤  ╰──╯    ╰╯
      └─────────────────────
-      2026-08-27 2026-09-25
+      2026-08-28 2026-09-28
 ```
 
-成交量近 63 日： `▂▁▃▃▂▂▄▂▃▂▃▁▁▂▂█▆▆▃▆▂▃▃▅▅▂▃▁▂▂▂▂▃▃▂▂▁▃▅▃▁▂`
+成交量近 63 日： `▁▂▄▂▂▃▃▂▂▂▁▁▁▂▆██▄▆▄▃▂▅▅▂▂▂▁▂▂▁▃▄▂▂▂▄▄▄▂▂▂`
 
 ### 图形读数
 
-- **均线排列**：多头排列 — 现价距 20 日 66.02（+19.6%）、50 日 65.43（+20.6%）、200 日 58.73（+34.4%）
+- **均线排列**：多头排列 — 现价距 20 日 66.78（+10.3%）、50 日 65.99（+11.6%）、200 日 59.02（+24.8%）
 - **形态结构**：上升结构 — 更高的高点 + 更高的低点；前高 73.94 → 81.50（+10.2%）、前低 52.76 → 56.90（+7.8%）
-- **动能**：RSI(14) 59，偏强；近一月的斜率快于近三月（月 +21.1% vs 季 +12.5%），趋势在加速
-- **波动**：日均真实波幅约为价格的 8.0%；按本报告 2 ATR 的止损惯例，一个 R 相当于 15.9% 的价格距离
-- **位置**：距 52 周高点 -43.9%，距 52 周低点 +1858.8%
+- **动能**：RSI(14) 54，中性；近一月的斜率快于近三月（月 +10.1% vs 季 +3.1%），趋势在加速
+- **波动**：日均真实波幅约为价格的 8.4%；按本报告 2 ATR 的止损惯例，一个 R 相当于 16.7% 的价格距离
+- **位置**：距 52 周高点 -47.7%，距 52 周低点 +1728.0%
 - **量能**：最新一日成交量为 20 日均量的 0.8 倍，量能正常
-- **相对强度**：近一月跑赢 标普500 20.2 个百分点
-- **支撑 / 阻力**：最近的摆动低点 76.00，摆动高点 81.50（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
+- **相对强度**：近一月跑赢 标普500 10.6 个百分点
+- **支撑 / 阻力**：最近的摆动低点 65.02，摆动高点 73.94（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
 
 **我的读图结论**：趋势向上且结构完整；顺势的一侧在上方，风险在于结构一旦破位就要认
 
@@ -69,7 +69,7 @@ _以上每一条都是对已经发生的价格的描述。均线、RSI、摆动�
 - **增长**：最新季度营收同比 +164.8%；最近三个季度营收连续环比上升；最近 7 次财报里 4 次超预期。
 - **盈利质量**：毛利率 32.2%、营业利润率 21.9%、净利率 3.2%、ROE 1.0%。
 - **资产负债**：现金 $4.17亿；有息负债 $1.02亿；负债/权益 10.7%（负债很轻）；流动比率 4.76；自由现金流 -$4,441.70万，为负，公司在净烧钱。
-- **卖方预期**：5 位分析师覆盖；平均评级「买入」（1.60/5，1 为最看多）；目标价均值 91.60（较现价 +16.0%），区间 55.00–125.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
+- **卖方预期**：5 位分析师覆盖；平均评级「买入」（1.60/5，1 为最看多）；目标价均值 91.60（较现价 +24.3%），区间 55.00–125.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
 
 **分季度损益**（季度数据，最新在左）
 
@@ -110,16 +110,26 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
+| 时间 | 材料度 | 倾向 | 标题 | 来源 |
+|---|---:|---|---|---|
+| 3h 前 | 8 | 中性 | [AXT (NASDAQ:AXTI) Shares Down 7% - Time to Sell? - MarketBeat](https://news.google.com/rss/articles/CBMipAFBVV95cUxQV05rZTFvSkprZ1NhT0YyZzFteEtIZVRXTGo4SXZoaFdCd18wbUJnT0J5Y1Q2R0ZwSy1sYmU5cDZ3emtWXzVMSGsxRzJ4dU5kMjBkeE9SNEZFNlFSSFlFQy1oR3pDSUlkUUROYVpkRUQtRGpvQWVCZ2gwa3J5MDdPaWlyc1AweFBGM1ZfNVBVbmM5VFJMejlsT2t4N0szcDhPNUFhbw?oc=5) | MarketBeat |
+| 20h 前 | 0 | 中性 | [AXTI Oct 2026 98.000 call (AXTI261002C00098000) interactive stock chart - Yahoo Finance UK](https://news.google.com/rss/articles/CBMibkFVX3lxTE53U3V1Q2VfRnRDRngtLS1wc3dvZ3dDSjUweGJ3TjU4and6REdIN1FZSlpmWC1sRUFxMTR0U2pZU1JTRmpxN0pGZmJCQXIyQy1FWklwaTVnM1RqYVkxbVRldnVXOHRNUlM0M0x2endR?oc=5) | Yahoo Finance UK |
+| 23h 前 | 0 | 中性 | [AXTI Oct 2026 98.000 call (AXTI261002C00098000) Stock Price, News, Quote & History - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMiZkFVX3lxTE1qUWtyQWw3QXlkakVkR3BkV0hZaW1rTk5JNW84RGFhc3hmcktqTGZxLWNHYzNyNy1ESTZhaHkzdzgxaG5hZHhJaTd1Mm9SSzU3RWV2THFrTXNEci1LSHFnMWlpWlY4UQ?oc=5) | Yahoo! Finance Canada |
+| 34h 前 | 0 | 中性 | [Price-Driven Insight from (AXTI) for Rule-Based Strategy - Stock Traders Daily](https://news.google.com/rss/articles/CBMi0AFBVV95cUxOaWRjZ285VFZBempIUE9takl3NUVXZG8xdjg2SllSbXZjR0tNS2c3U29hRU4xd0RQcmJ1a2ptWWlXZV9EbzRvMWVZZjRjc1A0Vmo2WVloNGVzclZ0YzVUQ3FDMk9FaWxnSGM0eXFZeTNqNkI5RDRzcGRRZDJwQXphYU1rdkdDQ0ZWOTZMZExWS181aG4zVGtKYnprUGhIbFhqcDRBQzhyUndCS1RPb0lXbVBic2dUMWdMT1RwLUpHc3RBSUVtRGZ0ZWdXX25Pb0p3?oc=5) | Stock Traders Daily |
+| 42h 前 | 0 | 中性 | [AXTI Oct 2026 48.000 put (AXTI261023P00048000) stock historical prices and data - Yahoo Finance UK](https://news.google.com/rss/articles/CBMicEFVX3lxTE8tTjltU3l3Qkl3SmtLRjlHR1FySi1UZktDMmw0UXFZaEdLODBpSWU5TVh1b19ubW1CN3VVbkJIcVN1amVUd05XVVp3VnRmYlViMFhERlBzTjVuVDRxbFItVmVRTGNoQTlQYlkxOTN4WTY?oc=5) | Yahoo Finance UK |
+| 42h 前 | 0 | 中性 | [AXTI Oct 2026 69.000 call (AXTI261002C00069000) Stock Historical Prices & Data - Yahoo Finance - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMicEFVX3lxTE0tR1B6WUJ3cTZja1E2b0gtbXBYNUNyRFNGQ0dScTh4NHlhTlhOZ0xqNFZjamU2RmtoZ0M0UEwtRDBjRURiZlFxVWhJaGU4UDV5QnIyVEZFRjl2OTA0Tnd1SFZuRDJwOGYwaEZlcGFoZWs?oc=5) | Yahoo! Finance Canada |
+| 42h 前 | 0 | 中性 | [AXTI Oct 2026 89.000 call (AXTI261002C00089000) Interactive Stock Chart - Yahoo Finance - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMibkFVX3lxTE5EZUI4Nm9tRXY0aVZoUjRjYy00R3R3dm5UQWhlczYtV1lmVWpkOFBjMTlVeGdnMTBBYVFxbFYwUHVkV2N3Q1R0SU9FZWc1aDNIUjM4MEtRc0lhUjZEQURERWVFaUtYR3MzRHZJYVln?oc=5) | Yahoo! Finance Canada |
+
+_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
 ## 五、反方观点与风险
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
-- 日均波幅 8.0%，属于高波动：同样的仓位金额，这只股票的日常噪音就能触发大多数人的心理止损。
+- 日均波幅 8.4%，属于高波动：同样的仓位金额，这只股票的日常噪音就能触发大多数人的心理止损。
 - 自由现金流为负（-$4,441.70万），意味着经营本身在消耗现金，未来可能需要再融资摊薄。
 - TTM 市盈率 2,430 倍，价格里已经计入了不少增长；增长只要减速，杀估值的幅度会大于业绩本身的降幅。
-- 政策面对该板块的倾向为 -0.76（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.90（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -127,7 +137,6 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 | 日期 | 开 | 高 | 低 | 收 | 涨跌 | 成交量 |
 |---|---:|---:|---:|---:|---:|---:|
-| 2026-09-04 | 57.69 | 62.50 | 56.01 | **61.64** | +9.7% | 10,899,300 |
 | 2026-09-08 | 64.48 | 70.59 | 62.31 | **69.56** | +12.8% | 13,825,200 |
 | 2026-09-09 | 68.59 | 73.94 | 68.18 | **68.91** | -0.9% | 8,577,400 |
 | 2026-09-10 | 65.90 | 69.32 | 64.55 | **64.70** | -6.1% | 7,230,900 |
@@ -142,6 +151,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-09-23 | 78.41 | 78.76 | 72.91 | **72.98** | -6.2% | 5,353,800 |
 | 2026-09-24 | 70.82 | 78.70 | 69.60 | **75.90** | +4.0% | 7,597,000 |
 | 2026-09-25 | 77.50 | 80.44 | 75.00 | **78.94** | +4.0% | 7,405,000 |
+| 2026-09-28 | 76.53 | 78.18 | 71.56 | **73.67** | -6.7% | 6,944,788 |
 
 ## 七、自己去查（本页不做独立验证）
 

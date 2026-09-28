@@ -1,6 +1,6 @@
 # AVGO · 博通（Broadcom）
 
-_科技 · 数据截至 2026-09-25 收盘 → 面向 2026-09-28 开盘_
+_科技 · 数据截至 2026-09-28 收盘 → 面向 2026-09-28 开盘_
 
 [← 回到 2026-09-28 当日报告](../2026-09-28.md)
 
@@ -10,51 +10,51 @@ _科技 · 数据截至 2026-09-25 收盘 → 面向 2026-09-28 开盘_
 
 ```text
      AVGO · 近 126 个交易日（日线收盘）
-469 ┤                           ╭╮
-456 ┤                           ││
-443 ┤                    ╭╮    ╭╯╰╮
-430 ┤                ╭╮╭╮││    │  │                         ╭╮
-417 ┤          ╭──╮╭─╯╰╯╰╯╰────╯  │     ···                ╭╯╰─╮
-404 ┤         ╭╯  ╰╯              │····╭╮  ·····╭╮·····   ╭╯   │
-391 ┤       ╭─╯                 ··╰─╮  │╰╮     ╭╯╰╮  ╭╮··╭╯····╰─╮····
-378 ┤      ╭╯              ·····    ╰──╯ ╰╮╭─╮╭╯  ╰╮╭╯╰──╯       │    ···········
-365 ┤      │           ····             ::╰╯:╰╯::::╰╯::::::::::::╰─╮╭───╮╭─╮::╭─╮
-352 ┤     ╭╯       ····    :::::::::::::                           ╰╯   ╰╯ │ ╭╯ ╰
-339 ┤    ╭╯   ·····::::::::                                                ╰─╯
-326 ┤····│····:
-313 ┤  ╭─╯
-300 ┤──╯
+479 ┤                           ╭╮
+464 ┤                          ╭╯│
+450 ┤                          │ │
+436 ┤                         ╭╯ │
+421 ┤          ╭─╮ ╭────────╮╭╯  │                        ╭───╮
+407 ┤        ╭╮│ ╰─╯        ╰╯   ╰╮····╭╮············     │   ╰╮
+393 ┤       ╭╯╰╯               ···╰╮ ╭╮││      ╭╮╭╮ ╭─╮·╭─╯····╰╮····
+378 ┤      ╭╯              ····    ╰─╯╰╯╰─╮╭╮╭─╯╰╯╰─╯ ╰─╯       │    ············
+364 ┤     ╭╯          ·····           ::::╰╯╰╯::::::::::::::::::╰──╮╭──╮╭─╮::╭─╮:
+350 ┤    ╭╯       ····  ::::::::::::::                             ╰╯  ╰╯ ╰╮╭╯ ╰─
+335 ┤    │ :······::::::                                                   ╰╯
+321 ┤···╭╯··
+307 ┤ ╭─╯
+292 ┤─╯
     └────────────────────────────────────────────────────────────────────────────
-     2026-03-27                       2026-06-29                       2026-09-25
+     2026-03-30                       2026-06-30                       2026-09-28
      · SMA50   : SMA200   ─ close
 ```
 
 ```text
        AVGO · 近 21 个交易日（放大看最近节奏）
-370.9 ┤─╮╭─╮
-366.8 ┤ ╰╯ ╰╮ ╭╮
-362.8 ┤     │ │╰╮╭╮    ╭─╮
-358.8 ┤     │╭╯ ╰╯│   ╭╯ │
-354.8 ┤     ╰╯    │   │  ╰╮╭
-350.7 ┤           │   │   ╰╯
-346.7 ┤           │  ╭╯
-342.7 ┤           ╰╮ │
-338.7 ┤            ╰─╯
+369.7 ┤───╮  ╭╮
+365.8 ┤   ╰╮ ││        ╭╮
+361.9 ┤    │ │╰──╮    ╭╯│
+358.0 ┤    ╰─╯   │   ╭╯ │
+354.2 ┤          │   │  ╰╮╭╮
+350.3 ┤          │   │   ╰╯╰
+346.4 ┤          │  ╭╯
+342.5 ┤          ╰╮ │
+338.7 ┤           ╰─╯
       └─────────────────────
-       2026-08-27 2026-09-25
+       2026-08-28 2026-09-28
 ```
 
-成交量近 63 日： `▃▄▄▃▅▃▃▂▃▂▂▂▁▂▃▃▂▃▁▁▁▁▄▃▅▂▂▂▃▂▂█▅▄▃▄▃▃▇▃▃▂`
+成交量近 63 日： `▄▄▃▄▄▂▂▂▃▂▂▂▂▃▃▂▄▁▁▁▂▃▂▄▂▂▂▂▂▃▆█▅▃▃▄▃▅▄▃▃▂`
 
 ### 图形读数
 
-- **均线排列**：跌破 200 日线 — 现价距 20 日 357.54（-1.3%）、50 日 376.01（-6.2%）、200 日 367.04（-3.9%）
+- **均线排列**：跌破 200 日线 — 现价距 20 日 356.62（-2.0%）、50 日 375.59（-6.9%）、200 日 366.77（-4.7%）
 - **形态结构**：下降结构 — 更低的高点 + 更低的低点；前高 372.02 → 366.55（-1.5%）、前低 341.71 → 335.20（-1.9%）
-- **动能**：RSI(14) 44，偏弱；月 -0.6%、季 -3.2%，节奏平稳
-- **波动**：日均真实波幅约为价格的 2.9%；按本报告 2 ATR 的止损惯例，一个 R 相当于 5.7% 的价格距离
-- **位置**：距 52 周高点 -26.5%，距 52 周低点 +20.7%
-- **量能**：最新一日成交量仅为 20 日均量的 0.6 倍，缩量
-- **相对强度**：近一月跑输 标普500 1.5 个百分点
+- **动能**：RSI(14) 42，偏弱；月 -5.7%、季 -6.0%，节奏平稳
+- **波动**：日均真实波幅约为价格的 2.8%；按本报告 2 ATR 的止损惯例，一个 R 相当于 5.5% 的价格距离
+- **位置**：距 52 周高点 -27.2%，距 52 周低点 +19.5%
+- **量能**：最新一日成交量为 20 日均量的 0.7 倍，量能正常
+- **相对强度**：近一月跑输 标普500 5.3 个百分点
 - **支撑 / 阻力**：最近的摆动低点 349.42，摆动高点 366.55（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
 
 **我的读图结论**：趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌
@@ -69,7 +69,7 @@ _以上每一条都是对已经发生的价格的描述。均线、RSI、摆动�
 - **增长**：最新季度营收同比 +85.5%；盈利同比 +215.3%；最近三个季度营收连续环比上升；最近 6 次财报里 6 次超预期。
 - **盈利质量**：毛利率 75.5%、营业利润率 54.3%、净利率 42.9%、ROE 44.2%。
 - **资产负债**：现金 $239.75亿；有息负债 $594.19亿；负债/权益 59.6%（负债适中）；流动比率 2.50；自由现金流 $305.96亿，为正。
-- **卖方预期**：47 位分析师覆盖；平均评级「强烈买入」（1.26/5，1 为最看多）；目标价均值 531.85（较现价 +50.7%），区间 215.88–715.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
+- **卖方预期**：47 位分析师覆盖；平均评级「强烈买入」（1.26/5，1 为最看多）；目标价均值 531.85（较现价 +52.1%），区间 215.88–715.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
 
 **分季度损益**（季度数据，最新在左）
 
@@ -112,9 +112,17 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 5h 前 | 6 | 中性 | [NVIDIA Rises 2% as Board Authorizes Record $150B Buyback Increase; AMD and Broadcom Slip - 24/7 Wall St.](https://news.google.com/rss/articles/CBMiyAFBVV95cUxQTGljTDZfaEw3dlhLS3BoOE56SmxfRnN0M0JZcFZ0Vkl2NVZFaF9TSmZBUENWWTM4NGhLY1lOWE5VeDgxSWItRnVfeFUwbk5Qa1AzcVp0dThIZmpsRFRZMUR3ampyZTNqLWdnU3FXLTVpRS05cENVV3RCUnBPdmpYR045Q2dLTmZzT1BSaGd6dlNXZ2ZNZk5NdW1zMGRqalJmclZ1WmhCZ2tCZ1FERUZPNnJtQ3BSbGF6dFctc25lNUplX2NYNVExQw?oc=5) | 24/7 Wall St. |
-| 2h 前 | 0 | 中性 | [Broadcom stock weighs AI growth against a 66 percent margin outlook - ad-hoc-news.de](https://news.google.com/rss/articles/CBMiygFBVV95cUxNblJVOTZiQXgyNndWcnR2Vm44VERac2JPUEw5QVQ3LXRWb3pJeHhpSmx0aXRxaHRmcEhyV2pZb2wxNVpnOWV6LUtuY2VTOVRqRWZRdEFwOXpVMDZzS0t6TGRmeE15a1NMSEZtdGV3dVExcW1DaF9WeVBJT01BMDNLdzFsM2FzZXhXTlE3d2VWOERnUzRYOEFMbnl0TmpkVGE3OW5GaGw4SzFKbndGWWlmbXg1NXFsMDRjb25CNUUzR1pQeHNmQWxuY2dn?oc=5) | ad-hoc-news.de |
-| 12h 前 | 0 | 中性 | [Broadcom stock at USD 352.81 on September 25, 2026, up 0.70 percent - ad-hoc-news.de](https://news.google.com/rss/articles/CBMiwAFBVV95cUxNcl94STdfQk9nR2JLc2o0Rm1QOHRsVno3QWxPVGQyOXRjUlBnbjFiVng4aDl6ZFN1azVqMFhiNjdkSXdKWFUzTFZGbV9aYW1tZUtZYlJSRk5EY1IyNVRaREEtVzV5WTF5VzE1WUF1VnRTVDNqQXZqRnNZd09tSV9hSzl2VmdHUGVqdG9VcDQ5amp4Zkc2MWRrLU1xVmctLVZaSjZlSWxEWThxVjdBU3BxNW1HUG9FTHp4ZVpDQkRfOG8?oc=5) | ad-hoc-news.de |
+| 32h 前 | 8 | 偏空 | [Broadcom Stock Forecast: Why Did AVGO Fall After $13.5B Earnings and What's Next? - TradingKey](https://news.google.com/rss/articles/CBMi0AFBVV95cUxQdTlMLTNTNDhGakt6NDFKT2dkS1pWOC04UUVnU1pHcFFmSE4xNkVUbUZCMm9rTUFqMmJmOXR1NGp1bFJlUUI0dUl5eUlmV0dVd1JlZWptZEo4dGdGak1YU0YtNFFZRFpJVk81R2VJQjNsZnhMRWM3WmFxNlhOUnMyVEczZVlJRUs0MWd1MnhISmZFdUdCYzVYZ3hBRnN3VXpEYXVQOXFaMlJGU0pSbWNVWTZIT3YwRWhaWlIyMlp0T1hBNXA3RjdydnZ2TXQwU0hX?oc=5) | TradingKey |
+| 31h 前 | 5 | 中性 | [Analysts Keep Hiking Broadcom Price Targets, But AVGO Is Flat - Shorting AVGO Puts Is an Attractive Play - Barchart.com](https://news.google.com/rss/articles/CBMi3gFBVV95cUxNQ0MwRWVVN055SEM1bjNMWmNxWkRBZlVUcjVZX3NkdnNXQXRnYXhlMy1LaGVNX09raFl0SlIxeE9LUlRObzg5Z2xHS3o0bXVrS0xYbUlNY2VlTk5MOF9QQmNmYTBvSGVGYVE3Y2RMdzd3LVZKRlkweEM0UGE1Y2JJZXJnQ0Vwd0hkTTBnUzVRX3BJczdfTUVWVG9uWEE4b2E5UGNjOUFLbVhjRjRKZ2xtYjFVT3lpNkhRaU1XNXlZT19nczdOankyVS1HVTYwUFlKTm5nb3owakpQS0t4Q0E?oc=5) | Barchart.com |
+| 1h 前 | 0 | 偏多 | [Broadcom Stock Slips Lower as $115 Billion Forecast Raises the Conversion Bar - tradingview.com](https://news.google.com/rss/articles/CBMi0gFBVV95cUxOdGZpRFYxOU1DQzE2bmNVdmpkakVXR2lPcF9TbklJMjNpR2dNVWRESE90NlBoT2xad0FxWlVIS2tmRHFZcG5qdDR2Y19SMmZVd2c0SzNhbWZULWxMczdzcl8wRUQ0aHQwcWNEMFllRVg3X2VQZVRwaFFrX3JkNnlzOU56Y044WEdEOFBFd2RaWUtDcjZRczczMHFIN3ptT09zVFVWb1ZUb2tsUmY0MW1JRGc4XzIxLWtrNVFZSnRUTl9qQkNrSlRVVm5SOTNxVjZMWXc?oc=5) | tradingview.com |
+| 4h 前 | 0 | 中性 | [How Is Broadcom (NASDAQ:AVGO) Winning Custom AI Chip Orders From Hyperscalers? - Kalkine Media](https://news.google.com/rss/articles/CBMizgFBVV95cUxNRVpCNU8tV2ZhZm91Nkk1M0RIbXBkcU1SUUtSbUhxNmpMU2txVl9jblZsVWJvQWZoVWV5SkV2NU5ZRGtNUW96YTlQQVhwQTVXREVUaUFJd2JjQk9yNmQxSTNHQlpvX0VyQUY4ZVc4ZXE2RzFJZjd4T3VyV2gxVGNoNk5iLUNlakw3b0J1NDFlYnlPR3l3WEJoTlVwSzlqYmppak1EbEdsa0RHUWctUV9lQ3dTNHdyRkEzM01Idy1mUTQ4YzhLOGJEN0NMUm95UQ?oc=5) | Kalkine Media |
+| 8h 前 | 0 | 中性 | [Why Are Semiconductor Stocks AVGO, AMD, and MRVL Down in Pre-Market Today Sept. 28? - TipRanks](https://news.google.com/rss/articles/CBMitwFBVV95cUxNa1hvOEtsOWNSSW9ENXJuU2tfM3k3TG52M2FxWGpyNFNtb2tTcGpqd29acnVLeFM5eGY1ZHFldEVpeWtIUXZTbWdKTUlULWx2NUprNnBNTndacVBjdDV2QW9RMWo3VU4wY2pPd3JHLWFJU25SMVhLblNwa3YzRm5vTmJ4U09vZlljdjE1Sk1UNkwzNzhVbXJjcnpLUUhmcmpqWmpIbzNIUFBwUnBtMFQyMTBrLWZKdWM?oc=5) | TipRanks |
+| 12h 前 | 0 | 中性 | [INTC, AMD, AVGO: Chip Stocks Lead Slide As Tech Gets Hammered Amid Renewed U.S.-Iran Tensions - finance.yahoo.com](https://news.google.com/rss/articles/CBMilAFBVV95cUxPMk52OUpaSHBIRXAtLVRpSDlpYmZrSThzbVF0enlFNDcxR0xxQ01jbVVpVGxaaHU1cFdKZ3JyclF1c0hJV1dpLUpaU19tSVg4THdLWERjb0E2a2pRSDNZRnpWUUpCM19PVVluUFpWRHljMVFPaEFNNkY3V0ZIMHNEQzN6a3NzZldBd0xaamwyd3NmbGRO?oc=5) | finance.yahoo.com |
+| 12h 前 | 0 | 中性 | [3 Great AI Stocks To Own In September 2026 - simplywall.st](https://news.google.com/rss/articles/CBMiuAFBVV95cUxNQy1uU29hYkc1SDFuWEc3bEFvenJybVRFMm1ROEhYdFR4WEYtNE9CcjM3aVZiQXlLS0JIR18zLWI0bm9lNmt6YjRjcmFteVpXMkFnOFRSQTlQQm01ZmIxaTduSjRuMjVTT2dIaUJmV215NFhEeDdfZ3RwVkM3eVZHcVFiN1FFYVBFVWJfYkNYWW05aUQ2eHBYcmZPSnFhTldDWWFXXy1mTUtCQnRTdDRpNjdrMVhDbVVQ0gG-AUFVX3lxTE9nT3BQQ3dkS2lWU0F5S250eUZoSFZxUXNmLVRsRkFIdFNobFMwR0dfbmh3Wk1hTnpWTmFKNUFBUGd3NG5NRTMxeTMzdXZHQlJxNUJ3blJ0ZVZvXzJKQlV5blhNTE5aM3RuQWhkTnM2ckxPa1VmVjdjMjJpd1dBa2NSTVlFazVvNV9yU2Vnd0hFR25nc3BVOW1rQkxNekNYOTdPLTBaUklwdWpBejBucm01cUhieVdzQzNhOVJURmc?oc=5) | simplywall.st |
+| 25h 前 | 0 | 中性 | [Broadcom Inc (AVGO) Stock Analysis & Forecast - TradingKey](https://news.google.com/rss/articles/CBMiZkFVX3lxTE9maVJ0MjVyMkM5MDRTUDY0NU9DaVpoUVJPTWt6MVpKd29lN0dIY1V4TFNDOVFhdDlSOUZRakZKQThqMzhYNlJ3WmxncUtzMzdwYjZmX1lTbjVWWGJMM2dUUk5aMkRBUQ?oc=5) | TradingKey |
+| 36h 前 | 0 | 中性 | [Why Broadcom (AVGO) Stock Is Greatly Undervalued! Buy The Dip? Rivière Gatineau (1n93NUKvHW) - Unisba Media](https://news.google.com/rss/articles/CBMihAFBVV95cUxNTS1oVjJjYnVTRXU2RU0tWWk1OWZrQ3ZPT0poTVdjN1E0VEE5ZjN2c1ItazBiRWZDWGhjWHdvYXRQbDJoNWhaZFc0b25zNmNkdHhhN1M5ZUFuREt5SWlMWmZBUWJ1QzRzUnVSdzYzT0x3R29xS19ZNWJNLWZLSGJHMmh2d3M?oc=5) | Unisba Media |
+| 46h 前 | 0 | 偏空 | [AVGO Stock Sinks To Near 5-Month Lows Despite Exploding AI Sales — Wall Street Reactions Are Mixed - Stocktwits](https://news.google.com/rss/articles/CBMi8gFBVV95cUxQb015Z1JEOEVYSjdxQnhmMFV2alBXWk5iVk1Ma2JKQ19MLVRHc2hjRzdJVVM4OTEydGF3NlQxNFFneGs4dURLOXdUUVgtQzZ6UWFTdUZPQUZGWkFUbDFibFRxUERkdTlfcnJybEtGSjVJZGRIeXUyVVNXdWJwb1NGcDJuWGdqV2ZMdzgwRlBVRU9ERVVWVXV6YzN2RWhlUlRGRVB1cWNnMFlWZHpaODlZVHFsSXVGNFBPS0NYeE9SVjdOdWhab0NGNzhqV0hWQVRqaklEN0RSYnlYX2NibTR5LXBkY2tSRm0tdVNMbm5xUmU1UQ?oc=5) | Stocktwits |
+| 46h 前 | 0 | 中性 | [Top 3 AI Stocks To Watch In September 2026 - simplywall.st](https://news.google.com/rss/articles/CBMiuAFBVV95cUxPbkZTVE5LV29jM0YwWnhFUGdzWS1QTWR3TVpDek4zRG9mYXhHc2ZtNUxaWnlxd2poMlZkZ2o2OFlFYUdUZ0wwTlJEdmhBYjUwOGpYcGl4SGw0STgzMnlEN3V0dWxfS1JSYnFERm9ZQm1jRUpxQ2h1SE9xMTVZcENwSElQU2FpWDNfS3RTVEF4RUdvQXBXV2tsN1htQ3M3VVpidmZNcHpONVhPVEdYekEwbUxhZHJzWTll0gG-AUFVX3lxTE9JajFoUnJTNVI5VXZ2cnphbk9Cb3FqZzc5UE1tNUhEUTdtTlY4S0lMV2xvRGRsaWhTS2szNE5ERUlkb1JSQ2dTWVUxUzMwdkd5cktvN2tjaWZpMkZjU3hoaXBzTVptcXdBbUNiRnZ4QkdKZF82aWZSMVQwLUo1TGtyUzI5YnlseFhoUjhHTW14ZzlDWVJXQVpXRTNHdExUVW8tcENBU3hhaHJMX0phRUVEbmw3Zzh3ZjdIOVY0SUE?oc=5) | simplywall.st |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -122,9 +130,10 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
-- 图形上是跌破 200 日线——现价距 20 日 357.54（-1.3%）、50 日 376.01（-6.2%）、200 日 367.04（-3.9%）。本报告的买入规则本身会过滤掉这种形态。
+- 图形上是跌破 200 日线——现价距 20 日 356.62（-2.0%）、50 日 375.59（-6.9%）、200 日 366.77（-4.7%）。本报告的买入规则本身会过滤掉这种形态。
 - 摆动高低点都在下移，属于下降结构；在出现一个更高的低点之前，任何反弹都还只是反弹。
-- 政策面对该板块的倾向为 -0.76（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 24 小时内的利空标题：Broadcom Stock Forecast: Why Did AVGO Fall After $13.5B Earnings and What's Next? - TradingKey（TradingKey）
+- 政策面对该板块的倾向为 -0.90（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -132,7 +141,6 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 | 日期 | 开 | 高 | 低 | 收 | 涨跌 | 成交量 |
 |---|---:|---:|---:|---:|---:|---:|
-| 2026-09-04 | 359.05 | 359.51 | 353.06 | **357.25** | +0.2% | 32,863,300 |
 | 2026-09-08 | 363.02 | 372.02 | 362.08 | **367.89** | +3.0% | 30,464,900 |
 | 2026-09-09 | 365.56 | 367.34 | 358.60 | **363.72** | -1.1% | 25,918,200 |
 | 2026-09-10 | 359.38 | 364.61 | 357.10 | **360.17** | -1.0% | 23,994,300 |
@@ -147,6 +155,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-09-23 | 362.20 | 362.90 | 354.01 | **354.99** | -2.6% | 23,387,700 |
 | 2026-09-24 | 349.21 | 351.44 | 346.89 | **350.36** | -1.3% | 20,930,400 |
 | 2026-09-25 | 352.62 | 354.43 | 349.43 | **352.81** | +0.7% | 16,220,900 |
+| 2026-09-28 | 352.86 | 355.85 | 347.32 | **349.57** | -0.9% | 19,273,785 |
 
 ## 七、自己去查（本页不做独立验证）
 
