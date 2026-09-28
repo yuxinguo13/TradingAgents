@@ -1,0 +1,24 @@
+{
+"rows": {
+"AAPL|2026-09-25": {
+"symbol": "AAPL",
+"as_of": "2026-09-25",
+"next_date": "2026-10-29",
+"last_date": "2026-07-30",
+"eps_estimate": 1.89,
+"eps_actual": 2.02,
+"surprise_pct": 6.74,
+"error": ""
+},
+"MSFT|2026-09-25": {
+"symbol": "MSFT",
+"as_of": "2026-09-25",
+"next_date": "2026-10-28",
+"last_date": "2026-07-29",
+"eps_estimate": 4.24,
+"eps_actual": 4.74,
+"surprise_pct": 11.81,
+"error": ""
+}
+}
+}

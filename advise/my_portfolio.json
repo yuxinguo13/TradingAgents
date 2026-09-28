@@ -1,16 +1,14 @@
-{
-  "cash": 10000,
-  "holdings": [
-    {
-      "symbol": "AAPL",
-      "shares": 10,
-      "cost": 180.0,
-      "note": "示例，改成你自己的"
-    },
-    {
-      "symbol": "MSFT",
-      "shares": 5,
-      "cost": 400.0
-    }
-  ]
-}
+{"cash": 14472.54,
+ "note": "三个 Schwab 账户合并：PCRA Trust A（TTMI 25、VST 15，现金 6462.78）、PCRA Trust B（AXTI 1、AVGO 7、LLY 2、MRVL 5、TXN 5、TTMI 10、QQQM 39.04，现金 5705.14）、HSA（PFE 2、SHEL 2，现金 2304.62）。成本未提供，按 2026-09-28 盘中价填。",
+ "holdings": [
+  {"symbol": "TTMI", "shares": 35, "cost": 120.72},
+  {"symbol": "VST",  "shares": 15, "cost": 137.74},
+  {"symbol": "AXTI", "shares": 1,  "cost": 72.84},
+  {"symbol": "AVGO", "shares": 7,  "cost": 350.63},
+  {"symbol": "LLY",  "shares": 2,  "cost": 1191.06},
+  {"symbol": "MRVL", "shares": 5,  "cost": 252.90},
+  {"symbol": "TXN",  "shares": 5,  "cost": 276.94},
+  {"symbol": "QQQM", "shares": 39.04, "cost": 303.47},
+  {"symbol": "PFE",  "shares": 2,  "cost": 28.675},
+  {"symbol": "SHEL", "shares": 2,  "cost": 97.005}
+ ]}
