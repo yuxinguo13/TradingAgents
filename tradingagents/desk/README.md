@@ -111,6 +111,21 @@ than traded (a retirement or HSA account): the adviser then uses `advise.LONG`
 be 30% and a broad index fund (`"kind": "index"`, or one of `INDEX_ETFS`) 60%,
 trim only 100% above the 200-day. Without it the manual's §7 swing rules apply.
 
+## 5 · stock (one name, on demand)
+
+```
+python -m tradingagents.desk stock NKE                  # the pack: desk/stock/<date>-NKE.md/.json/-deepdive.md
+python -m tradingagents.desk stock site NKE --out ./site-NKE-<date>   # one-page site from pack + final
+```
+
+Everything the report knows per name, for one name: indicators and the chart
+read, the manual's score with reasons, reference levels and R, breakout
+triggers, fundamentals, the next earnings date, insider buys and sells, the
+sector's week and month, headlines, and every earlier report call on the name
+settled over five sessions (`stock.past_calls`). The write-up goes in
+`<date>-<SYM>-final.md` (MANUAL §12); `site.build_stock` renders both into a
+single page with the interactive chart.
+
 ## 4 · review (the score-keeper)
 
 ```

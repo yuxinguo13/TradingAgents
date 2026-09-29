@@ -108,7 +108,8 @@ def home(tmp_path, monkeypatch):
 
 def mkt(task="test", news_items=(), events=()):
     return Market(task=task, bars_loader=frame_for, news=StubNews(news_items),
-                  policy=StubPolicy(events), earnings=StubBook(), fundamentals=StubBook())
+                  policy=StubPolicy(events), earnings=StubBook(), fundamentals=StubBook(),
+                  insiders=StubBook())
 
 
 # ---------------------------------------------------------------------------

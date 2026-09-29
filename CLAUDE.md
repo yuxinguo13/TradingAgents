@@ -104,6 +104,29 @@ If a pull or push reports a failure, say so in the reply; do not retry by hand.
 5. `python -m tradingagents.desk state push`, then reply with the artifact
    link first, followed by the final report in full.
 
+### Task 4 — stock (on demand: the user names a symbol and asks for its analysis)
+
+1. `python -m tradingagents.desk stock <SYM>` — writes the pack
+   `~/.tradingagents/desk/stock/<date>-<SYM>.md` (+ `.json`, and the full
+   `-deepdive.md` page): price and chart, the code's score and reference
+   levels, breakout triggers, earnings date, insiders, the sector's week and
+   month, headlines, and every earlier call the desk made on the name,
+   settled over five sessions.
+2. Research with web search, in parallel: (a) the company's last two
+   earnings, guidance and the next report date; (b) the past two weeks' news,
+   analyst actions with firm and target, legal or regulatory items; (c) the
+   sector's policy backdrop and one or two peers for context.
+3. Write `~/.tradingagents/desk/stock/<date>-<SYM>-final.md` in the structure
+   of MANUAL §12, including one ranking-table row in the daily report's
+   format so the page and later settlement can read your levels.
+4. `python -m tradingagents.desk stock site <SYM> --date <date> --out ./site-<SYM>-<date>`
+   and publish that folder with the Artifact tool (`file_path` its
+   `index.html`, `root` the folder, `files` from its `files.json`; icon
+   `chart`). Reply with the link first, then the final in full.
+5. `python -m tradingagents.desk state push`. This task reads no account;
+   if the user holds the name, say what to do with the holding under the
+   horizon their portfolio file declares.
+
 ### Task 3 — advise (weekdays, after the report)
 
 1. `python -m tradingagents.desk advise`. If the portfolio file is missing,
