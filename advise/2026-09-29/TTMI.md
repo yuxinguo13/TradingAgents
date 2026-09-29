@@ -1,0 +1,190 @@
+# TTMI · TTM科技°（TTM Technologies）
+
+_科技 · 数据截至 2026-09-29 收盘 → 面向 2026-09-29 开盘_
+
+[← 回到 2026-09-29 当日报告](../2026-09-29.md)
+
+> 趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌。
+
+## 一、价格与图形
+
+```text
+     TTMI · 近 126 个交易日（日线收盘）
+217 ┤                                  ╭╮
+206 ┤                               ╭╮╭╯╰─╮
+194 ┤                       ╭─╮     │╰╯   │
+183 ┤                      ╭╯ │╭─╮ ╭╯     ╰─╮
+171 ┤                  ╭─╮╭╯  ╰╯ ╰─╯    ····│············
+159 ┤             ╭────╯ ╰╯         ····    │            ········
+148 ┤           ╭╮│             ····        ╰──╮   ╭─╮           ····
+136 ┤          ╭╯╰╯         ····               ╰───╯ │   ╭─────╮     ····
+125 ┤     ╭╮╭──╯        ····                         ╰╮  │     ╰╮  ╭╮::╭──╮··╭───
+113 ┤    ╭╯╰╯    ·······                        ::::::╰──╯::::::╰──╯╰──╯  ╰──╯
+102 ┤──╮╭╯·······                    :::::::::::
+ 90 ┤  ╰╯                  ::::::::::
+ 78 ┤          ::::::::::::
+ 67 ┤::::::::::
+    └────────────────────────────────────────────────────────────────────────────
+     2026-03-31                       2026-07-01                       2026-09-29
+     · SMA50   : SMA200   ─ close
+```
+
+```text
+       TTMI · 近 21 个交易日（放大看最近节奏）
+129.4 ┤     ╭╮           ╭╮
+127.2 ┤     ││ ╭╮     ╭╮╭╯│
+125.1 ┤    ╭╯╰╮││     │╰╯ ╰╮
+123.0 ┤    │  ╰╯│    ╭╯    ╰
+120.9 ┤    │    │    │
+118.8 ┤─╮  │    │   ╭╯
+116.7 ┤ │  │    │   │
+114.6 ┤ ╰──╯    │ ╭─╯
+112.5 ┤         ╰─╯
+      └─────────────────────
+       2026-08-31 2026-09-29
+```
+
+成交量近 63 日： `▃▅▃▃▂▂▂▂▃▂▁▂█▇▃▄▆▇▄▂▄▃▅▃▃▃▅▂▁▁▂▂▂▁▃▁▁▃▃▂▂▂`
+
+### 图形读数
+
+- **均线排列**：跌破 200 日线 — 现价距 20 日 121.36（+1.2%）、50 日 124.16（-1.1%）、200 日 124.46（-1.3%）
+- **形态结构**：上升结构 — 更高的高点 + 更高的低点；前高 129.51 → 133.77（+3.3%）、前低 109.53 → 109.94（+0.4%）
+- **动能**：RSI(14) 49，中性；季线仍为负（-34.3%）但近一月已转正（+3.5%），属于反弹初期而非既成趋势
+- **波动**：日均真实波幅约为价格的 6.0%；按本报告 2 ATR 的止损惯例，一个 R 相当于 11.9% 的价格距离
+- **位置**：距 52 周高点 -44.6%，距 52 周低点 +129.2%
+- **量能**：最新一日成交量为 20 日均量的 1.2 倍，量能正常
+- **相对强度**：近一月跑赢 标普500 3.9 个百分点
+- **支撑 / 阻力**：最近的摆动低点 120.38，摆动高点 126.71（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
+
+**我的读图结论**：趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌
+
+_以上每一条都是对已经发生的价格的描述。均线、RSI、摆动结构全部是滞后指标，它们能说明现在处于什么状态，不能说明下一步。你自己在图上看到的东西，和这里写的不一致时，以你看到的为准——然后去查是哪个数字有问题。_
+
+## 三、财报与基本面
+
+市值 $129.37亿 · 行业 Technology / Electronic Components · TTM 营收 $33.77亿 · TTM EPS 2.22 · Beta 2.15 · 空头占流通股 4.6%
+
+- **估值**：TTM 市盈率 55.3 倍；前瞻市盈率 17.8 倍（市场预期未来一年盈利上升）；市销率 3.8 倍；EV/EBITDA 28.0 倍；PEG 0.36（低于 1，增长尚未被价格吃掉）。
+- **增长**：最新季度营收同比 +37.4%；盈利同比 +92.5%；最近三个季度营收连续环比上升；最近 7 次财报里 7 次超预期。
+- **盈利质量**：毛利率 21.2%、营业利润率 10.9%、净利率 7.0%、ROE 13.3%。
+- **资产负债**：现金 $5.08亿；有息负债 $11.03亿；负债/权益 57.0%（负债适中）；流动比率 1.78；自由现金流 -$1,944.24万，为负，公司在净烧钱。
+- **卖方预期**：4 位分析师覆盖；平均评级「强烈买入」（1.25/5，1 为最看多）；目标价均值 203.00（较现价 +65.3%），区间 175.00–224.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
+
+**分季度损益**（季度数据，最新在左）
+
+| 指标 | 2026-06-30 | 2026-03-31 | 2025-12-31 | 2025-09-30 | 2025-06-30 |
+|---|---:|---:|---:|---:|---:|
+| 营收 | $10.04亿 | $8.46亿 | $7.74亿 | $7.53亿 | $7.31亿 |
+| 毛利率 | 21.1% | 21.4% | 21.4% | 20.8% | 20.3% |
+| 营业利润率 | 10.9% | 8.6% | 10.5% | 9.6% | 8.6% |
+| 净利率 | 8.3% | 5.9% | 6.5% | 7.0% | 5.7% |
+| 净利润 | $8,304.70万 | $4,998.80万 | $5,068.50万 | $5,305.50万 | $4,153.00万 |
+| 摊薄EPS | 0.77 | 0.47 | 0.48 | 0.50 | 0.40 |
+
+**分年度损益**（年度数据，最新在左）
+
+| 指标 | 2025-12-31 | 2024-12-31 | 2023-12-31 | 2022-12-31 |
+|---|---:|---:|---:|---:|
+| 营收 | $29.06亿 | $24.43亿 | $22.33亿 | $24.95亿 |
+| 毛利率 | 20.7% | 19.5% | 18.5% | 18.4% |
+| 营业利润率 | 9.2% | 6.5% | 5.0% | 6.5% |
+| 净利率 | 6.1% | 2.3% | -0.8% | 3.8% |
+| 净利润 | $1.77亿 | $5,629.90万 | -$1,871.80万 | $9,458.30万 |
+| 摊薄EPS | 1.68 | 0.54 | -0.18 | 0.91 |
+
+**财报兑现记录**
+
+| 财报日 | 预期EPS | 实际EPS | 超预期 |
+|---|---:|---:|---:|
+| 2026-11-04 | 1.25 | — | 尚未公布 |
+| 2026-08-05 | 0.90 | 0.99 | +10.3% |
+| 2026-04-29 | 0.67 | 0.75 | +12.4% |
+| 2026-02-04 | 0.68 | 0.70 | +2.6% |
+| 2025-10-29 | 0.60 | 0.67 | +11.2% |
+| 2025-07-30 | 0.52 | 0.58 | +11.0% |
+
+_财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会滞后，TTM 窗口是厂商口径而非公司财年口径。以上任何一个数字如果会改变你的决定，请点开本页下方的 SEC EDGAR 链接看原文。_
+
+**财报日历**：下次财报 **2026-11-04**（约 36 天后）；上次财报 2026-08-05，超预期 +10.3%。财报日是这套止损体系唯一无法覆盖的风险：跳空会直接穿过止损价。
+
+## 四、消息面（过去 24 小时）
+
+| 时间 | 材料度 | 倾向 | 标题 | 来源 |
+|---|---:|---|---|---|
+| 8h 前 | 0 | 中性 | [Stocks making big moves yesterday: TTM Technologies, PacBio, Nvidia, Palo Alto Networks, and Teleflex - StockStory](https://news.google.com/rss/articles/CBMi-wFBVV95cUxPSk5va1IzdEZFa0JyNEhlNHNVSG9fNElwZTlhQXdwUU1BSEV4RmtVSHppdDltOXpMRVMwNnV6RlVuZ0JKSXJHLVRRNTJqa0M3aVFnUmdKNzlsY0RJX2VhaHpoazZ6TVhKYjJodk9qSXpwVjB1bndudHgzQ1lVXzlZVGdpa2hCeV84OHNlbDJaVWxBZGZpTjZ2QnJEOUN4UUhXWGdXQUNMUXBFcXlucExwbVVnNjBVa2xlN2NJTF9TVEZMR29haVZDZldZOXFsWlJZTHp2M2RkUWRESzlza3hqMDNjUWtCYlFFaHdTZ3RJZzhDVk9EOGlORTg4WQ?oc=5) | StockStory |
+| 14h 前 | 0 | 中性 | [TTM Technologies (TTMI) Stock Could Be 17% Overvalued Following Fresh Debt Funded Growth Push - simplywall.st](https://news.google.com/rss/articles/CBMiywFBVV95cUxQZi1ZVFJ2TXNncU5XNFcwTGhiNzhkNUVRT2dIblVRVHhEaHd5eVIzRnp2ZGZwMk5KRmtrN3NPcUJpclNtWkVFcmNiYWU0LWhXc3R6dDhuck53TWxqdi04U2N0V3czSGpWMzBVYVhaVkZzTUc3aEV0ZWJNRUQ2SXdmWm53b0pUQ2E2X0hVMmxpdDgwOC1VZ1ZSeW8wVEV1NVRTX181XzJ5RzR6V3dtY2FuOWd0NmotUE9Mb3RYUnNndVNrUFA0Yks1OFFDNNIB0AFBVV95cUxOSkprR2ZnNnpVWmdkekNxd2RMbjhBNlRYTnFBNUFJZ014QzUxRXF6UVVjeVJDaWhoSUR4OHVPYjRBN004VnhlNzVVdDFuNUg1VHdjRl81b1NQdXRKMi1VeE1SR1l5UHh6MWpIdmVRcEt1M2MxeXZFVkdFem9mc25ycktTcmw1TjhKNWhjelRfZnM2a0hzcUtSWV8temdTQVRIb1UwU0YwQjFvX002blhPX1drLWs5M2VpTExqVjJXeEtMUmhEdlN5MUtzSXh4d1ZN?oc=5) | simplywall.st |
+| 23h 前 | 0 | 偏空 | [TTM Technologies Inc (TTMI) Shares Fall 3.9% -- GF Value Says St - gurufocus.com](https://news.google.com/rss/articles/CBMirwFBVV95cUxQNVlSUTZmQWtfTDhzdC0zcjZPMTZtZ1VTdXN0LVpIbnhwRnFkdVdqUXpBb2ozbElwcm5abFl6VTZQMVhBRlY3MERDMWdkRjl5LTc3dFpYNm1Xa1RfRUh3SjlOZE1zUEVYOHFZYlg4WVFiVE1BTjhqbHhPaGNkUEdPMFdRX2Y3R2VESFBfa0o0dVp2cG1iRC1Sc3ZqMnh6OHVhMlp6dHFIaVVrUHNwVjg0?oc=5) | gurufocus.com |
+| 28h 前 | 0 | 中性 | [TTMI Jan 2028 110.000 put (TTMI280121P00110000) stock price, news, quote and history - Yahoo Finance UK](https://news.google.com/rss/articles/CBMiZkFVX3lxTFAxcEFnREhnSmEyS1kxOU1hYXFnX1ZQSGZiTVpkbVNhRDk0TWVEZXpFamp2QlFwYVlESkFXRmIwYUlTQmJDTVRrRGZDWmpoWnljT2lvci1DaGdnWERNcWFHb3RtQm9zUQ?oc=5) | Yahoo Finance UK |
+| 31h 前 | 0 | 中性 | [TTMI261218P00240000 Interactive Stock Chart \| TTMI Dec 2026 240.000 put Stock - Yahoo Finance - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMiZEFVX3lxTE9HMEhwODNqNWFMQTNFSkF3MlRlZDdXRWc5SVRGMXFhWU5zNkdYRkNjU05fX0MwTEtuZ3Q2U1RoZDd4MlVxUEFYYWt1WkwxNktKUU13UzdaTWxCVzJPcEd1OXFnWU0?oc=5) | Yahoo! Finance Canada |
+
+_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+
+## 五、反方观点与风险
+
+_以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
+
+- 图形上是跌破 200 日线——现价距 20 日 121.36（+1.2%）、50 日 124.16（-1.1%）、200 日 124.46（-1.3%）。本报告的买入规则本身会过滤掉这种形态。
+- 自由现金流为负（-$1,944.24万），意味着经营本身在消耗现金，未来可能需要再融资摊薄。
+- 政策面对该板块的倾向为 -0.96（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+
+## 六、原始数据（本页所有计算的来源）
+
+最近 15 个交易日的 OHLCV：
+
+| 日期 | 开 | 高 | 低 | 收 | 涨跌 | 成交量 |
+|---|---:|---:|---:|---:|---:|---:|
+| 2026-09-09 | 129.75 | 131.37 | 123.81 | **124.25** | -3.9% | 1,577,100 |
+| 2026-09-10 | 121.94 | 125.51 | 119.69 | **122.34** | -1.5% | 1,317,200 |
+| 2026-09-11 | 127.24 | 128.85 | 124.33 | **126.44** | +3.4% | 1,353,300 |
+| 2026-09-14 | 117.61 | 120.54 | 112.83 | **113.22** | -10.5% | 2,635,400 |
+| 2026-09-15 | 115.83 | 116.47 | 109.94 | **112.46** | -0.7% | 1,586,200 |
+| 2026-09-16 | 114.92 | 116.75 | 111.48 | **114.00** | +1.4% | 1,357,500 |
+| 2026-09-17 | 117.60 | 120.70 | 114.10 | **114.77** | +0.7% | 1,383,900 |
+| 2026-09-18 | 116.24 | 118.59 | 114.34 | **117.97** | +2.8% | 2,741,300 |
+| 2026-09-21 | 122.05 | 127.21 | 118.88 | **124.02** | +5.1% | 2,068,700 |
+| 2026-09-22 | 124.02 | 128.66 | 121.83 | **127.47** | +2.8% | 2,837,800 |
+| 2026-09-23 | 126.97 | 128.57 | 123.00 | **125.82** | -1.3% | 1,322,800 |
+| 2026-09-24 | 121.34 | 128.88 | 119.44 | **126.98** | +0.9% | 1,810,800 |
+| 2026-09-25 | 130.02 | 131.32 | 126.69 | **129.17** | +1.7% | 1,639,700 |
+| 2026-09-28 | 127.50 | 128.30 | 119.02 | **124.19** | -3.9% | 1,824,600 |
+| 2026-09-29 | 127.98 | 127.98 | 120.12 | **122.80** | -1.1% | 2,216,313 |
+
+## 七、自己去查（本页不做独立验证）
+
+**行情与图形**
+- [Yahoo Finance 行情](https://finance.yahoo.com/quote/TTMI) — 本报告所有价格与均线的来源，先对这里
+- [TradingView 图表](https://www.tradingview.com/chart/?symbol=TTMI) — 可画线、可换周期，用来复核本页的 ASCII 图
+- [Finviz 快照](https://finviz.com/quote.ashx?t=TTMI) — 一屏看完估值、技术与同业对比
+- [StockCharts 技术面](https://stockcharts.com/h-sc/ui?s=TTMI)
+- [Barchart 观点](https://www.barchart.com/stocks/quotes/TTMI/opinion) — 把十几个技术指标折算成一个多空票数
+
+**财务与估值**
+- [StockAnalysis 财务报表](https://stockanalysis.com/stocks/TTMI/financials/) — 十年利润表/资产负债表/现金流，免费且不用登录
+- [Yahoo 财务](https://finance.yahoo.com/quote/TTMI/financials) — 本页财报数字的来源
+- [Yahoo 关键统计](https://finance.yahoo.com/quote/TTMI/key-statistics) — 估值倍数、利润率、资产负债的完整版
+- [Macrotrends 长期趋势](https://www.macrotrends.net/stocks/charts/TTMI/x/revenue) — 营收与利润的十年折线，看结构性变化
+- [Wisesheets/Koyfin 替代：GuruFocus](https://www.gurufocus.com/stock/TTMI/summary)
+
+**原始文件（无中介）**
+- [SEC EDGAR 全部文件](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&ticker=TTMI&type=&dateb=&owner=include&count=40) — 10-K/10-Q/8-K 原文；财报电话会与风险因素只在这里
+- [SEC 全文检索](https://efts.sec.gov/LATEST/search-index?q=%22TTMI%22&forms=8-K) — 按关键词搜文件正文
+- [OpenInsider 内部人交易](http://openinsider.com/search?q=TTMI) — 高管自己在买还是在卖，是少数不靠解读的信号
+- [13F 机构持仓](https://whalewisdom.com/stock/TTMI) — 注意：13F 滞后 45 天，不能当作买入理由
+
+**消息与预期**
+- [Yahoo 新闻](https://finance.yahoo.com/quote/TTMI/news)
+- [Google News 搜索](https://news.google.com/search?q=TTM+Technologies+stock&hl=en-US)
+- [财报日历与预期](https://stockanalysis.com/stocks/TTMI/forecast/) — 下次财报日、市场一致预期、历史超预期记录
+- [Seeking Alpha 讨论](https://seekingalpha.com/symbol/TTMI) — 观点密度高，但是买方与卖方混杂，当作反方意见读
+- [公司投资者关系](https://www.google.com/search?q=TTM+Technologies+investor+relations) — 财报原始 PPT 与电话会记录
+
+**中文渠道（转载源，不作独立验证）**
+- [雪球](https://xueqiu.com/S/TTMI) — 中文讨论与财报摘要
+- [富途牛牛](https://www.futunn.com/stock/TTMI-US) — 中文行情与公告翻译
+- [东方财富](https://quote.eastmoney.com/us/TTMI.html) — 中文财务报表
+- [同花顺](http://stock.10jqka.com.cn/usstock/TTMI/) — 中文资讯
+
+---
+
+_这一页是一台程序按成文规则读公开数据的结果，不是投资建议。它不知道你的资金、税务和其它持仓。图形结论来自滞后指标，财报数字来自厂商转录，新闻材料度来自关键词打分——三者都会错。把它当作一份整理好的证据，而不是一个答案。_
