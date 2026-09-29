@@ -78,3 +78,13 @@ class TestBuild:
         assert "代码的读数" in page and "../index.html" in page
         data = json.loads(page.split('type="application/json">')[1].split("</script>")[0])
         assert data["stocks"]["AAA"]["stop"] == 90.9 and len(data["stocks"]["AAA"]["close"]) > 100
+
+
+@pytest.mark.unit
+def test_negative_scores_keep_their_sign_in_either_minus():
+    md = ("| 排名 | 代码 | 我的分 | 参考分 | 入场 | 止损 | 目标 | R | 财报 | 一句话 |\n|---:|---|---:|---:|---:|---:|---:|---:|---|---|\n"
+          "| 1 | AAA | −12 | −20 | 50.0 | 48.0 | 60.0 | 5.0 | — | x |\n\n"
+          "- **NKE −63 分**：200 日线之下。\n- **HD -56 分**、**MCD −46 分**：同上。\n- **UP 70 分**：好。\n")
+    got = site.my_scores(md)
+    assert got["AAA"][0] == -12 and got["AAA"][1] == 50.0
+    assert got["NKE"][0] == -63 and got["HD"][0] == -56 and got["UP"][0] == 70

@@ -51,17 +51,26 @@ def _num(v, d=2):
 
 
 def my_scores(final_md: str) -> dict:
-    """The ranking table Claude wrote: symbol → (score, entry, stop, target, r)."""
+    """The ranking table Claude wrote: symbol → (score, entry, stop, target, r).
+
+    A score may be negative, and the minus may be ASCII or the typographic
+    U+2212 the reports use; both read as a negative number.
+    """
     out = {}
-    for m in re.finditer(r"^\|\s*\d+\s*\|\s*([A-Z][A-Z.-]*)\s*\|\s*(\d+)\s*\|\s*\d+\s*\|\s*([\d.,]+|[^|]*?)\s*\|\s*([\d.,]+|[^|]*?)\s*\|\s*([\d.,]+|[^|]*?)\s*\|\s*([\d.]+|[^|]*?)\s*\|", final_md, re.M):
-        def f(x):
-            try:
-                return float(x.replace(",", ""))
-            except ValueError:
-                return None
-        out[m.group(1)] = (int(m.group(2)), f(m.group(3)), f(m.group(4)), f(m.group(5)), f(m.group(6)))
-    for m in re.finditer(r"^\s*[-*]\s+\*\*([A-Z][A-Z.-]*)[^*]*?(\d+)\s*分", final_md, re.M):
-        out.setdefault(m.group(1), (int(m.group(2)), None, None, None, None))
+
+    def num(x):
+        try:
+            return float(x.replace(",", "").replace("−", "-"))
+        except ValueError:
+            return None
+
+    def whole(x):
+        return int(x.replace("−", "-"))
+
+    for m in re.finditer(r"^\|\s*\d+\s*\|\s*([A-Z][A-Z.-]*)\s*\|\s*([-−]?\d+)\s*\|\s*[-−]?\d+\s*\|\s*([\d.,]+|[^|]*?)\s*\|\s*([\d.,]+|[^|]*?)\s*\|\s*([\d.,]+|[^|]*?)\s*\|\s*([\d.]+|[^|]*?)\s*\|", final_md, re.M):
+        out[m.group(1)] = (whole(m.group(2)), num(m.group(3)), num(m.group(4)), num(m.group(5)), num(m.group(6)))
+    for m in re.finditer(r"^\s*[-*]\s+\*\*([A-Z][A-Z.-]*)[^*]*?([-−]?\d+)\s*分", final_md, re.M):
+        out.setdefault(m.group(1), (whole(m.group(2)), None, None, None, None))
     return out
 
 
