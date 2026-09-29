@@ -1,0 +1,14 @@
+{
+"rows": {
+"NKE|2026-09-28": {
+"symbol": "NKE",
+"as_of": "2026-09-28",
+"next_date": "2026-10-01",
+"last_date": "2026-06-30",
+"eps_estimate": 0.13,
+"eps_actual": 0.72,
+"surprise_pct": 466.13,
+"error": ""
+}
+}
+}

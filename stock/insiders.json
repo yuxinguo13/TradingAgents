@@ -1,0 +1,23 @@
+{
+ "NKE": {
+  "symbol": "NKE",
+  "as_of": "2026-09-28",
+  "window_days": 90,
+  "buys": 0,
+  "sells": 8,
+  "buy_value": 0.0,
+  "sell_value": 771333.0,
+  "buyers": [],
+  "sellers": [
+   "Leinwand Robert",
+   "Mccartney Philip",
+   "Alagirisamy Venkatesh",
+   "Montagne Amy",
+   "Friend Matthew"
+  ],
+  "last_buy": "",
+  "last_sell": "2026-09-09",
+  "fetched_at": 1790700902.4287372,
+  "error": ""
+ }
+}

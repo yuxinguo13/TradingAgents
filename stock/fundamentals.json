@@ -1,0 +1,166 @@
+{
+ "NKE": {
+  "symbol": "NKE",
+  "fetched_at": 1790700900.3832986,
+  "name": "NIKE, Inc.",
+  "sector": "Consumer Cyclical",
+  "industry": "Footwear & Accessories",
+  "website": "https://www.nike.com",
+  "market_cap": 52975738880.0,
+  "pe_trailing": 17.004763,
+  "pe_forward": 16.5554,
+  "ps": 1.1417677,
+  "ev_ebitda": 11.361,
+  "peg": 1.4,
+  "eps_trailing": 2.1,
+  "eps_forward": 2.157,
+  "dividend_yield": 0.044792525,
+  "beta": 1.11,
+  "revenue_ttm": 46398001152.0,
+  "revenue_growth": -0.011,
+  "earnings_growth": 4.28,
+  "gross_margin": 0.43245,
+  "operating_margin": 0.12687,
+  "profit_margin": 0.066989996,
+  "roe": 0.22138001,
+  "debt_to_equity": 74.289,
+  "current_ratio": 1.961,
+  "total_cash": 9027000320.0,
+  "total_debt": 11043000320.0,
+  "free_cashflow": 1889250048.0,
+  "target_mean": 45.76667,
+  "target_high": 94.0,
+  "target_low": 23.0,
+  "rating_mean": 2.7619,
+  "analysts": 36.0,
+  "short_pct_float": 0.08979999,
+  "held_institutions": 0.82561994,
+  "quarters": [
+   {
+    "label": "2026-05-31",
+    "revenue": 10972000000.0,
+    "gross": 5393000000.0,
+    "operating": 1311000000.0,
+    "net": 1069000000.0,
+    "eps": 0.72
+   },
+   {
+    "label": "2026-02-28",
+    "revenue": 11279000000.0,
+    "gross": 4530000000.0,
+    "operating": 553000000.0,
+    "net": 520000000.0,
+    "eps": 0.35
+   },
+   {
+    "label": "2025-11-30",
+    "revenue": 12427000000.0,
+    "gross": 5045000000.0,
+    "operating": 1006000000.0,
+    "net": 792000000.0,
+    "eps": 0.53
+   },
+   {
+    "label": "2025-08-31",
+    "revenue": 11720000000.0,
+    "gross": 4943000000.0,
+    "operating": 927000000.0,
+    "net": 727000000.0,
+    "eps": 0.49
+   },
+   {
+    "label": "2025-05-31",
+    "revenue": 11097000000.0,
+    "gross": 4469000000.0,
+    "operating": 321000000.0,
+    "net": 211000000.0,
+    "eps": 0.14
+   }
+  ],
+  "years": [
+   {
+    "label": "2026-05-31",
+    "revenue": 46398000000.0,
+    "gross": 19911000000.0,
+    "operating": 3797000000.0,
+    "net": 3108000000.0,
+    "eps": 2.1
+   },
+   {
+    "label": "2025-05-31",
+    "revenue": 46309000000.0,
+    "gross": 19790000000.0,
+    "operating": 3702000000.0,
+    "net": 3219000000.0,
+    "eps": 2.16
+   },
+   {
+    "label": "2024-05-31",
+    "revenue": 51362000000.0,
+    "gross": 22887000000.0,
+    "operating": 6311000000.0,
+    "net": 5700000000.0,
+    "eps": 3.73
+   },
+   {
+    "label": "2023-05-31",
+    "revenue": 51217000000.0,
+    "gross": 22292000000.0,
+    "operating": 5915000000.0,
+    "net": 5070000000.0,
+    "eps": 3.23
+   }
+  ],
+  "surprises": [
+   {
+    "when": "2026-10-01",
+    "estimate": 0.44,
+    "actual": NaN,
+    "surprise_pct": NaN
+   },
+   {
+    "when": "2026-06-30",
+    "estimate": 0.13,
+    "actual": 0.72,
+    "surprise_pct": 4.6613
+   },
+   {
+    "when": "2026-03-31",
+    "estimate": 0.28,
+    "actual": 0.35,
+    "surprise_pct": 0.24309999999999998
+   },
+   {
+    "when": "2025-12-18",
+    "estimate": 0.38,
+    "actual": 0.53,
+    "surprise_pct": 0.4133
+   },
+   {
+    "when": "2025-09-30",
+    "estimate": 0.27,
+    "actual": 0.49,
+    "surprise_pct": 0.8131999999999999
+   },
+   {
+    "when": "2025-06-26",
+    "estimate": 0.12,
+    "actual": 0.14,
+    "surprise_pct": 0.1418
+   },
+   {
+    "when": "2025-03-20",
+    "estimate": 0.29,
+    "actual": 0.54,
+    "surprise_pct": 0.8552
+   },
+   {
+    "when": "2024-12-19",
+    "estimate": 0.63,
+    "actual": 0.78,
+    "surprise_pct": 0.233
+   }
+  ],
+  "error": ""
+ }
+}
