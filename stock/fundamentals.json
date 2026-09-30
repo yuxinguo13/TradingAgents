@@ -162,5 +162,169 @@
    }
   ],
   "error": ""
+ },
+ "MU": {
+  "symbol": "MU",
+  "fetched_at": 1790790694.8638868,
+  "name": "Micron Technology, Inc.",
+  "sector": "Technology",
+  "industry": "Semiconductors",
+  "website": "https://www.micron.com",
+  "market_cap": 1208202297344.0,
+  "pe_trailing": 24.203167,
+  "pe_forward": 6.6243277,
+  "ps": 13.384584,
+  "ev_ebitda": 17.344,
+  "peg": 0.16,
+  "eps_trailing": 44.2,
+  "eps_forward": 161.49261,
+  "dividend_yield": 0.0004976152,
+  "beta": 2.222,
+  "revenue_ttm": 90273996800.0,
+  "revenue_growth": 3.457,
+  "earnings_growth": 13.685,
+  "gross_margin": 0.72569,
+  "operating_margin": 0.80370003,
+  "profit_margin": 0.55906,
+  "roe": 0.66638,
+  "debt_to_equity": 6.33,
+  "current_ratio": 3.425,
+  "total_cash": 26022000640.0,
+  "total_debt": 6376000000.0,
+  "free_cashflow": 7639499776.0,
+  "target_mean": 1520.7609,
+  "target_high": 2200.0,
+  "target_low": 361.0,
+  "rating_mean": 1.36735,
+  "analysts": 46.0,
+  "short_pct_float": 0.024500001,
+  "held_institutions": 0.79902,
+  "quarters": [
+   {
+    "label": "2026-05-31",
+    "revenue": 41456000000.0,
+    "gross": 35056000000.0,
+    "operating": 33318000000.0,
+    "net": 28243000000.0,
+    "eps": 24.67
+   },
+   {
+    "label": "2026-02-28",
+    "revenue": 23860000000.0,
+    "gross": 17755000000.0,
+    "operating": 16135000000.0,
+    "net": 13785000000.0,
+    "eps": 12.07
+   },
+   {
+    "label": "2025-11-30",
+    "revenue": 13643000000.0,
+    "gross": 7646000000.0,
+    "operating": 6136000000.0,
+    "net": 5240000000.0,
+    "eps": 4.6
+   },
+   {
+    "label": "2025-08-31",
+    "revenue": 11315000000.0,
+    "gross": 5054000000.0,
+    "operating": 3693000000.0,
+    "net": 3201000000.0,
+    "eps": 2.83
+   },
+   {
+    "label": "2025-05-31",
+    "revenue": 9301000000.0,
+    "gross": 3508000000.0,
+    "operating": 2169000000.0,
+    "net": 1885000000.0,
+    "eps": 1.68
+   }
+  ],
+  "years": [
+   {
+    "label": "2025-08-31",
+    "revenue": 37378000000.0,
+    "gross": 14873000000.0,
+    "operating": 9809000000.0,
+    "net": 8539000000.0,
+    "eps": 7.59
+   },
+   {
+    "label": "2024-08-31",
+    "revenue": 25111000000.0,
+    "gross": 5613000000.0,
+    "operating": 1305000000.0,
+    "net": 778000000.0,
+    "eps": 0.7
+   },
+   {
+    "label": "2023-08-31",
+    "revenue": 15540000000.0,
+    "gross": -1416000000.0,
+    "operating": -5405000000.0,
+    "net": -5833000000.0,
+    "eps": -5.34
+   },
+   {
+    "label": "2022-08-31",
+    "revenue": 30758000000.0,
+    "gross": 13898000000.0,
+    "operating": 9709000000.0,
+    "net": 8687000000.0,
+    "eps": 7.75
+   }
+  ],
+  "surprises": [
+   {
+    "when": "2026-09-30",
+    "estimate": 31.82,
+    "actual": NaN,
+    "surprise_pct": NaN
+   },
+   {
+    "when": "2026-06-24",
+    "estimate": 20.69,
+    "actual": 25.11,
+    "surprise_pct": 0.2139
+   },
+   {
+    "when": "2026-03-18",
+    "estimate": 9.16,
+    "actual": 12.2,
+    "surprise_pct": 0.3321
+   },
+   {
+    "when": "2025-12-17",
+    "estimate": 3.96,
+    "actual": 4.78,
+    "surprise_pct": 0.20579999999999998
+   },
+   {
+    "when": "2025-09-23",
+    "estimate": 2.86,
+    "actual": 3.03,
+    "surprise_pct": 0.0594
+   },
+   {
+    "when": "2025-06-25",
+    "estimate": 1.59,
+    "actual": 1.91,
+    "surprise_pct": 0.1975
+   },
+   {
+    "when": "2025-03-20",
+    "estimate": 1.42,
+    "actual": 1.56,
+    "surprise_pct": 0.0949
+   },
+   {
+    "when": "2024-12-18",
+    "estimate": 1.77,
+    "actual": 1.79,
+    "surprise_pct": 0.013600000000000001
+   }
+  ],
+  "error": ""
  }
 }
