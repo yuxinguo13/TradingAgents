@@ -1,0 +1,196 @@
+# GOOGL · 谷歌(A类)（Alphabet）
+
+_通信 · 数据截至 2026-09-30 收盘 → 面向 2026-10-01 开盘_
+
+[← 回到 2026-10-01 当日报告](../2026-10-01.md)
+
+> 趋势向上且结构完整；顺势的一侧在上方，风险在于结构一旦破位就要认。
+
+## 一、价格与图形
+
+```text
+     GOOGL · 近 126 个交易日（日线收盘）
+401 ┤               ╭╮ ╭─╮
+391 ┤              ╭╯╰─╯ ╰─╮╭╮
+380 ┤             ╭╯       ╰╯╰╮                         ╭╮
+370 ┤            ╭╯           ╰╮╭╮  ╭╮······╭╮··╭╮···   ││
+359 ┤            │             ╰╯╰──╯╰─╮  ╭─╯╰──╯│   ···│╰─╮··
+348 ┤          ╭─╯          ·····      ╰──╯      ╰─╮   ╭╯  ╰────╮╭╮╭╮····╭────╮╭╮
+338 ┤      ╭─╮╭╯        ····                       ╰╮ ╭╯        ╰╯╰╯╰────╯::::╰╯╰
+327 ┤     ╭╯ ╰╯      ···                           :│╭╯::::::::::
+317 ┤   ╭─╯      ····                  :::::::::::: ╰╯
+306 ┤··╭╯········              ::::::::
+296 ┤──╯                :::::::
+285 ┤             ::::::
+274 ┤     ::::::::
+264 ┤:::::
+    └────────────────────────────────────────────────────────────────────────────
+     2026-04-01                       2026-07-02                       2026-09-30
+     · SMA50   : SMA200   ─ close
+```
+
+```text
+       GOOGL · 近 21 个交易日（放大看最近节奏）
+355.0 ┤             ╭╮
+351.9 ┤             │╰╮
+348.9 ┤        ╭╮  ╭╯ │
+345.8 ┤        │╰╮╭╯  │
+342.8 ┤  ╭╮    │ ╰╯   │╭──╮╭
+339.8 ┤  │╰─╮ ╭╯      ││  ╰╯
+336.7 ┤ ╭╯  │ │       ╰╯
+333.7 ┤─╯   │╭╯
+330.6 ┤     ╰╯
+      └─────────────────────
+       2026-09-01 2026-09-30
+```
+
+成交量近 63 日： `▃▃▂▂▁▂▆▃▂█▄▃▃▅▅▆▃▂▃▂▁▂▂▂▃▂▂▃▂▂▂▃▂▄▂▂▇▄▅▂▂▃`
+
+### 图形读数
+
+- **均线排列**：均线偏多 — 现价距 20 日 342.49（+0.5%）、50 日 343.79（+0.1%）、200 日 338.22（+1.7%）
+- **形态结构**：上升结构 — 更高的高点 + 更高的低点；前高 349.91 → 364.17（+4.1%）、前低 327.74 → 336.02（+2.5%）
+- **动能**：RSI(14) 50，中性；季线仍为负（-4.7%）但近一月已转正（+1.5%），属于反弹初期而非既成趋势
+- **波动**：日均真实波幅约为价格的 2.6%；按本报告 2 ATR 的止损惯例，一个 R 相当于 5.2% 的价格距离
+- **位置**：距 52 周高点 -14.4%，距 52 周低点 +45.8%
+- **量能**：最新一日成交量为 20 日均量的 1.4 倍，量能正常
+- **相对强度**：近一月跑赢 标普500 1.8 个百分点
+- **支撑 / 阻力**：最近的摆动低点 340.66，摆动高点 344.46（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
+
+**我的读图结论**：趋势向上且结构完整；顺势的一侧在上方，风险在于结构一旦破位就要认
+
+_以上每一条都是对已经发生的价格的描述。均线、RSI、摆动结构全部是滞后指标，它们能说明现在处于什么状态，不能说明下一步。你自己在图上看到的东西，和这里写的不一致时，以你看到的为准——然后去查是哪个数字有问题。_
+
+## 三、财报与基本面
+
+市值 $4.21万亿 · 行业 Communication Services / Internet Content & Information · TTM 营收 $4,458.66亿 · TTM EPS 19.94 · 股息率 0.25% · Beta 1.23 · 空头占流通股 1.5%
+
+- **估值**：TTM 市盈率 17.3 倍；前瞻市盈率 22.8 倍（市场预期未来一年盈利下滑）；市销率 9.4 倍；EV/EBITDA 23.5 倍；PEG 1.22（在 1–2 之间，价格与增长大致匹配）。
+- **增长**：最新季度营收同比 +24.2%；盈利同比 +294.0%；最近 7 次财报里 7 次超预期。
+- **盈利质量**：毛利率 60.9%、营业利润率 34.0%、净利率 54.8%、ROE 48.7%。
+- **资产负债**：现金 $2,424.74亿；有息负债 $1,207.91亿；负债/权益 18.9%（负债很轻）；流动比率 2.72；自由现金流 $226.65亿，为正。
+- **卖方预期**：54 位分析师覆盖；平均评级「强烈买入」（1.38/5，1 为最看多）；目标价均值 429.36（较现价 +24.8%），区间 340.00–515.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
+
+**分季度损益**（季度数据，最新在左）
+
+| 指标 | 2026-06-30 | 2026-03-31 | 2025-12-31 | 2025-09-30 | 2025-06-30 |
+|---|---:|---:|---:|---:|---:|
+| 营收 | $1,197.96亿 | $1,098.96亿 | $1,138.29亿 | $1,023.46亿 | $964.28亿 |
+| 毛利率 | 61.6% | 62.4% | 59.8% | 59.6% | 59.5% |
+| 营业利润率 | 34.0% | 36.1% | 31.6% | 30.5% | 32.4% |
+| 净利率 | 93.7% | 56.9% | 30.3% | 34.2% | 29.2% |
+| 净利润 | $1,121.93亿 | $625.78亿 | $344.55亿 | $349.79亿 | $281.96亿 |
+| 摊薄EPS | 9.11 | 5.11 | 2.82 | 2.87 | 2.31 |
+
+**分年度损益**（年度数据，最新在左）
+
+| 指标 | 2025-12-31 | 2024-12-31 | 2023-12-31 | 2022-12-31 |
+|---|---:|---:|---:|---:|
+| 营收 | $4,028.36亿 | $3,500.18亿 | $3,073.94亿 | $2,828.36亿 |
+| 毛利率 | 59.7% | 58.2% | 56.6% | 55.4% |
+| 营业利润率 | 32.0% | 32.1% | 27.4% | 26.5% |
+| 净利率 | 32.8% | 28.6% | 24.0% | 21.2% |
+| 净利润 | $1,321.70亿 | $1,001.18亿 | $737.95亿 | $599.72亿 |
+| 摊薄EPS | 10.81 | 8.04 | 5.80 | 4.56 |
+
+**财报兑现记录**
+
+| 财报日 | 预期EPS | 实际EPS | 超预期 |
+|---|---:|---:|---:|
+| 2026-10-28 | 3.02 | — | 尚未公布 |
+| 2026-07-22 | 2.90 | 9.11 | +214.2% |
+| 2026-04-29 | 2.67 | 5.11 | +91.6% |
+| 2026-02-04 | 2.64 | 2.82 | +7.0% |
+| 2025-10-29 | 2.26 | 2.87 | +26.9% |
+| 2025-07-23 | 2.19 | 2.31 | +5.7% |
+
+_财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会滞后，TTM 窗口是厂商口径而非公司财年口径。以上任何一个数字如果会改变你的决定，请点开本页下方的 SEC EDGAR 链接看原文。_
+
+**财报日历**：下次财报 **2026-10-28**（约 28 天后）；上次财报 2026-07-22，超预期 +214.2%。财报日是这套止损体系唯一无法覆盖的风险：跳空会直接穿过止损价。
+
+## 四、消息面（过去 24 小时）
+
+| 时间 | 材料度 | 倾向 | 标题 | 来源 |
+|---|---:|---|---|---|
+| 3h 前 | 8 | 偏多 | [Alphabet Rides on Google Services Growth: Can It Beat META & AAPL? - TradingView](https://news.google.com/rss/articles/CBMiugFBVV95cUxOcTJ2Wm5yMUo1WWVhcVpMU3p3b3JabWZ5c00xTmNkWGRObnVJdmh1SVdZZVRJczYxMGtWSVhzd1JGRkk2bFlhTGFiMkdST3FCZm96SF91MmtBdDg1RDA5WEg0UFRfU0IxcXlOc2l6VFZkTURMU1V2M2VwUHk5dzc3MXRLcFI1MjhEMmRzMUtXdUdGdWE3bVJLN3N6NFFabFp1ZlJYWHVtYnljNGJZZVNleE94SDk2a2o4VGc?oc=5) | TradingView |
+| 20h 前 | 7 | 中性 | [Alphabet (GOOG) CEO Sundar Pichai receives 3,671 shares as stock awards vest. - Stock Titan](https://news.google.com/rss/articles/CBMiqgFBVV95cUxOdTI5SjdoUXI1UXhQRzBLUWllRWF1NDJQQ0dfSndHVjl6Q253YjdINWl0U2hBTlNaeTZzZDlaSUNkM3lDekEzeS1hajFIOTVscG9JbXMzdXRuV2VVdnVSZjRBUXV3YThpbXZqYzdiUTlZMVc1RFVCaHBBN1l5TWNtY283ZXdhNnNPRGtaUnllcmw4UFVhWThwMmxtMUplQXJmVE03Tk56Nm45UQ?oc=5) | Stock Titan |
+| 42h 前 | 6 | 中性 | [Meta Hasn't Split Its Stock Since Its IPO. Would a Stock Split Get It Into the Dow? - The Motley Fool](https://news.google.com/rss/articles/CBMiwgFBVV95cUxQZHFGejhqUnI2aUlWeWNiNTJaTWpURUlBWC1ONzZhTDhfV25vYzJRX0dNQzNoV01tN1hWQ0FBZXRiTzRPemdNVWduNXZlQWRXSWg3M0lNY3l4SWFIZ0RfWVp4RlhXamx2eHVvdTZHcm9qUi1abHFGQ0I5RTJEMEhLWGdhc2Z2ZXZsQ2M1NjA0Yk9zOHlQX0VweUoyU25WQkphV0NFcmRCcFhMaDVZd1ZqX1JVbVFmeWZ1MzZERjVmanU1UQ?oc=5) | The Motley Fool |
+| 23h 前 | 5 | 偏多 | [Anthropic Just Revealed a $518 Billion AI Spending Plan. Here Are the Stocks That Could Win. - The Motley Fool](https://news.google.com/rss/articles/CBMizAFBVV95cUxORnpvS2htM0pxb0RXc29oWTlXT0JGamM3elNoNVdJVUlNUWZuYUZZQWVVTVpsWThNVlB6SUlQWGhxd2hlMDljeEtvd3RiTUJjanhwR2VEeG1LTzNfMUpqc0FDTUY3X05pSTNWRWV3NVFRR0wxX3VzSXFyUGdYUi1wLVdiUXI4SG9EVlktUS1lZHR6ZGZBRHJSTjI3UGNJMkNTMFVCWkNCaXpiV3JPYW41NUV6bV9RNzRGNDRndUp6WlRvU3RBLU8wUW84cTY?oc=5) | The Motley Fool |
+| 29h 前 | 5 | 中性 | [Alphabet stock seen rising 64% as cloud and AI growth outpace rivals, with $559 price target. - Pluang](https://news.google.com/rss/articles/CBMipAFBVV95cUxPUUFmbXB2QjFKYjVCay1GM3Rya09VSWZmbGN3QkdEcm9ET21CeWVCY3JQTmRQVklHMmNHalNkY0ZDSG9TZFpaVUxTUnJwMWZnWjI0XzhXUXFuRUVHS2QtRTJrc2Y4dnZxRnhPRWptNmM1MnpWeWpmdmhSNTJmaG9ueW4wT2lnOVQ1My1FN3VPV1I5LXF5NnIyeFZrVjh0OUg3S2dqQQ?oc=5) | Pluang |
+| 0h 前 | 0 | 中性 | [Alphabet (GOOG) director Frances Arnold plans to sell 83 shares around September 30, 2026. - Stock Titan](https://news.google.com/rss/articles/CBMikwFBVV95cUxOSFE2R3pYazlVQ3hQb2tMT2tnVGxPQkxLaTNiMXZDZ05JdTRFclg3akZTQVNkbHRaZzlMbUVsY21xdVNsNE1rbzJfNVdhVE8tc2RPaFI3TEpDZ2lqajRBSUtPS3Izc1I1RjN4cE5yWC1TOU1JWkFQQXdqMkRyaG5qcnhYeHBUTkRVZ3F3cFpHblQwTHc?oc=5) | Stock Titan |
+| 0h 前 | 0 | 中性 | [Alphabet stock slips on report of internal doubts over Gemini 4 - Investing.com](https://news.google.com/rss/articles/CBMivAFBVV95cUxQTjFqOWw4YkJZd2d0aVhjR01NM290X1YzQnNEdDRMUVA2QzZNZnlCRGV6ODJiRm9HN0lNQUpiajdYaXU2ZnpiRGFSWkZtM2hUdEFGNktfejBBbkRiRHoxN2ZGejgxNjNNUF9na2dFRnpweUZGRk8xZ1MxSkhfRU1sQnRNRTdCZGJMZEtweDB0cUpjczBpcTZOOHFqX3NObXVHblRpNmR2RUV3OUdxa1JRTHYxTkxYZWIxQ2xwbA?oc=5) | Investing.com |
+| 1h 前 | 0 | 中性 | [Alphabet vs. Meta Platforms: Which Media Stock Is a Better Buy in 2026? - The Motley Fool](https://news.google.com/rss/articles/CBMivgFBVV95cUxOUm83SlVyLS1iUGU4cVg5X1gybVMwQml2dkRQd3RBXzRadTZoMC1rS3dJZTNaSFVIYldGVmhFSzdsTjlaUkduaGs2MHNjNDRkVG5lZ1phUUF0eWVxQWJaYVV2SWZFWUdoVHByWUZ0VWN1SjFIOVdjamhxT2dKWlBTOU4tc1NkbEVreTRzdnNEdm8yVWZWay13US1zSi1qaWRDMV9hREpCZ3kxM2ZSbmdYV191NF9Razl4bFFWQXFR?oc=5) | The Motley Fool |
+| 1h 前 | 0 | 偏多 | [Options traders place bullish bets on Alphabet and Microsoft amid strong economic data. - Pluang](https://news.google.com/rss/articles/CBMingFBVV95cUxPNzlnQWU5SGQ1eEI5YkdWc3VuMXkzWGEtRGNGT21OOVE5Rk10ZFlsV042MGZwb3JieGQ2bkJoX0dvOVVKWmM2Ylh4MHZfc0Z0TTh6V2tLZUNaVHA0bEtjem5oLUhXak1lWGUyNW5EY1o1RXBkQWNxUEk1U1BkTHJUaWhOUjhGdHBGaGx4S1oxelVUV3lYQ3JvUEFhYjdfQQ?oc=5) | Pluang |
+| 3h 前 | 0 | 偏多 | [Stock Market Indexes Rally on Inflation Data, Though the Dow Sat It Out - The Motley Fool](https://news.google.com/rss/articles/CBMiswFBVV95cUxQZUQ3Wk1rakpOTjd4NGx6RFNpX043YUlBNDh1MXhxWS1nVHVvZHlyMjJ4eVBhZVRxSFZ1WVdDa2lGeDRkLVd3TDhRbm5QcFFFNklkbHFObmVSaVJVNjU3X3RCcVd3YTR1VnB3aU1EVW9FdjFpMGdGamNZVzAtek1iaDV1eWZRVUtneGMwNFRDNTRyLTdSOUdRTmpDTkNPVF93bF9vTnljcGpOR0ZrUlN6X3dtRQ?oc=5) | The Motley Fool |
+| 4h 前 | 0 | 中性 | [Alphabet rallies 3% as White House AI safety ac... - Pluang](https://news.google.com/rss/articles/CBMirAFBVV95cUxPRHpMWlMxY1Z0MzgyWkprRkxNR2dTVjBrZTdLdzR5VURaU09qSDYtT0RSMl85SDdtV1JXRVJINUI5MEVUWGhzeWltWDFJUzV6UWQxZDZ0Y0g3ZnlWSVRacmdWd2pzeTNpaXZrYVl6QU9oV3UxYWpnMVhoalRKazRHd0RzWGZQVURKbF9pNGpDTzRBZncyTVU3ck1CaldoeVEzOU1Yd3Mtc3lwSHVP?oc=5) | Pluang |
+| 4h 前 | 0 | 中性 | [Alphabet shares rise as softer inflation sentiment adds to ongoing AI optimism - Quiver Quantitative](https://news.google.com/rss/articles/CBMisAFBVV95cUxPZUFsdlNFU01yemQxaWJqZWIxTml4R0VfWnl5eHhyczliZDY1RXh4Vlc1Y3dSTEdlTjF2NmhjVU9mdmVNZ0lVXzY3OC02SjNGLXpQcC1PSmx5T1R1X3BmWUt2UHVYQUxmVGQ5SWIwSUNIZmhyQUdoQUFpa0dPSDgwU2RJZGIxY1pZQWtPX2dsS1dFNThVc2dHd1lKTjRFZnFXYVNhRVFtM2dvbWdTOXFEMQ?oc=5) | Quiver Quantitative |
+
+_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+
+## 五、反方观点与风险
+
+_以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
+
+- 下次财报在 28 天后，落在持有期内。财报跳空会直接穿过止损——那一晚的风险不是 1R，是没有上限的。
+- 政策面对该板块的倾向为 -0.43（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+
+## 六、原始数据（本页所有计算的来源）
+
+最近 15 个交易日的 OHLCV：
+
+| 日期 | 开 | 高 | 低 | 收 | 涨跌 | 成交量 |
+|---|---:|---:|---:|---:|---:|---:|
+| 2026-09-10 | 328.23 | 333.23 | 327.74 | **332.60** | +0.6% | 23,557,600 |
+| 2026-09-11 | 335.03 | 342.98 | 335.03 | **338.50** | +1.8% | 24,708,300 |
+| 2026-09-14 | 343.12 | 349.91 | 342.14 | **349.39** | +3.2% | 35,905,400 |
+| 2026-09-15 | 346.80 | 348.07 | 342.70 | **344.98** | -1.3% | 21,928,600 |
+| 2026-09-16 | 347.08 | 348.40 | 340.64 | **342.87** | -0.6% | 18,928,900 |
+| 2026-09-17 | 348.68 | 349.50 | 343.89 | **347.33** | +1.3% | 19,238,400 |
+| 2026-09-18 | 357.31 | 359.44 | 348.45 | **349.54** | +0.6% | 47,631,800 |
+| 2026-09-21 | 350.64 | 357.61 | 349.10 | **354.97** | +1.6% | 30,455,400 |
+| 2026-09-22 | 357.65 | 364.17 | 350.22 | **351.16** | -1.1% | 29,788,600 |
+| 2026-09-23 | 349.86 | 350.00 | 337.45 | **337.83** | -3.8% | 35,576,200 |
+| 2026-09-24 | 336.22 | 343.09 | 336.02 | **342.36** | +1.3% | 23,777,200 |
+| 2026-09-25 | 342.35 | 347.03 | 341.11 | **343.92** | +0.5% | 21,880,800 |
+| 2026-09-28 | 340.70 | 343.59 | 339.56 | **342.75** | -0.3% | 19,318,300 |
+| 2026-09-29 | 341.95 | 342.84 | 338.02 | **340.92** | -0.5% | 21,066,900 |
+| 2026-09-30 | 344.21 | 352.60 | 341.00 | **344.08** | +0.9% | 35,561,587 |
+
+## 七、自己去查（本页不做独立验证）
+
+**行情与图形**
+- [Yahoo Finance 行情](https://finance.yahoo.com/quote/GOOGL) — 本报告所有价格与均线的来源，先对这里
+- [TradingView 图表](https://www.tradingview.com/chart/?symbol=GOOGL) — 可画线、可换周期，用来复核本页的 ASCII 图
+- [Finviz 快照](https://finviz.com/quote.ashx?t=GOOGL) — 一屏看完估值、技术与同业对比
+- [StockCharts 技术面](https://stockcharts.com/h-sc/ui?s=GOOGL)
+- [Barchart 观点](https://www.barchart.com/stocks/quotes/GOOGL/opinion) — 把十几个技术指标折算成一个多空票数
+
+**财务与估值**
+- [StockAnalysis 财务报表](https://stockanalysis.com/stocks/GOOGL/financials/) — 十年利润表/资产负债表/现金流，免费且不用登录
+- [Yahoo 财务](https://finance.yahoo.com/quote/GOOGL/financials) — 本页财报数字的来源
+- [Yahoo 关键统计](https://finance.yahoo.com/quote/GOOGL/key-statistics) — 估值倍数、利润率、资产负债的完整版
+- [Macrotrends 长期趋势](https://www.macrotrends.net/stocks/charts/GOOGL/x/revenue) — 营收与利润的十年折线，看结构性变化
+- [Wisesheets/Koyfin 替代：GuruFocus](https://www.gurufocus.com/stock/GOOGL/summary)
+
+**原始文件（无中介）**
+- [SEC EDGAR 全部文件](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&ticker=GOOGL&type=&dateb=&owner=include&count=40) — 10-K/10-Q/8-K 原文；财报电话会与风险因素只在这里
+- [SEC 全文检索](https://efts.sec.gov/LATEST/search-index?q=%22GOOGL%22&forms=8-K) — 按关键词搜文件正文
+- [OpenInsider 内部人交易](http://openinsider.com/search?q=GOOGL) — 高管自己在买还是在卖，是少数不靠解读的信号
+- [13F 机构持仓](https://whalewisdom.com/stock/GOOGL) — 注意：13F 滞后 45 天，不能当作买入理由
+
+**消息与预期**
+- [Yahoo 新闻](https://finance.yahoo.com/quote/GOOGL/news)
+- [Google News 搜索](https://news.google.com/search?q=Alphabet+stock&hl=en-US)
+- [财报日历与预期](https://stockanalysis.com/stocks/GOOGL/forecast/) — 下次财报日、市场一致预期、历史超预期记录
+- [Seeking Alpha 讨论](https://seekingalpha.com/symbol/GOOGL) — 观点密度高，但是买方与卖方混杂，当作反方意见读
+- [公司投资者关系](https://www.google.com/search?q=Alphabet+investor+relations) — 财报原始 PPT 与电话会记录
+
+**中文渠道（转载源，不作独立验证）**
+- [雪球](https://xueqiu.com/S/GOOGL) — 中文讨论与财报摘要
+- [富途牛牛](https://www.futunn.com/stock/GOOGL-US) — 中文行情与公告翻译
+- [东方财富](https://quote.eastmoney.com/us/GOOGL.html) — 中文财务报表
+- [同花顺](http://stock.10jqka.com.cn/usstock/GOOGL/) — 中文资讯
+
+---
+
+_这一页是一台程序按成文规则读公开数据的结果，不是投资建议。它不知道你的资金、税务和其它持仓。图形结论来自滞后指标，财报数字来自厂商转录，新闻材料度来自关键词打分——三者都会错。把它当作一份整理好的证据，而不是一个答案。_

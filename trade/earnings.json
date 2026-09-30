@@ -20,54 +20,24 @@
 "surprise_pct": 18.51,
 "error": ""
 },
-"SNDK|2026-09-30": {
-"symbol": "SNDK",
+"SHEL|2026-09-30": {
+"symbol": "SHEL",
 "as_of": "2026-09-30",
 "next_date": "2026-10-29",
-"last_date": "2026-08-05",
-"eps_estimate": 34.52,
-"eps_actual": 39.25,
-"surprise_pct": 13.72,
+"last_date": "2026-07-30",
+"eps_estimate": 3.18,
+"eps_actual": 3.52,
+"surprise_pct": 10.63,
 "error": ""
 },
-"LRCX|2026-09-30": {
-"symbol": "LRCX",
+"PLTR|2026-09-30": {
+"symbol": "PLTR",
 "as_of": "2026-09-30",
-"next_date": "2026-10-21",
-"last_date": "2026-07-29",
-"eps_estimate": 1.68,
-"eps_actual": 1.82,
-"surprise_pct": 8.1,
-"error": ""
-},
-"AMAT|2026-09-30": {
-"symbol": "AMAT",
-"as_of": "2026-09-30",
-"next_date": "2026-11-12",
-"last_date": "2026-08-13",
-"eps_estimate": 3.39,
-"eps_actual": 3.5,
-"surprise_pct": 3.11,
-"error": ""
-},
-"KLAC|2026-09-30": {
-"symbol": "KLAC",
-"as_of": "2026-09-30",
-"next_date": "2026-10-28",
-"last_date": "2026-07-28",
-"eps_estimate": 1.0,
-"eps_actual": 1.05,
-"surprise_pct": 5.14,
-"error": ""
-},
-"NVDA|2026-09-30": {
-"symbol": "NVDA",
-"as_of": "2026-09-30",
-"next_date": "2026-11-17",
-"last_date": "2026-08-26",
-"eps_estimate": 2.09,
-"eps_actual": 2.22,
-"surprise_pct": 6.16,
+"next_date": "2026-11-02",
+"last_date": "2026-08-03",
+"eps_estimate": 0.35,
+"eps_actual": 0.41,
+"surprise_pct": 18.51,
 "error": ""
 }
 }
