@@ -1,15 +1,15 @@
 {
- "cash": 14472.54,
- "note": "三个 Schwab 账户合并：PCRA Trust A（TTMI 25、VST 15，现金 6462.78）、PCRA Trust B（AXTI 1、AVGO 7、LLY 2、MRVL 5、TXN 5、TTMI 10、QQQM 39.04，现金 5705.14）、HSA（PFE 2、SHEL 2，现金 2304.62）。成本未提供，按 2026-09-28 盘中价填。 退休/HSA 账户，长线规则（horizon=long）。",
+ "cash": 17627.36,
+ "note": "三个 Schwab 账户合并，按 2026-09-30 09:47 ET 截图：PCRA Trust A（TTMI 30、VST 25，现金 4439.98）、PCRA Trust B（AXTI 1、AVGO 7、LLY 2、MRVL 5、TXN 5、TTMI 15、QQQM 20，现金 10882.76）、HSA（PFE 2、SHEL 2，现金 2304.62）。9/30 前一个遗忘的挂单卖掉了 QQQM 19.04 股；TTMI +10、VST +10 为近日买入，成本按买入日价近似。退休/HSA 账户，长线规则（horizon=long）。",
  "holdings": [
   {
    "symbol": "TTMI",
-   "shares": 35,
+   "shares": 45,
    "cost": 120.72
   },
   {
    "symbol": "VST",
-   "shares": 15,
+   "shares": 25,
    "cost": 137.74
   },
   {
@@ -39,7 +39,7 @@
   },
   {
    "symbol": "QQQM",
-   "shares": 39.04,
+   "shares": 20,
    "cost": 303.47,
    "kind": "index"
   },
