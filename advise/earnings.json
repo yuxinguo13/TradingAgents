@@ -1,105 +1,5 @@
 {
 "rows": {
-"TTMI|2026-09-28": {
-"symbol": "TTMI",
-"as_of": "2026-09-28",
-"next_date": "2026-11-04",
-"last_date": "2026-08-05",
-"eps_estimate": 0.9,
-"eps_actual": 0.99,
-"surprise_pct": 10.31,
-"error": ""
-},
-"VST|2026-09-28": {
-"symbol": "VST",
-"as_of": "2026-09-28",
-"next_date": "2026-11-05",
-"last_date": "2026-08-10",
-"eps_estimate": 1.63,
-"eps_actual": 0.76,
-"surprise_pct": -53.4,
-"error": ""
-},
-"AXTI|2026-09-28": {
-"symbol": "AXTI",
-"as_of": "2026-09-28",
-"next_date": "2026-10-29",
-"last_date": "2026-07-30",
-"eps_estimate": 0.07,
-"eps_actual": 0.19,
-"surprise_pct": 163.89,
-"error": ""
-},
-"AVGO|2026-09-28": {
-"symbol": "AVGO",
-"as_of": "2026-09-28",
-"next_date": "2026-12-09",
-"last_date": "2026-09-02",
-"eps_estimate": 3.24,
-"eps_actual": NaN,
-"surprise_pct": NaN,
-"error": ""
-},
-"LLY|2026-09-28": {
-"symbol": "LLY",
-"as_of": "2026-09-28",
-"next_date": "2026-10-29",
-"last_date": "2026-08-05",
-"eps_estimate": 6.58,
-"eps_actual": 8.38,
-"surprise_pct": 27.27,
-"error": ""
-},
-"MRVL|2026-09-28": {
-"symbol": "MRVL",
-"as_of": "2026-09-28",
-"next_date": "2026-12-01",
-"last_date": "2026-08-27",
-"eps_estimate": 0.93,
-"eps_actual": 0.94,
-"surprise_pct": 0.99,
-"error": ""
-},
-"TXN|2026-09-28": {
-"symbol": "TXN",
-"as_of": "2026-09-28",
-"next_date": "2026-10-27",
-"last_date": "2026-07-22",
-"eps_estimate": 1.94,
-"eps_actual": 2.14,
-"surprise_pct": 10.48,
-"error": ""
-},
-"QQQM|2026-09-28": {
-"symbol": "QQQM",
-"as_of": "2026-09-28",
-"next_date": "",
-"last_date": "",
-"eps_estimate": NaN,
-"eps_actual": NaN,
-"surprise_pct": NaN,
-"error": "no earnings calendar"
-},
-"PFE|2026-09-28": {
-"symbol": "PFE",
-"as_of": "2026-09-28",
-"next_date": "2026-11-03",
-"last_date": "2026-08-04",
-"eps_estimate": 0.68,
-"eps_actual": 0.77,
-"surprise_pct": 12.87,
-"error": ""
-},
-"SHEL|2026-09-28": {
-"symbol": "SHEL",
-"as_of": "2026-09-28",
-"next_date": "2026-10-29",
-"last_date": "2026-07-30",
-"eps_estimate": 3.18,
-"eps_actual": 3.52,
-"surprise_pct": 10.63,
-"error": ""
-},
 "TTMI|2026-09-29": {
 "symbol": "TTMI",
 "as_of": "2026-09-29",
@@ -193,6 +93,106 @@
 "SHEL|2026-09-29": {
 "symbol": "SHEL",
 "as_of": "2026-09-29",
+"next_date": "2026-10-29",
+"last_date": "2026-07-30",
+"eps_estimate": 3.18,
+"eps_actual": 3.52,
+"surprise_pct": 10.63,
+"error": ""
+},
+"TTMI|2026-09-30": {
+"symbol": "TTMI",
+"as_of": "2026-09-30",
+"next_date": "2026-11-04",
+"last_date": "2026-08-05",
+"eps_estimate": 0.9,
+"eps_actual": 0.99,
+"surprise_pct": 10.31,
+"error": ""
+},
+"VST|2026-09-30": {
+"symbol": "VST",
+"as_of": "2026-09-30",
+"next_date": "2026-11-06",
+"last_date": "2026-08-10",
+"eps_estimate": 1.63,
+"eps_actual": 0.76,
+"surprise_pct": -53.4,
+"error": ""
+},
+"AXTI|2026-09-30": {
+"symbol": "AXTI",
+"as_of": "2026-09-30",
+"next_date": "2026-10-29",
+"last_date": "2026-07-30",
+"eps_estimate": 0.07,
+"eps_actual": 0.19,
+"surprise_pct": 163.89,
+"error": ""
+},
+"AVGO|2026-09-30": {
+"symbol": "AVGO",
+"as_of": "2026-09-30",
+"next_date": "2026-12-09",
+"last_date": "2026-09-02",
+"eps_estimate": 3.24,
+"eps_actual": NaN,
+"surprise_pct": NaN,
+"error": ""
+},
+"LLY|2026-09-30": {
+"symbol": "LLY",
+"as_of": "2026-09-30",
+"next_date": "2026-10-29",
+"last_date": "2026-08-05",
+"eps_estimate": 6.58,
+"eps_actual": 8.38,
+"surprise_pct": 27.27,
+"error": ""
+},
+"MRVL|2026-09-30": {
+"symbol": "MRVL",
+"as_of": "2026-09-30",
+"next_date": "2026-12-01",
+"last_date": "2026-08-27",
+"eps_estimate": 0.93,
+"eps_actual": 0.94,
+"surprise_pct": 0.99,
+"error": ""
+},
+"TXN|2026-09-30": {
+"symbol": "TXN",
+"as_of": "2026-09-30",
+"next_date": "2026-10-27",
+"last_date": "2026-07-22",
+"eps_estimate": 1.94,
+"eps_actual": 2.14,
+"surprise_pct": 10.48,
+"error": ""
+},
+"QQQM|2026-09-30": {
+"symbol": "QQQM",
+"as_of": "2026-09-30",
+"next_date": "",
+"last_date": "",
+"eps_estimate": NaN,
+"eps_actual": NaN,
+"surprise_pct": NaN,
+"error": "no earnings calendar"
+},
+"PFE|2026-09-30": {
+"symbol": "PFE",
+"as_of": "2026-09-30",
+"next_date": "2026-11-03",
+"last_date": "2026-08-04",
+"eps_estimate": 0.68,
+"eps_actual": 0.77,
+"surprise_pct": 12.87,
+"error": ""
+},
+"SHEL|2026-09-30": {
+"symbol": "SHEL",
+"as_of": "2026-09-30",
 "next_date": "2026-10-29",
 "last_date": "2026-07-30",
 "eps_estimate": 3.18,
