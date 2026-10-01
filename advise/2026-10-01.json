@@ -1,0 +1,329 @@
+{
+ "date": "2026-10-01",
+ "data_date": "2026-10-01",
+ "generated_at": "2026-10-01T20:51:31.395678",
+ "source": "/root/.tradingagents/desk/advise/my_portfolio.json",
+ "horizon": "long",
+ "total": 40706.41012130737,
+ "cash": 17627.36,
+ "cash_pct": 0.4330364664304586,
+ "lines": [
+  {
+   "symbol": "AVGO",
+   "name": "Broadcom Inc.",
+   "sector": "Technology",
+   "shares": 7.0,
+   "cost": 350.63,
+   "price": 343.6400146484375,
+   "value": 2405.4801025390625,
+   "weight": 0.05909339819872589,
+   "pnl_pct": -0.01993550281368539,
+   "action": "减仓",
+   "act_shares": 3,
+   "urgent": true,
+   "reasons": [
+    "近两天有重大利空：Broadcom (NASDAQ:AVGO) Stock Falls 1.1% - Time to Sell? - MarketBeat"
+   ],
+   "cautions": [
+    "政策面对该板块不利（倾向 -0.96）"
+   ],
+   "stop": 292.93612817382814,
+   "target": NaN,
+   "earnings_date": "2026-12-09",
+   "earnings_in": 69.0,
+   "verdict": "趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌",
+   "spark": "▄▆▅▄▅▅▄▅██▇▆▃▃▃▃▃▃▃▁▂▃▂▂",
+   "page": "2026-10-01/AVGO.md",
+   "is_index": false
+  },
+  {
+   "symbol": "TXN",
+   "name": "Texas Instruments Incorporated",
+   "sector": "Technology",
+   "shares": 5.0,
+   "cost": 276.94,
+   "price": 281.30999755859375,
+   "value": 1406.5499877929688,
+   "weight": 0.03455352568800273,
+   "pnl_pct": 0.015779582431550976,
+   "action": "加仓",
+   "act_shares": 7,
+   "urgent": false,
+   "reasons": [
+    "趋势完好且回调到均线附近（270.19），仓位只占 3.5%，可以补"
+   ],
+   "cautions": [
+    "政策面对该板块不利（倾向 -0.96）"
+   ],
+   "stop": 197.26302526855468,
+   "target": 313.0,
+   "earnings_date": "2026-10-21",
+   "earnings_in": 20.0,
+   "verdict": "均线与结构互相矛盾，属于震荡；这种形态里止损容易被扫，仓位应比顺势时更小",
+   "spark": "▇█▇▆▆▅▄▄▅▅▄▄▃▂▂▁▁▂▂▂▂▃▄▅",
+   "page": "2026-10-01/TXN.md",
+   "is_index": false
+  },
+  {
+   "symbol": "PFE",
+   "name": "Pfizer Inc.",
+   "sector": "Healthcare",
+   "shares": 2.0,
+   "cost": 28.675,
+   "price": 28.1200008392334,
+   "value": 56.2400016784668,
+   "weight": 0.001381600625328258,
+   "pnl_pct": -0.019354809442601595,
+   "action": "加仓",
+   "act_shares": 72,
+   "urgent": false,
+   "reasons": [
+    "趋势完好且回调到均线附近（27.26），仓位只占 0.1%，可以补"
+   ],
+   "cautions": [
+    "政策面对该板块不利（倾向 -0.46）"
+   ],
+   "stop": 20.633239921569825,
+   "target": 29.81,
+   "earnings_date": "2026-11-03",
+   "earnings_in": 33.0,
+   "verdict": "趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌",
+   "spark": "▁▁▂▂▂▂▃▃▄▅▅▅▇▇▇▇█▇▆▆▆▇█▇",
+   "page": "2026-10-01/PFE.md",
+   "is_index": false
+  },
+  {
+   "symbol": "QQQM",
+   "name": "Invesco NASDAQ 100 ETF",
+   "sector": "Unknown",
+   "shares": 20.0,
+   "cost": 303.47,
+   "price": 305.57000732421875,
+   "value": 6111.400146484375,
+   "weight": 0.15013360618811783,
+   "pnl_pct": 0.006919983274190855,
+   "action": "持有",
+   "act_shares": 0,
+   "urgent": false,
+   "reasons": [
+    "趋势向上且结构完整，且贴近 52 周高点——追高的代价是止损离得远；顺势的一侧在上方，风险在于结构一旦破位就要认"
+   ],
+   "cautions": [],
+   "stop": 219.52682434082033,
+   "target": 314.74,
+   "earnings_date": "",
+   "earnings_in": NaN,
+   "verdict": "趋势向上且结构完整，且贴近 52 周高点——追高的代价是止损离得远；顺势的一侧在上方，风险在于结构一旦破位就要认",
+   "spark": "▅▆▅▄▄▂▁▃▆▆▆▇▅▅▅▅▅▅▅▄▆███",
+   "page": "2026-10-01/QQQM.md",
+   "is_index": true
+  },
+  {
+   "symbol": "TTMI",
+   "name": "TTM Technologies, Inc.",
+   "sector": "Technology",
+   "shares": 45.0,
+   "cost": 120.72,
+   "price": 126.5,
+   "value": 5692.5,
+   "weight": 0.13984284005973585,
+   "pnl_pct": 0.04787939032471833,
+   "action": "持有",
+   "act_shares": 0,
+   "urgent": false,
+   "reasons": [
+    "均线与结构互相矛盾，属于震荡；这种形态里止损容易被扫，仓位应比顺势时更小"
+   ],
+   "cautions": [
+    "政策面对该板块不利（倾向 -0.96）"
+   ],
+   "stop": 99.94852014160156,
+   "target": 139.0,
+   "earnings_date": "2026-11-04",
+   "earnings_in": 34.0,
+   "verdict": "均线与结构互相矛盾，属于震荡；这种形态里止损容易被扫，仓位应比顺势时更小",
+   "spark": "██▇▆▇▆▁▃▅▆▆▇▃▁▃▃▂▄▄▂▃▄▄▄",
+   "page": "2026-10-01/TTMI.md",
+   "is_index": false
+  },
+  {
+   "symbol": "VST",
+   "name": "Vistra Corp.",
+   "sector": "Utilities",
+   "shares": 25.0,
+   "cost": 137.74,
+   "price": 139.75,
+   "value": 3493.75,
+   "weight": 0.0858280057020118,
+   "pnl_pct": 0.014592710904602901,
+   "action": "持有",
+   "act_shares": 0,
+   "urgent": false,
+   "reasons": [
+    "趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌"
+   ],
+   "cautions": [
+    "50 日和 200 日线都失守、近三月 -7%；长线账户不按此卖，复核线在 200 日线下 20%（123.67），论点变了才走",
+    "有利空消息 1 条，看一眼",
+    "政策面对该板块不利（倾向 -0.47）"
+   ],
+   "stop": 123.67307714843751,
+   "target": 143.94,
+   "earnings_date": "2026-11-06",
+   "earnings_in": 36.0,
+   "verdict": "趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌",
+   "spark": "▆▆▆▆▇█▄▄▂▂▃▄▂▁▂▁▃▄▄▂▂▂▂▂",
+   "page": "2026-10-01/VST.md",
+   "is_index": false
+  },
+  {
+   "symbol": "LLY",
+   "name": "Eli Lilly and Company",
+   "sector": "Healthcare",
+   "shares": 2.0,
+   "cost": 1191.06,
+   "price": 1149.8499755859375,
+   "value": 2299.699951171875,
+   "weight": 0.056494786553730504,
+   "pnl_pct": -0.03459945293609257,
+   "action": "持有",
+   "act_shares": 0,
+   "urgent": false,
+   "reasons": [
+    "均线与结构互相矛盾，属于震荡；这种形态里止损容易被扫，仓位应比顺势时更小"
+   ],
+   "cautions": [
+    "有利空消息 2 条，看一眼",
+    "政策面对该板块不利（倾向 -0.46）"
+   ],
+   "stop": 856.7284128417969,
+   "target": NaN,
+   "earnings_date": "2026-10-29",
+   "earnings_in": 28.0,
+   "verdict": "均线与结构互相矛盾，属于震荡；这种形态里止损容易被扫，仓位应比顺势时更小",
+   "spark": "▆▆▃▄▃▅▆▂▂▅▆▅██▅▃▃▂▁▂▃▃▄▃",
+   "page": "2026-10-01/LLY.md",
+   "is_index": false
+  },
+  {
+   "symbol": "MRVL",
+   "name": "Marvell Technology, Inc.",
+   "sector": "Technology",
+   "shares": 5.0,
+   "cost": 252.9,
+   "price": 268.0799865722656,
+   "value": 1340.3999328613281,
+   "weight": 0.03292847315365962,
+   "pnl_pct": 0.06002367169737299,
+   "action": "持有",
+   "act_shares": 0,
+   "urgent": false,
+   "reasons": [
+    "趋势向上且结构完整；顺势的一侧在上方，风险在于结构一旦破位就要认"
+   ],
+   "cautions": [
+    "政策面对该板块不利（倾向 -0.96）"
+   ],
+   "stop": 132.7407643737793,
+   "target": 276.58,
+   "earnings_date": "2026-12-01",
+   "earnings_in": 61.0,
+   "verdict": "趋势向上且结构完整；顺势的一侧在上方，风险在于结构一旦破位就要认",
+   "spark": "▆▆▄▂▃▃▁▂▄▄▄▅▆▅▆▄▄▅▅▅▇█▇█",
+   "page": "2026-10-01/MRVL.md",
+   "is_index": false
+  },
+  {
+   "symbol": "SHEL",
+   "name": "Shell plc",
+   "sector": "Energy",
+   "shares": 2.0,
+   "cost": 97.005,
+   "price": 95.61000061035156,
+   "value": 191.22000122070312,
+   "weight": 0.004697540280532153,
+   "pnl_pct": -0.014380695733708926,
+   "action": "持有",
+   "act_shares": 0,
+   "urgent": false,
+   "reasons": [
+    "趋势向上且结构完整，且贴近 52 周高点——追高的代价是止损离得远；顺势的一侧在上方，风险在于结构一旦破位就要认",
+    "政策面对该板块有利（倾向 +0.95）"
+   ],
+   "cautions": [
+    "有利空消息 1 条，看一眼"
+   ],
+   "stop": 67.1597151184082,
+   "target": 103.29,
+   "earnings_date": "2026-10-29",
+   "earnings_in": 28.0,
+   "verdict": "趋势向上且结构完整，且贴近 52 周高点——追高的代价是止损离得远；顺势的一侧在上方，风险在于结构一旦破位就要认",
+   "spark": "▁▂▃▃▄▄▄▅▄▅▅▅▆▆▆▆▆▇██▇▇█▇",
+   "page": "2026-10-01/SHEL.md",
+   "is_index": false
+  },
+  {
+   "symbol": "AXTI",
+   "name": "AXT, Inc.",
+   "sector": "Technology",
+   "shares": 1.0,
+   "cost": 72.84,
+   "price": 81.80999755859375,
+   "value": 81.80999755859375,
+   "weight": 0.00200975711969676,
+   "pnl_pct": 0.12314658921737709,
+   "action": "持有",
+   "act_shares": 0,
+   "urgent": false,
+   "reasons": [
+    "趋势向上且结构完整；顺势的一侧在上方，风险在于结构一旦破位就要认"
+   ],
+   "cautions": [
+    "政策面对该板块不利（倾向 -0.96）"
+   ],
+   "stop": 47.98008001327515,
+   "target": 94.19,
+   "earnings_date": "2026-10-29",
+   "earnings_in": 28.0,
+   "verdict": "趋势向上且结构完整；顺势的一侧在上方，风险在于结构一旦破位就要认",
+   "spark": "▄▄▃▂▃▂▁▄▅▇▇█▇▅▅▄▃▅▅▄▆▆▇▇",
+   "page": "2026-10-01/AXTI.md",
+   "is_index": false
+  }
+ ],
+ "sector_weights": {
+  "Technology": 0.26842799421982083,
+  "Utilities": 0.0858280057020118,
+  "Healthcare": 0.05787638717905876,
+  "Unknown": 0.15013360618811783,
+  "Energy": 0.004697540280532153
+ },
+ "tilt": {
+  "Consumer Cyclical": -0.9585062240663901,
+  "Industrials": -0.9743589743589743,
+  "Consumer Defensive": -0.9568965517241379,
+  "Technology": -0.9566160520607375,
+  "Basic Materials": -0.9504950495049505,
+  "Real Estate": -0.47368421052631576,
+  "Utilities": -0.47368421052631576,
+  "Financial Services": -0.9504950495049505,
+  "Energy": 0.95,
+  "Healthcare": -0.4594594594594595,
+  "Communication Services": -0.3333333333333333
+ },
+ "policy_brief": "## Policy and political backdrop\n\n### trade (130)\n- [9/bearish] Democrat for US House unveils proposals to lower tariffs, stabilize Social Security - South Dakota Searchlight (23h ago, South Dakota Searchlight)\n  sectors: Consumer Cyclical-, Industrials-, Consumer Defensive-, Technology-, Basic Materials-\n- [9/bearish] Beyond tariffs, a storm of pressures is hampering SMB supply chains - CFO.com (7h ago, CFO.com)\n  sectors: Consumer Cyclical-, Industrials-, Consumer Defensive-, Technology-, Basic Materials-\n- [9/bearish] US drug tariffs take effect as Danish industry warns of \"serious\" impact - medwatch.com (14h ago, medwatch.com)\n  sectors: Consumer Cyclical-, Industrials-, Consumer Defensive-, Technology-, Basic Materials-\n- [9/bearish] STG Announces Tariff Refund for Retailers - halfwheel (0h ago, halfwheel)\n  sectors: Consumer Cyclical-, Industrials-, Consumer Defensive-, Technology-, Basic Materials-\n  ... and 126 more in trade\n\n### monetary (2)\n- [8/bearish] US Federal Reserve’s Williams sees one more interest rate hike in late 2026 - The Straits Times (44h ago, The Straits Times)\n  sectors: Real Estate-, Utilities-, Technology-, Consumer Cyclical-, Financial Services?\n- [7/neutral] Fed Watchdog Cites Management Failures in $1 Billion Renovation Overrun, Clears Powell of Criminal Wrongdoing - finance.biggo.com (27h ago, finance.biggo.com)\n  sectors: Financial Services?, Real Estate?, Utilities?, Technology?\n\n### regulatory (3)\n- [7/bearish] US Cements Most-Favored-Nation Drug Price Model for Medicare (1) - Bloomberg Law News (25h ago, Bloomberg Law News)\n  sectors: Healthcare-\n- [6/neutral] FDA Commissioner Nominee Hearing Addresses Food Safety, GRAS, Labeling - Quality Assurance & Food Safety (6h ago, Quality Assurance & Food Safety)\n  sectors: Healthcare?\n- [3/bearish] SEC Proposals Would Broaden Retail Access to Private Markets - Law.com (23h ago, Law.com)\n  sectors: Financial Services-\n\n### geopolitical (3)\n- [7/bearish] Why US missile shortfalls raise stakes for a potential Taiwan Strait conflict - South China Morning Post (7h ago, South China Morning Post)\n  sectors: Technology-\n- [6/neutral] Sec. 338(h)(10) elections in business acquisitions - The Tax Adviser (22h ago, The Tax Adviser)\n- [3/neutral] Trump touts US$200 billion South Korean energy deal ahead of US midterms - South China Morning Post (19h ago, South China Morning Post)\n\n### fiscal (2)\n- [5/bearish] GOP Weighs Quick US Debt Limit Hike to Deny Democrats Leverage - Bloomberg.com (3h ago, Bloomberg.com)\n  sectors: Technology-, Healthcare-, Financial Services-, Consumer Cyclical-, Consumer Defensive-, Industrials-, Energy-, Utilities-, Real Estate-, Basic Materials-, Communication Services-\n- [5/bearish] Republicans Weigh Raising US Debt Ceiling During Lame-Duck Session - bloomingbit (2h ago, bloomingbit)\n  sectors: Technology-, Healthcare-, Financial Services-, Consumer Cyclical-, Consumer Defensive-, Industrials-, Energy-, Utilities-, Real Estate-, Basic Materials-, Communication Services-\n\n_Sector effects above are directional heuristics, not modelled relationships. The sign can invert — a rate cut is bullish for duration unless it signals a recession — and a scheduled event may already be priced._",
+ "macro_read": [
+  "标普500 收 7,666，近一周 -0.5%，近一月 +0.5%，站在 50 日和 200 日线上方",
+  "10 年期美债收益率 5.24%，较一月前 +0.44 个百分点",
+  "收益率曲线正向，10年期高于3月期 1.26 个百分点",
+  "VIX 16.4，波动平静",
+  "美元指数 102.0，近一月 +2.4%",
+  "原油 93 美元（月 +2.9%），黄金 4,205 美元（月 -4.4%）",
+  "本周最强板块：科技 +1.6%、公用事业 +0.8%；最弱：通信 -3.6%"
+ ],
+ "alerts": [
+  "需要今天处理：AVGO",
+  "科技占 27% 而政策面对它不利（-0.96）"
+ ],
+ "warnings": []
+}

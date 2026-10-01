@@ -409,6 +409,16 @@
 "eps_actual": 0.41,
 "surprise_pct": 18.51,
 "error": ""
+},
+"MU|2026-10-01": {
+"symbol": "MU",
+"as_of": "2026-10-01",
+"next_date": "2026-12-23",
+"last_date": "2026-09-30",
+"eps_estimate": 31.82,
+"eps_actual": 33.42,
+"surprise_pct": 5.03,
+"error": ""
 }
 }
 }
