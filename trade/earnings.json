@@ -1,25 +1,5 @@
 {
 "rows": {
-"SHEL|2026-09-29": {
-"symbol": "SHEL",
-"as_of": "2026-09-29",
-"next_date": "2026-10-29",
-"last_date": "2026-07-30",
-"eps_estimate": 3.18,
-"eps_actual": 3.52,
-"surprise_pct": 10.63,
-"error": ""
-},
-"PLTR|2026-09-29": {
-"symbol": "PLTR",
-"as_of": "2026-09-29",
-"next_date": "2026-11-02",
-"last_date": "2026-08-03",
-"eps_estimate": 0.35,
-"eps_actual": 0.41,
-"surprise_pct": 18.51,
-"error": ""
-},
 "SHEL|2026-09-30": {
 "symbol": "SHEL",
 "as_of": "2026-09-30",
@@ -408,6 +388,26 @@
 "eps_estimate": 0.16,
 "eps_actual": 0.16,
 "surprise_pct": -1.91,
+"error": ""
+},
+"SHEL|2026-10-01": {
+"symbol": "SHEL",
+"as_of": "2026-10-01",
+"next_date": "2026-10-29",
+"last_date": "2026-07-30",
+"eps_estimate": 3.18,
+"eps_actual": 3.52,
+"surprise_pct": 10.63,
+"error": ""
+},
+"PLTR|2026-10-01": {
+"symbol": "PLTR",
+"as_of": "2026-10-01",
+"next_date": "2026-11-02",
+"last_date": "2026-08-03",
+"eps_estimate": 0.35,
+"eps_actual": 0.41,
+"surprise_pct": 18.51,
 "error": ""
 }
 }
