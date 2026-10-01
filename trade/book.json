@@ -140,46 +140,6 @@
    "sleeve": "core",
    "triggers": []
   },
-  "LLY": {
-   "symbol": "LLY",
-   "shares": 1,
-   "entry": 1161.585,
-   "stop": 1128.0,
-   "target": 1197.04,
-   "opened": "2026-09-25",
-   "horizon_days": 30,
-   "sector": "",
-   "thesis": "接管：摆动低点 1163.5 就在脚下，止损放在其下 1.2 ATR 以免被正常波动扫掉",
-   "invalidation": "",
-   "principles": [],
-   "regime": "",
-   "parent_id": "1d17c8fe-54a5-474f-adbe-d7c906b5efff",
-   "legs": {},
-   "adopted": true,
-   "stop_raised": false,
-   "sleeve": "core",
-   "triggers": []
-  },
-  "MA": {
-   "symbol": "MA",
-   "shares": 5,
-   "entry": 566.46,
-   "stop": 556.5,
-   "target": 594.78,
-   "opened": "2026-09-25",
-   "horizon_days": 30,
-   "sector": "",
-   "thesis": "接管：止损在摆动低点 563.17 之下 1.2%（1.2 ATR）",
-   "invalidation": "",
-   "principles": [],
-   "regime": "",
-   "parent_id": "abf6d7ec-c8e4-47e8-8aba-d1397ca111c0",
-   "legs": {},
-   "adopted": true,
-   "stop_raised": false,
-   "sleeve": "core",
-   "triggers": []
-  },
   "MSFT": {
    "symbol": "MSFT",
    "shares": 10,
@@ -260,26 +220,6 @@
    "sleeve": "core",
    "triggers": []
   },
-  "V": {
-   "symbol": "V",
-   "shares": 8,
-   "entry": 366.8,
-   "stop": 360.5,
-   "target": 380.4,
-   "opened": "2026-09-25",
-   "horizon_days": 30,
-   "sector": "",
-   "thesis": "接管：止损在摆动低点 365.52 之下 1.4%（1.1 ATR）；价格在 20 日线下方，偏弱",
-   "invalidation": "",
-   "principles": [],
-   "regime": "",
-   "parent_id": "b1f7b678-8f8c-4be4-8304-398ff06c9e47",
-   "legs": {},
-   "adopted": true,
-   "stop_raised": false,
-   "sleeve": "core",
-   "triggers": []
-  },
   "APA": {
    "symbol": "APA",
    "shares": 137,
@@ -301,5 +241,54 @@
    "triggers": []
   }
  },
- "closed": []
+ "closed": [
+  {
+   "symbol": "LLY",
+   "shares": 1,
+   "entry": 1161.585,
+   "exit": 1197.61,
+   "opened": "2026-09-25",
+   "closed": "2026-10-01",
+   "reason": "target: 交易所触发止盈",
+   "thesis": "接管：摆动低点 1163.5 就在脚下，止损放在其下 1.2 ATR 以免被正常波动扫掉",
+   "invalidation": "",
+   "principles": [],
+   "pnl": 36.02,
+   "r": 1.0726514813160586,
+   "reviewed": true,
+   "sleeve": "core"
+  },
+  {
+   "symbol": "MA",
+   "shares": 5,
+   "entry": 566.46,
+   "exit": 551.469970703125,
+   "opened": "2026-09-25",
+   "closed": "2026-10-01",
+   "reason": "closed at the venue",
+   "thesis": "接管：止损在摆动低点 563.17 之下 1.2%（1.2 ATR）",
+   "invalidation": "",
+   "principles": [],
+   "pnl": -74.95,
+   "r": -1.5050230217745966,
+   "reviewed": true,
+   "sleeve": "core"
+  },
+  {
+   "symbol": "V",
+   "shares": 8,
+   "entry": 366.8,
+   "exit": 359.3299865722656,
+   "opened": "2026-09-25",
+   "closed": "2026-10-01",
+   "reason": "closed at the venue",
+   "thesis": "接管：止损在摆动低点 365.52 之下 1.4%（1.1 ATR）；价格在 20 日线下方，偏弱",
+   "invalidation": "",
+   "principles": [],
+   "pnl": -59.76,
+   "r": -1.1857164171006942,
+   "reviewed": true,
+   "sleeve": "core"
+  }
+ ]
 }
