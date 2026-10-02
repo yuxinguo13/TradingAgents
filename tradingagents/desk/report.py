@@ -379,7 +379,7 @@ class Reporter:
         names = self._names or universe.prominent(
             data_day, exchange=self.cfg.exchange, top=self.cfg.screen_top,
             per_sector=self.cfg.per_sector, screen=self.screen, use_cache=self.cfg.use_cache)
-        if not any(n.source == "screen" for n in names):
+        if not any(n.source in ("screen", "rs") for n in names):
             report.notes.append("筛选没有跑出结果，今天只看各板块龙头")
         spy = self.market.facts("SPY", data_day, benchmark=False)
         spy_r3 = _num(spy.snap.ret_3m)

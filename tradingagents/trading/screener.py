@@ -274,9 +274,11 @@ def compute_factors(panel: dict[str, pd.DataFrame], benchmark: str = "SPY") -> p
 
     # relative strength vs the benchmark (downloaded as part of the panel)
     if benchmark in C.columns:
+        f["rs_1m"] = f["ret_1m"] - float(_ret(C[[benchmark]], 21).iloc[0])
         f["rs_3m"] = f["ret_3m"] - float(_ret(C[[benchmark]], 63).iloc[0])
         f["rs_6m"] = f["ret_6m"] - float(_ret(C[[benchmark]], 126).iloc[0])
     else:
+        f["rs_1m"] = f["ret_1m"]
         f["rs_3m"] = f["ret_3m"]
         f["rs_6m"] = f["ret_6m"]
     return f
@@ -594,7 +596,7 @@ def screen(date: str, exchange: str = "nasdaq", top: int = 50,
            candidate_pool: int | None = None, refresh: bool = False,
            use_pool: bool = True, pool_max_age_days: int = _POOL_MAX_AGE_DAYS,
            watchlist: dict | list | None = None, return_watchlist: bool = False,
-           log=print):
+           rs_top: int = 20, rs_min: float = 0.10, log=print):
     """Run the full pipeline; returns (ranked DataFrame, stats dict).
 
     ``max_per_sector`` caps how many names one sector may place in the final
@@ -607,6 +609,15 @@ def screen(date: str, exchange: str = "nasdaq", top: int = 50,
     have passed the hard filters. Watchlist names are reported but never
     injected into the ranking — a name you follow daily is not thereby a name
     the screen chose.
+
+    ``stats["rs_leaders"]`` is a second, separate list: the ``rs_top`` names
+    of the filtered set that beat the benchmark by ``rs_min`` or more over 21
+    sessions and sit above their 50-day, strongest first, with their rank in
+    the main score. The main score is built on 12- and 6-month momentum, so a
+    name a month into a fresh run (ALNT, Sep 2026: +34% vs SPY +0.5%, every
+    hard filter passed) ranks below the cut and no one-month board fed from
+    it can see it. A board that measures one-month strength has to be fed by
+    one-month strength.
     """
     uni = fetch_universe(exchange)
     log(f"[screen] universe ({exchange}): {len(uni)} common stocks")
@@ -719,12 +730,18 @@ def screen(date: str, exchange: str = "nasdaq", top: int = 50,
     if len(wl_frame):
         wl_frame["screen_rank"] = g["rank"].reindex(wl_frame.index)
 
+    rs = rs_leaders(g, rs_top, rs_min)
+    stats["rs_leaders"] = rs
+
     if max_per_sector is None:
         return _ret(g.head(top))
 
     pool_n = candidate_pool or max(3 * top, 150)
     pool = g.head(pool_n).copy()
-    sec = fetch_sectors(pool.index.tolist(), log=log)
+    sec = fetch_sectors(list(dict.fromkeys(pool.index.tolist() + rs.index.tolist())), log=log)
+    if len(rs):
+        rs["sector"] = [sec[t][0] for t in rs.index]
+        rs["industry"] = [sec[t][1] for t in rs.index]
     pool["sector"] = [sec[t][0] for t in pool.index]
     pool["industry"] = [sec[t][1] for t in pool.index]
     stats["candidate_pool"] = len(pool)
@@ -735,6 +752,20 @@ def screen(date: str, exchange: str = "nasdaq", top: int = 50,
         known = {**{t: sec[t][0] for t in pool.index}}
         wl_frame["sector"] = [known.get(t, "") for t in wl_frame.index]
     return _ret(out)
+
+
+def rs_leaders(g: pd.DataFrame, n: int, rs_min: float) -> pd.DataFrame:
+    """The ``n`` strongest names over 21 sessions relative to the benchmark.
+
+    ``g`` is the filtered, ranked frame, so every hard filter (price,
+    liquidity, volatility, the 200-day) still applies; only the ordering
+    differs. Above the 50-day as well, because a one-month jump that is still
+    under it is a bounce, not a leader.
+    """
+    if n <= 0 or g.empty or "rs_1m" not in g.columns:
+        return g.iloc[0:0].copy()
+    ok = (g["rs_1m"] >= rs_min) & g["above_50"].fillna(False).astype(bool)
+    return g[ok].sort_values("rs_1m", ascending=False).head(n).copy()
 
 
 def format_table(g: pd.DataFrame) -> str:
@@ -766,9 +797,12 @@ def format_table(g: pd.DataFrame) -> str:
     return "\n".join(lines)
 
 
-def save_results(g: pd.DataFrame, date: str, exchange: str) -> Path:
+def save_results(g: pd.DataFrame, date: str, exchange: str,
+                 rs: pd.DataFrame | None = None) -> Path:
     out = Path.home() / ".tradingagents" / "screens"
     out.mkdir(parents=True, exist_ok=True)
     p = out / f"screen_{exchange}_{date}.csv"
     g.to_csv(p)
+    if rs is not None and len(rs):
+        rs.to_csv(out / f"screen_rs_{exchange}_{date}.csv")
     return p
