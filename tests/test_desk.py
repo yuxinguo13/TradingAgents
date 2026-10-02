@@ -463,3 +463,21 @@ class TestAdviseHorizon:
         t = tmp_path / "p.txt"
         t.write_text("horizon long\nABC 1 10\n")
         assert advise.load_portfolio(t).rules is advise.LONG
+
+
+@pytest.mark.unit
+class TestMomentumBoard:
+    """The relative-strength board lists the names the pullback table hides."""
+
+    def test_a_runner_makes_the_board_and_a_laggard_does_not(self):
+        shape("RUN", 100.0, drift=1.0, last_move=0.08)   # ~13% in 21 sessions, far ahead of SPY
+        shape("LAG", 100.0, drift=0.10)        # behind it
+        rep = report.Reporter(report.ReportConfig(with_pages=False), market=mkt(), now=FRIDAY_AFTER_CLOSE,
+                              names=names(("RUN", "Technology", "screen"), ("LAG", "Energy", "screen"))).run()
+        syms = [i.symbol for i in rep.momentum]
+        assert syms == ["RUN"]
+        run = rep.momentum[0]
+        assert run.rs_1m >= report.RS_MIN and run.facts.rs_1m == run.rs_1m
+        text = report.format_report(rep)
+        assert "## 相对强弱榜" in text and "| RUN |" in text.split("## 相对强弱榜")[1].split("##")[0]
+        assert rep.to_dict()["momentum"][0]["symbol"] == "RUN"

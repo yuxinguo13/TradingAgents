@@ -294,12 +294,19 @@ class Packer:
         for s in alive:
             if s in held_syms:
                 continue
-            t = breakout_triggers(facts[s])
-            if any(x in ("volume", "pattern") for x in t):
-                low = facts[s].bars.lows[-1] if facts[s].bars.lows else float("nan")
+            f = facts[s]
+            t = breakout_triggers(f)
+            rs = _num(getattr(f, "rs_1m", float("nan")))
+            strong = _ok(rs) and rs >= 0.10 and f.above("sma20") and f.above("sma50") and f.above("sma200")
+            if any(x in ("volume", "pattern") for x in t) or strong:
+                low = f.bars.lows[-1] if f.bars.lows else float("nan")
+                s20 = _num(f.snap.sma20)
                 pack.breakouts.append({"symbol": s, "triggers": t, "breakout_low": round(_num(low), 2) if _ok(_num(low)) else None,
-                                       "price": round(facts[s].price, 2), "vol_ratio": round(_num(facts[s].snap.vol_ratio), 2)})
-        pack.breakouts.sort(key=lambda b: len(b["triggers"]), reverse=True)
+                                       "sma20": round(s20, 2) if _ok(s20) else None,
+                                       "price": round(f.price, 2), "vol_ratio": round(_num(f.snap.vol_ratio), 2),
+                                       "rs_1m": round(rs, 4) if _ok(rs) else None,
+                                       "ext_200": round(f.ext_200(), 4) if _ok(f.ext_200()) else None})
+        pack.breakouts.sort(key=lambda b: (len(b["triggers"]), b.get("rs_1m") or -1), reverse=True)
         self.save(pack, facts)
         return pack
 
@@ -463,9 +470,10 @@ def format_pack(pack: TradePack, facts: dict | None = None) -> str:
 
     out.append("## 进攻仓候选（突破跟踪，手册第十节）")
     if pack.breakouts:
-        out += ["| 代码 | 现价 | 量比 | 图上看到的触发 | 突破日低（止损位） |", "|---|---:|---:|---|---:|"]
-        for b in pack.breakouts[:8]:
-            out.append(f"| {b['symbol']} | {_f(b['price'])} | {_f(b['vol_ratio'], 1)} | {'、'.join(b['triggers'])} | {_f(b['breakout_low'])} |")
+        out += ["| 代码 | 现价 | 量比 | 20 日相对标普 | 距200日 | 图上看到的触发 | 突破日低（止损位） | 20 日线 |", "|---|---:|---:|---:|---:|---|---:|---:|"]
+        for b in pack.breakouts[:12]:
+            out.append(f"| {b['symbol']} | {_f(b['price'])} | {_f(b['vol_ratio'], 1)} | {_pct(b.get('rs_1m'))} | {_pct(b.get('ext_200'), 0)} "
+                       f"| {'、'.join(b['triggers']) or '—'} | {_f(b['breakout_low'])} | {_f(b.get('sma20'))} |")
         out.append("三条触发至少两条才能进；`catalyst?` 只是说有分量 ≥7 的利好标题，是否算重大催化剂你来判断，并在 intent 里写明。")
     else:
         out.append("- 今天没有放量创新高或突破平台的候选。")

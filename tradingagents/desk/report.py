@@ -83,6 +83,7 @@ class Idea:
     source: str = ""
     page: str = ""
     triggers: list = field(default_factory=list)
+    rs_1m: float = float("nan")
     facts: Facts | None = field(default=None, repr=False, compare=False)
 
     def to_dict(self) -> dict:
@@ -125,6 +126,7 @@ class MarketReport:
     ideas: list = field(default_factory=list)
     avoid: list = field(default_factory=list)
     breakouts: list = field(default_factory=list)   # Idea rows that look like breakouts today
+    momentum: list = field(default_factory=list)    # the relative-strength board
     review: list = field(default_factory=list)      # yesterday's calls against today's closes
     settled: list = field(default_factory=list)     # calls from HOLD sessions ago, scored in R and vs SPY
     settled_report: str = ""
@@ -149,6 +151,7 @@ class MarketReport:
             "ideas": [i.to_dict() for i in self.ideas],
             "avoid": [i.to_dict() for i in self.avoid],
             "breakouts": [i.to_dict() for i in self.breakouts],
+            "momentum": [i.to_dict() for i in self.momentum],
             "review": self.review,
             "settled": {"report": self.settled_report, "calls": self.settled},
             "scored": [i.to_dict() for i in self.scored],
@@ -291,6 +294,35 @@ def breakout_triggers(f: Facts) -> list[str]:
     return out
 
 
+RS_MIN = 0.10          # 20-day return minus SPY's, in points, for the relative-strength board
+
+
+def momentum_board(scored: list, limit: int = 12) -> list:
+    """The relative-strength board: 20-day return ≥ RS_MIN over SPY, above all
+    three averages, within 10% of the 52-week high. Strongest first.
+
+    This is the list the stretch rule hides. Over 2026-09-11..10-01 the index
+    was flat and ten names on this board ran 15–44 points ahead of it while the
+    pullback table held the laggards; the board is printed so the reader sees
+    where the money went, whatever the entry rules then say.
+    """
+    out = []
+    for i in scored:
+        f = i.facts
+        if f is None or not f.ok:
+            continue
+        rs = _num(getattr(f, "rs_1m", float("nan")))
+        off = _num(f.snap.off_high_52w)
+        if _ok(rs) and rs >= RS_MIN and f.above("sma20") and f.above("sma50") and f.above("sma200") \
+                and (not _ok(off) or off >= -0.10):
+            i.rs_1m = rs
+            if not i.triggers:
+                i.triggers = breakout_triggers(f)
+            out.append(i)
+    out.sort(key=lambda i: i.rs_1m, reverse=True)
+    return out[:limit]
+
+
 def breakouts(scored: list) -> list:
     """Names showing at least one bar-readable trigger, strongest first."""
     out = []
@@ -379,6 +411,7 @@ class Reporter:
                         ext_200=f.ext_200(), reasons=why, cautions=warn,
                         verdict=f.trend.verdict, spark=f.trend.spark, source=n.source, facts=f)
             self.levels(idea, f)
+            idea.rs_1m = _num(getattr(f, "rs_1m", float("nan")))
             if f.earnings is not None:
                 idea.earnings_date = str(getattr(f.earnings, "next_date", "") or "")
             report.scored.append(idea)
@@ -386,6 +419,7 @@ class Reporter:
         report.ideas = [i for i in report.scored if i.score > 0][:self.cfg.top_ideas]
         report.avoid = [i for i in reversed(report.scored) if i.score < 0][:self.cfg.avoid]
         report.breakouts = breakouts(report.scored)
+        report.momentum = momentum_board(report.scored)
         report.review = self.review_previous(report, data_day)
         final, settled = settle.latest_settleable(self.market, data_day, report.date)
         if final is not None:
@@ -595,6 +629,21 @@ def format_report(report: MarketReport) -> str:
         out.append("今天没有得分为正的名字。")
     for i, idea in enumerate(report.ideas, 1):
         out += idea_block(i, idea, report)
+    out.append("")
+
+    out.append(f"## 相对强弱榜（20 日跑赢标普 ≥ {RS_MIN * 100:.0f} 个百分点，三条均线上，离 52 周高 10% 内）")
+    if report.momentum:
+        out += ["| 代码 | 板块 | 现价 | 日 | 月 | 相对标普 | 量比 | 距200日 | 图上的触发 | 当日低 | 20 日线 | 参考分 |",
+                "|---|---|---:|---:|---:|---:|---:|---:|---|---:|---:|---:|"]
+        for i in report.momentum:
+            f = i.facts
+            low = f.bars.lows[-1] if f and f.bars.lows else float("nan")
+            s20 = _num(f.snap.sma20) if f else float("nan")
+            out.append(f"| {i.symbol} | {SECTOR_ZH.get(i.sector, i.sector)} | {_f(i.price)} | {_pct(i.change_pct)} | {_pct(i.ret_1m)} "
+                       f"| {_pct(i.rs_1m)} | {_f(i.vol_ratio, 1)} | {_pct(i.ext_200, 0)} | {'、'.join(i.triggers) or '—'} | {_f(low)} | {_f(s20)} | {i.score:+.0f} |")
+        out.append("这是钱实际在去的名单。第四节的回调规则不买它们；进攻仓按第十节的触发评。把它们和前排放在一起看，说明为什么前排里没有它们。")
+    else:
+        out.append("- 今天没有名字满足相对强弱榜的条件")
     out.append("")
 
     out.append("## 进攻仓候选与突破跟踪")

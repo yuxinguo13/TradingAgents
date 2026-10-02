@@ -116,6 +116,7 @@ class Facts:
     fundamentals: object = None
     insiders: object = None
     news: list = field(default_factory=list)
+    rs_1m: float = float("nan")        # 21-day return minus SPY's
 
     @property
     def ok(self) -> bool:
@@ -352,12 +353,13 @@ class Market:
             mine, theirs = bars.ret(21), spy.ret(21) if spy.closes else float("nan")
             if _ok(mine) and _ok(theirs):
                 excess["标普500"] = mine - theirs
+        rs = excess.get("标普500", float("nan"))
         trend = charting.read_trend(
             bars.symbol, bars.closes, bars.highs, bars.lows, bars.volumes,
             rsi=snap.rsi14, atr_pct=snap.atr_pct, vol_ratio=snap.vol_ratio,
             ret_1m=snap.ret_1m, ret_3m=snap.ret_3m, benchmark=excess,
         ) if bars.closes else charting.TrendRead(symbol=symbol.upper())
-        f = Facts(symbol=symbol.upper(), bars=bars, snap=snap, trend=trend)
+        f = Facts(symbol=symbol.upper(), bars=bars, snap=snap, trend=trend, rs_1m=rs)
         self._facts[key] = f
         return f
 
