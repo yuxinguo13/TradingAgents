@@ -446,7 +446,9 @@ def qualified_universe(date: str, exchange: str = "nasdaq",
 
     log(f"[pool] rebuilding the qualification pool for {exchange} ...")
     uni = fetch_universe(exchange)
-    tickers = uni["symbol"].tolist()
+    # SPY is an ETF, so the listing leaves it out; the screen reuses this
+    # panel and measures every rs_* factor against it.
+    tickers = uni["symbol"].tolist() + ["SPY"]
     panel = download_panel(tickers, date, cache_key=exchange, refresh=refresh, log=log)
     f = compute_factors(panel).drop(index="SPY", errors="ignore")
     mask = (
@@ -643,11 +645,17 @@ def screen(date: str, exchange: str = "nasdaq", top: int = 50,
     # A full-universe panel for this date may already be on disk (a pool
     # rebuild just wrote one). Downloading a subset of what we already have
     # would be the one thing this code exists to avoid.
+    # A panel without the benchmark is not reused: compute_factors would fall
+    # back to raw returns and call them relative strength.
     full_cache = _cache_dir() / f"panel_{exchange}_{date}.pkl"
+    panel = None
     if use_pool and full_cache.exists() and not refresh:
         panel = pd.read_pickle(full_cache)
-        log(f"[screen] reusing the full local panel: {panel['Close'].shape[1]} tickers")
-    else:
+        if "SPY" in panel["Close"].columns:
+            log(f"[screen] reusing the full local panel: {panel['Close'].shape[1]} tickers")
+        else:
+            panel = None
+    if panel is None:
         panel = download_panel(
             tickers, date, cache_key=(f"{exchange}_pool" if use_pool else exchange),
             refresh=refresh, log=log)

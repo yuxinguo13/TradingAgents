@@ -486,3 +486,31 @@ def test_rs_leaders_is_empty_without_the_factor(monkeypatch, tmp_path):
     _screen_env(monkeypatch, tmp_path, _factor_frame())
     _, stats = sc.screen("2026-08-25", top=10, max_per_sector=None, log=lambda m: None)
     assert stats["rs_leaders"].empty
+
+
+@pytest.mark.unit
+def test_pool_rebuild_downloads_the_benchmark(tmp_path, monkeypatch):
+    # The listing has no ETFs, and the screen reuses this panel: without SPY
+    # every rs_* factor silently became a raw return (2026-10-01).
+    monkeypatch.setattr(sc, "_cache_dir", lambda: tmp_path)
+    monkeypatch.setattr(sc, "fetch_universe", lambda exchange="nasdaq": pd.DataFrame(
+        {"symbol": ["AAA"], "name": ["a"], "exchange": ["NASDAQ"]}))
+    asked = []
+    monkeypatch.setattr(sc, "download_panel",
+                        lambda tickers, *a, **k: asked.extend(tickers) or {"Close": pd.DataFrame()})
+    monkeypatch.setattr(sc, "compute_factors", lambda panel, **k: pd.DataFrame(
+        {"price": [50.0], "dollar_vol_50": [9e6], "rows": [250]}, index=["AAA"]))
+    sc.qualified_universe("2026-08-25", log=lambda m: None)
+    assert "SPY" in asked
+
+
+@pytest.mark.unit
+def test_screen_does_not_reuse_a_full_panel_without_the_benchmark(monkeypatch, tmp_path):
+    factors = _factor_frame()
+    _screen_env(monkeypatch, tmp_path, factors)
+    pd.to_pickle({"Close": pd.DataFrame({"WINNER": [1.0]})}, tmp_path / "panel_nasdaq_2026-08-25.pkl")
+    downloaded = []
+    monkeypatch.setattr(sc, "download_panel",
+                        lambda tickers, *a, **k: downloaded.extend(tickers) or {"Close": pd.DataFrame()})
+    sc.screen("2026-08-25", top=10, max_per_sector=None, log=lambda m: None)
+    assert "SPY" in downloaded, "a panel without SPY must be downloaded afresh"
