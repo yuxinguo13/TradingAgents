@@ -653,7 +653,7 @@ def format_report(report: MarketReport) -> str:
     if not report.breakouts:
         out.append("- 今天没有放量创新高或突破平台的名字。")
     else:
-        out += ["规则见手册第十节：三条触发至少两条才能进进攻仓；`catalyst?` 表示近两天有分量 ≥7 的利好标题，是否算重大催化剂由读者判断。止损放在突破日最低价（表中的「突破日低」）。",
+        out += ["规则见手册第十节：四条触发（volume / catalyst / pattern / rs）至少两条才能进进攻仓；`catalyst?` 表示近两天有分量 ≥7 的利好标题，是否算重大催化剂由读者判断。止损放在突破日最低价或 20 日线，二者取高、不超过 8%。",
                 "| 代码 | 板块 | 现价 | 日 | 量比 | 距52周高 | 触发 | 突破日低 | 参考分 |", "|---|---|---:|---:|---:|---:|---|---:|---:|"]
         for i in report.breakouts:
             f = i.facts

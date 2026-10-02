@@ -19,8 +19,8 @@ lower one. If a step fails, say which one and why; do not work around it.
 Never paste keys into chat or files. Do not commit anything under
 `~/.tradingagents/`. Do not commit or push from a Routine.
 
-Before any task: `git fetch origin feat/live-desk && git checkout feat/live-desk`
-(until that branch is merged, then stay on main), and
+Before any task: `git fetch origin main && git checkout main && git pull -q --ff-only origin main`
+(the desk is merged; `feat/live-desk` is only where new work is staged), and
 `pip install -q -e ".[dev]" alpaca-py` if `python -c "import tradingagents.desk"` fails.
 Read `tradingagents/desk/MANUAL.md` in full.
 
