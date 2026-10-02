@@ -58,11 +58,15 @@ If a pull or push reports a failure, say so in the reply; do not retry by hand.
    `tradingagents/desk/orders.py`): `sell` / `trim` / `raise_stop` / `protect`
    / `buy`, each with its reason, and for buys the thesis, the invalidation
    condition, the principles it rests on, and the regime line. Levels only;
-   no share counts. A breakout trade (MANUAL §10) carries
-   `"sleeve": "aggressive"` and `"triggers"` naming at least two of
-   `volume` / `catalyst` / `pattern`, with the stop at the breakout-day low;
-   the pack's 进攻仓候选 table lists what the bars show. At most 2, half size. On a day the manual calls defensive (VIX ≥ 30, SPX under
-   its 200-day) take at most half the usual new positions.
+   no share counts. **The momentum sleeve comes first (MANUAL §10):** go
+   down the pack's 进攻仓候选 table (the relative-strength leaders, with
+   their triggers, breakout-day low and 20-day line) and fill the sleeve's
+   4 seats with the names that meet two of `volume` / `catalyst` /
+   `pattern` / `rs`, bought on strength (entry at the price or within 1 ATR
+   above the 20-day line, stop at the breakout-day low or the 20-day line,
+   ≤ 8%), as `"sleeve": "aggressive"` with `"triggers"`. Then the core
+   pullback candidates. On a day the manual calls defensive (VIX ≥ 30, SPX
+   under its 200-day) take at most half the usual new positions.
 5. `python -m tradingagents.desk order ~/.tradingagents/desk/trade/<date>-intent.json`.
    Read every line of the result. A refusal is final: do not edit numbers and
    resend. Log one `"kind": "decision"` entry per order you sent (MANUAL §8).

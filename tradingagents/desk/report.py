@@ -274,11 +274,14 @@ def score(f: Facts, tilt: float = 0.0, spy_ret_3m: float = float("nan")) -> tupl
     return round(s, 1), why, warn
 
 
+RS_MIN = 0.10          # 21-day return minus SPY's, in points: the rs trigger and the board
+
+
 def breakout_triggers(f: Facts) -> list[str]:
-    """Which of the manual's three breakout triggers the bars themselves show.
+    """Which of the manual's four momentum triggers the bars themselves show.
 
     ``catalyst`` cannot be read off a chart; it is claimed by whoever writes the
-    intent and judged by the reader. ``volume`` and ``pattern`` can.
+    intent and judged by the reader. ``volume``, ``pattern`` and ``rs`` can.
     """
     out = []
     snap = f.snap
@@ -288,13 +291,13 @@ def breakout_triggers(f: Facts) -> list[str]:
     off = _num(snap.off_high_52w)
     if _ok(off) and off >= -0.02 and f.above("sma50") and f.above("sma200"):
         out.append("pattern")
+    rs = _num(getattr(f, "rs_1m", float("nan")))
+    if _ok(rs) and rs >= RS_MIN and f.above("sma20") and f.above("sma50") and f.above("sma200"):
+        out.append("rs")
     bull = [n for n in f.bullish_news() if int(getattr(n, "materiality", 0) or 0) >= 7]
     if bull:
         out.append("catalyst?")
     return out
-
-
-RS_MIN = 0.10          # 20-day return minus SPY's, in points, for the relative-strength board
 
 
 def momentum_board(scored: list, limit: int = 12) -> list:
@@ -330,11 +333,11 @@ def breakouts(scored: list) -> list:
         if i.facts is None or not i.facts.ok:
             continue
         t = breakout_triggers(i.facts)
-        if any(x in ("volume", "pattern") for x in t):
+        if any(x in ("volume", "pattern", "rs") for x in t):
             i.triggers = t
             out.append(i)
     out.sort(key=lambda i: (len(i.triggers), i.score), reverse=True)
-    return out[:8]
+    return out[:10]
 
 
 # ---------------------------------------------------------------------------
@@ -641,7 +644,7 @@ def format_report(report: MarketReport) -> str:
             s20 = _num(f.snap.sma20) if f else float("nan")
             out.append(f"| {i.symbol} | {SECTOR_ZH.get(i.sector, i.sector)} | {_f(i.price)} | {_pct(i.change_pct)} | {_pct(i.ret_1m)} "
                        f"| {_pct(i.rs_1m)} | {_f(i.vol_ratio, 1)} | {_pct(i.ext_200, 0)} | {'、'.join(i.triggers) or '—'} | {_f(low)} | {_f(s20)} | {i.score:+.0f} |")
-        out.append("这是钱实际在去的名单。第四节的回调规则不买它们；进攻仓按第十节的触发评。把它们和前排放在一起看，说明为什么前排里没有它们。")
+        out.append("这是钱实际在去的名单。按第十节的动量规则买：`rs` 算一条触发，不等回调，入场在现价或 20 日线上方 1 ATR 内，止损在当日低点或 20 日线（取高、≤ 8%）；拉伸不是这本账的禁忌。前排里没有它们的要说明为什么。")
     else:
         out.append("- 今天没有名字满足相对强弱榜的条件")
     out.append("")

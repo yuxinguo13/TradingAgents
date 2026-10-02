@@ -297,8 +297,7 @@ class Packer:
             f = facts[s]
             t = breakout_triggers(f)
             rs = _num(getattr(f, "rs_1m", float("nan")))
-            strong = _ok(rs) and rs >= 0.10 and f.above("sma20") and f.above("sma50") and f.above("sma200")
-            if any(x in ("volume", "pattern") for x in t) or strong:
+            if any(x in ("volume", "pattern", "rs") for x in t):
                 low = f.bars.lows[-1] if f.bars.lows else float("nan")
                 s20 = _num(f.snap.sma20)
                 pack.breakouts.append({"symbol": s, "triggers": t, "breakout_low": round(_num(low), 2) if _ok(_num(low)) else None,
@@ -474,7 +473,8 @@ def format_pack(pack: TradePack, facts: dict | None = None) -> str:
         for b in pack.breakouts[:12]:
             out.append(f"| {b['symbol']} | {_f(b['price'])} | {_f(b['vol_ratio'], 1)} | {_pct(b.get('rs_1m'))} | {_pct(b.get('ext_200'), 0)} "
                        f"| {'、'.join(b['triggers']) or '—'} | {_f(b['breakout_low'])} | {_f(b.get('sma20'))} |")
-        out.append("三条触发至少两条才能进；`catalyst?` 只是说有分量 ≥7 的利好标题，是否算重大催化剂你来判断，并在 intent 里写明。")
+        out.append("四条触发（volume / catalyst / pattern / rs）至少两条才能进；`catalyst?` 只是说有分量 ≥7 的利好标题，是否算重大催化剂你来判断，并在 intent 里写明。"
+                   "止损放在突破日低点或 20 日线，二者取高、不超过 8%。拉伸不是这本账的禁忌（手册第十节）。")
     else:
         out.append("- 今天没有放量创新高或突破平台的候选。")
     out.append("")
