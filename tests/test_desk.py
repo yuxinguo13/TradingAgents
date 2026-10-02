@@ -239,6 +239,36 @@ class TestReport:
         assert next(n for n in out if n.symbol == "AAPL").screen_rank == 2
         assert next(n for n in out if n.symbol == "ZZZ").source == "screen"
 
+    def test_relative_strength_leaders_join_the_universe_past_the_sector_cap(self):
+        # The main screen's cap fills Industrials with one name; the
+        # relative-strength list brings the month's leader in anyway.
+        main = [("CAP", {"rank": 1, "sector": "Industrials", "name": "Cap", "score": 9.0, "price": 10}),
+                ("CUT", {"rank": 2, "sector": "Industrials", "name": "Cut", "score": 8.0, "price": 10})]
+        rs = [("ALNT", {"rank": 140, "sector": "Industrials", "name": "Allient", "score": 3.0, "price": 116}),
+              ("CAP", {"rank": 1, "sector": "Industrials", "name": "Cap", "score": 9.0, "price": 10})]
+
+        class Frame:
+            def __init__(self, rows):
+                self.rows = rows
+
+            def iterrows(self):
+                return iter(self.rows)
+
+        out = universe.screen_leaders(DATA_DAY, per_sector=1,
+                                      screen=lambda w, ex, top: (Frame(main), {"rs_leaders": Frame(rs)}))
+        assert [(n.symbol, n.source) for n in out] == [("CAP", "screen"), ("ALNT", "rs")]
+        assert out[1].screen_rank == 140
+
+    def test_saved_screen_reads_the_relative_strength_file(self, tmp_path, monkeypatch):
+        from tradingagents.live import advisor
+        monkeypatch.setattr(advisor, "screens_dirs", lambda: [tmp_path])
+        day = DATA_DAY.isoformat()
+        (tmp_path / f"screen_all_{day}.csv").write_text("symbol,rank,sector,name,score,price\nAAA,1,Energy,A,9,10\n")
+        (tmp_path / f"screen_rs_all_{day}.csv").write_text(
+            "symbol,rank,sector,name,score,price\nALNT,140,Industrials,Allient,3,116\nAAA,1,Energy,A,9,10\n")
+        out = universe.saved_screen(DATA_DAY)
+        assert [(n.symbol, n.source) for n in out] == [("AAA", "screen"), ("ALNT", "rs")]
+
 
 # ---------------------------------------------------------------------------
 # advise

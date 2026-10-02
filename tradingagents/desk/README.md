@@ -75,7 +75,10 @@ The score is one published rule (`report.score`): trend ≤ 40, momentum ±20,
 volume ±5, relative strength vs SPY ±10, policy tilt ±10, news ±15, and
 deductions for being stretched, broken or a week from earnings. The universe
 is `universe.BELLWETHERS` (the largest names in every sector, always on the
-page) plus the screen's leaders capped per sector.
+page) plus the screen's leaders capped per sector, plus the screen's 20
+strongest names over the last month against SPY (`source = rs`), uncapped. The
+screen's score leans on 12- and 6-month momentum, so without that second list
+a name a month into a fresh run never reaches the relative-strength board.
 
 ## 3 · advise (the pack for the portfolio)
 

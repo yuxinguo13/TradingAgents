@@ -423,3 +423,94 @@ def test_changing_the_watchlist_does_not_reuse_the_old_panel(monkeypatch, tmp_pa
     sc.screen_watchlist("2026-08-25", watchlist=["LEADER"], log=lambda m: None)
     sc.screen_watchlist("2026-08-25", watchlist=["LEADER", "LAGGARD"], log=lambda m: None)
     assert seen[0] != seen[1], "a changed watchlist must not share a cache key"
+
+
+# ---------------------------------------------------------------------------
+# screen(): the one-month relative-strength list
+# ---------------------------------------------------------------------------
+
+def _rs_frame():
+    # STEADY wins every long-horizon factor; FRESH is a month into a run (weak
+    # 12-1 and 6-month, +30 points over SPY in 21 sessions) and ranks last on
+    # the main score — the ALNT case. BOUNCE jumped too but is under its 50-day.
+    idx = ["STEADY", "FRESH", "BOUNCE"]
+    return pd.DataFrame({
+        "price":        [100.0, 100.0, 100.0],
+        "dollar_vol_50": [5e8, 5e8, 5e8],
+        "rows":         [250, 250, 250],
+        "rvol_20":      [0.3, 0.6, 0.6],
+        "ext_200":      [0.2, 0.4, 0.05],
+        "above_200":    [True, True, True],
+        "mom_12_1":     [0.8, 0.0, 0.0],
+        "ret_6m":       [0.6, 0.1, 0.0],
+        "rs_3m":        [0.4, 0.2, 0.0],
+        "rs_1m":        [0.02, 0.30, 0.25],
+        "ud_vol_50":    [1.5, 1.0, 1.0],
+        "obv_slope_50": [1.0, 0.5, 0.0],
+        "sma50_slope":  [1.0, 0.5, -0.5],
+        "off_high":     [-0.01, -0.02, -0.20],
+        "dist_days_25": [1, 3, 5],
+        "above_50":     [True, True, False],
+    }, index=idx)
+
+
+@pytest.mark.unit
+def test_rs_leaders_finds_the_name_the_main_score_cuts(monkeypatch, tmp_path):
+    _screen_env(monkeypatch, tmp_path, _rs_frame())
+    g, stats = sc.screen("2026-08-25", top=1, max_per_sector=None, log=lambda m: None)
+    assert list(g.index) == ["STEADY"], "the main ranking is unchanged"
+    rs = stats["rs_leaders"]
+    assert list(rs.index) == ["FRESH"], "under the 50-day or under rs_min stays out"
+    assert int(rs.loc["FRESH", "rank"]) > 1, "it keeps its rank in the main score"
+
+
+@pytest.mark.unit
+def test_rs_leaders_get_sectors_when_the_screen_caps_by_sector(monkeypatch, tmp_path):
+    _screen_env(monkeypatch, tmp_path, _rs_frame())
+    asked = []
+
+    def sectors(tickers, log=None):
+        asked.extend(tickers)
+        return dict.fromkeys(tickers, ("Industrials", "Electrical"))
+
+    monkeypatch.setattr(sc, "fetch_sectors", sectors)
+    _, stats = sc.screen("2026-08-25", top=1, max_per_sector=1, candidate_pool=1,
+                         log=lambda m: None)
+    assert "FRESH" in asked
+    assert stats["rs_leaders"].loc["FRESH", "sector"] == "Industrials"
+
+
+@pytest.mark.unit
+def test_rs_leaders_is_empty_without_the_factor(monkeypatch, tmp_path):
+    # Frames from before rs_1m existed must not break the screen.
+    _screen_env(monkeypatch, tmp_path, _factor_frame())
+    _, stats = sc.screen("2026-08-25", top=10, max_per_sector=None, log=lambda m: None)
+    assert stats["rs_leaders"].empty
+
+
+@pytest.mark.unit
+def test_pool_rebuild_downloads_the_benchmark(tmp_path, monkeypatch):
+    # The listing has no ETFs, and the screen reuses this panel: without SPY
+    # every rs_* factor silently became a raw return (2026-10-01).
+    monkeypatch.setattr(sc, "_cache_dir", lambda: tmp_path)
+    monkeypatch.setattr(sc, "fetch_universe", lambda exchange="nasdaq": pd.DataFrame(
+        {"symbol": ["AAA"], "name": ["a"], "exchange": ["NASDAQ"]}))
+    asked = []
+    monkeypatch.setattr(sc, "download_panel",
+                        lambda tickers, *a, **k: asked.extend(tickers) or {"Close": pd.DataFrame()})
+    monkeypatch.setattr(sc, "compute_factors", lambda panel, **k: pd.DataFrame(
+        {"price": [50.0], "dollar_vol_50": [9e6], "rows": [250]}, index=["AAA"]))
+    sc.qualified_universe("2026-08-25", log=lambda m: None)
+    assert "SPY" in asked
+
+
+@pytest.mark.unit
+def test_screen_does_not_reuse_a_full_panel_without_the_benchmark(monkeypatch, tmp_path):
+    factors = _factor_frame()
+    _screen_env(monkeypatch, tmp_path, factors)
+    pd.to_pickle({"Close": pd.DataFrame({"WINNER": [1.0]})}, tmp_path / "panel_nasdaq_2026-08-25.pkl")
+    downloaded = []
+    monkeypatch.setattr(sc, "download_panel",
+                        lambda tickers, *a, **k: downloaded.extend(tickers) or {"Close": pd.DataFrame()})
+    sc.screen("2026-08-25", top=10, max_per_sector=None, log=lambda m: None)
+    assert "SPY" in downloaded, "a panel without SPY must be downloaded afresh"
