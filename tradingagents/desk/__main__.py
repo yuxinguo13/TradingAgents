@@ -13,6 +13,8 @@ USAGE = """usage: python -m tradingagents.desk <task> [options]
   site     the report as a web site (index + a page per name), ready to publish
   report   the market, sector by sector, with no account in view
   advise   what to do with a portfolio you typed in
+  review   hit rate, R and alpha vs SPY over the log and the past reports (manual §11)
+  stock    one name, everything the desk knows about it (stock NKE | stock site NKE)
   trade    the rule-based trader (fallback when nobody is reading the pack)
 
 Each task takes --help. State: $TRADINGAGENTS_HOME/desk/<task>/
@@ -41,6 +43,10 @@ def main(argv: list[str] | None = None) -> int:
         from .report import main as run
     elif task == "advise":
         from .advise import main as run
+    elif task == "review":
+        from .review import main as run
+    elif task == "stock":
+        from .stock import main as run
     else:
         print(f"unknown task {task!r}\n\n{USAGE}")
         return 2

@@ -52,9 +52,9 @@ TASK = "trade"
 # --- the limits (MANUAL.md §3). Change them here and in the manual together. --
 RISK_PCT = 0.01                 # a stop-out costs this share of equity
 MAX_NAME_WEIGHT = 0.10          # one symbol's share of equity, after the fill
-MAX_DAILY_NEW_RISK = 0.03       # sum of today's new positions' risk, share of equity
+MAX_DAILY_NEW_RISK = 0.04       # sum of today's new positions' risk, share of equity
 DAILY_DRAWDOWN_HALT = 0.03      # equity down this much on the day → no new buys
-MAX_POSITIONS = 8
+MAX_POSITIONS = 10
 MAX_PER_SECTOR = 3
 MIN_R = 2.0
 MIN_STOP_ATRS = 1.0             # stop no nearer than this many ATRs
@@ -65,20 +65,25 @@ REENTRY_DAYS = 10
 MIN_PRICE = 5.0
 MIN_CASH_LEFT = 0.0
 
-# --- the aggressive sleeve (MANUAL.md §10): breakouts, half size, no cushion --
+# --- the momentum sleeve (MANUAL.md §10): strength bought on strength, no cushion --
+# Owner's decision 2026-10-02 (logged as a §11 proposal with the 20-day case):
+# full size, four seats, R ≥ 1.2, and a fourth trigger, relative strength, so a
+# leader that never gives a pullback can be bought. The stop still sits at the
+# breakout-day low or the 20-day line, never more than 8% away.
 CORE, AGGRESSIVE = "core", "aggressive"
 SLEEVE = {
     CORE: dict(risk_pct=RISK_PCT, max_name_weight=MAX_NAME_WEIGHT, max_limit_deviation=MAX_LIMIT_DEVIATION,
                min_r=MIN_R, min_stop_atrs=MIN_STOP_ATRS, max_stop_pct=MAX_STOP_PCT, horizon_days=30,
                max_positions=MAX_POSITIONS),
-    AGGRESSIVE: dict(risk_pct=0.005, max_name_weight=0.05, max_limit_deviation=0.05,
-                     min_r=1.5, min_stop_atrs=0.5, max_stop_pct=0.08, horizon_days=15,
-                     max_positions=2),
+    AGGRESSIVE: dict(risk_pct=RISK_PCT, max_name_weight=0.08, max_limit_deviation=0.05,
+                     min_r=1.2, min_stop_atrs=0.5, max_stop_pct=0.08, horizon_days=20,
+                     max_positions=4),
 }
 MAX_AGGRESSIVE = SLEEVE[AGGRESSIVE]["max_positions"]
-TRIGGERS = ("volume", "catalyst", "pattern")     # a breakout needs two of the three
+TRIGGERS = ("volume", "catalyst", "pattern", "rs")   # a momentum entry needs two of the four
 TRIGGERS_NEEDED = 2
 BREAKOUT_VOLUME_RATIO = 1.5                       # breakout-day volume vs the 20-day average
+RS_MIN = 0.10                                     # 21-day return minus SPY's, for the rs trigger
 
 
 # ---------------------------------------------------------------------------
@@ -132,6 +137,7 @@ class Closed:
     pnl: float = 0.0
     r: float = float("nan")
     reviewed: bool = False          # a post-mortem has been logged
+    sleeve: str = "core"
 
 
 class DeskBook:
@@ -168,7 +174,8 @@ class DeskBook:
         c = Closed(symbol=symbol, shares=n, entry=p.entry, exit=exit_price, opened=p.opened,
                    closed=when.isoformat(), reason=reason, thesis=p.thesis,
                    invalidation=p.invalidation, principles=list(p.principles),
-                   pnl=round(n * (exit_price - p.entry), 2), r=p.r_at(exit_price))
+                   pnl=round(n * (exit_price - p.entry), 2), r=p.r_at(exit_price),
+                   sleeve=p.sleeve or "core")
         self.closed.append(c)
         if n >= p.shares:
             del self.positions[symbol]
@@ -242,7 +249,7 @@ class Gate:
     def buy(self, symbol: str, entry: float, stop: float, target: float, *,
             price: float, atr_pct: float, sector: str, earnings_days: float,
             sma200: float = float("nan"), sleeve: str = CORE, triggers: list | None = None,
-            vol_ratio: float = float("nan")) -> Verdict:
+            vol_ratio: float = float("nan"), rs_1m: float = float("nan")) -> Verdict:
         if sleeve not in SLEEVE:
             return Verdict(False, f"unknown sleeve {sleeve!r}; core or aggressive")
         lim = SLEEVE[sleeve]
@@ -266,6 +273,8 @@ class Gate:
             claimed = [t for t in (triggers or []) if t in TRIGGERS]
             if "volume" in claimed and _ok(vol_ratio) and vol_ratio < BREAKOUT_VOLUME_RATIO:
                 return Verdict(False, f"the volume trigger is claimed but the last bar's volume ratio is {vol_ratio:.1f} (needs {BREAKOUT_VOLUME_RATIO})")
+            if "rs" in claimed and _ok(rs_1m) and rs_1m < RS_MIN:
+                return Verdict(False, f"the rs trigger is claimed but the 21-day return is only {rs_1m * 100:+.1f} points vs SPY (needs +{RS_MIN * 100:.0f})")
             if len(claimed) < TRIGGERS_NEEDED:
                 return Verdict(False, f"a breakout needs {TRIGGERS_NEEDED} of {TRIGGERS}; got {claimed or 'none'}")
         elif len([p for p in self.book.positions.values() if p.sleeve != AGGRESSIVE]) >= MAX_POSITIONS - MAX_AGGRESSIVE:
@@ -456,7 +465,8 @@ class Executor:
         triggers = [str(t).lower() for t in (o.get("triggers") or [])]
         v = gate.buy(sym, entry, stop, target, price=price, atr_pct=_num(f.snap.atr_pct),
                      sector=sector, earnings_days=earnings_days, sma200=_num(f.snap.sma200),
-                     sleeve=sleeve, triggers=triggers, vol_ratio=_num(f.snap.vol_ratio))
+                     sleeve=sleeve, triggers=triggers, vol_ratio=_num(f.snap.vol_ratio),
+                     rs_1m=_num(getattr(f, "rs_1m", float("nan"))))
         out = Outcome("buy", sym, v.ok, v.reason, v.shares, entry, stop, target, sleeve=sleeve)
         if not v.ok:
             return out

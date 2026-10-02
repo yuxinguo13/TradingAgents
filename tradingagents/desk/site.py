@@ -51,17 +51,26 @@ def _num(v, d=2):
 
 
 def my_scores(final_md: str) -> dict:
-    """The ranking table Claude wrote: symbol → (score, entry, stop, target, r)."""
+    """The ranking table Claude wrote: symbol → (score, entry, stop, target, r).
+
+    A score may be negative, and the minus may be ASCII or the typographic
+    U+2212 the reports use; both read as a negative number.
+    """
     out = {}
-    for m in re.finditer(r"^\|\s*\d+\s*\|\s*([A-Z][A-Z.-]*)\s*\|\s*(\d+)\s*\|\s*\d+\s*\|\s*([\d.,]+|[^|]*?)\s*\|\s*([\d.,]+|[^|]*?)\s*\|\s*([\d.,]+|[^|]*?)\s*\|\s*([\d.]+|[^|]*?)\s*\|", final_md, re.M):
-        def f(x):
-            try:
-                return float(x.replace(",", ""))
-            except ValueError:
-                return None
-        out[m.group(1)] = (int(m.group(2)), f(m.group(3)), f(m.group(4)), f(m.group(5)), f(m.group(6)))
-    for m in re.finditer(r"^\s*[-*]\s+\*\*([A-Z][A-Z.-]*)[^*]*?(\d+)\s*分", final_md, re.M):
-        out.setdefault(m.group(1), (int(m.group(2)), None, None, None, None))
+
+    def num(x):
+        try:
+            return float(x.replace(",", "").replace("−", "-"))
+        except ValueError:
+            return None
+
+    def whole(x):
+        return int(x.replace("−", "-"))
+
+    for m in re.finditer(r"^\|\s*\d+\s*\|\s*([A-Z][A-Z.-]*)\s*\|\s*([-−]?\d+)\s*\|\s*[-−]?\d+\s*\|\s*([\d.,]+|[^|]*?)\s*\|\s*([\d.,]+|[^|]*?)\s*\|\s*([\d.,]+|[^|]*?)\s*\|\s*([\d.]+|[^|]*?)\s*\|", final_md, re.M):
+        out[m.group(1)] = (whole(m.group(2)), num(m.group(3)), num(m.group(4)), num(m.group(5)), num(m.group(6)))
+    for m in re.finditer(r"^\s*[-*]\s+\*\*([A-Z][A-Z.-]*)[^*]*?([-−]?\d+)\s*分", final_md, re.M):
+        out.setdefault(m.group(1), (whole(m.group(2)), None, None, None, None))
     return out
 
 
@@ -171,43 +180,110 @@ def build(when: str | date | None = None, *, market: Market | None = None, out_d
         src = rdir / when / f"{s}.md"
         if s not in known or not src.exists():
             continue
-        md = src.read_text(encoding="utf-8")
-        name = re.sub(r"^# [A-Z.-]+ · ", "", md.splitlines()[0]).strip()
-        name = re.sub(r"\s*\(.*?\)", "", name)
-        name = re.split(r" American Depositary| Depositary| - Class| Common Stock| Ordinary Shares", name)[0].strip()
-        if len(name) > 48:
-            name = name[:48].rsplit(" ", 1)[0] + "…"
-        md = "\n".join(md.splitlines()[1:])
-        md = re.sub(r"^\[← 回到.*?\]\(.*?\)\n", "", md, flags=re.M)
-        pb = _md(md)
-        pb = re.sub(r'<pre><code class="language-text">\s*' + re.escape(s) + r" · 近.*?</code></pre>", "", pb, count=1, flags=re.S)
-        pb = re.sub(r"<code>([" + SPARK + r"]+)</code>", r'<span class="spark">\1</span>', pb)
-        my = mine.get(s)
-        note = notes.get(s)
-        note_html = ('<div class="mine">' + _md(note) + "</div>") if note else \
-            '<div class="mine"><h3>我的判断</h3><p>这只没有进入我今天重点分析的名字。下面是代码按同一把尺子给出的读数和详情，供参考；要我看它，说一声。</p></div>'
-        rule = '<div class="rule"><strong>代码的读数（参考分 %+.0f）</strong><ul>%s%s</ul></div>' % (
-            i["score"], "".join(f"<li>✓ {H.escape(r)}</li>" for r in i.get("reasons", [])),
-            "".join(f"<li>⚠ {H.escape(c)}</li>" for c in i.get("cautions", [])))
-        badges = [f'<span class="badge">{SECTOR_ZH.get(i["sector"], i["sector"])}</span>', f'<span class="badge">现价 {_num(i["price"])}</span>']
-        if i.get("ret_3m") is not None and i["ret_3m"] == i["ret_3m"]:
-            badges.append(f'<span class="badge">三月 {i["ret_3m"] * 100:+.0f}%</span>')
-        badges += [f'<span class="badge">RSI {_num(i["rsi"], 0)}</span>', f'<span class="badge">参考分 {i["score"]:+.0f}</span>']
-        if my:
-            badges.append(f'<span class="badge score">我的分 {my[0]}</span>')
-        if i.get("earnings_date"):
-            badges.append(f'<span class="badge">财报 {i["earnings_date"][:10]}</span>')
-        page = (f"<title>{s} 分析 · {when}</title>\n{FONTS}\n<link rel=\"stylesheet\" href=\"../desk.css\">\n"
-                f'<div class="wrap">\n<p class="crumb"><a href="../index.html">← 回到市场日报 {when}</a></p>\n'
-                f'<header class="masthead">\n  <div class="eyebrow">Trading desk · 个股分析 · 数据截至 {data_date} 收盘</div>\n'
-                f'  <h1><span class="sym">{s}</span> · {H.escape(name)}</h1>\n  <div class="badges">{"".join(badges)}</div>\n</header>\n'
-                f'<article>\n<figure class="chart" data-sym="{s}"></figure>\n{note_html}\n{rule}\n{pb}\n</article>\n'
-                '<footer class="foot"><p>图、指标、参考位、财报、基本面、新闻由代码从公开数据算出；「我的判断」是 Claude 按操盘手册打的分和写的理由。这不是投资建议。</p></footer>\n</div>\n'
-                f'<script id="chartdata" type="application/json">{json.dumps({"stocks": {s: bars[s]}, "macro": {}})}</script>\n<script src="../desk.js"></script>\n')
+        page = _name_page(s, when, data_date, i, mine.get(s), notes.get(s), src.read_text(encoding="utf-8"),
+                          bars[s], back_link="../index.html", back_text=f"← 回到市场日报 {when}", css="../desk.css",
+                          js="../desk.js")
         (out / "pages" / f"{s}.html").write_text(page, encoding="utf-8")
         files.append(f"pages/{s}.html")
     (out / "files.json").write_text(json.dumps(files), encoding="utf-8")
     logger.info("site: %s (%d pages)", out, len(files) - 2)
+    return out
+
+
+def _short_name(md: str, s: str) -> str:
+    name = re.sub(r"^# [A-Z.-]+ · ", "", md.splitlines()[0]).strip()
+    name = re.sub(r"\s*\(.*?\)", "", name)
+    name = re.split(r" American Depositary| Depositary| - Class| Common Stock| Ordinary Shares", name)[0].strip()
+    if len(name) > 48:
+        name = name[:48].rsplit(" ", 1)[0] + "…"
+    return name or s
+
+
+def _name_page(s: str, when: str, data_date: str, i: dict, my, note: str | None, md: str, bars_payload: dict,
+               *, back_link: str, back_text: str, css: str, js: str, eyebrow: str = "个股分析") -> str:
+    """One symbol's page: the interactive chart, my write-up, the code's reading, the full analysis."""
+    name = _short_name(md, s)
+    md = "\n".join(md.splitlines()[1:])
+    md = re.sub(r"^\[← 回到.*?\]\(.*?\)\n", "", md, flags=re.M)
+    pb = _md(md)
+    pb = re.sub(r'<pre><code class="language-text">\s*' + re.escape(s) + r" · 近.*?</code></pre>", "", pb, count=1, flags=re.S)
+    pb = re.sub(r"<pre><code>\s*" + re.escape(s) + r" 近 \d+ 个交易日.*?</code></pre>", "", pb, count=1, flags=re.S)
+    pb = re.sub(r"<code>([" + SPARK + r"]+)</code>", r'<span class="spark">\1</span>', pb)
+    note_html = ('<div class="mine">' + _md(note) + "</div>") if note else \
+        '<div class="mine"><h3>我的判断</h3><p>这只没有进入我今天重点分析的名字。下面是代码按同一把尺子给出的读数和详情，供参考；要我看它，说一声。</p></div>'
+    rule = '<div class="rule"><strong>代码的读数（参考分 %+.0f）</strong><ul>%s%s</ul></div>' % (
+        i["score"], "".join(f"<li>✓ {H.escape(r)}</li>" for r in i.get("reasons", [])),
+        "".join(f"<li>⚠ {H.escape(c)}</li>" for c in i.get("cautions", [])))
+    badges = [f'<span class="badge">{SECTOR_ZH.get(i["sector"], i["sector"])}</span>', f'<span class="badge">现价 {_num(i["price"])}</span>']
+    if i.get("ret_3m") is not None and i["ret_3m"] == i["ret_3m"]:
+        badges.append(f'<span class="badge">三月 {i["ret_3m"] * 100:+.0f}%</span>')
+    badges += [f'<span class="badge">RSI {_num(i["rsi"], 0)}</span>', f'<span class="badge">参考分 {i["score"]:+.0f}</span>']
+    if my:
+        badges.append(f'<span class="badge score">我的分 {my[0]}</span>')
+    if i.get("earnings_date"):
+        badges.append(f'<span class="badge">财报 {i["earnings_date"][:10]}</span>')
+    crumb = f'<p class="crumb"><a href="{back_link}">{back_text}</a></p>\n' if back_link else ""
+    return (f"<title>{s} 分析 · {when}</title>\n{FONTS}\n<link rel=\"stylesheet\" href=\"{css}\">\n"
+            f'<div class="wrap">\n{crumb}'
+            f'<header class="masthead">\n  <div class="eyebrow">Trading desk · {eyebrow} · 数据截至 {data_date} 收盘</div>\n'
+            f'  <h1><span class="sym">{s}</span> · {H.escape(name)}</h1>\n  <div class="badges">{"".join(badges)}</div>\n</header>\n'
+            f'<article>\n<figure class="chart" data-sym="{s}"></figure>\n{note_html}\n{rule}\n{pb}\n</article>\n'
+            '<footer class="foot"><p>图、指标、参考位、财报、基本面、新闻由代码从公开数据算出；「我的判断」是 Claude 按操盘手册打的分和写的理由。这不是投资建议。</p></footer>\n</div>\n'
+            f'<script id="chartdata" type="application/json">{json.dumps({"stocks": {s: bars_payload}, "macro": {}})}</script>\n<script src="{js}"></script>\n')
+
+
+def _bars_payload(m: Market, sym: str, dd: date, entry, stop, target, bars_n: int = 130) -> dict | None:
+    f = m.facts(sym, dd)
+    if not f.bars.closes:
+        return None
+    c, d = f.bars.closes, f.bars.dates
+    s20, s50 = charting.sma(c, 20), charting.sma(c, 50)
+
+    def fix(v):
+        return round(v, 2) if isinstance(v, (int, float)) and v == v else None
+    return {"dates": d[-bars_n:], "close": [round(x, 2) for x in c[-bars_n:]],
+            "sma20": [round(x, 2) if x is not None else None for x in s20[-bars_n:]],
+            "sma50": [round(x, 2) if x is not None else None for x in s50[-bars_n:]],
+            "entry": fix(entry), "stop": fix(stop), "target": fix(target)}
+
+
+def build_stock(symbol: str, when: str | date | None = None, *, market: Market | None = None,
+                out_dir: Path | None = None) -> Path:
+    """One name's pack and final as a single-page site (index.html + assets)."""
+    sdir = task_dir("stock")
+    sym = symbol.upper()
+    if when is None:
+        packs = sorted(sdir.glob(f"????-??-??-{sym}.json"))
+        if not packs:
+            raise FileNotFoundError(f"no stock pack for {sym} under {sdir}")
+        when = packs[-1].name[:10]
+    when = str(when)[:10]
+    pack = json.loads((sdir / f"{when}-{sym}.json").read_text(encoding="utf-8"))
+    final_path = sdir / f"{when}-{sym}-final.md"
+    final_md = final_path.read_text(encoding="utf-8") if final_path.exists() else ""
+    deep_path = sdir / f"{when}-{sym}-deepdive.md"
+    deep_md = deep_path.read_text(encoding="utf-8") if deep_path.exists() else f"# {sym} · {pack.get('name') or sym}\n"
+    m = market or Market(task="stock")
+    out = out_dir or (sdir / "site" / f"{when}-{sym}")
+    out.mkdir(parents=True, exist_ok=True)
+    mine = my_scores(final_md).get(sym) if final_md else None
+    lv = mine if mine and mine[1] else None
+    e, st, tg = (lv[1], lv[2], lv[3]) if lv else (pack.get("entry"), pack.get("stop"), pack.get("target"))
+    payload = _bars_payload(m, sym, date.fromisoformat(pack["data_date"]), e, st, tg)
+    if payload is None:
+        raise FileNotFoundError(f"no bars for {sym}")
+    note = re.sub(r"^# .*\n", "", final_md, count=1).strip() if final_md else None
+    i = {"symbol": sym, "sector": pack.get("sector", "Unknown"), "price": pack.get("price"),
+         "ret_3m": pack.get("ret_3m"), "rsi": pack.get("rsi"), "score": pack.get("score") or 0.0,
+         "reasons": pack.get("reasons", []), "cautions": pack.get("cautions", []),
+         "earnings_date": pack.get("earnings_date", "")}
+    page = _name_page(sym, when, pack.get("data_date", ""), i, mine, note, deep_md, payload,
+                      back_link="", back_text="", css="desk.css", js="desk.js", eyebrow="个股分析（单独）")
+    (out / "index.html").write_text(page, encoding="utf-8")
+    (out / "desk.css").write_text(CSS, encoding="utf-8")
+    (out / "desk.js").write_text(JS, encoding="utf-8")
+    (out / "files.json").write_text(json.dumps(["desk.css", "desk.js"]), encoding="utf-8")
+    logger.info("site: %s", out)
     return out
 
 

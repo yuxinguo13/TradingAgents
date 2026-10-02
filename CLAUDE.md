@@ -45,8 +45,11 @@ If a pull or push reports a failure, say so in the reply; do not retry by hand.
    the pack (last close); the gate checks each entry against the live price
    at order time, so an open that gapped past your entry refuses itself.
 3. Post-mortems first. For every name under 需要复盘, answer the three
-   questions in MANUAL §8 and log each with
+   questions in MANUAL §8 (the line carries the trade's move relative to SPY;
+   judge against that, not the raw P&L) and log each with
    `python -m tradingagents.desk log -` (stdin JSON, `"kind": "postmortem"`).
+   Before writing any `"kind": "proposal"`, run
+   `python -m tradingagents.desk review` and quote its counts (MANUAL §11).
 4. Positions, then candidates, per the checklists in MANUAL §4 and §1–2.
    You may add up to 5 news-driven names with
    `python -m tradingagents.desk pack facts A,B,C` after a web search of the
@@ -55,11 +58,15 @@ If a pull or push reports a failure, say so in the reply; do not retry by hand.
    `tradingagents/desk/orders.py`): `sell` / `trim` / `raise_stop` / `protect`
    / `buy`, each with its reason, and for buys the thesis, the invalidation
    condition, the principles it rests on, and the regime line. Levels only;
-   no share counts. A breakout trade (MANUAL §10) carries
-   `"sleeve": "aggressive"` and `"triggers"` naming at least two of
-   `volume` / `catalyst` / `pattern`, with the stop at the breakout-day low;
-   the pack's 进攻仓候选 table lists what the bars show. At most 2, half size. On a day the manual calls defensive (VIX ≥ 30, SPX under
-   its 200-day) take at most half the usual new positions.
+   no share counts. **The momentum sleeve comes first (MANUAL §10):** go
+   down the pack's 进攻仓候选 table (the relative-strength leaders, with
+   their triggers, breakout-day low and 20-day line) and fill the sleeve's
+   4 seats with the names that meet two of `volume` / `catalyst` /
+   `pattern` / `rs`, bought on strength (entry at the price or within 1 ATR
+   above the 20-day line, stop at the breakout-day low or the 20-day line,
+   ≤ 8%), as `"sleeve": "aggressive"` with `"triggers"`. Then the core
+   pullback candidates. On a day the manual calls defensive (VIX ≥ 30, SPX
+   under its 200-day) take at most half the usual new positions.
 5. `python -m tradingagents.desk order ~/.tradingagents/desk/trade/<date>-intent.json`.
    Read every line of the result. A refusal is final: do not edit numbers and
    resend. Log one `"kind": "decision"` entry per order you sent (MANUAL §8).
@@ -85,8 +92,9 @@ If a pull or push reports a failure, say so in the reply; do not retry by hand.
    进攻仓候选与突破跟踪 section (the pack's breakout table plus which of the
    three triggers each name meets and the breakout-day low), a 昨日复盘
    section (the pack's table of the previous report's calls against today's
-   closes, plus three sentences: which call the market has falsified, why,
-   and which rule you would change), the names to avoid, and 今日要闻与判断. Where your score differs from the reference score, say why.
+   closes with the SPY-relative column, plus the pack's 五日结算 table of the
+   calls from five sessions ago scored in R, plus three sentences: which call
+   the market has falsified, why, and which rule you would change), the names to avoid, and 今日要闻与判断. Where your score differs from the reference score, say why.
    This task never reads any account or portfolio.
 4. `python -m tradingagents.desk site --date <date> --out ./site-<date>` —
    builds the report as a web site in that folder inside the repo checkout
@@ -99,6 +107,29 @@ If a pull or push reports a failure, say so in the reply; do not retry by hand.
    and skip the publish.
 5. `python -m tradingagents.desk state push`, then reply with the artifact
    link first, followed by the final report in full.
+
+### Task 4 — stock (on demand: the user names a symbol and asks for its analysis)
+
+1. `python -m tradingagents.desk stock <SYM>` — writes the pack
+   `~/.tradingagents/desk/stock/<date>-<SYM>.md` (+ `.json`, and the full
+   `-deepdive.md` page): price and chart, the code's score and reference
+   levels, breakout triggers, earnings date, insiders, the sector's week and
+   month, headlines, and every earlier call the desk made on the name,
+   settled over five sessions.
+2. Research with web search, in parallel: (a) the company's last two
+   earnings, guidance and the next report date; (b) the past two weeks' news,
+   analyst actions with firm and target, legal or regulatory items; (c) the
+   sector's policy backdrop and one or two peers for context.
+3. Write `~/.tradingagents/desk/stock/<date>-<SYM>-final.md` in the structure
+   of MANUAL §12, including one ranking-table row in the daily report's
+   format so the page and later settlement can read your levels.
+4. `python -m tradingagents.desk stock site <SYM> --date <date> --out ./site-<SYM>-<date>`
+   and publish that folder with the Artifact tool (`file_path` its
+   `index.html`, `root` the folder, `files` from its `files.json`; icon
+   `chart`). Reply with the link first, then the final in full.
+5. `python -m tradingagents.desk state push`. This task reads no account;
+   if the user holds the name, say what to do with the holding under the
+   horizon their portfolio file declares.
 
 ### Task 3 — advise (weekdays, after the report)
 

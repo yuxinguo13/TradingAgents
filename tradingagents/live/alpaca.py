@@ -470,14 +470,20 @@ class AlpacaBroker:
         from alpaca.trading.enums import QueryOrderStatus
         from alpaca.trading.requests import GetOrdersRequest
         try:
+            # nested=True, or the stop legs of every bracket and OCO are
+            # invisible: Alpaca lists only parents by default, and the leg
+            # that actually protects the position sits under the parent with
+            # status "held". 2026-09-25: fifteen OCOs, fifteen stops resting,
+            # and the flat listing reported none of them.
             orders = self.trading.get_orders(
-                GetOrdersRequest(status=QueryOrderStatus.OPEN))
+                GetOrdersRequest(status=QueryOrderStatus.OPEN, nested=True, limit=500))
         except Exception as exc:
             logger.warning("could not list open orders: %s", exc)
             return []
         out = []
-        for o in orders:
-            out.append({
+
+        def row(o, parent_id=""):
+            return {
                 "id": str(o.id), "symbol": o.symbol,
                 "side": getattr(o.side, "value", str(o.side)),
                 "qty": _f(o.qty), "filled": _f(o.filled_qty),
@@ -486,7 +492,15 @@ class AlpacaBroker:
                 "submitted_at": str(getattr(o, "submitted_at", "")),
                 "stop_price": _f(getattr(o, "stop_price", None)),
                 "limit_price": _f(getattr(o, "limit_price", None)),
-            })
+                "parent_id": parent_id,
+            }
+
+        for o in orders:
+            out.append(row(o))
+            for leg in getattr(o, "legs", None) or []:
+                status = getattr(leg.status, "value", str(leg.status))
+                if status not in ("filled", "canceled", "expired", "rejected"):
+                    out.append(row(leg, parent_id=str(o.id)))
         return out
 
     # --- extras the browser adapter could not offer -------------------------

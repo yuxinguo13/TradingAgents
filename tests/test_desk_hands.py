@@ -204,9 +204,9 @@ class TestGate:
         assert not out[0].ok and "200-day" in out[0].reason and v.placed == []
 
     def test_the_daily_new_risk_budget(self, home):
-        g = gate(home, risk_committed_today=2_800)
+        g = gate(home, risk_committed_today=3_800)
         v = g.buy("AAA", 100.0, 97.0, 107.0, price=100.0, atr_pct=0.02, sector="", earnings_days=30)
-        assert not v.ok and "3%" in v.reason
+        assert not v.ok and "4%" in v.reason
 
     def test_the_drawdown_halt(self, home):
         g = gate(home, equity=96_500, last_equity=100_000)
@@ -223,10 +223,10 @@ class TestGate:
         assert not v.ok and "Technology" in v.reason
         v = g.buy("AAA", 100.0, 97.0, 107.0, price=100.0, atr_pct=0.02, sector="Energy", earnings_days=30)
         assert not v.ok and "stopped out" in v.reason
-        for i in range(3, 8):
+        for i in range(3, 10):
             book.positions[f"E{i}"] = Position(f"E{i}", 1, 10, 9, 12, "2026-08-20", sector="Energy")
         v = g.buy("CCC", 100.0, 97.0, 107.0, price=100.0, atr_pct=0.02, sector="Utilities", earnings_days=30)
-        assert not v.ok and "8 positions" in v.reason
+        assert not v.ok and "10 positions" in v.reason
 
     def test_stops_only_move_up(self, home):
         book = DeskBook(home / "desk" / "trade" / "book.json")
@@ -245,7 +245,7 @@ class TestGate:
 
 @pytest.mark.unit
 class TestAggressiveSleeve:
-    """MANUAL §10: breakouts on half size, two of three triggers, no cushion."""
+    """MANUAL §10: momentum on full size, two of four triggers, no cushion."""
 
     def buy(self, g, **kw):
         args = dict(price=100.5, atr_pct=0.02, sector="Technology", earnings_days=30, sleeve="aggressive",
@@ -253,10 +253,16 @@ class TestAggressiveSleeve:
         args.update(kw)
         return g.buy("AAA", args.pop("entry", 100.0), args.pop("stop", 97.0), args.pop("target", 105.0), **args)
 
-    def test_a_breakout_with_two_triggers_passes_on_half_size(self, home):
+    def test_a_breakout_with_two_triggers_passes_on_full_size(self, home):
         v = self.buy(gate(home))
-        assert v.ok and v.shares == 50            # 0.5% of 100k = $500 ÷ $3 = 166, capped by 5% = $5,000 ÷ 100
-        assert v.risk == 150.0
+        assert v.ok and v.shares == 80            # 1% of 100k = $1,000 ÷ $3 = 333, capped by 8% = $8,000 ÷ 100
+        assert v.risk == 240.0
+
+    def test_a_claimed_rs_trigger_is_checked_against_spy(self, home):
+        v = self.buy(gate(home), triggers=["rs", "pattern"], rs_1m=0.04)
+        assert not v.ok and "rs trigger" in v.reason
+        assert self.buy(gate(home), triggers=["rs", "pattern"], rs_1m=0.15).ok
+        assert self.buy(gate(home), triggers=["rs", "pattern"]).ok          # unknown rs: the claim stands
 
     def test_one_trigger_is_not_a_breakout(self, home):
         v = self.buy(gate(home), triggers=["catalyst"])
@@ -268,20 +274,20 @@ class TestAggressiveSleeve:
         assert self.buy(gate(home), triggers=["catalyst", "pattern"], vol_ratio=1.1).ok
 
     def test_the_sleeve_has_its_own_r_chase_and_stop_rules(self, home):
-        assert self.buy(gate(home), target=104.6).ok                      # R 1.53 ≥ 1.5
-        assert not self.buy(gate(home), target=104.0).ok                  # R 1.33
+        assert self.buy(gate(home), target=104.0).ok                      # R 1.33 ≥ 1.2
+        assert not self.buy(gate(home), target=103.4).ok                  # R 1.13
         assert self.buy(gate(home), entry=104.5, price=100.0, stop=101.4, target=109.5).ok   # 4.5% chase allowed
         assert not self.buy(gate(home), entry=106.0, price=100.0, stop=102.8, target=111.0).ok   # 6% is not
         assert self.buy(gate(home), stop=98.8, target=102.0).ok            # 1.2% stop = 0.6 ATR, allowed here
         assert not self.buy(gate(home), stop=91.0, target=115.0).ok        # 9% stop, over the 8% cap
 
-    def test_two_sleeve_seats_and_no_double_sleeve_on_one_name(self, home):
+    def test_four_sleeve_seats_and_no_double_sleeve_on_one_name(self, home):
         book = DeskBook(home / "desk" / "trade" / "book.json")
-        book.positions["X1"] = Position("X1", 1, 10, 9, 12, "2026-08-20", sleeve="aggressive")
-        book.positions["X2"] = Position("X2", 1, 10, 9, 12, "2026-08-20", sleeve="aggressive")
+        for i in range(4):
+            book.positions[f"X{i}"] = Position(f"X{i}", 1, 10, 9, 12, "2026-08-20", sleeve="aggressive")
         v = self.buy(gate(home, book=book))
-        assert not v.ok and "2 aggressive" in v.reason
-        book.positions.pop("X2"); book.positions["AAA"] = Position("AAA", 1, 10, 9, 12, "2026-08-20")
+        assert not v.ok and "4 aggressive" in v.reason
+        book.positions.pop("X3"); book.positions["AAA"] = Position("AAA", 1, 10, 9, 12, "2026-08-20")
         assert not self.buy(gate(home, book=book)).ok                     # already a core position
 
     def test_core_keeps_six_seats(self, home):
@@ -292,7 +298,7 @@ class TestAggressiveSleeve:
         assert not v.ok and "6 core" in v.reason
         assert self.buy(gate(home, book=book)).ok                          # the sleeve's seats are still free
 
-    def test_the_executor_books_the_sleeve_with_a_15_day_horizon(self, home):
+    def test_the_executor_books_the_sleeve_with_a_20_day_horizon(self, home):
         shape("AAA", 100.0, drift=0.6)
         v = FakeVenue(acct())
         px = v.quote("AAA")
@@ -300,7 +306,7 @@ class TestAggressiveSleeve:
                                                      sleeve="aggressive", triggers=["catalyst", "pattern"])]})
         assert out[0].ok, out[0].reason
         p = DeskBook(home / "desk" / "trade" / "book.json").positions["AAA"]
-        assert p.sleeve == "aggressive" and p.horizon_days == 15 and p.triggers == ["catalyst", "pattern"]
+        assert p.sleeve == "aggressive" and p.horizon_days == 20 and p.triggers == ["catalyst", "pattern"]
         line = json.loads((home / "desk" / "trade" / "decisions.jsonl").read_text().splitlines()[-1])
         assert line["sleeve"] == "aggressive" and "进攻仓" in orders.format_outcomes(out)
 
@@ -343,15 +349,15 @@ class TestExecutor:
         assert line["ok"] is False and "R" in line["gate"]
 
     def test_the_second_buy_of_the_day_sees_the_first_ones_risk(self, home):
-        for s in ("AAA", "BBB", "CCC", "DDD"):
+        for s in ("AAA", "BBB", "CCC", "DDD", "EEE"):
             shape(s, 100.0, drift=0.6)
         v = FakeVenue(acct(cash=1_000_000, equity=1_000_000))
         px = v.quote("AAA")
         # a 9% stop: the 10% name cap binds at ~1,000 shares, so each buy risks ~0.9%
-        # of equity and the fourth would take the day past 3%
-        ords = [buy(s, round(px, 2), round(px * 0.91, 2), round(px * 1.25, 2), sector=s) for s in ("AAA", "BBB", "CCC", "DDD")]
+        # of equity and the fifth would take the day past 4%
+        ords = [buy(s, round(px, 2), round(px * 0.91, 2), round(px * 1.25, 2), sector=s) for s in ("AAA", "BBB", "CCC", "DDD", "EEE")]
         out = executor(v, home).run({"orders": ords})
-        assert [o.ok for o in out] == [True, True, True, False] and "3%" in out[3].reason
+        assert [o.ok for o in out] == [True, True, True, True, False] and "4%" in out[4].reason
 
     def test_sell_cancels_the_legs_and_flattens_in_one_step(self, home):
         shape("AAA", 100.0, drift=0.6)

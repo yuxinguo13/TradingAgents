@@ -114,7 +114,9 @@ class Facts:
     sector: str = ""
     earnings: object = None
     fundamentals: object = None
+    insiders: object = None
     news: list = field(default_factory=list)
+    rs_1m: float = float("nan")        # 21-day return minus SPY's
 
     @property
     def ok(self) -> bool:
@@ -308,7 +310,7 @@ class Market:
     """
 
     def __init__(self, *, task: str = "desk", bars_loader=None, news=None,
-                 policy=None, earnings=None, fundamentals=None, names=None,
+                 policy=None, earnings=None, fundamentals=None, insiders=None, names=None,
                  spy: str = "SPY"):
         self.task = task
         self._loader = bars_loader
@@ -316,6 +318,7 @@ class Market:
         self._policy = policy
         self._earnings = earnings
         self._fundamentals = fundamentals
+        self._insiders = insiders
         self._names = names
         self.spy = spy
         self._facts: dict[tuple[str, str], Facts] = {}
@@ -350,12 +353,13 @@ class Market:
             mine, theirs = bars.ret(21), spy.ret(21) if spy.closes else float("nan")
             if _ok(mine) and _ok(theirs):
                 excess["标普500"] = mine - theirs
+        rs = excess.get("标普500", float("nan"))
         trend = charting.read_trend(
             bars.symbol, bars.closes, bars.highs, bars.lows, bars.volumes,
             rsi=snap.rsi14, atr_pct=snap.atr_pct, vol_ratio=snap.vol_ratio,
             ret_1m=snap.ret_1m, ret_3m=snap.ret_3m, benchmark=excess,
         ) if bars.closes else charting.TrendRead(symbol=symbol.upper())
-        f = Facts(symbol=symbol.upper(), bars=bars, snap=snap, trend=trend)
+        f = Facts(symbol=symbol.upper(), bars=bars, snap=snap, trend=trend, rs_1m=rs)
         self._facts[key] = f
         return f
 
@@ -385,6 +389,12 @@ class Market:
         except Exception as exc:
             self.errors.append(f"news feeds unavailable ({type(exc).__name__}: {exc})")
             return by_symbol, macro_items
+        if symbols and not items:
+            # Google News and the RSS feeds answer an outage with an empty
+            # body, not an error. An empty poll across a whole batch is the
+            # feed, not the news: say so, so a blank column is not read as
+            # "nothing happened" (upstream's coverage-gap rule).
+            self.errors.append("新闻源没有返回任何条目：各名字的消息栏是空白，不是没有消息")
         now = datetime.now(timezone.utc)
         for item in items:
             if item.age_hours(now) > max_age_hours:
@@ -434,6 +444,19 @@ class Market:
             self.errors.append(f"fundamentals unavailable ({type(exc).__name__}: {exc})")
             return {}
 
+    def insiders(self, symbols: list[str], as_of: date | None = None) -> dict:
+        """Open-market insider buys and sells per symbol; empty when unavailable."""
+        if not symbols:
+            return {}
+        try:
+            if self._insiders is None:
+                from tradingagents.live.insiders import InsidersBook
+                self._insiders = InsidersBook(path=self.state_dir() / "insiders.json")
+            return dict(self._insiders.get(list(symbols), as_of=as_of))
+        except Exception as exc:
+            self.errors.append(f"insiders unavailable ({type(exc).__name__}: {exc})")
+            return {}
+
     def names(self):
         if self._names is None:
             from tradingagents.live.zhnames import ZhNames
@@ -441,7 +464,8 @@ class Market:
         return self._names
 
     def attach(self, facts: Facts, *, earnings: dict | None = None,
-               fundamentals: dict | None = None, news: dict | None = None) -> Facts:
+               fundamentals: dict | None = None, news: dict | None = None,
+               insiders: dict | None = None) -> Facts:
         """Fill the slow fields from the books already fetched for the batch."""
         sym = facts.symbol
         if earnings is not None:
@@ -454,4 +478,6 @@ class Market:
                 facts.name = facts.name or str(getattr(f, "name", "") or "")
         if news is not None:
             facts.news = list(news.get(sym, []))
+        if insiders is not None:
+            facts.insiders = insiders.get(sym)
         return facts

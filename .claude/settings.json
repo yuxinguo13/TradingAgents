@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m tradingagents.desk *)",
+      "Bash(python -m tradingagents.desk:*)",
+      "Bash(python -m tradingagents.live.waitopen)",
+      "Bash(python -m tradingagents.live.waitopen *)"
+    ]
+  }
+}

@@ -31,7 +31,7 @@ in the tree but is not what runs.
 |---|---|
 | reads the pack, the news, the charts | computes every indicator and the reference levels |
 | decides what to buy, sell, trim, protect; where the stop and target go; why; whether a trade is core or a breakout (`sleeve: aggressive`, MANUAL §10) | computes the share count: `min(equity × 1% ÷ |entry − stop|, equity × 10% ÷ entry, cash ÷ entry)` |
-| writes the thesis, the invalidation condition, the principles, the regime | refuses: price under its 200-day line, R < 2, stop under 1 ATR or over 10%, entry > 3% from the last price, earnings within 1 day, 8 positions, 3 per sector, 10% per name, 3% new risk per day, 3% daily drawdown halt, re-entry within 10 days, market closed, kill switch; for the aggressive sleeve: 2 of 3 triggers (volume checked against the bar), 0.5% risk, 5% per name, 5% chase, R ≥ 1.5, 2 seats of the 8 |
+| writes the thesis, the invalidation condition, the principles, the regime | refuses: price under its 200-day line, R < 2, stop under 1 ATR or over 10%, entry > 3% from the last price, earnings within 1 day, 10 positions, 3 per sector, 10% per name, 4% new risk per day, 3% daily drawdown halt, re-entry within 10 days, market closed, kill switch; for the momentum sleeve: 2 of 4 triggers (volume and rs checked against the bars), 1% risk, 8% per name, 5% chase, R ≥ 1.2, stop ≤ 8%, 4 seats of the 10 |
 | answers the post-mortem questions | places bracket orders (stop + take-profit resting at the venue, GTC); raises stops, never lowers or cancels them; the one cancel is inside a close |
 | writes the report and the advice | keeps `decisions.jsonl` and `book.json` |
 
@@ -65,8 +65,11 @@ dollar, oil, gold, bitcoin), policy & news (the policy monitor's brief and
 per-sector tilt, macro headlines), sectors (each ETF's week and month, the
 tilt, how many leaders sit above their 50-day), the ideas (score, ASCII chart
 with the averages and the levels, reasons, cautions, entry/stop/target, next
-earnings, fundamentals line, headlines), the names to avoid, and the full
-scoreboard.
+earnings, fundamentals line, insider line, headlines), the names to avoid,
+the full scoreboard, and two tables that keep score: 昨日复盘 (the previous
+final report's calls against today's close, with a SPY-relative column) and
+五日结算 (the calls from five sessions ago, scored in R if the entry was
+reached and against SPY either way — `review.settle_call`).
 
 The score is one published rule (`report.score`): trend ≤ 40, momentum ±20,
 volume ±5, relative strength vs SPY ±10, policy tilt ±10, news ±15, and
@@ -102,6 +105,39 @@ weeks, and the names to handle today.
 
 Writes `desk/advise/<date>.md`, `.json`, and a page per name.
 
+The portfolio file may carry `"horizon": "long"` for money that is held rather
+than traded (a retirement or HSA account): the adviser then uses `advise.LONG`
+— sell only 20% under the 200-day or on a hard bearish headline, a stock may
+be 30% and a broad index fund (`"kind": "index"`, or one of `INDEX_ETFS`) 60%,
+trim only 100% above the 200-day. Without it the manual's §7 swing rules apply.
+
+## 5 · stock (one name, on demand)
+
+```
+python -m tradingagents.desk stock NKE                  # the pack: desk/stock/<date>-NKE.md/.json/-deepdive.md
+python -m tradingagents.desk stock site NKE --out ./site-NKE-<date>   # one-page site from pack + final
+```
+
+Everything the report knows per name, for one name: indicators and the chart
+read, the manual's score with reasons, reference levels and R, breakout
+triggers, fundamentals, the next earnings date, insider buys and sells, the
+sector's week and month, headlines, and every earlier report call on the name
+settled over five sessions (`stock.past_calls`). The write-up goes in
+`<date>-<SYM>-final.md` (MANUAL §12); `site.build_stock` renders both into a
+single page with the interactive chart.
+
+## 4 · review (the score-keeper)
+
+```
+python -m tradingagents.desk review                 # hit rate, R, alpha vs SPY
+```
+
+Settles every closed trade in the book (per sleeve, per principle) and every
+call in every past final report whose five-session window has traded, and
+writes `desk/trade/review-<date>.md`. Nothing is scored by its own move
+alone: each row carries its return relative to SPY over the same window. This
+is the sample MANUAL §11 asks for before a rule changes.
+
 ## Scheduling
 
 On a Mac, `scripts/desk_cron.sh trade|report|advise` (see the header for the
@@ -112,10 +148,12 @@ keys and outbound access to `query2.finance.yahoo.com`, `fc.yahoo.com`,
 
 ## What the code does not do
 
-- It does not place stop orders at the venue. Stops live in `desk/trade/book.json`
-  and are checked once per run. A gap through the stop between runs is sold at
-  the next run's price.
-- It does not read filings or transcripts. News is headlines from RSS.
+- Stops rest at the venue as the stop leg of a bracket or OCO order; the book
+  only remembers them. A stop the venue does not hold is listed in the pack as
+  unprotected, and `protect` is the fix.
+- It does not read transcripts or full filings. News is headlines from RSS;
+  the only filing data is the insider-transaction summary from Yahoo
+  (`live/insiders.py`: open-market buys and sells in the last 90 days).
 - Rates come from the Treasury yield tickers; there is no Fed-funds series
   unless `FRED_API_KEY` is set for the analysis framework, which the desk does
   not call.
