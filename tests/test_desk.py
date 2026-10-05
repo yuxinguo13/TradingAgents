@@ -73,7 +73,7 @@ class StubNews:
     def __init__(self, items=()):
         self.items = list(items)
 
-    def poll(self, tickers, macro=True, pause=0.0):
+    def poll(self, tickers, macro=True, pause=0.0, **kw):
         return list(self.items)
 
 
@@ -81,7 +81,7 @@ class StubPolicy:
     def __init__(self, events=()):
         self.events = list(events)
 
-    def poll(self, categories=None, pause=0.0):
+    def poll(self, categories=None, pause=0.0, **kw):
         return list(self.events)
 
 
