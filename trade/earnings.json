@@ -419,6 +419,26 @@
 "eps_actual": 5.56,
 "surprise_pct": 0.54,
 "error": ""
+},
+"SHEL|2026-10-05": {
+"symbol": "SHEL",
+"as_of": "2026-10-05",
+"next_date": "2026-10-29",
+"last_date": "2026-07-30",
+"eps_estimate": 3.18,
+"eps_actual": 3.52,
+"surprise_pct": 10.63,
+"error": ""
+},
+"NAT|2026-10-05": {
+"symbol": "NAT",
+"as_of": "2026-10-05",
+"next_date": "2026-11-27",
+"last_date": "2026-08-27",
+"eps_estimate": 0.23,
+"eps_actual": 0.22,
+"surprise_pct": -3.39,
+"error": ""
 }
 }
 }
