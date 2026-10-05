@@ -159,6 +159,67 @@
    "stop_raised": false,
    "sleeve": "core",
    "triggers": []
+  },
+  "AVT": {
+   "symbol": "AVT",
+   "shares": 75,
+   "entry": 107.0,
+   "stop": 103.72,
+   "target": 117.8,
+   "opened": "2026-10-05",
+   "horizon_days": 20,
+   "sector": "",
+   "thesis": "动量账：Avnet 周五放量 1.6 倍 +4.6% 收 52 周新高，一月跑赢标普 18.5 个点，三条均线上、上升结构（前低 86.4 → 90.9）；三条触发是榜上最完整的。FQ4 营收 83 亿（+48%）、FQ1 指引 EPS 2.80–2.90；AI/数据中心元器件拉动分销商。止损在突破日低 103.72（3.1%，0.83 ATR），目标 117.8 = 三月 +30.2% 折三分之一，R 3.3。",
+   "invalidation": "收盘跌回 103.72，次日开盘平掉；SOX 收盘跌破 50 日线；一月相对标普跌回 +10 以下。财报约 10/28–29，在 20 天持有期（到 10/25）之外，若持仓延到那时要在日志里决定。",
+   "principles": [
+    "十·强势买强势：volume+pattern+rs",
+    "十·止损在突破日低点或 20 日线取高，不给缓冲",
+    "十·到 1R 后止损每天上移到 20 日线下"
+   ],
+   "regime": "标普 7,723 在 50/200 日线上，非农 +2.9 万后 10 月加息概率 16–23%，10 年期 5.28%，VIX 15.3，Brent 102；半导体和光通信是钱去的地方；不是防御日",
+   "parent_id": "4b14fc41-0568-4796-9521-dc13075e525a",
+   "legs": {
+    "limit": "80dd925b-dab7-4ef1-a103-6cee15bd945c",
+    "stop": "ddb3c449-2f7e-4ad6-be38-818a9e41c5d5"
+   },
+   "adopted": false,
+   "stop_raised": false,
+   "sleeve": "aggressive",
+   "triggers": [
+    "volume",
+    "pattern",
+    "rs"
+   ]
+  },
+  "LITE": {
+   "symbol": "LITE",
+   "shares": 7,
+   "entry": 1108.0,
+   "stop": 1037.24,
+   "target": 1286.7,
+   "opened": "2026-10-05",
+   "horizon_days": 20,
+   "sector": "",
+   "thesis": "动量账：Lumentum 周五收纪录 1,085（摆动高 1,085.7），今晨 +2.1%；一月跑赢标普 23.8 个点（榜第三），三月 +48%，三条均线上；周三 +7.7% 放量 1.6 倍是突破日。FQ4 营收 +109%、FQ1 指引 EPS 4.05–4.35，Bernstein 首评 1,220、Stifel 1,232；FCC 禁中国光模块草案未定稿、不计催化剂。止损在突破日低 1,037.24（6.4%，1.1 ATR），目标 1,286.7 = 三月 +48.4% 折三分之一，R 2.5。",
+   "invalidation": "收盘跌回 1,037.24，次日开盘平掉；10 年期收盘 >5.35% 且纳指跌破 50 日线；FCC 草案被正式撤回；一月相对标普跌回 +10 以下。财报约 11/4–5 在持有期外。",
+   "principles": [
+    "十·强势买强势：pattern+rs",
+    "十·拉伸不是动量账的禁忌",
+    "五·草案不算催化剂"
+   ],
+   "regime": "同上",
+   "parent_id": "60e2b090-e125-4319-919b-805e9404e5df",
+   "legs": {
+    "limit": "3f0585a7-c16a-4697-b1bb-35524f3b2e7d",
+    "stop": "613bc907-6faf-44e3-aa6c-3599869f3598"
+   },
+   "adopted": false,
+   "stop_raised": false,
+   "sleeve": "aggressive",
+   "triggers": [
+    "pattern",
+    "rs"
+   ]
   }
  },
  "closed": [
