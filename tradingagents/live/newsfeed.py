@@ -355,8 +355,16 @@ class NewsMonitor:
     # --- polling ------------------------------------------------------------
 
     def _collect(self, ticker: str, urls: list[tuple[str, str]],
-                 name: str = "") -> list[NewsItem]:
+                 name: str = "", include_seen: bool = False) -> list[NewsItem]:
+        """``include_seen`` returns what the feeds carry now, whether or not an
+        earlier poll already returned it. A loop that acts on news wants only
+        what is new since its last cycle; a pack that describes the day wants
+        the day — on 2026-10-04 a rebuilt report pack came up with blank news
+        columns because Friday's run had already "seen" Friday's headlines.
+        Items are still marked seen, so the loops that do want novelty keep it.
+        """
         items: list[NewsItem] = []
+        taken: set[str] = set()
         for source, url in urls:
             for raw in fetch_rss(url):
                 # Dropped before the seen-set, not after: an item that never
@@ -365,8 +373,9 @@ class NewsMonitor:
                 if ticker and _about_another_listing(raw["title"], ticker, name):
                     continue
                 fp = _fingerprint(raw["title"], ticker)
-                if fp in self.seen:
+                if fp in taken or (fp in self.seen and not include_seen):
                     continue
+                taken.add(fp)
                 # Mark inside the loop so two feeds carrying the same wire
                 # story in one cycle still yield only one item.
                 self.seen[fp] = datetime.now(timezone.utc).isoformat()
@@ -378,7 +387,7 @@ class NewsMonitor:
                 ))
         return items
 
-    def poll_ticker(self, ticker: str) -> list[NewsItem]:
+    def poll_ticker(self, ticker: str, include_seen: bool = False) -> list[NewsItem]:
         # Yahoo's feed is ticker-scoped and first-party, so it needs no help.
         # Google is a text search, so it gets the company name where we know
         # one — quoted, to keep the phrase together.
@@ -387,15 +396,15 @@ class NewsMonitor:
         return self._collect(ticker, [
             ("yahoo", YAHOO_TICKER.format(t=urllib.parse.quote(ticker))),
             ("google", GOOGLE_QUERY.format(q=urllib.parse.quote(query))),
-        ], name=name)
+        ], name=name, include_seen=include_seen)
 
-    def poll_macro(self) -> list[NewsItem]:
+    def poll_macro(self, include_seen: bool = False) -> list[NewsItem]:
         urls = [("google", GOOGLE_QUERY.format(q=urllib.parse.quote(q)))
                 for q in MACRO_QUERIES]
-        return self._collect("", urls)
+        return self._collect("", urls, include_seen=include_seen)
 
     def poll(self, tickers: list[str], macro: bool = True,
-             pause: float = 0.4) -> list[NewsItem]:
+             pause: float = 0.4, include_seen: bool = False) -> list[NewsItem]:
         """Poll every ticker plus the macro feeds; returns new items only.
 
         ``pause`` throttles between tickers. Google News will start returning
@@ -405,9 +414,9 @@ class NewsMonitor:
         """
         out: list[NewsItem] = []
         if macro:
-            out += self.poll_macro()
+            out += self.poll_macro(include_seen=include_seen)
         for tkr in tickers:
-            out += self.poll_ticker(tkr)
+            out += self.poll_ticker(tkr, include_seen=include_seen)
             time.sleep(pause)
         self._save()
         # Materiality first, then *newest* first inside a tier. Two passes

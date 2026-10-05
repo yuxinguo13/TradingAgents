@@ -929,16 +929,23 @@ class PolicyMonitor:
 
     # --- polling ------------------------------------------------------------
 
-    def _collect(self, urls: list[str]) -> list[PolicyEvent]:
+    def _collect(self, urls: list[str], include_seen: bool = False,
+                 max_age_hours: float | None = None) -> list[PolicyEvent]:
+        """``include_seen`` and ``max_age_hours`` serve a pack that describes a
+        window (see ``NewsMonitor._collect``): every event in the feeds that is
+        younger than the window, whether or not an earlier poll returned it."""
         out: list[PolicyEvent] = []
         now = datetime.now(timezone.utc)
         stamp = now.isoformat()
+        max_age = self.max_age_hours if max_age_hours is None else max_age_hours
+        taken: set[str] = set()
         for url in urls:
             for raw in fetch_rss(url):
                 title = raw.get("title", "")
                 fp = _fingerprint(title, _NAMESPACE)
-                if fp in self.seen:
+                if fp in taken or (fp in self.seen and not include_seen):
                     continue
+                taken.add(fp)
                 # Marked before classification, and marked even when nothing
                 # matches: classification is deterministic, so a headline that
                 # is not an event today will not be one tomorrow, and
@@ -952,18 +959,21 @@ class PolicyMonitor:
                     # unattended for weeks. An unclassifiable headline is not
                     # an event.
                     continue
-                if ev is None or ev.age_hours(now) > self.max_age_hours:
+                if ev is None or ev.age_hours(now) > max_age:
                     continue
                 out.append(ev)
         return out
 
-    def poll_category(self, category: str) -> list[PolicyEvent]:
+    def poll_category(self, category: str, include_seen: bool = False,
+                      max_age_hours: float | None = None) -> list[PolicyEvent]:
         queries = CATEGORIES.get(category, ())
         return self._collect([GOOGLE_QUERY.format(q=urllib.parse.quote(q))
-                              for q in queries])
+                              for q in queries],
+                             include_seen=include_seen, max_age_hours=max_age_hours)
 
     def poll(self, categories: list[str] | None = None,
-             pause: float = 0.4) -> list[PolicyEvent]:
+             pause: float = 0.4, include_seen: bool = False,
+             max_age_hours: float | None = None) -> list[PolicyEvent]:
         """Poll every category; returns new events, most severe first.
 
         ``pause`` throttles between categories for the reason NewsMonitor
@@ -973,7 +983,8 @@ class PolicyMonitor:
         out: list[PolicyEvent] = []
         for cat in (categories or list(CATEGORIES)):
             try:
-                out += self.poll_category(cat)
+                out += self.poll_category(cat, include_seen=include_seen,
+                                          max_age_hours=max_age_hours)
             except Exception:
                 # One unreachable category degrades to "nothing from this
                 # source", never to a dead loop.
