@@ -1,16 +1,21 @@
 {
- "cash": 17627.36,
- "note": "三个 Schwab 账户合并，按 2026-09-30 09:47 ET 截图：PCRA Trust A（TTMI 30、VST 25，现金 4439.98）、PCRA Trust B（AXTI 1、AVGO 7、LLY 2、MRVL 5、TXN 5、TTMI 15、QQQM 20，现金 10882.76）、HSA（PFE 2、SHEL 2，现金 2304.62）。9/30 前一个遗忘的挂单卖掉了 QQQM 19.04 股；TTMI +10、VST +10 为近日买入，成本按买入日价近似。退休/HSA 账户，长线规则（horizon=long）。",
+ "cash": 14455.75,
+ "note": "2026-10-06 截图：PCRA B（APLD 20、AXTI 1、AVGO 7、MRVL 5、ORCL 20、TXN 5、TTMI 20、QQQM 20，现金 9099.94）、PCRA A（TTMI 45、VST 20，现金 3463.62）、HSA（TQQQ 5、GLDM 3，现金 1892.19）。LLY、PFE、SHEL 已卖出。新仓成本按截图价近似。长线规则。",
  "holdings": [
   {
    "symbol": "TTMI",
-   "shares": 45,
+   "shares": 65,
    "cost": 120.72
   },
   {
    "symbol": "VST",
-   "shares": 25,
+   "shares": 20,
    "cost": 137.74
+  },
+  {
+   "symbol": "APLD",
+   "shares": 20,
+   "cost": 25.155
   },
   {
    "symbol": "AXTI",
@@ -23,14 +28,14 @@
    "cost": 350.63
   },
   {
-   "symbol": "LLY",
-   "shares": 2,
-   "cost": 1191.06
-  },
-  {
    "symbol": "MRVL",
    "shares": 5,
    "cost": 252.9
+  },
+  {
+   "symbol": "ORCL",
+   "shares": 20,
+   "cost": 145.19
   },
   {
    "symbol": "TXN",
@@ -44,14 +49,14 @@
    "kind": "index"
   },
   {
-   "symbol": "PFE",
-   "shares": 2,
-   "cost": 28.675
+   "symbol": "TQQQ",
+   "shares": 5,
+   "cost": 84.855
   },
   {
-   "symbol": "SHEL",
-   "shares": 2,
-   "cost": 97.005
+   "symbol": "GLDM",
+   "shares": 3,
+   "cost": 82.345
   }
  ],
  "horizon": "long"
