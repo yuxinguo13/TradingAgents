@@ -4368,20 +4368,20 @@
  },
  "SHEL": {
   "symbol": "SHEL",
-  "fetched_at": 1791231851.9868944,
+  "fetched_at": 1791318721.8399804,
   "name": "Shell plc",
   "sector": "Energy",
   "industry": "Oil & Gas Integrated",
   "website": "https://www.shell.com",
-  "market_cap": 274975096832.0,
-  "pe_trailing": 10.65342,
-  "pe_forward": 9.299627,
-  "ps": 0.9270876,
-  "ev_ebitda": 5.394,
-  "peg": 1.63,
+  "market_cap": 278039330816.0,
+  "pe_trailing": 10.774835,
+  "pe_forward": 9.365008,
+  "ps": 0.93741876,
+  "ev_ebitda": 5.408,
+  "peg": 1.64,
   "eps_trailing": 9.06,
-  "eps_forward": 10.37891,
-  "dividend_yield": 0.015701964,
+  "eps_forward": 10.42391,
+  "dividend_yield": 0.015654787,
   "beta": -0.192,
   "revenue_ttm": 296600993792.0,
   "revenue_growth": 0.447,
@@ -4401,7 +4401,7 @@
   "rating_mean": 2.1875,
   "analysts": 15.0,
   "short_pct_float": 0.0124,
-  "held_institutions": 0.134,
+  "held_institutions": 0.13404,
   "quarters": [
    {
     "label": "2026-06-30",
@@ -4489,7 +4489,7 @@
   "surprises": [
    {
     "when": "2026-10-29",
-    "estimate": 3.2,
+    "estimate": 3.24,
     "actual": NaN,
     "surprise_pct": NaN
    },
@@ -6343,20 +6343,20 @@
  },
  "NAT": {
   "symbol": "NAT",
-  "fetched_at": 1791231853.2956083,
+  "fetched_at": 1791318724.307719,
   "name": "Nordic American Tankers Limited",
   "sector": "Energy",
   "industry": "Oil & Gas Midstream",
   "website": "https://www.nat.bm",
-  "market_cap": 1772353024.0,
-  "pe_trailing": 14.186441,
-  "pe_forward": 18.395603,
-  "ps": 4.775494,
-  "ev_ebitda": 12.552,
+  "market_cap": 1740590464.0,
+  "pe_trailing": 13.932204,
+  "pe_forward": 18.065933,
+  "ps": 4.689912,
+  "ev_ebitda": 12.487,
   "peg": 1.21,
   "eps_trailing": 0.59,
   "eps_forward": 0.455,
-  "dividend_yield": 0.09382423,
+  "dividend_yield": 0.09438471,
   "beta": -0.523,
   "revenue_ttm": 371135008.0,
   "revenue_growth": 0.975,
@@ -6370,13 +6370,13 @@
   "total_cash": 133294000.0,
   "total_debt": 406566016.0,
   "free_cashflow": 72565376.0,
-  "target_mean": 6.5,
-  "target_high": 8.0,
+  "target_mean": 7.5,
+  "target_high": 10.0,
   "target_low": 5.0,
-  "rating_mean": NaN,
+  "rating_mean": 3.0,
   "analysts": 2.0,
   "short_pct_float": 0.0813,
-  "held_institutions": 0.57655,
+  "held_institutions": 0.57885,
   "quarters": [
    {
     "label": "2026-06-30",
@@ -16595,6 +16595,178 @@
     "estimate": -0.06,
     "actual": -0.02,
     "surprise_pct": 0.7177
+   }
+  ],
+  "error": ""
+ },
+ "PBR": {
+  "symbol": "PBR",
+  "fetched_at": 1791318723.1471493,
+  "name": "Petróleo Brasileiro S.A. - Petrobras",
+  "sector": "Energy",
+  "industry": "Oil & Gas Integrated",
+  "website": "https://petrobras.com.br",
+  "market_cap": 153375916032.0,
+  "pe_trailing": 6.010101,
+  "pe_forward": 5.75342,
+  "ps": 0.2796315,
+  "ev_ebitda": 1.931,
+  "peg": 6.01,
+  "eps_trailing": 3.96,
+  "eps_forward": 4.13667,
+  "dividend_yield": 0.15190555,
+  "beta": -0.226,
+  "revenue_ttm": 548493000704.0,
+  "revenue_growth": 0.423,
+  "earnings_growth": 0.968,
+  "gross_margin": 0.50595003,
+  "operating_margin": 0.44679,
+  "profit_margin": 0.24317,
+  "roe": 0.30274,
+  "debt_to_equity": 76.067,
+  "current_ratio": 0.854,
+  "total_cash": 53764001792.0,
+  "total_debt": 366532984832.0,
+  "free_cashflow": 94240129024.0,
+  "target_mean": 23.30714,
+  "target_high": 31.0,
+  "target_low": 17.4,
+  "rating_mean": 1.64286,
+  "analysts": 14.0,
+  "short_pct_float": 0.021300001,
+  "held_institutions": 0.22346,
+  "quarters": [
+   {
+    "label": "2026-06-30",
+    "revenue": 33607000000.0,
+    "gross": 19493000000.0,
+    "operating": 14553000000.0,
+    "net": 10428000000.0,
+    "eps": 1.618158
+   },
+   {
+    "label": "2026-03-31",
+    "revenue": 23483197265.995823,
+    "gross": 11316119232.959938,
+    "operating": 6808050123.409911,
+    "net": 6201442946.648946,
+    "eps": 0.962305
+   },
+   {
+    "label": "2025-12-31",
+    "revenue": 23608000000.0,
+    "gross": 10842000000.0,
+    "operating": 7005000000.0,
+    "net": 2899000000.0,
+    "eps": NaN
+   },
+   {
+    "label": "2025-09-30",
+    "revenue": 23477000000.0,
+    "gross": 11217000000.0,
+    "operating": 7729000000.0,
+    "net": 6027000000.0,
+    "eps": 0.935235
+   },
+   {
+    "label": "2025-06-30",
+    "revenue": 21037000000.0,
+    "gross": 10012000000.0,
+    "operating": 5640000000.0,
+    "net": 4734000000.0,
+    "eps": 0.734595
+   },
+   {
+    "label": "2025-03-31",
+    "revenue": NaN,
+    "gross": NaN,
+    "operating": NaN,
+    "net": NaN,
+    "eps": 0.92
+   }
+  ],
+  "years": [
+   {
+    "label": "2025-12-31",
+    "revenue": 89195000000.0,
+    "gross": 42459000000.0,
+    "operating": 27758000000.0,
+    "net": 19634000000.0,
+    "eps": 3.04
+   },
+   {
+    "label": "2024-12-31",
+    "revenue": 91416000000.0,
+    "gross": 45972000000.0,
+    "operating": 25691000000.0,
+    "net": 7528000000.0,
+    "eps": 1.168152
+   },
+   {
+    "label": "2023-12-31",
+    "revenue": 102409000000.0,
+    "gross": 53974000000.0,
+    "operating": 39473000000.0,
+    "net": 24884000000.0,
+    "eps": 3.94379
+   },
+   {
+    "label": "2022-12-31",
+    "revenue": 124474000000.0,
+    "gross": 64988000000.0,
+    "operating": 53265000000.0,
+    "net": 36623000000.0,
+    "eps": 5.615215
+   }
+  ],
+  "surprises": [
+   {
+    "when": "2026-11-10",
+    "estimate": 1.24,
+    "actual": NaN,
+    "surprise_pct": NaN
+   },
+   {
+    "when": "2026-08-06",
+    "estimate": 1.4,
+    "actual": 1.62,
+    "surprise_pct": 0.1552
+   },
+   {
+    "when": "2026-05-11",
+    "estimate": 0.99,
+    "actual": 0.96,
+    "surprise_pct": -0.0304
+   },
+   {
+    "when": "2026-03-05",
+    "estimate": 0.57,
+    "actual": 0.44,
+    "surprise_pct": -0.23079999999999998
+   },
+   {
+    "when": "2025-11-06",
+    "estimate": 0.71,
+    "actual": 0.94,
+    "surprise_pct": 0.3184
+   },
+   {
+    "when": "2025-08-07",
+    "estimate": 0.66,
+    "actual": 0.64,
+    "surprise_pct": -0.0358
+   },
+   {
+    "when": "2025-05-12",
+    "estimate": 0.8,
+    "actual": 0.65,
+    "surprise_pct": -0.182
+   },
+   {
+    "when": "2025-02-26",
+    "estimate": 0.19,
+    "actual": 0.47,
+    "surprise_pct": 1.5219
    }
   ],
   "error": ""
