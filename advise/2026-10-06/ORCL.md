@@ -1,6 +1,6 @@
 # ORCL · 甲骨文（Oracle）
 
-_科技 · 数据截至 2026-10-05 收盘 → 面向 2026-10-06 开盘_
+_科技 · 数据截至 2026-10-06 收盘 → 面向 2026-10-06 开盘_
 
 [← 回到 2026-10-06 当日报告](../2026-10-06.md)
 
@@ -10,51 +10,51 @@ _科技 · 数据截至 2026-10-05 收盘 → 面向 2026-10-06 开盘_
 
 ```text
      ORCL · 近 126 个交易日（日线收盘）
-247 ┤                       ╭╮
-237 ┤                       │╰╮
-227 ┤                       │ ╰╮
-217 ┤::::::::              ╭╯  │
-207 ┤        ::::::::::::::│:::╰─╮::::
-197 ┤             ╭─╮      │     │    ::::::::
-187 ┤             │ ╰──────╯     ╰──╮········ :::::::
-177 ┤    ╭────╮  ╭╯          ····   ╰╮       ·····   :::::::::
-167 ┤    │    ╰╮╭╯    ·······        ╰╮           ·····       :::::::╭╮:::::::::
-157 ┤   ╭╯  ···╰╯·····                ╰╮               ····╭╮       ╭╯╰╮        :
-147 ┤···│···                           ╰─╮             ╭───╯╰──╮╭───╯  ╰╮╭──╮ ···
-137 ┤───╯                                ╰───╮        ╭╯       ╰╯·······╰╯··╰────
-127 ┤                                        ╰──╮╭╮  ╭╯
-118 ┤                                           ╰╯╰──╯
+244 ┤                       ╭╮
+234 ┤                      ╭╯╰╮
+224 ┤                      │  │
+215 ┤::::::::::::          │  ╰╮
+205 ┤            ::::::::::│:::╰╮:::::::
+195 ┤             ╭─╮╭╮  ╭─╯    ╰╮      :::::::
+185 ┤      ╭╮    ╭╯ ╰╯╰──╯     ··╰──╮········· :::::::
+176 ┤    ╭─╯╰─╮ ╭╯         ····     │         ····    ::::::::::
+166 ┤   ╭╯    ╰─╯    ······         ╰╮            ······        :::::╭╮::::::::::
+156 ┤  ╭╯  ··········                ╰╮                 ··╭╮        ╭╯╰╮
+147 ┤─╮│···                           ╰──╮ ╭╮         ╭───╯╰──────╮╭╯  ╰────╮···╭
+137 ┤ ╰╯                                 ╰─╯╰╮       ╭╯          ·╰╯······· ╰───╯
+127 ┤                                        ╰────╮ ╭╯
+117 ┤                                             ╰─╯
     └────────────────────────────────────────────────────────────────────────────
-     2026-04-07                       2026-07-08                       2026-10-05
+     2026-04-08                       2026-07-09                       2026-10-06
      · SMA50   : SMA200   ─ close
 ```
 
 ```text
        ORCL · 近 21 个交易日（放大看最近节奏）
-162.5 ┤ ╭─╮
-158.8 ┤─╯ │
-155.0 ┤   │
-151.3 ┤   ╰─╮  ╭╮
-147.6 ┤     │  │╰──╮
-143.8 ┤     ╰╮╭╯   ╰╮     ╭─
-140.1 ┤      ╰╯     ╰╮    │
-136.3 ┤              ╰╮╭──╯
-132.6 ┤               ╰╯
+162.5 ┤──╮
+158.8 ┤  │
+155.0 ┤  │
+151.3 ┤  ╰─╮  ╭╮
+147.6 ┤    │  │╰──╮
+143.8 ┤    ╰╮╭╯   ╰╮     ╭──
+140.1 ┤     ╰╯     ╰╮    │
+136.3 ┤             ╰╮╭──╯
+132.6 ┤              ╰╯
       └─────────────────────
-       2026-09-04 2026-10-05
+       2026-09-08 2026-10-06
 ```
 
-成交量近 63 日： `▄▄▇▆▇▅▃▃▆▄▃▅▆▄▂▂▃▄▂▂▃▁▁▁▃▁▃▂▃▄▇█▄▄▅▃▂▅▄▄▃▃`
+成交量近 63 日： `▃▄▅▅▄▃▂▄▃▃▄▄▄▂▂▂▄▂▂▂▁▁▁▂▁▂▂▂▄▄█▃▃▃▂▂▆▃▄▂▃▂`
 
 ### 图形读数
 
-- **均线排列**：跌破 200 日线 — 现价距 20 日 145.17（-1.9%）、50 日 144.14（-1.2%）、200 日 161.99（-12.0%）
+- **均线排列**：跌破 200 日线 — 现价距 20 日 144.28（+0.3%）、50 日 144.64（+0.1%）、200 日 161.83（-10.5%）
 - **形态结构**：下降结构 — 更低的高点 + 更低的低点；前高 170.70 → 153.60（-10.0%）、前低 139.00 → 131.58（-5.3%）
-- **动能**：RSI(14) 49，中性；近一月的斜率慢于近三月（月 -7.5% vs 季 +1.0%），涨势在放缓
-- **波动**：日均真实波幅约为价格的 4.4%；按本报告 2 ATR 的止损惯例，一个 R 相当于 8.8% 的价格距离
-- **位置**：距 52 周高点 -54.0%，距 52 周低点 +23.9%
+- **动能**：RSI(14) 51，中性；近一月的斜率慢于近三月（月 -8.8% vs 季 +3.4%），涨势在放缓
+- **波动**：日均真实波幅约为价格的 4.2%；按本报告 2 ATR 的止损惯例，一个 R 相当于 8.4% 的价格距离
+- **位置**：距 52 周高点 -53.3%，距 52 周低点 +25.9%
 - **量能**：最新一日成交量仅为 20 日均量的 0.5 倍，缩量
-- **相对强度**：近一月跑输 标普500 8.0 个百分点
+- **相对强度**：近一月跑输 标普500 10.2 个百分点
 - **支撑 / 阻力**：最近的摆动低点 139.72，摆动高点 148.55（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
 
 **我的读图结论**：趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌
@@ -69,7 +69,7 @@ _以上每一条都是对已经发生的价格的描述。均线、RSI、摆动�
 - **增长**：最新季度营收同比 +29.6%；盈利同比 +54.5%；最近三个季度营收连续环比上升；最近 7 次财报里 5 次超预期。
 - **盈利质量**：毛利率 64.0%、营业利润率 35.6%、净利率 26.4%、ROE 41.2%。
 - **资产负债**：现金 $370.77亿；有息负债 $1,691.43亿；负债/权益 251.7%（负债偏重）；流动比率 1.17；自由现金流 -$458.54亿，为负，公司在净烧钱。
-- **卖方预期**：41 位分析师覆盖；平均评级「买入」（1.58/5，1 为最看多）；目标价均值 237.97（较现价 +67.0%），区间 110.00–400.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
+- **卖方预期**：41 位分析师覆盖；平均评级「买入」（1.58/5，1 为最看多）；目标价均值 237.97（较现价 +64.4%），区间 110.00–400.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
 
 **分季度损益**（季度数据，最新在左）
 
@@ -112,18 +112,9 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 4h 前 | 8 | 偏多 | [Earnings Beat Altering The Investment Case For Oracle Japan Stock (TSE:4716)? - Simply Wall Street](https://news.google.com/rss/articles/CBMi3wFBVV95cUxOb2RPaDZMU2JvLWZEQXpPUDdSZzhNUWV6U01PdFhkNzdxMzBJV1FFLUxpRG5DQTdsWlp4WkJhc0x2T2pib2tWVklHMGxld21OajY4dm9jNU9MVHFKbkgyLTZEMWl3TFZxMkRsdnBkdThZNFFSSTdpRVRfTGhBbXJNR3V6VXJha2ZQMWFTY1R5WVpxWElBd2Y4Qkpjc3M2Q1FiTE5zUWVpV1NxRlVkQkp5clBzbG83dWJLcXdWWEdoVk5relpuVHh5aFJmUC1oTndTMXM2U0gtT2docEZYaS1Z0gHkAUFVX3lxTE92NmI2X2JSa0tGY1phYmthNWJqSWFNR0RlR2xLTTRUMnBqRFUySVJSZ2tuZTVHVlpBQWhIeVVZZ2JtUlJRNkhIYndsa29pUXNRYWRZU1FVVUFCMmpWRmtHUDZJUzBOZHUyc2ZlNkhETmY4Sk0zMHhqLW5WQWtFTEprYkRRRE1CVl9tenVOeENMTjV0T3dpLUx6WmxvcnhNZ1hpcXFJc0h5Zi14Q0pYYjR0dFNndV9HQU50VWsxd3ZUYnlkVTRPdUtudjItUkRXd2Y3V1E1RnBOVjlFVEdMVFJ0UTB0Zw?oc=5) | Simply Wall Street |
-| 23h 前 | 8 | 中性 | [Oracle Corporation $ORCL Stock Sold by Eastern Bank - MarketBeat](https://news.google.com/rss/articles/CBMisAFBVV95cUxQTjVzbFJEZlFRUUtFM182Q0lMeHZ4WmVpeXh4N3FLclFHLXNLN21kRTA4c0dtNmVYOGZjNU1yY003NUliUEY3bU9Oc0JuWkpJc3FTWUpxMVhud0RLQzBvQXpBR3k1N2p2dDBLS25vM0dmVWZIYm1wSm42MTJOa0FQNXg0ZnM2LWFFMHNnLXV4VDg3UC1XQ1dxZm5JVXU0TzNPdkh1cTdlZGJVZEM5ZnVCaA?oc=5) | MarketBeat |
-| 29h 前 | 8 | 中性 | [Violich Capital Management Inc. Decreases Stock Holdings in Oracle Corporation $ORCL - MarketBeat](https://news.google.com/rss/articles/CBMi2wFBVV95cUxPQ3RsMHlTY1dINENPU2w2a0ZleVhlMDk5TkR1dTQ2cWRRSGZ1S2JKZVZ4VDFJT3lKNkdpaUhmcDlVWV9Od2xUYTY5dGh1dVY2bUREWE43ZTJfMFFnZTZqdjhDd1NobkRyblliUlVuUlN2NUdhaW4tRWQ0TlN6SExTS1RXOEFGVGRISzhvSm45RFpxSE5ndDBIU2xwdEx6dXJlYklOLVh1NVpTeHNScVdZdU5pWV85Nm5YUHhEY2YtNUUxWHlIZjRuNTIxYVp4c05tME1xMi1SeUk0MGM?oc=5) | MarketBeat |
-| 42h 前 | 8 | 偏多 | [Oracle Stock Jumps After Earnings as $664 Billion AI Backlog Puts $165 Back in Focus - TradingKey](https://news.google.com/rss/articles/CBMivwFBVV95cUxNaFVTNVJJb3NLcmZVQ1VZOUdVQUJtZnNtdnkxbjBUMWdObXNLSmlJOHJYdm9lWHJNLWZ1TkpwbURxNDZnNVZTWk5HUGNNeWJRUHN6cGV5aEItQkNCa3d4aVNRalJBZFdzMGQwVjFfd2dOdGpFdUhMQV9jakpIQ09UQ2E4bDJDZjNtam1lSTZ0eG1WSWVlNlhURTF4WXp4b2FpeWRTcmpnQ3BGOXFQRFVfQllkQ05wOXNlcVBTV2NKMA?oc=5) | TradingKey |
-| 2h 前 | 5 | 偏多 | [Oracle's cloud infrastructure revenue jumps 121% YoY, driven by OpenAI partnership and strong growth. - Pluang](https://news.google.com/rss/articles/CBMiigFBVV95cUxPQmFlRDE3MlpKTktuWWpBa2dRQUE1U2kzd2lCQXBqZ1h5SGdUdjdyRlVuZ205cllScHVFcE9TWmxJbXBaZkN1RnU4b1RDMEJkdjlXVmQ1eUFuZDQ5b2gwazlnRThKTVEyanR5YmZ6M1VObnNyWUNRazVQU09mZ2pBR2syLXZGd3VmVkE?oc=5) | Pluang |
-| 9h 前 | 2 | 中性 | [Rockland Trust Co. Sells 6,347 Shares of Oracle Corporation $ORCL - MarketBeat](https://news.google.com/rss/articles/CBMiwAFBVV95cUxNWGxFbmtjNF9YZlV0bU1GOVVCYjFENzh2WjFZbHk2QWFLZXlGelRvYmthZ0lwTUluaGMzdDFiWndsRTI1Tno3QlRBd1FwMkliNnQ3U2FxMGJ0ZkhLUmpNRXRsWlBheGpwek4xcnN5azh6dVo2UVc2ckRFUTd6ZVdxZklqS3ZZQ0hPR0p2WVAxNUc5aEp1YjJqd2pYR3JZVUljTzV0dzQ0Y0c2MWE3eVhzVHk4MDVVcTlXaFN5aUk4Y3I?oc=5) | MarketBeat |
-| 22h 前 | 2 | 中性 | [Neville Rodie & Shaw Inc. Sells 45,273 Shares of Oracle Corporation $ORCL - MarketBeat](https://news.google.com/rss/articles/CBMiyAFBVV95cUxOWnNsNlFId1phMjlfV0VpUjRZZ0pkczlpRkVvQzE0OHk4ZGtWMEQtS3IySVl4Z0Z0LUs4eGpjeWsxZkhFLVBQZXQ1c1ZqakxDRWFBY1hvQUJEZWtfMWY5Nm5LbEViNjZXSHdEZ2V5UkxaQWZpdGVESjh6M0V4NEltbUx0c3k0QXJUQzFTYmp3dlBhTFVuSUtITzdNYll6ZVIxeUtTLVBMUExxOXFXaGdxZVIxU0hETVYxd2l2NF84SnpDT1ZaSVZvaQ?oc=5) | MarketBeat |
-| 1h 前 | 0 | 中性 | [100,000 Reasons to Buy Oracle Stock - Barchart.com](https://news.google.com/rss/articles/CBMihgFBVV95cUxNeUk3ZnJaU3lJUmZzcWhNWG8wWWo1RHlZQ0w2LUs0UEFKYmlXTGROSUJKZkhram5BYjZJNVJjeHFUMXpvT0JvVUpfOFFGYkUxdWZmVi1yeWVNaEpNUEFiR3Q5Mk1MRWh6RXZKY3RNNWY0OUh2LS1Wa2hVc25hdmtDWnJBbERJZw?oc=5) | Barchart.com |
-| 3h 前 | 0 | 中性 | [Oracle: OpenAI Is Back, But Wall Street Is Sleeping (NYSE:ORCL) - Seeking Alpha](https://news.google.com/rss/articles/CBMilAFBVV95cUxPZTRBcjRrejFLQ1UwTjMyLUlsYm5kclJ3S0lmMUFXbEpJSFJJQXJ1ZDdwT2tIWHNxUU5wWmRDMmYtQV9DWE9qc0tkNzBSSDlsQlZXYzVPdzNDcFlib2IwUHdMQlViWEJYVnhSejdoV2I4S1ZKc0F3clJFWU8zWDhma2N4Q3kzVENaRFhva1hlUGw2cVZv?oc=5) | Seeking Alpha |
-| 4h 前 | 0 | 中性 | [Oracle Got a $3.5 Million Insider Vote of Confidence. Is the AI Stock a Buy? - TipRanks](https://news.google.com/rss/articles/CBMipgFBVV95cUxQbV8zcVJFSGh1ZHlScTJnUHA2Z0V4QVp2ZmZiRVlTMDVLaE55akJEbzhCMTdnLTJ6bzJsUUxkNjdPYUtuUVhIYjZTa0pKVkJZeXRsc2o2RGJzVl9kRTJhbGlzcDdPWk9qYWhPc1JOaUxIT25xSGhfX3lkNnFHUkdJN3NQaG5SNmN4X0VoZUJtcUFyQmpfSm94XzJUWTR6d09vbnRuM3B3?oc=5) | TipRanks |
-| 5h 前 | 0 | 偏多 | [Citizens keeps Oracle stock at USD 285 with Outperform rating - AD HOC NEWS](https://news.google.com/rss/articles/CBMiwgFBVV95cUxNN1RTYTlPb3A0dHNTanVaN1pQa1ZVMVFYNF82SWFaX2hqRXYyZi0yNGlWV0xtaWY4TEFCYTdOMlJGU0RReVUweWFNR0NEWHVtc0RmNktvaWZVVm5nWmJpdE5VbV82cDdsNDI2QnlwWWYzd01PSlEycjFwMEZ0WjYyU0hvVGFoaUVSRndQVTFwcGIybFR0dTdMNWwwYnlCMVdxaktPS2hUR01qQzdOcWc4N0E0YzFvUU85TWs4OGhGZEI5Zw?oc=5) | AD HOC NEWS |
-| 7h 前 | 0 | 中性 | [Oracle director buys $3.5M in stock amid AI gro... - Pluang](https://news.google.com/rss/articles/CBMigwFBVV95cUxQOF9tRllrZXdJeHp0cUdVQ3UxcU5SMUVxTGdwR2V0aUlvNE5tckpZRTBYYi15Q3o5MGUyLWhQZkpWY25MYmtpX29CeFBrZFpvdHFuZm42N0ZfcDVYMENPNm5YRDJqNWRzeHBYVXlkQjdSOE55TlV4X0ZOVVFkVkJxWTZWRQ?oc=5) | Pluang |
+| 3h 前 | 8 | 中性 | [Nebius Rallies 9% on an Inference Deal While Its Earnings Multiple Sits Near 197x; CoreWeave Gains 4%, Oracle Advances 3% - 24/7 Wall St.](https://news.google.com/rss/articles/CBMi-gFBVV95cUxQYVAzY0dkTXVaYU9mOUZHSWF2Tk9OSUN4cmJkbWx5VGdBR2xJN3ZEaTBGOE1VYzlIc1FDUkFvU1VuUnoyVUpiQS13bE1RaGNrRFdvZEVXS1B4M01ndGtybzhhM2t3OXZHQ2FFMUl4SFRya1VRS0ZqNElZR1M1YjNTS2VBbUNkM01senlyanpNcWdINUdnbk1EVDVEaW92OGJZV0tnVUxlZVBOVWkxQjhRU2huUFV4QUdxWE9DTkN4Z0JJcy1yQmdzNk16MnNTYW5ENXE3R2JVWkxyakx0Q1BudkdfeERPTFR4T0JaSnJsWnQ4TmdTR21wcGt3?oc=5) | 24/7 Wall St. |
+| 1h 前 | 0 | 中性 | [SanDisk Stock Falls Toward $1,650 as Oracle Project Jupiter Raises Demand Concerns - FXLeaders](https://news.google.com/rss/articles/CBMiwAFBVV95cUxQbGF1cjM5QVFZRjA0bWVjREt6bTBYRFUxU3VvNkF4UVk1bGhvc3o4cGJLRGhYNHJGbldLV1BWUTdrN3VIb2psVndLTHpLdFZORFN6NGVISUc1SlQ2MzJaNnV3RFBSOThnQmJVUmxsN0NIeWdsQlFCaEJMeF81Wm9KYnhzSFFPOEdtMllxN003UEROSWRKX3RMZDk1QnVxZWJVUXoyb1NpWDZHeEoxX1NlMUZJb1J0WDIxTWtOMy00MDI?oc=5) | FXLeaders |
+| 2h 前 | 0 | 中性 | [Oracle stock: Company commits to absorb $300 million in Wisconsin energy costs - AD HOC NEWS](https://news.google.com/rss/articles/CBMiyAFBVV95cUxPTE12c3ctZFVfZkQ0V2lTMTNBazJGa0dqMi1ERVRLeHNGSmRUN0M1cGh6OGEtY1ZSX0ozUG54TGdBaldIZW1ZcnJKcXNHckw3dlUyM2Robk9ObkxqSF95a0paTGdZeklVNDBnUmZ2dFBKSmNkdkE4MXd0cm9xSUU1ZURackt4ZVNqWkNyNHNUcWthM1NUeXFKR1JZbVppMklWX08wVnUtLUFGNUJyaTduZy1LM0tVcjF1ZV9CMEVJSjlhVHJZcGhDaA?oc=5) | AD HOC NEWS |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -131,11 +122,12 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
-- 图形上是跌破 200 日线——现价距 20 日 145.17（-1.9%）、50 日 144.14（-1.2%）、200 日 161.99（-12.0%）。本报告的买入规则本身会过滤掉这种形态。
+- 图形上是跌破 200 日线——现价距 20 日 144.28（+0.3%）、50 日 144.64（+0.1%）、200 日 161.83（-10.5%）。本报告的买入规则本身会过滤掉这种形态。
 - 摆动高低点都在下移，属于下降结构；在出现一个更高的低点之前，任何反弹都还只是反弹。
 - 自由现金流为负（-$458.54亿），意味着经营本身在消耗现金，未来可能需要再融资摊薄。
 - 负债/权益 252%，杠杆高；利率或再融资条件变化对它的影响会被放大。
 - 卖方目标价区间 110.00–400.00，宽度超过均值——分歧极大，共识在这只股票上没有信息量。
+- 政策面对该板块的倾向为 -0.90（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -143,7 +135,6 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 | 日期 | 开 | 高 | 低 | 收 | 涨跌 | 成交量 |
 |---|---:|---:|---:|---:|---:|---:|
-| 2026-09-15 | 143.46 | 144.88 | 140.02 | **140.35** | -3.1% | 31,552,700 |
 | 2026-09-16 | 140.03 | 146.52 | 139.00 | **143.16** | +2.0% | 34,366,400 |
 | 2026-09-17 | 146.75 | 152.00 | 146.15 | **150.59** | +5.2% | 27,742,400 |
 | 2026-09-18 | 150.47 | 150.90 | 144.40 | **147.61** | -2.0% | 39,324,900 |
@@ -157,7 +148,8 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-09-30 | 136.54 | 138.50 | 134.75 | **137.30** | -0.4% | 22,321,600 |
 | 2026-10-01 | 139.60 | 140.25 | 135.33 | **138.07** | +0.6% | 25,459,100 |
 | 2026-10-02 | 142.09 | 144.86 | 140.26 | **142.30** | +3.1% | 35,409,300 |
-| 2026-10-05 | 142.53 | 146.66 | 142.37 | **142.48** | +0.1% | 18,014,400 |
+| 2026-10-05 | 142.53 | 146.66 | 142.37 | **142.48** | +0.1% | 18,069,600 |
+| 2026-10-06 | 143.93 | 146.93 | 143.92 | **144.77** | +1.6% | 19,139,489 |
 
 ## 七、自己去查（本页不做独立验证）
 

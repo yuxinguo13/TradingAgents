@@ -1,6 +1,6 @@
 # VST · Vistra能源（Vistra）
 
-_公用事业 · 数据截至 2026-10-05 收盘 → 面向 2026-10-06 开盘_
+_未分类 · 数据截至 2026-10-06 收盘 → 面向 2026-10-06 开盘_
 
 [← 回到 2026-10-06 当日报告](../2026-10-06.md)
 
@@ -10,52 +10,52 @@ _公用事业 · 数据截至 2026-10-05 收盘 → 面向 2026-10-06 开盘_
 
 ```text
        VST · 近 126 个交易日（日线收盘）
-179.7 ┤::::::::
-176.3 ┤        ::::::::::
-172.9 ┤                  ::::::::
-169.5 ┤                          :::::::::::
-166.1 ┤                               ╭╮╭╮  ::::::::╭╮
-162.6 ┤    ╭─╮ ╭─╮          ╭╮        │╰╯╰╮        ╭╯│:::::::
-159.2 ┤···╭╯·│·│·│·╭╮·      │╰╮      ╭╯   ╰╮  ╭──╮╭╯ │       :::::::::
-155.8 ┤  ╭╯  ╰─╯ ╰─╯╰╮·····╭╯ ╰─╮    │ ····│╭─╯  ││ ·╰╮·╭╮··          :::::::::::::
-152.4 ┤──╯           │     │ ···╰╮··╭╯·    ╰╯····╰╯·  │ ││  ·········  ╭╮
-149.0 ┤              ╰─╮   │     │  │                 │╭╯│           ··│╰╮··
-145.6 ┤                │  ╭╯     ╰╮╭╯                 ╰╯ │  ╭──╮      ╭╯ ╰╮ ······
-142.1 ┤                ╰╮ │       ╰╯                     ╰──╯  ╰╮    ╭╯   ╰──╮  ╭╮╭
-138.7 ┤                 ╰╮│                                     ╰╮╭──╯       ╰──╯╰╯
-135.3 ┤                  ╰╯                                      ╰╯
+179.6 ┤:::::::
+176.2 ┤       ::::::::::
+172.8 ┤                 :::::::::
+169.4 ┤                          ::::::::::
+166.1 ┤        ╭╮                     ╭╮╭╮ ::::::::╭╮
+162.7 ┤   ╭─╮  ││          ╭╮         │╰╯│        ╭╯│:::::::
+159.3 ┤··╭╯·╰╮╭╯│·╭─╮      │╰╮      ╭─╯  ╰╮  ╭──╮ │ ╰╮      ::::::::
+156.0 ┤─╮│   ╰╯ ╰─╯ │····· │ ╰─╮    │   · │ ╭╯  ╰─╯··│·····         :::::::::::::::
+152.6 ┤ ╰╯          │╭╮   ╭╯···╰╮···│··· ·╰─╯······  │ ╭╮  ·········              ╭
+149.2 ┤             ╰╯│   │     │  ╭╯                ╰╮││           ··╭─╮··       │
+145.8 ┤               ╰╮  │     ╰─╮│                  ╰╯│  ╭──╮       │ ╰╮ ······ │
+142.5 ┤                │  │       ╰╯                    ╰╮╭╯  │      ╭╯  ╰╮╭╮    ·│
+139.1 ┤                ╰╮╭╯                              ╰╯   ╰─╮╭─╮╭╯    ╰╯╰─────╯
+135.7 ┤                 ╰╯                                      ╰╯ ╰╯
       └────────────────────────────────────────────────────────────────────────────
-       2026-04-07                       2026-07-08                       2026-10-05
+       2026-04-08                       2026-07-09                       2026-10-06
        · SMA50   : SMA200   ─ close
 ```
 
 ```text
        VST · 近 21 个交易日（放大看最近节奏）
-151.5 ┤ ╭─╮
-149.8 ┤─╯ │
-148.1 ┤   │╭╮
-146.4 ┤   ╰╯│
-144.7 ┤     │              ╭
-143.0 ┤     │  ╭╮          │
-141.3 ┤     ╰─╮││╭╮    ╭╮  │
-139.6 ┤       ╰╯╰╯╰╮   ││╭─╯
-137.9 ┤            ╰───╯╰╯
+160.5 ┤                    ╭
+157.7 ┤                    │
+154.9 ┤                    │
+152.0 ┤──╮                 │
+149.2 ┤  │╭╮               │
+146.4 ┤  ╰╯│               │
+143.6 ┤    │  ╭╮          ╭╯
+140.8 ┤    ╰──╯╰──╮   ╭╮╭─╯
+137.9 ┤           ╰───╯╰╯
       └─────────────────────
-       2026-09-04 2026-10-05
+       2026-09-08 2026-10-06
 ```
 
-成交量近 63 日： `▂▁▂▃▄▂▂▁▁▃▃▂▂▆▃▄▂▁▁▂▂▂▃▂▁▂▂▃▃▃▃▂▃▂▃▃▂▂▂▄▃█`
+成交量近 63 日： `▁▁▃▃▂▂▁▁▂▃▂▂▆▃▄▂▁▁▂▂▂▃▂▁▁▂▂▂▄▂▁▃▂▂▂▂▂▂▂▃▇█`
 
 ### 图形读数
 
-- **均线排列**：跌破 200 日线 — 现价距 20 日 142.02（+2.0%）、50 日 142.76（+1.5%）、200 日 154.32（-6.1%）
+- **均线排列**：均线纠缠 — 现价距 20 日 142.47（+12.7%）、50 日 142.83（+12.4%）、200 日 154.32（+4.0%）
 - **形态结构**：下降结构 — 更低的高点 + 更低的低点；前高 145.87 → 143.51（-1.6%）、前低 134.68 → 133.44（-0.9%）
-- **动能**：RSI(14) 56，偏强；季线仍为负（-6.8%）但近一月已转正（+0.6%），属于反弹初期而非既成趋势
-- **波动**：日均真实波幅约为价格的 3.3%；按本报告 2 ATR 的止损惯例，一个 R 相当于 6.5% 的价格距离
-- **位置**：距 52 周高点 -30.9%，距 52 周低点 +7.9%
-- **量能**：最新一日成交量为 20 日均量的 2.1 倍，属于放量
-- **相对强度**：近一月跑赢 标普500 0.2 个百分点
-- **支撑 / 阻力**：最近的摆动低点 141.92，摆动高点 145.87（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
+- **动能**：RSI(14) 72，超买区；近一月的斜率快于近三月（月 +7.7% vs 季 +3.8%），趋势在加速
+- **波动**：日均真实波幅约为价格的 3.6%；按本报告 2 ATR 的止损惯例，一个 R 相当于 7.1% 的价格距离
+- **位置**：距 52 周高点 -23.4%，距 52 周低点 +19.5%
+- **量能**：最新一日成交量为 20 日均量的 3.3 倍，属于放量
+- **相对强度**：近一月跑赢 标普500 6.3 个百分点
+- **支撑 / 阻力**：最近的摆动低点 153.66，摆动高点 166.89（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
 
 **我的读图结论**：趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌
 
@@ -63,13 +63,13 @@ _以上每一条都是对已经发生的价格的描述。均线、RSI、摆动�
 
 ## 三、财报与基本面
 
-市值 $486.30亿 · 行业 Utilities / Utilities - Independent Power Producers · TTM 营收 $192.12亿 · TTM EPS 5.93 · 股息率 0.65% · Beta 1.38 · 空头占流通股 3.4%
+市值 $538.69亿 · 股息率 0.63%
 
-- **估值**：TTM 市盈率 24.4 倍；前瞻市盈率 13.9 倍（市场预期未来一年盈利上升）；市销率 2.5 倍；EV/EBITDA 10.5 倍；PEG 0.35（低于 1，增长尚未被价格吃掉）。
-- **增长**：最新季度营收同比 -5.5%；盈利同比 -6.2%；最近 7 次财报里 1 次超预期。
-- **盈利质量**：毛利率 38.3%、营业利润率 13.8%、净利率 11.6%、ROE 43.0%。
-- **资产负债**：现金 $4.35亿；有息负债 $205.08亿；负债/权益 373.3%（负债偏重）；流动比率 0.97（短期偿付紧）；自由现金流 $3,712.50万，为正。
-- **卖方预期**：20 位分析师覆盖；平均评级「强烈买入」（1.33/5，1 为最看多）；目标价均值 212.25（较现价 +46.5%），区间 106.00–305.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
+- **估值**：既无盈利也无有意义的营收，估值倍数一栏本页留空——这不是低估，是无法用倍数衡量。
+- **增长**：最新季度营收同比 -5.5%；最近 7 次财报里 1 次超预期。
+- **盈利质量**：没有拿到利润率数据。
+- **资产负债**：没有拿到资产负债数据。
+- **卖方预期**：没有覆盖这只股票的分析师数据。
 
 **分季度损益**（季度数据，最新在左）
 
@@ -110,15 +110,29 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
+| 时间 | 材料度 | 倾向 | 标题 | 来源 |
+|---|---:|---|---|---|
+| 2h 前 | 5 | 偏多 | [CEG, VST, TLN Jump: Google’s Power Deal Sparks A Nuclear Rally - Stocktwits](https://news.google.com/rss/articles/CBMiwAFBVV95cUxPQnVyelQ0U2RjNDFGYTcwaWlONVBjNlN6Zjd5OTBBekZoZmUxV3l6N2ZWZ3F6R3VFNzFFRWhZNE5qZlVfbmNtR1R4dERpRnZKOUZRNGZJemRkT01vSUZES01GaldkMkVTYlEyWlIyanBBelVnMW96eFhBSExIUFQ4c0F2djcxVXRGXzB3ZUtmYTJHdDNIZ215a2hEaWJnRUF1Mnd0blo3QkRtSE9aME04VmV6cEJPdWxQWTJqc3ZiUHQ?oc=5) | Stocktwits |
+| 31h 前 | 5 | 中性 | [VST Maintained by BMO Capital -- Price Target Lowered to $210 - GuruFocus](https://news.google.com/rss/articles/CBMinAFBVV95cUxQZUNhWWpxODFrdFBwNGxkTVdXNnp4UDI1SU5pdU1PR0tjZ0tqRFhnTWFvV21UQWNZY1dqQ09XZVpnQVVGeUlxSk8zZ3o0SVVFUmRXUWo5UU13dEVJLTdqaFV0WlpCWHJrdGxQYzVLSG9TRk5fa1Y0UHFjdS1sV3lhSklrOHBxdWtrYUItNlVybjFPYXlkdWV0U3huSlM?oc=5) | GuruFocus |
+| 4h 前 | 2 | 中性 | [Segra Capital Management LLC Buys 77,500 Shares of Vistra Corp. $VST - MarketBeat](https://news.google.com/rss/articles/CBMixAFBVV95cUxPcnROemxmSURfZVhtQnZIbmpfWHhOUmFxd2NYQy10ZjdrdUprdmZLOE12Y1diOFM3R0NVSkhZOUlMUWgwemdIWngtX3lZS2RadDJMMW9QU2JwelcwQ0pkRWdfekdtTkpUTkktTjlWQzlreUNSWUljZG1WbnNzeWU5VWdWVjNKTFZPd2lrbGFoTE9iVVFNOFpDTlBfanFTc1JvZHotN01vMDM4WTVyMkZpNTJUZGt2S1FxZ0c5VTRpZS1tYnJf?oc=5) | MarketBeat |
+| 1h 前 | 0 | 偏多 | [Vistra Surges Nearly 6% After Hours, Adding $3B in Market Value - 24/7 Wall St.](https://news.google.com/rss/articles/CBMigwFBVV95cUxPMGF3dUxCdTJQR09nU29XZDF5RGcwVTlVck5OeXhVWVdfbG02d2QyZlNLVkczZTFTakVRWUJla05zUUhwYm5IdFZNa1dfN1h5bDBNbkNBN0ozVnY2XzBRN0k2N29abzBMOUUtaUNtZ2IxUGI4bGNZaktpbTVCSU43WW5qRQ?oc=5) | 24/7 Wall St. |
+| 2h 前 | 0 | 偏多 | [Vistra (VST) Jumps As $4B Nuclear Loan Fuels Bullish Outlook - StocksToTrade](https://news.google.com/rss/articles/CBMic0FVX3lxTE5MMDRoSEhuZFJvczVsS2V4eGVPcUg5RHJaVlNhd3hGTE45U1FwYm13MnRxNTcyVFBRUG91Y2d3d3lyTlFONlhlUE1QNHBUUWdKelhqV204TU9xemhmaGRKNWgtcGFZcnc5VVpPOElHTHFobE0?oc=5) | StocksToTrade |
+| 2h 前 | 0 | 中性 | [What's Going On With Vistra Stock Today? - Benzinga](https://news.google.com/rss/articles/CBMioAFBVV95cUxNQ2tHTnFNS09wZGpaRU9GVy0xRWVrN3lueG9pbUNIY0pLTkhCZTZQbmZNWFhSRUZEaWlTX19abVYxYm5fMTVNNU85XzZRdVRaRVlwRDhVOUhDTnh2YnhjVjA5a0piQjlrR3JBUkd2N01rTmloZDNEM3NHSDFOMFBKQ1pVVW1jTjBSVlZYTjQ5QVJMN3NMRU02ZHFEOU5LVlMw?oc=5) | Benzinga |
+| 3h 前 | 0 | 偏多 | [3 S&P 500 Utility Giants Soar Above Key Resistance. AI Is Why. - Investor's Business Daily](https://news.google.com/rss/articles/CBMimgFBVV95cUxNMmUxaXZIbzVUWG5RNEZ2bXV3SjlTM1Y4aG9vYWFMdWtzS2h1MnFva25QWVFPVDNhS2k3MXo5eTMyTHpLTHNJTGhVRVNGVGVCb08yOTFWbjlGZWZtRHk3cHdzNUFzWVh6Y0FzNWRHb0Z6MUZQQ2hNSzI4Y0ktbE5LM3Vzb2NFdnRaLThYWUQ1UTFSNlFPRW03S2Vn?oc=5) | Investor's Business Daily |
+| 4h 前 | 0 | 中性 | [Vistra Corp Stock (VST) Moved Up by 11.79% on Oct 6: What Signal Does It Send? - TradingKey](https://news.google.com/rss/articles/CBMiigFBVV95cUxQVzIteFdrR2VSRlhGdlg4LVowWGVyaTdNMTgxLUZDY1BzLTg5MFVCV2w4NGV4OG5CZ3VIWTFsTHZpdFBFdUl0UTVMQXI3ZlFJNWQwcnRpaUQtWThrSk14cFNsM0M1ODNRTTNCLWpfOUVZNnVRVkplejJHTEFEaWpQcmx0V2ptQ1hvbHc?oc=5) | TradingKey |
+| 4h 前 | 0 | 中性 | [Why Centrus Stock Popped on Tuesday - The Globe and Mail](https://news.google.com/rss/articles/CBMiuwFBVV95cUxQcUNveElscmZSVWZueVZ5VzQ0WVJPdEktV0YtWGh3OVFad0I1ZFlmMGVkZW5ZdllKdW50WXpDLWxQeDlteWt2S0UyYzU4aHdQVm4zN0NMM29XdG1kOTlCbGJ3dWVMUDh2b0xscFNrdHFpUkE0ejlZSnRZbktmZGliN1VmMDdqdG9iQlhHanZkQjFCVEtsRVdVT1ZNenZzZ1AzNEd1VUF2NVdXQkxJODliOFd1Rjg4NWExN3M4?oc=5) | The Globe and Mail |
+| 4h 前 | 0 | 偏多 | [VST Stock Jumps As $4B Nuclear Loan Fuels Bullish Outlook - StocksToTrade](https://news.google.com/rss/articles/CBMicEFVX3lxTFBGQ2V0NFpmR0NMbm9Ea3JWcGl2cF9TVVU1VWxkbDVselR5UkxId3U2M1hxcEJQVkFJY1lidGNBRlViSXhybk10alcwMjBsNW5iU2ptVUlEOTFlUDRvWGFBOHlLeWRYcmQtQzl5ckl5VjM?oc=5) | StocksToTrade |
+| 7h 前 | 0 | 中性 | [Why is Vistra stock surging today? - Investing.com](https://news.google.com/rss/articles/CBMimwFBVV95cUxQa3drY0tBQVk1SFJiZDBFaHZVU3JKdFd0RkxlMktaeWNrZ0xfOGl3Vy11NVBxbHhGdzBQeUxORDZMb1h4TC10d0s1LXRaYjVFZzZKREI3UmNad1NBeW5uSmZnajhCSGNpMnlBQkNSQzBmRkpvbGhvdXBFUExlSFd1d2ROZEdjekd2ZkNXb3huRzZoejRma3hNQUtpaw?oc=5) | Investing.com |
+| 29h 前 | 0 | 中性 | [VST Oct 2026 130.000 call (VST261023C00130000) stock price, news, quote and history - Yahoo Finance UK](https://news.google.com/rss/articles/CBMiZEFVX3lxTFBWQ2VRa3FwZ1I3UlRiY3ZiRVJDUVN4SFMxbGgtUVRTUEktel9VLUxlSXJ3WFlPSklZdGlwOUJqV2s4bVowdWNCYzY4U0s3SjhHWVBKZDF1WktZRGVkMFNCZmh5eU8?oc=5) | Yahoo Finance UK |
+
+_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
 ## 五、反方观点与风险
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
-- 图形上是跌破 200 日线——现价距 20 日 142.02（+2.0%）、50 日 142.76（+1.5%）、200 日 154.32（-6.1%）。本报告的买入规则本身会过滤掉这种形态。
 - 摆动高低点都在下移，属于下降结构；在出现一个更高的低点之前，任何反弹都还只是反弹。
-- 负债/权益 373%，杠杆高；利率或再融资条件变化对它的影响会被放大。
+- 公司尚未盈利：估值没有盈利可锚，股价由叙事和融资环境决定，这类名字在流动性收紧时跌得最快。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -126,7 +140,6 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 | 日期 | 开 | 高 | 低 | 收 | 涨跌 | 成交量 |
 |---|---:|---:|---:|---:|---:|---:|
-| 2026-09-15 | 141.61 | 142.99 | 140.03 | **141.30** | +0.6% | 5,593,100 |
 | 2026-09-16 | 143.15 | 143.47 | 139.39 | **140.16** | -0.8% | 3,832,600 |
 | 2026-09-17 | 143.86 | 145.87 | 141.30 | **143.33** | +2.3% | 3,952,100 |
 | 2026-09-18 | 143.16 | 144.21 | 139.98 | **140.44** | -2.0% | 5,269,000 |
@@ -140,7 +153,8 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-09-30 | 140.02 | 140.76 | 133.44 | **138.35** | -1.8% | 8,066,100 |
 | 2026-10-01 | 139.16 | 141.68 | 137.08 | **139.75** | +1.0% | 4,755,500 |
 | 2026-10-02 | 142.05 | 143.02 | 134.79 | **140.02** | +0.2% | 12,680,800 |
-| 2026-10-05 | 144.04 | 146.94 | 140.90 | **144.89** | +3.5% | 10,795,000 |
+| 2026-10-05 | 144.04 | 146.94 | 140.90 | **144.89** | +3.5% | 10,862,000 |
+| 2026-10-06 | 151.47 | 162.69 | 151.44 | **160.50** | +10.8% | 17,985,738 |
 
 ## 七、自己去查（本页不做独立验证）
 
