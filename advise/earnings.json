@@ -199,6 +199,46 @@
 "eps_actual": 3.52,
 "surprise_pct": 10.63,
 "error": ""
+},
+"APLD|2026-10-05": {
+"symbol": "APLD",
+"as_of": "2026-10-05",
+"next_date": "2026-10-07",
+"last_date": "2026-07-27",
+"eps_estimate": -0.19,
+"eps_actual": 0.04,
+"surprise_pct": 121.05,
+"error": ""
+},
+"ORCL|2026-10-05": {
+"symbol": "ORCL",
+"as_of": "2026-10-05",
+"next_date": "2026-12-10",
+"last_date": "2026-09-10",
+"eps_estimate": 1.74,
+"eps_actual": 1.92,
+"surprise_pct": 10.45,
+"error": ""
+},
+"TQQQ|2026-10-05": {
+"symbol": "TQQQ",
+"as_of": "2026-10-05",
+"next_date": "",
+"last_date": "",
+"eps_estimate": NaN,
+"eps_actual": NaN,
+"surprise_pct": NaN,
+"error": "no earnings calendar"
+},
+"GLDM|2026-10-05": {
+"symbol": "GLDM",
+"as_of": "2026-10-05",
+"next_date": "",
+"last_date": "",
+"eps_estimate": NaN,
+"eps_actual": NaN,
+"surprise_pct": NaN,
+"error": "no earnings calendar"
 }
 }
 }

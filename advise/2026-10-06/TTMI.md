@@ -110,14 +110,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 4h 前 | 0 | 中性 | [Exploring 3 High Growth Tech Stocks In The US Market - Simply Wall Street](https://news.google.com/rss/articles/CBMixAFBVV95cUxOR3ZwUG94UkszaXdVb2RCd1MybDF6UF84WWdGN0poOWdqYXNWLVAwMURxR3J6RkExMmIwQnZMZDJaWXp2cTRpRW5XUE1kTGNtRGNLQWlaME1YSHlROGI2dUVJNkd1OGtNaklCUEVvcFNJMzVPX1BIMGFrYWR6bzdWOVlteU1oMC1qOXFqNktXQVk4ZWRXdGtibzdSNlQ4Qi1oMnhybFk5SXpLalMwWkRaLVBRVWNEa2lGNTd4TE10MVFYR3dl0gHKAUFVX3lxTE1TdGxudW94SXNiNHVtVTZGRThBR3BfXzhOdVlRNnNOUWFNN3ZPaVB0V1k3VXpYNDgzRDNubW9UbS03WWE1RURJT0VvZkdpcXlBWW93Vzh2S21JNkZYVDlxVzZSV3RzVWxXdTdqX0g3SENyUDd2c25DWVpaTnpoMUtUaXA5d0w4YlBQanNjcEhQWTZONHREVlVUWFFzOXBkS3I1SU44dFZUa1BnZElNb3FTcjlyTkdqX1U5aTJRT0tBU01URHpEZjdpcnc?oc=5) | Simply Wall Street |
-| 17h 前 | 0 | 中性 | [TTMI Mar 2027 200.000 call (TTMI270319C00200000) Interactive Stock Chart - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMibkFVX3lxTFAzQVdnaXdybUoyTHRXYlZKQVlfcDdSQU9tS1VWRklpMURGYWctQm9fUE45ejdXVVZhSGx2Z1BqNnl3U1VtZTNRdDBPbnZsYmFrdlpMQ2J1VFBkc0FodGtlZU5JeGRNcURDWGE1Y1FB?oc=5) | Yahoo! Finance Canada |
-| 30h 前 | 0 | 中性 | [TTMI Nov 2026 75.000 put (TTMI261120P00075000) Stock Price, News, Quote & History - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMiZkFVX3lxTE04UXFmOEtYUVhQUmVNbFkwNk40cEhMZmEwQjdwRmJLZ2g5ZEVLSkVSV0xVM3dldmhQcXgzb3pGaVFDMFhaYTNRUmdTRXE4RkpheTVfTVhHSjBJbUdBZGJIbzA5aXh1QQ?oc=5) | Yahoo! Finance Canada |
-| 40h 前 | 0 | 中性 | [TTMI Mar 2027 155.000 put (TTMI270319P00155000) Interactive Stock Chart - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMibkFVX3lxTE53bkw5VDVJV1ZuaDJBRkNxZi1XN3dTNmFOUnJQX0FrMlFTNmdfaWVwX2JZRW9PZDVRU0Q4bDlxWmVkaXBnbWhyRUNrQUJseTZ4NjUtd25GekNYQWlhQVhFakFONHh4Ty14dDh6QVlB?oc=5) | Yahoo! Finance Canada |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
@@ -126,7 +119,6 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 - 下次财报在 29 天后，落在持有期内。财报跳空会直接穿过止损——那一晚的风险不是 1R，是没有上限的。
 - 自由现金流为负（-$1,944.24万），意味着经营本身在消耗现金，未来可能需要再融资摊薄。
 - TTM 市盈率 60 倍，价格里已经计入了不少增长；增长只要减速，杀估值的幅度会大于业绩本身的降幅。
-- 政策面对该板块的倾向为 -0.94（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 

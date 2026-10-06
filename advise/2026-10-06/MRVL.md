@@ -110,28 +110,13 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 0h 前 | 9 | 偏多 | [Marvell stock surges on revenue guidance boost - Yahoo Finance](https://news.google.com/rss/articles/CBMirwFBVV95cUxPVURRY3c5U2ZUcDhUUVZZT3lta0dRY0F0NkpkblA3Wnp0aVg5Z3ZfbGRzbTh3M0Y3T05zUURfT3BsazdHRWY0WWZhbUh5dnJhUGxaQWcxWVZTc054RXZoVElXUUN6UzdfUV9zWkNNMnpmalVxMlRnU252cHFESllXY0tLbFBVR0VCZGs3T1pFYTJweHZvdkFTWEZVZ3g0NE5BOF94WmxVOXlmS3BGMVFF?oc=5) | Yahoo Finance |
-| 2h 前 | 7 | 偏多 | [Marvell Stock Surges After CEO Announces Huge Long-Term Revenue Target - Barron's](https://news.google.com/rss/articles/CBMigAFBVV95cUxOTU9adUUxVlNEdTZIRHVkNDZUcjFCT19TWm9hemhNNmhSQUVoaFBYQmVtckw3Y3VnV2g3NG1DV1UybDlUYlJvdzE2MFVkTTk1RXFndFdDeldzeWU5ZllkNllMX2hQaVlSOFMzR3ZJVGFRX1JPOHJvN2tBSmQyWjBvcQ?oc=5) | Barron's |
-| 2h 前 | 6 | 中性 | [Marvell Technology (MRVL) Is Up 7.7% After Expanded AT&S AI Substrate Deal And Dividend Declaration – Has The Bull Case Changed? - Yahoo Finance](https://news.google.com/rss/articles/CBMilgFBVV95cUxObHNUdWlvWDFWMGYtbXh4VE5oQ2hnZHBXLXFiS3pMTzB2eTdXYWIxN3N0eEp6c2lCM2pydlBPWmJiU0phRlNwNXZCcl9vVlhOdzdlNW1JTTRSNWpySlpZRmtLVnpTY01jd2NQQWU4eG1tYnNfX1pUOV9lYk1WRnVSaWJybEJDRmRhS0Etb3RXeXQyc0ZzaEE?oc=5) | Yahoo Finance |
-| 18h 前 | 5 | 中性 | [Is Marvell Technology (MRVL) Expensive After Its AI Data Center Push And AT&S Deal? - Simply Wall Street](https://news.google.com/rss/articles/CBMi2wFBVV95cUxNWm5sb0FuZi1hVF9fVzQ0UW5aZlJFNW1QZndqYkRjbXRCVW9CNEtTLTZTSW9fQXE3NzV3RFV2d2k1b3BXcW1KYmsxVldLMndfQjg5eDEyYU9nWW5nWV9JNU1NSDltODNmYl9NaWNzV1V3d2hLY0c0QTA3Mms4bkpzMEtEcU9lYlBTUHVyX25lOXNucDZkUVJLaDZhZDRWcGdFZFVTbnlPRGViSFpXNTQwR3ktWC1nVzZXNlFBRllScWNmTHlfOHdXSWc5dWlHc0Jpb2JrU0NXN1VtWGPSAeABQVVfeXFMUHo3YXB1T24tLVRreUxOYmZ4WmZaYUprc3dpdjVJUmdzMExMV3ZjVlFuYUxUaTh4c0dRTWxGcjU1MFM1RjcwbkV2NzdMM2ZZVWgzRjE4YThWeElVX0xtTXRZRFIxamg2aUp3Y1gtOVFGNW5SNjFCem5DandtTGVlS01FXzB3RVlZSGhJTkJqeFlnYVlrQkE4YXZ0a1dDTWc4ZHdoTS1LWmVpTDhieHR3aG5MQWI5MmlhcE5LbVlnQ2pDYVEwd2N4WUpzV1psbVZiMVlsdEw0NXQwQkdLeGZKNGg?oc=5) | Simply Wall Street |
-| 1h 前 | 0 | 偏多 | [Marvell Technology (MRVL) Shares Surge 10% After Raising Fiscal 2028 Revenue Forecast - GuruFocus](https://news.google.com/rss/articles/CBMivgFBVV95cUxNNG1qek02enZnQkZQZW4xUXlzb1Vzb2EwbEVFRktsODJmdlJYLTYtZ0lxUGpsTkhIaXNhR1h6SEJoZktDcnBETkVpN0UyUlBQaHpVOERqbG9HY0hXN2JhR3ZHN2tkZElQelhoSXMwb1k3cFhFc0Y0MVhLbXdyeTJxM3huN2ZsM2lyYnN4Z3dyUmNXLUVjb0VZWnVIeHY1TDNjbmJjMzRNR1VFQUxMWUJVYWY0OHI2YlBFX0pIc3RB?oc=5) | GuruFocus |
-| 1h 前 | 0 | 偏多 | [Marvell jumps as Investor Day optimism builds around AI growth targets - Quiver Quantitative](https://news.google.com/rss/articles/CBMipgFBVV95cUxNRm1zYjFsZ210TEJkMU5Mamt4LXVHSHhfNjlNbTVZQUE0T1BNQ280VHRhdjZoVDU4aDNtb3k1ckEwY2lMenhpSWhrT2JBMzVlR3hQUmhaOXFvRXI0NXBwQUNndmtFQ1pLY2dMUHcyVWJFR3VJaE4yd3dnUENRUzNzWGNaYUNSSUI0UkNIc3d1ZTQ5Rk51UkM1YlI5QU9QZkZkU1RLZmN3?oc=5) | Quiver Quantitative |
-| 2h 前 | 0 | 中性 | [Marvell Technology stock rallies following ambitious investor day targets By Investing.com - Investing.com](https://news.google.com/rss/articles/CBMiygFBVV95cUxNdjBJbEg3RnEwWnE4M3NqN3JWTURwd0RiWjhPTzdmYzdYQ2dUMzBuTXVjNTZVZnd2QkhyX1ViSjVlUGNHOVNGZmNPaEZOZHYzMmF3TS1BMHNYWGp5Umo4a1BFU3ZPVm1razdKVk5zSUdGZXl0UFBrYWtESkxRX3pTQlRLM2djNUdycHhaVV9DalIyaU5LVzFmSEc5MG5lbVV2SzFpS3dlc3lmazEyRG1mdVpTVnNTVHM1MkFiRFBQUF9HLVYzVWRpaVRn?oc=5) | Investing.com |
-| 2h 前 | 0 | 中性 | [Marvell Technology Inc Stock (MRVL) Opened Up by 9.96% on Oct 6: Drivers Behind the Movement - TradingKey](https://news.google.com/rss/articles/CBMiiwFBVV95cUxPNDNOSVNwbTl1bUZHb1NjOGdJV1B6Ymo4eTZzNUljdTVoTEwzZXFwYTF1ZktwWWd6dmVyOERrR3RaODJ5dEVyV0x4T1RUbDNWc3ItLWFjM242YV91blVUQnFUUFV5bVM2OTd3ekk0WWVZRVBLcU03MlVuTTlRVXd5bWJZYjdpamwxdjA0?oc=5) | TradingKey |
-| 18h 前 | 0 | 中性 | [Jim Cramer Expects Marvell’s (MRVL) Next Move to Get the Chip Industry Talking - Yahoo Finance](https://news.google.com/rss/articles/CBMimwFBVV95cUxNR2V0T0R2dnRpUkk0X29pMjJXVFhFNng2RnZ4dVpaVk9UeF93NENfRThCUmFqX2tYQklROExfVDZiNk90VE9OZEhnX0hhajNsSy0waEQ2WlpycXBoa0lUQ3RhMXFqZFZ0NU0wcWRzVWRSSndkdzZqbzlMRk03czExRFpBTVpEb1p1ekN4Mk5QamdyZS0zME5GeFBHVQ?oc=5) | Yahoo Finance |
-| 25h 前 | 0 | 中性 | [Is Marvell Stock Increasing Your Market Risk? - Trefis](https://news.google.com/rss/articles/CBMiqAFBVV95cUxNeXd2X0pTeUxvdWJCMVBZMUlkMVNyVGpjWjYtbGwyd3hJWWNpYUVGVGZQQWlMZWtZckxHZEI5QVd3QXVRaTFGRFhKV1JYM0FTLXM1OHdzcGpMTFpJR2JDZ1Njc3phVmdfOW5yeWlvTEtsekVjblBYdGVoaXR2cGxFSHVOMEJxQU1EbjY2RFNYZHJkWEV2c25ER3h2bUJUSlBzVzF5dk9hSFI?oc=5) | Trefis |
-| 45h 前 | 0 | 中性 | [Marvell Stock And 2 US Industrial Policy Plays Backed By National Security Spending - Simply Wall Street](https://news.google.com/rss/articles/CBMi2wFBVV95cUxQWkJpVGNNbm9idEo2b2doX0dING8wTXg0dll5dFFLOXNxbjAyWU1KOFdveHJxYnA2cWZvWEZRV0hnOEZTWUpuYWhrY2NnVlMySUJPMC1QSTFsdnl6dUY5SU82bVVteGV0N18yYnNhQml1R25BemVqYlREMHF0VDVHQlE2YTZTdlRneEFfVDZZNEc1TmRfWms3bjBoVGR1MkpfVWx0Yy1qZ0dFdkdzak9PZlkycUxabXJfTktzUjhRRDBxYzVMcVlPYUV6cVdfYU90R3c2NTV4T0JYemPSAeABQVVfeXFMTmtpMlVNcHk1U0JyV2Ruc3hDeXdoTVVHMGItcUdFMGZXa3pwVTVPX2xZSkhXTUtEalVHamFCNTZyWnBENDFpRms5S0RSamNrNmVwZlRPRExxS2JkZUN4dkxtZmtKc0FXS21QSFcyelA3X25NbXd0QzVraDR3NFVILVUtT3Z4Q21sLXg2M3lJOXhfZjdXQVU2OS1CdlB6VF9pMWhZdnh1dGlXbXlRN1FESU4wVFRZdW5CdnZJTnQwdFNRbFBUMGpqUnZqb0lxXzQ0SlhPb2RCOHJQb3hrUm9INEk?oc=5) | Simply Wall Street |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
 - TTM 市盈率 89 倍，价格里已经计入了不少增长；增长只要减速，杀估值的幅度会大于业绩本身的降幅。
-- 政策面对该板块的倾向为 -0.94（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 

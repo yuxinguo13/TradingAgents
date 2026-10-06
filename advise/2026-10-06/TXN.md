@@ -110,22 +110,13 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 1h 前 | 8 | 中性 | [Texas Instruments stock heads toward its October 21 earnings call - AD HOC NEWS](https://news.google.com/rss/articles/CBMixwFBVV95cUxPVmVDNC1MYmlhZktCdHJqMFlGeXhfV2xualV5NWJBV0Zsamk2ZnZzWjhMRU43dkkwSG84OWx4bERiUVFSZFpRanZ6bF9PUkpCemNkMzkyNlFLN3NXNTRWdVZkMnZlbDFJQkZzM3pLR0FpcXVWTEhaOWtUc1Q0YjZKdkEzMFlaQk5KNUVjLWc5U25CNndhU0RjTy1RLW4wVThiaGQ0aDkzZm5UT2ktY1AtS2ZxZzlUcGNOblNSZE9BNFRwd3pJZldV?oc=5) | AD HOC NEWS |
-| 8h 前 | 8 | 中性 | [Texas Instruments schedules Q3 call. Zacks sees 11.12 percent upside for Texas Instruments stock - AD HOC NEWS](https://news.google.com/rss/articles/CBMizwFBVV95cUxPRXVTN1QzV3FrdVJDZEwtWGtPZExQM0ZCV0RvSDI0aFA1UHpkTm1xb0d5WXNLSnZ3Q2s5YlhGbExNenZUUU1vLWpYTVlVblJxRHhYXy1nSmt1WDYtdG41NWVVMU9zY0U2LW9SZmFfaVdKQjlYX3VGY2g5TDhralBPdC1IVFBrTE9zWFpPVGFNUTRoODd6c0xiQ0p5R2FXRkZwYUNkM0taOVJEbXQ3RlI2Y0ZCSHgtQXZIS2R1eFFCdFJ3S0xubmlKczVLNmp5M3c?oc=5) | AD HOC NEWS |
-| 3h 前 | 0 | 偏多 | [TXN Surges 67% Over the Past Year: Is the Stock Still Worth Buying? - TradingView](https://news.google.com/rss/articles/CBMivAFBVV95cUxPMFpMTG9lNGp6dHlBQ0xHS2p5SUlQNWUzWWtjREFXSGRMU0EteTd1ZTNGdi15d2hXRnFLeXZsZlR1WWNJQVA2SGRfak5JZ3M3alhEck8zRHh5c1VVUzcyWlA4YV8zUUQ2OER6cVcwSjMzUXZTTjNFdlJWTFNNVndyNVYwYTFrTTJ0RnJXOHV5NzdyRXZqOElheDdFVXpTMFN6Y2JIRDFJRlFOZmdCRFlKcFdpdGF3ckJaTFhYdQ?oc=5) | TradingView |
-| 9h 前 | 0 | 中性 | [Texas Instruments stock pre-market at EUR 263.60: plus 0.14 percent - AD HOC NEWS](https://news.google.com/rss/articles/CBMiwgFBVV95cUxQLTlqRXNnOEJsTkQxQ3NvNGFTekxyUEVORUlnZ2xSOVRSQ0lUMG5yWU8xaWVJa1Jab0ZGOTNMRk1Ycm1lVXl0UXIzVVdBMUEtVGp4azYteVpmdGE1NEV0a0lQMVl3TFJzQVpvNTRWSWFsU0hxR25fRDZTNmREbWxIbnh1enJ1N1lzVk8tbTlid1lrU29YRmMxODlvRjhOQ1N0ZDdxSEg2VWY5dXF1eWFpaTdObU53R1hTY2RIRUFnVUlJZw?oc=5) | AD HOC NEWS |
-| 10h 前 | 0 | 中性 | [Texas Instruments Incorporated (TXN) latest stock news and headlines - Yahoo Finance UK](https://news.google.com/rss/articles/CBMiV0FVX3lxTE0zc2NBR3VUYnJUNDZoRlk3NWNQempOQzlJMzlvcXdmcU9ybDE3b0dyN3M5b1I4RFIzSDJ2clZCcEJ3aDZfbW1xb19SaW5NYUo0TmtXVjU4WQ?oc=5) | Yahoo Finance UK |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
 - 下次财报在 15 天后，落在持有期内。财报跳空会直接穿过止损——那一晚的风险不是 1R，是没有上限的。
-- 政策面对该板块的倾向为 -0.94（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 

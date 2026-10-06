@@ -1899,5 +1899,423 @@
    }
   ],
   "error": ""
+ },
+ "APLD": {
+  "symbol": "APLD",
+  "fetched_at": 1791302851.42657,
+  "name": "Applied Digital Corporation",
+  "sector": "Technology",
+  "industry": "Information Technology Services",
+  "website": "https://applieddigital.com",
+  "market_cap": 7519642624.0,
+  "pe_trailing": NaN,
+  "pe_forward": -51.984447,
+  "ps": 12.300847,
+  "ev_ebitda": -118.973,
+  "peg": 1.83,
+  "eps_trailing": -0.91,
+  "eps_forward": -0.48351,
+  "dividend_yield": 0.0,
+  "beta": 5.997,
+  "revenue_ttm": 611310976.0,
+  "revenue_growth": 4.066,
+  "earnings_growth": NaN,
+  "gross_margin": 0.25879,
+  "operating_margin": -0.48219,
+  "profit_margin": -0.39915,
+  "roe": -0.08376,
+  "debt_to_equity": 136.231,
+  "current_ratio": 4.01,
+  "total_cash": 1591987968.0,
+  "total_debt": 5099915776.0,
+  "free_cashflow": -4961438720.0,
+  "target_mean": 66.43333,
+  "target_high": 109.0,
+  "target_low": 22.0,
+  "rating_mean": 1.4,
+  "analysts": 15.0,
+  "short_pct_float": 0.2092,
+  "held_institutions": 0.74337,
+  "quarters": [
+   {
+    "label": "2026-05-31",
+    "revenue": 258749000.0,
+    "gross": 40518000.0,
+    "operating": -124764000.0,
+    "net": -110162000.0,
+    "eps": -0.39
+   },
+   {
+    "label": "2026-02-28",
+    "revenue": 126637000.0,
+    "gross": 53805000.0,
+    "operating": -25918000.0,
+    "net": -99303000.0,
+    "eps": -0.36
+   },
+   {
+    "label": "2025-11-30",
+    "revenue": 126589000.0,
+    "gross": 26036000.0,
+    "operating": -30957000.0,
+    "net": -17511000.0,
+    "eps": -0.07
+   },
+   {
+    "label": "2025-08-31",
+    "revenue": 64216000.0,
+    "gross": 8610000.0,
+    "operating": -20542000.0,
+    "net": -16926000.0,
+    "eps": -0.07
+   },
+   {
+    "label": "2025-05-31",
+    "revenue": -33300000.0,
+    "gross": 27811000.0,
+    "operating": 11598000.0,
+    "net": -52537000.0,
+    "eps": -0.24
+   },
+   {
+    "label": "2025-02-28",
+    "revenue": NaN,
+    "gross": NaN,
+    "operating": NaN,
+    "net": NaN,
+    "eps": NaN
+   }
+  ],
+  "years": [
+   {
+    "label": "2026-05-31",
+    "revenue": 611311000.0,
+    "gross": 157682000.0,
+    "operating": -174414000.0,
+    "net": -244004000.0,
+    "eps": -0.91
+   },
+   {
+    "label": "2025-05-31",
+    "revenue": 228569000.0,
+    "gross": 11810000.0,
+    "operating": -96067000.0,
+    "net": -231065000.0,
+    "eps": NaN
+   },
+   {
+    "label": "2024-05-31",
+    "revenue": 165575000.0,
+    "gross": 17235000.0,
+    "operating": -80541000.0,
+    "net": -149274000.0,
+    "eps": -1.31
+   },
+   {
+    "label": "2023-05-31",
+    "revenue": 55392000.0,
+    "gross": 11004000.0,
+    "operating": -42911000.0,
+    "net": -44646000.0,
+    "eps": -0.49
+   }
+  ],
+  "surprises": [
+   {
+    "when": "2026-10-07",
+    "estimate": -0.3,
+    "actual": NaN,
+    "surprise_pct": NaN
+   },
+   {
+    "when": "2026-07-27",
+    "estimate": -0.19,
+    "actual": 0.04,
+    "surprise_pct": 1.2105
+   },
+   {
+    "when": "2026-04-08",
+    "estimate": -0.21,
+    "actual": 0.09,
+    "surprise_pct": 1.4286
+   },
+   {
+    "when": "2026-01-07",
+    "estimate": -0.21,
+    "actual": NaN,
+    "surprise_pct": 1.0
+   },
+   {
+    "when": "2025-10-09",
+    "estimate": -0.15,
+    "actual": -0.03,
+    "surprise_pct": 0.8065000000000001
+   },
+   {
+    "when": "2025-07-30",
+    "estimate": -0.21,
+    "actual": -0.03,
+    "surprise_pct": 0.8593999999999999
+   },
+   {
+    "when": "2025-04-14",
+    "estimate": -0.1,
+    "actual": -0.08,
+    "surprise_pct": 0.2195
+   },
+   {
+    "when": "2025-01-14",
+    "estimate": -0.14,
+    "actual": -0.06,
+    "surprise_pct": 0.5588000000000001
+   }
+  ],
+  "error": ""
+ },
+ "ORCL": {
+  "symbol": "ORCL",
+  "fetched_at": 1791302853.771537,
+  "name": "Oracle Corporation",
+  "sector": "Technology",
+  "industry": "Software - Infrastructure",
+  "website": "https://www.oracle.com",
+  "market_cap": 440264884224.0,
+  "pe_trailing": 22.76332,
+  "pe_forward": 13.2060995,
+  "ps": 6.133873,
+  "ev_ebitda": 16.504,
+  "peg": 0.79,
+  "eps_trailing": 6.38,
+  "eps_forward": 10.99719,
+  "dividend_yield": 0.014037059,
+  "beta": 1.77,
+  "revenue_ttm": 71776002048.0,
+  "revenue_growth": 0.296,
+  "earnings_growth": 0.545,
+  "gross_margin": 0.63957,
+  "operating_margin": 0.35632,
+  "profit_margin": 0.2636,
+  "roe": 0.41192,
+  "debt_to_equity": 251.716,
+  "current_ratio": 1.171,
+  "total_cash": 37077000192.0,
+  "total_debt": 169142992896.0,
+  "free_cashflow": -45853626368.0,
+  "target_mean": 237.97415,
+  "target_high": 400.0,
+  "target_low": 110.0,
+  "rating_mean": 1.5814,
+  "analysts": 41.0,
+  "short_pct_float": 0.0273,
+  "held_institutions": 0.43448,
+  "quarters": [
+   {
+    "label": "2026-08-31",
+    "revenue": 19345000000.0,
+    "gross": 11612000000.0,
+    "operating": 6822000000.0,
+    "net": 4760000000.0,
+    "eps": 1.56
+   },
+   {
+    "label": "2026-05-31",
+    "revenue": 19184000000.0,
+    "gross": 12513000000.0,
+    "operating": 6955000000.0,
+    "net": 4304000000.0,
+    "eps": 1.45
+   },
+   {
+    "label": "2026-02-28",
+    "revenue": 17190000000.0,
+    "gross": 11098000000.0,
+    "operating": 5637000000.0,
+    "net": 3721000000.0,
+    "eps": 1.27
+   },
+   {
+    "label": "2025-11-30",
+    "revenue": 16058000000.0,
+    "gross": 10684000000.0,
+    "operating": 5158000000.0,
+    "net": 6135000000.0,
+    "eps": 2.1
+   },
+   {
+    "label": "2025-08-31",
+    "revenue": 14926000000.0,
+    "gross": 10042000000.0,
+    "operating": 4692000000.0,
+    "net": 2927000000.0,
+    "eps": 1.01
+   }
+  ],
+  "years": [
+   {
+    "label": "2026-05-31",
+    "revenue": 67357000000.0,
+    "gross": 44336000000.0,
+    "operating": 22444000000.0,
+    "net": 17087000000.0,
+    "eps": 5.83
+   },
+   {
+    "label": "2025-05-31",
+    "revenue": 57399000000.0,
+    "gross": 40472000000.0,
+    "operating": 18052000000.0,
+    "net": 12443000000.0,
+    "eps": 4.34
+   },
+   {
+    "label": "2024-05-31",
+    "revenue": 52961000000.0,
+    "gross": 37818000000.0,
+    "operating": 16071000000.0,
+    "net": 10467000000.0,
+    "eps": 3.71
+   },
+   {
+    "label": "2023-05-31",
+    "revenue": 49954000000.0,
+    "gross": 36390000000.0,
+    "operating": 13773000000.0,
+    "net": 8503000000.0,
+    "eps": 3.07
+   }
+  ],
+  "surprises": [
+   {
+    "when": "2026-12-10",
+    "estimate": 1.89,
+    "actual": NaN,
+    "surprise_pct": NaN
+   },
+   {
+    "when": "2026-09-10",
+    "estimate": 1.74,
+    "actual": 1.92,
+    "surprise_pct": 0.1045
+   },
+   {
+    "when": "2026-06-10",
+    "estimate": 1.96,
+    "actual": 2.11,
+    "surprise_pct": 0.07519999999999999
+   },
+   {
+    "when": "2026-03-10",
+    "estimate": 1.69,
+    "actual": 1.79,
+    "surprise_pct": 0.056900000000000006
+   },
+   {
+    "when": "2025-12-10",
+    "estimate": 1.64,
+    "actual": 2.26,
+    "surprise_pct": 0.3804
+   },
+   {
+    "when": "2025-09-09",
+    "estimate": 1.48,
+    "actual": 1.47,
+    "surprise_pct": -0.0062
+   },
+   {
+    "when": "2025-06-11",
+    "estimate": 1.64,
+    "actual": 1.7,
+    "surprise_pct": 0.0337
+   },
+   {
+    "when": "2025-03-10",
+    "estimate": 1.49,
+    "actual": 1.47,
+    "surprise_pct": -0.013500000000000002
+   }
+  ],
+  "error": ""
+ },
+ "TQQQ": {
+  "symbol": "TQQQ",
+  "fetched_at": 1791302855.0680606,
+  "name": "ProShares UltraPro QQQ",
+  "sector": "",
+  "industry": "",
+  "website": "",
+  "market_cap": NaN,
+  "pe_trailing": 34.49348,
+  "pe_forward": NaN,
+  "ps": NaN,
+  "ev_ebitda": NaN,
+  "peg": NaN,
+  "eps_trailing": NaN,
+  "eps_forward": NaN,
+  "dividend_yield": NaN,
+  "beta": NaN,
+  "revenue_ttm": NaN,
+  "revenue_growth": NaN,
+  "earnings_growth": NaN,
+  "gross_margin": NaN,
+  "operating_margin": NaN,
+  "profit_margin": NaN,
+  "roe": NaN,
+  "debt_to_equity": NaN,
+  "current_ratio": NaN,
+  "total_cash": NaN,
+  "total_debt": NaN,
+  "free_cashflow": NaN,
+  "target_mean": NaN,
+  "target_high": NaN,
+  "target_low": NaN,
+  "rating_mean": NaN,
+  "analysts": NaN,
+  "short_pct_float": NaN,
+  "held_institutions": NaN,
+  "quarters": [],
+  "years": [],
+  "surprises": [],
+  "error": "该代码没有可用的财务数据（可能是 ETF、ADR 或新上市）"
+ },
+ "GLDM": {
+  "symbol": "GLDM",
+  "fetched_at": 1791302856.4796922,
+  "name": "SPDR Gold MiniShares",
+  "sector": "",
+  "industry": "",
+  "website": "",
+  "market_cap": NaN,
+  "pe_trailing": NaN,
+  "pe_forward": NaN,
+  "ps": NaN,
+  "ev_ebitda": NaN,
+  "peg": NaN,
+  "eps_trailing": NaN,
+  "eps_forward": NaN,
+  "dividend_yield": NaN,
+  "beta": NaN,
+  "revenue_ttm": NaN,
+  "revenue_growth": NaN,
+  "earnings_growth": NaN,
+  "gross_margin": NaN,
+  "operating_margin": NaN,
+  "profit_margin": NaN,
+  "roe": NaN,
+  "debt_to_equity": NaN,
+  "current_ratio": NaN,
+  "total_cash": NaN,
+  "total_debt": NaN,
+  "free_cashflow": NaN,
+  "target_mean": NaN,
+  "target_high": NaN,
+  "target_low": NaN,
+  "rating_mean": NaN,
+  "analysts": NaN,
+  "short_pct_float": NaN,
+  "held_institutions": NaN,
+  "quarters": [],
+  "years": [],
+  "surprises": [],
+  "error": "该代码没有可用的财务数据（可能是 ETF、ADR 或新上市）"
  }
 }

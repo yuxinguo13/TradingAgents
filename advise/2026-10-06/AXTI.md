@@ -110,22 +110,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 7h 前 | 0 | 中性 | [AXTI May 2027 45.000 call (AXTI270521C00045000) Stock Price, News, Quote & History - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMiZkFVX3lxTE5IUE9UU1BWMEE3QWlKX2lBNDNsYUlIQVMxRFFrT2VDZ21lMGdZYW05bVk5WFNsSjMxWlRDMmRvMFVMWUJYaHQ4N2FBTFotVUVWNWFRX2NOcEY0aWFJLThSSElkbTRJZw?oc=5) | Yahoo! Finance Canada |
-| 8h 前 | 0 | 中性 | [AXTI Oct 2026 72.000 put (AXTI261023P00072000) Interactive Stock Chart - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMibkFVX3lxTE56T2lGUW01M1NRUFZ0Ylc2OVctbnd3MFV0Ql9LeVlDV3JJaTFFcGJPUFRkNTJHa0YxSVlNd2wzNEU3N3NlcDN2THBUREM2ZVItY0UzbGNqVWtQUi1VZHRZZWtqblloOHRLbERkbVdB?oc=5) | Yahoo! Finance Canada |
-| 8h 前 | 0 | 中性 | [AXTI Oct 2026 73.000 put (AXTI261030P00073000) stock historical prices and data - Yahoo Finance Australia](https://news.google.com/rss/articles/CBMicEFVX3lxTE5xNDdfem9KZHJQQ2ZvZlNucnBmQVRHWml3SUVFS1ZKZjhuY29mUVBNdDRLbzBCMkgtSUdrYjhlN0MtbnhZc0o3OUhJbFo1cmhnR2FMMWh1dEZ3UzdRWjlWZS1XTlo4MTc2NzF2MDF0eFc?oc=5) | Yahoo Finance Australia |
-| 9h 前 | 0 | 中性 | [AXTI Oct 2026 62.000 put (AXTI261023P00062000) Stock Price, News, Quote & History - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMiZkFVX3lxTE8tdEcxeWVOUkg4bm1fRGZ1ZVhGZmxQTTlQczFQb0JnZzVMTzRpMy1GYTdEQ0xaNjF3NzNWN3lILXBTV0dsS055R2hmbFdKRFVOcUVYMXd6RmJkem96RDU0TFFRMjlFUQ?oc=5) | Yahoo! Finance Canada |
-| 16h 前 | 0 | 中性 | [AXTI Oct 2026 66.000 put (AXTI261023P00066000) stock price, news, quote and history - Yahoo Finance UK](https://news.google.com/rss/articles/CBMiZkFVX3lxTE54YXN4SUV4ak9Yd1d4dGM3cWFOLUhmeUZEV3B3azVnOUpqbmJpcEJMRzBpOUNmbl9ScHV4T1I1OHNVSWdYZnNkZTM4S3BZSUVEUl80UlVpd0YydmFPRlYycnlSblF3UQ?oc=5) | Yahoo Finance UK |
-| 18h 前 | 0 | 中性 | [AXTI Oct 2026 80.000 put (AXTI261009P00080000) stock price, news, quote and history - Yahoo Finance Australia](https://news.google.com/rss/articles/CBMiZkFVX3lxTE4yb2t1VXFNZ2QxUjNOZ1Z0OU82cE4wUlpBSExMb3JISTQtaFJnTGN4YW1BVXE2Rm0xeE83VVpxdDRlbWxnc1A1TTNpcmZWTVJnRU1VamJNY0EycVpIbU5iLTJOMVh2UQ?oc=5) | Yahoo Finance Australia |
-| 21h 前 | 0 | 中性 | [AXTI Oct 2026 79.000 call (AXTI261009C00079000) Stock Historical Prices & Data - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMicEFVX3lxTE9scUlDLWNobDZaNG4zeWprTFJqbE1XbVRoY1JRX0tCTHBocnhmYnB3TGktRXdpWFVUQ000U095ZnNteDZ4UlRKdkVxZXpwZkhUNmM0RHZTRzNubTZyN1ZITThmc00xcF84V2NMWTRWMWk?oc=5) | Yahoo! Finance Canada |
-| 29h 前 | 0 | 中性 | [AXTI Oct 2026 54.000 put (AXTI261023P00054000) Stock Price, News, Quote & History - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMiZkFVX3lxTFBJWkQ0YXR3dWd5eHM0dUFUZXpubkFpYU5rdUpfMW9rQWx0Um1aVTl2dmhCUENSakduT0lEVndrMU1DWDBOdmxadm96R2t3VzZwVEdXdUNkeEh2X2V1a3hlWFg1eWZDUQ?oc=5) | Yahoo! Finance Canada |
-| 30h 前 | 0 | 中性 | [AXTI Oct 2026 64.000 put (AXTI261016P00064000) stock price, news, quote and history - Yahoo Finance UK](https://news.google.com/rss/articles/CBMiZkFVX3lxTE1lVnY1SWJtbzJLN3Z3VlZiRWdrUldqbnhTWUxndU1kRmFzbVIzYWFPMF9INEtUVFQ4b1JHZUg0ZjZLZDREQmdic3V1WUtJMXptakN4d3ItNTNnRjdfVzdOUjBOZHU4Zw?oc=5) | Yahoo Finance UK |
-| 31h 前 | 0 | 中性 | [AXTI Oct 2026 59.000 put (AXTI261009P00059000) interactive stock chart - Yahoo Finance UK](https://news.google.com/rss/articles/CBMibkFVX3lxTE51R3YyQkNWaHh6U3dqcnotd3V6dFdoSjFnbVQtRlYwbXB1VnhYVmVIVXVvb1JnVlp2Z2pUQkpDWXdZM05DWWlLblVvUHlOVE03NGZVNGZZU2Z6QnFwZmoxUHdEMmN2b3pHbXRYUlB3?oc=5) | Yahoo Finance UK |
-| 31h 前 | 0 | 中性 | [AXTI Oct 2026 68.000 call (AXTI261023C00068000) interactive stock chart - Yahoo Finance Australia](https://news.google.com/rss/articles/CBMibkFVX3lxTFBKam1WT3E2V2g0RDAzb2l1Ti1veFpLU3E4QnpUNTF6MUN4Vm9FU3BPNjlWaWhqWl9OZkNQc2V4eUNsd1JmbHJOaEJMR0lVT1RaRzNVd2JwV2Q4SFF6cW01UThJX0ZIWWt6djFkaUJn?oc=5) | Yahoo Finance Australia |
-| 36h 前 | 0 | 中性 | [AXTI Oct 2026 70.000 call (AXTI261030C00070000) stock price, news, quote and history - Yahoo Finance UK](https://news.google.com/rss/articles/CBMiZkFVX3lxTE1vcDBwYzVETjh4OU8zV1NMQmpQUl8tTUVPOGx3cmZkM3g5cHA1RDAxbE9mZ0tSNTRVeFM0bXBsVkd1WG1BYnFtMW5xTWtpRkJrV0xTdkVxaUo5aDJfS2tpd0tISHpDUQ?oc=5) | Yahoo Finance UK |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
@@ -135,7 +120,6 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 - 下次财报在 23 天后，落在持有期内。财报跳空会直接穿过止损——那一晚的风险不是 1R，是没有上限的。
 - 自由现金流为负（-$4,441.70万），意味着经营本身在消耗现金，未来可能需要再融资摊薄。
 - TTM 市盈率 2,167 倍，价格里已经计入了不少增长；增长只要减速，杀估值的幅度会大于业绩本身的降幅。
-- 政策面对该板块的倾向为 -0.94（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 

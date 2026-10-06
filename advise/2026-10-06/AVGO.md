@@ -110,29 +110,13 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 19h 前 | 8 | 偏多 | [Broadcom (NASDAQ:AVGO) Stock Jumps 2.1% - Time to Buy? - MarketBeat](https://news.google.com/rss/articles/CBMiqwFBVV95cUxQaUtjTTFNRDFNTE1HSnJicFJQVVZucWZ3U3dFZlJmVUlCZkRaWk9hVWlXRDYyN0E0OHJ5OFVTSTU1NlExdnVxMmZxWURJSFBYOGtJal81STFGYVV6SXIzaV9rZ0hOTDlYcWxWQm10d1JBX2Fac1VWWTU3MkdQN19rQ0lxOG80MVlkMHVIM0lXY0pwRTRnWXpWMDZjV1JpdV93d21tZVpXUTh6aFU?oc=5) | MarketBeat |
-| 2h 前 | 5 | 中性 | [Why Is Broadcom (NASDAQ:AVGO) Lining Up a Large AI Chip Financing Deal? - Kalkine Media](https://news.google.com/rss/articles/CBMixAFBVV95cUxQWjZfdWRFYkJ3Y2l0cU9oRGpoOWZERWliNEp3Tk00QXJ5ZF8tTmcxWEZZQjktY1NQWUllZkZEZl90anZad014SUQxLWJybFo1aGI5SEFQYXphbXBQUUlURUQxbUJqQ0F5VFFnMm03b1hUYnkwNmU4YUZvMUtDcGVZOGMxdUdfWjUwZjdkM3VZakdvaEpMbVp6NHVGemFIS3RRMXZuVjIzUUx6ZEJJZjM5TWRxWkFkUE8wVldmN3NLVVlRMnho?oc=5) | Kalkine Media |
-| 5h 前 | 2 | 中性 | [Broadcom Inc. $AVGO Shares Sold by Central Pacific Bank Trust Division - MarketBeat](https://news.google.com/rss/articles/CBMiyAFBVV95cUxPZXhFdVNhZUltb1V4Nk5sYlh3QzQxRmRZRDBRNm9MX2tYeEI2OTUwdm5SM2twalJjejkwSVRIU1EyRU5tNmpSRTl6TTNGbGg3OUZ6ZC1BX3pOaGtnX0ZmNWlxNTJDeU12ODNib2duZnBRMVItMzRDbXZlWWFSa1ZhaE5mZl9WbFY1UWZ2UGJkdFYtcXhScUF3dUhtR2xJQmRBQ1lNbWhxUXFqT2JOamFwRWk2Ni1rV2IyRzVaN1h4Qy1LV1E5NjdCcQ?oc=5) | MarketBeat |
-| 0h 前 | 0 | 偏多 | [Broadcom AVGO Stock Targets $400 as as Wall Street Raises Chip Sector Targets - FXLeaders](https://news.google.com/rss/articles/CBMiuwFBVV95cUxNelJDR2lFUGhQSG1zUUhWbzZNdkwwOGJ5cTRYODhJQXVBd2NkRG5zWDM4ekZoWGhSaGxJYXpmMFFackhDX09FaDdCYjJ6ckROS1VWV3N3OVVaclFKUHVzWl8xaVNvNF9IdGNBZE5Kby1FeVh6Y1RoVzRpNG5rMi1FcjhDSmtVSnlVcjBIeWpTTk9XcG95UGtmMFp0V0t1VXdCblU2VjZITEtLdzhyNnlhWk8zOVNVVDdnSms0?oc=5) | FXLeaders |
-| 0h 前 | 0 | 中性 | [Broadcom: When The Story And The Stock Disagree (NASDAQ:AVGO) - Seeking Alpha](https://news.google.com/rss/articles/CBMikAFBVV95cUxNZkZXTk5Rd1pPbUJIQzFmQkRxVlBFXzNkeFhVQVB2VURqdkl3WHY0UEdNajZrNmZKMU83OGpxRXczeUZrTVVVN1ZUcHhTUzRkcXU2SnFiLUdsSDlySndlbE45ZTdOd2Y4THc4NEFkMUo5T1pvNGZ0M1NLTjFEcnZ5dlNQci1JZTk3ZVFPaUlERDE?oc=5) | Seeking Alpha |
-| 0h 前 | 0 | 偏多 | [Broadcom stock seen bullish on strong AI demand and solid financials, with buy range at $342-$381. - Pluang](https://news.google.com/rss/articles/CBMia0FVX3lxTE9GLU9WWWZvM1lTYVg5dmZBeC16MENyREUzU21rTTlnZGhoNUtkMHFtdkpuVjhlVDFCVlgwOHlrQzA1WThnbWs4amVXcTlrZW1fVXA1dWdoQ21BQnZkelNBaXRFZDNrZFJUVXNn?oc=5) | Pluang |
-| 0h 前 | 0 | 偏多 | [TXN Surges 67% Over the Past Year: Is the Stock Still Worth Buying? - The Globe and Mail](https://news.google.com/rss/articles/CBMi4wFBVV95cUxQWVc5cjBwNXp2VXFNS28tRHRJaGFDYUZGT0JYQ0VhVzhaLVhwRmI3d1JPMnNUZHJrUlIxX3VtTjdTYXFjN3J5UTIwdEZVUWdRajExWDFEMmozZEpSdU13aHJPbHU2c2YzME9QRkEyR1FjZFh0dUs4SDN4VTNpNmc5X0E2c3Y3X25wQk5JeWJyQ3p1QXlPcE1IcE54dGUyZHhBdDNFU2NqZlZqWVlNcGMwWDA5RnFKUFNqZlN4ekNKcEZBNXgxUFlIbnBCWXlTNGpWc2I0SExfbUROUEpra0UzbWRfaw?oc=5) | The Globe and Mail |
-| 1h 前 | 0 | 中性 | [The Other Processor Company: Bullish On Broadcom (NASDAQ:AVGO) - Seeking Alpha](https://news.google.com/rss/articles/CBMikgFBVV95cUxQd1VPZmxnaC1sbHVWSW1sNTVYaVhlWFN1TDlPWC1MM3dCRkh4X3pOZWpqek1FUEdOQko5M3c2Wi1PdHhJZ1plNUFtYnFqaWlHUVprYkUySHNqc2dFM3M1eGs4RnlsWGdqQ25qWUJRU3Fudk52NzdldFpEcm0yUjBrLUdNWlZmandIVEF1YkhrbXpKZw?oc=5) | Seeking Alpha |
-| 2h 前 | 0 | 中性 | [Broadcom Inc Stock (AVGO) Moved Up by 3.74% on Oct 6: Facts Behind the Movement - TradingKey](https://news.google.com/rss/articles/CBMiiwFBVV95cUxOS3RCMnJJTDRqVnFURmJxMkJPYlpsZUNLWjdSb2d4Q1RzYmw0eEQxbEpGMzZZT1FFZ05DVm5iYVJYaWY2S3RFRl9XcXkwODhyNjcwOTlsTWlsclM5S1E2c3lYQ1BwS01tZTJvc21jQ2ZPcFdETzVGa0ZrdG5qRFhodXB1MWhuSW9tc2pn?oc=5) | TradingKey |
-| 2h 前 | 0 | 中性 | [Prediction: This Company Could Be One of AI’s Biggest Winners by 2028 - Yahoo Finance](https://news.google.com/rss/articles/CBMimwFBVV95cUxQWFFTR1diaEhVaDg4aXZDTVVJS1ZPLVBPaWpFdS16elRPNDBQSElQZXMzclUxXzBFUVVhMUh3UUxOVjhwbEZMUWZQeExSNWtHNE9kbFdOUHd3S290MEtXT2VCc3dBcjlXeUFPRW52ZmlEYVg2S2hpbGNtcXFUSnBJZlEwVTFZMERlVkFvcFNrczdfek1VRFVIOEhMOA?oc=5) | Yahoo Finance |
-| 2h 前 | 0 | 中性 | [Prediction: This Company Could Be One of AI’s Biggest Winners by 2028 - 24/7 Wall St.](https://news.google.com/rss/articles/CBMisAFBVV95cUxOd3ZMMkZmcFpxbnFkV04zcWdhOGdvc29rU0FnT2VSMWVNOUhTR3RmUkxxU0dBMU1qY2g0Z2czSGNZTkkxSTdRVTRZQzYzSFlCVUpORW80d2laVk5DcFdTNFppY2NwY0Y1aEZXUjBMZHpRQ3ptaTI0T0R4ZEpQR3htN2NSSUpEcEdabmdwYTFsXzYzUmlVQmk4VE9ycU1VaFBGYlRaVHpMT0lpRTJiZ01zdA?oc=5) | 24/7 Wall St. |
-| 2h 前 | 0 | 中性 | [3 AI Stocks Trading Under 30x P E - Simply Wall Street](https://news.google.com/rss/articles/CBMipwFBVV95cUxPd0lCX0pldFpTZ2VicDBfSHVQM0tGdU1USXU4dEdBZ1VJcW9VRHhZTW1qVllNcnRNcEgta29wZ092dmVEX3VxTHc4RXBpVF85Tnk2ZmxXZWNJR29sMWRBcUF6dUpveW1xODVqNEc3aW1RTFMyT1VlSnhCVUkyWlQtZE9iMklFRWFpUzhJdEpaMGlQa09qaFdnSG5YWi1yeFcyWWxhZDQxc9IBrAFBVV95cUxQMk5GOGZOcklNLV9vZEJyTUkwbVpQYXNDMFNRbS1rRnQza1U2WVItVWlvNFNxRHc3QV95THo1VmY3Ujl6bVpRYWtPTzZhY2dpcU80c0R5Z2RVYllGVU9fekNXRjlkSGtoLU1WWk5Qenlla3kyQl8xa3FLOGY2bWF0LU8tT0sxdXVxYjM1Tzdiak1yV24ycUxKTUZuQWxVai1ZM2d4UlRVZmxqeHhZ?oc=5) | Simply Wall Street |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
 - 图形上是跌破 200 日线——现价距 20 日 354.04（+2.4%）、50 日 372.30（-2.6%）、200 日 366.38（-1.1%）。本报告的买入规则本身会过滤掉这种形态。
-- 政策面对该板块的倾向为 -0.94（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
