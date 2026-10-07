@@ -144,7 +144,7 @@
    "symbol": "APA",
    "shares": 137,
    "entry": 42.43,
-   "stop": 40.6,
+   "stop": 42.43,
    "target": 47.0,
    "opened": "2026-09-25",
    "horizon_days": 30,
@@ -156,7 +156,7 @@
    "parent_id": "742fec0f-2d43-4e87-a4aa-2b66be781082",
    "legs": {},
    "adopted": true,
-   "stop_raised": false,
+   "stop_raised": true,
    "sleeve": "core",
    "triggers": []
   },
