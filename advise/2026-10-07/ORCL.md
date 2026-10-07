@@ -112,8 +112,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 1h 前 | 8 | 中性 | [Oracle: Earnings Acceleration Is Now Kicking In (NYSE:ORCL) - Seeking Alpha](https://news.google.com/rss/articles/CBMikAFBVV95cUxPczFZbjYtMVhFSXM3Q0dqdlNWSTdkTGhrbEVaSHRMYlNwN2I2TmpzUDhXcjFHekd5ckNBdlJURTBVUGZxbnRzRXJsTVRfWWZLVzBKLXkxQWtLZzUwbGo3S2FZNldNTVV1NmZEVUhXbnpGMktQZXY1eUl1ZHZQbWR4S3RGYWxUeGFYbjJ3SmJxdzQ?oc=5) | Seeking Alpha |
-| 39h 前 | 0 | 偏空 | [Oracle Layoffs Returning In December? Buzz About Online Email Points To Wider Voluntary Exit Offer, Researcher Says - Stocktwits](https://news.google.com/rss/articles/CBMiiAJBVV95cUxOTkdINkMyX2poRElLZVpuNnJqTmZVN1ZVNEdzXzhwVFo5MG5PdEtua1dzd2hKQjkzNGxtYWx1X19Gc3ZGcHdTLXhJdjhVOGF2OFVCbjI3QW8zNkFQQzY5czR0WG9WR3FIYXlyQ1Y3RldxWkp6OF9DbGdwWWhwU1Q4c0lPeUNCUWpIVVlJRllwa2xMWnlvRGkwRlRBbkNlRF8zQU53NGd0TXk3dDBzSGpZREYtZGdzRVE4eHdiQmtkTE5zY0F1SUU4YUhsMXEyNWF5aFZfVVVtTmpySVN5MTVFS3k3WW1FdEwtV1YwX2dvTld4aWd6MlR3TENaekFERC13M3RodlpVaFg?oc=5) | Stocktwits |
+| 0h 前 | 0 | 偏空 | [Oracle (ORCL) Stock May Be 26% Undervalued Following Health Breach Fallout - Simply Wall Street](https://news.google.com/rss/articles/CBMiwAFBVV95cUxQNnFDU3NKQzdmaE9PaENpelR1bHlrenk0XzlFVmgzdjc2bWlmQnlEVmdhSUF3SUZjaHpIV05CVW5IWGlDcUl0aFVwLWtIaDJWX3ZNWldheVBlamhSSkZlYW0zbUM0cHNxQ3VVWlBuRWxabEpWaEJrMjl2OTVPX0pzaW9jcVIxeWtCTGxuVGowQUNzWHZ6V2lBcUg0T2w1SHI5QndCX01ZSkRjZ21sb3JhMkxoNmxTVnRBeHBLX1A5ZGjSAcYBQVVfeXFMTUpXMzRvOFRIV0Nhd3dHem5mcXQ3a2RzWlNqWEJXTmJKdzQwaTNtVnFPeUFfMmVvaW9ZTHlmTjZZY1VKd2pNQ3FuYWJCMnR1OWZ4WTBYU01sN0hlUFFsc1haRDJjUnA4a3FIR00wc1VIY0J0dHZzMTMzejI5MlBXaFZmbnF0SlpvQ3Z0UVFyLWM0eDduVEt2YlJBbFNkYmdxdGlUZ2VrZjJqZkVXdFQ0UWpMblYtRE5DYUp2dnRSbG03MEgtc2F3?oc=5) | Simply Wall Street |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -126,7 +125,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 - 自由现金流为负（-$458.54亿），意味着经营本身在消耗现金，未来可能需要再融资摊薄。
 - 负债/权益 252%，杠杆高；利率或再融资条件变化对它的影响会被放大。
 - 卖方目标价区间 110.00–400.00，宽度超过均值——分歧极大，共识在这只股票上没有信息量。
-- 政策面对该板块的倾向为 -0.89（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.91（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 

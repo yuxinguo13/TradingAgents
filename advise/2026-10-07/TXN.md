@@ -110,18 +110,14 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 1h 前 | 0 | 偏空 | [onsemi, Sensata Technologies, Texas Instruments, Allegro MicroSystems, and Power Integrations Shares Are Falling, What You Need To Know - TradingView](https://news.google.com/rss/articles/CBMimwJBVV95cUxQREhLbXRIVXZDNlJzdDNkUTJFeHJUcV9CMnZzWE9zOXNEcVJ6bVNKVXFBck52aVdkV1VadW56aWxVQnU4ZUdZU3dvUmxDVE1ldGg2cWxpYXRhdFo2NE94WS1iWkZRcVo2VW1EanZfWlAwOFFHNG9uZHpwbkVrTGtwM3FPSUpXeW9GeUo5MlU3a09lLXZIWFM5S0h6QlpQbjc3cmoyZUVjMEhUcGFaRmI5ZUM2Y3ZsbUlQSm5KWjgzWk9EQjl3ODZXUzlpbDMteE1nNlM2VDJsTm1tckEtTWxpaHNvTlliaDR6b21VY002SGVETnJ6c21WRHZRR2hic3daWDNDLS05UWVQamsza255RFdMcmkzUTNuMEtF?oc=5) | TradingView |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
 - 下次财报在 14 天后，落在持有期内。财报跳空会直接穿过止损——那一晚的风险不是 1R，是没有上限的。
-- 政策面对该板块的倾向为 -0.89（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.91（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 

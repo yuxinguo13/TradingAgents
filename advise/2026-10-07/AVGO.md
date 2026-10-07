@@ -112,7 +112,12 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 2h 前 | 0 | 中性 | [Broadcom (AVGO) Is Lagging the Market This Year. Is It a Buy? - Yahoo Finance](https://news.google.com/rss/articles/CBMingFBVV95cUxQRmJqWENFV3laMTE2V05FbFBtT1ZGYS1XYXpkRXFjRGhSZGtabk5sNDZTcUVxV0ZZbnRrZER5aEgtRUFmN0xuWHROYTFVOVdPXy1HRHR2VmxaMUdNbzZLS0M3Vm5qb2FNUFZqNV9TMktLeHpOVXZqZXowUkJtN1ZvdHFERVZ5MkZQbm1mbmlfbkRNUjg4X0U1YjRzNGNmdw?oc=5) | Yahoo Finance |
+| 0h 前 | 0 | 中性 | [Broadcom (AVGO) Price Forecast: Bullish Reversal Opens Path Toward $495 - FXEmpire](https://news.google.com/rss/articles/CBMiugFBVV95cUxPcnZvR2UzbE84Vm1OaXZCZkRjcWJCQkgtY3Rnd1FfUmNGNjZ1QVVhNTFSc2JGMGVJSjVoQnhXUHBCaEVxWTNPcmZGYTltU0lSNjZOMUR3MklRTERTMW9YRHhnRFJZMmRNN093ckhsXzRLM09fbUlvQTNYQkliS3VNYV83b21hWUlaX3lMbDBOSE5KLXBEaEJWMm1OeVJiRzRzZ0NudFVGN2dQTFdtSVJ0V21ydnhSelluMEE?oc=5) | FXEmpire |
+| 3h 前 | 0 | 中性 | [Marvell Stock Is Up 230% This Year: Bank of America Sees a Further 40% Upside - Benzinga](https://news.google.com/rss/articles/CBMivwFBVV95cUxOcF96QUotNF9HYUVkUU1RRlpGY2J2ZEtBMDM2OVlGWW0tYWg0RndvMnY5WHhRQUdvNFp2dE1qSXBaWHJvVW1RLVFjTGtZQzNUR2VSeWdsRk9HQ0xLSmlNVjZoTHVQUDhEYlV1ZFBHdVpNc0hFZ3pWbXVpRjMyZVI3NWxXSnJZdjZscVJOUGs5R2JDZzFRT1lNakJIR082LUViNzFZZm9kQ19xSXJuQmJjUFpON1RkUUx2Sl9NNDdNaw?oc=5) | Benzinga |
+| 5h 前 | 0 | 中性 | [Broadcom (AVGO) Is Up 5.8% After Unveiling Massive AI Chip Financing Plan for Anthropic - Yahoo Finance Singapore](https://news.google.com/rss/articles/CBMiggFBVV95cUxQZzgyc3dNNEJOUnJpWU5OeUttcW01VFVnRjRYQjBYTFRxOHhGT3hPaHJfejBaTWRaaHBWT21oX0hMMnBxV1RGc0RhWnJ0NlF2YTlOQlVyMW8xZlBZSHZuVzduMjFKbUtQVWxkR0RtSGIxWlBRbk5CNnp4ZFEzREVpN0JB?oc=5) | Yahoo Finance Singapore |
+| 7h 前 | 0 | 中性 | [Broadcom (NASDAQ:AVGO) Climbs as Custom AI Chip Demand Stays Hot - Kalkine Media](https://news.google.com/rss/articles/CBMivAFBVV95cUxPWVJzYzJvSWNlQ3dVVEhVcWUwdUZsOU8zaURKS2F2Y1FkMDNYQXRJUjZGd3RvNFJOekZjc0I4SDFOUG1jcklrVkVSWFhLSk9KMDE3djRQSlNTSnRMV3NGbEY0YWk1RlJ5cl9vOXVtaHpGT0tXZFFwV3VxMjlzTlA0Y2hyZjZsN21mOVp4SzVQSkZJS0JXZjF2cDQxVjUzcWhWSDhxOHJUSGV0a0kyNlBPWDdNbXZ2aEM3aTVxMw?oc=5) | Kalkine Media |
+| 19h 前 | 0 | 中性 | [Nvidia Hits a New All-Time High. Is the AI Stock a Buy? - The Globe and Mail](https://news.google.com/rss/articles/CBMi1AFBVV95cUxQRlRzT0NlRHRNenlPV00wZlR0Y2hIcVJERXdjUGpUOElWYWs2Mzk2ZlMyMUZxQVgzbDNJSFdqWmtRNExNWk9UVHJOVlBWbGNXX05oTFk1eTBXNXhadWI0OU1aWkdxa0ItX09HU1dHREUyN3dwMldKNTRpdWNjRW1zclZxdXdyekM2Z1dpd2tzTGpZSDRFaTJlUkFCQzh4XzZLUTZVczd5eUlxQmZFUTd4ZHhFc1FQU1dZMTU1R1JMczUtVk11TUJGSmpha1ZvN0VDa3lTbA?oc=5) | The Globe and Mail |
+| 21h 前 | 0 | 中性 | [AVGO Oct 2026 360.000 put (AVGO261007P00360000) Stock Price, News, Quote & History - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMiZkFVX3lxTFBjVG84LTdQenptR2xuWTFIQkFzUDlpRTVnLXRiU0JJb0pmOHpiOWlsbFN5SFg1YmxfVGRaM0xUR1hxWjQyeFUwQ3NJY2x0bzBNdmdackFCbHNIdHNsdXF0a25zdklaQQ?oc=5) | Yahoo! Finance Canada |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -121,7 +126,7 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
 - 摆动高低点都在下移，属于下降结构；在出现一个更高的低点之前，任何反弹都还只是反弹。
-- 政策面对该板块的倾向为 -0.89（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.91（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 

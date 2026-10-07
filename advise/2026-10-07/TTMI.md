@@ -110,7 +110,13 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
+| 时间 | 材料度 | 倾向 | 标题 | 来源 |
+|---|---:|---|---|---|
+| 34h 前 | 0 | 中性 | [TTMI Mar 2027 145.000 put (TTMI270319P00145000) stock price, news, quote and history - Yahoo Finance UK](https://news.google.com/rss/articles/CBMiZkFVX3lxTE5TNFhjVnZGQjdGYmhGN05PdmFndm1LS0otLTZmaEw2SXhOdWQ1Zm1YSEM4UVdKQS1Ya0ZEdXlLa0tGZm85dGVyQllZTk0xN2lKaEFxVVVDQmJQemJObTh1RFJ0QnBaZw?oc=5) | Yahoo Finance UK |
+| 39h 前 | 0 | 中性 | [TTMI Jan 2028 90.000 put (TTMI280121P00090000) Interactive Stock Chart - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMibkFVX3lxTFBwU0xPa0FucnZsdFlLV3N6Wkg2bkRIWVRyQVB1bkxQSWVxNzAzQXBudmwtcjNYSE11UzB6MmNkVnROYmlJcllrVHBVVk1VQkw4bVlNVldZNnBtQXUzcUpSMUEwWGRmVFkwYTNWNDl3?oc=5) | Yahoo! Finance Canada |
+| 40h 前 | 0 | 中性 | [TTMI Mar 2027 105.000 put (TTMI270319P00105000) Stock Historical Prices & Data - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMicEFVX3lxTE4xa0NNclY4bVRQRXVQVW41VlBlMk5fOXh6Y3NBZlVJOUF0Q1gycVdIdE42V1owaDY1eUhSWDI0SDBiQmVKZUVwYncwV1BsV0RodkFZNEVZYkI4NGcyVDZzWGdUQm5jX3VubDdXQnhUR0I?oc=5) | Yahoo! Finance Canada |
+
+_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
 ## 五、反方观点与风险
 
@@ -118,7 +124,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 - 下次财报在 28 天后，落在持有期内。财报跳空会直接穿过止损——那一晚的风险不是 1R，是没有上限的。
 - 自由现金流为负（-$1,944.24万），意味着经营本身在消耗现金，未来可能需要再融资摊薄。
-- 政策面对该板块的倾向为 -0.89（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.91（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 

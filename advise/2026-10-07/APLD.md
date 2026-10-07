@@ -112,8 +112,10 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 2h 前 | 8 | 中性 | [Applied Digital to Report First-Quarter Earnings: Will APLD Stock Break $20 or Rebound Off Support? - FXLeaders](https://news.google.com/rss/articles/CBMi1gFBVV95cUxPY1ZoMTZsazlJOVZaY2Zoc3RKMkhXS21WMlVxM1ZmSVZyX3FuN3VxOHRJQ2EtOWNOVy1ZclV2ajZNN3BtUFpGc1Jucm91d0xoRjhSZkZsNkplakIxV1hUUnlVM3B4OU1uWExNYTJGMXRDSUtyLWhmWFBCT0FwZnI0Vm9nMVlMd2ZkSHdQY0Exbk1VNksycjR3ZzZvWENEY0Y1Umg4bW9IQ3R4T0dFOGtldnFCbWhGSmRxczR0ZXJuWWVINnp4eWEyU1psdlJRbUdzRXEtZEZR?oc=5) | FXLeaders |
-| 7h 前 | 8 | 中性 | [Ahead of Applied Digital Earnings, Here's What Barchart Data Says Comes Next for APLD Stock - Yahoo Finance](https://news.google.com/rss/articles/CBMiowFBVV95cUxNOUNOUmJnU2h2aG9rT3FCVk0xcmNYT3VjTjdrMkYyZnNBUWNxYXhvU200eTloaGRad2syOEtqN3NrVkF5S0J6d1ZxaFhfek9tUTlXMFZjaE14MnY4RmtXRUR2MnA5NkNsTnFmNldieE85VUJYZFZUS3BiN0lTOGphdEhvNi01MTdHNEtaSWpMVEMyUzdRR0o0Rjgzd05MYzIzQXhR?oc=5) | Yahoo Finance |
+| 0h 前 | 8 | 偏多 | [Applied Digital Delivers Q1 Double Beat, Shares Rise - Benzinga](https://news.google.com/rss/articles/CBMirAFBVV95cUxOb3BXWXhmMW1NQWRKd191OHA4RjRFSDd2eENnVXJ4LTZxdTNzQ19Ud2RRS3ZUanF5TTBYSHZJZkMzX2Z6ck1Pc0RpY01mTXpMc1VSY2QxTjZKNUF0bEFnUHh3S01PTUltS0NqWmpHWkJCcnNvdnYzYnJLbmo3dW5ZSHZJM3BrNmduVGJEa3FjckNMaTB5ajZaMjZmai01N2NUMXBSc1FNbGgzLW1S?oc=5) | Benzinga |
+| 0h 前 | 8 | 偏多 | [Applied Digital ticks up as Q1 results top estimates (APLD:NASDAQ) - Seeking Alpha](https://news.google.com/rss/articles/CBMilAFBVV95cUxPTlZuSF9zYUgwVTkyN2s1T0U0MU96NXVrX1ViVEhscUU4ZUFjQmR0YVNhU1JyQzlTN1RTbWUtaW9td0REOHlfNVBzSW95aHJvTW9lT2Z2djlrU3F5OXZTZUZUR1dtWnQtRk5jVjFCaklGSFpndTRCdS1HeGw3Y3p4U1ZVSUg2Wlc0M0ZXOWc3b21PZkRs?oc=5) | Seeking Alpha |
+| 0h 前 | 8 | 中性 | [Earnings Flash (APLD) Applied Digital Corporation Posts Q1 Adjusted Loss $0.01 per Share - Moomoo](https://news.google.com/rss/articles/CBMitAFBVV95cUxOaUNvR1FJcTA1WUpVLXZOaEdHcEhIYWdHWERMSUl4RXlxVDBHUGJXN2tGQm5LQzVzUVpIN21lYlM3RU9SX0R0emFjdDItSGV4M1dSOHNuV2FTbDI4NmhpZWRzM2plVmFHX29XTTFrejNLOEVaQnBpRUNqbUlKV1BVLUtuYm1lVmEwa01hUFB4Vl81UEVKbm05LU1ZTTFHUUlNd2VBWXdPbTRXXzV3bi1ZNEhFWHo?oc=5) | Moomoo |
+| 0h 前 | 0 | 中性 | [Applied Digital Reports Fiscal First Quarter 2027 Results - Applied Digital Corporation (APLD)](https://news.google.com/rss/articles/CBMiwwFBVV95cUxNZk5MQ2Y5c292Wi1IaDJPYXVMWE1wU01veWtFMUw5QkRIemRLQ0RYT0UyTkJzVGphSmRLWmJELUdjM2lXNEYxSGFEQUJqZnhpNTVOYms3ZzdqNmNaVEhBTjZSa1FGT3RiaW82SkM2dG9UQWY1SVoyLS00aVVUdFdtUTF0bGxFTDNEWFl5dm0tYTh2ZU5xTHhXMlpWakZOMmtkOTdPOTRuTklzQ0w1bXBXMm9NVXdYalhUVUpTMzBxaDdPaXc?oc=5) | Applied Digital Corporation (APLD) |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -127,7 +129,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 - 自由现金流为负（-$49.61亿），意味着经营本身在消耗现金，未来可能需要再融资摊薄。
 - 空头占流通股 21%，是双向的：可能轧空，也说明有人在认真做空这个逻辑。
 - 卖方目标价区间 22.00–93.00，宽度超过均值——分歧极大，共识在这只股票上没有信息量。
-- 政策面对该板块的倾向为 -0.89（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.91（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
