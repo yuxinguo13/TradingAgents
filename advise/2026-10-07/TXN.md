@@ -1,6 +1,6 @@
 # TXN · 德州仪器（Texas Instruments）
 
-_科技 · 数据截至 2026-10-06 收盘 → 面向 2026-10-07 开盘_
+_科技 · 数据截至 2026-10-07 收盘 → 面向 2026-10-07 开盘_
 
 [← 回到 2026-10-07 当日报告](../2026-10-07.md)
 
@@ -10,52 +10,52 @@ _科技 · 数据截至 2026-10-06 收盘 → 面向 2026-10-07 开盘_
 
 ```text
      TXN · 近 126 个交易日（日线收盘）
-323 ┤                    ╭╮
-313 ┤                    │╰╮       ╭─╮
-302 ┤               ╭────╯ ╰──╮  ╭─╯ ╰─╮   ╭──╮······
-292 ┤              ╭╯         ╰──╯    ·╰───╯  ╰╮╭─╮  ···········               ╭─
-281 ┤       ╭╮ ╭───╯               ···         ╰╯ ╰╮  ╭───╮╭╮   ········     ╭─╯
-271 ┤       │╰╮│                ···                ╰──╯   ╰╯╰─╮         ··╭──╯···
-260 ┤       │ ╰╯             ···                              ╰───╮ ╭─────╯
-250 ┤       │             ···                                     ╰─╯        ::::
-239 ┤       │          ···                                      :::::::::::::
-229 ┤    ╭──╯       ···                             ::::::::::::
-218 ┤  ╭─╯      ····                     :::::::::::
-208 ┤──╯········              :::::::::::
-197 ┤              :::::::::::
-186 ┤::::::::::::::
+326 ┤                              ╭╮
+315 ┤                   ╭─╮        ││╭╮    ╭╮
+304 ┤               ╭───╯ ╰──╮   ╭─╯╰╯│   ╭╯╰─╮···
+294 ┤             ╭─╯        ╰╮ ╭╯    │╭──╯·· │ ╭╮············                 ╭─
+283 ┤          ╭──╯           ╰─╯  ···╰╯      ╰─╯╰╮   ╭──╮    ·······       ╭──╯
+272 ┤       ╭╮╭╯                ···               ╰───╯  ╰───╮       ····╭──╯····
+262 ┤      ╭╯╰╯             ····                             ╰────╮ ╭────╯
+251 ┤      │              ··                                      ╰─╯        ::::
+240 ┤      │           ···                                       ::::::::::::
+229 ┤    ╭─╯        ···                              ::::::::::::
+219 ┤ ╭──╯      ····                     ::::::::::::
+208 ┤─╯·········             ::::::::::::
+197 ┤              ::::::::::
+187 ┤::::::::::::::
     └────────────────────────────────────────────────────────────────────────────
-     2026-04-08                       2026-07-09                       2026-10-06
+     2026-04-09                       2026-07-10                       2026-10-07
      · SMA50   : SMA200   ─ close
 ```
 
 ```text
        TXN · 近 21 个交易日（放大看最近节奏）
-297.2 ┤                   ╭─
-292.3 ┤                  ╭╯
-287.5 ┤                  │
-282.6 ┤               ╭╮╭╯
-277.7 ┤             ╭─╯╰╯
-272.8 ┤         ╭───╯
-267.9 ┤   ╭╮   ╭╯
-263.0 ┤ ╭╮│╰──╮│
-258.1 ┤─╯╰╯   ╰╯
+297.2 ┤                  ╭─╮
+292.3 ┤                 ╭╯ │
+287.5 ┤                 │  ╰
+282.6 ┤              ╭╮╭╯
+277.7 ┤            ╭─╯╰╯
+272.8 ┤        ╭───╯
+267.9 ┤  ╭╮   ╭╯
+263.0 ┤─╮│╰──╮│
+258.1 ┤ ╰╯   ╰╯
       └─────────────────────
-       2026-09-08 2026-10-06
+       2026-09-09 2026-10-07
 ```
 
-成交量近 63 日： `▃▃▃▄▄▄▆▆▅▆▅▅▅▂▄▂▃▂▃▄▂▃▂▂▃▃▁▂▃▂▂▃▁█▄▄▁▂▂▁▂▁`
+成交量近 63 日： `▁▃▃▄▂▆▇▅▆▅▅▄▂▃▁▂▂▂▄▃▂▂▁▂▂▂▁▂▁▂▃▁▃█▄▁▁▂▁▁▁▁`
 
 ### 图形读数
 
-- **均线排列**：多头排列 — 现价距 20 日 273.62（+8.6%）、50 日 271.12（+9.6%）、200 日 248.40（+19.7%）
+- **均线排列**：多头排列 — 现价距 20 日 274.99（+5.1%）、50 日 271.38（+6.5%）、200 日 248.98（+16.1%）
 - **形态结构**：扩张震荡 — 高点抬高但低点下移，波动在放大；前高 267.48 → 273.33（+2.2%）、前低 255.18 → 248.13（-2.8%）
-- **动能**：RSI(14) 72，超买区；季线仍为负（-0.9%）但近一月已转正（+15.0%），属于反弹初期而非既成趋势
-- **波动**：日均真实波幅约为价格的 2.5%；按本报告 2 ATR 的止损惯例，一个 R 相当于 5.0% 的价格距离
-- **位置**：距 52 周高点 -10.1%，距 52 周低点 +97.1%
-- **量能**：最新一日成交量仅为 20 日均量的 0.6 倍，缩量
-- **相对强度**：近一月跑赢 标普500 13.6 个百分点
-- **支撑 / 阻力**：最近的摆动低点 290.46，摆动高点 308.71（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
+- **动能**：RSI(14) 62，偏强；季线仍为负（-5.9%）但近一月已转正（+11.6%），属于反弹初期而非既成趋势
+- **波动**：日均真实波幅约为价格的 2.6%；按本报告 2 ATR 的止损惯例，一个 R 相当于 5.2% 的价格距离
+- **位置**：距 52 周高点 -12.6%，距 52 周低点 +91.6%
+- **量能**：最新一日成交量为 20 日均量的 0.8 倍，量能正常
+- **相对强度**：近一月跑赢 标普500 9.9 个百分点
+- **支撑 / 阻力**：最近的摆动低点 288.45，摆动高点 289.62（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
 
 **我的读图结论**：均线与结构互相矛盾，属于震荡；这种形态里止损容易被扫，仓位应比顺势时更小
 
@@ -69,7 +69,7 @@ _以上每一条都是对已经发生的价格的描述。均线、RSI、摆动�
 - **增长**：最新季度营收同比 +22.8%；盈利同比 +51.8%；最近三个季度营收连续环比上升；最近 7 次财报里 5 次超预期。
 - **盈利质量**：毛利率 58.3%、营业利润率 42.6%、净利率 31.1%、ROE 35.2%。
 - **资产负债**：现金 $70.01亿；有息负债 $140.52亿；负债/权益 78.0%（负债适中）；流动比率 4.86；自由现金流 $35.45亿，为正。
-- **卖方预期**：31 位分析师覆盖；平均评级「买入」（2.11/5，1 为最看多）；目标价均值 324.71（较现价 +9.2%），区间 225.00–400.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
+- **卖方预期**：31 位分析师覆盖；平均评级「买入」（2.11/5，1 为最看多）；目标价均值 324.71（较现价 +12.4%），区间 225.00–400.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
 
 **分季度损益**（季度数据，最新在左）
 
@@ -112,11 +112,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 4h 前 | 6 | 偏多 | [Texas Instruments (TXN) Leads Dividend Stocks Rally Amid Wall St - GuruFocus](https://news.google.com/rss/articles/CBMisAFBVV95cUxQbk9Td1c2SUhsbTJXMW9kcEY2bjZWdFlxUXJSTk5yRXdCTG5odlRONHBZWHB6S2ZKSDR0OWNhZmgtQW5SeThCNnJRMFpmMUNzbHRYcGg5LVM4VklINXo2V3RVUW1vdi1wRU1fWEVLcE50UFlRcUVtajByVWVJUXZYOV9vQjJ0eGgzbTZtLVB5Nl9nWUFSWDVLN2VCUDJSaFN1S1VHaTc3emZDQURBWjdGWA?oc=5) | GuruFocus |
-| 5h 前 | 6 | 偏多 | [Texas Instruments raises dividend and Texas Instruments stock loses 1.90 percent - AD HOC NEWS](https://news.google.com/rss/articles/CBMi0AFBVV95cUxOdEVUUVlTS1NpdWZBVnNNU1J5OHhldE9iUjJxc2l0WXIzODZPcVRNdHV5eVg3bWF5cjNobHBXS3FOY1JXMkozUUdNenI1ak9la0g4TVhha2tUejFMUEt5VUtES2cweXBwSnE2NnE5SVZlMHR1aC1Hc25IX0ZBd05YNkZYOXFmbV9LYjc1UFVNZ3BldUF3ZmtVWGpjUF80b2dCb1BTN2IyOFNwVUZuNUtSRDBib3JrSEJ1R0ZjeUdmRl9MNUpTUHc1WWdNeE9tMUhB?oc=5) | AD HOC NEWS |
-| 4h 前 | 0 | 偏空 | [Texas Instruments stock falls 3.85 percent as institutions add shares - AD HOC NEWS](https://news.google.com/rss/articles/CBMizAFBVV95cUxPMWlCNmUtdmx5R0hWWm5IWnIxbktYT3pXNDk3SV94TC0tMWxCSG1nZHFNRzctTDRFQnJVelNWbXRpbHpWNUpYRGFOazFfcTN2TG5haVA4dXdOVERGbkdpN2N1czE5WlRRQk4xanNSMm1HNllIeS1jYlBuRDFqTlJ2SGdEcUdEeFdYU3ZIRkpQYmdYT3Q2NE54V3VPaGtrRGluTHhEM0lPUDgxX1Bpd0NNVjRCOWhhQmRsbUJ2RkROWXB4UmF2d2k0bmlwTHI?oc=5) | AD HOC NEWS |
-| 5h 前 | 0 | 中性 | [Texas Instruments Inc Stock (TXN) Opened Down by 3.14% on Oct 7: Facts Behind the Movement - TradingKey](https://news.google.com/rss/articles/CBMiigFBVV95cUxQeXNqXzc2UlRDRUtIdU5ZUmxuZlItRWE2YkZqU0lLZXNjWUFtQUhLbllPZzN2d1YyTldMVmlDSzR2dmR6X3V4Uzc4ZlJjODdHZzRaNWJ6MjQwcW9YYlc4ODlGUFFTQ24yWDNrZ3dSRHJ0YUlIdUxjVC1QUlhtZmE2SXRqdjZJb2tNOXc?oc=5) | TradingKey |
-| 13h 前 | 0 | 中性 | [Texas Instruments stock pre-market at EUR 264.58: plus 0.14 percent - AD HOC NEWS](https://news.google.com/rss/articles/CBMiwgFBVV95cUxNM2JiRjFZLVEwaUszb2pSZktja1RTQW5scGFEcVBJM3lOYVdncThfdzJ3SGx4V2VfMm5MejlDTWotQ0JVVHF0SHlnT2cwamZEZmw1NXlkRVRSWUw1ZTR4MVBHdjNvcllWZzFOM2NmdEdlVlBsQkk0Nk5JYkxZVWpqVHJ4RXJISkdKRnNIZjNBNm92M0hXU3I3b241c0FDakpxUzQtUU1tUmJJRmJDeVc1T3pGeFZTT1h3cmFIUjM2SXd2UQ?oc=5) | AD HOC NEWS |
+| 1h 前 | 0 | 偏空 | [onsemi, Sensata Technologies, Texas Instruments, Allegro MicroSystems, and Power Integrations Shares Are Falling, What You Need To Know - TradingView](https://news.google.com/rss/articles/CBMimwJBVV95cUxQREhLbXRIVXZDNlJzdDNkUTJFeHJUcV9CMnZzWE9zOXNEcVJ6bVNKVXFBck52aVdkV1VadW56aWxVQnU4ZUdZU3dvUmxDVE1ldGg2cWxpYXRhdFo2NE94WS1iWkZRcVo2VW1EanZfWlAwOFFHNG9uZHpwbkVrTGtwM3FPSUpXeW9GeUo5MlU3a09lLXZIWFM5S0h6QlpQbjc3cmoyZUVjMEhUcGFaRmI5ZUM2Y3ZsbUlQSm5KWjgzWk9EQjl3ODZXUzlpbDMteE1nNlM2VDJsTm1tckEtTWxpaHNvTlliaDR6b21VY002SGVETnJ6c21WRHZRR2hic3daWDNDLS05UWVQamsza255RFdMcmkzUTNuMEtF?oc=5) | TradingView |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -125,7 +121,7 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
 - 下次财报在 14 天后，落在持有期内。财报跳空会直接穿过止损——那一晚的风险不是 1R，是没有上限的。
-- 政策面对该板块的倾向为 -0.96（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.89（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -133,7 +129,6 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 | 日期 | 开 | 高 | 低 | 收 | 涨跌 | 成交量 |
 |---|---:|---:|---:|---:|---:|---:|
-| 2026-09-16 | 267.25 | 267.97 | 258.14 | **260.67** | -1.0% | 3,646,200 |
 | 2026-09-17 | 265.04 | 266.82 | 257.10 | **258.14** | -1.0% | 6,517,200 |
 | 2026-09-18 | 260.82 | 268.28 | 259.83 | **266.64** | +3.3% | 19,052,200 |
 | 2026-09-21 | 267.67 | 271.78 | 262.22 | **270.87** | +1.6% | 7,901,400 |
@@ -148,6 +143,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-02 | 290.00 | 297.06 | 288.20 | **293.80** | +4.4% | 5,050,700 |
 | 2026-10-05 | 291.47 | 295.33 | 288.75 | **294.90** | +0.4% | 3,778,300 |
 | 2026-10-06 | 295.45 | 298.75 | 294.23 | **297.23** | +0.8% | 3,285,600 |
+| 2026-10-07 | 290.50 | 291.62 | 284.82 | **288.98** | -2.8% | 4,536,884 |
 
 ## 七、自己去查（本页不做独立验证）
 

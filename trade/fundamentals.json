@@ -4368,20 +4368,20 @@
  },
  "SHEL": {
   "symbol": "SHEL",
-  "fetched_at": 1791318721.8399804,
+  "fetched_at": 1791404699.3050358,
   "name": "Shell plc",
   "sector": "Energy",
   "industry": "Oil & Gas Integrated",
   "website": "https://www.shell.com",
-  "market_cap": 278039330816.0,
-  "pe_trailing": 10.774835,
-  "pe_forward": 9.365008,
-  "ps": 0.93741876,
-  "ev_ebitda": 5.408,
-  "peg": 1.64,
+  "market_cap": 275787874304.0,
+  "pe_trailing": 10.689845,
+  "pe_forward": 9.291139,
+  "ps": 0.92982787,
+  "ev_ebitda": 5.462,
+  "peg": 1.66,
   "eps_trailing": 9.06,
   "eps_forward": 10.42391,
-  "dividend_yield": 0.015654787,
+  "dividend_yield": 0.015478386,
   "beta": -0.192,
   "revenue_ttm": 296600993792.0,
   "revenue_growth": 0.447,
@@ -4395,13 +4395,13 @@
   "total_cash": 31374000128.0,
   "total_debt": 73075998720.0,
   "free_cashflow": 21458374656.0,
-  "target_mean": 103.81333,
+  "target_mean": 104.08,
   "target_high": 123.0,
   "target_low": 83.0,
   "rating_mean": 2.1875,
   "analysts": 15.0,
   "short_pct_float": 0.0124,
-  "held_institutions": 0.13404,
+  "held_institutions": 0.13411,
   "quarters": [
    {
     "label": "2026-06-30",
@@ -6859,20 +6859,20 @@
  },
  "AVT": {
   "symbol": "AVT",
-  "fetched_at": 1791293201.657317,
+  "fetched_at": 1791404697.9725375,
   "name": "Avnet, Inc.",
   "sector": "Technology",
   "industry": "Electronics & Computer Distribution",
   "website": "https://www.avnet.com",
-  "market_cap": 8715329536.0,
-  "pe_trailing": 26.680904,
-  "pe_forward": 9.612852,
-  "ps": 0.31539932,
-  "ev_ebitda": 12.748,
+  "market_cap": 8414942208.0,
+  "pe_trailing": 25.568577,
+  "pe_forward": 9.28153,
+  "ps": 0.3045286,
+  "ev_ebitda": 12.763,
   "peg": 2.65,
-  "eps_trailing": 3.98,
+  "eps_trailing": 4.01,
   "eps_forward": 11.04667,
-  "dividend_yield": 0.013092065,
+  "dividend_yield": 0.013161605,
   "beta": 1.082,
   "revenue_ttm": 27632683008.0,
   "revenue_growth": 0.477,
@@ -11865,16 +11865,16 @@
  },
  "LITE": {
   "symbol": "LITE",
-  "fetched_at": 1791293205.9065108,
+  "fetched_at": 1791404694.9841502,
   "name": "Lumentum Holdings Inc.",
   "sector": "Technology",
   "industry": "Communication Equipment",
   "website": "https://www.lumentum.com",
-  "market_cap": 97922801664.0,
+  "market_cap": 99662970880.0,
   "pe_trailing": NaN,
-  "pe_forward": 30.694265,
-  "ps": 32.489315,
-  "ev_ebitda": 120.964,
+  "pe_forward": 31.239727,
+  "ps": 33.066677,
+  "ev_ebitda": 125.639,
   "peg": 0.63,
   "eps_trailing": -92.96,
   "eps_forward": 35.56593,
@@ -11898,7 +11898,7 @@
   "rating_mean": 1.5,
   "analysts": 26.0,
   "short_pct_float": 0.0792,
-  "held_institutions": 0.9464,
+  "held_institutions": 0.94722,
   "quarters": [
    {
     "label": "2026-06-30",
@@ -12037,21 +12037,21 @@
  },
  "LPG": {
   "symbol": "LPG",
-  "fetched_at": 1790947616.7530394,
+  "fetched_at": 1791404700.6419137,
   "name": "Dorian LPG Ltd.",
   "sector": "Energy",
   "industry": "Oil & Gas Midstream",
   "website": "https://www.dorianlpg.com",
-  "market_cap": 2421071872.0,
-  "pe_trailing": 7.5053053,
-  "pe_forward": 12.091881,
-  "ps": 4.182554,
-  "ev_ebitda": 7.376,
+  "market_cap": 2404814336.0,
+  "pe_trailing": 7.4450326,
+  "pe_forward": 13.687489,
+  "ps": 4.1544676,
+  "ev_ebitda": 7.36,
   "peg": NaN,
-  "eps_trailing": 7.54,
-  "eps_forward": 4.68,
-  "dividend_yield": 0.060842715,
-  "beta": 0.762,
+  "eps_trailing": 7.55,
+  "eps_forward": 4.10667,
+  "dividend_yield": 0.05934455,
+  "beta": 0.728,
   "revenue_ttm": 578850176.0,
   "revenue_growth": 1.24,
   "earnings_growth": 12.635,
@@ -12070,7 +12070,7 @@
   "rating_mean": 1.6,
   "analysts": 5.0,
   "short_pct_float": 0.0672,
-  "held_institutions": 0.74761003,
+  "held_institutions": 0.74768996,
   "quarters": [
    {
     "label": "2026-06-30",
@@ -16767,6 +16767,178 @@
     "estimate": 0.19,
     "actual": 0.47,
     "surprise_pct": 1.5219
+   }
+  ],
+  "error": ""
+ },
+ "HPE": {
+  "symbol": "HPE",
+  "fetched_at": 1791404696.7163184,
+  "name": "Hewlett Packard Enterprise Company",
+  "sector": "Technology",
+  "industry": "Communication Equipment",
+  "website": "https://www.hpe.com",
+  "market_cap": 95696936960.0,
+  "pe_trailing": 37.15979,
+  "pe_forward": 15.309698,
+  "ps": 2.2855184,
+  "ev_ebitda": 15.635,
+  "peg": 0.56,
+  "eps_trailing": 1.94,
+  "eps_forward": 4.70878,
+  "dividend_yield": 0.00791714,
+  "beta": 1.404,
+  "revenue_ttm": 41870999552.0,
+  "revenue_growth": 0.337,
+  "earnings_growth": 4.102,
+  "gross_margin": 0.36622003,
+  "operating_margin": 0.12560001,
+  "profit_margin": 0.06666,
+  "roe": 0.10936,
+  "debt_to_equity": 76.464,
+  "current_ratio": 1.113,
+  "total_cash": 6216000000.0,
+  "total_debt": 20320999424.0,
+  "free_cashflow": 4738625024.0,
+  "target_mean": 72.0281,
+  "target_high": 92.0,
+  "target_low": 52.59,
+  "rating_mean": 1.95833,
+  "analysts": 21.0,
+  "short_pct_float": 0.048,
+  "held_institutions": 0.91178,
+  "quarters": [
+   {
+    "label": "2026-07-31",
+    "revenue": 12213000000.0,
+    "gross": 4899000000.0,
+    "operating": 1464000000.0,
+    "net": 1540000000.0,
+    "eps": 1.06
+   },
+   {
+    "label": "2026-04-30",
+    "revenue": 10678000000.0,
+    "gross": 3900000000.0,
+    "operating": 825000000.0,
+    "net": 624000000.0,
+    "eps": 0.44
+   },
+   {
+    "label": "2026-01-31",
+    "revenue": 9301000000.0,
+    "gross": 3340000000.0,
+    "operating": 587000000.0,
+    "net": 452000000.0,
+    "eps": 0.31
+   },
+   {
+    "label": "2025-10-31",
+    "revenue": 9679000000.0,
+    "gross": 3241000000.0,
+    "operating": 408000000.0,
+    "net": 175000000.0,
+    "eps": 0.11
+   },
+   {
+    "label": "2025-07-31",
+    "revenue": 9136000000.0,
+    "gross": 2672000000.0,
+    "operating": 428000000.0,
+    "net": 305000000.0,
+    "eps": 0.21
+   },
+   {
+    "label": "2025-04-30",
+    "revenue": NaN,
+    "gross": NaN,
+    "operating": NaN,
+    "net": NaN,
+    "eps": NaN
+   }
+  ],
+  "years": [
+   {
+    "label": "2025-10-31",
+    "revenue": 34296000000.0,
+    "gross": 10377000000.0,
+    "operating": 1644000000.0,
+    "net": 57000000.0,
+    "eps": -0.04
+   },
+   {
+    "label": "2024-10-31",
+    "revenue": 30127000000.0,
+    "gross": 9878000000.0,
+    "operating": 2494000000.0,
+    "net": 2579000000.0,
+    "eps": 1.93
+   },
+   {
+    "label": "2023-10-31",
+    "revenue": 29135000000.0,
+    "gross": 10239000000.0,
+    "operating": 2442000000.0,
+    "net": 2025000000.0,
+    "eps": 1.54
+   },
+   {
+    "label": "2022-10-31",
+    "revenue": 28496000000.0,
+    "gross": 9506000000.0,
+    "operating": 2227000000.0,
+    "net": 868000000.0,
+    "eps": 0.66
+   }
+  ],
+  "surprises": [
+   {
+    "when": "2026-12-03",
+    "estimate": 1.27,
+    "actual": NaN,
+    "surprise_pct": NaN
+   },
+   {
+    "when": "2026-09-02",
+    "estimate": 0.93,
+    "actual": NaN,
+    "surprise_pct": NaN
+   },
+   {
+    "when": "2026-06-01",
+    "estimate": 0.53,
+    "actual": 0.79,
+    "surprise_pct": 0.4803
+   },
+   {
+    "when": "2026-03-09",
+    "estimate": 0.59,
+    "actual": 0.65,
+    "surprise_pct": 0.1075
+   },
+   {
+    "when": "2025-12-04",
+    "estimate": 0.58,
+    "actual": 0.62,
+    "surprise_pct": 0.0655
+   },
+   {
+    "when": "2025-09-03",
+    "estimate": 0.42,
+    "actual": 0.44,
+    "surprise_pct": 0.0541
+   },
+   {
+    "when": "2025-06-03",
+    "estimate": 0.33,
+    "actual": 0.38,
+    "surprise_pct": 0.16329999999999997
+   },
+   {
+    "when": "2025-03-06",
+    "estimate": 0.5,
+    "actual": 0.49,
+    "surprise_pct": -0.0175
    }
   ],
   "error": ""

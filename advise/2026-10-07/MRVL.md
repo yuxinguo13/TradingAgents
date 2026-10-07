@@ -1,6 +1,6 @@
 # MRVL · 迈威尔科技（Marvell Technology）
 
-_科技 · 数据截至 2026-10-06 收盘 → 面向 2026-10-07 开盘_
+_科技 · 数据截至 2026-10-07 收盘 → 面向 2026-10-07 开盘_
 
 [← 回到 2026-10-07 当日报告](../2026-10-07.md)
 
@@ -10,51 +10,51 @@ _科技 · 数据截至 2026-10-06 收盘 → 面向 2026-10-07 开盘_
 
 ```text
      MRVL · 近 126 个交易日（日线收盘）
-309 ┤                        ╭╮
-292 ┤                       ╭╯│  ╭╮╭─╮ ╭╮
-274 ┤                       │ ╰──╯╰╯ ╰─╯╰╮                                     ╭─
-257 ┤                       │            │                                ╭────╯
-239 ┤                       │            ╰──╮················╭───╮   ╭─╮ ╭╯
-222 ┤                       │          ·····╰─╮       ╭╮╭╮╭──╯  ·╰╮·╭╯·╰─╯·······
-204 ┤                    ╭──╯      ····       ╰╮╭─╮   │╰╯╰╯       ╰─╯
-187 ┤                ╭╮╭─╯       ··            ╰╯ ╰╮ ╭╯
-169 ┤       ╭╮ ╭─────╯╰╯      ···                  ╰─╯                     ::::::
-152 ┤     ╭─╯╰─╯           ···                               ::::::::::::::
-134 ┤  ╭──╯          ······                ::::::::::::::::::
-117 ┤──╯       ······            ::::::::::
+309 ┤                       ╭╮     ╭╮
+292 ┤                       │╰╮  ╭─╯│  ╭╮                                       ╭
+274 ┤                       │ ╰╮╭╯  ╰──╯│                                     ╭─╯
+257 ┤                      ╭╯  ╰╯       │                                ╭────╯
+239 ┤                      │            ╰───╮···············╭───╮       ╭╯      ·
+222 ┤                      │          ····· ╰╮         ╭╮╭──╯   ╰╮·╭────╯·······
+204 ┤                   ╭──╯       ···       ╰╮╭──╮  ╭─╯╰╯       ╰─╯
+187 ┤               ╭╮ ╭╯       ···           ╰╯  ╰╮╭╯
+170 ┤      ╭─╮ ╭────╯╰─╯     ···                   ╰╯                      ::::::
+152 ┤    ╭─╯ ╰─╯          ···                               :::::::::::::::
+135 ┤ ╭──╯           ·····                 :::::::::::::::::
+117 ┤─╯        ······            ::::::::::
 100 ┤   ·······    ::::::::::::::
  82 ┤···:::::::::::
     └────────────────────────────────────────────────────────────────────────────
-     2026-04-08                       2026-07-09                       2026-10-06
+     2026-04-09                       2026-07-10                       2026-10-07
      · SMA50   : SMA200   ─ close
 ```
 
 ```text
        MRVL · 近 21 个交易日（放大看最近节奏）
-287.0 ┤                    ╭
-278.5 ┤                    │
-270.0 ┤                 ╭──╯
-261.4 ┤         ╭────╮╭─╯
-252.9 ┤         │    ╰╯
-244.4 ┤       ╭─╯
-235.9 ┤ ╭╮╭╮  │
-227.3 ┤─╯╰╯│ ╭╯
-218.8 ┤    ╰─╯
+287.0 ┤                   ╭─
+278.5 ┤                   │
+270.0 ┤                ╭──╯
+261.4 ┤        ╭────╮╭─╯
+252.9 ┤        │    ╰╯
+244.4 ┤      ╭─╯
+235.9 ┤─╮╭╮  │
+227.3 ┤ ╰╯│ ╭╯
+218.8 ┤   ╰─╯
       └─────────────────────
-       2026-09-08 2026-10-06
+       2026-09-09 2026-10-07
 ```
 
-成交量近 63 日： `▃▂▂▄▄▃▂▂▃▄▄▃▅▂▂▂▃▂▃▅▄▃▃▄█▃▁▂▂▂▂▂▂▃▃▂▁▁▂▁▁▅`
+成交量近 63 日： `▂▃▄▅▄▃▂▃▅▄▄▄▂▂▃▃▃▂▄▆▄▃▂█▃▂▂▃▃▂▃▂▃▃▃▁▁▂▁▂▁▆`
 
 ### 图形读数
 
-- **均线排列**：多头排列 — 现价距 20 日 251.64（+14.1%）、50 日 230.22（+24.7%）、200 日 168.83（+70.0%）
+- **均线排列**：多头排列 — 现价距 20 日 254.13（+12.0%）、50 日 232.43（+22.5%）、200 日 169.83（+67.6%）
 - **形态结构**：上升结构 — 更高的高点 + 更高的低点；前高 241.88 → 267.48（+10.6%）、前低 213.63 → 248.14（+16.2%）
-- **动能**：RSI(14) 70，偏强；近一月的斜率快于近三月（月 +28.4% vs 季 +23.9%），趋势在加速
-- **波动**：日均真实波幅约为价格的 4.7%；按本报告 2 ATR 的止损惯例，一个 R 相当于 9.4% 的价格距离
-- **位置**：距 52 周高点 -9.3%，距 52 周低点 +289.6%
-- **量能**：最新一日成交量为 20 日均量的 3.0 倍，属于放量
-- **相对强度**：近一月跑赢 标普500 27.0 个百分点
+- **动能**：RSI(14) 68，偏强；近一月的斜率快于近三月（月 +26.3% vs 季 +17.1%），趋势在加速
+- **波动**：日均真实波幅约为价格的 4.6%；按本报告 2 ATR 的止损惯例，一个 R 相当于 9.1% 的价格距离
+- **位置**：距 52 周高点 -10.0%，距 52 周低点 +286.4%
+- **量能**：最新一日成交量为 20 日均量的 1.3 倍，量能正常
+- **相对强度**：近一月跑赢 标普500 24.6 个百分点
 - **支撑 / 阻力**：最近的摆动低点 248.14，摆动高点 299.93（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
 
 **我的读图结论**：趋势向上且结构完整；顺势的一侧在上方，风险在于结构一旦破位就要认
@@ -69,7 +69,7 @@ _以上每一条都是对已经发生的价格的描述。均线、RSI、摆动�
 - **增长**：最新季度营收同比 +36.5%；盈利同比 +50.0%；最近三个季度营收连续环比上升；最近 7 次财报里 6 次超预期。
 - **盈利质量**：毛利率 52.2%、营业利润率 16.7%、净利率 27.9%、ROE 16.5%。
 - **资产负债**：现金 $39.33亿；有息负债 $52.86亿；负债/权益 28.5%（负债很轻）；流动比率 3.17；自由现金流 $24.08亿，为正。
-- **卖方预期**：43 位分析师覆盖；平均评级「强烈买入」（1.41/5，1 为最看多）；目标价均值 330.16（较现价 +15.0%），区间 210.00–450.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
+- **卖方预期**：43 位分析师覆盖；平均评级「强烈买入」（1.41/5，1 为最看多）；目标价均值 330.16（较现价 +16.0%），区间 210.00–450.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
 
 **分季度损益**（季度数据，最新在左）
 
@@ -112,18 +112,10 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 9h 前 | 9 | 中性 | [Marvell Technology Stock: Raising Valuation on Bullish Long-Term Guidance - Morningstar](https://news.google.com/rss/articles/CBMiswFBVV95cUxNem9mUDRtd3g5TV9oMkZxZTFhYUExSWwwbXZsZ1llb3I5V2h1M2dpbDF6OGw4SVZHZGxWMU1wbVFmbXdyRnBvdkxWMG9OaGFtUHN2Z2NBaTg4anByNGlZYkc2UE0yMWdYd0JNUEZVTDRBN2FIVnVvclZQajZScC1iNEx4TGVjVWdZQzJoektPbHRlUEhiMWZhOW5yd2dsSXRjaFVkdWxIRUV5WEswZ2pIX0J6OA?oc=5) | Morningstar |
-| 35h 前 | 8 | 中性 | [$10,000 in Marvell Stock a Decade Ago Is Worth About $206,000 Now. Repeating That Would Take 35% Annual Earnings Growth. - The Motley Fool](https://news.google.com/rss/articles/CBMi9wFBVV95cUxOeVVNOUVZNTRGX1ZuR3hrUDFSZlVZMHBIQ1F2SUZEUTNjNHdpSjR1dzc4bklJTk5FbDZxZjZLQ2c0TlN2WlBRLVJFZWoyaTRkenFrTURVYmtYRHc5ZDMzUGZIQ1doQnAxQmNEa2tjTlM0b1FncEUwUTNWcUVMeUV2VUZRYmllQWdrRDU0V2pQTnhacFliMzhSbDFCQnlxTlJXSkVpV0lyMTcyTDJSeXJHRkZMOUlpWXRCN0lna2ZDZ2pQOUxYQjMzZGhOYjlaTGJfOW5uTng4SFhtTDgyV1lQZzJZSUFfZjRCcFdqRzdvQ2UyYWNNSWNV?oc=5) | The Motley Fool |
-| 5h 前 | 5 | 偏多 | [RBC Capital maintains Outperform rating on Marvell Technology, $425 price target - TradingView](https://news.google.com/rss/articles/CBMi1wFBVV95cUxQd1hnOUJqeHlQVmtuZUtrUzdQQXFIVWctN3pVazhQWlZGdnlhR1dIdXpPUWJYMHExc1lvX1J5QWdwbFV4T194U0FGMFJvSVozeWl3S0pwNFBKTWhfc1lfa2ZWQjJKa084bldmUWFiZ2ROYjhEV2RQSGdCVFhyUGc3S0JJc1YwWnJ6UkVub1FYRjlidzNCdzlXaWd0bUFYY2ZWQ2tCSlNmclpscmtBLUNSQ2t2MUVQcURGUVozVEdsNFI1M2RtNGlPUDNKR0hScS1Nc0FSTFdNNA?oc=5) | TradingView |
-| 5h 前 | 5 | 中性 | [Piper Sandler maintains Overweight rating on Marvell Technology, $400 price target - TradingView](https://news.google.com/rss/articles/CBMi2gFBVV95cUxQNUhmNGkxMDJLbGp0TVREOEFsc3BSSFlrSllIQmFJeGRraDRDMEFZdjlDUHhLbXd2bDJJcjNQVW1CU08wUHU1NGJFQlEtaGVObGc4RVBFejlRNjU5Mm9iSFNUQTZ2anhtSnM4dkpyVHRFSVpyQ0o2WTdycnMyMW9CcUtTdHd2SGlrdG9CUlA4Y290MHRqeUlsM0tfWHBLV0hrYjVSVEwzakxsUU1ISkhRcVk1RlBTRElDOURDWXNuWE5sSy1HWXUzTXNSWnZLLTc4eHU4YkZYQTFDQQ?oc=5) | TradingView |
-| 5h 前 | 5 | 中性 | [StoneX maintains Buy rating on Marvell Technology, $375 price target - TradingView](https://news.google.com/rss/articles/CBMixwFBVV95cUxOc3dibXItMDJtZTh3dUp4b2VYcjhwV0RjOElhS0xrZnBTOS1SM01rNDQxdzBacWJKY25ORHZRYURxVDdMb19mNTBwVW5wOXByVVFNT3lEQ3ZwQ2ZFQWdhUjl3MWRJYjRta2FwenMwRGtLdjg4LVlHTDh1Uk1MS2VUcDRVX3FuYVpsNUk5N2J5TDBadnJIRHhnRUUzOTB6MmMzcm1UV3dyVmItVFBvRnRTR2hiQUgyakpsbnRUX3FIdnV2dnhjTXQw?oc=5) | TradingView |
-| 5h 前 | 5 | 中性 | [Stifel maintains Buy rating on Marvell Technology, $370 price target - TradingView](https://news.google.com/rss/articles/CBMixwFBVV95cUxNdGRFcV8zQ0F3Sl9kbi04TTFkUWRpNG42NTFBbEIyVjZrRVF2Q1JaQ2V3aUZ1SG9NOTFZeV8zRnVrTUxGbjdBRGQwQklVVHdRdnFzSkFzTWRoNTBkNUxOQWZfNUdoODc1cThxVVJxV2tsVzZoZzEtc1dkSnBfbWtqbGd4aHRWVjMzMTdLZW91OE9aMGl2VDN6OXZESW9FUUY0eWFxTFh4bXc4OVFITjdEZWxJeHlNOGV2UWZ4NHJEa1U0LWpjc3Jj?oc=5) | TradingView |
-| 8h 前 | 5 | 中性 | [Cantor Fitzgerald maintains Neutral rating on Marvell Technology, $350 price target - TradingView](https://news.google.com/rss/articles/CBMi2wFBVV95cUxQRGYyNG5uVnpVVTBNbEd0OVdMY0NPMUtHb1FDYmFJeDhqMk44NWN6YnRoSDI2d1NHeDlMRjV3REQyb1BLZjc1U01RZUZwYV9OdWx2YjExQmRWSXYyMVhWOUZPbXY3NlhXNDN4bkxqYzY5M0lzSFhReHNjRVIyamEwTzI1OGpxYVdkWk8xelR0VVBKb3FCWUVsUDV6SjA2ekN6a1Y2N2tfVTl4dXlQYkluRW00WUoyNDhBX0IyZnZvZGQxT3B4Sk9LVTNzdWI1MkFLRmI5VU9rZzAwRUk?oc=5) | TradingView |
-| 1h 前 | 0 | 中性 | [Marvell Technology stock after-hours at EUR 251.98: minus 0.90 percent - AD HOC NEWS](https://news.google.com/rss/articles/CBMixwFBVV95cUxQR24tOVVKOThWb2hoY09uUVpsb2xKUEV2ZnlxMS1OSkVqcEZyTTZTMmxOZFJiMnpNcmcyVWNnSk1CSFhUc3k2ay1WMk9wNlJDaVZ3TTQzZWl5aXhMalR4ZjRHU0p5ZUczR1dra2VjdjljeGRCWlI0SGxqcExBUDRraWNQd2hRR3oyZ1lkcHktRzN1Qll3NVZYODE3WW1hN3V4UlB0ZmFHZUJmMEdjMnp4TWM0Qk1HQjhIOEJzUEJMS3M0ajBObllv?oc=5) | AD HOC NEWS |
-| 1h 前 | 0 | 中性 | [ARM vs. Marvell Technology: What Revenue Trends for These Artificial Intelligence Companies Tell Investors - The Motley Fool](https://news.google.com/rss/articles/CBMi6AFBVV95cUxQWmhyUldFUURtZVgtWUxJNmdpRllPckNHcnY1aUxQbkJNS2k2bDd3VGdkM0FWSFVTbnY3VlQwbVMybk5RRGgxc0VFRm1ydW56NUNENlQwTEl0T0lPX3lwd0N0eDJoTGhpeDBrVUFGNVZ3aEo4aUhZV0NnQXNjUl9CUk1aSm9aV1czWTVjQ2lTNEw2cnhKdzZ1VEY0SXAtbTJYNHpuTVFKLU53UE1TX2ZBNzRPRG0wTnBkdnJIYjExWkc3SEN2bmlKbTJsZklDcndlMTg1OWcyeUszRFhhc3A4MnNwSUw1OUNE?oc=5) | The Motley Fool |
-| 2h 前 | 0 | 中性 | [Marvell Technology aims for $1,000 stock by 203... - Pluang](https://news.google.com/rss/articles/CBMiiwFBVV95cUxQRkRIOEt5ajF2RDhpTXhPTjlxNV9TTC05ZUo5d1Rad19nWDNRbUtHWnpkS0VQdHdyYjBkckJnSGtoNE1JZ250eUpwZmxjSWN1NkEzcm9DYWNjSEY2Ry1ycndobGJpZnVmQlNrSGxnSFNTYXI1UFp4V1YxLVFoWU40U3VMS3hjUWYtV2h3?oc=5) | Pluang |
-| 4h 前 | 0 | 中性 | [Marvell (MRVL) Stock May Be Fairly Valued As AI Revenue Targets Rise - Simply Wall Street](https://news.google.com/rss/articles/CBMi2wFBVV95cUxPNjlTZFhPT0JPajhDYV9hcXFpR2dZTUFkb3FCcTlPLXlUU2xMOVFmVmpHa3hJYXJLalp3YWtJUlVOTVNMSU5rWDVBTUdCakFoM1pRWFZDSGZoTnJEWlo3TEVsRUpYT1VmVlRSSGZaeFhROW05RjdwdWVZTDNEYWlJUldtTzRYYWJ0SnR1bG1MMFBsQTRCRTVIV0lwQTY5WFB0TndJTUNHZndpa1k3Zi1GWHRVN2JURHBVVUJqeTJlNGRsUWtfOWpONC1DaXlFN2Zxa0ZjR1ZmbVRPVTDSAeABQVVfeXFMTjcyVVk2VnNPNjdpeldQZjR4bXB3a0NYSG04TjBCQjBhY1NMUlJ4c25MWDRzMHdnV05Ga2M0YnpER1J4d1BTWVItaTZIczMtSlVRT3JCZDI2aERCN3E3TWxKUEtMc243bWk3VUxaZkYtQ2xwbXdZMXdGR1h3VUo4bVU1N19hT0IyT2dLZTBnN3lLQlZ5U25JbnE0VExQWW1OeXhCRzdmWW9xeU95R3FmRDdUdjByQ3dyNlVtdUdXLUpYcktVeXk4YWtOX3oxbEcxcDk0bmNpSmoxWWNiYUs0WjQ?oc=5) | Simply Wall Street |
-| 4h 前 | 0 | 中性 | [Stocks making big moves yesterday: Amentum, B&G Foods, Marvell Technology, Freshworks, and Seagate - StockStory](https://news.google.com/rss/articles/CBMi9wFBVV95cUxOMUlGR19JcVpKMGw0RUpZWE1QRjZVanc1dl9QTmxSRWJyTEFjMVI5eG9PNl9UR0xxNXpYLWV2S2F5Qm9YTXRvdkliMWF0elJUVGZOUFZKbjRuNkctQ0t6X2wyaktQQ2EwM2toSldvSWdXOC0xaGNMU3BwRnRNSnd0ZGE3bmgxdGFUQlNrUXdES1l2LVBMQS1VRE5fSHZVam9DMnprLU1PcmFicXJMUEEteEI5NVhHVkNsR1F6aFE4aVgzLUdqdmxOSVVBZTk5bFV5QkpWT0tJY3lXZjlCLURzMXBLaU9nbThDZFdyUk9iNHB2dkVJLXE4?oc=5) | StockStory |
+| 0h 前 | 0 | 中性 | [Here’s How Much You Would Have Made Owning Marvell Technology Stock In The Last 20 Years - Benzinga](https://news.google.com/rss/articles/CBMixAFBVV95cUxNOXJYZjFUQkFRZlFCeXBnUnJzY3ZFcmZ4NVd3U1dwSldCMk1MLWc2dUY5RjkwV0VXNldMdTA4Nk40dXd0QnBacW9tNS0xT1B5YnF1dG1HQTExa0paellfNWhjVWtvM2Y5SXJ4VThseGZpQ0xVUlV2NUdHRk1uRHpEdnAxMHBqTjNZaExrQlROeFBhX05rMkpBRm5Ec1hid2U1VmptYzRKdzZDVUFkN1h2Ql9OTlFrVGhkQ2R1Z0U0ajY0cGpk?oc=5) | Benzinga |
+| 1h 前 | 0 | 中性 | [Credo Technology Group vs. Marvell Technology: Which Stock Is a Better Buy in 2026? - Yahoo Finance](https://news.google.com/rss/articles/CBMinwFBVV95cUxObUl0X2o0ek1lVDVYYktjQW5pYkJvZzNGNXI2MGwyYTNXZVNUaFlFQlNBSFdNUmNZQkJSa09keUhwV0lKc1l4WVl4NUxTVVpzWkhtbW9kVGVnRElZeGtqdVBwM2tWRDgyZUZXOURtTHZLRjBGNmdHclNzQV9RMV9tb014VEh1T0txMVlYTm54Vm5ZdHRqUWlRLUp6NkNBYTQ?oc=5) | Yahoo Finance |
+| 2h 前 | 0 | 中性 | [MRVL Stock Rises after Marvell Sets New Revenue Targets but $300 Breakout Fails as Investors Digest $90B Target - FXLeaders](https://news.google.com/rss/articles/CBMi5wFBVV95cUxNSk00RFJzOG9pczczUzBnd0R2YXZYMnZKX2JCOHF4TnUyYjBPVjJxSld0TnVEb3dTc2RNZVhrYUtMdHczRDhpRnFyRGxyVFNKRUVHMWN2MWZ5cVU1UmpkWFd6NTVxUmZRVW1qY3FLWTMxakswbjd4bmpxSGFCYUpGUUY2RGZWeEJ4cXRjcVlVMFRrb0NnOWY1bTdIRlV5U3UwbXA3ZHRDcE5XdW9aNW1QM3Z5M0tXM2ZibXJmczFSYnJkRmpJeE9nS0hmVkU5dkRkSTl3ak1VQTMxcXkzMkRubENkeXFaRUk?oc=5) | FXLeaders |
+| 30h 前 | 0 | 中性 | [Why is Marvell Technology stock surging today? - Investing.com](https://news.google.com/rss/articles/CBMiqwFBVV95cUxNVzk1aUJzaVZXbXlNLUJMckp6ZjRWUWQyZ19obzZFZWZ1Q0lWdmR2VUhNS1VWZG00NWptY3BkMzBpZGVqMlZTYXNsWFlGNVp1UlVyTjdJNmNubDN6V0Jyc0lBUWhXY3lGQUE4OVVLSUlMVGQtUk9FcG1xRFVZMlhnUV92TXFoak01U2JmR0dTZnE5aEpocXZyeG44LTJVbjNLRlVLLWRzMnFLMjA?oc=5) | Investing.com |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -131,9 +123,8 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
-- 离最近的支撑 248.14 还有 16%——这段距离里没有明显的接盘位置。
 - TTM 市盈率 93 倍，价格里已经计入了不少增长；增长只要减速，杀估值的幅度会大于业绩本身的降幅。
-- 政策面对该板块的倾向为 -0.96（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.89（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -141,7 +132,6 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 | 日期 | 开 | 高 | 低 | 收 | 涨跌 | 成交量 |
 |---|---:|---:|---:|---:|---:|---:|
-| 2026-09-16 | 226.73 | 233.77 | 224.58 | **229.71** | +3.6% | 16,377,400 |
 | 2026-09-17 | 240.07 | 247.89 | 240.00 | **240.76** | +4.8% | 20,969,900 |
 | 2026-09-18 | 242.06 | 244.44 | 235.96 | **244.25** | +1.4% | 23,635,600 |
 | 2026-09-21 | 251.40 | 261.18 | 244.99 | **257.38** | +5.4% | 21,466,200 |
@@ -155,7 +145,8 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-01 | 265.10 | 270.28 | 257.58 | **268.08** | +1.5% | 19,030,200 |
 | 2026-10-02 | 278.00 | 280.00 | 271.59 | **272.29** | +1.6% | 15,905,500 |
 | 2026-10-05 | 276.16 | 279.48 | 267.80 | **271.25** | -0.4% | 12,895,800 |
-| 2026-10-06 | 271.26 | 301.27 | 267.26 | **287.01** | +5.8% | 51,160,800 |
+| 2026-10-06 | 271.26 | 301.27 | 267.26 | **287.01** | +5.8% | 51,285,500 |
+| 2026-10-07 | 280.99 | 287.03 | 276.50 | **284.68** | -0.8% | 23,613,096 |
 
 ## 七、自己去查（本页不做独立验证）
 
