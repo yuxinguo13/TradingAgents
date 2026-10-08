@@ -1,0 +1,661 @@
+{
+ "date": "2026-10-08",
+ "data_date": "2026-10-07",
+ "generated_at": "2026-10-08T13:22:43.970119",
+ "equity": 101353.13,
+ "last_equity": 101467.85,
+ "cash": 56466.77,
+ "market_open": false,
+ "held": [
+  {
+   "symbol": "AAPL",
+   "shares": 20,
+   "avg_cost": 336.1,
+   "price": 337.28,
+   "value": 6745.6,
+   "pnl_pct": 0.003510859863135929,
+   "stop": 315.88,
+   "target": 365.01,
+   "r_now": -0.08586074327210788,
+   "opened": "2026-09-25",
+   "days_left": 17,
+   "protected": true,
+   "in_book": true,
+   "thesis": "接管：止损在摆动低点 319.07 之下 1%（3.3 ATR），目标按趋势外推",
+   "invalidation": "",
+   "earnings_in": 25.0,
+   "verdict": "趋势向上且结构完整，且贴近 52 周高点——追高的代价是止损离得远；顺势的一侧在上方，风险在于结构一旦破位就要认",
+   "sleeve": "core",
+   "news": [
+    {
+     "ticker": "AAPL",
+     "title": "Apple Inc. $AAPL Stock Purchased by Angeles Wealth Management LLC - MarketBeat",
+     "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQOTM0c0oxSkZ2aDBzMjFrMEEwYmFMMTFvN1p2YjNlNS1JRFh6VE9pUF9LYmdLdGpMRDYwNHl4MDlxMEZWUlNKaFJ6OC04WXZqU1FINUxxeFNLU2lvLXNiTGZOSHdhUENqNXhwRDE4UWlXVjI4VHlqYklfd2p5VUJpOTZubG5FYjl2ZjZPaGtsNWJKSW1NY3JqMHN2U1BERldWNEFFSk43OEpvQUxMNFhwLXVJMmtCNUJ6UzBteFgyX0I2QQ?oc=5",
+     "source": "MarketBeat",
+     "published": "2026-10-08T07:13:03+00:00",
+     "materiality": 8,
+     "lean": "neutral",
+     "fingerprint": "6b5c0a0fe1244635"
+    },
+    {
+     "ticker": "AAPL",
+     "title": "Apple Inc. $AAPL Shares Newly Purchased by MW Advisory LLC - MarketBeat",
+     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOMERCVXJYRm8ya0J2U3Z0cHFXRC1kRVdrVGgtdnZFMVZiMm1QaF9fOFd4d184UXN2OWdsSm5xSktmeUJLZUd5eEdJNmxFWHdOQmt0QmlRalFBLWQ2bGNKcU1YVG01akpJU3hlSFBPRUdJYlRlVDhRYTVfREFhckZXUnJibnJJMmRTSmlGMkx1bmQwSURYT1hCWlVyUDdHT2lseDJVTUxndVlzQVpIN2h3b3Bhci14RXVw?oc=5",
+     "source": "MarketBeat",
+     "published": "2026-10-07T07:43:32+00:00",
+     "materiality": 8,
+     "lean": "neutral",
+     "fingerprint": "cdc77b92b66f19ab"
+    },
+    {
+     "ticker": "AAPL",
+     "title": "Apple CEO Ternus’ $8.5 million stock sale was tax math, not a market call - MacDailyNews",
+     "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPVTJ0akUwcGpiMFREbk81NGdrN3hNOE4tRjk5bERTMVhlSXRkWVJqWTRGT0VNU0RSQkhMX0pIT0lpTG1ObHl6aG8xYUR1OVhMWXZLU0FUWVZtQkE4MFhzbEdPaVA1UG02Wk5HYnlVT0k2blNHN2l0YjJNMDdueFVzandVaVVPVDNGOHN0akpvaUdqcjdCSF83YTRZZjhHdVY5Tkl4bmtVZnpZOXPSAbABQVVfeXFMTWhFbUJaOTBEdVE5OXRnVnFtc2p3akNKUk9Hc29WVmowckFHbzJtSXhnVWRla3ozam8tcEdVTFU2T1p3NlQ0dTFINWRjSE52TXhDams1SGRqVWJCZzVYdGJObW8tUi15N1JDZFZSMXg2a1NFM0dVU3dDbWZMSThXQTlkbnU1UUlRRjZNRWMtTUFEMzE1endRNThYQmN0dUNhOHZxVFBYWFhKRno5dEhXeTI?oc=5",
+     "source": "MacDailyNews",
+     "published": "2026-10-07T19:45:34+00:00",
+     "materiality": 7,
+     "lean": "neutral",
+     "fingerprint": "238e9350b2f7134e"
+    },
+    {
+     "ticker": "AAPL",
+     "title": "Apple’s New CEO Just Sold $8.5 Million of Stock - AOL.com",
+     "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9BMGg0RzZDSXJiQzFMT3RkVWhRSFM3OEJIZm1JWWFhM3lyN1hYUkRqYjRESlJqNzM4X1pyVXJwZkpFdnAxa3FnRmNZYkdPc1dibzl3N3JTWGRLWDNEWHY3Unl4eV9WUFRLZVY1OTJQRnNBeFE?oc=5",
+     "source": "AOL.com",
+     "published": "2026-10-07T13:20:24+00:00",
+     "materiality": 7,
+     "lean": "neutral",
+     "fingerprint": "d5b38803043c1924"
+    }
+   ]
+  },
+  {
+   "symbol": "ADP",
+   "shares": 7,
+   "avg_cost": 267.47,
+   "price": 264.0,
+   "value": 1848.0,
+   "pnl_pct": -0.012973417579541735,
+   "stop": 253.4,
+   "target": 282.93,
+   "r_now": -0.048046699595871045,
+   "opened": "2026-09-25",
+   "days_left": 17,
+   "protected": true,
+   "in_book": true,
+   "thesis": "接管：最近的摆动低点 238.87 在 10% 之外，改用 2 ATR 止损；图形偏弱，跌破即走",
+   "invalidation": "",
+   "earnings_in": 20.0,
+   "verdict": "趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌",
+   "sleeve": "core",
+   "news": [
+    {
+     "ticker": "ADP",
+     "title": "Investigating Automatic Data Processing's Standing In Professional Services Industry Compared To Competit - Benzinga",
+     "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxObF9fdmJjSnVWMm5ST3FPcXgwSDNnOEJJV3ppWGZUWmNkMGh0eXotWm5tZllRdmpZbTRBSVpReUpPZklYQUtGTEVUREZaTnI4dHlYQkNGSDA0OWM0WUQtVEszSWh4UEowTTlJdHFFZFdyVkNRc1J3WkJ4NFZ4cloxQURVQXZMaFp5RmE3NHNxUG9RNWxnRm1lQ0RGa096MWptVGdEWGhKMGNZVDJzQkUtT19WNVNucmx6LWhkNDBWV1JGc2Z2aHBKRm5KUzcyR1gwS19DSV9CaF9Gd3c1dW5YenNvRTRCSUdTREU4Tld2NG9nUGRLemwwODEwdHRkeTA?oc=5",
+     "source": "Benzinga",
+     "published": "2026-10-08T09:58:40+00:00",
+     "materiality": 0,
+     "lean": "neutral",
+     "fingerprint": "efb1e561d834c9e1"
+    },
+    {
+     "ticker": "ADP",
+     "title": "Comparing Automatic Data Processing With Industry Competitors In Professional Services Industry - Benzinga",
+     "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNcmpoQWtCbDdkejhRemhfNXJPemIxR1g3Q1NZSFNSd0VwaDJsVTZUUkFCX3ZRVnhDTXdRN0psZEozZE4zcUtnUDFISU9DbVJ1VzNQTzNMWWFoam1vTXNJNDg0N3F3MTlnM2RJb2Ytam9NbVpoYVhUWnJHSDFod1JBTkh1MFczZ2g0VEI1STFsa1Q5RFBqRUk3eWVXRWUxazRFRTZLX29wVG4wX3lpazNaV3BHN29JRkN0WFBTaW9EajU3aFFNS3Fmd0RSdS0?oc=5",
+     "source": "Benzinga",
+     "published": "2026-10-07T09:59:12+00:00",
+     "materiality": 0,
+     "lean": "neutral",
+     "fingerprint": "dc3f2889f41960a2"
+    }
+   ]
+  },
+  {
+   "symbol": "APA",
+   "shares": 137,
+   "avg_cost": 44.877299,
+   "price": 45.0155,
+   "value": 6167.1235,
+   "pnl_pct": 0.003079530254260776,
+   "stop": 42.43,
+   "target": 47.0,
+   "r_now": NaN,
+   "opened": "2026-09-25",
+   "days_left": 17,
+   "protected": true,
+   "in_book": true,
+   "thesis": "接管：第一次 40.86 被风控以「不足 1 ATR」拒；ATR 3.6%，改放在 50 日线 40.53 上方、距现价 1.2 ATR。保护单放宽止损不是绕风控，是按风控要求的最小距离重放",
+   "invalidation": "",
+   "earnings_in": 27.0,
+   "verdict": "趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌",
+   "sleeve": "core",
+   "news": [
+    {
+     "ticker": "APA",
+     "title": "APA Corporation stock gets 10.5 million Q3 buybacks in focus - AD HOC NEWS",
+     "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNMzRjSGpXdmpNTnN0U0ZYLTU4ZEdlMEdpOVktUTJOSnJEYXh4YVgwOVJpU2RMV1lfeGxvSE1vOWtTTHhfNHpFV2V5LXR5UTJURXpSRk11b3ZfbjJ2Nk8yYjNsMXZ6N2padC1iYkZ0anJkZGh0LUVrOUdPZ2g4UW4xWS1jNzI2VEg0ZVBTSEltZ20zY1V0SmlJMXFEaVVCZjJYMGE2VHZDdTExenIxZ1NxUjFVTkZTUGRHWFJN?oc=5",
+     "source": "AD HOC NEWS",
+     "published": "2026-10-08T03:17:59+00:00",
+     "materiality": 8,
+     "lean": "neutral",
+     "fingerprint": "9053f74aba056abf"
+    },
+    {
+     "ticker": "APA",
+     "title": "APA Corporation releases Q3 2026 preliminary financial data - StreetInsider",
+     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOUldERUFTWi1lVkZmTXFLX2RMX0phbnNiR0FLN0NVSkxiSkhMbkVNdUxPZ0FNNEUxUkdoYlV4QlN6b2JkbTlHOE5sNkJCUGsyR0lsQVd3YUFZNXQ4cHB3eWNpOHBBd2pTY3EzSkhoYktzb0JobV9zcVBWazl6QnFqSHJXcWtWcTVyVzY4STFabmxSRUo5Ylh4dVJ1ME5YdHRJSWJGQ2ZxMkZOb2VnT295cThiQ00wbzZ6R2c?oc=5",
+     "source": "StreetInsider",
+     "published": "2026-10-07T20:31:35+00:00",
+     "materiality": 8,
+     "lean": "neutral",
+     "fingerprint": "8ab3cd0429c1093d"
+    },
+    {
+     "ticker": "APA",
+     "title": "APA (NASDAQ:APA) Stock Rating Raised to \"Strong-Buy\" at Zacks Research - MarketBeat",
+     "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQNDdFdDlCeVZjc2F2X2w4RlFzb2kwSFZTYU9BQzJrRkVHTnRfYy1KeTNsNDRJVGdPaTN1cWxVa3lIM1pBc3FQWlZZbHJlM2NYVmJTejlEZlhEVTVYTXpkdnQ4bFJrVDlNRU44SV9SNmZ0dVdja2xsVE5KbHRwR0c3X2o5dEtiU2J6clZtNWZWcTA3VXNHaHpWdG9CSzVEM0VieTcyNWc4R2RXQVZSUnZoLTNfcFFmdEktS1BjTm5ZWmU4bTNGVjFN?oc=5",
+     "source": "MarketBeat",
+     "published": "2026-10-07T12:00:38+00:00",
+     "materiality": 8,
+     "lean": "bullish",
+     "fingerprint": "7f481a63fde29b39"
+    },
+    {
+     "ticker": "APA",
+     "title": "APA Corporation stock weighs Q2 revenue and buyback plans - AD HOC NEWS",
+     "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQdUJPSk1UU1ZOSU1LWlBaTGVoaUJNeS1oVTBhYkZjWmdDQ2FxOXFlaFFSMG16MWZKQ25zMlpqNWdvbTJocmpicHJ4b2lFU2xhSVB2SWlKZ3U4bC1Hd2dtX292dWk2RjhNU1psRjhNS29DbzVKcnBNdnpQZDZETHM2dXhiSzRfbFQwRFNqS3hSVnFBRlZwLWlzVTlyUXFkOWc2QlFZc1pPaXREc2RyTm9JRnkycnpOdkU?oc=5",
+     "source": "AD HOC NEWS",
+     "published": "2026-10-07T04:24:54+00:00",
+     "materiality": 8,
+     "lean": "neutral",
+     "fingerprint": "937ce96c556ccaa6"
+    }
+   ]
+  },
+  {
+   "symbol": "GOOGL",
+   "shares": 22,
+   "avg_cost": 351.544091,
+   "price": 351.63,
+   "value": 7735.86,
+   "pnl_pct": 0.00024437617413974877,
+   "stop": 334.9,
+   "target": 372.0,
+   "r_now": 0.7656992084432694,
+   "opened": "2026-09-25",
+   "days_left": 17,
+   "protected": true,
+   "in_book": true,
+   "thesis": "接管：结构震荡，止损放在摆动低点 340.66 与 200 日线 337.66 之下 1.05 ATR；趋势外推给不出目标，目标取 +8%",
+   "invalidation": "",
+   "earnings_in": 20.0,
+   "verdict": "趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌",
+   "sleeve": "core",
+   "news": [
+    {
+     "ticker": "GOOGL",
+     "title": "This Utility Merger Pair Surges on Alphabet AI Deal - Investor's Business Daily",
+     "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPeUdUSW01OTJKcmsyX1ZpcVEzblNaZ2xuUTgyWFoxUkdia3ZqYTVIVEF0R1haNzR0a3VVTmhEMUI5enNzY0hIYTROY3dKSmZqNzRhWV9iNHJTcnZRZkFTLXpycW90a3NIdHRUMVdBSkV4c3I5ZnptQXotSC1oNVBoN2NwYUJKVTlJbzZETlhFSlJhXzNZY0hlRlZvU2lROEUycmVfLVhOT0kxLVJGTkZjUWtkaGMxYkp3WEI4MXd6cXNZZnVkUWNyR2FBdGlvaGh3Qm4weVN6THBYd1ByVXV6Z01tMA?oc=5",
+     "source": "Investor's Business Daily",
+     "published": "2026-10-08T12:00:00+00:00",
+     "materiality": 10,
+     "lean": "bullish",
+     "fingerprint": "ee3640fa9e9121f1"
+    },
+    {
+     "ticker": "GOOGL",
+     "title": "Zacks Earnings Trends Highlights: Micron, Nvidia, Alphabet, JPMorgan, Citigroup and Wells Fargo - TradingView",
+     "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNNUNDamJ3Zmw5Ym5MUzEyWUVxNXB4MzhIYmFSNVlUTXJaam81NnJhREU2dlJYN1JYYkFpZ3RHS08tVU1VMUx0YjJyQllNeGZ2RlJuRWFySUNQZDhueG1fdFVQOVJVazQweldRWVktRzdnMzBaOWxBZDlBd1FyYjVVb2RCSkw3YlRDckY2bGRuQ0tjb3NsZlBUczhNQzVxZ0tLUFIxVGVETGVTQnNoZEt3NkQ0MTI2am1PMkZLUW1nS2dlN292a1ZySHpSNk56Nmh1aTdNVmZFSmFFUHRYbFpZ?oc=5",
+     "source": "TradingView",
+     "published": "2026-10-08T06:07:00+00:00",
+     "materiality": 8,
+     "lean": "neutral",
+     "fingerprint": "5bdafa8e35832ea8"
+    },
+    {
+     "ticker": "GOOGL",
+     "title": "Alphabet’s Chart Is Coiling—and the Fundamentals May Be Ready to Back It Up - MarketBeat",
+     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOWUJlTm81T21VX0pkZmJuSGI5ZXRXZXJfQmptbFBQNDhDcVFnRmxETGtsU2F3Z1hPQkxJVFJNQ0hUWGtQOWtsQTNQNVBIZXVEWWRjbUxaa1d0bURsT0dDbzRqai1IWDVIQWpyUVhKY1JiZklCdU0zM25yVG01cGdhZTJPQWlwUmtsbnZLMmpnSTBFbS1GeTBoYU5icE9USVVidXRIVFAwSWp1LXNGc3E0?oc=5",
+     "source": "MarketBeat",
+     "published": "2026-10-07T17:19:03+00:00",
+     "materiality": 8,
+     "lean": "neutral",
+     "fingerprint": "9a742f72bbda9f46"
+    },
+    {
+     "ticker": "GOOGL",
+     "title": "Google Faces £1 Billion Antitrust Lawsuit in London Over Play Store Fees - TIKR.com",
+     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1FQW1FcTNMVk5DSklNeXBhQS1KMGx3NnM5V0tXVmlTWjhMTXNvVEpnUzl3TVk3R1lfRnBvWWZ6LWtGcXBCMHZPb3ZSMzNlNnBmck04UlhqSENkZU52VHkwVDA3WHBLVXRiYk41LWRQZHpWeEJKb3B0SXFRV3hzeXM?oc=5",
+     "source": "TIKR.com",
+     "published": "2026-10-07T13:32:53+00:00",
+     "materiality": 7,
+     "lean": "bearish",
+     "fingerprint": "9baafcf18eea54ac"
+    }
+   ]
+  },
+  {
+   "symbol": "JPM",
+   "shares": 8,
+   "avg_cost": 336.42875,
+   "price": 327.6264,
+   "value": 2621.0112,
+   "pnl_pct": -0.026164083777025615,
+   "stop": 322.49,
+   "target": 352.84,
+   "r_now": -0.7416297786720331,
+   "opened": "2026-09-25",
+   "days_left": 17,
+   "protected": true,
+   "in_book": true,
+   "thesis": "接管：价格在 20/50 日线下方，止损在摆动低点 325.75 之下 1%；反弹到 50 日线附近即目标",
+   "invalidation": "",
+   "earnings_in": 5.0,
+   "verdict": "趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌",
+   "sleeve": "core",
+   "news": [
+    {
+     "ticker": "JPM",
+     "title": "JPMorgan Chase & Co. $JPM Shares Newly Acquired by Canandaigua National Trust Co of Florida - MarketBeat",
+     "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOYnBmSktxaEhNR01CZGV3N2UtUmkzWkdMTmtPdVExZHlqZjZYVHNYbElxMmF5LU43TGN4ZDlpN29kRHN0YzJmbnpPVWZYS2pLWUF6ZjNEank0UlYyNnY4dTFrS2Q2R1RCR0FyNjNIZ2U1UjFYSVRrTUhZakpDTm1ndGUxRGxXc3lFYzV5dGY4WXdjemNicHVOdUhNSzhwa25GbkFWQkEzcmlkZ1Q5c1dmVndxMFJacFRuM3h1WlpvZTFTeHEwdC1malpiZTY4Wld6Z1M5TF9yNWFHUDcxYmkzWTZB?oc=5",
+     "source": "MarketBeat",
+     "published": "2026-10-07T23:08:19+00:00",
+     "materiality": 10,
+     "lean": "neutral",
+     "fingerprint": "72e97485cb4f5482"
+    },
+    {
+     "ticker": "JPM",
+     "title": "Travel + Leisure (NYSE:TNL) Now Covered by JPMorgan Chase & Co. - MarketBeat",
+     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNX0poZDQ2WGdXbjBsNDhOQkFOWHFaX003bWdZdlRYaFRaQWRFcmNzaGFJRjV2SGNZeEpzeHRhSjBwMlpMakUzbDlsQndnaU5YcGVyb3RoMVoxaVVxaUdGc3kxWEJfR3h4TVRaNktpc09CY0FGYzE1MFc5WHRwdWJmWXhBcGN2c2FDb0pHOGs4T3hzQkFQbE90UzFqNnFQUURFVzdKeFRnbUlCT0pINjZpaHlmNWpwektqbUE?oc=5",
+     "source": "MarketBeat",
+     "published": "2026-10-08T13:15:05+00:00",
+     "materiality": 8,
+     "lean": "neutral",
+     "fingerprint": "af9d06f5608cd629"
+    },
+    {
+     "ticker": "JPM",
+     "title": "Option Care Health's (OPCH) Neutral Rating Reaffirmed at JPMorgan Chase & Co. - MarketBeat",
+     "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOci1zR0VxYXhvSU9qR0FwaElIc1V5RmpQQlRuR21UTzhpSFFsUkxhYnZQN2p0ZUZubURfaE5lRFlnbUxZdy04SGJST3NRbWpVNjY3R1I4UTl4YXJtQkZGT3ZSZWltZXpQQV9OVnloMGZMc2ZtU2xGTkp4UmktR3JwNmNLMFhNZGtoem1TMzA1U2JvU1J4Mlprd1NmdTV3emtWQlBTY0VPR1lPMDZYX2o2TlpnZzN4aVBFbzRtQVljOGN1NHRXZnd4NER0c2llZw?oc=5",
+     "source": "MarketBeat",
+     "published": "2026-10-07T19:13:26+00:00",
+     "materiality": 8,
+     "lean": "neutral",
+     "fingerprint": "87950847b58cb1d8"
+    },
+    {
+     "ticker": "JPM",
+     "title": "Alcoa (NYSE:AA) Stock Price Target Lowered at JPMorgan Chase & Co. - MarketBeat",
+     "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNQ3UtS0RMUjVNbXRSM240VjRlMkZWelo5djY2X2U5dHhhY3FMZ1VnYzNrZERjSE5TSWhHZlRyM3BRQ2dVSG1VNldBLWJtRHdVUDRqc1BCMGZPR0FGNksxS0Z3cE1RX1N5RW1TRkxyRWV4SWNaN2M3UmczUzBxTE9EZFR2ZXR1cTYyOGN6SElhOEU4dVg5amJlTmJoNTlQR1M4eVEyR1VNNWhfeDBfakt1S2tlM1BOb0V6NkQtd3FNd2U?oc=5",
+     "source": "MarketBeat",
+     "published": "2026-10-07T17:15:01+00:00",
+     "materiality": 8,
+     "lean": "neutral",
+     "fingerprint": "1860c0467d1984b9"
+    }
+   ]
+  },
+  {
+   "symbol": "LITE",
+   "shares": 7,
+   "avg_cost": 1107.49,
+   "price": 1070.6,
+   "value": 7494.2,
+   "pnl_pct": -0.033309555842490735,
+   "stop": 1037.24,
+   "target": 1286.7,
+   "r_now": -0.528547201808933,
+   "opened": "2026-10-05",
+   "days_left": 17,
+   "protected": false,
+   "in_book": true,
+   "thesis": "动量账：Lumentum 周五收纪录 1,085（摆动高 1,085.7），今晨 +2.1%；一月跑赢标普 23.8 个点（榜第三），三月 +48%，三条均线上；周三 +7.7% 放量 1.6 倍是突破日。FQ4 营收 +109%、FQ1 指引 EPS 4.05–4.35，Bernstein 首评 1,220、Stifel 1,232；FCC 禁中国光模块草案未定稿、不计催化剂。止损在突破日低 1,037.24（6.4%，1.1 ATR），目标 1,286.7 = 三月 +48.4% 折三分之一，R 2.5。",
+   "invalidation": "收盘跌回 1,037.24，次日开盘平掉；10 年期收盘 >5.35% 且纳指跌破 50 日线；FCC 草案被正式撤回；一月相对标普跌回 +10 以下。财报约 11/4–5 在持有期外。",
+   "earnings_in": 28.0,
+   "verdict": "趋势向上且结构完整，且贴近 52 周高点——追高的代价是止损离得远；顺势的一侧在上方，风险在于结构一旦破位就要认",
+   "sleeve": "aggressive",
+   "news": [
+    {
+     "ticker": "LITE",
+     "title": "EUR 987.70 at Lang & Schwarz: Lumentum stock pre-market minus 0.54 percent versus the prior close - AD HOC NEWS",
+     "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxONW5GalBSdjQ4VkdjR1E5YkJfMWoyMzU2V3FqRGI5bFV6NU12VHBoOFN5a0FYWk5SbDJ4Sk1Lb0ZYQlpaRlpjbHY5RTBxTE44Yk4tUlhMRHNNd25iWGRzcjNwX1hZYjVUWUVNRGk1aEl2VDB3Y1gyeTRNYlYwOGNuREVtS09yX0FfTEtfd2w3eTBvV2s4akdxMnBiQ0VhbHA4aXVRcXBIYlZCbW9RZUdyaE41WjFuTXlISTczanhUR2h6M2s?oc=5",
+     "source": "AD HOC NEWS",
+     "published": "2026-10-08T05:44:58+00:00",
+     "materiality": 0,
+     "lean": "neutral",
+     "fingerprint": "06845b503800201d"
+    }
+   ]
+  },
+  {
+   "symbol": "MSFT",
+   "shares": 10,
+   "avg_cost": 500.487,
+   "price": 529.75,
+   "value": 5297.5,
+   "pnl_pct": 0.058469051144185435,
+   "stop": 481.14,
+   "target": 587.65,
+   "r_now": 0.44737233884174366,
+   "opened": "2026-09-25",
+   "days_left": 17,
+   "protected": true,
+   "in_book": true,
+   "thesis": "接管：止损在摆动低点 486 之下 1%（3.3 ATR）；今天 +3% 追上同板块，趋势完整",
+   "invalidation": "",
+   "earnings_in": 20.0,
+   "verdict": "趋势向上且结构完整，且贴近 52 周高点——追高的代价是止损离得远；顺势的一侧在上方，风险在于结构一旦破位就要认",
+   "sleeve": "core",
+   "news": [
+    {
+     "ticker": "MSFT",
+     "title": "Congressman Sells Microsoft Stock, Buys Financial Giant Ahead of Earnings - Goldman Sachs Group (NYSE:GS) - Benzinga",
+     "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNVm8wQnZhR3hiWDNvS19Tel9VWWNCcE1lT2tIRDkzMHJPaERkU1VtUWZhSTNiMUdZNEFDM0JiSEdiRnR2a3JGSlV3Sl9hRi1QZDB0bzNJYVdZVXZ5NHlMQi10SEp6ZEVCUUFCYjFqN3pPbU1BdHFsWHBVMUhqSTJhZGI4QXdVbHZDejRqSEhlbUVJNkxxVVU0RTEwRE1zQ1pYTUF0U2xOTEV6RE04RU1RMjJxTnZqWEpUZFFWZE9CV043R3pzV2EwQWVIaWN6aDlRSV9KNDVkRQ?oc=5",
+     "source": "Benzinga",
+     "published": "2026-10-06T21:51:27+00:00",
+     "materiality": 8,
+     "lean": "neutral",
+     "fingerprint": "225268a00d4c6aca"
+    },
+    {
+     "ticker": "MSFT",
+     "title": "JPM sees software rally extending, favors Microsoft, ServiceNow, Snowflake (MSFT:NASDAQ) - Seeking Alpha",
+     "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxONUZzUEFqc0R4V1NLUmpxdG91ZFNtR3N5OVZTSkRJVmRuN1lJUWhrQml4cEtZSUFtQUF6MXNLOWtMYWsyTFFRZTJ6c0VCMUVEeDhnenQwaXVlZkg1TXAxM1I5R2pyX3RrWnZRYl82Mk9ja1pKRXVudDVMYXlTVlNJX3M5Z3ZaQWFLM0lKYktQaFZON0tidnhqbDVmeEJudHBYNDU4bDhsUjRIZGxnZlE?oc=5",
+     "source": "Seeking Alpha",
+     "published": "2026-10-08T12:17:56+00:00",
+     "materiality": 0,
+     "lean": "bullish",
+     "fingerprint": "93dc48ac7d8ddf23"
+    },
+    {
+     "ticker": "MSFT",
+     "title": "Mapping the Market: Microsoft set to extend rally By Reuters - Investing.com",
+     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxORnVodENSX20tbDlOcHhQNmtoVXY2Z2dld3JGTU4yNDA2VFhXQlFzTzBEcXJtRHdrekU2ejhzNGZrYUhlU192YndyemIyUGVtdTVzOEdTNEdOZ19HZERqREk4a3FxWVllUWpoLWNYb1IwNzJrVmZvbVFIbTkyNmQxVkJSeEdvbEJjSFIwc3VveE9Ua011SDBxTVVjWUM3WTRfMUZMYnk0bGs?oc=5",
+     "source": "Investing.com",
+     "published": "2026-10-08T10:25:39+00:00",
+     "materiality": 0,
+     "lean": "bullish",
+     "fingerprint": "3f45ff9ab67aac0a"
+    },
+    {
+     "ticker": "MSFT",
+     "title": "Mapping the Market: Microsoft set to extend rally - Reuters",
+     "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxObzEzVU5JUzJKLWVQZGpiUUxPY0dpOTNTUjU1NnU0dkZjQ0JUb0ctU0V2NUZDbk90OWFnb2E1emU4ZHRWakZQb0Y0MFBCS0RwSkg1WEpMcHV3ODBBdFZfTWtUdmYtRmNWZWpfRnN1YlEyems1ZHJBMjJJamdZci1PcnhXM2w?oc=5",
+     "source": "Reuters",
+     "published": "2026-10-08T10:14:37+00:00",
+     "materiality": 0,
+     "lean": "bullish",
+     "fingerprint": "b1e21bd8fb6676d2"
+    }
+   ]
+  },
+  {
+   "symbol": "SPY",
+   "shares": 9,
+   "avg_cost": 768.43,
+   "price": 775.23,
+   "value": 6977.07,
+   "pnl_pct": 0.008849212029722997,
+   "stop": 752.55,
+   "target": 793.98,
+   "r_now": 0.26456649010314964,
+   "opened": "2026-09-25",
+   "days_left": 17,
+   "protected": true,
+   "in_book": true,
+   "thesis": "接管：止损在 50 日线 759.46 / 摆动低点 760.15 之下 1%（2.6 ATR）",
+   "invalidation": "",
+   "earnings_in": NaN,
+   "verdict": "趋势向上且结构完整，且贴近 52 周高点——追高的代价是止损离得远；顺势的一侧在上方，风险在于结构一旦破位就要认",
+   "sleeve": "core",
+   "news": [
+    {
+     "ticker": "SPY",
+     "title": "S&P 500 Faces a 'Stealth Correction' as Earnings Boom Collides With Rising Yields, Warns Fidelity’s Timme - Benzinga",
+     "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQVUYyM0hLNTNKNXNuMktoM241LWtkMWFHTWlSdm5xSkpJVXhudmczd01PNmV1cHlmOS1YRXJUb1VSNmt5blpKWW50QlZUR0szYkpVbm53TWpsM1lwbHJUYnFmTFBCb2luMGxFNzJTVDY4QlZxSExZTFowTFczeWxsT1ZkWldINU9ndl9IWHFPZFdtdEtPc3ZwaFg2QjV5cGRzdldpNWdvY2hSR0VOZWxPQUNtamprSjc5U2dLSEozeTNLOHhBSUtLSDVWNGszYnRwVVFrUGNyUFZMV05KblJJRUVUUEd3ek9vTnVZc3cxa3cxZU1ZcENLNlZsbktHNWtlX1RnNUZ1b3d3NjFfZDB5cVJn?oc=5",
+     "source": "Benzinga",
+     "published": "2026-10-07T11:52:53+00:00",
+     "materiality": 8,
+     "lean": "neutral",
+     "fingerprint": "3aca70e764bbeeaa"
+    },
+    {
+     "ticker": "SPY",
+     "title": "Stock Market Today: S&P 500, Dow Jones Futures Decline as Pentagon Prepares for Potential Military Strike - Benzinga",
+     "link": "https://news.google.com/rss/articles/CBMimgJBVV95cUxOUGtFTTlxVm53cjVxR3gxeU84eThWQXp3MTJ4YW5WSHUtdDJQSnU3X3dzRkdJUGZvWDQxcEY5V2o5QmdQTkRpXzlFbGV6VUtUTVQ3WGo5YUo4b1cxSDRnc2MxcEFUOHNhMGZyX2pRMW81Zlg5aDh2Qi1QSTAtWExXcnlqOTVDOHMydXhZTHJQVDdYbDRxeE43MDNpUS1pRG10amhoWXdnalZ6Ul9vbmpZSy02ejB0LVB3R3F1cVNtRHdMdWhyd0w1emlTYnJsaGlUUzJZXy1BYWlHMnlKTU1yMlpOWUdBVV95QVpUcV9vQlpFMkhDbFRSMTg1N1djbjdTdkZKRWI3S2lhRm9kRVR0R3Z6MUNoOHZOcWc?oc=5",
+     "source": "Benzinga",
+     "published": "2026-10-08T10:05:24+00:00",
+     "materiality": 0,
+     "lean": "neutral",
+     "fingerprint": "781dde5261bc062b"
+    },
+    {
+     "ticker": "SPY",
+     "title": "Fed Minutes: Officials Eye Another Hike By Year-End - State Street SPDR S&P 500 ETF Trust (ARCA:SPY) - Benzinga",
+     "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOVV9qSTFSY1I4RkM5aEVRV0pCdEFCTm5MQmZFYTcwZ2lqU25BYktsSFVaTmZ2UFVVZnJIejdrRnZzWV82ZV9OancxQ0U5ajBpTE1GTXRYcHZXdUItNk9WMFRsYW4yWlNGb1F4dHRtOVdDWUlKSFljLVY3R3M5MjVoSlpsRzhFenZnWXRhQWxiOENBb05aTTlBUEVUUW1WMjNfUU1HYzBlUXotOWljOHROWnp0YUFaSHBPNVNGRjUwSzdaQkE?oc=5",
+     "source": "Benzinga",
+     "published": "2026-10-07T19:01:25+00:00",
+     "materiality": 0,
+     "lean": "neutral",
+     "fingerprint": "fe4d5d811c746554"
+    },
+    {
+     "ticker": "SPY",
+     "title": "Global Bond Selloff Dents Market Bullishness — Treasury Auction To Test Sentiment - Benzinga",
+     "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQMTJDTndMeVNzaS1fdDVKRVRKQnZBQy0yQ1V5bWFlM2tjUEFJYVYyMlU2TUM2MnpyNDlwMnh5c1JKdTl1cXJRbkViVkdtM0IyeDZHTkRIUkNsdVF0VFoxWFJ3YTZrb2NmWHIwWmpiNFZDcVVVQWtNRlVPVkNROHFxMUtUZkNLSG9sSkljRTNGazlyUmk0ZTFfYkdtWC1udXhVREJzTk9ZZkJLS1V4bWl5WmZUcnNqVWY4eTBUbWdIUzhUeXd5SUE?oc=5",
+     "source": "Benzinga",
+     "published": "2026-10-07T17:18:52+00:00",
+     "materiality": 0,
+     "lean": "neutral",
+     "fingerprint": "79d24af2635416ed"
+    }
+   ]
+  }
+ ],
+ "postmortems": [
+  {
+   "symbol": "AMZN",
+   "shares": 16,
+   "entry": 250.06,
+   "exit": 258.55,
+   "opened": "2026-09-25",
+   "closed": "2026-10-08",
+   "reason": "target: 交易所触发止盈",
+   "thesis": "接管：止损在摆动低点 244.30 之下 1%（1.5 ATR）",
+   "invalidation": "",
+   "principles": [],
+   "pnl": 135.84,
+   "r": 1.035365853658539,
+   "reviewed": false,
+   "sleeve": "core",
+   "raw": 0.04226485018265502,
+   "alpha": 0.029177989050723996
+  },
+  {
+   "symbol": "AVT",
+   "shares": 75,
+   "entry": 107.0,
+   "exit": 102.52999877929688,
+   "opened": "2026-10-05",
+   "closed": "2026-10-08",
+   "reason": "closed at the venue",
+   "thesis": "动量账：Avnet 周五放量 1.6 倍 +4.6% 收 52 周新高，一月跑赢标普 18.5 个点，三条均线上、上升结构（前低 86.4 → 90.9）；三条触发是榜上最完整的。FQ4 营收 83 亿（+48%）、FQ1 指引 EPS 2.80–2.90；AI/数据中心元器件拉动分销商。止损在突破日低 103.72（3.1%，0.83 ATR），目标 117.8 = 三月 +30.2% 折三分之一，R 3.3。",
+   "invalidation": "收盘跌回 103.72，次日开盘平掉；SOX 收盘跌破 50 日线；一月相对标普跌回 +10 以下。财报约 10/28–29，在 20 天持有期（到 10/25）之外，若持仓延到那时要在日志里决定。",
+   "principles": [
+    "十·强势买强势：volume+pattern+rs",
+    "十·止损在突破日低点或 20 日线取高，不给缓冲",
+    "十·到 1R 后止损每天上移到 20 日线下"
+   ],
+   "pnl": -335.25,
+   "r": -1.3628052502143668,
+   "reviewed": false,
+   "sleeve": "aggressive",
+   "raw": -0.04123811072966521,
+   "alpha": -0.051086813903122086
+  }
+ ],
+ "fills": [
+  {
+   "id": "fa6deed9-3875-48ab-8a37-55bc402c3161",
+   "symbol": "TSM",
+   "side": "sell",
+   "qty": 20.0,
+   "price": 466.5065,
+   "type": "limit",
+   "filled_at": "2026-10-02 13:38:15.642251+00:00"
+  },
+  {
+   "id": "9ecb0ab3-427e-4345-93e5-a584e7ce29fe",
+   "symbol": "NVDA",
+   "side": "sell",
+   "qty": 53.0,
+   "price": 236.522264,
+   "type": "limit",
+   "filled_at": "2026-10-02 13:42:54.855436+00:00"
+  },
+  {
+   "id": "1d17c8fe-54a5-474f-adbe-d7c906b5efff",
+   "symbol": "LLY",
+   "side": "sell",
+   "qty": 1.0,
+   "price": 1197.61,
+   "type": "limit",
+   "filled_at": "2026-09-30 14:16:12.339306+00:00"
+  },
+  {
+   "id": "b3121b92-5173-4929-8ab4-e9abe9212800",
+   "symbol": "AMZN",
+   "side": "sell",
+   "qty": 16.0,
+   "price": 258.55,
+   "type": "limit",
+   "filled_at": "2026-10-07 15:45:12.510982+00:00"
+  }
+ ],
+ "candidates": [],
+ "breakouts": [],
+ "regime": [
+  "标普500 收 7,802，近一周 +2.0%，近一月 +1.7%，站在 50 日和 200 日线上方",
+  "10 年期美债收益率 5.28%，较一月前 +0.47 个百分点",
+  "收益率曲线正向，10年期高于3月期 1.24 个百分点",
+  "VIX 15.1，波动平静",
+  "美元指数 102.2，近一月 +3.4%",
+  "原油 88 美元（月 -5.1%），黄金 4,141 美元（月 -6.7%）",
+  "本周最强板块：公用事业 +4.3%、能源 +3.0%；最弱：房地产 -0.8%"
+ ],
+ "macro_news": [
+  {
+   "title": "3 Warning Signs That Earnings Season Won’t Be a Slam Dunk for Markets - Barron's",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPZS1aLTBqaEVaUmhHdng2amNpVkZ0MHEtUndqTXE1cWJjTHlkenp6bXZEVThuN1RsNndON2RRUUt1TjRmZUJCc3k0NG1UeXZnSnZ5MlBHdGdrT0c1eHJNUjRvazg3Y0VBNEFXV203MnVQbXVIYlJJZlVSWjN4YWhHMWQwRW9PQVg3VElmOV9WUXpGbjlpMHc?oc=5",
+   "source": "Barron's",
+   "published": "2026-10-08T11:32:00+00:00",
+   "lean": "bearish",
+   "materiality": 8
+  },
+  {
+   "title": "Why is Sherwin-Williams stock sliding today? - Investing.com",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQck1jT0diVUlNVnduSW1pSVZLY0EzcmU2TjBaUXpyYTJxaDZDYndKZVdFaDJmZVN6RFNVQ2EwWmpoZWNpNTJTYk1YeTlyLTVSYUN1eG83a283SVFIRE1tejRnMXhpNVVXZXRPRmpQb3JaSmxJRng3QUhDMzRHVDBnSTRFT2xhVzBQamlNdkREZFFPWGpzTEFfN01MZEZFNE50TzdZQXNucw?oc=5",
+   "source": "Investing.com",
+   "published": "2026-10-08T10:41:49+00:00",
+   "lean": "bullish",
+   "materiality": 5
+  },
+  {
+   "title": "Stock Market Today, Oct. 6: Corteva Rallies 12% on Analyst Upgrade Following Spin Off - Yahoo Finance",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNYlVyemdkM05fZElWb2hXZjRxVjVlbk9RUEExMXhrTERYSlJxN3dzdktZSWdxTnp1VDlSdHBncHBydGc1c0xtUEdScDBhdkVBckFOSG5QSFp2U3B4SlZzRkE5aXZLeXFEMVJVUENsVUdXNi1NUmNnaEhXaXJKREwxRHp5bXM5eTRkRnJYUndzMmp4Unc?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-06T21:32:57+00:00",
+   "lean": "bullish",
+   "materiality": 5
+  },
+  {
+   "title": "Rising interest rates reopen negotiations on commercial deals - The Real Deal",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOaVdWVm80c2ZaV0dnandLMXctS0pFNEVtNnNnLUpiNDFhR0lSd1hfNXE4dmU3T0ZGaGhGYjVBb3F2Ni1HZEF0ci1zU0JNM0E3a1FuS0xXem5kSUhGSW9xWlcxWWNSenNTZFQ1ZFRncjBITm5COF9IZHdXR3Q4ekFMeUsxanZfampxbUQ0UjdhajJBSmJTdU04cTVFSV9nQzdp?oc=5",
+   "source": "The Real Deal",
+   "published": "2026-10-06T15:25:00+00:00",
+   "lean": "neutral",
+   "materiality": 5
+  },
+  {
+   "title": "Why is Devon Energy stock rallying today? - Investing.com",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZlloZTRCRUpLUUVmcWNWaXlueTkxSXkzN1pJU1UwZl9kUjh3Qmc1NDZpdWRFWm1mTWdIRWJTTWNodzBlOWlrcUxmOUNoQlZVR3k1d0NMS1E5U2FleHBPNElYLVJ1R0wzM1hSLVBrNThMeTZkNHN3NDFvN2VFYy1UaG5SSXdvRjZNdnZORGYxWnhwZVNpaS05dndCZ05wSG9DREpBYQ?oc=5",
+   "source": "Investing.com",
+   "published": "2026-10-08T13:17:49+00:00",
+   "lean": "bullish",
+   "materiality": 0
+  },
+  {
+   "title": "Dow futures slide 300 points as yields continue rising; oil gains 4%: Live updates - CNBC",
+   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5uZnFqRjRicl9Hc3lSeXlCQV9SS3QzVl83MFlGaUU5dDI5TFlWNWNmTktaTUtmLTJyNE5FQ3A2dE1lMU5pdk5IN21odldNeXlMemZpZEJuWFdVcHlWa21WaVBQOVRzNE9lR2dyOWhOOUF0amdINVkxStIBfkFVX3lxTFAxOVBHNFJ3UUZ5NXVkME1WOWpYZXZqSVpndGFCRUtTS2JJYnI3eVR6eXBDQjBkODBxYzdlOUFDaU5qMjQyS3J4b25sVmNtUlRmd0NBbGdOcjFMOHFGTEtWZkJzaU9ibXdWZjB4M2tpdWVIZi1vTS1lU19pUGk4QQ?oc=5",
+   "source": "CNBC",
+   "published": "2026-10-08T13:14:00+00:00",
+   "lean": "neutral",
+   "materiality": 0
+  },
+  {
+   "title": "US stock market today | Dow, S&P 500, Nasdaq futures fall as inflation worries weigh on sentiment - CNBC TV18",
+   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPVGJWRDdUVWRQWG5RbnFjd0k5ck02VmdsUDd5dG5ZcE16R3ZqMHBpRjdsUjBHS0pBX0hTNngySmFwemJHbnVSaDYxTkJDOFNDY1V5VjYtZ1N5Zll4WXlucl9yYzIzYWcwR0tNMnBKMEdodXFZOEVYdzBPTFhBUExVSEt3YVUxd0ZfaGZISnEtd3NoWG5OczBlc01VdjZpdmtJVERGNHdaT0JIaVdKc0c4TEJ1OEI4OExTTFJzUzlib2hoYXY3VWszb1pJMFN3T3h4TVU00gHYAUFVX3lxTE1kOUNQWDZsT3FZdzNjcE9WVzZIdldMYW04YUZOa21HZnd6NzkzM0FTcm9hT3MyLThDQVJMbzhEdm0xb0lDdHRqa0x3RGc3YXpvQ29feW9KblNleUxCU01JWEhLUmN5eUNCR2tEaUtDNjliS1NLaGFnVWg0aXhrX04tNGh2ek1KTG9SdG9LM01UcnJEMEhMamdYTUQwQXhxaThNSk1KUlZKSERMbkJva3A2QWxkQ3JmQm5lNUhyMXZDTHF2RnA3ZmN6a2FIbXZwcHB1UFcyZkdWUw?oc=5",
+   "source": "CNBC TV18",
+   "published": "2026-10-08T12:56:30+00:00",
+   "lean": "bearish",
+   "materiality": 0
+  },
+  {
+   "title": "Stocks are tumbling as oil prices surge and bond yields hit 24-year highs - Business Insider",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNUUdTWVJ5ejU0QjRVMHZjZDY2QmNrUEhqdk9hdV9HVC1ueUZqNUNienp4ejB1aEZMbFU3WDZ2Q2FvSzlVbVBOZmYxYTMzbEVtd2V0em0wRGFJNjliSTZzN25qSUpZUDB5ZWtXWE9PWGN6YVczNURDcnRXMHZlQ004VloxR3VkUWQwdWZWSU1lSVNTaWVwNlFvQ2pqVQ?oc=5",
+   "source": "Business Insider",
+   "published": "2026-10-08T12:56:27+00:00",
+   "lean": "bullish",
+   "materiality": 0
+  },
+  {
+   "title": "Stock Market Today: Oil Rises, Dow Futures Slide After Fresh Tanker Attack — Live Updates - WSJ",
+   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPRXZ4MHZha2h5MTVsV0UxVGxlcFFqZ1lvWUk3VkNxbkd3RHVRNXRRVGZfbVItMXRJa3VTbUhDa1lUM0llR0Y0eVFBRFBoSVNSMjhNR3VmNGNfVndmWm9RNnFhR2MtU20wS015RV91QmFGQ0o2LTVmRGxvX1ZRdm9Wa1Y0SXQyN0U?oc=5",
+   "source": "WSJ",
+   "published": "2026-10-08T12:52:00+00:00",
+   "lean": "neutral",
+   "materiality": 0
+  },
+  {
+   "title": "Why is Universal Display stock sliding today? - Investing.com",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPTG9kck85bkxnOGxCbldzZThTSXZaeUVkUFJOZ2JoUU8xbnczN2dxVEt3b3VybUR0UllsbTdUZzY1d1lEcWpFRjgtUEd3Zk4wRkJ4NGVJRGkybnBlel9WdUlCZDVRenhscEpVR3FxY3JERXBuOUx6Z0J6VmM1dm9LWGRaRUpoYzVhS0pQRHFHMFRIU3VGRmZVSVpHN1FMRTFDNDltdUYxRkZzUQ?oc=5",
+   "source": "Investing.com",
+   "published": "2026-10-08T12:41:49+00:00",
+   "lean": "neutral",
+   "materiality": 0
+  }
+ ],
+ "policy_brief": "## Policy and political backdrop\n\n### monetary (50)\n- [9/neutral] All Fed officials backed vote to hike benchmark rate: FOMC minutes - CFO Dive (17h ago, CFO Dive)\n  sectors: Financial Services?, Real Estate?, Utilities?, Technology?\n- [8/bearish] Fed Minutes Show Hawkish Unity Behind September Rate Hike - NDTV Profit (11h ago, NDTV Profit)\n  sectors: Real Estate-, Utilities-, Technology-, Consumer Cyclical-, Financial Services?\n- [8/bearish] Most Fed Officials See Another Rate Hike This Year but Leave Timing Open - Barron's (18h ago, Barron's)\n  sectors: Real Estate-, Utilities-, Technology-, Consumer Cyclical-, Financial Services?\n- [8/bearish] Fed Policymakers Think Another Interest Rate Hike Is Likely This Year, Minutes Show - Realtor.com (19h ago, Realtor.com)\n  sectors: Real Estate-, Utilities-, Technology-, Consumer Cyclical-, Financial Services?\n  ... and 46 more in monetary\n\n### trade (165)\n- [9/bearish] Oct 07, 2026: Tech beats tariffs: global trade growth accelerates and globalization sets new record - DHL Group (25h ago, DHL Group)\n  sectors: Consumer Cyclical-, Industrials-, Consumer Defensive-, Technology-, Basic Materials-\n- [9/bearish] Steve Adubato Examines How Tariffs and Supply Chain Issues Affect NJ Manufacturers - New Jersey Business & Industry Association (22h ago, New Jersey Business & Industry Association)\n  sectors: Consumer Cyclical-, Industrials-, Consumer Defensive-, Technology-, Basic Materials-\n- [9/bullish] Levi Strauss Q3 2026 earnings: tariff refunds lift profit outlook - Yahoo Finance (2h ago, Yahoo Finance)\n  sectors: Consumer Cyclical+, Industrials+, Consumer Defensive+, Technology+, Basic Materials+\n- [8/bearish] Trump’s Tariffs Put a Spotlight on Forced Labor. It Isn’t Going Away. - WSJ (15h ago, WSJ)\n  sectors: Consumer Cyclical-, Industrials-, Consumer Defensive-, Technology-, Basic Materials-\n  ... and 161 more in trade\n\n### geopolitical (4)\n- [7/neutral] Stock Market Today: S&P 500, Dow Jones Futures Decline as Pentagon Prepares for Potential Military Strikes on Iran — APLD, LEVI, MU in Focus (3h ago, TradingView)\n  sectors: Energy+, Industrials+, Basic Materials+, Consumer Cyclical-\n- [7/neutral] US Senators Demand Crackdown on Russia’s War Financing - Kyiv Post (11h ago, Kyiv Post)\n  sectors: Energy+, Industrials+, Basic Materials+, Consumer Cyclical-\n- [7/neutral] OPEC Holds Nov Oil Output Target Steady Amid Iran War - THISDAYLIVE (33h ago, THISDAYLIVE)\n  sectors: Energy+, Industrials+, Basic Materials+, Consumer Cyclical-\n- [5/neutral] What people in Canada are saying about the Michigan election - FOX 2 Detroit (10h ago, FOX 2 Detroit)\n\n### regulatory (4)\n- [6/neutral] French Hill Says SEC, CFTC Crypto Rules 'Fall Short' of Clarity - Altcoin Buzz (8h ago, Altcoin Buzz)\n  sectors: Financial Services?\n- [6/neutral] French Hill says SEC and CFTC crypto rules fall short of legislation - Crypto News (16h ago, Crypto News)\n  sectors: Financial Services?\n- [6/neutral] SEC and CFTC Crypto Rules 'Fall Short' of Clarity, Says Rep. French Hill - Yahoo Finance (17h ago, Yahoo Finance)\n  sectors: Financial Services?\n- [6/neutral] House Financial Services Chair Hill Says SEC, CFTC Crypto Rules Fall Short of Clarity Act - bloomingbit (18h ago, bloomingbit)\n  sectors: Financial Services?\n\n_Sector effects above are directional heuristics, not modelled relationships. The sign can invert — a rate cut is bullish for duration unless it signals a recession — and a scheduled event may already be priced._",
+ "tilt": {
+  "Financial Services": -0.9637681159420289,
+  "Real Estate": -0.9014778325123153,
+  "Utilities": -0.9014778325123153,
+  "Technology": -0.9727891156462585,
+  "Consumer Cyclical": -0.9750623441396509,
+  "Industrials": -0.9787007454739084,
+  "Consumer Defensive": -0.9644128113879004,
+  "Basic Materials": -0.9527186761229315,
+  "Energy": 0.9676898222940227,
+  "Communication Services": -0.2857142857142857
+ },
+ "limits": {
+  "risk_pct": 0.01,
+  "max_name_weight": 0.1,
+  "max_daily_new_risk": 0.04,
+  "daily_drawdown_halt": 0.03,
+  "max_positions": 10,
+  "max_per_sector": 3,
+  "min_r": 2.0,
+  "min_stop_atrs": 1.0,
+  "max_stop_pct": 0.1,
+  "max_limit_deviation": 0.03,
+  "earnings_blackout_days": 1,
+  "reentry_days": 10
+ },
+ "warnings": [
+  "筛选没有跑出结果；候选表只有你自己加的名字"
+ ],
+ "path": ""
+}

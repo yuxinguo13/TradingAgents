@@ -89,6 +89,36 @@
 "eps_actual": 2.52,
 "surprise_pct": 21.15,
 "error": ""
+},
+"TNK|2026-10-07": {
+"symbol": "TNK",
+"as_of": "2026-10-07",
+"next_date": "2026-11-04",
+"last_date": "2026-07-29",
+"eps_estimate": 5.53,
+"eps_actual": 5.56,
+"surprise_pct": 0.54,
+"error": ""
+},
+"AMD|2026-10-07": {
+"symbol": "AMD",
+"as_of": "2026-10-07",
+"next_date": "2026-11-03",
+"last_date": "2026-08-04",
+"eps_estimate": 1.61,
+"eps_actual": 1.66,
+"surprise_pct": 3.21,
+"error": ""
+},
+"RBRK|2026-10-07": {
+"symbol": "RBRK",
+"as_of": "2026-10-07",
+"next_date": "2026-12-03",
+"last_date": "2026-08-27",
+"eps_estimate": 0.04,
+"eps_actual": 0.2,
+"surprise_pct": 409.55,
+"error": ""
 }
 }
 }
