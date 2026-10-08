@@ -1,45 +1,5 @@
 {
 "rows": {
-"LITE|2026-10-06": {
-"symbol": "LITE",
-"as_of": "2026-10-06",
-"next_date": "2026-11-05",
-"last_date": "2026-08-11",
-"eps_estimate": 2.97,
-"eps_actual": 3.23,
-"surprise_pct": 8.79,
-"error": ""
-},
-"SHEL|2026-10-06": {
-"symbol": "SHEL",
-"as_of": "2026-10-06",
-"next_date": "2026-10-29",
-"last_date": "2026-07-30",
-"eps_estimate": 3.18,
-"eps_actual": 3.52,
-"surprise_pct": 10.63,
-"error": ""
-},
-"PBR|2026-10-06": {
-"symbol": "PBR",
-"as_of": "2026-10-06",
-"next_date": "2026-11-10",
-"last_date": "2026-08-06",
-"eps_estimate": 1.4,
-"eps_actual": 1.62,
-"surprise_pct": 15.52,
-"error": ""
-},
-"NAT|2026-10-06": {
-"symbol": "NAT",
-"as_of": "2026-10-06",
-"next_date": "2026-11-27",
-"last_date": "2026-08-27",
-"eps_estimate": 0.23,
-"eps_actual": 0.22,
-"surprise_pct": -3.39,
-"error": ""
-},
 "LITE|2026-10-07": {
 "symbol": "LITE",
 "as_of": "2026-10-07",
@@ -113,6 +73,26 @@
 "RBRK|2026-10-07": {
 "symbol": "RBRK",
 "as_of": "2026-10-07",
+"next_date": "2026-12-03",
+"last_date": "2026-08-27",
+"eps_estimate": 0.04,
+"eps_actual": 0.2,
+"surprise_pct": 409.55,
+"error": ""
+},
+"TNK|2026-10-08": {
+"symbol": "TNK",
+"as_of": "2026-10-08",
+"next_date": "2026-11-04",
+"last_date": "2026-07-29",
+"eps_estimate": 5.53,
+"eps_actual": 5.56,
+"surprise_pct": 0.54,
+"error": ""
+},
+"RBRK|2026-10-08": {
+"symbol": "RBRK",
+"as_of": "2026-10-08",
 "next_date": "2026-12-03",
 "last_date": "2026-08-27",
 "eps_estimate": 0.04,
