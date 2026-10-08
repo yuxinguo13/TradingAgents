@@ -40,26 +40,6 @@
    "sleeve": "core",
    "triggers": []
   },
-  "AMZN": {
-   "symbol": "AMZN",
-   "shares": 16,
-   "entry": 250.06,
-   "stop": 241.86,
-   "target": 258.54,
-   "opened": "2026-09-25",
-   "horizon_days": 30,
-   "sector": "",
-   "thesis": "接管：止损在摆动低点 244.30 之下 1%（1.5 ATR）",
-   "invalidation": "",
-   "principles": [],
-   "regime": "",
-   "parent_id": "b3121b92-5173-4929-8ab4-e9abe9212800",
-   "legs": {},
-   "adopted": true,
-   "stop_raised": false,
-   "sleeve": "core",
-   "triggers": []
-  },
   "GOOGL": {
    "symbol": "GOOGL",
    "shares": 22,
@@ -159,37 +139,6 @@
    "stop_raised": true,
    "sleeve": "core",
    "triggers": []
-  },
-  "AVT": {
-   "symbol": "AVT",
-   "shares": 75,
-   "entry": 107.0,
-   "stop": 103.72,
-   "target": 117.8,
-   "opened": "2026-10-05",
-   "horizon_days": 20,
-   "sector": "",
-   "thesis": "动量账：Avnet 周五放量 1.6 倍 +4.6% 收 52 周新高，一月跑赢标普 18.5 个点，三条均线上、上升结构（前低 86.4 → 90.9）；三条触发是榜上最完整的。FQ4 营收 83 亿（+48%）、FQ1 指引 EPS 2.80–2.90；AI/数据中心元器件拉动分销商。止损在突破日低 103.72（3.1%，0.83 ATR），目标 117.8 = 三月 +30.2% 折三分之一，R 3.3。",
-   "invalidation": "收盘跌回 103.72，次日开盘平掉；SOX 收盘跌破 50 日线；一月相对标普跌回 +10 以下。财报约 10/28–29，在 20 天持有期（到 10/25）之外，若持仓延到那时要在日志里决定。",
-   "principles": [
-    "十·强势买强势：volume+pattern+rs",
-    "十·止损在突破日低点或 20 日线取高，不给缓冲",
-    "十·到 1R 后止损每天上移到 20 日线下"
-   ],
-   "regime": "标普 7,723 在 50/200 日线上，非农 +2.9 万后 10 月加息概率 16–23%，10 年期 5.28%，VIX 15.3，Brent 102；半导体和光通信是钱去的地方；不是防御日",
-   "parent_id": "4b14fc41-0568-4796-9521-dc13075e525a",
-   "legs": {
-    "limit": "80dd925b-dab7-4ef1-a103-6cee15bd945c",
-    "stop": "ddb3c449-2f7e-4ad6-be38-818a9e41c5d5"
-   },
-   "adopted": false,
-   "stop_raised": false,
-   "sleeve": "aggressive",
-   "triggers": [
-    "volume",
-    "pattern",
-    "rs"
-   ]
   },
   "LITE": {
    "symbol": "LITE",
@@ -334,6 +283,42 @@
    "r": 0.3729028049576007,
    "reviewed": true,
    "sleeve": "core"
+  },
+  {
+   "symbol": "AMZN",
+   "shares": 16,
+   "entry": 250.06,
+   "exit": 258.55,
+   "opened": "2026-09-25",
+   "closed": "2026-10-08",
+   "reason": "target: 交易所触发止盈",
+   "thesis": "接管：止损在摆动低点 244.30 之下 1%（1.5 ATR）",
+   "invalidation": "",
+   "principles": [],
+   "pnl": 135.84,
+   "r": 1.035365853658539,
+   "reviewed": true,
+   "sleeve": "core"
+  },
+  {
+   "symbol": "AVT",
+   "shares": 75,
+   "entry": 107.0,
+   "exit": 102.52999877929688,
+   "opened": "2026-10-05",
+   "closed": "2026-10-08",
+   "reason": "closed at the venue",
+   "thesis": "动量账：Avnet 周五放量 1.6 倍 +4.6% 收 52 周新高，一月跑赢标普 18.5 个点，三条均线上、上升结构（前低 86.4 → 90.9）；三条触发是榜上最完整的。FQ4 营收 83 亿（+48%）、FQ1 指引 EPS 2.80–2.90；AI/数据中心元器件拉动分销商。止损在突破日低 103.72（3.1%，0.83 ATR），目标 117.8 = 三月 +30.2% 折三分之一，R 3.3。",
+   "invalidation": "收盘跌回 103.72，次日开盘平掉；SOX 收盘跌破 50 日线；一月相对标普跌回 +10 以下。财报约 10/28–29，在 20 天持有期（到 10/25）之外，若持仓延到那时要在日志里决定。",
+   "principles": [
+    "十·强势买强势：volume+pattern+rs",
+    "十·止损在突破日低点或 20 日线取高，不给缓冲",
+    "十·到 1R 后止损每天上移到 20 日线下"
+   ],
+   "pnl": -335.25,
+   "r": -1.3628052502143668,
+   "reviewed": true,
+   "sleeve": "aggressive"
   }
  ]
 }
