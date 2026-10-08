@@ -379,6 +379,46 @@
 "eps_actual": 1.2,
 "surprise_pct": 16.35,
 "error": ""
+},
+"HPE|2026-10-08": {
+"symbol": "HPE",
+"as_of": "2026-10-08",
+"next_date": "2026-12-03",
+"last_date": "2026-09-02",
+"eps_estimate": 0.93,
+"eps_actual": NaN,
+"surprise_pct": NaN,
+"error": ""
+},
+"LITE|2026-10-08": {
+"symbol": "LITE",
+"as_of": "2026-10-08",
+"next_date": "2026-11-05",
+"last_date": "2026-08-11",
+"eps_estimate": 2.97,
+"eps_actual": 3.23,
+"surprise_pct": 8.79,
+"error": ""
+},
+"PBR|2026-10-08": {
+"symbol": "PBR",
+"as_of": "2026-10-08",
+"next_date": "2026-11-10",
+"last_date": "2026-08-06",
+"eps_estimate": 1.4,
+"eps_actual": 1.62,
+"surprise_pct": 15.52,
+"error": ""
+},
+"DHT|2026-10-08": {
+"symbol": "DHT",
+"as_of": "2026-10-08",
+"next_date": "2026-10-28",
+"last_date": "2026-08-05",
+"eps_estimate": 1.14,
+"eps_actual": 1.22,
+"surprise_pct": 6.89,
+"error": ""
 }
 }
 }
