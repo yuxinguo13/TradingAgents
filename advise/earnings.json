@@ -1,115 +1,5 @@
 {
 "rows": {
-"TTMI|2026-10-06": {
-"symbol": "TTMI",
-"as_of": "2026-10-06",
-"next_date": "2026-11-04",
-"last_date": "2026-08-05",
-"eps_estimate": 0.9,
-"eps_actual": 0.99,
-"surprise_pct": 10.31,
-"error": ""
-},
-"VST|2026-10-06": {
-"symbol": "VST",
-"as_of": "2026-10-06",
-"next_date": "2026-11-06",
-"last_date": "2026-08-10",
-"eps_estimate": 1.63,
-"eps_actual": 0.76,
-"surprise_pct": -53.4,
-"error": ""
-},
-"APLD|2026-10-06": {
-"symbol": "APLD",
-"as_of": "2026-10-06",
-"next_date": "2026-10-07",
-"last_date": "2026-07-27",
-"eps_estimate": -0.19,
-"eps_actual": 0.04,
-"surprise_pct": 121.05,
-"error": ""
-},
-"AXTI|2026-10-06": {
-"symbol": "AXTI",
-"as_of": "2026-10-06",
-"next_date": "2026-10-29",
-"last_date": "2026-07-30",
-"eps_estimate": 0.07,
-"eps_actual": 0.19,
-"surprise_pct": 163.89,
-"error": ""
-},
-"AVGO|2026-10-06": {
-"symbol": "AVGO",
-"as_of": "2026-10-06",
-"next_date": "2026-12-09",
-"last_date": "2026-09-02",
-"eps_estimate": 3.24,
-"eps_actual": NaN,
-"surprise_pct": NaN,
-"error": ""
-},
-"MRVL|2026-10-06": {
-"symbol": "MRVL",
-"as_of": "2026-10-06",
-"next_date": "2026-12-01",
-"last_date": "2026-08-27",
-"eps_estimate": 0.93,
-"eps_actual": 0.94,
-"surprise_pct": 0.99,
-"error": ""
-},
-"ORCL|2026-10-06": {
-"symbol": "ORCL",
-"as_of": "2026-10-06",
-"next_date": "2026-12-10",
-"last_date": "2026-09-10",
-"eps_estimate": 1.74,
-"eps_actual": 1.92,
-"surprise_pct": 10.45,
-"error": ""
-},
-"TXN|2026-10-06": {
-"symbol": "TXN",
-"as_of": "2026-10-06",
-"next_date": "2026-10-21",
-"last_date": "2026-07-22",
-"eps_estimate": 1.94,
-"eps_actual": 2.14,
-"surprise_pct": 10.48,
-"error": ""
-},
-"QQQM|2026-10-06": {
-"symbol": "QQQM",
-"as_of": "2026-10-06",
-"next_date": "",
-"last_date": "",
-"eps_estimate": NaN,
-"eps_actual": NaN,
-"surprise_pct": NaN,
-"error": "no earnings calendar"
-},
-"TQQQ|2026-10-06": {
-"symbol": "TQQQ",
-"as_of": "2026-10-06",
-"next_date": "",
-"last_date": "",
-"eps_estimate": NaN,
-"eps_actual": NaN,
-"surprise_pct": NaN,
-"error": "no earnings calendar"
-},
-"GLDM|2026-10-06": {
-"symbol": "GLDM",
-"as_of": "2026-10-06",
-"next_date": "",
-"last_date": "",
-"eps_estimate": NaN,
-"eps_actual": NaN,
-"surprise_pct": NaN,
-"error": "no earnings calendar"
-},
 "TTMI|2026-10-07": {
 "symbol": "TTMI",
 "as_of": "2026-10-07",
@@ -213,6 +103,116 @@
 "GLDM|2026-10-07": {
 "symbol": "GLDM",
 "as_of": "2026-10-07",
+"next_date": "",
+"last_date": "",
+"eps_estimate": NaN,
+"eps_actual": NaN,
+"surprise_pct": NaN,
+"error": "no earnings calendar"
+},
+"TTMI|2026-10-08": {
+"symbol": "TTMI",
+"as_of": "2026-10-08",
+"next_date": "2026-11-04",
+"last_date": "2026-08-05",
+"eps_estimate": 0.9,
+"eps_actual": 0.99,
+"surprise_pct": 10.31,
+"error": ""
+},
+"VST|2026-10-08": {
+"symbol": "VST",
+"as_of": "2026-10-08",
+"next_date": "2026-11-06",
+"last_date": "2026-08-10",
+"eps_estimate": 1.63,
+"eps_actual": 0.76,
+"surprise_pct": -53.4,
+"error": ""
+},
+"APLD|2026-10-08": {
+"symbol": "APLD",
+"as_of": "2026-10-08",
+"next_date": "2027-01-06",
+"last_date": "2026-10-07",
+"eps_estimate": -0.3,
+"eps_actual": -0.01,
+"surprise_pct": 96.69,
+"error": ""
+},
+"AXTI|2026-10-08": {
+"symbol": "AXTI",
+"as_of": "2026-10-08",
+"next_date": "2026-10-29",
+"last_date": "2026-07-30",
+"eps_estimate": 0.07,
+"eps_actual": 0.19,
+"surprise_pct": 163.89,
+"error": ""
+},
+"AVGO|2026-10-08": {
+"symbol": "AVGO",
+"as_of": "2026-10-08",
+"next_date": "2026-12-09",
+"last_date": "2026-09-02",
+"eps_estimate": 3.24,
+"eps_actual": NaN,
+"surprise_pct": NaN,
+"error": ""
+},
+"MRVL|2026-10-08": {
+"symbol": "MRVL",
+"as_of": "2026-10-08",
+"next_date": "2026-12-01",
+"last_date": "2026-08-27",
+"eps_estimate": 0.93,
+"eps_actual": 0.94,
+"surprise_pct": 0.99,
+"error": ""
+},
+"ORCL|2026-10-08": {
+"symbol": "ORCL",
+"as_of": "2026-10-08",
+"next_date": "2026-12-10",
+"last_date": "2026-09-10",
+"eps_estimate": 1.74,
+"eps_actual": 1.92,
+"surprise_pct": 10.45,
+"error": ""
+},
+"TXN|2026-10-08": {
+"symbol": "TXN",
+"as_of": "2026-10-08",
+"next_date": "2026-10-21",
+"last_date": "2026-07-22",
+"eps_estimate": 1.94,
+"eps_actual": 2.14,
+"surprise_pct": 10.48,
+"error": ""
+},
+"QQQM|2026-10-08": {
+"symbol": "QQQM",
+"as_of": "2026-10-08",
+"next_date": "",
+"last_date": "",
+"eps_estimate": NaN,
+"eps_actual": NaN,
+"surprise_pct": NaN,
+"error": "no earnings calendar"
+},
+"TQQQ|2026-10-08": {
+"symbol": "TQQQ",
+"as_of": "2026-10-08",
+"next_date": "",
+"last_date": "",
+"eps_estimate": NaN,
+"eps_actual": NaN,
+"surprise_pct": NaN,
+"error": "no earnings calendar"
+},
+"GLDM|2026-10-08": {
+"symbol": "GLDM",
+"as_of": "2026-10-08",
 "next_date": "",
 "last_date": "",
 "eps_estimate": NaN,

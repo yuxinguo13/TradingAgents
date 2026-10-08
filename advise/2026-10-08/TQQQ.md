@@ -69,8 +69,8 @@ _读不到财务数据：该代码没有可用的财务数据（可能是 ETF、
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 3h 前 | 8 | 中性 | [ProShares UltraPro QQQ $TQQQ Holdings Lessened by Toth Financial Advisory Corp - MarketBeat](https://news.google.com/rss/articles/CBMi1AFBVV95cUxNQ1JNVXVRS19IVWR3STl3MWw0UXhJUnR6NG43OGpPNVZWLUZhZFVoanozOWlaZnpfelFQMFZwMU14RU9zV1ZyTTRCMnEtN1Q2cTIxUUNQMHFKcjhSakdHbG5LTWFfY1d1MVJrV2drd09sZ1VWT2RuaVJSUUFlWGlMWjNUaTZHOUVzTXdwbTZoTjJIZ0dFWExCQmpDeGhPeUdicFRna2RNU2lnamFIWnJiRTBab3FIZFR3eUNIaXQ5cEN3Ni1JRkx0dGdNWHVTYlhvMjQ1Vw?oc=5) | MarketBeat |
-| 34h 前 | 0 | 中性 | [RTQQQ to PHP: ProShares UltraPro QQQ Tokenized Stock (Reality) Price in Philippine Peso - CoinGecko](https://news.google.com/rss/articles/CBMifEFVX3lxTE04ZG9YNlJnUl8zbFBkeXdwYWhDckhvcHppNXRCcEx3SGdzcGdyaklELW8xS3FGU3p0NnFFZ09YSVdvYU1VX3YwNUYteEF6YTh1WHVRVXNtRldSZElTYktyVE9JRDR6ZkJacDhhQWF5UDdUR3pPa3l3NHFjbl8?oc=5) | CoinGecko |
+| 4h 前 | 8 | 中性 | [ProShares UltraPro QQQ $TQQQ Holdings Lessened by Toth Financial Advisory Corp - MarketBeat](https://news.google.com/rss/articles/CBMi1AFBVV95cUxNQ1JNVXVRS19IVWR3STl3MWw0UXhJUnR6NG43OGpPNVZWLUZhZFVoanozOWlaZnpfelFQMFZwMU14RU9zV1ZyTTRCMnEtN1Q2cTIxUUNQMHFKcjhSakdHbG5LTWFfY1d1MVJrV2drd09sZ1VWT2RuaVJSUUFlWGlMWjNUaTZHOUVzTXdwbTZoTjJIZ0dFWExCQmpDeGhPeUdicFRna2RNU2lnamFIWnJiRTBab3FIZFR3eUNIaXQ5cEN3Ni1JRkx0dGdNWHVTYlhvMjQ1Vw?oc=5) | MarketBeat |
+| 35h 前 | 0 | 中性 | [RTQQQ to PHP: ProShares UltraPro QQQ Tokenized Stock (Reality) Price in Philippine Peso - CoinGecko](https://news.google.com/rss/articles/CBMifEFVX3lxTE04ZG9YNlJnUl8zbFBkeXdwYWhDckhvcHppNXRCcEx3SGdzcGdyaklELW8xS3FGU3p0NnFFZ09YSVdvYU1VX3YwNUYteEF6YTh1WHVRVXNtRldSZElTYktyVE9JRDR6ZkJacDhhQWF5UDdUR3pPa3l3NHFjbl8?oc=5) | CoinGecko |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -100,7 +100,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-05 | 80.95 | 83.38 | 80.85 | **83.12** | +2.6% | 36,928,700 |
 | 2026-10-06 | 84.54 | 85.32 | 84.09 | **84.25** | +1.4% | 36,973,900 |
 | 2026-10-07 | 82.32 | 83.75 | 81.60 | **83.62** | -0.7% | 38,525,600 |
-| 2026-10-08 | 82.33 | 83.40 | 78.78 | **80.23** | -4.1% | 65,015,910 |
+| 2026-10-08 | 82.32 | 83.40 | 78.78 | **80.23** | -4.1% | 65,015,910 |
 
 ## 七、自己去查（本页不做独立验证）
 

@@ -1,12 +1,12 @@
 {
  "date": "2026-10-08",
  "data_date": "2026-10-08",
- "generated_at": "2026-10-08T20:18:00.905498",
+ "generated_at": "2026-10-08T20:51:23.758158",
  "source": "/root/.tradingagents/desk/advise/my_portfolio.json",
  "horizon": "long",
- "total": 40614.40017700195,
+ "total": 40617.10037231445,
  "cash": 14455.75,
- "cash_pct": 0.3559267140964849,
+ "cash_pct": 0.35590305234721703,
  "lines": [
   {
    "symbol": "APLD",
@@ -16,7 +16,7 @@
    "cost": 25.155,
    "price": 23.850000381469727,
    "value": 477.00000762939453,
-   "weight": 0.011744603036129472,
+   "weight": 0.011743822263455534,
    "pnl_pct": -0.051878339039168164,
    "action": "卖出",
    "act_shares": 20,
@@ -45,7 +45,7 @@
    "cost": 350.63,
    "price": 360.1400146484375,
    "value": 2520.9801025390625,
-   "weight": 0.06207109034116861,
+   "weight": 0.0620669639001956,
    "pnl_pct": 0.027122649654728548,
    "action": "减仓",
    "act_shares": 3,
@@ -56,7 +56,7 @@
    "cautions": [
     "政策面对该板块不利（倾向 -0.96）"
    ],
-   "stop": 293.59660632324216,
+   "stop": 293.5966075439453,
    "target": NaN,
    "earnings_date": "2026-12-09",
    "earnings_in": 62.0,
@@ -73,7 +73,7 @@
    "cost": 72.84,
    "price": 71.66000366210938,
    "value": 71.66000366210938,
-   "weight": 0.0017643989163894412,
+   "weight": 0.0017642816204318337,
    "pnl_pct": -0.016199839894160184,
    "action": "减仓",
    "act_shares": 1,
@@ -101,7 +101,7 @@
    "cost": 84.855,
    "price": 80.2300033569336,
    "value": 401.15001678466797,
-   "weight": 0.009877039056010005,
+   "weight": 0.009876382437632131,
    "pnl_pct": -0.054504703824953316,
    "action": "加仓",
    "act_shares": 25,
@@ -110,7 +110,7 @@
     "趋势完好且回调到均线附近（76.95），仓位只占 1.0%，可以补"
    ],
    "cautions": [],
-   "stop": 51.16376365661621,
+   "stop": 51.163763565063476,
    "target": 82.64,
    "earnings_date": "",
    "earnings_in": NaN,
@@ -122,12 +122,12 @@
   {
    "symbol": "TTMI",
    "name": "TTM Technologies, Inc.",
-   "sector": "Unknown",
+   "sector": "Technology",
    "shares": 65.0,
    "cost": 120.72,
    "price": 117.5,
    "value": 7637.5,
-   "weight": 0.18804906552146403,
+   "weight": 0.18803656415626102,
    "pnl_pct": -0.026673293571901957,
    "action": "持有",
    "act_shares": 0,
@@ -137,7 +137,8 @@
    ],
    "cautions": [
     "50 日和 200 日线都失守、近三月 -20%；长线账户不按此卖，复核线在 200 日线下 20%（101.17），论点变了才走",
-    "有利空消息 1 条，看一眼"
+    "有利空消息 2 条，看一眼",
+    "政策面对该板块不利（倾向 -0.96）"
    ],
    "stop": 101.1672801513672,
    "target": NaN,
@@ -156,7 +157,7 @@
    "cost": 303.47,
    "price": 307.8500061035156,
    "value": 6157.0001220703125,
-   "weight": 0.15159648044135673,
+   "weight": 0.15158640241751636,
    "pnl_pct": 0.014433077745792389,
    "action": "持有",
    "act_shares": 0,
@@ -165,7 +166,7 @@
     "趋势向上且结构完整，且贴近 52 周高点——追高的代价是止损离得远；顺势的一侧在上方，风险在于结构一旦破位就要认"
    ],
    "cautions": [],
-   "stop": 220.7406517944336,
+   "stop": 220.74065197753907,
    "target": 317.09,
    "earnings_date": "",
    "earnings_in": NaN,
@@ -182,7 +183,7 @@
    "cost": 137.74,
    "price": 156.13999938964844,
    "value": 3122.7999877929688,
-   "weight": 0.07688898455186999,
+   "weight": 0.07688387302805941,
    "pnl_pct": 0.13358501081492968,
    "action": "持有",
    "act_shares": 0,
@@ -191,9 +192,9 @@
     "趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌"
    ],
    "cautions": [
-    "政策面对该板块不利（倾向 -0.85）"
+    "政策面对该板块不利（倾向 -0.81）"
    ],
-   "stop": 123.44187219238282,
+   "stop": 123.44187225341798,
    "target": 161.72,
    "earnings_date": "2026-11-06",
    "earnings_in": 29.0,
@@ -208,10 +209,10 @@
    "sector": "Technology",
    "shares": 20.0,
    "cost": 145.19,
-   "price": 135.55499267578125,
-   "value": 2711.099853515625,
-   "weight": 0.06675218251901686,
-   "pnl_pct": -0.06636137009586573,
+   "price": 135.69000244140625,
+   "value": 2713.800048828125,
+   "weight": 0.06681422415564439,
+   "pnl_pct": -0.06543148673182553,
    "action": "持有",
    "act_shares": 0,
    "urgent": false,
@@ -223,7 +224,7 @@
     "有利空消息 8 条，看一眼",
     "政策面对该板块不利（倾向 -0.96）"
    ],
-   "stop": 129.10434915161133,
+   "stop": 129.10488919067384,
    "target": NaN,
    "earnings_date": "2026-12-10",
    "earnings_in": 63.0,
@@ -240,7 +241,7 @@
    "cost": 276.94,
    "price": 288.20001220703125,
    "value": 1441.0000610351562,
-   "weight": 0.035480028136698365,
+   "weight": 0.035477669450214494,
    "pnl_pct": 0.04065867049552696,
    "action": "持有",
    "act_shares": 0,
@@ -270,7 +271,7 @@
    "cost": 252.9,
    "price": 274.6600036621094,
    "value": 1373.3000183105469,
-   "weight": 0.03381313062178825,
+   "weight": 0.033810882749439684,
    "pnl_pct": 0.08604192828038504,
    "action": "持有",
    "act_shares": 0,
@@ -279,9 +280,10 @@
     "趋势向上且结构完整；顺势的一侧在上方，风险在于结构一旦破位就要认"
    ],
    "cautions": [
+    "有利空消息 3 条，看一眼",
     "政策面对该板块不利（倾向 -0.96）"
    ],
-   "stop": 136.62841796875,
+   "stop": 136.62841793823245,
    "target": 290.05,
    "earnings_date": "2026-12-01",
    "earnings_in": 54.0,
@@ -298,7 +300,7 @@
    "cost": 82.345,
    "price": 81.72000122070312,
    "value": 245.16000366210938,
-   "weight": 0.006036282761623353,
+   "weight": 0.006035881473932493,
    "pnl_pct": -0.007590002784587657,
    "action": "持有",
    "act_shares": 0,
@@ -318,34 +320,34 @@
   }
  ],
  "sector_weights": {
-  "Unknown": 0.35555886778045415,
-  "Utilities": 0.07688898455186999,
-  "Technology": 0.211625433571191
+  "Technology": 0.39971440829564253,
+  "Utilities": 0.07688387302805941,
+  "Unknown": 0.167498666329081
  },
  "tilt": {
-  "Real Estate": -0.8540145985401459,
-  "Utilities": -0.8540145985401459,
-  "Technology": -0.9599198396793587,
-  "Consumer Cyclical": -0.9626168224299065,
-  "Financial Services": -0.9606299212598425,
-  "Industrials": -0.9753390875462392,
+  "Real Estate": -0.8130841121495327,
+  "Utilities": -0.8130841121495327,
+  "Technology": -0.9573560767590619,
+  "Consumer Cyclical": -0.9603960396039604,
+  "Financial Services": -0.9610136452241715,
+  "Industrials": -0.9754901960784313,
   "Consumer Defensive": -0.9485861182519281,
   "Basic Materials": -0.9393939393939394,
-  "Energy": 0.9623352165725048
+  "Energy": 0.9626865671641791
  },
- "policy_brief": "## Policy and political backdrop\n\n### monetary (23)\n- [9/bearish] Fed officials deemed another rate hike “appropriate” but didn’t commit - CFO Brew (4h ago, CFO Brew)\n  sectors: Real Estate-, Utilities-, Technology-, Consumer Cyclical-, Financial Services?\n- [8/bearish] Fed Minutes Show Hawkish Unity Behind September Rate Hike - NDTV Profit (18h ago, NDTV Profit)\n  sectors: Real Estate-, Utilities-, Technology-, Consumer Cyclical-, Financial Services?\n- [8/bearish] Fed officials view another rate hike as ‘likely,’ meeting minutes show - The Hill (22h ago, The Hill)\n  sectors: Real Estate-, Utilities-, Technology-, Consumer Cyclical-, Financial Services?\n- [8/bearish] Fed policymakers saw multiple 2026 rate hikes as likely, September FOMC minutes show - Scotsman Guide (23h ago, Scotsman Guide)\n  sectors: Real Estate-, Utilities-, Technology-, Consumer Cyclical-, Financial Services?\n  ... and 19 more in monetary\n\n### trade (123)\n- [9/bearish] Wholesale, tariff refunds deliver for Levi’s in rough Q3 - Retail Dive (4h ago, Retail Dive)\n  sectors: Consumer Cyclical-, Industrials-, Consumer Defensive-, Technology-, Basic Materials-\n- [9/bullish] Levi Strauss lifts full-year earnings outlook following tariff refunds and strategic expansion - The American Bazaar (4h ago, The American Bazaar)\n  sectors: Consumer Cyclical+, Industrials+, Consumer Defensive+, Technology+, Basic Materials+\n- [8/bearish] Inflation on many everyday items was entirely due to tariffs, NY Fed says - CNBC (8h ago, CNBC)\n  sectors: Consumer Cyclical-, Industrials-, Consumer Defensive-, Technology-, Basic Materials-\n- [8/bearish] NY Fed: Trump tariffs added 2.9 points to consumer goods inflation - Quartz (5h ago, Quartz)\n  sectors: Consumer Cyclical-, Industrials-, Consumer Defensive-, Technology-, Basic Materials-\n  ... and 119 more in trade\n\n### geopolitical (3)\n- [7/neutral] US Senators Demand Crackdown on Russia’s War Financing - Kyiv Post (18h ago, Kyiv Post)\n  sectors: Energy+, Industrials+, Basic Materials+, Consumer Cyclical-\n- [7/neutral] Ethiopia’s War Reaches the Red Sea: Ports, Power and Escalation - https://debuglies.com (8h ago, https://debuglies.com)\n  sectors: Energy+, Industrials+, Basic Materials+, Consumer Cyclical-\n- [5/neutral] What people in Canada are saying about the Michigan election - FOX 2 Detroit (17h ago, FOX 2 Detroit)\n\n### regulatory (4)\n- [7/bearish] SEC Approves FINRA’s New “Outside Activities” Rule - WilmerHale (1h ago, WilmerHale)\n  sectors: Financial Services-\n- [6/neutral] French Hill Says SEC, CFTC Crypto Rules 'Fall Short' of Clarity - Altcoin Buzz (15h ago, Altcoin Buzz)\n  sectors: Financial Services?\n- [6/neutral] Clarity Act Sponsor Says SEC, CFTC Crypto Rules Cannot Replace Legislation - PYMNTS.com (3h ago, PYMNTS.com)\n  sectors: Financial Services?\n- [6/neutral] House Financial Services Chair Hill Says SEC, CFTC Crypto Rules Fall Short of Clarity Act - bloomingbit (25h ago, bloomingbit)\n  sectors: Financial Services?\n\n_Sector effects above are directional heuristics, not modelled relationships. The sign can invert — a rate cut is bullish for duration unless it signals a recession — and a scheduled event may already be priced._",
+ "policy_brief": "## Policy and political backdrop\n\n### monetary (19)\n- [9/bearish] Fed officials deemed another rate hike “appropriate” but didn’t commit - CFO Brew (4h ago, CFO Brew)\n  sectors: Real Estate-, Utilities-, Technology-, Consumer Cyclical-, Financial Services?\n- [8/bearish] Fed Minutes Show Hawkish Unity Behind September Rate Hike - NDTV Profit (19h ago, NDTV Profit)\n  sectors: Real Estate-, Utilities-, Technology-, Consumer Cyclical-, Financial Services?\n- [8/bearish] Fed officials view another rate hike as ‘likely,’ meeting minutes show - The Hill (23h ago, The Hill)\n  sectors: Real Estate-, Utilities-, Technology-, Consumer Cyclical-, Financial Services?\n- [8/bearish] Fed policymakers saw multiple 2026 rate hikes as likely, September FOMC minutes show - Scotsman Guide (23h ago, Scotsman Guide)\n  sectors: Real Estate-, Utilities-, Technology-, Consumer Cyclical-, Financial Services?\n  ... and 15 more in monetary\n\n### trade (124)\n- [9/bearish] Wholesale, tariff refunds deliver for Levi’s in rough Q3 - Retail Dive (4h ago, Retail Dive)\n  sectors: Consumer Cyclical-, Industrials-, Consumer Defensive-, Technology-, Basic Materials-\n- [9/bullish] Levi Strauss lifts full-year earnings outlook following tariff refunds and strategic expansion - The American Bazaar (5h ago, The American Bazaar)\n  sectors: Consumer Cyclical+, Industrials+, Consumer Defensive+, Technology+, Basic Materials+\n- [8/bearish] Inflation on many everyday items was entirely due to tariffs, NY Fed says - CNBC (9h ago, CNBC)\n  sectors: Consumer Cyclical-, Industrials-, Consumer Defensive-, Technology-, Basic Materials-\n- [8/bearish] NY Fed: Trump tariffs added 2.9 points to consumer goods inflation - Quartz (6h ago, Quartz)\n  sectors: Consumer Cyclical-, Industrials-, Consumer Defensive-, Technology-, Basic Materials-\n  ... and 120 more in trade\n\n### geopolitical (3)\n- [7/neutral] US Senators Demand Crackdown on Russia’s War Financing - Kyiv Post (19h ago, Kyiv Post)\n  sectors: Energy+, Industrials+, Basic Materials+, Consumer Cyclical-\n- [7/neutral] Ethiopia’s War Reaches the Red Sea: Ports, Power and Escalation - https://debuglies.com (8h ago, https://debuglies.com)\n  sectors: Energy+, Industrials+, Basic Materials+, Consumer Cyclical-\n- [5/neutral] What people in Canada are saying about the Michigan election - FOX 2 Detroit (18h ago, FOX 2 Detroit)\n\n### regulatory (4)\n- [7/bearish] SEC Approves FINRA’s New “Outside Activities” Rule - WilmerHale (2h ago, WilmerHale)\n  sectors: Financial Services-\n- [6/neutral] French Hill Says SEC, CFTC Crypto Rules 'Fall Short' of Clarity - Altcoin Buzz (15h ago, Altcoin Buzz)\n  sectors: Financial Services?\n- [6/neutral] Clarity Act Sponsor Says SEC, CFTC Crypto Rules Cannot Replace Legislation - PYMNTS.com (3h ago, PYMNTS.com)\n  sectors: Financial Services?\n- [6/neutral] House Financial Services Chair Hill Says SEC, CFTC Crypto Rules Fall Short of Clarity Act - bloomingbit (25h ago, bloomingbit)\n  sectors: Financial Services?\n\n_Sector effects above are directional heuristics, not modelled relationships. The sign can invert — a rate cut is bullish for duration unless it signals a recession — and a scheduled event may already be priced._",
  "macro_read": [
   "标普500 收 7,765，近一周 +1.3%，近一月 +1.7%，站在 50 日和 200 日线上方",
   "10 年期美债收益率 5.23%，较一月前 +0.39 个百分点",
   "收益率曲线正向，10年期高于3月期 1.19 个百分点",
-  "VIX 15.5，波动平静",
+  "VIX 15.4，波动平静",
   "美元指数 102.1，近一月 +3.4%",
-  "原油 91 美元（月 -5.4%），黄金 4,158 美元（月 -6.8%）",
-  "本周最强板块：能源 +4.0%、必需消费 +3.8%；最弱：工业 -0.2%"
+  "原油 91 美元（月 -5.5%），黄金 4,159 美元（月 -6.8%）",
+  "本周最强板块：能源 +4.1%、必需消费 +3.8%；最弱：工业 -0.1%"
  ],
  "alerts": [
   "需要今天处理：APLD、AVGO、AXTI",
-  "科技占 21% 而政策面对它不利（-0.96）",
+  "科技占 40% 而政策面对它不利（-0.96）",
   "两周内财报：TXN（2026-10-21）"
  ],
  "warnings": []

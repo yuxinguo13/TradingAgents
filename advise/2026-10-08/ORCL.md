@@ -48,13 +48,13 @@ _科技 · 数据截至 2026-10-08 收盘 → 面向 2026-10-08 开盘_
 
 ### 图形读数
 
-- **均线排列**：空头排列 — 现价距 20 日 142.51（-4.9%）、50 日 145.47（-6.8%）、200 日 161.38（-16.0%）
+- **均线排列**：空头排列 — 现价距 20 日 142.52（-4.8%）、50 日 145.47（-6.7%）、200 日 161.38（-15.9%）
 - **形态结构**：下降结构 — 更低的高点 + 更低的低点；前高 170.70 → 153.60（-10.0%）、前低 139.00 → 131.58（-5.3%）
-- **动能**：RSI(14) 41，偏弱；月 -16.1%、季 -3.6%，节奏平稳
-- **波动**：日均真实波幅约为价格的 4.3%；按本报告 2 ATR 的止损惯例，一个 R 相当于 8.7% 的价格距离
-- **位置**：距 52 周高点 -56.3%，距 52 周低点 +17.9%
-- **量能**：最新一日成交量为 20 日均量的 1.0 倍，量能正常
-- **相对强度**：近一月跑输 标普500 17.9 个百分点
+- **动能**：RSI(14) 42，偏弱；月 -16.0%、季 -3.5%，节奏平稳
+- **波动**：日均真实波幅约为价格的 4.3%；按本报告 2 ATR 的止损惯例，一个 R 相当于 8.6% 的价格距离
+- **位置**：距 52 周高点 -56.2%，距 52 周低点 +18.0%
+- **量能**：最新一日成交量为 20 日均量的 1.2 倍，量能正常
+- **相对强度**：近一月跑输 标普500 17.8 个百分点
 - **支撑 / 阻力**：最近的摆动低点 131.58，摆动高点 148.55（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
 
 **我的读图结论**：趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌
@@ -63,13 +63,13 @@ _以上每一条都是对已经发生的价格的描述。均线、RSI、摆动�
 
 ## 三、财报与基本面
 
-市值 $4,109.35亿 · 行业 Technology / Software - Infrastructure · TTM 营收 $717.76亿 · TTM EPS 6.38 · 股息率 1.39% · Beta 1.77 · 空头占流通股 2.7%
+市值 $4,113.44亿 · 行业 Technology / Software - Infrastructure · TTM 营收 $717.76亿 · TTM EPS 6.38 · 股息率 1.39% · Beta 1.77 · 空头占流通股 2.7%
 
-- **估值**：TTM 市盈率 21.2 倍；前瞻市盈率 12.3 倍（市场预期未来一年盈利上升）；市销率 5.7 倍；EV/EBITDA 16.6 倍；PEG 0.81（低于 1，增长尚未被价格吃掉）。
+- **估值**：TTM 市盈率 21.3 倍；前瞻市盈率 12.3 倍（市场预期未来一年盈利上升）；市销率 5.7 倍；EV/EBITDA 16.6 倍；PEG 0.81（低于 1，增长尚未被价格吃掉）。
 - **增长**：最新季度营收同比 +29.6%；盈利同比 +54.5%；最近三个季度营收连续环比上升；最近 7 次财报里 5 次超预期。
 - **盈利质量**：毛利率 64.0%、营业利润率 35.6%、净利率 26.4%、ROE 41.2%。
 - **资产负债**：现金 $370.77亿；有息负债 $1,691.43亿；负债/权益 251.7%（负债偏重）；流动比率 1.17；自由现金流 -$458.54亿，为负，公司在净烧钱。
-- **卖方预期**：41 位分析师覆盖；平均评级「买入」（1.58/5，1 为最看多）；目标价均值 237.97（较现价 +75.6%），区间 110.00–400.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
+- **卖方预期**：41 位分析师覆盖；平均评级「买入」（1.58/5，1 为最看多）；目标价均值 237.97（较现价 +75.4%），区间 110.00–400.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
 
 **分季度损益**（季度数据，最新在左）
 
@@ -112,18 +112,18 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 2h 前 | 8 | 中性 | [Oracle Corporation $ORCL Stock Position Reduced by YHB Investment Advisors Inc. - MarketBeat](https://news.google.com/rss/articles/CBMi1AFBVV95cUxQeGVtZlJXNEIwVEI0Z1BmUGJ3N0tSVERiam03UkdDQU5pSFJJam1DeERHcW5KaWFqTWk5VkRaRlBiSFJsd2tFUUJtZzBwU21uNmUtR2haSnJ2bWp4b1hkYUE2dGMyR2FXRUgtQmxLV1NBZUFyOTM4a3huT3g5cWE1WXowcVVPZzNnd1cwNEtwREJmeXZQd1VXMERqU1drRlI5MUhOSTF1bFJNUE1ONEJRNXdfdmlSRWl3UkVSVVZlLWZNeEFWc2dsZ3I0Y2FxMmd5Y2RIYw?oc=5) | MarketBeat |
-| 21h 前 | 8 | 中性 | [Oracle Corporation $ORCL Stock Holdings Reduced by Canandaigua National Bank & Trust Co. - MarketBeat](https://news.google.com/rss/articles/CBMi3gFBVV95cUxQY0VuUWFCYTJ1YnNkTmhFUDZJOGt3THFsZE5EZ0F2MDlWbEdnSG1DdXlRZm84dnBjYUc2aFB4RmhUbDRJZm5WMWNFeDVkOXNWaFF5d1JfRjJyQndUSnZzOE5RQWdOZGNJXy15ckh0VG1RRDIxbHMydlNsMmYyZDhNQjFjaDl1WDhwVkJPX1VEbTR4dlFGYzEtX1kxeE96elFCQUFMek5uS2w0Q2lORUd1R3A4amU2eWtYSWhyZF9TRXR1ZEd0UkFXOXloQUNVZ0VGMlFRTTlDdHc3d01wV1E?oc=5) | MarketBeat |
-| 12h 前 | 2 | 中性 | [Worth Asset Management LLC Sells 6,335 Shares of Oracle Corporation $ORCL - MarketBeat](https://news.google.com/rss/articles/CBMizAFBVV95cUxPdXhHZlVnTDBHalN1Y3BtaGp5NGtYd2NXWlpJdGF3a0YwQ0QyRFF4N1RHekZ6bHV0cTBsNFhSQmpvX0ZCWGhJMzVfMTVrc2ZVZk5fUVBEdWtuQTJyb2ZXWGtuVmFmajVIZjJJMUpIM2s3dzJHWTFJVkM4YlpSa0tGemNadDlFTTN3dlBsdGtjZlVQSkdtY19tUXBuSWtHVUZVdXpmd3A2M1B2U0NfUGd2NGRienhvdkQ1M25sN1N0QlZ3MmR1V0F1S01oWDI?oc=5) | MarketBeat |
-| 12h 前 | 2 | 中性 | [Wealth Enhancement Trust Services Inc. Lowers Stake in Oracle Corporation $ORCL - MarketBeat](https://news.google.com/rss/articles/CBMi1AFBVV95cUxNZHdTQWFnQUtqRjNJbld0aGtTdG1ZNmJMMVZOSEx4MEgyRHJLZjVTaWdJcWRlTVkwUGlscWNKUTNQcXZnT1dJZm55ZjJqY1dqQl9mSTVhblBtcGxyUXFTRW9GOGctcGFLSW5DblhhV2hiSkdEajBHN0dLSFpfNHFodkh2cmtxNHRxWnQ3OExNQmxTNXdzVjlPeVgzWGxzb2RLUm04R0J6eGVic3NIWnpwM1VjX0lnWUNWWkJ3cTc3ZW5IMmEtX1R1ZVZJTHFtTm5tNGhEbA?oc=5) | MarketBeat |
+| 3h 前 | 8 | 中性 | [Oracle Corporation $ORCL Stock Position Reduced by YHB Investment Advisors Inc. - MarketBeat](https://news.google.com/rss/articles/CBMi1AFBVV95cUxQeGVtZlJXNEIwVEI0Z1BmUGJ3N0tSVERiam03UkdDQU5pSFJJam1DeERHcW5KaWFqTWk5VkRaRlBiSFJsd2tFUUJtZzBwU21uNmUtR2haSnJ2bWp4b1hkYUE2dGMyR2FXRUgtQmxLV1NBZUFyOTM4a3huT3g5cWE1WXowcVVPZzNnd1cwNEtwREJmeXZQd1VXMERqU1drRlI5MUhOSTF1bFJNUE1ONEJRNXdfdmlSRWl3UkVSVVZlLWZNeEFWc2dsZ3I0Y2FxMmd5Y2RIYw?oc=5) | MarketBeat |
+| 22h 前 | 8 | 中性 | [Oracle Corporation $ORCL Stock Holdings Reduced by Canandaigua National Bank & Trust Co. - MarketBeat](https://news.google.com/rss/articles/CBMi3gFBVV95cUxQY0VuUWFCYTJ1YnNkTmhFUDZJOGt3THFsZE5EZ0F2MDlWbEdnSG1DdXlRZm84dnBjYUc2aFB4RmhUbDRJZm5WMWNFeDVkOXNWaFF5d1JfRjJyQndUSnZzOE5RQWdOZGNJXy15ckh0VG1RRDIxbHMydlNsMmYyZDhNQjFjaDl1WDhwVkJPX1VEbTR4dlFGYzEtX1kxeE96elFCQUFMek5uS2w0Q2lORUd1R3A4amU2eWtYSWhyZF9TRXR1ZEd0UkFXOXloQUNVZ0VGMlFRTTlDdHc3d01wV1E?oc=5) | MarketBeat |
+| 13h 前 | 2 | 中性 | [Worth Asset Management LLC Sells 6,335 Shares of Oracle Corporation $ORCL - MarketBeat](https://news.google.com/rss/articles/CBMizAFBVV95cUxPdXhHZlVnTDBHalN1Y3BtaGp5NGtYd2NXWlpJdGF3a0YwQ0QyRFF4N1RHekZ6bHV0cTBsNFhSQmpvX0ZCWGhJMzVfMTVrc2ZVZk5fUVBEdWtuQTJyb2ZXWGtuVmFmajVIZjJJMUpIM2s3dzJHWTFJVkM4YlpSa0tGemNadDlFTTN3dlBsdGtjZlVQSkdtY19tUXBuSWtHVUZVdXpmd3A2M1B2U0NfUGd2NGRienhvdkQ1M25sN1N0QlZ3MmR1V0F1S01oWDI?oc=5) | MarketBeat |
+| 13h 前 | 2 | 中性 | [Wealth Enhancement Trust Services Inc. Lowers Stake in Oracle Corporation $ORCL - MarketBeat](https://news.google.com/rss/articles/CBMi1AFBVV95cUxNZHdTQWFnQUtqRjNJbld0aGtTdG1ZNmJMMVZOSEx4MEgyRHJLZjVTaWdJcWRlTVkwUGlscWNKUTNQcXZnT1dJZm55ZjJqY1dqQl9mSTVhblBtcGxyUXFTRW9GOGctcGFLSW5DblhhV2hiSkdEajBHN0dLSFpfNHFodkh2cmtxNHRxWnQ3OExNQmxTNXdzVjlPeVgzWGxzb2RLUm04R0J6eGVic3NIWnpwM1VjX0lnWUNWWkJ3cTc3ZW5IMmEtX1R1ZVZJTHFtTm5tNGhEbA?oc=5) | MarketBeat |
 | 21h 前 | 2 | 中性 | [Rhodes Investment Advisors Inc. ADV Buys 3,677 Shares of Oracle Corporation $ORCL - MarketBeat](https://news.google.com/rss/articles/CBMi1gFBVV95cUxQTmk0ZWRRU2ZUSjQ1OVFkY240ZTc0WDdHNVZUbWlpZ1A5bEQzY2puSG1QWUVxQ3dmMXpaMUxIaEJEalVEaDd2b0FLeUJobEIxYVZ1bHRrcGlwakx5RTd2QnQ4SkFrbUtSVG5sYTRwNUJQdG5IMXNmV3RyWGFUMnRfT0pINHhMNngtRTlUd2hYSFhIVGtrNElCN01VMTMyM3A5RG1uYnBXWFpibC1lalJ3XzF6RzFjM21Wb2ptUjhRQ0JjUUdiNmt1aHR4UTQ3WGFSV2VsWmJB?oc=5) | MarketBeat |
-| 0h 前 | 0 | 中性 | [ORCL Stock Tests $136 as Project Jupiter Delays, OpenAI Revenue Concerns Threaten Growth - FXLeaders](https://news.google.com/rss/articles/CBMiyAFBVV95cUxNN05KTXpqRXFkLU1zLU5NNkJsSmxxMHZGSXliTjJFZklaUGVZc3ZEdWtxR2QtRzMxZXV6TmRyMzlMU1J4cDF6TDR1YjMyYWhiVmdFWUg0b0RTYzR4WGFFZURKcERvclFtNjRncjhnU1lLRG44NHR3bVBYTExsYnIyM3FtSEczTl9NbEdYLXQ0SjExcUwzRmtMVTVaakg4M25HalZUaE5ldHhlLTlGeTZYME05Y2tXZlpiN09mcUxWcVlnY1NCX2dxUw?oc=5) | FXLeaders |
-| 1h 前 | 0 | 中性 | [Why Oracle (ORCL) Shares Are Trading Lower Today - The Globe and Mail](https://news.google.com/rss/articles/CBMiywFBVV95cUxPTGIzMGVUTW9UMlEyWEpBMkNTWFo1STRNZnl1V2tRR0RMV1Y0aFBtTGRBaFNxTlhiLThqaC1iSWMwNTZBdDVKcE9yaTZuanFxZk1jejcxWXE2Y0dEQzZuVWdocHhTY1FmRDFPanUzS2dsQTlHWWFsMm1PTUxTN29NWHZidS0xTjBuc2JFaTFMSGFPc2dDV28yNHBDZjR4LXNqRGFwZGtpNHdGeThXZ29ObXRCVG1GYWZpeTdEcjY3N2I0RS1rNTZsaUxpdw?oc=5) | The Globe and Mail |
-| 1h 前 | 0 | 中性 | [Oracle, Microsoft shares decline as confusion over OpenAI's ARR reigns (ORCL:NYSE) - Seeking Alpha](https://news.google.com/rss/articles/CBMiqAFBVV95cUxNRjFMbHQ5RHlxWnFWSmhqQXBaX1F3WGdxbVNBOE54VjhFZWZYUVV2ZTUwcW5TcFl4SXg2VUhPdmpsd0ltN09rdGEtM2JHdy1RM1NkQjBIRFBRNTdjWmJkR0ZRQlhHcUJhTzVRU3FuRmFXc0lkcE5HR1RYVFZpTWQybE42TmNHdFNpUDgySW1USkxCanJGTFZqajZSS3ZFTVJUTmxUbVVfVC0?oc=5) | Seeking Alpha |
+| 1h 前 | 0 | 中性 | [OpenAI revenue shock sends Nvidia, Oracle and CoreWeave stocks lower today. Here's what happened - The Economic Times](https://news.google.com/rss/articles/CBMi_gFBVV95cUxPUmhjaDJ3ZWxaTm1Pd0szQjhHckgtMDZVSXNFMi1Vd1Y1MGJtVXl6TVVVejZVRUVVUGFua1dBMjBnSVFqLTl4OGREVUgwa2J2WWxfV1FONE5scGlYNjBEV3d4c29CcjUzbHRIcDlxSzZZUHRfcjY4YlRIRVNnVnhGenNtVVFxOC13X1NLY1ZzejNHVnRRbU9IT0ZNaEdmOFZ5WG1lLTNOUmJQTU5LQkdmZjBzTW9RbWhIUjB0WkpQTHRqQVdIc252ckpZTUt3c1BYNW4zQ0M4dWJJLWtMdE1QSlozUE83S1FoMFdqTzFXOWNnOVQ1NDU0dDVCUi1yZ9IBgwJBVV95cUxOa3FacnNvZGE5VEw0N1RYeGxkMTc3eTVEYjVxazRBVGtvVXFQRHFwUWl6VEljNVREZEJ1eGxWSEo5S1dxYXl2bVM4ckpWVnR3aDl2N3AwVEo5S0ZiOXlRblctX0dqWUdEQ2FwTFNPLXhNNmFySjRPV0RhNS1wVFdVQ1pob21QNk9SZDR1NlM0TzJNYmdCSUU4QUZFRmpfY3JlbnZFZlNzWkI2a1FwdndMWkFxY0Yzb0V3Y2cwS1FDbUc1eWIyNGV3bzFOb0RvZUJLZldpU0JiYW1SV0lCb3JLM3d0bHc5NmNfdF84NkFuc0FTSVJjRUdSU0FpSUMtU2FWWFd3?oc=5) | The Economic Times |
+| 1h 前 | 0 | 偏空 | [Bloom Energy shares fall on report of Oracle using natural gas for data centers - Investing.com](https://news.google.com/rss/articles/CBMi0gFBVV95cUxQYUFoLW81cjVQYlNEbE05cTBnWFhrbmtSMWpaNWhsNTV3ZEs2ZlBNZ09GSFpqMDJscDQ4YS1ualRpdmpQT0NOaV9jTU1Rak9uTEh2MmhuanBRSUdqcG5pV3pfNEs3dWxGd1dVZEhMVURyMkswRklxSEJNSm5rS2Q4U2RfVFIxQzdXcTZJc3JPeG9fQjVIbHk0YW51VUJGNnRCX1NzNVhXVVZwa1Y2VGtEcUVyM3RRUDFVenY4ek5weUR3a3hIbE9iWjFSWDZXRXBOSGc?oc=5) | Investing.com |
+| 1h 前 | 0 | 中性 | [ORCL Stock Tests $136 as Project Jupiter Delays, OpenAI Revenue Concerns Threaten Growth - FXLeaders](https://news.google.com/rss/articles/CBMiyAFBVV95cUxNN05KTXpqRXFkLU1zLU5NNkJsSmxxMHZGSXliTjJFZklaUGVZc3ZEdWtxR2QtRzMxZXV6TmRyMzlMU1J4cDF6TDR1YjMyYWhiVmdFWUg0b0RTYzR4WGFFZURKcERvclFtNjRncjhnU1lLRG44NHR3bVBYTExsYnIyM3FtSEczTl9NbEdYLXQ0SjExcUwzRmtMVTVaakg4M25HalZUaE5ldHhlLTlGeTZYME05Y2tXZlpiN09mcUxWcVlnY1NCX2dxUw?oc=5) | FXLeaders |
+| 1h 前 | 0 | 中性 | [Why Oracle (ORCL) Shares Are Trading Lower Today - TradingView](https://news.google.com/rss/articles/CBMiqwFBVV95cUxPbTNJOXJlVF9pOWpQaDdpc3hOakxuMmtwaGdMVkpYWF84WlRuY0c2OWxWTnNjem5leHFKbmdtWEoyQm05YUpPM2FYVFlQWGlla0tqM1JTYUNQMk9MQTNXQm1MSEdUQWZodXhrU1ZmVUlaWGd6QzFxMHA0TU50Z1dENGJVZjhCYnNaUXRGZUpZSUk1RklmVzlaY2VFeGxpN3hhem5xU3lseGw3LVU?oc=5) | TradingView |
 | 1h 前 | 0 | 中性 | [Oracle Insider Buys $3.5 Million in Stock Amid OpenAI Swings - Barron's](https://news.google.com/rss/articles/CBMiggFBVV95cUxOcDRDWFo4TkI5Z0FLRmtkN0F0Ykw3enE4aEs4d0JfbkxicHB6cEFmeXZjSC1ZMUl4TmFHd0J6YWlfR2JIdWZtdXRJTkZZVUhGRWVJbkFLdlZMM2F1SFdMQmlKZHp2elBsSFFHbnByeGFfZ2Nld3pJaC1LRUltTFNPQTdn?oc=5) | Barron's |
-| 1h 前 | 0 | 偏空 | [Oracle Stock Drops Thursday: What's Happening? - Benzinga](https://news.google.com/rss/articles/CBMipwFBVV95cUxNX1RrbkQweDlGN0Q1Q2Y5WGFZaTg0ZG1hSmo2Wjc1VS15aEFoWlpsNXlMNXpxbzZOY3o4dElhVUFZSnhFd1RQWmpmU2RVcjYxQVltT1VkYzJPZ0V3RlBUeGtjOWFZVnY1TzF2ZkJOb0RMTUVyQVc2b1R5cUhaLVdFSVJDZzRjYUNEU0R4WHNnVVpPMzR6dEJWazlZTkJUdzNFR1FQek92dw?oc=5) | Benzinga |
-| 2h 前 | 0 | 偏空 | [Nvidia, Oracle and CoreWeave shares fall after OpenAI revenue data — CNBC - UA.NEWS](https://news.google.com/rss/articles/CBMipgFBVV95cUxPb2Zpa21ta25FRDQtRU9WNkZTQ0lqOTRQRzZDbl9EcEwxbmVCOUhIQ01aczVWR2xNM3VRVUR2ZU9HM0Z4VlVLekR1bjdKMzZvU29XQlFGLXlBYkN2ZVFHMDZ2eWZmaDVfRk9rb2xNdFFGcjBSMnBuRW5zRzFHQTVaYzRDMGVMVzBMa1hhd0NndTRSNzhSQUFURFJDZkhSZzZZZEpORkpR?oc=5) | UA.NEWS |
-| 2h 前 | 0 | 中性 | [Oracle Stock Crashes After OpenAI's Revenue Gap. Who's Next? - Yahoo Finance](https://news.google.com/rss/articles/CBMiowFBVV95cUxONTRaRDAzWl9DaHFOc2d5X0xHbFMzeVdCRFBGcWNNT0JZNnlRb2l0YW9VZjNMUnpSaEd0amY3SDVlcmdKekhLNlhjdmRaOGxhWjhfZ0RSNXFqcUZzZW9WVEhGaHVuZFJWZV9mdml5MWl0clFWb3JYMHZPWG8yVmhGcG1QVlBac2p5blc5TkhCYTF2V0dsSUFPeUFsNDBBcjlQWDVj?oc=5) | Yahoo Finance |
+| 2h 前 | 0 | 中性 | [Oracle, Microsoft shares decline as confusion over OpenAI's ARR reigns (ORCL:NYSE) - Seeking Alpha](https://news.google.com/rss/articles/CBMiqAFBVV95cUxNRjFMbHQ5RHlxWnFWSmhqQXBaX1F3WGdxbVNBOE54VjhFZWZYUVV2ZTUwcW5TcFl4SXg2VUhPdmpsd0ltN09rdGEtM2JHdy1RM1NkQjBIRFBRNTdjWmJkR0ZRQlhHcUJhTzVRU3FuRmFXc0lkcE5HR1RYVFZpTWQybE42TmNHdFNpUDgySW1USkxCanJGTFZqajZSS3ZFTVJUTmxUbVVfVC0?oc=5) | Seeking Alpha |
+| 2h 前 | 0 | 偏空 | [Oracle Stock Drops Thursday: What's Happening? - Benzinga](https://news.google.com/rss/articles/CBMipwFBVV95cUxNX1RrbkQweDlGN0Q1Q2Y5WGFZaTg0ZG1hSmo2Wjc1VS15aEFoWlpsNXlMNXpxbzZOY3o4dElhVUFZSnhFd1RQWmpmU2RVcjYxQVltT1VkYzJPZ0V3RlBUeGtjOWFZVnY1TzF2ZkJOb0RMTUVyQVc2b1R5cUhaLVdFSVJDZzRjYUNEU0R4WHNnVVpPMzR6dEJWazlZTkJUdzNFR1FQek92dw?oc=5) | Benzinga |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -131,7 +131,7 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
-- 图形上是空头排列——现价距 20 日 142.51（-4.9%）、50 日 145.47（-6.8%）、200 日 161.38（-16.0%）。本报告的买入规则本身会过滤掉这种形态。
+- 图形上是空头排列——现价距 20 日 142.52（-4.8%）、50 日 145.47（-6.7%）、200 日 161.38（-15.9%）。本报告的买入规则本身会过滤掉这种形态。
 - 摆动高低点都在下移，属于下降结构；在出现一个更高的低点之前，任何反弹都还只是反弹。
 - 自由现金流为负（-$458.54亿），意味着经营本身在消耗现金，未来可能需要再融资摊薄。
 - 负债/权益 252%，杠杆高；利率或再融资条件变化对它的影响会被放大。
@@ -158,7 +158,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-05 | 142.53 | 146.66 | 142.37 | **142.48** | +0.1% | 18,069,600 |
 | 2026-10-06 | 143.93 | 146.94 | 143.86 | **144.77** | +1.6% | 20,041,600 |
 | 2026-10-07 | 142.54 | 144.70 | 141.37 | **143.56** | -0.8% | 15,739,400 |
-| 2026-10-08 | 142.19 | 142.77 | 134.66 | **135.55** | -5.6% | 35,325,916 |
+| 2026-10-08 | 142.19 | 142.77 | 134.66 | **135.69** | -5.5% | 41,276,815 |
 
 ## 七、自己去查（本页不做独立验证）
 

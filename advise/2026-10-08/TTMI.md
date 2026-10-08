@@ -1,6 +1,6 @@
 # TTMI · TTM科技°（TTM Technologies）
 
-_未分类 · 数据截至 2026-10-08 收盘 → 面向 2026-10-08 开盘_
+_科技 · 数据截至 2026-10-08 收盘 → 面向 2026-10-08 开盘_
 
 [← 回到 2026-10-08 当日报告](../2026-10-08.md)
 
@@ -63,13 +63,13 @@ _以上每一条都是对已经发生的价格的描述。均线、RSI、摆动�
 
 ## 三、财报与基本面
 
-市值 $123.78亿
+市值 $123.78亿 · 行业 Technology / Electronic Components · TTM 营收 $33.77亿 · TTM EPS 2.21 · Beta 2.14 · 空头占流通股 4.6%
 
-- **估值**：既无盈利也无有意义的营收，估值倍数一栏本页留空——这不是低估，是无法用倍数衡量。
-- **增长**：最新季度营收同比 +37.4%；最近三个季度营收连续环比上升；最近 7 次财报里 7 次超预期。
-- **盈利质量**：没有拿到利润率数据。
-- **资产负债**：没有拿到资产负债数据。
-- **卖方预期**：没有覆盖这只股票的分析师数据。
+- **估值**：TTM 市盈率 53.2 倍；前瞻市盈率 17.0 倍（市场预期未来一年盈利上升）；市销率 3.7 倍；EV/EBITDA 28.9 倍；PEG 0.36（低于 1，增长尚未被价格吃掉）。
+- **增长**：最新季度营收同比 +37.4%；盈利同比 +92.5%；最近三个季度营收连续环比上升；最近 7 次财报里 7 次超预期。
+- **盈利质量**：毛利率 21.2%、营业利润率 10.9%、净利率 7.0%、ROE 13.3%。
+- **资产负债**：现金 $5.08亿；有息负债 $11.03亿；负债/权益 57.0%（负债适中）；流动比率 1.78；自由现金流 -$1,944.24万，为负，公司在净烧钱。
+- **卖方预期**：5 位分析师覆盖；平均评级「强烈买入」（1.20/5，1 为最看多）；目标价均值 209.60（较现价 +78.4%），区间 175.00–236.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
 
 **分季度损益**（季度数据，最新在左）
 
@@ -113,8 +113,14 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
 | 1h 前 | 8 | 中性 | [TTM Technologies (NASDAQ:TTMI) Shares Down 8.2% - Should You Sell? - MarketBeat](https://news.google.com/rss/articles/CBMiuwFBVV95cUxQNGRNNkFHb2RvZnU0MC1YT1ViQlFSd29JSUJ1WnV4NUFGTGxIdGxpUFZaMHgteUs3QlZFX1c0azFPMGhHRE9OR1A0YnlmREJGdTRUbWlSMUc0ZUd3VVoydnhqYkY1LS1uRUlUeFVrd0hGUERhVG5xdEs3VFc0UHBuNldsZjdscG44ZkZYRlo5d0ZjblRtTVpkNzdwTEtZU3ZiMmtqVFFTSzJnV25oRzk4UFYzaWFXdlc2ZHl3?oc=5) | MarketBeat |
-| 9h 前 | 2 | 中性 | [7,893 Shares in TTM Technologies, Inc. $TTMI Bought by Ausbil Investment Management Ltd - MarketBeat](https://news.google.com/rss/articles/CBMi3AFBVV95cUxOTC1BcGtiUjY4anRpWmJjbXVjelRobS1pVXhuSmM1NTNhZGRMbTZtMEpONXVWbndTREdKOFFnQm5TNWZlR0RfQmJieE1Kbl9Mc3BESnhzR2s5OGw2azZtMVVGaTRuUjQyRnVQOEQzelo3Tm9Oa1Ryd0NObzl2aF9XRUVnQ2FRRU95eFM5VjJoRmRYUGtvRFdyWEVpTm5pdXhtbk9XaWdrSktXdnhna2p0angzdDdZeE9FMTcxZ1lyRlVfMWxQU1ZhU3ZraDJCcUx1VWprU0RVZGYwZDE1?oc=5) | MarketBeat |
-| 22h 前 | 0 | 偏空 | [TTM Technologies Inc (TTMI) Shares Fall 3.4% -- GF Value Says St - GuruFocus](https://news.google.com/rss/articles/CBMirwFBVV95cUxQbS1nZnlRam5uYmFJMGlmeHZyclFrUTZuTUl2WkNzMjVJUDh1TDA2aDE0UmxmOHZrZC1tVlhJeWEtalBtZml1LVJ2X3YwQUZMYXpkMXpUSEVERVNBaEtwYjB6NVNKUzhaZVprMnFSNUhSaFZMU2dGakZaaU1MTkNKSDBKQVlvamp5NGpYYWp0YmFMRk1WejViOER4YkRhUHNBUDNLamFubm5JTDFuMXlV?oc=5) | GuruFocus |
+| 10h 前 | 2 | 中性 | [7,893 Shares in TTM Technologies, Inc. $TTMI Bought by Ausbil Investment Management Ltd - MarketBeat](https://news.google.com/rss/articles/CBMi3AFBVV95cUxOTC1BcGtiUjY4anRpWmJjbXVjelRobS1pVXhuSmM1NTNhZGRMbTZtMEpONXVWbndTREdKOFFnQm5TNWZlR0RfQmJieE1Kbl9Mc3BESnhzR2s5OGw2azZtMVVGaTRuUjQyRnVQOEQzelo3Tm9Oa1Ryd0NObzl2aF9XRUVnQ2FRRU95eFM5VjJoRmRYUGtvRFdyWEVpTm5pdXhtbk9XaWdrSktXdnhna2p0angzdDdZeE9FMTcxZ1lyRlVfMWxQU1ZhU3ZraDJCcUx1VWprU0RVZGYwZDE1?oc=5) | MarketBeat |
+| 0h 前 | 0 | 偏空 | [TTM Technologies Drops 5.3% Amid Sector-Wide Selling - AlphaStreet](https://news.google.com/rss/articles/CBMiiwFBVV95cUxNSXBENFlic3JGVy00Q08zZ0R3X01YWk5XVFhaRGJURUlZREphZTI3Q1pXa3BfR2g5cEJYemJoSmJuRmRiM2VSc2wyckU1QkRqT0RieHBGSVgzQU02UElGc2ljbDFUaFdzc200cWNZNGFBem52bzlSZ1lFWDZOWXMtT3JOUU5ER0hvSnZZ0gGQAUFVX3lxTE5iT0ktWDlHdlZoSVpvYkJsZUU2ZVJxZU5EalYtOGlWWlhBOXQ3WjNEQjdpU05WcF9oWUtVbXg3SWQ4eDU3ejJtTmlNc0sya2VZRmtPamMydWRsYUNrajZ0V0t2UTVadV9OTE1vRS1tWk83RU1RNEtDdWR5WWVEb3l3TDJyQllRZElJZUxscy0zZg?oc=5) | AlphaStreet |
+| 23h 前 | 0 | 偏空 | [TTM Technologies Inc (TTMI) Shares Fall 3.4% -- GF Value Says St - GuruFocus](https://news.google.com/rss/articles/CBMirwFBVV95cUxQbS1nZnlRam5uYmFJMGlmeHZyclFrUTZuTUl2WkNzMjVJUDh1TDA2aDE0UmxmOHZrZC1tVlhJeWEtalBtZml1LVJ2X3YwQUZMYXpkMXpUSEVERVNBaEtwYjB6NVNKUzhaZVprMnFSNUhSaFZMU2dGakZaaU1MTkNKSDBKQVlvamp5NGpYYWp0YmFMRk1WejViOER4YkRhUHNBUDNLamFubm5JTDFuMXlV?oc=5) | GuruFocus |
+| 25h 前 | 0 | 中性 | [TTMI Nov 2026 170.000 call (TTMI261120C00170000) stock price, news, quote and history - Yahoo Finance UK](https://news.google.com/rss/articles/CBMiZkFVX3lxTFBOZjlSWDE4bElvWm9zMGlsTUFTMFdpNkVlVDZ6QmEzM2EyanJyNl9VdVl6bHpMOXJsNnFPZTdVRThKU2lSVUM5NC1WZDR1ck5Bc3EtcEZBSW1melJjQ3hZZUVNVXBrUQ?oc=5) | Yahoo Finance UK |
+| 26h 前 | 0 | 中性 | [TTMI Jan 2027 150.000 call (TTMI270115C00150000) stock historical prices and data - Yahoo Finance UK](https://news.google.com/rss/articles/CBMicEFVX3lxTE1IM0ZNSFBnMmIzOTFoZlNCOVdjV1JEaUZfdm45Zk5DZFRsYlBPVUZTUmVpYlZaSnFzNGF1dnoxQnZoS3hRdEpCandRdFREZ2YyUjVVMG5pQzJZSEI2bHhWMHpiRDJmSl8xVHp5T1FFVng?oc=5) | Yahoo Finance UK |
+| 28h 前 | 0 | 中性 | [TTMI270319P00060000 interactive stock chart \| TTMI Mar 2027 60.000 put stock - Yahoo Finance Australia](https://news.google.com/rss/articles/CBMiZEFVX3lxTFBsTVUwa0JQQjVGSzZlLTFrejg1NnV0S1NHYWhKTnROYWhoWUZRZllydmgtd1dqRGJWQ0JETjRPVlRWYVd2QUduYVpSbkNGWXdMaFN2TFdkTkwySHZxZlBUbTA4eUY?oc=5) | Yahoo Finance Australia |
+| 32h 前 | 0 | 中性 | [TTMI Oct 2026 200.000 call (TTMI261016C00200000) interactive stock chart - Yahoo Finance UK](https://news.google.com/rss/articles/CBMibkFVX3lxTE9rbWZaV3pWTG90dVNGSlNnQ1pOZzlkN0xmbWlKTTMxOFhibTB1aVNWZE12eUMxWFpUdlliSW5rWlN0VjhwQlRyV0NtaWFDdXh6dXpnNUVnZXdiQVdaWmhYWjlNeVNrekYtY0FFV3Vn?oc=5) | Yahoo Finance UK |
+| 35h 前 | 0 | 中性 | [TTMI Mar 2027 60.000 put (TTMI270319P00060000) interactive stock chart - Yahoo Finance Australia](https://news.google.com/rss/articles/CBMibkFVX3lxTE1JV0NkdTFQTlplTWU0dS0xMlVBMm83amp3SngtYTc2QS1uQXhXdVFlNkFTaFF3TVotNmNxbDFGbU1aOVA5TUJlanB3OWZiWlBlYUpuendOR3lnaHBpckxmV0FOOXJ3aFhkX0lzNEhB?oc=5) | Yahoo Finance Australia |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -125,7 +131,8 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 - 图形上是空头排列——现价距 20 日 123.60（-4.9%）、50 日 123.98（-5.2%）、200 日 126.46（-7.1%）。本报告的买入规则本身会过滤掉这种形态。
 - 日均波幅 6.5%，属于高波动：同样的仓位金额，这只股票的日常噪音就能触发大多数人的心理止损。
 - 下次财报在 27 天后，落在持有期内。财报跳空会直接穿过止损——那一晚的风险不是 1R，是没有上限的。
-- 公司尚未盈利：估值没有盈利可锚，股价由叙事和融资环境决定，这类名字在流动性收紧时跌得最快。
+- 自由现金流为负（-$1,944.24万），意味着经营本身在消耗现金，未来可能需要再融资摊薄。
+- 政策面对该板块的倾向为 -0.96（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -147,7 +154,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-05 | 134.79 | 137.88 | 132.30 | **133.14** | +1.0% | 2,304,400 |
 | 2026-10-06 | 134.84 | 136.41 | 131.94 | **132.71** | -0.3% | 1,434,500 |
 | 2026-10-07 | 128.50 | 129.58 | 124.69 | **128.20** | -3.4% | 1,756,300 |
-| 2026-10-08 | 124.80 | 129.88 | 116.53 | **117.50** | -8.3% | 2,256,690 |
+| 2026-10-08 | 125.66 | 129.88 | 116.53 | **117.50** | -8.3% | 2,256,690 |
 
 ## 七、自己去查（本页不做独立验证）
 

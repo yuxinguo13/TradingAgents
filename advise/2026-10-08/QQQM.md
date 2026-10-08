@@ -69,7 +69,7 @@ _读不到财务数据：该代码没有可用的财务数据（可能是 ETF、
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 7h 前 | 0 | 偏多 | [ETFs to Benefit as Nasdaq's Breakthrough Still Matters - TradingView](https://news.google.com/rss/articles/CBMirwFBVV95cUxPcHhJd0dCU1pIVUp1cDNnVURCZTFEZlBjY0FGUzZmTkZ5dUlRaUl2Y21ReURYdjNSNVZxSW5DVmVSMnNpY05QRU8xeTVVWExfdXVsUmRlWDdxRk53TVVWWDZpelV5b2JtMC04YUFEcXNJTkY3b0FlTXJJUEphcEV3VlM2T2ZHR2phc3NkRlhJVlRYUEprUzc4QnkwdHNGYnZxRDUyMkcteENDWmJ4ZTBv?oc=5) | TradingView |
+| 8h 前 | 0 | 偏多 | [ETFs to Benefit as Nasdaq's Breakthrough Still Matters - TradingView](https://news.google.com/rss/articles/CBMirwFBVV95cUxPcHhJd0dCU1pIVUp1cDNnVURCZTFEZlBjY0FGUzZmTkZ5dUlRaUl2Y21ReURYdjNSNVZxSW5DVmVSMnNpY05QRU8xeTVVWExfdXVsUmRlWDdxRk53TVVWWDZpelV5b2JtMC04YUFEcXNJTkY3b0FlTXJJUEphcEV3VlM2T2ZHR2phc3NkRlhJVlRYUEprUzc4QnkwdHNGYnZxRDUyMkcteENDWmJ4ZTBv?oc=5) | TradingView |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -99,7 +99,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-05 | 308.58 | 311.66 | 308.45 | **311.40** | +0.9% | 2,310,600 |
 | 2026-10-06 | 313.15 | 314.11 | 312.60 | **312.76** | +0.4% | 3,253,500 |
 | 2026-10-07 | 310.37 | 312.17 | 309.54 | **311.94** | -0.3% | 2,913,800 |
-| 2026-10-08 | 310.45 | 311.77 | 306.05 | **307.85** | -1.3% | 2,809,268 |
+| 2026-10-08 | 310.50 | 311.77 | 306.05 | **307.85** | -1.3% | 2,809,268 |
 
 ## 七、自己去查（本页不做独立验证）
 
