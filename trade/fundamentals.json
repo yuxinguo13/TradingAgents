@@ -4368,20 +4368,20 @@
  },
  "SHEL": {
   "symbol": "SHEL",
-  "fetched_at": 1791404699.3050358,
+  "fetched_at": 1791577592.697394,
   "name": "Shell plc",
   "sector": "Energy",
   "industry": "Oil & Gas Integrated",
   "website": "https://www.shell.com",
-  "market_cap": 275787874304.0,
-  "pe_trailing": 10.689845,
-  "pe_forward": 9.291139,
-  "ps": 0.92982787,
-  "ev_ebitda": 5.462,
-  "peg": 1.66,
+  "market_cap": 285132554240.0,
+  "pe_trailing": 11.057395,
+  "pe_forward": 9.555404,
+  "ps": 0.96133375,
+  "ev_ebitda": 5.586,
+  "peg": 1.7,
   "eps_trailing": 9.06,
-  "eps_forward": 10.42391,
-  "dividend_yield": 0.015478386,
+  "eps_forward": 10.48412,
+  "dividend_yield": 0.015079841,
   "beta": -0.192,
   "revenue_ttm": 296600993792.0,
   "revenue_growth": 0.447,
@@ -4395,13 +4395,13 @@
   "total_cash": 31374000128.0,
   "total_debt": 73075998720.0,
   "free_cashflow": 21458374656.0,
-  "target_mean": 104.08,
+  "target_mean": 104.29333,
   "target_high": 123.0,
   "target_low": 83.0,
   "rating_mean": 2.1875,
   "analysts": 15.0,
   "short_pct_float": 0.0124,
-  "held_institutions": 0.13411,
+  "held_institutions": 0.13417,
   "quarters": [
    {
     "label": "2026-06-30",
@@ -4489,7 +4489,7 @@
   "surprises": [
    {
     "when": "2026-10-29",
-    "estimate": 3.24,
+    "estimate": 3.34,
     "actual": NaN,
     "surprise_pct": NaN
    },
@@ -16765,20 +16765,20 @@
  },
  "HPE": {
   "symbol": "HPE",
-  "fetched_at": 1791490766.4851427,
+  "fetched_at": 1791577591.3588107,
   "name": "Hewlett Packard Enterprise Company",
   "sector": "Technology",
   "industry": "Communication Equipment",
   "website": "https://www.hpe.com",
-  "market_cap": 94236729344.0,
-  "pe_trailing": 36.59278,
-  "pe_forward": 15.076092,
-  "ps": 2.2506444,
-  "ev_ebitda": 15.945,
-  "peg": 0.56,
+  "market_cap": 97515569152.0,
+  "pe_trailing": 37.86598,
+  "pe_forward": 15.600644,
+  "ps": 2.3289526,
+  "ev_ebitda": 15.735,
+  "peg": 0.57,
   "eps_trailing": 1.94,
   "eps_forward": 4.70878,
-  "dividend_yield": 0.0077403253,
+  "dividend_yield": 0.007859156,
   "beta": 1.404,
   "revenue_ttm": 41870999552.0,
   "revenue_growth": 0.337,
@@ -16798,7 +16798,7 @@
   "rating_mean": 1.95833,
   "analysts": 21.0,
   "short_pct_float": 0.048,
-  "held_institutions": 0.91177005,
+  "held_institutions": 0.9114,
   "quarters": [
    {
     "label": "2026-07-31",
@@ -17710,6 +17710,170 @@
     "estimate": -0.15,
     "actual": -0.12,
     "surprise_pct": 0.2076
+   }
+  ],
+  "error": ""
+ },
+ "VEEV": {
+  "symbol": "VEEV",
+  "fetched_at": 1791577594.0679252,
+  "name": "Veeva Systems Inc.",
+  "sector": "Healthcare",
+  "industry": "Health Information Services",
+  "website": "https://www.veeva.com",
+  "market_cap": 47946067968.0,
+  "pe_trailing": 48.545902,
+  "pe_forward": 28.88893,
+  "ps": 13.864867,
+  "ev_ebitda": 36.293,
+  "peg": 1.1,
+  "eps_trailing": 6.1,
+  "eps_forward": 10.25064,
+  "dividend_yield": 0.0,
+  "beta": 0.934,
+  "revenue_ttm": 3458097920.0,
+  "revenue_growth": 0.176,
+  "earnings_growth": 0.395,
+  "gross_margin": 0.74961,
+  "operating_margin": 0.29637,
+  "profit_margin": 0.29345,
+  "roe": 0.14425,
+  "debt_to_equity": 2.041,
+  "current_ratio": 5.458,
+  "total_cash": 7242947072.0,
+  "total_debt": 151695008.0,
+  "free_cashflow": 1257709824.0,
+  "target_mean": 297.03705,
+  "target_high": 343.0,
+  "target_low": 180.0,
+  "rating_mean": 1.93103,
+  "analysts": 27.0,
+  "short_pct_float": 0.0335,
+  "held_institutions": 0.93376,
+  "quarters": [
+   {
+    "label": "2026-07-31",
+    "revenue": 927963000.0,
+    "gross": 695951000.0,
+    "operating": 275018000.0,
+    "net": 273429000.0,
+    "eps": 1.66
+   },
+   {
+    "label": "2026-04-30",
+    "revenue": 882948000.0,
+    "gross": 662024000.0,
+    "operating": 273112000.0,
+    "net": 260936000.0,
+    "eps": 1.57
+   },
+   {
+    "label": "2026-01-31",
+    "revenue": 835951000.0,
+    "gross": 622474000.0,
+    "operating": 245876000.0,
+    "net": 244204000.0,
+    "eps": 1.45
+   },
+   {
+    "label": "2025-10-31",
+    "revenue": 811236000.0,
+    "gross": 611771000.0,
+    "operating": 240853000.0,
+    "net": 236203000.0,
+    "eps": 1.4
+   },
+   {
+    "label": "2025-07-31",
+    "revenue": 789081000.0,
+    "gross": 593828000.0,
+    "operating": 195908000.0,
+    "net": 200309000.0,
+    "eps": 1.19
+   }
+  ],
+  "years": [
+   {
+    "label": "2026-01-31",
+    "revenue": 3195311000.0,
+    "gross": 2413292000.0,
+    "operating": 916369000.0,
+    "net": 908906000.0,
+    "eps": 5.44
+   },
+   {
+    "label": "2025-01-31",
+    "revenue": 2746619000.0,
+    "gross": 2046983000.0,
+    "operating": 691435000.0,
+    "net": 714138000.0,
+    "eps": 4.32
+   },
+   {
+    "label": "2024-01-31",
+    "revenue": 2363673000.0,
+    "gross": 1686382000.0,
+    "operating": 429334000.0,
+    "net": 525705000.0,
+    "eps": 3.22
+   },
+   {
+    "label": "2023-01-31",
+    "revenue": 2155060000.0,
+    "gross": 1545655000.0,
+    "operating": 459091000.0,
+    "net": 487706000.0,
+    "eps": 3.0
+   }
+  ],
+  "surprises": [
+   {
+    "when": "2026-11-25",
+    "estimate": 2.34,
+    "actual": NaN,
+    "surprise_pct": NaN
+   },
+   {
+    "when": "2026-08-26",
+    "estimate": 2.22,
+    "actual": 2.35,
+    "surprise_pct": 0.057699999999999994
+   },
+   {
+    "when": "2026-06-03",
+    "estimate": 2.14,
+    "actual": 2.24,
+    "surprise_pct": 0.049100000000000005
+   },
+   {
+    "when": "2026-03-04",
+    "estimate": 1.94,
+    "actual": 2.06,
+    "surprise_pct": 0.0645
+   },
+   {
+    "when": "2025-11-20",
+    "estimate": 1.95,
+    "actual": 2.04,
+    "surprise_pct": 0.0455
+   },
+   {
+    "when": "2025-08-27",
+    "estimate": 1.9,
+    "actual": 1.99,
+    "surprise_pct": 0.0475
+   },
+   {
+    "when": "2025-05-28",
+    "estimate": 1.74,
+    "actual": 1.97,
+    "surprise_pct": 0.1298
+   },
+   {
+    "when": "2025-03-05",
+    "estimate": 1.58,
+    "actual": 1.74,
+    "surprise_pct": 0.1005
    }
   ],
   "error": ""

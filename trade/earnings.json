@@ -399,6 +399,36 @@
 "eps_actual": 1.16,
 "surprise_pct": 36.47,
 "error": ""
+},
+"HPE|2026-10-09": {
+"symbol": "HPE",
+"as_of": "2026-10-09",
+"next_date": "2026-12-03",
+"last_date": "2026-09-02",
+"eps_estimate": 0.93,
+"eps_actual": NaN,
+"surprise_pct": NaN,
+"error": ""
+},
+"SHEL|2026-10-09": {
+"symbol": "SHEL",
+"as_of": "2026-10-09",
+"next_date": "2026-10-29",
+"last_date": "2026-07-30",
+"eps_estimate": 3.18,
+"eps_actual": 3.52,
+"surprise_pct": 10.63,
+"error": ""
+},
+"VEEV|2026-10-09": {
+"symbol": "VEEV",
+"as_of": "2026-10-09",
+"next_date": "2026-11-25",
+"last_date": "2026-08-26",
+"eps_estimate": 2.22,
+"eps_actual": 2.35,
+"surprise_pct": 5.77,
+"error": ""
 }
 }
 }
