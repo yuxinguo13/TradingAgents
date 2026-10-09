@@ -48,11 +48,11 @@ _科技 · 数据截至 2026-10-09 收盘 → 面向 2026-10-09 开盘_
 
 ### 图形读数
 
-- **均线排列**：空头排列 — 现价距 20 日 142.08（-0.4%）、50 日 145.75（-2.9%）、200 日 161.11（-12.2%）
+- **均线排列**：空头排列 — 现价距 20 日 142.07（-0.5%）、50 日 145.75（-3.0%）、200 日 161.11（-12.2%）
 - **形态结构**：下降结构 — 更低的高点 + 更低的低点；前高 153.60 → 146.94（-4.3%）、前低 139.00 → 131.58（-5.3%）
-- **动能**：RSI(14) 48，中性；近一月的斜率慢于近三月（月 -7.5% vs 季 +7.6%），涨势在放缓
+- **动能**：RSI(14) 48，中性；近一月的斜率慢于近三月（月 -7.5% vs 季 +7.5%），涨势在放缓
 - **波动**：日均真实波幅约为价格的 4.3%；按本报告 2 ATR 的止损惯例，一个 R 相当于 8.6% 的价格距离
-- **位置**：距 52 周高点 -54.3%，距 52 周低点 +23.1%
+- **位置**：距 52 周高点 -54.4%，距 52 周低点 +23.0%
 - **量能**：最新一日成交量为 20 日均量的 0.8 倍，量能正常
 - **相对强度**：近一月跑输 标普500 10.5 个百分点
 - **支撑 / 阻力**：最近的摆动低点 139.72，摆动高点 146.94（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
@@ -69,7 +69,7 @@ _以上每一条都是对已经发生的价格的描述。均线、RSI、摆动�
 - **增长**：最新季度营收同比 +29.6%；盈利同比 +54.5%；最近三个季度营收连续环比上升；最近 7 次财报里 5 次超预期。
 - **盈利质量**：毛利率 64.0%、营业利润率 35.6%、净利率 26.4%、ROE 41.2%。
 - **资产负债**：现金 $370.77亿；有息负债 $1,691.43亿；负债/权益 251.7%（负债偏重）；流动比率 1.17；自由现金流 -$458.54亿，为负，公司在净烧钱。
-- **卖方预期**：41 位分析师覆盖；平均评级「买入」（1.58/5，1 为最看多）；目标价均值 237.97（较现价 +68.1%），区间 110.00–400.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
+- **卖方预期**：41 位分析师覆盖；平均评级「买入」（1.58/5，1 为最看多）；目标价均值 237.97（较现价 +68.3%），区间 110.00–400.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
 
 **分季度损益**（季度数据，最新在左）
 
@@ -115,7 +115,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 | 3h 前 | 8 | 中性 | [Oracle Corporation $ORCL Stock Sold by Douglas Lane & Associates LLC - MarketBeat](https://news.google.com/rss/articles/CBMixAFBVV95cUxQcHF3UmtKb25Ya2l2azVwVkZIWU5oaE13R2FrSTBKT3FHekVQamxWMFlMZ3NuVEhEeWNuN2NHUVA4ZFM4VVVCejRsbDVfQVlYNWVLYnh0azZXaUNIaU5rNTJDQlJwUHNiT2kwZ2dRWkRfSEZNV01LbG5NV1ZkaWtVRXQwZWlrclNEa3ZBSXByVzlYcnZiZmVFU0dtTnhGdDVQVGJ5RVlab19tc3U5XzhVSlpSQzJUT3llaUhPLUpoaGgtSFFk?oc=5) | MarketBeat |
 | 21h 前 | 8 | 中性 | [Oracle Corporation $ORCL Position Lessened by Zevenbergen Capital Investments LLC - MarketBeat](https://news.google.com/rss/articles/CBMi2AFBVV95cUxNQ0dFZHF1eDZ4WURzemp0OFktMzhWcTB3ZXU2Z29PcFdLbkJGN0k2TzVsQ0N4aVEzTFNSNmpSOUFuTVJZdUNNT2lDc3lpeVFocW1QUW44MVVPRW05a2pvXzZTTzVfdXNkb2NaX2JBc0ZHNmh2M3lvRE9uN2JoTnhDRmxQRXRoamhYMHhZNkF1LTJ2Yk5QWDhwZlVGNnpHam1UVUxzTGFieFU2QlFRWWFYMm1jeWFvZHNYRXBwVFdNQlRiWE40SWVDR3ZiWkJRMEVSU3ZBRFNXb2I?oc=5) | MarketBeat |
 | 23h 前 | 8 | 中性 | [Oracle (NYSE:ORCL) Stock Price Down 5.7% - Time to Sell? - MarketBeat](https://news.google.com/rss/articles/CBMirgFBVV95cUxQYkt2bEhublNKUURybVl3Mkh0U0pGR3l3NE9hZG5LdUlKWDNfNlo2UmtUaGd4SHNoQzNza2lvajBYY2ZfX3BPLXdkNjB4QVRmZzN6MllTbjRlSXFDb1dPUXh6SEVZWDFseXlkZjk1TDNOM3VMel9POWIyR19VNFVvNm9UQnJJa096OVlQWWVIM3djYlZYd3lHbk9zLUhfeG55Z3BSR3dXTF93dXM5WWc?oc=5) | MarketBeat |
-| 5h 前 | 6 | 偏多 | [Can $0.50 per share dividend support Oracle stock rally? - Traders Union](https://news.google.com/rss/articles/CBMikgFBVV95cUxNanVqVjlqWmxtVXBzZ0d3b2lhMHAyRDl3cWNLOHdWTG9ST0ZmTFljbHFPUkVqVmRCbkNDUmV2Qm9DWDd3cVVPSndXVWYxemFDQm9SdlFUSWt5Qm9ONXRnUDNPOW44SGtUXzB2RGE3NnBmMVJDYkxDWG9jSldLdWtHX3c2UXc2cTkzeVVCcnlnbUU2UQ?oc=5) | Traders Union |
+| 6h 前 | 6 | 偏多 | [Can $0.50 per share dividend support Oracle stock rally? - Traders Union](https://news.google.com/rss/articles/CBMikgFBVV95cUxNanVqVjlqWmxtVXBzZ0d3b2lhMHAyRDl3cWNLOHdWTG9ST0ZmTFljbHFPUkVqVmRCbkNDUmV2Qm9DWDd3cVVPSndXVWYxemFDQm9SdlFUSWt5Qm9ONXRnUDNPOW44SGtUXzB2RGE3NnBmMVJDYkxDWG9jSldLdWtHX3c2UXc2cTkzeVVCcnlnbUU2UQ?oc=5) | Traders Union |
 | 3h 前 | 2 | 中性 | [Oracle Corporation $ORCL Shares Acquired by Riversedge Advisors LLC - MarketBeat](https://news.google.com/rss/articles/CBMixgFBVV95cUxNYUprTXZsMDR0bjk2U0lqazd0YVhpSnhfT01wcDdVNFJjSndNNUhwYjBGdXRTenJ6RFN2Q3M3bUFLWi04YUtycmhJMkZKam5xaUdUOGs4S1VmWUZZUVFBeXpBN2p1OXBBS256VFdwVWc2TnQyRlhHNHhuOVo4NEJNcVRxd1YzNEs3bkNzTHEtMG0wVllnaVRIWVJMYjBmcnNqY3E1YkNmTm5JcFQ0aGg4VnhucFBVT2xYLVpXa1pjNXhFRkQ3VWc?oc=5) | MarketBeat |
 | 12h 前 | 2 | 中性 | [Oracle Corporation $ORCL Shares Sold by Mn Services Vermogensbeheer B.V. - MarketBeat](https://news.google.com/rss/articles/CBMiygFBVV95cUxOQ09EUnZ1NkVVREVEV0p4a0F6VWVVTzU0ZDFwblRVb0l5YWx5dUpqNVV1ZTdwR1Jzd3EtX285SDNlb3lOdVRtbU90NXFkUVRvWkRub3V2ZnFhdEJ0RThPODhBS0RWdEFwY2lfSWU2YWY1RWE0UGxVbGtRdWlFclkxSng2THpZODcxRV9JaWFrUzhGMDdCMTlYeWlwbi1zTVJENUNxT2lzTDNvNEFadFJ5SGZnQktCTEp3TGhIaVhOd1VFbmhHSnVaSXhR?oc=5) | MarketBeat |
 | 13h 前 | 2 | 中性 | [Oracle Corporation $ORCL Shares Sold by CoreCap Advisors LLC - MarketBeat](https://news.google.com/rss/articles/CBMivAFBVV95cUxNdWI0OXg1Wnh3R3RfNkM0YUlWVjhBeWliem56SVVoYzNkMndzV3dFeVg2c2pYQTVlZUpCMHIwa0duUW1zaDNKaXgwWnJ1V3NvNmFDNElfTnVvZWJpc3lwSjIxaGNGQXpZMW15b1pwZHc4bFdMOFZnMjFfNk5YeFRsME8xQ1o5eXI4Vk5DMkx6XzMwUXJrZ1lIVEc1U04tdi1OQkpNUUJTT1ExaGY1WmwzaWtTODRCS3dFYzM4aQ?oc=5) | MarketBeat |
@@ -123,7 +123,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 | 1h 前 | 0 | 中性 | [How to Play Unusual Options Activity in Oracle Stock - Barchart.com](https://news.google.com/rss/articles/CBMinAFBVV95cUxOOVZ2NGJVVXRpczFOYUJQLTdNMXNxdjE5VjBsTGFKSk9mUWwwQ0hkRllXLWZ1czFFcEhOZ0Z4LWRWSFZibldNQzVPTXA1aHJsVTRYVVYydW95ejhNLW9lSTNGZFVhb1JlRnVkdWIzcG8ya3NiNlE0VEt4ZU4tcTlvd3B2ZGVESm1zYnNtNGo5bk9TdVJGQnhkVGZjak4?oc=5) | Barchart.com |
 | 2h 前 | 0 | 偏多 | [Oracle Stocks Jump 4.9% as Insider Risks $3.5 Million - TradingView](https://news.google.com/rss/articles/CBMisAFBVV95cUxObnFTd1AzX2dRZEJTRnREcGVyeUR2YzdKc3NlMU5wQTNNLTdnVW0xbUtqQm0zeDRXYUtsZm9Id2JpSWM3RmktTF9xQ25SN05LTUplZjhNZXNMREdXUVRIR3gtWWZ4MmNrUFlWcXVES3I2NE9rWGJTQmI1emx3cHlOVGpEOHpaY3pfWnNNanBDby1LN2d5RUxpcUlaaDZoaGVRTXlLSlJqVnBxUURxcFBKMA?oc=5) | TradingView |
 | 2h 前 | 0 | 偏空 | [Oracle Stock Drops Thursday: What's Happening? (CORRECTED) - Benzinga](https://news.google.com/rss/articles/CBMipwFBVV95cUxNX1RrbkQweDlGN0Q1Q2Y5WGFZaTg0ZG1hSmo2Wjc1VS15aEFoWlpsNXlMNXpxbzZOY3o4dElhVUFZSnhFd1RQWmpmU2RVcjYxQVltT1VkYzJPZ0V3RlBUeGtjOWFZVnY1TzF2ZkJOb0RMTUVyQVc2b1R5cUhaLVdFSVJDZzRjYUNEU0R4WHNnVVpPMzR6dEJWazlZTkJUdzNFR1FQek92dw?oc=5) | Benzinga |
-| 3h 前 | 0 | 中性 | [Oracle Stock Reverses: What's Going On? - TradingView](https://news.google.com/rss/articles/CBMinAFBVV95cUxQVXdJelpvd2Mtb1l3VjBZc3F5TDFqRGF1emR5UExoZmo5ZGFmWXJhZ1pHSkd6LVVwdEdKNjI1eENZN0RoWmZmcXk3QkZLamJJV0Z2NHR0SXlXRmlqMmZ6ODltX0tjYTIzcmdWWjdiX2lKR244LV9pajlHMkxnWXFsUUE0MjdxTDgxZm9NM3FOUEhEYmhmWExHbE51UmI?oc=5) | TradingView |
+| 4h 前 | 0 | 中性 | [Oracle Stock Reverses: What's Going On? - TradingView](https://news.google.com/rss/articles/CBMinAFBVV95cUxQVXdJelpvd2Mtb1l3VjBZc3F5TDFqRGF1emR5UExoZmo5ZGFmWXJhZ1pHSkd6LVVwdEdKNjI1eENZN0RoWmZmcXk3QkZLamJJV0Z2NHR0SXlXRmlqMmZ6ODltX0tjYTIzcmdWWjdiX2lKR244LV9pajlHMkxnWXFsUUE0MjdxTDgxZm9NM3FOUEhEYmhmWExHbE51UmI?oc=5) | TradingView |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -131,12 +131,12 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
-- 图形上是空头排列——现价距 20 日 142.08（-0.4%）、50 日 145.75（-2.9%）、200 日 161.11（-12.2%）。本报告的买入规则本身会过滤掉这种形态。
+- 图形上是空头排列——现价距 20 日 142.07（-0.5%）、50 日 145.75（-3.0%）、200 日 161.11（-12.2%）。本报告的买入规则本身会过滤掉这种形态。
 - 摆动高低点都在下移，属于下降结构；在出现一个更高的低点之前，任何反弹都还只是反弹。
 - 自由现金流为负（-$458.54亿），意味着经营本身在消耗现金，未来可能需要再融资摊薄。
 - 负债/权益 252%，杠杆高；利率或再融资条件变化对它的影响会被放大。
 - 卖方目标价区间 110.00–400.00，宽度超过均值——分歧极大，共识在这只股票上没有信息量。
-- 政策面对该板块的倾向为 -0.95（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.96（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -158,7 +158,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-06 | 143.93 | 146.94 | 143.86 | **144.77** | +1.6% | 20,041,600 |
 | 2026-10-07 | 142.54 | 144.70 | 141.37 | **143.56** | -0.8% | 15,739,400 |
 | 2026-10-08 | 142.19 | 142.78 | 134.66 | **135.69** | -5.5% | 42,412,600 |
-| 2026-10-09 | 136.70 | 142.90 | 136.50 | **141.53** | +4.3% | 25,432,782 |
+| 2026-10-09 | 136.70 | 142.90 | 136.50 | **141.40** | +4.2% | 25,432,782 |
 
 ## 七、自己去查（本页不做独立验证）
 

@@ -69,8 +69,8 @@ _读不到财务数据：该代码没有可用的财务数据（可能是 ETF、
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 11h 前 | 0 | 中性 | [LADENBURG INCOME & GROWTH FUND's Invesco NASDAQ 100 ETF(QQQM) Holding History - GuruFocus](https://news.google.com/rss/articles/CBMijAFBVV95cUxQdkEzbmd1UDJoTjBidGwxZmxoSTVLVk9qZlUyRmtDeUZWeXhoZUxkUEFzUEVzMHdyRVVzaWRoMU5makpURnNlcktjLU9Kb0VUNzBGOXpKMlNFNmNzMzVVSVJURTYzZGVIdkY2Rm9TeVhfb3NPZ1Q5WktFTnBjYVVGVjdYTTVLUjAtcEdUVQ?oc=5) | GuruFocus |
-| 21h 前 | 0 | 中性 | [Why Buy-and-Hold Investors Are Switching From QQQ to This Lower-Fee Alternative - 24/7 Wall St.](https://news.google.com/rss/articles/CBMixgFBVV95cUxQSlFXWm1zN1BpZmxlUEJYSWhjRllhMkxoRmUzdEI5SVBwX3lMV185Sk96Yy1lZjRMOHRpVmFGd3J3R1J6b1dxVjdnX3BmT1BtVklpajB6Ums4NV80YnI3bDFFNVNvcGFqQWVrblJBUmdBaG01M1Jhd0lUNzlpM1FJTUM1d2tjREhhVVQwcU52WWNrR3pybWFYNXNEYUs2YnhXOFBIRmxib0h4ZFM1VVNzeUtvZjlab1I2dndUTGsteUdRM3FBVVE?oc=5) | 24/7 Wall St. |
+| 12h 前 | 0 | 中性 | [LADENBURG INCOME & GROWTH FUND's Invesco NASDAQ 100 ETF(QQQM) Holding History - GuruFocus](https://news.google.com/rss/articles/CBMijAFBVV95cUxQdkEzbmd1UDJoTjBidGwxZmxoSTVLVk9qZlUyRmtDeUZWeXhoZUxkUEFzUEVzMHdyRVVzaWRoMU5makpURnNlcktjLU9Kb0VUNzBGOXpKMlNFNmNzMzVVSVJURTYzZGVIdkY2Rm9TeVhfb3NPZ1Q5WktFTnBjYVVGVjdYTTVLUjAtcEdUVQ?oc=5) | GuruFocus |
+| 22h 前 | 0 | 中性 | [Why Buy-and-Hold Investors Are Switching From QQQ to This Lower-Fee Alternative - 24/7 Wall St.](https://news.google.com/rss/articles/CBMixgFBVV95cUxQSlFXWm1zN1BpZmxlUEJYSWhjRllhMkxoRmUzdEI5SVBwX3lMV185Sk96Yy1lZjRMOHRpVmFGd3J3R1J6b1dxVjdnX3BmT1BtVklpajB6Ums4NV80YnI3bDFFNVNvcGFqQWVrblJBUmdBaG01M1Jhd0lUNzlpM1FJTUM1d2tjREhhVVQwcU52WWNrR3pybWFYNXNEYUs2YnhXOFBIRmxib0h4ZFM1VVNzeUtvZjlab1I2dndUTGsteUdRM3FBVVE?oc=5) | 24/7 Wall St. |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -100,7 +100,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-06 | 313.15 | 314.11 | 312.60 | **312.76** | +0.4% | 3,253,500 |
 | 2026-10-07 | 310.37 | 312.17 | 309.54 | **311.94** | -0.3% | 2,913,800 |
 | 2026-10-08 | 310.45 | 311.77 | 306.05 | **307.85** | -1.3% | 2,884,200 |
-| 2026-10-09 | 309.85 | 309.95 | 308.17 | **309.39** | +0.5% | 1,564,428 |
+| 2026-10-09 | 309.86 | 309.95 | 308.17 | **309.39** | +0.5% | 1,564,428 |
 
 ## 七、自己去查（本页不做独立验证）
 

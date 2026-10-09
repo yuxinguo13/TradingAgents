@@ -110,7 +110,22 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
+| 时间 | 材料度 | 倾向 | 标题 | 来源 |
+|---|---:|---|---|---|
+| 8h 前 | 8 | 中性 | [Applied Digital Stock Gains as Fiscal Q1 Revenue Leaps 300% - TIKR.com](https://news.google.com/rss/articles/CBMiggFBVV95cUxQMVF6VFpnSWdhampQeWRQUzkyX0lVWllrRV9OdkI1Z3NZRnh6MmMyTWJrTWRBbWY2SUJnUUtKaFVodDF4Y1MwaXo4eU5FSXVuLVJYQXhBLXZVODBOZ253c1VlX04zaWdDemhaeWl5alZFbDNwd2ZBMmRER0dDRGFIcGlR?oc=5) | TIKR.com |
+| 10h 前 | 8 | 中性 | [Applied Digital’s Hidden Moat Could Unlock Massive Upside - MarketBeat](https://news.google.com/rss/articles/CBMimAFBVV95cUxNRXlqdWlrdExzbU5pUVlJRURiT0stWW9KQWUwWDlqLVM0ZXBncGs4QTFkQ0RXa0o0VWpZYTBrTHVGVVVMUDVvejVKNzg1ekRYWTBnTEwwbVBWYzFVQThON0o5QVdvZEVLeUNqVkNTNDFaYTV4STRTMU9qQXlPbGh2Q1RxWk9PNzV3eUx2Z084YjZKQlVuaGxoSg?oc=5) | MarketBeat |
+| 28h 前 | 8 | 中性 | [Applied Digital Just Reported Earnings. Here's What That Means for APLD Stock Investors. - Yahoo Finance](https://news.google.com/rss/articles/CBMipgFBVV95cUxOTzBvLTZCc2NCWDNkTmtkTXVleF9YSmFPalRnN0xlQ3oweWx6MUpUVF9XaENnMERfLVdISWExMHZ3R0pfZkJNNkdfLUxleTNtcEZsUGhicXFxdldpMFJWbEt2RXgxcGpacXhxLUVBZXloYnZWWGF6bTdmVFNYVUpEaTVvaE5QQ3hJNmFSblFqdDhROS1hSXdjV2hNOXJLeUpHcWwxTktn?oc=5) | Yahoo Finance |
+| 47h 前 | 8 | 中性 | [We’re Still Waiting for Applied Digital’s Q1 Results - 24/7 Wall St.](https://news.google.com/rss/articles/CBMi0gFBVV95cUxOeXdpSlBiMFNXZmhwTjB3WkItbzFZRDl1Q0F3TkJMa0RYbjQzRnRCd2pYOHJLc21KRWxTTXpnMmQ0U2hJNkg1ams1ekZXVUxoQlJXUnl5MERWeEl6b2FZWUdkaGk4RVVDdVJ2Qm5xdzliMVlTbnV2amgwcDh4enZodDVnQUhoZ2w5ZXFVbHhiYzF2MWxhblg1MnVKejM0VkJnZVh0SGNTMlkxa3RLbW1WMFM5YTM2NTBpc0p3d0VzeU1nRWlxUzJNVFhTUTc0RDN5aUE?oc=5) | 24/7 Wall St. |
+| 32h 前 | 5 | 中性 | [Freedom Capital Markets maintains Buy rating on Applied Digital, $48 price target - TradingView](https://news.google.com/rss/articles/CBMi2AFBVV95cUxNSW9fdmdOM2JWTGViQ18xN0dxM2Y3RlMxdnR2bUdQT3pSQlRoUFF4SEpwV1hSbUF4bnhoZHpkS3RaQ3ZjUmdJUXZodEt0eHBVeTNqQ0xBTG1LbHpUTWR0OTc0c01laUNqNU82Z0J2T24xX3NDR3ZlRnFtR293WmlKeTRPQVBVWVBvMU02QTNyVXROYkM3Ml92MVpWdWZCYm41THdUVmhZc3Q3R3RGd3A3VWZXWThvckU5QjVNTkhMSl9XcktQMUZ4ZU5JQVdtX1JYNnBEcUZxV20?oc=5) | TradingView |
+| 35h 前 | 5 | 偏多 | [Wells Fargo raises Applied Digital stock price target on execution - Investing.com](https://news.google.com/rss/articles/CBMixAFBVV95cUxQa3pRSTluNmtOWjJZRlVRUG40Y05hM25ibzBxYTMxRGp2LWVlN05xSkZHM25IQnFZVGRTaGRobkNXUnV5cUUtckpIRk5zZ2NZVEE3OFNVTjcySlpINDNEeWFzN1VPZVI5di1wakdSSWdKdWw4Z3Q0dm5VUFlMblp3eWR6VmVONk02Zmh1Q3RMOWxLaHNINDhxT1dTLTR6elQ2MzNHQjIyRU1BcGtfSVVXU0NQb2szUndnanNlOVF2S3l6VlJ6?oc=5) | Investing.com |
+| 38h 前 | 5 | 偏空 | [Applied Digital Corporation Stock 12‑Month Price Target Cut to $63.79, Implies 168% Upside - TradingView](https://news.google.com/rss/articles/CBMi4wFBVV95cUxQNlRHalNVVVV0YXNnWlFEZmRDMHNVT0pReTdOSFU2N01HV3hRSkduNWYtTWs5WkpwY0tWNnBQRlpIT2VYN1JwTWJPUFhUT3hNWlMxRWtqYi1tejU2TldHV0F0ci1LeS1BY0tJZld4TWNfUk1wTGhSM2h5QWNUd1FWamZsc2d1N2dxcHBvZzZ3RWdVdkN6SGYzZVhRRzlzTVpuRENCOFNOM1VSYjR3Y1RGbi1wVU1HVGRVSHZIZWY4VDQzenh4NWxhb1ZJRFBIc0FJNWw3cG9malJkSjN2dXJ1UnlZZw?oc=5) | TradingView |
+| 4h 前 | 0 | 中性 | [Applied Digital stock could nearly triple as an... - Pluang](https://news.google.com/rss/articles/CBMilAFBVV95cUxOTTBSck53aHRLbi1fZ0tJd0VFWXVCR1hzZWFTZ3FNLXc0QTJoSTdoXzNzNGJDV2R1a3FjWGVTc3FwZUpTNjZDbGdUTGJnd1FMRFE1NUdQZHhZaTNaQVMwcURHOHJvMEVaaDRHUDQzVEJGNG5iS1IxRnB0S19aTVJjMU50WXNDRTQ0ZmJRcnlzXzNoZFRR?oc=5) | Pluang |
+| 4h 前 | 0 | 偏空 | [Applied Digital Has Fallen Hard Over 1 Year: One Lead Analyst Says It's Going to Nearly Triple in Price - 24/7 Wall St.](https://news.google.com/rss/articles/CBMi3gFBVV95cUxPMU5jUW1VREVXdnljYWEySC0yM1Y3NWh1WkhVMDdYcmFkbnZIRGVhVlNqZC1KeVBhNy1XYmhlUGRGNUx1dGluVVp6aFdjS1RXcTVfOTlRODVQVkRuWTJEekowZ2NpS1lSa3R3OGNsY04tMVlhVXZwVXo2R29kTHh5OW90SmlGcTdZang3THNhd2lGZVVHN0N4RmV0T0hITllvUjZqT21qaV9McVJod0ZBRTFLUG5Scm4zdE95MXZRVTNtWmlYa193SC1sUm1oWXVlUVhSTkhFRG4yRnFabFE?oc=5) | 24/7 Wall St. |
+| 11h 前 | 0 | 中性 | [Applied Digital: More Than 600MW Could Drive The Next Leg Of Growth (NASDAQ:APLD) - Seeking Alpha](https://news.google.com/rss/articles/CBMiqwFBVV95cUxNbGFlTjdpczhBTzEyTTROQUxQbHB3Z2diaDNBMDgyOU1teFJzU2gyVDRLYkhnM3RFN2lHSGFjMU42MkFueV9OQUtUNllwaXFfNGR5N09MWEVUcnF5OTRkTEhnNzJjaklYNGN0eW1hSnhmMldXOUdldEZjcGZBNW5YaVVXajZFNm5HRE1EbWNEc3g4YWpGMWNkU3U4OGlhZE1CMlpxNEgxQ202dGc?oc=5) | Seeking Alpha |
+| 11h 前 | 0 | 中性 | [Applied Digital Targets 4 GW of AI Data Center Capacity by 2030 as Demand Accelerates - entARABI](https://news.google.com/rss/articles/CBMiugFBVV95cUxOLWdrQ2xsXzhTSHFfVml1Z3ZOSFpNbkl3SmN5NkNWOXBUbHY4RWFwWExxVTY4aHczNWRJbWlMOVUxLVZJNlJCcjRkdTFaSmZoNklsYnFfNXp6VzVBdlZ6MldEbUpldzVWdEJaWEtrWUtBd1puRGhfUDJ4Nld0QnhSR3M5ZGo5bm5RUWd5ZGJMZUIyRnU1ZUgwQ1FaUC00OTFxaDRXVjJKT09tWmFpRWlnYWlSUDkzMDdaUFE?oc=5) | entARABI |
+| 22h 前 | 0 | 偏多 | [Applied Digital (APLD) Stock Revenue Surge Clashes With Deepening Losses - Simply Wall Street](https://news.google.com/rss/articles/CBMizwFBVV95cUxQSUJWMnBGbEt4ZVFtUnFRSmNTUTV5OVFLbExlTVV5X3N3NUFqQnZmRUc5a05YSks3Q2dQN29Uc2dab2ZuV2p0aUxOY0U2WTMtWVQ1M2lVUHJZeGxULU1HaXdmMGh2OE9kZEJhTzJ1T2k1NkZzQllvUkJBWUlRV0F2NVFlRDlQRDF2YUJaYUxxT3dMVDhONkFKYU41R3ktbDBaRDdGVWw3eHAxcWpuakRSNmFmNEp2dlpVX3Q5NlgyaFlNZlFNQXlKTW9EbUNjelnSAdQBQVVfeXFMTkR6UnVzNk5jcWliRkxoUFN1YXVnUFV6R2RjYVU4VkJBekl6OHNlVWpfemNhTGZHVWJhZnE5RG5LYmRDTU5HWld2U3RZREEzOXR1MzBaZ0VDNkFueVVtTHVWUEZERUVXSHBmcHNyZEZ0SElKRkJkbG14REgzVEZGS2ZpSWp0MXRZVU5vOFFaWFJ4bm40TGJ6a1dXQmI0a0Yzd0gtcUxhR2FpX2g2bG8wTDFCLUhPaENhNWluUFdPUFJ5QTI4TGhtcVI1LVJ5UWFfTjVEclQ?oc=5) | Simply Wall Street |
+
+_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
 ## 五、反方观点与风险
 
@@ -122,7 +137,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 - 自由现金流为负（-$42.84亿），意味着经营本身在消耗现金，未来可能需要再融资摊薄。
 - 空头占流通股 21%，是双向的：可能轧空，也说明有人在认真做空这个逻辑。
 - 卖方目标价区间 22.00–93.00，宽度超过均值——分歧极大，共识在这只股票上没有信息量。
-- 政策面对该板块的倾向为 -0.95（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.96（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 

@@ -112,10 +112,18 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 4h 前 | 0 | 中性 | [AXT Stock Fell 10% in a Day Even as Analysts More Than Doubled Their 2027 Revenue Estimates. Here’s Where the Stock Could Go - TIKR.com](https://news.google.com/rss/articles/CBMi4AFBVV95cUxPdksya2pzY0xrVFhSNEJ3LURBN0JybkJJbGd5UnByM2ZtX0swbk5hY1pfemItNUZ3M296OVFSc3RQWlVwSFhQTGZQcGxDZVZqZFN4WUxhNVR6NWotaHNVdk8xVl83TnlfNTN5MDlKOVZYZ1FrYXRxazVNQzIxcW9MREFQNjFZSENQeVpZQkJTUVh3amlJRUZuYTlib1I1eHhGRFFXSGcxa1l5bFRMTzQ2aUVHSUhwVTFrZ0hydzc0ZjhBeDYtREkya3ZuS0lIeEZiNXl0NFRqWmIyR2hud29WTA?oc=5) | TIKR.com |
-| 23h 前 | 0 | 偏空 | [AXT, Inc. Shares Fall More Than 10%, Extend Losing Streak to Three Sessions - www.tokenpost.com](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9YNDI0T24xbkJNbmNGbXd0aFA0RWtod3B0enQwVGhNOFlXdmxjb2p3WUFXek5HVHJFeHVDc1EyQkE0ZmUtYXRvRHNtVDBSSDVlODFiVm9PcmN3UQ?oc=5) | www.tokenpost.com |
-| 23h 前 | 0 | 偏空 | [AXT slumps 10%, pushing losing streak to three sessions (AXTI:NASDAQ) - Seeking Alpha](https://news.google.com/rss/articles/CBMilgFBVV95cUxQVzh2V1N0akhXaTNHemNKSXVBSl9fRWlQQnE4TERYV1RQY2VtQ2pzeDNXa0luckZ6SnNYajdvZk9aT0hoWEVFdWtOdFVyd1I4YjlWUlkzNGJIajJCSHVsRzdLOTBKX2dUbmNSN2htNEtDZzJQWk5TWWkybjN4alZjVE8tV2wzNXpIMHF0T2Q4ZjV1TlhxcGc?oc=5) | Seeking Alpha |
-| 32h 前 | 0 | 中性 | [AXT could get a boost as China needs optics, faster networks: Wedbush (AXTI:NASDAQ) - Seeking Alpha](https://news.google.com/rss/articles/CBMipgFBVV95cUxQYzJRdDQ2N1MtTC1QVjdsT1lfa3V6NUg5UGRLenBsLVJBMFNqUTgzcVBITU1UUXd5azV5TEY4ZTZmaXl3Vzd1eFliZ0JQZEhQUE84WVpNbUJlODlOWnVCbWtUWXUxRWZTeTBnc3p1Y3ROMHZPZEF6NzF5aVBIQ2ZORFEzbmxlUEYyb2lYX0dlRnd1c0ZBb3k0TWdrNWdqR0IwT1V6bXNn?oc=5) | Seeking Alpha |
+| 4h 前 | 0 | 中性 | [AXT Stock Fell 10% in a Day Even as Analysts More Than Doubled Their 2027 Revenue Estimates. Here’s Where the Stock Could Go - Yahoo Finance](https://news.google.com/rss/articles/CBMijwFBVV95cUxOTlJ0blZ4TVhOQmxqUmVPR1BPdkZDSkFvVkFOVjZlRHA5ZHdoWjZDMGZGaUtfZjR2cExuQVNXTlVCeW5EUEhvbFBRZkdVUkdFQXhKRFpnNHd0OVgzSHMxUy1OR1ZrbVhfeWR3TXBmZlh0Z09EUkNfdFNBQkMxUzJwS3BZVWZhZXE0UlJOTGNabw?oc=5) | Yahoo Finance |
+| 12h 前 | 0 | 中性 | [AXTI Nov 2026 74.000 call (AXTI261106C00074000) Stock Historical Prices & Data - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMicEFVX3lxTE9wdENhTV9GdE9RM3ZPZEcxUXZLTklBVUtWTFQzbU5XeU4yZ2htcjNBOXplaDg5MFBRemx2eF9PMnJoQ3BTakxfZWx0MzNTRmhXb2t2RUFVSXJWYjdobDljeExya3M1cGRDUDNMd1hMdlA?oc=5) | Yahoo! Finance Canada |
+| 18h 前 | 0 | 中性 | [AXTI Oct 2026 68.000 call (AXTI261016C00068000) stock price, news, quote and history - Yahoo Finance UK](https://news.google.com/rss/articles/CBMiZkFVX3lxTFBpQ1RNS19Ycm82cThMR0RQVGhkUXh5RW5Gd0cwbGZRWXNNdVBsb2g5bC1lbm51cHdLY2xYQ0U1ZWtZYnoyV2Jqbld1RzdJNUk0SkUtamtKTlhTbHF3N21vWEJJY1FwZw?oc=5) | Yahoo Finance UK |
+| 19h 前 | 0 | 中性 | [AXTI Nov 2026 66.000 call (AXTI261106C00066000) stock price, news, quote and history - Yahoo Finance UK](https://news.google.com/rss/articles/CBMiZkFVX3lxTE5mSllTQjhDMlEwOG9TUEFORFVwbUhMMF9veHhxVnh0Rl9yNXVvdXEwU2JPSGphZ3J4enRhNVpreTZtaUh3aFM2TXlVXzdLMVhPMFhXWnFtYVNiblFSdmtBQ3VuTEl1QQ?oc=5) | Yahoo Finance UK |
+| 19h 前 | 0 | 中性 | [AXTI May 2027 50.000 put (AXTI270521P00050000) interactive stock chart - Yahoo Finance UK](https://news.google.com/rss/articles/CBMibkFVX3lxTE5NRktrWGR2S19LN01wWjl2aV9fb0k4c0RsOXN1R3dDRFlGTmV0ZEJ3LVI5ZTA5N1dRazA4TExoQ0xOZmRkb2ZHeTJGRnl6MG1LWko2UkJCbWVZNnVwWEoyOHAtMDVQank5ZUpERDNn?oc=5) | Yahoo Finance UK |
+| 20h 前 | 0 | 中性 | [AXTI Oct 2026 60.000 call (AXTI261016C00060000) stock historical prices and data - Yahoo Finance UK](https://news.google.com/rss/articles/CBMicEFVX3lxTFBKVnlQWFJGdkhocXN4SXJZR0c3WFloSk5vblR0V3RiMGdCdHVEX2pIVnQzWVpCcGxkMTR1cUdjYU93cVE0d01RQlFhR3k1OGM5MW5SZXdEVjY3aEFjTDQ2cExqejRTeUxTU2xYaXVId2I?oc=5) | Yahoo Finance UK |
+| 21h 前 | 0 | 中性 | [AXTI Oct 2026 50.000 put (AXTI261016P00050000) interactive stock chart - Yahoo Finance UK](https://news.google.com/rss/articles/CBMibkFVX3lxTE45dkh5Sm1CX25JMWZVODQwVndIYzExNEFKNzBTVkJISjZZeGxQSExZVE1FYUN2Sm4xOTFQc3ZNRVlLR1d0S3R0NnlJRWNULUNjbkxtWXE3TFVodEZCXzNVanRDZnNvNUNyVzUwczVn?oc=5) | Yahoo Finance UK |
+| 21h 前 | 0 | 中性 | [AXTI Nov 2026 67.000 call (AXTI261106C00067000) stock price, news, quote and history - Yahoo Finance Australia](https://news.google.com/rss/articles/CBMiZkFVX3lxTE9KcUlCSkFLeVRDVnVzU3pkcW1XRnVsM1c5RHF3RFMtYjQxS3dheTU4V2ZVa0RjM2ZfOGJYUjZPVE8xLXdWckc4ZlhESTNQVmVPNm1uUWVIMU43SXd5N3lWSE9vNGpzZw?oc=5) | Yahoo Finance Australia |
+| 23h 前 | 0 | 中性 | [AXTI Oct 2026 60.000 call (AXTI261016C00060000) interactive stock chart - Yahoo Finance UK](https://news.google.com/rss/articles/CBMibkFVX3lxTE5EUWJiU0MxVE5tVWNsQ2FyaDZ0N1R0TkRUaWRYYWJjZ0ZYdmQxVmpFN2FyYzN5eUpmcW9acVlFQWtkeEU2YXpvNkJfdWFOVkdUUl8tMlJpOWxuNkNCZUlMamlXT1ZGWUFWU3JwdklB?oc=5) | Yahoo Finance UK |
+| 23h 前 | 0 | 中性 | [AXTI Oct 2026 75.000 put (AXTI261030P00075000) stock price, news, quote and history - Yahoo Finance UK](https://news.google.com/rss/articles/CBMiZkFVX3lxTE5iNXR5RmhEbWNSYWV0QURKTlRmYjZZNkQxOGJWMGN4WWcwWG9Xdk55endRZUpXNnRERXZ3cldmSExUQUZGSThsTDkxOHVxWjVMYmJHaTg2NFl4NGtuQUU2aVF0al84QQ?oc=5) | Yahoo Finance UK |
+| 23h 前 | 0 | 中性 | [AXTI Nov 2026 66.000 put (AXTI261106P00066000) interactive stock chart - Yahoo Finance UK](https://news.google.com/rss/articles/CBMibkFVX3lxTE5zRkFwVDYySklERUdIY0FqQkZEc1ZNX1lib29GLWE2ZXNzczFTX29ZY0xiYUJYWGt5cFAxNUNTMDRRb1JUY2dzaTRGYk5JNXV6Vm5yU2IzRXVUS0hzalVGMEUzQkdnQ3dZQy1NZUVR?oc=5) | Yahoo Finance UK |
+| 24h 前 | 0 | 偏空 | [AXT slumps 10%, pushing losing streak to three sessions (AXTI:NASDAQ) - Seeking Alpha](https://news.google.com/rss/articles/CBMilgFBVV95cUxQVzh2V1N0akhXaTNHemNKSXVBSl9fRWlQQnE4TERYV1RQY2VtQ2pzeDNXa0luckZ6SnNYajdvZk9aT0hoWEVFdWtOdFVyd1I4YjlWUlkzNGJIajJCSHVsRzdLOTBKX2dUbmNSN2htNEtDZzJQWk5TWWkybjN4alZjVE8tV2wzNXpIMHF0T2Q4ZjV1TlhxcGc?oc=5) | Seeking Alpha |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -127,7 +135,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 - 下次财报在 20 天后，落在持有期内。财报跳空会直接穿过止损——那一晚的风险不是 1R，是没有上限的。
 - 自由现金流为负（-$4,441.70万），意味着经营本身在消耗现金，未来可能需要再融资摊薄。
 - TTM 市盈率 1,712 倍，价格里已经计入了不少增长；增长只要减速，杀估值的幅度会大于业绩本身的降幅。
-- 政策面对该板块的倾向为 -0.95（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.96（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 

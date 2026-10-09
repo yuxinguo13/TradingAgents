@@ -110,14 +110,24 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
+| 时间 | 材料度 | 倾向 | 标题 | 来源 |
+|---|---:|---|---|---|
+| 7h 前 | 8 | 中性 | [Texas Instruments schedules earnings call. Zacks sees USD 326.48 target for Texas Instruments stock - AD HOC NEWS](https://news.google.com/rss/articles/CBMizgFBVV95cUxPLU9JNUlXb0hFUFVlQjdfN0ZJZjhhaVBOclpVN2pYcUd5NU85VHpYSGh3NXNCWnRzYU9fQThrZ3M2WWdIMTdJeU1aaWFIQTlGTjJmeXJ1SnZtSFNRX1JtN2F3cUlvcWRNZlU1WUE5M1M5SFVxUjV6ZTB1R2Y0WnN4YVUxcTVEcGNtbFVSbEZja2FRSEk0U2I2djRiQ1FzbllVSVpnOHdJWnRVenMzM1U1U2FTRm5QdFpFZ3hCdFdwX25nUkpqVDhtR1lIWGpUQQ?oc=5) | AD HOC NEWS |
+| 0h 前 | 0 | 偏空 | [Texas Instruments Inc. stock underperforms Friday when compared to competitors - MarketWatch](https://news.google.com/rss/articles/CBMi6wFBVV95cUxPVHBoeUFVb0R1UzN4RklfVFJtNkdpR0VETkZKRF9QenRsN2dFYktfbklYTUZ1ZmJ2a3pfTkVPTmQyLVM0NngteDJ0WGU0Y2pja0NDeXpXcUdMcVFlVXJKQUM3U2pYN3ZPRUhuem9SZTNsX04xSXozeWY3WnBlU0FzSEhFRlVsREJsOEM4akZPRmU4bkt5eHYwN3hmVE9tR0h6aHR5ZnNheGlXdUd1Q3hzRUhMdUk1djY0dnM5OVZUQTZCRHYtWG5jWlVlUmlabVY3NHd5VmZNUmszTjdkZHBZVlJlZnRpOURyZXZB?oc=5) | MarketWatch |
+| 1h 前 | 0 | 中性 | [Texas Instruments stock loses 1.70 percent after-hours to EUR 253.25 - AD HOC NEWS](https://news.google.com/rss/articles/CBMixgFBVV95cUxNZXo5YS1GcHpWbWdKVnVUY1FHc3dRSzNwZUZKWTN1d3JkZlE1UENFN3VnOHZ4M2JmV1hIanpWN292REt5UzZ0NHlUTXRkZkczRWdmRnNpUGdLNHhOSldBTUVpYlhjTEF5cVZBalc1cWFnY1BUTVJjWE50WTVWSWdvWEZ5R0ZXUEhSUktVWDlGT0tua2NNXzQ1aVl6QzRWRGV1NW1QYmJTNEtLWks3dFphY0FqallIUjRPQnRueEpmOWlRb0wtOGc?oc=5) | AD HOC NEWS |
+| 2h 前 | 0 | 中性 | [Texas Instruments stock trades at EUR 253.35 with a 43.1 P/ E - AD HOC NEWS](https://news.google.com/rss/articles/CBMiwAFBVV95cUxNWXlIRjlOMUNIQ05qUW9vUUtWODRMMmZNVm5vbng4UmZIeFFEbVpDemxkYzVISnNOck9UekpkOWZYUHhlUy0wVW5rakJOZVUwVXZ5bWVxd3N6SG82X0s5ak1sSjM1RkwyaXFMVVVNaXdVVEZRMk5rZUN6WTFSUmlNNElzS2lQd0V5cUd1a1ZJVm1KcWF6MHNMejZTRXV4bkk3dlJfWmJZZWl6dGlYdWZPNjR1Q005NzZuc0p1Z2l5ZHo?oc=5) | AD HOC NEWS |
+| 8h 前 | 0 | 中性 | [Was There Any Sign Texas Instruments Stock Would Run? - Yahoo Finance](https://news.google.com/rss/articles/CBMingFBVV95cUxNQUJsXzh5NXBsdTVCU0RLWTBfWWNZM1c2eXY0SE5mVzJHeXZveVg5TlRwNzNNQmE2MS1OTklzTXhjS25iR1NrSzdWcHhzMzI5TUQ1elZVazRVVDBrM01lUi1vM1BjSS1YUC1kRHVTcXJkdnI1ZFVVa1c1RHJLc3hoSldCVERqTE55dnhSSERnR0lWcHVoWnV0WWtSNmtOUQ?oc=5) | Yahoo Finance |
+| 12h 前 | 0 | 中性 | [Texas Instruments (TXN), Why Is The Market Looking Closer Now? - Simply Wall Street](https://news.google.com/rss/articles/CBMi1gFBVV95cUxPYnVVdTR2Sld4NnZZMHBfQW8tT19xM0hiSjNrZXhxNFJpSC05b201VUI1Q25sczR0UDI0Y0M4WFp5dXRTYVJoSjJ2SVJkV1VEVWFCa2tRVUlMUlRHV1BZOG04bGZmOVhudUotbHl5eUxaekhuYlQwcmZlVzEwaWpNS211RHhkTnVFSzdrblVRYUk5R2N1MXU0allERjZUSTdmY2V4RlZBRmQwcVRuUy00Q3NDaFdPYjkyQ0xEZVJQbUViMmlGM09leGhVREF2RmV5eXpSTEFR0gHbAUFVX3lxTFByV1JPUGpfc0xEUWQycHRmVDA1UVJNb3ZxVjYwOEZEaWhfcl9xbFNGYzlsUm9YY0xzeTlvVHZjMG5ZMVlSWmhlUUd5a1FrUWJNOWxRVDRna3dkZk5sTTlzbG5TRzVFQUlSSS1wbUEyd0RxQW1NLWZGMXdvVjV2bExjQWxhTzQyZWw5SWxPZlQxNHdkbDhCcGxpT2x4aTBhbVZiaUFUcmlnLUY5bVlEbkNuQmtkWXhmb1BnZmJ3QldCQTZESW00OER3RjVCQUYxaS1VSUpVTGRuekRGQQ?oc=5) | Simply Wall Street |
+| 15h 前 | 0 | 中性 | [Texas Instruments stock pre-market: EUR 258.08, prior close EUR 257.63 - AD HOC NEWS](https://news.google.com/rss/articles/CBMixAFBVV95cUxPaWRYVGN5MXl4VHRBekpIVTI4QXkwUmwzeS1QQUppenpHRFZNZFpTQkRWR0pILXRLWndpdG00Zjh5NEt6VmtXYl9oWDA4U2dkMHp6U3VKT3QycGZ1S0tFdHlJRXAzNm9sLXVtVDNmbFJfcUVSdndxWjdvOVZEMUFCUzc1QXNKV01uNS1QUkF2b2RJYTZtdXl0dUpPbnZ5czNLLWh1V1NFQ05DUEFfMkdFVVB4M0pPZnFYWmZ0T2hqWFI1c19a?oc=5) | AD HOC NEWS |
+
+_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
 ## 五、反方观点与风险
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
 - 下次财报在 12 天后，落在持有期内。财报跳空会直接穿过止损——那一晚的风险不是 1R，是没有上限的。
-- 政策面对该板块的倾向为 -0.95（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.96（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 

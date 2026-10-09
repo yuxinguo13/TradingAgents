@@ -112,16 +112,15 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 3h 前 | 0 | 中性 | [Marvell Technology stock costs EUR 244.15 at a 90.6 P/ E - AD HOC NEWS](https://news.google.com/rss/articles/CBMiugFBVV95cUxNVWJyRThfQTc5MmoxbGJxVjM5MEk3T050TjRrRVBncllMZUI4elAwbVNSaGNjQzNTR2cySGlPbDhfWXJrMjFPemJoZHROckY2bUhFZnlWUkdwY1pRTktzOFhiNmF0UDVyUnNhUXlkUzVwbDZ0RS03S094SFM0eDNBcnpSYXBvXzRsN3B3Y1UzcVhTek9wempPSjZGeDEtNVBOU2xZdjk2NjQ0NjhBaW1QdHdkVWZZbEpra2c?oc=5) | AD HOC NEWS |
-| 7h 前 | 0 | 中性 | [Marvell showcases AI infrastructure and Marvell Technology stock costs EUR 250.58 - AD HOC NEWS](https://news.google.com/rss/articles/CBMi0wFBVV95cUxOc3ZRZXRNenZLVUpYR213Ul84bjFCMUVPTlR1OHJYdVpqZGtJRlVHbVhrRzJpYkdJZndjeE1DaUY0a1c2NUo5SHMwbVFMVTRrVHZOVVFQRDlFSnpKMXZOUWU1cW1GdFhkZlhjNEtoVUFFUHJSMGNhMXlOYmp0R1VUX2s5eWlUa0JOQkVvTHJ4SzNYRTh1cllYcDd5MS1aSFM0bDBYRDQ0T2trNEJtci1iWXRUVm5qSjIybHRNWGRyMjFKZFpYY0EzZVptQUR3MVZ4TjdF?oc=5) | AD HOC NEWS |
+| 5h 前 | 8 | 偏多 | [ALAB Expands PCIe Portfolio With Aries 7: Can it Beat MRVL & CRDO? - The Globe and Mail](https://news.google.com/rss/articles/CBMi4AFBVV95cUxNREljTVdCQW9zUTFYNHZNdTJmU0VzcGZXelpac1BPZF9zbTJrWWhQU0p0b3h3VFdMVy10cTRYZGUzZXFhQ3BRaHBPMkM3R0lQbjg3d2FRTjhpcDhzS0xocmFEa19BYkJmWjhzU19NYVotb21jbEJwVkh0QUdPU0lOT2VhamJCVG1nSGJOaExXWEExRWIzcTk2V0hoQjVBbUVmZWMyQUVKc2dyM3p1WUFNM25heUlLU2RtV2JwYVRoVnhvSXFRVFZHbGdGaHRZMjR3M1F4Q0hTX19uMmJPQzhLUw?oc=5) | The Globe and Mail |
+| 7h 前 | 8 | 中性 | [Marvell Says Connecting AI Chips Could Be a $37 Billion Business—These 2 Stocks Rallied Too - MarketBeat](https://news.google.com/rss/articles/CBMixAFBVV95cUxOVWFQZk5TYXNuU0Y5bVhiMWpzU0tlS3BwbFkzWHR1VjlkT2RxX0hfTTE4N1lZSno1NkR6X01qWGpVX2k2dVhxclVjN2FrRzIwcmZuYm9rRjQwUUFKVi12eGR3UUw3M2lxWV9tWEtOLXVsV1hGUk9sNThOdWRvRnZwQ0NzOWdFYkwyWTRWU2FsVHRtVmZFWWR6aC1FUGwzUVBlMllFbWk4QktaNTNXcjdZWElOaGhYX1E5ZDZpNlVFb0VweEhm?oc=5) | MarketBeat |
+| 18h 前 | 7 | 偏多 | [MRVL Stock Jumps Overnight: MU, QCOM Boost Outweigh CFO’s Share Sale - Stocktwits](https://news.google.com/rss/articles/CBMiygFBVV95cUxPUHcxOGxLUW9ISnBmUGJKQ212TXYwamxvbElFYXNGbTlRZEltRXB4SzNxNWVrUE42T2hFQmxJckNSSUtKMF80OU5BRzV1Nnc2Ymp5UlhCOEZZYkxLcGMtdndyRXRvSGtMR3NXdFIwVzlRdFg3bGNjd25lTmMwc2dMeUhjczBNRzQtU2ZIcy1oXzRDSW04cER2eG9Kc2FnZkc1cTFBZzZzTjJ4bFVXdWlHaktJdm9nMDdBYjJ1czNlN1pHaWJ0anBKU3h3?oc=5) | Stocktwits |
+| 30h 前 | 5 | 偏空 | [Marvell: The Easy Money Is Already Over (Downgrade) (NASDAQ:MRVL) - Seeking Alpha](https://news.google.com/rss/articles/CBMikwFBVV95cUxQdV9IcEFPb3l5Nkp5UEcyWF9Id0NubDJGSWliSzdKVlBpbVcyazJzOXhfa0VSSDBIRnotREtPeVQyZ0FLS1F6dDFNOXgwd2Y3N294d08zZmN4UG1kU0FNWXU4NlEzVzBhNDd5OVNFQ0QzQ0Z0Zk0ycnJZUlEyR3dCOTFqVV8yMEI0Sm1qTm9xbms2bU0?oc=5) | Seeking Alpha |
+| 8h 前 | 0 | 偏多 | [Marvell (MRVL) Stock Could Be 49% Below Fair Value After AI Revenue Targets Raised - Yahoo Finance](https://news.google.com/rss/articles/CBMilwFBVV95cUxQOWJzenNjYWVLczE4Y2lGWEZKWTBRbTFFVTRhd1dkUGQ5UFQ0UFlZTHg2SzBHc2RYSHdvSm13Vk9DamN0R3FfVnVFVjl0X09tT29vVHlQNXU1aVFPQ1RNazBTbExDX080ck45bzVBcjhxNW9CczUyLURra1NBeDIybGMwUmM2aUFJR2trSHhSRTJTV1Fxa01B?oc=5) | Yahoo Finance |
 | 9h 前 | 0 | 中性 | [Why Is Marvell Technology Stock Gaining Friday? - Benzinga](https://news.google.com/rss/articles/CBMioAFBVV95cUxOY1gzRi1TWi05RGR0WjJiTGxEejJnaWUzZ3dNa1Zma3h2YjZSS3VKS0VyclNHU1FrSGZfaHI0WW9oZ2tCQWpuVWxfQlZuN1dONDdfZzR5LTlnVU9xcWVNTUR2Z2htUm1oTDB6OUNrTzdCbUlWR0lVTXVKal9mT3A0bWEtdVFndG9YbEhmOWd1ZlRwMlVkclJ3SU9kUGlHZmp1?oc=5) | Benzinga |
-| 23h 前 | 0 | 中性 | [Why Marvell Stock Rocketed Higher Last Month - The Motley Fool](https://news.google.com/rss/articles/CBMikAFBVV95cUxQZGZVZ0RLUDM5bEo4M0pRMGRZeHhLR1JtVkk2MnNqclhsRDVvS2ZjTFV6OHQ3WEJBWFdvUkozSEYta1BiYTJyenZtdUx1dURYNHNzUTVxbDVsZU04WUpGOWYtWHA1UkpuSXFzcXB5UmhXUVRVRzVfSkVNQ0xSeUctTUIyaWFla3ZOTTJlSC16dWk?oc=5) | The Motley Fool |
-| 24h 前 | 0 | 中性 | [Here's What a $10,000 Investment in Marvell Stock Could Be Worth in 2031 (Hint: It's a Lot) - The Motley Fool](https://news.google.com/rss/articles/CBMimAFBVV95cUxPSzN0M1hVeVp5TTk3YmstaDhtbjhGWFVNSWpSOTdldHVYNUJPbW44M1RfcWR0VC1jV3Bzd0NpUWxwNjR1SzQ3dWxDcWJPT1cyb04tcldQTENVa0ZzQ0E3dmx2ZTQzMnFkTzdJZ0l2TjdEZXlOajZqX2VLcDVHTUFuRWhBWWsxbzBzaEtBWExkdEhXWFk3akk4Qg?oc=5) | The Motley Fool |
-| 28h 前 | 0 | 中性 | [Stock of the Week: Marvell Technology and the Race for AI Infrastructure’s Most Valuable Resource - XTB.com](https://news.google.com/rss/articles/CBMi6gFBVV95cUxQdk1lN3Bib3dtR0dlUWJHdFIyamJCcFpyTFZTVFNjTFkzMTBCTnRjVG9keGVzUElsRi03cExLNkFtZ1c4TGdQaDdjZTZIZVNDVjhmOEVHZ2ppRERyeEhNTndVdVZGY05WWE9tRHpVXzB0LVBfSmZicnB5czNIdDVsQ0NIam92cnpEM3J1ZEdtMS1SOU1MY2c3OEFVV1ZPQm1MUWJQMkZ1UlhWdnJKSlg2cE1GTDd4dXB4Vldaanh6MlVKNWRDVF82UGl2anc0UUdsTHJQcm5zc3ZDb3ZqWlY3cUVDaGotNHFaOFE?oc=5) | XTB.com |
-| 29h 前 | 0 | 中性 | [BofA lifts target for Marvell Technology stock to USD 400.00 - Moomoo](https://news.google.com/rss/articles/CBMisAFBVV95cUxPOHVPNmlmVTc2SUlURkRyOGg3UmM4WmNtOGpzbVRLN2hRaUQ5ZEdSRzgyMmJhZEFCeVlDNzE0X1hqa09fNGFTX200UUhlQTRYMlQ5UGZPeDNScEJGVjRtTFZ0WVZuQlhyOXFhQmQwUUNTanEwY3padmM1eTBiXzhLcFZxTk0xNFVRdnJMQ2ttWnlZTW0tWXBhYlJIVmYwb0R6VFdmUDhyOFVRZnhIZVg4WA?oc=5) | Moomoo |
-| 32h 前 | 0 | 中性 | [Marvell Technology's AI Bet: Path To $90B In Revenue By 2031 (NASDAQ:MRVL) - Seeking Alpha](https://news.google.com/rss/articles/CBMinwFBVV95cUxQUnNZUlBDYUdCTDNkUTVtNzhjblFIUnpBU0NmUDJienNlQWNTb3dUa2M4U3E3QzY0N1JNb1IzaFpfcDlPLVk1QVNfRFF3Yk9wRjVvN2NLR0xZR18zODh3bVV1anE4bGNDbmFWZlJYOTNBQ3ptVWNveC10VmFFRnV2QzhDWjk0V1Bsc3IwbTN2MXBXNzVxaUlfVjdhM3RMTnc?oc=5) | Seeking Alpha |
-| 40h 前 | 0 | 中性 | [Applied Materials vs. Marvell Technology: What Revenue Trends Tell Investors About These Artificial Intelligence Companies - The Motley Fool](https://news.google.com/rss/articles/CBMi_gFBVV95cUxNWGhpenhmWEsxdXNaYXExYlhKeDZ2VDZHZndoWnZoakcyTUpoZXY2MnVEZk95Q0JVN3F3dmlTQ3prMjRydk5kUl9CdGswOGRIam9qX0JxN3Z5QU54ZDMzVENpaWdOUjhYZWxONTNOVzU2Nm43NTJEUmxWcmRhNTR3ZThsNmEyUnlwMTdCa0g2Ymxnd1dPcFRYc3RWazgzNWlRRDJVX25yYldWc2NuSlpJQ3dmQzBNTDlsZnduSkd3SzU4ZURkdE8xcVZZUmdFY1VILWp6M1JwZDJQRTlia2NCdExuSUg3WEVqbkNIa3JtT0pDRmZ3cDhxMUJMMVg1UQ?oc=5) | The Motley Fool |
-| 47h 前 | 0 | 中性 | [Marvell Technology Forecasts Accelerating Growth From AI Data Centers - Investor's Business Daily](https://news.google.com/rss/articles/CBMikgFBVV95cUxQc25vREJuRnlTbkg3eWJxU0VjbDJCanppamM1S3BNM1V1SUo5d2JrMURucVl1QnBFQmR5UnJncjY2X0tGUkZKekJnWlg3VndvLU41SmVfdFRlZkY5Snh4cHRIb3dKUVYxbnhJWXdqS1ZIbnFpZm01bGhKUUlWbnVrU3N2XzNObUNCTlJrOXJSWXJnZw?oc=5) | Investor's Business Daily |
+| 16h 前 | 0 | 中性 | [MRVL Oct 2026 275.000 call (MRVL261030C00275000) Stock Price, News, Quote & History - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMiZkFVX3lxTE9SbGpQdFpFcUlSdVBLS1c0RVlzbUFEUXpmQmFxdXhsWHpmbkJ4MDctZ3FFV2R6MWpJc1ZQaUo4M0hwcjdtX2lncE9FeF9FSklzX0RtYW9NQ1ZZZlVXSFV3ZjJNZ0Uzdw?oc=5) | Yahoo! Finance Canada |
+| 24h 前 | 0 | 中性 | [Why Marvell Stock Rocketed Higher Last Month - The Globe and Mail](https://news.google.com/rss/articles/CBMiyAFBVV95cUxPLWpLYXlQNFNSaUtLYW5JUWFxd1hWek9RSGRDNmtHbW5UbjBobTBpc3pIYlpfb1AwejNGNzVOaGhXZG5Rbm5ERkRCVE5oWU9VWklwYVhVUDNRbmtYZjFsU1Byb2JGZHVDakdQRkIxbUdkNWZyLWZOVjdhOXNPcXBzY3NTYXZqelRSX181M2hqbnZoSEtkVzR2aGt4aER5WjUxS1JieHpTQS1QZE1hYXRpRlQ3eTJvYUtQVml6c09KS1JNM2htbjBubA?oc=5) | The Globe and Mail |
+| 32h 前 | 0 | 中性 | [Fourteen sessions will cover AI data centers, with Marvell demos on memory and security. - Stock Titan](https://news.google.com/rss/articles/CBMivgFBVV95cUxPYkJMRFZ2NFlXd1JNS1pCRlp4V2tPLTlOZndTdFQ5aXV2ek14d09FcnQzRzQ1N0dHT2JTY2lkN1ZqTjJWdC1MWW8tM24tYUlQalVkZ1lkSWZoaDFHSTh6dVNuYlc5MmNsSkVmVkwwdGx0WGQ0WGwzT21LR1dYMmhKMmNFU3V2OVFYLUlJSEdJWHU1R1NEMDlINjdiNDY3RjdaWjJjRTRlVHhIR2R3c1FFVTY0bm1DRG1lNDhiSENn?oc=5) | Stock Titan |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -130,7 +129,7 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
 - TTM 市盈率 91 倍，价格里已经计入了不少增长；增长只要减速，杀估值的幅度会大于业绩本身的降幅。
-- 政策面对该板块的倾向为 -0.95（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.96（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -152,7 +151,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-06 | 271.26 | 301.27 | 267.26 | **287.01** | +5.8% | 51,285,500 |
 | 2026-10-07 | 281.30 | 287.03 | 276.50 | **284.68** | -0.8% | 23,822,300 |
 | 2026-10-08 | 277.60 | 283.90 | 265.79 | **274.66** | -3.5% | 29,199,700 |
-| 2026-10-09 | 279.18 | 283.78 | 267.70 | **275.28** | +0.2% | 14,969,695 |
+| 2026-10-09 | 279.26 | 283.78 | 267.70 | **275.28** | +0.2% | 14,969,695 |
 
 ## 七、自己去查（本页不做独立验证）
 

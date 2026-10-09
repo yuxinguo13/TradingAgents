@@ -112,7 +112,12 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 23h 前 | 0 | 中性 | [TTM Technologies slides as investors weigh acquisition-related debt amid a broader semiconductor selloff - Quiver Quantitative](https://news.google.com/rss/articles/CBMi0wFBVV95cUxPZk16NGVWalFwWnFrNGRxellCN0FaeDF0elVwZmVyVG9FcTl0X1pqZzMwLTZSZHpiUm5iaFNHckoyUjVHek5CeXFBVnA0eUE5bS1JbjFsVXkxdWlJLXl6WG5VWkxKemJtNGZtd29pakUxa2syVnFXeTNRekdtTkVTZjQ3aVZpU3lvM09wSmQyVVV1YWtUR2t5WGpjMXFnRHdBRE9zWVV3WHhPYUdfSmF5N0lTWGNDZ00yWTZlcXlRRVBMMEVDM013THFaSFBlYW5QRWU0?oc=5) | Quiver Quantitative |
+| 14h 前 | 0 | 中性 | [TTMI Nov 2026 100.000 call (TTMI261120C00100000) interactive stock chart - Yahoo Finance UK](https://news.google.com/rss/articles/CBMibkFVX3lxTE1ZcWw5a09VeE5PVjJJeFR0cVVUWWhPemFLR1hFVGtYODYzb2dmNVgtUk82YnFUdWRrVlplRmJZV1AwSEppajdMVzRwOVl3a0t6SFk2RVRLXy1KNkZZaXVlZGpRaGtoVW8tQTN4TktR?oc=5) | Yahoo Finance UK |
+| 24h 前 | 0 | 中性 | [TTMI Nov 2026 130.000 call (TTMI261120C00130000) stock price, news, quote and history - Yahoo Finance UK](https://news.google.com/rss/articles/CBMiZkFVX3lxTE9mMEptbFZ4MVE5Zkd4dTRKU2FpbDlLOHIzYXVtV3RDbTdFaDFha2pfcEZFa1Ffdmd1cmFLUUdzbks3bjFWWGpZMzFQMW1LNnFUZXN2ZnV5R21sRzltbUZEMUFTbjhWQQ?oc=5) | Yahoo Finance UK |
+| 28h 前 | 0 | 中性 | [BWCP, LP's TTM Technologies Inc(TTMI) Holding History - GuruFocus](https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9rVy1jaUZWVW8tbjFiVVEtbDE1S1ZFNHpQNlBoMFV6THhYWFo1WXFaNmVVN1A2akdjNVdQalhZam1WdmhmTnN2eElZc1NEekdDQnlMQTJ3R3pDYndTa19xUmJqS2tDZFE?oc=5) | GuruFocus |
+| 36h 前 | 0 | 中性 | [TTMI Mar 2027 145.000 put (TTMI270319P00145000) stock historical prices and data - Yahoo Finance UK](https://news.google.com/rss/articles/CBMicEFVX3lxTFBodTR5eVZRSGRDRHVxSmhScU5OQXJpY1F4VXRseXVoa3FHVk1fdTk1RkFhd3lmc0tZeTZYVVdSU1ZwR1RhM0tERXBWdkxOVlAzT1Rob0RzcW1OY1FfaHYtRGdYY2tyTUtiNV9MdFZ0ckQ?oc=5) | Yahoo Finance UK |
+| 39h 前 | 0 | 中性 | [TTMI Oct 2026 280.000 put (TTMI261016P00280000) stock historical prices and data - Yahoo Finance UK](https://news.google.com/rss/articles/CBMicEFVX3lxTE1YUmdGT250eXQ0ZjNUT29KTGJURVBKUkpva0pmU09fTGg2blBxekwxemoxdGdZTElwNEZ3MG5udEpDdFRJTDlNSnZPeVd6Y2QybzhZbFJDWkQ4UDZCLWlvNExQNmNjeGI1d3M3cVlrc3Q?oc=5) | Yahoo Finance UK |
+| 43h 前 | 0 | 中性 | [TTMI Nov 2026 65.000 put (TTMI261120P00065000) stock price, news, quote and history - Yahoo Finance UK](https://news.google.com/rss/articles/CBMiZkFVX3lxTE5yTmtyVHl3R094OWdhdHJBR29NTjc2a3pZeURfVTNGOHpQdER1b2hvWGpZTDdUY0lWdDVZWTE0eGdTOUlSSEdjZmFtQ1NodFlrUFFUcnJFQ1ltVmNLY1lwVFFsVnVnUQ?oc=5) | Yahoo Finance UK |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -124,7 +129,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 - 日均波幅 6.3%，属于高波动：同样的仓位金额，这只股票的日常噪音就能触发大多数人的心理止损。
 - 下次财报在 26 天后，落在持有期内。财报跳空会直接穿过止损——那一晚的风险不是 1R，是没有上限的。
 - 自由现金流为负（-$1,944.24万），意味着经营本身在消耗现金，未来可能需要再融资摊薄。
-- 政策面对该板块的倾向为 -0.95（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.96（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
