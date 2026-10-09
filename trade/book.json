@@ -139,6 +139,96 @@
    "stop_raised": true,
    "sleeve": "core",
    "triggers": []
+  },
+  "DT": {
+   "symbol": "DT",
+   "shares": 129,
+   "entry": 62.6,
+   "stop": 59.87,
+   "target": 70.9,
+   "opened": "2026-10-09",
+   "horizon_days": 20,
+   "sector": "",
+   "thesis": "动量账：Dynatrace 10/8 在纳指 −1.25% 的一天 +2.6% 收 52 周新高（61.12），今晨再 +2.4%；20 日跑赢标普 +19.0 个点，三月 +40%，三条均线上。Q2 ARR +18%、全年上调，Arize 收购已兑现不计催化剂；量比 1.3 不计 volume。止损在突破日低 59.87（4.3%，1.66 ATR，高于 20 日线 57.42），目标 70.9 = 三月 +39.9% 折三分之一，R 3.1。财报约 11/4 在持有期外。",
+   "invalidation": "收盘跌回 59.87，次日开盘平掉；IGV 软件 ETF 收盘跌破 50 日线；20 日相对标普跌回 +10 以下",
+   "principles": [
+    "十·强势买强势：pattern+rs",
+    "十·止损在突破日低点或 20 日线取高",
+    "十·到 1R 后止损跟 20 日线"
+   ],
+   "regime": "标普 7,765 在 50/200 日线上，纳指昨 −1.25% 后今晨 +0.8%，10 年期 5.23%（30 年期拍卖 5.618% 需求强），VIX 15.4，Brent 102（特朗普称中期前不打伊朗）；不是防御日",
+   "parent_id": "d72b58af-1ea3-4369-9867-a8c98b0ec098",
+   "legs": {
+    "limit": "f53e4581-16ec-4c94-987f-e28d2bc923a9",
+    "stop": "80f152fb-fe63-4045-92f3-0b348b9d7754"
+   },
+   "adopted": false,
+   "stop_raised": false,
+   "sleeve": "aggressive",
+   "triggers": [
+    "pattern",
+    "rs"
+   ]
+  },
+  "PLTR": {
+   "symbol": "PLTR",
+   "shares": 40,
+   "entry": 200.6,
+   "stop": 195.65,
+   "target": 238.6,
+   "opened": "2026-10-09",
+   "horizon_days": 20,
+   "sector": "",
+   "thesis": "动量账：Palantir 10/8 放量 1.9 倍 +2.2%（纳指 −1.25% 的一天），20 日跑赢标普 +15.5 个点，三月 +57%，三条均线上，离 52 周高 1%；今晨高盛升到买入 +0.9%（单家评级，不计催化剂）。止损在突破日低 195.65（2.5%，0.85 ATR，高于 20 日线 184.91），目标 238.6 = 三月 +56.8% 折三分之一，R 7.6。财报 11/2 在持有期外。",
+   "invalidation": "收盘跌回 195.65，次日开盘平掉；10 年期收盘 >5.35% 且纳指跌破 50 日线；20 日相对标普跌回 +10 以下",
+   "principles": [
+    "十·强势买强势：volume+rs",
+    "十·拉伸不是动量账的禁忌",
+    "五·单家评级不算催化剂"
+   ],
+   "regime": "同上",
+   "parent_id": "55a25151-ce0a-4876-8706-bbbb6c2c1b06",
+   "legs": {
+    "limit": "31a622c7-7ad2-43f2-bfa5-cbe6bf0c1742",
+    "stop": "2d6475c1-f5e5-4ca5-b4f2-9deb2ecf18f4"
+   },
+   "adopted": false,
+   "stop_raised": false,
+   "sleeve": "aggressive",
+   "triggers": [
+    "volume",
+    "rs"
+   ]
+  },
+  "PBR": {
+   "symbol": "PBR",
+   "shares": 325,
+   "entry": 24.87,
+   "stop": 24.26,
+   "target": 28.75,
+   "opened": "2026-10-09",
+   "horizon_days": 20,
+   "sector": "",
+   "thesis": "动量账：Petrobras 10/8 +2.9% 收 52 周新高（24.69），20 日跑赢标普 +16.2 个点，三月 +47%，三条均线上；巴西第一轮 Bolsonaro 领先、第二轮 10/25 首份民调 53:47，Brent 102 以上。止损在突破日低 24.26（2.5%，0.78 ATR，高于 20 日线 21.60），目标 28.75 = 三月 +46.7% 折三分之一，R 6.4。财报约 11/10 在持有期外。",
+   "invalidation": "收盘跌回 24.26，次日开盘平掉；二元事件写两档：10/25 第二轮若 Lula 反超（任一民调领先）当天减半，若 Lula 胜选次日开盘平；Brent 收盘跌破 90；20 日相对标普跌回 +10 以下",
+   "principles": [
+    "十·强势买强势：pattern+rs",
+    "五·二元地缘/政治事件写两档失效条件",
+    "十·止损在突破日低点"
+   ],
+   "regime": "同上",
+   "parent_id": "bc4d4c65-3b71-4ed3-82a6-dfb8c81d74e8",
+   "legs": {
+    "limit": "25e0766f-4575-45c3-9c3d-4a8dc325d60f",
+    "stop": "5f61b8d6-b355-4461-b1ef-d9d3826ea6c5"
+   },
+   "adopted": false,
+   "stop_raised": false,
+   "sleeve": "aggressive",
+   "triggers": [
+    "pattern",
+    "rs"
+   ]
   }
  },
  "closed": [
