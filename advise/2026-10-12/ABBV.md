@@ -32,7 +32,7 @@ _医疗 · 数据截至 2026-10-12 收盘 → 面向 2026-10-12 开盘_
 ```text
        ABBV · 近 21 个交易日（放大看最近节奏）
 281.1 ┤                    ╭
-278.4 ┤                    │
+278.5 ┤                    │
 275.8 ┤                   ╭╯
 273.2 ┤                  ╭╯
 270.5 ┤                 ╭╯
@@ -112,17 +112,17 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 15h 前 | 9 | 中性 | [Weekly Recap: Phase 3 Epkinly success and AbbVie trial‑driven stock rise - TradingView](https://news.google.com/rss/articles/CBMizgFBVV95cUxPajBPUnFrdjYwVXl0OTBGR1VFcHFvOV9GMnpRNVZkUnlKcVQza2dyeDdDdDhydE1LelVIRGZnTzFVSzgxemN2Y1F0a3R5R0w0UUNZWjhOMkw5eURLQkVOejFOSjFCX1h2b3F3WHpKdXlzRXZDRWNlMzBLWERaaWV3M3pfS1d5OGVNMnRiTTFNYjhwdHBtNE1jRXBzbC1LTWdhRFpWYTV0TmZ4ZnZOeEpVSEpIZkFWWVMweW9jdURIa0cxWjNOUWNFdlh1SjFDdw?oc=5) | TradingView |
-| 27h 前 | 9 | 偏多 | [AbbVie (ABBV) Wins Two FDA Breakthrough Tags, Is The Stock Fully Priced? - Simply Wall Street](https://news.google.com/rss/articles/CBMi1AFBVV95cUxPa0dzekVmdV9JZENyYnhPV3hnQUlDd3k0OHZSZzBkNW9TNTZCY3oxc05Jc1JkWE5Ba2hQOTd5VlR1NnJaQ1RINk85WDJEY1d0bnZZOHdUMTdPMUs3Q1MxMnZPZzVhMVZ0eTY3di05a1BYQmY1bzFvTC1ZNFUzalpNUHl2blU1TWZUYjF2bzhscU15bi1KakoyUFNfeUNHdUNjMTdGRjM0aFd2Ukk3aV9oaW1UWS1kMWxyWlZiU2ZaWnNTVzJqaUJQdk5EcjVOSVZ1TjNSYtIB2gFBVV95cUxNcEtWVThKZ1UwZmZvdlFLbENjNjZDU3BNeUd5dy1nenpYbzBtZlRobTZaRkRwbEp4bG1SWE13ZXkxXzRiV1lRckNMbFFjMnM2eS1jQmsyanRuTGxnUDY1MTVfcW1UWG5ydVE0ZDRoU3JISXRUejBVVkV2LXZ3UVZkSHJnbjRKYmVnaWpWYXcyaEZvNy1rTUlwWl8yVXpzZXBSRjlxUmZoR2xCckNrbVB4Y1ZMZWR6SUM0RFhJNmtvdjVudlpMNENsUEdNa0VkRVFnZkZlRnFnR044Zw?oc=5) | Simply Wall Street |
-| 6h 前 | 8 | 中性 | [Will Skyrizi & Rinvoq Drive AbbVie's Top-Line Growth in Q3? - TradingView](https://news.google.com/rss/articles/CBMisgFBVV95cUxOanhsTEhndF9veG5jb09KZmg5WWk5ZUFSbUdIeHYyWE1HZmx5aUg4SWkwN1FIMUJ0Tk9oZEg1QU5rRVRsMDIwckR5Y2FrNXA5VmE3Z0tKdTVobi11ZU5ncFE3MnBFeWVQWlF5TGRndlV1THktdHJaaW9Day01bHJCWDM1TjBtalNpeEtmZ0RTQTZadnUzc3V0MzNkY0JlcDMzQklBMWtkSlBPTHFBdzZhNm13?oc=5) | TradingView |
+| 16h 前 | 9 | 中性 | [Weekly Recap: Phase 3 Epkinly success and AbbVie trial‑driven stock rise - TradingView](https://news.google.com/rss/articles/CBMizgFBVV95cUxPajBPUnFrdjYwVXl0OTBGR1VFcHFvOV9GMnpRNVZkUnlKcVQza2dyeDdDdDhydE1LelVIRGZnTzFVSzgxemN2Y1F0a3R5R0w0UUNZWjhOMkw5eURLQkVOejFOSjFCX1h2b3F3WHpKdXlzRXZDRWNlMzBLWERaaWV3M3pfS1d5OGVNMnRiTTFNYjhwdHBtNE1jRXBzbC1LTWdhRFpWYTV0TmZ4ZnZOeEpVSEpIZkFWWVMweW9jdURIa0cxWjNOUWNFdlh1SjFDdw?oc=5) | TradingView |
+| 28h 前 | 9 | 偏多 | [AbbVie (ABBV) Wins Two FDA Breakthrough Tags, Is The Stock Fully Priced? - Simply Wall Street](https://news.google.com/rss/articles/CBMi1AFBVV95cUxPa0dzekVmdV9JZENyYnhPV3hnQUlDd3k0OHZSZzBkNW9TNTZCY3oxc05Jc1JkWE5Ba2hQOTd5VlR1NnJaQ1RINk85WDJEY1d0bnZZOHdUMTdPMUs3Q1MxMnZPZzVhMVZ0eTY3di05a1BYQmY1bzFvTC1ZNFUzalpNUHl2blU1TWZUYjF2bzhscU15bi1KakoyUFNfeUNHdUNjMTdGRjM0aFd2Ukk3aV9oaW1UWS1kMWxyWlZiU2ZaWnNTVzJqaUJQdk5EcjVOSVZ1TjNSYtIB2gFBVV95cUxNcEtWVThKZ1UwZmZvdlFLbENjNjZDU3BNeUd5dy1nenpYbzBtZlRobTZaRkRwbEp4bG1SWE13ZXkxXzRiV1lRckNMbFFjMnM2eS1jQmsyanRuTGxnUDY1MTVfcW1UWG5ydVE0ZDRoU3JISXRUejBVVkV2LXZ3UVZkSHJnbjRKYmVnaWpWYXcyaEZvNy1rTUlwWl8yVXpzZXBSRjlxUmZoR2xCckNrbVB4Y1ZMZWR6SUM0RFhJNmtvdjVudlpMNENsUEdNa0VkRVFnZkZlRnFnR044Zw?oc=5) | Simply Wall Street |
+| 7h 前 | 8 | 中性 | [Will Skyrizi & Rinvoq Drive AbbVie's Top-Line Growth in Q3? - TradingView](https://news.google.com/rss/articles/CBMisgFBVV95cUxOanhsTEhndF9veG5jb09KZmg5WWk5ZUFSbUdIeHYyWE1HZmx5aUg4SWkwN1FIMUJ0Tk9oZEg1QU5rRVRsMDIwckR5Y2FrNXA5VmE3Z0tKdTVobi11ZU5ncFE3MnBFeWVQWlF5TGRndlV1THktdHJaaW9Day01bHJCWDM1TjBtalNpeEtmZ0RTQTZadnUzc3V0MzNkY0JlcDMzQklBMWtkSlBPTHFBdzZhNm13?oc=5) | TradingView |
 | 35h 前 | 6 | 中性 | [AbbVie's Dividend Yield Is at Its Lowest Level Since 2018. Here's Why the Stock Is Still a Great Pick for Income Investors Anyway. - The Motley Fool](https://news.google.com/rss/articles/CBMimAFBVV95cUxOYUlXZWpFTlFHb2YwSUhQZ3RnWFQ5YnFVMThjZURLTjRoeF83cHNPdEdyUW9OTm85WFZBLXFvRzVFQmlFVGZ4S0d3SjNkVF9TMl9UWks4a3otaTlsSjRJWmo4NWt4ODc0Y01jVThQNktWR1ZKUjhhdzNCV2N4YTREN0hYN25ZT2pxUkc1aGN6WWlzX1NGUEhOYQ?oc=5) | The Motley Fool |
 | 6h 前 | 0 | 中性 | [AbbVie stock trades at EUR 249.65, P/ E 78.22 - ad-hoc-news.de](https://news.google.com/rss/articles/CBMiqgFBVV95cUxPQ2RfNHY2amVISV82Y2diRVJYNEdQeDBONS0yVmdwV0NFbndnN2xpRWQxR1ZxeHVEQjhYRU1HdzFKZ2w0LTVncHBRUWhRRnkzb25mcXRRLXhyNWZzT2pKZE1xc2I3b1YtQldCNmNoVkdnTjRhSzVpdDUwRVY1VF9TQm50NUxyQUZrY3czMzU0bFA1bjA2WFQtdno1c3JvMElPYXdwSFdQdFJ0UQ?oc=5) | ad-hoc-news.de |
-| 9h 前 | 0 | 中性 | [Prediction: AbbVie’s Next Billion-Dollar Opportunity Is Taking Shape - 24/7 Wall St.](https://news.google.com/rss/articles/CBMirwFBVV95cUxPUlo2a1ViQW9xWWdla2p2UWFWWnlzSkVVOVpIVnVMOEhJOTdYYjM0UU5lQ2ZRV2s5b3VMVzNEMGE4WlE3c1g5X1d0YWJRS1ptR0xzSlhNeVd5SUJWV2QwWkpXME42aFN5UFlFeXlHSFdrSjQ4UFk5c1Fta1NRTEtrNkNpNkVZeEFITXBTSDNWWDNmVC1MU0UwVGN6Ulp6NzJNc0ZMN0Jwd08yeklrNEF3?oc=5) | 24/7 Wall St. |
+| 10h 前 | 0 | 中性 | [Prediction: AbbVie’s Next Billion-Dollar Opportunity Is Taking Shape - 24/7 Wall St.](https://news.google.com/rss/articles/CBMirwFBVV95cUxPUlo2a1ViQW9xWWdla2p2UWFWWnlzSkVVOVpIVnVMOEhJOTdYYjM0UU5lQ2ZRV2s5b3VMVzNEMGE4WlE3c1g5X1d0YWJRS1ptR0xzSlhNeVd5SUJWV2QwWkpXME42aFN5UFlFeXlHSFdrSjQ4UFk5c1Fta1NRTEtrNkNpNkVZeEFITXBTSDNWWDNmVC1MU0UwVGN6Ulp6NzJNc0ZMN0Jwd08yeklrNEF3?oc=5) | 24/7 Wall St. |
 | 10h 前 | 0 | 中性 | [AbbVie presents 22 IBD abstracts and AbbVie stock costs EUR 247.55 - ad-hoc-news.de](https://news.google.com/rss/articles/CBMiyAFBVV95cUxNNlFQNkpQMl9sbHFYVUc4aTlCczdEc1BzT3BpY25uaTZ3dE5vc1IwUXVmNzZwTXY5RHVYSlVzLUhTNWM4OVZScVhEYW1JRjFUVVVCdjlReE9EWEJyN3YzN2RQS3A5ZHJ3Vi1wZVVJYU9qWGNVNDdhbUgyZGlWUnZ3ZzhFLWtHeUl5VDkwSG5NMVo1YzhTTDVyRkE0cG1vOXF2TzlPbzV3UmQtY1NHSWtmWEJ3UUkwUERoMDFZVzJvUnk0c1hLMU9fMw?oc=5) | ad-hoc-news.de |
-| 12h 前 | 0 | 中性 | [ABBV Stock Analysis: What to Know - JournalArta](https://news.google.com/rss/articles/CBMijAFBVV95cUxQQV9FNVJEaFVfdzJTQzhZNmV3TWNFd2NrakFGbHhhSUFRVXFPWXVqblNHS2tka01ILThhWHBwS1p2SVB6RnhUajlHTDFiXzlnby1WSW90eWp0R3ZJLUhMN3VTX3pJMFVpTEJfZzFVbDBnSWZ1N090WjJFTGxJWUk0Rl80NzlVQk1aNGJxNQ?oc=5) | JournalArta |
-| 14h 前 | 0 | 中性 | [AbbVie presents 22 IBD abstracts; stock pre-market at EUR 247.15, plus 0.59 percent - ad-hoc-news.de](https://news.google.com/rss/articles/CBMixAFBVV95cUxNYlFNZHNjZlUwSEd0TTFsOGx2RG9QZjdxNDBiXzZ6ZGRkcEl6S09YTTdnTnQtN0lYUUpTeUhDMVdhZ09nTUtwT0F4VThmUTY1MG5tYjRtTkgzQWJxanZ6OWZPZTZZczhqVnZUSmZvNm5vLWZjeFV1N2YxNFJjV3hCVTVPMm1LbEJiQlBORHQwTEV6U21ybE9wNXBLWTNfSklqaklxZlRHblFCc0ZTcTlKZFpuX3RDNUU2eGpNaXpFMWtPT0Zk?oc=5) | ad-hoc-news.de |
-| 27h 前 | 0 | 中性 | [93.3% of Crohn’s patients with fistulas who stayed on AbbVie’s RINVOQ reached clinical and steroid-free remission. - Stock Titan](https://news.google.com/rss/articles/CBMiswFBVV95cUxQMVAxQzdrb1JnZ3RuQzAwRUxqdEt6dlRxMEdTdVloU2dVeHVDUl84RV9uNU9KWlI5SGVOX2JTZTBQaDdiU0tyVDY1X2VFTDVsZENIbXNVdFFmOV80NktLb0NZOFMwVXVROGdFeW9YMl9kZXJTdFdncDhJVV9GXzFCU0RwTGxfVnAtOEFBQXpXTFg0MW5zemlkRWtId2hxTk11N3EwUHpsdWhKMU1kOUVpSDJ1RQ?oc=5) | Stock Titan |
-| 41h 前 | 0 | 中性 | [How Much Would You Need to Invest in These 5 Pharma Stocks to Earn $1,000 a Month in Dividends? - The Motley Fool](https://news.google.com/rss/articles/CBMimAFBVV95cUxQNXJpTm5VZnNGRnU3Rk9HTzBkRml3WkxsRWNBaTRfV254VnBGVlYyalJJbnFJMjA2TEFIblVDYV9HTDluQ3RNd2x1ZUpzVHlpNlBDbmdIVVkxS2g3b1luQkdMLWwwRnlZU2NNakxsenAtS05MOHB1UTlLQ3U3aE5XZmFVY0F2Wkpad04zR0xXZk9qSnIyd3RKdA?oc=5) | The Motley Fool |
+| 13h 前 | 0 | 中性 | [ABBV Stock Analysis: What to Know - JournalArta](https://news.google.com/rss/articles/CBMijAFBVV95cUxQQV9FNVJEaFVfdzJTQzhZNmV3TWNFd2NrakFGbHhhSUFRVXFPWXVqblNHS2tka01ILThhWHBwS1p2SVB6RnhUajlHTDFiXzlnby1WSW90eWp0R3ZJLUhMN3VTX3pJMFVpTEJfZzFVbDBnSWZ1N090WjJFTGxJWUk0Rl80NzlVQk1aNGJxNQ?oc=5) | JournalArta |
+| 15h 前 | 0 | 中性 | [AbbVie presents 22 IBD abstracts; stock pre-market at EUR 247.15, plus 0.59 percent - ad-hoc-news.de](https://news.google.com/rss/articles/CBMixAFBVV95cUxNYlFNZHNjZlUwSEd0TTFsOGx2RG9QZjdxNDBiXzZ6ZGRkcEl6S09YTTdnTnQtN0lYUUpTeUhDMVdhZ09nTUtwT0F4VThmUTY1MG5tYjRtTkgzQWJxanZ6OWZPZTZZczhqVnZUSmZvNm5vLWZjeFV1N2YxNFJjV3hCVTVPMm1LbEJiQlBORHQwTEV6U21ybE9wNXBLWTNfSklqaklxZlRHblFCc0ZTcTlKZFpuX3RDNUU2eGpNaXpFMWtPT0Zk?oc=5) | ad-hoc-news.de |
+| 28h 前 | 0 | 中性 | [93.3% of Crohn’s patients with fistulas who stayed on AbbVie’s RINVOQ reached clinical and steroid-free remission. - Stock Titan](https://news.google.com/rss/articles/CBMiswFBVV95cUxQMVAxQzdrb1JnZ3RuQzAwRUxqdEt6dlRxMEdTdVloU2dVeHVDUl84RV9uNU9KWlI5SGVOX2JTZTBQaDdiU0tyVDY1X2VFTDVsZENIbXNVdFFmOV80NktLb0NZOFMwVXVROGdFeW9YMl9kZXJTdFdncDhJVV9GXzFCU0RwTGxfVnAtOEFBQXpXTFg0MW5zemlkRWtId2hxTk11N3EwUHpsdWhKMU1kOUVpSDJ1RQ?oc=5) | Stock Titan |
+| 42h 前 | 0 | 中性 | [How Much Would You Need to Invest in These 5 Pharma Stocks to Earn $1,000 a Month in Dividends? - The Motley Fool](https://news.google.com/rss/articles/CBMimAFBVV95cUxQNXJpTm5VZnNGRnU3Rk9HTzBkRml3WkxsRWNBaTRfV254VnBGVlYyalJJbnFJMjA2TEFIblVDYV9HTDluQ3RNd2x1ZUpzVHlpNlBDbmdIVVkxS2g3b1luQkdMLWwwRnlZU2NNakxsenAtS05MOHB1UTlLQ3U3aE5XZmFVY0F2Wkpad04zR0xXZk9qSnIyd3RKdA?oc=5) | The Motley Fool |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -133,6 +133,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 - RSI 75 已在极端超买区，短期回撤概率高于起涨阶段。
 - 下次财报在 18 天后，落在持有期内。财报跳空会直接穿过止损——那一晚的风险不是 1R，是没有上限的。
 - TTM 市盈率 79 倍，价格里已经计入了不少增长；增长只要减速，杀估值的幅度会大于业绩本身的降幅。
+- 政策面对该板块的倾向为 -0.43（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -154,7 +155,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-07 | 268.40 | 274.94 | 266.89 | **271.36** | +1.8% | 6,077,000 |
 | 2026-10-08 | 270.98 | 272.52 | 265.71 | **272.42** | +0.4% | 5,492,300 |
 | 2026-10-09 | 271.53 | 277.60 | 270.38 | **276.47** | +1.5% | 4,297,400 |
-| 2026-10-12 | 277.65 | 281.27 | 276.01 | **281.09** | +1.7% | 5,493,421 |
+| 2026-10-12 | 277.65 | 281.27 | 276.01 | **281.12** | +1.7% | 5,493,421 |
 
 ## 七、自己去查（本页不做独立验证）
 

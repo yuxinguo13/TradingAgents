@@ -69,7 +69,7 @@ _读不到财务数据：该代码没有可用的财务数据（可能是 ETF、
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 8h 前 | 0 | 中性 | [Own Both VOO and QQQM? You May Be Buying the Same Stocks Twice. - The Globe and Mail](https://news.google.com/rss/articles/CBMi4AFBVV95cUxPS1BiNHlWSmRlOG1VSTAzdGY3Y1QzbDZ2bVExTDdKNVRGODdBLVRjMnBuYmw0SlVjSU9TTzdab2x5VWUwOUVrNGNqYUptRVFPS1dKVkV6SjZ2eF9CN2cybF9zMHV2TlQzeHVhTU5rZFN2ZldwQ25qa2UzT3Q5M0FReWhGUnEyMy1Qc21kamFfdHJmbEtsSE8tWmlpcXBsMURoQWpNN2w3anVPY0Y5WlZfU1dsd19tVzFFNzFUVkNiRS1ZVkROSHE3bGUwa0M5MFZtckd1QWdFRHhNWFR1ZkV2ZA?oc=5) | The Globe and Mail |
+| 9h 前 | 0 | 中性 | [Own Both VOO and QQQM? You May Be Buying the Same Stocks Twice. - The Globe and Mail](https://news.google.com/rss/articles/CBMi4AFBVV95cUxPS1BiNHlWSmRlOG1VSTAzdGY3Y1QzbDZ2bVExTDdKNVRGODdBLVRjMnBuYmw0SlVjSU9TTzdab2x5VWUwOUVrNGNqYUptRVFPS1dKVkV6SjZ2eF9CN2cybF9zMHV2TlQzeHVhTU5rZFN2ZldwQ25qa2UzT3Q5M0FReWhGUnEyMy1Qc21kamFfdHJmbEtsSE8tWmlpcXBsMURoQWpNN2w3anVPY0Y5WlZfU1dsd19tVzFFNzFUVkNiRS1ZVkROSHE3bGUwa0M5MFZtckd1QWdFRHhNWFR1ZkV2ZA?oc=5) | The Globe and Mail |
 | 11h 前 | 0 | 中性 | [RQQQM to PHP: Invesco NASDAQ 100 ETF Tokenized Stock (Reality) Price in Philippine Peso - CoinGecko](https://news.google.com/rss/articles/CBMid0FVX3lxTFBDYmlEY1BxOVVZRXpUSm1jbEtXWHg1OWZWYzU5ZWtZSGhDaVNZNHBYQ2Y4NV9QaUxKWk5fVFRnMWVvMUVRUk5tYkJhWVNQOGh3dF9WTF9IVGVsa0N5em9aWDRTZUFPSzdvaERJRTRRZ3ZydmpvLWFJ?oc=5) | CoinGecko |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_

@@ -112,7 +112,18 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 25h 前 | 0 | 偏多 | [Vistra (VST) Nuclear Loan Rally Puts Valuation Back In Focus - Simply Wall Street](https://news.google.com/rss/articles/CBMivgFBVV95cUxOd1lLd2lMZWVjQmRoMzhWZ1JUV0VqYVYxZlZfb1U4SWMyUWlHZ3pKNFRqbFN1X0FkOVBIMTBZU3JHd1B6bkE0akJMbnd3WXZTbUh4dDB3ek13VmxsbHlBUGhhdE1NZkRUSzlGM1FLYUpCbnBiZFJ5MmNKUUQ3TlhLWGxNVHpRa0tlLU5pbl9jU3pDUHIwZEFQeDZZVzNWQXBSZE1hVk9HY2pxNEl3TkwwSW81aFBoQTFPRnpIS2x30gHDAUFVX3lxTFBFNXgxM0k2OXRzTzRzdnl5Tk9Mcnhhamsza0dzZ05aWmZHNU1rZmlXd212d3F3V0R2eE4wQlg1RVM1ZXZENWt4a25hem1aUnBJLU9SMHZhWEFma2xndXlvR2ltb1IyN3BNQU81elg3Zjdxa3A3dG5nWmh1Z0E4WEM4QWY0eXduX3BsZFNvMUswajBoT2wxNG02RUVDejB5aVUwdm54djhfTHk2ZmJHT0FxaWpSWU9USlRra3c1NDVMRFQtbw?oc=5) | Simply Wall Street |
+| 16h 前 | 0 | 中性 | [VST Nov 2026 180.000 call (VST261106C00180000) stock price, news, quote and history - Yahoo Finance UK](https://news.google.com/rss/articles/CBMiZEFVX3lxTFBzZTZELXV2WkNrZW5qc1puSmh4OVQ0UFBZcUlXRElRVU1rbHhfS0E1YlZXa2xOOU1pbzNGQWZXRG5KT000dFVLMjZMZXB1b0w5Mjh4VUgwaE9hYXlrTFNkd1NueWY?oc=5) | Yahoo Finance UK |
+| 19h 前 | 0 | 中性 | [VST Jun 2027 70.000 call (VST270617C00070000) stock historical prices and data - Yahoo Finance Australia](https://news.google.com/rss/articles/CBMib0FVX3lxTE41Wk1oT0ZiSWZISS1kb0xRdUxXWklVT2hZcHVrNU11TmFnb3pCNWFKYVJtcFVLQ3NEaElwNER5OXRVN3BfVEw5SVdxN2tTWDd6Q0xVZG1FS3lTSWVnc08xNVNzM1l6TTVhRjRSb2ZkYw?oc=5) | Yahoo Finance Australia |
+| 20h 前 | 0 | 中性 | [VST Oct 2026 260.000 put (VST261016P00260000) stock price, news, quote and history - Yahoo Finance Australia](https://news.google.com/rss/articles/CBMiZEFVX3lxTE9MUGRXd01zUGJSa1NrRjEyR1Fva183QmVnS29GMUI4UmJSMzc3Vk1sNXFpaTJWcE5kZWFqN3VFY2hINENrWnR6azdJQlo5NVByaDgxYWVBa0JmU3RNU2xNckpIWEM?oc=5) | Yahoo Finance Australia |
+| 21h 前 | 0 | 中性 | [VST Oct 2026 138.000 call (VST261016C00138000) Interactive Stock Chart - Yahoo Finance - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMibEFVX3lxTE92ZHZMSUh3elB0LUlrQXRQUEZzQ0ZxZGZEazJWOThaRGY4THAzcGliYnhGallYRmk5VTlLajlWM0pEM191NE5SSGpPWjNPWUM1Q1FkdXRIYkJQVy1DZTFYc05TMVRTNHlsR2ZQbg?oc=5) | Yahoo! Finance Canada |
+| 22h 前 | 0 | 中性 | [VST Oct 2026 142.000 call (VST261016C00142000) Stock Historical Prices & Data - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMib0FVX3lxTFAwa2tqNEVYakNoX1BFdVR4QjBGTktDTUh3MXAyREpEdTM5d2p6LW50M0c3aDNGNXRIcWNzVGN5RV9kNG1lTlY5OG1qeVluY1k0dXR3R1gyRnhGU2JoNXVzaTRoRmdjdGNBWHc5Y2MxVQ?oc=5) | Yahoo! Finance Canada |
+| 22h 前 | 0 | 中性 | [VST Oct 2026 142.000 call (VST261016C00142000) Stock Price, News, Quote & History - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMiZEFVX3lxTE8yaWhrU29PaG5WWUQyREZpRTJkQ3NJcVc5NnYyampsWnhJcnBILWhmVE9kSF9oMkZZMl9HN28yZkYxVVpxT0FYQVBBb0hyNHozZ2xFZmJ4aDF2cnByeXRxZkpxdno?oc=5) | Yahoo! Finance Canada |
+| 26h 前 | 0 | 偏多 | [Vistra (VST) Nuclear Loan Rally Puts Valuation Back In Focus - Simply Wall Street](https://news.google.com/rss/articles/CBMivgFBVV95cUxOd1lLd2lMZWVjQmRoMzhWZ1JUV0VqYVYxZlZfb1U4SWMyUWlHZ3pKNFRqbFN1X0FkOVBIMTBZU3JHd1B6bkE0akJMbnd3WXZTbUh4dDB3ek13VmxsbHlBUGhhdE1NZkRUSzlGM1FLYUpCbnBiZFJ5MmNKUUQ3TlhLWGxNVHpRa0tlLU5pbl9jU3pDUHIwZEFQeDZZVzNWQXBSZE1hVk9HY2pxNEl3TkwwSW81aFBoQTFPRnpIS2x30gHDAUFVX3lxTFBFNXgxM0k2OXRzTzRzdnl5Tk9Mcnhhamsza0dzZ05aWmZHNU1rZmlXd212d3F3V0R2eE4wQlg1RVM1ZXZENWt4a25hem1aUnBJLU9SMHZhWEFma2xndXlvR2ltb1IyN3BNQU81elg3Zjdxa3A3dG5nWmh1Z0E4WEM4QWY0eXduX3BsZFNvMUswajBoT2wxNG02RUVDejB5aVUwdm54djhfTHk2ZmJHT0FxaWpSWU9USlRra3c1NDVMRFQtbw?oc=5) | Simply Wall Street |
+| 26h 前 | 0 | 中性 | [VST Jan 2028 240.000 put (VST280121P00240000) stock price, news, quote and history - Yahoo Finance Singapore](https://news.google.com/rss/articles/CBMiZEFVX3lxTE1pQ1l6WUFOeTBFWXpkOTVLZFVaSXgzTngxeThLRzZlb2tCS25PZ1dUM2w4ZVRiSGRkTXlKRDRLVmFpVG12TDJvZlBscF9mQ3J3WEk5c2JybzBMaHhUSmVOQ3I4NXc?oc=5) | Yahoo Finance Singapore |
+| 27h 前 | 0 | 中性 | [VST Oct 2026 126.000 put (VST261016P00126000) stock price, news, quote and history - Yahoo Finance UK](https://news.google.com/rss/articles/CBMiZEFVX3lxTE1pa3VXMnZLRzdRa1g2R29BcG9BTGg1V0E4S2dUeUNEX1dXUXktZU5fOW1tSURDWG1DaWJ3SFZFQTFGYUQ3WjBUZU5qQlQ3cG9QeDZMTndmQlIwQ3k4MUtqRVp0bVM?oc=5) | Yahoo Finance UK |
+| 31h 前 | 0 | 中性 | [VST Oct 2026 125.000 call (VST261030C00125000) stock price, news, quote and history - Yahoo Finance UK](https://news.google.com/rss/articles/CBMiZEFVX3lxTE84VFdxazJCeU9SeFFLend4LUxIMnRrRHh4WkpaNnI2MHZ3OFllalZRaTFZYndxY2tsTjZDbDRnaHN3S1J6V25MV2ZFd015bGhBRnFOcFc0elJyRnRJb0tLMnYwMVQ?oc=5) | Yahoo Finance UK |
+| 32h 前 | 0 | 中性 | [VST Oct 2026 126.000 put (VST261016P00126000) Stock Historical Prices & Data - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMib0FVX3lxTE1PM0VjYmMzVjBMSmMwdEQ0cTltWmZKMWN2OENuNGx4TE1fU1lJWkdTYUdTU09kdmFZWVQ0WnBTSmZZc2tWTEpoYTQ5LWt0NWxNUzFNTzRNTUFMNkpwWTNsTHgwUW9XdnVPWThvSUs2WQ?oc=5) | Yahoo! Finance Canada |
+| 32h 前 | 0 | 中性 | [VST Oct 2026 126.000 put (VST261016P00126000) Interactive Stock Chart - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMibEFVX3lxTFBnUmlRVUcwajBycFAwNFJQMkctMnlsQUNjMGktZUxOaEx1aV9MLXFwX3Q0eWtmRC1NUU9pWExxSWx0alNHZWpRWXhtM2xQaTFxb0FLc1RfbXhiT1hrVlBETG9HTG9KZXE3b1pTXw?oc=5) | Yahoo! Finance Canada |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -123,7 +134,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 - 摆动高低点都在下移，属于下降结构；在出现一个更高的低点之前，任何反弹都还只是反弹。
 - 下次财报在 25 天后，落在持有期内。财报跳空会直接穿过止损——那一晚的风险不是 1R，是没有上限的。
 - 负债/权益 373%，杠杆高；利率或再融资条件变化对它的影响会被放大。
-- 政策面对该板块的倾向为 -0.53（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.60（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
