@@ -326,5 +326,177 @@
    }
   ],
   "error": ""
+ },
+ "TSM": {
+  "symbol": "TSM",
+  "fetched_at": 1791822550.5476549,
+  "name": "Taiwan Semiconductor Manufacturing Company Limited",
+  "sector": "Technology",
+  "industry": "Semiconductors",
+  "website": "https://www.tsmc.com",
+  "market_cap": 2322306957312.0,
+  "pe_trailing": 32.54086,
+  "pe_forward": 20.345669,
+  "ps": 0.5229841,
+  "ev_ebitda": 5.178,
+  "peg": 0.86,
+  "eps_trailing": 13.76,
+  "eps_forward": 22.00774,
+  "dividend_yield": 0.057355892,
+  "beta": 1.239,
+  "revenue_ttm": 4440492343296.0,
+  "revenue_growth": 0.36,
+  "earnings_growth": 0.774,
+  "gross_margin": 0.6423,
+  "operating_margin": 0.60344005,
+  "profit_margin": 0.49923,
+  "roe": 0.39969003,
+  "debt_to_equity": 16.504,
+  "current_ratio": 2.458,
+  "total_cash": 3518010228736.0,
+  "total_debt": 1068558516224.0,
+  "free_cashflow": 730826014720.0,
+  "target_mean": 578.222,
+  "target_high": 1000.0,
+  "target_low": 440.0,
+  "rating_mean": 1.38095,
+  "analysts": 20.0,
+  "short_pct_float": 0.0063,
+  "held_institutions": 0.15492,
+  "quarters": [
+   {
+    "label": "2026-06-30",
+    "revenue": 1270380250000.0,
+    "gross": 860310695000.0,
+    "operating": 766568191000.0,
+    "net": 706561938000.0,
+    "eps": 136.25
+   },
+   {
+    "label": "2026-03-31",
+    "revenue": 1134103440000.0,
+    "gross": 751295421000.0,
+    "operating": 658948859000.0,
+    "net": 572479752000.0,
+    "eps": 110.4
+   },
+   {
+    "label": "2025-12-31",
+    "revenue": 1046090449000.0,
+    "gross": 651986857000.0,
+    "operating": 564880854000.0,
+    "net": 485465363000.0,
+    "eps": 97.5
+   },
+   {
+    "label": "2025-09-30",
+    "revenue": 989918318000.0,
+    "gross": 588542829000.0,
+    "operating": 500685080000.0,
+    "net": 452301407000.0,
+    "eps": 87.2
+   },
+   {
+    "label": "2025-06-30",
+    "revenue": 933791869000.0,
+    "gross": 547369238000.0,
+    "operating": 463440498000.0,
+    "net": 398273102000.0,
+    "eps": 76.8
+   },
+   {
+    "label": "2025-03-31",
+    "revenue": NaN,
+    "gross": NaN,
+    "operating": NaN,
+    "net": NaN,
+    "eps": NaN
+   }
+  ],
+  "years": [
+   {
+    "label": "2025-12-31",
+    "revenue": 3809054300000.0,
+    "gross": 2281294000000.0,
+    "operating": 1936095600000.0,
+    "net": 1697604000000.0,
+    "eps": 331.25
+   },
+   {
+    "label": "2024-12-31",
+    "revenue": 2894307700000.0,
+    "gross": 1624353600000.0,
+    "operating": 1322003100000.0,
+    "net": 1158380200000.0,
+    "eps": 226.25
+   },
+   {
+    "label": "2023-12-31",
+    "revenue": 2161735800000.0,
+    "gross": 1175110600000.0,
+    "operating": 921429900000.0,
+    "net": 851740000000.0,
+    "eps": 161.7
+   },
+   {
+    "label": "2022-12-31",
+    "revenue": 2263891300000.0,
+    "gross": 1348354800000.0,
+    "operating": 1121226500000.0,
+    "net": 992923400000.0,
+    "eps": 196.0
+   }
+  ],
+  "surprises": [
+   {
+    "when": "2026-10-15",
+    "estimate": 4.52,
+    "actual": NaN,
+    "surprise_pct": NaN
+   },
+   {
+    "when": "2026-07-16",
+    "estimate": 3.89,
+    "actual": 4.31,
+    "surprise_pct": 0.10890000000000001
+   },
+   {
+    "when": "2026-04-15",
+    "estimate": 3.33,
+    "actual": 3.49,
+    "surprise_pct": 0.046799999999999994
+   },
+   {
+    "when": "2026-01-15",
+    "estimate": 2.98,
+    "actual": 3.14,
+    "surprise_pct": 0.0553
+   },
+   {
+    "when": "2025-10-15",
+    "estimate": 2.63,
+    "actual": 2.92,
+    "surprise_pct": 0.11230000000000001
+   },
+   {
+    "when": "2025-07-17",
+    "estimate": 2.31,
+    "actual": 2.47,
+    "surprise_pct": 0.0679
+   },
+   {
+    "when": "2025-04-17",
+    "estimate": 2.05,
+    "actual": 2.12,
+    "surprise_pct": 0.0321
+   },
+   {
+    "when": "2025-01-16",
+    "estimate": 2.22,
+    "actual": 2.24,
+    "surprise_pct": 0.0068000000000000005
+   }
+  ],
+  "error": ""
  }
 }

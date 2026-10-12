@@ -39,5 +39,22 @@
   "last_sell": "2026-08-21",
   "fetched_at": 1790790696.8104842,
   "error": ""
+ },
+ "TSM": {
+  "symbol": "TSM",
+  "as_of": "2026-10-09",
+  "window_days": 90,
+  "buys": 2,
+  "sells": 0,
+  "buy_value": 9900.0,
+  "sell_value": 0.0,
+  "buyers": [
+   "Tien Bor-Zen"
+  ],
+  "sellers": [],
+  "last_buy": "2026-07-28",
+  "last_sell": "",
+  "fetched_at": 1791822551.9635034,
+  "error": ""
  }
 }

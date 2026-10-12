@@ -1,0 +1,160 @@
+{
+ "symbol": "TSM",
+ "date": "2026-10-13",
+ "data_date": "2026-10-09",
+ "generated_at": "2026-10-12T16:29:08.644106",
+ "name": "Taiwan Semiconductor Manufacturing Company Limited",
+ "sector": "Technology",
+ "price": 453.30999755859375,
+ "change_pct": -0.01021854794989352,
+ "ret_1w": -0.04118194777903905,
+ "ret_1m": 0.06190241876684155,
+ "ret_3m": 0.07814915645741438,
+ "ret_1y": 0.5043599316508554,
+ "rsi": 52.597004705570995,
+ "vol_ratio": 0.9133753332917492,
+ "atr_pct": 0.024807995281021438,
+ "sma20": 450.3622314453125,
+ "sma50": 431.75230285644534,
+ "sma200": 390.0729095458984,
+ "ext_200": 0.16211607231661507,
+ "high_52w": 487.4700012207031,
+ "low_52w": 264.02565726438905,
+ "off_high_52w": -0.07007611458462515,
+ "support": 418.0684437302707,
+ "resistance": 475.514325662638,
+ "rs_3m": 0.036325069110774155,
+ "spy_ret_3m": 0.041824087346640226,
+ "verdict": "趋势向上且结构完整；顺势的一侧在上方，风险在于结构一旦破位就要认",
+ "spark": "▃▂▄▂▁▂▃▃▄▄▃▃▃▃▃▄▄▃▅▆▆▆█▇",
+ "score": 28.3,
+ "reasons": [
+  "多头排列：价格 453.31 > 50 日 431.75 > 200 日 390.07",
+  "近两天有利好消息 2 条"
+ ],
+ "cautions": [
+  "政策面对该板块不利（倾向 -0.96）",
+  "近两天有利空消息 1 条",
+  "3 天后财报，波动会放大"
+ ],
+ "entry": 431.75,
+ "stop": 413.89,
+ "target": 444.7,
+ "r": 0.7250839865621489,
+ "triggers": [
+  "catalyst?"
+ ],
+ "breakout_low": 449.75,
+ "earnings_date": "2026-10-15",
+ "earnings_in": 2.0,
+ "insiders": {
+  "symbol": "TSM",
+  "as_of": "2026-10-09",
+  "window_days": 90,
+  "buys": 2,
+  "sells": 0,
+  "buy_value": 9900.0,
+  "sell_value": 0.0,
+  "buyers": [
+   "Tien Bor-Zen"
+  ],
+  "sellers": [],
+  "last_buy": "2026-07-28",
+  "last_sell": "",
+  "fetched_at": 1791822551.9635034,
+  "error": ""
+ },
+ "insiders_read": "内部人买入 2 笔（Tien Bor-Zen，$0.0M，最近 2026-07-28）",
+ "fundamentals_md": "### 财报与基本面\n\n市值 $2.32万亿 · 行业 Technology / Semiconductors · TTM 营收 $4.44万亿 · TTM EPS 13.76 · 股息率 5.74% · Beta 1.24 · 空头占流通股 0.6%\n\n- **估值**：TTM 市盈率 32.5 倍；前瞻市盈率 20.3 倍（市场预期未来一年盈利上升）；市销率 0.5 倍；EV/EBITDA 5.2 倍；PEG 0.86（低于 1，增长尚未被价格吃掉）。\n- **增长**：最新季度营收同比 +36.0%；盈利同比 +77.4%；最近三个季度营收连续环比上升；最近 7 次财报里 7 次超预期。\n- **盈利质量**：毛利率 64.2%、营业利润率 60.3%、净利率 49.9%、ROE 40.0%。\n- **资产负债**：现金 $3.52万亿；有息负债 $1.07万亿；负债/权益 16.5%（负债很轻）；流动比率 2.46；自由现金流 $7,308.26亿，为正。\n- **卖方预期**：20 位分析师覆盖；平均评级「强烈买入」（1.38/5，1 为最看多）；目标价均值 578.22（较现价 +27.6%），区间 440.00–1,000.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。\n\n**分季度损益**（季度数据，最新在左）\n\n| 指标 | 2026-06-30 | 2026-03-31 | 2025-12-31 | 2025-09-30 | 2025-06-30 |\n|---|---:|---:|---:|---:|---:|\n| 营收 | $1.27万亿 | $1.13万亿 | $1.05万亿 | $9,899.18亿 | $9,337.92亿 |\n| 毛利率 | 67.7% | 66.2% | 62.3% | 59.5% | 58.6% |\n| 营业利润率 | 60.3% | 58.1% | 54.0% | 50.6% | 49.6% |\n| 净利率 | 55.6% | 50.5% | 46.4% | 45.7% | 42.7% |\n| 净利润 | $7,065.62亿 | $5,724.80亿 | $4,854.65亿 | $4,523.01亿 | $3,982.73亿 |\n| 摊薄EPS | 136.25 | 110.40 | 97.50 | 87.20 | 76.80 |\n\n**分年度损益**（年度数据，最新在左）\n\n| 指标 | 2025-12-31 | 2024-12-31 | 2023-12-31 | 2022-12-31 |\n|---|---:|---:|---:|---:|\n| 营收 | $3.81万亿 | $2.89万亿 | $2.16万亿 | $2.26万亿 |\n| 毛利率 | 59.9% | 56.1% | 54.4% | 59.6% |\n| 营业利润率 | 50.8% | 45.7% | 42.6% | 49.5% |\n| 净利率 | 44.6% | 40.0% | 39.4% | 43.9% |\n| 净利润 | $1.70万亿 | $1.16万亿 | $8,517.40亿 | $9,929.23亿 |\n| 摊薄EPS | 331.25 | 226.25 | 161.70 | 196.00 |\n\n**财报兑现记录**\n\n| 财报日 | 预期EPS | 实际EPS | 超预期 |\n|---|---:|---:|---:|\n| 2026-10-15 | 4.52 | — | 尚未公布 |\n| 2026-07-16 | 3.89 | 4.31 | +10.9% |\n| 2026-04-15 | 3.33 | 3.49 | +4.7% |\n| 2026-01-15 | 2.98 | 3.14 | +5.5% |\n| 2025-10-15 | 2.63 | 2.92 | +11.2% |\n| 2025-07-17 | 2.31 | 2.47 | +6.8% |\n\n_财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会滞后，TTM 窗口是厂商口径而非公司财年口径。以上任何一个数字如果会改变你的决定，请点开本页下方的 SEC EDGAR 链接看原文。_\n",
+ "sector_etf": "XLK",
+ "sector_w1": -0.0051548911059607905,
+ "sector_m1": 0.07446264067363506,
+ "tilt": -0.9628942486085343,
+ "news": [
+  {
+   "title": "TSMC: Beyond The Revenue Beat (Earnings Preview) (NYSE:TSM) - Seeking Alpha",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQSWNMNk84eHI0SEwxVHRKNzRsVEVlSWVoaGRvR3pLVVF3V3BBcGRTWjB5OW9qZ0k0bWZLRVRJOXdRMWFVUEh6cDRWQTctUDk5UFNRX0RJWFgwV1BUeWUxQ1ZDaEZ0Tk5QTGxQZEhBNDlMaWFwTlBRNE1GcnhkeUpOdjE2UzdMOEt3YmhkU1JMcw?oc=5",
+   "source": "Seeking Alpha",
+   "published": "2026-10-12T15:04:43+00:00",
+   "lean": "bullish",
+   "materiality": 8
+  },
+  {
+   "title": "Taiwan Semiconductor Manufacturing Company Ltd. $TSM Holdings Cut by GK Wealth Management LLC - MarketBeat",
+   "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOUndIeHBPS2Y5SndSTllTdjcxTnVHRU5FMk9fZHBBZVBvQnhrM0Y3OUFEU3VLV0hTUlpBaWZTWGtrUlRST2pNVlpuLVpzT2EzS2hXREZCSkg4WXBVOFY4TWhCWkFkbG1rdzNOVWlxUml1dV9YUkRYOVZYdklvVHExT3pqRUVuOE9WVW1neERQZDZqUF9HMFB5VDltc3F2cERtX2xFMllTYnlhT3JwRHo2aTJxR25reEgwZ2p5aFBPMHJMZVRJa0tHZ0VoclJEOTMwOXg2N1kzMC1zNHpucUE5bnF5OS0zV2c?oc=5",
+   "source": "MarketBeat",
+   "published": "2026-10-09T23:44:36+00:00",
+   "lean": "bearish",
+   "materiality": 8
+  },
+  {
+   "title": "Taiwan Semiconductor Manufacturing (NYSE:TSM) Shares Down 1.1% - Here's What Happened - MarketBeat",
+   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQelotQTZYbzU4OF9XQlc0c0J4amVjUnJZNVc5emYxcTVaRHRZX24yOXF1T0RkcXViZUphSnFEelp5dDJEY0R4NFBhNGpfS2ZtczZCYzdoV3JkcnJmMHdJb05BTGRIZDlCOExZdG9xSUxEX2lQMENqcjlta0FEelFCLWV5VFZlM2xnZ3RWMmlGX2VVQWRQQnlOMHNqWkZzcXlkTGt1M2JlcEFidEo2X1NFRTQxbnQxOG1yRFRETWVNMkZoSWdrdDBMakY2UXJvTlljWk5uZQ?oc=5",
+   "source": "MarketBeat",
+   "published": "2026-10-09T21:26:22+00:00",
+   "lean": "neutral",
+   "materiality": 8
+  },
+  {
+   "title": "Taiwan Semiconductor Manufacturing Company Ltd. $TSM Stock Purchased by Wedmont Private Capital - MarketBeat",
+   "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNNW9YMFZBSERnR2NyU3lDY1g1UVJaVWxMZ04yZm9aU21UVFdtd1RBc3NUclYxaXhLZFQ3MVBpS1RNS3ZMaGV5Rm1WN0Z1dWIzYUxfYjhkSWlLdEgyNkJMUXM1c2JPN21GTTMzTWlSVUNUbXpzVk9SX2VlT2ZpNkJyRFZCdFNMeE1YdDRyX1doQUVtSGREUWlWa2J3bmhMa1lRX0g4VkdRdTZYd3ROTUZ6U0dyNnRGR1RYcEkzMG05QWQzY21COXRwZ2FkZjEzaFZpQklkSl9CeXF6N0hsV0N5QVZ5eEZDWmZWcXc?oc=5",
+   "source": "MarketBeat",
+   "published": "2026-10-09T17:45:25+00:00",
+   "lean": "neutral",
+   "materiality": 8
+  },
+  {
+   "title": "Taiwan Semiconductor's strong Q3 sales a positive sign for Q4, Wedbush says (TSM:NYSE) - Seeking Alpha",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNZ29FV1lzdXM5SndCOThyTUlMOEZHcU5zZV9IYURPdFNBQVJZWlR2M0tFcUNPNDRuR3VNWnhKc0o3UnVvcFJCRXNELWpQMDMyLXVUT2hqRk1FaGJYTlhRSWlORnFuSFUxR0JCZjBxOTdkWXliblVVc1VjX3dZbTNKSEdNWjBQemJFVXhPR2EtcHVXck05eWUtWlk5VDh1aTh4SFkyODdMZUw0enBSbkp6VQ?oc=5",
+   "source": "Seeking Alpha",
+   "published": "2026-10-09T13:05:14+00:00",
+   "lean": "bullish",
+   "materiality": 8
+  },
+  {
+   "title": "Taiwan Semiconductor Manufacturing (NYSE:TSM) Shares Down 3% - Time to Sell? - MarketBeat",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOSkk3WEhhQ0JNN2hLTTV0MTlzeHpzeDRlVDZ5U3RpcU1OVzhsaW5uaDM1OGkwWno1dTNmNzZXQnNLcnZDS1VrUlRTN1pqdmR4RlZFU21zaXE2S3ROejdlbG5uSWduYnZ2VDkxN1lMZ2NxVTg1YkpiRHR5TElUMTJGeXQtdlNWeUtjcFVmcWcxbW50MkxpZnBXcjgtOXZnTXhvc215dTVROXJqMmhhU21Eai1UYy1fMmd6QzNiQVQ4elpleWFJWDFNbmFB?oc=5",
+   "source": "MarketBeat",
+   "published": "2026-10-08T21:28:33+00:00",
+   "lean": "neutral",
+   "materiality": 8
+  },
+  {
+   "title": "3,231 Taiwan Semiconductor Manufacturing Company Ltd. $TSM Shares Bought by Argus Investors Counsel Inc. - MarketBeat",
+   "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNNVBNMGJsUmJZNEg5Zll4YVlJTFlBSFQtSTR2OVNOQUFPa2hma1JVajdpWWJrUWN5Zm03V1FLRUVqOW9oUFFzRm1MLTA2TVFVdTZ4ZVdhXzUwU3podXFscDN5Zy1lcFVIMFFrcExIbmxScnRJem85QkZPb0NXRG0zQVZIZlk0bVVoTElDdGZjeGwyMTBuVVpZY3I0emR5R3FQeEJVNHBBblhvUm1rdGRiYXZsU2o0Y3lDLXdBUllNZWFuNE56UDZhYi0tX0dOVEdLX2JTMFVLemNqMUlDNE1tYmdaTXNzOVRJejBURE1Da3N4dG8?oc=5",
+   "source": "MarketBeat",
+   "published": "2026-10-10T07:10:14+00:00",
+   "lean": "neutral",
+   "materiality": 2
+  },
+  {
+   "title": "5,373 Taiwan Semiconductor Manufacturing Company Ltd. $TSM Shares Acquired by LifeGoal Investments LLC - MarketBeat",
+   "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNT0hoenJxRFo5Xy11RGV0ekIzZ0F0Uk94MGNEdVZmME9DcDVjeTlMWFMtTmJEM0tGVVd3UXZTeTFhdWZ1NzY1akhfTkVZeGF5UGtxMEJSOTg4QTBHWS1BSTAxWmFMay1uNlpNdWVKZmc4ZUtfX0paZWZfeVRramNKSV9CR2pLVzdRZWJBYXF3N3M1dDQ2eDhNYzVSUHdhXzVqZDBzcDBnc1RIVkNHYmo5ZjNHTXdOR3JRQlRZSVdORTFSNmhvQV9ZWjBUdjBtc0RHRDZYSThkYlVIMTVUcHJSdmtYU1cyZ3BOLUVKaFRfY04xZw?oc=5",
+   "source": "MarketBeat",
+   "published": "2026-10-09T11:18:14+00:00",
+   "lean": "neutral",
+   "materiality": 2
+  }
+ ],
+ "history": [],
+ "chart": [
+  "     TSM 近 120 个交易日",
+  "486 ┤                                                                     ╭╮",
+  "474 ┤┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈│╰╮  ← 阻力 476",
+  "461 ┤                         ╭╮  ╭╮                                    ╭─╯ ╰",
+  "449 ┤┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈││┈┈││┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╭───╯┈┈┈┈  ← 目标 445",
+  "437 ┤                 ╭─╮   ╭─╯╰──╯╰───╮···                    ╭╮  ╭╯  ···  :",
+  "425 ┤               ╭─╯ ╰─╮╭╯···    :::╰╮::···::::╭────╮::╭╮::╭╯╰╮·│···:::::",
+  "412 ┤┈┈┈┈┈┈┈╭╮┈╭╮┈┈╭╯┈┈┈┈┈╰╯┈┈┈┈┈┈┈┈┈┈┈┈╰╮╭─╮┈┈┈╭─╯┈┈┈┈╰──╯╰──╯┈┈╰─╯┈┈┈┈┈┈┈┈┈  ← 支撑 418 / 止损 414",
+  "400 ┤  ╭╮ ╭╮│╰─╯╰╮╭╯··     ::::          ╰╯ ╰─╮╭╯",
+  "388 ┤ ╭╯╰─╯╰╯··· ╰╯    ::::                   ╰╯",
+  "376 ┤ │  ···       ::::",
+  "363 ┤─╯·· :::::::::",
+  "351 ┤··:::",
+  "    └────────────────────────────────────────────────────────────────────────",
+  "     2026-04-21                     2026-07-17                     2026-10-09",
+  "     · MA20   : MA50   ─ close"
+ ],
+ "warnings": [],
+ "path": ""
+}
