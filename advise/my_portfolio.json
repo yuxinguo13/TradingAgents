@@ -1,6 +1,6 @@
 {
- "cash": 29764.97,
- "note": "2026-10-12 截图（美东约 12:15）：PCRA B（AVGO 7、MRVL 5、TXN 5、QQQM 10，现金 18950.30；APLD、AXTI、ORCL、TTMI 20 股和 QQQM 10 股已卖）、PCRA A（VST 20，现金 8922.48；TTMI 45 股已卖，约 121.3）。HSA（TQQQ 5、GLDM 3，现金 1892.19）沿用 10/6，未见新截图。VST 成本按截图浮盈反推 139.68。长线规则。",
+ "cash": 28974.97,
+ "note": "2026-10-12 截图（美东约 12:15）：PCRA B（AVGO 7、MRVL 5、TXN 5、QQQM 10，现金 18950.30；APLD、AXTI、ORCL、TTMI 20 股和 QQQM 10 股已卖）、PCRA A（VST 20，现金 8922.48；TTMI 45 股已卖，约 121.3）。HSA（TQQQ 5、GLDM 3，现金 1892.19）沿用 10/6，未见新截图。VST 成本按截图浮盈反推 139.68。长线规则。 10/12 HSA 加 TQQQ 10 股 @79（HSA 现金约 1102.19）。",
  "holdings": [
   {
    "symbol": "VST",
@@ -30,8 +30,8 @@
   },
   {
    "symbol": "TQQQ",
-   "shares": 5,
-   "cost": 84.855
+   "shares": 15,
+   "cost": 80.952
   },
   {
    "symbol": "GLDM",
