@@ -732,7 +732,7 @@ def find_saved_screen(when: _date, exchange: str) -> tuple[Path | None, _date | 
     return (best[0], best[1]) if best else (None, None)
 
 
-def run_screen(when: str, exchange: str, top: int, log=logger.debug):
+def run_screen(when: str, exchange: str, top: int, log=logger.debug, **kw):
     """Seam over :func:`tradingagents.trading.screener.screen`.
 
     Imported inside the call, as :mod:`monitor` does, so that ``--help`` and a
@@ -741,9 +741,9 @@ def run_screen(when: str, exchange: str, top: int, log=logger.debug):
     the screener.
     """
     from tradingagents.trading.screener import save_results, screen
-    frame, stats = screen(when, exchange=exchange, top=top, log=log)
+    frame, stats = screen(when, exchange=exchange, top=top, log=log, **kw)
     try:
-        save_results(frame, when, exchange)
+        save_results(frame, when, exchange, rs=stats.get("rs_leaders"))
     except Exception as exc:
         # A screen that ran and could not be filed is still a usable screen.
         logger.warning("could not save the screen CSV: %s", exc)

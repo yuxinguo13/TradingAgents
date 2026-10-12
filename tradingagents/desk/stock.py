@@ -29,7 +29,7 @@ from tradingagents.live import clock
 from tradingagents.live.advisor import last_completed_session, sessions_for
 
 from . import review, task_dir, universe
-from .market import SECTOR_ETFS, SECTOR_ZH, Facts, Market, _num, _ok
+from .market import SECTOR_ETFS, SECTOR_ZH, Facts, Market, _num, _ok, news_since
 from .report import HORIZON_DAYS, Idea, Reporter, breakout_triggers, chart_for, score
 
 logger = logging.getLogger(__name__)
@@ -170,7 +170,7 @@ class Stocker:
         earnings = m.earnings([sym], data_day)
         fundamentals = m.fundamentals([sym])
         insiders = m.insiders([sym], as_of=data_day)
-        by_symbol, _ = m.headlines([sym], macro=False)
+        by_symbol, _ = m.headlines([sym], macro=False, since=news_since(data_day))
         m.attach(f, earnings=earnings, fundamentals=fundamentals, news=by_symbol, insiders=insiders)
         if not f.sector or f.sector == "Unknown":
             f.sector = universe.sector_of(sym)
@@ -205,7 +205,7 @@ class Stocker:
                 pack.sector_etf, pack.sector_w1, pack.sector_m1 = etf, eb.ret(5), eb.ret(21)
         with contextlib.suppress(Exception):
             from tradingagents.live.policy import sector_pressure
-            events = m.policy()
+            events = m.policy(since=news_since(data_day))
             pack.tilt = float((sector_pressure(events) if events else {}).get(pack.sector, 0.0))
 
         # the manual's score, levels and triggers
