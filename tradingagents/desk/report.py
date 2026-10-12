@@ -38,7 +38,7 @@ from tradingagents.live.policy import policy_brief, sector_pressure
 from tradingagents.live.sizing import pullback_entry, structural_stop
 
 from . import review as settle, task_dir, universe
-from .market import SECTOR_ETFS, SECTOR_ZH, Facts, MacroBoard, Market, _num, _ok
+from .market import SECTOR_ETFS, SECTOR_ZH, Facts, MacroBoard, Market, _num, _ok, news_since
 
 logger = logging.getLogger(__name__)
 
@@ -115,6 +115,8 @@ class MarketReport:
     date: str
     data_date: str
     generated_at: str = ""
+    news_since: str = ""      # the news window: from the close before the data session…
+    news_asof: str = ""       # …to the moment the pack was built
     macro: MacroBoard | None = None
     macro_read: list = field(default_factory=list)
     policy_events: list = field(default_factory=list)
@@ -138,6 +140,7 @@ class MarketReport:
         m = self.macro
         return {
             "date": self.date, "data_date": self.data_date, "generated_at": self.generated_at,
+            "news_since": self.news_since, "news_asof": self.news_asof,
             "macro": {"read": self.macro_read,
                       "rows": [asdict(r) for r in (m.rows if m else [])],
                       "sectors": [asdict(r) for r in (m.sectors if m else [])],
@@ -367,8 +370,11 @@ class Reporter:
         report.macro = self.market.macro(data_day)
         report.macro_read = report.macro.read()
 
-        # 2. policy and macro news
-        report.policy_events = self.market.policy()
+        # 2. policy and macro news — the window runs past the data session's
+        # close to now: prices stop at the close, the news does not.
+        since = news_since(data_day)
+        report.news_since = since.strftime("%Y-%m-%d %H:%M ET")
+        report.policy_events = self.market.policy(since=since)
         try:
             report.policy_brief = policy_brief(report.policy_events)
             report.tilt = sector_pressure(report.policy_events) if report.policy_events else {}
@@ -379,7 +385,7 @@ class Reporter:
         names = self._names or universe.prominent(
             data_day, exchange=self.cfg.exchange, top=self.cfg.screen_top,
             per_sector=self.cfg.per_sector, screen=self.screen, use_cache=self.cfg.use_cache)
-        if not any(n.source == "screen" for n in names):
+        if not any(n.source in ("screen", "rs") for n in names):
             report.notes.append("筛选没有跑出结果，今天只看各板块龙头")
         spy = self.market.facts("SPY", data_day, benchmark=False)
         spy_r3 = _num(spy.snap.ret_3m)
@@ -392,7 +398,9 @@ class Reporter:
         earnings = self.market.earnings(syms, data_day)
         fundamentals = self.market.fundamentals(syms)
         insiders = self.market.insiders(syms, as_of=data_day)
-        by_symbol, macro_news = self.market.headlines(syms[:self.cfg.news_symbols], macro=True)
+        by_symbol, macro_news = self.market.headlines(syms[:self.cfg.news_symbols], macro=True,
+                                                      since=since)
+        report.news_asof = datetime.now(clock.ET).strftime("%Y-%m-%d %H:%M ET")
         report.macro_news = macro_news[:12]
         for n in alive:
             f = facts[n.symbol]
@@ -593,6 +601,9 @@ def chart_for(idea: Idea, width: int = 72) -> list[str]:
 def format_report(report: MarketReport) -> str:
     out = [f"# 市场日报 · {report.date}", "",
            f"数据截至 {report.data_date} 收盘。不看任何账户；每个名字都按同一把尺子打分，分数旁边是它的来由。", ""]
+    if report.news_since and report.news_asof:
+        out[-1:-1] = [f"新闻和政策标题：{report.news_since} 至 {report.news_asof}"
+                      "（从数据日前一个收盘起，到生成这份数据包为止）。"]
 
     out.append("## 一、宏观与利率")
     out += [f"- {line}" for line in report.macro_read] or ["- 宏观数据没拿到"]

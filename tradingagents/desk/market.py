@@ -17,10 +17,10 @@ from __future__ import annotations
 import logging
 import math
 from dataclasses import dataclass, field
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
-from tradingagents.live import charting
+from tradingagents.live import charting, clock
 from tradingagents.live.brain import Snapshot
 from tradingagents.live.deepdive import Bars, load_bars
 from tradingagents.live.newsfeed import NewsItem
@@ -299,6 +299,30 @@ def macro_row(symbol: str, label: str, group: str, bars: Bars) -> MacroRow:
 # the market
 # ---------------------------------------------------------------------------
 
+def news_since(data_day: date) -> datetime:
+    """Where a pack's news window opens: the close of the session before the
+    data session.
+
+    The prices stop at the data session's close, but the news should not: a
+    pack read on Monday morning about Friday's close has to carry the weekend.
+    Opening at the *previous* session's close takes in the data session's own
+    headlines too, and the window runs to the moment the pack is built.
+    """
+    d = data_day - timedelta(days=1)
+    for _ in range(10):
+        if clock.is_trading_day(d):
+            break
+        d -= timedelta(days=1)
+    return datetime.combine(d, clock.close_time(d), tzinfo=clock.ET)
+
+
+def window_hours(since: datetime, now: datetime | None = None) -> float:
+    """Hours from ``since`` to now, never under a day (a pack built minutes
+    after a close still wants that session's headlines)."""
+    now = now or datetime.now(timezone.utc)
+    return max(24.0, (now - since).total_seconds() / 3600)
+
+
 class Market:
     """Everything the desk knows about prices, headlines and policy.
 
@@ -380,12 +404,23 @@ class Market:
         return self._news
 
     def headlines(self, symbols: list[str], *, macro: bool = True,
-                  max_age_hours: float = 48.0) -> tuple[dict[str, list[NewsItem]], list[NewsItem]]:
-        """Fresh headlines per symbol, and the macro ones. Never raises."""
+                  max_age_hours: float = 48.0, since: datetime | None = None
+                  ) -> tuple[dict[str, list[NewsItem]], list[NewsItem]]:
+        """Fresh headlines per symbol, and the macro ones. Never raises.
+
+        Without ``since`` this is the loops' view: only headlines no earlier
+        poll returned, younger than ``max_age_hours``. With ``since`` it is a
+        pack's view of a window: every headline published after ``since``,
+        up to now, whether or not an earlier run already saw it (see
+        :func:`news_since`).
+        """
         by_symbol: dict[str, list[NewsItem]] = {s.upper(): [] for s in symbols}
         macro_items: list[NewsItem] = []
+        if since is not None:
+            max_age_hours = window_hours(since)
         try:
-            items = self.news_monitor().poll([s.upper() for s in symbols], macro=macro)
+            kw = {"include_seen": True} if since is not None else {}
+            items = self.news_monitor().poll([s.upper() for s in symbols], macro=macro, **kw)
         except Exception as exc:
             self.errors.append(f"news feeds unavailable ({type(exc).__name__}: {exc})")
             return by_symbol, macro_items
@@ -411,8 +446,13 @@ class Market:
             self._policy = PolicyMonitor(state_path=self.state_dir() / "policy_seen.json")
         return self._policy
 
-    def policy(self) -> list:
+    def policy(self, *, since: datetime | None = None) -> list:
+        """Policy events. ``since`` as in :meth:`headlines`: the window's
+        events, not only the ones no earlier poll returned."""
         try:
+            if since is not None:
+                return list(self.policy_monitor().poll(
+                    include_seen=True, max_age_hours=window_hours(since)))
             return list(self.policy_monitor().poll())
         except Exception as exc:
             self.errors.append(f"policy feeds unavailable ({type(exc).__name__}: {exc})")

@@ -29,7 +29,7 @@ from tradingagents.live import clock
 from tradingagents.live.advisor import last_completed_session
 
 from . import review, task_dir, universe
-from .market import SECTOR_ZH, Facts, Market, _num, _ok
+from .market import SECTOR_ZH, Facts, Market, _num, _ok, news_since
 from .orders import MAX_POSITIONS, DeskBook, Position
 from .report import Idea, chart_for, score
 
@@ -509,7 +509,7 @@ def facts_table(symbols: list[str], *, market: Market | None = None, now: dateti
     alive = [s for s in syms if facts[s].ok]
     earnings = m.earnings(alive, data_day)
     fundamentals = m.fundamentals(alive)
-    by_symbol, _ = m.headlines(alive, macro=False)
+    by_symbol, _ = m.headlines(alive, macro=False, since=news_since(data_day))
     rows = []
     for s in alive:
         f = facts[s]
