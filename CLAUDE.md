@@ -30,24 +30,40 @@ push after writing. **The last step of every task is
 `python -m tradingagents.desk state push`** so the day's final files are kept.
 If a pull or push reports a failure, say so in the reply; do not retry by hand.
 
-### Task 1 — trade (weekdays, fires ~09:20 ET, places ~09:35 ET)
+### Task 1 — trade (weekdays, fires ~15:12 ET, places ~15:30 ET, before the close)
 
-1. `python -m tradingagents.desk pack trade` first — it reads last session's
-   closes, not the opening prints, and on a fresh machine it takes ~15 min,
-   which is exactly the time before the open. Read the whole pack
+The owner's method (2026-10-12): analysis at the open, trading at the close.
+The morning analysis is the 开盘前简报 Routine (~08:45 ET, writes
+`~/.tradingagents/desk/brief/<date>.md`); the evening report (Task 2) is
+written after the close for the next session. The trade run reads both
+before it decides, and is not conservative: it fills the momentum sleeve's
+seats when the table has qualifying names, holds winners, and sells or trims
+only on a rule trigger (stop, target, horizon, invalidation).
+
+0. `python -m tradingagents.desk state pull`, then read in full today's
+   `~/.tradingagents/desk/brief/<date>.md` and the latest
+   `~/.tradingagents/desk/report/<date>-final.md`. Every order must answer to
+   both. If today's brief is missing, say so and go on with the report.
+1. `python -m tradingagents.desk pack trade` — it reads the last completed
+   session's closes; the gate checks every level against the live price. On
+   a fresh machine it takes ~15 min. Do not run `pack facts` after it (that
+   pull overwrites the reconciled book); run it before, or skip it. Read the whole pack
    (`~/.tradingagents/desk/trade/<date>-pack.md`): the account, the book with
    each position's thesis and invalidation, the post-mortem queue, positions
    with no stop resting at the venue, the regime, and the candidate table
    with reference levels and charts.
-2. `python -m tradingagents.live.waitopen` — exit 0: the session is open and
-   settled. Exit 3: no session today; reply so and stop. Exit 4: the open was
-   missed; do steps 3–6 but call step 5 with `--dry-run`. Levels come from
-   the pack (last close); the gate checks each entry against the live price
-   at order time, so an open that gapped past your entry refuses itself.
+2. `python -m tradingagents.live.waitopen` — exit 0: the session is open (at
+   this hour it returns at once). Exit 3: no session, or the close has
+   passed; reply so and stop. Exit 4: do steps 3–6 but call step 5 with
+   `--dry-run`; also use `--dry-run` if it is past 15:50 ET at step 5.
+   Levels come from the pack and the live prints; the gate checks each entry
+   against the live price at order time.
 3. Post-mortems first. For every name under 需要复盘, answer the three
    questions in MANUAL §8 (the line carries the trade's move relative to SPY;
    judge against that, not the raw P&L) and log each with
-   `python -m tradingagents.desk log -` (stdin JSON, `"kind": "postmortem"`).
+   `python -m tradingagents.desk log -` (stdin JSON, `"kind": "postmortem"`);
+   that push also carries the reconciled book to the branch before `order`
+   pulls it.
    Before writing any `"kind": "proposal"`, run
    `python -m tradingagents.desk review` and quote its counts (MANUAL §11).
 4. Positions, then candidates, per the checklists in MANUAL §4 and §1–2.
@@ -63,9 +79,12 @@ If a pull or push reports a failure, say so in the reply; do not retry by hand.
    their triggers, breakout-day low and 20-day line) and fill the sleeve's
    4 seats with the names that meet two of `volume` / `catalyst` /
    `pattern` / `rs`, bought on strength (entry at the price or within 1 ATR
-   above the 20-day line, stop at the breakout-day low or the 20-day line,
-   ≤ 8%), as `"sleeve": "aggressive"` with `"triggers"`. Then the core
-   pullback candidates. On a day the manual calls defensive (VIX ≥ 30, SPX
+   above the 20-day line, stop at the breakout-day low or the 20-day line
+   whichever is higher, ≤ 8%), as `"sleeve": "aggressive"` with
+   `"triggers"`; read live prices before setting entries. Then the core
+   pullback candidates. A position the pack marks unprotected gets a
+   `protect` only after the venue confirms no stop leg is resting (the
+   wrapper cannot see the held stop leg of a filled bracket). On a day the manual calls defensive (VIX ≥ 30, SPX
    under its 200-day) take at most half the usual new positions.
 5. `python -m tradingagents.desk order ~/.tradingagents/desk/trade/<date>-intent.json`.
    Read every line of the result. A refusal is final: do not edit numbers and
