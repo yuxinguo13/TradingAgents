@@ -1,6 +1,6 @@
-# VST · Vistra能源（Vistra）
+# VST · Vistra能源
 
-_公用事业 · 数据截至 2026-10-13 收盘 → 面向 2026-10-13 开盘_
+_未分类 · 数据截至 2026-10-13 收盘 → 面向 2026-10-13 开盘_
 
 [← 回到 2026-10-13 当日报告](../2026-10-13.md)
 
@@ -54,7 +54,7 @@ _公用事业 · 数据截至 2026-10-13 收盘 → 面向 2026-10-13 开盘_
 - **波动**：日均真实波幅约为价格的 4.9%；按本报告 2 ATR 的止损惯例，一个 R 相当于 9.9% 的价格距离
 - **位置**：距 52 周高点 -22.6%，距 52 周低点 +20.9%
 - **量能**：最新一日成交量为 20 日均量的 0.7 倍，量能正常
-- **相对强度**：近一月跑赢 标普500 13.0 个百分点
+- **相对强度**：近一月跑赢 标普500 13.1 个百分点
 - **支撑 / 阻力**：最近的摆动低点 153.66，摆动高点 166.89（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
 
 **我的读图结论**：均线与结构互相矛盾，属于震荡；这种形态里止损容易被扫，仓位应比顺势时更小
@@ -63,13 +63,11 @@ _以上每一条都是对已经发生的价格的描述。均线、RSI、摆动�
 
 ## 三、财报与基本面
 
-市值 $544.94亿 · 行业 Utilities / Utilities - Independent Power Producers · TTM 营收 $192.12亿 · TTM EPS 5.93 · 股息率 0.58% · Beta 1.38 · 空头占流通股 3.6%
-
-- **估值**：TTM 市盈率 27.4 倍；前瞻市盈率 15.6 倍（市场预期未来一年盈利上升）；市销率 2.8 倍；EV/EBITDA 11.4 倍；PEG 0.44（低于 1，增长尚未被价格吃掉）。
-- **增长**：最新季度营收同比 -5.5%；盈利同比 -6.2%；最近 7 次财报里 1 次超预期。
-- **盈利质量**：毛利率 38.3%、营业利润率 13.8%、净利率 11.6%、ROE 43.0%。
-- **资产负债**：现金 $4.35亿；有息负债 $205.08亿；负债/权益 373.3%（负债偏重）；流动比率 0.97（短期偿付紧）；自由现金流 $3,712.50万，为正。
-- **卖方预期**：20 位分析师覆盖；平均评级「强烈买入」（1.33/5，1 为最看多）；目标价均值 210.25（较现价 +29.5%），区间 106.00–305.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
+- **估值**：既无盈利也无有意义的营收，估值倍数一栏本页留空——这不是低估，是无法用倍数衡量。
+- **增长**：最新季度营收同比 -5.5%；最近 7 次财报里 1 次超预期。
+- **盈利质量**：没有拿到利润率数据。
+- **资产负债**：没有拿到资产负债数据。
+- **卖方预期**：没有覆盖这只股票的分析师数据。
 
 **分季度损益**（季度数据，最新在左）
 
@@ -112,12 +110,17 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
+| 9h 前 | 8 | 中性 | [Transcript: Vistra Q2 2026 Earnings Conference Call - Benzinga](https://news.google.com/rss/articles/CBMimwFBVV95cUxPQmk2T0tKWUpzZWJKWjBpY2xJQ0hhWEVrWjJ3Nm9tQ0x1cFd6QXhpckt2XzNzc3JCQmdWeTBVRXgtdnNFNW5DX2dJWER3YmxJX1NJc3V4RmV3VHNJTEpOWTdiYTVQb3hSY29heG9nc3E2TWV3bVBGb0dpaFMtQVg4WjRKcno4NUxVLTFPb09LRE51dlFKX3h0azJHQQ?oc=5) | Benzinga |
 | 23h 前 | 8 | 中性 | [Vistra (NYSE:VST) Shares Down 2.1% - What's Next? - MarketBeat](https://news.google.com/rss/articles/CBMiowFBVV95cUxOcWE2cWRKY3IyYmRVMlpTekhCUjVwTzBjQ1plUmRVVjdSMXU4aS1acFdVeFZPd19KTWRST1VNTlJKRE1FQTd4VmlFMTllTUFHYlIzSkhNYlg5V2JEY2ZUZ1ItemJfYUpONXRMS2VhQjFYb3R1Qnp0ZU5sUXR2RWdDZHl1Z1BCckczdFNtTUVWZEJ0SEJxVEVkTGVqdVpTZFVIMllN?oc=5) | MarketBeat |
-| 9h 前 | 5 | 偏多 | [Constellation's $4.3 Billion Google-Backed Upgrades vs. Vistra's $4.2 Billion Government Loan: Which Nuclear Plan Is Better for Shareholders? - The Motley Fool](https://news.google.com/rss/articles/CBMikAFBVV95cUxPa3Q5TUNkajJKRkhjSUo0M2d1ckdkenppUjktbjRwd05OMWo5R3pDTlpSY1d5SUFIaV9INFBDeExYdlc0NEVlay1oZmJETjVUc0k5bDJNdkJwcjJfZGZDMTFMamdWcVNqU2ZKbzlHbURqY1hhbVYwN1V3NE5fdTZ4UVdDV3BnQjI0UnJ4MTh2VVQ?oc=5) | The Motley Fool |
-| 9h 前 | 0 | 中性 | [Vistra stock down 19% but an analyst sees nearl... - Pluang](https://news.google.com/rss/articles/CBMiigFBVV95cUxQdDBVSFotWGExWmV1cURSOFJIcUtLMUhEMHNfT3cwQ216TmF6VEs5QUt4MnVYVFlFc3BJMGhoV0ZtU0MzUWhjbWJXOUpDMm1oNjVMQUpZRTB4TkZvaU9ZNVluaVBLSjd5RXJlWGVWVW1reVFyczFnMld2M1EzSld6OElOUmxNaVFFU3c?oc=5) | Pluang |
+| 10h 前 | 5 | 偏多 | [Constellation's $4.3 Billion Google-Backed Upgrades vs. Vistra's $4.2 Billion Government Loan: Which Nuclear Plan Is Better for Shareholders? - The Globe and Mail](https://news.google.com/rss/articles/CBMivAJBVV95cUxNbmxXNEtVNFpVOW5aUGFackV6czFoT2hTOGJRUl85T3JVLUMyTWZ1b18tMTQwYjVjcG1SZHNRTFM5eGtNZWhySlp2d1cxeWh3NHhhR1VZZnBWb2M1bFgxU3UyZnl5em1uYlNEZ1N4T2FuSnFpOVVDSnIxYVhhekhSRUJSZ1ZsaHpFTnQxM1prYzRFWkh4ZlNibkVpTXE0S2FFR2hsQlNyUWR5VWlsZlVPbmhpdVc2bUlrUDdrc0RfRFFNODZvdGp1dWVHUjRqVGZQYVpEMTk1cnUtcFhxWHhBOU5qV1JvZmtFS2V0THZ3aVBHd2hXUy1zb2hlcFl5d2R2Q0lHaDc1OTFSQmdTSlpMWEd2VmFVSUtuam5NTXdEQ2FaT1RyS2NxbjlITUFUS3lHWGNydGdVTVBaS1B2?oc=5) | The Globe and Mail |
 | 9h 前 | 0 | 中性 | [Vistra Corp (VST) Receives a Buy from Wells Fargo - The Globe and Mail](https://news.google.com/rss/articles/CBMiywFBVV95cUxPVklqamNaYlNBNVVCbDFCejFRaENSRlFyYnVocE54RDdKaEhlV2hHTjQybURseWZNUThXUFpNOXhEZmNFUVJMZlpoZTR3aFRjN2o2R3Y0ZHFsVUdWaGsxTkFreHNvV3B4VERZQ1dBQzNRa2R6anpvakY4VlhxSGVDVG9kSEZmQXBGRHdYVE04RmpKNk1McDZPSEk5d3g0em1SS215R0lLUEZIWjFWbFR6MGVCZEZFaUFXR04weEZmYmZSSXRYblgtZVRlOA?oc=5) | The Globe and Mail |
-| 9h 前 | 0 | 中性 | [Vistra (VST) Stock Looks Fully Priced Despite Its Huge Five Year Run - Simply Wall Street](https://news.google.com/rss/articles/CBMiwAFBVV95cUxPNDkzWWZWYkMzSm1YQ2g5eXJHNlpab3Vmc0l1VWZDd3ZhMzVBUURjNXlnM0JpelVpT2RLZ2REQzNUVHVCRXc5UWR6NENkelBtdC1Ib3piZjh0VVR2LThtZ240bVc4V0pueTFqLU8tMVg0cVFXcE5wVGl5dFZzS25lTGlDSDVMNGdpYXBiUGFJLTBZQUotcVZrTmRJS0FhWWZQUnd6TWhFSU4yZVRIenNkWkVqOVJNSlZuejBXUFdMS2bSAcYBQVVfeXFMT2o5ZjVrM3hPdHpXTEI4Wkhlc1hDSzZwZGdyWjFHNUxYZDU4cWJqREVoU2JjX0sxVmtoWFJRTUhGTGFMZDE3VmROaU9UU0FVcVV2MWxfQk9SY09aMHJoUXNsTG1EM2VoOHhaak5NRjR6Snl4dVFONmhtYjdaRHFKTHFnQ2FFTy13cUl1eFJSWWt6N3U0VEl5QlE1NS05NlZwNU9OTmhsVjVkc05UQXQwNWRhbVQyQlFJOHVVMlFYWXdJVkJoOENR?oc=5) | Simply Wall Street |
-| 24h 前 | 0 | 偏空 | [Vistra Corp. stock underperforms Monday when compared to competitors - MarketWatch](https://news.google.com/rss/articles/CBMi3gFBVV95cUxPN2x5LXlKYmF4VzFSTDBJZEtiUTRleUMxRVduZ1dNeXlQd1EwckIwT1dwWmVJTXg4cy02YUJheEJad0dWR1ZiSFBQVlpIMDZoNnhSckVGd0thTlVpNjJzSFlzNTlFVnpUNU9SaE5WVXpudzllQl9OczVUZlpyWWk3U096TGY0M1BMMk9zUG1KTlFMX1E1N2wzSVJoUm5PMVlwbUowLVBrT2RMLXJkdzJCVUhTNWp0UnUwWjI2cS1GMlB2ZXlhTmtDNkZ4OE1lTzJRb1JJenhjZi1MdUtvMVE?oc=5) | MarketWatch |
+| 10h 前 | 0 | 中性 | [Vistra Bombed Over The Last Year: One Analyst Says The AI Power Play Will Gain 90% Within a Year - 24/7 Wall St.](https://news.google.com/rss/articles/CBMi1AFBVV95cUxOVUdFVFZkUEpkQXJXR2ZsMkhjM3NYYUZ5dGdXcC10UE1yNzBLZkZkNjFGZ213S18zdjlFdEhPeW9LVzhBZEg4MFFzQm4xOU9WbTBabl9PV0t1dm83TjhuRVd6bmppQldmeUozR1hDNF81TlVSUk9ldlZVdGdzMFZtSk1lWDlxd1JkaTJ0SVUzUUFuS1FjNFpmZ00xS0VRVE9mZ3laWnpZTXFFLUFDYWZ4VlR4VF9TX2tXN0VxWUhKeXF1UG1KVEFzdTN2UVNxMjBmZUUwLQ?oc=5) | 24/7 Wall St. |
+| 10h 前 | 0 | 中性 | [Vistra (VST) Stock Looks Fully Priced Despite Its Huge Five Year Run - Simply Wall Street](https://news.google.com/rss/articles/CBMixgFBVV95cUxPajlmNWszeE90eldMQjhaSGVzWENLNnBkZ3JaMUc1TFhkNThxYmpERWhTYmNfSzFWa2hYUlFNSEZMYUxkMTdWZE5pT1RTQVVxVXYxbF9CT1JjT1owcmhRc2xMbUQzZWg4eFpqTk1GNHpKeXh1UU42aG1iN1pEcUpMcWdDYUVPLXdxSXV4UlJZa3o3dTRUSXlCUTU1LTk2VnA1T05OaGxWNWRzTlRBdDA1ZGFtVDJCUUk4dVUyUVhZd0lWQmg4Q1HSAcYBQVVfeXFMT2o5ZjVrM3hPdHpXTEI4Wkhlc1hDSzZwZGdyWjFHNUxYZDU4cWJqREVoU2JjX0sxVmtoWFJRTUhGTGFMZDE3VmROaU9UU0FVcVV2MWxfQk9SY09aMHJoUXNsTG1EM2VoOHhaak5NRjR6Snl4dVFONmhtYjdaRHFKTHFnQ2FFTy13cUl1eFJSWWt6N3U0VEl5QlE1NS05NlZwNU9OTmhsVjVkc05UQXQwNWRhbVQyQlFJOHVVMlFYWXdJVkJoOENR?oc=5) | Simply Wall Street |
+| 24h 前 | 0 | 中性 | [Vistra Corp. (VST) Stock forecasts - Yahoo Finance UK](https://news.google.com/rss/articles/CBMikwFBVV95cUxOX2Y0d3YtajRqbHhTMkE1MlhnX1NpZnpvU3ZMWjlkLWprYW0tOWtqS2doZmxOWC1sTUxSMVhzdEt5RFJuWE9VQmotdmtvUWFyV09BdlQxZGhSOTJ4cDdBdGdwUng1dktUTkI3VkNiYjA2dFl2UGotUS12a3J0ZS1QUmtSWmFYREpPdm04dFNpSS1qVnc?oc=5) | Yahoo Finance UK |
+| 31h 前 | 0 | 中性 | [VST Oct 2026 215.000 call (VST261023C00215000) stock price, news, quote and history - Yahoo Finance UK](https://news.google.com/rss/articles/CBMiZEFVX3lxTE9UV2tublhoSkdlTzB4TlBZUjBROGdab2dLeFRDcTdjVlkwSGx2NS1fcjZ4OEwtMS1OZVFHbnJEeU5ud0pJdWROQjYxamFhcWdtYjRDU0FDeWdGaWxXdHVYNlEtbTI?oc=5) | Yahoo Finance UK |
+| 31h 前 | 0 | 中性 | [VST Oct 2026 175.000 put (VST261023P00175000) stock price, news, quote and history - Yahoo Finance UK](https://news.google.com/rss/articles/CBMiZEFVX3lxTE93Y0VGUVFzMGFZcTN5Z3VVMjlaMFRCNWljNlB1UXZSeW1pVDJmSzY0ay1YV3FGQnZGb29VTnNjc1NkbmQ0bE5mczduNFg4R3VxLWgwQjJQb3pvTHJfU2RINklyV2Q?oc=5) | Yahoo Finance UK |
+| 35h 前 | 0 | 中性 | [VST Jan 2029 70.000 put (VST290119P00070000) Interactive Stock Chart - Yahoo Finance - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMibEFVX3lxTE4wbm9iM1NCUUxXNXg4eWozUWRiVkpfNFR1ZjE3aGJBLU92TWV5cXlrS3UwSlUwb3NzTFNLa2Q5aXJqYUtKcXdzOURORnQ1TV9pb0tkVTlvZmpWaW1rSUFVaVFIMWVKclYzWmwxSw?oc=5) | Yahoo! Finance Canada |
+| 43h 前 | 0 | 中性 | [VST Jun 2028 160.000 put (VST280616P00160000) Stock Price, News, Quote & History - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMiZEFVX3lxTE1ZdFBWU3h1T3BQanVfeWsydTh6eGhDN1lmckUwVG9NeXBCR3d6NDRmUjJfeEtGWVRBMGpzaWtRUUh1YXVMSHY0U3BNa29taTB1V2V3bU84Um5qTDNTRlA1VVRqdGI?oc=5) | Yahoo! Finance Canada |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -126,7 +129,7 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
 - 下次财报在 24 天后，落在持有期内。财报跳空会直接穿过止损——那一晚的风险不是 1R，是没有上限的。
-- 负债/权益 373%，杠杆高；利率或再融资条件变化对它的影响会被放大。
+- 公司尚未盈利：估值没有盈利可锚，股价由叙事和融资环境决定，这类名字在流动性收紧时跌得最快。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -174,10 +177,10 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 **消息与预期**
 - [Yahoo 新闻](https://finance.yahoo.com/quote/VST/news)
-- [Google News 搜索](https://news.google.com/search?q=Vistra+stock&hl=en-US)
+- [Google News 搜索](https://news.google.com/search?q=VST+stock&hl=en-US)
 - [财报日历与预期](https://stockanalysis.com/stocks/VST/forecast/) — 下次财报日、市场一致预期、历史超预期记录
 - [Seeking Alpha 讨论](https://seekingalpha.com/symbol/VST) — 观点密度高，但是买方与卖方混杂，当作反方意见读
-- [公司投资者关系](https://www.google.com/search?q=Vistra+investor+relations) — 财报原始 PPT 与电话会记录
+- [公司投资者关系](https://www.google.com/search?q=VST+investor+relations) — 财报原始 PPT 与电话会记录
 
 **中文渠道（转载源，不作独立验证）**
 - [雪球](https://xueqiu.com/S/VST) — 中文讨论与财报摘要

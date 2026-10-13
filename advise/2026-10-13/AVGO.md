@@ -1,4 +1,4 @@
-# AVGO · 博通（Broadcom）
+# AVGO · 博通
 
 _科技 · 数据截至 2026-10-13 收盘 → 面向 2026-10-13 开盘_
 
@@ -63,13 +63,11 @@ _以上每一条都是对已经发生的价格的描述。均线、RSI、摆动�
 
 ## 三、财报与基本面
 
-市值 $1.71万亿 · 行业 Technology / Semiconductors · TTM 营收 $891.04亿 · TTM EPS 7.98 · 股息率 0.73% · Beta 1.48 · 空头占流通股 1.2%
-
-- **估值**：TTM 市盈率 44.8 倍；前瞻市盈率 18.4 倍（市场预期未来一年盈利上升）；市销率 19.1 倍；EV/EBITDA 33.1 倍；PEG 0.35（低于 1，增长尚未被价格吃掉）。
-- **增长**：最新季度营收同比 +85.5%；盈利同比 +215.3%；最近三个季度营收连续环比上升；最近 6 次财报里 6 次超预期。
-- **盈利质量**：毛利率 75.5%、营业利润率 54.3%、净利率 42.9%、ROE 44.2%。
-- **资产负债**：现金 $239.75亿；有息负债 $594.19亿；负债/权益 59.6%（负债适中）；流动比率 2.50；自由现金流 $305.96亿，为正。
-- **卖方预期**：47 位分析师覆盖；平均评级「强烈买入」（1.26/5，1 为最看多）；目标价均值 531.31（较现价 +48.7%），区间 215.88–715.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
+- **估值**：既无盈利也无有意义的营收，估值倍数一栏本页留空——这不是低估，是无法用倍数衡量。
+- **增长**：最新季度营收同比 +85.5%；最近三个季度营收连续环比上升；最近 6 次财报里 6 次超预期。
+- **盈利质量**：没有拿到利润率数据。
+- **资产负债**：没有拿到资产负债数据。
+- **卖方预期**：没有覆盖这只股票的分析师数据。
 
 **分季度损益**（季度数据，最新在左）
 
@@ -112,18 +110,18 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 22h 前 | 8 | 偏空 | [Broadcom (NASDAQ:AVGO) Stock Falls 1.9% - Should You Sell? - MarketBeat](https://news.google.com/rss/articles/CBMisAFBVV95cUxPZHdPUjBoaXVpRTZYb19FV0VyU1RFZDlURThCTTlLemctTUNnSDJjN2dLS0E4a0VXZEl5NGdlVVcwZzdCZDFuOEpvazdNUk9aMU9yUFQ5cVNqNGZodm1DZG43MXVlV0diZDZlOXVqVi1wSkNDdllOdy1yWkdHNlBkOHZCX0cxTHFHQVZyeDNMcC1KOUJzaFctMUtHQmxRb25Ta0xiTC1fMWRfV2ZtNExwag?oc=5) | MarketBeat |
-| 2h 前 | 7 | 偏空 | [Nvidia Stock Shakes Off Fallout From Broadcom CEO and Microsoft's New Chip -- Barrons.com - Moomoo](https://news.google.com/rss/articles/CBMiqwFBVV95cUxQQ1FiaHRINjJTbGREUEFCSmNmdWNGWVVnZUI0OUNLREtrOG5fZkQ2TWdTUjdQY0I5N0hmZV96R1pVVi0wS3pWQmFlM3lBY2x0SFBBV0dHckxlMERPakFrT19Hd25Fdng0VnE2T28tZGViWkRGRGR0czhDQWI3WTgxNUVIZWRiQTZtNFdaMmJIaHhxR0pnT2hSSEhReEt5UkRZM2d6R1hTck9FUTg?oc=5) | Moomoo |
-| 3h 前 | 7 | 中性 | [Broadcom CEO calls AI ‘a casino’ after co-founder dumped $750 million - Protos \| Informed crypto news](https://news.google.com/rss/articles/CBMijwFBVV95cUxONTNLeTFyelpya1JhUmJBWUxETDg0WnlFNkxIMUpVel9vZk1oUUtsSm5oOXhpel9SeFdoWDltYUwxR05yY3BXbG9QVnl6V2FMclhXVXJPZlVRbWJlcGhGU2FLcWtrMGxYdXJfWjBfWFJnSFFZSXR3QTNpQlJkaXE3Y201VHFreTQyMTlzdEM5RQ?oc=5) | Protos | Informed crypto news |
-| 3h 前 | 7 | 中性 | [China’s CXMT and Broadcom’s CEO Rattle Chip Stocks: Which Fear Matters More for Micron? - Yahoo Finance](https://news.google.com/rss/articles/CBMimwFBVV95cUxQUmtwQ09OczU3ZWhncUhFNHM0VDFOTnFHV25wcUYxN3FQek8xRllqd0VkRDJLSjQ3TW1vVXBLTmZnMmZuMVV2QXptZUtNbUhXeERMekh1VDB1V2c2QWIzLXNrcGt1RXozSkN3WHdZalN0Q185bDlYWkJSSUI5SHhaaWs0eG1xOGNsNHljVUhxaFpabHYwU2ltSGtHSQ?oc=5) | Yahoo Finance |
-| 5h 前 | 7 | 偏空 | [Samsung, SK Hynix Fall In Seoul On China Memory Threat—Broadcom CEO Compares AI Investors To Casino Gambl - Benzinga](https://news.google.com/rss/articles/CBMi_AFBVV95cUxQbWViV09tcWNTYm5Pb25vMHhkbllQM2IxVTI3RXJiQUNlYXpndXFBTnVYQXNlRUFhTmxQMWFwWVR1bENydVdteFpjRmxiTmExYW9aWnZyZUY3dEEyU0lVc1ZhckVha1Y1XzJnc1l0UzlyZk5RQ1owTWtNYTZYM2JWc2JjNFNXOW5la3lWU180YUZXNnV5S3NuSGxyYXdPdTduUkNZWFpNdUlLN05vNTk2dkh0enZmOU5vRGZRb1QxMkxTenNOUTdZQTBuN1Z1ZGFuRWtFY0dZSnJRRFluc3FpekFBcTEzdU56TFM3ekNxRXFhUTd5RjhtR3BtUEI?oc=5) | Benzinga |
-| 8h 前 | 7 | 中性 | [Broadcom’s CEO Just Compared AI Investors to Gamblers - Yahoo Finance](https://news.google.com/rss/articles/CBMimgFBVV95cUxNclBQZ2ZvM1ZvUXAtZ08wZG16dVhkZEpXM1p6TTFxX2dVbkRNUHlmclZGT3VfNUpxcUlrYTdFQ3I2OXpMb01OLWNoUkpBMkJPSWs1NndRNUtnUFRvSk1heHJxTjJYaTgzeWhRZ2pQM1NuM1dIV1RkVnUtbDNsQ3AtRktqNHBVRDlnZllwSUxia2FIeVMzY1Z2cmFn?oc=5) | Yahoo Finance |
-| 8h 前 | 7 | 中性 | [Broadcom’s CEO Just Compared AI Investors to Gamblers - 24/7 Wall St.](https://news.google.com/rss/articles/CBMinAFBVV95cUxNOXZQQkNNeFVqcU54SW10eGNGZ2IyNGpEQUlab0Q2MW5oWFJCUkd3R2o0ZHExR3BJUXN4Qjd1d3pXalYzRVBNMVM1MlZnWnpqeldFYndvREpnZ1dQU2xzejUyNTFLWEt2MFFmRDBzSUhHTGpMZUhmd1E2V1hkazd1SVlrdzhHaXYwX3NjcmQ5US1zUHgyNFNZMEtpd0s?oc=5) | 24/7 Wall St. |
-| 12h 前 | 7 | 中性 | [Was Broadcom CEO bullish or bearish on AI? ‘Gamblers’ comment creates storm. - MarketWatch](https://news.google.com/rss/articles/CBMitgFBVV95cUxQQkRGVUFfVWQyOGJmUkhINjlBbE52UHJRUzJjcWtNcF9xaTgxZG5zWG42SnBySWtjeUtDd2RiNE9qNWhVenA4QjlqdXJYMVJjdjVHY2JrUE1ldk0tSmRPb082R0xJNU90X1BEZk1sWHg2dG9CUjU4aGk1YWxJaDg2VzV4Yml0blIwaWdVeFlCSEU3aHN0SnVVaHBMTzY5UHlaMC1ScVJNclNmaTl4bEQ2dU5BcEtIUQ?oc=5) | MarketWatch |
-| 21h 前 | 7 | 中性 | [Broadcom CEO follows a proven blueprint for labs buying its chips - TheStreet](https://news.google.com/rss/articles/CBMihgFBVV95cUxNd3FGQVBUNmNYTmgyZDY2YzhqZlNvY2Zkbk1qeFJuSkVkZHdUTmNlZFVyNXhqcVVWOWtvMDZzT3FZeTdBdy1NTlUyVDhvSk8tYlhmZ2V5S1FNbjNxUjNrcnM4eGNSa2V6MFY1TlZqOE5jYklkcGwtMDYxdGltd3YybnM5WDRaQQ?oc=5) | TheStreet |
-| 25h 前 | 7 | 中性 | [Broadcom CEO Says Many AI Investors Have ‘No Clue,’ Likens Boom to a Casino - Yahoo Finance](https://news.google.com/rss/articles/CBMikwFBVV95cUxNYTBJcFFRM0lsTmlCa1p3Y0VrREhicW9lNkFOOFUwMV9oc01hRjQ4UElSZ2hXNGd6WWR0a2NuMzZLTFhROHhXQzRycTBvZUxvT25QcWJvWkxNWlg1cG5YaHpKNDNuTWUyd1MwNXNqQi1FaS1pN0U1dXVyVEdxY1dVVVJ4dmpyUkNLRHVndk1BQnRXMDA?oc=5) | Yahoo Finance |
-| 28h 前 | 7 | 中性 | [Broadcom CEO Says AI Investors Have ‘No Clue’ - NVIDIA (NASDAQ:NVDA) - Benzinga](https://news.google.com/rss/articles/CBMipwFBVV95cUxONHVVSndiVE9qUzZ2dldNSlNEWWs0YXh3cmRxNkl6N0d3RXpESDZuVEdnRTB3a2ZiNHN2QXY1TVNVeXlsT1dzM3phOUxOWjUtSW5salNHbENjSGlvSWdpbnNjRmRZWUp6Q3RJc29qakt6Vjg2eVU0SnQxU2xSTDZORFV5VHNkbUdDb0ttc1QwdkRyYW8wNXZTbWt6MHhaNkk2aHIzTlNJOA?oc=5) | Benzinga |
-| 34h 前 | 7 | 中性 | [Broadcom CEO says many AI investors are gamblers By Investing.com - Investing.com](https://news.google.com/rss/articles/CBMiqAFBVV95cUxPaXNtNExCRlJhWG1NUnFxbFpnQVBYVWhVdVd0X0p0WnhLR2VKRWozV3hocG8xb29jTW0xVnE1VERmSUduZ1hpUmFQcHNjd25WRUx4NFkzN01YUzM4aUJ3WDVleFhHTTNDREZBZnZSNkhlbUV0N1BESGVVeHp6SERSNHhWM0VxMTlNMmZwREl4S1k5VjQxSDNMcTkxc0tzZGVqZ3RLak9qdy0?oc=5) | Investing.com |
+| 10h 前 | 8 | 中性 | [Broadcom Inc. $AVGO Stock: Perpetual Ltd Lowers Holdings - MarketBeat](https://news.google.com/rss/articles/CBMitAFBVV95cUxPMnZPVHNuSzFzZ3c3clJyaEZRcXZRWHpqX1ZKSnRrYjZiWXc2ekh6UkllTnl6NFBQZENiVDZ1bkxmeGwtSTExOThza2swZEhMY2tIbnJvQ1RmV0hEY3ZjMGtNZ21YSlNaeThrdjZyNlNsRjlDaWswa0V2SHN3MXBxYi1lRjVxRkhKUEdPVHo2ZElUV1pLMjB6NzZLUHViaHdmeEszdUhlNXlVd1pxc3k0MGdHZXk?oc=5) | MarketBeat |
+| 23h 前 | 8 | 偏空 | [Broadcom (NASDAQ:AVGO) Stock Falls 1.9% - Should You Sell? - MarketBeat](https://news.google.com/rss/articles/CBMisAFBVV95cUxPZHdPUjBoaXVpRTZYb19FV0VyU1RFZDlURThCTTlLemctTUNnSDJjN2dLS0E4a0VXZEl5NGdlVVcwZzdCZDFuOEpvazdNUk9aMU9yUFQ5cVNqNGZodm1DZG43MXVlV0diZDZlOXVqVi1wSkNDdllOdy1yWkdHNlBkOHZCX0cxTHFHQVZyeDNMcC1KOUJzaFctMUtHQmxRb25Ta0xiTC1fMWRfV2ZtNExwag?oc=5) | MarketBeat |
+| 9h 前 | 7 | 中性 | [Broadcom’s CEO Just Compared AI Investors to Gamblers - 24/7 Wall St.](https://news.google.com/rss/articles/CBMinAFBVV95cUxNOXZQQkNNeFVqcU54SW10eGNGZ2IyNGpEQUlab0Q2MW5oWFJCUkd3R2o0ZHExR3BJUXN4Qjd1d3pXalYzRVBNMVM1MlZnWnpqeldFYndvREpnZ1dQU2xzejUyNTFLWEt2MFFmRDBzSUhHTGpMZUhmd1E2V1hkazd1SVlrdzhHaXYwX3NjcmQ5US1zUHgyNFNZMEtpd0s?oc=5) | 24/7 Wall St. |
+| 11h 前 | 7 | 偏空 | [Elon Musk Fires Back at Broadcom CEO Hock Tan's AI Investment Warning: 'No Crying in the Casino' - Benzinga](https://news.google.com/rss/articles/CBMi3gFBVV95cUxNVUZUU0xhOXBROVE4Mk9peWdIY1hDYVNPRjlzRjBnRUJKWk92UjdYYXhzRVFRbnctdjlOazVJU3VFV1JYZ1A0TVZrU1lIY3c0dUI3N21jSmlqWG9wSG1jbmRPQlc3MWdSU2NXLWRnRHpWaERnNEVsUDREcUtldnI4czFUc3ZpTnp5ZlhIOU5XUUVDTUNTS2cxS1hDRDhfNC1Uam5hWGVBN2xhUDFNeDVCajlWZGtIMUlKS0hVQVkzaW1aZV9GcmRYYmtZc1UtTVY3Y2pZUjJ3cUVLSHBGaUE?oc=5) | Benzinga |
+| 15h 前 | 7 | 中性 | [Broadcom CEO sees viable OpenAI business but warns of AI funding constraints - Seeking Alpha](https://news.google.com/rss/articles/CBMitAFBVV95cUxPUkdxckppeU9vbXBmUVA3UDhtcnN4Z0ZUdm83enV5NG5vck0tOEN3X3FMWHZENUhrVFBFaFI0TDVPVW5IYm9kd01rRFNSTlZ0WHJoazlDdTdxLTJYYWpXV1JVWXhMcTBRSHhBcFY4YnVrODRaQW1obFRjMFNSVUxRcmFzem5uZkdnWF9jR1lZZDhfYXlESU9yYVdpUFRIa2dYcFdxTW50UXVjbUlwZl9uZWh1NjI?oc=5) | Seeking Alpha |
+| 3h 前 | 2 | 中性 | [Sax Wealth Advisors LLC Buys 43,747 Shares of Broadcom Inc. $AVGO - MarketBeat](https://news.google.com/rss/articles/CBMiwAFBVV95cUxOS00xZmxYZGxsb3BTRkRNblJTUjJxMTJWbllNdWZMckx5bjl2emg5bEg5eVY1QWprcEZfRGRBdXJSQWh6OGw5VG4xblpCdGZWYnNVaXVwV1d6N2YxdGc0N3FfNXZlU0tVdm9aSGZNQ0RIZ1lsRDN6dS1XOTFpcVdrQ3hDbXNneWMxb0w2RF9ROFdpcFFLOUdTclJ3NXJLbDVmQkx0SHZaRndJdW9BUzlrOGxodGhKcUFMVXVKNTlQbVY?oc=5) | MarketBeat |
+| 9h 前 | 2 | 中性 | [6,224 Broadcom Inc. $AVGO Shares Bought by Avior Wealth Management LLC - MarketBeat](https://news.google.com/rss/articles/CBMixwFBVV95cUxPUUYxZHVWLV9id016QnBISDJDUGFGaDBnZ2RzUVhXREg2Ni03SjloNUpjdTBoa0lwUVd1eWowbUxoaVdpZm9BRXZ2Q0l5N3o4MWtGSjc5VlRfVDBpdlg4empsazNGb1ZCQkVpVXhDVndUbXQ5dzUtWTdPWWxCRGxBd1owLTFUYXU3T0NaZjhOZlNsZkxxZVpTTFM5bkN3aWtWU2ExU20xRk5mV1lFeUMyQV9FdHNDbHpDMnQwVnh4OG5SY09xSjFJ?oc=5) | MarketBeat |
+| 0h 前 | 0 | 偏空 | [Broadcom Stocks Drop as Its Google-Infrastructure Thesis Faces a Revenue Test - GuruFocus](https://news.google.com/rss/articles/CBMitgFBVV95cUxQeElsVEpseTB6Umt3ODJNUkFZeUYzaWtUWHdlOTNSVHVubTJrNGluYmVRRUhFLWFMZDBSUDRFRWRZaEt1akwzV2Z2R1JNZWFERWoxM0poakdqS0o2Qm90MjJ2ZzFuM3hETzJuNm9KY08wR0FEd3p6c29jU0VpWnZwbjNtMmRUanU5THFXVnBYY3pRNl90VS1yajUtVFRJSUpiSHJINURJT0YxM0xJa0dacVRnMmtfQQ?oc=5) | GuruFocus |
+| 3h 前 | 0 | 中性 | [Broadcom Is Backing Anthropic and OpenAI With $92 Billion. Here's What It Means for Investors. - The Motley Fool](https://news.google.com/rss/articles/CBMimAFBVV95cUxNVXdES3F6N0w4SUNEU0N1M3N3dXZCZlIwak9ZTGJ6YTZKcnlCY2JnNWZDLTJZMFIzX1N2b0pDcnRXOGhCT0xhaVNIbFdIc1U0ZG0xMENkSDl6UEFpUnRLaDUwVzNCSVlDVXNBcFBRWGhXcV9jdXRLc09ZeFdPOS1zd1hiQ1Y2WEFZMmxWVzdlblRCRnhoVGI0QQ?oc=5) | The Motley Fool |
+| 4h 前 | 0 | 中性 | [Should You Buy, Sell, or Hold Cisco Stock After a 68% Rise in a Year? - The Globe and Mail](https://news.google.com/rss/articles/CBMi5AFBVV95cUxNOHBFdkw3UGxtVVczTFVnUU91MVRETTJPR1l4cFBXVEx0ekNqLTBNV0dzSm9jMUxnejlfbVdmcHEydDhBLXFndDRiSWxPZVdIU0VmejZrVW9Jc1UzVnlLN1VyY1EzUzJkTFI2eEFzMVFZVk16WDNPOTRaSGdVODNqbVpnXzlKVGZHZ25iU2JDVWZwVlNLV1JCR1F6RzZhMlVSbWUyeG0yZFZjMmM2cVhnazFMM2IwcGlOMTllS2ZjV2FRSUFPQ183QnlQWmVkaEJCVkRUOHdEajRnejBxQUh1NkVqTlc?oc=5) | The Globe and Mail |
+| 8h 前 | 0 | 偏空 | [Broadcom (AVGO) In Focus On AI Spending Warnings As Undervalued View Holds - Simply Wall Street](https://news.google.com/rss/articles/CBMizgFBVV95cUxPd3BhSkQ3R2diaU9hcjFNQUl6RTdTZ0VRMVFiYzYyN2I4RVdjdUZoeTBkaDZ1bTU3VlVCM0RjWWRvRTJsUUw3cndPbkthbGxCb0lkUF84ZndkNHFhTFNmUkhaZ3NwcXpnZHVBdTc2SUM5TnhjeDI5Vi1UejQxMWFkQ1NONlNiS0kyWkVGSGdtOHJUMkhFREFub1FxYnR4c25Xb2FILWpTdVdYZnZYckZ4MG96WGMzMDMwbjhZT1E4dTBuX0VkaldYc0RSam9ad9IB0wFBVV95cUxNYjAyQ19ndzNIU3NaWFpXSWZSaW41NWl3cmV4RHFFWTAzclJjTm5LOEtENUgtNjZXRXVVQTBwWjQwLWtvLWdQY2VyQnFLS2F2TW5vMGE4akJtc2FaMG5BRUlPdzJmLVNZUThWaUtlMmVLa2Z4dnhwUjhNN01jM052R2o3VDBPVUtVUzQ3czBSMHJzU0ZxbWNtblctZFQwajlFQlpTS2h4RHZiUlVJNGdTWVhyZFFNbFpUNnVOZDVrbHJMbEFmbkVLS2p1NDEyNENaMmhF?oc=5) | Simply Wall Street |
+| 9h 前 | 0 | 中性 | [Broadcom vs. Nvidia: The AI Revolution Is Big Enough for Both. Here's the Better Buy. - The Motley Fool](https://news.google.com/rss/articles/CBMimAFBVV95cUxOOEhXdzJLdExDUTJPQ0VTYmJvZEhqWkRYYVdXa2tKUF81a3pScUZsSTVlbFJ1cklXRElFMlM0bjJNRHAxVEZuaUp1NUl1YWlaa3g5ZkVvWnRjTkU3LXR5Y0J6MjFPMWNsS3k2YzVlTE4tVGNqWWJtMk5zMjZQQ0JkdTJ2bXE0bHRHRlo4Y0VxN0M2Sk11RzFEdQ?oc=5) | The Motley Fool |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -132,8 +130,9 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
 - 图形上是跌破 200 日线——现价距 20 日 356.55（+0.2%）、50 日 370.03（-3.4%）、200 日 367.19（-2.7%）。本报告的买入规则本身会过滤掉这种形态。
+- 公司尚未盈利：估值没有盈利可锚，股价由叙事和融资环境决定，这类名字在流动性收紧时跌得最快。
 - 24 小时内的利空标题：Broadcom (NASDAQ:AVGO) Stock Falls 1.9% - Should You Sell? - MarketBeat（MarketBeat）
-- 24 小时内的利空标题：Nvidia Stock Shakes Off Fallout From Broadcom CEO and Microsoft's New Chip -- Barrons.com - Moomoo（Moomoo）
+- 24 小时内的利空标题：Elon Musk Fires Back at Broadcom CEO Hock Tan's AI Investment Warning: 'No Crying in the Casino' - Benzinga（Benzinga）
 - 政策面对该板块的倾向为 -0.94（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
@@ -156,7 +155,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-08 | 370.62 | 373.35 | 357.41 | **360.14** | -4.3% | 27,145,200 |
 | 2026-10-09 | 365.59 | 366.63 | 361.10 | **361.54** | +0.4% | 16,843,800 |
 | 2026-10-12 | 359.43 | 360.69 | 354.22 | **354.73** | -1.9% | 16,336,800 |
-| 2026-10-13 | 349.20 | 359.24 | 348.11 | **357.31** | +0.7% | 15,655,915 |
+| 2026-10-13 | 349.20 | 359.24 | 348.11 | **357.31** | +0.7% | 16,684,707 |
 
 ## 七、自己去查（本页不做独立验证）
 
@@ -182,10 +181,10 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 **消息与预期**
 - [Yahoo 新闻](https://finance.yahoo.com/quote/AVGO/news)
-- [Google News 搜索](https://news.google.com/search?q=Broadcom+stock&hl=en-US)
+- [Google News 搜索](https://news.google.com/search?q=AVGO+stock&hl=en-US)
 - [财报日历与预期](https://stockanalysis.com/stocks/AVGO/forecast/) — 下次财报日、市场一致预期、历史超预期记录
 - [Seeking Alpha 讨论](https://seekingalpha.com/symbol/AVGO) — 观点密度高，但是买方与卖方混杂，当作反方意见读
-- [公司投资者关系](https://www.google.com/search?q=Broadcom+investor+relations) — 财报原始 PPT 与电话会记录
+- [公司投资者关系](https://www.google.com/search?q=AVGO+investor+relations) — 财报原始 PPT 与电话会记录
 
 **中文渠道（转载源，不作独立验证）**
 - [雪球](https://xueqiu.com/S/AVGO) — 中文讨论与财报摘要

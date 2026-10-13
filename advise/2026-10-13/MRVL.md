@@ -1,6 +1,6 @@
 # MRVL · 迈威尔科技（Marvell Technology）
 
-_科技 · 数据截至 2026-10-13 收盘 → 面向 2026-10-13 开盘_
+_未分类 · 数据截至 2026-10-13 收盘 → 面向 2026-10-13 开盘_
 
 [← 回到 2026-10-13 当日报告](../2026-10-13.md)
 
@@ -63,13 +63,13 @@ _以上每一条都是对已经发生的价格的描述。均线、RSI、摆动�
 
 ## 三、财报与基本面
 
-市值 $2,415.04亿 · 行业 Technology / Semiconductors · TTM 营收 $94.50亿 · TTM EPS 3.04 · 股息率 0.09% · Beta 2.26 · 空头占流通股 3.2%
+市值 $2,415.04亿 · 股息率 0.09%
 
-- **估值**：TTM 市盈率 88.4 倍；前瞻市盈率 36.9 倍（市场预期未来一年盈利上升）；市销率 25.6 倍；EV/EBITDA 82.3 倍；PEG 0.66（低于 1，增长尚未被价格吃掉）。
-- **增长**：最新季度营收同比 +36.5%；盈利同比 +50.0%；最近三个季度营收连续环比上升；最近 7 次财报里 6 次超预期。
-- **盈利质量**：毛利率 52.2%、营业利润率 16.7%、净利率 27.9%、ROE 16.5%。
-- **资产负债**：现金 $39.33亿；有息负债 $52.86亿；负债/权益 28.5%（负债很轻）；流动比率 3.17；自由现金流 $24.08亿，为正。
-- **卖方预期**：44 位分析师覆盖；平均评级「强烈买入」（1.37/5，1 为最看多）；目标价均值 337.99（较现价 +25.8%），区间 210.00–450.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
+- **估值**：既无盈利也无有意义的营收，估值倍数一栏本页留空——这不是低估，是无法用倍数衡量。
+- **增长**：最新季度营收同比 +36.5%；最近三个季度营收连续环比上升；最近 7 次财报里 6 次超预期。
+- **盈利质量**：没有拿到利润率数据。
+- **资产负债**：没有拿到资产负债数据。
+- **卖方预期**：没有覆盖这只股票的分析师数据。
 
 **分季度损益**（季度数据，最新在左）
 
@@ -112,14 +112,18 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 35h 前 | 9 | 中性 | [Marvell Technology Stock: Raising Valuation on Bullish Long-Term Guidance - Morningstar](https://news.google.com/rss/articles/CBMiswFBVV95cUxOVEpHWmx0QjFKNTJhQjlUXy00X1AzQ3paUFA0UjNMTGZxb0NlNFJkNUxzdm1jc0RtalZfVEt5SXotTGt5cGxnRnVDOGFWWTdidHcxZ1dwQlFQZnc3STMyV2ZtdGkzWmlNZTc4QjJ6ekpndHM5SWlWOHdKVzgwUGFQZzF5NXNIZWY1X1Y0WmZlUTVraGprZjNDY1l2SWFDOVZpcFM3c19yR1JSQWd5WEdocUxBcw?oc=5) | Morningstar |
-| 41h 前 | 5 | 偏多 | [3 Tech Stocks Wall Street Upgraded Last Week, and the One I'd Buy First - The Motley Fool](https://news.google.com/rss/articles/CBMilgFBVV95cUxQZ1UxY1lUWjQwdmI2VlVLVFZjSVpMbjZ6YXpYQ0lPdWRnR1lIVlAwY0l5eWxfSG11dU02a1RsdFAwYV9CVFJEWHFZSXBKUld2WmhDTFVBZ3BqQXZDZHhMMVZUeW5jdW8wS2sySktGYnBiZUdXZms4VWxBUGZyOHpFQzFRVmlVS2VqbFZVb2VaeTF0WmJtTlE?oc=5) | The Motley Fool |
-| 1h 前 | 0 | 偏多 | [Marvell stock soars 214% in 2026, far outpacing Broadcom and NVIDIA gains. - Pluang](https://news.google.com/rss/articles/CBMisAFBVV95cUxPM09XNW5FQ3owVjNUZzI2ZXdZWS1lWHJGdHFWckFaaHNrbVg5RW9YOUlCNmFocGJWM2RxY0E3T0R2OTVFZnFweDl6VEFpZG1WYy1ubjQ4RnVoUmpGN3JZbXQzTjFQQ2JfMzNWYjl2WHRUNnZSanEzS1ltYXludmNLWHBkWVB5dUJjNVNBTnRBYVZzNEx6dVFOeFhSdXJKdTRYZUhuc2MxREo4VzJpVWJ3Ug?oc=5) | Pluang |
-| 4h 前 | 0 | 中性 | [Marvell Technology Just Gave Its Investors Great News - Yahoo Finance](https://news.google.com/rss/articles/CBMipgFBVV95cUxQdHJMMVF5Yk95LVJkS3h1S2c4RGZCam1fb3RjdnVTTkpESmFON0lwalBMRk5nOThGdmxvbmFkUmpsX1BobUJYNEtJc01ocm1SLVpsaXlIOVVScktpS1E3OW5ROHFRRllPZE1uNkplWFpyZktvU1hIUnRjWWIwQkg1azFmRmdydkV1OVNtVzRVOWhPRklGVWVaRzY3alFUZkJiN0JYYkJ3?oc=5) | Yahoo Finance |
-| 5h 前 | 0 | 偏多 | [Needham raises target for Marvell Technology stock to USD 400.00 - ad-hoc-news.de](https://news.google.com/rss/articles/CBMixgFBVV95cUxQVGN2WVpNZXNsNkNibFJ1eGZqWThYLWl6UjgwUUN3TWJNaUhoX3ctWUtVNV9RNjlwdWJVRzdHS2psczBwLWthR010RUQzdnZfLWdfZ2xYQmtPZXlXb3U3V1I1ZUMwVXVSQU5vOGtyanJxdmJmeVZGZkZ0RzhEeERfekZqNHh6RUJEMG5TcXFYLVAwN0x6QkNScHVxZ0VSXzNPaF9mV1Z0OEpCWGl2eW5fdllBcnlaWXd5SDB6bENKNEJ3bEhILVE?oc=5) | ad-hoc-news.de |
-| 6h 前 | 0 | 中性 | [Marvell Technology, Kulicke and Soffa, Vishay Intertechnology, Allegro MicroSystems, and Amkor Shares Plummet, What You Need To Know - TradingView](https://news.google.com/rss/articles/CBMilwJBVV95cUxQZFBLaUhQQWluVmZHSjNaMGJLX2wtLXZvRjV6aGgtT0p4cFY1VE8ycnZBaDQtZGVSTTliNjZiM3FIMEMza0VEQjVsTjk4NHFxSmt4clpBLWJGQUNQYTlNN3ZtRXpjblpia2pValBJRVBMZnI5cWRrbTJnM2gyOGVSWnloUGtxc0lRb3cxVjR5d1VFcEgzVG9LRTUwVU90dHR0Wk9RZTNRY1RmY0Fvc285Mi0wQTY5bXI3bktram9iTFMwWXpONXVqNXdBRWVIOVYtQmxqcDdDVFlaUDE5QkhCOVBnVHd6VktNTm5aUDlCNk12NDdzYk1uU1RySnNGWERPZXA5OG9xUzNHTDU3Mm9Sd3VDSTgyeHM?oc=5) | TradingView |
-| 9h 前 | 0 | 中性 | [Why It’s Time to Load Up on Marvell Stock - Barchart.com](https://news.google.com/rss/articles/CBMijAFBVV95cUxQbjBSaGh5WnpOVWlnZlZHcHlPSi1LWl84d0JHb1ZiU201dUJjWVFLWXdNbndVMzZxbnBCMVdpV2JBbnpsbUJ0TDlsb2w2WTA1UmRrTnZDZUdzWkV5RDFjM2pZcXZ6MktzMG5nM0tfUURUZy1OdU5DNllJdEVhVHJRNFFtUnlrNVIwU0lhWQ?oc=5) | Barchart.com |
-| 29h 前 | 0 | 中性 | [Why is Marvell Technology stock sliding today? By Investing.com - Investing.com Nigeria](https://news.google.com/rss/articles/CBMiqgFBVV95cUxNMG55YmNCTm1NLXdPTDM5RmNhMUR0bXZubVVZVlJ2cktkNm1Dd0s3VEU1b0ViVmJWLXNzZnQtTWVvZ3RFeHJSQnNVVTU3c3RRbmZ2RF9qa3JmbmhSeS1DN3Vmc2pVajljSjc3Qk5wVzRucWdPZkd3NGF4NEF2MnViNXpuZXZpdGZCWGpIWkRVR2tNMUk0Sk9NSGRzNHRBVnBSVEF2djVPQ1ZUdw?oc=5) | Investing.com Nigeria |
+| 27h 前 | 8 | 偏多 | [Why an Analyst Sees Marvell Beating Its Own Long-Term Earnings Target - Benzinga](https://news.google.com/rss/articles/CBMivwFBVV95cUxPYXV2YUxScVdYdlc1N0lqaDFjMFBtMGxhaVhYWDdDTWYwbGt0TGVocHdYcGRlOEdYel85LU9CdGd3U3g0OWR1MlVsUzRMVXNYeFVpZjY2blF4M1V5dUQ3aHRVZmZCVDBTc0szaHpZdjZfcF93ejRiTDVyT25xSzZMOWxtS0NELUdhdkdHcGpWZGJCVnNfV21QcDZFc0ZnS2RpQU8tZzZxZkFRNE80ODlYT19ZZHh1Uk9GZWNLSjhGUQ?oc=5) | Benzinga |
+| 26h 前 | 7 | 偏多 | [MRVL Stock Jumps Overnight: MU, QCOM Boost Outweigh CFO’s Share Sale - Stocktwits](https://news.google.com/rss/articles/CBMiygFBVV95cUxPUHcxOGxLUW9ISnBmUGJKQ212TXYwamxvbElFYXNGbTlRZEltRXB4SzNxNWVrUE42T2hFQmxJckNSSUtKMF80OU5BRzV1Nnc2Ymp5UlhCOEZZYkxLcGMtdndyRXRvSGtMR3NXdFIwVzlRdFg3bGNjd25lTmMwc2dMeUhjczBNRzQtU2ZIcy1oXzRDSW04cER2eG9Kc2FnZkc1cTFBZzZzTjJ4bFVXdWlHaktJdm9nMDdBYjJ1czNlN1pHaWJ0anBKU3h3?oc=5) | Stocktwits |
+| 7h 前 | 5 | 中性 | [SA analyst upgrades/downgrades: META, VTRS, MRVL, COKE (META:NASDAQ) - Seeking Alpha](https://news.google.com/rss/articles/CBMikAFBVV95cUxQNF9GZWZGTm9lc3NUU2lIYVZiNXkyT0FwNDFQUDNRR05yMEpNSWRkSUxSVG5CclNscmY0UVJybmdQQXdURnBpMXdRR1JDeVJHSlBBeUppd2NTQW83M2pBX0kzdzRmdHhneHBORmRPZHQ3ck9DYUVJZ3RtbW1hZ0pNTDdHNWFVTjNZWGNmUVM0VHc?oc=5) | Seeking Alpha |
+| 2h 前 | 0 | 偏多 | [Marvell stock soars 214% in 2026, far outpacing Broadcom and NVIDIA gains. - Pluang](https://news.google.com/rss/articles/CBMisAFBVV95cUxPM09XNW5FQ3owVjNUZzI2ZXdZWS1lWHJGdHFWckFaaHNrbVg5RW9YOUlCNmFocGJWM2RxY0E3T0R2OTVFZnFweDl6VEFpZG1WYy1ubjQ4RnVoUmpGN3JZbXQzTjFQQ2JfMzNWYjl2WHRUNnZSanEzS1ltYXludmNLWHBkWVB5dUJjNVNBTnRBYVZzNEx6dVFOeFhSdXJKdTRYZUhuc2MxREo4VzJpVWJ3Ug?oc=5) | Pluang |
+| 2h 前 | 0 | 中性 | [Marvell Is Up 214% in 2026 While Broadcom Is Only Up 3%: Take Profits on MRVL Stock, or Hold On for the Ride? - Yahoo Finance](https://news.google.com/rss/articles/CBMinAFBVV95cUxOV2VRYVNrUUp6MG0yUzdWOHhTMVA1UWF5dndUZm82d182bjNMYkRvZGN6azZhOHhSNG5aSTV3WDFfeWVoakZyakVVM2trRTF1WTE1dWQzNVMxYmdJQzNfTDkxblJJZURheHNmZFlTVG9HWGdKdnVtWi1CQlJsUzBEUFdqbV93TzVrRkRFMzBRVjhmNnZTSEM4UjVoQnY?oc=5) | Yahoo Finance |
+| 2h 前 | 0 | 偏多 | [Marvell (MRVL) Raises Its 2028 Revenue Target to $20 Billion. Can Growth Justify the Premium? - Yahoo Finance](https://news.google.com/rss/articles/CBMingFBVV95cUxPa01sRXZJZ3Rwc0huUTJXc3BkcU9ra0ZadlpuZW9IZnBlejFiWkVHd2FZbVJvWGF6b0JPU2g2REVIcm15em00alBGYU1HZjJnR1lrcXpSSi1XQkF6YTFTWjdmdUs4bjNWNWJPVEJ0SVl4MWNMYlpMV2RkYlM2SmdFTm0xLXVSYy14bnp1dm9oa0xpUTNQd1dvUy1jcXNQQQ?oc=5) | Yahoo Finance |
+| 6h 前 | 0 | 偏多 | [Marvell: A Strong Buy With A $90 Billion Opportunity (NASDAQ:MRVL) - Seeking Alpha](https://news.google.com/rss/articles/CBMilgFBVV95cUxOTTdDMTN2VnBBZ1RXcDVYMEc4cEdnRnZ0TlM3U2dxeVpyWVlRZkI4S2pESDQ3UEJfRXBma1V4NDB5QkM5dDJLZ0dDLTVST3J0NjBhMjY1azh2RkZvdmxJSTVoS2ZldUMycDRmaU90T0Q3SEZBT2FIRGRmd3hnTGxDbjdaZThjSUhTeUZJeXJXNHhqTUxwWkE?oc=5) | Seeking Alpha |
+| 6h 前 | 0 | 中性 | [Marvell Technology, Kulicke and Soffa, Vishay Intertechnology, Allegro MicroSystems, and Amkor Shares Plummet, What You Need To Know - StockStory](https://news.google.com/rss/articles/CBMimAJBVV95cUxQNkdYQm5GVzUwNUJTSUtDczlHYnVEVFUzVHpOOUNLNVJQSmhsVnJ4eEZGVGtqODE1ZWM4MXFXT2ozbVU1N2lzeVVaV1JPSUxBZzVuNFYwUnREV1pDS0VMQ2hlM1YzVUd3NlZUdmJsUmpxYWl3Tm0xWDEwNjQyd3RkaU9jX1NoU1EtTzgyTHB6X29neU44RjZ6N0JpOFRYeVVXMGhfdUhISmtyWFAyeFRTTDhhQjl0VnBGSE9IRDBSTVBNVVFmOGt3YnVZNUVGSEt0ejJzaTNXR3ZmVWowT1RLczRsMWJBRDI0dldqcUFaSUlFbWZUYWR4cTQzOEwxblNXRjZVeWxud2hSSmtfQWdiX3FYbkNWODVk?oc=5) | StockStory |
+| 8h 前 | 0 | 中性 | [A new chip doubles copper-cable reach between AI servers and switches to more than six meters - Stock Titan](https://news.google.com/rss/articles/CBMiwAFBVV95cUxPNjJOcnRQbGlXaVlxVmJUOTN1ZjN2TnN2VGVyTU1RRGY3S2huRTZCZWhqbl9mNU5Ud202MVNOdGRqcDZZLUVsUWo4YlAxVFowMTl6Q25laWZOZnRXVUNOMlllcHIzbVFRSzFFdzVEX1daeTFGdGx4R3lCamh2SEtkOFBSY01jVVlLeUFZaXBrVUYyQ19jbUZXc3lyLUI4ZFBYUklLYjRiSnN1VTJzTTZrczEwc3ktS0dDQ29heFp1M0Q?oc=5) | Stock Titan |
+| 8h 前 | 0 | 中性 | [Microsoft, Oracle and Marvell form a group to define how encryption keys stay in servers. - Stock Titan](https://news.google.com/rss/articles/CBMitAFBVV95cUxQdzRjdzZ6dDU5LS1ENkNRQVVMRlhwRUVYSVVPT3VRbTFPeGxGcHZqZmtVTWRYOERlR3FjLWQzZl9rNENRNTJoNTNkUUFqeHlQUlE4cWF0R2oxNE5DRVM5S2R4aFdkZUU4d3E5RktJd2lFMjk3MjRwRWZFYzQ2N2pqREdmaDkwcGZrdHhSdmNjcVZjUHMwdk53N2lIZXFFaDZlTWRGeS1POGVMcno5N0VjcEUxSko?oc=5) | Stock Titan |
+| 10h 前 | 0 | 中性 | [Why It’s Time to Load Up on Marvell Stock - Barchart.com](https://news.google.com/rss/articles/CBMijAFBVV95cUxQbjBSaGh5WnpOVWlnZlZHcHlPSi1LWl84d0JHb1ZiU201dUJjWVFLWXdNbndVMzZxbnBCMVdpV2JBbnpsbUJ0TDlsb2w2WTA1UmRrTnZDZUdzWkV5RDFjM2pZcXZ6MktzMG5nM0tfUURUZy1OdU5DNllJdEVhVHJRNFFtUnlrNVIwU0lhWQ?oc=5) | Barchart.com |
+| 23h 前 | 0 | 偏空 | [Marvell Technology Inc (MRVL) Shares Fall 3.4% -- What GF Score of 74 Tells Investors - GuruFocus](https://news.google.com/rss/articles/CBMiuAFBVV95cUxNQmN1UUdaS3JRTWdWWUNIQnJRQVZzYXRIejVzMEdGMnNDcm9YUkRJbHNhRmU3RFJBVXZtX0JZUXotMEVYVVBIcUwxaHRMWlloZEl5RE45ZE03eW43M3JmV2JleHp6RVZ2WW53VzBmMmhNeDRXVEpQZ2ZHLTlaczVkSGtrZHhkNm5MYzRETGg5MGlnTVd3QU9lcm8xQ3JGVmVERmtic0NKZ2RDcE81OGw3WktKNXIzck11?oc=5) | GuruFocus |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -127,8 +131,8 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
+- 公司尚未盈利：估值没有盈利可锚，股价由叙事和融资环境决定，这类名字在流动性收紧时跌得最快。
 - TTM 市盈率 88 倍，价格里已经计入了不少增长；增长只要减速，杀估值的幅度会大于业绩本身的降幅。
-- 政策面对该板块的倾向为 -0.94（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -150,7 +154,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-08 | 277.54 | 283.84 | 265.73 | **274.60** | -3.5% | 29,199,700 |
 | 2026-10-09 | 279.19 | 283.78 | 267.70 | **275.28** | +0.2% | 15,082,800 |
 | 2026-10-12 | 274.50 | 278.01 | 260.80 | **265.86** | -3.4% | 19,104,000 |
-| 2026-10-13 | 253.53 | 269.14 | 248.45 | **268.73** | +1.1% | 17,872,893 |
+| 2026-10-13 | 253.79 | 269.14 | 248.45 | **268.73** | +1.1% | 17,872,893 |
 
 ## 七、自己去查（本页不做独立验证）
 

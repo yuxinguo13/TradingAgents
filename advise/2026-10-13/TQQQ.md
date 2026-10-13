@@ -69,7 +69,7 @@ _读不到财务数据：该代码没有可用的财务数据（可能是 ETF、
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 10h 前 | 0 | 中性 | [ProShares UltraPro QQQ (TQQQ) Stock Price, News, Quote & History - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMiUkFVX3lxTE1GcUxBSFRNMHdxX29reFVOY3V5OFZ1dFBqa0NpbDhEV3c0SXNqOThQZFdyZGxkcDVkZGVUazNFM3ItQVdaZGo4WVdVV2NUMWlxNlE?oc=5) | Yahoo! Finance Canada |
+| 8h 前 | 0 | 中性 | [ProShares UltraPro QQQ (TQQQ) Stock Price, News, Quote & History - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMiUkFVX3lxTE1GcUxBSFRNMHdxX29reFVOY3V5OFZ1dFBqa0NpbDhEV3c0SXNqOThQZFdyZGxkcDVkZGVUazNFM3ItQVdaZGo4WVdVV2NUMWlxNlE?oc=5) | Yahoo! Finance Canada |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -99,7 +99,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-08 | 82.33 | 83.40 | 78.78 | **80.23** | -4.1% | 66,411,000 |
 | 2026-10-09 | 81.72 | 81.81 | 80.37 | **81.28** | +1.3% | 39,591,900 |
 | 2026-10-12 | 80.78 | 80.81 | 79.22 | **79.61** | -2.1% | 31,741,200 |
-| 2026-10-13 | 77.50 | 79.00 | 77.28 | **78.81** | -1.0% | 38,714,328 |
+| 2026-10-13 | 77.51 | 79.00 | 77.28 | **78.81** | -1.0% | 38,714,328 |
 
 ## 七、自己去查（本页不做独立验证）
 

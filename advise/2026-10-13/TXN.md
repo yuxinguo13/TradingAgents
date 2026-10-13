@@ -112,9 +112,9 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 6h 前 | 8 | 中性 | [A Silent Winner: Texas Instruments Anchors the AI Supercycle - MarketBeat](https://news.google.com/rss/articles/CBMinAFBVV95cUxQd1FxcTdfRGJZVW5VNHY5dVpBeEh5czZnbTZPdWJxLWpibkhaTGwxd2lZcDltRDZZeUFoUm95dTVmMW5fR29yM21xdncxMTNRZFpsblZ3Ym1rVWpFYmZsQWZaenhTcFlBc1k1ZmotNE1vVC1mdTZyWGdHQmplbzh2MnphekkyY0lsTDc0SVVKVzJkazRTSmFBN1RyWlk?oc=5) | MarketBeat |
-| 6h 前 | 0 | 中性 | [Bernstein keeps USD 290.00 target for Texas Instruments stock - ad-hoc-news.de](https://news.google.com/rss/articles/CBMiwgFBVV95cUxNaXZLSVAyclZpS3l0eV9pdHRWdEY1RUwzNDRUYWFjOFJMRWl1eVFFdUVUTGxyLWcyTVY3YXpsZ190YU1pX0pwQUJnNFNiSE8yc3o1LW5vcU93R2JlRG5JYS1sN1ZkMlFZV081QUp4ZVFNNWFjS2tvZGFneGhwRG14eDRWVjR0djJnTDNGN2ptUDZfX3pwRVJCZHQ3V0h5UkI1QlA3R3RUVUNVU0tZbWZKMkJSaUNDYTRpeTBoVnQwZU9qdw?oc=5) | ad-hoc-news.de |
-| 10h 前 | 0 | 中性 | [Texas Instruments unveils ADC and Texas Instruments stock trades 1.15 percent lower - ad-hoc-news.de](https://news.google.com/rss/articles/CBMi3wFBVV95cUxPM0VYT3VjTUdQYlhkcGUwS1RNRE5HRW9Rb1RVb05tMkxMYUQ2QV9pSWgtUVJac3BmREJkRjZ2R3loYmF2dFBfQkVmWGw4RGhWUFVDSG15ODZudVZCSEZaRVBtVFgtbU1sdWJOclhyaTc0UVRsUWlzajg2QW1OMUFFQkxmX252alJrdFNsR2ZSM3psV011emhPM2ZjYUNOQl82RDI2VzN5dTdpRkJLV2p3cEJjYUpIZVlrVHBDZTAwcElpZ0pFMExFTzROcHVGMEtMSG5UMFVuRHZ5b3ZBbE1z?oc=5) | ad-hoc-news.de |
+| 7h 前 | 8 | 中性 | [A Silent Winner: Texas Instruments Anchors the AI Supercycle - MarketBeat](https://news.google.com/rss/articles/CBMinAFBVV95cUxQd1FxcTdfRGJZVW5VNHY5dVpBeEh5czZnbTZPdWJxLWpibkhaTGwxd2lZcDltRDZZeUFoUm95dTVmMW5fR29yM21xdncxMTNRZFpsblZ3Ym1rVWpFYmZsQWZaenhTcFlBc1k1ZmotNE1vVC1mdTZyWGdHQmplbzh2MnphekkyY0lsTDc0SVVKVzJkazRTSmFBN1RyWlk?oc=5) | MarketBeat |
+| 7h 前 | 0 | 中性 | [Bernstein keeps USD 290.00 target for Texas Instruments stock - ad-hoc-news.de](https://news.google.com/rss/articles/CBMiwgFBVV95cUxNaXZLSVAyclZpS3l0eV9pdHRWdEY1RUwzNDRUYWFjOFJMRWl1eVFFdUVUTGxyLWcyTVY3YXpsZ190YU1pX0pwQUJnNFNiSE8yc3o1LW5vcU93R2JlRG5JYS1sN1ZkMlFZV081QUp4ZVFNNWFjS2tvZGFneGhwRG14eDRWVjR0djJnTDNGN2ptUDZfX3pwRVJCZHQ3V0h5UkI1QlA3R3RUVUNVU0tZbWZKMkJSaUNDYTRpeTBoVnQwZU9qdw?oc=5) | ad-hoc-news.de |
+| 11h 前 | 0 | 中性 | [Texas Instruments unveils ADC and Texas Instruments stock trades 1.15 percent lower - ad-hoc-news.de](https://news.google.com/rss/articles/CBMi3wFBVV95cUxPM0VYT3VjTUdQYlhkcGUwS1RNRE5HRW9Rb1RVb05tMkxMYUQ2QV9pSWgtUVJac3BmREJkRjZ2R3loYmF2dFBfQkVmWGw4RGhWUFVDSG15ODZudVZCSEZaRVBtVFgtbU1sdWJOclhyaTc0UVRsUWlzajg2QW1OMUFFQkxmX252alJrdFNsR2ZSM3psV011emhPM2ZjYUNOQl82RDI2VzN5dTdpRkJLV2p3cEJjYUpIZVlrVHBDZTAwcElpZ0pFMExFTzROcHVGMEtMSG5UMFVuRHZ5b3ZBbE1z?oc=5) | ad-hoc-news.de |
 | 15h 前 | 0 | 中性 | [Texas Instruments stock: Xetra close EUR 252.30 on October 12, 2026 - ad-hoc-news.de](https://news.google.com/rss/articles/CBMiwAFBVV95cUxPVkswNUgyLVhPdksxZi1neUR3YkUyYUxHQmJTbDIwYWdXYXZMQjhrRl84dWZnS0dEYVo0Zlg5c2k0Q1ZFYVpOMjMtY0w4RURCUWdWZ3JyQlJUaVVxWDZkby1vN2dIZDZxcW01azkxOWtvSXl4dVN0VTR4bzdkNGFGMWQ5VDVUcmtXa21VZjA2Rm5PLXBlSmJSQWJ0VmpRMDF2QS10TjFSTmZtMm84UEpYdDR5elhKNUpvUkFXMHJna2k?oc=5) | ad-hoc-news.de |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
@@ -146,7 +146,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-08 | 285.46 | 290.52 | 283.27 | **288.20** | -0.3% | 5,944,400 |
 | 2026-10-09 | 290.59 | 291.23 | 281.66 | **283.74** | -1.5% | 4,037,300 |
 | 2026-10-12 | 280.76 | 283.63 | 277.06 | **281.74** | -0.7% | 3,853,500 |
-| 2026-10-13 | 279.77 | 288.90 | 277.38 | **287.85** | +2.2% | 5,595,405 |
+| 2026-10-13 | 279.00 | 288.90 | 277.38 | **287.85** | +2.2% | 5,595,405 |
 
 ## 七、自己去查（本页不做独立验证）
 

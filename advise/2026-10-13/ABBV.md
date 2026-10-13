@@ -11,8 +11,8 @@ _医疗 · 数据截至 2026-10-13 收盘 → 面向 2026-10-13 开盘_
 ```text
        ABBV · 近 126 个交易日（日线收盘）
 277.7 ┤                                                                           ╭
-271.4 ┤                                                                         ╭─╯
-265.1 ┤                                           ╭╮        ╭──╮      ╭──────╮ ╭╯
+271.5 ┤                                                                         ╭─╯
+265.2 ┤                                           ╭╮        ╭──╮      ╭──────╮ ╭╯
 258.9 ┤                                 ╭╮     ╭╮╭╯╰╮      ╭╯  ╰───╮ ╭╯  ····╰─╯···
 252.6 ┤                               ╭╮│╰╮  ╭─╯╰╯  │   ╭──╯   ····╰─╯···
 246.3 ┤                              ╭╯╰╯ ╰──╯      ╰───╯ ·····
@@ -20,7 +20,7 @@ _医疗 · 数据截至 2026-10-13 收盘 → 面向 2026-10-13 开盘_
 233.7 ┤                            ╭─╯           ···                             ::
 227.4 ┤                            │         ····             :::::::::::::::::::
 221.1 ┤                     ╭─────╮│    :····:::::::::::::::::
-214.8 ┤········::::::::╭╮╭──╯:::::╰╯:····
+214.9 ┤········::::::::╭╮╭──╯:::::╰╯:····
 208.6 ┤──╮    ╭─╮··╭───╯╰╯···········
 202.3 ┤  ╰─╮ ╭╯ ╰──╯
 196.0 ┤    ╰─╯
@@ -44,7 +44,7 @@ _医疗 · 数据截至 2026-10-13 收盘 → 面向 2026-10-13 开盘_
        2026-09-15 2026-10-13
 ```
 
-成交量近 63 日： `▆▅▃▃▃▅▄▆▇▆▃▃▃▂▃▃▄▄▂▂▃▂▂▂▃▃▃▃▄▁█▁▂▁▃▃▂▆▃▅▃▃`
+成交量近 63 日： `▆▅▃▃▃▅▄▆▇▆▃▃▃▂▃▃▄▄▂▂▃▂▂▂▃▃▃▃▄▁█▁▂▁▃▃▂▆▃▅▃▅`
 
 ### 图形读数
 
@@ -53,7 +53,7 @@ _医疗 · 数据截至 2026-10-13 收盘 → 面向 2026-10-13 开盘_
 - **动能**：RSI(14) 62，偏强；月 +4.8%、季 +12.4%，节奏平稳
 - **波动**：日均真实波幅约为价格的 2.2%；按本报告 2 ATR 的止损惯例，一个 R 相当于 4.4% 的价格距离
 - **位置**：距 52 周高点 -2.4%，距 52 周低点 +40.0%
-- **量能**：最新一日成交量为 20 日均量的 0.9 倍，量能正常
+- **量能**：最新一日成交量为 20 日均量的 1.4 倍，量能正常
 - **相对强度**：近一月跑赢 标普500 2.3 个百分点
 - **支撑 / 阻力**：最近的摆动低点 257.87，摆动高点 —（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
 
@@ -63,7 +63,7 @@ _以上每一条都是对已经发生的价格的描述。均线、RSI、摆动�
 
 ## 三、财报与基本面
 
-市值 $4,848.09亿 · 行业 Healthcare / Drug Manufacturers - General · TTM 营收 $643.86亿 · TTM EPS 3.54 · 股息率 2.43% · Beta 0.23 · 空头占流通股 1.0%
+市值 $4,848.26亿 · 行业 Healthcare / Drug Manufacturers - General · TTM 营收 $643.86亿 · TTM EPS 3.54 · 股息率 2.43% · Beta 0.23 · 空头占流通股 1.0%
 
 - **估值**：TTM 市盈率 77.5 倍；前瞻市盈率 16.9 倍（市场预期未来一年盈利上升）；市销率 7.5 倍；EV/EBITDA 18.2 倍；PEG 0.57（低于 1，增长尚未被价格吃掉）。
 - **增长**：最新季度营收同比 +10.2%；盈利同比 +290.4%；最近 7 次财报里 6 次超预期。
@@ -112,14 +112,14 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 6h 前 | 5 | 偏多 | [RBC Capital reiterates Outperform rating on AbbVie, $280 price target - TradingView](https://news.google.com/rss/articles/CBMiyAFBVV95cUxQUndycjlPRHlBZ3VNV0VYYmlodW44SEVtN182T3dIWmYxWGFTbDBzdWQ4TkxGallYbmpyU3pHamFYcFA3ZmhKSzh1UzByeW1OMFZidlF2XzJFeC15dDRKNDRXTmF2X1VkQk1lM2JpUWJPZDV2YWEySVZYRUZ4UGF0RnQ5bDd2T3RBdDltcGFxREszWkUwZTF4MW1taG01QlNGNTF2YVhRQm1JdUR0VV9XU2dkZUpSVEFLQTJ5SmVRUHFPVlloeTFTYg?oc=5) | TradingView |
-| 13h 前 | 5 | 偏多 | [AbbVie (ABBV) Could Be 44% Below Fair Value On Fresh Pipeline Wins - Yahoo Finance](https://news.google.com/rss/articles/CBMikAFBVV95cUxQSkZwZjR2Yl9vLUxHNjhsV2xqcXU2RVFZV2llSXB2eFZDRmpFSGd3ZGJwdVF0V3FzdEd5Yk55anhQcnRCWEM2UEZkVGJ1V3JWWFZDQ0x3TnhRdDJDanctWGMtYm1IU1ZEdHZJNjdGWUJKSUlaMU81YTJLc0hiVThZTWVoRFlyMGRyLTF3c2dFaTU?oc=5) | Yahoo Finance |
+| 7h 前 | 5 | 偏多 | [RBC Capital reiterates Outperform rating on AbbVie, $280 price target - TradingView](https://news.google.com/rss/articles/CBMiyAFBVV95cUxQUndycjlPRHlBZ3VNV0VYYmlodW44SEVtN182T3dIWmYxWGFTbDBzdWQ4TkxGallYbmpyU3pHamFYcFA3ZmhKSzh1UzByeW1OMFZidlF2XzJFeC15dDRKNDRXTmF2X1VkQk1lM2JpUWJPZDV2YWEySVZYRUZ4UGF0RnQ5bDd2T3RBdDltcGFxREszWkUwZTF4MW1taG01QlNGNTF2YVhRQm1JdUR0VV9XU2dkZUpSVEFLQTJ5SmVRUHFPVlloeTFTYg?oc=5) | TradingView |
+| 14h 前 | 5 | 偏多 | [AbbVie (ABBV) Could Be 44% Below Fair Value On Fresh Pipeline Wins - Yahoo Finance](https://news.google.com/rss/articles/CBMikAFBVV95cUxQSkZwZjR2Yl9vLUxHNjhsV2xqcXU2RVFZV2llSXB2eFZDRmpFSGd3ZGJwdVF0V3FzdEd5Yk55anhQcnRCWEM2UEZkVGJ1V3JWWFZDQ0x3TnhRdDJDanctWGMtYm1IU1ZEdHZJNjdGWUJKSUlaMU81YTJLc0hiVThZTWVoRFlyMGRyLTF3c2dFaTU?oc=5) | Yahoo Finance |
 | 6h 前 | 0 | 中性 | [AbbVie stock costs EUR 248.30, 1.97 percent below its high - ad-hoc-news.de](https://news.google.com/rss/articles/CBMivAFBVV95cUxNZVNNMS1KZnllTWdIaXJhb3JnTFZMWG96VUNfdk1TdVNMdUtlTkFsMmhPb29qMlhZU2pDMmdySWpybUd4cjRaZVpnbnlPdWFVOXQ1V3F2XzBmcmR0ZFlzQk15S1pUQUZSVkU2SEdvdWpRMVdhb3pocmlKRVBSZE5YZHVoRGt5eEpMSktCTkdRN1Q4TjllUzFxOUJUZkFLeEN2UVNHb0dKNDQ1NjZPa1JTZVBDTlFrbk1BcExPbg?oc=5) | ad-hoc-news.de |
-| 9h 前 | 0 | 中性 | [AbbVie, Eli Lilly among mega-cap healthcare stocks with A+ profitability grades (XLV:NYSEARCA) - Seeking Alpha](https://news.google.com/rss/articles/CBMitgFBVV95cUxPZUpuRmNXdWJEUnJqR2ktcDlUN1U4N3l2RFgyZmJnZE1ZaVZtS19idTFwY3dzYW5zOGZoYi1uVWR0ZlFWZ2VoRjZOV2xLOFlLYWxGSjBxZXZMa0hHX21tbkJfZHpXR25HZ3Nnei15Sk5SYkpXS2VQbmhmZXJ5QjBrZ1lnY3pCUGFPQ1lPX2xpV3RNOThsNmdPVHdMSDVzanZwVVp5eUkzd2F3VjBTSmtxc0ZJTnc1dw?oc=5) | Seeking Alpha |
-| 10h 前 | 0 | 偏多 | [JPMorgan raised AbbVie target from USD 285.00 to USD 300.00 for AbbVie stock - ad-hoc-news.de](https://news.google.com/rss/articles/CBMizgFBVV95cUxQcVB6azhxREhad2VRWDA3bjh0NmZNU3pmUlhYWGM2T3cxRkpaVkVKNkNtbElKd1Vkdnl1LS1YY1BmMjJuR1RmLTE1T3ZES3BObXFuU3ExemdPb01DOXBvSFgyY0hOMUNuOGlNV093dFlxLXlPcFQ0UUIxUldyUlFZcGExY0pVeUdpZ1RBLXBQYkpRQVYxeEpPVE5Ea29zc3lCOWtXUl82SW5RbjF4NUw3VVlYLXBkRkNRZi1TWUluR3ZOWWZlRU1HUnZCRmM3UQ?oc=5) | ad-hoc-news.de |
+| 10h 前 | 0 | 中性 | [AbbVie, Eli Lilly among mega-cap healthcare stocks with A+ profitability grades (XLV:NYSEARCA) - Seeking Alpha](https://news.google.com/rss/articles/CBMitgFBVV95cUxPZUpuRmNXdWJEUnJqR2ktcDlUN1U4N3l2RFgyZmJnZE1ZaVZtS19idTFwY3dzYW5zOGZoYi1uVWR0ZlFWZ2VoRjZOV2xLOFlLYWxGSjBxZXZMa0hHX21tbkJfZHpXR25HZ3Nnei15Sk5SYkpXS2VQbmhmZXJ5QjBrZ1lnY3pCUGFPQ1lPX2xpV3RNOThsNmdPVHdMSDVzanZwVVp5eUkzd2F3VjBTSmtxc0ZJTnc1dw?oc=5) | Seeking Alpha |
+| 11h 前 | 0 | 偏多 | [JPMorgan raised AbbVie target from USD 285.00 to USD 300.00 for AbbVie stock - ad-hoc-news.de](https://news.google.com/rss/articles/CBMizgFBVV95cUxQcVB6azhxREhad2VRWDA3bjh0NmZNU3pmUlhYWGM2T3cxRkpaVkVKNkNtbElKd1Vkdnl1LS1YY1BmMjJuR1RmLTE1T3ZES3BObXFuU3ExemdPb01DOXBvSFgyY0hOMUNuOGlNV093dFlxLXlPcFQ0UUIxUldyUlFZcGExY0pVeUdpZ1RBLXBQYkpRQVYxeEpPVE5Ea29zc3lCOWtXUl82SW5RbjF4NUw3VVlYLXBkRkNRZi1TWUluR3ZOWWZlRU1HUnZCRmM3UQ?oc=5) | ad-hoc-news.de |
 | 14h 前 | 0 | 中性 | [AbbVie presents 22 IBD abstracts: stock at EUR 253.15 pre-market - ad-hoc-news.de](https://news.google.com/rss/articles/CBMivgFBVV95cUxOZ2xmTWFpRUkzUzNiV3VWTWp3M2U0Wlh4LUZUdlR4Z2pqUjlVTkhBQVVZZUJONFVKN3U4cW9xVi1nc1dtcEZ6b2pLcWV3U0dtdVVOX3Zya1doclJqWnRqanhnbGFIRW13a3BPMXNyaS1RWllNczVlNzBPUjI3S2tvZHVZbEhJVE1jZ0MxS3gzY0hNUTlZbUVlYzFkTWlXc1lWN3NRdnhfMjdOV2dHcXQ2U0dETHhLSFJnTnJRMWhn?oc=5) | ad-hoc-news.de |
 | 20h 前 | 0 | 中性 | [AbbVie vs. Eli Lilly: Which Healthcare Stock Is a Better Buy in 2026? - The Motley Fool](https://news.google.com/rss/articles/CBMiuwFBVV95cUxNRGs1Qmh3TnJtclNUTGU4MFZ1dWFjMUhpYTYzODlfM0dadW54bmJpOUxOdHFnaUQ2M09FZy1oSDJHZkZKNUVfN2ZYU1BEc3NsVWRBOFVJcFRrcE44RG1qMG9ZMHduNmUwZ09IQzQxY09YT2loNUx6MVJ6bVd1dkNNN2QxS0Q0QUttRGJaZXQxOFlDRGhPS2VaM18tcTV2cGxRNHM0MFhYcWt1N0pURFRIcDFfM3I3YVM5ZUFj?oc=5) | The Motley Fool |
-| 28h 前 | 0 | 中性 | [AbbVie Inc. (ABBV19.BK) stock major holders - Yahoo Finance UK](https://news.google.com/rss/articles/CBMiY0FVX3lxTE1nSEphM25SWUN3a3FzYlhsXzM0azM0SU16T1E5dm9GRUhOWUhVODZSYTNvQWlMQXBPT3RzUS10X3ZBUHRGUWs4SnhVQlYwbmpYLWZad3NjN0JyUTNtY1N6R3Niaw?oc=5) | Yahoo Finance UK |
+| 29h 前 | 0 | 中性 | [AbbVie Inc. (ABBV19.BK) stock major holders - Yahoo Finance UK](https://news.google.com/rss/articles/CBMiY0FVX3lxTE1nSEphM25SWUN3a3FzYlhsXzM0azM0SU16T1E5dm9GRUhOWUhVODZSYTNvQWlMQXBPT3RzUS10X3ZBUHRGUWs4SnhVQlYwbmpYLWZad3NjN0JyUTNtY1N6R3Niaw?oc=5) | Yahoo Finance UK |
 | 29h 前 | 0 | 中性 | [AbbVie Inc. (ABBV19.BK) Stock Major Holders - Yahoo Finance - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMiY0FVX3lxTE1KbHBOVFJldXJobU5mZ3VLZUlwTGtoN25RR05rMGtYNFd4THFKSTVkU3NhYUtXVXc5a0NDUDdyMUtZWXkwdk5BWTl3ZUNyZlQ4MmVuQkk3U0ZIS3FTRkJlcEZfUQ?oc=5) | Yahoo! Finance Canada |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
@@ -151,7 +151,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-08 | 270.98 | 272.52 | 265.71 | **272.42** | +0.4% | 5,492,300 |
 | 2026-10-09 | 271.53 | 277.60 | 270.38 | **276.47** | +1.5% | 4,297,400 |
 | 2026-10-12 | 277.65 | 281.30 | 276.01 | **281.12** | +1.7% | 5,593,700 |
-| 2026-10-13 | 283.29 | 283.32 | 273.70 | **274.31** | -2.4% | 3,905,942 |
+| 2026-10-13 | 283.29 | 283.32 | 273.70 | **274.36** | -2.4% | 6,390,889 |
 
 ## 七、自己去查（本页不做独立验证）
 
