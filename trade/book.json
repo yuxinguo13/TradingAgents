@@ -18,7 +18,9 @@
    "adopted": true,
    "stop_raised": true,
    "sleeve": "core",
-   "triggers": []
+   "triggers": [],
+   "stop0": NaN,
+   "pending": false
   },
   "ADP": {
    "symbol": "ADP",
@@ -38,7 +40,9 @@
    "adopted": true,
    "stop_raised": false,
    "sleeve": "core",
-   "triggers": []
+   "triggers": [],
+   "stop0": NaN,
+   "pending": false
   },
   "GOOGL": {
    "symbol": "GOOGL",
@@ -58,7 +62,9 @@
    "adopted": true,
    "stop_raised": true,
    "sleeve": "core",
-   "triggers": []
+   "triggers": [],
+   "stop0": NaN,
+   "pending": false
   },
   "MSFT": {
    "symbol": "MSFT",
@@ -78,7 +84,9 @@
    "adopted": true,
    "stop_raised": true,
    "sleeve": "core",
-   "triggers": []
+   "triggers": [],
+   "stop0": NaN,
+   "pending": false
   },
   "SPY": {
    "symbol": "SPY",
@@ -98,7 +106,9 @@
    "adopted": true,
    "stop_raised": true,
    "sleeve": "core",
-   "triggers": []
+   "triggers": [],
+   "stop0": NaN,
+   "pending": false
   },
   "DT": {
    "symbol": "DT",
@@ -128,7 +138,9 @@
    "triggers": [
     "pattern",
     "rs"
-   ]
+   ],
+   "stop0": NaN,
+   "pending": false
   },
   "PLTR": {
    "symbol": "PLTR",
@@ -158,7 +170,9 @@
    "triggers": [
     "volume",
     "rs"
-   ]
+   ],
+   "stop0": NaN,
+   "pending": false
   },
   "DHT": {
    "symbol": "DHT",
@@ -190,7 +204,36 @@
     "pattern",
     "rs",
     "catalyst"
-   ]
+   ],
+   "stop0": NaN,
+   "pending": false
+  },
+  "TBBB": {
+   "symbol": "TBBB",
+   "shares": 147,
+   "entry": 55.44,
+   "stop": 52.67,
+   "target": 61.7,
+   "opened": "2026-10-12",
+   "horizon_days": 20,
+   "sector": "",
+   "thesis": "（记录丢失，按交易所挂单恢复；论点未知）",
+   "invalidation": "",
+   "principles": [],
+   "regime": "",
+   "parent_id": "",
+   "legs": {
+    "stop": "36517982-d7e3-469b-b069-c38a1b385b57"
+   },
+   "adopted": false,
+   "stop_raised": false,
+   "sleeve": "aggressive",
+   "triggers": [
+    "volume",
+    "pattern"
+   ],
+   "stop0": 52.67,
+   "pending": false
   }
  },
  "closed": [
