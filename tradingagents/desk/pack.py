@@ -24,13 +24,14 @@ import json
 import logging
 from dataclasses import asdict, dataclass, field
 from datetime import date, datetime, timedelta
+from pathlib import Path
 
 from tradingagents.live import clock
 from tradingagents.live.advisor import last_completed_session
 
 from . import review, task_dir, universe
 from .market import SECTOR_ZH, Facts, Market, _num, _ok
-from .orders import MAX_POSITIONS, DeskBook, Position
+from .orders import MAX_POSITIONS, SLEEVE, DeskBook, Position
 from .report import Idea, chart_for, score
 
 logger = logging.getLogger(__name__)
@@ -152,6 +153,24 @@ def row_for(f: Facts, tilt: float, spy_r3: float, *, source: str = "", rank: int
     return row
 
 
+def last_buy_record(symbol: str, path: Path | None = None) -> dict:
+    """The most recent accepted buy of ``symbol`` in the decision log, or {}."""
+    path = path or (task_dir(TASK) / "decisions.jsonl")
+    try:
+        lines = Path(path).read_text(encoding="utf-8").splitlines()
+    except OSError:
+        return {}
+    for line in reversed(lines):
+        try:
+            e = json.loads(line)
+        except ValueError:
+            continue
+        if (e.get("kind") == "order" and e.get("action") == "buy" and e.get("ok")
+                and str(e.get("symbol", "")).upper() == symbol.upper() and not e.get("dry_run")):
+            return e
+    return {}
+
+
 class Packer:
     def __init__(self, *, broker=None, market: Market | None = None, book: DeskBook | None = None,
                  screen=None, now: datetime | None = None, top: int = 40, per_sector: int = 3,
@@ -178,7 +197,7 @@ class Packer:
         from . import orders as O
         pack.limits = {"risk_pct": O.RISK_PCT, "max_name_weight": O.MAX_NAME_WEIGHT,
                        "max_daily_new_risk": O.MAX_DAILY_NEW_RISK, "daily_drawdown_halt": O.DAILY_DRAWDOWN_HALT,
-                       "max_positions": O.MAX_POSITIONS, "max_per_sector": O.MAX_PER_SECTOR, "min_r": O.MIN_R,
+                       "max_positions": O.MAX_POSITIONS, "max_aggressive": O.MAX_AGGRESSIVE, "max_per_sector": O.MAX_PER_SECTOR, "min_r": O.MIN_R,
                        "min_stop_atrs": O.MIN_STOP_ATRS, "max_stop_pct": O.MAX_STOP_PCT,
                        "max_limit_deviation": O.MAX_LIMIT_DEVIATION,
                        "earnings_blackout_days": O.EARNINGS_BLACKOUT_DAYS, "reentry_days": O.REENTRY_DAYS}
@@ -265,6 +284,12 @@ class Packer:
                               protected=sym in resting, in_book=sym in self.book.positions)
                 p = self.book.positions.get(sym)
                 if p is not None:
+                    if getattr(p, "pending", False):
+                        # the venue filled it since the order ran: book the real cost
+                        p.pending = False
+                        if _ok(cost) and cost > 0:
+                            p.entry = cost
+                        self.book.save()
                     row.stop, row.target, row.opened = p.stop, p.target, p.opened
                     row.sleeve = getattr(p, "sleeve", "core")
                     row.r_now = p.r_at(px) if _ok(px) else float("nan")
@@ -335,12 +360,20 @@ class Packer:
             if not _ok(target):
                 target = round(entry * 1.10, 2) if _ok(entry) else float("nan")
             opened = str(resting[sym].get("submitted_at", ""))[:10] or today.isoformat()
+            rec = last_buy_record(sym)   # the decision log remembers what the book lost
             self.book.positions[sym] = Position(
                 symbol=sym, shares=int(_num(h.quantity, 0.0)), entry=entry, stop=stop, target=target,
-                opened=opened, thesis="（记录丢失，按交易所挂单恢复；论点未知）", adopted=True,
+                opened=str(rec.get("date") or opened), adopted=not rec,
+                thesis=str(rec.get("thesis") or "（记录丢失，按交易所挂单恢复；论点未知）"),
+                invalidation=str(rec.get("invalidation") or ""),
+                principles=list(rec.get("principles") or []), regime=str(rec.get("regime") or ""),
+                sleeve=str(rec.get("sleeve") or "core"), triggers=list(rec.get("triggers") or []),
+                horizon_days=int(SLEEVE.get(str(rec.get("sleeve") or "core"), SLEEVE["core"])["horizon_days"]),
+                stop0=_num(rec.get("stop")) if _ok(_num(rec.get("stop"))) else stop,
                 legs={"stop": str(resting[sym].get("id", ""))})
-            pack.warnings.append(f"{sym}: 账本里没有记录，已按交易所挂着的止损 {stop:,.2f} 恢复")
-        if any(w.endswith("恢复") for w in pack.warnings):
+            how = f"按 {rec.get('date')} 的下单记录（{rec.get('sleeve') or 'core'}）" if rec else "按交易所挂单"
+            pack.warnings.append(f"{sym}: 账本里没有记录，已{how}恢复，止损 {stop:,.2f}")
+        if any("已按" in w and "恢复" in w for w in pack.warnings):
             self.book.save()
 
     def reconcile(self, account, today: date, pack: TradePack) -> None:
@@ -356,6 +389,12 @@ class Packer:
         pack.fills = [f for f in fills if f.get("side") == "sell"][:20]
         for s in gone:
             p = self.book.positions[s]
+            if getattr(p, "pending", False):
+                # never filled: not a trade, so no closed record and no post-mortem
+                del self.book.positions[s]
+                self.book.save()
+                pack.warnings.append(f"{s}: 买单未成交，已从账本移除（不是交易，不复盘）")
+                continue
             sold = [f for f in fills if f["symbol"].upper() == s and f["side"] == "sell"]
             exit_px = _num(sold[-1]["price"]) if sold else _num(self.market.facts(s, today).price)
             kind = (sold[-1].get("type") or "") if sold else ""
@@ -417,7 +456,7 @@ def format_pack(pack: TradePack, facts: dict | None = None) -> str:
     out += ["## 硬限制（代码执行，见手册 §3）",
             f"单笔风险 {L.get('risk_pct', 0) * 100:.0f}% · 单票 ≤ {L.get('max_name_weight', 0) * 100:.0f}% · "
             f"单日新增风险 ≤ {L.get('max_daily_new_risk', 0) * 100:.0f}% · 当日回撤 {L.get('daily_drawdown_halt', 0) * 100:.0f}% 熔断 · "
-            f"最多 {L.get('max_positions', 0)} 仓（主 6 + 进攻 2） · 同板块 ≤ {L.get('max_per_sector', 0)} · R ≥ {L.get('min_r', 0):.1f} · "
+            f"最多 {L.get('max_positions', 0)} 仓（主 {L.get('max_positions', 0) - L.get('max_aggressive', 0)} + 进攻 {L.get('max_aggressive', 0)}） · 同板块 ≤ {L.get('max_per_sector', 0)} · R ≥ {L.get('min_r', 0):.1f} · "
             f"止损 ≥ {L.get('min_stop_atrs', 0):.0f} ATR 且 ≤ {L.get('max_stop_pct', 0) * 100:.0f}% · "
             f"财报前 {L.get('earnings_blackout_days', 0)} 天不开仓 · 止损后 {L.get('reentry_days', 0)} 天不回头", ""]
 
@@ -555,4 +594,7 @@ def main(argv=None) -> int:
         return 0
     pack = Packer(top=args.top).run([s for s in args.add.split(",") if s])
     print(pack.path if args.quiet else format_pack(pack))
+    # The reconciled and recovered book goes to the branch at once. 2026-10-13:
+    # the pack rebuilt a lost row, the next command's pull wiped it again.
+    print(state.push(message="pack trade"))
     return 0

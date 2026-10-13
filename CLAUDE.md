@@ -17,7 +17,10 @@ share counts, refuses what the manual forbids, places bracket orders, and
 keeps the log. You never give a share count, never cancel a stop, never
 lower one. If a step fails, say which one and why; do not work around it.
 Never paste keys into chat or files. Do not commit anything under
-`~/.tradingagents/`. Do not commit or push from a Routine.
+`~/.tradingagents/`. A Routine commits and pushes to `main` only what its
+错误反思 step (below) calls for: code, tests, `CLAUDE.md`, `MANUAL.md`. Before
+that push, `python -m pytest tests/test_desk.py tests/test_desk_hands.py -q`
+must be green and `ruff check <files you touched>` must show no new error.
 
 Before any task: `git fetch origin main && git checkout main && git pull -q --ff-only origin main`
 (the desk is merged; `feat/live-desk` is only where new work is staged), and
@@ -26,9 +29,35 @@ Read `tradingagents/desk/MANUAL.md` in full.
 
 State survives between sessions on the `desk-state` branch (`tradingagents/desk/state.py`):
 `pack trade`, `report` and `advise` pull it before reading; `order` and `log`
-push after writing. **The last step of every task is
-`python -m tradingagents.desk state push`** so the day's final files are kept.
-If a pull or push reports a failure, say so in the reply; do not retry by hand.
+push after writing. **The last desk step of every task is
+`python -m tradingagents.desk state push`** so the day's final files are kept
+(the push lays local files onto the branch and merges `*.jsonl` logs; it never
+deletes). If a pull or push reports a failure, say so in the reply; do not
+retry by hand.
+
+### 错误反思 (owner, 2026-10-13: every day, in every report to the owner)
+
+Every trade run and every report ends with a reflection, written before the
+reply and acted on the same day. Write `~/.tradingagents/desk/reflect/<date>.md`
+(the trade run) or `~/.tradingagents/desk/reflect/<date>-report.md` (the
+report) with five parts, each a short list, each item one line of fact and one
+line of consequence: **我的错** (judgement: a level set wrong, a rule misread, a
+number trusted without checking, a name skipped for a bad reason); **代码的错**
+(what the hands or the pack did that the manual does not say: a wrong price, a
+lost record, a refusal that should not have been, a line that misled);
+**规则的错** (a manual rule that cost money or blocked a trade the method
+wanted, with the counts from `python -m tradingagents.desk review`; MANUAL §11
+decides whether it may change today); **今天改了什么** (each change, the file,
+the one-line why); **没改的** (what you saw and left, and why). Log it with
+`python -m tradingagents.desk log -` as `{"kind": "reflection", ...}` carrying
+the same five parts. Then fix the code the reflection names: edit, add a
+regression test for each fault, run the tests and `ruff` on the files touched,
+commit on `main` with a message starting `desk: reflect <date> —`, push with
+`git push -u origin main`, and say in the reply if the push was refused. A
+parameter (a limit in `orders.py` or a level in the manual) changes only when
+§11's threshold is met, at most one per day, with the counts quoted in the
+commit message. Put the reflection in the reply under `## 错误反思`, after the
+day's table and before the equity line.
 
 ### Task 1 — trade (weekdays, fires ~15:12 ET, places ~15:30 ET, before the close)
 
@@ -89,10 +118,13 @@ only on a rule trigger (stop, target, horizon, invalidation).
 5. `python -m tradingagents.desk order ~/.tradingagents/desk/trade/<date>-intent.json`.
    Read every line of the result. A refusal is final: do not edit numbers and
    resend. Log one `"kind": "decision"` entry per order you sent (MANUAL §8).
-6. `python -m tradingagents.desk state push`, then reply with: the portfolio
-   table from the pack (updated for today's fills), today's orders with the
-   gate's verdicts, and the plan for each position (stop, target, days left,
-   invalidation). One line of reason per order. No further analysis.
+6. `python -m tradingagents.desk state push`.
+7. 错误反思 (above): write `~/.tradingagents/desk/reflect/<date>.md`, log it,
+   fix and commit what it names, `state push` again, then reply with: the
+   portfolio table from the pack (updated for today's fills), today's orders
+   with the gate's verdicts, the plan for each position (stop, target, days
+   left, invalidation), one line of reason per order, the `## 错误反思`
+   section, and last the equity line. No further analysis.
 
 ### Task 2 — report (weekdays, after the close)
 
@@ -124,8 +156,14 @@ only on a rule trigger (stop, target, horizon, invalidation).
    folder, `files` is the list in its `files.json`; icon `chart`, a
    one-sentence description. If this session has no Artifact tool, say so
    and skip the publish.
-5. `python -m tradingagents.desk state push`, then reply with the artifact
-   link first, followed by the final report in full.
+5. `python -m tradingagents.desk state push`.
+6. 错误反思 (above) for the analysis side: which of yesterday's calls the
+   market falsified and why, which score or level you set wrong, what the pack
+   or the site builder got wrong, what you changed in the code today. Write
+   `~/.tradingagents/desk/reflect/<date>-report.md`, log it, fix and commit
+   what it names, `state push` again, and put the same text in the final
+   report as `## 错误反思` after 昨日复盘. Then reply with the artifact link
+   first, followed by the final report in full.
 
 ### Task 4 — stock (on demand: the user names a symbol and asks for its analysis)
 

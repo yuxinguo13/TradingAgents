@@ -496,3 +496,87 @@ class TestPack:
         shape("NEW", 100.0, drift=0.6)
         text = pack.facts_table(["NEW", "NOPE"], market=mkt(task="trade"), now=MONDAY_OPEN)
         assert "| NEW |" in text and "NOPE: 拿不到行情" in text and "```" in text
+
+
+# ---------------------------------------------------------------------------
+# 2026-10-13 反思：the faults the day's trading exposed, fixed and pinned
+# ---------------------------------------------------------------------------
+
+@pytest.mark.unit
+class TestReflection1013:
+    def test_r_is_measured_against_the_original_stop_after_a_raise(self):
+        """APA: stop moved to cost, then the target filled — the pack showed "—R"."""
+        p = Position(symbol="APA", shares=137, entry=42.43, stop=42.43, target=47.0,
+                     opened="2026-09-25", stop0=40.53)
+        assert round(p.r_at(47.0), 1) == 2.4
+        legacy = Position(symbol="X", shares=1, entry=10.0, stop=10.0, target=12.0, opened="2026-09-25")
+        assert legacy.r_at(12.0) != legacy.r_at(12.0)  # nan: no original stop on record
+
+    def test_an_unfilled_buy_is_pending_and_the_pack_drops_it_without_a_postmortem(self, home):
+        """PBR: a limit that never filled sat in the book and was later "closed" at +0.9R."""
+        shape("AAA", 100.0, drift=0.6)
+        v = FakeVenue(acct())
+        v.order_fill = lambda oid: {"id": oid, "status": "new", "filled": 0.0, "price": float("nan")}
+        px = v.quote("AAA")
+        ex = executor(v, home)
+        out = ex.run({"orders": [buy("AAA", round(px, 2), round(px * 0.97, 2), round(px * 1.08, 2))]})
+        assert out[0].ok and "pending" in out[0].venue
+        book = DeskBook(home / "desk" / "trade" / "book.json")
+        assert book.positions["AAA"].pending
+        # the account never shows the shares: the pack removes the row, no closed record
+        pk = pack.Packer(broker=v, market=mkt(task="trade"), book=book, screen=screen_of(), now=MONDAY_OPEN).run()
+        after = DeskBook(home / "desk" / "trade" / "book.json")
+        assert "AAA" not in after.positions and not after.closed and not pk.postmortems
+        assert any("未成交" in w for w in pk.warnings)
+
+    def test_a_filled_buy_books_the_fill_price(self, home):
+        shape("AAA", 100.0, drift=0.6)
+        v = FakeVenue(acct())
+        px = v.quote("AAA")
+        v.order_fill = lambda oid: {"id": oid, "status": "filled", "filled": 10.0, "price": round(px * 0.999, 2)}
+        out = executor(v, home).run({"orders": [buy("AAA", round(px, 2), round(px * 0.97, 2), round(px * 1.08, 2))]})
+        assert out[0].ok and "filled @" in out[0].venue
+        p = DeskBook(home / "desk" / "trade" / "book.json").positions["AAA"]
+        assert p.entry == round(px * 0.999, 2) and p.stop0 == p.stop and not p.pending
+
+    def test_a_pending_row_the_account_now_holds_is_booked_at_cost(self, home):
+        shape("HLD", 100.0, drift=0.3)
+        book = DeskBook(home / "desk" / "trade" / "book.json")
+        book.positions["HLD"] = Position(symbol="HLD", shares=10, entry=99.0, stop=95.0, target=120.0,
+                                         opened="2026-08-12", pending=True, stop0=95.0)
+        book.save()
+        v = FakeVenue(acct(cash=90_000, holdings=[held("HLD", 10, 98.5, 100.0)]))
+        v.resting["HLD"] = 95.0
+        pack.Packer(broker=v, market=mkt(task="trade"), book=book, screen=screen_of(), now=MONDAY_OPEN).run()
+        p = DeskBook(home / "desk" / "trade" / "book.json").positions["HLD"]
+        assert not p.pending and p.entry == 98.5
+
+    def test_a_lost_sleeve_row_is_rebuilt_from_the_decision_log(self, home):
+        """TBBB: the book row was lost to a stale snapshot; the venue held the stop,
+        and the decision log still knew it was an aggressive-sleeve buy."""
+        shape("HLD", 100.0, drift=0.3)
+        log = home / "desk" / "trade" / "decisions.jsonl"
+        log.parent.mkdir(parents=True, exist_ok=True)
+        log.write_text(json.dumps({"kind": "order", "action": "buy", "symbol": "HLD", "ok": True, "date": "2026-08-12",
+                                   "sleeve": "aggressive", "triggers": ["volume", "pattern"], "stop": 94.0,
+                                   "thesis": "动量账", "invalidation": "跌回 94"}) + "\n", encoding="utf-8")
+        v = FakeVenue(acct(cash=90_000, holdings=[held("HLD", 10, 90.0, 100.0)]))
+        v.resting["HLD"] = 95.0
+        v.open_orders = lambda: [{"id": "s-HLD", "symbol": "HLD", "side": "sell", "type": "stop",
+                                  "stop_price": 95.0, "limit_price": float("nan"), "submitted_at": "2026-08-13T14:00"}]
+        book = DeskBook(home / "desk" / "trade" / "book.json")
+        pk = pack.Packer(broker=v, market=mkt(task="trade"), book=book, screen=screen_of(), now=MONDAY_OPEN).run()
+        p = DeskBook(home / "desk" / "trade" / "book.json").positions["HLD"]
+        assert p.sleeve == "aggressive" and p.triggers == ["volume", "pattern"] and p.thesis == "动量账"
+        assert p.stop == 95.0 and p.stop0 == 94.0 and p.horizon_days == 20 and not p.adopted
+        assert any("下单记录" in w for w in pk.warnings)
+
+    def test_state_push_merges_append_only_logs_instead_of_overwriting(self):
+        """2026-09-30 and 2026-10-12: a session with an older copy pushed a snapshot
+        and a day's decisions vanished."""
+        from tradingagents.desk.state import merge_jsonl
+        remote = '{"a": 1}\n{"b": 2}\n{"c": 3}\n'
+        local = '{"a": 1}\n{"b": 2}\n{"d": 4}\n'
+        assert merge_jsonl(remote, local) == '{"a": 1}\n{"b": 2}\n{"c": 3}\n{"d": 4}\n'
+        assert merge_jsonl("", local) == local
+        assert merge_jsonl(remote, "") == remote

@@ -444,43 +444,89 @@ class AlpacaBroker:
         return res
 
     def fills_since(self, since: datetime) -> list[dict]:
-        """Filled orders after ``since``: what the venue did while nobody watched."""
+        """Filled orders after ``since``: what the venue did while nobody watched.
+
+        Bracket legs included. A stop or take-profit leg fills days or weeks
+        after its parent was submitted, and Alpaca's ``after`` filter is on
+        submission time, so the legs that close positions were exactly the
+        fills this used to miss (MA, V, JNJ, KO, AVT, LITE, APA: every one
+        booked as "closed at the venue" at the wrong price). Now the recent
+        closed orders are listed without a date filter and the fill time is
+        checked here, parent and legs alike.
+        """
         from alpaca.trading.enums import QueryOrderStatus
         from alpaca.trading.requests import GetOrdersRequest
         try:
             orders = self.trading.get_orders(GetOrdersRequest(
-                status=QueryOrderStatus.CLOSED, after=since, limit=200, nested=True))
+                status=QueryOrderStatus.CLOSED, limit=500, nested=True))
         except Exception as exc:
             logger.warning("could not list fills: %s", exc)
             return []
+        if since.tzinfo is None:
+            since = since.astimezone()
         out = []
-        for o in orders:
+
+        def take(o):
             if _f(o.filled_qty) <= 0:
-                continue
+                return
+            at = getattr(o, "filled_at", None)
+            if at is not None and getattr(at, "tzinfo", None) is not None and at < since:
+                return
             out.append({
                 "id": str(o.id), "symbol": o.symbol,
                 "side": getattr(o.side, "value", str(o.side)),
                 "qty": _f(o.filled_qty), "price": _f(o.filled_avg_price),
                 "type": getattr(o.order_type, "value", str(o.order_type)),
-                "filled_at": str(getattr(o, "filled_at", "")),
+                "filled_at": str(at or ""),
             })
+
+        for o in orders:
+            take(o)
+            for leg in getattr(o, "legs", None) or []:
+                take(leg)
+        out.sort(key=lambda r: r["filled_at"])
         return out
 
+    def order_fill(self, order_id: str) -> dict | None:
+        """Status and fill of one order: the executor waits on this before it
+        books a buy, so an unfilled limit never becomes a book row."""
+        try:
+            o = self.trading.get_order_by_id(order_id)
+        except Exception as exc:
+            logger.warning("could not read order %s: %s", order_id, exc)
+            return None
+        return {"id": str(o.id), "status": getattr(o.status, "value", str(o.status)),
+                "filled": _f(o.filled_qty), "price": _f(o.filled_avg_price)}
+
     def open_orders(self) -> list[dict]:
+        """Every order that can still fill: open parents, and the live legs
+        under open *and filled* parents.
+
+        nested=True, or the stop legs of every bracket and OCO are invisible:
+        Alpaca lists only parents by default, and the leg that actually
+        protects the position sits under the parent with status "held".
+        2026-09-25: fifteen OCOs, fifteen stops resting, and the flat listing
+        reported none of them. 2026-10-12: a bracket whose buy has FILLED is a
+        closed parent, so its held stop leg was missing from the open listing
+        too — ``raise_stop`` on every desk-bought position was refused with
+        "no resting stop". The closed parents are read as well now.
+        """
         from alpaca.trading.enums import QueryOrderStatus
         from alpaca.trading.requests import GetOrdersRequest
         try:
-            # nested=True, or the stop legs of every bracket and OCO are
-            # invisible: Alpaca lists only parents by default, and the leg
-            # that actually protects the position sits under the parent with
-            # status "held". 2026-09-25: fifteen OCOs, fifteen stops resting,
-            # and the flat listing reported none of them.
-            orders = self.trading.get_orders(
+            opened = self.trading.get_orders(
                 GetOrdersRequest(status=QueryOrderStatus.OPEN, nested=True, limit=500))
         except Exception as exc:
             logger.warning("could not list open orders: %s", exc)
             return []
-        out = []
+        try:
+            closed = self.trading.get_orders(
+                GetOrdersRequest(status=QueryOrderStatus.CLOSED, nested=True, limit=500))
+        except Exception as exc:
+            logger.warning("could not list closed parents for their legs: %s", exc)
+            closed = []
+        done = ("filled", "canceled", "expired", "rejected", "replaced", "done_for_day")
+        out, seen = [], set()
 
         def row(o, parent_id=""):
             return {
@@ -495,12 +541,19 @@ class AlpacaBroker:
                 "parent_id": parent_id,
             }
 
-        for o in orders:
-            out.append(row(o))
+        def add(o, parent_id=""):
+            if str(o.id) in seen:
+                return
+            seen.add(str(o.id))
+            out.append(row(o, parent_id))
+
+        for o in opened:
+            add(o)
+        for o in list(opened) + list(closed):
             for leg in getattr(o, "legs", None) or []:
                 status = getattr(leg.status, "value", str(leg.status))
-                if status not in ("filled", "canceled", "expired", "rejected"):
-                    out.append(row(leg, parent_id=str(o.id)))
+                if status not in done:
+                    add(leg, parent_id=str(o.id))
         return out
 
     # --- extras the browser adapter could not offer -------------------------

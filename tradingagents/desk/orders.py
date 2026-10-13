@@ -110,12 +110,17 @@ class Position:
     stop_raised: bool = False
     sleeve: str = "core"
     triggers: list = field(default_factory=list)
+    stop0: float = float("nan")     # the stop the trade was sized with; R is measured against it
+    pending: bool = False           # the buy is at the venue but has not filled
 
     def risk(self) -> float:
         return self.shares * max(0.0, self.entry - self.stop)
 
     def r_at(self, price: float) -> float:
-        d = self.entry - self.stop
+        """R against the ORIGINAL stop. A stop moved to cost used to make this
+        nan (APA 2026-10-13: a +2.4R exit shown as "—R")."""
+        base = self.stop0 if _ok(self.stop0) and self.stop0 > 0 else self.stop
+        d = self.entry - base
         return (price - self.entry) / d if d > 0 else float("nan")
 
     def deadline(self) -> date:
@@ -479,16 +484,43 @@ class Executor:
         with contextlib.suppress(ValueError):
             legs = json.loads(res.artifact) if res.artifact else {}
         if not self.dry_run:
-            self.book.positions[sym] = Position(
+            pos = Position(
                 symbol=sym, shares=v.shares, entry=entry, stop=stop, target=target,
                 opened=today.isoformat(),
                 horizon_days=int(o.get("horizon_days") or SLEEVE[sleeve]["horizon_days"]),
                 sector=sector, thesis=str(o.get("thesis") or ""),
                 invalidation=str(o.get("invalidation") or ""),
                 principles=list(o.get("principles") or []), regime=str(o.get("regime") or ""),
-                parent_id=res.broker_order_id or "", legs=legs, sleeve=sleeve, triggers=triggers)
+                parent_id=res.broker_order_id or "", legs=legs, sleeve=sleeve, triggers=triggers,
+                stop0=stop)
+            # Book the fill, not the order. PBR 2026-10-09: a limit that never
+            # filled sat in the book for two sessions and was then "closed" at
+            # a phantom +0.9R. An unfilled buy is pending; the pack drops it
+            # if the account never shows the shares.
+            fill = self._await_fill(res.broker_order_id)
+            if fill is not None and fill.get("status") == "filled" and _ok(_num(fill.get("price"))):
+                pos.entry = float(fill["price"])
+                out.venue = f"{out.venue}; filled @ {pos.entry:.2f}"
+            elif fill is not None:
+                pos.pending = True
+                out.venue = f"{out.venue}; not filled yet — pending in the book"
+            self.book.positions[sym] = pos
             self.book.save()
         return out
+
+    def _await_fill(self, order_id: str, tries: int = 5, wait: float = 2.0) -> dict | None:
+        """A few seconds for a marketable limit to fill; None if the venue cannot say."""
+        if not order_id or not hasattr(self.broker, "order_fill"):
+            return None
+        import time
+        fill = None
+        for i in range(tries):
+            fill = self.broker.order_fill(order_id)
+            if fill is None or fill.get("status") in ("filled", "canceled", "rejected", "expired"):
+                break
+            if i < tries - 1:
+                time.sleep(wait)
+        return fill
 
     def sell(self, o, sym, price, held, today) -> Outcome:
         if held.get(sym, 0) <= 0:
@@ -571,7 +603,7 @@ class Executor:
                 opened=today.isoformat(), sector=str(o.get("sector") or f.sector or ""),
                 thesis=str(o.get("thesis") or o.get("reason") or "接管账户里已有的仓位"),
                 invalidation=str(o.get("invalidation") or ""), adopted=True,
-                parent_id=res.broker_order_id or "")
+                parent_id=res.broker_order_id or "", stop0=stop)
             self.book.save()
         elif not res.ok:
             out.reason = f"venue refused: {res.message}"
