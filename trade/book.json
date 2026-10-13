@@ -4,7 +4,7 @@
    "symbol": "AAPL",
    "shares": 20,
    "entry": 339.29,
-   "stop": 315.88,
+   "stop": 321.0,
    "target": 365.01,
    "opened": "2026-09-25",
    "horizon_days": 30,
@@ -16,7 +16,7 @@
    "parent_id": "d0bcc2ff-cb52-4f6f-96db-8ef5c3485c75",
    "legs": {},
    "adopted": true,
-   "stop_raised": false,
+   "stop_raised": true,
    "sleeve": "core",
    "triggers": []
   },
@@ -44,7 +44,7 @@
    "symbol": "GOOGL",
    "shares": 22,
    "entry": 344.375,
-   "stop": 334.9,
+   "stop": 344.38,
    "target": 372.0,
    "opened": "2026-09-25",
    "horizon_days": 30,
@@ -56,27 +56,7 @@
    "parent_id": "2bdfbbfe-5ca5-4a21-b2ec-ef572af18a58",
    "legs": {},
    "adopted": true,
-   "stop_raised": false,
-   "sleeve": "core",
-   "triggers": []
-  },
-  "JPM": {
-   "symbol": "JPM",
-   "shares": 8,
-   "entry": 342.37,
-   "stop": 322.49,
-   "target": 352.84,
-   "opened": "2026-09-25",
-   "horizon_days": 30,
-   "sector": "",
-   "thesis": "接管：价格在 20/50 日线下方，止损在摆动低点 325.75 之下 1%；反弹到 50 日线附近即目标",
-   "invalidation": "",
-   "principles": [],
-   "regime": "",
-   "parent_id": "7e85a80b-3a46-4e76-a875-b74b2f1216a7",
-   "legs": {},
-   "adopted": true,
-   "stop_raised": false,
+   "stop_raised": true,
    "sleeve": "core",
    "triggers": []
   },
@@ -84,7 +64,7 @@
    "symbol": "MSFT",
    "shares": 10,
    "entry": 514.725,
-   "stop": 481.14,
+   "stop": 502.0,
    "target": 587.65,
    "opened": "2026-09-25",
    "horizon_days": 30,
@@ -96,7 +76,7 @@
    "parent_id": "58ca2563-04a3-4b88-9e8f-364432c0f97c",
    "legs": {},
    "adopted": true,
-   "stop_raised": false,
+   "stop_raised": true,
    "sleeve": "core",
    "triggers": []
   },
@@ -104,7 +84,7 @@
    "symbol": "SPY",
    "shares": 9,
    "entry": 770.485,
-   "stop": 752.55,
+   "stop": 758.0,
    "target": 793.98,
    "opened": "2026-09-25",
    "horizon_days": 30,
@@ -116,7 +96,7 @@
    "parent_id": "edc92967-76a1-408c-81fa-8a8717c2e233",
    "legs": {},
    "adopted": true,
-   "stop_raised": false,
+   "stop_raised": true,
    "sleeve": "core",
    "triggers": []
   },
@@ -178,6 +158,38 @@
    "triggers": [
     "volume",
     "rs"
+   ]
+  },
+  "DHT": {
+   "symbol": "DHT",
+   "shares": 305,
+   "entry": 26.9,
+   "stop": 25.5,
+   "target": 29.9,
+   "opened": "2026-10-13",
+   "horizon_days": 20,
+   "sector": "",
+   "thesis": "动量账：DHT Holdings 10/13 现价 26.86 再创 52 周新高（10/12 收 26.83），20 日相对标普 +19.0 个点，三月 +32%，三条均线上（20 日线 23.28、200 日线上方 40%）；催化剂：VLCC 现货运价与油轮 ETF 创纪录（NDTV/Investing 10/12–13），OPEC+ 增产叠加中东绕行拉长吨海里，Q3 财报（约 11/4–6）在 20 天持有期边缘。止损在突破日低 25.50（5.2%，1.4 ATR，高于 20 日线 23.28），目标 29.90 = 三月 +33% 折三分之一加半个 ATR，R 2.1。量比 1.0 不计 volume。",
+   "invalidation": "收盘跌回 25.50，次日开盘平掉；VLCC 运价一周跌超 20% 或 Brent 收盘跌破 85；20 日相对标普跌回 +10 以下；财报日若在持有期内、前一天减半",
+   "principles": [
+    "十·强势买强势：pattern+rs+catalyst",
+    "十·止损在突破日低点或 20 日线取高",
+    "十·到 1R 后止损跟 20 日线",
+    "三·同板块 ≤3（能源现为 0）"
+   ],
+   "regime": "标普 7,807 在 50/200 日线上，10 年期 5.24%，VIX 15.2，原油 94（月 −6%），本周必需消费/公用事业最强、科技最弱，政策倾向只有能源为正；不是防御日",
+   "parent_id": "e3a5c325-bfb2-40d6-b311-d753e84d3bd2",
+   "legs": {
+    "limit": "24547feb-a9d5-41bc-99f7-b005062cde1b",
+    "stop": "399c708b-963a-4146-a2ec-a1bc3620d178"
+   },
+   "adopted": false,
+   "stop_raised": false,
+   "sleeve": "aggressive",
+   "triggers": [
+    "pattern",
+    "rs",
+    "catalyst"
    ]
   }
  },
@@ -385,6 +397,22 @@
    "r": 0.8688518336561851,
    "reviewed": true,
    "sleeve": "aggressive"
+  },
+  {
+   "symbol": "JPM",
+   "shares": 8,
+   "entry": 342.37,
+   "exit": 337.46,
+   "opened": "2026-09-25",
+   "closed": "2026-10-13",
+   "reason": "manual: 四·论点失效：10/13 Q3 EPS 5.57 不及预期 5.90，价格在 20/50 日线下方，接管仓无论点，持有 −0.3R；简报要求收盘前出场，现价 336.50 ≈ 成本 336.43",
+   "thesis": "接管：价格在 20/50 日线下方，止损在摆动低点 325.75 之下 1%；反弹到 50 日线附近即目标",
+   "invalidation": "",
+   "principles": [],
+   "pnl": -39.28,
+   "r": -0.24698189134808984,
+   "reviewed": false,
+   "sleeve": "core"
   }
  ]
 }
