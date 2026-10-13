@@ -339,6 +339,46 @@
 "eps_actual": 1.22,
 "surprise_pct": 6.89,
 "error": ""
+},
+"TNK|2026-10-13": {
+"symbol": "TNK",
+"as_of": "2026-10-13",
+"next_date": "2026-11-04",
+"last_date": "2026-07-29",
+"eps_estimate": 5.53,
+"eps_actual": 5.56,
+"surprise_pct": 0.54,
+"error": ""
+},
+"DT|2026-10-13": {
+"symbol": "DT",
+"as_of": "2026-10-13",
+"next_date": "2026-11-04",
+"last_date": "2026-08-05",
+"eps_estimate": 0.44,
+"eps_actual": 0.48,
+"surprise_pct": 8.16,
+"error": ""
+},
+"PLTR|2026-10-13": {
+"symbol": "PLTR",
+"as_of": "2026-10-13",
+"next_date": "2026-11-02",
+"last_date": "2026-08-03",
+"eps_estimate": 0.35,
+"eps_actual": 0.41,
+"surprise_pct": 18.51,
+"error": ""
+},
+"PBR|2026-10-13": {
+"symbol": "PBR",
+"as_of": "2026-10-13",
+"next_date": "2026-11-10",
+"last_date": "2026-08-06",
+"eps_estimate": 1.4,
+"eps_actual": 1.62,
+"surprise_pct": 15.52,
+"error": ""
 }
 }
 }

@@ -1,0 +1,263 @@
+{
+ "date": "2026-10-13",
+ "data_date": "2026-10-13",
+ "generated_at": "2026-10-13T20:18:22.358202",
+ "source": "/root/.tradingagents/desk/advise/my_portfolio.json",
+ "horizon": "long",
+ "total": 41979.97505065918,
+ "cash": 28134.97,
+ "cash_pct": 0.6701997789671916,
+ "lines": [
+  {
+   "symbol": "AVGO",
+   "name": "Broadcom Inc.",
+   "sector": "Technology",
+   "shares": 7.0,
+   "cost": 350.63,
+   "price": 357.3099975585937,
+   "value": 2501.169982910156,
+   "weight": 0.059580073115619483,
+   "pnl_pct": 0.019051414763693097,
+   "action": "减仓",
+   "act_shares": 3,
+   "urgent": true,
+   "reasons": [
+    "近两天有重大利空：Broadcom (NASDAQ:AVGO) Stock Falls 1.9% - Should You Sell? - MarketBeat"
+   ],
+   "cautions": [
+    "政策面对该板块不利（倾向 -0.94）"
+   ],
+   "stop": 293.74978955078126,
+   "target": 371.31,
+   "earnings_date": "2026-12-09",
+   "earnings_in": 57.0,
+   "verdict": "趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌",
+   "spark": "▄▅▅▄▅██▇▅▃▃▃▄▃▃▂▁▂▃▂▂▃▄▃",
+   "page": "2026-10-13/AVGO.md",
+   "is_index": false
+  },
+  {
+   "symbol": "QQQM",
+   "name": "Invesco NASDAQ 100 ETF",
+   "sector": "Unknown",
+   "shares": 10.0,
+   "cost": 303.47,
+   "price": 306.1600036621094,
+   "value": 3061.6000366210938,
+   "weight": 0.0729300108665267,
+   "pnl_pct": 0.00886415020301623,
+   "action": "加仓",
+   "act_shares": 6,
+   "urgent": false,
+   "reasons": [
+    "趋势完好且回调到均线附近（302.76），仓位只占 7.3%，可以补"
+   ],
+   "cautions": [],
+   "stop": 221.37067340087893,
+   "target": 315.34,
+   "earnings_date": "",
+   "earnings_in": NaN,
+   "verdict": "趋势向上且结构完整，且贴近 52 周高点——追高的代价是止损离得远；顺势的一侧在上方，风险在于结构一旦破位就要认",
+   "spark": "▃▄▂▁▂▅▅▅▆▅▄▄▄▄▅▄▄▆▇▇▇██▇",
+   "page": "2026-10-13/QQQM.md",
+   "is_index": true
+  },
+  {
+   "symbol": "TQQQ",
+   "name": "ProShares UltraPro QQQ",
+   "sector": "Unknown",
+   "shares": 15.0,
+   "cost": 80.952,
+   "price": 78.80999755859375,
+   "value": 1182.1499633789062,
+   "weight": 0.02815985388157928,
+   "pnl_pct": -0.026460154676922754,
+   "action": "加仓",
+   "act_shares": 26,
+   "urgent": false,
+   "reasons": [
+    "趋势完好且回调到均线附近（75.85），仓位只占 2.8%，可以补"
+   ],
+   "cautions": [],
+   "stop": 51.46862577819825,
+   "target": 81.17,
+   "earnings_date": "",
+   "earnings_in": NaN,
+   "verdict": "趋势向上且结构完整；顺势的一侧在上方，风险在于结构一旦破位就要认",
+   "spark": "▄▄▂▁▂▅▅▅▆▄▄▄▄▄▅▄▃▅▇▇▇██▇",
+   "page": "2026-10-13/TQQQ.md",
+   "is_index": false
+  },
+  {
+   "symbol": "ABBV",
+   "name": "AbbVie Inc.",
+   "sector": "Healthcare",
+   "shares": 3.0,
+   "cost": 280.0,
+   "price": 274.3099975585937,
+   "value": 822.929992675781,
+   "weight": 0.0196029176216211,
+   "pnl_pct": -0.020321437290736766,
+   "action": "加仓",
+   "act_shares": 7,
+   "urgent": false,
+   "reasons": [
+    "趋势完好且回调到均线附近（266.84），仓位只占 2.0%，可以补"
+   ],
+   "cautions": [],
+   "stop": 185.02689630126955,
+   "target": 285.85,
+   "earnings_date": "2026-10-30",
+   "earnings_in": 17.0,
+   "verdict": "趋势向上且结构完整，且贴近 52 周高点——追高的代价是止损离得远；顺势的一侧在上方，风险在于结构一旦破位就要认",
+   "spark": "▃▃▄▄▂▁▁▂▂▅▅▅▄▄▃▄▅▅▅▅▅▅▆█",
+   "page": "2026-10-13/ABBV.md",
+   "is_index": false
+  },
+  {
+   "symbol": "VST",
+   "name": "Vistra Corp.",
+   "sector": "Utilities",
+   "shares": 20.0,
+   "cost": 139.68,
+   "price": 162.36000061035156,
+   "value": 3247.2000122070312,
+   "weight": 0.07735116584248762,
+   "pnl_pct": 0.16237113839026018,
+   "action": "持有",
+   "act_shares": 0,
+   "urgent": false,
+   "reasons": [
+    "均线与结构互相矛盾，属于震荡；这种形态里止损容易被扫，仓位应比顺势时更小"
+   ],
+   "cautions": [
+    "有利空消息 1 条，看一眼",
+    "政策面对该板块不利（倾向 -0.26）"
+   ],
+   "stop": 123.43747125244141,
+   "target": 167.23,
+   "earnings_date": "2026-11-06",
+   "earnings_in": 24.0,
+   "verdict": "均线与结构互相矛盾，属于震荡；这种形态里止损容易被扫，仓位应比顺势时更小",
+   "spark": "▅▇█▄▄▂▂▃▄▂▁▂▁▃▄▃▂▂▂▂▂▃▇▇",
+   "page": "2026-10-13/VST.md",
+   "is_index": false
+  },
+  {
+   "symbol": "TXN",
+   "name": "Texas Instruments Incorporated",
+   "sector": "Technology",
+   "shares": 5.0,
+   "cost": 276.94,
+   "price": 287.8500061035156,
+   "value": 1439.2500305175781,
+   "weight": 0.03428420404682872,
+   "pnl_pct": 0.03939483680044642,
+   "action": "持有",
+   "act_shares": 0,
+   "urgent": false,
+   "reasons": [
+    "均线与结构互相矛盾，属于震荡；这种形态里止损容易被扫，仓位应比顺势时更小"
+   ],
+   "cautions": [
+    "8 天后财报（2026-10-21），持仓过财报要想清楚",
+    "政策面对该板块不利（倾向 -0.94）"
+   ],
+   "stop": 200.96033312988283,
+   "target": 315.09,
+   "earnings_date": "2026-10-21",
+   "earnings_in": 8.0,
+   "verdict": "均线与结构互相矛盾，属于震荡；这种形态里止损容易被扫，仓位应比顺势时更小",
+   "spark": "▇▇▆▅▄▆▆▅▆▃▂▂▂▁▂▃▂▃▄▅▆█▇▆",
+   "page": "2026-10-13/TXN.md",
+   "is_index": false
+  },
+  {
+   "symbol": "MRVL",
+   "name": "Marvell Technology, Inc.",
+   "sector": "Technology",
+   "shares": 5.0,
+   "cost": 252.9,
+   "price": 268.7250061035156,
+   "value": 1343.6250305175781,
+   "weight": 0.03200633227857243,
+   "pnl_pct": 0.06257416411038208,
+   "action": "持有",
+   "act_shares": 0,
+   "urgent": false,
+   "reasons": [
+    "趋势向上且结构完整；顺势的一侧在上方，风险在于结构一旦破位就要认"
+   ],
+   "cautions": [
+    "政策面对该板块不利（倾向 -0.94）"
+   ],
+   "stop": 138.8038942871094,
+   "target": 296.43,
+   "earnings_date": "2026-12-01",
+   "earnings_in": 49.0,
+   "verdict": "趋势向上且结构完整；顺势的一侧在上方，风险在于结构一旦破位就要认",
+   "spark": "▂▃▃▁▂▄▃▄▄▅▅▅▃▃▄▄▄▆▇▆▇▇█▇",
+   "page": "2026-10-13/MRVL.md",
+   "is_index": false
+  },
+  {
+   "symbol": "GLDM",
+   "name": "SPDR Gold MiniShares",
+   "sector": "Unknown",
+   "shares": 3.0,
+   "cost": 82.345,
+   "price": 82.36000061035156,
+   "value": 247.0800018310547,
+   "weight": 0.005885663379573042,
+   "pnl_pct": 0.00018216783473867793,
+   "action": "持有",
+   "act_shares": 0,
+   "urgent": false,
+   "reasons": [
+    "趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌"
+   ],
+   "cautions": [],
+   "stop": 71.6166398010254,
+   "target": 84.83,
+   "earnings_date": "",
+   "earnings_in": NaN,
+   "verdict": "趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌",
+   "spark": "▁▂▂▂▂▃▅▅▅▆██▆▆▅▅▄▅▅▄▃▃▂▃",
+   "page": "2026-10-13/GLDM.md",
+   "is_index": false
+  }
+ ],
+ "sector_weights": {
+  "Utilities": 0.07735116584248762,
+  "Technology": 0.12587060944102063,
+  "Unknown": 0.10697552812767902,
+  "Healthcare": 0.0196029176216211
+ },
+ "tilt": {
+  "Consumer Cyclical": -0.946236559139785,
+  "Industrials": -0.96996996996997,
+  "Consumer Defensive": -0.9428571428571428,
+  "Technology": -0.943502824858757,
+  "Basic Materials": -0.9367088607594937,
+  "Energy": 0.949874686716792,
+  "Financial Services": -0.9476439790575916,
+  "Real Estate": -0.25925925925925924,
+  "Utilities": -0.25925925925925924,
+  "Communication Services": -0.25925925925925924
+ },
+ "policy_brief": "## Policy and political backdrop\n\n### trade (105)\n- [9/bearish] Cotchett, Pitre & McCarthy Announces Class Action Against GoPro Over Unreturned Tariff Refunds - Voice of Alexandria (7h ago, Voice of Alexandria)\n  sectors: Consumer Cyclical-, Industrials-, Consumer Defensive-, Technology-, Basic Materials-\n- [8/bearish] Trump tariffs face a midterm test as Americans grapple with high prices - Fox News (0h ago, Fox News)\n  sectors: Consumer Cyclical-, Industrials-, Consumer Defensive-, Technology-, Basic Materials-\n- [8/bearish] Correction: Election 2026-Tariffs story - Beloit Daily News (2h ago, Beloit Daily News)\n  sectors: Consumer Cyclical-, Industrials-, Consumer Defensive-, Technology-, Basic Materials-\n- [8/bearish] Tariffs Didn’t End Polestar in America. Software Ownership Did - Road Ethos (27h ago, Road Ethos)\n  sectors: Consumer Cyclical-, Industrials-, Consumer Defensive-, Technology-, Basic Materials-\n  ... and 101 more in trade\n\n### monetary (1)\n- [7/neutral] Fed’s Waller does ‘about-face’ on interest-rate outlook as inflation surges - TheStreet (30h ago, TheStreet)\n  sectors: Real Estate-, Utilities-, Technology-, Consumer Cyclical-, Energy+\n\n### geopolitical (7)\n- [7/neutral] OPEC Cuts Demand Growth Forecast Again as Gulf Supply Risks Mount - WSJ (8h ago, WSJ)\n  sectors: Energy+, Industrials-, Consumer Cyclical-\n- [7/neutral] Saudi leads jump in OPEC+ oil output in September, despite Iran war disruption - Reuters (6h ago, Reuters)\n  sectors: Energy+, Industrials+, Basic Materials+, Consumer Cyclical-\n- [7/neutral] OPEC Sharply Raises 2027 Crude Demand Forecast as Global Restocking Wave Emerges as Key Driver - BigGo Finance (7h ago, BigGo Finance)\n  sectors: Energy-, Industrials+, Consumer Cyclical+\n- [7/neutral] Promoting unsubstantiated allegations of Russian “shadow war,” New York Times agitates for escalation of US-NATO war against Russia - World  (41h ago, World Socialist Web Site)\n  sectors: Energy+, Industrials+, Basic Materials+, Consumer Cyclical-\n  ... and 3 more in geopolitical\n\n### regulatory (6)\n- [6/neutral] SEC Eases Quorum Rule, Allowing One Commissioner to Advance Crypto Rulemaking - bloomingbit (3h ago, bloomingbit)\n  sectors: Financial Services?\n- [4/bearish] SEC Proposal to Ax Pay-to-Play Rule Leaves Many Risks Untouched - Bloomberg Law News (12h ago, Bloomberg Law News)\n  sectors: Financial Services-\n- [3/bearish] Opinion: New SEC rules would fleece everyday investors to enrich Wall Street - MarketWatch (2h ago, MarketWatch)\n  sectors: Financial Services-\n- [3/neutral] SEC Quorum Rule Change: What It Means for Crypto Rulemaking - Altcoin Buzz (2h ago, Altcoin Buzz)\n  sectors: Financial Services?\n  ... and 2 more in regulatory\n\n_Sector effects above are directional heuristics, not modelled relationships. The sign can invert — a rate cut is bullish for duration unless it signals a recession — and a scheduled event may already be priced._",
+ "macro_read": [
+  "标普500 收 7,805，近一周 -0.2%，近一月 +2.4%，站在 50 日和 200 日线上方",
+  "10 年期美债收益率 5.22%，较一月前 +0.26 个百分点",
+  "收益率曲线正向，10年期高于3月期 1.16 个百分点",
+  "VIX 15.3，波动平静",
+  "美元指数 102.2，近一月 +2.8%",
+  "原油 95 美元（月 -6.6%），黄金 4,186 美元（月 -3.8%）",
+  "本周最强板块：能源 +5.4%、必需消费 +2.9%；最弱：科技 -2.9%"
+ ],
+ "alerts": [
+  "需要今天处理：AVGO",
+  "两周内财报：TXN（2026-10-21）"
+ ],
+ "warnings": []
+}
