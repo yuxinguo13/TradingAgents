@@ -146,7 +146,7 @@
    "symbol": "PLTR",
    "shares": 40,
    "entry": 200.6,
-   "stop": 195.65,
+   "stop": 200.6,
    "target": 238.6,
    "opened": "2026-10-09",
    "horizon_days": 20,
@@ -165,7 +165,7 @@
     "stop": "2d6475c1-f5e5-4ca5-b4f2-9deb2ecf18f4"
    },
    "adopted": false,
-   "stop_raised": false,
+   "stop_raised": true,
    "sleeve": "aggressive",
    "triggers": [
     "volume",
