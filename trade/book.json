@@ -408,7 +408,7 @@
    ],
    "pnl": -3.2,
    "r": NaN,
-   "reviewed": false,
+   "reviewed": true,
    "sleeve": "aggressive"
   },
   {
@@ -429,7 +429,7 @@
    ],
    "pnl": -433.1,
    "r": -1.014285714285714,
-   "reviewed": false,
+   "reviewed": true,
    "sleeve": "aggressive"
   }
  ]
