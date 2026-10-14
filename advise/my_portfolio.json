@@ -1,6 +1,6 @@
 {
- "cash": 28134.97,
- "note": "2026-10-12 截图（美东约 12:15）：PCRA B（AVGO 7、MRVL 5、TXN 5、QQQM 10，现金 18950.30；APLD、AXTI、ORCL、TTMI 20 股和 QQQM 10 股已卖）、PCRA A（VST 20，现金 8922.48；TTMI 45 股已卖，约 121.3）。HSA（TQQQ 5、GLDM 3，现金 1892.19）沿用 10/6，未见新截图。VST 成本按截图浮盈反推 139.68。长线规则。 10/12 HSA 加 TQQQ 10 股 @79（HSA 现金约 1102.19）。 10/12 买 ABBV 3 股 @280（账户未说明，现金从合计里扣）。",
+ "cash": 23478.37,
+ "note": "2026-10-12 截图（美东约 12:15）：PCRA B（AVGO 7、MRVL 5、TXN 5、QQQM 10，现金 18950.30；APLD、AXTI、ORCL、TTMI 20 股和 QQQM 10 股已卖）、PCRA A（VST 20，现金 8922.48；TTMI 45 股已卖，约 121.3）。HSA（TQQQ 5、GLDM 3，现金 1892.19）沿用 10/6，未见新截图。VST 成本按截图浮盈反推 139.68。长线规则。 10/12 HSA 加 TQQQ 10 股 @79（HSA 现金约 1102.19）。 10/12 买 ABBV 3 股 @280（账户未说明，现金从合计里扣）。 10/14 截图（美东 08:57 PT）：PCRA B 现在 AVGO 7、MRVL 10、TXN 5、QQQM 21，现金 14293.70（比 10/12 少 4656.60 = 新买 MRVL 5 股 + QQQM 11 股）；PCRA A VST 20（没加），现金 8922.48。MRVL、QQQM 的新成本是估算（MRVL 新增 5 股按约 264.7、QQQM 新增 11 股按约 303 拆分），请用 Gain/Loss 页核对。ABBV 3 股不在这两个账户的截图里，账户仍未说明。",
  "holdings": [
   {
    "symbol": "VST",
@@ -14,8 +14,8 @@
   },
   {
    "symbol": "MRVL",
-   "shares": 5,
-   "cost": 252.9
+   "shares": 10,
+   "cost": 258.81
   },
   {
    "symbol": "TXN",
@@ -24,8 +24,8 @@
   },
   {
    "symbol": "QQQM",
-   "shares": 10,
-   "cost": 303.47,
+   "shares": 21,
+   "cost": 303.22,
    "kind": "index"
   },
   {
