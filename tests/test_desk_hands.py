@@ -580,3 +580,40 @@ class TestReflection1013:
         assert merge_jsonl(remote, local) == '{"a": 1}\n{"b": 2}\n{"c": 3}\n{"d": 4}\n'
         assert merge_jsonl("", local) == local
         assert merge_jsonl(remote, "") == remote
+
+
+@pytest.mark.unit
+class TestReflection1014:
+    def _pending_book(self, home, opened):  # noqa: F811
+        shape("AAA", 100.0, drift=0.6)
+        book = DeskBook(home / "desk" / "trade" / "book.json")
+        book.positions["AAA"] = Position(symbol="AAA", shares=10, entry=95.0, stop=90.0, target=110.0,
+                                         opened=opened, pending=True, stop0=90.0, parent_id="p1")
+        book.save()
+        return book
+
+    def test_a_fresh_pullback_limit_is_kept_while_it_rests(self, home):  # noqa: F811
+        book = self._pending_book(home, MONDAY_OPEN.date().isoformat())
+        v = FakeVenue(acct())
+        v.open_orders = lambda: [{"id": "p1", "symbol": "AAA", "side": "buy", "type": "limit", "parent_id": ""}]
+        pk = pack.Packer(broker=v, market=mkt(task="trade"), book=book, screen=screen_of(), now=MONDAY_OPEN).run()
+        after = DeskBook(home / "desk" / "trade" / "book.json")
+        assert after.positions["AAA"].pending and not v.cancelled and not pk.postmortems
+
+    def test_a_stale_pullback_limit_is_cancelled_and_dropped(self, home):  # noqa: F811
+        """PBR: a limit that never filled rested at the venue for weeks."""
+        from datetime import timedelta
+        book = self._pending_book(home, (MONDAY_OPEN.date() - timedelta(days=5)).isoformat())
+        v = FakeVenue(acct())
+        v.open_orders = lambda: [{"id": "p1", "symbol": "AAA", "side": "buy", "type": "limit", "parent_id": ""}]
+        pk = pack.Packer(broker=v, market=mkt(task="trade"), book=book, screen=screen_of(), now=MONDAY_OPEN).run()
+        after = DeskBook(home / "desk" / "trade" / "book.json")
+        assert "AAA" not in after.positions and v.cancelled == ["p1"] and not after.closed
+        assert any("已撤单" in w for w in pk.warnings)
+
+    def test_a_pending_row_whose_order_is_gone_is_dropped(self, home):  # noqa: F811
+        book = self._pending_book(home, MONDAY_OPEN.date().isoformat())
+        v = FakeVenue(acct())
+        pk = pack.Packer(broker=v, market=mkt(task="trade"), book=book, screen=screen_of(), now=MONDAY_OPEN).run()
+        after = DeskBook(home / "desk" / "trade" / "book.json")
+        assert "AAA" not in after.positions and not v.cancelled and any("已无此单" in w for w in pk.warnings)

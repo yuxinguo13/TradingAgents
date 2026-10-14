@@ -34,6 +34,8 @@ from .market import SECTOR_ZH, Facts, Market, _num, _ok
 from .orders import MAX_POSITIONS, SLEEVE, DeskBook, Position
 from .report import Idea, chart_for, score
 
+PENDING_DAYS = 2   # a resting buy that has not filled in this many days is cancelled
+
 logger = logging.getLogger(__name__)
 
 TASK = "trade"
@@ -376,6 +378,16 @@ class Packer:
         if any("已按" in w and "恢复" in w for w in pack.warnings):
             self.book.save()
 
+    def _open_buy(self, symbol: str) -> dict | None:
+        """The venue's resting buy order for ``symbol``, if any."""
+        if not hasattr(self.broker(), "open_orders"):
+            return None
+        for o in self.broker().open_orders():
+            if str(o.get("symbol", "")).upper() == symbol and o.get("side") == "buy" \
+                    and not o.get("parent_id"):
+                return o
+        return None
+
     def reconcile(self, account, today: date, pack: TradePack) -> None:
         """Book positions the account no longer holds were closed by the venue."""
         if account is None:
@@ -390,10 +402,21 @@ class Packer:
         for s in gone:
             p = self.book.positions[s]
             if getattr(p, "pending", False):
-                # never filled: not a trade, so no closed record and no post-mortem
+                # never filled: not a trade, so no closed record and no post-mortem.
+                # A pullback limit may rest a couple of sessions; after that it is
+                # cancelled at the venue too (PBR 2026-10-09 rested for weeks).
+                resting = self._open_buy(s)
+                age = (today - date.fromisoformat(p.opened)).days if p.opened else 99
+                if resting and age <= PENDING_DAYS:
+                    continue
+                if resting and hasattr(self.broker(), "cancel"):
+                    cancelled = self.broker().cancel(str(resting.get("id") or p.parent_id))
+                    how = "已撤单并" if cancelled else "撤单失败，仍"
+                    pack.warnings.append(f"{s}: 买单挂了 {age} 天未成交，{how}从账本移除（不是交易，不复盘）")
+                else:
+                    pack.warnings.append(f"{s}: 买单未成交（交易所已无此单），已从账本移除（不是交易，不复盘）")
                 del self.book.positions[s]
                 self.book.save()
-                pack.warnings.append(f"{s}: 买单未成交，已从账本移除（不是交易，不复盘）")
                 continue
             sold = [f for f in fills if f["symbol"].upper() == s and f["side"] == "sell"]
             exit_px = _num(sold[-1]["price"]) if sold else _num(self.market.facts(s, today).price)
