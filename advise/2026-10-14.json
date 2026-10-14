@@ -1,0 +1,224 @@
+{
+ "date": "2026-10-14",
+ "data_date": "2026-10-14",
+ "generated_at": "2026-10-14T20:22:07.370518",
+ "source": "/root/.tradingagents/desk/advise/my_portfolio.json",
+ "horizon": "long",
+ "total": 41658.20995025635,
+ "cash": 24946.05,
+ "cash_pct": 0.598826738589772,
+ "lines": [
+  {
+   "symbol": "QQQM",
+   "name": "Invesco NASDAQ 100 ETF",
+   "sector": "Unknown",
+   "shares": 21.0,
+   "cost": 303.82,
+   "price": 300.1300048828125,
+   "value": 6302.7301025390625,
+   "weight": 0.151296229724347,
+   "pnl_pct": -0.01214533314853361,
+   "action": "持有",
+   "act_shares": 0,
+   "urgent": false,
+   "reasons": [
+    "趋势向上且结构完整，且贴近 52 周高点——追高的代价是止损离得远；顺势的一侧在上方，风险在于结构一旦破位就要认"
+   ],
+   "cautions": [],
+   "stop": 221.547345703125,
+   "target": 309.13,
+   "earnings_date": "",
+   "earnings_in": NaN,
+   "verdict": "趋势向上且结构完整，且贴近 52 周高点——追高的代价是止损离得远；顺势的一侧在上方，风险在于结构一旦破位就要认",
+   "spark": "▃▃▂▁▄▄▅▆▅▄▄▅▄▅▄▄▄▆▇▆▇██▆",
+   "page": "2026-10-14/QQQM.md",
+   "is_index": true
+  },
+  {
+   "symbol": "VST",
+   "name": "Vistra Corp.",
+   "sector": "Utilities",
+   "shares": 20.0,
+   "cost": 139.68,
+   "price": 151.7899932861328,
+   "value": 3035.7998657226562,
+   "weight": 0.07287398736882056,
+   "pnl_pct": 0.08669811917334491,
+   "action": "持有",
+   "act_shares": 0,
+   "urgent": false,
+   "reasons": [
+    "趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌"
+   ],
+   "cautions": [],
+   "stop": 123.40078942871094,
+   "target": 163.29,
+   "earnings_date": "2026-11-06",
+   "earnings_in": 23.0,
+   "verdict": "趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌",
+   "spark": "▆█▇▃▄▂▂▃▂▁▁▁▂▃▄▃▂▂▁▁▂▅▇▆",
+   "page": "2026-10-14/VST.md",
+   "is_index": false
+  },
+  {
+   "symbol": "MRVL",
+   "name": "Marvell Technology, Inc.",
+   "sector": "Technology",
+   "shares": 10.0,
+   "cost": 255.95,
+   "price": 245.27999877929688,
+   "value": 2452.7999877929688,
+   "weight": 0.05887914988958557,
+   "pnl_pct": -0.04168783442353241,
+   "action": "持有",
+   "act_shares": 0,
+   "urgent": false,
+   "reasons": [
+    "趋势向上且结构完整；顺势的一侧在上方，风险在于结构一旦破位就要认"
+   ],
+   "cautions": [],
+   "stop": 139.44025582885743,
+   "target": 270.55,
+   "earnings_date": "2026-12-01",
+   "earnings_in": 48.0,
+   "verdict": "趋势向上且结构完整；顺势的一侧在上方，风险在于结构一旦破位就要认",
+   "spark": "▂▃▂▁▃▃▄▄▄▆▅▅▃▄▅▄▅▆▇▇▇██▇",
+   "page": "2026-10-14/MRVL.md",
+   "is_index": false
+  },
+  {
+   "symbol": "AVGO",
+   "name": "Broadcom Inc.",
+   "sector": "Technology",
+   "shares": 7.0,
+   "cost": 350.63,
+   "price": 346.25,
+   "value": 2423.75,
+   "weight": 0.058181808649343685,
+   "pnl_pct": -0.012491800473433567,
+   "action": "持有",
+   "act_shares": 0,
+   "urgent": false,
+   "reasons": [
+    "趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌"
+   ],
+   "cautions": [
+    "50 日和 200 日线都失守、近三月 -7%；长线账户不按此卖，复核线在 200 日线下 20%（293.73），论点变了才走"
+   ],
+   "stop": 293.7339910888672,
+   "target": 356.64,
+   "earnings_date": "2026-12-09",
+   "earnings_in": 56.0,
+   "verdict": "趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌",
+   "spark": "▄▅▄▄▆██▇▅▃▂▃▃▂▃▁▁▃▂▂▂▃▃▂",
+   "page": "2026-10-14/AVGO.md",
+   "is_index": false
+  },
+  {
+   "symbol": "TXN",
+   "name": "Texas Instruments Incorporated",
+   "sector": "Technology",
+   "shares": 5.0,
+   "cost": 276.94,
+   "price": 280.6499938964844,
+   "value": 1403.2499694824219,
+   "weight": 0.03368483598210361,
+   "pnl_pct": 0.013396381513989919,
+   "action": "持有",
+   "act_shares": 0,
+   "urgent": false,
+   "reasons": [
+    "均线与结构互相矛盾，属于震荡；这种形态里止损容易被扫，仓位应比顺势时更小"
+   ],
+   "cautions": [
+    "7 天后财报（2026-10-21），持仓过财报要想清楚"
+   ],
+   "stop": 201.38711749267577,
+   "target": 299.37,
+   "earnings_date": "2026-10-21",
+   "earnings_in": 7.0,
+   "verdict": "均线与结构互相矛盾，属于震荡；这种形态里止损容易被扫，仓位应比顺势时更小",
+   "spark": "▆▇▅▄▅▅▆▅▅▃▂▂▁▁▂▃▂▃▄▅▆█▆▆",
+   "page": "2026-10-14/TXN.md",
+   "is_index": false
+  },
+  {
+   "symbol": "ABBV",
+   "name": "AbbVie Inc.",
+   "sector": "Healthcare",
+   "shares": 3.0,
+   "cost": 280.0,
+   "price": 283.4800109863281,
+   "value": 850.4400329589844,
+   "weight": 0.020414704183748803,
+   "pnl_pct": 0.01242861066545764,
+   "action": "持有",
+   "act_shares": 0,
+   "urgent": false,
+   "reasons": [
+    "趋势向上且结构完整，且贴近 52 周高点——追高的代价是止损离得远；顺势的一侧在上方，风险在于结构一旦破位就要认"
+   ],
+   "cautions": [],
+   "stop": 185.26234381103518,
+   "target": 294.51,
+   "earnings_date": "2026-10-30",
+   "earnings_in": 16.0,
+   "verdict": "趋势向上且结构完整，且贴近 52 周高点——追高的代价是止损离得远；顺势的一侧在上方，风险在于结构一旦破位就要认",
+   "spark": "▃▃▄▄▁▁▂▂▃▅▅▄▄▄▂▄▅▅▅▅▄▅▇█",
+   "page": "2026-10-14/ABBV.md",
+   "is_index": false
+  },
+  {
+   "symbol": "GLDM",
+   "name": "SPDR Gold MiniShares",
+   "sector": "Unknown",
+   "shares": 3.0,
+   "cost": 82.345,
+   "price": 81.12999725341797,
+   "value": 243.3899917602539,
+   "weight": 0.005842545612278671,
+   "pnl_pct": -0.01475502758615621,
+   "action": "持有",
+   "act_shares": 0,
+   "urgent": false,
+   "reasons": [
+    "趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌"
+   ],
+   "cautions": [],
+   "stop": 71.58231979370117,
+   "target": 83.56,
+   "earnings_date": "",
+   "earnings_in": NaN,
+   "verdict": "趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌",
+   "spark": "▁▂▂▂▂▄▅▅▅▇█▇▅▆▅▄▄▅▄▃▃▃▂▂",
+   "page": "2026-10-14/GLDM.md",
+   "is_index": false
+  }
+ ],
+ "sector_weights": {
+  "Utilities": 0.07287398736882056,
+  "Technology": 0.15074579452103287,
+  "Unknown": 0.15713877533662568,
+  "Healthcare": 0.020414704183748803
+ },
+ "tilt": {
+  "Energy": 0.25925925925925924,
+  "Industrials": 0.25925925925925924,
+  "Basic Materials": 0.25925925925925924,
+  "Consumer Cyclical": -0.25925925925925924
+ },
+ "policy_brief": "## Policy and political backdrop\n\n### geopolitical (2)\n- [7/neutral] Tehran signals escalation in conflict IRGC likens to a ‘world war’ - Iran International (2h ago, Iran International)\n  sectors: Energy+, Industrials+, Basic Materials+, Consumer Cyclical-\n- [5/neutral] EXCLUSIVE: Most Americans oppose betting on elections, government events, Reuters/Ipsos poll finds - Reuters (48h ago, Reuters)\n\n_Sector effects above are directional heuristics, not modelled relationships. The sign can invert — a rate cut is bullish for duration unless it signals a recession — and a scheduled event may already be priced._",
+ "macro_read": [
+  "标普500 收 7,719，近一周 -1.1%，近一月 +1.8%，站在 50 日和 200 日线上方",
+  "10 年期美债收益率 5.19%，较一月前 +0.19 个百分点",
+  "收益率曲线正向，10年期高于3月期 1.11 个百分点",
+  "VIX 16.9，波动平静",
+  "美元指数 102.5，近一月 +2.9%",
+  "原油 95 美元（月 -10.1%），黄金 4,123 美元（月 -4.8%）",
+  "本周最强板块：能源 +6.7%、必需消费 +5.3%；最弱：科技 -5.5%"
+ ],
+ "alerts": [
+  "两周内财报：TXN（2026-10-21）"
+ ],
+ "warnings": []
+}
