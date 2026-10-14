@@ -110,7 +110,21 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
+| 时间 | 材料度 | 倾向 | 标题 | 来源 |
+|---|---:|---|---|---|
+| 1h 前 | 0 | 偏空 | [Can Marvell Stock Drop From Here? - Yahoo Finance](https://news.google.com/rss/articles/CBMiiwFBVV95cUxOMFJicmJ1d21MMm5vZ1lMcF9ZMG1TS2lOWWp3dnBuT3ZETGhPYklfX2lIcHZpNzlURFZQMUV3dGJRNUZKVHlSR1ZocmZTMnNpa3BjV2N1UWFFNktyRmNYNjRWdHE5ZXhKNjltREJTTU5ESy1RQk5TRl8tM1ZxWWx4LUVZcHkyVGxqMnE4?oc=5) | Yahoo Finance |
+| 2h 前 | 0 | 偏空 | [Marvell Technology (MRVL) Shares Drop $18 Amid Elevated Options Activity - GuruFocus](https://news.google.com/rss/articles/CBMirAFBVV95cUxNMThQYTlEU0NaVGsyWUh6bjVxdXNCWjgzTDJhWmxkTU9yTnR3cWRJUGU4WVRmZWUzaGppbWIxREVsRExyazNDZEFGeTN6cTRNZ3UtMk9zUktqcUE0bl9oZEpyYmxseHBNdGVFQS1QQVhHNzlrTHhEZ2otUXVRM1JqUi12dWFhdm5ReFJucmcxejYzX0pRd2VkU0xyYlhfdkxubmNsMGRCYUJSX0Nl?oc=5) | GuruFocus |
+| 3h 前 | 0 | 中性 | [Marvell Technology (MRVL) Forms Security Group And Unveils Six Channel AI Memory - Yahoo Finance](https://news.google.com/rss/articles/CBMipAFBVV95cUxQV05aUFBES3R3WlAwMUJCSno3LVhvRDhuc3ZfUjNKd1g0bTVXN3h0cENJTlYxWERqOXlNZ3B0WExMazRqYm41UDJPSzF5RnNVcEs0MTdNUVUxZGtxTm5ncDQ5Zl9QYXR1ajl5TWJhM2NneDh5SXNtazFjRzROUndtNWNlYXJmZmY2Mm96TXZoTDJPOVVyNGxKMXZTT0p1bm5GeUs1SQ?oc=5) | Yahoo Finance |
+| 3h 前 | 0 | 中性 | [Marvell Stock Is Up 214% in 2026. Is It Too Late to Buy? - TradingView](https://news.google.com/rss/articles/CBMiswFBVV95cUxNdFNqeDlIb2JkZm5QNC1WcVIwVXZ1WVpnRUw0ZmNpX19mcW5GVGRuTWV1VXJwdnduT1pwUDVuT2VNNzJMS285SjVpR3hXdzF6dFdGTW82U28tcHk1dnd3Rk5hRHp1dm5NTW1yMXRDaERtOVhNQjQzdW1zSHRuSnlKR0E1UC1hN2N4TTIyeGRsSEFfOENoVzVqT2ZoclR5Y0s0WkNMRmk5cm16YzlvODRaWGtlQQ?oc=5) | TradingView |
+| 4h 前 | 0 | 中性 | [Marvell Technology Inc Stock (MRVL) Moved Down by 5.80% on Oct 14: What Investors Need To Know - TradingKey](https://news.google.com/rss/articles/CBMiiwFBVV95cUxPejBWQUhQb2I4aVVtZk56ZHlxbXhBVTUzSGpjVjd5MXpVeFMwR3E5OEpHa09EYXA0NTh5czk2a3RkYTk3ZHNONklmTEpUQjZMU3pZUzFnSUtvN2l6SnJhVV9qT2N1VlBHa0tJV0RFekM4UksyYncxRXdETlZla3Y1RDNNMWVVSFQyTTB3?oc=5) | TradingKey |
+| 4h 前 | 0 | 中性 | [Is Marvell Technology (MRVL) Overvalued As AI Revenue Targets And Nvidia Backing Rise? - Simply Wall Street](https://news.google.com/rss/articles/CBMi2gFBVV95cUxNVm5uNzE5a2VCLXJnb1hCa18zTWI3MDM0VDZEOEVqSzNHZFJJdDdXaVJsdTFVOGNrWmFYUkNpS3lVYXNRTDdXSHNNWjdHNEs4b1JGZ0EyTmo4UHJCYmxaSGVJb0hicG43U0RvUzJHUmVoSExBNGdNNGJndC15QnktWTNycnRuMFJUWHlTeDFScWRROURxWEgzc2k2REFyTDNpX01WRENYZXZXcVRNRExLVk5NUTNwRVVxVUZJMUtBVjI2bzV2bGp0OWUwa0haSHc5MGdLZnEtSmJtZ9IB3wFBVV95cUxOekZTY3A4UXpKWTlFS3dDWVo1T2puOUFJc2FyaGk4bDNzM2N6YzBYX3dmOWhyc3FKY1pkTkZkTGc3REttbnRwRnI3Z2UtR0dyM2xfc1pCYm5GYlhMbDVHMGJRMDY2dVFST0tZSl9iSnNHSk9RQUh3RVp0MGlJMG15bFlhNm5pcVR4UHdvWGtmcVVnRVA0eWNMTW1Vb1Z3TnVxNENSUzdtZG0zUDhvSHplRTd4Rm56UUdKc3E4bXBNQmtFTHJMc3djZVl4RXNuc3I0UklLVUM4cGRmaTBpUnpn?oc=5) | Simply Wall Street |
+| 8h 前 | 0 | 中性 | [MRVL Stock Grinds Higher As Traders Track Tight Range - StocksToTrade](https://news.google.com/rss/articles/CBMigAFBVV95cUxQMXdTcUdvMzNDNzFfcC1lUktzMHJfMzZoRVN2M3NKamQtck1uZlZQaGlhLVl3UjF4N2pocUZrbWdTaUF2TC1NbllxN0pTbC1paXJodkVFODlWQ0NPRFNhZzVQYjloMHpNczlPNjhsdXVSOUhTT2kwT1N2S0J4UmNROQ?oc=5) | StocksToTrade |
+| 8h 前 | 0 | 中性 | [Marvell: Buy For The Connectivity, Stay For The Custom Silicon (NASDAQ:MRVL) - Seeking Alpha](https://news.google.com/rss/articles/CBMiowFBVV95cUxNOWZ4YjFlcDFGWWM1LTVyb0VBQVZKSmFFTjI0cEkxckJvN2V0aGV3VlpaQ2xHQm96d3FYY1JRclRHWkpQUE13aUtxYVZPTXpENVpvNVNlU2pvN0RVMlh4UExCN1poQldXcTZPOWJpNUFfN2dEN3lUWU9CNnNIeVQxVGdPa0gwbFlYVFFtSlJ1SFViaXJGSXJOVmlHT3pzbFExM0JZ?oc=5) | Seeking Alpha |
+| 11h 前 | 0 | 中性 | [Marvell: A $37.5 Billion Business Is Quietly Carrying The Growth Plan - Seeking Alpha](https://news.google.com/rss/articles/CBMirAFBVV95cUxQcDBHNHZQMnFpaThhNnVzYjRLeWFzU0ptOHM5MHA1VXBsUkVuRlJYNXk1cE1zZk9EdHBpbHR3d19MMkoyakNWSXRDVERBUDNxWWo2dkxtNU5uZjRiVnRNdmZ2UG1leUJtRFZuR2xFazBfQ3JUS2FhaHBqYkxIUTdUN1p6akJEcVNVUjdTdlE2TXJ6UXZsVHIxN2V3RWFiaUxlNWhNRWJHNXZmM2pq?oc=5) | Seeking Alpha |
+| 26h 前 | 0 | 中性 | [Marvell Is Up 214% in 2026 While Broadcom Is Only Up 3%: Take Profits on MRVL Stock, or Hold On for the Ride? - 24/7 Wall St.](https://news.google.com/rss/articles/CBMi4gFBVV95cUxOTmlkWjF6OWZES3hfbUFGNGl1dm5kZ0F4SkZlSmh2dE5PRHNsbXA5Rzh4M1JRbmtRYUlGUEdxa2lnV0MzNWotMHc1SGJ2MFBKQzd2WWhzLXNEQVZaY0lZWHJSNEFqeU8taXFZeGs5TlQ0X3dYWGVkV0xwWkxDVU1rTmRxdWs2MUhabEJfME4wN2YxOXNwVllGZmFDMzhRYV9pY1BkVmsxcUE1YklYYUlBLTZheEpPQnVIbkJhWk0wbmhSdkZlTFB3RnVYRlpOUjl4Z1dJSHFraG40QXNJbzB1WXdB?oc=5) | 24/7 Wall St. |
+| 36h 前 | 0 | 中性 | [Marvell: The Hidden $15 Billion AI Opportunity Nobody Should Ignore (NASDAQ:MRVL) - Seeking Alpha](https://news.google.com/rss/articles/CBMiqgFBVV95cUxQek1xWERFUjFmMi1oa3F2azlqYUxZcXd6OEhCckhkWFVub1dXYi1uaFVhUkg0OF84X2xidVF6cVB6SDlYS3lsYk9UQWpDU3YxeUdVQ1FLU094b0dhamNodTFRTndPZUc2bGV0MDl2WlRhS2RjMDZrVXpXWEFVMmNxbkI5N1NtZUs5RHVTVE11YU96YlBQdTViY291WlhoN2FXUGdiOVdJeGpSQQ?oc=5) | Seeking Alpha |
+
+_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
 ## 五、反方观点与风险
 
@@ -118,6 +132,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 - 日均波幅 6.5%，属于高波动：同样的仓位金额，这只股票的日常噪音就能触发大多数人的心理止损。
 - TTM 市盈率 81 倍，价格里已经计入了不少增长；增长只要减速，杀估值的幅度会大于业绩本身的降幅。
+- 政策面对该板块的倾向为 -0.43（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -139,7 +154,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-09 | 279.19 | 283.78 | 267.70 | **275.28** | +0.2% | 15,082,800 |
 | 2026-10-12 | 274.50 | 278.01 | 260.80 | **265.86** | -3.4% | 19,104,000 |
 | 2026-10-13 | 253.53 | 269.14 | 248.45 | **268.73** | +1.1% | 18,439,700 |
-| 2026-10-14 | 262.49 | 264.30 | 245.10 | **245.28** | -8.7% | 25,419,898 |
+| 2026-10-14 | 262.71 | 264.30 | 245.10 | **245.28** | -8.7% | 25,419,898 |
 
 ## 七、自己去查（本页不做独立验证）
 

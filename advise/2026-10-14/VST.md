@@ -110,7 +110,17 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
+| 时间 | 材料度 | 倾向 | 标题 | 来源 |
+|---|---:|---|---|---|
+| 4h 前 | 8 | 中性 | [Constellation Energy (CEG) vs. VST and TLN: Can Nuclear Power and AI Demand Drive Earnings Growth? - Yahoo Finance](https://news.google.com/rss/articles/CBMinAFBVV95cUxPZmtPRnRVSkVkUmJId2JyR2RMOFVPN3FXcUszTHhqQTE4TmVWWXVkWmRZZm1ZaXREUFBpUm9QQ2ZzbWVYY2Y2WnRGRXBia3pSYU5jb2VRd011X3p0U0lmTjkyREVmcWRLREx2UlE4NG5veDlWSXJnUnFZUFJnNW91N2JUMTZWZ21SbUJWTHVlR20xeGtRTXNRdzMxVmo?oc=5) | Yahoo Finance |
+| 24h 前 | 8 | 中性 | [Vistra (NYSE:VST) Shares Climb 2.8% - Time to Buy? - MarketBeat](https://news.google.com/rss/articles/CBMipgFBVV95cUxOd1ZwZFdqNFFkNkFpbDBNN1ZXclM1eHhZMzh6SWFFRG9xTzhRUGEwLXRrN0JMVmxYS1E2Vk1vZXp5TUVwWjVvWXpNdUxKS29YVS1JaFl2SXdQU2pQOTBYNHR4Znh3ZzlMZmZPMGhrRm5kalVzZ1RqUmtjbEhteGpPdkVwcWFhVTdsM3Fra284eXM0N2RTV0tZOTJkUElZcndWcXMwWHRR?oc=5) | MarketBeat |
+| 5h 前 | 0 | 中性 | [Why Vistra (VST) Stock Is Down Today - Quiver Quantitative](https://news.google.com/rss/articles/CBMifkFVX3lxTE9ld0xaQ1NUWGpBRWp0dkZkb0padDFrU0g3RTVhaGtqTmlVVTRWbmoxd0w1VmlKSFNNWDI3TmxmVGhuck9uZHIxOWN4VC1fRGxiV01CQzA4c05vRnJSMjFqQVp3WmNQS1Z0VkxoTHN5U1FiOTYyQTBlV0VMMzh6UQ?oc=5) | Quiver Quantitative |
+| 6h 前 | 0 | 中性 | [VST Oct 2026 134.000 call (VST261016C00134000) Stock Price, News, Quote & History - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMiZEFVX3lxTFBJYzhBMDhDclREdFpDY2R4aGFxR2N1cTB1a2pWV0xaS1hLZHdEaGM2dWRwbnhDRHVWQlZXWUJiTlNvMWpOLW9ac0dJUmFEaXdBRGd0M3VyQmdaUHlfSGw1aHcza0Q?oc=5) | Yahoo! Finance Canada |
+| 18h 前 | 0 | 中性 | [VST Oct 2026 152.500 call (VST261016C00152500) stock historical prices and data - Yahoo Finance Australia](https://news.google.com/rss/articles/CBMib0FVX3lxTE5mWlhscV9tWWp4eDVHWXlEVjZabnk5OHZtbG5tS1VUY1lkcUNBNDJuOTI3Y1ZjdUJNdU5kQU1FY1cxNGc0aURkWHMzWWllZVFhdFpNSmVtQ0xfeFlORnZiNTRXV25ac1Bjelc3ZU5DOA?oc=5) | Yahoo Finance Australia |
+| 24h 前 | 0 | 中性 | [VST Oct 2026 148.000 put (VST261016P00148000) Stock Forum & Discussion - Yahoo Finance - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMickFVX3lxTE52M1hGQ2g5bV9vaUJpUndTRldwQUJYdkpQcFRvaXF5eHE4elB4T01mNF9sWjNEMUpsT0RDLW16OWVsandGc05aT1ZuZXMzalVKT1B4VllLa25ZZ2ZSdE9kNkpoY3dqRU9pcFpBR2cwbzNjUQ?oc=5) | Yahoo! Finance Canada |
+| 27h 前 | 0 | 中性 | [VST Oct 2026 141.000 put (VST261016P00141000) Stock Price, News, Quote & History - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMiZEFVX3lxTE9zN2NkSjZxd3NSaWN2eEZNNkl2ems2clhWS24wWTB0WExrZlYtQ282Z2R0RTFYc0ZxdmY2dFNYLUF6SnVvMUVFNFpWYlBUWFZUVXpCTElHU0h2U3JoaGR1TWRCQ2k?oc=5) | Yahoo! Finance Canada |
+
+_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
 ## 五、反方观点与风险
 
@@ -140,7 +150,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-09 | 157.25 | 161.95 | 155.73 | **161.48** | +3.4% | 7,063,000 |
 | 2026-10-12 | 162.67 | 164.25 | 156.85 | **158.13** | -2.1% | 6,526,300 |
 | 2026-10-13 | 153.51 | 163.63 | 153.51 | **162.36** | +2.7% | 5,296,900 |
-| 2026-10-14 | 159.53 | 161.09 | 149.66 | **151.79** | -6.5% | 7,195,108 |
+| 2026-10-14 | 159.53 | 161.09 | 149.66 | **151.79** | -6.5% | 7,218,720 |
 
 ## 七、自己去查（本页不做独立验证）
 

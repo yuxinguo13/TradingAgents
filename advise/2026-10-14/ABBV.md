@@ -44,7 +44,7 @@ _医疗 · 数据截至 2026-10-14 收盘 → 面向 2026-10-14 开盘_
        2026-09-16 2026-10-14
 ```
 
-成交量近 63 日： `▆▃▄▃▄▆▆▇█▄▄▃▂▃▃▄▄▃▂▂▁▂▃▂▄▂▃▃▁▅▁▁▁▂▂▂▅▅▅▄▅▄`
+成交量近 63 日： `▆▃▄▃▄▆▆▇█▄▄▃▂▃▃▄▄▃▂▂▁▂▃▂▄▂▃▃▁▅▁▁▁▂▂▂▅▅▅▄▅▅`
 
 ### 图形读数
 
@@ -53,7 +53,7 @@ _医疗 · 数据截至 2026-10-14 收盘 → 面向 2026-10-14 开盘_
 - **动能**：RSI(14) 70，偏强；近一月的斜率快于近三月（月 +7.8% vs 季 +11.4%），趋势在加速
 - **波动**：日均真实波幅约为价格的 2.3%；按本报告 2 ATR 的止损惯例，一个 R 相当于 4.6% 的价格距离
 - **位置**：距 52 周高点 +0.0%，距 52 周低点 +44.6%
-- **量能**：最新一日成交量为 20 日均量的 0.9 倍，量能正常
+- **量能**：最新一日成交量为 20 日均量的 1.2 倍，量能正常
 - **相对强度**：近一月跑赢 标普500 5.9 个百分点
 - **支撑 / 阻力**：最近的摆动低点 257.87，摆动高点 —（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
 
@@ -110,7 +110,22 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
+| 时间 | 材料度 | 倾向 | 标题 | 来源 |
+|---|---:|---|---|---|
+| 23h 前 | 9 | 中性 | [AbbVie releases phase 3 induction therapy data on injectable Skyrizi for Crohn's - Seeking Alpha](https://news.google.com/rss/articles/CBMirwFBVV95cUxNczlJVEtzc3E1Qm1ubTMwamhhUGpIRnJGY3FPdFRscWp5dHkyMHlHckVNRmU1MElZUzVqQVNBOWIwUlpzTUU1cV96YmtGakhqdGp6ejF1TTc5V0ZmcjJ5dXROVjFlcGtYOFBZRWtZTTdTOHQxWjVqeUJ2MGdsNko5aFFROE00WGcxeFg3azQ2OHFRYWlOZHpoYWN2Vkx5UHVlQ3R4WlZIbVB6dUNqS29J?oc=5) | Seeking Alpha |
+| 29h 前 | 8 | 偏多 | [AbbVie Poised for Q3 Top-Line Beat Driven by Rinvoq, Skyrizi, and Vraylar Therapies, RBC Says - Yahoo Finance](https://news.google.com/rss/articles/CBMijwFBVV95cUxQMFZXTjVkR3MxdzdVUTdfdWU2aDJZOFpIS2J0emtPaFoxR1FLZXMzYzdOMGZacEkyS1RNSzRJcC1pb3YwY1JqUUpZTHFwRXJUdWhFNGwxSEZPaDY4bVI1eFJNOGU3U1ltMERnZUdJeC0wQThIdGkyV2N6a3dMSDhHcTFCTnBBYm02UEtzU1JDZw?oc=5) | Yahoo Finance |
+| 15h 前 | 5 | 中性 | [What Does AbbVie's (NYSE:ABBV) Drug-Pricing Deal Mean for the Stock? - Kalkine Media](https://news.google.com/rss/articles/CBMirgFBVV95cUxOQjE1YTlUWmg4RFQxcWlEYl84cDhjdXJlZi0tc05rTW9pS0NzZzFnMDZPMVVUSlRqSG4wT3Q5eHR1OGtnc0xjOVRLNlQtWFFXQkJJZVk2UnpSNFFYN3JCZ1daOU16d1cyYjBiWkZacENXN21LTjlLQkpQSDNuR205ck1NdFpnbDdlOGV1MUFFQjdsNWdac0pTN1JYZEJGMzI0eDhkemZMdHlDUjUxekE?oc=5) | Kalkine Media |
+| 3h 前 | 0 | 偏多 | [Lilly, Merck, AbbVie Stocks Surge. Why Healthcare Is Rallying Today. - Barron's](https://news.google.com/rss/articles/CBMiigFBVV95cUxQanl3UmdlVjVnVTd2dVk3T1VwXzVoMHlBMGVtQnlEejh4dVBfQ1ZJR3FkcWE3eVIzalZkNGwtTkxSOHM5TUI2dlBkaTF5aUR4ODhaOFFnamFRdkpfNnpIWGgteDdaRHNqdlhDM0VOaHlzdlg4SmhEdVc5LTZna2VsQkp3VDRHdFZaRWc?oc=5) | Barron's |
+| 6h 前 | 0 | 中性 | [AbbVie Inc Stock (ABBV) Moved Up by 3.36% on Oct 14: A Full Analysis - TradingKey](https://news.google.com/rss/articles/CBMiiwFBVV95cUxOWU1seXdHaE5EUVZEZUVqRDZ4c2lmU3dGdEFzLWRZNWNVZ0VOdTZMQ3hxZEd4dXlCVGk4Wk11ZXhvdkZSdFRQcy14aGt6WGNhb2FXMVV0M0RVQmxFQm1FemQtclZBRHE5M2ZiUGhEblRVaU96d3J1SHZqOVRveHZUX3Q1allORThzeXRN?oc=5) | TradingKey |
+| 6h 前 | 0 | 中性 | [AbbVie stock hits all-time high at 283.44 USD - Investing.com](https://news.google.com/rss/articles/CBMiogFBVV95cUxNdExkN3JGRmRlQ0ZhYjlTcUFyOU5WLWw1dnJvX0E5ckJudTh6ZWV0RFVqME84NWcxczBYMHhvZnFQSlFaaWVfOTNMcDFEelBTU29UYnhfenlKajZQcjhnZ2NOOVpzWGhrMHlvX3hRZm41SE9tUTZjbC1ZbUFybjZCVjBlX1BLZWE5MkczRFlrV0tPazFWbDM5NFptSUU2Vk02VEE?oc=5) | Investing.com |
+| 6h 前 | 0 | 中性 | [Which Pharma Stock Looks More Attractive: Sanofi or AbbVie? - Yahoo Finance](https://news.google.com/rss/articles/CBMimwFBVV95cUxOaUJDQklEVlNjZFRaM05Jb0RlMGlESzZLYl9FN0hyNmpEZ1RIbzZuRXV2UzQyQjZOcUlrcDhOb0JpTEhveGp6NUVERC1JaGJRODFaWTlfaHBXVUFXM3cyZW45Tmp2QUFPbXkwcXJwdTFjMFN3cE9WS3NSWVZRR1Z0ZTFrSXNOLUxkbW1ncXFFdFMtdXE3M05yaDdGTQ?oc=5) | Yahoo Finance |
+| 9h 前 | 0 | 中性 | [AbbVie Inc. (ABBV) is Attracting Investor Attention: Here is What You Should Know - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMijAFBVV95cUxOS0QzSW14enZZMnhldjRwZnRubzM1RXRDRVJxQWZzS2NPZDVoRldsQU5JTzd0d0I1SDZlV2owQTZFbHVSUWtVTWJpMUVoY2hIUk1BZTBRUUZBMy1xQ1J3aTRYZmt6SWNvaWlWdnM5Q0IyWUloWUFNbTNiVWI3dUNLVTZGejlYcG5PdkJXbg?oc=5) | Yahoo! Finance Canada |
+| 11h 前 | 0 | 中性 | [1 S&P 500 Stock with Competitive Advantages and 2 We Brush Off - StockStory](https://news.google.com/rss/articles/CBMixAFBVV95cUxPbkEzQmZnZTBYM0pVWFhqXzF5cy1tNDlSRGpyb3pNM1VVSUliZmpIMmZCYlJhMjVuZl91V2xXcEthdlRyQm42ZW04MFBLYlU3UmF5WW51dnVzeWYwM2hsMEdLR0JtYlRLZGhUSVRYWlRxeGw0c1Q2REdRbmk4UkdoakR3b0tsZjl1NjNWMERtdHM0aGU3YTZpREt5clRHc09ROVB2N1YtQXMwNmNzR09TdVRlaEkyR0lINVNJMWpPckdvVWJu?oc=5) | StockStory |
+| 22h 前 | 0 | 中性 | [AbbVie Tokenized Stock price today, ABBVX to USD chart, marketcap and volume - CryptoSlate](https://news.google.com/rss/articles/CBMiY0FVX3lxTE5ONTZ2RVdUU2ZKVS1Td1Q3eDBNTDB1clFSUEZlMTRUSzBmRHlvQkZDT2lpVzdJMGNfZXFSTXhmZGZXSDdXb0JuajF6U3ZGZVgyWUlCN2htVXY3dlRaZlpBa0oyQQ?oc=5) | CryptoSlate |
+| 23h 前 | 0 | 中性 | [AbbVie vs. Novo Nordisk: Which Healthcare Stock Is a Better Buy in 2026? - The Motley Fool](https://news.google.com/rss/articles/CBMivwFBVV95cUxQTG42WUoweGQ3Y3MxQmxueGlBSHd2YzFlenVnckdXckVJcDhmTmZkUjBfRlRNQmxYRHhMZlpIQi1xR3daY2JrRGI4SmdxU2ZaRVNFNmR1TGdZVUgtN3RzTkc2cjlDN0V5cTNJem1OT2l1eEp0U2NqRG5RdXpUSXFKWnI3RDNqODZwb0VBeUNMNjN6UlVkX2xyamFRVzlmeUxSQkJyazFEc0g4ZVZkUVFiZUFCMklhUEYxSjZJQmJUaw?oc=5) | The Motley Fool |
+| 26h 前 | 0 | 中性 | [By week 12, 27.7% of Crohn’s patients taking AbbVie’s SKYRIZI had little to no gut inflammation, vs. 10.2% on placebo. - Stock Titan](https://news.google.com/rss/articles/CBMitwFBVV95cUxNWG5tZ0R3cDhFQy1MdnltTmdScnFCR21lX3NSdEpWVGE2V0lFQUtncnJSU2RvWXhDSS1VUG84cFBMU2JPell0T3JzTzRmT3hyRGxzWEgybm1ZV3pXSjNsVURzdnJUQWNsdEVuWUxfT1NBVHZ4bkMySjdxeTVnYWZjNUZ6UExQQjBoSVV3QWN5RWd3eEtBaWpfbGRtV0s3eG1qTmN1Mm1hWEVhTzVicVNMZ2M5NVE1OEU?oc=5) | Stock Titan |
+
+_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
 ## 五、反方观点与风险
 
@@ -140,7 +155,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-09 | 271.53 | 277.60 | 270.38 | **276.47** | +1.5% | 4,297,400 |
 | 2026-10-12 | 277.65 | 281.30 | 276.01 | **281.12** | +1.7% | 5,593,700 |
 | 2026-10-13 | 283.29 | 283.43 | 273.70 | **274.36** | -2.4% | 6,408,500 |
-| 2026-10-14 | 277.00 | 285.40 | 275.97 | **283.48** | +3.3% | 4,198,853 |
+| 2026-10-14 | 277.00 | 285.40 | 275.97 | **283.48** | +3.3% | 5,583,103 |
 
 ## 七、自己去查（本页不做独立验证）
 

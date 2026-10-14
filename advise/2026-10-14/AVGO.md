@@ -110,13 +110,29 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
+| 时间 | 材料度 | 倾向 | 标题 | 来源 |
+|---|---:|---|---|---|
+| 3h 前 | 8 | 中性 | [Broadcom Inc. $AVGO Stake Increased by N10 Assets LLC - MarketBeat](https://news.google.com/rss/articles/CBMisgFBVV95cUxQX1lvSktRdW5jVEM4dUxsc1l0NVJpeWVxdHFMTkt1WXJvZUlkSVFoMUhYQU9IbHA0dEZTY1B2cHhfQ0tqNy15UVJrRlNjNS1UQU5Xd2ZIWTB3amgyMVlKNWpMSnVjdDMtZFVucmNaZzBLSllxLWdLSEQtZ2ZEY1l1SFlIYWo2aUl0TklRNlJoZHNuZ3lhVDUtc2Y4X0ktS2VTN0VxaHYwenB0SDFINmJsazRn?oc=5) | MarketBeat |
+| 10h 前 | 8 | 中性 | [Broadcom Inc. $AVGO Stock Holdings Increased by First Citizens Bank & Trust Co. - MarketBeat](https://news.google.com/rss/articles/CBMi0AFBVV95cUxQY185eXhxT284WVFOdHZrMVVVSmQzYkprSFZsOWpsVVlQaFFfdUxra21ISU5NM2dIemhncVhyaHQwS0lfN3pGVXRBV0JKbXU0Q0dGNEZRNUZtWHRVc01zUDF4TjVBaXpyd2RBMnYwY0phSlFCekdZZlFseFE5NXhrZkNkemlzRHZFcmpCU2tzOXlOM3NPS19RTzIxazl3VkZLT1BNU184UmsyRXhLczJwblBUNS1GLVNtcVBfcnhHTTAtbFVTZXR0d1ZMMHROb1lt?oc=5) | MarketBeat |
+| 12h 前 | 8 | 中性 | [Rep. Gilbert Ray Cisneros, Jr. Sells Off Shares of Broadcom Inc. (NASDAQ:AVGO) - MarketBeat](https://news.google.com/rss/articles/CBMi0AFBVV95cUxOVE4td1BhVVFpeEM4RWRjemtzM1JsWnFjcHBFT3JzRU1aRW5udVhnRUMyQTdNa1BVVFNYdDl2YXNtMjUtc0FGbERmWGh3Z2tfUzczY2p2dnVlMFdRWi1KNC1jcUMwUGR0bHVxaFhJU2x1WGl5SkdXOUNYcllyZjhtbHdQdTlwQTZMTndsVGdEeXJpZjhFbUJVYW5LSW56cU9WOEdPWFR6YndjQzdFZV9sb0otUjBCb1phR1dWR2ZRbklibVZ2Y1Y2TEFNLVJrM0wt?oc=5) | MarketBeat |
+| 14h 前 | 8 | 中性 | [Broadcom Inc. $AVGO Stock Bought by Copeland Capital Management LLC - MarketBeat](https://news.google.com/rss/articles/CBMixAFBVV95cUxNQ1BIR3VFdW8tNDBSQlluRGlsUHBTMmFhYkZCQUkxYlJiWkpKNUZfUHVmQ0pJZHlZSnM3YV9uRUxfZlRYVmpRRnV1b0RYU2RWTk9RZGNnVWxTbUdFMWhhTU9IMTVROFM2OGJvcmVqMXBNNmJPT1BlV2RqYm0yX1FUZjBxLS0wVTRMX0NwZFdkSnd1VVlDd2xTbjdqTllaVGFmdkRZSFVOQmQ4ekJFYlg2eUxUSGJlV2hMcUxuZF9MTndhcFk4?oc=5) | MarketBeat |
+| 22h 前 | 8 | 中性 | [Broadcom Inc. $AVGO Stock: Montrusco Bolton Investments Inc. Trims Holdings - MarketBeat](https://news.google.com/rss/articles/CBMizAFBVV95cUxPc09lSlBtdHVPaEpnaHdIUEVxcWNwejRwWFhQT2NGaG5QZ0lWT3JnbXBqNFBwQWhCUFUxekZ4R1Z4WVRpNXdwU2lGOGF2TDV6RFp0RFF4b2tGSWhKVDlBS2NpdV9Yb2xVY3drVG4yelBPRURLYmdGLXFqSUN6Um9PU0VwZmZ0dmg0eVRNcWF2U001Q3dCWE1mVHJ3U0Nnb194cGt0eDNSelVKQkRVRUdtTkNHTnpiUnZOSlBJWmhxcWY0OUFVdnFzOHV6LXI?oc=5) | MarketBeat |
+| 22h 前 | 8 | 中性 | [Broadcom Inc. $AVGO Stock Bought by Courier Capital LLC - MarketBeat](https://news.google.com/rss/articles/CBMitAFBVV95cUxORTJmdlZJVlYzNlZubVlvcFdTcWpzUGJmUnA1dVh4REdaVGdpRHBYeV9pdWpSYnNvY0JncU0xNXppaWdFYVBaTGxBa0ducVNvcGhMTDBxYmFDN3hLYXlmc1RlOWNuTW96Z1B1VUMteXZrNTFSekgyMnJ0aGtYQW4tTXEwZ2ViaW1lUUJQVFVOaDNVMXF6SEJkWE56c0dSc29KZlo1d3ZHLWdXOTdBQktERmpFMGE?oc=5) | MarketBeat |
+| 33h 前 | 7 | 中性 | [Broadcom’s CEO Just Compared AI Investors to Gamblers - Yahoo Finance](https://news.google.com/rss/articles/CBMimgFBVV95cUxNclBQZ2ZvM1ZvUXAtZ08wZG16dVhkZEpXM1p6TTFxX2dVbkRNUHlmclZGT3VfNUpxcUlrYTdFQ3I2OXpMb01OLWNoUkpBMkJPSWs1NndRNUtnUFRvSk1heHJxTjJYaTgzeWhRZ2pQM1NuM1dIV1RkVnUtbDNsQ3AtRktqNHBVRDlnZllwSUxia2FIeVMzY1Z2cmFn?oc=5) | Yahoo Finance |
+| 3h 前 | 2 | 中性 | [7,347 Broadcom Inc. $AVGO Shares Sold by Thurston Springer Miller Herd & Titak Inc. - MarketBeat](https://news.google.com/rss/articles/CBMi1AFBVV95cUxNb1VjeFhQN2ptMFVUUW1xMEVOUm5iTzdFdlNiYkRZdFh1S0x3WHpnQk13bjQtcUtIcHd0TElyU2FpY3ROT1hISW5GS0FOX1ExRDR0VzU2OXQxSnE1cGIyX3kwa3BuM2cwMU41OWNkb0xjendUcjQzRWp1dnh4NDhWR25DWEFRTjlYUWczQmdFbXRXZGRDVmwtNTdYVzY4NHdyUWVMcXhncHk3Ti1UcnBuMksybGJPR2h4MzF3dk5RVUgybUFRNzVORGxHUEd3YndIMWFDaw?oc=5) | MarketBeat |
+| 4h 前 | 2 | 中性 | [22,269 Broadcom Inc. $AVGO Shares Acquired by Generate Investment Management Ltd - MarketBeat](https://news.google.com/rss/articles/CBMi1AFBVV95cUxPYWpOUkxoZDVVTk56eXdlT2hLYnpVR3ZvLXhfajluM1dsSXF1YnBhcVVURWZDdlQteWhhRmxldkpfaVlGWTJnamJraEEzSUxFb1FzRTd5UXoyT2tYdkFLV0dCXzBCY1pITHZXbExVYjg3RFJKWC16Vk1pRkJDM3dpcDlaYXQ0SGlzaEswQkFfWkVXU1RXczdvUE9jUU5YX1MtR25KNDFOeVo1VHhsTWRudGVDOERuaXU0RHpuclFORjdfU3dqdC1CcnV0aFNudU9oZlRuNw?oc=5) | MarketBeat |
+| 10h 前 | 2 | 中性 | [2,119 Broadcom Inc. $AVGO Shares Bought by Focus Financial Network Inc. - MarketBeat](https://news.google.com/rss/articles/CBMixwFBVV95cUxQVGMzZmdjVXA3a2dNOVloSngwaUFQV0RMdm1PT1kyVC0xNFNjXzlRSnpTYS1oTnl5MDJlVDdjSWk3dHp3Nm14OTdoNkJJX3o3T2VoRGZRS3BrS0tWcFlRM01sbHN4TEdVaHJpSWJlNjJhWmlmMGxjNkhoYTRfMVlROFZ0ZWVqREd1aW5NZGtvV0gxS3JqRFFaNlIzbDZqQWsxM3lQdXVoSC1sdTNveUtPVHRjc3dVM05ZMUZuemE1ZzBtNmkzM193?oc=5) | MarketBeat |
+| 10h 前 | 2 | 中性 | [KMG Fiduciary Partners LLC Sells 1,629 Shares of Broadcom Inc. $AVGO - MarketBeat](https://news.google.com/rss/articles/CBMixAFBVV95cUxQN0RraDhHRTduWURjbmRnTmJjaWFUNkhFNGFjQkFtQ3AwM3FRUlgtWnludC1hbXlkVXdsTEdPS0JwOXRkRFNUQ3dZWm5wdEYwUjJhUi0ySW9oQ1o0S1Q3bUJlelJpdjY0Rk5NRlJDaExUbFNaVnZkUUpkVzFjZjczNkRoa1JySWtwNzFOVW1GUkR0eFRLWEJYSTFZU003dUpvZU14eldGSFN2UkxGTnFpZDNFdUNnZVhsWXFPVVpMdjVzOHJq?oc=5) | MarketBeat |
+| 10h 前 | 2 | 中性 | [Liberty Atlantic Advisors LLC Purchases 1,463 Shares of Broadcom Inc. $AVGO - MarketBeat](https://news.google.com/rss/articles/CBMizgFBVV95cUxNZ19rVXV4TVNJOVRIa3ZtTXdCN1oyT21BWWJsUlZiZXBRRlVwMDFnYlc4TTFrVWRveExiREJwMWpuWktnYmhRS1lqQlMtYVlMc3RweUNZLUxJcjc3cTZtZ2tHbmxieGdOQ1ZPSm9CRHFOcEVva2RZdzZENzRsQVlYOVNWVjNKeGFZOWNGeVNYMG5iSWU5ZWRiZFZrLUNFby1GN3dDaXFWdkgyRkd2WlJLd3c4SHJITTdzckpYUGYzX3JISVV1MmZJbjFmU3R0UQ?oc=5) | MarketBeat |
+
+_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
 ## 五、反方观点与风险
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
 - 图形上是跌破 200 日线——现价距 20 日 356.92（-3.0%）、50 日 368.60（-6.1%）、200 日 367.17（-5.7%）。本报告的买入规则本身会过滤掉这种形态。
+- 政策面对该板块的倾向为 -0.43（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
