@@ -2661,5 +2661,177 @@
    }
   ],
   "error": ""
+ },
+ "XOM": {
+  "symbol": "XOM",
+  "fetched_at": 1792097511.9884193,
+  "name": "ExxonMobil Holdings Corporation",
+  "sector": "Energy",
+  "industry": "Oil & Gas Integrated",
+  "website": "https://corporate.exxonmobil.com",
+  "market_cap": 718268727296.0,
+  "pe_trailing": 22.111391,
+  "pe_forward": 15.054779,
+  "ps": 1.9893334,
+  "ev_ebitda": 11.28,
+  "peg": 1.53,
+  "eps_trailing": 7.9,
+  "eps_forward": 11.60296,
+  "dividend_yield": 0.023049546,
+  "beta": 0.209,
+  "revenue_ttm": 361060007936.0,
+  "revenue_growth": 0.441,
+  "earnings_growth": 1.128,
+  "gross_margin": 0.29767,
+  "operating_margin": 0.15859,
+  "profit_margin": 0.09072,
+  "roe": 0.12584,
+  "debt_to_equity": 15.921,
+  "current_ratio": 1.135,
+  "total_cash": 10588000256.0,
+  "total_debt": 42368000000.0,
+  "free_cashflow": 20671000576.0,
+  "target_mean": 174.0,
+  "target_high": 200.0,
+  "target_low": 142.0,
+  "rating_mean": 2.4,
+  "analysts": 22.0,
+  "short_pct_float": 0.0107,
+  "held_institutions": 0.67176,
+  "quarters": [
+   {
+    "label": "2026-06-30",
+    "revenue": 114529000000.0,
+    "gross": 25789000000.0,
+    "operating": 18195000000.0,
+    "net": 14525000000.0,
+    "eps": 3.48
+   },
+   {
+    "label": "2026-03-31",
+    "revenue": 83161000000.0,
+    "gross": 13893000000.0,
+    "operating": 5347000000.0,
+    "net": 4183000000.0,
+    "eps": 1.0
+   },
+   {
+    "label": "2025-12-31",
+    "revenue": 80039000000.0,
+    "gross": 15974000000.0,
+    "operating": 6003000000.0,
+    "net": 6501000000.0,
+    "eps": 1.53
+   },
+   {
+    "label": "2025-09-30",
+    "revenue": 83331000000.0,
+    "gross": 18834000000.0,
+    "operating": 9178000000.0,
+    "net": 7548000000.0,
+    "eps": 1.76
+   },
+   {
+    "label": "2025-06-30",
+    "revenue": 79477000000.0,
+    "gross": 17947000000.0,
+    "operating": 8911000000.0,
+    "net": 7082000000.0,
+    "eps": 1.64
+   },
+   {
+    "label": "2025-03-31",
+    "revenue": NaN,
+    "gross": NaN,
+    "operating": NaN,
+    "net": NaN,
+    "eps": NaN
+   }
+  ],
+  "years": [
+   {
+    "label": "2025-12-31",
+    "revenue": 323905000000.0,
+    "gross": 71240000000.0,
+    "operating": 33938000000.0,
+    "net": 28844000000.0,
+    "eps": 6.7
+   },
+   {
+    "label": "2024-12-31",
+    "revenue": 339247000000.0,
+    "gross": 76742000000.0,
+    "operating": 39652000000.0,
+    "net": 33680000000.0,
+    "eps": 7.84
+   },
+   {
+    "label": "2023-12-31",
+    "revenue": 334697000000.0,
+    "gross": 84142000000.0,
+    "operating": 44461000000.0,
+    "net": 36010000000.0,
+    "eps": 8.89
+   },
+   {
+    "label": "2022-12-31",
+    "revenue": 398675000000.0,
+    "gross": 103067000000.0,
+    "operating": 64028000000.0,
+    "net": 55740000000.0,
+    "eps": 13.26
+   }
+  ],
+  "surprises": [
+   {
+    "when": "2026-10-30",
+    "estimate": 3.77,
+    "actual": NaN,
+    "surprise_pct": NaN
+   },
+   {
+    "when": "2026-07-31",
+    "estimate": 3.63,
+    "actual": 4.11,
+    "surprise_pct": 0.1326
+   },
+   {
+    "when": "2026-05-01",
+    "estimate": 1.01,
+    "actual": 1.16,
+    "surprise_pct": 0.1514
+   },
+   {
+    "when": "2026-01-30",
+    "estimate": 1.69,
+    "actual": 1.71,
+    "surprise_pct": 0.011200000000000002
+   },
+   {
+    "when": "2025-10-31",
+    "estimate": 1.82,
+    "actual": 1.88,
+    "surprise_pct": 0.030299999999999997
+   },
+   {
+    "when": "2025-08-01",
+    "estimate": 1.56,
+    "actual": 1.64,
+    "surprise_pct": 0.0493
+   },
+   {
+    "when": "2025-05-02",
+    "estimate": 1.74,
+    "actual": 1.76,
+    "surprise_pct": 0.0116
+   },
+   {
+    "when": "2025-01-31",
+    "estimate": 1.55,
+    "actual": 1.67,
+    "surprise_pct": 0.0787
+   }
+  ],
+  "error": ""
  }
 }

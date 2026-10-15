@@ -112,18 +112,8 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 2h 前 | 0 | 中性 | [Should You Buy The Dip In Marvell Stock? - Yahoo Finance](https://news.google.com/rss/articles/CBMijwFBVV95cUxOcjhpSjd5STBOMGxhdUlUN0NxQ0hneFlxaGp4TENPZE1lbXh4aXlzT0hyUzAxQ1BEM24zaVpTMzJsZy12aWdQaVhGeW9xaG5DemY5TFZzRVNjLVBBWV9xRTBjTDdJUUJZTVhOVDF3Ujh6SEI5ODR5VTZKbXZqTmIxcXlSS0M4X0NMSjVfYlIyaw?oc=5) | Yahoo Finance |
-| 4h 前 | 0 | 中性 | [Fantastic News for Marvell Stock Investors - The Motley Fool](https://news.google.com/rss/articles/CBMijgFBVV95cUxNS01RNnVrSk50dDNXVVg1NEdrandsblN5NVZMSUExX0d6UHlNUWlKeHJjQS1FbXY5VVdyUVVLdElfNXB3N1UxMmU4R2VPTHFtNm9SQzM1eFoya1h2emVTaDVwbjRNRHdjakhRQ2oxVGM4cC1oM0Q1TGZUa1JlOHIyR3l6c1FwNjA2ZE5HeFlB?oc=5) | The Motley Fool |
-| 4h 前 | 0 | 中性 | [Marvell Stock: A Brutal Selloff, An Even Bigger Opportunity (NASDAQ:MRVL) - Seeking Alpha](https://news.google.com/rss/articles/CBMinwFBVV95cUxOdUs4amZta01kRXJ0NGVabEhHSm9VMHVFYWQwREZ4ZzJRa1dKRUxMcmRzRkI5eVczdGJ3eTFWV0JMbDdvRjR2aTdlRGR5U3MtOEU1cHVqblJzUFowWjFOWmQtcnRjMlZDZW1XUnJoTkdBd0dLWTFRY01JR3d2WXJhcmVRdGVVV2RQR0JpMkprNEZUS0tGSTVjOWhjbDhBZEE?oc=5) | Seeking Alpha |
-| 4h 前 | 0 | 中性 | [Marvell Technology Inc Stock (MRVL) Moved Down by 3.39% on Oct 15: What Investors Need To Know - TradingKey](https://news.google.com/rss/articles/CBMiiwFBVV95cUxPMHhERkxEZlRNcGFMMWw0QzJrTUtlNEhudXFLVkNDelVrb29HcDJ2MGFKaGRGTDBQY2Q2MjlDeF94b3RyN3BVVU1JWnZCSS1KSHZMRTF5X2FITzdybEY0M1pvcWk4ZWdWaHlCNTlWUUVmQlVwUXNBSmp6NjQ3QTRmOU94WGRyVEdQRmNr?oc=5) | TradingKey |
-| 5h 前 | 0 | 中性 | [Better Artificial Intelligence Stock for 2026: Astera Labs vs. Marvell Technology - The Motley Fool](https://news.google.com/rss/articles/CBMizAFBVV95cUxOZ09YdXhZODVVRHVSNW90UVFTM2hndHJDdXg0aVo0bE9QdXYzRktxYUxZOEVTZWRuQzJrX2I3cHdNcnJOZUo3TVBaYmRBaEpJNWwyNTBwbmhld2xLQlRNdEtlU3d5SXJfRkM1MEdRVTlTRFRicXA3bm4tX1hoaHZCdm1vd2VCcWljcGh1V2NyQlFweEpRYTE0WVZZMXM4Vk9OMXRsY0R2WW1BcTBwbUhmRFFhNWZWb2dFQ2w4ZUpkUlpad3QyVllLcGZKQUE?oc=5) | The Motley Fool |
-| 5h 前 | 0 | 中性 | [Why is Marvell Technology stock sliding today? By Investing.com - Investing.com South Africa](https://news.google.com/rss/articles/CBMiqgFBVV95cUxNRGdHcjdKMEp4VWZFOVZhY2pjc1FXdk9BZUNCNGxFaDAxcDZlT1RTODFYeEUyRnlNRGpjNmpIRzhITFJvR1ZBSWt5N21taEdaRjNRSVJYbXRYTGlHQVJMRE1PNF9ycU1sT0g5d0NMY1JPY0JDdWstT1ZkWmE2V2dTM0dWN0lSc0hidWpjMHNpMmFLUHZZQ2tsV0ExNl9ob3JZbi1JMFpLSFN1dw?oc=5) | Investing.com South Africa |
-| 11h 前 | 0 | 中性 | [Marvell bolsters connectivity: Marvell Technology stock is valued at USD 214.8 billion - ad-hoc-news.de](https://news.google.com/rss/articles/CBMi4gFBVV95cUxPTGlZNkpOZFc3cW5sQ3dTS3dxSS14ZEJ2X2hhaGk1OExyazhDbG9Qd3RvMm12bmRVWUF6emRBcnREcVI1dDN6bS1KcWVUeUxfM0pIQjNQOXBKb21GMnlUajVpcE84Q2tWNTNnQXJCZDdlY0VuZ2tQTVZRd1BFam9MdzdXQTRsSUI4ZVFEQUE2QjVtUlBJaElBSWR0b0xYd3ZNaG1sZUZVeVpKSDVsQmVDU0dlTlhsclZPaTVfUWhCVExlMlE2X0dlQVlYTzNjUWFTY0J3YWZnc1FDX29EOEZUOVNB?oc=5) | ad-hoc-news.de |
-| 17h 前 | 0 | 中性 | [Marvell Technology And 2 Other High Growth Stocks To Own - Simply Wall Street](https://news.google.com/rss/articles/CBMi1gFBVV95cUxQWTRESXppTzRaaTJaV05kdFdMV3Y4dTUxNlBSNE80UjY0RDFMQUpyaTZZSXFXOE5KajZnSzY4UW5PRUkyR3h2Rzhxa3ZzeEFkOVM0a0NCb2lSeVY5VlBkRVhzZkNfTVRWQTFfUDVhcm5FV2hHdFVnS3hJTHRqOC1VQTNvWTA3TWEyR3l0VFFxNkNINDNxeXRVaVlGU0cyOHZqVzVXckpPVGpwLUdRdW9qRVlDazk1UmM0ZWE5dHZqbC1DUmZnZ1VZMFdLbkotYjZOWml4V0RB0gHbAUFVX3lxTE1aNGNhRlJsWGVSNkJFRXpTZm5JdldJY2ZwbzNDcjhMSmtlbjNXRmhEVGZ4c3RVTmxEWjhHUVU1SHJDZ2hURHhueGhrRmVTZDRIbWFYNXAyQ1p5UjRRRi1nZTdVUUVUQjlBX2dqQ0g3ZzQ4blZ1d05qd0VDSjM5QVg5NVJ1QndJeF9vMFQ1dDJUaHM5c3dmMnl3T2R3dnlCalNjRk9MNEpCVHJBbDVuRjY0VFZ1eFgtbUlORm5zRmI2dzJoNDlvVEdtVVpNcHMyUmlyZUhGdTRhYkFIbw?oc=5) | Simply Wall Street |
-| 22h 前 | 0 | 中性 | [Broadcom vs. Marvell Technology: Which Technology Stock Is a Better Buy in 2026? - Yahoo Finance](https://news.google.com/rss/articles/CBMiqgFBVV95cUxNY3dpekJ0d1pWRHhsc1dacHV6dHVDUm5BWVNiVi1HTGNQSFNoQ0U5cTJFT2k2Vl9TbVZvNFAtQmc1cC1YczBpRnJ5NEowUHlpMDB1VEtxQ19pX3pFX3NLUkJOMnRMRTFQamJaeUVDLVNVNTd1ZW5zSExNZ2pXcTBMd2cyRWJ5OHdnV1FYNDh2dHRpMTFIUHR2Z0RCbE14NHROdXlSd0s4el9Vdw?oc=5) | Yahoo Finance |
-| 24h 前 | 0 | 中性 | [Why Marvell Technology (MRVL) Dipped More Than Broader Market Today - Yahoo Finance](https://news.google.com/rss/articles/CBMioAFBVV95cUxObTZOajBOaEliT3lhRjVHREw1X0QwaXZ1WTBpZ0lRVkh0YWNhdHViUGEzb21SRGIzZlZvRWp0NEhwaHpzckh2aGcyb1FWd0lVakhWSWx5SUczU0tadFFXb3l1Ml9acnNjMEZrZmVkOXdHb0U1c25SdjZwRGtJdnNLX3ZUTHV0bURQY2lnb0hEQnB5ZkMxdWNBZlRiQXVJZ2lJ?oc=5) | Yahoo Finance |
-| 28h 前 | 0 | 中性 | [Marvell's New $18 Billion Revenue Target Could be a Game-Changer - The Motley Fool](https://news.google.com/rss/articles/CBMilwFBVV95cUxOSUx0cGItN2dtTU1VQVpIYnRYSkRrVmkxOGpNakxZZGx1SThEQUFtWUt1bHBRdzFidnh5d2RBbzB5djlzdmZSNkV3LU1BYlJKaFlRZE12RURWNmJWYko5WThHMTFmOXoyMHRTMEtRTXJoLW96UmJPdGJCVUJVOVMxWnBKRVRnZFlDLXdHMjEzbk91TVByVXBn?oc=5) | The Motley Fool |
-| 30h 前 | 0 | 中性 | [Not Nvidia. Not Micron. This Under-the-Radar Artificial Intelligence (AI) Chip Stock Could Be the Biggest Winner in 2027. - Yahoo Finance](https://news.google.com/rss/articles/CBMilgFBVV95cUxPM0JkOHdqTS1DWXVSU1RLWlhvQ0t1MkczQ3FYRmdnNlFNRUZlM3haSUljU2dVeW1yOVJla3FLNjJnMjEyb0JWaENCWVBSbkZnV3FubUZ3ZmNyWDhQRmJLa2V1UEUzV2FTbkNYV0EwaWhQODhEdEVuc2tCdUNlTzdDVm1ZUDRYSV9IX3JFejREa0x2UkJHc3c?oc=5) | Yahoo Finance |
+| 8h 前 | 5 | 偏多 | [Marvell's Optical Business Could Win Long Term, But Not Yet (NASDAQ:MRVL) - Seeking Alpha](https://news.google.com/rss/articles/CBMinwFBVV95cUxNeHV3UGdtbElJNjBMajZyejkwWnBpcVlnQ1VYWXh2c2hKRWdXUl9YZ2VTdTNLcFpvYlF6dGs2NjVvNTJyTG15ck5Bc1pJNkhTT0c5NTZEckhkYlVZRTZ2RTFvTlA0X2hEV0tLWXRkeFNiNS1tbk0xVWFrcjduUElXdlM0MFZ4S1gyaF82MWd5cF9uOXZRR1cwb0hCQ0JqZDA?oc=5) | Seeking Alpha |
+| 12h 前 | 0 | 中性 | [1 Surging Stock on Our Watchlist and 2 We Find Risky - StockStory](https://news.google.com/rss/articles/CBMitAFBVV95cUxNaC1Bak1EbWZ5Uk90RFlEM1NQVE5ZbDFoajJCbUNocFRGWVRqeGQweGtFZUtKR3NCYjZma1ZFdUZubFpkYTlIWXY2Z0pJVlQ1MWxFM09Ob1RpNHJQSjkyYVVtWXBTMm0tT2VRNzgyMkh6bWdNaVpHLVVkM2YyTEhLRU1tZXh2R2lPR0lkenVYamFOUUt0XzE5Y3Brd2xuNTZnM0NaZmtNUzFza0gwYm54ajlubmM?oc=5) | StockStory |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -133,7 +123,6 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 - 日均波幅 6.8%，属于高波动：同样的仓位金额，这只股票的日常噪音就能触发大多数人的心理止损。
 - TTM 市盈率 87 倍，价格里已经计入了不少增长；增长只要减速，杀估值的幅度会大于业绩本身的降幅。
-- 政策面对该板块的倾向为 -0.97（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -155,7 +144,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-12 | 274.50 | 278.01 | 260.80 | **265.86** | -3.4% | 19,104,000 |
 | 2026-10-13 | 253.53 | 269.14 | 248.45 | **268.73** | +1.1% | 18,439,700 |
 | 2026-10-14 | 262.49 | 264.30 | 245.10 | **245.28** | -8.7% | 26,083,000 |
-| 2026-10-15 | 231.00 | 242.55 | 227.31 | **241.24** | -1.6% | 23,531,107 |
+| 2026-10-15 | 231.84 | 242.55 | 227.31 | **241.24** | -1.6% | 23,531,107 |
 
 ## 七、自己去查（本页不做独立验证）
 

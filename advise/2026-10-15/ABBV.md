@@ -54,7 +54,7 @@ _医疗 · 数据截至 2026-10-15 收盘 → 面向 2026-10-15 开盘_
 - **波动**：日均真实波幅约为价格的 2.4%；按本报告 2 ATR 的止损惯例，一个 R 相当于 4.9% 的价格距离
 - **位置**：距 52 周高点 -0.0%，距 52 周低点 +44.6%
 - **量能**：最新一日成交量为 20 日均量的 1.4 倍，量能正常
-- **相对强度**：近一月跑赢 标普500 5.3 个百分点
+- **相对强度**：近一月跑赢 标普500 5.4 个百分点
 - **支撑 / 阻力**：最近的摆动低点 257.87，摆动高点 —（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
 
 **我的读图结论**：趋势向上且结构完整，且贴近 52 周高点——追高的代价是止损离得远；顺势的一侧在上方，风险在于结构一旦破位就要认
@@ -110,15 +110,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 9h 前 | 6 | 中性 | [AbbVie Inc's Dividend Analysis - GuruFocus](https://news.google.com/rss/articles/CBMid0FVX3lxTFB3LVUzVU5vWFBySlFLUkxNWmFCZGJkdUJzRDlwV0otYnQ5Q05EQUhISGVZZzRfMnEzRWQtbGprVkNGTkZXajlMNDVDUW5FRjZodldZOVQ3MUx3Q2c5X2ZCdWw1dmxJWkRTbnRvak54WWZOSnBCVjZr?oc=5) | GuruFocus |
-| 1h 前 | 0 | 偏多 | [Healthcare Stocks Are on a Tear. Gilead and AbbVie Are Heading for Record Highs. - Barron's](https://news.google.com/rss/articles/CBMifkFVX3lxTFBqLWRTUzhPMTdma3dpODZqV2hSRFFLNXVIQWdnLS1NdWdEV2dua2dSbV9Tek5MNXVOaV9zeVNSSnQ4WUQ4RmY1YURPSXJ1QUdqVDJMemlNR1dOWGNYb0puN3Z5T2pXOERkVkwyV094blBIblhPUGxpazNuX0Z0UQ?oc=5) | Barron's |
-| 2h 前 | 0 | 中性 | [Big pharma stocks near all-time highs as tech selloff pushes investors toward safer bets - MarketWatch](https://news.google.com/rss/articles/CBMiywFBVV95cUxObnBmVV9kT1llRFJBTGk4SlprYzRGRjgzdjYwQ1lCdW1SLVpsUFJoWlVWbVBvQTQ0ZnhOLU51U29lV1BCbE5UbDhGNFAtS1NuSVRZLXA2blJsV1FBdzd4ckRzbXh6SGRUMFpDOURBVDk4R2loeUdrd0I2d3ZIOF9fQURmbTZGVE9yR2cyV3lXVnFKUklfYkhtLUh6cm16SGtBdTlCOF9CaFRZZ0hzZm1jM0tieXVpN2pOZUdCYmVCREZUNVp1ckdiZ055WQ?oc=5) | MarketWatch |
-| 6h 前 | 0 | 中性 | [AbbVie vs. Pfizer: Which Healthcare Stock Is a Better Buy in 2026? - Yahoo Finance](https://news.google.com/rss/articles/CBMimgFBVV95cUxNampadWkwRlB3YVB0X2std0k4Y0pSM2prdjFUcUN0RXg4cjNpd3NGc3NpNEgzWWpjZTRQWWRRY2NBc0ZjV211alJONE1TLUZlb216ZDh1NDhzd2llVUJ2Tk12bGpXVlQ0ektyb0g2UHc1a0YyZ1Z3QXpYa3NMSFhOb2M4bm5Hd1JKMVdUVUJiUU43R1Izc0tFdlln?oc=5) | Yahoo Finance |
-| 11h 前 | 0 | 中性 | [AbbVie presented new SKYRIZI data: what it means for AbbVie stock - ad-hoc-news.de](https://news.google.com/rss/articles/CBMixgFBVV95cUxNUUh6cm9SOTlUSUl0anhEakhsZzlSR1ZxNU1OQnF6Uk5mZFB1SHNROERXUEVrcEJ0eHNueDdTX3RvdENYMnkzY21Pa0tfb0RaOE90UlJhSUxKOXAyaEFyZkt4RUE5YzQ2UWFwaXN4TlJVOWYzWENubE9RV2xFcnhBTWxEZmFlOG1SNk1UQTV2N3M3UFZfVTcxME9KSndvTnRYTXU3c1E1VDQwOV9qX1Q5R1RHMVhrTnFHVEU1Mno1ZGhEbWc5Rnc?oc=5) | ad-hoc-news.de |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
@@ -148,7 +140,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-12 | 277.65 | 281.30 | 276.01 | **281.12** | +1.7% | 5,593,700 |
 | 2026-10-13 | 283.29 | 283.43 | 273.70 | **274.36** | -2.4% | 6,408,500 |
 | 2026-10-14 | 277.00 | 285.40 | 275.97 | **283.48** | +3.3% | 5,624,300 |
-| 2026-10-15 | 288.28 | 291.33 | 282.82 | **283.38** | -0.0% | 6,728,459 |
+| 2026-10-15 | 288.28 | 291.33 | 282.82 | **283.40** | -0.0% | 6,728,459 |
 
 ## 七、自己去查（本页不做独立验证）
 

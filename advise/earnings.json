@@ -149,6 +149,16 @@
 "eps_actual": 4.6,
 "surprise_pct": 1.67,
 "error": ""
+},
+"XOM|2026-10-15": {
+"symbol": "XOM",
+"as_of": "2026-10-15",
+"next_date": "2026-10-30",
+"last_date": "2026-07-31",
+"eps_estimate": 3.63,
+"eps_actual": 4.11,
+"surprise_pct": 13.26,
+"error": ""
 }
 }
 }

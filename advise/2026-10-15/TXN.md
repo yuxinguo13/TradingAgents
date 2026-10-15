@@ -110,20 +110,13 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 7h 前 | 8 | 中性 | [TXN to Report Q3 Earnings: Should You Buy, Hold or Sell the Stock? - TradingView](https://news.google.com/rss/articles/CBMiuwFBVV95cUxNanJkZ0txV3AxWGxiX3c1WVotejJCR3VlTUhtZXRFLVpCTE42THJlZ0lHaC1xelNhYmdLaWZEaGp4UURUZXBZN1N4YkZnRzBfZlJJMmx5VFdxSmlVRnRPRWhLYmYwZHMtTENoQmROeUpaRzhUdkw1TnMxRmRBa21YTDZuWXo1T1dhbU1VeG11R095cXpETEduZER5cThnYkFsSzk3Vi12bnFTU1lBZVB4ZFBKLTZSLUUxM3p3?oc=5) | TradingView |
-| 11h 前 | 0 | 中性 | [Texas Instruments launched AI chips: Texas Instruments stock slips 1.96 percent versus Xetra close - ad-hoc-news.de](https://news.google.com/rss/articles/CBMizgFBVV95cUxNa2RUV2wyb3gyczhyNkJSd2tlZ2Y0Q1FUcHBkdjJqb0FjSWNLSGs0b3RrRjc2SnRLNFFHOVRSOEpjSllTQlhNRmZjazZxRldrRGN5ekxqdC1xaVRXb3UzY2hRcHJvM0ZZSE05aHhRc296RFc2Ul94a0pvaTZ0OE96WVBRaEMxOGNFYmNyMkNySU1uOEw5RGV1U3ctNzJwaXBXTlVOWWdyRUFxQlRzYU5fMDJTRHVOMHlMcHBmUlU0V2hGeGpjVmlISGxsQk1lQQ?oc=5) | ad-hoc-news.de |
-| 29h 前 | 0 | 中性 | [Texas Instruments (TXN) Stock Could Be 20% Overvalued As AI Data Center Push Grows - Yahoo Finance](https://news.google.com/rss/articles/CBMinwFBVV95cUxNaEFOOHRKYjRCcTlmVURpbTU3YUNkQ1FLSlZXMmUtU3lVZkZ4Q29CNnp2SW1PczNCdG9nR0ZzS0ZhVnN5MXQzQXQxZkstVEN6Q2s0RHhYYm5LUXdWWjFwcXBNUjVJdkFoazEtNUM1QnZhSFFlWU05eTNDOHVBQUZqM1h0cEpyZjcyUTBCNVoxM2E1b0xBczJ1MWVnOFJtWjg?oc=5) | Yahoo Finance |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
 - 下次财报在 6 天后，落在持有期内。财报跳空会直接穿过止损——那一晚的风险不是 1R，是没有上限的。
-- 政策面对该板块的倾向为 -0.97（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 

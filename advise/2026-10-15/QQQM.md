@@ -67,12 +67,7 @@ _读不到财务数据：该代码没有可用的财务数据（可能是 ETF、
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 2h 前 | 0 | 中性 | [Is It Really "Safe" to Invest in Tech ETFs Right Now? Here's What History Suggests. - The Motley Fool](https://news.google.com/rss/articles/CBMimAFBVV95cUxPc1hvS2FvTmJ3eEpyVWJwOHRSTWl2cWRldkNaaWFxUDE1MVp6clhZQ1FHem5pSWpFWHRnT3Zwc2l3NUlINGUwX0JCc2dWbGdHX0NIdUQ1cS00T2czTFpsd2xIYzRoQU01Z1h5RlptMU01U3FDQ0QyWTBGY2VEYTRXRHhvdVVwT0diNXZzODI5NXdVNXd6emM5Tw?oc=5) | The Motley Fool |
-| 9h 前 | 0 | 中性 | [What Invesco NASDAQ 100 ETF (QQQM) Bought: NVIDIA Leads on Oct. 13 - Yahoo Finance](https://news.google.com/rss/articles/CBMilwFBVV95cUxONDQ4eTFtTFQzbm9jUDFDMXBXdjRkQzY4U0M4VVk3WDIxSVVISFdHeTNnMzBYVVhrRmV6enFKNFA4T3B6OUFkcUNPNmNaMWJfNUdON2Q0am10RURlM1A4TzBMVGJDSW1NTkxrVWE2ZnVGWGpTYzUzdlBIMEZocEJUZGVwZFBlcWc0WlpEdTZZZnZuXzhiOEc4?oc=5) | Yahoo Finance |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
