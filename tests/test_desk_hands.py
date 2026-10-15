@@ -617,3 +617,18 @@ class TestReflection1014:
         pk = pack.Packer(broker=v, market=mkt(task="trade"), book=book, screen=screen_of(), now=MONDAY_OPEN).run()
         after = DeskBook(home / "desk" / "trade" / "book.json")
         assert "AAA" not in after.positions and not v.cancelled and any("已无此单" in w for w in pk.warnings)
+
+
+@pytest.mark.unit
+class TestReflection1015:
+    def test_a_protected_takeover_is_booked_at_the_accounts_cost(self, home):  # noqa: F811
+        """2026-09-25: takeover rows carried the price of the minute protect ran,
+        so every R on them was measured from the wrong entry."""
+        shape("HLD", 100.0, drift=0.3)
+        v = FakeVenue(acct(cash=90_000, holdings=[held("HLD", 10, 91.5, 100.0)]))
+        px = v.quote("HLD")
+        out = executor(v, home).run({"orders": [{"action": "protect", "symbol": "HLD",
+                                                  "stop": round(px * 0.95, 2), "target": round(px * 1.12, 2)}]})
+        assert out[0].ok, out[0].reason
+        p = DeskBook(home / "desk" / "trade" / "book.json").positions["HLD"]
+        assert p.entry == 91.5 and p.stop0 == p.stop and p.adopted

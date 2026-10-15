@@ -412,6 +412,11 @@ class Executor:
             return self.outcomes
         holdings = {str(h.symbol).upper(): _num(h.market_value, 0.0) for h in (account.holdings or [])}
         shares_held = {str(h.symbol).upper(): int(_num(h.quantity, 0.0)) for h in (account.holdings or [])}
+        # the account's own cost: a takeover row is booked at it, not at the
+        # price of the minute protect ran (2026-09-25 rows carried the latter;
+        # every R on them was measured from the wrong entry)
+        self._avg_cost = {str(h.symbol).upper(): _num(getattr(h, "avg_cost", float("nan")))
+                          for h in (account.holdings or [])}
         equity, last_equity = (self.broker.equity_today() if hasattr(self.broker, "equity_today")
                                else (_num(account.account_value), float("nan")))
         equity = equity if _ok(equity) else _num(account.account_value)
@@ -508,6 +513,10 @@ class Executor:
             self.book.save()
         return out
 
+    def _cost_or(self, sym: str, price: float) -> float:
+        cost = getattr(self, "_avg_cost", {}).get(sym, float("nan"))
+        return cost if _ok(cost) and cost > 0 else price
+
     def _await_fill(self, order_id: str, tries: int = 5, wait: float = 2.0) -> dict | None:
         """A few seconds for a marketable limit to fill; None if the venue cannot say."""
         if not order_id or not hasattr(self.broker, "order_fill"):
@@ -599,7 +608,7 @@ class Executor:
         out.ok, out.venue = bool(res.ok), str(res.message)
         if res.ok and not self.dry_run:
             self.book.positions[sym] = Position(
-                symbol=sym, shares=held[sym], entry=price, stop=stop, target=target,
+                symbol=sym, shares=held[sym], entry=self._cost_or(sym, price), stop=stop, target=target,
                 opened=today.isoformat(), sector=str(o.get("sector") or f.sector or ""),
                 thesis=str(o.get("thesis") or o.get("reason") or "接管账户里已有的仓位"),
                 invalidation=str(o.get("invalidation") or ""), adopted=True,
