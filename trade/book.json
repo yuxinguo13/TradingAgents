@@ -306,7 +306,7 @@
    "principles": [],
    "pnl": 156.19,
    "r": NaN,
-   "reviewed": false,
+   "reviewed": true,
    "sleeve": "core"
   },
   {
@@ -322,7 +322,7 @@
    "principles": [],
    "pnl": -2.35,
    "r": NaN,
-   "reviewed": false,
+   "reviewed": true,
    "sleeve": "core"
   },
   {
@@ -338,7 +338,7 @@
    "principles": [],
    "pnl": -49.4,
    "r": -0.43968313976772466,
-   "reviewed": false,
+   "reviewed": true,
    "sleeve": "core"
   },
   {
@@ -358,7 +358,7 @@
    ],
    "pnl": -5.16,
    "r": -0.014652014652014319,
-   "reviewed": false,
+   "reviewed": true,
    "sleeve": "aggressive"
   },
   {
