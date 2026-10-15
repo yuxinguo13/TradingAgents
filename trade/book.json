@@ -22,50 +22,6 @@
    "stop0": NaN,
    "pending": false
   },
-  "ADP": {
-   "symbol": "ADP",
-   "shares": 7,
-   "entry": 264.535,
-   "stop": 264.54,
-   "target": 282.93,
-   "opened": "2026-09-25",
-   "horizon_days": 30,
-   "sector": "",
-   "thesis": "接管：最近的摆动低点 238.87 在 10% 之外，改用 2 ATR 止损；图形偏弱，跌破即走",
-   "invalidation": "",
-   "principles": [],
-   "regime": "",
-   "parent_id": "75a846fd-e5a4-4e7e-b6d8-f0c6f7e0626b",
-   "legs": {},
-   "adopted": true,
-   "stop_raised": true,
-   "sleeve": "core",
-   "triggers": [],
-   "stop0": NaN,
-   "pending": false
-  },
-  "GOOGL": {
-   "symbol": "GOOGL",
-   "shares": 22,
-   "entry": 344.375,
-   "stop": 344.38,
-   "target": 372.0,
-   "opened": "2026-09-25",
-   "horizon_days": 30,
-   "sector": "",
-   "thesis": "接管：结构震荡，止损放在摆动低点 340.66 与 200 日线 337.66 之下 1.05 ATR；趋势外推给不出目标，目标取 +8%",
-   "invalidation": "",
-   "principles": [],
-   "regime": "",
-   "parent_id": "2bdfbbfe-5ca5-4a21-b2ec-ef572af18a58",
-   "legs": {},
-   "adopted": true,
-   "stop_raised": true,
-   "sleeve": "core",
-   "triggers": [],
-   "stop0": NaN,
-   "pending": false
-  },
   "MSFT": {
    "symbol": "MSFT",
    "shares": 10,
@@ -85,126 +41,6 @@
    "stop_raised": true,
    "sleeve": "core",
    "triggers": [],
-   "stop0": NaN,
-   "pending": false
-  },
-  "SPY": {
-   "symbol": "SPY",
-   "shares": 9,
-   "entry": 770.485,
-   "stop": 758.0,
-   "target": 793.98,
-   "opened": "2026-09-25",
-   "horizon_days": 30,
-   "sector": "",
-   "thesis": "接管：止损在 50 日线 759.46 / 摆动低点 760.15 之下 1%（2.6 ATR）",
-   "invalidation": "",
-   "principles": [],
-   "regime": "",
-   "parent_id": "edc92967-76a1-408c-81fa-8a8717c2e233",
-   "legs": {},
-   "adopted": true,
-   "stop_raised": true,
-   "sleeve": "core",
-   "triggers": [],
-   "stop0": NaN,
-   "pending": false
-  },
-  "DT": {
-   "symbol": "DT",
-   "shares": 129,
-   "entry": 62.6,
-   "stop": 59.87,
-   "target": 70.9,
-   "opened": "2026-10-09",
-   "horizon_days": 20,
-   "sector": "",
-   "thesis": "动量账：Dynatrace 10/8 在纳指 −1.25% 的一天 +2.6% 收 52 周新高（61.12），今晨再 +2.4%；20 日跑赢标普 +19.0 个点，三月 +40%，三条均线上。Q2 ARR +18%、全年上调，Arize 收购已兑现不计催化剂；量比 1.3 不计 volume。止损在突破日低 59.87（4.3%，1.66 ATR，高于 20 日线 57.42），目标 70.9 = 三月 +39.9% 折三分之一，R 3.1。财报约 11/4 在持有期外。",
-   "invalidation": "收盘跌回 59.87，次日开盘平掉；IGV 软件 ETF 收盘跌破 50 日线；20 日相对标普跌回 +10 以下",
-   "principles": [
-    "十·强势买强势：pattern+rs",
-    "十·止损在突破日低点或 20 日线取高",
-    "十·到 1R 后止损跟 20 日线"
-   ],
-   "regime": "标普 7,765 在 50/200 日线上，纳指昨 −1.25% 后今晨 +0.8%，10 年期 5.23%（30 年期拍卖 5.618% 需求强），VIX 15.4，Brent 102（特朗普称中期前不打伊朗）；不是防御日",
-   "parent_id": "d72b58af-1ea3-4369-9867-a8c98b0ec098",
-   "legs": {
-    "limit": "f53e4581-16ec-4c94-987f-e28d2bc923a9",
-    "stop": "80f152fb-fe63-4045-92f3-0b348b9d7754"
-   },
-   "adopted": false,
-   "stop_raised": false,
-   "sleeve": "aggressive",
-   "triggers": [
-    "pattern",
-    "rs"
-   ],
-   "stop0": NaN,
-   "pending": false
-  },
-  "PLTR": {
-   "symbol": "PLTR",
-   "shares": 40,
-   "entry": 200.6,
-   "stop": 200.6,
-   "target": 238.6,
-   "opened": "2026-10-09",
-   "horizon_days": 20,
-   "sector": "",
-   "thesis": "动量账：Palantir 10/8 放量 1.9 倍 +2.2%（纳指 −1.25% 的一天），20 日跑赢标普 +15.5 个点，三月 +57%，三条均线上，离 52 周高 1%；今晨高盛升到买入 +0.9%（单家评级，不计催化剂）。止损在突破日低 195.65（2.5%，0.85 ATR，高于 20 日线 184.91），目标 238.6 = 三月 +56.8% 折三分之一，R 7.6。财报 11/2 在持有期外。",
-   "invalidation": "收盘跌回 195.65，次日开盘平掉；10 年期收盘 >5.35% 且纳指跌破 50 日线；20 日相对标普跌回 +10 以下",
-   "principles": [
-    "十·强势买强势：volume+rs",
-    "十·拉伸不是动量账的禁忌",
-    "五·单家评级不算催化剂"
-   ],
-   "regime": "同上",
-   "parent_id": "55a25151-ce0a-4876-8706-bbbb6c2c1b06",
-   "legs": {
-    "limit": "31a622c7-7ad2-43f2-bfa5-cbe6bf0c1742",
-    "stop": "2d6475c1-f5e5-4ca5-b4f2-9deb2ecf18f4"
-   },
-   "adopted": false,
-   "stop_raised": true,
-   "sleeve": "aggressive",
-   "triggers": [
-    "volume",
-    "rs"
-   ],
-   "stop0": NaN,
-   "pending": false
-  },
-  "DHT": {
-   "symbol": "DHT",
-   "shares": 305,
-   "entry": 26.9,
-   "stop": 25.5,
-   "target": 29.9,
-   "opened": "2026-10-13",
-   "horizon_days": 20,
-   "sector": "",
-   "thesis": "动量账：DHT Holdings 10/13 现价 26.86 再创 52 周新高（10/12 收 26.83），20 日相对标普 +19.0 个点，三月 +32%，三条均线上（20 日线 23.28、200 日线上方 40%）；催化剂：VLCC 现货运价与油轮 ETF 创纪录（NDTV/Investing 10/12–13），OPEC+ 增产叠加中东绕行拉长吨海里，Q3 财报（约 11/4–6）在 20 天持有期边缘。止损在突破日低 25.50（5.2%，1.4 ATR，高于 20 日线 23.28），目标 29.90 = 三月 +33% 折三分之一加半个 ATR，R 2.1。量比 1.0 不计 volume。",
-   "invalidation": "收盘跌回 25.50，次日开盘平掉；VLCC 运价一周跌超 20% 或 Brent 收盘跌破 85；20 日相对标普跌回 +10 以下；财报日若在持有期内、前一天减半",
-   "principles": [
-    "十·强势买强势：pattern+rs+catalyst",
-    "十·止损在突破日低点或 20 日线取高",
-    "十·到 1R 后止损跟 20 日线",
-    "三·同板块 ≤3（能源现为 0）"
-   ],
-   "regime": "标普 7,807 在 50/200 日线上，10 年期 5.24%，VIX 15.2，原油 94（月 −6%），本周必需消费/公用事业最强、科技最弱，政策倾向只有能源为正；不是防御日",
-   "parent_id": "e3a5c325-bfb2-40d6-b311-d753e84d3bd2",
-   "legs": {
-    "limit": "24547feb-a9d5-41bc-99f7-b005062cde1b",
-    "stop": "399c708b-963a-4146-a2ec-a1bc3620d178"
-   },
-   "adopted": false,
-   "stop_raised": false,
-   "sleeve": "aggressive",
-   "triggers": [
-    "pattern",
-    "rs",
-    "catalyst"
-   ],
    "stop0": NaN,
    "pending": false
   },
@@ -456,6 +292,115 @@
    "r": -0.24698189134808984,
    "reviewed": true,
    "sleeve": "core"
+  },
+  {
+   "symbol": "ADP",
+   "shares": 7,
+   "entry": 264.535,
+   "exit": 286.847143,
+   "opened": "2026-09-25",
+   "closed": "2026-10-15",
+   "reason": "target: 交易所触发止盈",
+   "thesis": "接管：最近的摆动低点 238.87 在 10% 之外，改用 2 ATR 止损；图形偏弱，跌破即走",
+   "invalidation": "",
+   "principles": [],
+   "pnl": 156.19,
+   "r": NaN,
+   "reviewed": false,
+   "sleeve": "core"
+  },
+  {
+   "symbol": "GOOGL",
+   "shares": 22,
+   "entry": 344.375,
+   "exit": 344.268182,
+   "opened": "2026-09-25",
+   "closed": "2026-10-15",
+   "reason": "stop: 交易所触发止损",
+   "thesis": "接管：结构震荡，止损放在摆动低点 340.66 与 200 日线 337.66 之下 1.05 ATR；趋势外推给不出目标，目标取 +8%",
+   "invalidation": "",
+   "principles": [],
+   "pnl": -2.35,
+   "r": NaN,
+   "reviewed": false,
+   "sleeve": "core"
+  },
+  {
+   "symbol": "SPY",
+   "shares": 9,
+   "entry": 770.485,
+   "exit": 764.995556,
+   "opened": "2026-09-25",
+   "closed": "2026-10-15",
+   "reason": "stop: 交易所触发止损",
+   "thesis": "接管：止损在 50 日线 759.46 / 摆动低点 760.15 之下 1%（2.6 ATR）",
+   "invalidation": "",
+   "principles": [],
+   "pnl": -49.4,
+   "r": -0.43968313976772466,
+   "reviewed": false,
+   "sleeve": "core"
+  },
+  {
+   "symbol": "DT",
+   "shares": 129,
+   "entry": 62.6,
+   "exit": 62.56,
+   "opened": "2026-10-09",
+   "closed": "2026-10-15",
+   "reason": "stop: 交易所触发止损",
+   "thesis": "动量账：Dynatrace 10/8 在纳指 −1.25% 的一天 +2.6% 收 52 周新高（61.12），今晨再 +2.4%；20 日跑赢标普 +19.0 个点，三月 +40%，三条均线上。Q2 ARR +18%、全年上调，Arize 收购已兑现不计催化剂；量比 1.3 不计 volume。止损在突破日低 59.87（4.3%，1.66 ATR，高于 20 日线 57.42），目标 70.9 = 三月 +39.9% 折三分之一，R 3.1。财报约 11/4 在持有期外。",
+   "invalidation": "收盘跌回 59.87，次日开盘平掉；IGV 软件 ETF 收盘跌破 50 日线；20 日相对标普跌回 +10 以下",
+   "principles": [
+    "十·强势买强势：pattern+rs",
+    "十·止损在突破日低点或 20 日线取高",
+    "十·到 1R 后止损跟 20 日线"
+   ],
+   "pnl": -5.16,
+   "r": -0.014652014652014319,
+   "reviewed": false,
+   "sleeve": "aggressive"
+  },
+  {
+   "symbol": "PLTR",
+   "shares": 40,
+   "entry": 200.6,
+   "exit": 200.52,
+   "opened": "2026-10-09",
+   "closed": "2026-10-15",
+   "reason": "stop: 交易所触发止损",
+   "thesis": "动量账：Palantir 10/8 放量 1.9 倍 +2.2%（纳指 −1.25% 的一天），20 日跑赢标普 +15.5 个点，三月 +57%，三条均线上，离 52 周高 1%；今晨高盛升到买入 +0.9%（单家评级，不计催化剂）。止损在突破日低 195.65（2.5%，0.85 ATR，高于 20 日线 184.91），目标 238.6 = 三月 +56.8% 折三分之一，R 7.6。财报 11/2 在持有期外。",
+   "invalidation": "收盘跌回 195.65，次日开盘平掉；10 年期收盘 >5.35% 且纳指跌破 50 日线；20 日相对标普跌回 +10 以下",
+   "principles": [
+    "十·强势买强势：volume+rs",
+    "十·拉伸不是动量账的禁忌",
+    "五·单家评级不算催化剂"
+   ],
+   "pnl": -3.2,
+   "r": NaN,
+   "reviewed": false,
+   "sleeve": "aggressive"
+  },
+  {
+   "symbol": "DHT",
+   "shares": 305,
+   "entry": 26.9,
+   "exit": 25.48,
+   "opened": "2026-10-13",
+   "closed": "2026-10-15",
+   "reason": "stop: 交易所触发止损",
+   "thesis": "动量账：DHT Holdings 10/13 现价 26.86 再创 52 周新高（10/12 收 26.83），20 日相对标普 +19.0 个点，三月 +32%，三条均线上（20 日线 23.28、200 日线上方 40%）；催化剂：VLCC 现货运价与油轮 ETF 创纪录（NDTV/Investing 10/12–13），OPEC+ 增产叠加中东绕行拉长吨海里，Q3 财报（约 11/4–6）在 20 天持有期边缘。止损在突破日低 25.50（5.2%，1.4 ATR，高于 20 日线 23.28），目标 29.90 = 三月 +33% 折三分之一加半个 ATR，R 2.1。量比 1.0 不计 volume。",
+   "invalidation": "收盘跌回 25.50，次日开盘平掉；VLCC 运价一周跌超 20% 或 Brent 收盘跌破 85；20 日相对标普跌回 +10 以下；财报日若在持有期内、前一天减半",
+   "principles": [
+    "十·强势买强势：pattern+rs+catalyst",
+    "十·止损在突破日低点或 20 日线取高",
+    "十·到 1R 后止损跟 20 日线",
+    "三·同板块 ≤3（能源现为 0）"
+   ],
+   "pnl": -433.1,
+   "r": -1.014285714285714,
+   "reviewed": false,
+   "sleeve": "aggressive"
   }
  ]
 }
