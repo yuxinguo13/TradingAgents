@@ -289,6 +289,16 @@
 "eps_actual": 4.69,
 "surprise_pct": 13.26,
 "error": ""
+},
+"V|2026-10-16": {
+"symbol": "V",
+"as_of": "2026-10-16",
+"next_date": "2026-10-27",
+"last_date": "2026-07-28",
+"eps_estimate": 3.23,
+"eps_actual": 3.32,
+"surprise_pct": 2.76,
+"error": ""
 }
 }
 }
