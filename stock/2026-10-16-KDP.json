@@ -1,0 +1,166 @@
+{
+ "symbol": "KDP",
+ "date": "2026-10-16",
+ "data_date": "2026-10-15",
+ "generated_at": "2026-10-16T03:00:56.821672",
+ "name": "Keurig Dr Pepper Inc.",
+ "sector": "Consumer Defensive",
+ "price": 34.18000030517578,
+ "change_pct": 0.03200487341412761,
+ "ret_1w": 0.09341011052188297,
+ "ret_1m": 0.08263642272167226,
+ "ret_3m": 0.11380904850935858,
+ "ret_1y": 0.3214282975380953,
+ "rsi": 68.62676460691668,
+ "vol_ratio": 1.6855220599467347,
+ "atr_pct": 0.025474372253034554,
+ "sma20": 31.425446891784667,
+ "sma50": 31.29480743408203,
+ "sma200": 29.208697996139527,
+ "ext_200": 0.17019938066713225,
+ "high_52w": 34.4900016784668,
+ "low_52w": 24.52619662172227,
+ "off_high_52w": -0.008988151876042405,
+ "support": 31.37251911336485,
+ "resistance": null,
+ "rs_3m": 0.07288756226363224,
+ "spy_ret_3m": 0.040921486245726335,
+ "verdict": "趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌",
+ "spark": "▃▂▃▄▄▂▁▄▄▆▅▅▆▆▅▅▄▄▄▄▄▄▆█",
+ "score": 49.5,
+ "reasons": [
+  "多头排列：价格 34.18 > 50 日 31.29 > 200 日 29.21",
+  "近三月 +11%",
+  "放量上涨（量比 1.7）",
+  "三个月跑赢标普 7 个百分点",
+  "近两天有利好消息 1 条",
+  "在 52 周高点附近"
+ ],
+ "cautions": [
+  "政策面对该板块不利（倾向 -0.97）"
+ ],
+ "entry": 34.18000030517578,
+ "stop": 31.06,
+ "target": 35.5,
+ "r": 0.42307678388186865,
+ "triggers": [
+  "volume",
+  "pattern"
+ ],
+ "breakout_low": 33.650001525878906,
+ "earnings_date": "2026-11-03",
+ "earnings_in": 18.0,
+ "insiders": {
+  "symbol": "KDP",
+  "as_of": "2026-10-15",
+  "window_days": 90,
+  "buys": 1,
+  "sells": 2,
+  "buy_value": 250247.0,
+  "sell_value": 1088850.0,
+  "buyers": [
+   "Alt Aaron E."
+  ],
+  "sellers": [
+   "Denooyer Mary Beth",
+   "Stephens Angela A"
+  ],
+  "last_buy": "2026-08-25",
+  "last_sell": "2026-09-09",
+  "fetched_at": 1792119659.8044999,
+  "error": ""
+ },
+ "insiders_read": "内部人买入 1 笔（Alt Aaron E.，$0.3M，最近 2026-08-25）",
+ "fundamentals_md": "### 财报与基本面\n\n市值 $465.13亿 · 行业 Consumer Defensive / Beverages - Non-Alcoholic · TTM 营收 $200.90亿 · TTM EPS 1.04 · 股息率 2.78% · Beta 0.41 · 空头占流通股 6.0%\n\n- **估值**：TTM 市盈率 32.9 倍；前瞻市盈率 13.5 倍（市场预期未来一年盈利上升）；市销率 2.3 倍；EV/EBITDA 18.1 倍；PEG 1.02（在 1–2 之间，价格与增长大致匹配）。\n- **增长**：最新季度营收同比 +75.6%；盈利同比 -90.0%；最近 7 次财报里 7 次超预期。\n- **盈利质量**：毛利率 51.0%、营业利润率 12.9%、净利率 7.1%、ROE 5.1%。\n- **资产负债**：现金 $15.26亿；有息负债 $335.28亿；负债/权益 99.6%（负债适中）；流动比率 0.48（短期偿付紧）；自由现金流 $46.07亿，为正。\n- **卖方预期**：17 位分析师覆盖；平均评级「买入」（1.83/5，1 为最看多）；目标价均值 36.21（较现价 +5.9%），区间 29.00–42.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。\n\n**分季度损益**（季度数据，最新在左）\n\n| 指标 | 2026-06-30 | 2026-03-31 | 2025-12-31 | 2025-09-30 | 2025-06-30 |\n|---|---:|---:|---:|---:|---:|\n| 营收 | $73.09亿 | $39.76亿 | $44.99亿 | $43.06亿 | $41.63亿 |\n| 毛利率 | 41.9% | 52.8% | 53.8% | 54.3% | 54.2% |\n| 营业利润率 | 8.6% | 19.0% | 21.3% | 23.1% | 21.6% |\n| 净利率 | 1.9% | 6.8% | 7.8% | 15.4% | 13.1% |\n| 净利润 | $1.42亿 | $2.70亿 | $3.53亿 | $6.62亿 | $5.47亿 |\n| 摊薄EPS | 0.04 | 0.20 | 0.26 | 0.49 | 0.40 |\n\n**分年度损益**（年度数据，最新在左）\n\n| 指标 | 2025-12-31 | 2024-12-31 | 2023-12-31 | 2022-12-31 |\n|---|---:|---:|---:|---:|\n| 营收 | $166.03亿 | $153.51亿 | $148.14亿 | $140.57亿 |\n| 毛利率 | 54.2% | 55.6% | 54.5% | 52.1% |\n| 营业利润率 | 22.0% | 21.6% | 21.6% | 19.8% |\n| 净利率 | 12.5% | 9.4% | 14.7% | 10.2% |\n| 净利润 | $20.79亿 | $14.41亿 | $21.81亿 | $14.36亿 |\n| 摊薄EPS | 1.53 | 1.05 | 1.55 | 1.01 |\n\n**财报兑现记录**\n\n| 财报日 | 预期EPS | 实际EPS | 超预期 |\n|---|---:|---:|---:|\n| 2026-11-03 | 0.62 | — | 尚未公布 |\n| 2026-08-06 | 0.54 | 0.57 | +6.2% |\n| 2026-04-23 | 0.37 | 0.39 | +4.2% |\n| 2026-02-24 | 0.59 | 0.60 | +1.9% |\n| 2025-10-27 | 0.54 | 0.54 | +0.4% |\n| 2025-07-24 | 0.49 | 0.49 | +1.0% |\n\n_财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会滞后，TTM 窗口是厂商口径而非公司财年口径。以上任何一个数字如果会改变你的决定，请点开本页下方的 SEC EDGAR 链接看原文。_\n",
+ "sector_etf": "XLP",
+ "sector_w1": 0.03907938393415189,
+ "sector_m1": 0.047042789027161414,
+ "tilt": -0.9673202614379085,
+ "news": [
+  {
+   "title": "Keurig Dr Pepper (NASDAQ:KDP) Hits New 1-Year High - Time to Buy? - MarketBeat",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOV3NVUGJ6RWY4SHVNVDRVakhaVWE5V3BVZTN5aWdHZ3F0OU56T3YwZUJoRFJVS0I1SmdUblAtSGNVUGNkWmpRZ2dOVW9jTFlid3IzN3MxcWYtamxTQnNBQzJDSGstWkhTTFU3dlROZ0hLY2pldTZzRjZSYVFJTld4dHdhRUZ6eFBQczVaTmEySFdwS0o3NEY0WGxrOWFKMUlDOC0yWEo3eHFsM0xHM2NoeTZLX1k2WVRvLUx0VA?oc=5",
+   "source": "MarketBeat",
+   "published": "2026-10-15T16:45:18+00:00",
+   "lean": "neutral",
+   "materiality": 8
+  },
+  {
+   "title": "The Bull Case For Keurig Dr Pepper (KDP) Could Change Following CEO Shift And 2027 Beverage Push - Yahoo Finance",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNbnhUZUU3NzhOdVd1c3JiRHNKWGpUTU9oNWZDbHdKR1laMFl5alhmMUtDQmpmcHpKVEhWYmIybDdGWlZjVVR4a1QtU3JBeEZNenNyM3BBanJWVkVzdndQY0Mza0pfbHVUVXRBSXQzcXhheDhhX2w1Qzk2NGdlOUNia19OcnVpcktUamZfejhkemhFLWVzalE?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-14T21:14:22+00:00",
+   "lean": "neutral",
+   "materiality": 7
+  },
+  {
+   "title": "Keurig Dr Pepper’s 2.8% Dividend Yield Raises an Interesting Question - Yahoo Finance",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOdHRUTjVzb0RONWkyb0FyTFMxU3FyeFpDeHRZVUVJMmJWY1NUMEwxa0JQYUJ1bUxhVWFKb2NLMDFhOE9wZmNId1NLaHhLQzdnZ3YySVpVajBfYWkwbEZ0TUZKZ3V3dTNLVWxSamZ3Vnp4ZVZTdFJ2RGRBTVlIOEFoMVM1aVJrZVRjWHpPRU1B?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-15T16:48:03+00:00",
+   "lean": "bullish",
+   "materiality": 6
+  },
+  {
+   "title": "Can Keurig Dr Pepper's Planned 2027 Split Drive Long-Term Value? - TradingView",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPQktYdHU0NG55TTVnM3hwRkZaQWZ5MWdXT216d2tuaWt5V2JDOGIzdTg5TzVJQTlSbTBRY1NRQkhlZ3lPRnVIYnN4UTgtSkhHMXpITzJzdjY4R1ZWbHVHSGc3NEtrYm54XzBZTmtjTzYyRnNaaXVGMzBScHN0cncyRy0xNTVxVU05SHdjbndoTXcwc0dBd3N3MGFISWRrblJqSUs1b3FPT0tzTG5MdzFjT0lKb1NzV0ZSM3NF?oc=5",
+   "source": "TradingView",
+   "published": "2026-10-14T13:47:00+00:00",
+   "lean": "neutral",
+   "materiality": 6
+  },
+  {
+   "title": "Is It Too Late to Buy Keurig Dr Pepper Inc (KDP) After 3.2% Rall - GuruFocus",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNMzYzOWMtYUZJUnU5MmxxXzlkdTJRUGhaSkhsSU5zUFR6V1hKem9Hb1BMOFJQaDZFNFh4Wktad3NJNmxnZG1VdEFXd29qQ0NLREtjSnlwTTJjQ1BWLXNQRk9iT2tUeE1mYWhoNF9hLWFGeXpNQnJTSWd6UEFvZjdwSXFxMU9wV254ZVZZUnYxY1BXM0gxRlBFZE45YS1ZRXNFb3N5LTVhWlBNLWkzMlNrVm5PTTh4R1AwUzBLalQxWDhtZE5U?oc=5",
+   "source": "GuruFocus",
+   "published": "2026-10-15T23:44:37+00:00",
+   "lean": "neutral",
+   "materiality": 0
+  },
+  {
+   "title": "Piper Sandler keeps USD 38.00 target for Keurig Dr Pepper stock - ad-hoc-news.de",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQRmZ1d0IyUG5lZTJLQ01MdUktMnBSR3dIdXhaQl8tRjZUZXJ1VTR6R1oxbGxUb3ZqSlk3aGplZ01UQkxnWENXVkRrX3dRR3A2ZkNOVU9NeU9HMUtGQ0F6OWVvdTE5dHEzY0I3VlF4bVV1OS1RWlpKT3F6a3RudFg3MGJBZEhyN2xOMS1JVm1IbWlfQnd3OVZNaUZ4N0M3eFp0ZkhibTRJRndVWXB2c19kQTZ1VjFxTXlTNFpLeFI3RQ?oc=5",
+   "source": "ad-hoc-news.de",
+   "published": "2026-10-15T19:07:02+00:00",
+   "lean": "neutral",
+   "materiality": 0
+  },
+  {
+   "title": "Keurig Dr Pepper stock hits 52-week high at 33.89 USD - Investing.com",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQMWpXQmdfcEZBWWJZalRxbVdpYzVObDMxSk5xdnd4cEsyVjJpaGt5aW52OXhLQjNYMzdfMXVta3dodW9DOUpDX2Q0bU5ZaGpIRmktd25ZWUhHaG9CUm5kdWNkLVFnc21ScVM5RkltbnJGTWpJM08yUlVWczBGcEJwRTltZ3Z0R1JSelNYLUhyLXdoeVdObXNpMGI0UFotU1ppZGkwQ3NRdlYzSTdj?oc=5",
+   "source": "Investing.com",
+   "published": "2026-10-15T13:33:36+00:00",
+   "lean": "neutral",
+   "materiality": 0
+  },
+  {
+   "title": "Are Consumer Staples Stocks Lagging Keurig Dr Pepper (KDP) This Year? - Yahoo Finance",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOR2VFQzItVTRLY01OVDRYdHoyN2N3MHlkQm9OczJvZmp1TlB6V3htSWI2OE5WVnp1cDFKeTlBVHVmMld5bVhzSGw4eUlIQjRsTjRFMU54a0g4TTY3WE1mREQ3WERYT2N2SHl1Q0x6UXRKYUVOVkZrX2tPemU4b0h6OXQ2V0JFNTBPdlVwOGg3M2RiaC0wV1pHSzk5bUxjYUVfbElwaGVB?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-15T12:40:01+00:00",
+   "lean": "neutral",
+   "materiality": 0
+  }
+ ],
+ "history": [],
+ "chart": [
+  "       KDP 近 120 个交易日",
+  "35.50 ┤┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈  ← 目标 35.50",
+  "34.65 ┤",
+  "33.79 ┤                                                                       ╭",
+  "32.94 ┤                         ╭──╮                         ╭╮              ╭╯",
+  "32.09 ┤                         │  ╰╮                   ╭─╮╭─╯╰╮ ···  ╭╮    ╭╯",
+  "31.23 ┤┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╭───╮┈╭╯┈┈┈╰╮╭╮╭╮┈┈┈╭─╮┈┈┈┈╭╮┈╭╯┈╰╯┈┈┈╰───╮╭─╯╰╮┈╭─╯┈┈  ← 支撑 31.37 / 止损 31.06",
+  "30.38 ┤                 ╭╯   ╰─╯·    ╰╯╰╯╰─╮:│·╰──╮·│╰─╯···        ╰╯   ╰─╯",
+  "29.53 ┤            ╭────╯····   :::::      ╰─╯    ╰─╯",
+  "28.67 ┤ ╭──────────╯····   :::::",
+  "27.82 ┤─╯    ···      :::::",
+  "26.97 ┤::····:::::::::",
+  "26.11 ┤··",
+  "      └────────────────────────────────────────────────────────────────────────",
+  "       2026-04-27                     2026-07-23                     2026-10-15",
+  "       · MA20   : MA50   ─ close"
+ ],
+ "warnings": [],
+ "path": ""
+}

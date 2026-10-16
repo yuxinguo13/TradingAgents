@@ -67,13 +67,7 @@ _读不到财务数据：该代码没有可用的财务数据（可能是 ETF、
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 1h 前 | 0 | 中性 | [QQQ Vs. BlackRock, State Street ETFs: Why Investors Aren't Switching - Invesco QQQ Trust, Series 1 (NASDA - Benzinga](https://news.google.com/rss/articles/CBMi3wFBVV95cUxPUjVGZG8xRWllRTJNbHB1N3JoVjQ5bkVYSUNKOUNzZWtmeGYxWURkdjJBeTE3bFphWTlXZUZzeDAtcjdvaEMtQ2VTMkMtVmdSblJTS1ZnVXBhT2ZPamRYUWFhZ012MUI0QkUyLWVBRzB1Z0RrNjdWV0lYOHNJVEVJUjVOS0JTZl8wZS1lTmoxMG9TN0loSUVpT0R1UW1NWlJlbEZPdEUxak5KaVMtMzBxMnRMbFY5TnZJR3dqT2g5aXJwUzE2NE9wNm9wenlrN1hnQk53RW9DUXktUFJBMVZN?oc=5) | Benzinga |
-| 9h 前 | 0 | 中性 | [What Invesco NASDAQ 100 ETF (QQQM) Bought: NVIDIA Leads on Oct. 14 - Yahoo Finance](https://news.google.com/rss/articles/CBMilwFBVV95cUxNSEI2NlVWa3ZCVWl4aDA3ekxpTzBGM2hmRjZWbGplM0ZFY1NTY3EtQ3dMV2tLaEFsVlBscDltUHNHOTNRMUZMNE1yN1VRWDNsUHdYbXlOQjg1R1d1QW9ET2UxWVprVmRjV3VIZ28xV3hPN3k2bnY1ZE1YUUJyX0c1c0ZHckJrYkZrVmVEdlhLbnpoX2x0SGVN?oc=5) | Yahoo Finance |
-| 41h 前 | 0 | 中性 | [$Invesco NASDAQ 100 ETF (QQQM.US)$ - Moomoo](https://news.google.com/rss/articles/CBMirAFBVV95cUxOVDNtVUV3c29KcGlZb0YtTmJKZjNnQkpESjdqaWJtM3hqaXo5dkNZSm5KeEpXUUx3R3QtNVVtNlpoSV94ODRsWEVZM2hSd2JRREszNWdIbDFOdy1YX1VKSDZCMk82Nk9aamFCdFRXVEl3WTk4cDFPdUJMcFRkRnlUa2JBbkRaNHNZX2ZfZ3Q3Z3dhSEotSDEzUXZKdkdYdE5sckFLbURaS1p3dVZh?oc=5) | Moomoo |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 

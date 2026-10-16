@@ -112,10 +112,8 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 3h 前 | 0 | 中性 | [Marvell Technology Inc Stock (MRVL) Moved Down by 3.90% on Oct 16: Key Drivers Unveiled - TradingKey](https://news.google.com/rss/articles/CBMiiwFBVV95cUxNSjFNUUg5TjJtSVE5Q3ZEU2pOb3FUdXBLNW55N0N6YzNoZWRIU2oxUzJtb2RKclJod0hPR1FILWhGQmUzbnVTRUhoaG9TUG5EQWt0ZDlCNFljXzgxdVZYZVktWjdFRUhrdDVzUGJIVW5paXdwWHJxMzJKRi1aZUxDZ3RiMXVpVGQ2a29r?oc=5) | TradingKey |
-| 7h 前 | 0 | 中性 | [Marvell Technology stock trades at EUR 210.70, 26.9 percent below its 52-week high - ad-hoc-news.de](https://news.google.com/rss/articles/CBMi3AFBVV95cUxQN1BDT080MlVxNHFRTy1QbDI5NHFjbU9XZmt4ZXZLVVhSQTNtRThZclN6MVlEbHNwcTdTd1hQMGE2R0lKdW1FZHhVV2E5WTdtbnplOXlSZk50Yl8xMmtTblJiY1prbmx6YzJISUxCWFpIalVaREpYMXhTNFNvcDlyNkFJSHgyOGxFVVd1VWYyOWRCb2dyeVE0eG5HbVg0N2hQR01tRm1Hd1dJZW4zNUZ0S0ZkRVdoaDY5YWcwVDFDRVNMVjJSeHpLaHZVWTNmOTBRQXk5TjdwYnhkX1FQ?oc=5) | ad-hoc-news.de |
-| 8h 前 | 0 | 中性 | [Marvell Technology, Inc. (MRVL) is Attracting Investor Attention: Here is What You Should Know - Yahoo Finance Australia](https://news.google.com/rss/articles/CBMikAFBVV95cUxQelotLUlHY2thOEJ6VEt4Mm5jcC0yZVdva09GZ2xyaC1OcVlOTXFpYWVwY05KTFVtM2ZzenBJR2h3TTJJdi1QU2pkdDAxaTFDUjkwUFVuNy1UeG9iY0hTdl9pX210LVdCOE9INy04dm9zMFdTd2pITnNPMzNKWFFSVDBYN1hOZlQ5UlhFV1Nnclk?oc=5) | Yahoo Finance Australia |
-| 11h 前 | 0 | 中性 | [Hotter Inflation Data Might Change The Case For Investing In Marvell Technology Stock - Simply Wall Street](https://news.google.com/rss/articles/CBMi2wFBVV95cUxQNlloVWJqS1JJOHI2TzFFazlqM3ozLWpfRE1RaGswNWlMYnU2ZU93bHV2NEozRmVCVnVBUnR2ZFBHckdnUTBzNmJPTnB4dFJwV2tiQlNxaDNJLUFianhRV3FzcnFMNjRlT29GcFRXM2dQc3g5aVhDQ0Z6c1RFZ3lERFhmQnpwZEl1ZnJBSXRhbGlfU1ZOYk9VcjQ1Zm5EbnZySlBsZjFlQlpQeE9aX2dJYXYyTGlpaGYzVDg2LWIxMkFoQ21zOUdYSkJCUEJRS296YXNLeHc4cFRhY1nSAeABQVVfeXFMT3ZjcXB1eXk0LWdlM0NVcnNCWWRadUxnNHY2c0pzanNLMmZjaW1uT3F5VVpQU2d0SFc4bllRTVdFeWtRR1N5MEQtZHZnZTQtWVdJVmRUVzBNOEpSNXVVRUdtRkhpUTNXaVg1b09rclJWRldaU1F0ZzhxU290QUpiTV9FdXNQMDBxS1BOTGVUWlpwT3h6MjBYNG1GYnBzZ1pDTng2QkJFVWVCeUFfNEhmUjM5cVF4dGJadmFncTdPUVkyd25ya3ZpbVZPaUJic1ZRS0tzS1hQem11OU1WR0xSeHc?oc=5) | Simply Wall Street |
+| 3h 前 | 7 | 偏空 | [Broadcom Falls 4% as CEO Hock Tan’s Capital Warning Hangs Over AI Chips; Marvell Drops 4% - AOL.com](https://news.google.com/rss/articles/CBMieEFVX3lxTE4xSDZCdzFPOFlCSm1peHJjT1NvOWpjSjVsNUNrRHNTZWRyRExJaXptaFZlc0FiemwtaWdxVnNHeVRtTmlmbFNId2ltM1RVZ1JCaHp0eDhyOENmREU3Q3plSXRlMHYyVEt4TzkwQkQtQWtSd2hrYnpXdw?oc=5) | AOL.com |
+| 3h 前 | 7 | 偏空 | [Broadcom Falls 4% as CEO Hock Tan's Capital Warning Hangs Over AI Chips; Marvell Drops 4% - 24/7 Wall St.](https://news.google.com/rss/articles/CBMiyAFBVV95cUxNeHE5YjRkQnVyTUw0NnFHNE9FZEQwOHM5S3NSYkVNeXMycGFmcG15SVVVQlBHM1RTTy1vRnp1eHFGbUlpeFBEOERhVDdjM0Fnd0hndFVnTWZXTFA5YTRQTDRmTW9UMEdNOGZHMjhCSHZ6ZlIxZ1NhdnpUYXlrMHVvNnJTamJaLS1tQlNneV85c2NSN0pGb1ViMXJweHl3WkJGaThSaHpERURXUTU1OVhTZjlEYzVXMFl6YTZ5XzZaY3lHMjhBamVtag?oc=5) | 24/7 Wall St. |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -125,7 +123,8 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 - 日均波幅 7.2%，属于高波动：同样的仓位金额，这只股票的日常噪音就能触发大多数人的心理止损。
 - TTM 市盈率 75 倍，价格里已经计入了不少增长；增长只要减速，杀估值的幅度会大于业绩本身的降幅。
-- 政策面对该板块的倾向为 -0.95（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 24 小时内的利空标题：Broadcom Falls 4% as CEO Hock Tan’s Capital Warning Hangs Over AI Chips; Marvell Drops 4% - AOL.com（AOL.com）
+- 24 小时内的利空标题：Broadcom Falls 4% as CEO Hock Tan's Capital Warning Hangs Over AI Chips; Marvell Drops 4% - 24/7 Wall St.（24/7 Wall St.）
 
 ## 六、原始数据（本页所有计算的来源）
 

@@ -1,0 +1,188 @@
+{
+ "symbol": "KO",
+ "date": "2026-10-16",
+ "data_date": "2026-10-15",
+ "generated_at": "2026-10-16T03:01:43.293594",
+ "name": "The Coca-Cola Company",
+ "sector": "Consumer Defensive",
+ "price": 92.0,
+ "change_pct": 0.0023970497235694666,
+ "ret_1w": 0.04819418387510854,
+ "ret_1m": 0.04700121912285504,
+ "ret_3m": 0.1347349442260244,
+ "ret_1y": 0.3989884136387467,
+ "rsi": 70.64735246231693,
+ "vol_ratio": 1.2207276054774654,
+ "atr_pct": 0.01501552510705795,
+ "sma20": 87.89149971008301,
+ "sma50": 88.01437316894531,
+ "sma200": 80.01751655578613,
+ "ext_200": 0.14974825463197172,
+ "high_52w": 94.0999984741211,
+ "low_52w": 65.18707336271082,
+ "off_high_52w": -0.022316668524693162,
+ "support": 87.12000274658203,
+ "resistance": null,
+ "rs_3m": 0.09381345798029805,
+ "spy_ret_3m": 0.040921486245726335,
+ "verdict": "趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌",
+ "spark": "▁▁▄▆▄▅▄▅▆█▇▆▆▅▅▆▆▆▆▅▄▄▆█",
+ "score": 45.4,
+ "reasons": [
+  "多头排列：价格 92.00 > 50 日 88.01 > 200 日 80.02",
+  "近三月 +13%",
+  "三个月跑赢标普 9 个百分点",
+  "近两天有利好消息 2 条",
+  "在 52 周高点附近"
+ ],
+ "cautions": [
+  "政策面对该板块不利（倾向 -0.97）"
+ ],
+ "entry": 88.01,
+ "stop": 86.25,
+ "target": 92.04,
+ "r": 2.2897727272727213,
+ "triggers": [
+  "pattern"
+ ],
+ "breakout_low": 91.72000122070312,
+ "earnings_date": "2026-10-27",
+ "earnings_in": 11.0,
+ "insiders": {
+  "symbol": "KO",
+  "as_of": "2026-10-15",
+  "window_days": 90,
+  "buys": 0,
+  "sells": 5,
+  "buy_value": 0.0,
+  "sell_value": 76917973.0,
+  "buyers": [],
+  "sellers": [
+   "Quan Nancy W",
+   "Ortega Luisa",
+   "Murphy John",
+   "Quincey James R.",
+   "Pietracci Bruno"
+  ],
+  "last_buy": "",
+  "last_sell": "2026-08-19",
+  "fetched_at": 1792119705.7594876,
+  "error": ""
+ },
+ "insiders_read": "内部人集中卖出：近 90 天 5 位内部人卖出合计 $76.9M，无人买入",
+ "fundamentals_md": "### 财报与基本面\n\n市值 $3,958.34亿 · 行业 Consumer Defensive / Beverages - Non-Alcoholic · TTM 营收 $501.29亿 · TTM EPS 3.33 · 股息率 2.27% · Beta 0.32 · 空头占流通股 1.2%\n\n- **估值**：TTM 市盈率 27.6 倍；前瞻市盈率 26.1 倍（市场预期未来一年盈利上升）；市销率 7.9 倍；EV/EBITDA 25.1 倍；PEG 4.17（高于 2，价格已经计入了不少增长）。\n- **增长**：最新季度营收同比 +6.7%；盈利同比 +16.9%；最近三个季度营收连续环比上升；最近 7 次财报里 7 次超预期。\n- **盈利质量**：毛利率 61.9%、营业利润率 34.9%、净利率 28.6%、ROE 42.1%。\n- **资产负债**：现金 $163.71亿；有息负债 $442.61亿；负债/权益 115.5%（负债适中）；流动比率 1.30；自由现金流 $52.19亿，为正。\n- **卖方预期**：23 位分析师覆盖；平均评级「买入」（1.75/5，1 为最看多）；目标价均值 94.52（较现价 +2.7%），区间 75.00–104.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。\n\n**分季度损益**（季度数据，最新在左）\n\n| 指标 | 2026-06-30 | 2026-03-31 | 2025-12-31 | 2025-09-30 | 2025-06-30 |\n|---|---:|---:|---:|---:|---:|\n| 营收 | $133.80亿 | $124.72亿 | $118.22亿 | $124.55亿 | $125.35亿 |\n| 毛利率 | 62.9% | 63.0% | 60.0% | 61.5% | 62.4% |\n| 营业利润率 | 35.1% | 35.1% | 24.2% | 32.2% | 34.7% |\n| 净利率 | 33.1% | 31.5% | 19.2% | 29.7% | 30.4% |\n| 净利润 | $44.25亿 | $39.24亿 | $22.71亿 | $36.96亿 | $38.10亿 |\n| 摊薄EPS | 1.03 | 0.91 | 0.53 | 0.86 | 0.88 |\n\n**分年度损益**（年度数据，最新在左）\n\n| 指标 | 2025-12-31 | 2024-12-31 | 2023-12-31 | 2022-12-31 |\n|---|---:|---:|---:|---:|\n| 营收 | $479.41亿 | $470.61亿 | $457.54亿 | $430.04亿 |\n| 毛利率 | 61.6% | 61.1% | 59.5% | 58.1% |\n| 营业利润率 | 31.1% | 29.8% | 28.6% | 28.0% |\n| 净利率 | 27.3% | 22.6% | 23.4% | 22.2% |\n| 净利润 | $131.07亿 | $106.31亿 | $107.14亿 | $95.42亿 |\n| 摊薄EPS | 3.04 | 2.46 | 2.47 | 2.19 |\n\n**财报兑现记录**\n\n| 财报日 | 预期EPS | 实际EPS | 超预期 |\n|---|---:|---:|---:|\n| 2026-10-27 | 0.88 | — | 尚未公布 |\n| 2026-07-28 | 0.93 | 0.97 | +4.0% |\n| 2026-04-28 | 0.81 | 0.86 | +5.9% |\n| 2026-02-10 | 0.56 | 0.58 | +2.7% |\n| 2025-10-21 | 0.78 | 0.82 | +5.3% |\n| 2025-07-22 | 0.84 | 0.87 | +3.9% |\n\n_财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会滞后，TTM 窗口是厂商口径而非公司财年口径。以上任何一个数字如果会改变你的决定，请点开本页下方的 SEC EDGAR 链接看原文。_\n",
+ "sector_etf": "XLP",
+ "sector_w1": 0.03907938393415189,
+ "sector_m1": 0.047042789027161414,
+ "tilt": -0.9673202614379085,
+ "news": [
+  {
+   "title": "CocaCola Company (The) $KO Stock: State of Alaska Department of Revenue Decreases Holdings - MarketBeat",
+   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPQ1ByR2FNb0xYRFhBaS1nUU9UOW1CYUhCUWo2eVlvNm83ckEzY19tcEFEQjJSTWYybTBUeVM4dnBRR21vV2ttNk5MaE5ubW5MYVc1R29kel9KN3hLU2xFcW0wbjNhbVRhSzdOczA0djllVUpVYWtMVjcybkMxclpIMUd2dWV0SWVnellWR0VFa3RXbGwxdENUckJsRFpCWW1pMkdKNWtTLV9ZOUVMSm5LaHZPdVhOblZJWnAwVW1YN2RianlDQXlFS1RUQmtNclp5TU5qaUlkQkMtT0stSzJxag?oc=5",
+   "source": "MarketBeat",
+   "published": "2026-10-15T17:44:14+00:00",
+   "lean": "neutral",
+   "materiality": 8
+  },
+  {
+   "title": "Coca Cola Femsa (NYSE:KOF) Sets New 1-Year High - Here's What Happened - MarketBeat",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNVkU3SnV5UXFIU0tzWnJ6ZEQxSU5HZ1RteHkzVTZzeGRCLXZodC01T3h0U2VVYU5FV2pzU1RWMFdLZzRBQlZINk9neFpkZ0NMWXFoc2Y0eGZoTmVlU0V4akVVckhYZTAzZ2FqVGR2YXhJX3J5WWozNEEyWVV5RG9kaVpqY0swLWRGSU9FV1NBRjk0UGRxSnBNcVE4ZVBOSWV1Y09GaWdCd3hUbnlPUjI1ajl4S1BOaWRZbHhlQzNZRVRqQ0U?oc=5",
+   "source": "MarketBeat",
+   "published": "2026-10-14T18:53:51+00:00",
+   "lean": "neutral",
+   "materiality": 8
+  },
+  {
+   "title": "USD 0.25 dividend marks October 23 for Coca-Cola Consolidated stock - ad-hoc-news.de",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQWHVxUGVpS3c2TmU2eV9LQ28wQXJRZU5rUWQ4RDI0WHNiRnZzcWNDWklUTkdaRThmQnJYT3FyWExQZG1CU1k3dDFsWDdKTFg3bFl0czRDSG9HMXhQN2w1Z1hUYmNwLXhzQkhrTVFkNTUySHhKS2VzbVpURDBvc3RXRV9KczhjUHcwLUNLN3VqUG1ON3lEdVB3d0p5SFlUUnRiNWdqRE5RRzVGbENWOTlkaG4xTU9zbmtURV9NZ1J2MmhTdFo4?oc=5",
+   "source": "ad-hoc-news.de",
+   "published": "2026-10-15T21:00:41+00:00",
+   "lean": "neutral",
+   "materiality": 6
+  },
+  {
+   "title": "Coca-Cola’s 64-Year Dividend Growth Streak Faces a Valuation Reality Check - Yahoo Finance",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNMlRNdEdyWjRLYXZsbVBwZ2Roc2VBWXYwdGpxZ1FFT1Eyc1BmNzBacHVnNmpKbHVYWm9zSTZhYjRKQ2V3ckRfLTlLbTVDVGM1WHFPOUhRaG5PdFZYUTRvcHRyR3VGTnNfTWZyZ3h4TXd6RmlGa2dVd3JiQmlmQlp1Tl9YVng1TzkteEhJRzAzbnhhN25nR3R6VQ?oc=5",
+   "source": "Yahoo Finance",
+   "published": "2026-10-15T16:59:20+00:00",
+   "lean": "neutral",
+   "materiality": 6
+  },
+  {
+   "title": "Weiss upgrades Coca-Cola stock to Buy A+ rating - ad-hoc-news.de",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQSXN0aWNwc29lV3Y1NnNCbnhoNkxWSzhjamFuTFUxbHBrWjNDYmVYLXJoc3dmcm9FenUwTEh1bkh5aDhGUXBzZUxzMGQ3VDkzbTdLRE9RSTFleUk0NVFKOHhDX1Bjck5WeVZMdzN3bklWdGRjdDJQbm13WEFfNkxWTFJSSWN2ZkthalJ5ZUxNNjZ4SUl6SHR1QzhRSER2ZmtfVTNvX3JBdGhBVVM3Y1E?oc=5",
+   "source": "ad-hoc-news.de",
+   "published": "2026-10-15T09:14:42+00:00",
+   "lean": "bullish",
+   "materiality": 5
+  },
+  {
+   "title": "Eurobank lifts target for Coca-Cola HBC stock to EUR 61.70 - ad-hoc-news.de",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNc0NfQ1UxQUpwQTkzSHNiZk9idmpmS3FzTXRxUExEQWNxVHFlcGg5VGRBNHh0Y3I0am1nY3RWR0xzeDh3Yml3WURHMG04U2U1LTAtdUVhX3JFVWtzUFU5SFJSVUlyb2UyalBfLTYtR0FRSXpYaEJJT2NKNHN3UWR4c1ZpTW5MbTloNVZRU1N4U3ZHY0NnOHNEeWJ1eDJ0cTF1Y3E3eFNNOElvTUlucUZ0UGh1N0Z2S3Rl?oc=5",
+   "source": "ad-hoc-news.de",
+   "published": "2026-10-15T19:52:27+00:00",
+   "lean": "neutral",
+   "materiality": 0
+  },
+  {
+   "title": "Coca-Cola products are expected in every KFC U.S. restaurant by spring 2027. - Stock Titan",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOYVFicm5kRUozUTgtZXV4RFdRUDBESzQwNzFwN19ycm9PdWhBRGIzTjVWdGswZEhXY2huWW1KVWlIMEhMdExhUDR3TzJCN1pRTDc0OHhWU3hWdVdCNUR4VmdOcDVuaDNKbjdzNlZxNGdYZGhTUE9rYTZzVlNDbWh3WFptcHpRZzFONFBBMWQyZTUtcTY4aFBpRVV0X2J0a1gtdlEtUzlYbEVUejQzck9NQ2llWjZKR2hN?oc=5",
+   "source": "Stock Titan",
+   "published": "2026-10-15T19:33:00+00:00",
+   "lean": "neutral",
+   "materiality": 0
+  },
+  {
+   "title": "Pop star: Coca-Cola has outperformed all the Mag 7 stocks this year (KO:NYSE) - Seeking Alpha",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNYWlKdmhIOVB4QWFmdnd0ZnpxTTNndVpLSW5MX08tc1dzREQ4TUpWUldaRzNublpyc0ZMU3B6TTVRQ3B6RzNoNnlKQVR5VG1VVENScnFIMUVtS18zTlpPY1BNOUJ6WTB4RmlHV08zTnRIZ3NuVjhBZ1Zjb2VCTXIyYzlfTWtKbnlUbWJHNHR6d0tkZVZkRjF4NGt5Vm4wZl9OV2kyOTUyOA?oc=5",
+   "source": "Seeking Alpha",
+   "published": "2026-10-15T16:55:44+00:00",
+   "lean": "bullish",
+   "materiality": 0
+  }
+ ],
+ "history": [
+  {
+   "report": "2026-10-16",
+   "score": 52,
+   "entry": 91.0,
+   "stop": 88.0,
+   "target": 97.0,
+   "outcome": "未结算",
+   "r": null,
+   "raw": null,
+   "alpha": null
+  },
+  {
+   "report": "2026-10-15",
+   "score": 52,
+   "entry": 90.5,
+   "stop": 87.5,
+   "target": 97.0,
+   "outcome": "未结算",
+   "r": null,
+   "raw": null,
+   "alpha": null
+  }
+ ],
+ "chart": [
+  "      KO 近 120 个交易日",
+  "92.0 ┤┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╭  ← 目标 92.0",
+  "90.4 ┤                                                ╭──╮                  ╭╯",
+  "88.9 ┤                                      ╭╮       ╭╯  ╰─╮╭╮··╭╮╭╮╭╮      │",
+  "87.3 ┤┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈│╰─╮┈┈┈╭─╯┈┈┈┈┈╰╯╰──╯╰╯╰╯╰─╮┈┈╭─╯┈  ← 支撑 87.1",
+  "85.7 ┤┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈│┈┈╰───╯┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╰──╯┈┈┈  ← 止损 86.2",
+  "84.1 ┤                               ╭╮╭╮   │······  ::::::",
+  "82.5 ┤                   ╭╮       ╭──╯╰╯│··╭╯   :::::",
+  "80.9 ┤         ╭──╮     ╭╯╰╮  ╭───╯·····╰──╯::::",
+  "79.3 ┤       ╭─╯  ╰─╮··╭╯··╰──╯···:::::",
+  "77.7 ┤ ╭─────╯····  ╰─╮│::::::::",
+  "76.1 ┤:│······::::::::╰╯",
+  "74.5 ┤─╯",
+  "     └────────────────────────────────────────────────────────────────────────",
+  "      2026-04-27                     2026-07-23                     2026-10-15",
+  "      · MA20   : MA50   ─ close"
+ ],
+ "warnings": [],
+ "path": ""
+}

@@ -110,23 +110,13 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 8h 前 | 8 | 中性 | [Stay Ahead of the Game With Texas Instruments (TXN) Q3 Earnings: Wall Street's Insights on Key Metrics - Yahoo Finance](https://news.google.com/rss/articles/CBMinwFBVV95cUxQM05jV3VSMzdPNVZfYVlVZ3VNTTdfNC12YzNoQnA4N2IxX3JGMGphLU1Yc3NyWlR1azJ0ZWtTZS1VT2VvSVhCajV2dHJ0YVo5X1FOYUEzVG1acDQwSElMTjNPRUkxUVFSMkZlMjhseVRLei1FV1ZpLVRvbDl4dEIwMllZZ1lZMUUxdkZMYkxiZUdLam5nN2Nvbk5SWFBKRVE?oc=5) | Yahoo Finance |
-| 20h 前 | 8 | 中性 | [Texas Instruments Q2 revenue rises 23% on AI data center strength - scanx.trade](https://news.google.com/rss/articles/CBMisgFBVV95cUxNZU1uUUJyV0l2UE5fSEVFN1V4SThDWU11TXpqNnR1VnlJMkwtNjZPSFNabHZQYjlJYkdyaG4xbXl1VjIzY2phLVpEdFJVaFY4ZS1hZTh4ZERsQVBQYTE1Q1NidDh5Z3U5Z2tKSzlxWVJaM3lsblh4V1gzMkpQNmd2ZnN6QXJZdkJkS1pMaXI3S25tdnRMSVhaeG5sSnBVdUdGNjdva0U5T3pFQ24xZExhNHJB?oc=5) | scanx.trade |
-| 13h 前 | 6 | 中性 | [Texas Instruments declares USD 1.52 dividend for Texas Instruments stock - ad-hoc-news.de](https://news.google.com/rss/articles/CBMi0AFBVV95cUxOQXRrOFZvclpmUnNZaWYyVFcwaWJtbTZGYk80RDdIYW5hMVpYQXhhSkVfVkp4amlkN2lkV1lSbXVBcnhqbjBwbWNRX0JVbHBzcEktdjhrQzQ3THJiU3hWM04yN1NlSjlYOTE0VEYxTUk4LWdXSzFBMlR6Tk1OZEp4U2lmVEFhSDFseTdpT0JwSGpHamlUWHA4Q0lCS2NJQjM5N1RlbkFyOFVVVVd3eFpudXRQd2o5WkxSTFNPdUZBcGZmcnJhVHlTRE1RdVhGWkF0?oc=5) | ad-hoc-news.de |
-| 6h 前 | 0 | 中性 | [KeyBanc keeps USD 400.00 target for Texas Instruments stock - ad-hoc-news.de](https://news.google.com/rss/articles/CBMivwFBVV95cUxNNGZScVZNZEdScDh4TlFXODNPVzh2YXVwUE5TTlJyVUJ1TUhYTTBlT0ItbkYxUGQwcV9YZUFTUXNUZzFXWG5PbGtCVWlVQmwyVjJrVDhVV0h3QktlRzdjb2hKTzJ4OUxTMlVtRHNqOEdJT29VNTlXZlJUNU85aVdHMTllY3dKbVRZMUFudDMtalotMjY3ZTc1MVczWlI4bDdnaDhYY282QnNtQnhpTWgxZjVmZEw1REpPNG9VZDRJQQ?oc=5) | ad-hoc-news.de |
-| 9h 前 | 0 | 中性 | [Texas Instruments Incorporated (TXN) Stock Forecasts - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMikAFBVV95cUxOU3VyNFRiSk4xdEpXSW9zWHh6clBkVUNUZnp5dUM5dThULVpqTmVzRHJTcmRmSTl1aHpINjk1R0lPVDh6QVNFaVNJeThzOTFmdXlTRzB3SURlTmhWM1JnWmNoMTVQT3F3ZXFpbFotT0VhVGlWTVgwcGhGNHJwUjdCSXpteUVlanFlZU1aV25LVHY?oc=5) | Yahoo! Finance Canada |
-| 33h 前 | 0 | 中性 | [ETFs Bought $113.2 Million of Texas Instruments (TXN) on Oct. 13 - GuruFocus](https://news.google.com/rss/articles/CBMirAJBVV95cUxNZG5ubFN1cTF1TDFqQXJIUXlVaHl5VVlscTc1cWplS2JSbGdWbnU1cm5XQUx5Vk5yVnlwaHNCUVR6VEdVRTVZRkdCSGhZTmtHYVkzd0hUQlJxWWVVQ0FCSjdmNmtDOW5OWjdVcmlBOFZGYkt1ZjdMazZEbVM4T1BmUWhscGV1UlRNR0U0SE5vYWF3Yk9PUzNRQVI0YVplNGRWTjhDRkxDSUZuWTFvYTJfY05YSTlMMjNLMjVOMWxIVjI5WWVIRUZ0RkxDdzhNaFZGd1o3b3dNLXpvdVB1dVNnMFpsN0ptM2w5NmduR25CVHJ4VFM2azBMTDNXaUYxZ29YY2g3NmxaQU1xZWFieGloQzZuZGUxTDROR1Q3WklQYlY2MkszcjZId1N6WnA?oc=5) | GuruFocus |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
 - 下次财报在 5 天后，落在持有期内。财报跳空会直接穿过止损——那一晚的风险不是 1R，是没有上限的。
-- 政策面对该板块的倾向为 -0.95（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -148,7 +138,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-13 | 279.78 | 288.90 | 277.38 | **287.85** | +2.2% | 5,628,500 |
 | 2026-10-14 | 283.62 | 285.00 | 278.90 | **280.65** | -2.5% | 6,921,800 |
 | 2026-10-15 | 275.39 | 282.51 | 273.59 | **279.12** | -0.5% | 6,857,500 |
-| 2026-10-16 | 275.75 | 284.47 | 274.16 | **276.48** | -0.9% | 7,918,832 |
+| 2026-10-16 | 275.49 | 284.47 | 274.16 | **276.48** | -0.9% | 7,918,832 |
 
 ## 七、自己去查（本页不做独立验证）
 

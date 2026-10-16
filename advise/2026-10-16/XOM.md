@@ -14,8 +14,8 @@ _能源 · 数据截至 2026-10-16 收盘 → 面向 2026-10-16 开盘_
 172.7 ┤                                                                         ╭╯
 168.6 ┤                                                                        ╭╯
 164.5 ┤                                                  ╭──╮  ╭─╮╭────╮  ╭╮╭──╯  ·
-160.4 ┤             ╭╮                                ╭╮╭╯  ╰╮ │ ╰╯    ╰──╯╰╯·····
-156.2 ┤            ╭╯╰╮                       ╭─╮╭─╮  │╰╯    ╰─╯   ······
+160.4 ┤             ╭╮                                ╭╮╭╯  ╰╮ │ ╰╯    │╭─╯╰╯·····
+156.2 ┤            ╭╯╰╮                       ╭─╮╭─╮  │╰╯    ╰─╯   ····╰╯
 152.1 ┤····╭──╮···╭╯··╰╮··╭╮···              ╭╯ ╰╯ ╰──╯        ····               :
 148.0 ┤ ╭──╯  ╰╮ ╭╯    ╰╮╭╯╰───╮·········   ╭╯         ········          :::::::::
 143.9 ┤─╯      ╰─╯      ╰╯     │         ·╭─╯··········       :::::::::::
@@ -52,7 +52,7 @@ _能源 · 数据截至 2026-10-16 收盘 → 面向 2026-10-16 开盘_
 - **形态结构**：收敛整理 — 高点走低但低点抬高，区间在收窄；前高 169.64 → 164.91（-2.8%）、前低 155.85 → 159.27（+2.2%）
 - **动能**：RSI(14) 73，超买区；近一月的斜率快于近三月（月 +9.6% vs 季 +21.4%），趋势在加速
 - **波动**：日均真实波幅约为价格的 2.0%；按本报告 2 ATR 的止损惯例，一个 R 相当于 3.9% 的价格距离
-- **位置**：距 52 周高点 +0.0%，距 52 周低点 +66.4%
+- **位置**：距 52 周高点 +0.0%，距 52 周低点 +66.5%
 - **量能**：最新一日成交量为 20 日均量的 1.0 倍，量能正常
 - **相对强度**：近一月跑赢 标普500 9.3 个百分点
 - **支撑 / 阻力**：最近的摆动低点 159.27，摆动高点 —（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
@@ -110,16 +110,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 1h 前 | 0 | 中性 | [ExxonMobil's live call on third-quarter results is set for 8:30 a.m. Central time Oct. 30. - Stock Titan](https://news.google.com/rss/articles/CBMiqAFBVV95cUxNVkdlVGdyOVpqRk5uZkp6b3Exa3J1OEhteXJtUDR5MDl3R0lCMUhGSFNkOGZjOXVyUDdSQVJIanVhX3BzQV9OSGVRMVhCVUptQm0wSWtUbnRvWl90czJWM2JlbFAwVHhyQzNzQ3h4a0ZyaUFqSHU5N2xLN1o2V21SRzUzY21LNzZ3TjJ4UmRuTWVNMFhlYmxDTVRONXFqSEtlZTJ5cGp5bEw?oc=5) | Stock Titan |
-| 4h 前 | 0 | 中性 | [ExxonMobil Sees $4.5 Billion Boost from Higher Refining Margins - Benzinga](https://news.google.com/rss/articles/CBMivAFBVV95cUxPdHBabWJRM2ZpMEJucElOSE5WLWFGczdoRTFRckdMQS1KUVlyY0d3eTBwSWx0Y3NaWDB6ME5UQTh1bWhscUdOSzNUbnFvbnh4V1NySlJ0bWl4c3dEaHFPZ3lHUXE4WXZoTHpIazk4dENoZHUzZ3pEMVA5aHZUTktUWW5WWWkzMVNUNk96Sk9nVzQ0VklnaDhqZDFyQnZuMThZQmQ2YUZJZVV6Qk5fbHJJZE1yRkQ2czJaSmh6Qg?oc=5) | Benzinga |
-| 7h 前 | 0 | 偏多 | [ExxonMobil's Strong Balance Sheet Offers Cushion Against Oil Volatility - TradingView](https://news.google.com/rss/articles/CBMixgFBVV95cUxNVmlmQmt3UnQ0STlqX0JGVnBiVzVrRjB4VkV6anBrYjlKNzJlSlVTQkI0djRRa3FkQ1hWNW85RDZuQ0VybXEtalZmQXhpWXhmVGFoQ3NLSl9WSmRvc2xvVW51bDFjR3BGdmxnMnJWOXhOVGI2aW83WGVHNzJVMEpVSnhseE03c0hRZi1Sd3p5S1ZnNUNTVHFFdHZuMzV1OThUVmZ1M1duZXJCSkxIdlZoWXRmUXJFODZaeFlVcWFsNWw5Z0s4QUE?oc=5) | TradingView |
-| 8h 前 | 0 | 中性 | [Production Milestones Could Be A Key Catalyst For ExxonMobil Stock - Yahoo Finance](https://news.google.com/rss/articles/CBMingFBVV95cUxNMEg5VVFIZzlZZ3AtMmRUV1lPdkJlMEdVSWFsYzl6QUVPWHRZQTRUZF85eU1MN3ZwVHhqOGVkejFaTHBUTDZVcnE2a0xWRUx4TnpBaWpQdXUxQ3FFSnRad3Z5bWVKSVVzMU9Jb3lUWXhWaGl1MlpURDhQSWtfLW9tUXI0TVYwdFY2TjI0cGZEZS1XTWR1SHBNNHlwTVpXdw?oc=5) | Yahoo Finance |
-| 8h 前 | 0 | 中性 | [ExxonMobil (XOM) Stock May Be 10% Undervalued After Kashagan Fine Dispute - Simply Wall Street](https://news.google.com/rss/articles/CBMizgFBVV95cUxNTjhOVDJjS2d0TVM5U1NqT2Y4M0UyOFEwWTBVMnVYYllUVFFUQ09pSTdhUVJtUGVvSW1LNmtvM3RKbVJaRWtnZ1NpcUdxM0xnMFZfeDZVb0huekVYSExNLTRyUEtaU0xMQ2J1SXVILUhxVnNrZk5JUEpJX2xqSXJCcnJzelJ2SlZrNkdIVWxPNFFvdGdqMnJrdkR3RFR1MW1NczVxajA0Y2JYSEZpU0NoVERtSmJaRlY3VHZld1hreVlXMC1MTDdhZXBiVS1uQdIB0wFBVV95cUxPdFRkdUFjTHRpMDI2aXhpYVdyNkduVmZUWGxIT2JEQ0x2S2t5dmhXMjRzT3NQWmx3Qms0ek5DQ25UUkZNRXp1bGstYkY2M1pYRXZ3c3NWamU3eWhVUXdYNkhKXzdkSzFoMkhGeUpKU04teHBIN0RSN0FZdlpKNjNNQXQwNWJNN0FpMTdaS0xmYkZaV0ZRQ3EwSndzQnUxTGRRS2xmeGhZTWsteFhKamJqVHk4UkFQdk9uckdSSHlOaWpOWGgtSEN3QmZkazYtaVU0WTJr?oc=5) | Simply Wall Street |
-| 8h 前 | 0 | 中性 | [ExxonMobil Holdings Corporation (XOM) is Attracting Investor Attention: Here is What You Should Know - Yahoo Finance Singapore](https://news.google.com/rss/articles/CBMimwFBVV95cUxPcU4weXVXcS01bFkwUWJKa2NyUGhJV2lPbFZvZVVacENkNW5ZYWhZSGU3YXBrNFlUeGVOX0NOWDdwMHFUY2FRZ0tZRGNRTXFjMDJMQzlvcmpWMURQblA5bGQxRGVaNmR5TTFZWE93dFZlTUVwaHItZF9vUFl6TVdibnotcmRab1lENmdvdmZ5bjRUeFROMVItSWlRNA?oc=5) | Yahoo Finance Singapore |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
@@ -148,7 +139,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-13 | 173.45 | 174.89 | 172.65 | **174.08** | +1.1% | 11,505,200 |
 | 2026-10-14 | 175.07 | 177.43 | 174.53 | **177.01** | +1.7% | 13,578,900 |
 | 2026-10-15 | 178.63 | 178.69 | 173.60 | **174.68** | -1.3% | 11,227,700 |
-| 2026-10-16 | 176.49 | 179.16 | 175.15 | **178.97** | +2.5% | 13,106,010 |
+| 2026-10-16 | 176.49 | 179.16 | 175.15 | **178.98** | +2.5% | 13,106,010 |
 
 ## 七、自己去查（本页不做独立验证）
 
