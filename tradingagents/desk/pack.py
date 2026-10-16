@@ -114,6 +114,7 @@ class TradePack:
     policy_brief: str = ""
     tilt: dict = field(default_factory=dict)
     limits: dict = field(default_factory=dict)
+    reminders: list = field(default_factory=list)   # resting buys and 1R trims the trader tends to miss
     warnings: list = field(default_factory=list)
     path: str = ""
 
@@ -303,6 +304,22 @@ class Packer:
                         with contextlib.suppress(Exception):
                             row.earnings_in = _num(f.earnings.days_to_next(today))
                 pack.held.append(row)
+
+        # what the trader tends to miss: resting buys and sleeve rows past 1R
+        for sym, p in self.book.positions.items():
+            if getattr(p, "pending", False):
+                age = (today - date.fromisoformat(p.opened)).days if p.opened else 0
+                f = facts.get(sym)
+                px = f.price if f is not None and f.ok else _num(self.market.facts(sym, today).price)
+                gap = (f"现价高出限价 {(px / p.entry - 1) * 100:+.1f}%" if _ok(px) and p.entry else "现价未知")
+                pack.reminders.append(f"⏳ 挂单 {sym}：限价 {p.entry:,.2f}，第 {age} 天，{gap}；"
+                                      f"超过 {PENDING_DAYS} 天未成交自动撤单")
+        for h in pack.held:
+            p = self.book.positions.get(h.symbol)
+            if (p is not None and p.sleeve == "aggressive" and _ok(h.r_now) and h.r_now >= 1.0
+                    and not getattr(p, "trimmed", False)):
+                pack.reminders.append(f"💡 {h.symbol} 已到 {h.r_now:.1f}R 未减半：手册十·先 trim 一半兑现，"
+                                      f"剩余止损移到成本并跟 20 日线")
 
         # candidates
         recent = self.book.recently_closed(today)
@@ -517,6 +534,8 @@ def format_pack(pack: TradePack, facts: dict | None = None) -> str:
             out.append(f"- ⚠ 没有止损挂在交易所的仓位：{', '.join(unprotected)} — 用 protect 单给它们止损和目标")
     else:
         out.append("空仓。")
+    for r in pack.reminders:
+        out.append(f"- {r}")
     out.append("")
 
     out.append("## 环境")

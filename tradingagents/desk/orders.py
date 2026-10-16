@@ -112,6 +112,7 @@ class Position:
     triggers: list = field(default_factory=list)
     stop0: float = float("nan")     # the stop the trade was sized with; R is measured against it
     pending: bool = False           # the buy is at the venue but has not filled
+    trimmed: bool = False           # half taken off at 1R (MANUAL §10)
 
     def risk(self) -> float:
         return self.shares * max(0.0, self.entry - self.stop)
@@ -568,6 +569,9 @@ class Executor:
             out.reason = f"venue refused: {res.message}"
             return out
         self.book.close(sym, price if _ok(price) else 0.0, today, f"trim: {o.get('reason', '')}", shares=n)
+        if sym in self.book.positions:
+            self.book.positions[sym].trimmed = True
+            self.book.save()
         left = n_held - n
         if _ok(stop) and _ok(target) and stop < price < target:
             pr = self.broker.protect(sym, left, stop, target)

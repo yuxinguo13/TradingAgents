@@ -632,3 +632,34 @@ class TestReflection1015:
         assert out[0].ok, out[0].reason
         p = DeskBook(home / "desk" / "trade" / "book.json").positions["HLD"]
         assert p.entry == 91.5 and p.stop0 == p.stop and p.adopted
+
+
+@pytest.mark.unit
+class TestReflection1016:
+    def test_the_pack_reminds_about_resting_buys_and_untrimmed_1r_sleeve_rows(self, home):  # noqa: F811
+        from datetime import timedelta
+        shape("HLD", 100.0, drift=0.6)
+        shape("AAA", 100.0, drift=0.6)
+        book = DeskBook(home / "desk" / "trade" / "book.json")
+        px = frame_for("HLD", DATA_DAY.isoformat())["Close"].iloc[-1]
+        book.positions["HLD"] = Position(symbol="HLD", shares=10, entry=round(px * 0.9, 2), stop=round(px * 0.85, 2),
+                                         target=round(px * 1.3, 2), opened="2026-08-12", sleeve="aggressive",
+                                         stop0=round(px * 0.85, 2))
+        book.positions["AAA"] = Position(symbol="AAA", shares=10, entry=round(px * 0.97, 2), stop=90.0, target=130.0,
+                                         opened=(MONDAY_OPEN.date() - timedelta(days=1)).isoformat(), pending=True,
+                                         parent_id="p1")
+        book.save()
+        v = FakeVenue(acct(cash=90_000, holdings=[held("HLD", 10, round(px * 0.9, 2), px)]))
+        v.resting["HLD"] = round(px * 0.85, 2)
+        v.open_orders = lambda: [{"id": "s-HLD", "symbol": "HLD", "side": "sell", "type": "stop", "stop_price": round(px * 0.85, 2)},
+                                 {"id": "p1", "symbol": "AAA", "side": "buy", "type": "limit", "parent_id": ""}]
+        pk = pack.Packer(broker=v, market=mkt(task="trade"), book=book, screen=screen_of(), now=MONDAY_OPEN).run()
+        text = pack.format_pack(pk)
+        assert any(r.startswith("⏳ 挂单 AAA") and "第 1 天" in r for r in pk.reminders)
+        assert any(r.startswith("💡 HLD") for r in pk.reminders) and "💡 HLD" in text and "⏳ 挂单 AAA" in text
+        # once half is taken off, the reminder goes quiet
+        book = DeskBook(home / "desk" / "trade" / "book.json")
+        book.positions["HLD"].trimmed = True
+        book.save()
+        pk2 = pack.Packer(broker=v, market=mkt(task="trade"), book=book, screen=screen_of(), now=MONDAY_OPEN).run()
+        assert not any(r.startswith("💡 HLD") for r in pk2.reminders)
