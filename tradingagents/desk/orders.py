@@ -167,6 +167,7 @@ class DeskBook:
     def save(self) -> None:
         self.path.parent.mkdir(parents=True, exist_ok=True)
         self.path.write_text(json.dumps({
+            "saved_at": datetime.now().isoformat(timespec="seconds"),   # state merges keep the newer book
             "positions": {s: asdict(p) for s, p in self.positions.items()},
             "closed": [asdict(c) for c in self.closed],
         }, ensure_ascii=False, indent=1), encoding="utf-8")

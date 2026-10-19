@@ -646,8 +646,8 @@ class TestReflection1016:
                                          target=round(px * 1.3, 2), opened="2026-08-12", sleeve="aggressive",
                                          stop0=round(px * 0.85, 2))
         book.positions["AAA"] = Position(symbol="AAA", shares=10, entry=round(px * 0.97, 2), stop=90.0, target=130.0,
-                                         opened=(MONDAY_OPEN.date() - timedelta(days=1)).isoformat(), pending=True,
-                                         parent_id="p1")
+                                         opened=(MONDAY_OPEN.date() - timedelta(days=3)).isoformat(), pending=True,
+                                         parent_id="p1")   # the Friday before: one session old
         book.save()
         v = FakeVenue(acct(cash=90_000, holdings=[held("HLD", 10, round(px * 0.9, 2), px)]))
         v.resting["HLD"] = round(px * 0.85, 2)
@@ -663,3 +663,54 @@ class TestReflection1016:
         book.save()
         pk2 = pack.Packer(broker=v, market=mkt(task="trade"), book=book, screen=screen_of(), now=MONDAY_OPEN).run()
         assert not any(r.startswith("💡 HLD") for r in pk2.reminders)
+
+
+@pytest.mark.unit
+class TestReflection1019:
+    def test_pending_age_counts_sessions_not_calendar_days(self):
+        from datetime import date as d
+        assert pack.sessions_since("2026-10-16", d(2026, 10, 19)) == 1      # Friday → Monday
+        assert pack.sessions_since("2026-10-14", d(2026, 10, 19)) == 3
+        assert pack.sessions_since("bad", d(2026, 10, 19)) == 99
+
+    def test_the_newer_book_wins_a_state_merge(self):
+        from tradingagents.desk.state import newer_book
+        old = '{"saved_at": "2026-10-13T10:00:00", "positions": {"A": 1}}'
+        new = '{"saved_at": "2026-10-14T15:20:00", "positions": {"A": 2}}'
+        none = '{"positions": {"A": 0}}'
+        assert newer_book(old, new) == new and newer_book(new, old) == new
+        assert newer_book(none, old) == old and newer_book(old, none) == old
+        assert newer_book("not json", new) == new
+
+    def test_the_book_saves_a_timestamp(self, home):  # noqa: F811
+        book = DeskBook(home / "desk" / "trade" / "book.json")
+        book.save()
+        assert json.loads((home / "desk" / "trade" / "book.json").read_text())["saved_at"][:4] == "2026"
+
+    def test_a_book_stop_below_the_venues_is_synced_up(self, home):  # noqa: F811
+        """MSFT: the venue held 514.73, a stale book copy said 502."""
+        shape("HLD", 100.0, drift=0.3)
+        book = DeskBook(home / "desk" / "trade" / "book.json")
+        book.positions["HLD"] = Position(symbol="HLD", shares=10, entry=90.0, stop=85.0, target=120.0,
+                                         opened="2026-08-12", stop0=85.0)
+        book.save()
+        v = FakeVenue(acct(cash=90_000, holdings=[held("HLD", 10, 90.0, 100.0)]))
+        v.resting["HLD"] = 95.0
+        v.open_orders = lambda: [{"id": "s-HLD", "symbol": "HLD", "side": "sell", "type": "stop", "stop_price": 95.0}]
+        pk = pack.Packer(broker=v, market=mkt(task="trade"), book=book, screen=screen_of(), now=MONDAY_OPEN).run()
+        assert DeskBook(home / "desk" / "trade" / "book.json").positions["HLD"].stop == 95.0
+        assert any("已按交易所同步" in w for w in pk.warnings)
+
+    def test_an_orphan_venue_buy_is_cancelled_once_stale(self, home):  # noqa: F811
+        """COP: its book row was lost to a stale copy; the GTC limit kept resting."""
+        shape("AAA", 100.0, drift=0.6)
+        v = FakeVenue(acct())
+        v.open_orders = lambda: [{"id": "b-AAA", "symbol": "AAA", "side": "buy", "type": "limit", "parent_id": "",
+                                  "submitted_at": "2026-08-12T14:00"},
+                                 {"id": "b-BBB", "symbol": "BBB", "side": "buy", "type": "limit", "parent_id": "",
+                                  "submitted_at": MONDAY_OPEN.date().isoformat() + "T14:00"}]
+        book = DeskBook(home / "desk" / "trade" / "book.json")
+        pk = pack.Packer(broker=v, market=mkt(task="trade"), book=book, screen=screen_of(), now=MONDAY_OPEN).run()
+        assert v.cancelled == ["b-AAA"]
+        assert any(w.startswith("AAA") and "已撤单" in w for w in pk.warnings)
+        assert any(w.startswith("BBB") and "会撤" in w for w in pk.warnings)

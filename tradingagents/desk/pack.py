@@ -34,7 +34,17 @@ from .market import SECTOR_ZH, Facts, Market, _num, _ok
 from .orders import MAX_POSITIONS, SLEEVE, DeskBook, Position
 from .report import Idea, chart_for, score
 
-PENDING_DAYS = 2   # a resting buy that has not filled in this many days is cancelled
+PENDING_DAYS = 2   # a resting buy that has not filled in this many SESSIONS is cancelled
+
+
+def sessions_since(opened: str, today: date) -> int:
+    """Trading days between two dates (weekends excluded). 2026-10-19: counted
+    in calendar days, a Thursday's limit was three days old on Monday."""
+    try:
+        import numpy as np
+        return int(np.busday_count(date.fromisoformat(opened), today))
+    except (ValueError, TypeError):
+        return 99
 
 logger = logging.getLogger(__name__)
 
@@ -287,6 +297,13 @@ class Packer:
                               protected=sym in resting, in_book=sym in self.book.positions)
                 p = self.book.positions.get(sym)
                 if p is not None:
+                    venue_stop = _num((resting.get(sym) or {}).get("stop_price"))
+                    if _ok(venue_stop) and _ok(p.stop) and venue_stop > p.stop + 1e-9:
+                        # the venue is the truth for stops: a stale book copy from
+                        # another session undid a raise (MSFT 514.73 → 502, 2026-10-14)
+                        pack.warnings.append(f"{sym}: 账本止损 {p.stop:,.2f} 低于交易所挂着的 {venue_stop:,.2f}，已按交易所同步")
+                        p.stop = venue_stop
+                        self.book.save()
                     if getattr(p, "pending", False):
                         # the venue filled it since the order ran: book the real cost
                         p.pending = False
@@ -308,7 +325,7 @@ class Packer:
         # what the trader tends to miss: resting buys and sleeve rows past 1R
         for sym, p in self.book.positions.items():
             if getattr(p, "pending", False):
-                age = (today - date.fromisoformat(p.opened)).days if p.opened else 0
+                age = sessions_since(p.opened, today) if p.opened else 0
                 f = facts.get(sym)
                 px = f.price if f is not None and f.ok else _num(self.market.facts(sym, today).price)
                 gap = (f"现价高出限价 {(px / p.entry - 1) * 100:+.1f}%" if _ok(px) and p.entry else "现价未知")
@@ -367,6 +384,20 @@ class Packer:
                 resting[sym] = o
             elif o.get("type") == "limit":
                 targets[sym] = _num(o.get("limit_price"))
+        held_syms = {str(h.symbol).upper() for h in (account.holdings or [])}
+        for o in self.broker().open_orders():
+            sym = str(o.get("symbol", "")).upper()
+            if (o.get("side") != "buy" or o.get("parent_id") or sym in self.book.positions
+                    or sym in held_syms or str(o.get("id", "")) in self._cancelled):
+                continue
+            # a buy the book does not know (its row was lost): cancel it once stale
+            age = sessions_since(str(o.get("submitted_at", ""))[:10], today)
+            if age > PENDING_DAYS and hasattr(self.broker(), "cancel"):
+                ok = self.broker().cancel(str(o.get("id", "")))
+                pack.warnings.append(f"{sym}: 交易所挂着账本没有的买单（{age} 个交易日），"
+                                     f"{'已撤单' if ok else '撤单失败'}")
+            else:
+                pack.warnings.append(f"{sym}: 交易所挂着账本没有的买单（{age} 个交易日），超过 {PENDING_DAYS} 天会撤")
         for h in account.holdings or []:
             sym = str(h.symbol).upper()
             if sym in self.book.positions or sym not in resting:
@@ -394,6 +425,12 @@ class Packer:
             pack.warnings.append(f"{sym}: 账本里没有记录，已{how}恢复，止损 {stop:,.2f}")
         if any("已按" in w and "恢复" in w for w in pack.warnings):
             self.book.save()
+
+    @property
+    def _cancelled(self) -> set:
+        if not hasattr(self, "_cancelled_ids"):
+            self._cancelled_ids = set()
+        return self._cancelled_ids
 
     def _open_buy(self, symbol: str) -> dict | None:
         """The venue's resting buy order for ``symbol``, if any."""
@@ -423,11 +460,12 @@ class Packer:
                 # A pullback limit may rest a couple of sessions; after that it is
                 # cancelled at the venue too (PBR 2026-10-09 rested for weeks).
                 resting = self._open_buy(s)
-                age = (today - date.fromisoformat(p.opened)).days if p.opened else 99
+                age = sessions_since(p.opened, today) if p.opened else 99
                 if resting and age <= PENDING_DAYS:
                     continue
                 if resting and hasattr(self.broker(), "cancel"):
                     cancelled = self.broker().cancel(str(resting.get("id") or p.parent_id))
+                    self._cancelled.add(str(resting.get("id") or p.parent_id))
                     how = "已撤单并" if cancelled else "撤单失败，仍"
                     pack.warnings.append(f"{s}: 买单挂了 {age} 天未成交，{how}从账本移除（不是交易，不复盘）")
                 else:

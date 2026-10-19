@@ -23,6 +23,7 @@ The stops themselves never depend on this: they rest at the venue, and
 
 from __future__ import annotations
 
+import json
 import logging
 import os
 import subprocess
@@ -97,6 +98,18 @@ def merge_jsonl(remote: str, local: str) -> str:
     return "\n".join(out) + ("\n" if out else "")
 
 
+def newer_book(remote: str, local: str) -> str:
+    """Of two copies of a book, the one saved later. A copy without a
+    ``saved_at`` counts as oldest. 2026-10-14: another session's older copy
+    overwrote the book and undid a stop raise and a resting buy."""
+    def stamp(text: str) -> str:
+        try:
+            return str(json.loads(text).get("saved_at") or "")
+        except ValueError:
+            return ""
+    return remote if stamp(remote) > stamp(local) else local
+
+
 def _build_tree(root: Path, source: Path, parent: str | None, env: dict) -> tuple[str, int]:
     """The remote tree with the local files laid on top.
 
@@ -118,6 +131,11 @@ def _build_tree(root: Path, source: Path, parent: str | None, env: dict) -> tupl
             remote = _git("show", f"{parent}:{rel}", cwd=root, check=False)
             if remote:
                 merged.append((rel, merge_jsonl(remote + "\n", p.read_text(encoding="utf-8"))))
+                continue
+        if p.name == "book.json" and parent is not None:
+            remote = _git("show", f"{parent}:{rel}", cwd=root, check=False)
+            if remote:
+                merged.append((rel, newer_book(remote, p.read_text(encoding="utf-8"))))
                 continue
         plain.append(rel)
     if plain:
@@ -143,6 +161,9 @@ def _overlay(src: Path, dst: Path) -> int:
         if p.suffix == ".jsonl" and out.exists():
             merged = merge_jsonl(p.read_text(encoding="utf-8"), out.read_text(encoding="utf-8"))
             out.write_text(merged, encoding="utf-8")
+        elif p.name == "book.json" and out.exists():
+            out.write_text(newer_book(p.read_text(encoding="utf-8"), out.read_text(encoding="utf-8")),
+                           encoding="utf-8")
         else:
             shutil.copy2(p, out)
         n += 1
