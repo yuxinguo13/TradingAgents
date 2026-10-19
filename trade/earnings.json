@@ -1,285 +1,5 @@
 {
 "rows": {
-"XOM|2026-10-15": {
-"symbol": "XOM",
-"as_of": "2026-10-15",
-"next_date": "2026-10-30",
-"last_date": "2026-07-31",
-"eps_estimate": 3.63,
-"eps_actual": 4.11,
-"surprise_pct": 13.26,
-"error": ""
-},
-"WMT|2026-10-15": {
-"symbol": "WMT",
-"as_of": "2026-10-15",
-"next_date": "2026-11-19",
-"last_date": "2026-08-20",
-"eps_estimate": 0.74,
-"eps_actual": 0.81,
-"surprise_pct": 9.27,
-"error": ""
-},
-"AAPL|2026-10-15": {
-"symbol": "AAPL",
-"as_of": "2026-10-15",
-"next_date": "2026-11-02",
-"last_date": "2026-07-30",
-"eps_estimate": 1.89,
-"eps_actual": 2.02,
-"surprise_pct": 6.74,
-"error": ""
-},
-"MSFT|2026-10-15": {
-"symbol": "MSFT",
-"as_of": "2026-10-15",
-"next_date": "2026-10-28",
-"last_date": "2026-07-29",
-"eps_estimate": 4.24,
-"eps_actual": 4.74,
-"surprise_pct": 11.81,
-"error": ""
-},
-"TBBB|2026-10-15": {
-"symbol": "TBBB",
-"as_of": "2026-10-15",
-"next_date": "2026-11-18",
-"last_date": "2026-08-12",
-"eps_estimate": -2.61,
-"eps_actual": -8.0,
-"surprise_pct": -206.86,
-"error": ""
-},
-"ANF|2026-10-15": {
-"symbol": "ANF",
-"as_of": "2026-10-15",
-"next_date": "2026-11-25",
-"last_date": "2026-08-26",
-"eps_estimate": 1.97,
-"eps_actual": 4.17,
-"surprise_pct": 111.93,
-"error": ""
-},
-"GCT|2026-10-15": {
-"symbol": "GCT",
-"as_of": "2026-10-15",
-"next_date": "2026-11-05",
-"last_date": "2026-08-06",
-"eps_estimate": 0.85,
-"eps_actual": 1.16,
-"surprise_pct": 36.47,
-"error": ""
-},
-"TWLO|2026-10-15": {
-"symbol": "TWLO",
-"as_of": "2026-10-15",
-"next_date": "2026-10-29",
-"last_date": "2026-08-06",
-"eps_estimate": 1.32,
-"eps_actual": 1.47,
-"surprise_pct": 11.06,
-"error": ""
-},
-"DT|2026-10-15": {
-"symbol": "DT",
-"as_of": "2026-10-15",
-"next_date": "2026-11-04",
-"last_date": "2026-08-05",
-"eps_estimate": 0.44,
-"eps_actual": 0.48,
-"surprise_pct": 8.16,
-"error": ""
-},
-"OMER|2026-10-15": {
-"symbol": "OMER",
-"as_of": "2026-10-15",
-"next_date": "2026-11-12",
-"last_date": "2026-08-12",
-"eps_estimate": -0.33,
-"eps_actual": 0.1,
-"surprise_pct": 128.85,
-"error": ""
-},
-"NUTX|2026-10-15": {
-"symbol": "NUTX",
-"as_of": "2026-10-15",
-"next_date": "2026-11-05",
-"last_date": "2026-08-06",
-"eps_estimate": 4.95,
-"eps_actual": 9.38,
-"surprise_pct": 89.34,
-"error": ""
-},
-"SSL|2026-10-15": {
-"symbol": "SSL",
-"as_of": "2026-10-15",
-"next_date": "",
-"last_date": "2007-01-29",
-"eps_estimate": 1.4,
-"eps_actual": 0.74,
-"surprise_pct": -47.47,
-"error": ""
-},
-"RVTY|2026-10-15": {
-"symbol": "RVTY",
-"as_of": "2026-10-15",
-"next_date": "2026-11-03",
-"last_date": "2026-08-04",
-"eps_estimate": 1.22,
-"eps_actual": 1.41,
-"surprise_pct": 15.93,
-"error": ""
-},
-"PBR|2026-10-15": {
-"symbol": "PBR",
-"as_of": "2026-10-15",
-"next_date": "2026-11-10",
-"last_date": "2026-08-06",
-"eps_estimate": 1.4,
-"eps_actual": 1.62,
-"surprise_pct": 15.52,
-"error": ""
-},
-"NIQ|2026-10-15": {
-"symbol": "NIQ",
-"as_of": "2026-10-15",
-"next_date": "2026-11-12",
-"last_date": "2026-08-10",
-"eps_estimate": 0.2,
-"eps_actual": 0.27,
-"surprise_pct": 32.99,
-"error": ""
-},
-"TX|2026-10-15": {
-"symbol": "TX",
-"as_of": "2026-10-15",
-"next_date": "2026-11-03",
-"last_date": "2026-08-04",
-"eps_estimate": 1.54,
-"eps_actual": 1.81,
-"surprise_pct": 17.37,
-"error": ""
-},
-"UGP|2026-10-15": {
-"symbol": "UGP",
-"as_of": "2026-10-15",
-"next_date": "2026-11-11",
-"last_date": "2026-08-12",
-"eps_estimate": 0.24,
-"eps_actual": 0.3,
-"surprise_pct": 25.0,
-"error": ""
-},
-"MRX|2026-10-15": {
-"symbol": "MRX",
-"as_of": "2026-10-15",
-"next_date": "2026-11-05",
-"last_date": "2026-08-12",
-"eps_estimate": 1.36,
-"eps_actual": 1.64,
-"surprise_pct": 20.35,
-"error": ""
-},
-"SXT|2026-10-15": {
-"symbol": "SXT",
-"as_of": "2026-10-15",
-"next_date": "2026-10-30",
-"last_date": "2026-07-24",
-"eps_estimate": 1.03,
-"eps_actual": 1.2,
-"surprise_pct": 16.35,
-"error": ""
-},
-"INSW|2026-10-15": {
-"symbol": "INSW",
-"as_of": "2026-10-15",
-"next_date": "2026-11-05",
-"last_date": "2026-08-10",
-"eps_estimate": 5.27,
-"eps_actual": 5.91,
-"surprise_pct": 12.04,
-"error": ""
-},
-"HMC|2026-10-15": {
-"symbol": "HMC",
-"as_of": "2026-10-15",
-"next_date": "2026-11-05",
-"last_date": "2014-01-31",
-"eps_estimate": 0.87,
-"eps_actual": 0.85,
-"surprise_pct": -2.3,
-"error": ""
-},
-"JOYY|2026-10-15": {
-"symbol": "JOYY",
-"as_of": "2026-10-15",
-"next_date": "2026-11-18",
-"last_date": "2026-08-25",
-"eps_estimate": 1.2,
-"eps_actual": 1.24,
-"surprise_pct": 3.09,
-"error": ""
-},
-"HURN|2026-10-15": {
-"symbol": "HURN",
-"as_of": "2026-10-15",
-"next_date": "2026-11-03",
-"last_date": "2026-07-28",
-"eps_estimate": 2.17,
-"eps_actual": 2.46,
-"surprise_pct": 13.16,
-"error": ""
-},
-"MGNI|2026-10-15": {
-"symbol": "MGNI",
-"as_of": "2026-10-15",
-"next_date": "2026-11-04",
-"last_date": "2026-08-05",
-"eps_estimate": 0.26,
-"eps_actual": 0.26,
-"surprise_pct": -1.09,
-"error": ""
-},
-"ABCL|2026-10-15": {
-"symbol": "ABCL",
-"as_of": "2026-10-15",
-"next_date": "2026-11-09",
-"last_date": "2026-08-05",
-"eps_estimate": -0.16,
-"eps_actual": -0.18,
-"surprise_pct": -9.09,
-"error": ""
-},
-"MSM|2026-10-15": {
-"symbol": "MSM",
-"as_of": "2026-10-15",
-"next_date": "2026-10-22",
-"last_date": "2026-07-01",
-"eps_estimate": 1.27,
-"eps_actual": 1.43,
-"surprise_pct": 12.6,
-"error": ""
-},
-"DAC|2026-10-15": {
-"symbol": "DAC",
-"as_of": "2026-10-15",
-"next_date": "2026-11-16",
-"last_date": "2026-08-03",
-"eps_estimate": 7.6,
-"eps_actual": 7.29,
-"surprise_pct": -4.08,
-"error": ""
-},
-"FGI|2026-10-15": {
-"symbol": "FGI",
-"as_of": "2026-10-15",
-"next_date": "2026-11-12",
-"last_date": "2026-08-12",
-"eps_estimate": 0.43,
-"eps_actual": 0.6,
-"surprise_pct": 40.0,
-"error": ""
-},
 "UNH|2026-10-16": {
 "symbol": "UNH",
 "as_of": "2026-10-16",
@@ -528,6 +248,46 @@
 "eps_estimate": 1.2,
 "eps_actual": 1.24,
 "surprise_pct": 3.09,
+"error": ""
+},
+"CBRL|2026-10-19": {
+"symbol": "CBRL",
+"as_of": "2026-10-19",
+"next_date": "2026-12-09",
+"last_date": "2026-09-23",
+"eps_estimate": 0.18,
+"eps_actual": 0.99,
+"surprise_pct": 453.41,
+"error": ""
+},
+"UNH|2026-10-19": {
+"symbol": "UNH",
+"as_of": "2026-10-19",
+"next_date": "2027-01-12",
+"last_date": "2026-10-13",
+"eps_estimate": 4.14,
+"eps_actual": 4.69,
+"surprise_pct": 13.26,
+"error": ""
+},
+"V|2026-10-19": {
+"symbol": "V",
+"as_of": "2026-10-19",
+"next_date": "2026-10-27",
+"last_date": "2026-07-28",
+"eps_estimate": 3.23,
+"eps_actual": 3.32,
+"surprise_pct": 2.76,
+"error": ""
+},
+"WMT|2026-10-19": {
+"symbol": "WMT",
+"as_of": "2026-10-19",
+"next_date": "2026-11-19",
+"last_date": "2026-08-20",
+"eps_estimate": 0.74,
+"eps_actual": 0.81,
+"surprise_pct": 9.27,
 "error": ""
 }
 }
