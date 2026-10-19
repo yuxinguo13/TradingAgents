@@ -112,18 +112,13 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 12h 前 | 8 | 中性 | [Broadcom Inc. $AVGO Shares Newly Purchased by Sterling Investment Management LLC - MarketBeat](https://news.google.com/rss/articles/CBMi1gFBVV95cUxQSUZvd0gyU3M4b3ozQTFjc3R5YnJYU2prc3hiZ3o4ckZrdG5lX1lWQjIxTzBBTjY2bUUtb2xvMGNDRnBhUGVSQjZDQUJ4MGpEbkM3alVENWNUMGxpTmc5aW9lWE1FM2czT3FabkNYV1dNRG94NWlEUnJ6LTMzLUJWMlQ4WEV4aUJiMmRYbnpra3FSQkh1bGRWc0pDOUFPRlVMRUdIbWJ0clI3SXVOM1E4bmNTWHJtVG50MXFWeDNDenUtdk1vcW9YV1I2aEhCeTQ1MmU4a0pR?oc=5) | MarketBeat |
-| 12h 前 | 8 | 中性 | [Broadcom Inc. $AVGO Stock: Cardinal Capital Management Inc. Grows Holdings - MarketBeat](https://news.google.com/rss/articles/CBMiywFBVV95cUxPbl8zMFJXMmlOQkR3WFJ6bmZId1R1WkpBLTR3M1hod1duajJmVVJQbnZRZmNZNW9Wb1ViUzlLTTZ6TGs4dUpfVGZ1Mm9fMTJKSjd1TDR6cnlnVTNtSGktSDZzZkQ5dzRHSERQZnllWlZtV3JzMk1QcUFaamdpRnlENDFubFpXXzZUbk9jLUhFbmpBRVdCWXlJQVRQOXc4N3laVVl6RWc0WHpsTnhTQ01CaE1GM2VFOGUxbi1NbnBsMV9YcFJhZ2ZBZVhPbw?oc=5) | MarketBeat |
-| 35h 前 | 8 | 中性 | [Broadcom Inc. $AVGO Shares Newly Purchased by North Capital Inc. - MarketBeat](https://news.google.com/rss/articles/CBMivwFBVV95cUxNZnk1WHV5NDRjZHIxWXpUai1PUVRoZm05VU1SNVF0VzljYnROODFYTE9Iazg4Ym5HNHE0SGRPOC1CS2hjNDdDRmUzb25xZ29WQWRFRkhHTkxYYjg3NFlrdDQzZ2kzM0UzRkxydm9aZU85dWdWTXF5N3VxaS1QdkpCQm5xTUhmNDRzX3lKS3BMZFBXSEwtbEU3bFBBVkR4QnVVeDRHalNZc3l3b3lXX2xHV19EY2Z4NWhaS3RBWHd6dw?oc=5) | MarketBeat |
-| 36h 前 | 8 | 中性 | [Broadcom Inc. $AVGO Stock Sold by Franchise GP Ltd - MarketBeat](https://news.google.com/rss/articles/CBMirgFBVV95cUxObVhfZEdtcVRJUlE3cVZ5anRzZW5wZEhGNzJESWtlcGI4MUF5U0JRQTVKMmhvdmFROVhDdUJpdnJkSWVYR1JXbzI2SURIN2RvQURLODM0TmJPNzVOUU1qNEVsdVM2SFpvQ1ZJUDJkVkdUUjJaaXA3dWRMdDhyMnJCRXZUOUN2eDl6eHc0UjNMekRRYjlIbUdxQXBhaG4tSU01QW84eHg5WGJlVlY1bXc?oc=5) | MarketBeat |
-| 37h 前 | 8 | 中性 | [Broadcom Inc. $AVGO Stock Holdings Decreased by Aspiriant LLC - MarketBeat](https://news.google.com/rss/articles/CBMivAFBVV95cUxQUjN2SzZGTEFFbS1UY0lzY0ViV0JHeVpYYkE3ckgyMHA2WEMyV0dIQ1JvVExTMTFGaTR3eUpBYk9uQndrLVhyaHhGMEdnb0kxZWh4ODVhN3p3T3FDbjE2OGptNFI5VkZwdlFfTFRXcERpcnVmQjBESmg4MEhpSnpvZUxPaUdmWXhISHZBLWhwUlFvWFRWN0JHc0s4ZllVNHAzZm5DNHQ4WE13dlFTUDVsN3JERnlIQUNSc282TA?oc=5) | MarketBeat |
-| 5h 前 | 7 | 偏空 | [Marvell exec sells $865K in shares amid AI chip stock pressure after Broadcom CEO's warning - Pluang](https://news.google.com/rss/articles/CBMilwFBVV95cUxOXy1mOV9PdXYwWVVGOWVTWnpIZkNNZ1NJNWU5Q3U2MUEzR0VrdldZMlRrS1BxazBUUFZ4bGlfWk5fWm5LeEhrWDRrUktVNkxGUzIwR3o0REt4elJKb1g5ZkpjTEoxZkFJd3JERzNaRFRBeHFfcXhqTU5ZX1VLX3gybXZndkU5R1A1N3VMSnd0ODdqWlhKRnFB?oc=5) | Pluang |
-| 20h 前 | 7 | 中性 | [Companies Push Back on SEC Stock Tokenization Regime as Broadcom, Verizon and Others Refuse Listing - bloomingbit](https://news.google.com/rss/articles/CBMiVEFVX3lxTE5kMHRvdEtmdHVsQXMtYXFPeldneTFkZEliOVU3NkF2ZHQzR25GbHN3NEdPY3NzOFJOVEN6X05WQjEtSldpNGR5bHFpV19malYwT0Z0aQ?oc=5) | bloomingbit |
-| 21h 前 | 7 | 中性 | [SEC tokenized stock framework faces issuer pushback as Broadcom, Verizon object to OKX-ICE listing - CoinDesk](https://news.google.com/rss/articles/CBMi2gFBVV95cUxQTkdMMmxWMDNsZFE2ckZfdVVyS2ZtS3I4bHpJZVZJV3phOEhmaGdqc0paTE9QV3M1MFBkRktlYkxUaEVpZU9UTVlxUzEtNWl6eDRlU1MyM3VhM1Q4WUdkcVpHUHBBUmlsZUdYclRMRnY4a3J2bjA1WHJJakxQTkZpdVRkZ0hjQWQyV0dQcTBqbHozeHZJTWhJLTE2VnBjUW5ydnN2QmhSS05OZjVJcE5OWkIyOVVGcnRqd1JWeXlBMVVUWUhBNWVJNWw1REVnU1J4U0IxSmpjaGkwUQ?oc=5) | CoinDesk |
-| 30h 前 | 7 | 中性 | [Broadcom's CEO Sees Years of AI Demand But Warns of a Bigger Threat to the Boom - Yahoo Finance](https://news.google.com/rss/articles/CBMilgFBVV95cUxNV0FUUVBmc0p2N2lLYzlBUHJHVUtqTWl4dnBQRV9JVU10Z1hsYXRkd2tkTnI4dWxFdzVQTUE3NktNOU00MlpBZXBqemdQODA0ZHQ1N2R5MnFpMm1EMXRYWmN5QVl3YmhFdzlPMklQMGRPaUp4MmZVeEpPUGkxQXoyWDVTZzcweVJJYmRWX2prQXltM1IwcUE?oc=5) | Yahoo Finance |
-| 1h 前 | 6 | 偏多 | [Broadcom (AVGO) vs. Texas Instruments (TXN): Higher Income or Stronger Dividend Coverage? - Yahoo Finance](https://news.google.com/rss/articles/CBMioAFBVV95cUxNelktbEwydndHVE1ERE1zdFVoelFpalBHV1hqdE5rc29RSnBWOWJ6LTdVUWVXZG1SalRiSWtUYXd4SlhDVnJpVHJsMXRDa3lFT25kNkFqckE0UWJ5V2M4Smk1Tzhia1FtdTQzQ05vY0FjcEo5THA5QmtVSXl3ZnBXMUxnM0ppUi13azB6YVMwU3BWTjVRRFp3WTJHOUg0TEZJ?oc=5) | Yahoo Finance |
-| 44h 前 | 6 | 中性 | [$3,000 Split Across Nvidia, Broadcom, and TSMC Could Be Worth This Much by 2030 - Yahoo Finance](https://news.google.com/rss/articles/CBMilAFBVV95cUxNX2l1RTh5SXRoaVI4ci05eDRHUWpJdG54TU1HbkRRRlc5Y1ctdDI1VG9tN1BXTS1keVJOZndJX1BfN3hrWUNfX1dVMi1HVjhDREIyRlNvdEt2VnJnWlMzaElOTkRLN2hRbkNLQ2QzbVJ4c25scnFHV3E4NVFKdWMtRUI0dVVSSGl3SW04b3hVTkppVExz?oc=5) | Yahoo Finance |
-| 5h 前 | 5 | 偏多 | [Broadcom Vs. Micron: Which Semiconductor Stock Wins the AI Sell-Off? - Benzinga](https://news.google.com/rss/articles/CBMiiAFBVV95cUxNenRYb0ZkS0VsT0RPOU1XaHpxRE15Mk5kbVIwVXFTN2lQVFY2Z3p4c2pfdnJNd21xZlVTRmV0aFp3dUJhaF83c0tadHI5VVZuSGRrclpNcm44NDFUTms5ZkEwMFZIaGhmZkNxSWZUVk9Vc0xfODFKdGh6MWtSb2RaSm5kNFB0bE1u?oc=5) | Benzinga |
+| 13h 前 | 8 | 中性 | [Broadcom Inc. $AVGO Stock: TD Waterhouse Canada Inc. Decreases Holdings - MarketBeat](https://news.google.com/rss/articles/CBMixwFBVV95cUxNNVNMVnUybWtFZUNoMlRxQXF5Z2RIOEpQZ1lvZHhqbm9ha2VMcFNZandVSkZVdHkyRHAyOXpNVUFtMlI4ckprX1dXNGpfMkh3eDlTcXlTalVqaEJjVndNanhaUkhJY3ZYQWJQMm53VlZnVmRuLUFRT0hrZHNLTmZ6MHhwOF9jM3h3NFhhN2I5TEdiLVBIcE5ETUo5ODVjcFZZTUxOWVJES25vRUxuSmhod3hkRmxJZ0M1T2pmSTlKSldheEx5cWpB?oc=5) | MarketBeat |
+| 13h 前 | 8 | 中性 | [Broadcom Inc. $AVGO Stock Sold by Cyndeo Wealth Partners LLC - MarketBeat](https://news.google.com/rss/articles/CBMiuwFBVV95cUxNcnJoaW5uT2t4LVFYTDNvNXQ0YlhtampVZkZmS20xdzdaSkREa3FsQlVka1k5cFNiczk1aUFGdTBlenBOY1R1WnRlQ3hrdERucFpzRGhMTHZrbm9qSzVfc21iYzdkZHlPR1JuYTFXNHJyQlZGaVIxUU1GZWhvM05za1Nxb2tjREtLV3pPM09XVEkyeHNIa2syUjRvSWRiQS1aWGpLRGF1UHhVNFIxVDNfWDY2YjhzQkJfM0Q0?oc=5) | MarketBeat |
+| 36h 前 | 8 | 中性 | [Broadcom Inc. $AVGO Holdings Lowered by Sustainable Growth Advisers LP - MarketBeat](https://news.google.com/rss/articles/CBMiyAFBVV95cUxQbnozbWpTcURUYWMtLXd4SEd5ZkVTZzFxdUs2amFoV1BkOG5VQ09GcExoeDFtRm9KOExSUlJMYmhrVGc1c3dnSnRWbGVVU0FCUFBBWXptWmp6WlhwaXQxWUdSTEZUbnl6NjNTckI3aXhNblNJMjlvd1EwT3ZaMDZKUjhDaDhzbmE1OFQ5LXNVelFRUU5ncVI3V2wtcVkzSkhKXzhrM2NsaUROMXg5T2xZaklSODd5Tk85UDNLRG01UGFPa1VZdVlPSA?oc=5) | MarketBeat |
+| 41h 前 | 8 | 中性 | [Broadcom Inc. $AVGO Stock: First Merchants Corp Lowers Stake - MarketBeat](https://news.google.com/rss/articles/CBMiugFBVV95cUxNVGpyZEs5MGR2eVNSYUVlcTVmZUU3dFRYLU5xSnA2NEs0V0ZzNnFzOWEweUF6SlVEN3BwUVIxZ242MmhndDctMFhXV1dta294SGk4bURFTGlWbTd6OVlpNGlXTnR1d25FY01PTUZCN2MyQTVScTBqSVJCMEd3cmZsY0Uzbm9qUWF0UWFYa3E1d0hRNHY4U3YtdE40YWFMNUJrWG94cDFIandiU2gxbmRSSWc5N0tDemk2LWc?oc=5) | MarketBeat |
+| 36h 前 | 2 | 中性 | [Legacy Wealth Partners LLC Buys 2,691 Shares of Broadcom Inc. $AVGO - MarketBeat](https://news.google.com/rss/articles/CBMiwwFBVV95cUxObnhKY0dCZ3lEUlB6M0MwalJtSk4yVTdtQnBpeE9ITUo0ZFJIeG9ab0ZYRnJlaFNDcHRCOWh2QUpyeWNycW5GOWVaT2tuY0J6QnBRTW5qVjF3T2hDdHZVQmFmOVNxSDJRLXpmdVpKVnNTZFRtTDdwaDJKaTJadUdpNHhEMWh2dUpkOXpTOHB0SkgtcmRHNFppTHphOVFmRFdzSGMycVNkVU1TUjMydy0xUlFjWVRUOTFrU1RiOVZfWlVEWjA?oc=5) | MarketBeat |
+| 38h 前 | 2 | 中性 | [Annex Advisory Services LLC Sells 5,475 Shares of Broadcom Inc. $AVGO - MarketBeat](https://news.google.com/rss/articles/CBMixgFBVV95cUxPRXNHUmMza2pCcUVibmhCR3FFbWhrRmk3SFNCUEpieXlhaGhySmlNZjMwZUdfaDFRWXpkYUdXNkRnM0FjSXhLOHZ2V3gxZF9RYVV4dG5mZVY5WElSeThLZDh5QUJXU2JOT0JTcmt6RjJvd25jZFRaV3diYll1Wk1Ma2wwRThyX3NWaldEeF9lc18xdW53WEtVc0NlYXY1ejZGNHRrZjVOWUJMOVl1Y3NxVndlcWZCbHlFQ1gtTTBOUnZVTE9xaUE?oc=5) | MarketBeat |
+| 10h 前 | 0 | 中性 | [ETFs Are Net Sellers of Broadcom (AVGO) on Oct. 15 - Yahoo Finance](https://news.google.com/rss/articles/CBMimwFBVV95cUxQamV2Rnl0Qm9xTmp0YzBld0tKbUs2YlZYaE54X0xTZEU5X051THRIYjF0V0ZRMzczQ0NuNndXVXNYR09jSklNQ3FJNlgyUVdYZlpHVFF6WHlobDVBYWZtazMxbDkxN1ctNTM3eS1TUldId2JNYnNHcEdNNHdOb2ZyZk5acnNqUDktbkxBbGdTZURYVk9DalNDUVJUOA?oc=5) | Yahoo Finance |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -132,8 +127,7 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
 - 图形上是空头排列——现价距 20 日 353.99（-5.5%）、50 日 363.47（-7.9%）、200 日 367.01（-8.8%）。本报告的买入规则本身会过滤掉这种形态。
-- 24 小时内的利空标题：Marvell exec sells $865K in shares amid AI chip stock pressure after Broadcom CEO's warning - Pluang（Pluang）
-- 政策面对该板块的倾向为 -0.96（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.47（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -155,7 +149,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-14 | 352.19 | 354.25 | 342.82 | **346.25** | -3.1% | 23,127,400 |
 | 2026-10-15 | 338.34 | 344.70 | 334.61 | **344.33** | -0.6% | 28,455,800 |
 | 2026-10-16 | 338.48 | 339.59 | 328.58 | **328.75** | -4.5% | 29,727,900 |
-| 2026-10-19 | 338.75 | 340.20 | 333.82 | **334.59** | +1.8% | 17,089,043 |
+| 2026-10-19 | 338.77 | 340.20 | 333.82 | **334.59** | +1.8% | 17,089,043 |
 
 ## 七、自己去查（本页不做独立验证）
 

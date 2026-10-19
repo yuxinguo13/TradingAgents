@@ -110,24 +110,14 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 15h 前 | 8 | 中性 | [Texas Instruments stock: Q3 results on October 21, 2026, little changed pre-market - ad-hoc-news.de](https://news.google.com/rss/articles/CBMi0wFBVV95cUxQWEktSW1VWWwzeWpRbldCVWQ3SlE4MkVvaWZHVDktZEdiSHF1b3NGWUN5YUJpX00yMVJUbUlSbjJ4bExVRGpNa0d3OXJFZVZPZnhIeFV5WUEwWnlYbkxwRXdnZjdfV1JnYzdhODNEc2JOSDNzQmJyMExVeFpfM3dFVFdIOHplUWkyRDVHbWR5SVZRVUFjeVFFY3lZTUswb1Npa20xbE1JZjRseldWNHlsMmVWWXJRNFpwMW5HUG5wUmZSdk9maXUwa0pNclQzaGppSjNz?oc=5) | ad-hoc-news.de |
-| 6h 前 | 6 | 中性 | [Texas Instruments: 3 Things to Watch Before Buying the Dividend Stock - Yahoo Finance](https://news.google.com/rss/articles/CBMingFBVV95cUxOc3JSR2RTRDRwZGlQQkU5Y2Fnb1BxZERYSk5DYVYya2ZnVXhpajhPQk5aWDRHLXNDRmJ5YV9NMmJ4SDB1YVJ4RVBzdUV0MXo2LUV4eVlTcF9qV3hYS3phMUNHQ0dzZEt5cHZkaUtoOEp0V3BBTld5LVBHLVFKcVNKMERZUDIzRWstWDhEN3BjQWFZdXppQnF6UmVqT09kUQ?oc=5) | Yahoo Finance |
-| 5h 前 | 0 | 中性 | [StoneX reiterates Buy rating on Texas Instruments stock at $360 - Investing.com](https://news.google.com/rss/articles/CBMivwFBVV95cUxPUG5OOXkzT3lxWFR1V0piRkJ5T190VFBKb05vaUJ2TUR4Y1pGUlBoOUowcTNIenhJS2ZqOURjZW55UTJQWm93Y0ZoY0lqZGRqREw0dlE3ajEyWE9kY19lSDBfNGo3c19WTWF4dDU5dzJvVWZMZjlKSEthck45UTFDLVA4X080dVhhV3FveUFWbVFRZG13VXZsNWZFNWw5U1hvZ05mRk1sRTZrNTFteGtud0dMMXJjMUV6LUFhSjVmUQ?oc=5) | Investing.com |
-| 7h 前 | 0 | 中性 | [Texas Instruments stock: USD 304.26 target leaves stock 10.05 percent higher - ad-hoc-news.de](https://news.google.com/rss/articles/CBMi1AFBVV95cUxNVkZXSzV1Yk5pRU1FbWJFb3lNaXVHb1JKWVFqQUJOeUZ2cFFkVVpoUkxYR3RGX09mWVpWc3BtQjJULUV5TGlKa3BxOHJmTGdHai1Fbko4LTdvZkpadGNUZklnT3UzRkw4SE44eWoxQS1ZdDNtVDlRTkVUTWNvYTBkMWx3SHNoTWdVMkVha0NySE01cm91dGJhOHNFN2lBOE52aExzRkNLYW1wSGk0b1N4cTVrR0Y0Sjh1WnFKTktjWXhnVzFDUUxpczhncjdaVHB0Q2lLSg?oc=5) | ad-hoc-news.de |
-| 12h 前 | 0 | 中性 | [KeyCorp lifts Texas Instruments estimate to USD 2.48 for Texas Instruments stock - ad-hoc-news.de](https://news.google.com/rss/articles/CBMi2wFBVV95cUxNZHdReHJkdGVTMmYycHJpeVVPY2FEMGdBa1labENxcm1GNGhreXppQ2l2UzJFTjA5ckk2ejVncExvNExLYjJEYUtEQUwyVWZYTE5MQjZ1MTVNaXRjY2IzLTRmNnp1Z2pWSnRiNEZNZ2xDQmNWTlRQZXd6VlZQQWRqMTFWd1F1eEJ1UTV6eW5HblNMMWllTmRPQUp6eXFnaHZhRHJiTk9JRk5aWktEREFnbXBBaXl2YWtucUVzSkJxX19zVUNzMkVua2Nrb0RsRGU3NHhqS0xoVm5rUzg?oc=5) | ad-hoc-news.de |
-| 40h 前 | 0 | 中性 | [Is Texas Instruments (TXN) Undervalued On Its New Data Center Hardware Push? - Simply Wall Street](https://news.google.com/rss/articles/CBMi1wFBVV95cUxOQ085Zzhhb1pFSi1qM2hGUENfOWxZRkFrM3ZvelcwVlJDR3FqX2tlRjlPZ0RpdjJmeVdabmg3NTJ3UGxtSy1RYmNaUmtOWXVJWWVCci0wQ0ZtY3lkS3hzbF9QdGFnck1weHRpa0ZPN1p6aGJjZVp0MFoyd3MzYTcyeWFqNFZsb1Boc1FOc1VnMUFrWVdBcERqYTNRMEhtZG8wa0dDNTM0VmJxaWp1RXJHcjZRdVNQVXF4TGVjU0dsZ1BkTG03S2EyRk9UOUFsbE1CUVRCRWNXMNIB3AFBVV95cUxPUk9BanhEUUtubnd6MHU4clhzbExXaE13ajM1c09BS0lLeFBqclQwbFNJa1RHcnVuZlp2Q2Y4aFFlNTc0VW1lNDQ0SHhPYTBuMHlOeFdBTVFiVHhXbU9rNG1TTkFlRWtRMk8wbWF2MVVvWXVwY0VWNjR3M3BwOUJsdy1iUlB4TVByYXVQeUt4Q3NTMjVXTjliWFotMG9BSXBiWjBxVmJXQ0NlbUpvMDA5VFNXQVd2d1RqY0VwdVpHMy1rYlRFOVR3WkRJRkNzTG1QV21TUlVwWWRhcGdL?oc=5) | Simply Wall Street |
-| 43h 前 | 0 | 中性 | [Stock market week ahead: Meta, Tesla lead 6 major tech reports - Opening Bell Daily](https://news.google.com/rss/articles/CBMif0FVX3lxTE5tY200bmdpSG1Qa2c2TGxrUnlZNlY0cmdoVjZzVVdjTENZRjFvNmhrRjB3SzVOTTliMnppVURVWEhnOVQ2SmR2MXFSOGN4U3IyNjl4QW1aeldZaW81bkdLOTgzcEItaDd0U3k4RDUwMkMyMjJFY01sR0FYeHdrR2M?oc=5) | Opening Bell Daily |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
 - 下次财报在 2 天后，落在持有期内。财报跳空会直接穿过止损——那一晚的风险不是 1R，是没有上限的。
-- 政策面对该板块的倾向为 -0.96（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.47（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 

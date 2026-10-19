@@ -12,7 +12,7 @@ _能源 · 数据截至 2026-10-19 收盘 → 面向 2026-10-19 开盘_
        XOM · 近 126 个交易日（日线收盘）
 178.6 ┤                                                                           ╭
 174.4 ┤                                                                         ╭─╯
-170.2 ┤                                                             ╭╮         ╭╯
+170.1 ┤                                                             ╭╮         ╭╯
 165.9 ┤                                                  ╭──╮  ╭╮ ╭─╯│      ╭──╯  ·
 161.7 ┤            ╭╮                                   ╭╯  │ ╭╯╰─╯  ╰─╮╭───╯·····
 157.4 ┤           ╭╯│                         ╭╮     ╭──╯   ╰─╯     ···╰╯·
@@ -48,11 +48,11 @@ _能源 · 数据截至 2026-10-19 收盘 → 面向 2026-10-19 开盘_
 
 ### 图形读数
 
-- **均线排列**：多头排列 — 现价距 20 日 167.11（+6.7%）、50 日 164.09（+8.7%）、200 日 150.69（+18.3%）
+- **均线排列**：多头排列 — 现价距 20 日 167.11（+6.7%）、50 日 164.09（+8.6%）、200 日 150.69（+18.3%）
 - **形态结构**：收敛整理 — 高点走低但低点抬高，区间在收窄；前高 169.64 → 164.91（-2.8%）、前低 155.85 → 159.27（+2.2%）
 - **动能**：RSI(14) 71，超买区；近一月的斜率快于近三月（月 +9.0% vs 季 +18.3%），趋势在加速
 - **波动**：日均真实波幅约为价格的 1.9%；按本报告 2 ATR 的止损惯例，一个 R 相当于 3.9% 的价格距离
-- **位置**：距 52 周高点 -0.4%，距 52 周低点 +63.5%
+- **位置**：距 52 周高点 -0.4%，距 52 周低点 +63.4%
 - **量能**：最新一日成交量为 20 日均量的 0.9 倍，量能正常
 - **相对强度**：近一月跑赢 标普500 8.4 个百分点
 - **支撑 / 阻力**：最近的摆动低点 159.27，摆动高点 —（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
@@ -112,10 +112,8 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 24h 前 | 8 | 中性 | [How Investors May Respond To ExxonMobil Stock As Refining Margins Lift Q3 Profit Outlook - Simply Wall Street](https://news.google.com/rss/articles/CBMizgFBVV95cUxNODJ4MkNuWlM2YlJJNDJLMzZFWnNnZERwY19SQWVOalRKLTNyN3lsU055YTNUM0paUGlIUXRVem5BRzZXNWVldkdIYTZOSThnd09haHZ4NlVESWY1ZFFiMTJMbnNPbVhMLTU4SXV1QnZ0cnZFOTN1Mm1ERjlfbDN5b2hnMkRvSGVBaFpyR0VRYjhPMk14b0pTMEl1MFBLbm01R2Z3RlNFTXdOWEdUVm1OQjYweUNOYlk4NnctLVUzQjV1eHBGdW9JaXdQVm0td9IB0wFBVV95cUxPdTZyT0R3YVlkSXJmM1NXMjZBYXJ6U1JHSndXY01zY0xNcy13MkR6d3NFTW91Q2ZqQVY2VGpMbnhxUm1NM0RDVngtT3M1MGtjSjEtTEFLUEhfY0tISXF5ckw3dUlWcDJzZDJaOTlfTU1KaWFISjlsRkhLQkk2Rk9nZ3dkYlV2YzZrOVMzRGpOR1VwME9GR2U1WnVXR2oyUUR2MDFLZmlidk1PN1hqZXRHRzZSYlhpcEVjcHNtMjVNb3FFY25wZFRVU01VWjRWVXNqcmFR?oc=5) | Simply Wall Street |
-| 36h 前 | 8 | 中性 | [ExxonMobil (XOM) Stock Fair Value Edges Higher As Analysts Rework Earnings Outlook - Yahoo Finance](https://news.google.com/rss/articles/CBMinAFBVV95cUxOSXF4MGw5RWtQMHV6YXphcUVxbl9zYlBVX3pOWW9Ka0h1SFN4V3BxWERUeE44TTdscWF3cXB4MjVkbnI3d1BnaWdZdU1QeEFiVUZCdlRhc0IwRTV6VWxHR0VJd1VXMks5SmRiZkh2bklLUURQZnNxOFNXemF6Zmtsa3U3QnZBSzdlNHJuM0UxVjFsT2UzMjhBZ3FwWjM?oc=5) | Yahoo Finance |
-| 3h 前 | 0 | 中性 | [What's Going On With Exxon Stock On Monday? - Benzinga](https://news.google.com/rss/articles/CBMioAFBVV95cUxPWDROeGhnZngwRUpkSG4zSGd4TGtDMi1aMlVHLXlhZ1N6SmhYVmE5SDRJNnp5YXJVX0JCdmttdHYyTE12WVlfSkZzMUtUdmNYWGZwc28ySXNwenZ4aVBHbzMtMUJ3eV84VWxaZUFlQUVtQ29zcnV4YW5Lanh3M0RIMmMxRHJvLXRHQmV3Tjhrcnk1TEhqRU5OUkVfdVhJeEIy?oc=5) | Benzinga |
-| 8h 前 | 0 | 中性 | [Buy 5 Giant Oil Explorers to Tap the Northward Journey of Crude Prices - TradingView](https://news.google.com/rss/articles/CBMixAFBVV95cUxOaHVmdU1VMGRrODVGMVRreEtIYTA3enhrWkhLWWg5RVBuRjlUcnhodzVscXY5VnFHeEFHRVdGblc3dm5qOFlRdzBLU3EzeGFmWF9JSi1mMElSc3hMczVwVjVRWmY1ZUh5WHo3V0VUc1k0Y0Fic1M0OUtPOWZRaXZscTdFSDVsSG5Wb0Y5NkszQXFCbUhVSGZmb0R3dHVTcTZOSC1jbHZCd2tDQzlmS1RBdjlud1ZCMVlfM0x1QXRqUGdMYUhQ?oc=5) | TradingView |
+| 13h 前 | 0 | 中性 | [ExxonMobil signals USD 4.5 billion refining boost while ExxonMobil stock trades at EUR 158.41 - ad-hoc-news.de](https://news.google.com/rss/articles/CBMi7AFBVV95cUxPRFdheVRhQTR1QlB1alRxUFFOVG52OE1xLVkyOGZyVXAwRnluWFZJT0tWNGpGaUZ3aWlfM3BZWTgxUDhSaUV2TlROZGdRQnpza3VqYXd5eUNIWTI0WTNPWTB1c0NseEZZc2x0RzJNOEsxam1tTV9XMzdKeEl0R2VmMWxXc2xzQmhweGNlUmxrVl91VDhac1kzeUVDTFRscUg3cDNyZ25KSXpDaVJsWGt4WlNsZHROdHZyV3JxZjBQT0JuV0pZeVJwWGlYd3FMWDNYTGRVclVBVzQyX0hqb3VJRHMxM1VBb2w4cGVJVg?oc=5) | ad-hoc-news.de |
+| 43h 前 | 0 | 中性 | [ExxonMobil Holdings Corporation (XOM) Stock Forecasts - Yahoo Finance](https://news.google.com/rss/articles/CBMiigFBVV95cUxOaGt4UnVhVGV6QVZjUXFFVXhDNHd6WjN3ZmREZkR3N2k2cTJ4ZVM2LUgxRWh0U1d6YzVWUXdsc09CTUI2U2pWWEF3Tkw0ZnBGV1dOM3p4X1YzcFdYSWk3eXVNTHVPeDBrOURRQmlxaVg4UXg4Z3kwOG9SVUt3ZWpXVF9TUTJTU21hVHc?oc=5) | Yahoo Finance |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -146,7 +144,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-14 | 175.07 | 177.43 | 174.53 | **177.01** | +1.7% | 13,578,900 |
 | 2026-10-15 | 178.63 | 178.69 | 173.60 | **174.68** | -1.3% | 11,227,700 |
 | 2026-10-16 | 176.49 | 179.16 | 175.15 | **178.98** | +2.5% | 13,198,300 |
-| 2026-10-19 | 178.45 | 179.30 | 177.23 | **178.29** | -0.4% | 11,095,086 |
+| 2026-10-19 | 178.45 | 179.30 | 177.23 | **178.28** | -0.4% | 11,095,086 |
 
 ## 七、自己去查（本页不做独立验证）
 

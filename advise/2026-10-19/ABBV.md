@@ -12,15 +12,15 @@ _医疗 · 数据截至 2026-10-19 收盘 → 面向 2026-10-19 开盘_
        ABBV · 近 126 个交易日（日线收盘）
 284.1 ┤                                                                          ╭─
 277.2 ┤                                                                        ╭╮│
-270.4 ┤                                                                       ╭╯╰╯
+270.3 ┤                                                                       ╭╯╰╯
 263.5 ┤                                         ╭╮       ╭───╮      ╭──────╮╭─╯   ·
-256.7 ┤                                       ╭─╯│       │   ╰───╮ ╭╯······╰╯·····
+256.6 ┤                                       ╭─╯│       │   ╰───╮ ╭╯······╰╯·····
 249.8 ┤                            ╭────╮  ╭──╯  ╰╮  ╭───╯ ······╰─╯·
-243.0 ┤                            │    ╰──╯      ╰──╯·····
+242.9 ┤                            │    ╰──╯      ╰──╯·····
 236.1 ┤                           ╭╯            ······
 229.2 ┤                          ╭╯         ····                      :::::::::::::
-222.4 ┤                   ╭───╮ ╭╯     ····· :::::::::::::::::::::::::
-215.5 ┤···    :::::::╭╮╭╮╭╯:::╰─╯::····::::::
+222.4 ┤                   ╭───╮╭─╯     ····· :::::::::::::::::::::::::
+215.5 ┤···    :::::::╭╮╭╮╭╯:::╰╯:::····::::::
 208.7 ┤:::·······╭───╯╰╯╰╯·········
 201.8 ┤─╮  ╭─────╯  ·····
 194.9 ┤ ╰──╯
@@ -48,13 +48,13 @@ _医疗 · 数据截至 2026-10-19 收盘 → 面向 2026-10-19 开盘_
 
 ### 图形读数
 
-- **均线排列**：多头排列 — 现价距 20 日 269.45（+4.9%）、50 日 261.68（+8.1%）、200 日 231.08（+22.4%）
+- **均线排列**：多头排列 — 现价距 20 日 269.45（+4.9%）、50 日 261.68（+8.0%）、200 日 231.08（+22.3%）
 - **形态结构**：上升结构 — 更高的高点 + 更高的低点；前高 262.64 → 267.75（+1.9%）、前低 245.26 → 256.30（+4.5%）
-- **动能**：RSI(14) 68，偏强；近一月的斜率快于近三月（月 +7.8% vs 季 +11.1%），趋势在加速
+- **动能**：RSI(14) 68，偏强；近一月的斜率快于近三月（月 +7.7% vs 季 +11.1%），趋势在加速
 - **波动**：日均真实波幅约为价格的 2.4%；按本报告 2 ATR 的止损惯例，一个 R 相当于 4.8% 的价格距离
-- **位置**：距 52 周高点 -0.9%，距 52 周低点 +45.2%
+- **位置**：距 52 周高点 -1.0%，距 52 周低点 +45.1%
 - **量能**：最新一日成交量为 20 日均量的 0.8 倍，量能正常
-- **相对强度**：近一月跑赢 标普500 7.2 个百分点
+- **相对强度**：近一月跑赢 标普500 7.1 个百分点
 - **支撑 / 阻力**：最近的摆动低点 256.30，摆动高点 —（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
 
 **我的读图结论**：趋势向上且结构完整，且贴近 52 周高点——追高的代价是止损离得远；顺势的一侧在上方，风险在于结构一旦破位就要认
@@ -69,7 +69,7 @@ _以上每一条都是对已经发生的价格的描述。均线、RSI、摆动�
 - **增长**：最新季度营收同比 +10.2%；盈利同比 +290.4%；最近 7 次财报里 6 次超预期。
 - **盈利质量**：毛利率 72.8%、营业利润率 40.0%、净利率 9.8%。
 - **资产负债**：现金 $65.69亿；有息负债 $708.85亿；流动比率 0.81（短期偿付紧）；自由现金流 $168.70亿，为正。
-- **卖方预期**：28 位分析师覆盖；平均评级「买入」（1.70/5，1 为最看多）；目标价均值 282.61（较现价 -0.1%），区间 200.00–328.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
+- **卖方预期**：28 位分析师覆盖；平均评级「买入」（1.70/5，1 为最看多）；目标价均值 282.61（较现价 -0.0%），区间 200.00–328.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
 
 **分季度损益**（季度数据，最新在左）
 
@@ -112,15 +112,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 8h 前 | 8 | 中性 | [AbbVie's Neuroscience Franchise: What to Expect Ahead of Q3 Results - TradingView](https://news.google.com/rss/articles/CBMivwFBVV95cUxQSVQyZ1lHM1JCRVRYYUd2Mi12c2tNSlpuck5XdUpQN1pWbF83Y3RzXzhOX3AyZE5jZGNHV2JueGJUX3BLTE4wZDlFc0gtNGxGNGNjV0duMkJ1OUI1TjcyT29Wbzl2N3Vnc2RyYmx2S1lUNHhDREhlN2diTW5wTHZ3aElRSmdqblpUNkRuaVpGdjhhbl9PbFRnZWQzb19vZktQVzE0aVpJNktYNG5xcHUwVmlEQTFSZjIzUUFwenZFcw?oc=5) | TradingView |
-| 3h 前 | 6 | 中性 | [2 High-Flying Dividend Stocks to Buy and Hold for a Decade - The Motley Fool](https://news.google.com/rss/articles/CBMiowFBVV95cUxPZ08xbUhZd2ZfWWJ2ZTRLdThCcE5sOWZ6NTB3aEF2WlZvY3p6Y2RaN2pfQWVlbFhJaHVmV19sZ2FwbXE0eHJrWWN6WkUyRndEMUVfa2o2UjRKT0NmdEVDT0JLVVdMbjZaSDRuMnMtY19YTHpVNnBrZXJneUhUby1pcUJpLTRXQW9sUm5KQWJfWlFnVDFLbFl4TmpUV0FocUNBeGhj?oc=5) | The Motley Fool |
-| 31h 前 | 2 | 中性 | [Ken Griffin Increased His Position in This Dividend King by a Whopping 546% in Q2. Here's Why It's Still a Buy. - The Motley Fool](https://news.google.com/rss/articles/CBMilwFBVV95cUxOeWdmeTM2QTFlaVhOVWk3Sy1ZZGtTeVgtT3RiNU5sUHZlWXI4OVYzLWNhQlRPTkRIRzZWWFJ1STlTWWRLbmZQa0V0T0dGc19Nd3lFMkRzYmg1TDRjd05EblBGQzNQMm5GWG1tdklxaU9faEZKYVJUZXhLN3V0LVBOSGtVMVBpNjh2Q296X3VJRG1Wc09KN0lr?oc=5) | The Motley Fool |
-| 6h 前 | 0 | 中性 | [AbbVie stock: At 1.84 percent below its 52-week high, AbbVie stock trades at EUR 255.05 - ad-hoc-news.de](https://news.google.com/rss/articles/CBMi4gFBVV95cUxNQ0g1bm9PYngwWnc0SlUtRVNWbUMwb2gwWWhGaHRTMFNNLWF3eWg5TklfbE91dTBIc2RWMXJFSFJycW95N3htN1BDS1Q4ZlkzSDV1OGFfUzhLQVdCZDNkSEltRl8xWmRlMEZSREVQNTlsVmJVQ3Rld0g2OFYyT3dtaGZxNTU5cHY2M291WGRGU3FaLXRFeGw5QTBtZ3lHVEVPdnZYTjJPY2lKS0E3cmQ0Y3JsUm9lUFBvZlk0M2VybHdrU3RvSGpWM21OblFKb3NEelR1LU5jUWJPYWNKWkRMSFR3?oc=5) | ad-hoc-news.de |
-| 7h 前 | 0 | 中性 | [AbbVie vs. Bristol Myers: Is AbbVie’s Valuation Premium Worth Paying? - Yahoo Finance](https://news.google.com/rss/articles/CBMilgFBVV95cUxONDN0M0ExWm9tQm1GQnpaVl84eUVJZnBZU3NrYU1VdVRfdng0TE1rUVZxRWlUMUJiOG9FN1pyeUlyVjdLQThKTnFKOEN6U2k3aGl4SF9ENkowbFBtNUdzSDV0dVEtOHFVcUcxb2lvLUdaaVBZbjlaQ3ZwYUpPbzQ3ejEyeWRqUF9nV25WbVc4dHFKczAyMnc?oc=5) | Yahoo Finance |
-| 8h 前 | 0 | 中性 | [Zacks Market Edge Highlights: Palantir Technologies, BP, Palo Alto Networks, Visa and AbbVie - TradingView](https://news.google.com/rss/articles/CBMi3AFBVV95cUxQY2tNc0poVjFqYnBfLTZkQjA1ejg4OTUzRFo4RzNIcUtwX0I2VHJ1V2ZYWFA1a1JWTlozYXlwQ21hQVd4LW5FQmlGUGxieWZtOTNRd2FaWk96Tk5TRzVmcEVQZ0FXY1RLRFBLWTFnZURCVTVGZjB6WE9OMGZLVzF2WFotN2plU0lWVFVkN2N3UkRDU3VDcWNlXzNYRDV1Z2laVUl4c1FOX05jUU91ZFZBem9DUVpNQUU5T2xTeFhTamU1U0JEUDBzV1dTbG9KaXh2S3QydjlvYW5YcG5t?oc=5) | TradingView |
-| 13h 前 | 0 | 偏多 | [JPMorgan raises target for AbbVie stock to USD 300 - ad-hoc-news.de](https://news.google.com/rss/articles/CBMiswFBVV95cUxQazBlaFdicC1BSVZ2QTdhaEVHdUhKV19QNXExYlhZZUc3VkZZRjNzMEdnem5LaldDWUhwVHRxLUdCUUJTNkk1YlctSmFJeVI4bU5hNWc5c1FmOUlzZWh5TWl3OE5pNXRPNGtsZmk3XzdXQnlVXzc5eWtLYVJQdk5UQzdqY25PZkZRaTdFMkVud1NLcFNSX2tMeS1WbWRLMnY5Wm4ydmJNZXZ2NFAwd1FJYk1jYw?oc=5) | ad-hoc-news.de |
-| 15h 前 | 0 | 中性 | [AbbVie Inc. stock at EUR 253.20 ahead of the Xetra open: pharmaceutical group little changed - ad-hoc-news.de](https://news.google.com/rss/articles/CBMi4gFBVV95cUxPZlVnTHluOElGVUQtckwyVFlEaDVxbVQ4ZWo1OXR3MTF2S2VJMDVPRWtSRUE4VVBxb1RlM2NhVXAzbFM2TDFxbEpKYm1ZWXVyRXJTWnBPdUVjUHJlYzdnVERZZ3Q1MWFvZ0ptZzltREEwTnoxS28ydnVoUlg3VXM2SFZGLTJXRkNOTDFZalV3NG83MTdZck1iWlNfb3VndlE1akpHVlNJTC10aDhlM0NWV09RTmcwM0JzMlduSkVoTXhBX2NPOHJGQ3VJMk56R3FCcEM1Y2xJQkhBR3JscEVCczBB?oc=5) | ad-hoc-news.de |
-| 32h 前 | 0 | 中性 | [AbbVie (ABBV) Reported Broad New IBD Data Across Major Medical Meetings - Simply Wall Street](https://news.google.com/rss/articles/CBMi1AFBVV95cUxPcTE2aW11T1JMWmZINER2WTJvYXQ2WHBPcksxYkZfT3E4R3RURk1oOUVBVEdEOGlxQzJEcWpkQkxHRmtxNlZTdS0wOWtmdGdreVdGU0l4VGs2SXY5SU5KY3l1MDlZQ2VXUXlVdmVRX2VMWDg2LURYb1hrQWhOR05qTExiVnY3dFVpLVNKNjV2cEtMU29nbmxMYk9vLW5YVGZFNmhxelNzVDlyWUFibk5WREdBNTVTLXdaVm9mZUJlU3NKYkxjMTRiZmU3VEw0Vjd4ZjNMMdIB2gFBVV95cUxNVFR4TkI5SUVTcTA1aExGUXZxMXc1em1MZE5JT0VwVVZDWkVhNmRuT3FmUWNWeDVpS1RuZW16TkpHTWtnVTl3a0UyajkxVm1iUmlxYnlIc2pNb2VpMEpicVgxLUFkNG1CbDFXSGZSdW5LM0J1dzVCRWJaN2Q2ZDdaQ240ZjUybDRDTE9ZeW51clpXR2xkcFltVlI5M2hTQWJtbDBBV3BDRHZIbXNpQ2VsN1lwSEpIOTZvV29hd1BnNUhNMkcwLV9NdHRWQl8zODhpZUhwLWN6bC1qZw?oc=5) | Simply Wall Street |
+| 0h 前 | 5 | 偏多 | [AbbVie (ABBV) Posts Fresh Trial Wins, Is The Stock Fully Valued? - Simply Wall Street](https://news.google.com/rss/articles/CBMi1AFBVV95cUxOcVdvLXhLZjBoY3dSTmp5MkhYY3NOYVpfeWUxWDRDYzBNbTBodmVMR285MFo1T0kxUW5aakxuWkZqdVRobWZCMm5yNUZjZ29wd3pKV1pJUFhaTkVaR2Vxb1E0WlVQdVNCNU1RQUxDSDlGLTVSRS1aYTNuRFNiMUQzcHN4SFVBc1Z4dklDcGNxdzZYaUwwNEV1Q1NsM0NnRnhxOTZEV3U3aHRxUHFnUlBjUjBEZmxCeTRpbXQzWFpINUxlWHlwam9zNU00YnlZdmRNVTRmZdIB2gFBVV95cUxQRzFER0JiV2J1aTcwSWpudlN5UVdrYk8tRHJXSjJiVkNHdkZ0a2FOUm4tLUV0bUR0cW1mR1AwcVlCckVUak0zVzRTaVNDaWNFVVBRZUxyUlVaWGFob09EZHB1Q21ITHVRbnhwOGQzZ0N5OW1qWmtCUExwYVNFSEpnd3ptRlhpaUR1ZWREcklqeXpza25SRXhzcGdSWVJhMFdLWUxVbW9aUEdIeDRFR1JEYmF1aF9PNmctSmN5anlFbHJ0SUlHZ1pEQktaUXQ0QWNORS0xNHlsR2IwUQ?oc=5) | Simply Wall Street |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -130,7 +122,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 - 下次财报在 11 天后，落在持有期内。财报跳空会直接穿过止损——那一晚的风险不是 1R，是没有上限的。
 - TTM 市盈率 80 倍，价格里已经计入了不少增长；增长只要减速，杀估值的幅度会大于业绩本身的降幅。
-- 现价已经高于卖方目标价均值 282.61（-0.1%）——共识认为没有上行空间了。
+- 现价已经高于卖方目标价均值 282.61（-0.0%）——共识认为没有上行空间了。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -152,7 +144,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-14 | 275.31 | 283.66 | 274.29 | **281.75** | +3.3% | 5,624,300 |
 | 2026-10-15 | 288.28 | 291.40 | 282.81 | **283.40** | +0.6% | 7,620,300 |
 | 2026-10-16 | 283.61 | 286.64 | 282.96 | **285.42** | +0.7% | 5,776,000 |
-| 2026-10-19 | 284.23 | 287.93 | 282.59 | **282.78** | -0.9% | 3,986,797 |
+| 2026-10-19 | 284.23 | 287.93 | 282.59 | **282.68** | -1.0% | 3,986,797 |
 
 ## 七、自己去查（本页不做独立验证）
 

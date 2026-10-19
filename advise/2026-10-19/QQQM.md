@@ -69,9 +69,7 @@ _读不到财务数据：该代码没有可用的财务数据（可能是 ETF、
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 9h 前 | 0 | 中性 | [Invesco NASDAQ 100 ETF (QQQM) Buys $18.4 Million More NVIDIA on Oct. 15 - Yahoo Finance](https://news.google.com/rss/articles/CBMilwFBVV95cUxPc3NZLTdyc2htWV8zenBQNzExRml4SkRLclQwRXdJbmNDR1hrUG5MdXVadkN6Nk1HbnpzQ3ZMMHRWN0oxTXVDTnBXZHc3aVg5RnZtUFlRNktaWWdmcXAwRzk2d3JKb0NlWVV5WTV4clViNy1fRXNycVFZWEZOVUtjZjUtbk1FLUd2MzFjakFGY1prVTNjS3VB?oc=5) | Yahoo Finance |
-| 12h 前 | 0 | 中性 | [QQQ Pulled In $1.66 Billion. The Same Index Trades Under a Cheaper Ticker. - 24/7 Wall St.](https://news.google.com/rss/articles/CBMiuwFBVV95cUxQaXJScTc2LTZoNHR6cGh6R2JHQ2dQTzJRbkJ4LVVqM0F4NTF3WDVqRlhwcjVJZEFYTTRPd0FLeXd3M0RaR3lRWHZMdVdiaE44WGl3ZzNSMllKbEotNEVjMk1pbTc2WXdqQTdwdE5nMjlDc243Q1A3Y1NESk1lTi1hYnJob3BobUZiajJScDFRVXdkbGRLN1pVNTl6VjJXSFg1bnRJTk0tVWkteVd6WkRWelFBeHB6OHI0TzI0?oc=5) | 24/7 Wall St. |
-| 30h 前 | 0 | 中性 | [Own VGT? Here's How Much of It Is Really Nvidia, Apple, Microsoft, and Broadcom. - The Motley Fool](https://news.google.com/rss/articles/CBMimAFBVV95cUxNSmx6UGxZZ2tKejFNMVF6dVFZZXduVDdYQzAwRU4tQUt1SkIwNXJWLVYzdVVpVHhTci1QSDZ0QV9fTE9VRmxvenhCcWJsbzc1ZlliUW5QTW5iejI5ZEhsV1hHRi1OWEw3eVNJWFF4azRkQzJJMUxqSmYwMmNyd2ZPT3g1UkFFakloeElieUZOZkdrY3lhODhsZw?oc=5) | The Motley Fool |
+| 12h 前 | 0 | 中性 | [Should Invesco NASDAQ Next Gen 100 ETF (QQQJ) Be on Your Investing Radar? - Yahoo Finance](https://news.google.com/rss/articles/CBMilwFBVV95cUxNSDFGb1lsUkk5a0JpVnRydW5oS0JnSTFtR0l1TFVkZVFPZE1qX1BQemtPamx6SEh0ajNCYjBrUU84QnlBanBQZXQ5OG4yYk1QeVRzbGtEdTJ0cHFuZ0ZScmdyNmJwTWRrQWVOV3c3QzVvelpXWDZ0MG1nekR5VHNyblZrbnRWck0tWnlSeWF0VFFJNTNvamJn?oc=5) | Yahoo Finance |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
