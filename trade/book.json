@@ -1,5 +1,5 @@
 {
- "saved_at": "2026-10-20T19:19:23",
+ "saved_at": "2026-10-20T19:21:15",
  "positions": {
   "AAPL": {
    "symbol": "AAPL",
@@ -196,6 +196,74 @@
    "sleeve": "core",
    "triggers": [],
    "stop0": 113.0,
+   "pending": false,
+   "trimmed": false
+  },
+  "ANF": {
+   "symbol": "ANF",
+   "shares": 50,
+   "entry": 161.75,
+   "stop": 155.17,
+   "target": 198.6,
+   "opened": "2026-10-20",
+   "horizon_days": 20,
+   "sector": "",
+   "thesis": "动量账：Abercrombie 10/19 放量 1.2 倍 +5.7% 收 52 周新高 162.54，突破 9 月以来 150–157 平台；今天 161.81 收盘前仍在突破位之上，三条均线上（20 日 143 / 50 日 135），21 日相对标普 +19.1，三月 +68%；服饰零售在 AI 去杠杆周里是资金去处（SG/CBRL/FIGS 同涨）。止损在突破日低 155.17（4.1%、1.3 ATR），目标 198.6 = 三月涨幅折三分之一，R 5.5。财报约 11/25 在持有期外。",
+   "invalidation": "收盘跌回 155.17；收盘跌回突破位 156.6 当天平掉；21 日相对标普回到 +10 以下；到 1R（168.6）先减半",
+   "principles": [
+    "十·强势买强势：pattern+rs",
+    "十·止损在突破日低点或 20 日线取高",
+    "十·只在收盘前最后半小时下单且收盘仍在突破位之上",
+    "十·到 1R 先减半"
+   ],
+   "regime": "标普 7,691 在 50 日线下、200 日线上；VIX 18.4；芯片再跌、能源与防守强；不是防御日",
+   "parent_id": "e0d3b615-da64-431a-a41c-39ec6f5d3bdb",
+   "legs": {
+    "limit": "b9cdf7e5-ec54-473b-b5bc-ba70d199e7f9",
+    "stop": "4a9247d4-c910-47a6-985a-275bd9168a01"
+   },
+   "adopted": false,
+   "stop_raised": false,
+   "sleeve": "aggressive",
+   "triggers": [
+    "pattern",
+    "rs"
+   ],
+   "stop0": 155.17,
+   "pending": false,
+   "trimmed": false
+  },
+  "FIGS": {
+   "symbol": "FIGS",
+   "shares": 405,
+   "entry": 19.93,
+   "stop": 18.93,
+   "target": 26.8,
+   "opened": "2026-10-20",
+   "horizon_days": 20,
+   "sector": "",
+   "thesis": "动量账：FIGS 10/13 放量 3.7 倍 +12% 起连涨六天，今天 19.98 再创 52 周新高（20.20），三条均线上（20 日 15.6 / 50 日 14.8），21 日相对标普 +52.9，三月 +102%；医护服饰需求与定价改善的叙事还在被追。止损在突破日低 18.93（5.3%、1.0 ATR，高于 20 日线），目标 26.8 = 三月涨幅折三分之一，R 6.5。财报约 11/5 在 20 天持有期内，前一天离场或减半。",
+   "invalidation": "收盘跌回 18.93；收盘跌回 10/16 高点 20.26 下方且量比 >1.5 的阴线当天平掉；21 日相对标普回到 +10 以下；11/4 收盘前离场",
+   "principles": [
+    "十·强势买强势：pattern+rs",
+    "十·拉伸不是动量账的禁忌",
+    "十·止损在突破日低点或 20 日线取高",
+    "十·到 1R 先减半"
+   ],
+   "regime": "同上",
+   "parent_id": "e002faba-1e22-44ba-8dd9-1968cd09a6cd",
+   "legs": {
+    "limit": "ce3f3086-7583-42e7-b0b9-c6a34d9e58f0",
+    "stop": "fa6e2cb8-80e4-4e08-ac74-ad452fb3416f"
+   },
+   "adopted": false,
+   "stop_raised": false,
+   "sleeve": "aggressive",
+   "triggers": [
+    "pattern",
+    "rs"
+   ],
+   "stop0": 18.93,
    "pending": false,
    "trimmed": false
   }
