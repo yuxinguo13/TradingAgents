@@ -1,4 +1,4 @@
-# ABBV · 艾伯维（AbbVie）
+# ABBV · 艾伯维
 
 _医疗 · 数据截至 2026-10-20 收盘 → 面向 2026-10-20 开盘_
 
@@ -10,13 +10,13 @@ _医疗 · 数据截至 2026-10-20 收盘 → 面向 2026-10-20 开盘_
 
 ```text
        ABBV · 近 126 个交易日（日线收盘）
-285.8 ┤                                                                          ╭─
-278.8 ┤                                                                        ╭─╯
-271.8 ┤                                                                      ╭─╯
-264.8 ┤                                        ╭╮        ╭──╮        ╭────╮ ╭╯    ·
-257.8 ┤                              ╭╮      ╭─╯╰╮      ╭╯  ╰───╮ ╭──╯ ···╰─╯·····
-250.8 ┤                            ╭─╯╰╮  ╭──╯   │   ╭──╯  ·····╰─╯····
-243.8 ┤                           ╭╯   ╰──╯      ╰───╯·····
+285.9 ┤                                                                          ╭─
+278.9 ┤                                                                        ╭─╯
+271.9 ┤                                                                      ╭─╯
+264.9 ┤                                        ╭╮        ╭──╮        ╭────╮ ╭╯    ·
+257.9 ┤                              ╭╮      ╭─╯╰╮      ╭╯  ╰───╮ ╭──╯ ···╰─╯·····
+250.8 ┤                            ╭─╯╰╮  ╭──╯   │   ╭──╯   ····╰─╯····
+243.8 ┤                           ╭╯   ╰──╯      ╰───╯······
 236.8 ┤                           │             ······
 229.8 ┤                         ╭─╯         ····                       ::::::::::::
 222.8 ┤                   ╭────╮│      ·····  :::::::::::::::::::::::::
@@ -31,12 +31,12 @@ _医疗 · 数据截至 2026-10-20 收盘 → 面向 2026-10-20 开盘_
 
 ```text
        ABBV · 近 21 个交易日（放大看最近节奏）
-289.0 ┤                    ╭
+289.1 ┤                    ╭
 285.2 ┤                 ╭─╮│
-281.3 ┤                ╭╯ ╰╯
-277.5 ┤              ╭╮│
+281.4 ┤                ╭╯ ╰╯
+277.6 ┤              ╭╮│
 273.7 ┤             ╭╯╰╯
-269.8 ┤           ╭─╯
+269.9 ┤           ╭─╯
 266.0 ┤    ╭╮   ╭─╯
 262.2 ┤────╯╰╮ ╭╯
 258.3 ┤      ╰─╯
@@ -48,9 +48,9 @@ _医疗 · 数据截至 2026-10-20 收盘 → 面向 2026-10-20 开盘_
 
 ### 图形读数
 
-- **均线排列**：多头排列 — 现价距 20 日 270.72（+6.7%）、50 日 262.53（+10.1%）、200 日 231.41（+24.9%）
+- **均线排列**：多头排列 — 现价距 20 日 270.72（+6.8%）、50 日 262.53（+10.1%）、200 日 231.41（+24.9%）
 - **形态结构**：上升结构 — 更高的高点 + 更高的低点；前高 267.75 → 291.40（+8.8%）、前低 245.26 → 256.30（+4.5%）
-- **动能**：RSI(14) 72，超买区；近一月的斜率快于近三月（月 +9.9% vs 季 +14.8%），趋势在加速
+- **动能**：RSI(14) 72，超买区；近一月的斜率快于近三月（月 +10.0% vs 季 +14.8%），趋势在加速
 - **波动**：日均真实波幅约为价格的 2.5%；按本报告 2 ATR 的止损惯例，一个 R 相当于 4.9% 的价格距离
 - **位置**：距 52 周高点 +0.0%，距 52 周低点 +48.4%
 - **量能**：最新一日成交量为 20 日均量的 1.1 倍，量能正常
@@ -63,13 +63,11 @@ _以上每一条都是对已经发生的价格的描述。均线、RSI、摆动�
 
 ## 三、财报与基本面
 
-市值 $5,108.38亿 · 行业 Healthcare / Drug Manufacturers - General · TTM 营收 $643.86亿 · TTM EPS 3.54 · 股息率 2.42% · Beta 0.23 · 空头占流通股 1.0%
-
-- **估值**：TTM 市盈率 81.7 倍；前瞻市盈率 17.8 倍（市场预期未来一年盈利上升）；市销率 7.9 倍；EV/EBITDA 18.3 倍；PEG 0.58（低于 1，增长尚未被价格吃掉）。
-- **增长**：最新季度营收同比 +10.2%；盈利同比 +290.4%；最近 7 次财报里 6 次超预期。
-- **盈利质量**：毛利率 72.8%、营业利润率 40.0%、净利率 9.8%。
-- **资产负债**：现金 $65.69亿；有息负债 $708.85亿；流动比率 0.81（短期偿付紧）；自由现金流 $168.70亿，为正。
-- **卖方预期**：28 位分析师覆盖；平均评级「买入」（1.70/5，1 为最看多）；目标价均值 282.61（较现价 -2.2%），区间 200.00–328.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
+- **估值**：既无盈利也无有意义的营收，估值倍数一栏本页留空——这不是低估，是无法用倍数衡量。
+- **增长**：最新季度营收同比 +10.2%；最近 7 次财报里 6 次超预期。
+- **盈利质量**：没有拿到利润率数据。
+- **资产负债**：没有拿到资产负债数据。
+- **卖方预期**：没有覆盖这只股票的分析师数据。
 
 **分季度损益**（季度数据，最新在左）
 
@@ -112,14 +110,12 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 4h 前 | 6 | 偏空 | [Kevin Warsh's Fed May Not Cut Rates Soon. That's Why This Dividend Stock Belongs in Your Portfolio. - Yahoo Finance](https://news.google.com/rss/articles/CBMikwFBVV95cUxQSmRCc2pRUjZHWFpGSjd0dHF2Qjc1MDQtZjBRVWdGNmk5VTJ1RDM5M0ZpX3dpa3pKV1R1MDN2VTVEcWhLN09QdUpnMlBaQmtKcXNZWWtETGhZY3pUOWlscFJia2szOWFxcVlZY2tjdXlzMFJOZ3dJU2V4bktienpVa25SV2R3UTlZZXBTUldvaDN6YkU?oc=5) | Yahoo Finance |
-| 1h 前 | 0 | 中性 | [AbbVie (NYSE:ABBV) Share Price, Forecast & Analysis - Stocks Down Under](https://news.google.com/rss/articles/CBMiVkFVX3lxTE5ZQ003bFFHU2FhdmxFX2htRDlKRGk3OEJzd0NEZDBtcGQwbE5ZZ19YQy0tVk5VeFVEOFJNTUZQWmpmMDFQcmhoeGNNc2RaeF9oUE9UUDFn?oc=5) | Stocks Down Under |
+| 5h 前 | 6 | 偏空 | [Kevin Warsh's Fed May Not Cut Rates Soon. That's Why This Dividend Stock Belongs in Your Portfolio. - Yahoo Finance](https://news.google.com/rss/articles/CBMikwFBVV95cUxQSmRCc2pRUjZHWFpGSjd0dHF2Qjc1MDQtZjBRVWdGNmk5VTJ1RDM5M0ZpX3dpa3pKV1R1MDN2VTVEcWhLN09QdUpnMlBaQmtKcXNZWWtETGhZY3pUOWlscFJia2szOWFxcVlZY2tjdXlzMFJOZ3dJU2V4bktienpVa25SV2R3UTlZZXBTUldvaDN6YkU?oc=5) | Yahoo Finance |
+| 2h 前 | 0 | 中性 | [AbbVie (NYSE:ABBV) Share Price, Forecast & Analysis - Stocks Down Under](https://news.google.com/rss/articles/CBMiVkFVX3lxTE5ZQ003bFFHU2FhdmxFX2htRDlKRGk3OEJzd0NEZDBtcGQwbE5ZZ19YQy0tVk5VeFVEOFJNTUZQWmpmMDFQcmhoeGNNc2RaeF9oUE9UUDFn?oc=5) | Stocks Down Under |
 | 7h 前 | 0 | 中性 | [AbbVie stock: Cantor lifts target for AbbVie stock from USD 285 to USD 290 - ad-hoc-news.de](https://news.google.com/rss/articles/CBMi0gFBVV95cUxOZWVwSnhPUFBFZE9BYkhMR0kyblpUQ1VVekFVRWM0S2ZqdW0zaHhmTUZmbTRZOEdSQmF2Z0xsU05VVS1xWTVWWVAzUjVjSXNtX2dXNmMxSTdVSGE2OWhkTmFINlQzbWlUeWVfaWNEa3pwNU5PMUtsY2xWN3J0SE9lVWZqeVFnczB3c0NqRjN5b2x6WWJzUGRzVTdNeGFVMXF4U256OGFvQ3ZhTHV6YXVWMUo2NEw1VmRnWXJyOWJXdjVoTXBlbnlUYmd6OGlEaVduT3c?oc=5) | ad-hoc-news.de |
-| 11h 前 | 0 | 中性 | [AbbVie presents ESMO data: October 30 results test AbbVie stock - ad-hoc-news.de](https://news.google.com/rss/articles/CBMiwwFBVV95cUxPUnB2SmVsQzkwSl9iZkJjcU9zSEx4OTFnU2R3QmE3OWhTZEpRQ2N2clJrSGtfNUlLRGYzbGtNMnljV2g2N3c1N3JONTVLXzlnQmhwcl9Zb1p5dFJCZnUzZmF5QWR5dERsV29CZ29USkg4N0NkWFk2ai1NcWdja25BRGhucHBTS183bjlvcS1rd1dOYkU2MlNMX1dzNy1JaDB5NGp3ZTFZMWkzTUZ6R0JRNWFNcVFUNVltelJLMWppSDk4WjQ?oc=5) | ad-hoc-news.de |
 | 12h 前 | 0 | 中性 | [AbbVie’s Crohn’s Combo Topped Skyrizi Alone in a Phase 2a Trial. Here’s What It Means for a Stock Up 24% in 2026 - TIKR.com](https://news.google.com/rss/articles/CBMizgFBVV95cUxOZ0JHWkxaX3FwdWwwT0g3T1FZVjBZNkJieV9QaWVkWE9EMHdPU1E3bFhJbWZfdC1uMEVMcVA4TndJTnN5QVFoVnExc21TQlVOQTZ0NF9OSGNVWmdDa2loZkh6TVZoTmtBbXNXZldOeWlDbkJBOEpJT1lsbG1KRXBXano1TzZHMVNjdklKdXF6ekRjNVhteHFhWUxCdklNZnBwRUVzenJ0VzRGcENvc3BnRWVWalhPQ0tCNk5RN1dKQXhoRnZwTkFnWkVvWTJJdw?oc=5) | TIKR.com |
-| 14h 前 | 0 | 中性 | [AbbVie Inc. stock: AbbVie announces ESMO data, slightly lower pre-market - ad-hoc-news.de](https://news.google.com/rss/articles/CBMixgFBVV95cUxOYm1jMm5OWi1jenR6cnV3dHNheVMtek11T3J2OS1zbmdPM1kyQWZiaEJCNmkzNmZOQ05vWjlaRDhKa0xYbGtreURoTjF1a200Q3FMdHAxUzhoQmNydER0Y0tycGc0aUxud3NlWWdsMl94N3lPdmxYN2VmN3p5bzVrQUJ1c09DNGFTckdLT3F5R3g1eEpOelNFYjV3LTc5UlNrRlRiUExhVE9RRG9VMmRURVJiR3BBcGVXNW5zSTk4OFBZTklqTlE?oc=5) | ad-hoc-news.de |
-| 28h 前 | 0 | 中性 | [AbbVie Inc. (ABBV80.BK) stock price, news, quote and history - Yahoo Finance Singapore](https://news.google.com/rss/articles/CBMiWEFVX3lxTFBncHVtQ2xDRUtGZFk4dlpBYmtWWjFVd1NveGhXckFtMUd1S1lBTzhjazlIOUZTVVFUQjVOTmc5TU83TUp1dGs0OHhtTlhTdUpIOWdZNl96UmE?oc=5) | Yahoo Finance Singapore |
-| 35h 前 | 0 | 偏空 | [Warren Buffett's Bluntest Warning Yet -- and 3 Stocks Built to Survive It - The Motley Fool](https://news.google.com/rss/articles/CBMilwFBVV95cUxPUTIwTk05Y1pGODh6XzhSN00xQXRmekVkRng0TkE2MDcwckJDZm5NTWVsRGthWjZmU0tzOWVyLTYxaXhBMXZ3SFdURW53Ulo4b1JxMDB3eGptMkVuSmRtVFRtcWN4dnhiR3V4dzJLdTBFeWEzNEp3YlEyT0E5RmxUVmtfXzY3Y0xNa2ZOaUVuelZCSXI0cVpN?oc=5) | The Motley Fool |
+| 29h 前 | 0 | 中性 | [AbbVie Inc. (ABBV80.BK) stock price, news, quote and history - Yahoo Finance Singapore](https://news.google.com/rss/articles/CBMiWEFVX3lxTFBncHVtQ2xDRUtGZFk4dlpBYmtWWjFVd1NveGhXckFtMUd1S1lBTzhjazlIOUZTVVFUQjVOTmc5TU83TUp1dGs0OHhtTlhTdUpIOWdZNl96UmE?oc=5) | Yahoo Finance Singapore |
+| 36h 前 | 0 | 偏空 | [Warren Buffett's Bluntest Warning Yet -- and 3 Stocks Built to Survive It - The Motley Fool](https://news.google.com/rss/articles/CBMilwFBVV95cUxPUTIwTk05Y1pGODh6XzhSN00xQXRmekVkRng0TkE2MDcwckJDZm5NTWVsRGthWjZmU0tzOWVyLTYxaXhBMXZ3SFdURW53Ulo4b1JxMDB3eGptMkVuSmRtVFRtcWN4dnhiR3V4dzJLdTBFeWEzNEp3YlEyT0E5RmxUVmtfXzY3Y0xNa2ZOaUVuelZCSXI0cVpN?oc=5) | The Motley Fool |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -128,8 +124,7 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
 - 下次财报在 10 天后，落在持有期内。财报跳空会直接穿过止损——那一晚的风险不是 1R，是没有上限的。
-- TTM 市盈率 82 倍，价格里已经计入了不少增长；增长只要减速，杀估值的幅度会大于业绩本身的降幅。
-- 现价已经高于卖方目标价均值 282.61（-2.2%）——共识认为没有上行空间了。
+- 公司尚未盈利：估值没有盈利可锚，股价由叙事和融资环境决定，这类名字在流动性收紧时跌得最快。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -151,7 +146,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-15 | 288.28 | 291.40 | 282.81 | **283.40** | +0.6% | 7,620,300 |
 | 2026-10-16 | 283.61 | 286.64 | 282.96 | **285.42** | +0.7% | 5,776,000 |
 | 2026-10-19 | 284.23 | 287.93 | 282.59 | **282.68** | -1.0% | 4,171,300 |
-| 2026-10-20 | 286.90 | 290.98 | 285.00 | **288.98** | +2.2% | 5,173,329 |
+| 2026-10-20 | 286.90 | 290.98 | 285.00 | **289.08** | +2.3% | 5,173,329 |
 
 ## 七、自己去查（本页不做独立验证）
 
@@ -177,10 +172,10 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 **消息与预期**
 - [Yahoo 新闻](https://finance.yahoo.com/quote/ABBV/news)
-- [Google News 搜索](https://news.google.com/search?q=AbbVie+stock&hl=en-US)
+- [Google News 搜索](https://news.google.com/search?q=ABBV+stock&hl=en-US)
 - [财报日历与预期](https://stockanalysis.com/stocks/ABBV/forecast/) — 下次财报日、市场一致预期、历史超预期记录
 - [Seeking Alpha 讨论](https://seekingalpha.com/symbol/ABBV) — 观点密度高，但是买方与卖方混杂，当作反方意见读
-- [公司投资者关系](https://www.google.com/search?q=AbbVie+investor+relations) — 财报原始 PPT 与电话会记录
+- [公司投资者关系](https://www.google.com/search?q=ABBV+investor+relations) — 财报原始 PPT 与电话会记录
 
 **中文渠道（转载源，不作独立验证）**
 - [雪球](https://xueqiu.com/S/ABBV) — 中文讨论与财报摘要

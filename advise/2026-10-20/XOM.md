@@ -1,4 +1,4 @@
-# XOM · 埃克森美孚（ExxonMobil Holdings）
+# XOM · 埃克森美孚
 
 _能源 · 数据截至 2026-10-20 收盘 → 面向 2026-10-20 开盘_
 
@@ -48,7 +48,7 @@ _能源 · 数据截至 2026-10-20 收盘 → 面向 2026-10-20 开盘_
 
 ### 图形读数
 
-- **均线排列**：多头排列 — 现价距 20 日 168.07（+5.8%）、50 日 164.47（+8.2%）、200 日 150.98（+17.8%）
+- **均线排列**：多头排列 — 现价距 20 日 168.07（+5.8%）、50 日 164.47（+8.1%）、200 日 150.97（+17.8%）
 - **形态结构**：收敛整理 — 高点走低但低点抬高，区间在收窄；前高 169.64 → 164.91（-2.8%）、前低 155.85 → 159.27（+2.2%）
 - **动能**：RSI(14) 70，偏强；近一月的斜率快于近三月（月 +12.4% vs 季 +15.9%），趋势在加速
 - **波动**：日均真实波幅约为价格的 2.0%；按本报告 2 ATR 的止损惯例，一个 R 相当于 4.0% 的价格距离
@@ -63,13 +63,11 @@ _以上每一条都是对已经发生的价格的描述。均线、RSI、摆动�
 
 ## 三、财报与基本面
 
-市值 $7,313.45亿 · 行业 Energy / Oil & Gas Integrated · TTM 营收 $3,610.60亿 · TTM EPS 7.77 · 股息率 2.29% · Beta 0.21 · 空头占流通股 1.1%
-
-- **估值**：TTM 市盈率 22.9 倍；前瞻市盈率 14.6 倍（市场预期未来一年盈利上升）；市销率 2.0 倍；EV/EBITDA 11.4 倍；PEG 1.55（在 1–2 之间，价格与增长大致匹配）。
-- **增长**：最新季度营收同比 +44.1%；盈利同比 +112.8%；最近三个季度营收连续环比上升；最近 7 次财报里 7 次超预期。
-- **盈利质量**：毛利率 29.8%、营业利润率 15.9%、净利率 9.1%、ROE 12.6%。
-- **资产负债**：现金 $105.88亿；有息负债 $423.68亿；负债/权益 15.9%（负债很轻）；流动比率 1.14；自由现金流 $206.71亿，为正。
-- **卖方预期**：22 位分析师覆盖；平均评级「买入」（2.40/5，1 为最看多）；目标价均值 178.36（较现价 +0.3%），区间 142.00–206.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
+- **估值**：既无盈利也无有意义的营收，估值倍数一栏本页留空——这不是低估，是无法用倍数衡量。
+- **增长**：最新季度营收同比 +44.1%；最近三个季度营收连续环比上升；最近 7 次财报里 7 次超预期。
+- **盈利质量**：没有拿到利润率数据。
+- **资产负债**：没有拿到资产负债数据。
+- **卖方预期**：没有覆盖这只股票的分析师数据。
 
 **分季度损益**（季度数据，最新在左）
 
@@ -112,7 +110,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 13h 前 | 0 | 偏多 | [CVX, XOM Stocks Hit 52-Week Highs: What's Fueling The Surge? - Chevron (NYSE:CVX) - Benzinga](https://news.google.com/rss/articles/CBMihAJBVV95cUxOeV94X28zdWxLR0c0cnQzSko0U2p0S0dZNHN2d0JyTUxNUVFpWkN4QWhuLWVlcS1IQ0pyNnJqUzZsc05fQ1JQbFpLdl9ESmhqZWNGMEVhRTlUOGNIZERVcmZOMWlNOXAxVV9aOWVuYm5NX1U5VXVKYkJONG9aUHNhT0ZVTS1lTWRVMGdKN3VuZGxUdXE0aU5LaF9udlNubjlqNlkwUTlOdUlibTlFQnQwVG15djFSMUhpajRCdXZSRjM0RVdRamJnMFV5QnBOZXZEZUhRblpTbTA0VGR1aWpXWGItbTJTbF9uMVFlR3FPWXYtbm54MkZKTzBCdFJCc2l1b25RRA?oc=5) | Benzinga |
+| 13h 前 | 0 | 偏多 | [CVX, XOM Stocks Hit 52-Week Highs: What's Fueling The Surge? - Chevron (NYSE:CVX) - Benzinga](https://news.google.com/rss/articles/CBMipgJBVV95cUxOSWViOUduV1NlYlRrMmJwUXdDdVB5X3JRM0hZOFl1V3lhclFLdHVFYUVub2NOajFPbS1WcWdxVjZCYkt5WlY3Sm1IeWxmbGFqQXpOZXZyQy16Y0hBSEx3cG5UYWprb19WUlVuS091bDNqWnlpbVlZeWZZS05CQVdMaTVBU2l3NkpZNno2bVBCLWxHekdiZzVldmVjLTRGNndPSDhvQjZ2MzM4WVBFWm90ckVtYjRrTVFmMzhUNzUyM0o3dVpLYzAyaVItazFXbEZ5YVY0SHFqQ2ZUcW9IMDg5SEpIdFJEck1iYjJQUE9JWTB0dDd0RWMzTnNIdVN0eDluM0NKbkNLMFBxNVlpdDA3a09zX1NwTmpqcHB4aWRDVWRyVzB4SkE?oc=5) | Benzinga |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -121,6 +119,7 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
 - 下次财报在 10 天后，落在持有期内。财报跳空会直接穿过止损——那一晚的风险不是 1R，是没有上限的。
+- 公司尚未盈利：估值没有盈利可锚，股价由叙事和融资环境决定，这类名字在流动性收紧时跌得最快。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -142,7 +141,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-15 | 178.63 | 178.69 | 173.60 | **174.68** | -1.3% | 11,227,700 |
 | 2026-10-16 | 176.49 | 179.16 | 175.15 | **178.98** | +2.5% | 13,198,300 |
 | 2026-10-19 | 178.45 | 179.30 | 177.23 | **178.28** | -0.4% | 11,157,900 |
-| 2026-10-20 | 179.90 | 180.26 | 174.91 | **177.89** | -0.2% | 13,343,972 |
+| 2026-10-20 | 179.90 | 180.26 | 174.91 | **177.86** | -0.2% | 13,343,972 |
 
 ## 七、自己去查（本页不做独立验证）
 
@@ -168,10 +167,10 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 **消息与预期**
 - [Yahoo 新闻](https://finance.yahoo.com/quote/XOM/news)
-- [Google News 搜索](https://news.google.com/search?q=ExxonMobil+Holdings+stock&hl=en-US)
+- [Google News 搜索](https://news.google.com/search?q=XOM+stock&hl=en-US)
 - [财报日历与预期](https://stockanalysis.com/stocks/XOM/forecast/) — 下次财报日、市场一致预期、历史超预期记录
 - [Seeking Alpha 讨论](https://seekingalpha.com/symbol/XOM) — 观点密度高，但是买方与卖方混杂，当作反方意见读
-- [公司投资者关系](https://www.google.com/search?q=ExxonMobil+Holdings+investor+relations) — 财报原始 PPT 与电话会记录
+- [公司投资者关系](https://www.google.com/search?q=XOM+investor+relations) — 财报原始 PPT 与电话会记录
 
 **中文渠道（转载源，不作独立验证）**
 - [雪球](https://xueqiu.com/S/XOM) — 中文讨论与财报摘要

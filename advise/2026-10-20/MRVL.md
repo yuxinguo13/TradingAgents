@@ -1,6 +1,6 @@
-# MRVL · 迈威尔科技（Marvell Technology）
+# MRVL · 迈威尔科技
 
-_科技 · 数据截至 2026-10-20 收盘 → 面向 2026-10-20 开盘_
+_未分类 · 数据截至 2026-10-20 收盘 → 面向 2026-10-20 开盘_
 
 [← 回到 2026-10-20 当日报告](../2026-10-20.md)
 
@@ -63,13 +63,11 @@ _以上每一条都是对已经发生的价格的描述。均线、RSI、摆动�
 
 ## 三、财报与基本面
 
-市值 $2,160.67亿 · 行业 Technology / Semiconductors · TTM 营收 $94.50亿 · TTM EPS 3.04 · 股息率 0.10% · Beta 2.26 · 空头占流通股 3.2%
-
-- **估值**：TTM 市盈率 79.1 倍；前瞻市盈率 32.8 倍（市场预期未来一年盈利上升）；市销率 22.9 倍；EV/EBITDA 73.4 倍；PEG 0.56（低于 1，增长尚未被价格吃掉）。
-- **增长**：最新季度营收同比 +36.5%；盈利同比 +50.0%；最近三个季度营收连续环比上升；最近 7 次财报里 6 次超预期。
-- **盈利质量**：毛利率 52.2%、营业利润率 16.7%、净利率 27.9%、ROE 16.5%。
-- **资产负债**：现金 $39.33亿；有息负债 $52.86亿；负债/权益 28.5%（负债很轻）；流动比率 3.17；自由现金流 $24.08亿，为正。
-- **卖方预期**：44 位分析师覆盖；平均评级「强烈买入」（1.37/5，1 为最看多）；目标价均值 341.63（较现价 +42.1%），区间 229.95–450.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
+- **估值**：既无盈利也无有意义的营收，估值倍数一栏本页留空——这不是低估，是无法用倍数衡量。
+- **增长**：最新季度营收同比 +36.5%；最近三个季度营收连续环比上升；最近 7 次财报里 6 次超预期。
+- **盈利质量**：没有拿到利润率数据。
+- **资产负债**：没有拿到资产负债数据。
+- **卖方预期**：没有覆盖这只股票的分析师数据。
 
 **分季度损益**（季度数据，最新在左）
 
@@ -112,14 +110,13 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
+| 11h 前 | 6 | 中性 | [Marvell to pay $0.06/share dividend on Oct 29, last payout of 2023, unchanged since 2012. - Pluang](https://news.google.com/rss/articles/CBMioAFBVV95cUxPck1vN1FWOFJwa3EtQS10b1FZaVBiTTRNY3ZONXpnZThyTEIyVUpDQmZtR0NfcndqOHpYeV80TnhxazFwUXlwYV9PczhyeldESTY4WDNITkgtZ25jV0lCbHo0czFxTXJSbmtSdThab05qc2ZtYXhpMW5nYTFEMERnNGNpMVItVG5yN3QxODNJMU5MczhMRkE1dXVpOEJLQ1pt?oc=5) | Pluang |
 | 5h 前 | 0 | 偏多 | [Marvell (MRVL) Stock May Look Fully Priced Following Raised AI Targets - Simply Wall Street](https://news.google.com/rss/articles/CBMi2wFBVV95cUxOSjZFblBhM3NxZ3pOSHI5elVKb2VQc2RyR2t4MlI5Nko4YkFHMmtpdE8zVFloR2ZJS3h6Ym5LQXBPdzBIMnlidExBYUsxbmhOV2ltcnB3MVZ4Z2tHY1ZvNmotTDdiWk00d3hBenN4LTh0dUVCaWNBa3Q1YkZ5OGJRTk8wTXZKRWx2TFJrbUtCY2NmLWZNb2hreF90M0ZEMFAzWWVSaDVaUGJEOWRDeWxidGxfX2FwV1duRDFPelBCUE1Kb242Qnc4ZGxnekFrZ0RhSEZNTGd5Mmw4QWfSAeABQVVfeXFMT2lvMVBGaDlCOEl6cTA1eDNFdnZ0U2ZPN18yb1VGaUZ3bFNPb1Zscl9DWHFwN2VDUmlVd2dyRHRUbVdrYU9xQUVPc3lfeWo3SElZMFpwSFhSem1OWmNHUHhoN3pBaUVFckdER3RWaGNHRVZpTWF0cV81b0UyMnZvaDZUcVpNMzNHc1p0ZjVscHRNTU1VMm5mM3l6REV6QVQ3cU92M0l0OU12SXRrOEdYcC1oNFBuNjQ3akFRUkZRRkFDZGhXWVphUlFRMllXTHB5LTJGMGNfU2Y1VHRvd0pLU04?oc=5) | Simply Wall Street |
-| 5h 前 | 0 | 中性 | [Will AI Data Center Launches Change Marvell Stock Narrative - Yahoo Finance](https://news.google.com/rss/articles/CBMimgFBVV95cUxOalN5Mm5tTzFpakFaY040cEUzRzkxYzE5c0Z3NUtmRUx1RGVmcnFLV0p4dk5aWm81X0s0OVdUSmVQOVlCT2pheEF6OTFLRl9JbHJabXRZLUV2MHRZbktwN2t2dC1BT0g5N0hMM3U3akZWX0ZVbk40Mm9mMkR2RDJVUVdybjZpYklDT0pVMU1TeUhRQnVsQlMteFJB?oc=5) | Yahoo Finance |
-| 12h 前 | 0 | 中性 | [Marvell launches 3.2T retimer as Marvell Technology stock costs EUR 208.38 - ad-hoc-news.de](https://news.google.com/rss/articles/CBMi0wFBVV95cUxQZkxPYUhjV0U4S3R2YjllVWlfdW1mWFRWcHg1cU9uNHF6bFU2TzNZekxIZVRRZ25xWHpjTkhJWWdqOEo0ckdoOEhLY24tWEtkUGtzWWVZcUJjV0U4SHlhZGZfcTA3WnRHcTlyemZ6S1pNSTBHWnVqTGI0YUxpUTM1cldGYUNNNTg5bTV5VW93X3JRNnljZXgwZnR4VlFFNnNVNFZYMUF0c2Nadk9WTzBLN0xfeXd4VEZaaGhsMXliLVotZXcxUU1Xejh4TkF1b3ZMbTcw?oc=5) | ad-hoc-news.de |
-| 12h 前 | 0 | 中性 | [Is Marvell Technology a Millionaire-Maker Stock? - Yahoo Finance](https://news.google.com/rss/articles/CBMiqwFBVV95cUxPc1p5ZzhzdEZlWFRqNWl0anB0TGNKT2t6Sy0zV3pHazNPbkRyYko4TFprNzhHd2xkQWc0MnY0SHRLeVNkSmFodlZQSXI2a3lhcy1GREZLSXBhdGxOREZoel9hbThWcV95eFVFX1NYYmlRMUVBSDdyV0JkYlZoUktsb3V3SHFsTE5EVEJad3pPTWxnRDdWQ3J2UFk0OVdjUGxZR3JMUmI0YzdoTFU?oc=5) | Yahoo Finance |
-| 13h 前 | 0 | 中性 | [How Marvell Technology Inc. (MRVL) Affects Rotational Strategy Timing - Stock Traders Daily](https://news.google.com/rss/articles/CBMi4AFBVV95cUxQTzVHRkRiSGpGVTVUVndacFJhVnZZTUpHVXJqa2dwcW5Ya1JfRlFQb1I0ZzAxaFVPT1dqdzVpV0lzRkZ5RFFXX1pFQmY0OTNOU2xOM2VQalhRemdZN2dRdXg2cVdSQmJ2M0NtbHpTSXp1THR3LXB5Qm9OeVpiT0Z3c2dwUUhkd011RFRid0JpOEN0YmRyclo4Q3QxRU5mMHFFcmt4WUJwTGpOYjN4ZlBza2lDTVFGOEF3YTNmM2FkQUpnbnQyTVAtbEQ3dGVqdkZHRjRiWl9tZS1URWF2TkpsRA?oc=5) | Stock Traders Daily |
-| 14h 前 | 0 | 中性 | [Marvell Technology stock pre-market at EUR 207.78: AI silicon group - ad-hoc-news.de](https://news.google.com/rss/articles/CBMiwgFBVV95cUxPUUVZdl95X095RHhvNTY4MjFTdTVfQ2xoV2JPbFFNbEV5cG1DV2F6LVh3NXNZalJEVTNEWjU3bW10aE1aTnZud0dsaGVkenBIdk5mU0pxWTg4UkxMaXlMRXRRMU1YLW5DTWhueC1pU0U3LU5vWXlJXzdQekNJUUxFd2JvX2V1clhNNDVIYl9Ua3Exa25JX2pwUTA3TG9WLTZMOXltVWxoaEtMSHREOEpVNFFDcmpOaE0wRndaNG9DYzBzQQ?oc=5) | ad-hoc-news.de |
-| 29h 前 | 0 | 偏多 | [Why is Marvell Technology stock rallying today? By Investing.com - Investing.com South Africa](https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSkpvd2RfRW1ZQjlfTkZIMFg0NG1GVF8wMHRIMnpTQ3B3NHFDVFk5TW5KTTZCTlBqTDhSSnJpZWNZUTVnbDZmUVhIWnpVeVJjdUxMN0pPS0ZtS2pGV0FFU3pSLTBmOGd2bTROZ3FLM3I0MmQyVlpFWGx0Q2VwSjNyYW1kaHd5bTVic0ZaTjZTQ2lydEdPVGpESWFOVTU2YVYzM0c1WTBsUzJxQ00?oc=5) | Investing.com South Africa |
-| 30h 前 | 0 | 偏多 | [Why is Marvell Technology stock rallying today? - Investing.com](https://news.google.com/rss/articles/CBMirAFBVV95cUxNekJLQTR4a0Z0VXhPTFRFbmIzRmg5SE0xVWVUV2Voa3N1Nmt2ZUUzT0xXOXU5a0Jyc1llRWdPYmQ4R2JMdm0tNThTbEdnZ1dNOW1tWEQyVnhVOW5nQk9iRUVtWTB2aXBlbkJwRDhya0FKa1lnTGVxNjh5eUdSS1VzajBzVjZBSDJuZ0taaEtmN182RTBIRWx3Vm9fLXRyZGlLTDZRZFVBN2E4azFN?oc=5) | Investing.com |
+| 8h 前 | 0 | 中性 | [Marvell Stock Forecast: MRVL Price Outlook, AI Growth and Key Levels - FXLeaders](https://news.google.com/rss/articles/CBMikwFBVV95cUxNX0hIZHJ4enYyQW53Wk5sSG45b19lVEJrck9acUthNGVtSVF5UnRqeXhZUnQzeDF5QmRLeWo4c212dEpJbW91UGFMVGRIQmR1VFJsV3c5U2RYM0xYanNYZVJGblJ3NU5JMU1Wd2NOOWlXUGFzNXp2a2FjcTR0TjVwLVh2ZlZtVldwRER3Z2duanpaODg?oc=5) | FXLeaders |
+| 12h 前 | 0 | 中性 | [Marvell to pay dividends next week; Here’s how much 100 MRVL shares will earn - Finbold](https://news.google.com/rss/articles/CBMinAFBVV95cUxNZ256UUFzaXFSREJVcTFEcVh1eVRvTGNrWWgxZ1FVd1U0bUdaV1dFVWtlMzh5c09saTM5ZDRoQTNkQ0ZZU2hjS1dhU2ZUNjFXVGs1YlU3QTUxdkxEM29CajZTSkJsRXh0RjRkcS1FY2p6dVc2UF9MY1dLU2tsc2VXQ3hfVHJuSjh3SEttN1FqSk5Fd1g2VkVJblBWTWU?oc=5) | Finbold |
+| 14h 前 | 0 | 中性 | [How Marvell Technology Inc. (MRVL) Affects Rotational Strategy Timing - Stock Traders Daily](https://news.google.com/rss/articles/CBMi4AFBVV95cUxQTzVHRkRiSGpGVTVUVndacFJhVnZZTUpHVXJqa2dwcW5Ya1JfRlFQb1I0ZzAxaFVPT1dqdzVpV0lzRkZ5RFFXX1pFQmY0OTNOU2xOM2VQalhRemdZN2dRdXg2cVdSQmJ2M0NtbHpTSXp1THR3LXB5Qm9OeVpiT0Z3c2dwUUhkd011RFRid0JpOEN0YmRyclo4Q3QxRU5mMHFFcmt4WUJwTGpOYjN4ZlBza2lDTVFGOEF3YTNmM2FkQUpnbnQyTVAtbEQ3dGVqdkZHRjRiWl9tZS1URWF2TkpsRA?oc=5) | Stock Traders Daily |
+| 23h 前 | 0 | 中性 | [A Look at Marvell Technology Inc (MRVL) After 4.1% Gain -- GF Value $124.71 vs Price $237.09 - GuruFocus](https://news.google.com/rss/articles/CBMivAFBVV95cUxQUVN5QnpQTHNDcUk2ckViSXo5SjQ3NTRpTXV5dzM4clJob2daYVZVWUxrczJiQnkzU1JqNWJsNUtpeHFpMEFiN2tsaFZTMGZ6WW1MbjhldnpscjlRRU9iWEdnUUwyQzFDTkRGSkk4VU5neFNKaWZHMzJ0cXpWbjU0SGpsQXhfMVNxdjRsLWZIUTd2YVJocF9lOVRGWTlzNlpYYm01N20wVFNjR2NhZkNNd05VaWkyZWZORUdTeQ?oc=5) | GuruFocus |
+| 28h 前 | 0 | 中性 | [Stocks making the biggest moves midday: Sandisk, Marvell, Datadog, Cleveland-Cliffs, Amazon & more - CNBC](https://news.google.com/rss/articles/CBMioAFBVV95cUxPVGsyYklkaU02NXdOSWxKaThEUFZBMV9aNDhmSXV1V1dpa3gxeTRoWGl4VmFLNVpiTld6eDN3QUc0dkc3dHpUMWlKeWNETXVsU0dCM3dwWVI1ZnNpVEctLWJOdHVkd25rM1FCSVJDMl9EZjdWbUM1X3Y2U3FKajgxMnBwVjBYRDlkd2tMaWlQLWhZYlpKeHA2SVRrVFl6XzNC?oc=5) | CNBC |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -128,8 +125,7 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
 - 日均波幅 7.3%，属于高波动：同样的仓位金额，这只股票的日常噪音就能触发大多数人的心理止损。
-- TTM 市盈率 79 倍，价格里已经计入了不少增长；增长只要减速，杀估值的幅度会大于业绩本身的降幅。
-- 政策面对该板块的倾向为 -0.96（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 公司尚未盈利：估值没有盈利可锚，股价由叙事和融资环境决定，这类名字在流动性收紧时跌得最快。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -177,10 +173,10 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 **消息与预期**
 - [Yahoo 新闻](https://finance.yahoo.com/quote/MRVL/news)
-- [Google News 搜索](https://news.google.com/search?q=Marvell+Technology+stock&hl=en-US)
+- [Google News 搜索](https://news.google.com/search?q=MRVL+stock&hl=en-US)
 - [财报日历与预期](https://stockanalysis.com/stocks/MRVL/forecast/) — 下次财报日、市场一致预期、历史超预期记录
 - [Seeking Alpha 讨论](https://seekingalpha.com/symbol/MRVL) — 观点密度高，但是买方与卖方混杂，当作反方意见读
-- [公司投资者关系](https://www.google.com/search?q=Marvell+Technology+investor+relations) — 财报原始 PPT 与电话会记录
+- [公司投资者关系](https://www.google.com/search?q=MRVL+investor+relations) — 财报原始 PPT 与电话会记录
 
 **中文渠道（转载源，不作独立验证）**
 - [雪球](https://xueqiu.com/S/MRVL) — 中文讨论与财报摘要

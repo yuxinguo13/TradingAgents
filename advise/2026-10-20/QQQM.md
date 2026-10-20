@@ -1,4 +1,4 @@
-# QQQM · 纳指100ETF(迷你)（Invesco NASDAQ 100 ETF）
+# QQQM · 纳指100ETF(迷你)
 
 _未分类 · 数据截至 2026-10-20 收盘 → 面向 2026-10-20 开盘_
 
@@ -70,7 +70,7 @@ _读不到财务数据：该代码没有可用的财务数据（可能是 ETF、
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
 | 7h 前 | 0 | 中性 | [Manulife Invesco NASDAQ-100 ETF Private Segregated Pool MPIP Segregated Pools 75/75 - FE FE (874597A2) (ZMUIRX) latest stock news and headlines - Yahoo Finance UK](https://news.google.com/rss/articles/CBMiW0FVX3lxTE9YWU1GYlUzYmp5OHhKNXQ1bjc2cE9aNHFmWklJUnFBal8zTE9tRDBVeDNLdHB3T2tkMHlnYk1XOF9ER2phX3g4dkNDQkV2dDFVMDFFNjd6M3g4clk?oc=5) | Yahoo Finance UK |
-| 9h 前 | 0 | 中性 | [Invesco NASDAQ 100 ETF (QQQM) Adds NVIDIA and Apple on Oct. 16 - Yahoo Finance](https://news.google.com/rss/articles/CBMilwFBVV95cUxQcjAwa2JOZ2hEbnJ3U2xCanlGdm5jaGdKamxGZEZhYlVkXzdnQkl6U1FzdEFzS0dNbmVIRjZsVDl4dm1GVFNyRlRtaDh0dkIwZ0l1VFBSajFTVTh5MHRkQVFaYkFfT3A2UlEySHJLWHhFVnJscHlFb2pSZHFqc2hrQkJuUHJrVTNzbVBnSUlnMERoLWdqcFBN?oc=5) | Yahoo Finance |
+| 10h 前 | 0 | 中性 | [Invesco NASDAQ 100 ETF (QQQM) Adds NVIDIA and Apple on Oct. 16 - Yahoo Finance](https://news.google.com/rss/articles/CBMilwFBVV95cUxQcjAwa2JOZ2hEbnJ3U2xCanlGdm5jaGdKamxGZEZhYlVkXzdnQkl6U1FzdEFzS0dNbmVIRjZsVDl4dm1GVFNyRlRtaDh0dkIwZ0l1VFBSajFTVTh5MHRkQVFaYkFfT3A2UlEySHJLWHhFVnJscHlFb2pSZHFqc2hrQkJuUHJrVTNzbVBnSUlnMERoLWdqcFBN?oc=5) | Yahoo Finance |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -100,7 +100,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-15 | 295.86 | 300.34 | 294.59 | **299.79** | -0.1% | 3,564,400 |
 | 2026-10-16 | 298.70 | 298.90 | 291.21 | **292.26** | -2.5% | 3,886,200 |
 | 2026-10-19 | 296.30 | 298.33 | 295.09 | **295.78** | +1.2% | 2,666,500 |
-| 2026-10-20 | 294.54 | 297.57 | 292.52 | **295.59** | -0.1% | 3,634,066 |
+| 2026-10-20 | 294.51 | 297.57 | 292.52 | **295.59** | -0.1% | 3,634,066 |
 
 ## 七、自己去查（本页不做独立验证）
 
@@ -126,10 +126,10 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 **消息与预期**
 - [Yahoo 新闻](https://finance.yahoo.com/quote/QQQM/news)
-- [Google News 搜索](https://news.google.com/search?q=Invesco+NASDAQ+100+ETF+stock&hl=en-US)
+- [Google News 搜索](https://news.google.com/search?q=QQQM+stock&hl=en-US)
 - [财报日历与预期](https://stockanalysis.com/stocks/QQQM/forecast/) — 下次财报日、市场一致预期、历史超预期记录
 - [Seeking Alpha 讨论](https://seekingalpha.com/symbol/QQQM) — 观点密度高，但是买方与卖方混杂，当作反方意见读
-- [公司投资者关系](https://www.google.com/search?q=Invesco+NASDAQ+100+ETF+investor+relations) — 财报原始 PPT 与电话会记录
+- [公司投资者关系](https://www.google.com/search?q=QQQM+investor+relations) — 财报原始 PPT 与电话会记录
 
 **中文渠道（转载源，不作独立验证）**
 - [雪球](https://xueqiu.com/S/QQQM) — 中文讨论与财报摘要

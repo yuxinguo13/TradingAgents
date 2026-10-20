@@ -1,6 +1,6 @@
-# TXN · 德州仪器（Texas Instruments）
+# TXN · 德州仪器
 
-_科技 · 数据截至 2026-10-20 收盘 → 面向 2026-10-20 开盘_
+_未分类 · 数据截至 2026-10-20 收盘 → 面向 2026-10-20 开盘_
 
 [← 回到 2026-10-20 当日报告](../2026-10-20.md)
 
@@ -63,13 +63,11 @@ _以上每一条都是对已经发生的价格的描述。均线、RSI、摆动�
 
 ## 三、财报与基本面
 
-市值 $2,536.82亿 · 行业 Technology / Semiconductors · TTM 营收 $194.53亿 · TTM EPS 6.57 · 股息率 2.04% · Beta 1.34 · 空头占流通股 2.5%
-
-- **估值**：TTM 市盈率 42.3 倍；前瞻市盈率 26.1 倍（市场预期未来一年盈利上升）；市销率 13.0 倍；EV/EBITDA 27.2 倍；PEG 0.94（低于 1，增长尚未被价格吃掉）。
-- **增长**：最新季度营收同比 +22.8%；盈利同比 +51.8%；最近三个季度营收连续环比上升；最近 7 次财报里 5 次超预期。
-- **盈利质量**：毛利率 58.3%、营业利润率 42.6%、净利率 31.1%、ROE 35.2%。
-- **资产负债**：现金 $70.01亿；有息负债 $140.52亿；负债/权益 78.0%（负债适中）；流动比率 4.86；自由现金流 $35.45亿，为正。
-- **卖方预期**：29 位分析师覆盖；平均评级「买入」（2.11/5，1 为最看多）；目标价均值 329.52（较现价 +18.6%），区间 225.00–400.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
+- **估值**：既无盈利也无有意义的营收，估值倍数一栏本页留空——这不是低估，是无法用倍数衡量。
+- **增长**：最新季度营收同比 +22.8%；最近三个季度营收连续环比上升；最近 7 次财报里 5 次超预期。
+- **盈利质量**：没有拿到利润率数据。
+- **资产负债**：没有拿到资产负债数据。
+- **卖方预期**：没有覆盖这只股票的分析师数据。
 
 **分季度损益**（季度数据，最新在左）
 
@@ -112,11 +110,11 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 1h 前 | 8 | 偏空 | [Texas Instruments Stocks Rise Although Wells Fargo Cuts Target Before Earnings - GuruFocus](https://news.google.com/rss/articles/CBMiuAFBVV95cUxPY28tS280b3d6NkNaTmRudWtRODhfZTdhYVE5UV9GQUFDZ1pMNkZwMktWdUtyUmtpTEhPcGNNZGkxRHJENEpONnQ5ZEZFbkx5ZlMxYWZ1Z0pKQWROeEl5Y015cHduTnlEQnZWTGhEUG1DdXdIYUlvZ3hVbm5LMXZLWGdjZ0ozalRWaHg5WEVXRXBYSEp2Y3dZbEYxSVVPYWg4WWZKamkzUHhFTEdNR3hmeFNISUxuX0VN?oc=5) | GuruFocus |
+| 2h 前 | 8 | 偏空 | [Texas Instruments Stocks Rise Although Wells Fargo Cuts Target Before Earnings - GuruFocus](https://news.google.com/rss/articles/CBMiuAFBVV95cUxPY28tS280b3d6NkNaTmRudWtRODhfZTdhYVE5UV9GQUFDZ1pMNkZwMktWdUtyUmtpTEhPcGNNZGkxRHJENEpONnQ5ZEZFbkx5ZlMxYWZ1Z0pKQWROeEl5Y015cHduTnlEQnZWTGhEUG1DdXdIYUlvZ3hVbm5LMXZLWGdjZ0ozalRWaHg5WEVXRXBYSEp2Y3dZbEYxSVVPYWg4WWZKamkzUHhFTEdNR3hmeFNISUxuX0VN?oc=5) | GuruFocus |
 | 9h 前 | 8 | 中性 | [Texas Instruments and Lam Research Report Earnings: AI Equipment Boom Meets Analog Rebound - Yahoo Finance](https://news.google.com/rss/articles/CBMipAFBVV95cUxOdWdaOExRZHFYZzRLeldJamlUZVgybEJVcmJqOW0tNmxMaUE0ckN2Q0xWUF93VlhEd1hsNGpCRUd3clNrTEUzMEJpNm9DN21QeGstWExneXdYZ2dNM25IRXM4SERZSUIxbUdXWllCR3VSRkxENW9ZaGd1U2Rja0VlaUhpQmF6TEJMTXhydW9uOTJSMTQ1ZTFQNG1nVk9TSDRIN2hqMw?oc=5) | Yahoo Finance |
-| 17h 前 | 8 | 中性 | [Texas Instruments (TXN) To Report Earnings Tomorrow: Here Is What To Expect - TradingView](https://news.google.com/rss/articles/CBMizgFBVV95cUxPTzdDRFAxR2RsZXBldm4zSUJnN3F4dVFWOTJ3QzFScER3YklQNllFbnFNbHloRWZwYUF2WXY3S09LVGwzRGdpRmZ3cUtpQ2VfYW9kWGI3RlZUREpROHUzMFZwN2VfQy11eHBXNVQyd3UwQ0tFQWxMTDBBUnVUSmxvdWhCRVEtVFNsODRnUWZQRUduQ0dxUENWNE1fM1NmS2JrZ1pEOF90S3FxV19MWnlfZk9oR2xCdzl1enZ3NTNRWDJNOGVTNjlnRGQxbE1MQQ?oc=5) | TradingView |
-| 25h 前 | 6 | 偏多 | [Broadcom (AVGO) vs. Texas Instruments (TXN): Higher Income or Stronger Dividend Coverage? - Yahoo Finance](https://news.google.com/rss/articles/CBMioAFBVV95cUxNelktbEwydndHVE1ERE1zdFVoelFpalBHV1hqdE5rc29RSnBWOWJ6LTdVUWVXZG1SalRiSWtUYXd4SlhDVnJpVHJsMXRDa3lFT25kNkFqckE0UWJ5V2M4Smk1Tzhia1FtdTQzQ05vY0FjcEo5THA5QmtVSXl3ZnBXMUxnM0ppUi13azB6YVMwU3BWTjVRRFp3WTJHOUg0TEZJ?oc=5) | Yahoo Finance |
-| 5h 前 | 0 | 偏空 | [Texas Instruments stock: Wells Fargo cuts target from USD 310 to USD 300 - ad-hoc-news.de](https://news.google.com/rss/articles/CBMizwFBVV95cUxPbjdtTXJCcXhiQnhMMmh5a2RMRU05Qlk2eXRoTEFPOTR2Ymx5eURXaDFfcGI3di1XZUMwWFdUYTZuSnZ0S2ZqTFdteGNROG50SExnNnRxazh0UGNraEtpMl9NQzNVRGhDb19QaFJTSTZYeW1vMHpWZU5wdDR0RWRTQmhSM0FFQU5qdWtSWVFCcVpETm9Fa3BjcUliYzBYaC1MSWtzMjhUOGlxNnd1UnZJMTlFYi1QR1BNZWluX3J4c2QwMlZHZTUwc3hZUEVtWEE?oc=5) | ad-hoc-news.de |
+| 18h 前 | 8 | 中性 | [Texas Instruments (TXN) To Report Earnings Tomorrow: Here Is What To Expect - TradingView](https://news.google.com/rss/articles/CBMizgFBVV95cUxPTzdDRFAxR2RsZXBldm4zSUJnN3F4dVFWOTJ3QzFScER3YklQNllFbnFNbHloRWZwYUF2WXY3S09LVGwzRGdpRmZ3cUtpQ2VfYW9kWGI3RlZUREpROHUzMFZwN2VfQy11eHBXNVQyd3UwQ0tFQWxMTDBBUnVUSmxvdWhCRVEtVFNsODRnUWZQRUduQ0dxUENWNE1fM1NmS2JrZ1pEOF90S3FxV19MWnlfZk9oR2xCdzl1enZ3NTNRWDJNOGVTNjlnRGQxbE1MQQ?oc=5) | TradingView |
+| 26h 前 | 6 | 偏多 | [Broadcom (AVGO) vs. Texas Instruments (TXN): Higher Income or Stronger Dividend Coverage? - Yahoo Finance](https://news.google.com/rss/articles/CBMioAFBVV95cUxNelktbEwydndHVE1ERE1zdFVoelFpalBHV1hqdE5rc29RSnBWOWJ6LTdVUWVXZG1SalRiSWtUYXd4SlhDVnJpVHJsMXRDa3lFT25kNkFqckE0UWJ5V2M4Smk1Tzhia1FtdTQzQ05vY0FjcEo5THA5QmtVSXl3ZnBXMUxnM0ppUi13azB6YVMwU3BWTjVRRFp3WTJHOUg0TEZJ?oc=5) | Yahoo Finance |
+| 6h 前 | 0 | 偏空 | [Texas Instruments stock: Wells Fargo cuts target from USD 310 to USD 300 - ad-hoc-news.de](https://news.google.com/rss/articles/CBMizwFBVV95cUxPbjdtTXJCcXhiQnhMMmh5a2RMRU05Qlk2eXRoTEFPOTR2Ymx5eURXaDFfcGI3di1XZUMwWFdUYTZuSnZ0S2ZqTFdteGNROG50SExnNnRxazh0UGNraEtpMl9NQzNVRGhDb19QaFJTSTZYeW1vMHpWZU5wdDR0RWRTQmhSM0FFQU5qdWtSWVFCcVpETm9Fa3BjcUliYzBYaC1MSWtzMjhUOGlxNnd1UnZJMTlFYi1QR1BNZWluX3J4c2QwMlZHZTUwc3hZUEVtWEE?oc=5) | ad-hoc-news.de |
 | 8h 前 | 0 | 中性 | [Cantor Fitzgerald reiterates Neutral rating on Texas Instruments stock - Investing.com](https://news.google.com/rss/articles/CBMiygFBVV95cUxQS1ZkYVRzUWxNckpkMUU0SUxFWVpmOHhqQ29IcFJVVnJnOGd5T1JNaDJDRWQwZlo3OUJLYmNXdW5uYWFSVTdOLS1QdlAydHlvNk1aWG43RkJvbzhFdVdxbUxNdFhnYzJTV0pVRHR0NmNaeVRKNmFnZkx4MzV6MHgzZ0xNQWlGeDJLU19SSE8tbGFaQ1c0akZmZGZWajN4R1NzaHFBZnk3S3AwczQtQU1ENFdmRy1tLV82ZTg2MUl1ZHRpM2N1dnN4QVd3?oc=5) | Investing.com |
 | 12h 前 | 0 | 中性 | [StoneX reiterates USD 360.00 target for Texas Instruments stock - ad-hoc-news.de](https://news.google.com/rss/articles/CBMixAFBVV95cUxONmlJZzBZVjJ4ckxxN1FkMG0wTTBlMmR3WUR6MEFXeDFiUXRDVmlDdENFN05ZNlJfR0hRSndjNVIteEtBOFZKR2EwZEMxcFdPQzhfOXZ6VWNKXzdOXzBJRHM1aWt3Ym5Qb0phZmcyc3JKcGxhREc1LWRXOS1obHZmcXkyLU5yWWZVMkk1anFPZHRycFE2RWlSbWY0eDZMZ3ZmbW5nYmdDdnMwcEtrNi1ncmN0Yng0eWtQRFRZNVh0dS1Dbk1F?oc=5) | ad-hoc-news.de |
 | 14h 前 | 0 | 中性 | [Texas Instruments stock: StoneX reiterates $360 target, rises pre-market 0.46 percent - ad-hoc-news.de](https://news.google.com/rss/articles/CBMi1wFBVV95cUxNZGVzcXBfRjV0NDlNLTg3U2pxNWVWRC0weDgwU2Z6aVVLcUxIMjgxMVhfdUVzVklFalRhMHIzUmQxNngwLTZmcjNWdXo2bGF0ZzhPRGFpRXBfMnA5M19FdU15NW9zVFc0WFVoOWtXdXNjOWNSRm4tcVpWUm5XWVZJSEtfMFdPRG1Sc0lHZy15bGhYMVZWa1A0V29jSFozRWNtY3NlWFh1WXlBOGNhb0cyZGtJQWtzYUZVeUQxV3ZXUWthdG0yM3F6Z2ZTR0RBdmg5MUdySTZlMA?oc=5) | ad-hoc-news.de |
@@ -131,8 +129,8 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
 - 下次财报在 1 天后，落在持有期内。财报跳空会直接穿过止损——那一晚的风险不是 1R，是没有上限的。
+- 公司尚未盈利：估值没有盈利可锚，股价由叙事和融资环境决定，这类名字在流动性收紧时跌得最快。
 - 24 小时内的利空标题：Texas Instruments Stocks Rise Although Wells Fargo Cuts Target Before Earnings - GuruFocus（GuruFocus）
-- 政策面对该板块的倾向为 -0.96（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -180,10 +178,10 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 **消息与预期**
 - [Yahoo 新闻](https://finance.yahoo.com/quote/TXN/news)
-- [Google News 搜索](https://news.google.com/search?q=Texas+Instruments+stock&hl=en-US)
+- [Google News 搜索](https://news.google.com/search?q=TXN+stock&hl=en-US)
 - [财报日历与预期](https://stockanalysis.com/stocks/TXN/forecast/) — 下次财报日、市场一致预期、历史超预期记录
 - [Seeking Alpha 讨论](https://seekingalpha.com/symbol/TXN) — 观点密度高，但是买方与卖方混杂，当作反方意见读
-- [公司投资者关系](https://www.google.com/search?q=Texas+Instruments+investor+relations) — 财报原始 PPT 与电话会记录
+- [公司投资者关系](https://www.google.com/search?q=TXN+investor+relations) — 财报原始 PPT 与电话会记录
 
 **中文渠道（转载源，不作独立验证）**
 - [雪球](https://xueqiu.com/S/TXN) — 中文讨论与财报摘要

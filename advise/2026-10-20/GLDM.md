@@ -1,4 +1,4 @@
-# GLDM · SPDR MiniShares矿业°（SPDR Gold MiniShares）
+# GLDM · GLDM
 
 _未分类 · 数据截至 2026-10-20 收盘 → 面向 2026-10-20 开盘_
 
@@ -54,7 +54,7 @@ _未分类 · 数据截至 2026-10-20 收盘 → 面向 2026-10-20 开盘_
 - **波动**：日均真实波幅约为价格的 1.3%；按本报告 2 ATR 的止损惯例，一个 R 相当于 2.6% 的价格距离
 - **位置**：距 52 周高点 -23.7%，距 52 周低点 +4.5%
 - **量能**：最新一日成交量为 20 日均量的 0.7 倍，量能正常
-- **相对强度**：近一月跑输 标普500 4.7 个百分点
+- **相对强度**：近一月跑输 标普500 4.6 个百分点
 - **支撑 / 阻力**：最近的摆动低点 81.32，摆动高点 82.42（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
 
 **我的读图结论**：趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌
@@ -121,10 +121,10 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 **消息与预期**
 - [Yahoo 新闻](https://finance.yahoo.com/quote/GLDM/news)
-- [Google News 搜索](https://news.google.com/search?q=SPDR+Gold+MiniShares+stock&hl=en-US)
+- [Google News 搜索](https://news.google.com/search?q=GLDM+stock&hl=en-US)
 - [财报日历与预期](https://stockanalysis.com/stocks/GLDM/forecast/) — 下次财报日、市场一致预期、历史超预期记录
 - [Seeking Alpha 讨论](https://seekingalpha.com/symbol/GLDM) — 观点密度高，但是买方与卖方混杂，当作反方意见读
-- [公司投资者关系](https://www.google.com/search?q=SPDR+Gold+MiniShares+investor+relations) — 财报原始 PPT 与电话会记录
+- [公司投资者关系](https://www.google.com/search?q=GLDM+investor+relations) — 财报原始 PPT 与电话会记录
 
 **中文渠道（转载源，不作独立验证）**
 - [雪球](https://xueqiu.com/S/GLDM) — 中文讨论与财报摘要
