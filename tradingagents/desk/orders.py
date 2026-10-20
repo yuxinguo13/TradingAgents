@@ -256,7 +256,8 @@ class Gate:
     def buy(self, symbol: str, entry: float, stop: float, target: float, *,
             price: float, atr_pct: float, sector: str, earnings_days: float,
             sma200: float = float("nan"), sleeve: str = CORE, triggers: list | None = None,
-            vol_ratio: float = float("nan"), rs_1m: float = float("nan")) -> Verdict:
+            vol_ratio: float = float("nan"), rs_1m: float = float("nan"),
+            vol_ratio_prev: float = float("nan")) -> Verdict:
         if sleeve not in SLEEVE:
             return Verdict(False, f"unknown sleeve {sleeve!r}; core or aggressive")
         lim = SLEEVE[sleeve]
@@ -278,8 +279,11 @@ class Gate:
             if have >= MAX_AGGRESSIVE:
                 return Verdict(False, f"{MAX_AGGRESSIVE} aggressive positions already")
             claimed = [t for t in (triggers or []) if t in TRIGGERS]
-            if "volume" in claimed and _ok(vol_ratio) and vol_ratio < BREAKOUT_VOLUME_RATIO:
-                return Verdict(False, f"the volume trigger is claimed but the last bar's volume ratio is {vol_ratio:.1f} (needs {BREAKOUT_VOLUME_RATIO})")
+            # the breakout bar or the one after it (§10: the order goes in at the
+            # close of the breakout day or the next day, whose volume has faded)
+            best = max([v for v in (vol_ratio, vol_ratio_prev) if _ok(v)] or [float("nan")])
+            if "volume" in claimed and _ok(best) and best < BREAKOUT_VOLUME_RATIO:
+                return Verdict(False, f"the volume trigger is claimed but the last two bars' volume ratio is {best:.1f} (needs {BREAKOUT_VOLUME_RATIO})")
             if "rs" in claimed and _ok(rs_1m) and rs_1m < RS_MIN:
                 return Verdict(False, f"the rs trigger is claimed but the 21-day return is only {rs_1m * 100:+.1f} points vs SPY (needs +{RS_MIN * 100:.0f})")
             if len(claimed) < TRIGGERS_NEEDED:
@@ -478,6 +482,7 @@ class Executor:
         v = gate.buy(sym, entry, stop, target, price=price, atr_pct=_num(f.snap.atr_pct),
                      sector=sector, earnings_days=earnings_days, sma200=_num(f.snap.sma200),
                      sleeve=sleeve, triggers=triggers, vol_ratio=_num(f.snap.vol_ratio),
+                     vol_ratio_prev=_num(getattr(f.snap, "vol_ratio_prev", float("nan"))),
                      rs_1m=_num(getattr(f, "rs_1m", float("nan"))))
         out = Outcome("buy", sym, v.ok, v.reason, v.shares, entry, stop, target, sleeve=sleeve)
         if not v.ok:

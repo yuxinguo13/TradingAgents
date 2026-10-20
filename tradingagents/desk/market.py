@@ -89,6 +89,9 @@ def snapshot_from_bars(bars: Bars) -> Snapshot:
     snap.sma200 = _num(snap.sma200)
     facts = bars.facts()
     snap.vol_ratio = _num(facts.get("vol_ratio"))
+    vols = [v for v in (bars.volumes[-22:-2] if len(bars.volumes) >= 22 else []) if _ok(v)]
+    snap.vol_ratio_prev = (bars.volumes[-2] / (sum(vols) / len(vols))
+                           if vols and len(bars.volumes) >= 2 and _ok(bars.volumes[-2]) else float("nan"))
     snap.ret_1m = bars.ret(21)
     snap.ret_3m = bars.ret(63)
     year = cs[-252:]

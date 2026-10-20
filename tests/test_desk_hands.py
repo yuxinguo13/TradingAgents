@@ -714,3 +714,15 @@ class TestReflection1019:
         assert v.cancelled == ["b-AAA"]
         assert any(w.startswith("AAA") and "已撤单" in w for w in pk.warnings)
         assert any(w.startswith("BBB") and "会撤" in w for w in pk.warnings)
+
+
+@pytest.mark.unit
+class TestReflection1020:
+    def test_the_volume_trigger_accepts_the_breakout_bar_before_last(self, home):  # noqa: F811
+        """TALO: broke out on volume 2x, bought the next close on 0.9x."""
+        g = gate(home)
+        kw = {"price": 100.5, "atr_pct": 0.03, "sector": "Energy", "earnings_days": 30, "sleeve": "aggressive",
+              "triggers": ["volume", "pattern"]}
+        assert not g.buy("AAA", 100.0, 96.0, 112.0, vol_ratio=0.9, **kw).ok
+        assert g.buy("AAA", 100.0, 96.0, 112.0, vol_ratio=0.9, vol_ratio_prev=2.0, **kw).ok
+        assert g.buy("AAA", 100.0, 96.0, 112.0, vol_ratio=1.8, vol_ratio_prev=0.5, **kw).ok

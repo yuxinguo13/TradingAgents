@@ -74,6 +74,7 @@ class Snapshot:
     sma50: float = float("nan")
     sma200: float = float("nan")
     vol_ratio: float = float("nan")
+    vol_ratio_prev: float = float("nan")   # the bar before: a breakout bought at the next close still shows its volume
     ret_1m: float = float("nan")
     ret_3m: float = float("nan")
     off_high_52w: float = float("nan")
