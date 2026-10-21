@@ -279,6 +279,26 @@
 "eps_actual": 0.77,
 "surprise_pct": 12.87,
 "error": ""
+},
+"UNH|2026-10-21": {
+"symbol": "UNH",
+"as_of": "2026-10-21",
+"next_date": "2027-01-12",
+"last_date": "2026-10-13",
+"eps_estimate": 4.14,
+"eps_actual": 4.69,
+"surprise_pct": 13.26,
+"error": ""
+},
+"V|2026-10-21": {
+"symbol": "V",
+"as_of": "2026-10-21",
+"next_date": "2026-10-27",
+"last_date": "2026-07-28",
+"eps_estimate": 3.23,
+"eps_actual": 3.32,
+"surprise_pct": 2.76,
+"error": ""
 }
 }
 }
