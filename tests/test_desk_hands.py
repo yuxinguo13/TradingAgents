@@ -726,3 +726,31 @@ class TestReflection1020:
         assert not g.buy("AAA", 100.0, 96.0, 112.0, vol_ratio=0.9, **kw).ok
         assert g.buy("AAA", 100.0, 96.0, 112.0, vol_ratio=0.9, vol_ratio_prev=2.0, **kw).ok
         assert g.buy("AAA", 100.0, 96.0, 112.0, vol_ratio=1.8, vol_ratio_prev=0.5, **kw).ok
+
+
+@pytest.mark.unit
+class TestReflection1021:
+    def test_a_resting_buy_can_be_cancelled_and_replaced_the_same_day(self, home):  # noqa: F811
+        shape("AAA", 100.0, drift=0.6)
+        v = FakeVenue(acct())
+        v.order_fill = lambda oid: {"id": oid, "status": "new", "filled": 0.0, "price": float("nan")}
+        px = v.quote("AAA")
+        ex = executor(v, home)
+        out = ex.run({"orders": [buy("AAA", round(px * 0.98, 2), round(px * 0.94, 2), round(px * 1.08, 2))]})
+        assert out[0].ok and DeskBook(home / "desk" / "trade" / "book.json").positions["AAA"].pending
+        v.open_orders = lambda: [{"id": "o1", "symbol": "AAA", "side": "buy", "type": "limit", "parent_id": ""}]
+        ex2 = executor(v, home)
+        out = ex2.run({"orders": [{"action": "cancel_buy", "symbol": "AAA", "reason": "改价"},
+                                  buy("AAA", round(px, 2), round(px * 0.97, 2), round(px * 1.08, 2))]})
+        assert out[0].action == "cancel_buy" and out[0].ok and v.cancelled == ["o1"]
+        assert out[1].action == "buy" and out[1].ok, out[1].reason
+        assert DeskBook(home / "desk" / "trade" / "book.json").positions["AAA"].entry == round(px, 2)
+
+    def test_cancel_buy_refuses_a_filled_position(self, home):  # noqa: F811
+        shape("HLD", 100.0, drift=0.3)
+        book = DeskBook(home / "desk" / "trade" / "book.json")
+        book.positions["HLD"] = Position(symbol="HLD", shares=10, entry=90.0, stop=85.0, target=120.0, opened="2026-08-12")
+        book.save()
+        v = FakeVenue(acct(cash=90_000, holdings=[held("HLD", 10, 90.0, 100.0)]))
+        out = executor(v, home).run({"orders": [{"action": "cancel_buy", "symbol": "HLD"}]})
+        assert not out[0].ok and "stops are never cancelled" in out[0].reason and v.cancelled == []

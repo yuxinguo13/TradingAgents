@@ -432,7 +432,7 @@ class Executor:
                     risk_committed_today=risk_committed(today, self.log_path),
                     market_open=market_open or self.dry_run)
 
-        rank = {"sell": 0, "trim": 1, "raise_stop": 2, "protect": 3, "buy": 4}
+        rank = {"sell": 0, "trim": 1, "cancel_buy": 1, "raise_stop": 2, "protect": 3, "buy": 4}
         for o in sorted(orders, key=lambda o: rank.get(str(o.get("action")), 9)):
             action = str(o.get("action", "")).lower()
             sym = str(o.get("symbol", "")).upper()
@@ -456,6 +456,8 @@ class Executor:
                 out = self.raise_stop(o, sym, gate)
             elif action == "protect":
                 out = self.protect(o, sym, price, shares_held, gate, f, today)
+            elif action == "cancel_buy":
+                out = self.cancel_buy(o, sym)
             else:
                 out = Outcome(action, sym, False, f"unknown action {action!r}")
             if out.ok and action == "buy":
@@ -604,6 +606,32 @@ class Executor:
         else:
             out.reason = f"venue refused: {msg}"
         return out
+
+    def cancel_buy(self, o, sym) -> Outcome:
+        """Withdraw a resting buy that has not filled, so a new level can be
+        sent the same day (2026-10-21: the brief moved UNH from 398 to 414 and
+        there was no way to do it). Only a pending buy; a stop is never
+        cancelled here."""
+        p = self.book.positions.get(sym)
+        if p is None or not getattr(p, "pending", False):
+            return Outcome("cancel_buy", sym, False, f"{sym} has no resting buy in the book (stops are never cancelled)")
+        resting = None
+        for od in (self.broker.open_orders() if hasattr(self.broker, "open_orders") else []):
+            if str(od.get("symbol", "")).upper() == sym and od.get("side") == "buy" and not od.get("parent_id"):
+                resting = od
+                break
+        if self.dry_run:
+            return Outcome("cancel_buy", sym, True, "dry run", venue="not sent")
+        if resting is not None:
+            ok = bool(self.broker.cancel(str(resting.get("id") or p.parent_id)))
+            if not ok:
+                return Outcome("cancel_buy", sym, False, f"venue refused to cancel {sym}'s buy")
+            venue = f"cancelled {resting.get('id')}"
+        else:
+            venue = "no resting buy at the venue; book row dropped"
+        del self.book.positions[sym]
+        self.book.save()
+        return Outcome("cancel_buy", sym, True, str(o.get("reason") or ""), venue=venue)
 
     def protect(self, o, sym, price, held, gate: Gate, f, today) -> Outcome:
         stop, target = _num(o.get("stop")), _num(o.get("target"))
