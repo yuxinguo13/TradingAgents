@@ -1,6 +1,6 @@
-# MRVL · 迈威尔科技
+# MRVL · 迈威尔科技（Marvell Technology）
 
-_未分类 · 数据截至 2026-10-21 收盘 → 面向 2026-10-21 开盘_
+_科技 · 数据截至 2026-10-21 收盘 → 面向 2026-10-21 开盘_
 
 [← 回到 2026-10-21 当日报告](../2026-10-21.md)
 
@@ -63,11 +63,13 @@ _以上每一条都是对已经发生的价格的描述。均线、RSI、摆动�
 
 ## 三、财报与基本面
 
-- **估值**：既无盈利也无有意义的营收，估值倍数一栏本页留空——这不是低估，是无法用倍数衡量。
-- **增长**：最新季度营收同比 +36.5%；最近三个季度营收连续环比上升；最近 7 次财报里 6 次超预期。
-- **盈利质量**：没有拿到利润率数据。
-- **资产负债**：没有拿到资产负债数据。
-- **卖方预期**：没有覆盖这只股票的分析师数据。
+市值 $2,199.67亿 · 行业 Technology / Semiconductors · TTM 营收 $94.50亿 · TTM EPS 3.04 · 股息率 0.10% · Beta 2.26 · 空头占流通股 3.2%
+
+- **估值**：TTM 市盈率 80.5 倍；前瞻市盈率 33.4 倍（市场预期未来一年盈利上升）；市销率 23.3 倍；EV/EBITDA 74.4 倍；PEG 0.59（低于 1，增长尚未被价格吃掉）。
+- **增长**：最新季度营收同比 +36.5%；盈利同比 +50.0%；最近三个季度营收连续环比上升；最近 7 次财报里 6 次超预期。
+- **盈利质量**：毛利率 52.2%、营业利润率 16.7%、净利率 27.9%、ROE 16.5%。
+- **资产负债**：现金 $39.33亿；有息负债 $52.86亿；负债/权益 28.5%（负债很轻）；流动比率 3.17；自由现金流 $24.08亿，为正。
+- **卖方预期**：44 位分析师覆盖；平均评级「强烈买入」（1.37/5，1 为最看多）；目标价均值 341.63（较现价 +39.6%），区间 229.95–450.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
 
 **分季度损益**（季度数据，最新在左）
 
@@ -108,21 +110,15 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 4h 前 | 0 | 中性 | [Marvell Technology stock: 7.50 percent above Xetra close, Marvell Technology stock rises EUR 218.00 - AD HOC NEWS](https://news.google.com/rss/articles/CBMi8gFBVV95cUxOVTVWUzVLclJWQmxvTDROdlQ2Y3hMRkJoV1N4cGJwN0pHX2JiamRfTVpQSEtlMU9KNk9qeHRGSWhYMmN3dWRiYnNCSE5WRW9TUWRHRFVzYzRzTmIzU3dLNjdmN0NuVE8waXNrcUd4OFAwWWwxS0ZUZ3pHZWdjTHdPQUpyUUpSRU1OSGZGOXZWTHhsOGtydEhqLWhMMU9uT2taQjRndnAzOG9QRUROaWRSWHFLTGZ0NGEyM2I5U3NtYlRPU1V5SmY4bVlrRkxuazBTMTRlZmdhUlMwZkhNcFo4bGx3bGNXTUlSZmNEYjVtWU42dw?oc=5) | AD HOC NEWS |
-| 11h 前 | 0 | 中性 | [Arete lifts target to USD 300 for Marvell Technology stock - AD HOC NEWS](https://news.google.com/rss/articles/CBMivgFBVV95cUxPRXNUSzFNLV95RzNadzhuazdmbVRmSUNYYnVCVW9sbFB5QjBTSVZEeWhsRXUzNkJBQ1pTdjFHSVp5MV81X1dBa3BWNjFIVXFfeFZXTDdJblFGa3BYeUpDMlV2bGdxYlNHYW94YmtGVDNrZzNmUHZTcm9KOVM2OFAtaFVLOGpCVnd5eG5aM2liOVNoenpfMUphaE5KOVYzZ2hPOTkyVXdqYXFVR1JtU2lSVE1yNjFDVXlZWGRnT1B3?oc=5) | AD HOC NEWS |
-| 29h 前 | 0 | 中性 | [Will AI Data Center Launches Change Marvell Stock Narrative - Yahoo Finance](https://news.google.com/rss/articles/CBMimgFBVV95cUxOalN5Mm5tTzFpakFaY040cEUzRzkxYzE5c0Z3NUtmRUx1RGVmcnFLV0p4dk5aWm81X0s0OVdUSmVQOVlCT2pheEF6OTFLRl9JbHJabXRZLUV2MHRZbktwN2t2dC1BT0g5N0hMM3U3akZWX0ZVbk40Mm9mMkR2RDJVUVdybjZpYklDT0pVMU1TeUhRQnVsQlMteFJB?oc=5) | Yahoo Finance |
-| 36h 前 | 0 | 中性 | [Is Marvell Technology a Millionaire-Maker Stock? - Yahoo Finance](https://news.google.com/rss/articles/CBMiqwFBVV95cUxPc1p5ZzhzdEZlWFRqNWl0anB0TGNKT2t6Sy0zV3pHazNPbkRyYko4TFprNzhHd2xkQWc0MnY0SHRLeVNkSmFodlZQSXI2a3lhcy1GREZLSXBhdGxOREZoel9hbThWcV95eFVFX1NYYmlRMUVBSDdyV0JkYlZoUktsb3V3SHFsTE5EVEJad3pPTWxnRDdWQ3J2UFk0OVdjUGxZR3JMUmI0YzdoTFU?oc=5) | Yahoo Finance |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
 - 日均波幅 7.2%，属于高波动：同样的仓位金额，这只股票的日常噪音就能触发大多数人的心理止损。
-- 公司尚未盈利：估值没有盈利可锚，股价由叙事和融资环境决定，这类名字在流动性收紧时跌得最快。
+- TTM 市盈率 81 倍，价格里已经计入了不少增长；增长只要减速，杀估值的幅度会大于业绩本身的降幅。
+- 政策面对该板块的倾向为 -0.95（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -144,7 +140,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-16 | 235.16 | 237.64 | 226.52 | **227.83** | -5.6% | 21,506,500 |
 | 2026-10-19 | 240.00 | 246.58 | 234.82 | **237.09** | +4.1% | 18,004,500 |
 | 2026-10-20 | 232.45 | 243.96 | 226.52 | **240.42** | +1.4% | 16,744,900 |
-| 2026-10-21 | 247.00 | 250.12 | 237.83 | **244.76** | +1.8% | 13,703,887 |
+| 2026-10-21 | 246.98 | 250.12 | 237.83 | **244.76** | +1.8% | 13,703,887 |
 
 ## 七、自己去查（本页不做独立验证）
 
@@ -170,10 +166,10 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 **消息与预期**
 - [Yahoo 新闻](https://finance.yahoo.com/quote/MRVL/news)
-- [Google News 搜索](https://news.google.com/search?q=MRVL+stock&hl=en-US)
+- [Google News 搜索](https://news.google.com/search?q=Marvell+Technology+stock&hl=en-US)
 - [财报日历与预期](https://stockanalysis.com/stocks/MRVL/forecast/) — 下次财报日、市场一致预期、历史超预期记录
 - [Seeking Alpha 讨论](https://seekingalpha.com/symbol/MRVL) — 观点密度高，但是买方与卖方混杂，当作反方意见读
-- [公司投资者关系](https://www.google.com/search?q=MRVL+investor+relations) — 财报原始 PPT 与电话会记录
+- [公司投资者关系](https://www.google.com/search?q=Marvell+Technology+investor+relations) — 财报原始 PPT 与电话会记录
 
 **中文渠道（转载源，不作独立验证）**
 - [雪球](https://xueqiu.com/S/MRVL) — 中文讨论与财报摘要

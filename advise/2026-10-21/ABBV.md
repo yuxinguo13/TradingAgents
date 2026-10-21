@@ -10,8 +10,8 @@ _医疗 · 数据截至 2026-10-21 收盘 → 面向 2026-10-21 开盘_
 
 ```text
        ABBV · 近 126 个交易日（日线收盘）
-286.9 ┤                                                                         ╭──
-279.8 ┤                                                                       ╭─╯
+286.9 ┤                                                                          ╭─
+279.9 ┤                                                                       ╭──╯
 272.8 ┤                                                                      ╭╯
 265.7 ┤                                                 ╭╮╭╮        ╭────╮ ╭─╯    ·
 258.7 ┤                             ╭╮       ╭──╮       │╰╯╰────╮ ╭─╯  ··╰─╯······
@@ -19,7 +19,7 @@ _医疗 · 数据截至 2026-10-21 收盘 → 面向 2026-10-21 开盘_
 244.5 ┤                           │╰╯ ╰───╯      ╰────╯····
 237.5 ┤                          ╭╯             ······
 230.4 ┤                         ╭╯          ····                        :::::::::::
-223.3 ┤                  ╭───╮ ╭╯      ·····   :::::::::::::::::::::::::
+223.4 ┤                  ╭───╮ ╭╯      ·····   :::::::::::::::::::::::::
 216.3 ┤·         :::::╭╮╭╯:::╰─╯:::····::::::::
 209.2 ┤:········╭─────╯╰╯··········
 202.2 ┤   ╭─────╯ ·······
@@ -48,13 +48,13 @@ _医疗 · 数据截至 2026-10-21 收盘 → 面向 2026-10-21 开盘_
 
 ### 图形读数
 
-- **均线排列**：多头排列 — 现价距 20 日 271.79（+4.8%）、50 日 263.26（+8.2%）、200 日 231.76（+22.8%）
+- **均线排列**：多头排列 — 现价距 20 日 271.79（+4.8%）、50 日 263.26（+8.2%）、200 日 231.76（+22.9%）
 - **形态结构**：上升结构 — 更高的高点 + 更高的低点；前高 267.75 → 291.40（+8.8%）、前低 245.26 → 256.30（+4.5%）
 - **动能**：RSI(14) 65，偏强；近一月的斜率快于近三月（月 +8.0% vs 季 +11.5%），趋势在加速
 - **波动**：日均真实波幅约为价格的 2.6%；按本报告 2 ATR 的止损惯例，一个 R 相当于 5.2% 的价格距离
 - **位置**：距 52 周高点 -1.5%，距 52 周低点 +46.2%
-- **量能**：最新一日成交量为 20 日均量的 0.6 倍，量能正常
-- **相对强度**：近一月跑赢 标普500 8.0 个百分点
+- **量能**：最新一日成交量为 20 日均量的 0.9 倍，量能正常
+- **相对强度**：近一月跑赢 标普500 8.1 个百分点
 - **支撑 / 阻力**：最近的摆动低点 256.30，摆动高点 291.40（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
 
 **我的读图结论**：趋势向上且结构完整，且贴近 52 周高点——追高的代价是止损离得远；顺势的一侧在上方，风险在于结构一旦破位就要认
@@ -69,7 +69,7 @@ _以上每一条都是对已经发生的价格的描述。均线、RSI、摆动�
 - **增长**：最新季度营收同比 +10.2%；盈利同比 +290.4%；最近 7 次财报里 6 次超预期。
 - **盈利质量**：毛利率 72.8%、营业利润率 40.0%、净利率 9.8%。
 - **资产负债**：现金 $65.69亿；有息负债 $708.85亿；流动比率 0.81（短期偿付紧）；自由现金流 $168.70亿，为正。
-- **卖方预期**：28 位分析师覆盖；平均评级「买入」（1.70/5，1 为最看多）；目标价均值 283.50（较现价 -0.4%），区间 200.00–328.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
+- **卖方预期**：28 位分析师覆盖；平均评级「买入」（1.70/5，1 为最看多）；目标价均值 283.50（较现价 -0.5%），区间 200.00–328.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
 
 **分季度损益**（季度数据，最新在左）
 
@@ -113,12 +113,13 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
 | 11h 前 | 9 | 偏空 | [AbbVie cuts third-quarter guidance. AbbVie stock is valued at USD 510.7 billion - AD HOC NEWS](https://news.google.com/rss/articles/CBMi2AFBVV95cUxOemF1OWt0SnVBeTNjamFBbGxWY1czVzVjQTNDdlVsMkU4Vk1VRGFtbXZUZHlSNjN4bi0yblNHV3lFY3l4WnJ6NlZXTXE5YWxaVVl0dGlmX08zTm1JUC15MVc2d21YaXNZTEtwVS1yX1BybmlLMEpfYkZyME5lOTg0MXNpNHF5SG5TQVR4OXJIMDJZUW91anRLaWZ2eEhlb3dQMXMyNnplWnd4VXNiNC1TRjNYNmJLaFl0ZUdVQjlmR0tNeHA0eTJSbF9ROWpuWlhKTWFLWXFMZ28?oc=5) | AD HOC NEWS |
-| 5h 前 | 8 | 偏多 | [AbbVie vs. AstraZeneca: Which Pharma Giant Has the Stronger Earnings Growth Story? - Yahoo Finance](https://news.google.com/rss/articles/CBMimwFBVV95cUxNUFIzZHFibDdtRXFUNlE2RW41WjQxYjlMNHJ1UmEzaE94YTg1OWM4dlRXVllzWi1nYjNrWDRVVXNoZWVZVUkzd0xMM3B0aVNmd0YxS2hxaUNUNGJBeFNCY3A1Y1FXVDQ1cGY3ajVJdm5PQUlNOEpuaXJ2b3BRNUJoZWRHZ3V5dDZ4MExRc2I2SnRpSjhtNDBhY2lPNA?oc=5) | Yahoo Finance |
-| 5h 前 | 0 | 中性 | [AbbVie stock: RBC keeps Buy rating for AbbVie stock at USD 280.00 - AD HOC NEWS](https://news.google.com/rss/articles/CBMixgFBVV95cUxQakpuU2NJNHlJbFp4SkZydk84eFZIb3I3RDQ3TUZZekdtUEEwa2tmRndpa3RPMVA0TVR1Q090c1lodjM4ell3TTB5bW5xT3RTaVF6ZExJMjY2Xy1wZFR3Mk43R2MxSGRmTUNiSlhRa3p0YVE1SW0zZDNxWWlYdlRBLXdqTnpIMkV3VU8yS19mT3FscDhPRFJWdWVsM2wxU2Yzc3p1SDI4SFZEaEE0WC1JQ3JtTVhnVTRCOGhVeUxRd2RERDVNVnc?oc=5) | AD HOC NEWS |
-| 6h 前 | 0 | 中性 | [AbbVie vs. Bristol Myers Squibb: Faster Growth or Steady Revenue? - The Motley Fool](https://news.google.com/rss/articles/CBMisAFBVV95cUxPSWtYdGt1cDZVcTRUZnNWLUhlZHJoZDBuOUNFQ0I4RTBBN0x6Rkk5dGZ4OFlMYmJsQVlOODhWQl9zVU9kNkRiNjVfZTdsenRIMUw3Q29UQjkzbWMtUFZHbWNjRWlEbG5ac2JHVlpodk5VR2xRLUhibmVnejN4YWdKaFFRR0VNLUZUWDR5UDhxS3hjR2hvQlJ1a3hJd3gzdDN3UWUzNGN0cVJKUnd1MlUtSg?oc=5) | The Motley Fool |
-| 8h 前 | 0 | 中性 | [The Last Business Abbott Spun Off Now Sells More Than Abbott Does - Stock Titan](https://news.google.com/rss/articles/CBMigAFBVV95cUxNbFNVWEJmc0w2cFdmRWJuR0ZSaFVDWnN0UGhOZFlvZUg5ekpWR2dyZnNLTlpHYzkzSkV5R0JDUE5PZ1pFd0ZTLTdJQWFvQ2lXV1pJV0tiVGd3NzhLaFFTS1diVnZMalA0M2JwNURqX1FQRFR3NlNfWExyamFWSDZicQ?oc=5) | Stock Titan |
-| 10h 前 | 0 | 偏多 | [AbbVie’s experimental Crohn’s combo with Skyrizi outperforms solo drug treatment in trial - Crain's Chicago Business](https://news.google.com/rss/articles/CBMiqgFBVV95cUxONWIwampqZ29abThuSFRlT0pqT0N4MFF5dEFuZ2JyXzNYc3FEdlRXdzQyZ3AtTnlBVTlpS1RPeHQxWndvNUdyOVRFVnMtcjNHMVpCdVozXzhMbVYtRWIyYzFlTkp0Q1p0UmZNV0dILVJtaW1JR3FKeS1EVTJSaU1BbTdSMzAyTTBwMHFTR3VISFIyV2tkUXZBZEc0VG9vVTdzTnNRYzZVVExUZw?oc=5) | Crain's Chicago Business |
-| 22h 前 | 0 | 中性 | [AbbVie vs. Vertex Pharmaceuticals: Which Healthcare Stock Is a Better Buy in 2026? - The Motley Fool](https://news.google.com/rss/articles/CBMizAFBVV95cUxPdFc3RXg4ZjJPU0RVSEIzTHQ2RlZnc1EyemY2STRJM0RLVU9FX2hxVGsxcGRaSUcwNFlsclNGUUtmekg1UnFIS1NnSzB0d3c3NmhLMmExb0Z3cU55VUpqaC1hbTU5dWgwaXVzMUJGSmlWejNhQ2RkdUJTZGlGNGFjZS1Fbm1LYWxLYTVmN25wbFc2RmQ3eTM1T29VX2tDNTZncjBpN0hMV0ZEeTA2NnNJYVNGNUpUWmg2RVdQb1BUcUVxWWxnMVo5OVVJNnk?oc=5) | The Motley Fool |
+| 6h 前 | 8 | 偏多 | [AbbVie vs. AstraZeneca: Which Pharma Giant Has the Stronger Earnings Growth Story? - Yahoo Finance](https://news.google.com/rss/articles/CBMimwFBVV95cUxNUFIzZHFibDdtRXFUNlE2RW41WjQxYjlMNHJ1UmEzaE94YTg1OWM4dlRXVllzWi1nYjNrWDRVVXNoZWVZVUkzd0xMM3B0aVNmd0YxS2hxaUNUNGJBeFNCY3A1Y1FXVDQ1cGY3ajVJdm5PQUlNOEpuaXJ2b3BRNUJoZWRHZ3V5dDZ4MExRc2I2SnRpSjhtNDBhY2lPNA?oc=5) | Yahoo Finance |
+| 6h 前 | 0 | 中性 | [AbbVie stock: RBC keeps Buy rating for AbbVie stock at USD 280.00 - AD HOC NEWS](https://news.google.com/rss/articles/CBMixgFBVV95cUxQakpuU2NJNHlJbFp4SkZydk84eFZIb3I3RDQ3TUZZekdtUEEwa2tmRndpa3RPMVA0TVR1Q090c1lodjM4ell3TTB5bW5xT3RTaVF6ZExJMjY2Xy1wZFR3Mk43R2MxSGRmTUNiSlhRa3p0YVE1SW0zZDNxWWlYdlRBLXdqTnpIMkV3VU8yS19mT3FscDhPRFJWdWVsM2wxU2Yzc3p1SDI4SFZEaEE0WC1JQ3JtTVhnVTRCOGhVeUxRd2RERDVNVnc?oc=5) | AD HOC NEWS |
+| 7h 前 | 0 | 中性 | [AbbVie vs. Bristol Myers Squibb: Faster Growth or Steady Revenue? - The Motley Fool](https://news.google.com/rss/articles/CBMisAFBVV95cUxPSWtYdGt1cDZVcTRUZnNWLUhlZHJoZDBuOUNFQ0I4RTBBN0x6Rkk5dGZ4OFlMYmJsQVlOODhWQl9zVU9kNkRiNjVfZTdsenRIMUw3Q29UQjkzbWMtUFZHbWNjRWlEbG5ac2JHVlpodk5VR2xRLUhibmVnejN4YWdKaFFRR0VNLUZUWDR5UDhxS3hjR2hvQlJ1a3hJd3gzdDN3UWUzNGN0cVJKUnd1MlUtSg?oc=5) | The Motley Fool |
+| 9h 前 | 0 | 中性 | [The Last Business Abbott Spun Off Now Sells More Than Abbott Does - Stock Titan](https://news.google.com/rss/articles/CBMigAFBVV95cUxNbFNVWEJmc0w2cFdmRWJuR0ZSaFVDWnN0UGhOZFlvZUg5ekpWR2dyZnNLTlpHYzkzSkV5R0JDUE5PZ1pFd0ZTLTdJQWFvQ2lXV1pJV0tiVGd3NzhLaFFTS1diVnZMalA0M2JwNURqX1FQRFR3NlNfWExyamFWSDZicQ?oc=5) | Stock Titan |
+| 11h 前 | 0 | 偏多 | [AbbVie’s experimental Crohn’s combo with Skyrizi outperforms solo drug treatment in trial - Crain's Chicago Business](https://news.google.com/rss/articles/CBMiqgFBVV95cUxONWIwampqZ29abThuSFRlT0pqT0N4MFF5dEFuZ2JyXzNYc3FEdlRXdzQyZ3AtTnlBVTlpS1RPeHQxWndvNUdyOVRFVnMtcjNHMVpCdVozXzhMbVYtRWIyYzFlTkp0Q1p0UmZNV0dILVJtaW1JR3FKeS1EVTJSaU1BbTdSMzAyTTBwMHFTR3VISFIyV2tkUXZBZEc0VG9vVTdzTnNRYzZVVExUZw?oc=5) | Crain's Chicago Business |
+| 23h 前 | 0 | 中性 | [AbbVie vs. Vertex Pharmaceuticals: Which Healthcare Stock Is a Better Buy in 2026? - The Motley Fool](https://news.google.com/rss/articles/CBMizAFBVV95cUxPdFc3RXg4ZjJPU0RVSEIzTHQ2RlZnc1EyemY2STRJM0RLVU9FX2hxVGsxcGRaSUcwNFlsclNGUUtmekg1UnFIS1NnSzB0d3c3NmhLMmExb0Z3cU55VUpqaC1hbTU5dWgwaXVzMUJGSmlWejNhQ2RkdUJTZGlGNGFjZS1Fbm1LYWxLYTVmN25wbFc2RmQ3eTM1T29VX2tDNTZncjBpN0hMV0ZEeTA2NnNJYVNGNUpUWmg2RVdQb1BUcUVxWWxnMVo5OVVJNnk?oc=5) | The Motley Fool |
+| 31h 前 | 0 | 偏多 | [AbbVie stock weekly forecast: Recent rally steadies as resistance looms at $291.36 - Traders Union](https://news.google.com/rss/articles/CBMijAFBVV95cUxQSktsbmc4bHo1c29PYUREazZTYUZlVWJzSGFFZ2x2TkZfcUd0TWVROTJXV0dyMFp1NzRxV1pULUZQQkVINUpuUUtVcGhaTW92dHVBdmdRZVBxZTlrOFpkZHktQnZWZ0h2RVB2NUJKV0N2Wkd1VTdRUy0xMlBxUF9MMGZzbnpDcXJuOHFyUg?oc=5) | Traders Union |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -128,7 +129,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 - 下次财报在 9 天后，落在持有期内。财报跳空会直接穿过止损——那一晚的风险不是 1R，是没有上限的。
 - TTM 市盈率 80 倍，价格里已经计入了不少增长；增长只要减速，杀估值的幅度会大于业绩本身的降幅。
-- 现价已经高于卖方目标价均值 283.50（-0.4%）——共识认为没有上行空间了。
+- 现价已经高于卖方目标价均值 283.50（-0.5%）——共识认为没有上行空间了。
 - 24 小时内的利空标题：AbbVie cuts third-quarter guidance. AbbVie stock is valued at USD 510.7 billion - AD HOC NEWS（AD HOC NEWS）
 
 ## 六、原始数据（本页所有计算的来源）
@@ -151,7 +152,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-16 | 283.61 | 286.64 | 282.96 | **285.42** | +0.7% | 5,776,000 |
 | 2026-10-19 | 284.23 | 287.93 | 282.59 | **282.68** | -1.0% | 4,171,300 |
 | 2026-10-20 | 286.90 | 290.98 | 285.00 | **289.08** | +2.3% | 5,175,000 |
-| 2026-10-21 | 287.63 | 289.00 | 282.15 | **284.72** | -1.5% | 3,119,656 |
+| 2026-10-21 | 287.63 | 289.00 | 282.15 | **284.80** | -1.5% | 4,369,143 |
 
 ## 七、自己去查（本页不做独立验证）
 
