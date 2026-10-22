@@ -110,12 +110,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 7h 前 | 0 | 中性 | [XOM vs. BP: Which Integrated Energy Giant Has the Edge? - TradingView](https://news.google.com/rss/articles/CBMirAFBVV95cUxQWmNocExWVTUwTU9ENmRQelZvLXM4RlluQWxZbE11SDl4enhzTFRHejcyY0tLWU85Umh5bkFEQ3hOYVd2SVV1d1kteVR2OGxqOEhfdkVSclJSWnd3ZmFma1QzR3Judml0WWtGQ3ZtTEtsYnRwYkNZZklwd2dSdEVjc2JLbk12VFNTYnB1YkR2SXJ6RWphdWlUczhjdGYwNjg3bFhJMTJETGdYOGx2?oc=5) | TradingView |
-| 7h 前 | 0 | 中性 | [ExxonMobil stock hits all-time high at 180.26 USD - Investing.com](https://news.google.com/rss/articles/CBMipwFBVV95cUxPZGREdldTN0E5dDdlVGx2OEVBZkRzOXM4dzBpeWZvLWQwMUVvQ1VjdHUweFROLXc3X2lXZ0d1QUhwVXQ0eTA5SW5RbzViQWVnX2dzSEZwNFF1dHFOOEFDT2RENkdQVThWWFpXcDdweUZyV0gxV20zNzJrQ3AzblNWOGM2TEZoUnc5UnAzbEtrUXZZbk1IbXMzbzdSdmE5Vy1OQWVrbEQ1bw?oc=5) | Investing.com |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 

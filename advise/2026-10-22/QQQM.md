@@ -67,7 +67,11 @@ _读不到财务数据：该代码没有可用的财务数据（可能是 ETF、
 
 ## 四、消息面（过去 24 小时）
 
-_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
+| 时间 | 材料度 | 倾向 | 标题 | 来源 |
+|---|---:|---|---|---|
+| 12h 前 | 0 | 中性 | [Should iShares Nasdaq Top 30 Stocks ETF (QTOP) Be on Your Investing Radar? - Yahoo Finance](https://news.google.com/rss/articles/CBMimAFBVV95cUxNUk5VV1NXODd2YURtalVUaTM3WGdEdWlBc2lhdmN4a09hYWRLZzNzdzBOOFQxeWptWk1hVGdBRnZRNDNkZVdoSmR0Z1E2cHR1Um5iMGpCRXZobHlaQnd1SENsV1NVSXJlLU53dk01TEdvQ0MxM3EzSzFrX013YXF6c05hbDJPcjA5bk1SWEc4MzkzQWgyYUNzQw?oc=5) | Yahoo Finance |
+
+_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
 ## 五、反方观点与风险
 

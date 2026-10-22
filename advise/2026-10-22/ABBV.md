@@ -48,13 +48,13 @@ _医疗 · 数据截至 2026-10-22 收盘 → 面向 2026-10-22 开盘_
 
 ### 图形读数
 
-- **均线排列**：多头排列 — 现价距 20 日 272.86（+4.4%）、50 日 264.01（+7.9%）、200 日 232.10（+22.7%）
+- **均线排列**：多头排列 — 现价距 20 日 272.87（+4.5%）、50 日 264.02（+8.0%）、200 日 232.10（+22.9%）
 - **形态结构**：上升结构 — 更高的高点 + 更高的低点；前高 267.75 → 291.40（+8.8%）、前低 245.26 → 256.30（+4.5%）
-- **动能**：RSI(14) 66，偏强；近一月的斜率快于近三月（月 +8.1% vs 季 +10.5%），趋势在加速
+- **动能**：RSI(14) 66，偏强；近一月的斜率快于近三月（月 +8.2% vs 季 +10.6%），趋势在加速
 - **波动**：日均真实波幅约为价格的 2.6%；按本报告 2 ATR 的止损惯例，一个 R 相当于 5.3% 的价格距离
-- **位置**：距 52 周高点 -1.4%，距 52 周低点 +46.3%
+- **位置**：距 52 周高点 -1.3%，距 52 周低点 +46.4%
 - **量能**：最新一日成交量为 20 日均量的 1.2 倍，量能正常
-- **相对强度**：近一月跑赢 标普500 8.6 个百分点
+- **相对强度**：近一月跑赢 标普500 8.7 个百分点
 - **支撑 / 阻力**：最近的摆动低点 256.30，摆动高点 291.40（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
 
 **我的读图结论**：趋势向上且结构完整，且贴近 52 周高点——追高的代价是止损离得远；顺势的一侧在上方，风险在于结构一旦破位就要认
@@ -69,7 +69,7 @@ _以上每一条都是对已经发生的价格的描述。均线、RSI、摆动�
 - **增长**：最新季度营收同比 +10.2%；盈利同比 +290.4%；最近 7 次财报里 6 次超预期。
 - **盈利质量**：毛利率 72.8%、营业利润率 40.0%、净利率 9.8%。
 - **资产负债**：现金 $65.69亿；有息负债 $708.85亿；流动比率 0.81（短期偿付紧）；自由现金流 $168.70亿，为正。
-- **卖方预期**：28 位分析师覆盖；平均评级「买入」（1.70/5，1 为最看多）；目标价均值 283.50（较现价 -0.5%），区间 200.00–328.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
+- **卖方预期**：28 位分析师覆盖；平均评级「买入」（1.70/5，1 为最看多）；目标价均值 283.50（较现价 -0.6%），区间 200.00–328.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
 
 **分季度损益**（季度数据，最新在左）
 
@@ -112,18 +112,8 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 2h 前 | 9 | 偏空 | [AbbVie’s Skin Disease Drug Hits Phase 3 Goal, but Efficacy Falls Short of Benchmarks: Analyst - Benzinga](https://news.google.com/rss/articles/CBMi3wFBVV95cUxPMWZ6NVVFV1dMenY2V2gxaE11TU9HQ1J5QjE1Yk5ZRG5rdWNqUzRCTV9kUVQzSjJMcjFNQnJ0ZHRvclZUYXpqTkM1dkpNNE5Ob2psMEU4YTlvR3VNZTNGVEFKdzdtWUswR2FRYTBOT1Y0UWY2VEMxdEZIRGY2WWtmQ0IzWktPclZBd0hhN3l3QUdHZmQ5TWFEczdKOFFMM0dVSWxmckl4XzllZThYNUk2YkVtMWFQWVNMS2pJY3dVNUVkWS1ZdkdSNEJ5elE5WDRpajc4R0hXWlhkTkZVVUNF?oc=5) | Benzinga |
-| 6h 前 | 9 | 中性 | [AbbVie unveils positive Phase III results for lutikizumab - marketscreener.com](https://news.google.com/rss/articles/CBMi0AFBVV95cUxQQWhpWHRNNjBKU0ZValpnVWZNUUN6elM4Y1JfT2hZMFVzQWg2Z2h6TjF4cWx3NTJCanpCaUtXRGZGTFFodUFyOVRPVmlsT19aTmg2SmZTX2pWaFhQSmxSd2d5WlpkT0phS1JYZ3FxeE05R041a1l5N1p5RnZ4NXVHWUs3R1RGUjdJMmItU3V2MktuSDk4ZlZuZTJkQkFxa0o5Z0lueTFUZlJZQ0lrZ2dqY3Z3QXRkZGUxUXlfSENDYTY0OEthUlZDbU82NUp5U21t?oc=5) | marketscreener.com |
-| 9h 前 | 6 | 偏多 | [These 3 Dividend Stocks Paid Out Over 90% of Free Cash Flow, but 1 Has Raised Its Dividend 54 Years in a Row - 24/7 Wall St.](https://news.google.com/rss/articles/CBMi5AFBVV95cUxPYVZyeThsWW03YkRBQWFYWWVrbHVUMXJFdUQwV2lqTVVlMmwxbk5ud1lrdHljSjJXR3pXZzZUYVlLWDkyZ2ozVUkxM2xDRDJjMXpqVllIRVF4OS13WFJQVlNlcDBSc1FPSHpoVWs1UDhTbDlfaVVSRWsxUzZvVHJwakJjaE9US2tEMjZIYk1xVV9JZU1pMXl6QnRqYm1Rd3AzazBRYzd2RGdFRDRpa0hnWG1lc3p6enM1TVAzM196a3lDOTNjWE9EWGpmeWhnUU84NW53TFkyNTA0Wk1NZ3FnMmVxYWc?oc=5) | 24/7 Wall St. |
-| 7h 前 | 0 | 中性 | [Jim Cramer and Ken Fisher Like This Healthcare Stock - Yahoo Finance](https://news.google.com/rss/articles/CBMimAFBVV95cUxPSjZoM3dPZTBySXdjcmRQeXpJdnJLbGFSTzc1Z2FHd2I3TmNsamdKMUhUbnFpTWJRa2EwZU10bTBzLXZqNWtLVGpnUVVCUGQtOExNelBwNkZHYjBIdWplY2NtVlJUck5maV9KM0huSDdLenVzdU5IVWFsd3lkRHNpUk5oOGtyVE9kMWVjTEhjVHFoRmRuODgwQg?oc=5) | Yahoo Finance |
-| 7h 前 | 0 | 中性 | [JNJ Stock Has a New Growth Story, but One Business Needs to Catch Up - 24/7 Wall St.](https://news.google.com/rss/articles/CBMisAFBVV95cUxOTEIzQUpOOF9pMXd5aXp5OVFfNURfRjBXNU43dGpWV3JJcE9TVUY4VVBLdTMzQ3RLZ1pJZjNseVM2VXRqX2ZoV3NoNUMyVEVxM1dsV0lEQVFoZ0llcmVzdW1IODZTcDhGdU5fYTVwM09uYW81MzlKR2VTT1piOEhWSkJRSXNoYkF4S1NBX3VOY1dLVjM5cGxtdFJBLVZEM0x0VVI2VDJ2Q2dXbncyNUtGZA?oc=5) | 24/7 Wall St. |
-| 7h 前 | 0 | 中性 | [18.4% of patients had flares on AbbVie’s experimental drug, versus 28.1% on placebo. The trial met its main goal. - Stock Titan](https://news.google.com/rss/articles/CBMivAFBVV95cUxQSjdUS0NRTnU5dTVlWEkweDZtTGRZTUszdkVSYVRwNFFzM0xvWURxRWg0aWY0eGh3Q0V1aUoxV0lMc0lrR1QxbTRlcF9iMlEzc0xjUjJ3ZEQ3RTVJRU5vU0lJYmxCTHpVZnJCM2JFVjJ2N0RUanZON3BERkpuWTF1cFhDRHZLXzk4UzR2dGNmS1lsdnN4SkRqMDM1S2dBUFhjTjRCVC1YdTZvSFRWc3lRM3RHVjIwdWpfRkZNZw?oc=5) | Stock Titan |
-| 8h 前 | 0 | 中性 | [AbbVie (ABBV) Is Considered a Good Investment by Brokers: Is That True? - Yahoo Finance](https://news.google.com/rss/articles/CBMipgFBVV95cUxQR3cxN1ZSQkV2TERfcE8xNkhmazJuVllrYlhDcTlFU3NQSVNGeHlGLUFjTEFwaktucW05bFZiQ2VfbjB1S05VQWI3UlBsbnczUGc2N2w4X1VWVGM1Um9mUzZyMFJ2OXphMnY4TWxaM2w2dHA0RjdXU1M0TXFXdFVmMlNQSGNMcTlHVldTYVRtaVpyVGtGaVdmUlUzcUJ2R0xFR0M2cDRB?oc=5) | Yahoo Finance |
-| 10h 前 | 0 | 中性 | [AbbVie: Skyrizi And Rinvoq Keep Delivering As Oncology Gains Momentum (NYSE:ABBV) - Seeking Alpha](https://news.google.com/rss/articles/CBMirgFBVV95cUxObGxxVGw0Z3RweU1wd0prWG1Zb21JcDE1V3BueWZVVVRDZWl6RWxrLV92eVJSdzQ5dzRBUUZPYWF1dGs2U0dsczVCN1pkMEl5bHNzcnhqYWFULTNOcjlYdVp1SGVsUjRiNk9nb0xlZGU5YTN4OVFucEVWTU1GeEFFMmtHT3FyZDJGVG5fUTFpaU1HNnJ6T2dZblFKQUNWcXgyZm9TRThtVm43YlZaZXc?oc=5) | Seeking Alpha |
-| 17h 前 | 0 | 中性 | [AbbVie Inc. (ABBV80.BK) Stock Major Holders - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMiY0FVX3lxTFBpUGR5bmtyWEpKWW9nNE9wQ2FLR1lYekVkd3NEZEJ1SkF6UGtVcTBhWHRwd2hrdnFwS1BQWHFFZ3FBbmRUM0EzVE83dFVTWGlEQ29zT1htWldIUUN0ZVpIZkhydw?oc=5) | Yahoo! Finance Canada |
-| 17h 前 | 0 | 中性 | [AbbVie Inc. (ABBV80.BK) stock major holders - Yahoo Finance Australia](https://news.google.com/rss/articles/CBMiY0FVX3lxTE13d1FNSlhLbC1tNnRDb3Mxci1YSE1YX3NlaEVoV1ZjZlF1RE1tYjZCTGFLNVA1QWw1U1hZU1hrSW94TGVPYVQwTFpxVXVRSVFsUUVLbmFRUWFPT29OeDR1a0dMOA?oc=5) | Yahoo Finance Australia |
-| 24h 前 | 0 | 中性 | [AbbVie (ABBV) Stock Declines While Market Improves: Some Information for Investors - Yahoo Finance](https://news.google.com/rss/articles/CBMingFBVV95cUxOQ19sM1V0NjN0cHVVSkJKZFY3Vm9kWXl0dGV3MXppS0Q2UkVFalFWdmdkNm9sVEtScnZDVTRlZV9pRHdtMWtYZXNhR1ljWDJvaDFmYm1lMDVjRVNMWFNzZ3ZfYU1IY2RDY0pndm5UNnE3OU9CMFFrdkJOVGMyNGxqLVpnYUtBVnFVVjh4ZlVaQ1JqUloxcDFET1BRNi1YQQ?oc=5) | Yahoo Finance |
-| 37h 前 | 0 | 中性 | [AbbVie Inc. Stock Grades \| ABBV - Barron's](https://news.google.com/rss/articles/CBMi3AFBVV95cUxQeGczeWhjMTdfMFU2T0tXYTBranZzdHZSUUNEd1RodllpTElwT2pUTkhiQl9qTzNyekFPSXBWeTY1S2xiV0Z0UE96cHJrY3NEN1ZnTnFoY1RfNFlZekVwYXBkNEVDR0hpNlp3aWhnMHE3SklIaC1VWFp3enlBcWFwMFZoRC12bEhyNkxGODFIOWlzOTNfQmRDQnNDMGlRbGdQRkZYUE9FckJxY3JNWUt5ZmpMZ1dzbDEyYlZORzBHZUR4d0FNMjk0VmM3MjRGbFVjYVpQSWpvVi05ZkF3?oc=5) | Barron's |
+| 0h 前 | 0 | 中性 | [Great News for AbbVie Stock Investors - The Motley Fool](https://news.google.com/rss/articles/CBMihwFBVV95cUxOb3pmZGtrWEE2cG5NZy1VR2dHQzBQeHVpeFlUc0VGemRmMDZrSG9MQV9IeEZfZGhxeWdPTTFoXzFpQkhpS3U3cWZLT2x6SXdaSW93cWtudjVKN2g4VzU0OUhiV3RGaXp1THRlb005TEQ4Y2l5OHJrcXAtTXRyc2I3cGJqMG9DTnc?oc=5) | The Motley Fool |
+| 17h 前 | 0 | 中性 | [AbbVie Inc. (ABBV80.BK) Interactive Stock Chart - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMiYEFVX3lxTE5McDU1SE16UXVadlNjV0N6WHVKQjFxdVNBa3g4bURRSHAwcUR6cmcxXzlpTS04WXN5ZGY1UGZaU1NCdEIzbDVMLWh5T1h6dWd2SEhCbmJlSnI1OEhub2x2NQ?oc=5) | Yahoo! Finance Canada |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -133,8 +123,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 - 下次财报在 8 天后，落在持有期内。财报跳空会直接穿过止损——那一晚的风险不是 1R，是没有上限的。
 - TTM 市盈率 81 倍，价格里已经计入了不少增长；增长只要减速，杀估值的幅度会大于业绩本身的降幅。
-- 现价已经高于卖方目标价均值 283.50（-0.5%）——共识认为没有上行空间了。
-- 24 小时内的利空标题：AbbVie’s Skin Disease Drug Hits Phase 3 Goal, but Efficacy Falls Short of Benchmarks: Analyst - Benzinga（Benzinga）
+- 现价已经高于卖方目标价均值 283.50（-0.6%）——共识认为没有上行空间了。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -156,7 +145,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-19 | 284.23 | 287.93 | 282.59 | **282.68** | -1.0% | 4,171,300 |
 | 2026-10-20 | 286.90 | 290.98 | 285.00 | **289.08** | +2.3% | 5,175,000 |
 | 2026-10-21 | 287.63 | 289.00 | 282.15 | **284.80** | -1.5% | 4,393,600 |
-| 2026-10-22 | 284.57 | 285.74 | 278.01 | **284.89** | +0.0% | 5,849,111 |
+| 2026-10-22 | 284.57 | 285.74 | 278.01 | **285.19** | +0.1% | 5,849,111 |
 
 ## 七、自己去查（本页不做独立验证）
 
