@@ -754,3 +754,19 @@ class TestReflection1021:
         v = FakeVenue(acct(cash=90_000, holdings=[held("HLD", 10, 90.0, 100.0)]))
         out = executor(v, home).run({"orders": [{"action": "cancel_buy", "symbol": "HLD"}]})
         assert not out[0].ok and "stops are never cancelled" in out[0].reason and v.cancelled == []
+
+
+@pytest.mark.unit
+class TestReflection1023:
+    def test_a_postmortem_in_the_log_keeps_a_closed_row_out_of_the_queue(self, home):  # noqa: F811
+        """PLTR, DHT: reviewed on 10/14, back in the queue on 10/23 after a stale book copy."""
+        shape("AAA", 100.0, drift=0.6)
+        book = DeskBook(home / "desk" / "trade" / "book.json")
+        book.closed.append(orders.Closed("AAA", 1, 10, 9, "2026-08-10", "2026-08-20", "stop: x"))
+        book.closed.append(orders.Closed("BBB", 1, 10, 9, "2026-08-10", "2026-08-21", "stop: x"))
+        book.save()
+        log = home / "desk" / "trade" / "decisions.jsonl"
+        log.write_text(json.dumps({"kind": "postmortem", "symbol": "AAA", "closed": "2026-08-20"}) + "\n", encoding="utf-8")
+        pk = pack.Packer(broker=FakeVenue(acct()), market=mkt(task="trade"), book=book,
+                         screen=screen_of(), now=MONDAY_OPEN).run()
+        assert [c["symbol"] for c in pk.postmortems] == ["BBB"]

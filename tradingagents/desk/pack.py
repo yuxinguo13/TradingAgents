@@ -166,6 +166,24 @@ def row_for(f: Facts, tilt: float, spy_r3: float, *, source: str = "", rank: int
     return row
 
 
+def logged_postmortems(path: Path | None = None) -> set:
+    """(symbol, closed date) of every post-mortem in the decision log."""
+    path = path or (task_dir(TASK) / "decisions.jsonl")
+    out = set()
+    try:
+        lines = Path(path).read_text(encoding="utf-8").splitlines()
+    except OSError:
+        return out
+    for line in lines:
+        try:
+            e = json.loads(line)
+        except ValueError:
+            continue
+        if e.get("kind") == "postmortem" and e.get("symbol") and e.get("closed"):
+            out.add((str(e["symbol"]).upper(), str(e["closed"])))
+    return out
+
+
 def last_buy_record(symbol: str, path: Path | None = None) -> dict:
     """The most recent accepted buy of ``symbol`` in the decision log, or {}."""
     path = path or (task_dir(TASK) / "decisions.jsonl")
@@ -479,6 +497,15 @@ class Packer:
             reason = ("stop: 交易所触发止损" if kind.startswith("stop") else
                       "target: 交易所触发止盈" if kind == "limit" else "closed at the venue")
             self.book.close(s, exit_px if _ok(exit_px) else p.stop, today, reason)
+        # the decision log is the record of what was reviewed; a book copy
+        # restored from another session can lose its "reviewed" flags
+        # (PLTR and DHT came back into the queue on 2026-10-23)
+        done = logged_postmortems()
+        for c in self.book.unreviewed():
+            if (c.symbol, c.closed) in done:
+                c.reviewed = True
+        if done:
+            self.book.save()
         pack.postmortems = [asdict(c) for c in self.book.unreviewed()]
         for c in pack.postmortems:
             try:
