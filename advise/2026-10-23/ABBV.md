@@ -110,13 +110,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 6h 前 | 8 | 中性 | [AbbVie shares may move 5% on Oct. 30 earnings release By Investing.com - Investing.com India](https://news.google.com/rss/articles/CBMisgFBVV95cUxOVU0tU044UzBoWktWcjhyWmtwT3FYMndMQjlBelFHWTJuZExLZFpBSlJpa1hTejBxZTNDd2dsbmtDREM5S1MwNlFBOVg3NTZsLTNlYkpwSzQwdktib2NVc1M4LUE3VDZnaXdlVGFVU3kzamE4N0pBeHNoWk14MWVWNzNwRC1WNFpGWVpYTnMtVGF4RDFTbmhsVFNyaG0zbUFrUEVGNmU1ZEllTkFDTVBpVVFB?oc=5) | Investing.com India |
-| 7h 前 | 8 | 中性 | [AbbVie (ABBV) Earnings Expected to Grow: What to Know Ahead of Next Week's Release - Yahoo Finance](https://news.google.com/rss/articles/CBMioAFBVV95cUxQaTdEWjN5dGxzdG05QzhUZGpKNmZGcFBibEs4OGhob0NrRm5wTTl0UUo4aFpoZm5MRm5fTjBnXzNaWGEtMGJ1U2E0Ukg5RHFiNnBScmJBRWg4aDVGMXlkeUZfelFRLXNwazRkYXVjcnRkWEZ6RDVXZHZlbFZPcjZ5UlZZck15alYxalhhTUJjTVdRbVJCTEhNYms2NWNKQjZU?oc=5) | Yahoo Finance |
-| 1h 前 | 6 | 中性 | [AbbVie’s Dividend Survived Humira’s Patent Cliff. Will Merck and Amgen’s? - 24/7 Wall St.](https://news.google.com/rss/articles/CBMisgFBVV95cUxPZXZlc3FZOG4tajNnQXVzTmE3dlU5M2I3blBkc2RINzRGUjB4czBVb1Z3bmZNcWp6eU5XV1RzSU13OHFMOXlCTXg2MlFNV0xZZ3dWYW5LSG1Fd1R5OUxQY2FQWGRKVGd2Vm1aNy14S0x3cDBENzFTeGZ3OGVaRkxycWlzRHNLRUNDUHJkR2ZxT0x0aGpIT0MzOXdRS2pYX3BFRzl2RDJRYUV0M2NNWndsb3VR?oc=5) | 24/7 Wall St. |
-| 3h 前 | 6 | 中性 | [Forget Chasing 7% Yields: These 5 Dividend Stocks Offer Something Different - 24/7 Wall St.](https://news.google.com/rss/articles/CBMiuAFBVV95cUxOVFVnaXVNV2VWazNPYWtUc19YM0phNWhmNUJXcU1IRDhMSEJ2bUtaVlZNbTNWWkNEVF9lU0RvamNsSzhOdmZQUmFkdGNrY3k0ZTQ2TWNZakduV2UxNE05ZGZYM0RKM002WmlFYktyLTZxbE1CYnFWcnRFMVd4cFlWdUFWSnFoUEU2bWhUbE5jd0R4U1d6TDhEU0s4MlpQZnBsWGNvSmU2ZDZsRkd6OXNUWGhzb2hxM2pa?oc=5) | 24/7 Wall St. |
-| 20h 前 | 6 | 中性 | [What Higher Interest Rates Mean for Dividend Stocks Like AbbVie and Pfizer - Yahoo Finance](https://news.google.com/rss/articles/CBMiogFBVV95cUxPbm5scmxkRXhqUF9Zc3MyejlBS1B2dFNBOVAyRmlXNkNiQ3lPQWM4TUpTUTlYblhmXzZCdHNzaFBUd3doMmZGdUxLdHRQbmlaMDlkbFhvc2x0ZFVhY1o1c21fUlFkeDluMWhZSWtpeERzalA1aGl0VDVURFprdXYxUlE2c19fMzZUTVg5YkFaRTVPZjRyT0w2S2ZQV256NVVkbEE?oc=5) | Yahoo Finance |
-| 9h 前 | 0 | 中性 | [Gubra partner AbbVie hits main goal in skin disease trial, plans to pair drug with weight-loss candidate - MedWatch](https://news.google.com/rss/articles/CBMib0FVX3lxTFB1bUM4QXgweUtLTmxDRVZBVHp4UWFhMW1PQ1QyTlpqQXpkdmN5LWczUldVRVI1SWJFZ3hsYTZWZjRPMkpqZU83RV96dkl1QmZodDdpWXQwam5GZnVKd1VMWVVfSTZjWTlLTTI2ZzMtTQ?oc=5) | MedWatch |
-| 40h 前 | 0 | 中性 | [AbbVie Inc. (ABBV80.BK) Stock Forum & Discussion - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMiZkFVX3lxTE5tdExoNURUMWx3RVhaMTlncm94TnVOT1FYT2VOdHF5TzNsNDU0YWw2WFplWkJ6UlVMRy1EajBqUlBTT2JKQXdIUjJ2dDFwNENfMk9ndU1yVXdWMmhjbjhscTQwOE0xZw?oc=5) | Yahoo! Finance Canada |
+| 6h 前 | 8 | 中性 | [AbbVie shares may move 5% on Oct. 30 earnings release - Investing.com](https://news.google.com/rss/articles/CBMiswFBVV95cUxPel9oZkhENDZDWlZrS21YQktLOGFLaTJLS1laeDFaQW5LdmlqUjJsU2toMV9KaXMwUUtTNlVwSmlEYVAwVUFiZExhZ0FUcllxRTcyMEJlcFJESVdlOG1JYWJDRWM2Ykh5cEFBcm56aC1qXzhPSU9FaS1CaFpuOHNVWmNVd1Z4TTNXMDZUZ1JXLXJxcUFzSG83Ny0wVG9tb2VObEVDcHg0TVJ0N0JTSkRkZFlUZw?oc=5) | Investing.com |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -126,7 +120,6 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 - 下次财报在 7 天后，落在持有期内。财报跳空会直接穿过止损——那一晚的风险不是 1R，是没有上限的。
 - 公司尚未盈利：估值没有盈利可锚，股价由叙事和融资环境决定，这类名字在流动性收紧时跌得最快。
-- 政策面对该板块的倾向为 -0.43（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -148,7 +141,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-20 | 286.90 | 290.98 | 285.00 | **289.08** | +2.3% | 5,175,000 |
 | 2026-10-21 | 287.63 | 289.00 | 282.15 | **284.80** | -1.5% | 4,393,600 |
 | 2026-10-22 | 284.57 | 285.76 | 278.01 | **285.19** | +0.1% | 6,172,200 |
-| 2026-10-23 | 284.58 | 286.77 | 282.30 | **285.64** | +0.2% | 4,522,723 |
+| 2026-10-23 | 284.58 | 286.77 | 282.30 | **285.64** | +0.2% | 4,593,792 |
 
 ## 七、自己去查（本页不做独立验证）
 

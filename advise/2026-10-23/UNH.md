@@ -108,15 +108,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 44h 前 | 8 | 偏多 | [UnitedHealth's Earnings Jumped 60%. Is the Comeback Stock a Buy, Sell, or Hold? - Yahoo Finance](https://news.google.com/rss/articles/CBMipAFBVV95cUxPbTk4ckdCQWdvVEdFaUgxNmRNVnlvcmYyR3poRWoxV1UtamZZYnpUVlBxN3liNlhyR25GOGljX1dtcXc2cFZMSXVVRkkxYlFBcnVaTTg5SFNwWjdVNGNJUmRsenVnVjg2RWpZbE00emVJYzlDd2g0Q3ZPNklGN0RVbkN4VnE0WW1kUzJISzA0RFBHcnFqdmtGaU1MLXllUkttYnZkOQ?oc=5) | Yahoo Finance |
-| 2h 前 | 0 | 中性 | [UnitedHealth Group (UNH), What Is Behind The Fresh Attention Now? - Simply Wall Street](https://news.google.com/rss/articles/CBMi0gFBVV95cUxQSjdpbmdoUDNZUnJaNEx4Rl9jeXVvMDV1ZzNjYTBWZ2NOWDlIdmdLZXFYc1NsMExjWGY2S3JyUGI4MUxKUlZBbkcxU0FWVWUwdXFOMEY2NXNfM3hLN3p0SldTUm5wWW0xWlRtbGdiaGRSYWFsUmlSQzJpV3JHVklhdWMyZTNncmtEcDRuWkYzbFJHc3JQOVJSbGY1YmlJZkJ6X1ZELUUxS09ZUmo4M3BKcG5GTXB5NHlEaHIyNDlaUklSdTF1N202RDFfWmhUY0lFX3fSAdcBQVVfeXFMUDVCWDBxZERHdTU0UnpJc1U4Y3E1VzlwNlF6ZHZmZExadTIzX2JVa042aklJWTBOcDBtVjJVXzRWUWRTWWQ5OFFBYkphVUROZ1o0SDJ3QmRYSUlDajRMbThNenB1OFlySEUxYnVSTG1VWnoyemtGVTAycVpna3ZuZ29sdmN0MHFvM0FJT2k0UzlqRU9YNThxbHZyelp5R0JwbGxfUGpFbEx6b1JQRU9WbXJFbVByUkpscmxwV0NiZUZ3YUZPLTh0c0VTcW9HRWdvQUtHUjJJbW8?oc=5) | Simply Wall Street |
-| 12h 前 | 0 | 中性 | [What Will Decide UnitedHealth Group Stock Over The Next Six Months? - Trefis](https://news.google.com/rss/articles/CBMixAFBVV95cUxPVXpsa2w2VDA1VXFROHE4cDBhd0drOUgwWGdONW45eUd6ZEpBQ3VYMFNjRzlxN2xSN3kyX3daNllGNUxHSElzeVNqN3ZEMmlKd0Nuam9PTGdzMV9BdUk5TUk0TUxPdC0yXy1WTVBkWTlKc1c3VWx6cnBPT09LcHI4Y3dPRF9scGhSSmlxWWRsbTZoclRfV1dDeDg1dEhrbFl3c2p0Q0dXdFJUT0V6eGVMUXE2Tl9CeEtMYjF3alhGdno1dDc4?oc=5) | Trefis |
-| 36h 前 | 0 | 中性 | [UnitedHealth Group: Operating Leverage Should Continue Sending The Stock Higher (NYSE:UNH) - Seeking Alpha](https://news.google.com/rss/articles/CBMiuwFBVV95cUxNVHk3VW4wcjZWRE8ybDN1ZC1QWTV0NktXT2hrUXFkRTZiRkppaERZempIOFdsRXBpWDVLNUotUHRnZ05FWEI2cUdPeV9XUlo2MUxBTTRpQWpmLXJ0ZzMzWGUwUGl4RlZaZjVxLVdOME9yR1lRcFE4WVc5WGNBblhGWE44WlJkZHljdHhSNmVCTTUtcHk5VE9mcXgzZFRlc0VJVU1mNXoyUU9sQU9hNkc5cXI5cWdfSzUxY0dj?oc=5) | Seeking Alpha |
-| 44h 前 | 0 | 中性 | [UnitedHealth Group Inc Stock Fu (SUNH0Z26.CME) stock price, news, quote and history - Yahoo Finance UK](https://news.google.com/rss/articles/CBMiXEFVX3lxTE53VEMwdzdVT1Q4MHZWYjlvV1lwSGp0MzN1Y3BlLW5XaEVFZURFeVViNkZoNjgyQ1E4S0F3eG84ZEZYRzVZeXdCbU1OWjhnWWpWVDdTRExnUWlhbXRT?oc=5) | Yahoo Finance UK |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
@@ -124,7 +116,6 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 - 摆动高低点都在下移，属于下降结构；在出现一个更高的低点之前，任何反弹都还只是反弹。
 - 公司尚未盈利：估值没有盈利可锚，股价由叙事和融资环境决定，这类名字在流动性收紧时跌得最快。
-- 政策面对该板块的倾向为 -0.43（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 

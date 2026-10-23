@@ -67,7 +67,11 @@ _读不到财务数据：该代码没有可用的财务数据（可能是 ETF、
 
 ## 四、消息面（过去 24 小时）
 
-_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
+| 时间 | 材料度 | 倾向 | 标题 | 来源 |
+|---|---:|---|---|---|
+| 0h 前 | 0 | 中性 | [If You Invested $1000 In SPDR Gold MiniShares Trust Stock 5 Years Ago, You Would Have This Much Today - Benzinga](https://news.google.com/rss/articles/CBMi0gFBVV95cUxQeDRDVUpheU9WeXBvUk9UM2UwR1gtaEdiSWd1TmpFMTVkOFBGaWtNN0swSzI3V242SzBCM1k2QXZER3IzdXNDNWI3dFM2dFlZa21XWEhVd2Y4dVZJLTNadjd1MFE0Qjc1VDJqc3BhQXg5VHlZZHp5Wi02MFhDXzgyc09nT1NlVUoyWHFwcHNlTnhoTFBoS0pFSF9IVnhFTTVYNVRUUURPWHZOMmI4aGw3OEI1cVJnaUpQYzJJd1ZsVnhJOTQ1QkZWbVVtNkVaMGVwN0E?oc=5) | Benzinga |
+
+_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
 ## 五、反方观点与风险
 

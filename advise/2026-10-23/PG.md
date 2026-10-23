@@ -44,7 +44,7 @@ _必需消费 · 数据截至 2026-10-23 收盘 → 面向 2026-10-23 开盘_
        2026-09-25 2026-10-23
 ```
 
-成交量近 63 日： `▆▆▃▃▄▃▂▂▂▃▆▇▄▃▃▂▆▃▁▂▄▅▃▃▂▄▁▂▁▃▃▂▂▅▅▁▁▇▇▄▄█`
+成交量近 63 日： `▆▅▃▃▄▃▂▂▂▃▆▇▄▃▃▂▅▃▁▂▃▅▃▃▂▄▁▂▁▃▃▂▂▅▅▁▁▆▆▄▄█`
 
 ### 图形读数
 
@@ -53,7 +53,7 @@ _必需消费 · 数据截至 2026-10-23 收盘 → 面向 2026-10-23 开盘_
 - **动能**：RSI(14) 64，偏强；近一月的斜率快于近三月（月 +10.5% vs 季 +8.3%），趋势在加速
 - **波动**：日均真实波幅约为价格的 2.1%；按本报告 2 ATR 的止损惯例，一个 R 相当于 4.2% 的价格距离
 - **位置**：距 52 周高点 -2.8%，距 52 周低点 +19.2%
-- **量能**：最新一日成交量为 20 日均量的 0.9 倍，量能正常
+- **量能**：最新一日成交量为 20 日均量的 1.0 倍，量能正常
 - **相对强度**：近一月跑赢 标普500 11.5 个百分点
 - **支撑 / 阻力**：最近的摆动低点 146.48，摆动高点 —（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
 
@@ -108,29 +108,14 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 5h 前 | 8 | 中性 | [Is Procter & Gamble a Buy After Its Latest Earnings Report? - The Motley Fool](https://news.google.com/rss/articles/CBMioAFBVV95cUxNOTVCTVAwS0FuVXpjQ285eFZRcElyV1VuNlJxc01laVNlMEZ5ZldnX1hoOTREQUVGWU5aTmdPTm5iVUU4ZUZxWVhuaDJrMGFkakcxQUZXX2J1Y2o0NURBMTlPdGN5STBkX1Y4Y2I2ZXJ1ZUNTOTBndnZ1bWpVT28tM2JmU3p6OVhOaV9BbXVMcm9yaUw2VkVBZ2k4U0trZW1j?oc=5) | The Motley Fool |
-| 24h 前 | 8 | 偏多 | [Procter & Gamble Soars 6% on Earnings Beat, Shrugs Off $1.4 Billion Cost Hit: “Strong Start” - TIKR.com](https://news.google.com/rss/articles/CBMirwFBVV95cUxOOWFRRjUtcVhHVlZhRFE2MWVyeXdQczR5cFJfX0NLUnhmbHZSZHM2NEhOaEJfOWUyajdVcmtVUWVEUE81WHRtdHpaTkVhenV5LTJfdF9XZDRfWHZJeTdnaUxfVzdDa3ROb0ZRTWIybXc3M2xGQWNPTXUyeHIyc2Fob21JZWJ4OHdqZmZ6YkptUm82cTN3NzN0eXRCVktGSlVaV05OT1RTZms5cnZLRzJ3?oc=5) | TIKR.com |
-| 25h 前 | 8 | 中性 | [Procter & Gamble Tops Q1 2027 Profit Forecast With $2.00 EPS - AlphaStreet](https://news.google.com/rss/articles/CBMikAFBVV95cUxPN3IweGlGSHFRamg3QUl5MHhtQndVQ1Y2MTU3YU40ZVB3REhrcWVJTmFqemJQWFY4UEl6aWtqSVdLOUp6Tm9zUU9yRVRiSGRjU0FCVnVFc2xlTFV5M2lwRk91OW4ybFNXRmRUY251Q0RVTzVoTVRoR0ZsUmtfbG1qYWRZblpibGFyM0pfQmtab3DSAZABQVVfeXFMTzdyMHhpRkhxUWpoN0FJeTB4bUJ3VUNWNjE1N2FONGVQd0RIa3FlSU5hanpiUFhWOFBJemlraklXSzlKek5vc1FPckVUYkhkY1NBQlZ1RXNsZUxVeTNpcEZPdTluMmxTV0ZkVGNudUNEVU81aE1UaEdGbFJrX2xtamFkWW5aYmxhcjNKX0JrWm9w?oc=5) | AlphaStreet |
-| 25h 前 | 8 | 偏多 | [Procter & Gamble (PG) Pairs Q1 Beat With AI Focus And Fresh Product Rollout - Yahoo Finance](https://news.google.com/rss/articles/CBMilgFBVV95cUxOVUJiQ0dPQXM2Z0hVYkF2dl9MTmdzVXdfbXhQalV6RW9tblhyZjg5TS1NN0ltdTNjcXNmdDV0a2RhTEkxVWNQWjZYclRMR3p5TDBrLXdhRS1vOEFKTTZ5VkE5ZzdmakhWTDhIcnBCYXZ5akxjdUtxMjJ3a0FsMWFqUWNTOEMxQmJGV1RGdVBUcVhsUnJtRkE?oc=5) | Yahoo Finance |
-| 27h 前 | 8 | 中性 | [The Procter & Gamble Company Q1 2027 Earnings Call Summary - Yahoo Finance](https://news.google.com/rss/articles/CBMimwFBVV95cUxQRGYtSVJJaDJMMXJBN0lDN2dKS3lJYkxkb3N6LVllRy1RR3QtVjlESjdvVi1GZ19oZ1IzZGdtcU5zRVNTbzh6ZWhPMzBUU0p1WjVmNFVNeFpveG9WMWNjUkRCOEZWWFhxVHpvalRMTTBPVndTanpNcVNfNEduLXJhTjcxSVVNZS13M2JTeWlDNjJzaXJjQTZpVWpYSQ?oc=5) | Yahoo Finance |
-| 27h 前 | 8 | 中性 | [The Procter & Gamble Company 2027 Q1 - Results - Earnings Call Presentation (NYSE:PG) 2026-10-22 - Seeking Alpha](https://news.google.com/rss/articles/CBMitAFBVV95cUxPd0h4OUZ0bFJBcFVpRHk3eTdaNjJ3bktwRFZzWTY1VWp5Y2JtSXlQejRUU25SZWtFQ1N2eFg4akhxSk5uNHAtSkNVeE4tTk5ZV0ZlZjNNbDVrVE9vWXFJWWdielJWczdSX3haOWhaSlFLRWxKNmdORHJqZ3pJU1FZaUpQSDB6NTA1c0pNbVRYeU9Jb0c0VjFRQTVyZGZ1Z29odjZVWGc0aHo3dkF1bGxYYlZGalg?oc=5) | Seeking Alpha |
-| 28h 前 | 8 | 中性 | [Procter & Gamble tags its highest level since February after its latest earnings print - Seeking Alpha](https://news.google.com/rss/articles/CBMivwFBVV95cUxOSGdJbFpRT1pRZ1JjdnRrOUZ6ZVNFMU9kajlzSzAtZTRfVUVRS2RsVm5vUkZrMThFR3JYRUMybmsyc3UzTG1ocFN6QVNFSmtOem1XcnlLRVhiVENMZEZwSlJMNkF6emVOd21HVGZPOUhzeVJSRS1DX0RBTy1NU251N0xOanI1RV9Yc2hLUC1OSkR3UUdmZnIxdm1ZcWRtZ0hLODdxLUpFUVNfVklrdFp4Y1hoMjhUQnFxZ25hcmRvRQ?oc=5) | Seeking Alpha |
-| 31h 前 | 8 | 偏多 | [P&G Price Plan Spurs Sales Beat Without Sacrificing Profits - Bloomberg.com](https://news.google.com/rss/articles/CBMitAFBVV95cUxNc1lqLVR3YzA2cFFTT1hKUm1fbS0zb2VkSHEtVWtvNU80d2liOEMyQTRTYzRDOGRVSFpDQW82YTY2VGZDQWEwRmJnTFk2V21FYXFTVDhKNEc0TmpJeVRIUUxJRlVaY3pOd014bjFfVEIzNnZTOHBVVk5aNksxeFlFQVltcnU2ZldWeld3b3lKY1k4Uno2TzdRNlhTY3JDNEM2VU9DMHQ3andCbTNGUW5pd0lVQUY?oc=5) | Bloomberg.com |
-| 31h 前 | 8 | 偏多 | [Procter & Gamble Q1 Earnings Beat on Volume Growth & Favorable Mix - Yahoo Finance](https://news.google.com/rss/articles/CBMinAFBVV95cUxPMzNpaS03ak5JVWJEMTBYU0RaQ0lHdjYtVHZmSHFJNHpkcE5vRzk5bUxRRWRhTkdKdW9JRGo5WjFGLTVZZDZKNHFHcm1wTVFRM2NkVzY0dzRtVWJNT2pmXzlYQ3M0c1dfS0duRlZ1aXRKNTRFMHJNdnVIQU1GWllMR2ZHSlhvdjdTSnFqWlljLXpHZTc1eE5nN04yMXk?oc=5) | Yahoo Finance |
-| 31h 前 | 8 | 偏多 | [Procter & Gamble Raises Full-Year Sales Growth Outlook, Posts Surprise Fiscal First-Quarter Earnings Increase - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMiiAFBVV95cUxQUzc4OWNUT3FrWjdudEwtNWhuN2kwRzljcVNndXg5OERQWTRFWnpjQW5LTkdESDAwUTIyLW9JRDFfTVYtbjljSDJtWFVMV0ViVzUwLS1Kb1ptZGw0b0lGalBWbVV3UGtIU2NXc2RfTGtPd2FtbXp2eThPUUdMNVFLaW5FaXhHLTR5?oc=5) | Yahoo! Finance Canada |
-| 32h 前 | 8 | 中性 | [Q1 2027 The Procter & Gamble Company Earnings Call Transcript - GuruFocus](https://news.google.com/rss/articles/CBMiZEFVX3lxTE1nZ2RwRm5UX3ZnbG14MlV0WTFzVWp5YWluM0w2dmFSeGh6dkc4RGdnQThnZTdzMzVZVll6OFY2TWUtRGdKbG5hSmpQR0V6V1lGelBBd2IzeUc1VTJ0Nk9FalFHaHc?oc=5) | GuruFocus |
-| 33h 前 | 8 | 中性 | [Procter & Gamble : Q1 2027 The Procter & Gamble Earnings Conference Call (Q1 2027 Earnings Release) - www.marketscreener.com](https://news.google.com/rss/articles/CBMi3AFBVV95cUxOamR2Wkl0YkFjd1NxaFFHbFNVSHJ6Q3hfUmJSWE83SzRLbVpCemxiY1VSdm9iektSV240TXNMQkhRbFZJekFjWDQwejZMaVdwX3dXdTF3UUVGMTFzb21CYVV2b2VlQWJTMFZwLWtqb205VFhtU3JYYjhzVzBRTkwzWEZuWjBKRDZWSVotR1BWTmZZUmZUeTYxRWF0OEtIME1kU29YeGE2NGFXMEFaWm9nWE9vRXItWjB0czRUMm9YY2tSc0xibkFjMWdXVjZKN1FrNkV2b0pqa0FBWWdx?oc=5) | www.marketscreener.com |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
 - 公司尚未盈利：估值没有盈利可锚，股价由叙事和融资环境决定，这类名字在流动性收紧时跌得最快。
-- 政策面对该板块的倾向为 -0.95（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.71（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -152,7 +137,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-20 | 158.70 | 159.47 | 158.06 | **159.32** | +1.0% | 9,746,200 |
 | 2026-10-21 | 158.17 | 158.67 | 156.80 | **156.84** | -1.6% | 9,974,900 |
 | 2026-10-22 | 162.14 | 166.85 | 161.36 | **165.59** | +5.6% | 22,037,200 |
-| 2026-10-23 | 164.00 | 164.50 | 160.64 | **161.02** | -2.8% | 9,310,466 |
+| 2026-10-23 | 164.00 | 164.50 | 160.65 | **161.02** | -2.8% | 9,763,113 |
 
 ## 七、自己去查（本页不做独立验证）
 

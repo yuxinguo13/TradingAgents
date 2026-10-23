@@ -108,22 +108,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 7h 前 | 8 | 中性 | [American Express Falls 3% Despite Q3 Beat and Higher Profit Floor; Visa and Mastercard Slip - 24/7 Wall St.](https://news.google.com/rss/articles/CBMizgFBVV95cUxNNGNPSUU3OUhUYnpRaDUzdlkxM2lNdjR1WkJLQmV6cWFwVmtBMzBETXhhNDk0YW82Z3ZSeGVSc2t6dWcwYldSWTVRYU40Tl9PMlRoXzg5cG5FQ1B3S1hYN25sSmxKM2ExWHhhSnVBNWdvemVMOXpzWVVZNml6aW55cVhrR3pZMEQtTU4zQU1md0lzUEFheV8xQ2RHSEtNWXhsUXVYWTAzZzRid3JidXFvTTEyWmRBTHh4WTY5T1g2T216WFdKQzUtaVAtUG1RUQ?oc=5) | 24/7 Wall St. |
-| 8h 前 | 8 | 中性 | [Erste Group Bank Comments on Visa's FY2027 Earnings (NYSE:V) - MarketBeat](https://news.google.com/rss/articles/CBMivgFBVV95cUxOT2RJUTRNd0VuZ05xbm5oeDdmd296MkhyRlhzd3dpamdsUkE4b0UxNXlkMVIyQzRaRkJUVnN5R19ZVmhiUUt0YmszeDBLVV9TMFA0VUZ5aTFRREwxV0ZoVi12dnVOR1dBZUI3TXZfOVdGZndpV0stNEVtdWd1X1l4TE55VTdISGxYSmlTZzBqSzMzcmRWa1lDdHBrT3VrLTVKa1FIb3VnTWVvQ29PczNxbmlDY0txaHNTZi1hZURB?oc=5) | MarketBeat |
-| 11h 前 | 8 | 中性 | [Visa Inc. $V Stock: Crossmark Global Holdings Inc. Lowers Position - MarketBeat](https://news.google.com/rss/articles/CBMiwAFBVV95cUxOdkR1TFdCb0JUQ3ZZMlJfYVlGeEJQeTZ2dlpPRnpkNDhCeWNoTkhlQ1hYQW1DWlJuekpjWGlRcFJLRWlBUXhENC1lVC1zeGFIcFFic091QXZoWlBOY21LN1Z0RnpwQWNmZHJQTTVFRDE1SThkblVYcDFDN0EzMHgtYVpLTFlrRWxOTGRlS0tyemNyNzVoVFVBT0l3c1ZickZ4LVFMYk1TdUNLS2tuR0ZLU2NMRC1NNHRjdlVhdnpMQzM?oc=5) | MarketBeat |
-| 13h 前 | 8 | 中性 | [Visa Inc. $V Stock Sold by Axxcess Wealth Management LLC - MarketBeat](https://news.google.com/rss/articles/CBMitgFBVV95cUxQRldWcnpJTmZ3YWd1Vm45RXR6ZG9kMHZZazlNbERidDQ3UDdCYldhZDRDT01DeDVrT3Azd3Y4dTFCdDh1YzRqSEwwNTR1dmRQWFdvSm9aY2pXc21kdl9ibk54Yk1QZ2pYTDdtZzhJNlllWlpMeVhpVkczSV94SGFPUC1nallpQ0RUUzdVYnJIejlrRFVETGhTODFLdTU1Tl8tOWtubmhiREcyWmRNcm5tV3ZJV2RiUQ?oc=5) | MarketBeat |
-| 21h 前 | 8 | 偏多 | [Visa (NYSE:V) Stock Jumps 1.6% - Still a Buy? - MarketBeat](https://news.google.com/rss/articles/CBMinwFBVV95cUxPOG16OW1ObzR6dTJGQnYxaVpOVE5Ea0lUQXRfT3pSeUpjY0lEQndocFNDbXZJa1ZqUXp5OXFXYWVsOEVSeWVUMS1qT2pXcEk0cklZYzBiZVFuaUo4THlGd2xpVGJiU3ZhcGZsdmVUblg1SjNLVXZaRkx6UFZGV01ldDU1VkVpcjNWQTQxd2dRa2dKaXk5QW1aNkswb3JJN0U?oc=5) | MarketBeat |
-| 35h 前 | 8 | 中性 | [Visa earnings: options price a bigger move than Visa usually makes - Saxo](https://news.google.com/rss/articles/CBMivgFBVV95cUxNemxWbXBPX2VuYUVmelA0Nzd0NmtNZjBVN09WZjRpV0g5aWtHNExrX2hZT3BPWno0TmpjelBIZlRTR3Z6ZG5UY2pNb2xiLWZqeFBNT2dOVEIwZ0hRbEkydWVlY25VWjcwa2MzRHBEOTYxOHY5bWFLazlaWEFZZGMxRHdIOUhYaS1lNEZZT3dMZUFqYURXR25fT2ZUSzZfRjRpSjJMeGZVWGNxV2VHMzZaNjc1SUMxSjF1QXpTNFpn?oc=5) | Saxo |
-| 28h 前 | 6 | 中性 | [3 Dividend Stocks to Buy and Hold Forever - The Motley Fool](https://news.google.com/rss/articles/CBMijAFBVV95cUxOQ3AtNngxQ3pHcWxYTVV3S0FONWZLWXVkay1CMFJ0VTlVUU02YjY5SkJRMDc5VW1mdHFveWdrdWpPeEtHZDQ3V01nZVczOUtob1pDNE1wOEFldFR4R2hTeDUzSEhkRFdaVXpkZjNVTHJCaWRIcjlTQm5LOGYzTEUxSHRYN2ctVDFpUUtjdA?oc=5) | The Motley Fool |
-| 11h 前 | 2 | 中性 | [Visa Inc. $V Shares Sold by Milestones Administradora de Recursos Ltda. - MarketBeat](https://news.google.com/rss/articles/CBMiyAFBVV95cUxQbHdReVQxX0lobXNOVDl2U1FjNGhvSm9YMVJTVXVLbktFLXJxcG50T1J4QWUyejlPLTEzMEdXSE8zdkZyOGhOSzRWWHp3UnJKcjNpRFZ2Nm9GT2NHSU5yTVZkanMzaVZHUFdYSTlVMDU5TTUwY0c5a01IVm04U1JnVG5ab3djRkdmOWthSGl1RHJwOTE0VU5tdlkyZC1tVnB4V3c2MjNBQS1JWG1haVphdjV6OXJhdXp6eFRpQUlGak42V3Z4SEhUeA?oc=5) | MarketBeat |
-| 35h 前 | 2 | 中性 | [Sawyer & Company Inc Buys New Position in Visa Inc. $V - MarketBeat](https://news.google.com/rss/articles/CBMisAFBVV95cUxPckVubDgxT1NYVEZ2LUszbFlnVUtVcVl3dzVKd2w4dGN2SV9IblI0M3FCVHN0eXFRenBwQmVFZXNCUEZ4bkV3WHlyci1QUWFXMzNPcC10UUh1T0NhRVhURF9OWnhHV2tzWWdEVFM1ZEYxeUFMUm1YZTBJcnc3eWFtTTdaNXFMVk5pR2JRYmhHT3RLY2pXT05IOVVkcUlMT1VQM2RJcm5JSDNQdDdvQjlRdQ?oc=5) | MarketBeat |
-| 35h 前 | 2 | 中性 | [Robeco Institutional Asset Management B.V. Acquires 178,911 Shares of Visa Inc. $V - MarketBeat](https://news.google.com/rss/articles/CBMi1AFBVV95cUxNbDk4cTRMQlVraFp1cWRuMHcya0YxRVBwUFA3U2VjOWdVdWxDUmhQMHdvNjF2azhLVjMzcUhhc2ktQTdGWW9rSHNfdVctaTl3R2JNZnc5NE9wb0U2TElTME1uZlNGOFVhWC00aU5XMXotbzVXLW5xVWdNd0tWZU9OSTVtWkI3YUhuMW1ranlOUHdyc3MxOWFaVGJWal9tSkJPOEt3ZlNuSlQ1QklZdWJQZlZSUXhGWF9nZmkxYlVxaUhpM04xUkpLc01TMTl0NUF3YjNTOQ?oc=5) | MarketBeat |
-| 1h 前 | 0 | 中性 | [Infosys Stock Slips As U.S. Visa Crackdown Intensifies - Timothy Sykes](https://news.google.com/rss/articles/CBMie0FVX3lxTFBNMjRfMHhuOExvN3llTDAwWlFndWltV1NxVVR6emVZLXJYeGZZNzF1MEpMcVRVMUZPZW9vVHVSd2N5azYzeHl2Qlh5RzNqemtwRTVxenVxWS1Zb3BqVTBURFJIMENYemNrNEdWcU1KWkZYUG93Y0dRYUVtNA?oc=5) | Timothy Sykes |
-| 1h 前 | 0 | 中性 | [Infosys Stock Slides As U.S. Visa Crackdown Intensifies - StocksToTrade](https://news.google.com/rss/articles/CBMid0FVX3lxTE5aYURhZVBpVi15enM0SUJPYnlSc0UyTFp6aVVCS1BHS29HX2RZT1ZUZDB3dGZSR0pnLXNZU3lJSFFMUDUtSW9aVG1FaHZpY2N3M05weVd3RnJGcktMTHFacWtkTFJtTkNwOFA2VTJsMmpac19iQktN?oc=5) | StocksToTrade |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
@@ -132,7 +117,6 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 - 摆动高低点都在下移，属于下降结构；在出现一个更高的低点之前，任何反弹都还只是反弹。
 - 下次财报在 4 天后，落在持有期内。财报跳空会直接穿过止损——那一晚的风险不是 1R，是没有上限的。
 - 公司尚未盈利：估值没有盈利可锚，股价由叙事和融资环境决定，这类名字在流动性收紧时跌得最快。
-- 政策面对该板块的倾向为 -0.89（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 

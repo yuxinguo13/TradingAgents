@@ -44,7 +44,7 @@ _医疗 · 数据截至 2026-10-23 收盘 → 面向 2026-10-23 开盘_
        2026-09-25 2026-10-23
 ```
 
-成交量近 63 日： `▇▅▆█▇▇▇▄▄▂▄▆▅▃▄▃▇▅▂▃▃▂▃▄▃█▂▄▃▃▄▄▄▃▆▁▂▄▃▃▁▂`
+成交量近 63 日： `▇▅▆█▇▇▇▄▄▂▄▆▅▃▄▃▇▅▂▃▃▂▃▄▃█▂▄▃▃▄▄▄▃▆▁▂▄▃▃▁▃`
 
 ### 图形读数
 
@@ -53,7 +53,7 @@ _医疗 · 数据截至 2026-10-23 收盘 → 面向 2026-10-23 开盘_
 - **动能**：RSI(14) 66，偏强；近一月的斜率慢于近三月（月 +5.7% vs 季 +21.7%），涨势在放缓
 - **波动**：日均真实波幅约为价格的 1.9%；按本报告 2 ATR 的止损惯例，一个 R 相当于 3.8% 的价格距离
 - **位置**：距 52 周高点 -1.3%，距 52 周低点 +32.3%
-- **量能**：最新一日成交量为 20 日均量的 0.8 倍，量能正常
+- **量能**：最新一日成交量为 20 日均量的 1.0 倍，量能正常
 - **相对强度**：近一月跑赢 标普500 6.6 个百分点
 - **支撑 / 阻力**：最近的摆动低点 27.64，摆动高点 —（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
 
@@ -108,17 +108,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 10h 前 | 6 | 中性 | [Better Dividend Stock to Buy and Hold: Pfizer or Bristol Myers Squibb? - The Motley Fool](https://news.google.com/rss/articles/CBMimAFBVV95cUxPeVJCTVBYTTdJZW1iQ00zUVpzc0NIbkp6THhSWlZlc0FiWXZ2UTJsX0pOOUloRHYzYlpSTXNtMVUxajAyR0h2SVAwM0l3Vlk2RmVtZUdhSklsV2tXeEYwS0ZsVDdOMnhNZURfZ21pbFozNmY5Vm8xcG1tTmZZX0h5UFk4N3FKWUdrNVp3VnZ2c091OU42UmJ2Sw?oc=5) | The Motley Fool |
-| 20h 前 | 6 | 中性 | [What Higher Interest Rates Mean for Dividend Stocks Like AbbVie and Pfizer - Yahoo Finance](https://news.google.com/rss/articles/CBMiogFBVV95cUxPbm5scmxkRXhqUF9Zc3MyejlBS1B2dFNBOVAyRmlXNkNiQ3lPQWM4TUpTUTlYblhmXzZCdHNzaFBUd3doMmZGdUxLdHRQbmlaMDlkbFhvc2x0ZFVhY1o1c21fUlFkeDluMWhZSWtpeERzalA1aGl0VDVURFprdXYxUlE2c19fMzZUTVg5YkFaRTVPZjRyT0w2S2ZQV256NVVkbEE?oc=5) | Yahoo Finance |
-| 28h 前 | 6 | 中性 | [How To Boost The Dividend Yield On This Drugmaking Behemoth - Investor's Business Daily](https://news.google.com/rss/articles/CBMinAFBVV95cUxNQ0NpWENzSnJwcUxsVVBFMlJBa2wwb0FxOXFXZWtXazZFOEdYajVLTEdCdG0xaV9IMG1aVkp0V19fRVVWMFBLY3dLRDFKdTZqZmlhQ0VSNzBVY3RGZFc3bDdkanlHd3JqbnpDR1FPdWtMZHBISkFvVWFqU3VMZkg4cFozZ0hMVTZHQmxtUEV6ZGlwUEs2dm9lUmVocHg?oc=5) | Investor's Business Daily |
-| 6h 前 | 0 | 偏多 | [Pfizer stock: BofA raises target to USD 29 for Pfizer stock - AD HOC NEWS](https://news.google.com/rss/articles/CBMivgFBVV95cUxPalBwTEJrOGx3c21ybW5TZjRjM25TUklGY0ZyU01RdzVWY3ZaM1haY2NqT1VycXVyaDE5NFZJMkkzbXVvQWE4akhGXzlQT0hJLWt5Y2Y0MWRFcUh4UHAyUlF5NXVINTRTRnFsWGVIcEpLWVNUWFM4SExheHA4Y2Y5bmhkN2U2NGp2NFpGUUNNY3V1U3g1Yml6ZjVhNkRiN2Joa0ZnUkJVcE9XNzY0MzlDRlJmRjFPeG56TmxwU0ZB?oc=5) | AD HOC NEWS |
-| 23h 前 | 0 | 中性 | [Bristol Myers Squibb vs. Pfizer: Consistency vs. Scale in Revenue - Yahoo Finance](https://news.google.com/rss/articles/CBMilgFBVV95cUxON19aU1E4QXd2amh4UUhwa0ZzUlhiajlDbl80WS1DMmtsbUo1NzZwaThGczgwR3lZR2hWaS1zQWFfa3k2Ri1YT0ZkNlFpMHpwT3RMZDNPd0FYVkFuUlZ0Ql95Rm9ZV0lBcE9hMm14cmJxS1VqeWdKYXZkSnoxQm5MYmY1Q3lfZXVQSUZtZXlBNjZEYlk0eHc?oc=5) | Yahoo Finance |
-| 26h 前 | 0 | 偏空 | [Moderna Tumbles 25% After Apparent Early Leak of Melanoma Vaccine Data; BioNTech Dips, Pfizer Edges Higher - 24/7 Wall St.](https://news.google.com/rss/articles/CBMi4AFBVV95cUxPOFltVUdHTFd2S1p0LVpXalpmLVhBQVFxdGRkeERIdHBlNXRNNzYtYTVUNzBzcHZFdGtDVXM4TjBIWktaLUkxaHhwNElsS2tIWFVxUGpLNTNITTZnZVhQM2t3R0Q4VF95aFA0bGkwbjFBQldrVnpiV3pyeWR1aXdjeFpCeFlYTGlRa1NJWUNXMmp6a1FaYVB5VEJlN0oxZS0yaVAyR3VkZ080bGcycTJYaFpYTG9xcGw4T1hTaVBsQ25DcXdwYzk5aWFWa0taUzh3Mjc3TnZjOGM2SEIzQWdBQg?oc=5) | 24/7 Wall St. |
-| 30h 前 | 0 | 中性 | [Pfizer stock hits 52-week high at 30.26 USD - Investing.com](https://news.google.com/rss/articles/CBMinwFBVV95cUxQclZoSF9lNXM0TnRMN0twZ21yQThaaWhHcnFpRE9OMHVOb3R0Zjg3RFlvRWJmS2t4MS1QVnM3bU5SbnN6QmlqTk9aa1E5NXBmelhtWFNiZGZpSVE1R1k1WEdlNkxDai1XOWJXaXVZME5zVHBRUjk0OTFqanR4MGN6LWN0Y25WYUdDb1U0dUcwLU1sWkJiUWlmdWZTRXgyT2M?oc=5) | Investing.com |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
@@ -126,7 +116,6 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 - 下次财报在 11 天后，落在持有期内。财报跳空会直接穿过止损——那一晚的风险不是 1R，是没有上限的。
 - 公司尚未盈利：估值没有盈利可锚，股价由叙事和融资环境决定，这类名字在流动性收紧时跌得最快。
-- 政策面对该板块的倾向为 -0.43（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -148,7 +137,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-20 | 29.67 | 30.25 | 29.59 | **30.11** | +2.3% | 34,442,200 |
 | 2026-10-21 | 30.00 | 30.09 | 29.69 | **29.85** | -0.9% | 22,217,700 |
 | 2026-10-22 | 30.05 | 30.44 | 29.88 | **30.42** | +1.9% | 28,703,400 |
-| 2026-10-23 | 30.28 | 30.32 | 29.81 | **30.03** | -1.3% | 25,179,079 |
+| 2026-10-23 | 30.28 | 30.32 | 29.81 | **30.03** | -1.3% | 29,366,671 |
 
 ## 七、自己去查（本页不做独立验证）
 

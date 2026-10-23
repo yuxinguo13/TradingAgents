@@ -67,12 +67,7 @@ _读不到财务数据：该代码没有可用的财务数据（可能是 ETF、
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 9h 前 | 0 | 中性 | [Invesco NASDAQ 100 ETF (QQQM) Adds NVIDIA and Apple on Wednesday - Yahoo Finance](https://news.google.com/rss/articles/CBMilwFBVV95cUxQZWtwbXRjTXdkU0ZIcXJ5WnVscUNaaXJPZ3Zlb3c3OWdtWHBhVEg2aDhiVDJCOUpuNkFrSGdtQnd0ckJ2V2o5UTZuQkFCSVlXWS1CTmZrRVZ2WXlxS1JNbkgtMmYyeDlQS19NYWRtclc5RXY0RUQzWU9tOHc5YjJHdzZjVzRjUU50Wi1lUEgzSC0tRlM4T09V?oc=5) | Yahoo Finance |
-| 31h 前 | 0 | 中性 | [There's a New Q in Town: Invesco's ETF Targets International Innovators - The Globe and Mail](https://news.google.com/rss/articles/CBMi7gFBVV95cUxOaVRDSlhmd2F6MlljRk0xQ0llTHFQMm40aS0xVl91MzBwUEJNN0pXNWpLMGg4YktOVU9wSmtaLVd0NU9salI2dWUwakpDd1BpZzd5V1Z6TU5OdmZRSFpkblpnWU44U1hzM0lzZ1Z0cC1pQ2JqQkJDM3ZrSzNqWVFoZUd0MzNWRURNMGRHem45RUhjeEhhMWlyMS1zb0ZPaHJaNGU1STJCcXhqbmVocWZGd0h1SjR1U3dVSUh5aWp5LTBBZmxIclpyd2lwUk05UDZwaVNfQVdGNWpzUzhyQ2dfYTZrcTFGVEZxM1RkTUxn?oc=5) | The Globe and Mail |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 

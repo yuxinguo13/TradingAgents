@@ -33,7 +33,7 @@ _能源 · 数据截至 2026-10-23 收盘 → 面向 2026-10-23 开盘_
        XOM · 近 21 个交易日（放大看最近节奏）
 183.2 ┤                    ╭
 180.4 ┤               ╭╮   │
-177.5 ┤             ╭╮│╰───╯
+177.6 ┤             ╭╮│╰───╯
 174.7 ┤            ╭╯╰╯
 171.9 ┤           ╭╯
 169.1 ┤         ╭─╯
@@ -110,12 +110,8 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 6h 前 | 8 | 中性 | [ExxonMobil stock may move 2.5% on Oct. 30 earnings report - Investing.com](https://news.google.com/rss/articles/CBMitwFBVV95cUxNbDBmVmhMZ1VyT2w2TWRkTnd2NzNLN0oyVEJ5NVBnRFdjYTB0elVIdWdURVZtdUNZT2NxMHZacTZZREE2S3JIQUhEaWhIeFAwLVlwTk5WSkVONHUyRDBpUTVkeUxDUEN4Z0dubG1lOUNBS2F0a1ByQWYwMl92SkFEbWVBSDNta05Zd0lwM3hnUnpDeFplX3JUTmdJME5tV2NrajQ4azNoWEp5OEJTQ01vd1kzNUE3ckk?oc=5) | Investing.com |
-| 6h 前 | 8 | 中性 | [ExxonMobil stock may move 2.5% on Oct. 30 earnings report By Investing.com - Investing.com Canada](https://news.google.com/rss/articles/CBMitgFBVV95cUxPUG5LOU9PdDFPcHNMYkJJWkpwdWVhaXBsT253X05XazNXZHlibVkxWFVWNU9MXzhaRHJyNW9McFV1dkRQSFUyWEJndGtFRldsanBXT04zQUEwWnRTNzI4R2JrWXl5ZXFUTTFPVC1ZbG41TDQyUU01d1NCM19hWXNxT2lTTGNfQm9iTXBqMGFKMEdEczBMOXRoRUNhM3M4cTdpblZxSnYtRWxBcFJWcTF4RXRVNF8wUQ?oc=5) | Investing.com Canada |
-| 7h 前 | 0 | 中性 | [Chevron vs. ExxonMobil: Which Stock Has the Edge at 52-Week Highs? - TradingView](https://news.google.com/rss/articles/CBMiuwFBVV95cUxQUlBzVG5pZHVyQUx2R0NKWVo5cTFjbklJMl9XejZZVU9LeTJBX29zUnpJOVBtaVM1OEp1TWNUcHVOSDFDS1ktdEhhWkFoTzZPZ2VwY1NZS1pqYmJiVk5rNkJCYUpBUUtvYlJpLXA1VEE4dVZFTjBRV1hHMUhjdG9XM05wZEJ1NEF1U19RWVlkZVJ5djRiWklyYWh2eGE3RmFRS0thTS13LWY4ZnJrX1IyQ2hqSG9OVDEtZl8w?oc=5) | TradingView |
-| 24h 前 | 0 | 中性 | [Exxonmobil Holdings Corp (XOM.N) \| Stock Price & Latest News - Reuters](https://news.google.com/rss/articles/CBMiakFVX3lxTE10M3NFRG5tRDNHRWRQcEQ1aHBrT3VOR0V3WTktYUt5RHMwU2llb2JSaDZzQW9KVVNDbGpsWG4zX3p3NW5EV0habndEQnBCeThpdG5GRmlndUVHWjFWalJqVXRBMUZQYVVJdlE?oc=5) | Reuters |
-| 28h 前 | 0 | 中性 | [ExxonMobil Just Gained 12% in a Month and Chevron 11%: Take Profits, or Buy More? - TIKR.com](https://news.google.com/rss/articles/CBMipAFBVV95cUxQeEhyamNuMUQyd2RaVWhEeFlxdHIzc1ZyNDVVUFJqWEFJNE5XbzEzS0RfeEhVVHoxT2FzV3Z1dDZvaWpWM3JzSlZaMk8tdnhTS2pHVXI5UDhoc3ZuQzhISnVPMEJ4Qm9BQUsycWV6cmpFYUFoaTNmTHRkOVo5cmlVRnR0VjhpYmtzT3ppd3VHblFSOUcxdnhoQnVoUHNaTEdTMWpKbQ?oc=5) | TIKR.com |
-| 29h 前 | 0 | 中性 | [Exxon Mobil Holdings (XOM) is a Great Momentum Stock: Should You Buy? - Yahoo Finance](https://news.google.com/rss/articles/CBMimwFBVV95cUxQRVE4elZoZWJ6MVdTTU5mTElLRWZ5QlVUMTUtVWFHZzdWQV9KUzlvMXlWM2FPc0h5YUM0LUpIM3VwdTBCdUl3QnB2SjdqN3hDX2U3cWNuRExydlJ2ZlBXZlFabUhnd25xYS1kdEtMRlRCRXc1Q185SlZiRmh0eVJoeGJXaS16dEVRTk5COTdvWU5TUzgzRl9wbm1Tdw?oc=5) | Yahoo Finance |
+| 2h 前 | 0 | 中性 | [ExxonMobil (XOM) Stock Still Looks Like A Bargain As 230% Run Continues - Simply Wall Street](https://news.google.com/rss/articles/CBMi0wFBVV95cUxQZ2dCajVrVzRoYjlvYnF2ZHdTZXBDODV2Q09VMTVjZVNZbV80ZUlkZFJsVktuSEVXUzZ4dXFpYU9NX2ZVRW9ocnBCZHJPcWo1LUFGUUtTQjg3dE1yZldSU2dZWmYxSHpiQmJaOUZLX0V0Qk9taTlUbGwtdTJsdmdRYTRGM1lNYXhWdUNPSFBCZU9uU0hoT1h1SWNYMmRYc00zOWk3UWtpZ2tQNGdfYXp3ZGVTcjZzX1FYOC1SbUc0dnl0QjExU1c2aEVpckJXaWEwUFdz0gHTAUFVX3lxTFBnZ0JqNWtXNGhiOW9icXZkd1NlcEM4NXZDT1UxNWNlU1ltXzRlSWRkUmxWS25IRVdTNnh1cWlhT01fZlVFb2hycEJkck9xajUtQUZRS1NCODd0TXJmV1JTZ1laZjFIemJCYlo5RktfRXRCT21pOVRsbC11Mmx2Z1FhNEYzWU1heFZ1Q09IUEJlT25TSGhPWHVJY1gyZFhzTTM5aTdRa2lna1A0Z19hendkZVNyNnNfUVg4LVJtRzR2eXRCMTFTVzZoRWlyQldpYTBQV3M?oc=5) | Simply Wall Street |
+| 13h 前 | 0 | 中性 | [ExxonMobil Holdings (NYSE:XOM) Stock Forecast & Analyst Predictions - Simply Wall Street](https://news.google.com/rss/articles/CBMif0FVX3lxTE93TTFpNlRGanRmUnNCV05pZWR4VUo2U3V6VmFLSEplTTdJWFJ2aFJhT3VIZzFUV2RUVVlUTEdyUklDX2hSOFBXTnRpbFV4X2R5QUFZVlR1U2ZXbnlFUGlCeEJhZ0RicWU3bmpZOU5fb184YjdNbVZoSmdXVDQwLTA?oc=5) | Simply Wall Street |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -148,7 +144,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-20 | 179.90 | 180.26 | 174.92 | **177.86** | -0.2% | 13,496,400 |
 | 2026-10-21 | 177.72 | 179.21 | 176.15 | **178.09** | +0.1% | 11,214,000 |
 | 2026-10-22 | 179.89 | 180.31 | 174.63 | **178.23** | +0.1% | 11,564,300 |
-| 2026-10-23 | 179.37 | 183.75 | 179.00 | **183.20** | +2.8% | 11,460,332 |
+| 2026-10-23 | 179.37 | 183.75 | 179.00 | **183.21** | +2.8% | 11,460,332 |
 
 ## 七、自己去查（本页不做独立验证）
 

@@ -110,9 +110,8 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 4h 前 | 0 | 中性 | [Marvell Technology Faces a Multi-Front War Against Taiwan’s Custom Silicon Ecosystem - 24/7 Wall St.](https://news.google.com/rss/articles/CBMixgFBVV95cUxQeXJkbHZMamNyRlhNMnYxOGppQUk1eGlFR25EcTR2MTVSb3BYaERBRGhMby1vazAxaVRiczhFOTVYY3F5UXNiR3haRUFBcUJKdGdvYTJZTDhyc3kyNG8zVWhpZFlBUEhtS2s4VFdKUnl2NGhpRnI3cXRwMFVHOUlCaS1HUTlzb1pnd3E0U1ZFbFdjczJ2VnJuS0wtak00UnNVb0N6NTRpZnRGRWRtVTJzSDQwZUJsdnNsUTBHUHR0VnM4LVN6NWc?oc=5) | 24/7 Wall St. |
-| 4h 前 | 0 | 中性 | [What Is Going On With Marvell Technology Stock on Friday? - Benzinga](https://news.google.com/rss/articles/CBMiuAFBVV95cUxOTnpCbFIxRUdZeWg2QW1NT1o5QmswUGQyLVJYNG41UXNwRDVwVGZ4RGZXdUU4ZnUxbTFRLVNBTjJWMDNxUG1iSVhEVF9TLVFNNVU4Y0FwbXRrUTczY29CWmdUMlhNWUR4M01aZU5neVU4emE4bmloM21vaUpSdXI2YXd0OXdTajE5Tmt6U1drTi13VXpjVE1aS2E4VWpnWUpuUFk3UkJ6TkdNbGkwZFlhT3VHNkQ2anVs?oc=5) | Benzinga |
-| 15h 前 | 0 | 中性 | [What Marvell Technology Holders Bought Into Before A 170% Run - Yahoo Finance](https://news.google.com/rss/articles/CBMipAFBVV95cUxNU3Q5N0VZX2FxT2puUHpSeFJOai1YcUdPcGVoQUlBbFJ1WU1IT0l6ZHZWWFl1OFBTbzFfRXQ2MU1QWHZSZEIwSDdkVVh5OFoxYjBlUE5LNnFtSUpyaGh4NU5GQ2hCY2x3aW1teFQyTjFzd2ZTbkViS2p1MjdLckttRXpaRDA0MXppSWNMUnpiYkdLSHowa3FPTTIyOUozVjBQZDJuZg?oc=5) | Yahoo Finance |
+| 23h 前 | 0 | 中性 | [A Look at Marvell Technology Inc (MRVL) After 8.7% Decline -- GF Value $125.13 vs Price $223.47 - GuruFocus](https://news.google.com/rss/articles/CBMiwAFBVV95cUxPSFI5MGp0a3hjSzlRblhSZHZKQ2t1OEZQTkNzQkhUYzJBbF9PcHlYUWRYT0xza21DRklLN2t6Y2ZHSFFPWGxLQUw2SkxNbTNDSWFXdGxFX212dGplQzVaRk5LTUhpczVuOTJZSVV0bkdIbnBXc3BBdXBOLWZ1ZW1POWxycGNOblE2akV3UGo2VEVQYW8yR2ZncURNeEZXVElFZkRVWDFrNmQ0TmtuNXJJRDlsVlRnOVF1UUl2dFRyeTQ?oc=5) | GuruFocus |
+| 29h 前 | 0 | 中性 | [Marvell Technology Inc. Stock Grades \| MRVL - Barron's](https://news.google.com/rss/articles/CBMi-wFBVV95cUxQa1BPUWlGbWs5aWpxRVVtU2tOY3BIUlhIWTIzamhHUkJERjhCOHFCRmNZcnd2azlGZElzdmR1Y2xER2dHOTh2dVg4NnA2eXBTbXY4bC1lVEcwV0ppQU9MYm1YM2k1Q0RndmNhQ290YkpSSi1xSXRhbG5tUU9GdkZXNXFCTFo0NXNsVGhSY19JblNoTEE4QmNnVkhvcWZkdms3YkpzeVhQa2stMHBiWHdGQWxtMDVoTHRwUjNVU21oX0ZtaVVJT1NmRDFSX1NvRGhaS0UtSHFIRFpMT0k2cW5mSHlwaTBSbVdCa1RLZ2V2UzhQMkdPWGNBSGN4QQ?oc=5) | Barron's |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 

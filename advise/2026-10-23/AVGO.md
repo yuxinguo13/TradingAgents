@@ -110,15 +110,15 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 1h 前 | 5 | 中性 | [Broadcom Stocks Rise as Decade-Long VMware Deal Targets AI Workloads - Yahoo Finance](https://news.google.com/rss/articles/CBMinAFBVV95cUxOT2hCbzFPUWR2X2ViczNoZUJFZjVzWmp5d3VmT2JfS3FJbXJEN1czU3phVXZuRUVwSDV5OVZsSi02SUlMUzMxdmhoMDhmODN6ellwLVcyZzhzS2hzUVZDYUtiQjZhSjJySlhHNE1RTnFKMEpnb1lkbUhnbHNqRVV5RUg2b0l3bGdrZGd2ZzFmVjZyRllkazRPTi1pdWE?oc=5) | Yahoo Finance |
-| 4h 前 | 0 | 中性 | [3 Magnificent AI Chip Stocks That Could Help Set You Up for Life - AOL.com](https://news.google.com/rss/articles/CBMifEFVX3lxTFBHYXo4dG53b1E1OHZCeVc5X1luMkF0M25TazRON3ZHaElFYTMxZ2JFQ0owdTYyZHY3aWJNUHZQMnkxUy1oUjl0eWM4NHFLMG9DYlJOaHhWdnhSWVJueHhKQlBNR2o0WjhOT1FFUTlveFExUVBtQjBfLU5zX00?oc=5) | AOL.com |
-| 4h 前 | 0 | 中性 | [AMD or Broadcom: If I Could Only Own 1 AI Chip Stock Through 2030, Here's My Pick - The Motley Fool](https://news.google.com/rss/articles/CBMimAFBVV95cUxNd0VTd2R1Q3ZwWlJZdFpRaXNmOTlFaGk0OXNMaWk0cWJhSXZqS3JESXNoLWVpaU1FWk1ZSFBWR1dsU3AtX2piazhnbnJNdGxMUHd6UVBwaVZoajd2b1l3T1RVcUFIRFBnX3UxYkJRamhjbXQzZWFaVzJZbjNJeENvSWNubDNFQWR5TGhoczg5a0dUZnVJRFkwYw?oc=5) | The Motley Fool |
-| 8h 前 | 0 | 中性 | [Same Playbook, Different Silicon: Broadcom Holds the Throne, Marvell Plays the AMD Challenger. - Yahoo Finance](https://news.google.com/rss/articles/CBMipwFBVV95cUxObGJTNFl1NEtTbC00bTAyNFI0Q3JzYzFpcXZoZ2REeGo5MW1od0ljZ1JLZ2dRZEVNalU1eTd4S05yTVZQV1VEeFlLdDc3b3dlLTg2ek5fNmVaT25EY0JjTjJQa2JjdXJ6MUhKaDJSY2c3T2tkR29PQnJBdEpiV0pKUjE2XzlBMlhsZ2h0eTk4ZXo1Q2VBVDFiY2RlVDZDemRVSFE4ZHdTQQ?oc=5) | Yahoo Finance |
-| 8h 前 | 0 | 中性 | [The Best Trillion-Dollar Stock To Sell Puts On Isn’t Tesla Or Broadcom - Barchart.com](https://news.google.com/rss/articles/CBMiswFBVV95cUxOMXdhb3I3TU9TcXZoVXBkQUFiMXNYMU5uS05IUGYyVVdmTnpwb3JkYnZVUUNsLXRtTnZIeGJTZW9pYkx5WGJZRnpJTE9aWmVlN2pTR2VjSHo1cGFEdHhRRXFZdmJEZFhyNlJnN0ZkblJlZzZUUGlvS1pfblhiT0MzemVqZExrMHc1azk0Uy1EVGxYZFItaTBDMkpGSTZUSk9INlQ5LWZvV1JicmFPVWIwU0Z4Yw?oc=5) | Barchart.com |
-| 9h 前 | 0 | 中性 | [Broadcom (AVGO) Sees $89.8 Million in Net ETF Buying on Oct. 21 - Yahoo Finance](https://news.google.com/rss/articles/CBMikgFBVV95cUxNbEd4dDVzalI0VlVIaXJZMXRWb3ItZkQ0a1dwWFZfeG1PZEVYN3pjMXRyRi1jWjdyWjRPcnNJWUlmX3FrdTFaa2lSZy1OTFF5Q00yZ01paXFXd0h2RjJDMlQ0VjJ5MG5HMkdlTTNaeTFOZEkyQ1hmRXE5aFlONG5zM3prLWFLMU1CVEY5aWJ5NTJnUQ?oc=5) | Yahoo Finance |
-| 11h 前 | 0 | 中性 | [Form 4 Broadcom Inc For: 23 October By Investing.com - Investing.com Canada](https://news.google.com/rss/articles/CBMimwFBVV95cUxNMktNN1hWcEkwSTlxeVVDSl85VXZWV3BHUG1oVm9VaEtOb2JNdTMzdVlFR1FZZ0dhM3dHWGVYWm5uQnpXV3d0R1RlcmpwdTY4Ym0wY3NjUGtzcTc2YnpwcWc1Q0NSekptUUI0eG1PUW9Jd01RVzgwbG9QQUVCdGxUanRnU19rMW5XenhvLWtacjM3Nm1Ca2hJdGkxdw?oc=5) | Investing.com Canada |
-| 19h 前 | 0 | 中性 | [Broadcom (AVGO) Stock Could Be A Bargain Following Its 5.7x Run - Yahoo Finance](https://news.google.com/rss/articles/CBMinwFBVV95cUxPN0pkbDJfd2tRRTJVNlZaSEp5czdMVnR1cC15azJLeHliV2I0OE1BYUhvN1RVa2FYczd2U2dVckFuMWdDdFBqN0ktOUktTEZuMDFfcGt5WU1Md1JGVzRaRzF3VF90aGdjclZDZ1c0T0RQVkgzMVVYOEtvUEl0cXY0MGVYSjVrTmM4RGkyYWctMEJiWk9oUWRvWDlaYy1QS0E?oc=5) | Yahoo Finance |
-| 31h 前 | 0 | 中性 | [Tigress Financial initiates Broadcom stock with buy on AI growth By Investing.com - Investing.com Canada](https://news.google.com/rss/articles/CBMiwwFBVV95cUxQVnFuOGFsNkNNeGgxS01NUmRhTFVCZUxuLW1wY29PQ0JTWW1NZlJwbHd4NDlNdWowa2pna3pFMXNpQnNLTjVENHVSbVJmQ2lkLXYwZGxoWHlHLUJ2NGpIdlNmNlpwMFJ0MWoxdVItMHJnSGd1LTB2MFVEQzVibWZFTHR3QmdzY3lZUmE4OVl3cEh3UWttaUdrX2kzUjJqT3dGNk1HUXU4enppUVlfQWpHaTJjeXJ0bXVlb3prS1RRenBHU1k?oc=5) | Investing.com Canada |
+| 12h 前 | 8 | 中性 | [Broadcom Inc. $AVGO Stock Sold by AMI Asset Management Corp - MarketBeat](https://news.google.com/rss/articles/CBMiugFBVV95cUxQWE5UMVhOa2NOQWRLeldDTXQ4QkJxcklLSFF4TDlqWVFPdk5CWU5fdU9JRVB6Vy1rUm9JcTMxNFFGaFVJQTQtTmI3bFh3LW43a1RtMVB1eWRYSFRqYm5OUlZjVU5FUk1Pd1NYMXRJSWU4VkZnZkFzSk4xV3hXenNfWDZQbFhEOXA2UmVTSlBDVEU2TUhJenBhRHFhdjB6eVlJaVJTcU1xRVJ5NFNpeExTYkdka2s1Mi1uREE?oc=5) | MarketBeat |
+| 21h 前 | 8 | 偏空 | [Broadcom (NASDAQ:AVGO) Stock Falls 4.3% - Here's What Happened - MarketBeat](https://news.google.com/rss/articles/CBMitgFBVV95cUxOMENBQXdxN3hia2VweVNHOUloZ0RHckJWRFdLX1laUnF2MjBNZEpLSWRjazdtLWRxZFR6Z0RWRnlCeVBnOFdGOVM4eFlsS0pUMzZSYTN4ZUk1M1h4RFhoX3dOSExkMUFUamVvdWtOQ2tDWWNsTGFTbUFEUDJiN3VOdWE1UC1EU1FDa3o3VXZCLUk0ZHFhQ09ZU1BSNFRBcy04cU13WEltekVHU28xejIwZHBlSE45UQ?oc=5) | MarketBeat |
+| 36h 前 | 8 | 偏多 | [Broadcom Inc. $AVGO Stock: Maia Wealth LLC Raises Holdings - MarketBeat](https://news.google.com/rss/articles/CBMitwFBVV95cUxPdVVsSU5TeHVybVZLcnM0VlVSR0l4VzhWbUVXNFZneERaWUlSM05hM2dJTHkyQTg2SUlfODJ0S2hFM2xSSUtPM1JDVG5CVE10cXVGSHEwaVpoa3lYajV4VVhBNkprdGkyNDNNakJYbGVsMy1lRC1ib0RjVjlnekYteXB4cE9va0JTbzRrTGlIbUl1aWN5QlctX3RONm9mM3g5MDVPek53dG5NTnZiempSOGFSYU4wVWs?oc=5) | MarketBeat |
+| 23h 前 | 0 | 中性 | [Broadcom Inc (AVGO) Stock Down 4.3% -- Now Undervalued? GF Score: 98/100 - GuruFocus](https://news.google.com/rss/articles/CBMiowFBVV95cUxORW53UzZiVzNqN2cxWER4WjRpYnlJNjFTcnhZMkZENHQ3c3lUeTl5TzlDXzhsVE5qUVh2NUdFVkdFOXQtVzBWSzR2bUE5d0Zjamk2OFV3OXgzMTZ1a0puS3IxTEs0Uy1lbGZjNUFYbE5NTDVDUlhuVE5hd2pkMmN4Mm9qZVJESHlkaG9WUVpzTTdkV2dQa0F6YlpzSjdaM1lCMzBV?oc=5) | GuruFocus |
+| 24h 前 | 0 | 偏空 | [Broadcom Inc. (AVGO) Suffers a Larger Drop Than the General Market: Key Insights - Yahoo Finance](https://news.google.com/rss/articles/CBMingFBVV95cUxNMnNPa0dqZHZTWF80V3V3cVB3aW9jSWZyaEZBLVpGSk1MeHJQT2JGcThPM0N4ckR0Qy16bUdPbDMxTkpzTFhBbEVVTFNXRk5zN2cyTHl1Z2s1VUhYQ1VLbW5nR2YyekZ0ank5S3U2djVvU1Axd3dlT09iSXlaS2JROGVkb0NVWGhQTHY0MjlPZ180dVc2QUgzTGNtTTRTdw?oc=5) | Yahoo Finance |
+| 29h 前 | 0 | 中性 | [Broadcom Has Lost 35% From Its High: Tigress Sees 83% Upside - TIKR.com](https://news.google.com/rss/articles/CBMiiwFBVV95cUxQaG01dDRWQmcweGdIVDFyNVVZNkRzYjVTZk5xTVBXaEozU2dUZVcwLUtNZWo4aEtqWUEtS0VPeGppMlcwSHZzMzlZaDd1Y2d5aThaQ05OSFhwUzd6emdicm5PeXc0cjJIWER1aWFrVkVhNUk0WTNzSEI4cHpFdWw0VjNsUmVvempsalRz?oc=5) | TIKR.com |
+| 31h 前 | 0 | 中性 | [Wall Street Didn’t Expect This AI Stock to Become This Important - 24/7 Wall St.](https://news.google.com/rss/articles/CBMiqwFBVV95cUxNRGo2aTB2VXgwcXduRml5TGRJMzVQTmpsNFd3c2RqVWtULW5CUVVCbGk3R19vbkdPN2ZpMHFoSHhTOVJZemhVdUtsOHRMMnhRMFRUNGhhQkY2TGpzTWJPZkJybmxaZnM1T01LMUViX0pvVGFUWnZKcVVhMEdIRUQyMkg2QUtuNGt6VVNxWl9Wb1NyRkpBeGR3dlhRUjlHN1dWQXJ0bTN0Zks1WFU?oc=5) | 24/7 Wall St. |
+| 42h 前 | 0 | 中性 | [AVGO Oct 2026 215.000 put (AVGO261023P00215000) stock price, news, quote and history - Yahoo Finance Singapore](https://news.google.com/rss/articles/CBMiZkFVX3lxTE5sX3BMcG9GRkhmN2RETFFMQzlhVGg3THYtWmRKYkZhNzYwaXlTVDkwbGJYLTR0SEJRek10a1JtZ1JxWlpGWks2SVAyWjlSNWhGWE44dGpISllqaWhpa2xkdW5EWnFkQQ?oc=5) | Yahoo Finance Singapore |
+| 42h 前 | 0 | 中性 | [AVGO Oct 2026 320.000 put (AVGO261023P00320000) stock price, news, quote and history - Yahoo Finance Singapore](https://news.google.com/rss/articles/CBMiZkFVX3lxTE44VE4zMzdvNFBiUVEzMlk1b1U2WDlGSlo2aXlGN3dIUUdwQkp5NmhCNDY5c0c3cENYelhkVktuWEVqM1F0ZTZEUk83amJqSDZsU1J6THJUcEc5QmQ2YmVDOEhBM0hRQQ?oc=5) | Yahoo Finance Singapore |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -128,7 +128,8 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 - 图形上是空头排列——现价距 20 日 348.71（-7.8%）、50 日 356.43（-9.7%）、200 日 366.74（-12.3%）。本报告的买入规则本身会过滤掉这种形态。
 - 公司尚未盈利：估值没有盈利可锚，股价由叙事和融资环境决定，这类名字在流动性收紧时跌得最快。
-- 政策面对该板块的倾向为 -0.95（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 24 小时内的利空标题：Broadcom (NASDAQ:AVGO) Stock Falls 4.3% - Here's What Happened - MarketBeat（MarketBeat）
+- 政策面对该板块的倾向为 -0.74（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -150,7 +151,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-20 | 334.00 | 341.10 | 330.80 | **334.37** | -0.1% | 15,951,800 |
 | 2026-10-21 | 338.03 | 339.24 | 332.29 | **337.80** | +1.0% | 17,123,600 |
 | 2026-10-22 | 326.53 | 330.82 | 321.02 | **323.24** | -4.3% | 28,139,100 |
-| 2026-10-23 | 321.50 | 327.70 | 320.23 | **321.68** | -0.5% | 15,680,021 |
+| 2026-10-23 | 321.25 | 327.70 | 320.23 | **321.68** | -0.5% | 15,680,021 |
 
 ## 七、自己去查（本页不做独立验证）
 
