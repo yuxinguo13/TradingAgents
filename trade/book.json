@@ -1,52 +1,6 @@
 {
- "saved_at": "2026-10-23T19:32:54",
+ "saved_at": "2026-10-23T19:38:27",
  "positions": {
-  "AAPL": {
-   "symbol": "AAPL",
-   "shares": 20,
-   "entry": 339.29,
-   "stop": 321.0,
-   "target": 365.01,
-   "opened": "2026-09-25",
-   "horizon_days": 30,
-   "sector": "",
-   "thesis": "接管：止损在摆动低点 319.07 之下 1%（3.3 ATR），目标按趋势外推",
-   "invalidation": "",
-   "principles": [],
-   "regime": "",
-   "parent_id": "d0bcc2ff-cb52-4f6f-96db-8ef5c3485c75",
-   "legs": {},
-   "adopted": true,
-   "stop_raised": true,
-   "sleeve": "core",
-   "triggers": [],
-   "stop0": NaN,
-   "pending": false,
-   "trimmed": false
-  },
-  "MSFT": {
-   "symbol": "MSFT",
-   "shares": 10,
-   "entry": 514.725,
-   "stop": 515.0,
-   "target": 587.65,
-   "opened": "2026-09-25",
-   "horizon_days": 30,
-   "sector": "",
-   "thesis": "接管：止损在摆动低点 486 之下 1%（3.3 ATR）；今天 +3% 追上同板块，趋势完整",
-   "invalidation": "",
-   "principles": [],
-   "regime": "",
-   "parent_id": "58ca2563-04a3-4b88-9e8f-364432c0f97c",
-   "legs": {},
-   "adopted": true,
-   "stop_raised": true,
-   "sleeve": "core",
-   "triggers": [],
-   "stop0": NaN,
-   "pending": false,
-   "trimmed": false
-  },
   "TBBB": {
    "symbol": "TBBB",
    "shares": 74,
@@ -113,7 +67,7 @@
    "symbol": "WMT",
    "shares": 86,
    "entry": 118.0,
-   "stop": 113.0,
+   "stop": 116.2,
    "target": 128.0,
    "opened": "2026-10-19",
    "horizon_days": 30,
@@ -132,7 +86,7 @@
     "stop": "44b20c72-4a1a-4547-9dce-7d6eacba12a0"
    },
    "adopted": false,
-   "stop_raised": false,
+   "stop_raised": true,
    "sleeve": "core",
    "triggers": [],
    "stop0": 113.0,
@@ -233,34 +187,65 @@
    "pending": true,
    "trimmed": false
   },
-  "V": {
-   "symbol": "V",
-   "shares": 25,
-   "entry": 402.0,
-   "stop": 390.0,
-   "target": 430.0,
-   "opened": "2026-10-21",
+  "PG": {
+   "symbol": "PG",
+   "shares": 62,
+   "entry": 161.14,
+   "stop": 157.5,
+   "target": 175.0,
+   "opened": "2026-10-23",
    "horizon_days": 30,
    "sector": "",
-   "thesis": "主仓回踩：Visa 10/20 新高 409.5 后今天 407 整理；20 日线 381、50 日线 375 在下方，21 日 +12.6%。入场 402 = 10/20 实体下沿，止损 390 在 10/15 缺口之下（3.0%、1.8 ATR），目标 430，R 2.3。财报约 10/27 在持有期内，前一天决定去留。",
-   "invalidation": "收盘跌回 390；10/26 不足 1R 平掉；XLF 相对标普 5 日跑输 3%",
+   "thesis": "主仓：Procter & Gamble 10/22 财报超预期放量跳涨，今天回落到 161.2 整理，三条均线上（20 日 152.8 / 200 日 148.5）；AI 资本开支担心与芯片抛售周里资金转防守。入场 161.5 在现价附近，止损 157.5 在 10/22 跳空缺口之下（2.5%、1.2 ATR），目标 175（日报），R 3.4。下次财报 1 月。",
+   "invalidation": "收盘跌回 157.5（缺口回补）；必需消费相对标普 5 日跑输 3%",
    "principles": [
     "一·趋势向上且结构完整",
-    "二·回踩入场、止损在结构位之下 ≥1 ATR、R ≥ 2",
-    "四·财报在持有期内的仓位前一天决定去留"
+    "二·止损在结构位之下 ≥1 ATR、R ≥ 2",
+    "五·财报超预期后的缺口不回补",
+    "三·同板块 ≤3"
    ],
-   "regime": "同上",
-   "parent_id": "94ba008b-f408-4069-9cbd-a1778644a5b2",
+   "regime": "标普 760 在 20 日线下、200 日线上；芯片连跌、防守强；不是防御日",
+   "parent_id": "d8cade41-e97f-47cc-88d7-c057c2ef24dc",
    "legs": {
-    "limit": "a9dd3694-2a87-4825-89cd-b3efba903769",
-    "stop": "45277f87-0006-4ebc-aab3-dc4468ca57d2"
+    "limit": "9644b78c-04f9-4a7d-a06d-fd678b1a744d",
+    "stop": "277fe01f-a43c-44c6-a3a1-58cc83989117"
    },
    "adopted": false,
    "stop_raised": false,
    "sleeve": "core",
    "triggers": [],
-   "stop0": 390.0,
-   "pending": true,
+   "stop0": 157.5,
+   "pending": false,
+   "trimmed": false
+  },
+  "KDP": {
+   "symbol": "KDP",
+   "shares": 291,
+   "entry": 34.77,
+   "stop": 33.6,
+   "target": 37.5,
+   "opened": "2026-10-23",
+   "horizon_days": 30,
+   "sector": "",
+   "thesis": "主仓：Keurig Dr Pepper 三条均线上（20 日 32.5 / 200 日 29.8），近一月沿 20 日线上行，今天 34.75 在前高下方整理；防守资金轮动。入场 34.8，止损 33.6 在 20 日线之上的摆动低之下（3.4%、1.6 ATR），目标 37.5（日报），R 2.25。",
+   "invalidation": "收盘跌回 33.6；收盘跌破 20 日线；必需消费相对标普 5 日跑输 3%",
+   "principles": [
+    "一·趋势向上且结构完整",
+    "二·止损在结构位之下 ≥1 ATR、R ≥ 2",
+    "三·同板块 ≤3"
+   ],
+   "regime": "同上",
+   "parent_id": "2e676156-7c6d-4250-8b98-9fbf8d49ad0e",
+   "legs": {
+    "limit": "e824a2cd-2978-4e05-9e39-8585a3dfbc5a",
+    "stop": "9685ee99-02c9-4167-b0b8-e13ef17e18f9"
+   },
+   "adopted": false,
+   "stop_raised": false,
+   "sleeve": "core",
+   "triggers": [],
+   "stop0": 33.6,
+   "pending": false,
    "trimmed": false
   }
  },
@@ -630,6 +615,38 @@
    "r": -1.0075987841945262,
    "reviewed": false,
    "sleeve": "aggressive"
+  },
+  {
+   "symbol": "AAPL",
+   "shares": 20,
+   "entry": 339.29,
+   "exit": 347.01,
+   "opened": "2026-09-25",
+   "closed": "2026-10-23",
+   "reason": "manual: 四·持有期到（9/25 开仓，30 天到 10/25）：347.2 没到目标 365.01 也没到止损 321，按手册平掉；Jefferies 说中国 iPhone 需求走弱、11/2 财报",
+   "thesis": "接管：止损在摆动低点 319.07 之下 1%（3.3 ATR），目标按趋势外推",
+   "invalidation": "",
+   "principles": [],
+   "pnl": 154.4,
+   "r": 0.42208857299070324,
+   "reviewed": false,
+   "sleeve": "core"
+  },
+  {
+   "symbol": "MSFT",
+   "shares": 10,
+   "entry": 514.725,
+   "exit": 524.025,
+   "opened": "2026-09-25",
+   "closed": "2026-10-23",
+   "reason": "manual: 四·持有期到（9/25 开仓，30 天到 10/25）：523.8 没到目标 587.65 也没到止损 515；10/28 财报在两个交易日后，日报要求财报前回不到 20 日线 526 就平",
+   "thesis": "接管：止损在摆动低点 486 之下 1%（3.3 ATR）；今天 +3% 追上同板块，趋势完整",
+   "invalidation": "",
+   "principles": [],
+   "pnl": 93.0,
+   "r": NaN,
+   "reviewed": false,
+   "sleeve": "core"
   }
  ]
 }
