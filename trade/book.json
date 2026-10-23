@@ -1,5 +1,5 @@
 {
- "saved_at": "2026-10-23T19:38:27",
+ "saved_at": "2026-10-23T19:39:22",
  "positions": {
   "TBBB": {
    "symbol": "TBBB",
@@ -555,7 +555,7 @@
    ],
    "pnl": -3.2,
    "r": NaN,
-   "reviewed": false,
+   "reviewed": true,
    "sleeve": "aggressive"
   },
   {
@@ -576,7 +576,7 @@
    ],
    "pnl": -433.1,
    "r": -1.014285714285714,
-   "reviewed": false,
+   "reviewed": true,
    "sleeve": "aggressive"
   },
   {
@@ -592,7 +592,7 @@
    "principles": [],
    "pnl": 273.75,
    "r": 1.3537906137184135,
-   "reviewed": false,
+   "reviewed": true,
    "sleeve": "aggressive"
   },
   {
@@ -613,7 +613,7 @@
    ],
    "pnl": -331.5,
    "r": -1.0075987841945262,
-   "reviewed": false,
+   "reviewed": true,
    "sleeve": "aggressive"
   },
   {
