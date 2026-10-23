@@ -1,95 +1,5 @@
 {
 "rows": {
-"VST|2026-10-21": {
-"symbol": "VST",
-"as_of": "2026-10-21",
-"next_date": "2026-11-06",
-"last_date": "2026-08-10",
-"eps_estimate": 1.63,
-"eps_actual": 0.76,
-"surprise_pct": -53.4,
-"error": ""
-},
-"AVGO|2026-10-21": {
-"symbol": "AVGO",
-"as_of": "2026-10-21",
-"next_date": "2026-12-09",
-"last_date": "2026-09-02",
-"eps_estimate": 3.24,
-"eps_actual": NaN,
-"surprise_pct": NaN,
-"error": ""
-},
-"MRVL|2026-10-21": {
-"symbol": "MRVL",
-"as_of": "2026-10-21",
-"next_date": "2026-12-01",
-"last_date": "2026-08-27",
-"eps_estimate": 0.93,
-"eps_actual": 0.94,
-"surprise_pct": 0.99,
-"error": ""
-},
-"TXN|2026-10-21": {
-"symbol": "TXN",
-"as_of": "2026-10-21",
-"next_date": "",
-"last_date": "2026-10-21",
-"eps_estimate": 2.43,
-"eps_actual": NaN,
-"surprise_pct": NaN,
-"error": ""
-},
-"QQQM|2026-10-21": {
-"symbol": "QQQM",
-"as_of": "2026-10-21",
-"next_date": "",
-"last_date": "",
-"eps_estimate": NaN,
-"eps_actual": NaN,
-"surprise_pct": NaN,
-"error": "no earnings calendar"
-},
-"GLDM|2026-10-21": {
-"symbol": "GLDM",
-"as_of": "2026-10-21",
-"next_date": "",
-"last_date": "",
-"eps_estimate": NaN,
-"eps_actual": NaN,
-"surprise_pct": NaN,
-"error": "no earnings calendar"
-},
-"ABBV|2026-10-21": {
-"symbol": "ABBV",
-"as_of": "2026-10-21",
-"next_date": "2026-10-30",
-"last_date": "2026-07-31",
-"eps_estimate": 3.61,
-"eps_actual": 3.65,
-"surprise_pct": 1.15,
-"error": ""
-},
-"TSM|2026-10-21": {
-"symbol": "TSM",
-"as_of": "2026-10-21",
-"next_date": "2027-01-14",
-"last_date": "2026-10-15",
-"eps_estimate": 4.52,
-"eps_actual": 4.6,
-"surprise_pct": 1.67,
-"error": ""
-},
-"XOM|2026-10-21": {
-"symbol": "XOM",
-"as_of": "2026-10-21",
-"next_date": "2026-10-30",
-"last_date": "2026-07-31",
-"eps_estimate": 3.63,
-"eps_actual": 3.52,
-"surprise_pct": -3.0,
-"error": ""
-},
 "VST|2026-10-22": {
 "symbol": "VST",
 "as_of": "2026-10-22",
@@ -178,6 +88,146 @@
 "eps_estimate": 3.63,
 "eps_actual": 3.52,
 "surprise_pct": -3.0,
+"error": ""
+},
+"VST|2026-10-23": {
+"symbol": "VST",
+"as_of": "2026-10-23",
+"next_date": "2026-11-06",
+"last_date": "2026-08-10",
+"eps_estimate": 1.63,
+"eps_actual": 0.76,
+"surprise_pct": -53.4,
+"error": ""
+},
+"AVGO|2026-10-23": {
+"symbol": "AVGO",
+"as_of": "2026-10-23",
+"next_date": "2026-12-09",
+"last_date": "2026-09-02",
+"eps_estimate": 3.24,
+"eps_actual": NaN,
+"surprise_pct": NaN,
+"error": ""
+},
+"MRVL|2026-10-23": {
+"symbol": "MRVL",
+"as_of": "2026-10-23",
+"next_date": "2026-12-01",
+"last_date": "2026-08-27",
+"eps_estimate": 0.93,
+"eps_actual": 0.94,
+"surprise_pct": 0.99,
+"error": ""
+},
+"TXN|2026-10-23": {
+"symbol": "TXN",
+"as_of": "2026-10-23",
+"next_date": "2027-01-26",
+"last_date": "2026-10-21",
+"eps_estimate": 2.43,
+"eps_actual": 2.62,
+"surprise_pct": 7.94,
+"error": ""
+},
+"QQQM|2026-10-23": {
+"symbol": "QQQM",
+"as_of": "2026-10-23",
+"next_date": "",
+"last_date": "",
+"eps_estimate": NaN,
+"eps_actual": NaN,
+"surprise_pct": NaN,
+"error": "no earnings calendar"
+},
+"GLDM|2026-10-23": {
+"symbol": "GLDM",
+"as_of": "2026-10-23",
+"next_date": "",
+"last_date": "",
+"eps_estimate": NaN,
+"eps_actual": NaN,
+"surprise_pct": NaN,
+"error": "no earnings calendar"
+},
+"ABBV|2026-10-23": {
+"symbol": "ABBV",
+"as_of": "2026-10-23",
+"next_date": "2026-10-30",
+"last_date": "2026-07-31",
+"eps_estimate": 3.61,
+"eps_actual": 3.65,
+"surprise_pct": 1.15,
+"error": ""
+},
+"TSM|2026-10-23": {
+"symbol": "TSM",
+"as_of": "2026-10-23",
+"next_date": "2027-01-14",
+"last_date": "2026-10-15",
+"eps_estimate": 4.52,
+"eps_actual": 4.6,
+"surprise_pct": 1.67,
+"error": ""
+},
+"XOM|2026-10-23": {
+"symbol": "XOM",
+"as_of": "2026-10-23",
+"next_date": "2026-10-30",
+"last_date": "2026-07-31",
+"eps_estimate": 3.63,
+"eps_actual": 3.52,
+"surprise_pct": -3.0,
+"error": ""
+},
+"V|2026-10-23": {
+"symbol": "V",
+"as_of": "2026-10-23",
+"next_date": "2026-10-27",
+"last_date": "2026-07-28",
+"eps_estimate": 3.23,
+"eps_actual": 3.32,
+"surprise_pct": 2.76,
+"error": ""
+},
+"PG|2026-10-23": {
+"symbol": "PG",
+"as_of": "2026-10-23",
+"next_date": "2027-01-21",
+"last_date": "2026-10-22",
+"eps_estimate": 1.89,
+"eps_actual": 2.0,
+"surprise_pct": 5.66,
+"error": ""
+},
+"COP|2026-10-23": {
+"symbol": "COP",
+"as_of": "2026-10-23",
+"next_date": "2026-11-05",
+"last_date": "2026-08-06",
+"eps_estimate": 2.93,
+"eps_actual": 3.24,
+"surprise_pct": 10.58,
+"error": ""
+},
+"PFE|2026-10-23": {
+"symbol": "PFE",
+"as_of": "2026-10-23",
+"next_date": "2026-11-03",
+"last_date": "2026-08-04",
+"eps_estimate": 0.68,
+"eps_actual": 0.77,
+"surprise_pct": 12.87,
+"error": ""
+},
+"UNH|2026-10-23": {
+"symbol": "UNH",
+"as_of": "2026-10-23",
+"next_date": "2027-01-12",
+"last_date": "2026-10-13",
+"eps_estimate": 4.14,
+"eps_actual": 4.69,
+"surprise_pct": 13.26,
 "error": ""
 }
 }

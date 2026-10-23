@@ -1,0 +1,142 @@
+# QQQM · 纳指100ETF(迷你)
+
+_未分类 · 数据截至 2026-10-23 收盘 → 面向 2026-10-23 开盘_
+
+[← 回到 2026-10-23 当日报告](../2026-10-23.md)
+
+> 均线与结构互相矛盾，属于震荡；这种形态里止损容易被扫，仓位应比顺势时更小。
+
+## 一、价格与图形
+
+```text
+       QQQM · 近 126 个交易日（日线收盘）
+312.4 ┤                                                                   ╭─╮
+307.3 ┤               ╭─╮                                           ╭──╮ ╭╯ ╰─╮
+302.3 ┤             ╭─╯ │   ╭──╮  ╭╮                 ╭╮             │  ╰─╯    ╰╮
+297.2 ┤        ╭╮  ╭╯   │  ╭╯  │ ╭╯╰╮╭──╮····     ╭──╯╰╮   ╭╮ ╭─╮  ╭╯     ·····╰──╮
+292.2 ┤      ╭─╯╰──╯    ╰──╯   ╰─╯··╰╯· ╰╮╭╮ ···╭─╯····╰───╯╰─╯·╰──╯······        ╰
+287.1 ┤     ╭╯                ····       ╰╯╰╮   │
+282.1 ┤    ╭╯              ···              ╰╮ ╭╯
+277.0 ┤   ╭╯             ··                  ╰─╯                         ::::::::::
+272.0 ┤───╯           ···                                    ::::::::::::
+266.9 ┤             ··                        :::::::::::::::
+261.9 ┤         ····             :::::::::::::
+256.8 ┤      ···       ::::::::::
+251.8 ┤······ :::::::::
+246.7 ┤:::::::
+      └────────────────────────────────────────────────────────────────────────────
+       2026-04-27                       2026-07-28                       2026-10-23
+       · SMA50   : SMA200   ─ close
+```
+
+```text
+       QQQM · 近 21 个交易日（放大看最近节奏）
+312.8 ┤      ╭──╮
+309.9 ┤     ╭╯  │╭╮
+307.1 ┤─╮   │   ╰╯╰─╮
+304.2 ┤ ╰───╯       │
+301.4 ┤             ╰╮
+298.6 ┤              ╰╮  ╭╮
+295.7 ┤               │╭─╯│
+292.9 ┤               ╰╯  │
+290.1 ┤                   ╰─
+      └─────────────────────
+       2026-09-25 2026-10-23
+```
+
+成交量近 63 日： `▅▆▅█▇▄▆▂▂▂▆▃▁▄▂▄▂▂▂▂▁▃▅▄▂▃▆▂▃▂▄▄▂▄▄▂▂▅▆▄▃▅`
+
+### 图形读数
+
+- **均线排列**：均线偏多 — 现价距 20 日 302.75（-4.2%）、50 日 298.71（-2.9%）、200 日 278.36（+4.2%）
+- **形态结构**：扩张震荡 — 高点抬高但低点下移，波动在放大；前高 308.13 → 314.11（+1.9%）、前低 301.25 → 291.21（-3.3%）
+- **动能**：RSI(14) 37，偏弱；近一月的斜率慢于近三月（月 -4.9% vs 季 +3.4%），涨势在放缓
+- **波动**：日均真实波幅约为价格的 1.7%；按本报告 2 ATR 的止损惯例，一个 R 相当于 3.4% 的价格距离
+- **位置**：距 52 周高点 -7.3%，距 52 周低点 +26.5%
+- **量能**：最新一日成交量为 20 日均量的 0.9 倍，量能正常
+- **相对强度**：近一月跑输 标普500 4.0 个百分点
+- **支撑 / 阻力**：最近的摆动低点 289.84，摆动高点 296.63（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
+
+**我的读图结论**：均线与结构互相矛盾，属于震荡；这种形态里止损容易被扫，仓位应比顺势时更小
+
+_以上每一条都是对已经发生的价格的描述。均线、RSI、摆动结构全部是滞后指标，它们能说明现在处于什么状态，不能说明下一步。你自己在图上看到的东西，和这里写的不一致时，以你看到的为准——然后去查是哪个数字有问题。_
+
+## 三、财报与基本面
+
+_读不到财务数据：该代码没有可用的财务数据（可能是 ETF、ADR 或新上市）_
+
+## 四、消息面（过去 24 小时）
+
+| 时间 | 材料度 | 倾向 | 标题 | 来源 |
+|---|---:|---|---|---|
+| 9h 前 | 0 | 中性 | [Invesco NASDAQ 100 ETF (QQQM) Adds NVIDIA and Apple on Wednesday - Yahoo Finance](https://news.google.com/rss/articles/CBMilwFBVV95cUxQZWtwbXRjTXdkU0ZIcXJ5WnVscUNaaXJPZ3Zlb3c3OWdtWHBhVEg2aDhiVDJCOUpuNkFrSGdtQnd0ckJ2V2o5UTZuQkFCSVlXWS1CTmZrRVZ2WXlxS1JNbkgtMmYyeDlQS19NYWRtclc5RXY0RUQzWU9tOHc5YjJHdzZjVzRjUU50Wi1lUEgzSC0tRlM4T09V?oc=5) | Yahoo Finance |
+| 31h 前 | 0 | 中性 | [There's a New Q in Town: Invesco's ETF Targets International Innovators - The Globe and Mail](https://news.google.com/rss/articles/CBMi7gFBVV95cUxOaVRDSlhmd2F6MlljRk0xQ0llTHFQMm40aS0xVl91MzBwUEJNN0pXNWpLMGg4YktOVU9wSmtaLVd0NU9salI2dWUwakpDd1BpZzd5V1Z6TU5OdmZRSFpkblpnWU44U1hzM0lzZ1Z0cC1pQ2JqQkJDM3ZrSzNqWVFoZUd0MzNWRURNMGRHem45RUhjeEhhMWlyMS1zb0ZPaHJaNGU1STJCcXhqbmVocWZGd0h1SjR1U3dVSUh5aWp5LTBBZmxIclpyd2lwUk05UDZwaVNfQVdGNWpzUzhyQ2dfYTZrcTFGVEZxM1RkTUxn?oc=5) | The Globe and Mail |
+
+_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+
+## 五、反方观点与风险
+
+_以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
+
+- 按本报告掌握的数据，没有触发任何一条成文的风险规则。这不等于没有风险——它只等于「这台机器读到的东西里没有」。
+
+## 六、原始数据（本页所有计算的来源）
+
+最近 15 个交易日的 OHLCV：
+
+| 日期 | 开 | 高 | 低 | 收 | 涨跌 | 成交量 |
+|---|---:|---:|---:|---:|---:|---:|
+| 2026-10-05 | 308.58 | 311.66 | 308.45 | **311.40** | +0.9% | 2,310,600 |
+| 2026-10-06 | 313.15 | 314.11 | 312.60 | **312.76** | +0.4% | 3,253,500 |
+| 2026-10-07 | 310.37 | 312.17 | 309.54 | **311.94** | -0.3% | 2,913,800 |
+| 2026-10-08 | 310.45 | 311.77 | 306.05 | **307.85** | -1.3% | 2,884,200 |
+| 2026-10-09 | 309.85 | 309.95 | 308.17 | **309.39** | +0.5% | 1,619,500 |
+| 2026-10-12 | 308.68 | 308.77 | 306.68 | **307.19** | -0.7% | 2,280,800 |
+| 2026-10-13 | 304.48 | 306.40 | 304.27 | **306.16** | -0.3% | 2,350,000 |
+| 2026-10-14 | 303.89 | 304.90 | 299.14 | **300.13** | -2.0% | 3,763,100 |
+| 2026-10-15 | 295.86 | 300.34 | 294.59 | **299.79** | -0.1% | 3,564,400 |
+| 2026-10-16 | 298.70 | 298.90 | 291.21 | **292.26** | -2.5% | 3,886,200 |
+| 2026-10-19 | 296.30 | 298.33 | 295.09 | **295.78** | +1.2% | 2,666,500 |
+| 2026-10-20 | 294.54 | 297.57 | 292.52 | **295.59** | -0.1% | 3,656,700 |
+| 2026-10-21 | 297.45 | 299.74 | 296.50 | **298.64** | +1.0% | 2,485,000 |
+| 2026-10-22 | 293.86 | 294.56 | 289.01 | **290.13** | -2.8% | 4,348,100 |
+| 2026-10-23 | 289.08 | 292.02 | 288.74 | **290.06** | -0.0% | 2,499,266 |
+
+## 七、自己去查（本页不做独立验证）
+
+**行情与图形**
+- [Yahoo Finance 行情](https://finance.yahoo.com/quote/QQQM) — 本报告所有价格与均线的来源，先对这里
+- [TradingView 图表](https://www.tradingview.com/chart/?symbol=QQQM) — 可画线、可换周期，用来复核本页的 ASCII 图
+- [Finviz 快照](https://finviz.com/quote.ashx?t=QQQM) — 一屏看完估值、技术与同业对比
+- [StockCharts 技术面](https://stockcharts.com/h-sc/ui?s=QQQM)
+- [Barchart 观点](https://www.barchart.com/stocks/quotes/QQQM/opinion) — 把十几个技术指标折算成一个多空票数
+
+**财务与估值**
+- [StockAnalysis 财务报表](https://stockanalysis.com/stocks/QQQM/financials/) — 十年利润表/资产负债表/现金流，免费且不用登录
+- [Yahoo 财务](https://finance.yahoo.com/quote/QQQM/financials) — 本页财报数字的来源
+- [Yahoo 关键统计](https://finance.yahoo.com/quote/QQQM/key-statistics) — 估值倍数、利润率、资产负债的完整版
+- [Macrotrends 长期趋势](https://www.macrotrends.net/stocks/charts/QQQM/x/revenue) — 营收与利润的十年折线，看结构性变化
+- [Wisesheets/Koyfin 替代：GuruFocus](https://www.gurufocus.com/stock/QQQM/summary)
+
+**原始文件（无中介）**
+- [SEC EDGAR 全部文件](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&ticker=QQQM&type=&dateb=&owner=include&count=40) — 10-K/10-Q/8-K 原文；财报电话会与风险因素只在这里
+- [SEC 全文检索](https://efts.sec.gov/LATEST/search-index?q=%22QQQM%22&forms=8-K) — 按关键词搜文件正文
+- [OpenInsider 内部人交易](http://openinsider.com/search?q=QQQM) — 高管自己在买还是在卖，是少数不靠解读的信号
+- [13F 机构持仓](https://whalewisdom.com/stock/QQQM) — 注意：13F 滞后 45 天，不能当作买入理由
+
+**消息与预期**
+- [Yahoo 新闻](https://finance.yahoo.com/quote/QQQM/news)
+- [Google News 搜索](https://news.google.com/search?q=QQQM+stock&hl=en-US)
+- [财报日历与预期](https://stockanalysis.com/stocks/QQQM/forecast/) — 下次财报日、市场一致预期、历史超预期记录
+- [Seeking Alpha 讨论](https://seekingalpha.com/symbol/QQQM) — 观点密度高，但是买方与卖方混杂，当作反方意见读
+- [公司投资者关系](https://www.google.com/search?q=QQQM+investor+relations) — 财报原始 PPT 与电话会记录
+
+**中文渠道（转载源，不作独立验证）**
+- [雪球](https://xueqiu.com/S/QQQM) — 中文讨论与财报摘要
+- [富途牛牛](https://www.futunn.com/stock/QQQM-US) — 中文行情与公告翻译
+- [东方财富](https://quote.eastmoney.com/us/QQQM.html) — 中文财务报表
+- [同花顺](http://stock.10jqka.com.cn/usstock/QQQM/) — 中文资讯
+
+---
+
+_这一页是一台程序按成文规则读公开数据的结果，不是投资建议。它不知道你的资金、税务和其它持仓。图形结论来自滞后指标，财报数字来自厂商转录，新闻材料度来自关键词打分——三者都会错。把它当作一份整理好的证据，而不是一个答案。_
