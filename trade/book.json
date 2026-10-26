@@ -1,5 +1,5 @@
 {
- "saved_at": "2026-10-26T19:29:46",
+ "saved_at": "2026-10-26T19:30:33",
  "positions": {
   "TBBB": {
    "symbol": "TBBB",
@@ -246,6 +246,69 @@
    "triggers": [],
    "stop0": 33.6,
    "pending": false,
+   "trimmed": false
+  },
+  "HAS": {
+   "symbol": "HAS",
+   "shares": 69,
+   "entry": 117.7,
+   "stop": 115.22,
+   "target": 128.0,
+   "opened": "2026-10-26",
+   "horizon_days": 20,
+   "sector": "",
+   "thesis": "动量账：Hasbro 10/20 财报超预期并上调指引后一路走高，今天 117.66 收在 20 日新高 117.74 附近，三条均线上（20 日 98.6 / 50 日 94.4），21 日相对标普 +34.3，周五量比 1.35。止损在周五低点 115.22（2.1%、0.75 ATR，高于 20 日线），目标 128（简报），R 4.2。下次财报 2 月，持有期内无财报。",
+   "invalidation": "收盘跌回 115.22；21 日相对标普回到 +10 以下；到 1R（120.2）先减半",
+   "principles": [
+    "十·强势买强势：pattern+rs",
+    "十·止损在突破日低点或 20 日线取高",
+    "十·只在收盘前最后半小时下单且收盘仍在突破位之上",
+    "十·到 1R 先减半"
+   ],
+   "regime": "标普 765 在 20 日线下、200 日线上；芯片领涨，能源回落（伊朗外交），巴西崩盘；本周 FOMC 与大型科技财报；不是防御日",
+   "parent_id": "40251f26-1fd0-4eb8-b1bb-8a2d407dbd44",
+   "legs": {
+    "limit": "945f7391-210f-4090-a973-1766508c9842",
+    "stop": "336f4cd6-d38a-4b38-9fa0-14ded7297f93"
+   },
+   "adopted": false,
+   "stop_raised": false,
+   "sleeve": "aggressive",
+   "triggers": [
+    "pattern",
+    "rs"
+   ],
+   "stop0": 115.22,
+   "pending": true,
+   "trimmed": false
+  },
+  "CRM": {
+   "symbol": "CRM",
+   "shares": 41,
+   "entry": 244.0,
+   "stop": 234.0,
+   "target": 268.0,
+   "opened": "2026-10-26",
+   "horizon_days": 30,
+   "sector": "",
+   "thesis": "主仓回踩：Salesforce 软件板块在承接资金，周五低点 242.3 有人接，今天 245.4 在 20/50 日线（236.4 / 236.0）之上；入场 244 是周五低点上方的回踩位，止损 234 在 20/50 日线之下（4.1%、1.2 ATR），目标 268（简报），R 2.4。下次财报 12 月初，持有期外。",
+   "invalidation": "收盘跌回 234（跌破 20/50 日线）；IGV 软件 ETF 收盘跌破 50 日线",
+   "principles": [
+    "一·趋势向上且结构完整",
+    "二·回踩入场、止损在结构位之下 ≥1 ATR、R ≥ 2"
+   ],
+   "regime": "同上",
+   "parent_id": "4d6bbce8-4206-4173-b825-27299d5a9bad",
+   "legs": {
+    "limit": "ccb3978a-cb18-4273-a3ca-9124e140d242",
+    "stop": "8ecea60e-3e65-4b22-8823-88bd068fc2dc"
+   },
+   "adopted": false,
+   "stop_raised": false,
+   "sleeve": "core",
+   "triggers": [],
+   "stop0": 234.0,
+   "pending": true,
    "trimmed": false
   }
  },
