@@ -110,13 +110,20 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
+| 时间 | 材料度 | 倾向 | 标题 | 来源 |
+|---|---:|---|---|---|
+| 8h 前 | 8 | 偏多 | [The Procter & Gamble Company Just Beat EPS By 6.0%: Here's What Analysts Think Will Happen Next - Simply Wall Street](https://news.google.com/rss/articles/CBMiygFBVV95cUxNZVp4by11OHlwbHdJeFM0eFI1OUZ4c3RrMFcxRU1rSW05dG1lcDVFSC1hWS1qRGdRRVRfaHZNcGFKbWFqcENaVjhCM2JWSmdaQ0ZNZlM4czFwekJCNmZRQ1doUjBpWU9oUTFORTJfZk5RYVRQRS1PSlZtWkI0dnlDVGNUZXFJSmFWN3lKbGhVTFhKMjFRdlRPcFVqZUxNSGN4azRaOU1QalZfTU9PeWpUWmNndUk1RWNkQjFDUG5rbjhMeXdVdlpWZ3RB0gHPAUFVX3lxTE1ablZPNFE5UU5oQ3lSZWVtMWRfejh5UWFzV3FPcHVsY3ljeG5FSDF1Z1ZTNEV0X3VyZWF0cVN6Qm5OQTFBc2VONVczUmQ2UkpYaXJzN2ZjX3pGQVZWSE5yc2k4M2dhTk1aZm1pTFlxa21paEt3em00LUJuSlJDYmpMWVFGNFFZMWRiRFN2SHdkX0pDTi1fYmVVd2R1V0ZtbloybHhMbkEydkZYWW1kRjdjeTFlVGJ5NGFnam93dEo3cUNNTmwwZEx6V1hndjVsVQ?oc=5) | Simply Wall Street |
+| 10h 前 | 8 | 偏多 | [Take the Zacks Approach to Beat the Markets: Honda Motor, Accenture, CACI in Focus - TradingView](https://news.google.com/rss/articles/CBMi0AFBVV95cUxQcEpTcDdQM1dORDdZT2JMaC1ZYVc3WmpsTWxERVVzdVF2cUtxMXR6RG9ma0pQRm5kblMyS0x1WGVJUlFQRkdISFozYzgyZlBYb1NqdWJyLUlTVGhEaXZzLTdPYUFBMjhJazVhTHdvTGdKeUxmTllmMzB0cmMwQklWZ3k3Q1YtWGFOaVdTUHlHTk5ndXEtc0ZSY1lYSUJZRGdEMzhGRDJmTGNsVUZtR1JqVWtQQ3E5YWFFeGVCeXBFN0NEdzVjMlZFSjdla2JVSGRO?oc=5) | TradingView |
+| 5h 前 | 5 | 偏多 | [Piper Sandler raises Procter & Gamble stock price target on costs - Investing.com](https://news.google.com/rss/articles/CBMiwgFBVV95cUxPZC1HQVZnb2d4WW5WRmt0WVR3d0hYYjIzSWJHSnpOcG9zN01za2tiRURJSFh6U1ppSk1OcUllSHNHWmhVbFd1ckpXT2gwQmNadGNJYWpxVzBqNTRNUkg5cnJHVmFiX3MySnVRS25BaWtVaUJLWXY0OXRrbW44RzhQWGQwMENFVVB0a1oxMDB6Rk9HZXR5TWphRHJIRGhLaFRsb2hpbHpzbzRhUEwyc25CVzM5SGJFcWJhVXh1eEpWV0RVQQ?oc=5) | Investing.com |
+| 5h 前 | 0 | 中性 | [Procter & Gamble CHRO Balaji Purushothaman sells $671,928 in shares - Investing.com](https://news.google.com/rss/articles/CBMiyAFBVV95cUxQdkU0OEI5ZWtaRzVmRVN4NUNqWVpsNThDdHljTURDQmtxZ0paUTRwWTBfOHdNUVZKWHZGRUk3WUJqNW5OeG44M1I0YWVWRnI5NGNXc2VmaDFkOWplYUMxLS05b19iVURQOVNOeDV6M2Zsd1BHeGpPZmVMZWJSc2JjRjMwZUJWN2ktdnc0OEktLWlVNVh1eVZpSFh1RGtLV2t2LTJuS2lRNlNPcngwcXdUZ3UzekU3S2JzaEl0RXBVSF8zaVRyUGhpMQ?oc=5) | Investing.com |
+
+_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
 ## 五、反方观点与风险
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
-- 政策面对该板块的倾向为 -0.95（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 按本报告掌握的数据，没有触发任何一条成文的风险规则。这不等于没有风险——它只等于「这台机器读到的东西里没有」。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -138,7 +145,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-21 | 157.13 | 157.63 | 155.77 | **155.81** | -1.6% | 9,974,900 |
 | 2026-10-22 | 161.07 | 165.75 | 160.30 | **164.50** | +5.6% | 22,037,200 |
 | 2026-10-23 | 164.00 | 164.50 | 160.64 | **161.02** | -2.1% | 10,330,100 |
-| 2026-10-26 | 160.76 | 161.60 | 158.85 | **159.92** | -0.7% | 8,877,995 |
+| 2026-10-26 | 160.76 | 161.60 | 158.85 | **159.92** | -0.7% | 8,879,291 |
 
 ## 七、自己去查（本页不做独立验证）
 

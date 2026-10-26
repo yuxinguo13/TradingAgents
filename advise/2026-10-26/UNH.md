@@ -110,14 +110,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 20h 前 | 9 | 偏多 | [Raised Guidance Just Shift UnitedHealth Group Stock Narrative? - Simply Wall Street](https://news.google.com/rss/articles/CBMi0gFBVV95cUxObnJqc2FwSDhsZGdYNk9XQVBZcV9LR0lIdDJrLWR1WjNPMkNOeGFOdERXZll5MFViSTgtX0NkNGR5MFBmdmtKMmtlZXh6Q1llRE9Ucm5ZMkU0X1JCSHphbFZGcTdzSW1CbUo5Nlo2LWZwN0wxR1dKYmR2aWFRTXR1cFdEdHlZY0JoakJMd3p2MldaQWo0c1VoVE9XYUlnY0tLeS0tRVBwcFdPNGgzMnJROXpaakxBOGh6eEJ5Ui13eno5RnZNSlY2R1hEUnEyUnBsd2fSAdcBQVVfeXFMUFFKQ0VLTGxDd2VjMEJhaFRmTVkxV1JILUJfVUwtVW16dDhuSW1nNTdQLVljNXF2WE92YmZianBfSmJ0Snpzc2VxVExSZFFfMGRPRGo4X3FDSTd0NktjN281ai0xakx4eWhyLWpSeU5vMGp4dzg4dlh6UDJFaWg5YTdEdTFuR3BvcVBKb2RDUnBKWGt2bGpLWlZTTzNSek5obDFaT0ducU9fdFJjdzdWU0tYYVpQS1V0WHFfLS1JQnR3QlltM3k5UF9kZWpIbU4tQ2lYQkg1RUU?oc=5) | Simply Wall Street |
-| 47h 前 | 9 | 偏多 | [Is UnitedHealth Group (UNH) Still A Bargain After Raised Guidance? - Yahoo Finance](https://news.google.com/rss/articles/CBMiowFBVV95cUxNYkVfZjNXSnBwRFVBb0RQV0RhVjZtZm9GVzh0cEF6czZ2WVJUUHRQMzN4THZHalZ6b2lZRzNBTzMxZXloX2h0QWxRY25ZQmlYbmVCT2lZbi1YZnBjb3lTSUxZVlhJaUo0cEpWcDdfZkRQb1Y1eTRMTi1UZmJ1bTRlT2FpbkZua1pRdlRmVW1TMHB1SzNGWjBrUWlYUElGLU10TDhz?oc=5) | Yahoo Finance |
-| 28h 前 | 0 | 中性 | [Form 4 Unitedhealth Group For: 25 October By Investing.com - Investing.com Nigeria](https://news.google.com/rss/articles/CBMiowFBVV95cUxOTndpLW1hN0FhVmotbVBaX1ZTRF80QkZiNjQwdHNnQlNQaEVGbGdTaHVCU0RXVWowT0lBbUxSUExMSEZJYVhIVzVyajRtdXFHdXB0WTVUUkNaVmYwM0hCS05XYjFJcXU2RWVucEFaM3p1ZldPa0E0Mnh4d0VzdG5oYWpHeWlFZ0Zuel9vX1p3VDVUeDJxM1ZLM1lwNE5iX2tneXpz?oc=5) | Investing.com Nigeria |
-| 42h 前 | 0 | 中性 | [UnitedHealth Group Incorporated (UNH) Stock Price, News, Quote & History - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMiUEFVX3lxTE11ZHlNYW1YV3YxeUZzYnJfckVrUzBUdVdSR0pkWkNUbGdneVVTaEkzSlNlYzVPbVpWdzZKdkcwR0N3Mi14VUdYNkFHanU5N25W?oc=5) | Yahoo! Finance Canada |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 

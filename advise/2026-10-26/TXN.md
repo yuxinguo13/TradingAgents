@@ -112,10 +112,8 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 8h 前 | 6 | 偏多 | [Texas Instruments Raised Its Dividend Again. Can Analog Chips Keep Funding It? - 24/7 Wall St.](https://news.google.com/rss/articles/CBMivAFBVV95cUxNVlFnYmlQSjRxeWVBeE54RHpmc1FVVndfaDlUVUpzWFRmc0E0T0tiSlF3V25WM2NkN0JyS3NCV2F0b21HVkZZaHowSS1oRDgxamxTZFVxWGlEWHA3bnBncXVIcUhWakpNTXRQT1J4eElteGw0dGgyVlU5NVREY0ctVFM3VWdiT1dUeXdGTExLTUJFTnJ5Wm1CdkNJSHp1Mm5kZXpZamI2MTZlbjhMdUJVTGZWVC01el92dHlfcw?oc=5) | 24/7 Wall St. |
-| 3h 前 | 0 | 中性 | [Texas Instruments Inc Stock (TXN) Moved Up by 3.48% on Oct 26: A Full Analysis - TradingKey](https://news.google.com/rss/articles/CBMiigFBVV95cUxPYlpOSFZXNkhtaWIyaEJGaE9NMERnQ3ZSMzhWei1XUDlRYmpWY1BNUTNmbWlnaWRnNS15LW8wWThfOU9xQlB6U3FhZkdlbGt4WEJLUVpXdVNVdGhEMzdwc0FuR0R0bDctMFN5dkN6OVl2cTF4bFJ6QnNheWZ2OWs4WHFWN2cwb0d0Ync?oc=5) | TradingKey |
-| 8h 前 | 0 | 中性 | [Don't Overlook Texas Instruments (TXN) International Revenue Trends While Assessing the Stock - Yahoo Finance](https://news.google.com/rss/articles/CBMiogFBVV95cUxOZ2lfZmZFRG5KMC1US3RFXzgzOXJRQ1pOUE4xREY5d1dJN1hBZDZrQndjY3dPSWlieEhlbXpEZDNpdlBXeVowNkZyTy14Y2c2TlJfUkIxbWlVUkhYRWk5YWtHMXVMT0JmMDk1T3JrM3NSV21aX29ZazVKOGYwMEsxaDltMTd6UmluTGF1dUphZUlsOFZKUXlpM2k1UF9lT09Ebnc?oc=5) | Yahoo Finance |
-| 11h 前 | 0 | 中性 | [Texas Instruments (NASDAQ:TXN): High Growth Momentum Meets Breakout Setup - ChartMill](https://news.google.com/rss/articles/CBMivAFBVV95cUxNRXBLYndwLUt5d2o0VzNLNVFDSE1abDV5MDhXUFFibnhYRHdHV2pubjIzcWppLXFhN3BHOHp5NF9Gd01ySG9zemlyMjJpbWJsbkgyM2hxcHZUME5USzZwLS1FdnJkd3FmaFEwRzB2T1V6WlU3VGVOSlpRMnBZSTIyOU1Cb0RXM041eTExNjNuRk0wa2VxUkFFaW01MnliR190SFJ6ZHhqTGpiOVNJeEo2SFVaaGhtM3laM2FFcg?oc=5) | ChartMill |
+| 47h 前 | 7 | 中性 | [Texas Instruments CEO Sees No Slowdown in Data Center Demand: 'Actually Growing Demand' - Yahoo Finance](https://news.google.com/rss/articles/CBMilAFBVV95cUxPSFdwdGhoYnFadUxDeUJBZEZVY2F5c3pxOTNOMVd3Z3VyVzFTMmY5aEVMQ0JDWS1mVlhyMVdSV002NC1ISk03SlFuTnMwQWtXcE9VbjNpanhDWlN3b2hjb3EwVmZJOFNXS25KdVpGUDBWTHFpeXNkSXA1X2RmdFVTbWE0T3RlN0EtUkZhblMwNDhMZll2?oc=5) | Yahoo Finance |
+| 0h 前 | 0 | 偏多 | [Texas Instruments Inc. stock outperforms competitors on strong trading day - MarketWatch](https://news.google.com/rss/articles/CBMizgFBVV95cUxPblVoZk01Rk81dG5ZRlFRT3ppblA0cG1XaTJhZ2lSQVZxd0dyNlozN25IWFpIaG5xb0xZQXMzV0lHMmRzQ0VHbDNxUTY5ajBvQ0c5Xy1oTHFnMk1Ca0kyTkRSeFRLd0U4bFFRU0xqV2MtQVIzNGlvdEwzTFV4LTB4R19RRlctaUVqTlJBc2NhTVZURk1jQjluMm1KM29yT3dqb2tVQ3oxbHp5ZkZhcTM3QmVraWtMOGtIcmtBQzluUUFnVWROMHFKc1hJVnlPUQ?oc=5) | MarketWatch |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -123,7 +121,7 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
-- 政策面对该板块的倾向为 -0.95（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 按本报告掌握的数据，没有触发任何一条成文的风险规则。这不等于没有风险——它只等于「这台机器读到的东西里没有」。
 
 ## 六、原始数据（本页所有计算的来源）
 

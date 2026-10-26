@@ -110,18 +110,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 5h 前 | 0 | 偏多 | [Goldman Sachs raises target for ConocoPhillips stock to USD 157.00 - ad-hoc-news.de](https://news.google.com/rss/articles/CBMiyAFBVV95cUxQSjNuekJTbzdPdkp5QkVEYk1nZFZnMFRkYVdtN0tFN0NUVERBT0RDRUxlbVpwTDJHRFQxNjVVVFVlWDRSRnBzaXUtQnFPd19xaFVKcXlZa3hzd1RvWGV1TThWQVhQaU5DdlBpNkhEWk5ILTlRYlVPNkpMczFGbEo5dDRVY3VJazZoNzNxRkROa1pHdzBPekVFblh1S051NUw0WHBSS0VSVDFVVTM2bUsxN05teHA1MFBER0U1WGdMRDdrMXVXYmtTSA?oc=5) | ad-hoc-news.de |
-| 5h 前 | 0 | 中性 | [ConocoPhillips Vs EOG Resources: Which Stock Is The Better Buy? - Trefis](https://news.google.com/rss/articles/CBMivgFBVV95cUxOSlZVRVl1UjlDc0xnU3c3eUt2ZF9iOWVmVk56bkdJekJhMExaRzBLS2J5Q0RyN1BRU2pQdWp4eGU3dVV1YUNFdGtZUkp1T3J2elZGRnpFNXc2enZLYmU2eXhBdUVBLUg0V0YtaUxLM2FxaWRGTHFyaXJZUlBXNE1OX240RlR6eWZjR2dBX19BaDhKMnp6dlpCemVqa0tIamptSDlxUU9QckcteEJha0lsUTFYazNqRXI0OTV5WHp3?oc=5) | Trefis |
-| 9h 前 | 0 | 中性 | [Here's How Much a $1000 Investment in ConocoPhillips Made 10 Years Ago Would Be Worth Today - Yahoo Finance](https://news.google.com/rss/articles/CBMiqgFBVV95cUxNbzdZcU9hQ285dzdLS3I2TVF6YjhTRlpCdnlQS2lVX29hM3pCS3E1LXBxYnVZYnFiUzJHMGw1TzRORUd1SVVjT1RzajJqcHJwamZjNWczLTVRYjZvVUZKOHNUOUJKT3ZiV2NRQ2FlWTlGekg5QmxzQjdVTElRdVpLTVEzczV5bjcxaHY4eXI3SmxkRzNuNktwd0tZNV9tekgwZlZPS1RyY3B0QQ?oc=5) | Yahoo Finance |
-| 11h 前 | 0 | 偏多 | [Jefferies raises target to USD 174 for ConocoPhillips stock - ad-hoc-news.de](https://news.google.com/rss/articles/CBMivwFBVV95cUxNYlZPTjU4ak52amlDMGt2UWFCbWhSUlh6anJHZVh2Qk5NYWVnUTVuYXRYMjg1LWZGbUZlX2o5Qkt5TEpKelZyaEU4TS1wUFZscF9sRlIxZExZRXVZOU0yTHhfUVFYdC1CeDktU3pzS3Z4NjA0bkhUY1FGS1E0TldlVC1tUDdBOVBvQkVEWlVoX05fMDNrdFp4eFJqZkRfRUlnMnpCQ2FUZXJadGotZ2prbW9QNGczMjlmRnJCeFpPSQ?oc=5) | ad-hoc-news.de |
-| 13h 前 | 0 | 中性 | [ConocoPhillips stock at EUR 134.07 ahead of the Xetra open: E&P group - ad-hoc-news.de](https://news.google.com/rss/articles/CBMiygFBVV95cUxQQXRiU3JNS1Q5R1A2SjdCVlNCMnZUcE5CRVhqb3JVcmQ3c1pnNGd4bUx4X2VjNGZNTlo0ME9sRzlZazFiVkd3b1E5NjQzUWlEcEpiVFdPVERpbjBwQm9BWlZ3Q0xjOE5kWm5DZERnemQyb1hsc0xnQVhsWFJKVmw4blBrX0p2QmRSU0JvVGFOUWNydWpwZThacTJUUGdYQU9iaXhnZUNnUHR1QXp5Tm9QWGdXNU9rLWo5WEh2a1YwUmdRYlVnRlZQVVhB?oc=5) | ad-hoc-news.de |
-| 38h 前 | 0 | 中性 | [SCOP0Z26.CME Gráfico interactivo de acciones \| ConocoPhillips Stock Futures,De Acciones - Yahoo](https://news.google.com/rss/articles/CBMiW0FVX3lxTE5nNGhNVnFMWWRQbE12V08wWTRPRnAxczdYUGVzSkhnQWFCLWhpbFJkMW1iMUsxMG9lX2xGc0pvR1I0bEdvSEpkQUJQbWZDLW9qU2Z5R1BPYTN6c1U?oc=5) | Yahoo |
-| 43h 前 | 0 | 中性 | [ConocoPhillips Stock Futures,De (SCOP0Z26.CME) stock price, news, quote and history - Yahoo Finance UK](https://news.google.com/rss/articles/CBMiXEFVX3lxTE15R1ZiTXhKMzNxQVZzS3hYVGliQlk0eXo5X283VWNlQUp0TEhWSS0tV0pHa3BnY2s3R1V3dFdkS1BHVF9acEM4TEJaX3BpSk1Va2ZRRWVxeHluQzJl?oc=5) | Yahoo Finance UK |
-| 47h 前 | 0 | 中性 | [ConocoPhillips (COP) Stock Forecasts - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMikAFBVV95cUxOT2pSSXB0TG5IZVp5ZXNnaWpYSmoyeWl4ZDJkODhSSXh3MDlvRXg3UFV1YTdXeTZQV2FiOV9hbm9Hell4V1o4aTROMUQwUHpzNUVodE5nTDdGazJSNmlCT0dLVHM4eEl1bmdGYXNqclU0NEhHR19fMkZ5T2NiVTgzeVdyTjRaYjRlZUJOSWJsRXQ?oc=5) | Yahoo! Finance Canada |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 

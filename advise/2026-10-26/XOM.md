@@ -110,11 +110,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 23h 前 | 8 | 中性 | [ExxonMobil Holdings (XOM) Draws Earnings Focus, Is The Upside Already Priced In? - Simply Wall Street](https://news.google.com/rss/articles/CBMizgFBVV95cUxPWW1EV2JJVGMtNEE5dF9tNkZpM2wyUW1uaWgybTltUE9CVTlkWktXcENDTWJzRFA1b2xxT2MwdDlGWUFjdzM1LWVqR0YxWFhCV2RBOFk3dmZRRnhmdGwtYUxvbXU2bWstZzZSQ01PZUlQX05NZmlMSEFIWWlrN3FHRWVIYzlKSXJNT050S2JySFEwdGlreU5iREF2Yk5NYjJnNnpKQlJBNnFaRzRDNUNHd0ZqczF1S002QXp1UGs2NUcydGhya05sbTdEZ0FtQdIB0wFBVV95cUxOS3RNbFp5eThSS2hRVFlnRFlQOVZfOTBTVU85bklSdlJJQVFHcS16Vkd2WmVkLTJ5emo1ako5Ym1sQ05CWm0yZmlRcFREMFo2VjNjV2pGeEN6MXNxT3BCSGlHUG5UY0dGY093QVdEdzNaNXBiVEluVnlSaF81a2J1ZDhmMTRqRDMwckNzZ3Q5V2lYYVNMWmNxNXVYN0NUNHRSNXoya3VYdHdfdUFFM2daLU5lNWd6N1VFRGlBMUQzUUxwWnh6MVlGZlNqY1VGUWFwaUU0?oc=5) | Simply Wall Street |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
@@ -145,7 +141,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-21 | 177.72 | 179.21 | 176.15 | **178.09** | +0.1% | 11,214,000 |
 | 2026-10-22 | 179.89 | 180.31 | 174.63 | **178.23** | +0.1% | 11,564,300 |
 | 2026-10-23 | 179.37 | 183.75 | 179.00 | **183.21** | +2.8% | 11,517,700 |
-| 2026-10-26 | 181.86 | 184.59 | 181.52 | **184.54** | +0.7% | 10,847,428 |
+| 2026-10-26 | 181.86 | 184.58 | 181.52 | **184.54** | +0.7% | 10,847,741 |
 
 ## 七、自己去查（本页不做独立验证）
 

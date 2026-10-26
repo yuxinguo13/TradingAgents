@@ -112,9 +112,10 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 1h 前 | 0 | 中性 | [Pfizer (PFE) Stock Looks Above Fair Value As 30% Run Continues - Yahoo Finance](https://news.google.com/rss/articles/CBMimAFBVV95cUxPcE5idEFfcVprMUpfcFJoVnlJdW1SYjNxbGExZGRkWTBqZ25JSlhJNDZRQ1FRek03QWx6UlpVZ0RkVkJYWjlFMXpJbmdlWXlheDEtWjk3LTRLbFJrbmxNTjlORTlRMDAwZWFlQ3pfLUZaYTRKaHZ1bzBSdEpLQy1JQU55LUJMdkhqN3hGSC1Tam51eW9Xd3hjSA?oc=5) | Yahoo Finance |
-| 5h 前 | 0 | 中性 | [Pfizer stock stands 3.97 percent above USD 28.72 consensus target - ad-hoc-news.de](https://news.google.com/rss/articles/CBMixwFBVV95cUxQem9xdjNjT2x2aUdXbDNsMHZtQkpqNmNJaXRqMnN4cFB1YlNZX1VaWkNldGMyQUJwcFFOcVRaUHhDajE1SUhUYnYyVFA4NXFmeGd3NmRYS0t2TnR2VTBFQkJIVENWNm92RGk2bGZKVS0tWXRzN2RhdE5lQ2tmZFVvc3g2aWJkbFVvQ252Y3l6cWthb0EyZ0dnTktQSVp0OW13TUdtd3hYZXVtRXMxREZMMGdsNTUycGpsSmw2d3R0Q3NqbkFxVS1N?oc=5) | ad-hoc-news.de |
-| 8h 前 | 0 | 中性 | [Can Pfizer Stock Get Back To Where It Was? - Trefis](https://news.google.com/rss/articles/CBMiowFBVV95cUxOWS1NX3RQQnhkVUZjSkJvaDExQVNkN0VlYTQ2VjBDX0N4aXBKM2w5MTRyMjk1bkdKQ3BFYkZCWmNYTWVDSVpPaUlVNWhKR0lBbWZLSGZpT2VCSnVpQ0tnSVoyN1pQTnhjNHVIMFVGUFk2Z0o4UUdJRFRwOXFBb3dxTU41ZHBNT2ZWb0g2c3hXYVV0OVhVcEZtTGRWeDBIMHVxbUxN?oc=5) | Trefis |
+| 10h 前 | 0 | 中性 | [Pfizer reports 25-valent vaccine data. November 3 results guide Pfizer stock - ad-hoc-news.de](https://news.google.com/rss/articles/CBMi1AFBVV95cUxPMFEyRkRlYzJ3c2VYS2p1bHJCYmFhZl9uSXY3WDYwMzlaMk9ubWN5VHJXRk1OY09uRk4wZElFdWVHUFJ2d1RWZmtxcVNkblp4bkg3MW5UWnlLZm5BM1N5dlVKb3liMEhXUmlsZFN6MUszYWE0TGM1ZHNJMWt2RmdVMVpwcWNVMlBfeExRN2Q0Q2xCeXdWd1RUaEptQXliNzE2T2wwWEdMMXdYV1ZMdkJEemE3ci02dkNTZ2VBcmVrVjJKVnVUdFNaUXI5ZzRjZUkzTlpqdw?oc=5) | ad-hoc-news.de |
+| 27h 前 | 0 | 中性 | [Pfizer Inc. (PFE) stock price, news, quote and history - Yahoo Finance UK](https://news.google.com/rss/articles/CBMiUEFVX3lxTFBLM01mQ0FoNGNUWVdNQS04UEFBbFI1NWc3RVNaeE9YNzJYU3pyNF9peDhrU0tQTU9kRHNNb0dVM05hMjV2ZDJVSE1mQXZkQ0xo?oc=5) | Yahoo Finance UK |
+| 29h 前 | 0 | 中性 | [Pfizer reports pediatric vaccine data: what it means for Pfizer stock - ad-hoc-news.de](https://news.google.com/rss/articles/CBMiywFBVV95cUxNdDRvNVhKdUotNF82eVljT0VfX1dRUk1Ra0NZcEdXVFRvM1VBUEMxMExIR1dkQkNIRnFvcU9RNW5HcWhuN2JNZHA4MFFOLUE1QmxlSVMxR1FhOHBQZDRYbmRGWEhSRkZsbHpSYjFpM01iSW1FdVJLbi1lV09EQ0lHLXdZcUlUbkE0LUQwa1ZrNWotRDExM0VCck0wQW9LMXpNYmQwZTliNVcxVjRBNzItc0lpeEYxYldOM1NsQk5jUy1MWWM4ZW15eDF1NA?oc=5) | ad-hoc-news.de |
+| 34h 前 | 0 | 中性 | [Pfizer (PFE) Lung Cancer Drug Shows Survival Benefit Despite Trial Failure - TipRanks](https://news.google.com/rss/articles/CBMipAFBVV95cUxQb3o0T1BCUmh2SnRZbDBsY2VUaFlyM3NoOE9MWkw0Zkdfbms0cTNJdFJ6UDZNU1NxQlFPRFAyQ0dDaVpiLWNCQW1CWU9TSHZ0bXJhN0lpOE5LbmJzSnNVamFzTy1iSVV1b1Mzc2RUZHd6TGtfdkZxTVI1ZnVDU3czZi1INDlDdjhRdW4tTEpMNVZNdktsOU1RQXAwZ3VBMW5RNGZoeA?oc=5) | TipRanks |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -145,7 +146,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-21 | 30.00 | 30.09 | 29.69 | **29.85** | -0.9% | 22,217,700 |
 | 2026-10-22 | 30.05 | 30.44 | 29.88 | **30.42** | +1.9% | 28,703,400 |
 | 2026-10-23 | 30.28 | 30.32 | 29.81 | **30.03** | -1.3% | 29,464,000 |
-| 2026-10-26 | 30.00 | 30.31 | 29.72 | **29.79** | -0.8% | 25,263,056 |
+| 2026-10-26 | 30.00 | 30.31 | 29.72 | **29.79** | -0.8% | 25,264,248 |
 
 ## 七、自己去查（本页不做独立验证）
 

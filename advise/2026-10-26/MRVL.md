@@ -112,9 +112,9 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 2h 前 | 0 | 中性 | [Marvell Technology Inc Stock (MRVL) Moved Up by 3.99% on Oct 26: Drivers Behind the Movement - TradingKey](https://news.google.com/rss/articles/CBMiiwFBVV95cUxNQW9qQ01SX1ZkUEJlMTZkY3dBS1YzajJudWFjUDVwel81MWduT3lfUFoxeXMzYklFaGptMmEzWjBiZGlOMV84dWkySUl5QUJUYlR2RE1yaDBub1lfOTVIVTNyd3JGaHpyY01fN0FwN0hRbUJEdnRoRkRuVWgxamh6THpPTEY1UWlLaFdJ?oc=5) | TradingKey |
-| 5h 前 | 0 | 中性 | [What's Going On With Marvell Technology Stock Monday? - Benzinga](https://news.google.com/rss/articles/CBMiqgFBVV95cUxPYmlRR0NvTEJMenF2Zm9nNE1yY001Y253MzFZY2VmWHRjZUdqUDc2NTJ0Tk1oZkpHNmNYOG52Vm52UjJCYnBVUDhRYjVvUHh3ZHhhWlpsMmRCYmlJdG9BUjdvdGJkcGthNWFWUklvLV90UUt0ZnQ2N0NIMng4aGxLZXU4YlJfX2l4cGx2eFlnNm1uc3g4OXVPazB3TnNTRmk3REgyN1dSaTBUQQ?oc=5) | Benzinga |
-| 8h 前 | 0 | 中性 | [Fund Update: 720,431 MARVELL TECHNOLOGY (MRVL) shares added to GF FUND MANAGEMENT CO. LTD. portfolio - Quiver Quantitative](https://news.google.com/rss/articles/CBMi2AFBVV95cUxNdU9zN1QxbVJVb3lBcEhIQ3VsWE5ZblhYZ1NJUkdtMDV5M0FMRmt3YllEUUx0ZThBd29ndjRlZGNLbXBqZm9XR1ZEN01tUVVtYlUtV1ROTWpRS3NlMzY4T3BQOFdCeGlqVWdja21wLVRMdUpYZnU3S0E2VW13WTl3OGFzUnJZVEZpNzZ2aEM2QmZvUmNRUDlqazZXWU5XemxJb3dDTC0taTNpdXhFVmdkb21yUFpmN3ZwRWRlMkZJUHhWMFJMaENVODFVR1ROT3BOaGhqR2d4a1A?oc=5) | Quiver Quantitative |
+| 1h 前 | 0 | 偏多 | [What's behind Marvell Technology's latest 3.5% stock surge? - Traders Union](https://news.google.com/rss/articles/CBMimAFBVV95cUxOZF9xR3pwYkFPXzlHeXVQTTl6ZDhoajR4UWgzY3RwVVozakNvT3BWNy1kSU0tbHhUTkJ4WU13YkxlV1NVNHg0bHRRMW85c0dnVXp6b2VXSEZITnM2YzYxdjlndmVKVGJvUGJPT19VSkg4MTVHUFdlMFZOZzlOZUtFVUxreVdGUkRiNFZ6aHp4MEZEcGlyUHh6VA?oc=5) | Traders Union |
+| 11h 前 | 0 | 中性 | [Marvell schedules AI Networking Summit: 43.26 percent upside for Marvell Technology stock - ad-hoc-news.de](https://news.google.com/rss/articles/CBMi5gFBVV95cUxQNHd6M3lWaW0xOEREaWVrek81bUZTRDV0T1NFaWNRdVlqdVNXX1NZU1JEdVVWYXFGNVdId3VMVUx1UWl1NTh4YmM4WE5QOVBKQ1VKVmU1ckE3VGRMaFIwYTVtYUhiMHJCS0V3ajFZTGlwV2lMY29qbG03VktveFpxbHEwRmp1UGxLV0JtaE93M200bVhFaFMzUEU0Si04dTdDMXpJZlFQTkNjRlVvXzNYTHVxZ1pLdURVZldBVjMyVUkxLU96OFl5Qk4tSy1aWE9ZT0w0Ui1IRVdiZDl6X3Vsdlc1Z1hMdw?oc=5) | ad-hoc-news.de |
+| 14h 前 | 0 | 中性 | [Marvell Technology stock: AI Networking Summit on October 28, 2026 pre-market - ad-hoc-news.de](https://news.google.com/rss/articles/CBMizgFBVV95cUxQbmM5Z08zTUU2MnpHUnlsdXk5LUFVQWJOblhwN0hkT19GT0pDUTNBc1o5MWJiNnA1YUkxSHgtSy1CSjFNaDZMMFI3WklpWTNobEsxTDNWUzRyZW15eEpWU1FqN1F3cDdsWS1IZUlaLVg2ZjYyWkE0MjU2V0pIMm5IdjlrczYzaGVDTEpOMVFETkEyWXNQMXNVVWNmNjBxa2dWMUhCVThFZFdnUGtUck9hUWFqYWFKRXRoV0JNM2ctYWxsOWFSTnRwUkdGeXRBZw?oc=5) | ad-hoc-news.de |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -125,7 +125,6 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 - 摆动高低点都在下移，属于下降结构；在出现一个更高的低点之前，任何反弹都还只是反弹。
 - 日均波幅 7.3%，属于高波动：同样的仓位金额，这只股票的日常噪音就能触发大多数人的心理止损。
 - TTM 市盈率 77 倍，价格里已经计入了不少增长；增长只要减速，杀估值的幅度会大于业绩本身的降幅。
-- 政策面对该板块的倾向为 -0.95（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
