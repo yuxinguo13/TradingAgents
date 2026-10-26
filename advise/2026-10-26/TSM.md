@@ -1,0 +1,195 @@
+# TSM · 台积电（Taiwan Semiconductor Manufacturing）
+
+_科技 · 数据截至 2026-10-26 收盘 → 面向 2026-10-26 开盘_
+
+[← 回到 2026-10-26 当日报告](../2026-10-26.md)
+
+> 趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌。
+
+## 一、价格与图形
+
+```text
+     TSM · 近 126 个交易日（日线收盘）
+482 ┤                          ╭╮                                      ╭─╮
+468 ┤                      ╭╮  ││                                      │ ╰╮
+454 ┤                      ││  ││                                 ╭────╯  ╰╮
+440 ┤              ╭─╮   ╭╮│╰──╯╰───╮                       ╭╮   ╭╯        ╰╮····
+426 ┤             ╭╯ ╰─╮╭╯╰╯     ···╰╮··╭╮·······╭──╮···╭╮·╭╯╰─╮╭╯  ······· ╰╮╭──
+412 ┤    ╭─╮╭╮   ╭╯    ╰╯   ·····    ╰╮╭╯╰╮   ╭──╯  ╰───╯╰─╯ ··╰╯···         ╰╯
+398 ┤ ╭──╯ ╰╯╰───╯     ·····          ╰╯  ╰╮╭─╯                            ::::::
+384 ┤─╯            ····                    ││                    ::::::::::
+370 ┤       ·······                        ╰╯        ::::::::::::
+356 ┤·······                           ::::::::::::::
+342 ┤                        ::::::::::
+328 ┤                ::::::::
+314 ┤      ::::::::::
+300 ┤::::::
+    └────────────────────────────────────────────────────────────────────────────
+     2026-04-28                       2026-07-29                       2026-10-26
+     · SMA50   : SMA200   ─ close
+```
+
+```text
+       TSM · 近 21 个交易日（放大看最近节奏）
+485.8 ┤     ╭─╮
+476.6 ┤    ╭╯ ╰╮
+467.4 ┤    │   │
+458.3 ┤ ╭──╯   ╰╮
+449.1 ┤─╯       ╰╮╭╮
+439.9 ┤          ╰╯│
+430.7 ┤            ╰╮   ╭╮
+421.5 ┤             ╰╮╭─╯│╭─
+412.4 ┤              ╰╯  ╰╯
+      └─────────────────────
+       2026-09-28 2026-10-26
+```
+
+成交量近 63 日： `█▅▄▄▃▃▃▂▁▃▂▃▃▁▄▂▂▁▄▃▂▄▂▃▄▃▃▂▂▂▂▃▂▃▂▂▅▇▄▃▆▂`
+
+### 图形读数
+
+- **均线排列**：均线偏多 — 现价距 20 日 444.17（-4.5%）、50 日 433.61（-2.1%）、200 日 396.59（+7.0%）
+- **形态结构**：下降结构 — 更低的高点 + 更低的低点；前高 487.47 → 435.16（-10.7%）、前低 411.45 → 407.13（-1.0%）
+- **动能**：RSI(14) 45，偏弱；近一月的斜率慢于近三月（月 -5.8% vs 季 +8.5%），涨势在放缓
+- **波动**：日均真实波幅约为价格的 3.3%；按本报告 2 ATR 的止损惯例，一个 R 相当于 6.6% 的价格距离
+- **位置**：距 52 周高点 -12.6%，距 52 周低点 +55.9%
+- **量能**：最新一日成交量为 20 日均量的 0.8 倍，量能正常
+- **相对强度**：近一月跑输 标普500 5.0 个百分点
+- **支撑 / 阻力**：最近的摆动低点 418.07，摆动高点 425.16（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
+
+**我的读图结论**：趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌
+
+_以上每一条都是对已经发生的价格的描述。均线、RSI、摆动结构全部是滞后指标，它们能说明现在处于什么状态，不能说明下一步。你自己在图上看到的东西，和这里写的不一致时，以你看到的为准——然后去查是哪个数字有问题。_
+
+## 三、财报与基本面
+
+市值 $2.20万亿 · 行业 Technology / Semiconductors · TTM 营收 $4.94万亿 · TTM EPS 15.43 · 股息率 1.43% · Beta 1.24 · 空头占流通股 0.6%
+
+- **估值**：TTM 市盈率 27.5 倍；前瞻市盈率 18.1 倍（市场预期未来一年盈利上升）；市销率 0.4 倍；EV/EBITDA 3.9 倍；PEG 0.76（低于 1，增长尚未被价格吃掉）。
+- **增长**：最新季度营收同比 +50.9%；盈利同比 +68.7%；最近三个季度营收连续环比上升；最近 7 次财报里 7 次超预期。
+- **盈利质量**：毛利率 65.8%、营业利润率 58.7%、净利率 51.1%、ROE 41.9%。
+- **资产负债**：现金 $4.02万亿；有息负债 $8,183.80亿；负债/权益 11.6%（负债很轻）；流动比率 2.50；自由现金流 $1.20万亿，为正。
+- **卖方预期**：20 位分析师覆盖；平均评级「强烈买入」（1.38/5，1 为最看多）；目标价均值 584.39（较现价 +37.7%），区间 440.00–1,000.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
+
+**分季度损益**（季度数据，最新在左）
+
+| 指标 | 2026-09-30 | 2026-06-30 | 2026-03-31 | 2025-12-31 | 2025-09-30 |
+|---|---:|---:|---:|---:|---:|
+| 营收 | $1.49万亿 | $1.27万亿 | $1.13万亿 | $1.05万亿 | $9,899.18亿 |
+| 毛利率 | 66.4% | 67.7% | 66.2% | 62.3% | 59.5% |
+| 营业利润率 | 58.7% | 60.3% | 58.1% | 54.0% | 50.6% |
+| 净利率 | 51.1% | 55.6% | 50.5% | 46.4% | 45.7% |
+| 净利润 | $7,630.64亿 | $7,065.62亿 | $5,724.80亿 | $4,854.65亿 | $4,523.02亿 |
+| 摊薄EPS | 147.13 | 136.25 | 110.40 | 97.50 | 87.20 |
+
+**分年度损益**（年度数据，最新在左）
+
+| 指标 | 2025-12-31 | 2024-12-31 | 2023-12-31 | 2022-12-31 |
+|---|---:|---:|---:|---:|
+| 营收 | $3.81万亿 | $2.89万亿 | $2.16万亿 | $2.26万亿 |
+| 毛利率 | 59.9% | 56.1% | 54.4% | 59.6% |
+| 营业利润率 | 50.8% | 45.7% | 42.6% | 49.5% |
+| 净利率 | 44.6% | 40.0% | 39.4% | 43.9% |
+| 净利润 | $1.70万亿 | $1.16万亿 | $8,517.40亿 | $9,929.23亿 |
+| 摊薄EPS | 327.35 | 226.25 | 161.70 | 196.00 |
+
+**财报兑现记录**
+
+| 财报日 | 预期EPS | 实际EPS | 超预期 |
+|---|---:|---:|---:|
+| 2027-01-14 | 5.16 | — | 尚未公布 |
+| 2026-10-15 | 4.52 | 4.60 | +1.7% |
+| 2026-07-16 | 3.89 | 4.31 | +10.9% |
+| 2026-04-15 | 3.33 | 3.49 | +4.7% |
+| 2026-01-15 | 2.98 | 3.14 | +5.5% |
+| 2025-10-15 | 2.63 | 2.92 | +11.2% |
+
+_财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会滞后，TTM 窗口是厂商口径而非公司财年口径。以上任何一个数字如果会改变你的决定，请点开本页下方的 SEC EDGAR 链接看原文。_
+
+**财报日历**：下次财报 **2027-01-14**（约 80 天后）；上次财报 2026-10-15，超预期 +1.7%。财报日是这套止损体系唯一无法覆盖的风险：跳空会直接穿过止损价。
+
+## 四、消息面（过去 24 小时）
+
+| 时间 | 材料度 | 倾向 | 标题 | 来源 |
+|---|---:|---|---|---|
+| 34h 前 | 10 | 中性 | [Taiwan Semiconductor Manufacturing Company Ltd. $TSM Shares Newly Acquired by Valen Private Capital LLC - MarketBeat](https://news.google.com/rss/articles/CBMi9AFBVV95cUxNbDhCOUF1MVhaRktUR2ltOXpHcHVMbDVPSnJuNkczNU83VzlxcllrRC1HeksxdmFGOFNTUHJoRThMMk1YV1JpTXRRWV9hRUMxYlJ0UFY5Y2JRbjAxZXNZdXRFazRnQzBMcjhiYnJMMDdlTkFWdngteC1nekhoMkpBQzZHUTZVQnlvWVpLSDc2VFZDQi1HWGxCN0lmdkdrNkp6VV9vNTVpTkJkdVdIR3NtNV92cm9qR19lTEpJbW1tcEJIaktEckw0eW94ZHM5dmoxZXpzRm41RF8wTXVzVWl6YUV2MjlmdGVWb25KSFZIa1l5Qkow?oc=5) | MarketBeat |
+| 11h 前 | 8 | 中性 | [Taiwan Semiconductor Manufacturing Company Ltd. $TSM Stock: Provident Investment Management Inc. Lowers Position - MarketBeat](https://news.google.com/rss/articles/CBMi_gFBVV95cUxPUkM2VlRySDB4OGhrb1YxMFRzcDFNa3hpRjZ6SU96UzBjWGZ2WndERk9kSnhhb2g2TXh5V0dKZFpPM2FaUVFjMlRJT0tHcFRiVFNVUlJWYUV1aWJ5RzhWU2VCUWVkUEd5YWY0SnBYMEI4ZzFXck11NEYtRnZkRkNNVU9NbnhMRUFEVVlMb3pKZURwNVFfMDAyWC1QMmc1RWNpNFMtby1hWFRJcXVlSThEQkZSMFJlNG9EMHdzNTd2cGQxam1obUlHYzhrZUd3VGdRbkc4aVl4dmdveWpLcHZUMy1WblFGSDVSNENNZ29Ldl8xeGVLSlJvNHRxTENQZw?oc=5) | MarketBeat |
+| 11h 前 | 8 | 中性 | [Taiwan Semiconductor Manufacturing Company Ltd. $TSM Stock: Simplicity Wealth LLC Reduces Position - MarketBeat](https://news.google.com/rss/articles/CBMi7AFBVV95cUxNRmxEd1AzTTlQRGNNczhyUEVNZ05mRFltZVFNVUpQS2ozYk9MSDNpTGtBandDMW82NW0tVzNYMk1aQzVOc2hGMzdRdXNEamRPSDF0MHZwVndXTE5PeWUzRGpLMHNfTl9obEkyQW9ZWFlEWXlCb1dMbF94RUhCRkxQX0RCRHV4ZklLZDVneEtnc29NZHUtZGRwZ1dnZUc2VW9sMGFNMlF0Wl94M1dVeTZYRVZnNklfV0tXbUhLT05YN2otTWtqTktDZDB6OThVVWxYLUtxeGNsMWtuRHpNVl9iRWJXNHdpcXVvOHg5YQ?oc=5) | MarketBeat |
+| 10h 前 | 2 | 中性 | [Taiwan Semiconductor Manufacturing Company Ltd. $TSM Shares Acquired by Loring Wolcott & Coolidge Fiduciary Advisors LLP MA - MarketBeat](https://news.google.com/rss/articles/CBMijAJBVV95cUxPcjNuRjZuSG1Xd2tDNzRNVm9DaDI4eExXM19NbHhkZjh5OGRZYXFFWnZmQlhOX0F0cFQxckljNFhETW9TaXBHWkoyNzBaY25kLVVDZG9TbldoY1dsOEl4c1ZfWGx4OXpPcDQyQmd0X2pETWdHQ1BFaXJnTVZoZGxyZzVQZEhNU2pHNkZOLVNrUHBDTVdTUU9lMnNkTFpfNi0wR2lZeFk1ai1sU3VYbmFJSEpYUlVpcDJhYm1UNUprTGcxNng3VmtXOURFVkl3cnlqTnEtaVRBMlBQUnVhOGNlbWMtUHZWQWRIR3hEcVh4MUNkUDE5eFhYU1d2S0s2RUFEa18zOXFRSGh5Mlkz?oc=5) | MarketBeat |
+| 10h 前 | 2 | 中性 | [Taiwan Semiconductor Manufacturing Company Ltd. $TSM Shares Purchased by Tower View Wealth Management LLC - MarketBeat](https://news.google.com/rss/articles/CBMi9wFBVV95cUxPaUkybUJtR0ZKdDAxYWhQYU41TUZJZk1pZjJvVTZMTmhRd3VEZko0WURtRXdRc2FZRjV5elpzWmQyMm9oNXlKV1VBamg4d1l3NzZndUlpRExBdjNSeHpmU0NnYU51bzA0REFqbkdnODdjQnhZMFVaOW90aWozeFlBY1RGWFBaRmVENnZFSm1MUUhGMzZNaHZqcDl5eEhqZjI4LTkwZk0wb1BiaUtlek1KWlJCLWR6VU9ySFlfa3pOcV9HNDU5TUZFRDdSa0Nvbm9WOG9kcGZTRWc5bFk3M1NFcGN3STBkOHd6LXRTZEt6VFdwVVd0TGtj?oc=5) | MarketBeat |
+| 10h 前 | 2 | 中性 | [Sigma Planning Corp Sells 1,389 Shares of Taiwan Semiconductor Manufacturing Company Ltd. $TSM - MarketBeat](https://news.google.com/rss/articles/CBMi5wFBVV95cUxOX3AtLXlQLTNuUGY5ajd3NlBDOFRMcXhnTGt1cTdIeTlGV0JYNzZ4eElMM3BmN1JUbGFRVk1FZGxudVh2anVxSFlFRjY0cDZOcF9Ed1QzaURjakxUdWluZWE4N2x6a2dvdWNxRGhJU29ZZ2RVcGZjS1FTWHNmbXJ4YnJoR21aaXdlTkdmOTRYM3hlSjBQSHdKWUNQQWdaMWtKVEpEcHA2Q3hhejB5XzRUYTdueVhJVHFqTFVfLURnVVU2ZllNekdVZHB1VzdFN2pIU1FCZHEyUkxGNE5HTW5JdFN2ZEdZRG8?oc=5) | MarketBeat |
+| 34h 前 | 2 | 中性 | [Mondrian Investment Partners LTD Acquires 16,172 Shares of Taiwan Semiconductor Manufacturing Company Ltd. $TSM - MarketBeat](https://news.google.com/rss/articles/CBMi_gFBVV95cUxNUnBwc2FTM3VNbWRzb0VldzBhR3RvaWdMSW4weWRHWTN4LTltcEZkSHpGRWpWSlRPYnMtWE1jZEQ2MnBqcVBJd2s3ZXZQdzQ2OUxGaEVVVVJGbHNDS0hsR0dIOHJtMkkya0U0ekFyajg0bl9jYUpPTFBLY3Y3ckJhRWpXSFpsQjdJS2FKbk55eFhuamZja0UwaExXN0JjZ2FmQURPYy1JNl8xdDJPVEFLRFBQU2JmT2VqWEc5eHlsaHVMOGd5dDFoTFIwSUEzX0ZLVnQ2WkplMmhKVFJOVVZ5c2dpSVIwT3FlLWZaVGtPRTZPZTN2amZFSUhfaGJUZw?oc=5) | MarketBeat |
+| 34h 前 | 2 | 中性 | [Taiwan Semiconductor Manufacturing Company Ltd. $TSM Shares Bought by Norris Perne & French LLP MI - MarketBeat](https://news.google.com/rss/articles/CBMi6wFBVV95cUxQVy1qZVhGRzZRNmtzb1Q4ZHg2RnU2QmlUTG16UjhzWWFiZmxlNGZIbXNwbDVmVzFjb21KOEotNGM1dm1UVzlhSEpjdXNtdDA2UG1jaXRmRXVXcXltYl9pNVlvc3FlZkZPQl9MQVBHWHEyUlBUQ1hvazdTTlAycmI1NkVBUzNmZGxKMHRJOHNkRU5May12MnAyQkhPVTFZTk9jOWp6ZFAxeGRFV2JBdEhaSDNoS2JxQmllbU9TeU8zSGI0dW1scVZjMm9FWnJWVjJOZjhZb0luRnpRTHpLUVJsV2J2dU1TaTZfNkZF?oc=5) | MarketBeat |
+| 37h 前 | 2 | 中性 | [1,837 Taiwan Semiconductor Manufacturing Company Ltd. $TSM Shares Bought by Bernardo Wealth Planning LLC - MarketBeat](https://news.google.com/rss/articles/CBMi9AFBVV95cUxOMWNrUkZ1aDlnNlAycnVlR1pGV0NrV3hsZnlCTWRWeHludnJteXlkVTJtYnhRMXQyNkJNc0JlMTROSmFKVWhpai1yczNUeDJ2WlZDX1J3NkpjS2tQeGdFUVdKNHVOcHA1TVF0Z2ZiaGR0R1ZRUXRNcW1Rb0ZZTkNRNVpLQnlySEhnWllsa2c5anNHazdBU0V3QS1DZk5IcS1UUUE1ZWtCaE05YUx3aG00Q2wxN3g1VHNteHd0aFE2NDFERnJwMW96bWtnMTU4UEZPU1dNV0tVeGNkZmYzcFZxSXdCVEE4MWx0aFR4OVVJRjZzdWNh?oc=5) | MarketBeat |
+| 37h 前 | 2 | 中性 | [BG Investment Services LLC Makes New Investment in Taiwan Semiconductor Manufacturing Company Ltd. $TSM - MarketBeat](https://news.google.com/rss/articles/CBMi9AFBVV95cUxOdHJhSTREZFM4RW5wYVZDUkVKRmZxMmlIVmVRY0ozWnhZeDlTRVBtdHl5aGhUZzEyVGlmT1NzWDZXc0QyM1F2VEc3YW1Rd2hmM3F6RnBESVcwXzBJQTBsNHg1YmlxOXhtRGxCd2xGN3B2b013SlJGZ0w2X00zY1lxQXl0TThFYWJoRUZyTzBWSkpKODlNX2tHQWxLdHByTFlxRzBPVmRsdlpPeEY4SnBZRWltZ19uOFNuYWE3TlRwYjRaaWNCb3JaVDdOZEJMX0ZqSnhzQTR0UGNBMVpUejdldkpPWHJiS1NDZWpoZGJ2RzRsb0ZQ?oc=5) | MarketBeat |
+| 28h 前 | 0 | 中性 | [ASML Holding N.V. (ASML) Stock Price, News, Quote & History - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMiUkFVX3lxTE1xYTJNLWlrdEl5bkZ5REJDbzVqREU2amNmcFY1bXp3TU5fQjJfaWtlTUN2NHViZUVtTmIxV18zWUZ5QWx4Y0lRWTJmcHhXQTREcHc?oc=5) | Yahoo! Finance Canada |
+
+_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+
+## 五、反方观点与风险
+
+_以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
+
+- 摆动高低点都在下移，属于下降结构；在出现一个更高的低点之前，任何反弹都还只是反弹。
+- 政策面对该板块的倾向为 -0.95（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+
+## 六、原始数据（本页所有计算的来源）
+
+最近 15 个交易日的 OHLCV：
+
+| 日期 | 开 | 高 | 低 | 收 | 涨跌 | 成交量 |
+|---|---:|---:|---:|---:|---:|---:|
+| 2026-10-06 | 484.23 | 486.00 | 481.48 | **482.30** | -0.7% | 8,346,200 |
+| 2026-10-07 | 472.60 | 475.80 | 471.30 | **472.20** | -2.1% | 7,304,800 |
+| 2026-10-08 | 466.32 | 471.19 | 452.88 | **457.99** | -3.0% | 13,421,700 |
+| 2026-10-09 | 464.21 | 464.83 | 449.75 | **453.31** | -1.0% | 9,242,000 |
+| 2026-10-12 | 453.55 | 454.40 | 444.35 | **444.35** | -2.0% | 8,867,200 |
+| 2026-10-13 | 439.52 | 445.50 | 437.40 | **445.12** | +0.2% | 8,581,100 |
+| 2026-10-14 | 436.25 | 440.39 | 428.06 | **430.00** | -3.4% | 15,167,200 |
+| 2026-10-15 | 415.17 | 423.66 | 407.13 | **422.25** | -1.8% | 22,445,800 |
+| 2026-10-16 | 421.22 | 421.50 | 410.58 | **412.61** | -2.3% | 16,675,100 |
+| 2026-10-19 | 421.66 | 427.16 | 415.50 | **420.22** | +1.8% | 12,353,800 |
+| 2026-10-20 | 416.29 | 428.21 | 416.12 | **425.08** | +1.2% | 12,538,600 |
+| 2026-10-21 | 433.14 | 435.16 | 423.74 | **431.89** | +1.6% | 10,721,100 |
+| 2026-10-22 | 419.39 | 421.91 | 410.22 | **412.35** | -4.5% | 16,475,100 |
+| 2026-10-23 | 412.29 | 421.31 | 411.11 | **418.51** | +1.5% | 9,478,300 |
+| 2026-10-26 | 418.07 | 428.85 | 417.72 | **424.37** | +1.4% | 9,494,721 |
+
+## 七、自己去查（本页不做独立验证）
+
+**行情与图形**
+- [Yahoo Finance 行情](https://finance.yahoo.com/quote/TSM) — 本报告所有价格与均线的来源，先对这里
+- [TradingView 图表](https://www.tradingview.com/chart/?symbol=TSM) — 可画线、可换周期，用来复核本页的 ASCII 图
+- [Finviz 快照](https://finviz.com/quote.ashx?t=TSM) — 一屏看完估值、技术与同业对比
+- [StockCharts 技术面](https://stockcharts.com/h-sc/ui?s=TSM)
+- [Barchart 观点](https://www.barchart.com/stocks/quotes/TSM/opinion) — 把十几个技术指标折算成一个多空票数
+
+**财务与估值**
+- [StockAnalysis 财务报表](https://stockanalysis.com/stocks/TSM/financials/) — 十年利润表/资产负债表/现金流，免费且不用登录
+- [Yahoo 财务](https://finance.yahoo.com/quote/TSM/financials) — 本页财报数字的来源
+- [Yahoo 关键统计](https://finance.yahoo.com/quote/TSM/key-statistics) — 估值倍数、利润率、资产负债的完整版
+- [Macrotrends 长期趋势](https://www.macrotrends.net/stocks/charts/TSM/x/revenue) — 营收与利润的十年折线，看结构性变化
+- [Wisesheets/Koyfin 替代：GuruFocus](https://www.gurufocus.com/stock/TSM/summary)
+
+**原始文件（无中介）**
+- [SEC EDGAR 全部文件](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&ticker=TSM&type=&dateb=&owner=include&count=40) — 10-K/10-Q/8-K 原文；财报电话会与风险因素只在这里
+- [SEC 全文检索](https://efts.sec.gov/LATEST/search-index?q=%22TSM%22&forms=8-K) — 按关键词搜文件正文
+- [OpenInsider 内部人交易](http://openinsider.com/search?q=TSM) — 高管自己在买还是在卖，是少数不靠解读的信号
+- [13F 机构持仓](https://whalewisdom.com/stock/TSM) — 注意：13F 滞后 45 天，不能当作买入理由
+
+**消息与预期**
+- [Yahoo 新闻](https://finance.yahoo.com/quote/TSM/news)
+- [Google News 搜索](https://news.google.com/search?q=Taiwan+Semiconductor+Manufacturing+stock&hl=en-US)
+- [财报日历与预期](https://stockanalysis.com/stocks/TSM/forecast/) — 下次财报日、市场一致预期、历史超预期记录
+- [Seeking Alpha 讨论](https://seekingalpha.com/symbol/TSM) — 观点密度高，但是买方与卖方混杂，当作反方意见读
+- [公司投资者关系](https://www.google.com/search?q=Taiwan+Semiconductor+Manufacturing+investor+relations) — 财报原始 PPT 与电话会记录
+
+**中文渠道（转载源，不作独立验证）**
+- [雪球](https://xueqiu.com/S/TSM) — 中文讨论与财报摘要
+- [富途牛牛](https://www.futunn.com/stock/TSM-US) — 中文行情与公告翻译
+- [东方财富](https://quote.eastmoney.com/us/TSM.html) — 中文财务报表
+- [同花顺](http://stock.10jqka.com.cn/usstock/TSM/) — 中文资讯
+
+---
+
+_这一页是一台程序按成文规则读公开数据的结果，不是投资建议。它不知道你的资金、税务和其它持仓。图形结论来自滞后指标，财报数字来自厂商转录，新闻材料度来自关键词打分——三者都会错。把它当作一份整理好的证据，而不是一个答案。_
