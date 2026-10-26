@@ -24,7 +24,9 @@ must be green and `ruff check <files you touched>` must show no new error.
 
 Before any task: `git fetch origin main && git checkout main && git pull -q --ff-only origin main`
 (the desk is merged; `feat/live-desk` is only where new work is staged), and
-`pip install -q -e ".[dev]" alpaca-py` if `python -c "import tradingagents.desk"` fails.
+`python -m pip install -q -e ".[dev]" alpaca-py` if `python -c "import tradingagents.desk.pack, alpaca"`
+fails (2026-10-26: `import tradingagents.desk` passed on a machine with no numpy
+or alpaca, and bare `pip` installed into a different Python than `python`).
 Read `tradingagents/desk/MANUAL.md` in full.
 
 State survives between sessions on the `desk-state` branch (`tradingagents/desk/state.py`):
