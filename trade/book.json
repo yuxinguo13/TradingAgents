@@ -1,5 +1,5 @@
 {
- "saved_at": "2026-10-23T19:39:22",
+ "saved_at": "2026-10-26T19:29:46",
  "positions": {
   "TBBB": {
    "symbol": "TBBB",
@@ -184,7 +184,7 @@
    "sleeve": "core",
    "triggers": [],
    "stop0": 396.0,
-   "pending": true,
+   "pending": false,
    "trimmed": false
   },
   "PG": {
