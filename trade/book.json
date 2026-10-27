@@ -1,5 +1,5 @@
 {
- "saved_at": "2026-10-26T19:31:00",
+ "saved_at": "2026-10-27T19:20:19",
  "positions": {
   "TBBB": {
    "symbol": "TBBB",
@@ -251,7 +251,7 @@
   "HAS": {
    "symbol": "HAS",
    "shares": 69,
-   "entry": 117.7,
+   "entry": 117.413623,
    "stop": 115.22,
    "target": 128.0,
    "opened": "2026-10-26",
@@ -279,13 +279,13 @@
     "rs"
    ],
    "stop0": 115.22,
-   "pending": true,
+   "pending": false,
    "trimmed": false
   },
   "CRM": {
    "symbol": "CRM",
    "shares": 41,
-   "entry": 244.0,
+   "entry": 243.92,
    "stop": 234.0,
    "target": 268.0,
    "opened": "2026-10-26",
@@ -308,7 +308,7 @@
    "sleeve": "core",
    "triggers": [],
    "stop0": 234.0,
-   "pending": true,
+   "pending": false,
    "trimmed": false
   }
  },
