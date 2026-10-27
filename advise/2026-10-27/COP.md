@@ -110,15 +110,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 26h 前 | 8 | 中性 | [What to Expect From ConocoPhillips' Next Quarterly Earnings Report - Yahoo Finance](https://news.google.com/rss/articles/CBMirwFBVV95cUxNeThUSk01anRrZGRfR1ZqWGR0di0tQjM1OHBYeW5jQkFqU3hHbmp6eVBEV19neHpTSGlEX1g0ZjdzaUpVWDg5NU1qQnNaVkpsS3pPdlY1NmREMmVVaV9xNDA4aUFPQ0JxU1FyWFkyMzNUWGlCc29DVk5Vck5iMnNYQWJ3SEVfdGZOR25kbzQzQ1JZM2dCbkxncFZ6YXNJX1duOTRmMGNod3RLSFNRXzh3?oc=5) | Yahoo Finance |
-| 5h 前 | 0 | 中性 | [Piper Sandler sets USD 157 target for ConocoPhillips stock - ad-hoc-news.de](https://news.google.com/rss/articles/CBMivgFBVV95cUxPV3R2UVAzSlpBLUlVNVd0MV83RUtIREhudHM3MXRFMDVsaU9HSWZQSWdIYWFzU1F0SUhZWmNlX3pSeW5HQXFscFoxNDhJTGNmd2J1NzFzZmRsQlZ6dlllT2IxMTNUQVNUSFJDTkpGaVNUSGFuaXZXNFFUMjJoS21OSm05YmJ0NTdLVWxRZlZGWlFGUGtQYTNkd0ljcGVnMWtPOVJENVdCd0VTaGZ4ZFVHU0xQVEVWUDJ1dkVyd0ZR?oc=5) | ad-hoc-news.de |
-| 5h 前 | 0 | 中性 | [ConocoPhillips (COP) Is Up 2.93% in One Week: What You Should Know - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMiggFBVV95cUxPRXI4cWswdjVBZjZVQ0wzRmNHN2pzdExLekRyb0ZWbkoxbVNYbkF5dnd0YmIzbzVZdFJkMEtiemhRNXRUV00yWXRMbWxwOUFCUmY1SFQxSEQzMGVyaEFrNWxDamNIYlFJMVoxVlJobkZwM040d2V1ZDdKYjUyWEZ4ZUNn?oc=5) | Yahoo! Finance Canada |
-| 10h 前 | 0 | 中性 | [Piper Sandler assumes ConocoPhillips stock coverage with neutral rating - Investing.com](https://news.google.com/rss/articles/CBMiywFBVV95cUxOc2FnTmxkMEp4d0NwSmw2WXhwWmIzY2xwd3l6VDBpM1M4STg5ZTVIQmV1RHpwdEFNTWFkdWFwM0IyWEppN2lOX09WQkg5czlhUWJUcGhlTFQ5Q1FmYlh0YmRSWi02NDBvSzFULWd3VFRWaENqR3R0Y0tSM1pyYW8xVkdiMXlZYmg2T0NEcGltdzQyT0lERHNtU3BWanNVMnpuTjd2UXpuQ3VuZGdpc3FiSzFXcU9Rd3NHMElJVmlUOGNub3kwUkVKb3lTUQ?oc=5) | Investing.com |
-| 11h 前 | 0 | 偏空 | [ConocoPhillips Plans Job Cuts in Canada - Offshore Engineer Magazine](https://news.google.com/rss/articles/CBMigwFBVV95cUxPTkJiNEVHQkc4dTZYcS1NdHFTV3AtUEdDTXRmRDdOX3BYNEstNnpNalUxV1JPcjhwR2hHYnU2c3R6LTZyVjFFa0QtTGxENHRqQjljSUFRMWdVTjQ3bmFCTzdINmliT3VSNEdZUjRuemQ4bHJrQ1VKNlBYbDkySWxFWEFlNA?oc=5) | Offshore Engineer Magazine |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 

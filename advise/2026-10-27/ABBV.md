@@ -13,8 +13,8 @@ _医疗 · 数据截至 2026-10-27 收盘 → 面向 2026-10-27 开盘_
 286.6 ┤                                                                       ╭────
 279.9 ┤                                                                      ╭╯
 273.2 ┤                                                                    ╭─╯
-266.5 ┤                                                 ╭╮         ╭─╮╭╮ ╭─╯    ···
-259.8 ┤                                    ╭─╮       ╭──╯╰╮╭─╮  ╭──╯ ╰╯╰─╯······
+266.5 ┤                                                ╭─╮         ╭─╮╭╮ ╭─╯    ···
+259.8 ┤                                    ╭─╮       ╭─╯ ╰╮╭─╮  ╭──╯ ╰╯╰─╯······
 253.1 ┤                           ╭─╮  ╭───╯ ╰╮      │    ╰╯·╰╮╭╯········
 246.4 ┤                        ╭──╯ ╰─╮│      ╰╮╭────╯····    ╰╯
 239.7 ┤                        │      ╰╯       ╰╯····
@@ -50,9 +50,9 @@ _医疗 · 数据截至 2026-10-27 收盘 → 面向 2026-10-27 开盘_
 
 - **均线排列**：多头排列 — 现价距 20 日 276.36（+3.6%）、50 日 266.27（+7.6%）、200 日 233.11（+22.9%）
 - **形态结构**：上升结构 — 更高的高点 + 更高的低点；前高 267.75 → 291.40（+8.8%）、前低 256.30 → 278.01（+8.5%）
-- **动能**：RSI(14) 67，偏强；近一月的斜率快于近三月（月 +8.2% vs 季 +9.5%），趋势在加速
+- **动能**：RSI(14) 66，偏强；近一月的斜率快于近三月（月 +8.2% vs 季 +9.4%），趋势在加速
 - **波动**：日均真实波幅约为价格的 2.4%；按本报告 2 ATR 的止损惯例，一个 R 相当于 4.7% 的价格距离
-- **位置**：距 52 周高点 -0.9%，距 52 周低点 +47.1%
+- **位置**：距 52 周高点 -0.9%，距 52 周低点 +47.0%
 - **量能**：最新一日成交量为 20 日均量的 0.6 倍，量能正常
 - **相对强度**：近一月跑赢 标普500 7.7 个百分点
 - **支撑 / 阻力**：最近的摆动低点 278.01，摆动高点 291.40（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
@@ -110,19 +110,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 7h 前 | 9 | 偏多 | [Is AbbVie (ABBV) Fully Valued Following Its Crohn's Disease SKYRIZI Approval? - Yahoo Finance](https://news.google.com/rss/articles/CBMioAFBVV95cUxQSk9IYndTc2FoMjltVWF5RjViV3FEVGtOYnRVbmRPRlJiUTR0UVlLSVNjWGVtNTN2Nzd4ZWNld253aFh3bjN3RTVvMHhRRllSdUsxaEhXbTR4T2QwUi0zclhMd2o0QVdNeVZaZ3dmTlhoYzNXb2lPS0NJNlREQm42eUd5aXVsaXhOMk1uel9mM1BGR0JmQjlQc3lhejU5R3VP?oc=5) | Yahoo Finance |
-| 4h 前 | 8 | 中性 | [Buy, Hold or Sell ABBV Stock? Key Tips Ahead of Q3 Earnings - The Globe and Mail](https://news.google.com/rss/articles/CBMi2AFBVV95cUxORDZGQ01Sc2prX2hhcEtFQmNCWllYUElxT0tPNktQMXoycV81enZGLWNTMFlCUGdaS3VFZmJoX2tIOGRoLW4wekx5STVpZ2l0Qk1QTXdxNHBSN3BmRHhtajQxUWdFbWFoWVA3bGRrdG1aWkJlcjJYS1ZnV0xNX0FvNm1CTFVacEppLXVnX2d1ZlJmcnhsOUVJXzV1WXpNLXdDeDJVaG5vNmVwYTFvWFppYVRwalJ0dUhtR0VuMV9qNkVJVFRtN3ZLdERzamQ1NU9zS0xTT3R4SC0?oc=5) | The Globe and Mail |
-| 4h 前 | 8 | 偏多 | [AbbVie: Analyzing Performance, Pipeline, And Pricing Ahead Of Q3 (Strong Buy) (NYSE:ABBV) - Seeking Alpha](https://news.google.com/rss/articles/CBMiswFBVV95cUxQV1NjSjZyMjBsV1J2Ykh4SnotTVZCczFVMHpFTFhTQVRRZGNsTS1WVlUtaVRSYm5WRHJOYV9pSHF3X3k0dWtNZEo5ZHpKZmNIOG4tWGdsdWl6T0FqZVFCR0J6S0JLMG10SjY5S0VDeFdYaEpPSWZnUTdUMUh1X2JfcEVTalFReFVYUFlEWlNKQjNFWFR3dVkyRG9neDJTYXZHcVNhZk1uRUpXdzkyd3dGVVFkTQ?oc=5) | Seeking Alpha |
-| 7h 前 | 8 | 中性 | [What's in Store for These 5 Drug/Biotech Stocks in Q3 Earnings? - TradingView](https://news.google.com/rss/articles/CBMiugFBVV95cUxQUmJrT1dtMWtaYlpZMW5pLVRXQVZSd3d4SVZWX3NqRXdQcVhOb3dWUjQ1alh0WEdtR0o1V1ZqeF9pWFd2bHpmSWt0Z2J0Z0FuU1BCQTQtdE5fVDkwY0FUX0diSDdrR0V0RkFiemJWTUUzWG9oNEFlQmQweTJacDlVczIwNXRPOE9PSGNSUHFHd3hReXBqM2oyZXNNQUx4UXFrQUpEM3F2T3kzT0paeGVTOHVwUjY5WU9mVUE?oc=5) | TradingView |
-| 2h 前 | 6 | 中性 | [I just bought this pharma stock for its next generation of blockbuster drugs — and its dividend - CNBC](https://news.google.com/rss/articles/CBMidkFVX3lxTFBGTWZjWTlYUXkySXJRUTA5RjUycTRoRHZSWkRsQ3JRU3NiVkFDZFNoWXl6VnJyNFVSLXMySm96SDlneWxGSDhYc3FmZ0JOOVhtUGdHQzlTeVBSN0xRTTdhVnBHZ1VfUjNpd0dVaEZtblJ1T3p0ZHc?oc=5) | CNBC |
-| 4h 前 | 0 | 中性 | [Piper Sandler keeps Buy rating for AbbVie stock at USD 303.00 target - ad-hoc-news.de](https://news.google.com/rss/articles/CBMiywFBVV95cUxQTVFLMHUxc1dhWUR3bmU5bUpFNnN2eFhONm1DcGtyVmpRSWtyMkVlNFJVbWdLYmNPNnN2eHpMMjVSMGl2em9fN2ZSZ0lzMnFoNlNjRWUzSGZfU19Bb093NXgtRmZpSHlCZExxZFhQZlNSYXF3c1F3bnkwU3pKcHQzTnBGeC1jYXd4RWJjTmlLSHBkVk53Z2x4S1RtcE9GbFd1bU1feDJib0Z3azRvaHRESm5CNHRRbFRSWHhIUktDNkhpUjlHcjZTZ013cw?oc=5) | ad-hoc-news.de |
-| 6h 前 | 0 | 中性 | [AbbVie stock weekly forecast: Remains supported above the 20-day average - Traders Union](https://news.google.com/rss/articles/CBMijgFBVV95cUxQM1NLWUZLdmtBbXZoMXJmd3F6ZWpWOVUwR0FVTTExNnRnR3dnY2ZkNmlWRGZicHBFNW1VTEVQb0xVNVUxTmFaT1hONVlwUzRlVUlPQUk2NlBYV01teVBxUmhQbkdHVnprQVppQ0FBTWl3VkF5NlRMRXdMSms2VTZDcEdzZGhUeWhvSjc5V0x3?oc=5) | Traders Union |
-| 10h 前 | 0 | 中性 | [Piper Sandler reaffirms Buy on AbbVie stock: the price gains 1.69 percent - ad-hoc-news.de](https://news.google.com/rss/articles/CBMi0AFBVV95cUxPaTE0V2NTVUxYSnBIM19icElRMFpDUUJQYS15UGVTQ1B6REQ0TklCWFVTQ3lEYzBiWDJVYlQ0cVNLdzVLdDJpZkRfNGlSTlFHdzVnWmVLaEo2b3ZaMndFMVh4V2dkMl9TQV9NUkYwRTI0ZkJxVmcxcXVXR1Jjd3U0M1BsZXNOWU1TMkVRTHJjaHZrV0U1Tzh6bzdVZDR0Yzd2X1FiTUlMWVU3X2xOVXlFMU9ZR3J0VDBETElmSmFLaWlwekYzMlk1UTFmUnZ2M2Q4?oc=5) | ad-hoc-news.de |
-| 21h 前 | 0 | 中性 | [Here's How Much $100 Invested In AbbVie 10 Years Ago Would Be Worth Today - Benzinga](https://news.google.com/rss/articles/CBMitAFBVV95cUxPN0ZOWGtiZ2l4RkVJVlZ0STFyUUtuZlR4M2xqUjhweVpaemhueUo1X2NMQXZnT0hmNmsxS01hUWxVVjA3SzlIb3JZVUdpRzk4VTZ3MUtQM09xZjdkUFJNZFJseHg3R3hqNE5OMzNoTEdMMUdGVUZZZW1yOHYzSzdKLWRlUl9pczdLZjQzQkpSM1NucEUxS2l1ZWl5c3ZISjl4ZDNHQjRDaTlvMW9yTGthQWRlYlg?oc=5) | Benzinga |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
@@ -131,7 +119,6 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 - 下次财报在 3 天后，落在持有期内。财报跳空会直接穿过止损——那一晚的风险不是 1R，是没有上限的。
 - TTM 市盈率 81 倍，价格里已经计入了不少增长；增长只要减速，杀估值的幅度会大于业绩本身的降幅。
 - 现价已经高于卖方目标价均值 283.19（-1.1%）——共识认为没有上行空间了。
-- 政策面对该板块的倾向为 -0.52（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -153,7 +140,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-22 | 284.57 | 285.76 | 278.01 | **285.19** | +0.1% | 6,172,200 |
 | 2026-10-23 | 284.58 | 286.77 | 282.30 | **285.64** | +0.2% | 4,631,100 |
 | 2026-10-26 | 287.05 | 289.59 | 285.18 | **286.74** | +0.4% | 4,514,400 |
-| 2026-10-27 | 283.88 | 287.32 | 283.16 | **286.44** | -0.1% | 3,224,653 |
+| 2026-10-27 | 283.88 | 287.32 | 283.16 | **286.39** | -0.1% | 3,224,653 |
 
 ## 七、自己去查（本页不做独立验证）
 

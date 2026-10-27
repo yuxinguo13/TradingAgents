@@ -112,12 +112,14 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 11h 前 | 8 | 偏空 | [BofA cuts Vistra Energy stock price target on Q3 expectations - Investing.com](https://news.google.com/rss/articles/CBMivgFBVV95cUxPNF9JSHN4R3JERGg3N0MtMEdpTnBJUXJTNURtREdlY1l0dkVGT20tZVJtazQzSk51aDd1THFjY200Z2t4enVNZ3pHbERHZ1A0ZTB2TjE5cHdGYkY5LTgtdzZFU2xyTUxzZTU3d2VTRXg3R1hwVjQtRUltWkJoWElLSjBFMUk2Y2dIWlFtRnJINnZRNEUtTVdaZERMb1E0T1lzQzdNX1laLTB0YXcweHNlR2VqT3k1eVhLVV94MDNR?oc=5) | Investing.com |
-| 11h 前 | 8 | 偏多 | [Vistra Corp. $VST Stock: CUSHING ASSET MANAGEMENT LP dba NXG INVESTMENT MANAGEMENT Raises Holdings - MarketBeat](https://news.google.com/rss/articles/CBMi7AFBVV95cUxNLUl0UWJsLTRaV09JbWdWck5KVlc5THAxUFBub1c4bWZnTG5TUjNsOUpqZjJYUzZnR3RSZU9jRDRSbjlFM2twTUFHdnRBUHlDTGl5Tzg5dnFyWGlxb21xdE1YbHA4OWM2MmhBUWpxN1FQbFpSd3NJNXhTdXlGRzZSZ0w2RFZieFV2Y3lnUUNRbUphbzVBOTlZbmJoNW1KLW1iMkhVZ1N1RTYzeldaZ294aFY2QllMc1ljb2w1NXhSQmdaWmYtbHVQcFh3dHNDbFp3MkxUcV9xLW5jaXM0cEstX0FGT3lRVURpd0l5RA?oc=5) | MarketBeat |
-| 23h 前 | 8 | 中性 | [Vistra (NYSE:VST) Shares Climb 1.2% - Should You Buy? - MarketBeat](https://news.google.com/rss/articles/CBMiqgFBVV95cUxPT09wWVJva3piRjdRTk1Va21wellWdlJfbkZFaEROYlVRVnVkTXlGNEJVRjNiS00zTms2bkh2VElaTDhtLXZkRXJFZUdoREVpQTFiNkVXSkU3bEo5T05LUEd4NU1GNWNoMGktVUpXYlpLcnp4UkpjU1RGaEp3NkRDSEF2RHo1emhPUG9qMjZseU9LWEF1M0F1azdOcmpjN2M4UDA2Wjc5QW9Sdw?oc=5) | MarketBeat |
-| 3h 前 | 0 | 中性 | [3 Energy Stocks I'm Not Selling, No Matter What the Market Does - The Motley Fool](https://news.google.com/rss/articles/CBMilwFBVV95cUxPS241S2pxckpxX29ibGJEZ19mUDJXcmdzSzRFLXRYVENJVVFZMWlidVBGY3lmWWg2dnMtZGVMZUthbUFGNW5qUXNvVVlqbEVGYnZ2RzZuRWM2LVZWSk9WTWczdm1OMnc0c2d5MGhXdFV0TGY1TVUwRlB1Z2g2UjJIeUNuREZZQXNyLUVPbHRoS18tX3I1UkJR?oc=5) | The Motley Fool |
-| 8h 前 | 0 | 中性 | [Vistra redeems preferred stock. Vistra Corp stock trades at EUR 128.87 with USD 47.6 billion value - ad-hoc-news.de](https://news.google.com/rss/articles/CBMi8gFBVV95cUxNbDZ3NmRreUlrOEpveXZoSU5vbGhITkFiOXlXVElEeDNDSVlVSUluc2RORENPTTBJdmxHNWgyall2ejRQX0RjSUlfYWV1RXNlZlRLMTcycnhfcnRxODJlaG0wSFY0bEQtRWJmR3FQdVp3SHRTR0U4XzdmcmxicjJPWTg0YUlXcmJ6UHJxU0xuOVY1ZVJpdktzRGlVMU8xRnVtS2lSSnBzU0tWdkJfbURSaF9oTVRGNWRGQXlqNExQOWc1VUtzdnZ3aG9obndheFdUMW1ORW9HNXkxZ1ZqTUphVm9BcV9PaThlRkwyS3B0dmF0dw?oc=5) | ad-hoc-news.de |
-| 30h 前 | 0 | 中性 | [Vistra Corp. (VST) Stock Price, News, Quote & History - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMiUEFVX3lxTFBhaHo2SFJPRVNWNmU4NnFqdnJyeElQZzBCVHpOVlcxM2RTQzY2aVhvcl9xOTQ5WDJUa2JqaGNtRUZYZ20tajJlT1NKNDN1WGxm?oc=5) | Yahoo! Finance Canada |
+| 10h 前 | 0 | 中性 | [VST Nov 2026 120.000 call (VST261127C00120000) stock price, news, quote and history - Yahoo Finance UK](https://news.google.com/rss/articles/CBMiZEFVX3lxTE1Sb284aGlOTXdiVmU0Zm1YX1A2emtNSHplN2ZRTS1iNW81QndtbTU1emNPOHI5bjJPeFNtVWZWZV93YmV0bk9zVUFJZS0tTHJCT1BBbzBxdU15a2tuS0lIREhoc1Y?oc=5) | Yahoo Finance UK |
+| 13h 前 | 0 | 中性 | [VST Nov 2026 200.000 put (VST261106P00200000) stock price, news, quote and history - Yahoo Finance Australia](https://news.google.com/rss/articles/CBMiZEFVX3lxTE1DT29OUzRRLWpkN3NFLVNkcGg4cWxzV2VKQkk4WUVvUkM5c0JwME5OOXdOUThzMUw4Rk5kTG1aU0hMUk1VbHlSSkdwYUJXTTh5eTR3ZEZHYWk2RzZiaG9IRmpvc1g?oc=5) | Yahoo Finance Australia |
+| 14h 前 | 0 | 中性 | [VST Nov 2026 170.000 call (VST261127C00170000) Stock Historical Prices & Data - Yahoo Finance - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMib0FVX3lxTE51clNEelQ3VEVyN3VQTlVPUGVFalVYVG5rMUx6LUFCRDN0WVdWeEljTDcxOVZjeGJpWlhEd3RHS29sOFFfN0pVTmtkcXI5V0VNcEpJQkcwRm9UX0lUVlFoazVYWmxpV21GbzFqQVJlOA?oc=5) | Yahoo! Finance Canada |
+| 16h 前 | 0 | 中性 | [VST Oct 2026 134.000 call (VST261030C00134000) interactive stock chart – Yahoo Finance - Yahoo Finance Singapore](https://news.google.com/rss/articles/CBMibEFVX3lxTE1nM3pDVHZyenFJZGpNdGdTSVlsc3VhZnZ4T1FRV05YYlhGY045dTVROUo3UXcxTTZLaWJwREFhZnlOanV2cmNOcURuX0hQUjlDQmswOWo4ZjU5enIwaXhWVUlZTVBUTGxEU3pJTw?oc=5) | Yahoo Finance Singapore |
+| 21h 前 | 0 | 中性 | [VST Nov 2026 115.000 put (VST261127P00115000) interactive stock chart – Yahoo Finance - Yahoo Finance Singapore](https://news.google.com/rss/articles/CBMibEFVX3lxTE1tQVBtVjhERTNwckt3TVRDX2xYRFYtRHpydVFSelhlYnpiWVZBQkh4V1FXcDVVY19hcENoR1dZQUpYb2t6T19BNjNBcWdjbFktYU4zSkhVNGlRUWJPaWhrcVlfRU9RNENCVm1UVg?oc=5) | Yahoo Finance Singapore |
+| 22h 前 | 0 | 中性 | [VST Nov 2026 138.000 put (VST261127P00138000) stock price, news, quote and history - Yahoo Finance Singapore](https://news.google.com/rss/articles/CBMiZEFVX3lxTFBkQ2VEdW44M20zcFBQMnJ5enVIVmNDWlhxWTk0WV8yc2cyb19Md3ZTTmVFX3d2Qml4VjVfZEdRVFhKNlN2MEc0YUtrQmFQM01tdmJDdjVGcm5XcDA5ZUItWmRxVEY?oc=5) | Yahoo Finance Singapore |
+| 28h 前 | 0 | 中性 | [VST Oct 2026 180.000 call (VST261030C00180000) interactive stock chart - Yahoo Finance UK](https://news.google.com/rss/articles/CBMibEFVX3lxTE9GdXAwRTJmTmo1blhpcVJBb3ZXdU1yS183TUpBNVBFTDc1QVlXTnlhbHlydC11ekFWdk94WmRfWGxqU2RWNkZyWXlHdm03RTQ3UWJER3lpU1RURU5ReDhGaEt2QlZBbnRDaGJ2VA?oc=5) | Yahoo Finance UK |
+| 35h 前 | 0 | 中性 | [VST Oct 2026 141.000 call (VST261030C00141000) stock historical prices and data - Yahoo Finance Australia](https://news.google.com/rss/articles/CBMib0FVX3lxTFBGYnZtbU1lRVM4MUZ2WXN2aG41Q3BTYXhabVVHQkZBZWZ2cUc0WURVeDJxMFhmcXB0SDducWNZUTkzcmcwSFpoaE9YV1R4MHREMGo2YjJLQlpyZjMtX2JuN2FIWVFncFp4YXpjUk52WQ?oc=5) | Yahoo Finance Australia |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -128,8 +130,6 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 - 图形上是跌破 200 日线——现价距 20 日 150.59（-2.6%）、50 日 144.97（+1.2%）、200 日 153.67（-4.6%）。本报告的买入规则本身会过滤掉这种形态。
 - 下次财报在 10 天后，落在持有期内。财报跳空会直接穿过止损——那一晚的风险不是 1R，是没有上限的。
 - 负债/权益 373%，杠杆高；利率或再融资条件变化对它的影响会被放大。
-- 24 小时内的利空标题：BofA cuts Vistra Energy stock price target on Q3 expectations - Investing.com（Investing.com）
-- 政策面对该板块的倾向为 -0.71（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 

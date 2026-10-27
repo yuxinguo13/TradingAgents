@@ -16,7 +16,7 @@ _能源 · 数据截至 2026-10-27 收盘 → 面向 2026-10-27 开盘_
 168.9 ┤                                                         ╭╮         ╭╯
 164.5 ┤                                              ╭──╮  ╭─╮╭─╯╰─╮   ╭───╯ ······
 160.1 ┤        ╭─╮                                ╭──╯  ╰╮╭╯ ╰╯    ╰───╯·····
-155.6 ┤       ╭╯·╰╮                       ╭────╮ ╭╯      ╰╯    ·····
+155.7 ┤       ╭╯·╰╮                       ╭────╮ ╭╯      ╰╯    ·····
 151.2 ┤────╮·╭╯·  │···╭─╮···             ╭╯    ╰─╯       ······             :::::::
 146.8 ┤    │╭╯    ╰───╯ ╰─╮ ···········╭─╯···············        :::::::::::
 142.4 ┤    ╰╯             ╰─╮      ╭╮╭─╯              :::::::::::
@@ -48,7 +48,7 @@ _能源 · 数据截至 2026-10-27 收盘 → 面向 2026-10-27 开盘_
 
 ### 图形读数
 
-- **均线排列**：多头排列 — 现价距 20 日 172.88（+4.1%）、50 日 166.64（+7.9%）、200 日 152.49（+18.0%）
+- **均线排列**：多头排列 — 现价距 20 日 172.88（+4.1%）、50 日 166.64（+8.0%）、200 日 152.49（+18.0%）
 - **形态结构**：收敛整理 — 高点走低但低点抬高，区间在收窄；前高 169.64 → 164.91（-2.8%）、前低 159.27 → 174.63（+9.6%）
 - **动能**：RSI(14) 65，偏强；近一月的斜率快于近三月（月 +10.7% vs 季 +15.5%），趋势在加速
 - **波动**：日均真实波幅约为价格的 2.3%；按本报告 2 ATR 的止损惯例，一个 R 相当于 4.5% 的价格距离
@@ -110,13 +110,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 8h 前 | 8 | 中性 | [ExxonMobil's Q3 Earnings on Deck: Should You Bet on the Stock? - TradingView](https://news.google.com/rss/articles/CBMitwFBVV95cUxNMzJvNmRnZnNVNWdkT0dDNEZuVnZMdHpwSUVjOEp3eHVuaF9leS1PcGl2d1hLSlk3WkVZN0N5eVhCQlY3RElsMjBCZTdOR200cW4xYnRqVFRRdi02Z1JXSWpMeDhjQXRyLXdBUUdZQnBpR1l4V1RuYzZqQVFjVmpwaHJTaHdYSlpjcUtFNkRVS214a3V1LW1ycGJJWUUyNVZxenhTdW82MFM1eWU5VzJRT2FyODU2OE0?oc=5) | TradingView |
-| 21h 前 | 8 | 中性 | [How Investors Are Reacting To ExxonMobil Stock As Earnings Near - Simply Wall Street](https://news.google.com/rss/articles/CBMizgFBVV95cUxOeEttUzVLZkN1dnFXaVVVaHgweDFHZ1VzaUxWY3JYTV9rREtsa2NIZ0MzRy1kNlU4SHI3aXpSU0RCZjhNc05kWnZqaVZpVkJDOEpiUXJDalRaOUJydk5OWUcyUTd1VjJaX1JwM1pVZV9aLV91YWtQRkpNS0MzT0d6dnpfQkl4TnBOVmFyU0NMZVJKMDhIejJIUlR0U2c3VFhwdVh0bHN3dlcya3BJM3pBNERyLTc4UjNhT2tDeFVMSTVCeDJCVFZlRW1ya2RqZ9IB0wFBVV95cUxQMklPQVNzN0ZKa3NHYmxTelQ0TDk3b0c3R19MaWRKZ0VRSEoyVnRlajlZelY0NDZtWE9aTFdORTNORDA2ekM3dFMwTmxPcXZNdWRzVHN5LXBQT09wd2NsRHpna0F2Z2Y5ZnkxOXVMWS1MNnlBclZRYUxjbkJDUS1JdllOZm00WHYxQWJsSGhrMi1kcUIzTWtSYmJmZXRpNnNtZ3Z3b1NTT1dTdWhnSGY0Vjhsa1IwRUhaZ0VEcUpCUzhZMUg2RXQ2NmphNkRUc1MyaUhr?oc=5) | Simply Wall Street |
-| 8h 前 | 0 | 中性 | [ExxonMobil, Leidos, eBay and More: CNBC’s ‘Final Trades’ - Benzinga](https://news.google.com/rss/articles/CBMitgFBVV95cUxPX0pFdjlkREhOTnFLMGs0eGRQY2JRTURJcm1sdHM3RFlsR3Y4UWk4MktldllGc2VNNnJVTDZqdFpFci11SVVOZ3YyNm1vNEI3QW05UWZKbFNSV3Vjdkl3SHpueF9xVDdrdUFnV0dLdTZzaFNXZ0U1ZWVSNHJrcGE4LU02ekV1dnNVNVdydW0yYlVTYnh6djFUR2VNaXJCTzR4ZTRnMzVubHY1eGVsYjQxeGZjNnU5dw?oc=5) | Benzinga |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
@@ -145,7 +139,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-22 | 179.89 | 180.31 | 174.63 | **178.23** | +0.1% | 11,564,300 |
 | 2026-10-23 | 179.37 | 183.75 | 179.00 | **183.21** | +2.8% | 11,517,700 |
 | 2026-10-26 | 181.86 | 184.59 | 181.52 | **184.54** | +0.7% | 10,893,300 |
-| 2026-10-27 | 183.63 | 184.88 | 179.78 | **179.88** | -2.5% | 14,003,979 |
+| 2026-10-27 | 183.63 | 184.88 | 179.78 | **179.91** | -2.5% | 14,003,979 |
 
 ## 七、自己去查（本页不做独立验证）
 

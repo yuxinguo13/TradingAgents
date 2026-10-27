@@ -110,15 +110,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 6h 前 | 8 | 中性 | [Pfizer shares may move 3.8% on Nov. 3 earnings release By Investing.com - Investing.com India](https://news.google.com/rss/articles/CBMisgFBVV95cUxNRm1JQktPWWJMM2ZZc1JCWEpRY3RpVmc3U3VfaUg4VkZRck1WeFhOU1RDSDY2RnJRNkZjN3dTVFBLRGpVQ040Z2FzRTljcjhCdl9ERU1SNGpoR3BWeEhweUc3cEdkcVMwVVBNZk55LUVqNk1GQ21wdDFUQjFwQjlGN2xsbmp0QkI1Mk9YN1BrMG9MVjJZa1lqNy1pelY3TjFPa2hrQmFUc3A4YW5RTURZMmRn?oc=5) | Investing.com India |
-| 6h 前 | 8 | 中性 | [Pfizer shares may move 3.8% on Nov. 3 earnings release - Investing.com](https://news.google.com/rss/articles/CBMiswFBVV95cUxNX2R3ZDlVMzVhd29rd2NHSVg3bHQ3cHVPNGQwS3pHNWpZS2RzWkh6V29CWXZYVi1UTkpSYlpSUk9VandyZjdtSDRzWE15UEl0a3BRRTdBT3lQN1M0aW1ReU9LNzFQaTNyREZWVmR0R2JUeV9qWWo4TDZBRFY0VXktM0xvenp6TGxObmNURmtvbXJJNzVwbjFxcDZTb2Y2bGpuZjV6d2VienRhTEY0cmVOOGhROA?oc=5) | Investing.com |
-| 3h 前 | 0 | 中性 | [Pfizer Cancer Therapy Shows Extended Progression-Free Survival in Multiple Myeloma Patients - Benzinga](https://news.google.com/rss/articles/CBMi4AFBVV95cUxPZmVwcEdSRkcwcGF6enQwRi0wRnJzTExYbnBURFk2Z3JaUk93MjR5aV8yVXRkelQ4bElEaTBFcnI0eDZaY0k3WENuaDh1NlF1VndvM1NPYlllQ2dQQVY2WDF3Rlg2LXU5dlp1bGNRdTMzZldaZDItVXhOZmRJaHNaZ016SEUwZ185eUJXMFM3WkxnZzRZTjFXS1pvS1BsanFpdHloVGRGRUJlNDA0QTNUcUMwYVVXS3p4eFpJa0VUR2I3dFpDWEl6N1otV3k3OUFsXzk5YkpTU1lCaE5GVzlXeg?oc=5) | Benzinga |
-| 4h 前 | 0 | 中性 | [Jefferies keeps a USD 36.00 target for Pfizer stock - ad-hoc-news.de](https://news.google.com/rss/articles/CBMitAFBVV95cUxOVEFOM0NNMlRST0N6eWRKSWV6Sll1RHhfXzFkRmt2Zk1GNDJTWkhtR2dmUE94ak15LXhrZThocU5uLTNjY3BfRWdRS1ZIOEQ0dEx6Tk8ydEUzblBvQXRJdW1OdENKTnplYUpTUDlYRjhRSl9yN3lPOS1VMnRKMWpTOHoyMUpCQjBxTGxnT25RTFhGTjFiaWRFQjZsTXNlc1pzdmZpNERheFQ0eUZDcE0ySllSZkU?oc=5) | ad-hoc-news.de |
-| 23h 前 | 0 | 中性 | [Pfizer Rose Nearly 21% in 2026 as Its Forward P/E Climbed From About 9 to 11 Times. Here’s What November 3 Has to Show - TIKR.com](https://news.google.com/rss/articles/CBMi2AFBVV95cUxOYzhKNmxzSXZPanRHNlhUS2I3aXh2SkpGWURRN3p6c1ZjMHBPNEkyZW05TllsbFV6WTA0bXVFVkpDZTZ6SkdlTlBLVThkQ0x1SlJSMGdmNTE1aTdhbWg1T21GSVIwVmxWSzlMb0MzTDI2SUN1ZHFfTW8tRVlTUndwU2lMS25ZaVVqaXFiRWJmUkRiMlhVSE9odlFHN29vR2Q5TVZzWmFVVmdENTRzNE92SUFQLWpSZ2ZxRVlzekU2Q0JUNkxQUFNySUVTWEVZNGM3emlwN2FEamY?oc=5) | TIKR.com |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
@@ -126,7 +118,6 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 - 下次财报在 7 天后，落在持有期内。财报跳空会直接穿过止损——那一晚的风险不是 1R，是没有上限的。
 - 现价已经高于卖方目标价均值 29.26（-1.8%）——共识认为没有上行空间了。
-- 政策面对该板块的倾向为 -0.52（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 

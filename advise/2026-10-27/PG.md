@@ -50,7 +50,7 @@ _必需消费 · 数据截至 2026-10-27 收盘 → 面向 2026-10-27 开盘_
 
 - **均线排列**：多头排列 — 现价距 20 日 152.99（+4.1%）、50 日 148.08（+7.5%）、200 日 146.57（+8.6%）
 - **形态结构**：上升结构 — 更高的高点 + 更高的低点；前高 148.50 → 165.75（+11.6%）、前低 142.46 → 155.77（+9.3%）
-- **动能**：RSI(14) 62，偏强；近一月的斜率快于近三月（月 +7.5% vs 季 +9.7%），趋势在加速
+- **动能**：RSI(14) 62，偏强；近一月的斜率快于近三月（月 +7.6% vs 季 +9.7%），趋势在加速
 - **波动**：日均真实波幅约为价格的 2.0%；按本报告 2 ATR 的止损惯例，一个 R 相当于 4.0% 的价格距离
 - **位置**：距 52 周高点 -3.2%，距 52 周低点 +18.7%
 - **量能**：最新一日成交量为 20 日均量的 0.7 倍，量能正常
@@ -69,7 +69,7 @@ _以上每一条都是对已经发生的价格的描述。均线、RSI、摆动�
 - **增长**：最新季度营收同比 +4.0%；盈利同比 +0.8%；最近 7 次财报里 7 次超预期。
 - **盈利质量**：毛利率 50.6%、营业利润率 27.1%、净利率 18.2%、ROE 29.6%。
 - **资产负债**：现金 $153.65亿；有息负债 $389.25亿；负债/权益 70.3%（负债适中）；流动比率 0.72（短期偿付紧）；自由现金流 $126.56亿，为正。
-- **卖方预期**：23 位分析师覆盖；平均评级「买入」（2.08/5，1 为最看多）；目标价均值 173.30（较现价 +8.9%），区间 143.00–190.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
+- **卖方预期**：23 位分析师覆盖；平均评级「买入」（2.08/5，1 为最看多）；目标价均值 173.30（较现价 +8.8%），区间 143.00–190.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
 
 **分季度损益**（季度数据，最新在左）
 
@@ -110,19 +110,13 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 4h 前 | 8 | 中性 | [Procter & Gamble stock trades at 23.88 times earnings as sales grow 3 percent - ad-hoc-news.de](https://news.google.com/rss/articles/CBMizwFBVV95cUxNU2RaX2NKMWd2b3FhWVFRdEh3TVNPaXZiNWJYQjh2czNwVVpGbk1seVFxZ1I0MHhHRkdweTQ2eTZ2eXhQajNEUkh2QUJROXNDSmNWUXQ3R3hzNWt3WmhrZkV3TllVZjFxTTVQTFZXTmluQURZcVlTLS1NVlF4UFZZdFJVUXNvMWlHeGxQcmpQYXdFbU5TbndiOUU1M0F0OVdxNzNGMVNFZFoyeVp2d2l0V2EyazdCYVdraW9POFVCVVdhdmJTRWlyYXRiSDRTWWs?oc=5) | ad-hoc-news.de |
-| 14h 前 | 0 | 中性 | [Form 144 PROCTER & GAMBLE Co For: 27 October By Investing.com - Investing.com India](https://news.google.com/rss/articles/CBMipgFBVV95cUxQU2c1QU9FX2NfR0tpWEpyZ205b2dsZHN2UnFQUkdfU21RRVVseHh5dE9DNzJKSWQzc2VEOUNTc0kzN0ZRaFBMU2FQRnN1MXRmMTNIb0lubXdrN3hMRFJFREQtX3F0UmRWMmdOWkEyVEFVdEgxRjFlYnVjM2Y3QWNuamQ3YzVjSGE4Q0ZMNHNUUHhXamNETXRGVjhZd2plUmgyUDdxbWZB?oc=5) | Investing.com India |
-| 27h 前 | 0 | 中性 | [Procter & Gamble Company (The) (PG) Stock Forecasts - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMikAFBVV95cUxOZ0U0WkljMVlKb0JBSnBrYWNPcjhJN1QwTElUUkpDdEp1d1hJSEgwdUQ1X0luY1RxZFJCMTctUXBnN2gyUjF1QUI1anpka0R5LWlsa1J5emJTR1RXMnV3azV3YXdRa2psUWFpOFREUzJkTVBWOE9hb0JWaTZmNE9CVlpoRG9KSlFTUzFwXzVOY0c?oc=5) | Yahoo! Finance Canada |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
-- 政策面对该板块的倾向为 -0.94（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.49（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -144,7 +138,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-22 | 161.07 | 165.75 | 160.30 | **164.50** | +5.6% | 22,037,200 |
 | 2026-10-23 | 164.00 | 164.50 | 160.64 | **161.02** | -2.1% | 10,330,100 |
 | 2026-10-26 | 160.76 | 161.60 | 158.85 | **159.92** | -0.7% | 9,491,200 |
-| 2026-10-27 | 158.71 | 159.53 | 158.42 | **159.20** | -0.5% | 7,200,336 |
+| 2026-10-27 | 158.71 | 159.53 | 158.42 | **159.23** | -0.4% | 7,200,336 |
 
 ## 七、自己去查（本页不做独立验证）
 

@@ -110,23 +110,13 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 4h 前 | 0 | 偏多 | [Morgan Stanley raises target for UnitedHealth Group stock to USD 531.00 - ad-hoc-news.de](https://news.google.com/rss/articles/CBMizwFBVV95cUxNMDRMY0dCa1hLeHZyNXM4YkR5RHFiNFRZTmM0T3dQME1kdERzY1FfLXZ3UDF5SWxvT2gzRFBYUk41UHJTZkxURGlsZlpUUFUyVGVib2lVeUhjUTFxV3BVTmg3Z1pJUlRxMzZvVUZRc0hUcFZGLWFTejhnRHJUWkJmQWprNWNpcDdMX0RKeU5reUwwdHA3VWZHS2dYRnFHZ2dWT1JYR1dXOVR4RGUtc0lLMGI1WUFYb2dJU3V4UXRkYTJONHU4eHhhYXFmUHRnZnM?oc=5) | ad-hoc-news.de |
-| 8h 前 | 0 | 偏多 | [UnitedHealth Group To Rally Over 29%? Here Are 10 Top Analyst Forecasts For Tuesday - Benzinga](https://news.google.com/rss/articles/CBMi7AFBVV95cUxNUEFnSzlrZW84aHF3RWpHbmNzVm5aMDlBR2ZnOGFFZGNQYVgxTGxhWWFiUXVNd05jclZqVXVLcW0zVXpqYjN3cnRmMEhBclBDNXAyeFYwb0NDMzZKbTgwbWJkNVZYbklTZGNwNjdTS2p3NEtBRXZvdjRtb0hJdC1ObFlZM3dnQUppNHNsNFFueWtLSVRuNG4yQmh2cmZBMGQxTVVnZnF6azNBbjlrT1FScHF5elFwNS1Qa21oajZTcExkMHVBV2lsQTBlTlFfckkyOVNZRFh0bm5uaGFKS3plTWhwdHBTbjJmZzYwVg?oc=5) | Benzinga |
-| 9h 前 | 0 | 中性 | [Texas investigates UnitedHealth Group as UnitedHealth Group stock costs EUR 368.50 - ad-hoc-news.de](https://news.google.com/rss/articles/CBMi3gFBVV95cUxNSFpTX2ZyZ09UN3ltX0kydXJURWxsLTVGc1BCekduSlRFbWJGSjZlb3BGQWtNaTNZbDNIX2stUGpZMlJyNFZXZ3pvV2hkdWpYcWNuLXFWaWxQVnFVWEFrRXgtSlZUc2V3R013dlk1c1oyZFdLSWh4VkExOHJlbi16SzBCcXhXODVpakR3Sko0aWE4MWpnZU5vX1VKMzAyUVVJaG05aDg3aHUxdG15c1hIX0RpVWFfZXdweVBDMG0wR21yMm5zLTVTVWpIcHFibDNWZjZNSExPeUJkYmFoaHc?oc=5) | ad-hoc-news.de |
-| 13h 前 | 0 | 中性 | [UnitedHealth Group stock pre-market at EUR 368.60: health insurer slightly higher - ad-hoc-news.de](https://news.google.com/rss/articles/CBMi1AFBVV95cUxOdlJkY2JTYnNCWU9YM2lGeTNKNVJ1NlhvOC14MjNKYmgzM282cldJeEkzdW5ZMm5RaXhRUjVXNG5uMWdWb05rYVVKVHl1cEE4TUp5aWw3UUFNbW5FMm1DczNfNWVYSXo3SmczTlA5ZjVydVp6bjIySmRnR2hzM0xqQmtNU1hCVE93Z2lka0w1elg2SENTZTJlbjY3d0tDOHFQNHZqc05RWWMyZ19oR2kwdzRSUDJnRWVxaE82QXZsdmcwdmxWWXZfalYtUjJvTklkTXQ1OA?oc=5) | ad-hoc-news.de |
-| 29h 前 | 0 | 偏多 | [Mizuho raises target for UnitedHealth Group stock to USD 500 - ad-hoc-news.de](https://news.google.com/rss/articles/CBMiwAFBVV95cUxQaWVHaGlQMk1DTHJsVmVvclJWWF9pWXpMLXpOMnF3anY5WkFFVEN6Qlc1dVk2bnBtSUgzZEIxTXF5bFlCLWthN0FzXy1zOTJpM3JIMERYSmk0TUxUZUJacGlRWWs0Nl9WdF8tRkduWmdaNmc2akh1SkJRS09NN3gzZVVDUFN2eEZOd19FUWNPclRHTVB2RkZ2UHlsXzJsdXJXX2doenNaTjZWZXhQY1BFSy1XNEtKOGg0cFhtZm1NNEc?oc=5) | ad-hoc-news.de |
-| 29h 前 | 0 | 中性 | [UNH Stock Quote Price and Forecast - CNN](https://news.google.com/rss/articles/CBMiT0FVX3lxTFBhZjVIOG9BMkZjYWxoUWlSZE9JM1lGZWU5TGIzUE5ZcFBmcC1BTWxUdVJNWS1HOXc5RXlNZUM1Yk4zS2pGQU5pLUkxRGVBdUU?oc=5) | CNN |
-| 33h 前 | 0 | 中性 | [Mizuho lifts target to USD 500 for UnitedHealth Group stock - ad-hoc-news.de](https://news.google.com/rss/articles/CBMivwFBVV95cUxOWjB0RUJqcTBZdm1WSDJLU1hpTHRTWkVyTkFQdG5QY3lCQks0dTVaTXhCNDJ3cEZlM3pJMHEzSjc3eVNYMC16TnNLOEc4XzNGZHFiWWpWYlJHcXpKaGJkdU5ZZVZUbFk5TkU0ekwwTjhmcTJiZGhEVTJJbjE4TmxtUE0wQWY0TDdxbklTMjc2Z3pUamVpdmRWUVNOZzhGZmE3Z0p1X3JpWXBBY3FwZjU1QWdySlZHX1FRSFRiMGNLbw?oc=5) | ad-hoc-news.de |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
-- 政策面对该板块的倾向为 -0.52（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 按本报告掌握的数据，没有触发任何一条成文的风险规则。这不等于没有风险——它只等于「这台机器读到的东西里没有」。
 
 ## 六、原始数据（本页所有计算的来源）
 

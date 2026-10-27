@@ -110,19 +110,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 8h 前 | 5 | 中性 | [Analysts Hike Their Marvell Technology Forecasts and Price Targets - How to Play MRVL? - Barchart.com](https://news.google.com/rss/articles/CBMixgFBVV95cUxNZkRYcTBsM3JtUy1EUll5cENiOEdCMXJneVFaLU4tdEFvckxEN3RYR2h1QXdaNmc0bzdTbXROY1NwekY4U2xPSXVUeERyc3N0N2NDR1RrVFBETFdHcGx4Mlc2T3RCTWRLUmVFeVJOUXhDdUxPNERzVjROVVBCN0FiTUpSRGNfTjZjcGtJRFRvYWxCZWZ3TVNrbEJaT1FMMGNWV085VlRya0g4ckVQZnJ6TmE5TXR2VGctcEs2eEE0d0NETTJ1b1E?oc=5) | Barchart.com |
-| 2h 前 | 0 | 中性 | [Prediction: Marvell Stock Could Have Much More Upside Than Investors Think - 24/7 Wall St.](https://news.google.com/rss/articles/CBMiuAFBVV95cUxNVkMzb1YxNnRDQWdTUjlXVkpwN0NIYzluTzRub0RfU3c2S1pfck9kRU9sU0NKWi1YOW8tZFYtLVRYeEx6MjJJeEp2aENzS1I5cnNKT0Z4MHUtbDNVOVB1aTQyTjZfN0RVdFV0Qmswd3FSM3RJMno1dUV6dGVSUW02VVhHMlAxeTMyVVVCUHVrb3JjR05lTDVnMkVTb2pKYk9POFRvTWRmc195a2JXNGpkX19NNlJPLWxZ?oc=5) | 24/7 Wall St. |
-| 3h 前 | 0 | 中性 | [Intel, Microchip Technology, Marvell Technology, onsemi, and Seagate stocks trade up, what you need to know - TradingView](https://news.google.com/rss/articles/CBMi9gFBVV95cUxNSE5HRmVlczFUMlRLc1FxODJMNGlGem8ydS1DNFlOaW5aMUFnTUJ0dEJWZ1Biak94Tl9XdEZZVEdtT1htLXh1czBSUUtMSE5sTXVKaFpQR1g3dEEyVm1STHVjOWlObFZmUkcwNzBzeXRfbW5GajJ1REZOeDlvUE9Cajd1MEFIbjZOZGEzSUJXUzg4a3JXQXZ2RGVvOTJOY1hBQTRsYkdLTG55ZDlKQWppNDkzajJySUhiTmlLeURNb1lyT2hfZXZDLUdKdDRmTk56UnhUS3p6bmdzeDZWV1k5TENaV0dZLXJGb1UzTVlDVmp2ZXlqZ1E?oc=5) | TradingView |
-| 4h 前 | 0 | 偏多 | [Can Marvell Stock Jump 30%? - Yahoo Finance](https://news.google.com/rss/articles/CBMijwFBVV95cUxPWklaeVdiZHV1dDdLaFlVV05rQVBJc1F6cXBuZy1zZHJnWC1xNVBnMmJnejd3REJlMzNiVFNJMVdKVUw5d0N2Qk45VFRLT29uRGx3NzVLWVphOVdrcWZzUnFKSk9fYmtCYUxqTmp6U2tIWkNMV0dfWmRTYVE2b1lFRkVMQ184T3JNcGRGZUhjdw?oc=5) | Yahoo Finance |
-| 4h 前 | 0 | 中性 | [Dell Technologies vs. Marvell Technology: Which Tech Stock Is the Better Buy in 2026? - The Motley Fool](https://news.google.com/rss/articles/CBMi0AFBVV95cUxOcEZxenJTdUphMkZGMG1OWUdwSHhJdjUxVndVdUM3OF9YYXM0MUtwZzZySUk4YzRvZnloc3hlTWVaWXNUQWJic3FBV2JMQmFpclN4RFlCVHNhdGh5bUdiMWdnYjdqdTBjUFlnaWlpenkyU05mYlhvT2RFVHdrdTY0QWtnZEFTeVBZSElkOGRjaGpEaXhJOFBSU0tWY1JhZmd4SkdaakFDdS04MktWZmtFRGdVT2U4SVhZVWQxVE1pNENKWWtlYndDSTNlTGFuNlRv?oc=5) | The Motley Fool |
-| 4h 前 | 0 | 中性 | [Marvell Technology stock gains 3.37 percent to EUR 218.43 - ad-hoc-news.de](https://news.google.com/rss/articles/CBMivAFBVV95cUxQUE9iRmQtQ3BZeHFRMmJvV2pZRVRBT2Qwb2ZzNGsxQU9wdldueVBYVERyQXo1WURyQkNpc0dFNlNBdFNkZ2FvYlpWdWtLSXR3YmtEUkthOVVwYUcxdnZzeV90amRrSldTU0RybXhud2pYQnQ4YlgyNmpKVWR3QjdHUXJHNGp5SXhaOE5Jbm9VLTd0MVdsM1BwQ1pLaURtc19kQWd5RUwtMHVScm54VC1feUFqdFlDeHpoLUtYOA?oc=5) | ad-hoc-news.de |
-| 5h 前 | 0 | 中性 | [Marvell Technology Inc Stock (MRVL) Moved Up by 3.26% on Oct 27: Key Drivers Unveiled - TradingKey](https://news.google.com/rss/articles/CBMiiwFBVV95cUxOU01IRUM1WTd4Zi1KeGFFZTJEdFN5WWpYZUdVaWw1MTFUSlZSUUpzN2x1SDNOMkZpTkNGbGZ1WXE0QWRwU2Z3enVnU3BpeHlMdGdDZ004NEVlM1JLb1ZLUGk0Yno4YU1JRGg2WVNhTUQxdUpNQ09rYWdmWWlSWExWWl9VWHA1c3NtZVBF?oc=5) | TradingKey |
-| 9h 前 | 0 | 中性 | [Marvell unveils AI products while Marvell Technology stock costs EUR 212.90 - ad-hoc-news.de](https://news.google.com/rss/articles/CBMi1AFBVV95cUxPRXAtYjlESmNrWDU1WDloY1M1d0lFZWtXTGlNU29RRnR6UW9fSUhYU1lQeTNWRmNHWVhKbHBCUHlISm5UOG0tTjYwdTdLcUoyeVJfcXhKVm4xbDNEWVp1VUVRbnNUQmV4TXE1LWJWVVNnYlpwbmI4ckdIOXBCM1F0eldKWTZ6a0FJbHg5Q0g4SmlubDNDM0d0N3FGbEExejk0b0tGNHNoVDluSEhVdVZvandfTUZqcjB5ZjNKZTIyYmVTaVpkUHJaZ2Jjb0VxMk5IMzI5Tg?oc=5) | ad-hoc-news.de |
-| 28h 前 | 0 | 中性 | [MarketScreener lists USD 341.44 average target for Marvell Technology stock - ad-hoc-news.de](https://news.google.com/rss/articles/CBMi1AFBVV95cUxOZTMyTnFDUUJaUVg1TjlDRzVHNnVLdElBOWdPSXEwSEtOR3Z6bzhjUUFxQWRxRDZ0S01YOEVwdWZaV1lpek8xUU9XU2IyMWZmaWEtOEFtcnZXTDJFTFRaYk5jSk5UbTNjYVlyek1Kb0pQelBxNDluWno5WG9kR3FxQ1BCWi1YTDlIb21iRUFvWmV1SnRBSWtmdXlrMzRwUGxucFRGUV82VzdRU0cyLVY3NkdhcEF4NnF4Ym1rRy1IaDF3b1otWnNUVWJiaC1sakExaHV6VA?oc=5) | ad-hoc-news.de |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
@@ -131,7 +119,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 - 摆动高低点都在下移，属于下降结构；在出现一个更高的低点之前，任何反弹都还只是反弹。
 - 日均波幅 7.0%，属于高波动：同样的仓位金额，这只股票的日常噪音就能触发大多数人的心理止损。
 - TTM 市盈率 80 倍，价格里已经计入了不少增长；增长只要减速，杀估值的幅度会大于业绩本身的降幅。
-- 政策面对该板块的倾向为 -0.95（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.49（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 

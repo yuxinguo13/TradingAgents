@@ -112,18 +112,11 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 9h 前 | 8 | 中性 | [Broadcom (NASDAQ:AVGO) Stock Bumped Up to Buy by DA Davidson - MarketBeat](https://news.google.com/rss/articles/CBMivAFBVV95cUxPTUdacmZWam1NbjJHN1BzXzhDcnV6NW5hUzBUUk5FUVM2SS1OQUR2bGtpeUw4X1drM016dDdKa05XMGYwQ25nTGxqT19Ub1V6eF9yb3NhM21TVVVnNmc2UVNPR19zei0xY3RuaE8wd3RKSkI4XzlxQVMyVTNLaU1Zd1ZWZS1HR0dYYmJsYlFzU0lDYThRY3ctamUwYlRfWEtOQ0NTcS1oakJZYXFXV1dVUmNHSTJVRUpJejU5eg?oc=5) | MarketBeat |
-| 11h 前 | 8 | 中性 | [Broadcom Inc. $AVGO Stock Bought by Private Wealth Partners LLC - MarketBeat](https://news.google.com/rss/articles/CBMivwFBVV95cUxOc0tQNlR6cXRid2NQMEpXS1A4RHlhSkJMUENCNzkxcHpoX2xka1J4d3hrNVdxSzRXM25EbHlMUWd5YkExM1pHaEk1YlRNTEFsV1JZV0xtZ1dzN0V0U1VTQ3Z1aldxS3liNWVFamh1ZlN3d3IyaGd3U3B4czVFZ0s0dmxDcW1kUlBoa25SLWplU0N4RWNRMXU0WTJ2U3lnWk9yV3M1ZUEwcUVFWGhGd1RWR1BGUmQ0NDBJOGJMT0JlZw?oc=5) | MarketBeat |
-| 11h 前 | 8 | 中性 | [Broadcom Inc. $AVGO Stock Sold by OLD Second National Bank of Aurora - MarketBeat](https://news.google.com/rss/articles/CBMixgFBVV95cUxOak8takZ2bkJOMEdPWVl6ZGd4MDVNT2JuaklTbmF2aElWUjR4QnZvNV9XckRsS1hwOVk1Ui1LWm8xYlpibkVEeEFoa1hvamx1bHo2TEhFMlZRSzN4OHV1WXhMbmZsUk82aV9nRml6Wm5BVzFsbXF2VkNLd01oU2NjWnRaQXJoMU52RXhrUDdnVVpIOGxRdFpLMEh2RmdoNFhpTmNmWmpIdnR0eDhaVW5hLUt2MWFzWHVGZDVKamNPbnJtRHVBbUE?oc=5) | MarketBeat |
-| 11h 前 | 8 | 偏空 | [Broadcom Inc. $AVGO Stock: Ledyard National Bank Cuts Position - MarketBeat](https://news.google.com/rss/articles/CBMivAFBVV95cUxPSmlwQS1Dd2FOamxHa2FrQzFXMTFlVWg0WkVMdzNNN1lQUFNqWkNkM2R2WEhqVFoxR2dpMXVvdl95OGxadFRXcUNLaExYZ2kwV1FLcWpiSXZjcDA0U2t5YVd6cDdnMXVZS3pEU3JFUnBJanZKaU9YM0h6MzN2Z0JCRFJsM1JPRHBtamRya1ZLaEJra0paVEZ0LVV3ZEI5MGpwV2RCRVYyakFwWG1OazB6YW5tMmJOSm9jYUt6bg?oc=5) | MarketBeat |
-| 13h 前 | 8 | 中性 | [Broadcom Inc. $AVGO Stock: Howland Capital Management LLC Grows Stake - MarketBeat](https://news.google.com/rss/articles/CBMixgFBVV95cUxPYzFxZzJTeFJxb0YtRlhxTGhDTTR1ZGlWY1NmSzViZFhxaE5hVmxsdWNfSWdNeWd1bmYtNmtpSTNHX3FXdHhZbENUVXZSenZjTXZOMG9BRDRiRU1RdUM3QlQ5eDBRTFVwZDNlNmU1cGcwNTFzRU5sdW1vQnRpZ2lLVUJ1dFBfdUMySzJDVlV6NzJrZW4zYVEzN3VJcHBFNnBIUlB4M3lHUENvUkZjVV85d1BBdGxjZ0NiRlBya1JCQl9weG1TTWc?oc=5) | MarketBeat |
-| 13h 前 | 8 | 中性 | [Broadcom Inc. $AVGO Stock Sold by Indiana Trust & Investment Management Co - MarketBeat](https://news.google.com/rss/articles/CBMiywFBVV95cUxPcmt0RU9COUQzcWI0blFaRnJES0dEbFJ0NmRiZnNhaUlTX1E0ZVNWN0UyZzktX2hGZzZibkJkbmZ5eXNjOFZaYzFjMEREamlJanI3aUk4aHlUSGtTWjBlLXloR0w5bEU0d2dIQVJ3aHhWeGRKUk5acVliQmpOU3NqOVVBMmV4VnJQVDVtdE54aU5oM0lJLXJXaEw3blpnektNUEs0MGhvWDlwMzc4UnczUHZGS0VHYlBLYy1vaXQ4a05UOHpoa2NORkJIWQ?oc=5) | MarketBeat |
-| 13h 前 | 8 | 中性 | [Broadcom Inc. $AVGO Stock: Compass Wealth Management LLC Reduces Stake - MarketBeat](https://news.google.com/rss/articles/CBMixwFBVV95cUxPSlN6SXJ2T3ZvZk5tT2J2cFFia3JmaWZ4VXlYdGJGak10SnJhcmswaHV5VU5IaS1XMGNKSWdEQUU2WWF1eWU0WjRWOEJjc2Z5Tk52NUpKb0RVc0hEblpjby1abTR6cm9jMHdqQmU2VXVQM3VCanUwWlc0XzhCRVB6d2FpU1B2eVNDNkFOZzRId05IWWNzR3oxd3ctVlpCRjAtejZIdDhKdXBfbm1XS2cxZGdjS3NvMnFGNXlMT0ZCbjZ3NHNNSTU0?oc=5) | MarketBeat |
-| 13h 前 | 8 | 中性 | [Broadcom Inc. $AVGO Stock: Inspire Investing LLC Trims Position - MarketBeat](https://news.google.com/rss/articles/CBMivgFBVV95cUxOdms4RzhmNnowZ24tdGd2THRsZzRaSFNWR0Q2YjFZc2lrZWxZazNfV05tOW5TMDYxUE9CWXQyNXlSeFZsLUxYS1dUTVVGMDBNY1p4R1dGd2trbmhJTExSbjNzUkItdktzSTZJSG13dW45Wk50VExqbFZMb09pc0h2RktqNjdmZWM5NUVvb2FhTjJuTWRvSU1ESWpyTFJhRnlaVlcxQVVfcVJfN2ptc25NYW1FSmlXakppX1AwNTRB?oc=5) | MarketBeat |
-| 0h 前 | 5 | 偏多 | [Nasdaq Jumps 308 Points on Broadcom's Big Anthropic Deal: Stock Market Today - Kiplinger](https://news.google.com/rss/articles/CBMirAFBVV95cUxOdFFQRE0yYXBzRGs4VzhJekFiR1IzOWNnWlVYa0JMeUEzdWFvZVlpZzhCbS1ibFZBT25JazRvS2VVS00wUWM0Q3M1bWRlalFaZjVOMXRDQVZvNXhQdy1rWnp3UUVEUXJaaGgyeFZ1bGE5eGVLa0xObVgtdlFGSHc5SjlseTA2ZU1samk0dHA1Q2NiQi1FVDBBM0t5alN6eUw5SF9sZEhNX3I4SkUw?oc=5) | Kiplinger |
-| 1h 前 | 5 | 中性 | [Rosenblatt maintains Buy rating on Broadcom, $600 price target - TradingView](https://news.google.com/rss/articles/CBMivwFBVV95cUxQVV9jYUN3WGJUT1VCcW44S2ZfX2Zua2xXRkVvR3VOYUFwUjFTUTZFejN4c3F6ODdzNGttc3hWTkY3Rl82N2I1OU5iTjNxOU9YTk5MVXhoMUd6Mms5RnJjN1JKWmlsUFVab0VYM05nZkItN3p1NjlUbkM1M0xWeHVDUHRjbkh6eXl1ZDd6QXlFc2czNENZNlY0Z2NiWF84NnpYTkNjbWtnQkREUVVRWS1KWDltbTNZc3pjSjF1SnAtRQ?oc=5) | TradingView |
-| 1h 前 | 5 | 偏多 | [This Analyst Just Upgraded Broadcom Stock. Here's Why. - Barchart.com](https://news.google.com/rss/articles/CBMinAFBVV95cUxQZ3lKNUhqYkxDQ1NlN1VOSkJLMDZhb1kwMy1vLWdMWWFPR1F2anlRc05veW84WlQ0bjVCb3J6Y193Vk9PQWpsUF9BMmNsWmJ0SEUxV2sxQWFWMVUxbExNNXpmQUJYa3RUeWgyU296ZUwtenRfc291RkRPUF9ieVJEcFBiVURTb3BLZVRoaXVMX3NTZm0wNG5BaVk5TVk?oc=5) | Barchart.com |
-| 2h 前 | 5 | 偏多 | [Two Chip Stocks Upgraded To Buy On AI Data-Center Business - Investor's Business Daily](https://news.google.com/rss/articles/CBMinAFBVV95cUxQX0djVUNQeFJLY29vS1pvS055TE81RkRVOG1ERkc5cHlDeXE1VE9wZE9lVTNEc2o0WXJubWVJRzl0TDFOQ3pESDZrSHJ6cnpfWFY1SVpxWDRmVmpNVFNxVVEweFBILVlMYjVMMUhxWEtmZVZSeWZQRHcxc1hkTi1CaTcyVlZ2eW45MWtJY21NcW1YWTZSRjlTX2Z5ZXQ?oc=5) | Investor's Business Daily |
+| 9h 前 | 5 | 偏多 | [Broadcom: DA Davidson upgrades AVGO, says Anthropic S-1 shows AI cycle isn’t over - Yahoo Finance](https://news.google.com/rss/articles/CBMinwFBVV95cUxPU3JPU3dqekJTMmF1YTVCV0EzU2JibGlEdTNwTFNEbTFlWHA1Ny0xcXlTaF8yNWVzdE1hNkFReUhZMEpsZU9hVEF0U0lUN3hWTUcxdi1Ma0xwZHRlMWsxVXIzbkwyaHVWOTBXWGdKNUc1dUtCOXRaTl9vNUpjU213RDBFYW55b0xIVTNGQkhtcEVzQm1Ib0JTMFl6LW9MRUU?oc=5) | Yahoo Finance |
+| 1h 前 | 0 | 偏多 | [Nasdaq Jumps 308 Points on Broadcom's Big Gains: Stock Market Today - Kiplinger](https://news.google.com/rss/articles/CBMirAFBVV95cUxOdFFQRE0yYXBzRGs4VzhJekFiR1IzOWNnWlVYa0JMeUEzdWFvZVlpZzhCbS1ibFZBT25JazRvS2VVS00wUWM0Q3M1bWRlalFaZjVOMXRDQVZvNXhQdy1rWnp3UUVEUXJaaGgyeFZ1bGE5eGVLa0xObVgtdlFGSHc5SjlseTA2ZU1samk0dHA1Q2NiQi1FVDBBM0t5alN6eUw5SF9sZEhNX3I4SkUw?oc=5) | Kiplinger |
+| 5h 前 | 0 | 中性 | [Broadcom, Nvidia, Boeing, GM, UPS, JetBlue, and More Stocks That Explain Today's Market -- Barrons.com - 富途牛牛](https://news.google.com/rss/articles/CBMiowFBVV95cUxNVnhvNEFXLWVUNXlZdUpIWmVwVkpwZWxzYUFGc2JpdVRRQmZxdE8yQ1ZuLWtLM05CX0dMQUJWaXZtUmtjSW43TjhGM3JjZ1E2ZDBrNjZzaTlSb3pzWnlzS1VSeTIwQkZHVnlMd2M2cXQ1WXQ0Skc5UEpUeHVEM2hJUzFCamFHdi1Sa0RUR1lreEVyVVhRZmxYY2RUOWUyWmdUUEZ3?oc=5) | 富途牛牛 |
+| 6h 前 | 0 | 中性 | [Broadcom’s Growth Vs. Risk Tug-of-War Continues to Confound - Yahoo Finance](https://news.google.com/rss/articles/CBMilwFBVV95cUxPVHM4SlViYWluWllMZG01cTBwb0xJQlpyc0Qzd2hUZFpYaDFrTEF5SWh5MHhWZGd3Z1BxVEV3Tk9zZkgyS0JjdEVXd2EzMDNhdVZoRzNKWGphTjRSODE5OHh1QzRka2d0TmV1cDZJS3BDVkRSOHBveW0xWkptTVQ4aFU2LU11Q2hETVZYMExhRzBXS0R6U1o0?oc=5) | Yahoo Finance |
+| 9h 前 | 0 | 中性 | [Here Are Tuesday’s Top Wall Street Analyst Research Calls: Broadcom, Conoco Phillips, HubSpot, MercadoLibre, Moderna, Occidental Petroleum, PNC Financial, Trimble, and More - Yahoo Finance](https://news.google.com/rss/articles/CBMinAFBVV95cUxOMmdkdVZ6YkV6MzRsQkNGQ0gxS3ltb20tQ1ZDTVptQUdVRHgyOTc2TGdLcU5GTUswTHFUdmNzb1hJR3h2NjcxSXRjUTB5cXk2djdKN2ZTZ2laanNjZDVjRUlxbno0N0VBVHZGRXdrTFRsblBvMmNJZ0o4bWJfV3B6VVYwY2VXRjA5d0VOcmZNS0R2bDhyVHNfNmFOVWw?oc=5) | Yahoo Finance |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -132,8 +125,7 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
 - 图形上是空头排列——现价距 20 日 347.05（-1.4%）、50 日 354.18（-3.3%）、200 日 366.73（-6.7%）。本报告的买入规则本身会过滤掉这种形态。
-- 24 小时内的利空标题：Broadcom Inc. $AVGO Stock: Ledyard National Bank Cuts Position - MarketBeat（MarketBeat）
-- 政策面对该板块的倾向为 -0.95（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.49（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -155,7 +147,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-22 | 326.53 | 330.82 | 321.02 | **323.24** | -4.3% | 28,139,100 |
 | 2026-10-23 | 321.50 | 327.70 | 320.23 | **321.68** | -0.5% | 15,917,000 |
 | 2026-10-26 | 324.53 | 332.12 | 323.25 | **329.17** | +2.3% | 18,646,700 |
-| 2026-10-27 | 339.87 | 345.67 | 336.87 | **342.33** | +4.0% | 25,207,168 |
+| 2026-10-27 | 339.38 | 345.67 | 336.87 | **342.33** | +4.0% | 25,207,168 |
 
 ## 七、自己去查（本页不做独立验证）
 
