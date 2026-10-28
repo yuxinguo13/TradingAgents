@@ -1,5 +1,5 @@
 {
- "saved_at": "2026-10-27T19:20:19",
+ "saved_at": "2026-10-28T19:14:23",
  "positions": {
   "TBBB": {
    "symbol": "TBBB",
@@ -184,37 +184,6 @@
    "sleeve": "core",
    "triggers": [],
    "stop0": 396.0,
-   "pending": false,
-   "trimmed": false
-  },
-  "PG": {
-   "symbol": "PG",
-   "shares": 62,
-   "entry": 161.14,
-   "stop": 157.5,
-   "target": 175.0,
-   "opened": "2026-10-23",
-   "horizon_days": 30,
-   "sector": "",
-   "thesis": "主仓：Procter & Gamble 10/22 财报超预期放量跳涨，今天回落到 161.2 整理，三条均线上（20 日 152.8 / 200 日 148.5）；AI 资本开支担心与芯片抛售周里资金转防守。入场 161.5 在现价附近，止损 157.5 在 10/22 跳空缺口之下（2.5%、1.2 ATR），目标 175（日报），R 3.4。下次财报 1 月。",
-   "invalidation": "收盘跌回 157.5（缺口回补）；必需消费相对标普 5 日跑输 3%",
-   "principles": [
-    "一·趋势向上且结构完整",
-    "二·止损在结构位之下 ≥1 ATR、R ≥ 2",
-    "五·财报超预期后的缺口不回补",
-    "三·同板块 ≤3"
-   ],
-   "regime": "标普 760 在 20 日线下、200 日线上；芯片连跌、防守强；不是防御日",
-   "parent_id": "d8cade41-e97f-47cc-88d7-c057c2ef24dc",
-   "legs": {
-    "limit": "9644b78c-04f9-4a7d-a06d-fd678b1a744d",
-    "stop": "277fe01f-a43c-44c6-a3a1-58cc83989117"
-   },
-   "adopted": false,
-   "stop_raised": false,
-   "sleeve": "core",
-   "triggers": [],
-   "stop0": 157.5,
    "pending": false,
    "trimmed": false
   },
@@ -709,6 +678,27 @@
    "pnl": 93.0,
    "r": NaN,
    "reviewed": true,
+   "sleeve": "core"
+  },
+  {
+   "symbol": "PG",
+   "shares": 62,
+   "entry": 161.14,
+   "exit": 157.76,
+   "opened": "2026-10-23",
+   "closed": "2026-10-28",
+   "reason": "stop: 交易所触发止损",
+   "thesis": "主仓：Procter & Gamble 10/22 财报超预期放量跳涨，今天回落到 161.2 整理，三条均线上（20 日 152.8 / 200 日 148.5）；AI 资本开支担心与芯片抛售周里资金转防守。入场 161.5 在现价附近，止损 157.5 在 10/22 跳空缺口之下（2.5%、1.2 ATR），目标 175（日报），R 3.4。下次财报 1 月。",
+   "invalidation": "收盘跌回 157.5（缺口回补）；必需消费相对标普 5 日跑输 3%",
+   "principles": [
+    "一·趋势向上且结构完整",
+    "二·止损在结构位之下 ≥1 ATR、R ≥ 2",
+    "五·财报超预期后的缺口不回补",
+    "三·同板块 ≤3"
+   ],
+   "pnl": -209.56,
+   "r": -0.9285714285714308,
+   "reviewed": false,
    "sleeve": "core"
   }
  ]
