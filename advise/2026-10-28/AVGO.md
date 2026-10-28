@@ -108,22 +108,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 10h 前 | 8 | 中性 | [Fed Decision US Stocks Impact Amid Microsoft Alphabet Earnings - The Cryptonomist](https://news.google.com/rss/articles/CBMibkFVX3lxTE83M2s2UDJrSl9zbnA3WndOa1J3bjhRQTlFVmZvQWxoeVB0V2UzSjZmMEdPNTNRMGd1cWU0NFUzX0FmbWNLT0RTRTFmdnZrWXczdkJ2WXc5Yy1zLXVZYUZzSFJCLU5ZTG5wbTZ2RDdR?oc=5) | The Cryptonomist |
-| 21h 前 | 7 | 中性 | [Broadcom CEO says capital is ‘available’ after banks wavered - TheStreet](https://news.google.com/rss/articles/CBMikgFBVV95cUxOUUdWZjRFVW1hY3BNNmo5aW1BaldnNEFidlN5d1NOV3JQdGFjNVJ3QWVYMFRJRXpZb2JJanVncVdxOG5ZY01CYXBZWElPRUlPckczTXZwYUVWMlVWWjNfaUh2cG1heEJmaV85d0lDd0txZWRUY3YtelRYTEdTQWltX2hYRi1iak5HLXY2bE1pUTF5Zw?oc=5) | TheStreet |
-| 3h 前 | 0 | 中性 | [Broadcom Stocks Rise With Anthropic Financing Linking Sales and Asset Risk - Yahoo Finance](https://news.google.com/rss/articles/CBMiqAFBVV95cUxPRVZnVlpRNzh1cFA4QVhHckdSMEdUbWliX0RYQzhPTjk2QlZQNUNBdG8ySkgwOExOZmFPWlpCV0ZWcmE2UVIxSno0S3pPS0N0aWFZV0xUUFpEVGZPc09nTHZua2FpTE9GMFBSZ1Z1VHRVOFJremJ0N3hKUlhrb2R2Z1lLQjBpV3JPV01Rd1J6Njc1dGNXd3BrSWVfZ1JISFVKdjdyRGRUc1Q?oc=5) | Yahoo Finance |
-| 4h 前 | 0 | 偏多 | [Lumentum Shares Jump 135% YTD: Can AI Momentum Sustain the Rally? - TradingView](https://news.google.com/rss/articles/CBMiugFBVV95cUxOeUc3dEpzMjVwQXUtT0hWSC1wQW5CNWdkbHVzdWpsOUZfbDRQTGhMblNzOU14cVNpUTRBQWVVcXlrWXdXNEtYcS1tMm1yWERsRXlPR240SS1nRWtXWTlDQjl0M09nRDVHYUFTQmk3ZEZSWWtXSUxwX00xazRKaUVzaVUyR0I3cllJTFBObFdORVh5RE12NG9KaC1LcGwweGNKVUxRMUFmWk5TbmdwWko1aEJWZzhLXy1vaUE?oc=5) | TradingView |
-| 4h 前 | 0 | 中性 | [S&P 500 pulls within 1.2% of its all-time high even as majority of its stocks fell - Fortune](https://news.google.com/rss/articles/CBMiiAFBVV95cUxQZ0RvZlg1ZnByaExDWmlpcU5XRHhFZDFONXFlcmd5Z201TktDQ3c1U0FyV3dHNUdBNGtpcUtvWkNfLTFuSUJPWnV1TG1xQ1lTTXhtMVJoWkowLU9iYlRDZzJ4T0drMTBaZlJCLWF4Y1BmaVlCZmVwbHpYbW5zWGs1Tno0RG94YVBy?oc=5) | Fortune |
-| 4h 前 | 0 | 中性 | [Broadcom AVGO stock rises 1.23%; hourly RSI stands at 71.85 - The Cryptonomist](https://news.google.com/rss/articles/CBMifkFVX3lxTE1NRElHaVJZczBLOXlUMEh6MTJXRENud1MyTGFLZzdsempHZTlPQUVDY0RBS0E1bVJnWFY5TmNOem9kRmdRa1FDWEFFREV0VFFwaHI1VU90ek9VaU5Hbi1TMTUzbE84NXl3ekx3aHBSdWpfUnF5NEJQMWZkckVTQQ?oc=5) | The Cryptonomist |
-| 5h 前 | 0 | 中性 | [AMD, Broadcom, and Micron stocks lead chip sector higher for third day in a row - Yahoo Finance](https://news.google.com/rss/articles/CBMizwFBVV95cUxNLUNESjNKQm9WM29KdEpZZlN1dGpYam5zbUhBUDE0X1lnLW1xZ3BGaFpsUld2cTJzVDJaeV80UTdyNWcyUW5xVkZEZ2Z5a0VNYlROSTZGUGRPQ0JSUFVINXNhWUcyQVo5MTRULWs2SVVLUXI5ZVd1SzBWbm1jdzNORkt0SkM5WHV4aUhGTlRiQ29TNzluVTlGTERRdmNiNklmVV9kMUQwbktWWHJVZHo0SndTYWVQeTdYM3h2dzF5WmJrWXZGLXk2Q3QxLTgxV3M?oc=5) | Yahoo Finance |
-| 6h 前 | 0 | 中性 | [NVIDIA, AMD and Broadcom May Invest in Meta, Their Own Biggest Customer. What That Signals - 24/7 Wall St.](https://news.google.com/rss/articles/CBMiywFBVV95cUxNRTFTY2JHT05UZFVEX0NzWEtjclJqQTIzdDV2YVlPY1dGRk5jTDJwVGRnUGszYjdyN25fNEFuN1hDNXRiTnE1TUdFZWxNNGRBYXJubkc0cmY3Y3RFbk9lQkFJdUVkN3dYMDQtN2ZwN01tTzdPSGxScW9yeExNbDRfWGZXUmZnd1I2czlvbExFZ0E0cmdxMl9qek5obVI4cWx5N2tOdVlKWldzTHk4ZDY1T0Q5WmtoQWUzM0l2S1hZNEdIWWNqbnBlRHZKMA?oc=5) | 24/7 Wall St. |
-| 8h 前 | 0 | 中性 | [Credo Is Walking Into Broadcom’s Backyard (NASDAQ:CRDO) - Seeking Alpha](https://news.google.com/rss/articles/CBMiiAFBVV95cUxPNU1Yc1FqdzhEWS1zYW85QUlQWEpOWTlSaUNUWGhkM3BnR0pZWlhaN1VSMFhFeXBEYTBwTVE3M0llOFJVS2lMcGdCaDE5N0NPZU9rSkJqYUlQNS1BTnFGR3FlWnVDc21TX2J3WnpRR2YzRUxwZl8yWmczR0NPNHZVUjVUMkQ1OHN2?oc=5) | Seeking Alpha |
-| 8h 前 | 0 | 中性 | [Is Broadcom’s AI Success Becoming A Risk? - Forbes](https://news.google.com/rss/articles/CBMinwFBVV95cUxQMzlPd09VN1R0NVFER1JoR2xKVEhHeGx2dHRKTGtJWWt6dU95YXRQV3dSbWFFZFNvZnc3TzU3Q2ZwNFExcHFKNVk4Nm5VSmE1RVpaQjhlSmJESzA2SUhuN1hLS1dtUlEwVEZfeU05UEpNUWdDcm10T3V4bURGbkt2OWs2S0Q0Qllnb1VWSlJJczRNZEhxYlB5VWR6X2U3QzA?oc=5) | Forbes |
-| 13h 前 | 0 | 中性 | [Optimism returns to global stock markets as AI companies regain investor attention - Baltic News Network](https://news.google.com/rss/articles/CBMiuAFBVV95cUxPdjAtWlZPU2VpckVZT19rSTNwYlpDb0tuOVhtNmdNWkVneDRvVlgtLUNDblhWZGZIcmxWdmFtVEJBTXBDRTBZOUd0M2d2NkhFdHpuM19KTmo1dEw2RUUtaG1zMHNicHdkalZlVkxGaU5YYTJyLTdvWW93SmYyUFRBNVpoaVNwTlJKc2o4NXpyUmNrWDV1X012ZVBQTFNjS3FONlVweE1lUHY4aFk2bXQzcThiZzJJSW5t?oc=5) | Baltic News Network |
-| 14h 前 | 0 | 中性 | [Broadcom Stock Price Forecast: $63 Billion AI Funding Supports Anthropic's Purchase of Broadcom Chips, Shares Poised to Return to $400 - TradingKey](https://news.google.com/rss/articles/CBMivwFBVV95cUxOclpvaUFXTklRd1RQVUVyemhEY09yVHRMdHFYaHN4NTBIeHVXVFd3eDBUdTFfTnpzaEdXNERmNlRQaVczbVJOa19Ha25YeDJvT2RFVmVnYWs5QU1YQTBYbVpkaHN6cFptV29RMWpVMUFvSkI0SmduZ1JvcFJfMDVCNVNreXJYRXUxWlJ4WHRWYVdHY0hCQnpWbk9pZjk4d1U0X1lHbWViNzAwS1dtMWt3OEFWcnNtc1pfNGlaTE9fUQ?oc=5) | TradingKey |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
@@ -131,7 +116,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 - 图形上是跌破 200 日线——现价距 20 日 347.08（+1.4%）、50 日 353.63（-0.5%）、200 日 366.74（-4.1%）。本报告的买入规则本身会过滤掉这种形态。
 - 公司尚未盈利：估值没有盈利可锚，股价由叙事和融资环境决定，这类名字在流动性收紧时跌得最快。
-- 政策面对该板块的倾向为 -0.95（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.31（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -153,7 +138,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-23 | 321.50 | 327.70 | 320.23 | **321.68** | -0.5% | 15,917,000 |
 | 2026-10-26 | 324.53 | 332.12 | 323.25 | **329.17** | +2.3% | 18,646,700 |
 | 2026-10-27 | 339.87 | 345.67 | 336.87 | **342.33** | +4.0% | 25,567,200 |
-| 2026-10-28 | 349.22 | 352.00 | 344.35 | **351.81** | +2.8% | 21,728,763 |
+| 2026-10-28 | 349.22 | 352.00 | 344.35 | **351.81** | +2.8% | 22,073,995 |
 
 ## 七、自己去查（本页不做独立验证）
 

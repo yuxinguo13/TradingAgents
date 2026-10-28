@@ -110,11 +110,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 3h 前 | 9 | 偏空 | [ON Semiconductor Falls 5%, NXP Semiconductors Drops 4% as Soft Guidance Revives Auto Chip Worries; Skyworks Ticks Up, Qualcomm and Texas Instruments Dip - 24/7 Wall St.](https://news.google.com/rss/articles/CBMimwJBVV95cUxQVEF3c3FndWgwdlU2eHNaZXRtYlRWYlZ1bVhVS0h0d0pId3ZzYklWOExXdjNNZkRiTnoyRHRiM1JJbnNBMC1pX2JLdjlud2s4a0xNYTZldjhMR3RmcjFZY09yOUlSc3Nfc3FqZGFWWDBRS09GNmF3SWVZN2Rma2lJNU9tcUZKdktGWVRWWXhfQlNrOF94MXg1N1ZkcXVxeEh0Z0FTYl9qY3ZLNE9QWTlOOVhNVTNET09vUkkwWF9WNE1McnFNZXMxUk5DNUM2ZXAzS2JvSHI3QmtJaWZjNFF4cGFmcm1MZnc5bE42MXQzUXluQ1l0VUtidmF3c240MWNmNUtZNkJSbmRsYU00NmI0MzlQaFpNWVpnTGxJ?oc=5) | 24/7 Wall St. |
-| 1h 前 | 0 | 偏多 | [Texas Instruments Stocks Edge Lower After DZ Bank Raises Its Rating - Yahoo Finance](https://news.google.com/rss/articles/CBMiogFBVV95cUxPOHRHTGcwdWhpWUtDTzdlREVEU3dvYWFfcDdkNDVpaHNvNU53OXpOR3Nqd0dDa3E4VXQtUUlnbFBFamY0WkdJenloMi1DaHl4Sl8wQUVIZy1mTXlqemZGRm9ibFlFU3E0QWxYNlUwTG5UdmRocUdjX2tPTVZrT2VpcDFQQmloY2MyQ3NJSUx6X1pSX1J2VXJXQ1AyczFwSURJbUE?oc=5) | Yahoo Finance |
-| 9h 前 | 0 | 中性 | [Texas Instruments launches TI-Rover BT: Texas Instruments stock gains 1.25 percent - ad-hoc-news.de](https://news.google.com/rss/articles/CBMi3AFBVV95cUxQU25EenhtbW8xUUZPM0IxVnNzSU1Reng0WG9lVnhYVTFPSkRSTklRTDF0aWFTS3lDQlBxTE1tWFZwYVBJSFEycE1rd3V5eXNQU1lxcWNPOUxNRElNUHpZX2NGeEUwdWxacHFaYjRQM19zV0N0SWRxLXM4VkpNRXpkaWF6dkhrODhZcG1QZHBCRHBhZ1VvX1l0cFpDendIdjN0RWdQWmpYaUhrNUJQZXd1R1FZNG1Tc01aY1dkYXdXdFRLTTJ6d1JlazRPNzlZd0VhVVRPd1FHVDk1eHVv?oc=5) | ad-hoc-news.de |
-| 14h 前 | 0 | 中性 | [Texas Instruments stock: analog chipmaker trades pre-market 0.81 percent above Xetra close - ad-hoc-news.de](https://news.google.com/rss/articles/CBMi4AFBVV95cUxPeFRaaHlaaGc2bjYtd2V1TlB5QjlualFfaFNHMXg0bkRlOEoycHBFYS1ycXBUeWRuaUxGNFViajg0T2xWSjBkNjJ0YTl4d0UzMWNkRm5iamFFcDNDNlhxcm1ub1ZFd0hBalpMcmE0TDBRd183aW52ZGpuTlRvVk5PMkpzczExWGJHODBUSHBPanJWcTcxZ05RRHh2YXJ5SUpUXzNIWnNDWTk2X2dZM0VyUVE1Yk0takFXMTZBMkpoemw2ejVOYWdfMXI3VF9ZUkxnWDMxVUhUNW5rbm5xaGV0dg?oc=5) | ad-hoc-news.de |
-| 22h 前 | 0 | 中性 | [Texas Instruments Inc (TXN) Stock Up 3.6% but GF Value Says Overvalued -- GF Score: 84/100 - GuruFocus](https://news.google.com/rss/articles/CBMivAFBVV95cUxPaUdWcDUwODdDbDVoMk1zV2h0TGFFTlZtUl9MZF93S3BjN3FMVElaLTFndjYyanV2SHRhNWtJRlVSZUZWc3NxUGhacVpJVlFGd2JWM3FBSEViVjdnVGwzaXVma1Y5RERxSGNuNV9mQ29yT3lacG0tdWlHRXFrWEIwN3VndGpRa2swTERTemF2aGtRZFlGYzgtdWllVzZxT2ZoR0d2dEVTOFBEOFNjZ0NsYnVTRDRXWnlFWlhBeg?oc=5) | GuruFocus |
+| 33h 前 | 0 | 中性 | [Texas Instruments (TXN) Sees $84.6 Million in Net ETF Buying on Oct. 23 - GuruFocus](https://news.google.com/rss/articles/CBMixgFBVV95cUxPd0Q3V3RXV2l1UXNyQzRGaHRnWlpCNERiRkxMbU85aU9vQkFXbG1ld2IyWWJ6emk1VU9DNjVPUkVCTDNlbUFfcTJJOS1BYTQtYzdQTGJIS2g0VUFSeWIxM0drNk9jRWpuZDlzTzNZSVpxSHdtbzVwVGhaTDl1SmdCN0ZZS2VvSnpoaU03YjlLYTlVN0VvZGZ4d3ZpNjkySHVlaktTRkk4M0wxOEIyVkQ3MTQ1MGNQX3JMbDVBQXBQVktJNHdKc3c?oc=5) | GuruFocus |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -123,7 +119,6 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
 - 公司尚未盈利：估值没有盈利可锚，股价由叙事和融资环境决定，这类名字在流动性收紧时跌得最快。
-- 24 小时内的利空标题：ON Semiconductor Falls 5%, NXP Semiconductors Drops 4% as Soft Guidance Revives Auto Chip Worries; Skyworks Ticks Up, Qualcomm and Texas Instruments Dip - 24/7 Wall St.（24/7 Wall St.）
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -145,7 +140,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-23 | 277.87 | 286.20 | 276.27 | **284.69** | +1.9% | 7,512,400 |
 | 2026-10-26 | 288.92 | 298.95 | 284.40 | **298.12** | +4.7% | 7,594,200 |
 | 2026-10-27 | 300.87 | 309.47 | 299.35 | **308.91** | +3.6% | 8,160,900 |
-| 2026-10-28 | 308.79 | 309.98 | 304.98 | **309.83** | +0.3% | 7,307,227 |
+| 2026-10-28 | 308.79 | 310.00 | 304.98 | **309.83** | +0.3% | 7,326,003 |
 
 ## 七、自己去查（本页不做独立验证）
 

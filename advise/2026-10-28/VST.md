@@ -110,10 +110,8 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 23h 前 | 8 | 中性 | [Vistra (NYSE:VST) Shares Up 3.5% - Here's Why - MarketBeat](https://news.google.com/rss/articles/CBMinwFBVV95cUxOVTluczNJM2otYUgwcGJYU2tzWnl2dDRWdUtsY3JpOHdfaC1kWHhjUWs0T1J5d01wZjBfZlNrX1A2NHdMQUNva1RjWWFzaGZMUXV2Sl90RjY0SlRrY29QdHpCTDl2NGJNc3QxM3QwOUE0S2J6Sk9HaGxuMHZISGVHclhXVTBFR0c4eEQxUFBlaklyOTdBYVNScjB0RW1hLWM?oc=5) | MarketBeat |
-| 28h 前 | 8 | 中性 | [Vistra's Quarterly Earnings Preview: What You Need to Know - Barchart.com](https://news.google.com/rss/articles/CBMiowFBVV95cUxQX3hUcmM1cmxSWnlfS2tkbWtEREV0WUdfRGEtOVRkdHJ6OVczZTNId28xWWthNGR4TDNTNENsSFdGMVJBSHo2TDcwZGl2REVJRDhOV29wekRodTJYUnZTc2lMNXd6bGNzSnNUQ280MnlRTWVaNlZhRm1xVDNjeUE0YWpDMGVUcm0xcnp3dTh1ZS1INDVfWkI5U0o2WmFXQzFPME00?oc=5) | Barchart.com |
-| 6h 前 | 5 | 中性 | [Vistra price target lowered to $189 from $207 at Scotiabank - TipRanks](https://news.google.com/rss/articles/CBMiqwFBVV95cUxNOE5PTFNocGFicXVVcTl6VDNucmRnTDVYRHFOTGZvaXdQVVNISEtsSjJ1aDBPdmpGNlVqb2tMcXc3WlJxOGFpRWw4dnltUEkwMWNpcm9rQTFOREpPR3ZkRGVHVl9EX09FWGQtWEdmWElpM2ZIVjFKM2tSVXhtMG9ub0xJdzVITUdhdDU5SWxHOXREWHVsZkNleW9NUW1yMFp6MUtQS3pJajdRSFE?oc=5) | TipRanks |
-| 15h 前 | 0 | 中性 | [What Is Ahead for Vistra (NYSE:VST) Before Its Third-Quarter Results? - Kalkine Media](https://news.google.com/rss/articles/CBMiqwFBVV95cUxQLWJmOVlRTGRRZllCUldCc3R4RnFKTDB0WmhJVFAydUU3TUNfb0hLcnpQZ3J6SkFpU3RINXFEUUZHTTZxUVVETDgzNWRUQmtQX0FDcHRnR2pRTGtXNmdmQ0NTc2JyZWYwUDN4cng1ajNBaWFqSTZXYTNhVElSTFF1YUVtS3l4UjRQRGdNc3YtTjZzN2xFNjNzVXJ2S3dwbGJxT00tNVRma0M1V2c?oc=5) | Kalkine Media |
+| 4h 前 | 5 | 中性 | [VST Maintained by Wells Fargo -- Price Target Lowered to $198 - GuruFocus](https://news.google.com/rss/articles/CBMinAFBVV95cUxQRUFGYUZLNF9hVE5fR3ZkRGhYekR1Rm1sMmxkOHZCdHYwUVdObTJrSDdieEpXVGdjZVBCUlJ0NnFSeERrRWZMQmZyY0kxNHgxZEl1azB5eWhKWFYxSDFrQXVqeWUxWmF4WmgyMmlUcUdKTWlYczhJLUREdjFQd2U0TktrS1JLYTcyN1lkVk9JRk02Y0dZMFI5dkVuT0c?oc=5) | GuruFocus |
+| 4h 前 | 0 | 中性 | [Can Vistra (NYSE:VST) Turn the Data Center Boom Into Growth? - Kalkine Media](https://news.google.com/rss/articles/CBMioAFBVV95cUxOUXVxYjJ1aVB4bmFaM1lzZXBERndyczFDWm1UT2tlWW1qcU8zTzdxOVEwdnRfUjNjWWZndFRHM3luazEzd0VsemhvdjBVSHpKMXJwVmliVFNmVUl1UHdmRUxyU2F3OEI0ajBoTi1PRVVIazVfQWJPX2dxdGl4NWxhSnE5Rm1wM2RUYWM1LVNIeTRBaGx1QmFYVVVBS1VHbTJH?oc=5) | Kalkine Media |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -146,7 +144,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-23 | 139.06 | 141.52 | 136.17 | **140.16** | -0.5% | 6,740,500 |
 | 2026-10-26 | 140.90 | 143.52 | 139.07 | **141.73** | +1.1% | 4,299,400 |
 | 2026-10-27 | 143.95 | 147.45 | 143.40 | **146.66** | +3.5% | 4,107,900 |
-| 2026-10-28 | 146.88 | 147.82 | 142.20 | **142.72** | -2.7% | 5,560,691 |
+| 2026-10-28 | 146.88 | 147.82 | 142.20 | **142.72** | -2.7% | 5,583,322 |
 
 ## 七、自己去查（本页不做独立验证）
 

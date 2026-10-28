@@ -69,7 +69,7 @@ _读不到财务数据：该代码没有可用的财务数据（可能是 ETF、
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 9h 前 | 0 | 中性 | [Invesco NASDAQ 100 ETF (QQQM) Adds NVIDIA and Apple on Oct. 26 - Yahoo Finance](https://news.google.com/rss/articles/CBMilwFBVV95cUxPUW91NHZsVG0xVm9oTmUyM3pCWjN4eEcyX0J3dENJMmdXNHBQS0R6UlZ2OThyb3ZxYU81MWhsYTNyTlpkUVBQQ21EcnQ3TndWY0tPYkhqMjRoMGNlRFVwMmdzYktkSThwRGpacUM3UTY2c3JVTHgwbWhCTUxHQlZhYmUxUGtzTHNFR2c0Tk81dDh0WElhc1hF?oc=5) | Yahoo Finance |
+| 29h 前 | 0 | 中性 | [RADD ETF Price and Chart — NASDAQ:RADD - TradingView](https://news.google.com/rss/articles/CBMiXEFVX3lxTFBWQndWb0t0OUNTMXN4MFB6R2dZcTJaTGpNWWh4WVBOekZROUR3cVkyc19LQng5cTNibFlCQkd3X0w3YzJ6aGZSbzJSYllJRGJ6LUthc2ZlV0J1TzJk?oc=5) | TradingView |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -99,7 +99,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-23 | 289.10 | 292.02 | 288.74 | **290.06** | -0.0% | 2,510,200 |
 | 2026-10-26 | 291.14 | 294.50 | 290.55 | **293.26** | +1.1% | 3,871,900 |
 | 2026-10-27 | 294.51 | 297.65 | 293.88 | **296.96** | +1.3% | 2,155,400 |
-| 2026-10-28 | 298.19 | 298.97 | 296.65 | **298.71** | +0.6% | 2,346,632 |
+| 2026-10-28 | 298.16 | 298.97 | 296.65 | **298.71** | +0.6% | 2,388,708 |
 
 ## 七、自己去查（本页不做独立验证）
 

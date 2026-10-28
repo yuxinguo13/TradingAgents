@@ -108,22 +108,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 2h 前 | 8 | 中性 | [Beyond NVIDIA: Why TSMC Stock Looks Attractive After Q3 Earnings - Zacks Investment Research](https://news.google.com/rss/articles/CBMipwFBVV95cUxOb3d0dU5xTXJwMzUwMnZYdDFwTE5CLVpqVnliWm9RczlQZ0NQQnl3QmQtbkpSVzU0S0xhS2lKS1lCYk1YcFp5VlBScEMwT1JSTGZMSmRrbWhNSFZVQ3lKeXhpUzdsa2d5UTctdnRuVUp6LVcxTXJMa3Vxc2FoMzJzeXpsLUs4Sjl5Ujc0UEVMbzJhTXEyTG5RTTBkdlFtcm12THJ6b3kzQQ?oc=5) | Zacks Investment Research |
-| 8h 前 | 8 | 中性 | [Taiwan Semiconductor Flexes Pricing Power on AI's Frontline - MarketBeat](https://news.google.com/rss/articles/CBMimwFBVV95cUxPZHJ3ZjloMU12SmpveEpEa19KbjkxMVhONG9GcDVST0s2dW1lcngxUXhySktSSUtRakxCZGVLeXkxVnhsUTZ3dHh1dFU5YjVkOXZrTzBCblI5dW1EMGZwRm9lUUVjN3g1SVMzR3dRZnhUc2ticEQ2SUNFOHgzSU4xVDhJdHZhRTl4Y2pzRm1rejFBcmhaRzBveW9URQ?oc=5) | MarketBeat |
-| 23h 前 | 8 | 偏多 | [Taiwan Semiconductor Manufacturing (NYSE:TSM) Stock Jumps 3% - Should You Buy? - MarketBeat](https://news.google.com/rss/articles/CBMizAFBVV95cUxQZXI1X3lsUEdCTUVncTBaaTlJaWlqMGRfWlZ3Z293d1hqb0NidmY5WFVfVF9lLTFwM25VeUxKWHBSSkZKTmtUMUlYZGI3TTF0aTk3Yi1paEt0eHd0LUtlQzRJLTVlTDlVYkV0bEItYUJSWDd5VlotRkdyYWhROWU2YjVrMEZnSWdWVThSWE9weUtZZnAwbXdpMXgyV2dNQ2c5bncybU8xYWFFWDBBU1FOT1V3UkRwaW9KU2JoQVNDak1NWnBLTFliZkhWQ1Q?oc=5) | MarketBeat |
-| 4h 前 | 0 | 中性 | [Anthropic's IPO Filing Says TSMC Couldn't Always Supply Enough Chips - Forbes](https://news.google.com/rss/articles/CBMiugFBVV95cUxNcFpvRGxlU19aUXNLSm9QRWNsamFRbDlaQUJndjNlZGNVWGY1WHZ0bkZEQzhMNktDSEZUN1F2YTN2MjRSUjUxT1BCM3U0VnpYTDZHWWtRWTd6dkZwZ2dkNDRjMEd5T2RRaFZXSmFkXzZtT2ZKN1lJX2pJTFFkQ3hTVW12d2EweUdGdm9yd0hZSkxxaEhySWQ4VTI0VkFQUGgxTDRzZU8yZFl4N3dKeVBLOFVKd1NwTmNmT1E?oc=5) | Forbes |
-| 11h 前 | 0 | 中性 | [Nvidia vs TSMC: Here’s Which One May Be the Biggest AI Winner. - The Motley Fool](https://news.google.com/rss/articles/CBMipgFBVV95cUxNN19qTFFvQW1qNDNTT3pVVnEwdXcxVDVNcHBNWmIxVG9mRWtsUzgyVnNQRzN1NlBlV3JUVEtTLWRpbk9RbG9xaGdOcC1WdnQ5THYwaUNkSlV3bVNEdTFBa1E4dTFOa1dDWmRLOFd0eVpyNVNKSDBZR2tjV1prNXE2SG0wS3ZUa0EybHloX3I4UHpiUVFEbW9wUjdjT084dEhLUHNvMGdB?oc=5) | The Motley Fool |
-| 18h 前 | 0 | 中性 | [Cathie Wood Extends Archer, Joby Buying Spree; Ark Sells More AMD, Taiwan Semiconductor Shares - Benzinga](https://news.google.com/rss/articles/CBMi7wFBVV95cUxQNlI2alFjamgtbVhhUERmYUx1SmIwdWRsbTV5UUtKWVo4TXNiUzZHd3o5MGZ5bXZTM3RUd3ZDNEZwSmtQWVVRbDk0bVR4UVFEUmY0UjdJM0pYVDJaTDNmRC1xbHNKRVRRSGpiZWljYTR4RVZzZHFWUXRORnpsa05zSDJod08tVWVBVVphRkllalhjdUFtSUdRbFlCdlIyWmRqUUQzQlVnZl8wb25hMTdGUVVLZzg0RlMxYl9oR1NWNTlrWTg3Mk9ITnU3OUpNZUc0VFFCSVNyY0V5WjM2TVN4VDdtUTJNXzZ4WDZZYjJRdw?oc=5) | Benzinga |
-| 23h 前 | 0 | 中性 | [Taiwan Semiconductor Manufacturing Climbs 3% After Hours - StocksToTrade](https://news.google.com/rss/articles/CBMinwFBVV95cUxPOHUwT096RGQ2NXQ0d1R6Qk5zNllKZUNzay1sODVLUU01Njl0RTdVYTdfQmk4OWpWYS1SMEVlclhfSFdFNnA0SlA5c2hZZFhHRVNTZEc4RTVCUE1WNzdzREdXY0l4VklQM1UzS2lzZ0t4WXFKeUR1MlB2aTYtY01aWmlpaG5IcjY3WS16MTh6TnBfR0dfMGdoX1gxTGpzRnM?oc=5) | StocksToTrade |
-| 23h 前 | 0 | 中性 | [Cathie Wood Cashes Out AI Chip Stocks, Adds These Aviation Plays - Investor's Business Daily](https://news.google.com/rss/articles/CBMiqwFBVV95cUxORmw1MTlySnF4NGxpbFhfcXlHeVFueTU2ZW5yaHlSTlQ0NTE0ZVFvZjJqTm9ySmlwZFFQLVNXVFFfYUt3Vmo4UzFWSXgwU0RfeXNTLWo3VXZzOWtZd09CbE9kZ0l4MmlvX1otb05seDR6RkpvdHk0ckNtMnRVUC1xM1RucU1YRWJGRGVVcjVBTXVPckMtSGNqaFA3Rk1FODZfVkllQWxraUdiaVk?oc=5) | Investor's Business Daily |
-| 31h 前 | 0 | 中性 | [These AI Chip Stocks May Be Just Getting Started - 24/7 Wall St.](https://news.google.com/rss/articles/CBMilwFBVV95cUxQUUY3N1FWVVlzd29xRm52UG9xNXVZcERleGU2cHZlOVRZUXVxUzlZb2h5RTVIcUl0bWJWbDNPMG1kSTVyNDhoRWdqa3NPRUJONE1mY2ZjY0ZTbUloamRVdHVWdS00dV9zbUVaalhrYXZrUzRnSGRnTHNhbDVfTk9OV0g1OVlTRm1lN2p5RFkwcV9wRU91QzJZ?oc=5) | 24/7 Wall St. |
-| 34h 前 | 0 | 中性 | [Cathie Wood Sells $22.5M of AMD and TSMC Stocks, Buys $6.8M of Two Air Taxi Stocks - TipRanks](https://news.google.com/rss/articles/CBMirgFBVV95cUxPSlNYSE5WdlB6cGxpTnlNZjUtNHpXc2hSVHo5RFdWN1VhVmphSjBHUWV6Vm5IVTZEZ2pvaXFkZXQxMTU4S095bWk0Z1ZVb1N0LWc3UURyeXFDR2hJT0NtUmVsTlNRZjZyV1RIOTZTVDhaenZhaTR0SkhuZTl3S0xwbUdRWmtVbFBQYmg1dGt4NnJhZTlrUnJYVGEwSjNFNFV6THR1aU9Nb2FTZjF4NEE?oc=5) | TipRanks |
-| 36h 前 | 0 | 中性 | [Broadcom vs. Taiwan Semiconductor: Two AI Powerhouses, One Surprising Revenue Trend - Yahoo Finance](https://news.google.com/rss/articles/CBMiogFBVV95cUxNVVZHSzNyZThQWDZTVUJhTFJ2ZjBRanVxYm1wTHpVSThrUzVDSUstbXBVd3FkYlZtalBiYk9BUzgwR21Ldm5NQnRmU0J4UnRkbXlzR3ZZaTRsV0NDNnQyU2dCZ3BqVnByX29EUVRzcnNtVWRSTVJKQ0tER29TWDFraDhXMUJiTjdQb01OSFB5Y1BQbERiZldmbHRZVWFJbWxGR3c?oc=5) | Yahoo Finance |
-| 40h 前 | 0 | 偏多 | [TSMC to raise advanced chip packaging prices by up to 20%, report says - Investing.com](https://news.google.com/rss/articles/CBMiwwFBVV95cUxNTDRSLV9rNmhWLXNCMm5id0w4Wi1uVU5ySHZSR0ZXSGQwZEQwaExrMnNMWGMxa0pYbktnLS15WGswZUxVOE8xY0dfVWItc0RHYjlGVnQ0UFdvOWZYMVRJRldqbFNiVDdTVUlXby1sY2tDQ2ZzR3hiLVZuWWs0cHlXRFE1ZWVvMUZVc1A2TmV4OTgwZlRzMm42eW1fTlZMcktmYmZQQ3pqUllZenZlQU5RNm5oREhJazYzbm5fX1hFZkFuVUE?oc=5) | Investing.com |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
@@ -151,7 +136,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-23 | 412.29 | 421.31 | 411.11 | **418.51** | +1.5% | 9,494,400 |
 | 2026-10-26 | 418.07 | 428.85 | 417.72 | **424.37** | +1.4% | 9,627,100 |
 | 2026-10-27 | 427.16 | 438.58 | 426.00 | **436.87** | +2.9% | 9,022,500 |
-| 2026-10-28 | 438.24 | 440.88 | 436.84 | **439.51** | +0.6% | 7,816,345 |
+| 2026-10-28 | 438.24 | 440.88 | 436.84 | **439.51** | +0.6% | 7,868,856 |
 
 ## 七、自己去查（本页不做独立验证）
 

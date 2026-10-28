@@ -108,12 +108,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 37h 前 | 8 | 中性 | [Unpacking Q2 earnings: ConocoPhillips (NYSE:COP) in the context of other diversified upstream E&P stocks - StockStory](https://news.google.com/rss/articles/CBMi7wFBVV95cUxPY3dmVWJVbjNRQk5nNTA4cDRnbXg4dllJc0FpRGd5OTVoeENON3BRUGJrckVGeDhxeF92M0ZMRXVvX0RrYWpES0JEQ0QzbUFwZlV0b2tqWUlJbE9MeFZKOXNlY0x5X2xxemFfLWpKT21PZ1o2d0xWMWRURm9jb0dBaHBfVXBFUHY4UDJ1R2RzdW90Q1BhS0x1bjFIMTg0TzVmMzREc3lxUXJwNWhtR0lfZnV3WmMzMkJSTkdnQm83S0dVRl92bkpTX3cyLXppV0pxbksxODlkUkVybHJ2OWpOeWRZTWtzQ29UbHMyRk5FSQ?oc=5) | StockStory |
-| 23h 前 | 0 | 中性 | [ConocoPhillips (COP) Stock Declines While Market Improves: Some Information for Investors - Yahoo Finance](https://news.google.com/rss/articles/CBMipwFBVV95cUxQQ3lIckZaTzZwS0xLZmJ2djRhSGlqUklWVVRkY0lZaWl0eWJ6elZtak1XLW95b3NTQWZ0aW9rMDhOQ2ttT0hFWGZNSlhzdU82VnJrS0Fqckt5VnU4NGlBTnk3Z2xYdWl0VDFYX24tSUtkYWxHT3Z5V3QxX1I4RWpmQzkwOWRsR3F5dXVrUWlCRE1VMHpEVFNGMk52VlVPSkJLdUxkN1Jwdw?oc=5) | Yahoo Finance |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
@@ -142,7 +137,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-23 | 147.11 | 152.77 | 146.11 | **150.80** | +3.6% | 7,253,200 |
 | 2026-10-26 | 149.24 | 152.00 | 149.24 | **151.37** | +0.4% | 5,278,300 |
 | 2026-10-27 | 150.23 | 151.56 | 147.47 | **147.96** | -2.3% | 5,696,100 |
-| 2026-10-28 | 148.79 | 150.43 | 148.23 | **149.06** | +0.7% | 5,002,032 |
+| 2026-10-28 | 148.79 | 150.43 | 148.23 | **149.06** | +0.7% | 5,008,372 |
 
 ## 七、自己去查（本页不做独立验证）
 

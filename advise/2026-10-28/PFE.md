@@ -53,7 +53,7 @@ _医疗 · 数据截至 2026-10-28 收盘 → 面向 2026-10-28 开盘_
 - **动能**：RSI(14) 57，偏强；近一月的斜率慢于近三月（月 +2.5% vs 季 +18.2%），涨势在放缓
 - **波动**：日均真实波幅约为价格的 1.9%；按本报告 2 ATR 的止损惯例，一个 R 相当于 3.8% 的价格距离
 - **位置**：距 52 周高点 -3.2%，距 52 周低点 +29.7%
-- **量能**：最新一日成交量为 20 日均量的 0.8 倍，量能正常
+- **量能**：最新一日成交量为 20 日均量的 0.9 倍，量能正常
 - **相对强度**：近一月跑赢 标普500 1.5 个百分点
 - **支撑 / 阻力**：最近的摆动低点 27.64，摆动高点 30.44（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
 
@@ -110,8 +110,8 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 6h 前 | 8 | 中性 | [Pfizer Stock Ahead of Q3 Earnings: To Buy or Not to Buy? - TradingView](https://news.google.com/rss/articles/CBMirwFBVV95cUxOb2pyTUhlR2l1Z0ZjZDlISkVDLURqVHE3bURWZHNaSnhBV0VZa0w2TE5ZX2k3LXU0Zl96SWNrODlBREJ3a0M5R193dmdkaDYtckdKZHlhellyaUNGMmVOMEtfTDVYTG5IaEpJYTNXSW1qbHFmMFN0YUdfZDE2SXM2dnlCM3YxdW9UWU5nZ3VzYUJHQ1k1Q3pIOUNOd3o2VVFGbmkyMUhwLS1FMGU0aktn?oc=5) | TradingView |
-| 9h 前 | 0 | 中性 | [Why Should Pfizer Stock Holders Watch This One Number? - Trefis](https://news.google.com/rss/articles/CBMiswFBVV95cUxQeW1hLWxUNk91Y1FycXZmLWtsY2RuTWJQNDZGQlZWNTB5clhraDdmZ1BjVUhGZ2RZVkJJRFdBZmwtdEJyOWo0LUNHc3JoYnRHbVZwQU14cGhDcHJzOExkWU1LanpFYmUzdllzeVIwTmJmblRydi05TXlaemF6blZjU1VKRi1Qc1JCd3NtQ28yZmkzeXdrMFlGT2o1MXZuVGp6ZE9iTG5BY0FxRXVMZEFBWVo0OA?oc=5) | Trefis |
+| 33h 前 | 9 | 偏多 | [Pfizer expands TALZENNA approval. Pfizer stock stands 1.81 percent below its 52-week high - ad-hoc-news.de](https://news.google.com/rss/articles/CBMi5gFBVV95cUxNS2Y4VUlXdkprdEpaTUpDMGk3bW13MFhwMlNzbVpzQzV0X2ZuLWV0Q1MwaGxqNFlKbVRKU3B5VnZxQVZHZl8yQWJhWFpPN2ZqaTVZd3E5b1lSQ3ZMdG50YkVuM2wtZHA0a2x6RzhieXFBRzhYUzJsa1JVVVZJNWVOOWx3a0FZN1BSaElRMHBJY09KREtkMm5UbnZ6Ql9qMDFGaWw4SF9QVkpTM2FwNWZNZzRBajMyZW9mZ2dvSEdTUW4yQy02ZWNWdnF1cXptZktiX3d6dDYzRmlYOUZfUHhfMjdZZnRvQQ?oc=5) | ad-hoc-news.de |
+| 9h 前 | 0 | 中性 | [Pfizer reports ELREXFIO trial success while Pfizer stock sits 2.14 percent below its high - ad-hoc-news.de](https://news.google.com/rss/articles/CBMi5wFBVV95cUxNaGpyZ2xieUFLTUYxYU40V2xDeWVPd01kbXJnVE9GNm9oQW5tXzV6dXpFMDhWTFh3MzgzLXNSb3MyVm9HcDBKandSdUoycTBWdDVjTEFldHpTdi1KSXZjdFFVMTIwT21SYzBjUkRjdmtPVmtMUWZ3cDgxaGZKS3BDM3ZPZXJ5WkwwNnJDZ1V6THpBOFdGV0d4Q0pQRktPR3hhazhTQnlwb0VkOWhqdFRjNDgyc2RCVGZUX3lUbVc0NUxCRDJoN09MR01jMkw5N3lqZHRFd3VqWkR1cldxMVYyUDBYNjl3ZXM?oc=5) | ad-hoc-news.de |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -121,7 +121,6 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 - 下次财报在 6 天后，落在持有期内。财报跳空会直接穿过止损——那一晚的风险不是 1R，是没有上限的。
 - 公司尚未盈利：估值没有盈利可锚，股价由叙事和融资环境决定，这类名字在流动性收紧时跌得最快。
-- 政策面对该板块的倾向为 -0.33（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -143,7 +142,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-23 | 30.28 | 30.32 | 29.81 | **30.03** | -1.3% | 29,484,100 |
 | 2026-10-26 | 30.00 | 30.31 | 29.72 | **29.79** | -0.8% | 25,656,300 |
 | 2026-10-27 | 29.54 | 29.86 | 29.51 | **29.80** | +0.0% | 25,586,900 |
-| 2026-10-28 | 29.49 | 29.82 | 29.22 | **29.45** | -1.2% | 23,893,725 |
+| 2026-10-28 | 29.49 | 29.82 | 29.22 | **29.45** | -1.2% | 26,282,770 |
 
 ## 七、自己去查（本页不做独立验证）
 

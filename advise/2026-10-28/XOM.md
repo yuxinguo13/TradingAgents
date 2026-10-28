@@ -110,11 +110,8 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 9h 前 | 8 | 中性 | [3 Energy Stocks Poised to Outshine Earnings Estimates in Q3 - TradingView](https://news.google.com/rss/articles/CBMitgFBVV95cUxPMEs5bUJDcWcxbzlJY09tZXZHNks1X1NudG5NZWJSZ08xUjE2MTBnTjdtY0Q0bnAzeFNXLV9jc2tsckh1ZDcwbHQ2bzZUblV5T2czek5NZXBxS2JLem50LVJlQ3daY1NYOUxaaFlVMlZUamo5dHhzbXBwdDlvNHNsRkotblhjZHd1RGRweGc0Qm05SjZDOG1rWWNKZ0Utd3luQUVKQVFLM0ZEa3gzT2ZFY01INGtvUQ?oc=5) | TradingView |
-| 10h 前 | 5 | 偏多 | [ExxonMobil (XOM) Wins $12 Billion Kazakhstan Case And Finds Oil In Guyana - Simply Wall Street](https://news.google.com/rss/articles/CBMizgFBVV95cUxQa2o2d2JxNXVGbVVaa1ZJeHk5RXUxTFlMQkVzS29EV1BWeEtIbTNJVkd1UzBWb0xUbFJoYld3ZGFDZU9IWlhXT2p6ZjNYWjdlLWFfN0pVTnA3U2tsS0M4dkdDUDNvd1lzZDNKZlM4M0J2VHM5aDdBOGNaNEVZQjZGQ01rWnVGaHRBSnhCVW8xa1ZNdWZ6bjVDZm9uaXJMLXFaQjJUMDFOQ0dwYVhGenFsdjFKY1V5WGwyRHY5cEc4c2xwaVl3RHgwaktSbVBId9IB0wFBVV95cUxQTkRuUFpINFRVRTl2NEZmMkQ0dldWQnFDZEcydzJueTVHenpGODk3OGE4bE9NYW9vNENubUx0SWFIMmVqVXI2ZTZRYTNReTFkMXNDbHJfYk9hR29hUHk3WldLdUFzdUp1Mm5zTl9kcGJodHEwMkNLSzVCMGRrZ29vWXlqS045QkNEMlBlN2FnOEJmblQwTzVveW5JVC1QbUU3TGFTN0c5NkoteGtlb2xtZHpmdkRnTWJmWjlvM1p0RmxrdHhhRE54bDd4OTVQYmdGdFBz?oc=5) | Simply Wall Street |
-| 3h 前 | 0 | 中性 | [ExxonMobil (XOM) Stock Still Looks Undervalued On Its 231% Run - Yahoo Finance](https://news.google.com/rss/articles/CBMingFBVV95cUxNN21QSjdiYjNtRFlRdm9Kc29iZ3E5RG1leko3TnJvZFFEamdDbGpnemxRMF9XLTBmWGxnTjFrdHdQS2s1NFYwdm02QlJhV3htZURmdFppYW5SbDV2Y0k2UXl5U0M1bjRGT3RvV04tSTNPVFVaeTU1LTJiNGVpa09zaVZMZU9XNG9DSFJLLWNfZXNVWkhGUEdIMnlhSTc2Zw?oc=5) | Yahoo Finance |
-| 7h 前 | 0 | 中性 | [EXXONMOBIL HOLDINGS CORPORATION COMMON STOCK - Pete Sessions Congressional Trade on Oct. 14, 2026 - Quiver Quantitative](https://news.google.com/rss/articles/CBMidkFVX3lxTFBMdmFweEt0NW0ybnhvazh6WGVONGZmZ1pNZ2p5S3BYLXktek9rMk95OWtWWW5kMXduQXlHMGsyVVlHWkphcG5aWjk2RmZOX0tTZ3BkSm92NkkzZnNpZnZjVWY5YWxJbDl5U093Sm1SMTBPRDZ3cHc?oc=5) | Quiver Quantitative |
-| 23h 前 | 0 | 中性 | [BlackRock reports a passive stake above 5% in ExxonMobil Holdings (XOM). - Stock Titan](https://news.google.com/rss/articles/CBMiygFBVV95cUxQNVZwSnV6Si1BU1JrTGdzS2N6Tlp5VURUVEc3elVPeW5YQ1UzMnpIYWozZjN4X2Q4UkZ4SlNiOTAtYnl5WUFLZHB1dzg0RkN5T0w2WkZVa1F4TjljNmgyWmdJUjZZMG5DUUQ3Zl93STVzMkRfdHFmOU9BbElDSnhkX3QybmI5VVd4N0p4VTl5b05GcHFIdmpOX2h5ellPeklTYVZFeEJzaW02UGpsTW1Cb2hGVk9zRVdlOWtIQXdJVm16bjBqYWFEdGJn?oc=5) | Stock Titan |
+| 7h 前 | 0 | 中性 | [7DZD Stock Price and Chart — TURQUOISE:7DZD - TradingView](https://news.google.com/rss/articles/CBMiYEFVX3lxTFBrZ2I5eURPVGhGZmFINjl2ZEFGNktoX1JqM3ZBaU5mWGdRWUkwNEU3bGlqREh1UXFvSXVlZkVDMGU3eHcxS3cxZlhmNTltbHdCYVk1X3JHbWRfR2NHbVIyWg?oc=5) | TradingView |
+| 24h 前 | 0 | 偏空 | [ExxonMobil Holdings Corp. stock underperforms Tuesday when compared to competitors - MarketWatch](https://news.google.com/rss/articles/CBMi8AFBVV95cUxPbWJXUG1rRkxJNENLTHY0X1J0Q2lScE5QbzFjU3kydW1PMEd3R3lhOUFUaG5SUWd2cUlJZ0pSNHVNeG5oMEFjVm5DUTd2RzFvZWk0WVl5MHBCbXprdy1qVUpYSXdJWFJXcFR0NVk5UDhEUFJNNm1YMzc2NlFjUU5jd2VvU21qN3VGeWhmSlV0UVdUcGtCVTNBc1lGZXpPN3MtelBidXBHUUk0UkFjQllIQkN3SGIyTFhIMjRlOXlmTzFlNG1yNzNjMGtpa1VnVkVsdUxFbURhTEd1Vk5VeHlBeG9acHZibFlHdi0yT0hFcVM?oc=5) | MarketWatch |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -145,7 +142,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-23 | 179.37 | 183.75 | 179.00 | **183.21** | +2.8% | 11,517,700 |
 | 2026-10-26 | 181.86 | 184.59 | 181.52 | **184.54** | +0.7% | 10,893,300 |
 | 2026-10-27 | 183.63 | 184.88 | 179.77 | **179.91** | -2.5% | 14,156,500 |
-| 2026-10-28 | 180.59 | 183.65 | 180.00 | **182.02** | +1.2% | 11,347,969 |
+| 2026-10-28 | 180.59 | 183.65 | 180.00 | **182.02** | +1.2% | 11,902,353 |
 
 ## 七、自己去查（本页不做独立验证）
 

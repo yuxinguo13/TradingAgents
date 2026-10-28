@@ -110,10 +110,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 0h 前 | 0 | 中性 | [Marvell Technology Inc Stock (MRVL) Closed Up by 3.32% on Oct 28: Facts Behind the Movement - TradingKey](https://news.google.com/rss/articles/CBMiiwFBVV95cUxPdFJJVU16Y1RxQXA4WDJyc2x6dzZaODZOZ0cyTjFiZ2V4NzJvNnpIX2Z0MVN2TVh0N3RwQ3YtQktJWi1tTENFQ18tUnZPOHRnWDVYdmxpbzdoeE9iZVItZHBlMUJ1eFpQXzFuWW54SkY4OWd5Uml6aEhLUUZTN1VLdk5iXzVTVFFiZ09J?oc=5) | TradingKey |
-| 2h 前 | 0 | 中性 | [Where Will Marvell Technology Stock Be in 2030? - Yahoo Finance](https://news.google.com/rss/articles/CBMiogFBVV95cUxNVDFqM0FhR0tiQklXTWZORjNqZkRJUlRmbmRHSC1KTnVWTFFGMkl6Zk4wNEZMcmV5b3BQellsYnljYURxci15MGxqNWdpeWJhcjdtM0tlaHgtdHJLRjN0dFlFSmlta2dEYUtHWHhSTDNzeG1JNlhVM0VwbWRZTC1pcTA2MG54ZVltMzFjV2l5dDI2djFtSFRnS3FZS2V0NUNwM2c?oc=5) | Yahoo Finance |
-| 8h 前 | 0 | 中性 | [Wall Street Analysts See Marvell (MRVL) as a Buy: Should You Invest? - Yahoo Finance Australia](https://news.google.com/rss/articles/CBMiiAFBVV95cUxNaUtEMEV4dFBILXc0aE1ndWx6cUVTRWZHbW41MFdXNWtXbjBNeFFNdjRIdXg3Zm5wc2Jpa0JXSHFkUXpBMUlDbm1vQU5sNnZwMkF1b1hoZDk3bDNUbXZfQ2F1WFJVWHJkZUhtWm9IOHNxVjJOMzRwNmYxTnB3eUtHUG9FUUlVc2pj?oc=5) | Yahoo Finance Australia |
-| 8h 前 | 0 | 中性 | [Marvell Technology, Inc. (MRVL) Is a Trending Stock: Facts to Know Before Betting on It - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMijgFBVV95cUxOaWZxQmtoWVdSY3B5WnVuOTZqckFnZU53d3NsZU5wdlBiS1gxQm9jVktvYVBkSGtUSGtjdUVXTFYwNWhQNkVDLUx3cktoMG1Yd1k3WF9sSkE1RTJmaUhTUi1KZnBKRkJqOWhpeUFZb2I1dnFLQ2xQTzlxVkhoN1ZPMmFPdmtxMnlyVnlkWFdR?oc=5) | Yahoo! Finance Canada |
+| 9h 前 | 0 | 中性 | [Marvell Technology, Inc. (MRVL) Is a Trending Stock: Facts to Know Before Betting on It - Yahoo Finance Australia](https://news.google.com/rss/articles/CBMijgFBVV95cUxNaXlFQ0JKOU1ES3E3YmtNODdYWnNEaF80V25wU3VjVUtrY1NWVk96Y0xGN0ZwWU5WWkctb096RlEzeGwzSkJRMzRuZGxJQTZkNkN4OTBfWWJXMWYyYjU2UC0zWF81bFZJWjJwM29BUHpQSlRZY2JsSWlTcmo4M2cwcGJfMExOQVlIbkQ0VnFB?oc=5) | Yahoo Finance Australia |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -145,7 +142,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-23 | 223.80 | 231.62 | 221.38 | **228.51** | +2.3% | 13,039,800 |
 | 2026-10-26 | 229.02 | 238.58 | 223.69 | **233.78** | +2.3% | 14,543,600 |
 | 2026-10-27 | 237.05 | 245.87 | 235.23 | **243.57** | +4.2% | 15,452,800 |
-| 2026-10-28 | 247.45 | 253.66 | 246.22 | **251.65** | +3.3% | 12,844,817 |
+| 2026-10-28 | 247.45 | 253.66 | 246.22 | **251.65** | +3.3% | 13,005,862 |
 
 ## 七、自己去查（本页不做独立验证）
 
