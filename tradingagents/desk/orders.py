@@ -113,6 +113,7 @@ class Position:
     stop0: float = float("nan")     # the stop the trade was sized with; R is measured against it
     pending: bool = False           # the buy is at the venue but has not filled
     trimmed: bool = False           # half taken off at 1R (MANUAL §10)
+    staged: float = float("nan")    # a resting take-profit for half the shares at this price
 
     def risk(self) -> float:
         return self.shares * max(0.0, self.entry - self.stop)
@@ -432,7 +433,7 @@ class Executor:
                     risk_committed_today=risk_committed(today, self.log_path),
                     market_open=market_open or self.dry_run)
 
-        rank = {"sell": 0, "trim": 1, "cancel_buy": 1, "raise_stop": 2, "protect": 3, "buy": 4}
+        rank = {"sell": 0, "trim": 1, "cancel_buy": 1, "raise_stop": 2, "stage_half": 2, "protect": 3, "buy": 4}
         for o in sorted(orders, key=lambda o: rank.get(str(o.get("action")), 9)):
             action = str(o.get("action", "")).lower()
             sym = str(o.get("symbol", "")).upper()
@@ -458,6 +459,8 @@ class Executor:
                 out = self.protect(o, sym, price, shares_held, gate, f, today)
             elif action == "cancel_buy":
                 out = self.cancel_buy(o, sym)
+            elif action == "stage_half":
+                out = self.stage_half(o, sym, price, shares_held)
             else:
                 out = Outcome(action, sym, False, f"unknown action {action!r}")
             if out.ok and action == "buy":
@@ -605,6 +608,46 @@ class Executor:
             self.book.save()
         else:
             out.reason = f"venue refused: {msg}"
+        return out
+
+    def stage_half(self, o, sym, price, held) -> Outcome:
+        """Rest half the shares under a take-profit at ``take`` (normally 1R),
+        the other half under the original target, both with the same stop.
+
+        2026-10-27/28: FIGS and HAS touched 1R intraday and fell back before
+        the close run could trim at market. The stop is re-placed in the same
+        call for every share; it is never lowered and never left off."""
+        p = self.book.positions.get(sym)
+        n = int(held.get(sym, 0))
+        take = _num(o.get("take"))
+        if p is None or n <= 0:
+            return Outcome("stage_half", sym, False, f"{sym} is not a held position in the book")
+        if getattr(p, "trimmed", False):
+            return Outcome("stage_half", sym, False, f"{sym} has already been trimmed")
+        if n < 2:
+            return Outcome("stage_half", sym, False, f"{sym}: {n} share cannot be split")
+        if not (_ok(take) and _ok(price) and price < take < p.target):
+            return Outcome("stage_half", sym, False,
+                           f"take {take} must sit above the price {price:.2f} and below the target {p.target:.2f}")
+        if not (_ok(p.stop) and p.stop < price):
+            return Outcome("stage_half", sym, False, f"{sym}: the stop {p.stop} is not below the price")
+        half, rest = n // 2, n - n // 2
+        if self.dry_run:
+            return Outcome("stage_half", sym, True, "dry run", half, price, p.stop, take, venue="not sent")
+        for leg in self.broker.open_orders():
+            if leg["symbol"].upper() == sym and leg["side"] == "sell":
+                self.broker.cancel(leg["id"])
+        a = self.broker.protect(sym, half, p.stop, take)
+        b = self.broker.protect(sym, rest, p.stop, p.target)
+        ok = bool(a.ok) and bool(b.ok)
+        out = Outcome("stage_half", sym, ok, str(o.get("reason") or ""), half, price, p.stop, take,
+                      venue=f"{half} @ stop {p.stop:.2f} / take {take:.2f}: {a.message}; "
+                            f"{rest} @ stop {p.stop:.2f} / target {p.target:.2f}: {b.message}")
+        if ok:
+            p.staged = take
+            self.book.save()
+        else:
+            out.reason = f"venue refused: {out.venue}"
         return out
 
     def cancel_buy(self, o, sym) -> Outcome:

@@ -103,7 +103,8 @@ only on a rule trigger (stop, target, horizon, invalidation).
    day's news; they pass the same checklists. Write the intent file
    `~/.tradingagents/desk/trade/<date>-intent.json` (format in
    `tradingagents/desk/orders.py`): `sell` / `trim` / `raise_stop` / `protect`
-   / `cancel_buy` (a resting buy only; a stop is never cancelled) / `buy`,
+   / `cancel_buy` (a resting buy only; a stop is never cancelled) /
+   `stage_half` (rest half the shares under a take-profit at 1R, same stop) / `buy`,
    each with its reason, and for buys the thesis, the invalidation
    condition, the principles it rests on, and the regime line. Levels only;
    no share counts. **The momentum sleeve comes first (MANUAL §10):** go

@@ -322,6 +322,16 @@ class Packer:
                         pack.warnings.append(f"{sym}: 账本止损 {p.stop:,.2f} 低于交易所挂着的 {venue_stop:,.2f}，已按交易所同步")
                         p.stop = venue_stop
                         self.book.save()
+                    staged = _num(getattr(p, "staged", float("nan")))
+                    have = int(_num(h.quantity, 0.0))
+                    if _ok(staged) and 0 < have < p.shares and not getattr(p, "trimmed", False):
+                        # the resting half at 1R filled at the venue
+                        self.book.close(sym, staged, today, f"target: 1R 减半挂单成交 {staged:,.2f}",
+                                        shares=p.shares - have)
+                        p = self.book.positions[sym]
+                        p.trimmed, p.staged = True, float("nan")
+                        self.book.save()
+                        pack.warnings.append(f"{sym}: 1R 减半挂单成交 {staged:,.2f}，剩余 {have} 股")
                     if getattr(p, "pending", False):
                         # the venue filled it since the order ran: book the real cost
                         p.pending = False
@@ -352,7 +362,8 @@ class Packer:
         for h in pack.held:
             p = self.book.positions.get(h.symbol)
             if (p is not None and p.sleeve == "aggressive" and _ok(h.r_now) and h.r_now >= 1.0
-                    and not getattr(p, "trimmed", False)):
+                    and not getattr(p, "trimmed", False)
+                    and not _ok(_num(getattr(p, "staged", float("nan"))))):
                 pack.reminders.append(f"💡 {h.symbol} 已到 {h.r_now:.1f}R 未减半：手册十·先 trim 一半兑现，"
                                       f"剩余止损移到成本并跟 20 日线")
 

@@ -770,3 +770,52 @@ class TestReflection1023:
         pk = pack.Packer(broker=FakeVenue(acct()), market=mkt(task="trade"), book=book,
                          screen=screen_of(), now=MONDAY_OPEN).run()
         assert [c["symbol"] for c in pk.postmortems] == ["BBB"]
+
+
+@pytest.mark.unit
+class TestReflection1028:
+    def _book(self, home, px):
+        book = DeskBook(home / "desk" / "trade" / "book.json")
+        book.positions["HLD"] = Position(symbol="HLD", shares=10, entry=round(px * 0.98, 2), stop=round(px * 0.95, 2),
+                                         target=round(px * 1.10, 2), opened="2026-08-12", sleeve="aggressive",
+                                         stop0=round(px * 0.95, 2))
+        book.save()
+        return book
+
+    def test_stage_half_rests_two_ocos_with_the_same_stop(self, home):  # noqa: F811
+        """FIGS 10/27, HAS 10/28: 1R touched intraday, gone by the close run."""
+        shape("HLD", 100.0, drift=0.3)
+        px = frame_for("HLD", DATA_DAY.isoformat())["Close"].iloc[-1]
+        self._book(home, px)
+        v = FakeVenue(acct(cash=90_000, holdings=[held("HLD", 10, round(px * 0.98, 2), px)]))
+        v.resting["HLD"] = round(px * 0.95, 2)
+        out = executor(v, home).run({"orders": [{"action": "stage_half", "symbol": "HLD", "take": round(px * 1.03, 2)}]})
+        assert out[0].ok, out[0].reason
+        ocos = [x for x in v.placed if x[0] == "oco"]
+        assert [x[2] for x in ocos] == [5, 5]
+        assert ocos[0][3] == (round(px * 0.95, 2), round(px * 1.03, 2))
+        assert ocos[1][3] == (round(px * 0.95, 2), round(px * 1.10, 2))
+        assert v.cancelled == ["s-HLD"]
+        assert DeskBook(home / "desk" / "trade" / "book.json").positions["HLD"].staged == round(px * 1.03, 2)
+
+    def test_stage_half_refuses_a_take_below_the_price(self, home):  # noqa: F811
+        shape("HLD", 100.0, drift=0.3)
+        px = frame_for("HLD", DATA_DAY.isoformat())["Close"].iloc[-1]
+        self._book(home, px)
+        v = FakeVenue(acct(cash=90_000, holdings=[held("HLD", 10, round(px * 0.98, 2), px)]))
+        out = executor(v, home).run({"orders": [{"action": "stage_half", "symbol": "HLD", "take": round(px * 0.99, 2)}]})
+        assert not out[0].ok and v.placed == [] and v.cancelled == []
+
+    def test_a_filled_staged_half_is_booked_as_the_trim(self, home):  # noqa: F811
+        shape("HLD", 100.0, drift=0.3)
+        px = frame_for("HLD", DATA_DAY.isoformat())["Close"].iloc[-1]
+        book = self._book(home, px)
+        book.positions["HLD"].staged = round(px * 1.03, 2)
+        book.save()
+        v = FakeVenue(acct(cash=90_000, holdings=[held("HLD", 5, round(px * 0.98, 2), px)]))
+        v.resting["HLD"] = round(px * 0.95, 2)
+        pk = pack.Packer(broker=v, market=mkt(task="trade"), book=book, screen=screen_of(), now=MONDAY_OPEN).run()
+        after = DeskBook(home / "desk" / "trade" / "book.json")
+        assert after.positions["HLD"].shares == 5 and after.positions["HLD"].trimmed
+        assert after.closed[-1].shares == 5 and after.closed[-1].exit == round(px * 1.03, 2)
+        assert any("减半挂单成交" in w for w in pk.warnings)
