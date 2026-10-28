@@ -1,0 +1,193 @@
+# TSM · 台积电
+
+_未分类 · 数据截至 2026-10-28 收盘 → 面向 2026-10-28 开盘_
+
+[← 回到 2026-10-28 当日报告](../2026-10-28.md)
+
+> 趋势向上且结构完整；顺势的一侧在上方，风险在于结构一旦破位就要认。
+
+## 一、价格与图形
+
+```text
+     TSM · 近 126 个交易日（日线收盘）
+479 ┤                                                                 ╭─╮
+466 ┤                     ╭╮  ╭╮                                     ╭╯ │
+452 ┤                     ││  ││                                 ╭───╯  ╰─╮
+438 ┤             ╭─╮   ╭╮│╰──╯╰───╮                       ╭╮   ╭╯       ·╰╮····╭
+425 ┤           ╭─╯ ╰─╮╭╯╰╯     ···╰╮·········╭────╮···╭╮·╭╯╰─╮╭╯ ·······  ╰╮╭╮╭╯
+411 ┤   ╭─╮╭╮  ╭╯     ╰╯  ······    ╰╮╭─╮   ╭─╯    ╰───╯╰─╯  ·╰╯··          ╰╯╰╯
+397 ┤───╯ ╰╯╰──╯      ····           ╰╯ ╰─╮╭╯                             :::::::
+384 ┤             ····                    ╰╯                    ::::::::::
+370 ┤      ·······                                  ::::::::::::
+356 ┤······                           ::::::::::::::
+343 ┤                       ::::::::::
+329 ┤               ::::::::
+316 ┤      :::::::::
+302 ┤::::::
+    └────────────────────────────────────────────────────────────────────────────
+     2026-04-30                       2026-07-31                       2026-10-28
+     · SMA50   : SMA200   ─ close
+```
+
+```text
+       TSM · 近 21 个交易日（放大看最近节奏）
+485.8 ┤   ╭─╮
+476.6 ┤  ╭╯ ╰╮
+467.4 ┤  │   │
+458.3 ┤──╯   ╰╮
+449.1 ┤       ╰╮╭╮
+439.9 ┤        ╰╯│        ╭─
+430.7 ┤          ╰╮   ╭╮  │
+421.5 ┤           ╰╮╭─╯│╭─╯
+412.4 ┤            ╰╯  ╰╯
+      └─────────────────────
+       2026-09-30 2026-10-28
+```
+
+成交量近 63 日： `▄▅▅▃▄▃▂▂▅▃▂▂▁▃▁▁▂▄▁▃▅▃▄▄▄▂▂▂▂▂▃▂▅▂▂█▇▄▃▅▃▂`
+
+### 图形读数
+
+- **均线排列**：均线偏多 — 现价距 20 日 442.34（-0.6%）、50 日 434.29（+1.2%）、200 日 397.73（+10.5%）
+- **形态结构**：收敛整理 — 高点走低但低点抬高，区间在收窄；前高 487.47 → 435.16（-10.7%）、前低 407.13 → 410.22（+0.8%）
+- **动能**：RSI(14) 52，中性；近一月的斜率慢于近三月（月 -3.8% vs 季 +9.3%），涨势在放缓
+- **波动**：日均真实波幅约为价格的 3.0%；按本报告 2 ATR 的止损惯例，一个 R 相当于 6.0% 的价格距离
+- **位置**：距 52 周高点 -9.5%，距 52 周低点 +61.5%
+- **量能**：最新一日成交量为 20 日均量的 0.7 倍，量能正常
+- **相对强度**：近一月跑输 标普500 4.9 个百分点
+- **支撑 / 阻力**：最近的摆动低点 418.07，摆动高点 443.10（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
+
+**我的读图结论**：趋势向上且结构完整；顺势的一侧在上方，风险在于结构一旦破位就要认
+
+_以上每一条都是对已经发生的价格的描述。均线、RSI、摆动结构全部是滞后指标，它们能说明现在处于什么状态，不能说明下一步。你自己在图上看到的东西，和这里写的不一致时，以你看到的为准——然后去查是哪个数字有问题。_
+
+## 三、财报与基本面
+
+- **估值**：既无盈利也无有意义的营收，估值倍数一栏本页留空——这不是低估，是无法用倍数衡量。
+- **增长**：最新季度营收同比 +50.9%；最近三个季度营收连续环比上升；最近 7 次财报里 7 次超预期。
+- **盈利质量**：没有拿到利润率数据。
+- **资产负债**：没有拿到资产负债数据。
+- **卖方预期**：没有覆盖这只股票的分析师数据。
+
+**分季度损益**（季度数据，最新在左）
+
+| 指标 | 2026-09-30 | 2026-06-30 | 2026-03-31 | 2025-12-31 | 2025-09-30 |
+|---|---:|---:|---:|---:|---:|
+| 营收 | $1.49万亿 | $1.27万亿 | $1.13万亿 | $1.05万亿 | $9,899.18亿 |
+| 毛利率 | 66.4% | 67.7% | 66.2% | 62.3% | 59.5% |
+| 营业利润率 | 58.7% | 60.3% | 58.1% | 54.0% | 50.6% |
+| 净利率 | 51.1% | 55.6% | 50.5% | 46.4% | 45.7% |
+| 净利润 | $7,630.64亿 | $7,065.62亿 | $5,724.80亿 | $4,854.65亿 | $4,523.02亿 |
+| 摊薄EPS | 147.13 | 136.25 | 110.40 | 97.50 | 87.20 |
+
+**分年度损益**（年度数据，最新在左）
+
+| 指标 | 2025-12-31 | 2024-12-31 | 2023-12-31 | 2022-12-31 |
+|---|---:|---:|---:|---:|
+| 营收 | $3.81万亿 | $2.89万亿 | $2.16万亿 | $2.26万亿 |
+| 毛利率 | 59.9% | 56.1% | 54.4% | 59.6% |
+| 营业利润率 | 50.8% | 45.7% | 42.6% | 49.5% |
+| 净利率 | 44.6% | 40.0% | 39.4% | 43.9% |
+| 净利润 | $1.70万亿 | $1.16万亿 | $8,517.40亿 | $9,929.23亿 |
+| 摊薄EPS | 327.35 | 226.25 | 161.70 | 196.00 |
+
+**财报兑现记录**
+
+| 财报日 | 预期EPS | 实际EPS | 超预期 |
+|---|---:|---:|---:|
+| 2027-01-14 | 5.16 | — | 尚未公布 |
+| 2026-10-15 | 4.52 | 4.60 | +1.7% |
+| 2026-07-16 | 3.89 | 4.31 | +10.9% |
+| 2026-04-15 | 3.33 | 3.49 | +4.7% |
+| 2026-01-15 | 2.98 | 3.14 | +5.5% |
+| 2025-10-15 | 2.63 | 2.92 | +11.2% |
+
+_财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会滞后，TTM 窗口是厂商口径而非公司财年口径。以上任何一个数字如果会改变你的决定，请点开本页下方的 SEC EDGAR 链接看原文。_
+
+**财报日历**：下次财报 **2027-01-14**（约 78 天后）；上次财报 2026-10-15，超预期 +1.7%。财报日是这套止损体系唯一无法覆盖的风险：跳空会直接穿过止损价。
+
+## 四、消息面（过去 24 小时）
+
+| 时间 | 材料度 | 倾向 | 标题 | 来源 |
+|---|---:|---|---|---|
+| 2h 前 | 8 | 中性 | [Beyond NVIDIA: Why TSMC Stock Looks Attractive After Q3 Earnings - Zacks Investment Research](https://news.google.com/rss/articles/CBMipwFBVV95cUxOb3d0dU5xTXJwMzUwMnZYdDFwTE5CLVpqVnliWm9RczlQZ0NQQnl3QmQtbkpSVzU0S0xhS2lKS1lCYk1YcFp5VlBScEMwT1JSTGZMSmRrbWhNSFZVQ3lKeXhpUzdsa2d5UTctdnRuVUp6LVcxTXJMa3Vxc2FoMzJzeXpsLUs4Sjl5Ujc0UEVMbzJhTXEyTG5RTTBkdlFtcm12THJ6b3kzQQ?oc=5) | Zacks Investment Research |
+| 8h 前 | 8 | 中性 | [Taiwan Semiconductor Flexes Pricing Power on AI's Frontline - MarketBeat](https://news.google.com/rss/articles/CBMimwFBVV95cUxPZHJ3ZjloMU12SmpveEpEa19KbjkxMVhONG9GcDVST0s2dW1lcngxUXhySktSSUtRakxCZGVLeXkxVnhsUTZ3dHh1dFU5YjVkOXZrTzBCblI5dW1EMGZwRm9lUUVjN3g1SVMzR3dRZnhUc2ticEQ2SUNFOHgzSU4xVDhJdHZhRTl4Y2pzRm1rejFBcmhaRzBveW9URQ?oc=5) | MarketBeat |
+| 23h 前 | 8 | 偏多 | [Taiwan Semiconductor Manufacturing (NYSE:TSM) Stock Jumps 3% - Should You Buy? - MarketBeat](https://news.google.com/rss/articles/CBMizAFBVV95cUxQZXI1X3lsUEdCTUVncTBaaTlJaWlqMGRfWlZ3Z293d1hqb0NidmY5WFVfVF9lLTFwM25VeUxKWHBSSkZKTmtUMUlYZGI3TTF0aTk3Yi1paEt0eHd0LUtlQzRJLTVlTDlVYkV0bEItYUJSWDd5VlotRkdyYWhROWU2YjVrMEZnSWdWVThSWE9weUtZZnAwbXdpMXgyV2dNQ2c5bncybU8xYWFFWDBBU1FOT1V3UkRwaW9KU2JoQVNDak1NWnBLTFliZkhWQ1Q?oc=5) | MarketBeat |
+| 4h 前 | 0 | 中性 | [Anthropic's IPO Filing Says TSMC Couldn't Always Supply Enough Chips - Forbes](https://news.google.com/rss/articles/CBMiugFBVV95cUxNcFpvRGxlU19aUXNLSm9QRWNsamFRbDlaQUJndjNlZGNVWGY1WHZ0bkZEQzhMNktDSEZUN1F2YTN2MjRSUjUxT1BCM3U0VnpYTDZHWWtRWTd6dkZwZ2dkNDRjMEd5T2RRaFZXSmFkXzZtT2ZKN1lJX2pJTFFkQ3hTVW12d2EweUdGdm9yd0hZSkxxaEhySWQ4VTI0VkFQUGgxTDRzZU8yZFl4N3dKeVBLOFVKd1NwTmNmT1E?oc=5) | Forbes |
+| 11h 前 | 0 | 中性 | [Nvidia vs TSMC: Here’s Which One May Be the Biggest AI Winner. - The Motley Fool](https://news.google.com/rss/articles/CBMipgFBVV95cUxNN19qTFFvQW1qNDNTT3pVVnEwdXcxVDVNcHBNWmIxVG9mRWtsUzgyVnNQRzN1NlBlV3JUVEtTLWRpbk9RbG9xaGdOcC1WdnQ5THYwaUNkSlV3bVNEdTFBa1E4dTFOa1dDWmRLOFd0eVpyNVNKSDBZR2tjV1prNXE2SG0wS3ZUa0EybHloX3I4UHpiUVFEbW9wUjdjT084dEhLUHNvMGdB?oc=5) | The Motley Fool |
+| 18h 前 | 0 | 中性 | [Cathie Wood Extends Archer, Joby Buying Spree; Ark Sells More AMD, Taiwan Semiconductor Shares - Benzinga](https://news.google.com/rss/articles/CBMi7wFBVV95cUxQNlI2alFjamgtbVhhUERmYUx1SmIwdWRsbTV5UUtKWVo4TXNiUzZHd3o5MGZ5bXZTM3RUd3ZDNEZwSmtQWVVRbDk0bVR4UVFEUmY0UjdJM0pYVDJaTDNmRC1xbHNKRVRRSGpiZWljYTR4RVZzZHFWUXRORnpsa05zSDJod08tVWVBVVphRkllalhjdUFtSUdRbFlCdlIyWmRqUUQzQlVnZl8wb25hMTdGUVVLZzg0RlMxYl9oR1NWNTlrWTg3Mk9ITnU3OUpNZUc0VFFCSVNyY0V5WjM2TVN4VDdtUTJNXzZ4WDZZYjJRdw?oc=5) | Benzinga |
+| 23h 前 | 0 | 中性 | [Taiwan Semiconductor Manufacturing Climbs 3% After Hours - StocksToTrade](https://news.google.com/rss/articles/CBMinwFBVV95cUxPOHUwT096RGQ2NXQ0d1R6Qk5zNllKZUNzay1sODVLUU01Njl0RTdVYTdfQmk4OWpWYS1SMEVlclhfSFdFNnA0SlA5c2hZZFhHRVNTZEc4RTVCUE1WNzdzREdXY0l4VklQM1UzS2lzZ0t4WXFKeUR1MlB2aTYtY01aWmlpaG5IcjY3WS16MTh6TnBfR0dfMGdoX1gxTGpzRnM?oc=5) | StocksToTrade |
+| 23h 前 | 0 | 中性 | [Cathie Wood Cashes Out AI Chip Stocks, Adds These Aviation Plays - Investor's Business Daily](https://news.google.com/rss/articles/CBMiqwFBVV95cUxORmw1MTlySnF4NGxpbFhfcXlHeVFueTU2ZW5yaHlSTlQ0NTE0ZVFvZjJqTm9ySmlwZFFQLVNXVFFfYUt3Vmo4UzFWSXgwU0RfeXNTLWo3VXZzOWtZd09CbE9kZ0l4MmlvX1otb05seDR6RkpvdHk0ckNtMnRVUC1xM1RucU1YRWJGRGVVcjVBTXVPckMtSGNqaFA3Rk1FODZfVkllQWxraUdiaVk?oc=5) | Investor's Business Daily |
+| 31h 前 | 0 | 中性 | [These AI Chip Stocks May Be Just Getting Started - 24/7 Wall St.](https://news.google.com/rss/articles/CBMilwFBVV95cUxQUUY3N1FWVVlzd29xRm52UG9xNXVZcERleGU2cHZlOVRZUXVxUzlZb2h5RTVIcUl0bWJWbDNPMG1kSTVyNDhoRWdqa3NPRUJONE1mY2ZjY0ZTbUloamRVdHVWdS00dV9zbUVaalhrYXZrUzRnSGRnTHNhbDVfTk9OV0g1OVlTRm1lN2p5RFkwcV9wRU91QzJZ?oc=5) | 24/7 Wall St. |
+| 34h 前 | 0 | 中性 | [Cathie Wood Sells $22.5M of AMD and TSMC Stocks, Buys $6.8M of Two Air Taxi Stocks - TipRanks](https://news.google.com/rss/articles/CBMirgFBVV95cUxPSlNYSE5WdlB6cGxpTnlNZjUtNHpXc2hSVHo5RFdWN1VhVmphSjBHUWV6Vm5IVTZEZ2pvaXFkZXQxMTU4S095bWk0Z1ZVb1N0LWc3UURyeXFDR2hJT0NtUmVsTlNRZjZyV1RIOTZTVDhaenZhaTR0SkhuZTl3S0xwbUdRWmtVbFBQYmg1dGt4NnJhZTlrUnJYVGEwSjNFNFV6THR1aU9Nb2FTZjF4NEE?oc=5) | TipRanks |
+| 36h 前 | 0 | 中性 | [Broadcom vs. Taiwan Semiconductor: Two AI Powerhouses, One Surprising Revenue Trend - Yahoo Finance](https://news.google.com/rss/articles/CBMiogFBVV95cUxNVVZHSzNyZThQWDZTVUJhTFJ2ZjBRanVxYm1wTHpVSThrUzVDSUstbXBVd3FkYlZtalBiYk9BUzgwR21Ldm5NQnRmU0J4UnRkbXlzR3ZZaTRsV0NDNnQyU2dCZ3BqVnByX29EUVRzcnNtVWRSTVJKQ0tER29TWDFraDhXMUJiTjdQb01OSFB5Y1BQbERiZldmbHRZVWFJbWxGR3c?oc=5) | Yahoo Finance |
+| 40h 前 | 0 | 偏多 | [TSMC to raise advanced chip packaging prices by up to 20%, report says - Investing.com](https://news.google.com/rss/articles/CBMiwwFBVV95cUxNTDRSLV9rNmhWLXNCMm5id0w4Wi1uVU5ySHZSR0ZXSGQwZEQwaExrMnNMWGMxa0pYbktnLS15WGswZUxVOE8xY0dfVWItc0RHYjlGVnQ0UFdvOWZYMVRJRldqbFNiVDdTVUlXby1sY2tDQ2ZzR3hiLVZuWWs0cHlXRFE1ZWVvMUZVc1A2TmV4OTgwZlRzMm42eW1fTlZMcktmYmZQQ3pqUllZenZlQU5RNm5oREhJazYzbm5fX1hFZkFuVUE?oc=5) | Investing.com |
+
+_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+
+## 五、反方观点与风险
+
+_以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
+
+- 公司尚未盈利：估值没有盈利可锚，股价由叙事和融资环境决定，这类名字在流动性收紧时跌得最快。
+
+## 六、原始数据（本页所有计算的来源）
+
+最近 15 个交易日的 OHLCV：
+
+| 日期 | 开 | 高 | 低 | 收 | 涨跌 | 成交量 |
+|---|---:|---:|---:|---:|---:|---:|
+| 2026-10-08 | 466.32 | 471.19 | 452.88 | **457.99** | -3.0% | 13,421,700 |
+| 2026-10-09 | 464.21 | 464.83 | 449.75 | **453.31** | -1.0% | 9,242,000 |
+| 2026-10-12 | 453.55 | 454.40 | 444.35 | **444.35** | -2.0% | 8,867,200 |
+| 2026-10-13 | 439.52 | 445.50 | 437.40 | **445.12** | +0.2% | 8,581,100 |
+| 2026-10-14 | 436.25 | 440.39 | 428.06 | **430.00** | -3.4% | 15,167,200 |
+| 2026-10-15 | 415.17 | 423.66 | 407.13 | **422.25** | -1.8% | 22,445,800 |
+| 2026-10-16 | 421.22 | 421.50 | 410.58 | **412.61** | -2.3% | 16,675,100 |
+| 2026-10-19 | 421.66 | 427.16 | 415.50 | **420.22** | +1.8% | 12,353,800 |
+| 2026-10-20 | 416.29 | 428.21 | 416.12 | **425.08** | +1.2% | 12,538,600 |
+| 2026-10-21 | 433.14 | 435.16 | 423.74 | **431.89** | +1.6% | 10,721,100 |
+| 2026-10-22 | 419.39 | 421.91 | 410.22 | **412.35** | -4.5% | 16,475,100 |
+| 2026-10-23 | 412.29 | 421.31 | 411.11 | **418.51** | +1.5% | 9,494,400 |
+| 2026-10-26 | 418.07 | 428.85 | 417.72 | **424.37** | +1.4% | 9,627,100 |
+| 2026-10-27 | 427.16 | 438.58 | 426.00 | **436.87** | +2.9% | 9,022,500 |
+| 2026-10-28 | 438.24 | 440.88 | 436.84 | **439.51** | +0.6% | 7,816,345 |
+
+## 七、自己去查（本页不做独立验证）
+
+**行情与图形**
+- [Yahoo Finance 行情](https://finance.yahoo.com/quote/TSM) — 本报告所有价格与均线的来源，先对这里
+- [TradingView 图表](https://www.tradingview.com/chart/?symbol=TSM) — 可画线、可换周期，用来复核本页的 ASCII 图
+- [Finviz 快照](https://finviz.com/quote.ashx?t=TSM) — 一屏看完估值、技术与同业对比
+- [StockCharts 技术面](https://stockcharts.com/h-sc/ui?s=TSM)
+- [Barchart 观点](https://www.barchart.com/stocks/quotes/TSM/opinion) — 把十几个技术指标折算成一个多空票数
+
+**财务与估值**
+- [StockAnalysis 财务报表](https://stockanalysis.com/stocks/TSM/financials/) — 十年利润表/资产负债表/现金流，免费且不用登录
+- [Yahoo 财务](https://finance.yahoo.com/quote/TSM/financials) — 本页财报数字的来源
+- [Yahoo 关键统计](https://finance.yahoo.com/quote/TSM/key-statistics) — 估值倍数、利润率、资产负债的完整版
+- [Macrotrends 长期趋势](https://www.macrotrends.net/stocks/charts/TSM/x/revenue) — 营收与利润的十年折线，看结构性变化
+- [Wisesheets/Koyfin 替代：GuruFocus](https://www.gurufocus.com/stock/TSM/summary)
+
+**原始文件（无中介）**
+- [SEC EDGAR 全部文件](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&ticker=TSM&type=&dateb=&owner=include&count=40) — 10-K/10-Q/8-K 原文；财报电话会与风险因素只在这里
+- [SEC 全文检索](https://efts.sec.gov/LATEST/search-index?q=%22TSM%22&forms=8-K) — 按关键词搜文件正文
+- [OpenInsider 内部人交易](http://openinsider.com/search?q=TSM) — 高管自己在买还是在卖，是少数不靠解读的信号
+- [13F 机构持仓](https://whalewisdom.com/stock/TSM) — 注意：13F 滞后 45 天，不能当作买入理由
+
+**消息与预期**
+- [Yahoo 新闻](https://finance.yahoo.com/quote/TSM/news)
+- [Google News 搜索](https://news.google.com/search?q=TSM+stock&hl=en-US)
+- [财报日历与预期](https://stockanalysis.com/stocks/TSM/forecast/) — 下次财报日、市场一致预期、历史超预期记录
+- [Seeking Alpha 讨论](https://seekingalpha.com/symbol/TSM) — 观点密度高，但是买方与卖方混杂，当作反方意见读
+- [公司投资者关系](https://www.google.com/search?q=TSM+investor+relations) — 财报原始 PPT 与电话会记录
+
+**中文渠道（转载源，不作独立验证）**
+- [雪球](https://xueqiu.com/S/TSM) — 中文讨论与财报摘要
+- [富途牛牛](https://www.futunn.com/stock/TSM-US) — 中文行情与公告翻译
+- [东方财富](https://quote.eastmoney.com/us/TSM.html) — 中文财务报表
+- [同花顺](http://stock.10jqka.com.cn/usstock/TSM/) — 中文资讯
+
+---
+
+_这一页是一台程序按成文规则读公开数据的结果，不是投资建议。它不知道你的资金、税务和其它持仓。图形结论来自滞后指标，财报数字来自厂商转录，新闻材料度来自关键词打分——三者都会错。把它当作一份整理好的证据，而不是一个答案。_
