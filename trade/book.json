@@ -1,5 +1,5 @@
 {
- "saved_at": "2026-10-28T19:20:13",
+ "saved_at": "2026-10-28T19:21:49",
  "positions": {
   "TBBB": {
    "symbol": "TBBB",
@@ -27,7 +27,8 @@
    ],
    "stop0": 52.67,
    "pending": false,
-   "trimmed": true
+   "trimmed": true,
+   "staged": NaN
   },
   "CBRL": {
    "symbol": "CBRL",
@@ -61,7 +62,8 @@
    ],
    "stop0": 64.0,
    "pending": false,
-   "trimmed": false
+   "trimmed": false,
+   "staged": 72.8
   },
   "WMT": {
    "symbol": "WMT",
@@ -91,7 +93,8 @@
    "triggers": [],
    "stop0": 113.0,
    "pending": false,
-   "trimmed": false
+   "trimmed": false,
+   "staged": NaN
   },
   "FIGS": {
    "symbol": "FIGS",
@@ -125,7 +128,8 @@
    ],
    "stop0": 18.93,
    "pending": false,
-   "trimmed": false
+   "trimmed": false,
+   "staged": 20.93
   },
   "PFE": {
    "symbol": "PFE",
@@ -155,7 +159,8 @@
    "triggers": [],
    "stop0": 28.9,
    "pending": false,
-   "trimmed": false
+   "trimmed": false,
+   "staged": NaN
   },
   "UNH": {
    "symbol": "UNH",
@@ -185,7 +190,8 @@
    "triggers": [],
    "stop0": 396.0,
    "pending": false,
-   "trimmed": false
+   "trimmed": false,
+   "staged": NaN
   },
   "KDP": {
    "symbol": "KDP",
@@ -215,7 +221,8 @@
    "triggers": [],
    "stop0": 33.6,
    "pending": false,
-   "trimmed": false
+   "trimmed": false,
+   "staged": NaN
   },
   "HAS": {
    "symbol": "HAS",
@@ -249,7 +256,8 @@
    ],
    "stop0": 115.22,
    "pending": false,
-   "trimmed": false
+   "trimmed": false,
+   "staged": 119.6
   },
   "CRM": {
    "symbol": "CRM",
@@ -278,7 +286,8 @@
    "triggers": [],
    "stop0": 234.0,
    "pending": false,
-   "trimmed": false
+   "trimmed": false,
+   "staged": NaN
   }
  },
  "closed": [
