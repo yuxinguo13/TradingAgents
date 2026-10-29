@@ -493,7 +493,7 @@
  },
  "VST": {
   "symbol": "VST",
-  "fetched_at": 1793219115.3126225,
+  "fetched_at": 1793305503.5544443,
   "name": "",
   "sector": "",
   "industry": "",
@@ -614,7 +614,7 @@
   "surprises": [
    {
     "when": "2026-11-06",
-    "estimate": 2.69,
+    "estimate": 2.67,
     "actual": NaN,
     "surprise_pct": NaN
    },
@@ -837,7 +837,7 @@
  },
  "AVGO": {
   "symbol": "AVGO",
-  "fetched_at": 1793219117.134892,
+  "fetched_at": 1793305505.548761,
   "name": "",
   "sector": "",
   "industry": "",
@@ -1181,7 +1181,7 @@
  },
  "MRVL": {
   "symbol": "MRVL",
-  "fetched_at": 1793219119.1415772,
+  "fetched_at": 1793305507.4429703,
   "name": "",
   "sector": "",
   "industry": "",
@@ -1191,7 +1191,7 @@
   "pe_forward": NaN,
   "ps": NaN,
   "ev_ebitda": NaN,
-  "peg": 0.6003,
+  "peg": 0.6202,
   "eps_trailing": NaN,
   "eps_forward": NaN,
   "dividend_yield": NaN,
@@ -1353,7 +1353,7 @@
  },
  "TXN": {
   "symbol": "TXN",
-  "fetched_at": 1793219120.9829912,
+  "fetched_at": 1793305509.2687192,
   "name": "",
   "sector": "",
   "industry": "",
@@ -1363,7 +1363,7 @@
   "pe_forward": NaN,
   "ps": NaN,
   "ev_ebitda": NaN,
-  "peg": 0.9364,
+  "peg": 0.9392,
   "eps_trailing": NaN,
   "eps_forward": NaN,
   "dividend_yield": NaN,
@@ -1390,10 +1390,10 @@
   "quarters": [
    {
     "label": "2026-09-30",
-    "revenue": NaN,
-    "gross": NaN,
-    "operating": NaN,
-    "net": NaN,
+    "revenue": 6055000000.0,
+    "gross": 3887000000.0,
+    "operating": 2881000000.0,
+    "net": 2425000000.0,
     "eps": 2.62
    },
    {
@@ -1430,10 +1430,10 @@
    },
    {
     "label": "2025-06-30",
-    "revenue": 4448000000.0,
-    "gross": 2575000000.0,
-    "operating": 1563000000.0,
-    "net": 1295000000.0,
+    "revenue": NaN,
+    "gross": NaN,
+    "operating": NaN,
+    "net": NaN,
     "eps": NaN
    }
   ],
@@ -1525,7 +1525,7 @@
  },
  "QQQM": {
   "symbol": "QQQM",
-  "fetched_at": 1793219123.2304053,
+  "fetched_at": 1793305511.0829093,
   "name": "",
   "sector": "",
   "industry": "",
@@ -1566,7 +1566,7 @@
  },
  "PFE": {
   "symbol": "PFE",
-  "fetched_at": 1793219139.4433897,
+  "fetched_at": 1793305526.2303214,
   "name": "",
   "sector": "",
   "industry": "",
@@ -1576,7 +1576,7 @@
   "pe_forward": NaN,
   "ps": NaN,
   "ev_ebitda": NaN,
-  "peg": 13.6541,
+  "peg": 13.4937,
   "eps_trailing": NaN,
   "eps_forward": NaN,
   "dividend_yield": NaN,
@@ -2287,7 +2287,7 @@
  },
  "GLDM": {
   "symbol": "GLDM",
-  "fetched_at": 1793219124.9216552,
+  "fetched_at": 1793305513.0794854,
   "name": "",
   "sector": "",
   "industry": "",
@@ -2328,7 +2328,7 @@
  },
  "ABBV": {
   "symbol": "ABBV",
-  "fetched_at": 1793219126.959885,
+  "fetched_at": 1793305515.0950282,
   "name": "",
   "sector": "",
   "industry": "",
@@ -2338,7 +2338,7 @@
   "pe_forward": NaN,
   "ps": NaN,
   "ev_ebitda": NaN,
-  "peg": 0.5833,
+  "peg": 0.5825,
   "eps_trailing": NaN,
   "eps_forward": NaN,
   "dividend_yield": NaN,
@@ -2500,7 +2500,7 @@
  },
  "TSM": {
   "symbol": "TSM",
-  "fetched_at": 1793219129.0655835,
+  "fetched_at": 1793305516.7908113,
   "name": "",
   "sector": "",
   "industry": "",
@@ -2510,7 +2510,7 @@
   "pe_forward": NaN,
   "ps": NaN,
   "ev_ebitda": NaN,
-  "peg": 0.7918,
+  "peg": 0.7956,
   "eps_trailing": NaN,
   "eps_forward": NaN,
   "dividend_yield": NaN,
@@ -2541,7 +2541,7 @@
     "gross": 992379000000.0,
     "operating": 876445000000.0,
     "net": 763064000000.0,
-    "eps": 147.127873
+    "eps": 147.125773
    },
    {
     "label": "2026-06-30",
@@ -2672,7 +2672,7 @@
  },
  "XOM": {
   "symbol": "XOM",
-  "fetched_at": 1793219131.0293002,
+  "fetched_at": 1793305518.8136456,
   "name": "",
   "sector": "",
   "industry": "",
@@ -2682,7 +2682,7 @@
   "pe_forward": NaN,
   "ps": NaN,
   "ev_ebitda": NaN,
-  "peg": 1.5025,
+  "peg": 1.482,
   "eps_trailing": NaN,
   "eps_forward": NaN,
   "dividend_yield": NaN,
@@ -2793,7 +2793,7 @@
   "surprises": [
    {
     "when": "2026-10-30",
-    "estimate": 4.03,
+    "estimate": 4.04,
     "actual": NaN,
     "surprise_pct": NaN
    },
@@ -2844,7 +2844,7 @@
  },
  "V": {
   "symbol": "V",
-  "fetched_at": 1793219133.0134528,
+  "fetched_at": 1793305520.639025,
   "name": "",
   "sector": "",
   "industry": "",
@@ -2854,7 +2854,7 @@
   "pe_forward": NaN,
   "ps": NaN,
   "ev_ebitda": NaN,
-  "peg": 1.8176,
+  "peg": 1.8119,
   "eps_trailing": NaN,
   "eps_forward": NaN,
   "dividend_yield": NaN,
@@ -2879,6 +2879,14 @@
   "short_pct_float": NaN,
   "held_institutions": NaN,
   "quarters": [
+   {
+    "label": "2026-09-30",
+    "revenue": NaN,
+    "gross": NaN,
+    "operating": NaN,
+    "net": NaN,
+    "eps": 3.19
+   },
    {
     "label": "2026-06-30",
     "revenue": 11633000000.0,
@@ -2917,14 +2925,6 @@
     "gross": 8199000000.0,
     "operating": 6792000000.0,
     "net": 5272000000.0,
-    "eps": 2.69
-   },
-   {
-    "label": "2025-03-31",
-    "revenue": NaN,
-    "gross": NaN,
-    "operating": NaN,
-    "net": NaN,
     "eps": NaN
    }
   ],
@@ -2965,7 +2965,7 @@
   "surprises": [
    {
     "when": "2027-01-26",
-    "estimate": 3.62,
+    "estimate": 3.63,
     "actual": NaN,
     "surprise_pct": NaN
    },
@@ -3016,7 +3016,7 @@
  },
  "PG": {
   "symbol": "PG",
-  "fetched_at": 1793219135.1615877,
+  "fetched_at": 1793305522.5123422,
   "name": "",
   "sector": "",
   "industry": "",
@@ -3026,7 +3026,7 @@
   "pe_forward": NaN,
   "ps": NaN,
   "ev_ebitda": NaN,
-  "peg": 4.0912,
+  "peg": 4.0663,
   "eps_trailing": NaN,
   "eps_forward": NaN,
   "dividend_yield": NaN,
@@ -3137,7 +3137,7 @@
   "surprises": [
    {
     "when": "2027-01-21",
-    "estimate": 1.82,
+    "estimate": 1.81,
     "actual": NaN,
     "surprise_pct": NaN
    },
@@ -3188,7 +3188,7 @@
  },
  "COP": {
   "symbol": "COP",
-  "fetched_at": 1793219137.397263,
+  "fetched_at": 1793305524.3385415,
   "name": "",
   "sector": "",
   "industry": "",
@@ -3198,7 +3198,7 @@
   "pe_forward": NaN,
   "ps": NaN,
   "ev_ebitda": NaN,
-  "peg": 1.1158,
+  "peg": 1.0988,
   "eps_trailing": NaN,
   "eps_forward": NaN,
   "dividend_yield": NaN,
@@ -3360,7 +3360,7 @@
  },
  "UNH": {
   "symbol": "UNH",
-  "fetched_at": 1793219141.6604447,
+  "fetched_at": 1793305528.220472,
   "name": "",
   "sector": "",
   "industry": "",
@@ -3370,7 +3370,7 @@
   "pe_forward": NaN,
   "ps": NaN,
   "ev_ebitda": NaN,
-  "peg": 1.0431,
+  "peg": 1.0347,
   "eps_trailing": NaN,
   "eps_forward": NaN,
   "dividend_yield": NaN,
@@ -3395,6 +3395,14 @@
   "short_pct_float": NaN,
   "held_institutions": NaN,
   "quarters": [
+   {
+    "label": "2026-09-30",
+    "revenue": NaN,
+    "gross": NaN,
+    "operating": NaN,
+    "net": NaN,
+    "eps": 4.56
+   },
    {
     "label": "2026-06-30",
     "revenue": 112032000000.0,
@@ -3433,7 +3441,7 @@
     "gross": 20012000000.0,
     "operating": 5150000000.0,
     "net": 3406000000.0,
-    "eps": 3.74
+    "eps": NaN
    }
   ],
   "years": [

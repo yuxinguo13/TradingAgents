@@ -1,0 +1,195 @@
+# AVGO · 博通
+
+_科技 · 数据截至 2026-10-29 收盘 → 面向 2026-10-30 开盘_
+
+[← 回到 2026-10-30 当日报告](../2026-10-30.md)
+
+> 趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌。
+
+## 一、价格与图形
+
+```text
+     AVGO · 近 126 个交易日（日线收盘）
+479 ┤             ╭╮
+467 ┤             ││
+455 ┤            ╭╯│
+443 ┤            │ │
+430 ┤      ╭╮   ╭╯ │
+418 ┤──────╯╰───╯  ╰╮                       ╭────╮
+406 ┤               │····╭╮···········      │    │
+394 ┤             ··╰╮   ││      ╭╮╭╮ ╭╮···╭╯····╰╮
+382 ┤          ···   ╰───╯╰─╮   ╭╯╰╯│╭╯╰─╮╭╯      │···············
+370 ┤      ····             ╰───╯   ╰╯   ╰╯:::::::╰╮::╭──╮::::::::····╭─╮···:::::
+358 ┤  ····       ::::::::::::::::::::::::         ╰──╯  ╰───╮ ╭────╮╭╯ ╰─╮ ·····
+346 ┤··:::::::::::                                           ╰─╯    ╰╯    ╰╮    ╭
+334 ┤::                                                                    ╰──╮╭╯
+322 ┤                                                                         ╰╯
+    └────────────────────────────────────────────────────────────────────────────
+     2026-05-01                       2026-08-03                       2026-10-29
+     · SMA50   : SMA200   ─ close
+```
+
+```text
+       AVGO · 近 21 个交易日（放大看最近节奏）
+376.5 ┤   ╭─╮
+369.7 ┤   │ │
+362.8 ┤  ╭╯ ╰─╮
+355.9 ┤ ╭╯    ╰─╮
+349.1 ┤ │       ╰╮        ╭╮
+342.2 ┤─╯        ╰╮      ╭╯╰
+335.4 ┤           │╭──╮  │
+328.5 ┤           ╰╯  │ ╭╯
+321.7 ┤               ╰─╯
+      └─────────────────────
+       2026-10-01 2026-10-29
+```
+
+成交量近 63 日： `▂▃▁▁▁▁▄▃▅▂▂▂▃▂▂█▅▄▃▄▃▃▇▃▃▂▃▂▃▃▄▃▂▂▃▄▂▂▄▂▃▂`
+
+### 图形读数
+
+- **均线排列**：空头排列 — 现价距 20 日 347.15（-0.6%）、50 日 353.29（-2.3%）、200 日 366.70（-5.9%）
+- **形态结构**：扩张震荡 — 高点抬高但低点下移，波动在放大；前高 361.86 → 380.84（+5.2%）、前低 328.58 → 320.23（-2.5%）
+- **动能**：RSI(14) 49，中性；月 -1.8%、季 -11.2%，节奏平稳
+- **波动**：日均真实波幅约为价格的 3.4%；按本报告 2 ATR 的止损惯例，一个 R 相当于 6.8% 的价格距离
+- **位置**：距 52 周高点 -28.1%，距 52 周低点 +18.0%
+- **量能**：最新一日成交量为 20 日均量的 0.8 倍，量能正常
+- **相对强度**：近一月跑输 标普500 2.6 个百分点
+- **支撑 / 阻力**：最近的摆动低点 343.29，摆动高点 361.86（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
+
+**我的读图结论**：趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌
+
+_以上每一条都是对已经发生的价格的描述。均线、RSI、摆动结构全部是滞后指标，它们能说明现在处于什么状态，不能说明下一步。你自己在图上看到的东西，和这里写的不一致时，以你看到的为准——然后去查是哪个数字有问题。_
+
+## 三、财报与基本面
+
+- **估值**：既无盈利也无有意义的营收，估值倍数一栏本页留空——这不是低估，是无法用倍数衡量。
+- **增长**：最新季度营收同比 +85.5%；最近三个季度营收连续环比上升；最近 6 次财报里 6 次超预期。
+- **盈利质量**：没有拿到利润率数据。
+- **资产负债**：没有拿到资产负债数据。
+- **卖方预期**：没有覆盖这只股票的分析师数据。
+
+**分季度损益**（季度数据，最新在左）
+
+| 指标 | 2026-07-31 | 2026-04-30 | 2026-01-31 | 2025-10-31 | 2025-07-31 |
+|---|---:|---:|---:|---:|---:|
+| 营收 | $295.91亿 | $221.87亿 | $193.11亿 | $180.15亿 | $159.52亿 |
+| 毛利率 | 69.1% | 69.5% | 68.1% | 68.0% | 67.1% |
+| 营业利润率 | 54.3% | 48.9% | 44.9% | 42.5% | 38.1% |
+| 净利率 | 44.2% | 42.0% | 38.1% | 47.3% | 26.0% |
+| 净利润 | $130.88亿 | $93.10亿 | $73.49亿 | $85.18亿 | $41.40亿 |
+| 摊薄EPS | 2.68 | 1.91 | 1.50 | 1.74 | 0.85 |
+
+**分年度损益**（年度数据，最新在左）
+
+| 指标 | 2025-10-31 | 2024-10-31 | 2023-10-31 | 2022-10-31 |
+|---|---:|---:|---:|---:|
+| 营收 | $638.87亿 | $515.74亿 | $358.19亿 | $332.03亿 |
+| 毛利率 | 67.8% | 63.0% | 68.9% | 66.5% |
+| 营业利润率 | 40.8% | 29.1% | 45.9% | 43.0% |
+| 净利率 | 36.2% | 11.4% | 39.3% | 34.6% |
+| 净利润 | $231.26亿 | $58.95亿 | $140.82亿 | $114.95亿 |
+| 摊薄EPS | 4.77 | 1.23 | 3.30 | 2.65 |
+
+**财报兑现记录**
+
+| 财报日 | 预期EPS | 实际EPS | 超预期 |
+|---|---:|---:|---:|
+| 2026-12-09 | 3.84 | — | 尚未公布 |
+| 2026-09-02 | 3.24 | — | 尚未公布 |
+| 2026-06-03 | 2.40 | 2.44 | +1.7% |
+| 2026-03-04 | 2.02 | 2.05 | +1.3% |
+| 2025-12-11 | 1.87 | 1.95 | +4.4% |
+| 2025-09-04 | 1.66 | 1.69 | +1.6% |
+
+_财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会滞后，TTM 窗口是厂商口径而非公司财年口径。以上任何一个数字如果会改变你的决定，请点开本页下方的 SEC EDGAR 链接看原文。_
+
+**财报日历**：下次财报 **2026-12-09**（约 41 天后）；上次财报 2026-09-02。财报日是这套止损体系唯一无法覆盖的风险：跳空会直接穿过止损价。
+
+## 四、消息面（过去 24 小时）
+
+| 时间 | 材料度 | 倾向 | 标题 | 来源 |
+|---|---:|---|---|---|
+| 2h 前 | 5 | 中性 | [Broadcom Stocks Decline 2.73% With Equipment-Value Support in a $63 Billion AI Deal - Yahoo Finance](https://news.google.com/rss/articles/CBMimAFBVV95cUxPRTdzcVI2QzRORzY1Y3NaSVJyc254c19Oc1Z1ZnRyYVNaQVBZeXBvb3U2c2RiZ3RCR3BSZjlCd3oyS3JyMHkyX1c5am5sT3BkZWRnNFpIeUZtcjB5OVVYZHdqSGdCS2tqM3R5NWJHZFNYaDNab3lsU0E2ZnV4VXNDb0p0RGhqcTN1M19Lb3R5Mks5U2dsbU5nMA?oc=5) | Yahoo Finance |
+| 4h 前 | 5 | 偏空 | [Marvell Stock Dropped 11% on a Deal That Could Make It More Like Broadcom - Benzinga](https://news.google.com/rss/articles/CBMiiAFBVV95cUxONzRUMFVidFIyZFpvYUllaDdaeXFrVUlRUmplYUxFU00zbF9YYXZzd3dtUF9ya0pkcjNOM1JOVTcxR0Y4RXFLU0ozWmptMmFBLWNZTk1FbW5jZUdKWFRoclNRUTZaQ3Zac012dFg1ZjhkUk1LTTNaSTZscGpWZlAxdlZrUjZBTlhW?oc=5) | Benzinga |
+| 7h 前 | 5 | 偏多 | [Broadcom: This Is Probably A Good Entry Point (Rating Upgrade) (NASDAQ:AVGO) - Seeking Alpha](https://news.google.com/rss/articles/CBMiogFBVV95cUxQVEI2eHRIVExZOEdpeUxIYTY4UkloUFNjOVRyUWd2WUt3d2Q3TGdXSFVNSF9xcC1iYWxLUk05ZEJiMVdQY3dFanhvWXVFaVdvRGRXYUNZQ0ptQXR3ZDF3cmlYS09VX1F6eGFFWEVBUWRTTEljbVd2TFVhSHFIU2h2U21JRG5VR2ZtR0ZaTlN3RU91OHh3QXYwOVRfZlhIN1JQVnc?oc=5) | Seeking Alpha |
+| 17h 前 | 5 | 中性 | [Broadcom Stock Is 29% Below Its Record. After Its New Anthropic Deal, I'd Consider Buying It a Little at a Time. - Yahoo Finance](https://news.google.com/rss/articles/CBMimwFBVV95cUxOV2xKMjJsUnppQ1l5U0V0MXN6UElta0dHN1RILVZZdnVuTTc4LUFYQkhYTTJXUWpMRndnR1ZKdUZUZ3hxQUQxZzgyTW9SNTFETWxBODJUS1dKMmpwQTFpeVJQeDZkdWZpUk56TU1hb1hQMVUycGxpSHBDcC10d1JqU0c0WjZQZTVTZnExTFBobVZnTTU0X3AzQ2ZkQQ?oc=5) | Yahoo Finance |
+| 1h 前 | 0 | 中性 | [Stock Investing & Stock Market Research - The Motley Fool](https://news.google.com/rss/articles/CBMimAFBVV95cUxOczlIU09jREI4UEk0UFFXV2ZXNkZlN0JqZ1JXcGUxbzdWbmQtVWpneUR1bUROVWFjRmZrWTl0THdBTElxNmkwYnlmbTFfdEtQc2RQZDY5QTRGMUpCblN6RXNhX29LNW55a3JPc2JBQ1d4Ri1wbTdpR3FXRTFxSkpuV0w0bFBlVG1xWHdFRnA2MlVNTDJUUU5iTA?oc=5) | The Motley Fool |
+| 3h 前 | 0 | 中性 | [Prediction: Wall Street’s Next AI Favorite May Not Be Nvidia - 24/7 Wall St.](https://news.google.com/rss/articles/CBMipAFBVV95cUxNdHI0SHlPZE5LMGVKcXB6LXExODB4X2tjSXl1djVqQl9pd3Y3aU50SGk4WXkxQnFLdFlCRDJWY2ltSjlVZFFDWEdmak5pT3RJdUo1VXJmQ1hob0FKZVlqS093T2cyWFQwalNMNWhpSU1UQ0FrM2NNUjNhdDZTQlBJQURCTElDTHFnMW9tWTdqZkszSWVKRXFVNkllWVJEeVdCaGlMVg?oc=5) | 24/7 Wall St. |
+| 3h 前 | 0 | 中性 | [Prediction: Wall Street’s Next AI Favorite May Not Be Nvidia - Yahoo Finance](https://news.google.com/rss/articles/CBMimwFBVV95cUxPSXdfY1V4WXZDSllxVU95RXpuX191RHpMNC1oaTYxY2tHOWhkOERBaVRDcXNFUjNHQnNJaVNDbXlLNWZyZF9KQnhLN2JHUEZoWVVJYnNzbHBmVE04SGg2Q18zczhYVG5weVdCYXA5ZDZPU0FPQVVwUzdRNVROX0VjbkhWa1BfZmFSSkQ0UWlRWjVrTEI5WmVfREdyVQ?oc=5) | Yahoo Finance |
+| 3h 前 | 0 | 中性 | [Wall Street’s Broadcom Target Sits Above Its 52-Week High. Is the Street Right? - 24/7 Wall St.](https://news.google.com/rss/articles/CBMivAFBVV95cUxNWnRrYjlXVDVFVGNlLWdVb2FUeGRIbnUxTnlNNTBIRWJoMjJxSHNOcTV4WmFUQzNBdTMtOE5PRlVtU29DSS1mR19xWGMyNlhJMVFuUVQ0ZUdJT3k2OTdSbDF4Z3J0ZTU5U1dHTVJnWTAyRHdlQjZXa05kOUZUTmExY0c5WkhsY3NhbVB2MTVwZllkZHRDbWk0VmUyNlZROTVaNjZlRE5pVUdfdnQyamlPTGFSUjhMMUJsM0lzSQ?oc=5) | 24/7 Wall St. |
+| 4h 前 | 0 | 中性 | [3 AI Stocks to Buy and Hold Through 2030 - The Motley Fool](https://news.google.com/rss/articles/CBMiiwFBVV95cUxNS0xDeTRaWkdnU0RLNkNrQ2NoVDhxUEpqQ3hhNGZDbGhfVVp5X0d4TTVuZThHbkM0cktJOWkzaVhVUjc1ZmlaekxSekhRcVREWXBucktMcjhOT1FRam52Q1Q4Y2ZfdlFIYkQzR0xUekladGNudk5HaEhwMHctSWJCa3ptd0ZhM0tYWXQw?oc=5) | The Motley Fool |
+| 7h 前 | 0 | 中性 | [Why Meta Platform's $100 Billion Financing Plan Is A Boon for Chip Giant Broadcom - inkl](https://news.google.com/rss/articles/CBMiqAFBVV95cUxNc19tb2k2ckx6ZXRmSnZYVG5qc3FVaWtTTzhIMzdEdlNkek4xNU94Z3lKV0NWV1o1S0xuYU0yRl82ZW5wcDdYVjg1Rl9zd1dIc24xd25RQkJ1UmdQLVBGUWk0OWIzZnhGeDc1cUxQcWV4MTdGLVFlNV9CaW9jS0JGZmg4Vk5xMnM5cDJYUk5VRjNfc3Uwa0NLcWMya0FDd042ZWVHaWJwOEQ?oc=5) | inkl |
+| 7h 前 | 0 | 中性 | [Alphabet, Amazon, SpaceX, Microsoft, Broadcom, and AMD Are Counting on Anthropic's IPO. Not All Their Contracts Are Equal. - The Motley Fool](https://news.google.com/rss/articles/CBMilwFBVV95cUxPMFVFcGhmOGRiajU5ay1YcGFnZTJ4VVdSc0NCZ0dha0lRdDZHUm1fZ3FQbU5IV1dEVHRwWjl6UGRaQXVXUTFIR2lHMFp1bGVaSUdYNEk0TmVVMWZmWnpVRGZnZUF4UHJ0X0plMVJyT1ZhWUliZjRpMDhLckY1c3NoZDk4b0pWcE9UT3VVUUNrQTZwS0ZlQWZz?oc=5) | The Motley Fool |
+| 8h 前 | 0 | 中性 | [Jim Cramer: This Tech Stock Has Been ‘One of the Greatest Performers of All Time’ - Benzinga](https://news.google.com/rss/articles/CBMi2wFBVV95cUxPTjFZMDBObFlVQmE2RzZsMXpKLWkwUzlCeVdLU1d0T2s0bkNMeXE2MnhzYlhySHFrQzhkay01dXRQdUp3aG9RTXJuVGQ5X01aMlRnVldYVHE5TG1GeVpmWVh1TkM3c3VqT2Y3R1FHb3RvZ1NuMmVMaGFmcENvWFhGcGFUOTRXb3d3NUJQX1otME5BY0xsUzh4VEdzSUtwU3ZUUnZRZkJzSTBsWmtWejJtYm5lcWZrNXI5SER5RFhzckJueWk2YVhzVTM5b3NpQmUtcktPNktlQXlxdEk?oc=5) | Benzinga |
+
+_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+
+## 五、反方观点与风险
+
+_以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
+
+- 图形上是空头排列——现价距 20 日 347.15（-0.6%）、50 日 353.29（-2.3%）、200 日 366.70（-5.9%）。本报告的买入规则本身会过滤掉这种形态。
+- 公司尚未盈利：估值没有盈利可锚，股价由叙事和融资环境决定，这类名字在流动性收紧时跌得最快。
+- 政策面对该板块的倾向为 -0.95（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+
+## 六、原始数据（本页所有计算的来源）
+
+最近 15 个交易日的 OHLCV：
+
+| 日期 | 开 | 高 | 低 | 收 | 涨跌 | 成交量 |
+|---|---:|---:|---:|---:|---:|---:|
+| 2026-10-09 | 365.59 | 366.63 | 361.10 | **361.54** | +0.4% | 16,843,800 |
+| 2026-10-12 | 359.43 | 360.69 | 354.22 | **354.73** | -1.9% | 16,336,800 |
+| 2026-10-13 | 349.60 | 359.25 | 348.11 | **357.31** | +0.7% | 17,266,700 |
+| 2026-10-14 | 352.19 | 354.25 | 342.82 | **346.25** | -3.1% | 23,127,400 |
+| 2026-10-15 | 338.34 | 344.70 | 334.61 | **344.33** | -0.6% | 28,455,800 |
+| 2026-10-16 | 338.48 | 339.59 | 328.58 | **328.75** | -4.5% | 29,839,600 |
+| 2026-10-19 | 338.75 | 340.20 | 333.82 | **334.59** | +1.8% | 17,457,600 |
+| 2026-10-20 | 334.00 | 341.10 | 330.80 | **334.37** | -0.1% | 15,951,800 |
+| 2026-10-21 | 338.03 | 339.24 | 332.29 | **337.80** | +1.0% | 17,123,600 |
+| 2026-10-22 | 326.53 | 330.82 | 321.02 | **323.24** | -4.3% | 28,139,100 |
+| 2026-10-23 | 321.50 | 327.70 | 320.23 | **321.68** | -0.5% | 15,917,000 |
+| 2026-10-26 | 324.53 | 332.12 | 323.25 | **329.17** | +2.3% | 18,646,700 |
+| 2026-10-27 | 339.87 | 345.67 | 336.87 | **342.33** | +4.0% | 25,567,200 |
+| 2026-10-28 | 349.22 | 352.40 | 344.35 | **351.81** | +2.8% | 22,718,200 |
+| 2026-10-29 | 342.00 | 346.15 | 338.80 | **345.00** | -1.9% | 16,530,343 |
+
+## 七、自己去查（本页不做独立验证）
+
+**行情与图形**
+- [Yahoo Finance 行情](https://finance.yahoo.com/quote/AVGO) — 本报告所有价格与均线的来源，先对这里
+- [TradingView 图表](https://www.tradingview.com/chart/?symbol=AVGO) — 可画线、可换周期，用来复核本页的 ASCII 图
+- [Finviz 快照](https://finviz.com/quote.ashx?t=AVGO) — 一屏看完估值、技术与同业对比
+- [StockCharts 技术面](https://stockcharts.com/h-sc/ui?s=AVGO)
+- [Barchart 观点](https://www.barchart.com/stocks/quotes/AVGO/opinion) — 把十几个技术指标折算成一个多空票数
+
+**财务与估值**
+- [StockAnalysis 财务报表](https://stockanalysis.com/stocks/AVGO/financials/) — 十年利润表/资产负债表/现金流，免费且不用登录
+- [Yahoo 财务](https://finance.yahoo.com/quote/AVGO/financials) — 本页财报数字的来源
+- [Yahoo 关键统计](https://finance.yahoo.com/quote/AVGO/key-statistics) — 估值倍数、利润率、资产负债的完整版
+- [Macrotrends 长期趋势](https://www.macrotrends.net/stocks/charts/AVGO/x/revenue) — 营收与利润的十年折线，看结构性变化
+- [Wisesheets/Koyfin 替代：GuruFocus](https://www.gurufocus.com/stock/AVGO/summary)
+
+**原始文件（无中介）**
+- [SEC EDGAR 全部文件](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&ticker=AVGO&type=&dateb=&owner=include&count=40) — 10-K/10-Q/8-K 原文；财报电话会与风险因素只在这里
+- [SEC 全文检索](https://efts.sec.gov/LATEST/search-index?q=%22AVGO%22&forms=8-K) — 按关键词搜文件正文
+- [OpenInsider 内部人交易](http://openinsider.com/search?q=AVGO) — 高管自己在买还是在卖，是少数不靠解读的信号
+- [13F 机构持仓](https://whalewisdom.com/stock/AVGO) — 注意：13F 滞后 45 天，不能当作买入理由
+
+**消息与预期**
+- [Yahoo 新闻](https://finance.yahoo.com/quote/AVGO/news)
+- [Google News 搜索](https://news.google.com/search?q=AVGO+stock&hl=en-US)
+- [财报日历与预期](https://stockanalysis.com/stocks/AVGO/forecast/) — 下次财报日、市场一致预期、历史超预期记录
+- [Seeking Alpha 讨论](https://seekingalpha.com/symbol/AVGO) — 观点密度高，但是买方与卖方混杂，当作反方意见读
+- [公司投资者关系](https://www.google.com/search?q=AVGO+investor+relations) — 财报原始 PPT 与电话会记录
+
+**中文渠道（转载源，不作独立验证）**
+- [雪球](https://xueqiu.com/S/AVGO) — 中文讨论与财报摘要
+- [富途牛牛](https://www.futunn.com/stock/AVGO-US) — 中文行情与公告翻译
+- [东方财富](https://quote.eastmoney.com/us/AVGO.html) — 中文财务报表
+- [同花顺](http://stock.10jqka.com.cn/usstock/AVGO/) — 中文资讯
+
+---
+
+_这一页是一台程序按成文规则读公开数据的结果，不是投资建议。它不知道你的资金、税务和其它持仓。图形结论来自滞后指标，财报数字来自厂商转录，新闻材料度来自关键词打分——三者都会错。把它当作一份整理好的证据，而不是一个答案。_
