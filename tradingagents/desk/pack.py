@@ -326,12 +326,13 @@ class Packer:
                     have = int(_num(h.quantity, 0.0))
                     if _ok(staged) and 0 < have < p.shares and not getattr(p, "trimmed", False):
                         # the resting half at 1R filled at the venue
-                        self.book.close(sym, staged, today, f"target: 1R 减半挂单成交 {staged:,.2f}",
+                        px_fill = self._sell_fill(sym, "limit", p.shares - have) or staged
+                        self.book.close(sym, px_fill, today, f"target: 1R 减半挂单成交 {px_fill:,.2f}",
                                         shares=p.shares - have)
                         p = self.book.positions[sym]
                         p.trimmed, p.staged = True, float("nan")
                         self.book.save()
-                        pack.warnings.append(f"{sym}: 1R 减半挂单成交 {staged:,.2f}，剩余 {have} 股")
+                        pack.warnings.append(f"{sym}: 1R 减半挂单成交 {px_fill:,.2f}，剩余 {have} 股")
                     if getattr(p, "pending", False):
                         # the venue filled it since the order ran: book the real cost
                         p.pending = False
@@ -460,6 +461,21 @@ class Packer:
         if not hasattr(self, "_cancelled_ids"):
             self._cancelled_ids = set()
         return self._cancelled_ids
+
+    def _sell_fill(self, symbol: str, kind: str, qty: int) -> float | None:
+        """The venue's price for the latest sell fill of ``symbol`` of this
+        order type and size. 2026-10-29: FIGS's staged half (limit 20.93)
+        filled at 21.48 on a gap and the book recorded the limit."""
+        if not hasattr(self.broker(), "fills_since"):
+            return None
+        since = datetime.now(clock.ET) - timedelta(days=10)
+        best = None
+        for f in self.broker().fills_since(since):
+            if (str(f.get("symbol", "")).upper() == symbol and f.get("side") == "sell"
+                    and str(f.get("type", "")).startswith(kind) and int(_num(f.get("qty"), 0)) == int(qty)
+                    and _ok(_num(f.get("price")))):
+                best = float(f["price"])
+        return best
 
     def _open_buy(self, symbol: str) -> dict | None:
         """The venue's resting buy order for ``symbol``, if any."""

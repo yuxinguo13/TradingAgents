@@ -819,3 +819,23 @@ class TestReflection1028:
         assert after.positions["HLD"].shares == 5 and after.positions["HLD"].trimmed
         assert after.closed[-1].shares == 5 and after.closed[-1].exit == round(px * 1.03, 2)
         assert any("减半挂单成交" in w for w in pk.warnings)
+
+
+@pytest.mark.unit
+class TestReflection1029:
+    def test_a_staged_half_is_booked_at_the_venues_fill_price(self, home):  # noqa: F811
+        """FIGS: limit 20.93 filled at 21.48 on a gap; the book recorded 20.93."""
+        shape("HLD", 100.0, drift=0.3)
+        px = frame_for("HLD", DATA_DAY.isoformat())["Close"].iloc[-1]
+        book = DeskBook(home / "desk" / "trade" / "book.json")
+        book.positions["HLD"] = Position(symbol="HLD", shares=10, entry=round(px * 0.98, 2), stop=round(px * 0.95, 2),
+                                         target=round(px * 1.10, 2), opened="2026-08-12", sleeve="aggressive",
+                                         stop0=round(px * 0.95, 2), staged=round(px * 1.01, 2))
+        book.save()
+        v = FakeVenue(acct(cash=90_000, holdings=[held("HLD", 5, round(px * 0.98, 2), px)]))
+        v.resting["HLD"] = round(px * 0.95, 2)
+        v.fills = [{"symbol": "HLD", "side": "sell", "type": "limit", "qty": 5, "price": round(px * 1.04, 2),
+                    "filled_at": "2026-08-24T13:33"}]
+        pack.Packer(broker=v, market=mkt(task="trade"), book=book, screen=screen_of(), now=MONDAY_OPEN).run()
+        after = DeskBook(home / "desk" / "trade" / "book.json")
+        assert after.closed[-1].exit == round(px * 1.04, 2) and after.closed[-1].shares == 5
