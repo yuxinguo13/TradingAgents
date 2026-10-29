@@ -1,5 +1,5 @@
 {
- "saved_at": "2026-10-29T19:20:02",
+ "saved_at": "2026-10-29T19:20:24",
  "positions": {
   "TBBB": {
    "symbol": "TBBB",
@@ -696,7 +696,7 @@
    ],
    "pnl": -689.21,
    "r": -1.6945564516129028,
-   "reviewed": false,
+   "reviewed": true,
    "sleeve": "core"
   },
   {
