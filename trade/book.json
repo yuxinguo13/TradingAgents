@@ -1,5 +1,5 @@
 {
- "saved_at": "2026-10-29T19:20:24",
+ "saved_at": "2026-10-29T19:20:32",
  "positions": {
   "TBBB": {
    "symbol": "TBBB",
@@ -34,7 +34,7 @@
    "symbol": "CBRL",
    "shares": 59,
    "entry": 68.4,
-   "stop": 64.0,
+   "stop": 68.4,
    "target": 78.0,
    "opened": "2026-10-19",
    "horizon_days": 20,
@@ -54,7 +54,7 @@
     "stop": "ba7be396-f2c5-44fc-8a85-b9e07e14b335"
    },
    "adopted": false,
-   "stop_raised": false,
+   "stop_raised": true,
    "sleeve": "aggressive",
    "triggers": [
     "pattern",
@@ -100,7 +100,7 @@
    "symbol": "FIGS",
    "shares": 203,
    "entry": 19.93,
-   "stop": 18.93,
+   "stop": 19.93,
    "target": 26.8,
    "opened": "2026-10-20",
    "horizon_days": 20,
@@ -120,7 +120,7 @@
     "stop": "fa6e2cb8-80e4-4e08-ac74-ad452fb3416f"
    },
    "adopted": false,
-   "stop_raised": false,
+   "stop_raised": true,
    "sleeve": "aggressive",
    "triggers": [
     "pattern",
