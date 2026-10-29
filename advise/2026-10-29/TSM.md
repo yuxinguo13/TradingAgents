@@ -108,26 +108,13 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 10h 前 | 8 | 中性 | [Taiwan Semiconductor Manufacturing Company Ltd. $TSM Stock Sold by Vantage Investment Partners LLC - MarketBeat](https://news.google.com/rss/articles/CBMi7gFBVV95cUxPY2RvajhYeENLa011SlJEY254eDZNTUN4VVQ2YnVWa2RDSlN2YThqZ2V4X0hHWXd0R3R6Y1RuU2o5Wkk1YVBXVnUzbUp5UWxYVmg5UGJHV1BBZ3FnemNNSFN6NDQ5cVNEVUNwbEc4LUthaGxLb2doNlJhNGNqWXZsbmVWdERBWndTV3dnWnFoOXRDeVBMV0MwdnY4ejJlMDgzckEwcEFvTFlfTnMzcGNVNE5pWWdiQ25FR3JYZnIxbnZ2akdQcDliOEhwbFNZTE1KaHVlYkQ4QUdLMmtLRzFjLUlfU1QyQW1TTUdwRHF3?oc=5) | MarketBeat |
-| 11h 前 | 8 | 偏空 | [Taiwan Semiconductor Manufacturing Company Ltd. $TSM Stock: Smith Group Asset Management LLC Cuts Holdings - MarketBeat](https://news.google.com/rss/articles/CBMi9wFBVV95cUxPQ09LYWxESklUMG5BbWpxMFU4LXVFTnpkUEpTVEh0bDRVdGNWUk5yS043NHlHVlNZSXJTT0F1cW5oWFNTZG10YW1CMHdLVDF5SkR0OEdDT2pIY0FKUnpqS0ZqczFOZFFSLXJBcHVtbWx1a25pT2lYUXVJQmJRdGhyMUFXYmZhTUUtUWFtTjRYUmVJTmFHeXpBbmNUWFlwRXFOUlhHdkllTHcyWEFnZkNQZGF2MUlKb01raEpkUWhlczRhaVBla3F3ekZHWmVnQi03REVURUJseml3cDNDR0lhbkc1UDFWUndzSDNuUE1mSnNiWk1qWEg0?oc=5) | MarketBeat |
-| 13h 前 | 8 | 中性 | [Taiwan Semiconductor Manufacturing Company Ltd. $TSM Stock Sold by Ativo Capital Management LLC - MarketBeat](https://news.google.com/rss/articles/CBMi6gFBVV95cUxQWV9BTXh4RFFhaksxQXY1OC12MDV2VXdGTGpIcGtOZFNOa1drcHJNemxrSkE1Wl9yREpMTnR5NTZ6MjZvX081S3FqX2RGRmlMY0RuWHVSRnVGU1QxUTdUa01RaF9nbl92SjFPajRpbVktaFhZalZMZU9vSnVreVY4aGtTNzI3ZC16NWJQSlRacDVoeTNSaC1TM2k0djJBVlZzbk9UcGM1ZnJNOTFueUowYXd3V2MyMTJRSktpcmcyQlV2aU90RFlwN2ppeU01Q19VWWMtNmZ6dXVycjFtdjFKS1lJOXJISVNHcHc?oc=5) | MarketBeat |
-| 4h 前 | 0 | 中性 | [3 AI Stocks to Buy and Hold Through 2030 - The Motley Fool](https://news.google.com/rss/articles/CBMiiwFBVV95cUxNS0xDeTRaWkdnU0RLNkNrQ2NoVDhxUEpqQ3hhNGZDbGhfVVp5X0d4TTVuZThHbkM0cktJOWkzaVhVUjc1ZmlaekxSekhRcVREWXBucktMcjhOT1FRam52Q1Q4Y2ZfdlFIYkQzR0xUekladGNudk5HaEhwMHctSWJCa3ptd0ZhM0tYWXQw?oc=5) | The Motley Fool |
-| 4h 前 | 0 | 中性 | [Why Bell Global Equities Fund Continues to Favor Taiwan Semiconductor Manufacturing Company (TSM) - Yahoo Finance](https://news.google.com/rss/articles/CBMimgFBVV95cUxPWFpjNzRDTzR1a3V5aDA1SlloRU9LRFhwamVCeXZRbXJRd1V2VlV1bFhsMGhUMmd4VldWQ0lITXhLbGI4WVNvM1ZtMGs1NzRiNGIxUmdEcGNfbzdDc3MzNDgtOEpxd2hGMlhBY1JOa2ZaMlJCRDVYMnpiSXBJWGZvUXV0MXR5YWctaDJIMzFOZmJCY0d3OHk4aS1B?oc=5) | Yahoo Finance |
-| 9h 前 | 0 | 中性 | [TSMC: Spending Its Lead To Keep It - Seeking Alpha](https://news.google.com/rss/articles/CBMif0FVX3lxTE5OekdFcWp1Y0luR3BJdkZlR0JlMGdycy0waWZOYzdIR2IzTTlDVzZzbGFldTRaaHkyS0dKZmMtWXFVamFqaXFsWkVIQ0ZyZ2EwMlpjX2owYUh3R2w0SVZVckdOazRzSHpvLWNoakc3UGFsNHRqTzZ0TnJRODhla1E?oc=5) | Seeking Alpha |
-| 18h 前 | 0 | 偏空 | [AI, semiconductors drive foreign investor gains, weakening Taiwan dollar - digitimes](https://news.google.com/rss/articles/CBMigAFBVV95cUxPeXdMdnQ3RnotTzlCbUYtcmE2ZTNKb0g0LVZ4V2JhTTB4NTBHZjZDdjJRRzUzYUpIVTBnNDBGSWtDQzRGOHA3MkFweHlJZVlpYU02cmx1LWJKYXFlWjhRR3VnOU9tWi1JWlpFeGVERVYtUWNqWEdPWW9TaWRueDB4ag?oc=5) | digitimes |
-| 18h 前 | 0 | 中性 | [Cathie Wood Piles Into Archer, Joby for Third Straight Day as Ark Dumps AMD, TSMC Shares - Benzinga](https://news.google.com/rss/articles/CBMitAFBVV95cUxNdTlKQmJkWUZ5UnRnemJYOUxaRGYwUlJmM0o0R3dmU3pwWDMtWTV0czhPOWNUbXIyUE9wUVhOZEphMzBROThKMEVseUtlbjBvUTlmV1k3MDdtd1o4U0VrcC1BWENKVkhjTXhQbW9KMHRveDhQTjB6RF9tOUg3WWtaV2FYTDRvbGtpSDVNYzAySk85Ym5Kb3luY0lvLVlUaXhlRkVIQUNrMmZYRHNyVGgyRlE4WUg?oc=5) | Benzinga |
-| 32h 前 | 0 | 中性 | [Taiwan Semiconductor raising prices could mean less competition from Intel: Wedbush (TSM:NYSE) - Seeking Alpha](https://news.google.com/rss/articles/CBMivAFBVV95cUxPeXJ1SWxyZ3Q0aUtiYVAwZHd5N1pKTVN5YjkweEhCMGNMbmNPNEhmRUJrQkNIb2Q2a3dXbUdVdUs2aGNBbEx5UVY0bEsyRzJiV3p1UTVqcjBzZ1pKZjRFVlVibzhnMGZPQzg5WXhmWk9HOXhkeGJhN2ZGVk05eklQdlJueTZBUEthRkcwdlNoYVFSX01NbWkyT0FnX0pRX05SU21scVh2eDRwSG8yR3RFWTBXSmxhSnRzRFpGTg?oc=5) | Seeking Alpha |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
 - 公司尚未盈利：估值没有盈利可锚，股价由叙事和融资环境决定，这类名字在流动性收紧时跌得最快。
-- 24 小时内的利空标题：Taiwan Semiconductor Manufacturing Company Ltd. $TSM Stock: Smith Group Asset Management LLC Cuts Holdings - MarketBeat（MarketBeat）
 
 ## 六、原始数据（本页所有计算的来源）
 

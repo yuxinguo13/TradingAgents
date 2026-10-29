@@ -67,11 +67,7 @@ _读不到财务数据：该代码没有可用的财务数据（可能是 ETF、
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 9h 前 | 0 | 中性 | [Invesco NASDAQ 100 ETF (QQQM) Buys $20.6 Million More NVIDIA on Oct. 27 - Yahoo Finance](https://news.google.com/rss/articles/CBMilwFBVV95cUxPSm9WeVlFSkJ2M1BPQU9QMmE1Q3pIeWlqLXBabzQ2aFJycWt5MGNTenNwaHJmQ2pXaXFPeGdYSElnQTM2cTRNX0ZTd3F1ZHFzSHJrd3FQOTE1blJPNzR3TWFwTi11WDloY1pSSHU5N1dIa2JVbFQ5OHVjd2xFYWpfclpxMGRqbnJBeGVKZHlJWUVOYnFJeUc4?oc=5) | Yahoo Finance |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
@@ -99,7 +95,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-26 | 291.14 | 294.50 | 290.55 | **293.26** | +1.1% | 3,871,900 |
 | 2026-10-27 | 294.51 | 297.65 | 293.88 | **296.96** | +1.3% | 2,155,400 |
 | 2026-10-28 | 298.16 | 298.97 | 296.65 | **298.71** | +0.6% | 2,430,300 |
-| 2026-10-29 | 295.02 | 295.64 | 293.08 | **294.53** | -1.4% | 2,402,932 |
+| 2026-10-29 | 295.17 | 295.64 | 293.08 | **294.53** | -1.4% | 2,402,932 |
 
 ## 七、自己去查（本页不做独立验证）
 

@@ -10,16 +10,16 @@ _医疗 · 数据截至 2026-10-29 收盘 → 面向 2026-10-29 开盘_
 
 ```text
        ABBV · 近 126 个交易日（日线收盘）
-288.5 ┤                                                                      ╭─╮╭──
-281.6 ┤                                                                     ╭╯ ╰╯
-274.8 ┤                                                                   ╭─╯
+288.4 ┤                                                                      ╭─────
+281.6 ┤                                                                     ╭╯
+274.7 ┤                                                                   ╭─╯
 267.9 ┤                                                                 ╭─╯     ···
-261.1 ┤                                    ╭╮       ╭───╮ ╭─╮  ╭────────╯  ·····
+261.0 ┤                                    ╭╮       ╭───╮ ╭─╮  ╭────────╯  ·····
 254.2 ┤                         ╭─╮   ╭────╯╰╮      │   ╰─╯·╰──╯···········
 247.4 ┤                       ╭─╯ ╰──╮│      │  ╭───╯·····
-240.6 ┤                       │      ╰╯      ╰──╯····
+240.5 ┤                       │      ╰╯      ╰──╯····
 233.7 ┤                      ╭╯           ·····                             :::::::
-226.9 ┤                     ╭╯        ····               :::::::::::::::::::
+226.8 ┤                     ╭╯        ····               :::::::::::::::::::
 220.0 ┤              ╭─────╮│   :·····:::::::::::::::::::
 213.2 ┤··:::::::╭────╯:::::╰╯····
 206.3 ┤──╮··╭───╯············
@@ -31,12 +31,12 @@ _医疗 · 数据截至 2026-10-29 收盘 → 面向 2026-10-29 开盘_
 
 ```text
        ABBV · 近 21 个交易日（放大看最近节奏）
-291.0 ┤             ╭╮     ╭
-286.9 ┤           ╭╮││╭────╯
-282.8 ┤         ╭─╯╰╯╰╯
-278.7 ┤       ╭╮│
-274.7 ┤      ╭╯╰╯
-270.6 ┤    ╭─╯
+290.8 ┤             ╭╮     ╭
+286.7 ┤           ╭╮│╰─────╯
+282.7 ┤         ╭─╯╰╯
+278.6 ┤       ╭╮│
+274.6 ┤      ╭╯╰╯
+270.5 ┤    ╭─╯
 266.5 ┤   ╭╯
 262.4 ┤ ╭─╯
 258.3 ┤─╯
@@ -48,11 +48,11 @@ _医疗 · 数据截至 2026-10-29 收盘 → 面向 2026-10-29 开盘_
 
 ### 图形读数
 
-- **均线排列**：多头排列 — 现价距 20 日 279.29（+4.2%）、50 日 267.38（+8.8%）、200 日 233.85（+24.4%）
+- **均线排列**：多头排列 — 现价距 20 日 279.28（+4.1%）、50 日 267.37（+8.8%）、200 日 233.85（+24.3%）
 - **形态结构**：上升结构 — 更高的高点 + 更高的低点；前高 267.75 → 291.40（+8.8%）、前低 256.30 → 278.01（+8.5%）
-- **动能**：RSI(14) 70，超买区；近一月的斜率快于近三月（月 +11.9% vs 季 +16.7%），趋势在加速
+- **动能**：RSI(14) 70，超买区；近一月的斜率快于近三月（月 +11.8% vs 季 +16.6%），趋势在加速
 - **波动**：日均真实波幅约为价格的 2.3%；按本报告 2 ATR 的止损惯例，一个 R 相当于 4.7% 的价格距离
-- **位置**：距 52 周高点 +0.0%，距 52 周低点 +49.4%
+- **位置**：距 52 周高点 +0.0%，距 52 周低点 +49.3%
 - **量能**：最新一日成交量为 20 日均量的 0.8 倍，量能正常
 - **相对强度**：近一月跑赢 标普500 11.0 个百分点
 - **支撑 / 阻力**：最近的摆动低点 278.01，摆动高点 291.40（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
@@ -110,14 +110,8 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 2h 前 | 9 | 中性 | [0% Above Fair Value? AbbVie (ABBV) On Fresh Qulipta Phase 3 Data - Simply Wall St](https://news.google.com/rss/articles/CBMi1AFBVV95cUxOeEJCOVN1WXFTZFhjRnpKREJNTHc1Z2NiSV9JRWpJNjVwaU9mSUVjQ21yakw0TkFJN0ttSkVJVGpsLVM0bUJsbFZRdUV0dXdjMjRmRVgtSTRVdlI2UVhFdFFlSmk2STRYU0FtbU4xOXNsYm5Ba19Fc0xudWxMNEMxa0pOYzItVkpBOHVmRG5tSG1lVGVIV2pITFUzMVFOQ3c3TXpKbThNOWtHOVBMdkZHZlp4blcyeUdJRU1Qdnh3cEd1R01OT1F5bTctVVZZR2ZxTTA4WtIB2gFBVV95cUxOU2wwNWJIVldMQ2hqamVZN1BZTlhXUmpPVGZ5aWFFa1VzQ3RGT0NzV3NBaTExSmJIUWljeTVYQlgyaTB0VHNpeHhFejRRekFtaElUbmkxOXZiLUoweEhTWldTbGtJdzRjb3JxWnRtXy1kMFktT0gydlc2emhfenluazktLW1JOGt0dFFGRFdwWnZpUHdUSng2SGR5NXJhLUJDZXMxZmlDVVFsZTVmVWdzSXpYLS1yQkpQWk0yUzM4dTEwUVh3Ymdfem54VnlZTER4cVR1em0yVTFGQQ?oc=5) | Simply Wall St |
-| 10h 前 | 8 | 中性 | [AbbVie (ABBV) reports earnings tomorrow: what to expect - Yahoo Finance](https://news.google.com/rss/articles/CBMipAFBVV95cUxQX3dPRTZYMjlEWmdqNWNzcW1tWVRRUkVCWXlkd1o5a0FieDVHQlp1cm1LcThKb1FRYlo4dUFRd0xOZkJVeXFubUNhX2Y4MG1hZXF6MXkyMDZyLWZ6MFo4ckZERWtBcENSbHlXSnhkd1BzQkE5Njg4eDNtN1N2c2R6S1FTV1c5Z2I2MThDa0VxSUhCSlJkWGRWcDNhdkhpVXNSVXZtWA?oc=5) | Yahoo Finance |
-| 44h 前 | 8 | 中性 | [AbbVie announces Q3 2026 earnings call while stock holds steady - Traders Union](https://news.google.com/rss/articles/CBMijAFBVV95cUxQNUphUWtHWDMtYmZJcGdzV1pyU0hidzZVRk5PdHU1NG9IUHd0TjUtVDJWeDNIbThWNEFKR3kzYmpYMWJpTWNWSDFxVjlqUk9TRk5RbnhLTVVDelF5c0VvSzdwM2JIN2VJeG5vS01jZzVnRkRYQjdreThFMkxKVE44enY2WmhRR3BTVE8wOA?oc=5) | Traders Union |
-| 1h 前 | 0 | 中性 | [ExxonMobil, AbbVie On Deck Friday As Energy, Drug Growth Face Test - Benzinga](https://news.google.com/rss/articles/CBMirgFBVV95cUxPUFp0bEJWY0l0OVQ4aTg2cks2Qmp0OXViajVFUzFnNk41V3ZZOVAxTGpJRnl1bXhVMTZZclRsVHBPX2ZqaGtOc2xvX2NCNWtUUXl6TnRLNmFnMG9YZlpRT2t4VEpnN1hndXhyTmZQVFFvREJPLUZkRE91aHBkc29JcjR2QmE1YUVCaXRHR1ktM3VUYzYyYzFMU1hTY01HNDZfZFFYekFrb04wcGxwa3c?oc=5) | Benzinga |
-| 3h 前 | 0 | 中性 | [AbbVie Stock: What 10 Years of Growth and Dividends Did for $1,000 - Yahoo Finance](https://news.google.com/rss/articles/CBMimAFBVV95cUxPSXdVdzhWbEhoLTBTVGR3aWJicTdVMlBQbkFUcG9ZaU5hTkY2Q0d2RkIxSGFjWkZPeEtxeVNyYVZUbFZYV3cyOHU3VlhaNnlWNmRjUnRaaFAzcndVNDF2RGY1bm5vb2FPUlo1bW83VGg4YVVXeEgwT01VQlg5TE9uOHZxcENFdU50VXU5YUdoMUpVQXRycDFlVA?oc=5) | Yahoo Finance |
-| 4h 前 | 0 | 中性 | [AbbVie stock: Etentamig filing adds an oncology milestone - ad-hoc-news.de](https://news.google.com/rss/articles/CBMiuwFBVV95cUxQV0FjT3lmWTZhTmUwVWhBMGtmV2ZMalZOX09WWm1JaFppVDgxMGJ2YWRaMDhJVEZsSWw3ZktLV2l2eTQ4TEVlZ25ZazVkQ1JPMHY5SGhyOGcyQjBsUTkwZE12Y2htcnJTX2RhOXpjNFY0NG5PQ2gydHZYeUNyMHFSR0w3S0NhdWxtTkFScl9KNHRURUpFMWpyY1dGdDJaNTVvblAzdkQxRUhjZGF3cUxfLWhsX3ZPYXRSanlv?oc=5) | ad-hoc-news.de |
-| 7h 前 | 0 | 中性 | [AbbVie stock hits all-time high at 291.65 USD - Investing.com](https://news.google.com/rss/articles/CBMiogFBVV95cUxNb1kyaXo0OUM2cERrWklFajgwMF9yeEZFYzBGS2tLYXNPcGVHeVppU2ZYUmJTM2lTOG5tU0ZGMUZHTFBYOGNnRW1zeWpkM2ZBVjFLNHFYY2JBY05oOHcwWmtsNTNzUUk5Z3VZRFZjV3pzZm9BVEEwV2YzRUJOT0QxWS1rXzJvblAxSlNKSEtzZFZCZVRMNGhJQ3FSUndHSWpaY2c?oc=5) | Investing.com |
-| 35h 前 | 0 | 中性 | [AbbVie files etentamig application: what it means for AbbVie stock - ad-hoc-news.de](https://news.google.com/rss/articles/CBMixwFBVV95cUxOQk04dTV6MEtEMGxwOXdvdVpHckxvU1VVQmhJTG9GWDJOVDhQQTJNalFzd2IwX2dod3l1UkdqbTZCLWxIajhNREcyNTE0TmNUei1mbmpEaGVXQVZWUHZBZ05JM2hvSkVGaEVQbkU2MGpscU5obHRGdEFFZGp1Vldxa2l1SGNybERkUmNRRkFibmJKT0FHanhWUDR5RGZfeXJqbndoaGZEd2xHck5CS0x2enlQNkl3Zmo1Y3J4M2d0aXM0NEsyZWRr?oc=5) | ad-hoc-news.de |
+| 9h 前 | 9 | 中性 | [AbbVie’s Pipeline Had a Mixed Week. The October 30 Report Has to Show Its Guidance Still Rises - TIKR.com](https://news.google.com/rss/articles/CBMiugFBVV95cUxQTVFXNlMxdEdWeWM2NkN2VXo1dXdCMzZCMFFJdzVOQ3pjQ3c0NWN0VTF2b0FLMUhRdlRXVWtZU29MOHJjMDl0YmFUcVh5Rm1kMnJPQTNTWngwdTc3UzdZWlRVdEc2RW1kU2cwM3ZsZ2FSTWdnZm5PR3JHNlZOelJadkVobElGTnVVaUpGTmpPckpZNW0yUFBnWVVWRGtuTk9GLWdtQk1fVTJUZ0hXU1JXbThta2JHSUN2clE?oc=5) | TIKR.com |
+| 4h 前 | 0 | 中性 | [AbbVie Stock: What 10 Years of Growth and Dividends Did for $1,000 - 24/7 Wall St.](https://news.google.com/rss/articles/CBMi2gFBVV95cUxNd0lTODlrbEJEeGdGSlRxSWJWU0JOUzZkV3p0d2NGZnQ2VjE0MG0yZkZpZ2NkeGxScEdjM0NKemE5QllGLTM1RUtENGtfOUJTbjdweDBwV1c2Z1QwT2NZMFlZX0pJa2s2Nm9VV2xwODhZRXE2Xzh1T3ZnYUNDaWlxMkdYcUc1U08zS0YwVWIxbko5U01WU2dScmJWUUhwSzNEdXYzejEwVGhmS3dodHJIc2RZYTkxR2tNbW11d2NsT05tdUpiZVIwQ0NIMUh6U01LVGtvZ3Bnc0FZUQ?oc=5) | 24/7 Wall St. |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -148,7 +142,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-26 | 287.05 | 289.59 | 285.18 | **286.74** | +0.4% | 4,514,400 |
 | 2026-10-27 | 283.88 | 287.32 | 283.12 | **286.39** | -0.1% | 3,269,100 |
 | 2026-10-28 | 282.93 | 288.80 | 281.23 | **285.99** | -0.1% | 3,108,000 |
-| 2026-10-29 | 291.00 | 292.58 | 288.04 | **290.97** | +1.7% | 4,280,859 |
+| 2026-10-29 | 291.00 | 292.58 | 288.04 | **290.79** | +1.7% | 4,280,859 |
 
 ## 七、自己去查（本页不做独立验证）
 

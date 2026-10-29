@@ -110,18 +110,9 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 0h 前 | 10 | 偏多 | [Lumentum Jumps, Fades On Marvell Buyout Report - Investor's Business Daily](https://news.google.com/rss/articles/CBMihAFBVV95cUxPbDdON20wRHQtb0VybWNKWWJqZFQ3aEFYYXlYQzFONUVjdTNfcHR5QnNGckFWMzlrRW5PVEhwSUJ1TWRHMFFiTzI3RWtJbWYyZ0JoSU5LSGNOYU16NkFINEJlU0pBZHRwYV9WbU9FN2dQMjh2WU1pVVQxanBHbkhaeld3d2Y?oc=5) | Investor's Business Daily |
-| 2h 前 | 10 | 偏空 | [MRVL Stock Sinks as Marvell Technology Reportedly Considers Acquiring Lumentum - Barchart.com](https://news.google.com/rss/articles/CBMivwFBVV95cUxOT1JVMG44dGZJR25kcjIzNzk4UjNTOGU0U2VMU2txNDdQOV9nRnl3czVnaE9MYm1uTkpiOUh4dXc2QmpNQWJvS1p6ekdVVHdqbGN6OWlpQVVuWnVQdXhnS25HMlJpcnI4eXVlQUdWSF9wcUtSUlE5QjQyVHRJTlNXSnU2dzFfRDY1dVVDZzZLakRfM1RXZVNGeXRUVlR2UVFqZGpNWU5jVVNoRVg0dHBGdVpuS21ycUhTdzlhUjg1aw?oc=5) | Barchart.com |
-| 6h 前 | 10 | 偏空 | [Marvell Technology plunges! The company is reportedly planning to acquire Lumentum, a leading player in optical communications, with the deal expected to be announced as early as next week. - 富途牛牛](https://news.google.com/rss/articles/CBMitgFBVV95cUxQV3pwZ2dXMlRlQTYwaHBKblpHNlZNdlVrZ2NZbGZZQVBqZnZtUUhzVkVRY0xoaGh2VU1ibEtOVWliX0RrSDV2Sl9JS1d3Q3VRa2hFY196VGVsS0V4Y0c5MmRsWWk2R09wd3U3Z3lkTFRHTzNONmxrd3ZFR1pydGpmTnI3cWZBQTVYbm5zSWFMVGVWSmlxS2lKcjdlLTlXcHN6b2FSdE03clBUS25semdaVVVFOG5NQQ?oc=5) | 富途牛牛 |
-| 6h 前 | 10 | 中性 | [Lumentum stock rises on report of possible merger with Marvell - Yahoo Finance](https://news.google.com/rss/articles/CBMixAFBVV95cUxOWEE4dWlUNFpuLVo5RlZEOXJkTFRXUHBBRTFiZmhTVktManRtbnhncmRuak5iUU43THE5YWJ3YURnLWN3TDJmOXNybHV1N1d4NHZkRjRCY3phMTRpbER2eEZwWmdSQS1jeGx3dWM5UURMNU4tbG83bUxvMl8yMWJ4amQzZzVjeDNXcmhPdFBWUGZEM3AwZ2tQUVhFYm9FNUk4Qnk3bGFnVm9fTXEwZXZnOHlOQm5vcDA2RnZnaEdQdHJtV2xp?oc=5) | Yahoo Finance |
-| 23h 前 | 10 | 偏多 | [Lumentum Stock Soars 17% on Marvell Takeover Talk - Benzinga](https://news.google.com/rss/articles/CBMilwFBVV95cUxNOWx2TXlWVzBIN0tzUzBQbkZlUWtEdEFKUDNJUk5PYTY5UXlIWUhFel8xMDV4dzFhTlZ1bmtIZkxJNnhyS0UyLUgzMXdzUUZ0VXZXb2QyUUxfb0UyMklYZWFmMzhiaUdzRTFnR2lUMXRUekVDR0lFcVItLUktVExOdGRuVnBITWpSQ1ZuQ3F3aVJQUnBiSmlZ?oc=5) | Benzinga |
-| 4h 前 | 5 | 偏空 | [Marvell Stock Dropped 11% on a Deal That Could Make It More Like Broadcom - Benzinga](https://news.google.com/rss/articles/CBMiiAFBVV95cUxONzRUMFVidFIyZFpvYUllaDdaeXFrVUlRUmplYUxFU00zbF9YYXZzd3dtUF9ya0pkcjNOM1JOVTcxR0Y4RXFLU0ozWmptMmFBLWNZTk1FbW5jZUdKWFRoclNRUTZaQ3Zac012dFg1ZjhkUk1LTTNaSTZscGpWZlAxdlZrUjZBTlhW?oc=5) | Benzinga |
-| 1h 前 | 0 | 中性 | [Why Marvell Stock Is Down Today - The Globe and Mail](https://news.google.com/rss/articles/CBMitwFBVV95cUxObHlDUkdFNlpzUlpQUWdvYkxNOGI0LUxWZno1SU95azBPalpaSHJNRFIwWm5LLTZiTHNkbzBvTkhtUEFpbVhBVWdqeURHa1dqRG1heFRxZ3hTandXdGNIc2taWmkzQU5GTXdBdlpJZHl1LXV5NVprVjRhTFU4Xzl2bkNjZ3hfLXNCU1BZczBpYWNkU01jYndIYVdoWTlUdVhOSFhDVDN1S1YwbWZzRGxoUXNsazVNR0U?oc=5) | The Globe and Mail |
-| 2h 前 | 0 | 偏空 | [Marvell Stock Tumbles Amid Lumentum Bid Talks - Benzinga](https://news.google.com/rss/articles/CBMiqgFBVV95cUxPTkgwbjY3dVV3cW1CaV9rQ09seEVDbXU3OXN5dVVfcExYcXVCWDd5dzQzdjZsYnBiWTFoeldyVFRiZ0YyRkZTTm1Ja1VHSGstOUJkcFdFby1wXzk0Y0diNGpHLTl2QlRvNHB1d1NxZkgzMGxHcm5zVTNEd0Z5Y2ZCQXhJdlpSWXR1TFRKWENMY2h5Z2U0bmZfX2JfTWJtLU1lTkZQWU1aOUlBZw?oc=5) | Benzinga |
-| 4h 前 | 0 | 中性 | [Marvell Technology Inc Stock (MRVL) Moved Down by 12.00% on Oct 29: What Signal Does It Send? - TradingKey](https://news.google.com/rss/articles/CBMiiwFBVV95cUxQSWZHNzkyR3JYREFkNEdEX1JPNk04a3p2OUdJaHN0ZHBVaEo0bndPWVU5NHBtNE5oYklnRlZDaXRMSlNSVWxveDRVRGxqclJvam56Zm11SDJfZWZKLXZkN1lBWUNVQmc2QVV5b0pLcmxLR2hwOFBKc2FxTGYyNU5zTUVGYUFyZ2dMSmtV?oc=5) | TradingKey |
-| 5h 前 | 0 | 中性 | [Marvell Is Said to Near Megadeal for Lumentum In AI Push - Bloomberg.com](https://news.google.com/rss/articles/CBMitgFBVV95cUxNTGdUMkpHa2JOcFhCMTFQU0tLaTJkTU54TmQ2aGJnVVVMR2VzeGdzLS1ONXd0U3hqQ0xPZUlEeTgyOWVXMHRQQ0hIeW5aX21JRkpNY3FlRUdNM1ZJMS1ZX3JwMWUteGVLdFFaVlNZMjZXUWtSSXNVRlEwdnRvbU9iQVBnNS1ycUgxMU5LTGtQQ0hSTWNOTkhBZ3FNRC1HaEZXZG9UMUd1QlBfeG1qZ044cTQtTk9Ydw?oc=5) | Bloomberg.com |
-| 6h 前 | 0 | 偏空 | [Marvell stock falls on Lumentum acquisition talks, Piper holds rating - Investing.com](https://news.google.com/rss/articles/CBMixwFBVV95cUxOcmx1Zk4wSHRCUE5pTURDX3dfazBveXZhdjFwUnJZOG5BeHJSeW1qTkpseXhhWHlENkowakpRd3Y3Wmo0eTlPY3J1blljWEtrcGQwQy13TzR1Z3QteWNvX3VmMEFaRjdCVFFQRzc4Y1dTZ1FoeFZLUDA4VXBwRHh1TDJzQWMwYmpLX1hLa213LUZjVm81UHNER3QtV1RVdEViNUg3Q2pIRWE0RDgySXBpTmtZUm9ISjlHc05BdzVsVEEzWHgxYUtn?oc=5) | Investing.com |
-| 6h 前 | 0 | 中性 | [What Could Surprise Marvell Stock Investors On The Upside? - Trefis](https://news.google.com/rss/articles/CBMiugFBVV95cUxOc2JWSGFCSGJRTXU0Y2ZGVTJsOVJPcXUxcnZOOVh2alBGMFltZ0RVUnVKT1VwRTk5MWtMdXVSaE02X3JoOExyLUdxRGdwZkFHSmF2dDVyZHozZ3pGZmFnYWxNU2t4N3FSWHVWS1VYbVl6Y3djR1FYVTY3anQ1TzRQOGVqcGRkcjRUTjJjVWF5Vmxiemo2YkFsU3RkNkxSeDhoekJCV1NWZnJxS01MTnFCM1RFNXBBRms5SEE?oc=5) | Trefis |
+| 0h 前 | 5 | 中性 | [All the reasons Marvell investors are ‘freaking out’ as Lumentum deal rumors swirl - MarketWatch](https://news.google.com/rss/articles/CBMi0wFBVV95cUxOMndQcGdyYk8zdlUyalRDZTlodk5IbkNWZXgwVTB4NHZ6Tmx0QjJuNzV5cWg2Z09rdEk3UkZnS3kxdzJ0VjVmR0Roa3h0aU15SVlPckcwZXM1SVhid1RySldQN2hYLXZLZ2Z2cTZlZmhIbEMxd3FhX2l5TG5tTWNRaDVxSU1veHFRVUVuRks5aTVOc1MzNWdQb0ZPZjBNRzFFVkg1bllMZlQ5UmF3dl9TVk9ERHNLQVoycW8ybDVXaDV2ZUEwUXcwSmxVQVV4cFJ5eURZ?oc=5) | MarketWatch |
+| 8h 前 | 5 | 中性 | [Marvell-Lumentum deal: analysts see strategic logic but flag price, integration risk (MRVL:NASDAQ) - Seeking Alpha](https://news.google.com/rss/articles/CBMivgFBVV95cUxNMWpNeVl6UFBELTNSZnpqYUNLeTI4Mjc3dTFRM2lvRTBrZXZqS0dXeTRZNHpHRzRkQ3pfRWNHVFhCeVhZMnFoZjQ1NHdOal9pYWdHZmdUaTFvLXY1U3J1cHU4NmpSYkpBREdsUUhSZ1pxSWlzbFBtVjZ2dXJUNk5ORHJwTkpZY3pCYXozX3J6US16LXJ4Q3N5YmNybXJYcVRxc3Rld3RGS3M5RUFaang1SXhoWTdtanFiakRrRkZR?oc=5) | Seeking Alpha |
+| 9h 前 | 0 | 偏空 | [Why Is Marvell Technology Stock Falling 9.5% in Premarket Trading? - Yahoo Finance](https://news.google.com/rss/articles/CBMiowFBVV95cUxNUXJwTW9jV2V1RUo1dWFOdGpQdXlVVlVZQWRZWEdpTFVaVnRGYzljWUdIV1pqal94b1VQWmJ5MHJ4UXhGbXRiRUI1VHU1dmdwUkpPS0tjRF9Ud3BlSDBPMFlOWV9GX2RJSVZUbnRiQWJGUmdSdzZhVFhFNU5SUC1IU0RCOXh5ZEswcTZoUWh1YWJzOTUzNGN5bG5rMXFTUl9nNWUw?oc=5) | Yahoo Finance |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -132,8 +123,6 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 - 摆动高低点都在下移，属于下降结构；在出现一个更高的低点之前，任何反弹都还只是反弹。
 - 日均波幅 8.2%，属于高波动：同样的仓位金额，这只股票的日常噪音就能触发大多数人的心理止损。
 - 公司尚未盈利：估值没有盈利可锚，股价由叙事和融资环境决定，这类名字在流动性收紧时跌得最快。
-- 24 小时内的利空标题：MRVL Stock Sinks as Marvell Technology Reportedly Considers Acquiring Lumentum - Barchart.com（Barchart.com）
-- 24 小时内的利空标题：Marvell Technology plunges! The company is reportedly planning to acquire Lumentum, a leading player in optical communications, with the deal expected to be announced as early as next week. - 富途牛牛（富途牛牛）
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -155,7 +144,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-26 | 229.02 | 238.58 | 223.69 | **233.78** | +2.3% | 14,543,600 |
 | 2026-10-27 | 237.05 | 245.87 | 235.23 | **243.57** | +4.2% | 15,452,800 |
 | 2026-10-28 | 247.45 | 253.66 | 246.22 | **251.65** | +3.3% | 16,342,300 |
-| 2026-10-29 | 223.00 | 225.68 | 214.56 | **218.34** | -13.2% | 41,063,450 |
+| 2026-10-29 | 222.54 | 225.68 | 214.56 | **218.34** | -13.2% | 41,063,450 |
 
 ## 七、自己去查（本页不做独立验证）
 

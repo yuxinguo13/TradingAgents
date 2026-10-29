@@ -108,7 +108,11 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
+| 时间 | 材料度 | 倾向 | 标题 | 来源 |
+|---|---:|---|---|---|
+| 12h 前 | 0 | 中性 | [Stock Portfolio's UnitedHealth Group Inc(UNH) Holding History - GuruFocus](https://news.google.com/rss/articles/CBMib0FVX3lxTE5BTEhIOFB0Zmg5YXI2RWt3b29HWnR1OEx0WGJpc3RJNnhMbWpBWnktSXNMRGxLRFBzQjBycG4xeEIxcGFIR1pzSVN3d215c2h1Q09kaWpZTlluTFFqWWdtSUQzclJpNmpZUVdMb0ZWbw?oc=5) | GuruFocus |
+
+_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
 ## 五、反方观点与风险
 

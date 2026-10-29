@@ -53,7 +53,7 @@ _能源 · 数据截至 2026-10-29 收盘 → 面向 2026-10-29 开盘_
 - **动能**：RSI(14) 69，偏强；近一月的斜率快于近三月（月 +12.6% vs 季 +18.7%），趋势在加速
 - **波动**：日均真实波幅约为价格的 2.2%；按本报告 2 ATR 的止损惯例，一个 R 相当于 4.4% 的价格距离
 - **位置**：距 52 周高点 -0.7%，距 52 周低点 +65.9%
-- **量能**：最新一日成交量为 20 日均量的 0.8 倍，量能正常
+- **量能**：最新一日成交量为 20 日均量的 0.9 倍，量能正常
 - **相对强度**：近一月跑赢 标普500 11.7 个百分点
 - **支撑 / 阻力**：最近的摆动低点 174.63，摆动高点 —（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
 
@@ -108,12 +108,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 7h 前 | 8 | 中性 | [Top 3 Energy Stocks You May Want To Dump In Q4 - Benzinga](https://news.google.com/rss/articles/CBMitAFBVV95cUxPMHItcjNYVkduMi1Kb2llblV5MmFlOG8wcWRBNzVHbWVydVNManBrcU5SQnI5YTZwTFpTVU4tdHZCdWJzLV9URjZJdFptbjgxcVV0UDFERkRPNUk4aDZ4NUpDeFhsbmZ5X2RONkdUX3I3d1hta1FaaGdFbFEwR3h0ZEZlT0xFN2MtVWNIbURiTENHMFFNNTI2YlZMcmcyYWxUSlBZN1ZxQ0h1d21BajA1TFlyYms?oc=5) | Benzinga |
-| 8h 前 | 8 | 中性 | [ConocoPhillips to Report Q3 Earnings: What's in the Cards? - TradingView](https://news.google.com/rss/articles/CBMisgFBVV95cUxNTlV1MWRVVXE5Mnp6bDVPREhBZXE5dHRuVTE5YmF5RzhZOV9wNHFsSGQ0cXV5QUF6dTkydUdENnBkT0dMS2FoMldmTGRNX2FmR3IwUENkSnBDdXhmQzBEb1E4dkVTS0RVdDJ5ZmE5bXBBV04xNmw3OC1JVVFrSDd3aVBJMllrVVNlQlVXcWF1Y3ktR2xrV1JJcVVJUl9HTDNQOFNvaEN5M0I5ZjR6Y01rUG9R?oc=5) | TradingView |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
@@ -142,7 +137,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-26 | 181.86 | 184.59 | 181.52 | **184.54** | +0.7% | 10,893,300 |
 | 2026-10-27 | 183.63 | 184.88 | 179.77 | **179.91** | -2.5% | 14,156,500 |
 | 2026-10-28 | 180.59 | 183.65 | 180.00 | **182.02** | +1.2% | 12,715,300 |
-| 2026-10-29 | 183.76 | 184.39 | 180.94 | **183.29** | +0.7% | 9,788,879 |
+| 2026-10-29 | 183.76 | 184.39 | 180.94 | **183.29** | +0.7% | 10,897,867 |
 
 ## 七、自己去查（本页不做独立验证）
 

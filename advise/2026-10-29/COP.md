@@ -108,14 +108,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 6h 前 | 8 | 偏多 | [ConocoPhillips (COP) Beat Q2 Estimates, Is The Stock Fully Valued? - Simply Wall St](https://news.google.com/rss/articles/CBMixwFBVV95cUxQaFdHMEJpSXR1RnVGUnhpNWtTQ0tyUWxkekh2NzhRMVd3Z1lCVFVfc1IyQkdfT2d6TzFlRGR3SklKcFU5U2hOR3ZyN21PZ3F4MUZUTlVRenhjZVhQQ0RDRUNtSTBxQkhONnZ1Y2xkcmtPQk1DWXF0SFNHT0tnalg1bnQ3Slp5eFhBWjVEVXpSNjRUeFE3MW1weU1BampfekQ4NDVvRVBFaVd5LURBU0pQTVZWRWtFLUhrR2pkTHpZa3ZTMFRoR2lB0gHMAUFVX3lxTE5zaF9ldmZqTGNWSzk1cXpLMlB1ZF9NVG1hRFlWZUlSNFlWa0QwUkNqWjU0VUdJdWdXT2RxdlVCdDN5YWZCUjJneFRUaWlaR0tHdExVbDBaLTQyWWFzT2dodGYtb1V1YmFCU1ZnMjgzbHVLbGZxckhNeEJYUFI3d0lvN3RsdGpkQXFqZEwzaU50cmNXN2ZpaHR0dUlyeF9BODltbmhGV294TVZ4ZFpCaEdIYnVCU2pnUUlLR3JQb3pFVzM4R092WHlvWUFROQ?oc=5) | Simply Wall St |
-| 8h 前 | 8 | 中性 | [ConocoPhillips to Report Q3 Earnings: What's in the Cards? - TradingView](https://news.google.com/rss/articles/CBMisgFBVV95cUxNTlV1MWRVVXE5Mnp6bDVPREhBZXE5dHRuVTE5YmF5RzhZOV9wNHFsSGQ0cXV5QUF6dTkydUdENnBkT0dMS2FoMldmTGRNX2FmR3IwUENkSnBDdXhmQzBEb1E4dkVTS0RVdDJ5ZmE5bXBBV04xNmw3OC1JVVFrSDd3aVBJMllrVVNlQlVXcWF1Y3ktR2xrV1JJcVVJUl9HTDNQOFNvaEN5M0I5ZjR6Y01rUG9R?oc=5) | TradingView |
-| 14h 前 | 0 | 中性 | [William Blair initiates ConocoPhillips stock coverage at Market Perform By Investing.com - Investing.com India](https://news.google.com/rss/articles/CBMizAFBVV95cUxOV1gwWGVIaHNyd1Mwc3UzaEZSa3B5S1dIblpUX3U0dEM0SkRWRDVTVW4wOTZLYVVMNGRubzlRYWUzLWY0alZfMG16NjRIVFBrdWFMU1h3aFdwQVVIbkhTc0VCeDI2bmJwWGVaQlc4WEcwTktHNk13b2JuSlR1dUd0LUdOVDlZMmNVZHhEMV9XYW13SERfam9ZZTYwcDR2OUtrODF3MzlLV3BXcnZ6T01UVUU2YWc4Ml9TRF9wSzUzdmlsdmFuOXhrVDVmNkk?oc=5) | Investing.com India |
-| 48h 前 | 0 | 偏多 | [ConocoPhillips stock outperforms competitors despite losses on the day - MarketWatch](https://news.google.com/rss/articles/CBMiygFBVV95cUxNb0p3aGdMV3c2MUR1RUJkbGQtQjRENXhZc2dwYllRd1VxMmJGbHEzclRFV1djTHFsQ1NYQkEza0RJVnVhVHFhZkc2ak1HTVBDWk9hNDJyYVlDX0Y3MW9QOXNUYS1YTzJLZmR6eTFFblJSUDFFZWUyTWZVaVNtYnA4VUZsWF9CSUxhQmZHc1l3cjNFUnpDS1p1SXZWMVVxTnFuZ3pUQ2t4YXRObExERmQ2YlNmQkxzNHlJTU9lUFgtLXFhbDBCYlpMLVRB?oc=5) | MarketWatch |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 

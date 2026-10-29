@@ -108,14 +108,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 10h 前 | 8 | 中性 | [Obesity Pipeline vs. COVID Drag: The Hidden Numbers Deciding Pfizer’s Q3 Fate on Nov. 3 - 24/7 Wall St.](https://news.google.com/rss/articles/CBMixgFBVV95cUxOcDFoQmJmYXBqejJBdE9kdlNueXVKcHB4MFNfQV94NWhMM29zdTBFaGZkdHZjTGwxWUlHTXZseHYxUG1Ra01haDlQX1l2dy14M0pSb2pfUnVLRktHWUZ2Tlh6ajZIVnBrRW9makhqazQwVGdnVG4xZjFwQlRYc1hSRGtDeEF2NHIyWERLRGtOZEJYTFhCVkRCa19pRTZuRC1WNWhBb0JMd0JGbHlRVXAwNkpLcDVyNXJxVEtFTnZxNHl6dnctd1E?oc=5) | 24/7 Wall St. |
-| 10h 前 | 8 | 中性 | [Pfizer's Q3 report on Nov 3 will test growth be... - Pluang](https://news.google.com/rss/articles/CBMioAFBVV95cUxOZFNadXZsdURSQ1pmWkdCLWw1UXZMOVlZNnAwSTRKWEFTNGs3QTlILUZoeUtVM2RTaDJpaGFxVkg4OGRPNEFwSnJPR3gxeFVxb2xHOF9fSFlyNW5hMjVDczJsdENKWGFDU0NRSC1RdERHaTlub29GbUxZbGowUWZVU25nbkttN1ZuYVY2ZEVCVEFPYlJkZGFGTlJJMlJTdlV2?oc=5) | Pluang |
-| 11h 前 | 8 | 中性 | [Obesity Pipeline vs. COVID Drag: The Hidden Numbers Deciding Pfizer’s Q3 Fate on Nov. 3 - Yahoo Finance](https://news.google.com/rss/articles/CBMilgFBVV95cUxOQmhqLVZWNG5zNFlQNTRRNVVfRXk0dE9ualNCZDBfYkZRMmhxc1p3cDBuT2VMc3FjTFhVM0RYNUZOREpJVjhaSkFyblVSOEZOWXJrNGJQd1FvSzYtMnNVaWkwYllPeURWaXhFQVJjR3N2QnVvOEFMcVczTHZ2VjVfazkzaU5OTkNHc0hKNGRLRThwSnFxa2c?oc=5) | Yahoo Finance |
-| 9h 前 | 0 | 中性 | [Pfizer (PFE) Stock Trades At A Premium Despite Its 30% Rebound - Simply Wall St](https://news.google.com/rss/articles/CBMi0gFBVV95cUxOeUhiVmpUYmRlVUlqMVN2WEw4akloTVlKZE1wcHV5VUJINjNhT1d2aEZKeWMtSU5hM3lBWWtZS0gzOU84ZUctclFGeGp0amxqWWd3WUpWR19HMkZRRGxSSjlMYlRtSEpIaFlKU3djTnVXbDhheDhRRHBXd2ZXdDNBWlE4Q2hTM21tVll6WjdwckVNQzBpUWFqMjI0V3NMbXlLcG93RnNCRmtaM1dxRElmOWg2Nm12Y2Vpb2Y5TGxDQ2N6dnNvTWkxUmJhNTNfcnE4Z3fSAdcBQVVfeXFMT1h5WWxweTRQYjFwd1llQWRCY200TXpOZ1VWT1dBQ2h2RXpISDF3dU0zeU16dk9YY0ZBZFdBc1ltZW5HSUpLV2MwUE1lYjZGNG1ZazlzWkRzNnc1N0RpUHREZDZsZGJvekpZUmszVG5udWVLczUwOW1hRUhLeXpxNzdvREhqWHQ1X25Bb09xZHVwWk5LN3NVODh4d2o4OFd2TGVfOU5GVVdaT2dSZzMzU2lDbjg1N3h2MWU1Wkljb1ZYU1BldVkzdC16TGp0MTVGZ0x0OWRSeFU?oc=5) | Simply Wall St |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 

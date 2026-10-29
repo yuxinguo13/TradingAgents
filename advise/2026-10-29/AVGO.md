@@ -110,18 +110,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 13h 前 | 8 | 中性 | [Broadcom Inc. $AVGO Stock: Bernardo Wealth Planning LLC Increases Stake - MarketBeat](https://news.google.com/rss/articles/CBMiyAFBVV95cUxQaE5BRXhMeFhtM3AxNmpnV2hmbWF6UFphc2QzZUZNR09iSHljeWVZNVpDNXF6bVZKWGthaHFoQ3c0SDNNZlZPUy1vUlAtYnkwcG4wVHVFZjVfTm5JdU1zeFI1YjZHTW02WHAxTFBhVVpmNG4xVFo1LTE0am1DQ2I2Qmt2Z21NM0pXcFAwMFlpQS01UTlDV3AyTm9SdHRRMTZES1NudUx3MTlWeUJldldkUUl2T2JkaElaWWlGSi1PeHNmcS1Nc1ItUw?oc=5) | MarketBeat |
-| 2h 前 | 5 | 中性 | [Broadcom Stocks Decline 2.73% With Equipment-Value Support in a $63 Billion AI Deal - Yahoo Finance](https://news.google.com/rss/articles/CBMimAFBVV95cUxPRTdzcVI2QzRORzY1Y3NaSVJyc254c19Oc1Z1ZnRyYVNaQVBZeXBvb3U2c2RiZ3RCR3BSZjlCd3oyS3JyMHkyX1c5am5sT3BkZWRnNFpIeUZtcjB5OVVYZHdqSGdCS2tqM3R5NWJHZFNYaDNab3lsU0E2ZnV4VXNDb0p0RGhqcTN1M19Lb3R5Mks5U2dsbU5nMA?oc=5) | Yahoo Finance |
-| 4h 前 | 5 | 偏空 | [Marvell Stock Dropped 11% on a Deal That Could Make It More Like Broadcom - Benzinga](https://news.google.com/rss/articles/CBMiiAFBVV95cUxONzRUMFVidFIyZFpvYUllaDdaeXFrVUlRUmplYUxFU00zbF9YYXZzd3dtUF9ya0pkcjNOM1JOVTcxR0Y4RXFLU0ozWmptMmFBLWNZTk1FbW5jZUdKWFRoclNRUTZaQ3Zac012dFg1ZjhkUk1LTTNaSTZscGpWZlAxdlZrUjZBTlhW?oc=5) | Benzinga |
-| 7h 前 | 5 | 偏多 | [Broadcom: This Is Probably A Good Entry Point (Rating Upgrade) (NASDAQ:AVGO) - Seeking Alpha](https://news.google.com/rss/articles/CBMiogFBVV95cUxQVEI2eHRIVExZOEdpeUxIYTY4UkloUFNjOVRyUWd2WUt3d2Q3TGdXSFVNSF9xcC1iYWxLUk05ZEJiMVdQY3dFanhvWXVFaVdvRGRXYUNZQ0ptQXR3ZDF3cmlYS09VX1F6eGFFWEVBUWRTTEljbVd2TFVhSHFIU2h2U21JRG5VR2ZtR0ZaTlN3RU91OHh3QXYwOVRfZlhIN1JQVnc?oc=5) | Seeking Alpha |
-| 17h 前 | 5 | 中性 | [Broadcom Stock Is 29% Below Its Record. After Its New Anthropic Deal, I'd Consider Buying It a Little at a Time. - Yahoo Finance](https://news.google.com/rss/articles/CBMimwFBVV95cUxOV2xKMjJsUnppQ1l5U0V0MXN6UElta0dHN1RILVZZdnVuTTc4LUFYQkhYTTJXUWpMRndnR1ZKdUZUZ3hxQUQxZzgyTW9SNTFETWxBODJUS1dKMmpwQTFpeVJQeDZkdWZpUk56TU1hb1hQMVUycGxpSHBDcC10d1JqU0c0WjZQZTVTZnExTFBobVZnTTU0X3AzQ2ZkQQ?oc=5) | Yahoo Finance |
-| 1h 前 | 0 | 中性 | [Stock Investing & Stock Market Research - The Motley Fool](https://news.google.com/rss/articles/CBMimAFBVV95cUxOczlIU09jREI4UEk0UFFXV2ZXNkZlN0JqZ1JXcGUxbzdWbmQtVWpneUR1bUROVWFjRmZrWTl0THdBTElxNmkwYnlmbTFfdEtQc2RQZDY5QTRGMUpCblN6RXNhX29LNW55a3JPc2JBQ1d4Ri1wbTdpR3FXRTFxSkpuV0w0bFBlVG1xWHdFRnA2MlVNTDJUUU5iTA?oc=5) | The Motley Fool |
-| 3h 前 | 0 | 中性 | [Prediction: Wall Street’s Next AI Favorite May Not Be Nvidia - 24/7 Wall St.](https://news.google.com/rss/articles/CBMipAFBVV95cUxNdHI0SHlPZE5LMGVKcXB6LXExODB4X2tjSXl1djVqQl9pd3Y3aU50SGk4WXkxQnFLdFlCRDJWY2ltSjlVZFFDWEdmak5pT3RJdUo1VXJmQ1hob0FKZVlqS093T2cyWFQwalNMNWhpSU1UQ0FrM2NNUjNhdDZTQlBJQURCTElDTHFnMW9tWTdqZkszSWVKRXFVNkllWVJEeVdCaGlMVg?oc=5) | 24/7 Wall St. |
-| 3h 前 | 0 | 中性 | [Prediction: Wall Street’s Next AI Favorite May Not Be Nvidia - Yahoo Finance](https://news.google.com/rss/articles/CBMimwFBVV95cUxPSXdfY1V4WXZDSllxVU95RXpuX191RHpMNC1oaTYxY2tHOWhkOERBaVRDcXNFUjNHQnNJaVNDbXlLNWZyZF9KQnhLN2JHUEZoWVVJYnNzbHBmVE04SGg2Q18zczhYVG5weVdCYXA5ZDZPU0FPQVVwUzdRNVROX0VjbkhWa1BfZmFSSkQ0UWlRWjVrTEI5WmVfREdyVQ?oc=5) | Yahoo Finance |
-| 3h 前 | 0 | 中性 | [Wall Street’s Broadcom Target Sits Above Its 52-Week High. Is the Street Right? - 24/7 Wall St.](https://news.google.com/rss/articles/CBMivAFBVV95cUxNWnRrYjlXVDVFVGNlLWdVb2FUeGRIbnUxTnlNNTBIRWJoMjJxSHNOcTV4WmFUQzNBdTMtOE5PRlVtU29DSS1mR19xWGMyNlhJMVFuUVQ0ZUdJT3k2OTdSbDF4Z3J0ZTU5U1dHTVJnWTAyRHdlQjZXa05kOUZUTmExY0c5WkhsY3NhbVB2MTVwZllkZHRDbWk0VmUyNlZROTVaNjZlRE5pVUdfdnQyamlPTGFSUjhMMUJsM0lzSQ?oc=5) | 24/7 Wall St. |
-| 4h 前 | 0 | 中性 | [3 AI Stocks to Buy and Hold Through 2030 - The Motley Fool](https://news.google.com/rss/articles/CBMiiwFBVV95cUxNS0xDeTRaWkdnU0RLNkNrQ2NoVDhxUEpqQ3hhNGZDbGhfVVp5X0d4TTVuZThHbkM0cktJOWkzaVhVUjc1ZmlaekxSekhRcVREWXBucktMcjhOT1FRam52Q1Q4Y2ZfdlFIYkQzR0xUekladGNudk5HaEhwMHctSWJCa3ptd0ZhM0tYWXQw?oc=5) | The Motley Fool |
-| 7h 前 | 0 | 中性 | [Why Meta Platform's $100 Billion Financing Plan Is A Boon for Chip Giant Broadcom - inkl](https://news.google.com/rss/articles/CBMiqAFBVV95cUxNc19tb2k2ckx6ZXRmSnZYVG5qc3FVaWtTTzhIMzdEdlNkek4xNU94Z3lKV0NWV1o1S0xuYU0yRl82ZW5wcDdYVjg1Rl9zd1dIc24xd25RQkJ1UmdQLVBGUWk0OWIzZnhGeDc1cUxQcWV4MTdGLVFlNV9CaW9jS0JGZmg4Vk5xMnM5cDJYUk5VRjNfc3Uwa0NLcWMya0FDd042ZWVHaWJwOEQ?oc=5) | inkl |
-| 8h 前 | 0 | 中性 | [Alphabet, Amazon, SpaceX, Microsoft, Broadcom, and AMD Are Counting on Anthropic's IPO. Not All Their Contracts Are Equal. - The Motley Fool](https://news.google.com/rss/articles/CBMilwFBVV95cUxPMFVFcGhmOGRiajU5ay1YcGFnZTJ4VVdSc0NCZ0dha0lRdDZHUm1fZ3FQbU5IV1dEVHRwWjl6UGRaQXVXUTFIR2lHMFp1bGVaSUdYNEk0TmVVMWZmWnpVRGZnZUF4UHJ0X0plMVJyT1ZhWUliZjRpMDhLckY1c3NoZDk4b0pWcE9UT3VVUUNrQTZwS0ZlQWZz?oc=5) | The Motley Fool |
+| 2h 前 | 0 | 中性 | [Prediction: This Will Be Broadcom's Stock Price by the End of 2027 - Yahoo Finance](https://news.google.com/rss/articles/CBMiowFBVV95cUxQb2VJbThWN01WZTZsdUFURXpNUE1nRVh5TEE1MEt1OEJiVnYxZ1VnandDTEpJaFdld25XNkNEQkZTMGhnLWJ2c3cyU2hyVlZUWTZCM0llcmpDdkhTQ0VZYmtiUTJEcG5fSkxkRTU1MTJ0SndTSGNwdUVyZnNUT05XNEhwTjlxbmhZdVlYR0FSUkVmeGF2bkkyVEtVbWp4bndJVzl3?oc=5) | Yahoo Finance |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -131,7 +120,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 - 图形上是空头排列——现价距 20 日 347.15（-0.6%）、50 日 353.29（-2.3%）、200 日 366.70（-5.9%）。本报告的买入规则本身会过滤掉这种形态。
 - 公司尚未盈利：估值没有盈利可锚，股价由叙事和融资环境决定，这类名字在流动性收紧时跌得最快。
-- 政策面对该板块的倾向为 -0.95（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.55（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
