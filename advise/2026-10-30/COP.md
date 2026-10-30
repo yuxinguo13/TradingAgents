@@ -1,0 +1,189 @@
+# COP · 康菲石油（ConocoPhillips）
+
+_能源 · 数据截至 2026-10-30 收盘 → 面向 2026-10-30 开盘_
+
+[← 回到 2026-10-30 当日报告](../2026-10-30.md)
+
+> 均线与结构互相矛盾，属于震荡；这种形态里止损容易被扫，仓位应比顺势时更小。
+
+## 一、价格与图形
+
+```text
+       COP · 近 126 个交易日（日线收盘）
+151.7 ┤                                                                         ╭╮╭
+147.7 ┤                                                                       ╭─╯╰╯
+143.6 ┤                                                                    ╭──╯
+139.6 ┤                                                                    │
+135.6 ┤                                              ╭╮  ╭──────╮        ╭─╯   ····
+131.5 ┤                                             ╭╯╰──╯      ╰╮      ╭╯·····
+127.5 ┤                                           ╭─╯            ╰───╮╭─╯·
+123.4 ┤─╮    ╭─╮···                             ╭─╯          ····    ╰╯
+119.4 ┤·╰╮··╭╯ ╰─╮ ·╭╮······            ╭╮ ╭─╮  │        ····               :::::::
+115.4 ┤  │╭─╯    ╰╮╭╯╰───╮  ········· ╭─╯╰─╯ ╰──╯········       ::::::::::::
+111.3 ┤  ╰╯       ╰╯     ╰╮        ╭──╯··········     ::::::::::
+107.3 ┤                   ╰───╮  ╭─╯     :::::::::::::
+103.2 ┤         ::::::::::::::╰──╯:::::::
+ 99.2 ┤:::::::::
+      └────────────────────────────────────────────────────────────────────────────
+       2026-05-04                       2026-08-04                       2026-10-30
+       · SMA50   : SMA200   ─ close
+```
+
+```text
+       COP · 近 21 个交易日（放大看最近节奏）
+153.4 ┤                    ╭
+150.1 ┤               ╭─╮╭─╯
+146.7 ┤          ╭────╯ ╰╯
+143.4 ┤        ╭╮│
+140.1 ┤       ╭╯╰╯
+136.7 ┤      ╭╯
+133.4 ┤    ╭─╯
+130.1 ┤  ╭─╯
+126.8 ┤──╯
+      └─────────────────────
+       2026-10-02 2026-10-30
+```
+
+成交量近 63 日： `▃▄▄▃▃▃▃▃▅▄▃▃▁▄▃▂▂▂▂▃▅█▃▃▂▂▄▃▂▂▂▂▁▃▄▃▂▂▄▂▂▁`
+
+### 图形读数
+
+- **均线排列**：多头排列 — 现价距 20 日 142.50（+7.7%）、50 日 136.12（+12.7%）、200 日 120.32（+27.5%）
+- **形态结构**：扩张震荡 — 高点抬高但低点下移，波动在放大；前高 130.97 → 152.77（+16.6%）、前低 124.47 → 123.46（-0.8%）
+- **动能**：RSI(14) 74，超买区；近一月的斜率快于近三月（月 +20.7% vs 季 +29.6%），趋势在加速
+- **波动**：日均真实波幅约为价格的 2.3%；按本报告 2 ATR 的止损惯例，一个 R 相当于 4.6% 的价格距离
+- **位置**：距 52 周高点 +0.0%，距 52 周低点 +84.7%
+- **量能**：最新一日成交量仅为 20 日均量的 0.5 倍，缩量
+- **相对强度**：近一月跑赢 标普500 22.4 个百分点
+- **支撑 / 阻力**：最近的摆动低点 132.57，摆动高点 —（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
+
+**我的读图结论**：均线与结构互相矛盾，属于震荡；这种形态里止损容易被扫，仓位应比顺势时更小
+
+_以上每一条都是对已经发生的价格的描述。均线、RSI、摆动结构全部是滞后指标，它们能说明现在处于什么状态，不能说明下一步。你自己在图上看到的东西，和这里写的不一致时，以你看到的为准——然后去查是哪个数字有问题。_
+
+## 三、财报与基本面
+
+市值 $1,841.89亿 · 行业 Energy / Oil & Gas E&P · TTM 营收 $644.59亿 · TTM EPS 7.55 · 股息率 2.20% · Beta 0.24 · 空头占流通股 1.6%
+
+- **估值**：TTM 市盈率 20.3 倍；前瞻市盈率 14.3 倍（市场预期未来一年盈利上升）；市销率 2.9 倍；EV/EBITDA 7.3 倍；PEG 1.11（在 1–2 之间，价格与增长大致匹配）。
+- **增长**：最新季度营收同比 +36.8%；盈利同比 +107.0%；最近三个季度营收连续环比上升；最近 7 次财报里 6 次超预期。
+- **盈利质量**：毛利率 47.6%、营业利润率 31.5%、净利率 14.4%、ROE 14.2%。
+- **资产负债**：现金 $76.92亿；有息负债 $232.90亿；负债/权益 35.6%（负债很轻）；流动比率 1.54；自由现金流 $76.91亿，为正。
+- **卖方预期**：27 位分析师覆盖；平均评级「买入」（1.90/5，1 为最看多）；目标价均值 151.48（较现价 -1.3%），区间 126.00–189.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
+
+**分季度损益**（季度数据，最新在左）
+
+| 指标 | 2026-06-30 | 2026-03-31 | 2025-12-31 | 2025-09-30 | 2025-06-30 |
+|---|---:|---:|---:|---:|---:|
+| 营收 | $191.61亿 | $157.61亿 | $133.92亿 | $150.31亿 | $140.04亿 |
+| 毛利率 | 36.7% | 27.3% | 19.2% | 24.1% | 25.1% |
+| 营业利润率 | 31.2% | 21.5% | 13.1% | 18.3% | 18.6% |
+| 净利率 | 20.5% | 13.9% | 10.8% | 11.5% | 14.1% |
+| 净利润 | $39.31亿 | $21.83亿 | $14.42亿 | $17.26亿 | $19.71亿 |
+| 摊薄EPS | 3.23 | 1.78 | 1.17 | 1.38 | 1.56 |
+
+**分年度损益**（年度数据，最新在左）
+
+| 指标 | 2025-12-31 | 2024-12-31 | 2023-12-31 | 2022-12-31 |
+|---|---:|---:|---:|---:|
+| 营收 | $589.44亿 | $547.45亿 | $561.41亿 | $784.94亿 |
+| 毛利率 | 25.1% | 29.9% | 32.4% | 38.2% |
+| 营业利润率 | 19.2% | 23.4% | 26.8% | 32.4% |
+| 净利率 | 13.6% | 16.9% | 19.5% | 23.8% |
+| 净利润 | $79.88亿 | $92.45亿 | $109.57亿 | $186.80亿 |
+| 摊薄EPS | 6.35 | 7.81 | 9.06 | 14.57 |
+
+**财报兑现记录**
+
+| 财报日 | 预期EPS | 实际EPS | 超预期 |
+|---|---:|---:|---:|
+| 2026-11-05 | 3.04 | — | 尚未公布 |
+| 2026-08-06 | 2.93 | 3.24 | +10.6% |
+| 2026-04-30 | 1.72 | 1.89 | +9.6% |
+| 2026-02-05 | 1.10 | 1.02 | -7.0% |
+| 2025-11-06 | 1.41 | 1.61 | +14.1% |
+| 2025-08-07 | 1.35 | 1.42 | +5.1% |
+
+_财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会滞后，TTM 窗口是厂商口径而非公司财年口径。以上任何一个数字如果会改变你的决定，请点开本页下方的 SEC EDGAR 链接看原文。_
+
+**财报日历**：下次财报 **2026-11-05**（约 6 天后）；上次财报 2026-08-06，超预期 +10.6%。财报日是这套止损体系唯一无法覆盖的风险：跳空会直接穿过止损价。
+
+## 四、消息面（过去 24 小时）
+
+| 时间 | 材料度 | 倾向 | 标题 | 来源 |
+|---|---:|---|---|---|
+| 5h 前 | 0 | 偏空 | [ConocoPhillips stock trades at EUR 137.09 amid Canada job cuts - ad-hoc-news.de](https://news.google.com/rss/articles/CBMiwwFBVV95cUxPek1Rc3FPTTFra2tSMlRKSENOMWdyLUtPbkVrX3FjaGFULTJSSFFuSE5qNnhtUkIzQVc3MnZaWlNpZ2p2MUdOR0o1Ykx3bHN5d1lvQ0owd1VzNEdIQVB3WmlvZDd0a2tGUk9NeHpRQzNYZVZqcWNtekdHZkxscXFMNHlPZkM4MTBqYnctQkhUOVlwU3RabHJyRllsS3FsZ3ZDazRfdlY2bjdHVndQSVZDUTBOTEdtU2pZTTNrZnJuRnptd3M?oc=5) | ad-hoc-news.de |
+| 6h 前 | 0 | 中性 | [Conocophillips stock hits all-time high at 152.85 USD - Investing.com](https://news.google.com/rss/articles/CBMirAFBVV95cUxQWkZET0pqTDN2YVB6V3k0R1dEOGFNMWtzMGpJa1haZXBLY1B6WHUyT1pFMlJ5ZTdRRGVVd1F2YThUdHl2SHpoeVZ3NTZ2UlcwNmc2NTBTVVItRjJ0XzFRVnpNNGpCVmt3ZTdoZkZaOGk3WmJsaEYwcGthT2NxTEVVam1RbTNZWXl3YWFBUHNoc2RpMUx3dFg5UXo5b291bGx3OVV3c3I3MS1rVGRs?oc=5) | Investing.com |
+| 11h 前 | 0 | 偏空 | [ConocoPhillips stock faces fresh Canada workforce cuts - ad-hoc-news.de](https://news.google.com/rss/articles/CBMiuAFBVV95cUxNTk5FMGZhQVBINDVicFVaWUg0bXVjTnh2aGhfR0lySllMRHRWZ2R5aDlWUmhPVXNRMGVxbkxKWko3T2JYRW5pZUdKeDIxSjFKOXB3cGZqYl9Ua3BrTGJpaGZwcWRjTlloZDZ3d3hrUEpwMndlcUdDVjBZclF2SkFYVzg5dFVIdXUxMlFKTzRmeURTZ05YU1lOdTd6aHdxdmZSVDgzZUQyUDJwMHAwcmpnZEZFZ3Ewbm1W?oc=5) | ad-hoc-news.de |
+| 38h 前 | 0 | 中性 | [William Blair initiates ConocoPhillips stock coverage at Market Perform - Investing.com](https://news.google.com/rss/articles/CBMiywFBVV95cUxQMHJVNXhrb094c1QtalRPNTBwUVdtRjRZZ3JSU0ZueUZxNUtYbkRMQzBIZERuRDlGSFJwdGdCTGFsQTFmZWZtWnpGZXpmaTVZcERjQnpDQ1VaSHFDWDZJTnVEUUdMR3FmR28wM0FncUdqcklIZ2Q0ZXZ6RkNiS2JzTkIwRTNqZ1lEZ25Qa0RjdDQ2dFU5ZlpfSGIxNm1fYUZSTkR1bDFVdlJ1N0tDMHRJdTViVDNOYTRERnljME5WdGI4MXNWUmhvdnBFRQ?oc=5) | Investing.com |
+
+_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+
+## 五、反方观点与风险
+
+_以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
+
+- 离最近的支撑 132.57 还有 16%——这段距离里没有明显的接盘位置。
+- 下次财报在 6 天后，落在持有期内。财报跳空会直接穿过止损——那一晚的风险不是 1R，是没有上限的。
+- 现价已经高于卖方目标价均值 151.48（-1.3%）——共识认为没有上行空间了。
+
+## 六、原始数据（本页所有计算的来源）
+
+最近 15 个交易日的 OHLCV：
+
+| 日期 | 开 | 高 | 低 | 收 | 涨跌 | 成交量 |
+|---|---:|---:|---:|---:|---:|---:|
+| 2026-10-12 | 136.01 | 137.63 | 135.76 | **137.56** | +2.6% | 4,418,600 |
+| 2026-10-13 | 138.47 | 141.06 | 138.00 | **140.90** | +2.4% | 6,523,800 |
+| 2026-10-14 | 142.00 | 142.55 | 140.90 | **142.34** | +1.0% | 5,668,300 |
+| 2026-10-15 | 143.00 | 143.13 | 140.81 | **141.73** | -0.4% | 8,340,500 |
+| 2026-10-16 | 142.69 | 146.59 | 142.24 | **146.51** | +3.4% | 7,766,500 |
+| 2026-10-19 | 145.73 | 146.70 | 144.27 | **145.24** | -0.9% | 4,342,300 |
+| 2026-10-20 | 147.15 | 147.15 | 142.80 | **145.95** | +0.5% | 5,316,600 |
+| 2026-10-21 | 145.61 | 147.42 | 143.94 | **145.67** | -0.2% | 6,294,700 |
+| 2026-10-22 | 146.85 | 147.55 | 143.31 | **145.63** | -0.0% | 5,575,200 |
+| 2026-10-23 | 147.11 | 152.77 | 146.11 | **150.80** | +3.6% | 7,253,200 |
+| 2026-10-26 | 149.24 | 152.00 | 149.24 | **151.37** | +0.4% | 5,278,300 |
+| 2026-10-27 | 150.23 | 151.56 | 147.47 | **147.96** | -2.3% | 5,696,100 |
+| 2026-10-28 | 148.79 | 150.44 | 148.23 | **149.06** | +0.7% | 5,425,300 |
+| 2026-10-29 | 149.91 | 150.58 | 148.36 | **150.03** | +0.7% | 5,130,700 |
+| 2026-10-30 | 152.48 | 153.79 | 151.28 | **153.41** | +2.3% | 2,945,466 |
+
+## 七、自己去查（本页不做独立验证）
+
+**行情与图形**
+- [Yahoo Finance 行情](https://finance.yahoo.com/quote/COP) — 本报告所有价格与均线的来源，先对这里
+- [TradingView 图表](https://www.tradingview.com/chart/?symbol=COP) — 可画线、可换周期，用来复核本页的 ASCII 图
+- [Finviz 快照](https://finviz.com/quote.ashx?t=COP) — 一屏看完估值、技术与同业对比
+- [StockCharts 技术面](https://stockcharts.com/h-sc/ui?s=COP)
+- [Barchart 观点](https://www.barchart.com/stocks/quotes/COP/opinion) — 把十几个技术指标折算成一个多空票数
+
+**财务与估值**
+- [StockAnalysis 财务报表](https://stockanalysis.com/stocks/COP/financials/) — 十年利润表/资产负债表/现金流，免费且不用登录
+- [Yahoo 财务](https://finance.yahoo.com/quote/COP/financials) — 本页财报数字的来源
+- [Yahoo 关键统计](https://finance.yahoo.com/quote/COP/key-statistics) — 估值倍数、利润率、资产负债的完整版
+- [Macrotrends 长期趋势](https://www.macrotrends.net/stocks/charts/COP/x/revenue) — 营收与利润的十年折线，看结构性变化
+- [Wisesheets/Koyfin 替代：GuruFocus](https://www.gurufocus.com/stock/COP/summary)
+
+**原始文件（无中介）**
+- [SEC EDGAR 全部文件](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&ticker=COP&type=&dateb=&owner=include&count=40) — 10-K/10-Q/8-K 原文；财报电话会与风险因素只在这里
+- [SEC 全文检索](https://efts.sec.gov/LATEST/search-index?q=%22COP%22&forms=8-K) — 按关键词搜文件正文
+- [OpenInsider 内部人交易](http://openinsider.com/search?q=COP) — 高管自己在买还是在卖，是少数不靠解读的信号
+- [13F 机构持仓](https://whalewisdom.com/stock/COP) — 注意：13F 滞后 45 天，不能当作买入理由
+
+**消息与预期**
+- [Yahoo 新闻](https://finance.yahoo.com/quote/COP/news)
+- [Google News 搜索](https://news.google.com/search?q=ConocoPhillips+stock&hl=en-US)
+- [财报日历与预期](https://stockanalysis.com/stocks/COP/forecast/) — 下次财报日、市场一致预期、历史超预期记录
+- [Seeking Alpha 讨论](https://seekingalpha.com/symbol/COP) — 观点密度高，但是买方与卖方混杂，当作反方意见读
+- [公司投资者关系](https://www.google.com/search?q=ConocoPhillips+investor+relations) — 财报原始 PPT 与电话会记录
+
+**中文渠道（转载源，不作独立验证）**
+- [雪球](https://xueqiu.com/S/COP) — 中文讨论与财报摘要
+- [富途牛牛](https://www.futunn.com/stock/COP-US) — 中文行情与公告翻译
+- [东方财富](https://quote.eastmoney.com/us/COP.html) — 中文财务报表
+- [同花顺](http://stock.10jqka.com.cn/usstock/COP/) — 中文资讯
+
+---
+
+_这一页是一台程序按成文规则读公开数据的结果，不是投资建议。它不知道你的资金、税务和其它持仓。图形结论来自滞后指标，财报数字来自厂商转录，新闻材料度来自关键词打分——三者都会错。把它当作一份整理好的证据，而不是一个答案。_
