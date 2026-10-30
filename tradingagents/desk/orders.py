@@ -529,6 +529,15 @@ class Executor:
         cost = getattr(self, "_avg_cost", {}).get(sym, float("nan"))
         return cost if _ok(cost) and cost > 0 else price
 
+    def _fill_price(self, order_id: str, fallback: float) -> float:
+        """The venue's fill price for a market sell, or the quote if the venue
+        cannot say. 2026-10-30: trims were booked at the quote read before
+        the order, not at the fill."""
+        fill = self._await_fill(order_id)
+        if fill is not None and fill.get("status") == "filled" and _ok(_num(fill.get("price"))):
+            return float(fill["price"])
+        return fallback
+
     def _await_fill(self, order_id: str, tries: int = 5, wait: float = 2.0) -> dict | None:
         """A few seconds for a marketable limit to fill; None if the venue cannot say."""
         if not order_id or not hasattr(self.broker, "order_fill"):
@@ -551,7 +560,8 @@ class Executor:
         res = self.broker.close_now(sym)
         out = Outcome("sell", sym, bool(res.ok), str(o.get("reason") or ""), held[sym], venue=str(res.message))
         if res.ok:
-            self.book.close(sym, price if _ok(price) else 0.0, today, f"manual: {o.get('reason', '')}")
+            px = self._fill_price(res.broker_order_id, price)
+            self.book.close(sym, px if _ok(px) else 0.0, today, f"manual: {o.get('reason', '')}")
         else:
             out.reason = f"venue refused: {res.message}"
         return out
@@ -579,7 +589,9 @@ class Executor:
         if not res.ok:
             out.reason = f"venue refused: {res.message}"
             return out
-        self.book.close(sym, price if _ok(price) else 0.0, today, f"trim: {o.get('reason', '')}", shares=n)
+        px = self._fill_price(res.broker_order_id, price)
+        out.venue = f"{out.venue}; filled @ {px:.2f}" if _ok(px) else out.venue
+        self.book.close(sym, px if _ok(px) else 0.0, today, f"trim: {o.get('reason', '')}", shares=n)
         if sym in self.book.positions:
             self.book.positions[sym].trimmed = True
             self.book.save()

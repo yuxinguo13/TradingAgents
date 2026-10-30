@@ -839,3 +839,23 @@ class TestReflection1029:
         pack.Packer(broker=v, market=mkt(task="trade"), book=book, screen=screen_of(), now=MONDAY_OPEN).run()
         after = DeskBook(home / "desk" / "trade" / "book.json")
         assert after.closed[-1].exit == round(px * 1.04, 2) and after.closed[-1].shares == 5
+
+
+@pytest.mark.unit
+class TestReflection1030:
+    def test_a_trim_is_booked_at_the_venues_fill(self, home):  # noqa: F811
+        shape("HLD", 100.0, drift=0.3)
+        px = frame_for("HLD", DATA_DAY.isoformat())["Close"].iloc[-1]
+        book = DeskBook(home / "desk" / "trade" / "book.json")
+        book.positions["HLD"] = Position(symbol="HLD", shares=10, entry=round(px * 0.95, 2), stop=round(px * 0.90, 2),
+                                         target=round(px * 1.10, 2), opened="2026-08-12", stop0=round(px * 0.90, 2))
+        book.save()
+        v = FakeVenue(acct(cash=90_000, holdings=[held("HLD", 10, round(px * 0.95, 2), px)]))
+        v.resting["HLD"] = round(px * 0.90, 2)
+        v.order_fill = lambda oid: {"id": oid, "status": "filled", "filled": 5, "price": round(px * 1.002, 2)}
+        orig = v.place_order
+        v.place_order = lambda *a, **k: (lambda r: (setattr(r, "broker_order_id", "m1"), r)[1])(orig(*a, **k))
+        out = executor(v, home).run({"orders": [{"action": "trim", "symbol": "HLD", "fraction": 0.5}]})
+        assert out[0].ok, out[0].reason
+        closed = DeskBook(home / "desk" / "trade" / "book.json").closed[-1]
+        assert closed.shares == 5 and closed.exit == round(px * 1.002, 2)
