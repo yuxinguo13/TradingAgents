@@ -44,17 +44,17 @@ _科技 · 数据截至 2026-10-30 收盘 → 面向 2026-10-30 开盘_
        2026-10-02 2026-10-30
 ```
 
-成交量近 63 日： `▄▁▁▁▂▃▂▄▂▂▂▂▂▃▆█▅▃▃▄▃▅▄▃▃▂▂▃▃▄▂▃▂▂▄▃▂▃▂▃▃▂`
+成交量近 63 日： `▄▁▁▁▂▃▂▄▂▂▂▂▂▃▆█▅▃▃▄▃▅▄▃▃▂▂▃▃▄▂▃▂▂▄▃▂▃▂▃▃▄`
 
 ### 图形读数
 
-- **均线排列**：空头排列 — 现价距 20 日 345.68（-5.8%）、50 日 352.54（-7.6%）、200 日 366.64（-11.1%）
+- **均线排列**：空头排列 — 现价距 20 日 345.70（-5.7%）、50 日 352.54（-7.5%）、200 日 366.64（-11.1%）
 - **形态结构**：扩张震荡 — 高点抬高但低点下移，波动在放大；前高 361.86 → 380.84（+5.2%）、前低 328.58 → 320.23（-2.5%）
-- **动能**：RSI(14) 41，偏弱；月 -5.2%、季 -16.8%，节奏平稳
+- **动能**：RSI(14) 41，偏弱；月 -5.1%、季 -16.7%，节奏平稳
 - **波动**：日均真实波幅约为价格的 4.0%；按本报告 2 ATR 的止损惯例，一个 R 相当于 8.0% 的价格距离
-- **位置**：距 52 周高点 -32.1%，距 52 周低点 +11.4%
-- **量能**：最新一日成交量为 20 日均量的 1.1 倍，量能正常
-- **相对强度**：近一月跑输 标普500 3.5 个百分点
+- **位置**：距 52 周高点 -32.1%，距 52 周低点 +11.5%
+- **量能**：最新一日成交量为 20 日均量的 1.7 倍，量能正常
+- **相对强度**：近一月跑输 标普500 4.0 个百分点
 - **支撑 / 阻力**：最近的摆动低点 320.23，摆动高点 361.86（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
 
 **我的读图结论**：趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌
@@ -69,7 +69,7 @@ _以上每一条都是对已经发生的价格的描述。均线、RSI、摆动�
 - **增长**：最新季度营收同比 +85.5%；盈利同比 +215.3%；最近三个季度营收连续环比上升；最近 6 次财报里 6 次超预期。
 - **盈利质量**：毛利率 75.5%、营业利润率 54.3%、净利率 42.9%、ROE 44.2%。
 - **资产负债**：现金 $239.75亿；有息负债 $594.19亿；负债/权益 59.6%（负债适中）；流动比率 2.50；自由现金流 $305.96亿，为正。
-- **卖方预期**：48 位分析师覆盖；平均评级「强烈买入」（1.24/5，1 为最看多）；目标价均值 530.14（较现价 +62.7%），区间 215.88–660.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
+- **卖方预期**：48 位分析师覆盖；平均评级「强烈买入」（1.24/5，1 为最看多）；目标价均值 530.14（较现价 +62.6%），区间 215.88–660.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
 
 **分季度损益**（季度数据，最新在左）
 
@@ -112,18 +112,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 13h 前 | 10 | 中性 | [Broadcom Inc. $AVGO Stock Acquired by Apollon Wealth Management LLC - MarketBeat](https://news.google.com/rss/articles/CBMixAFBVV95cUxPXzdXU24xQVlDN3lVYTZfT2hEM0pNMHhObFBxVmxOWHZiZWVROXZ5RXlSMlRTYzdIOFdkSFhDRUdhNWNZeFNIOWFyaVEwWXNxUFR1ZUpZUnJ1cWEtQ2VCUVVvYjZUU2tjTjJiZnJQVXJ0TklNdVR0NFdxbG1HR2pzU0lRN2dNOE9uX01aVjBoRV84cElsQUZhcHJOLUI3aWJNcmtHRVZ1aG1Scjg3Y01JdkY5RldtMERSel9sNmJfalh6RDcy?oc=5) | MarketBeat |
-| 11h 前 | 8 | 中性 | [Broadcom Inc. $AVGO Stock Position Lifted by Kingswood Wealth Advisors LLC - MarketBeat](https://news.google.com/rss/articles/CBMizgFBVV95cUxPbHVCOW1obVlSOUNnWnNSMjVuMERzZEhIeDR0SmlmV0kySVJ6eEYtaVlVZlhOeG5lXzdSa1I0QjN4aTdFRDMxMmFvOHpRV28zYktvajFBaUY4enF5NzY3aTgxVkVsWndpaTM3T0M3bDF6MmlaaS1yWnBhZDE2MTdLR3k2N21xSGdjbDhUVnZCX1cwU1FTV2xiV3UxUU5pSGcyMUlKZjFKakFTUW9jS05OT1lIMlBnWXZnSk9ubWhlSU1ZeDJvV0NTWnJkVEp6Zw?oc=5) | MarketBeat |
-| 12h 前 | 8 | 中性 | [Broadcom Inc. $AVGO Stock Bought by First Interstate Bank - MarketBeat](https://news.google.com/rss/articles/CBMitwFBVV95cUxOYWo4cmNqVXlVWWJvU1ZsajVwV3VRQmhHSDcwYU5RT2VsQ25tcjJQb3E2Y1ZtNHVsWEJtTlIwZll1NzIwU1JLaGc3Wi1mLVVUcTFwZ2I0bV82MzhwZlNKUllMQ21BcGFtSU9tT1VMOXc4amdSbzVYZHJTX05aaGgxVVczVHpSWFppdE4xWDZsRklxem41TFFnR2g0RFc0MG14d2NoRVJNQjFuVU5UQWpFQjFQTWlnZzQ?oc=5) | MarketBeat |
-| 3h 前 | 5 | 偏多 | [5 AI Stocks Set to Win Big From Anthropic's Spending Spree - The Motley Fool](https://news.google.com/rss/articles/CBMimAFBVV95cUxOaGtVVWNtM2Q2Wm1nNW1Hc19zQmV1QlRWUHhXZzhKbnFMT0F0QUx1cDRuRDdZLU43SmgwZTR3eEN0Z0l3VGwtUENYeVd3RmRGQ2FkMjg5WTFIYnVnaG14aEpoRjVJNmE2RTRINEYtUm5mRWV1TVctU3JnMkZjaVo0MzNwNVZMU2I0djdDR2tBSVVKbjE0MEEyVw?oc=5) | The Motley Fool |
-| 5h 前 | 5 | 中性 | [Broadcom Falls 5% Despite DA Davidson Upgrade on Anthropic and OpenAI IPO Hopes; Arm and Qualcomm Sink 10%, Marvell Drops 8% - 24/7 Wall St.](https://news.google.com/rss/articles/CBMi9gFBVV95cUxONDA3Z0RHYkNET1dzQXpxODIxanAyc2hqSU11VGhlZ3E5dUdwTTJrQzR3bl9sWXVPWGRGaWprVWZNdjJWS3d4SURzY0VzaXdZNnpkQTNRbThsYkpRVUZwQjlzOEZfcHFIdk9YUlpXeEd6aHljd21KQlo2amtsTmNyUFR4SDZsaTZMcjBjNkh5YXBrOHhtcnpBLW1UZkU1RnFHNHRza2MwMUNvT1hYZzZadkhuWHh0aXNmMV8wSi01RVVGZzUyM3E1S3llNlNnNG5lU2NDTldJUXAzUGNuT1RMOHA3aERBVXBnZHhNdm5DVEE5WEg4Rmc?oc=5) | 24/7 Wall St. |
-| 8h 前 | 5 | 中性 | [Broadcom’s $63B Anthropic Deal Could Be The One That Finally Gets it Into Gear - 24/7 Wall St.](https://news.google.com/rss/articles/CBMivAFBVV95cUxONmZjaE9fT25ocVdmSEtMWktfZF9YSlFEc3d6SW12RFM1UWoybS1KMk92ZHJnVTNfQzI3SF9jZ1dQcW9aYk5sQ09wZ2RlUmh0MUx5d2M2aFZ1TW1BZy0wS2s1U25NR2JWMEtkSDBJakdkV0laUjVVTWd1dS13MGdJMkFva1dRbFhueTJ3ai1wLWlrLUlrdE9fcUI2RDFLNzNwQUY2am5WYXg4SFVEUktWU29peUZZTXFUZnhJbA?oc=5) | 24/7 Wall St. |
-| 11h 前 | 5 | 偏空 | [Stocktwits Wall Street Wrap — Tesla, Broadcom, MercadoLibre Get Bullish Calls As Alphabet, Enphase Face Downgrades - Yahoo Finance](https://news.google.com/rss/articles/CBMinwFBVV95cUxNRGJIWEp0R3JIS1hNaS1UM2g4M21hN0ptbXlUZlBKYTRZOGVtM3d1VEhKRmt4NHA2ZXZUMWVVdmd5OE0xY2NfdnZEeVBzcGwwNHJ5bWc2R0J0VkhzU015dGl0NlpvTHJ0R0l4UEZRVklRSTZjVEk0Wkk4Y3h5WXhVdFp4ZmhQNWZXTDhrTVRMOVVKU0ZMWVhfaWJJMnFwTFU?oc=5) | Yahoo Finance |
-| 28h 前 | 5 | 中性 | [Wall Street’s New $63 Billion AI Deal Reveals a Risk That Could Spread Beyond Tech - 24/7 Wall St.](https://news.google.com/rss/articles/CBMiwgFBVV95cUxNU3p0T20wZFl5ak1aak5aMmtfeDJfYl9ic3Z6eEhWQ3g3YVl3U3BiV1NCa2xSbHRlc19JbFp2eG5rbnZkUFJURmZtTFFTN09FLTh2a084UVAxVzJJUTN3ZDBGSHhydWd5YWtCMzZlLUFFQUJmN1dUQUJLbFNidnp3ZVJoVHFZUlk2Yjl0XzhySHowMmd6TU9rbEVtMWVkR000WnZaTzdMVFl3d2Z0Zk9LaWF4MjZjSzFfWU51dFpyY0ppQQ?oc=5) | 24/7 Wall St. |
-| 11h 前 | 2 | 中性 | [Randolph Co Inc Acquires 227,807 Shares of Broadcom Inc. $AVGO - MarketBeat](https://news.google.com/rss/articles/CBMivAFBVV95cUxPLTlCZm1uc0tiaWZpWHNzUVZFZ0d3VF8zdElWUzMwcXBNSVhobFNpVlF2elZzQVFCME9CZVN6Nll1MGNuclJvbTNUTmU4MDhEVEQyN1ZJdlZza2hqUnVWVjBCZDR5U0h2OWk5Z1k1aWo2dW5ETEo1Q3lma2RCYjhSeVJaZGZXMkkyS1F2UWhjVEtSUGc3UERkS3JXMnk3ZElYZEJVaTRpWGNMT1B6djFOOFhsMXVGQWsyUlppRg?oc=5) | MarketBeat |
-| 1h 前 | 0 | 中性 | [Broadcom Stocks Decline 5.24% With Residual Support in AI Financing - TradingView](https://news.google.com/rss/articles/CBMixAFBVV95cUxPaWF6aDh6QmFxaWV0NG1sNkwwcWJLc2xucFRvdkNUSWppdS1rc0FXRklJX3hwcnA1ekIzOFZnT0FWUEljMXRDOUthT1M1Z3JudjNrWkxsZlJ0S3dwVFV1Y0JyNzVJRF8zcWJ6RTFodHZFNm55QzBKaUxUWmkxRzFuaHRIVFBsSzZ2V3ZScnYzSXJmb19PVUV5MkdXUEk5WWZNZW9fcGF5T0MyOVVOQ055YUFES3d3UHVEZEd1UElNd1B6cC1N?oc=5) | TradingView |
-| 2h 前 | 0 | 中性 | [Cramer: Broadcom’s $63 Billion Anthropic Financing Works Because “There Is Only One Hock” - TIKR.com](https://news.google.com/rss/articles/CBMisAFBVV95cUxQWXpFN3ZvRjhWZUQ0MjhabkZFSU96T1pCMmhDV25LXzBBYjFDb29SbmJiaDFBb3VHOFhzNElKa3dkU3RUSFlMemJKaGlWWWVncGJqemtBYV9rNWZ0d1BfR25yQWRRSVhmQVlPbjUzWVZYU0VFbWhmVTgtQmNPN1hvelREazJTMWtHWkFvUldjUmZMQm5RVjJJd2VvcndqRk1sU0s2Z3daR1lHYzRXa1NiRw?oc=5) | TIKR.com |
-| 3h 前 | 0 | 中性 | [History Says Now Is the Perfect Time to Buy Broadcom Stock - Yahoo Finance](https://news.google.com/rss/articles/CBMimgFBVV95cUxPaGNVQ0xlNWwtaUw5UTI1blZqQmo4bmN3QUVORTFjc1dtc1FyVjFGd0xWREM5aEZ3N1BDaWJLbTNyVFpQczB2UHhMTUhGQTJlS0ZCcS03UXlOczBZUldaMldNNXFaODZPVGN1MUFoMTFjdXpnVFNvdzhpdlVrNkg3MzdLWHctc2hRUTFOMDVsTFpaeDZ6X191YTNR?oc=5) | Yahoo Finance |
+| 6h 前 | 0 | 中性 | [Why is Broadcom stock sliding today? - Investing.com](https://news.google.com/rss/articles/CBMingFBVV95cUxQNWJzOVVHU0ZiYk9mRlZ5ZjQwcXNhYlRJY2Q4MGo4SG1hOXB3azBndWtFNUVUV3BUVWxQcURmaWRnTms0QUE2WksxVkhxNm90M1V1RkE3cDE5SkJ4eWFEb0tSUTd5NVVyT2JvTUt6cXkxaThITzhLbXlCMVZpRy1SbV91ZEFMX2lndXVNbWlCRlA2dXFtOUhBb1NXUlo3Zw?oc=5) | Investing.com |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -131,8 +120,8 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
-- 图形上是空头排列——现价距 20 日 345.68（-5.8%）、50 日 352.54（-7.6%）、200 日 366.64（-11.1%）。本报告的买入规则本身会过滤掉这种形态。
-- 政策面对该板块的倾向为 -0.33（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 图形上是空头排列——现价距 20 日 345.70（-5.7%）、50 日 352.54（-7.5%）、200 日 366.64（-11.1%）。本报告的买入规则本身会过滤掉这种形态。
+- 政策面对该板块的倾向为 -0.94（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -154,7 +143,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-27 | 339.87 | 345.67 | 336.87 | **342.33** | +4.0% | 25,567,200 |
 | 2026-10-28 | 349.22 | 352.40 | 344.35 | **351.81** | +2.8% | 22,718,200 |
 | 2026-10-29 | 342.00 | 346.15 | 338.80 | **345.00** | -1.9% | 17,052,700 |
-| 2026-10-30 | 330.71 | 331.98 | 319.30 | **325.79** | -5.6% | 23,219,881 |
+| 2026-10-30 | 330.71 | 331.98 | 319.30 | **326.08** | -5.5% | 36,229,577 |
 
 ## 七、自己去查（本页不做独立验证）
 

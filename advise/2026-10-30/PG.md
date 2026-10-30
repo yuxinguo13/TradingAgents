@@ -44,7 +44,7 @@ _必需消费 · 数据截至 2026-10-30 收盘 → 面向 2026-10-30 开盘_
        2026-10-02 2026-10-30
 ```
 
-成交量近 63 日： `▂▄▂▃▂▂▄▆█▃▃▃▁▄▂▁▃▄▅▃▂▄▁▂▂▂▃▃▂▄▃▃▂▃█▅▄█▄▃▁▃`
+成交量近 63 日： `▂▄▂▃▂▂▄▆█▃▃▃▁▄▂▁▃▄▅▃▂▄▁▂▂▂▃▃▂▄▃▃▂▃█▅▄█▄▃▁▄`
 
 ### 图形读数
 
@@ -53,8 +53,8 @@ _必需消费 · 数据截至 2026-10-30 收盘 → 面向 2026-10-30 开盘_
 - **动能**：RSI(14) 64，偏强；近一月的斜率快于近三月（月 +13.0% vs 季 +12.2%），趋势在加速
 - **波动**：日均真实波幅约为价格的 2.1%；按本报告 2 ATR 的止损惯例，一个 R 相当于 4.1% 的价格距离
 - **位置**：距 52 周高点 -1.8%，距 52 周低点 +20.4%
-- **量能**：最新一日成交量为 20 日均量的 1.0 倍，量能正常
-- **相对强度**：近一月跑赢 标普500 14.6 个百分点
+- **量能**：最新一日成交量为 20 日均量的 1.2 倍，量能正常
+- **相对强度**：近一月跑赢 标普500 14.1 个百分点
 - **支撑 / 阻力**：最近的摆动低点 155.77，摆动高点 165.75（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
 
 **我的读图结论**：趋势向上且结构完整，且贴近 52 周高点——追高的代价是止损离得远；顺势的一侧在上方，风险在于结构一旦破位就要认
@@ -112,8 +112,8 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 9h 前 | 0 | 中性 | [Procter & Gamble stock faces cost pressure after sales growth - ad-hoc-news.de](https://news.google.com/rss/articles/CBMivwFBVV95cUxOemExUjhJUWJrVjlQSGtxLXFmTjhrUWVhZ2o4SnUtbUpRNWZZdXZsQllldmlCZ185Sk1FYWJxNEEwYmswbFdJeTg2enl5QXBDYmd3X0NfalU1Rk8yU0J1MXNVNEJubnNvb0RSNVVRaUNBZzljcklVTGtNOU1IaXhuSVlLSEtWUmRqSEcwQ1RHNHlLZ3IwOG5SME41ZXQ3UXcweFNsVTlpd3VRVnFKRFdKX1VmVWhIXzR1a0QydS1Jdw?oc=5) | ad-hoc-news.de |
-| 11h 前 | 0 | 中性 | [Form 144 PROCTER & GAMBLE Co For: 30 October By Investing.com - Investing.com UK](https://news.google.com/rss/articles/CBMipgFBVV95cUxQa0FBdHdzRFIzZXJXRVhzVVlscFIxb1FWTVRCRUJta2o5MGNaOFpCaXFLaGNYWGhHRlNaN3FYYXMwUzdZblBaNUREYW9uSDVvZUFHa1JITUx3QWppaHQ5UDNMX2dodlFfQmdXblBnSldsQWlQd1VuUWJ1QnV2MU5FMzNYbEd2UkFIOVdiOXlGbDlPM0d0dHdPbDFjRVczV2J3VVdTTUJn?oc=5) | Investing.com UK |
+| 11h 前 | 8 | 中性 | [Procter & Gamble Shares Are Roughly Flat Since Earnings. Is the Stock a Buy? - Morningstar](https://news.google.com/rss/articles/CBMiowFBVV95cUxPVXhEUGJTLUc1Q2tGUFdSVzgtVEd3Mkhob2pybmhrQWpScm5TS1Z4Y0NPUEJXbnIwOGp4MVN4akRBaFhyOWhEVnA3Qk0wWjB4VWtPd0d1MmpXS25aMjQ1djRCdjZRY0FnczV1T0l0RmtkWFVmd3NwUy04ZGdPcFlBcmRVdnNPQ3lFYldKOWluMmpMTjc5X1BTelJXUU9PZWJHZHdj?oc=5) | Morningstar |
+| 29h 前 | 0 | 中性 | [What Changed In Procter & Gamble's Story? - Yahoo Finance](https://news.google.com/rss/articles/CBMimgFBVV95cUxNTnlpX0lEbXd2Q0lPeFpWZWY4RTFIcm5QTWdRc0tzeTNCenhpaXgzNzVweEtIUWxQUGhEeWNQdmwtSUo2ZFdCSUtfd0pxV0JXbVFTcWhzUXJha2drM0JmRjRxQnNodVFUcGNuWTlZN1ZLSnhXXzRiNzVPUkxWQzMwT3huc014d0Y2a3EtZVVpNV9odFNZRE9iTHVB?oc=5) | Yahoo Finance |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -121,7 +121,7 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
-- 按本报告掌握的数据，没有触发任何一条成文的风险规则。这不等于没有风险——它只等于「这台机器读到的东西里没有」。
+- 政策面对该板块的倾向为 -0.94（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -143,7 +143,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-27 | 158.71 | 159.53 | 158.42 | **159.23** | -0.4% | 7,607,400 |
 | 2026-10-28 | 157.99 | 159.57 | 157.40 | **158.26** | -0.6% | 5,201,300 |
 | 2026-10-29 | 160.09 | 160.95 | 158.66 | **160.59** | +1.5% | 7,507,500 |
-| 2026-10-30 | 164.62 | 165.36 | 161.03 | **161.57** | +0.6% | 10,150,933 |
+| 2026-10-30 | 164.62 | 165.35 | 161.04 | **161.57** | +0.6% | 11,587,265 |
 
 ## 七、自己去查（本页不做独立验证）
 

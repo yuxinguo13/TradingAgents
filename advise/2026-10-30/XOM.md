@@ -53,8 +53,8 @@ _能源 · 数据截至 2026-10-30 收盘 → 面向 2026-10-30 开盘_
 - **动能**：RSI(14) 73，超买区；近一月的斜率快于近三月（月 +14.3% vs 季 +21.5%），趋势在加速
 - **波动**：日均真实波幅约为价格的 2.2%；按本报告 2 ATR 的止损惯例，一个 R 相当于 4.4% 的价格距离
 - **位置**：距 52 周高点 +0.0%，距 52 周低点 +69.5%
-- **量能**：最新一日成交量为 20 日均量的 1.7 倍，量能正常
-- **相对强度**：近一月跑赢 标普500 15.9 个百分点
+- **量能**：最新一日成交量为 20 日均量的 1.8 倍，量能正常
+- **相对强度**：近一月跑赢 标普500 15.4 个百分点
 - **支撑 / 阻力**：最近的摆动低点 174.63，摆动高点 —（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
 
 **我的读图结论**：趋势向上且结构完整，且贴近 52 周高点——追高的代价是止损离得远；顺势的一侧在上方，风险在于结构一旦破位就要认
@@ -110,22 +110,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 4h 前 | 8 | 中性 | [Crude Oil Gains 2%; ExxonMobil Posts Upbeat Earnings - Benzinga](https://news.google.com/rss/articles/CBMiswFBVV95cUxNZHhEeVZraGJKT0JRZGdhR0M0cnkweHlxc1RkN1dURWZIS3FuR1VSeUV6c2VjTTA3TFFkVWdyMkM0alozYVhRODNrQUdzZEp0N2pobktWVjRRZlZSQ1Zuc05YX0tsTlFKajZkVUY5c2N0bnF1NGlNVXY5VG4yOFp5MzhXTTRIblJDUE83TUUtTU1GRUY4SFFCdHplS1lCdHNXTkJkZWlQM1VOSHh3eTBkc2Z1VQ?oc=5) | Benzinga |
-| 6h 前 | 8 | 中性 | [Exxon Mobil Q3 2026 Earnings Call Transcript - Benzinga](https://news.google.com/rss/articles/CBMikwFBVV95cUxPeGQ5Q3VqcEVrMm5iNV90YnZwLXYtUjJYdy1RbXVMTVdwX3BZdW1hbHRTeGJPNUZUaGNBcnRnT0RKN28wem9VVV9UcXdtRF9ZSFlpbmpRcDU3TWUwYUx6bi1BV2F3bHZTT241QXlGNjFhU0tGMmVMREtfOWtodmVIZ2M2M2JZcFJkam5Ub2NwV0pMZVk?oc=5) | Benzinga |
-| 7h 前 | 8 | 偏多 | [XOM Q3 Earnings & Revenues Beat Estimates on Strong Refining Margins - TradingView](https://news.google.com/rss/articles/CBMivwFBVV95cUxNcXF3bWRxMEdpSFotX1ZvOGxwal9YSlVlVGdqcHVSaGFFamlSVlRJNTFqYk81M1VFakhfaVcxaElDZWRPTW5sdERBNlBacXM4eWJ3OFZBWk0yMUJNTXlLdzZpS1ZpM2tQVm9WbVQ4ejZrMG56OUdDdzlVR0ZVUU80TVQ2Z09UdFpDSGRXMllKVWduSDVFUmRQWEt6b2ZfM3BMTTkwUmVmX3B1V0FkeTRmZW9qOWd4TEtzdzgyQXNkWQ?oc=5) | TradingView |
-| 7h 前 | 8 | 偏多 | [Exxonmobil Holdings earnings beat by $0.24, revenue fell short of estimates - Investing.com South Africa](https://news.google.com/rss/articles/CBMiuwFBVV95cUxPT3ZDM3o1eXg4dGpFRWlOVzQ5S25qV0hzMmFaQVNGS2dqQWNtSk5tWlh2MjJhSTNNS2xaM19Id0MwdXUtWldKSXlRRUV3elB1NkRGRkNhNGhSdW9aS3pJQWZQeFBlTGd6bHdPYmVPVmI3QmRoNFFCY3UyUEdfcHhFVXdSQjJ5Mmt6QS1nWjI2V2U4OFNDcXJ6NFpQb3huM01lUEMtcXFqSG5yMlhXaHNWMWt3WWNJN0NtRDVz?oc=5) | Investing.com South Africa |
-| 10h 前 | 8 | 偏多 | [ExxonMobil beats third-quarter profit estimates on refining boom - Reuters](https://news.google.com/rss/articles/CBMiswFBVV95cUxPdTdWd1dITU9hNDVTRHlTbERwcWN5bXBxSFZpOEswSGpHM1BJSjdvbW55dVBrdE5NNUFrWHFTOFc3Z3EyWDhiMmhKSFRyeGlETmo2NFBlNEUwVGFvMGlhMFVzSmdDNU5ENm9ZV1VBUmxKeDkwRWNudFhDdy11MXlzbHBxTEtSWUNFRFR3Tm16YkZSbFhack9EekdqN0drYTQwUWFjcW5DaTN1SjhRMHhoQ25GZw?oc=5) | Reuters |
-| 14h 前 | 8 | 中性 | [ExxonMobil Earnings Are Imminent; These Most Accurate Analysts Revise Forecasts Ahead Of Earnings Call - Benzinga](https://news.google.com/rss/articles/CBMihgJBVV95cUxOcWhPTUFLbGM0Rnd4RXBnVFdicEZRa2dkTG9POFZFSXg5al9JaXRNTXhhQXBFalpSdEJ0YTI0cG41MDhVc2pBS3VtRU5Rb2U3elBFZm1MYzJ2NVNkc0NnYkRMUnZaRGVGY0xWSHZtNlRURUpNLWcyczB5MS1OSmg1M0JXN1FFcnVLNnY3TXZmSENsS1JNeEZhdEZxYWhyWmxoaWVFZUU1M0RYSk1jSkdCVXBnN0trY2JhaHdfUUU1MEVlQmZDTTduQnFTZ2Q2dlZBVUg2Z1ktcnd1V0NwT0d3QnBoblRqTndEaklNRDNab2tBRFdoR3RBaTNVRlY5M3NWTnNzalln?oc=5) | Benzinga |
-| 3h 前 | 7 | 中性 | [ExxonMobil CEO Sees No Quick Fix for Global Refining Disruptions - Benzinga](https://news.google.com/rss/articles/CBMivwFBVV95cUxNTGRhbEplUFdKSktiQjlxQjNIcVRHZFQzNVFuNDAwdlRqS2VKMlhONUhjdDlwTWFHa0Nhbk9CTjhJTGlpaEx5aDctRHFZZ01TYXhzM01GRGZVWHgzM1BxUFRSak5oZUtXcWFtcWc3RFFkX1JRQ3BNX1dDbGV5OTZWZHhrRHpZdTBkUXJZVTJzM3BVcXpwRUp5SWloRndqYlNOSzBsSlNONFNHbFFCQWs5MkRScmZOdHNMVlJIMFhlSQ?oc=5) | Benzinga |
-| 7h 前 | 6 | 偏多 | [ExxonMobil Cashes In on Refining Boom, Raises Dividend - Benzinga](https://news.google.com/rss/articles/CBMirwFBVV95cUxOS1Q5SnpHaHFqemhaYlloYTNra3hzRXp0cHRscFZWSlp6NU1iU2h5Mngydk13aUhGZmZPTGQwalgwN3Z1VjZaajRvM0lqc1Rpb0dWWF95Tml5aG1MdTZHU1gwRlVHWkVEN2FCalBKN1NkOXhUR0NxTEY4TVAyeE9wVk00RW1FY25vcFItaTYxOWY5VDM3b3RiT1cxMFVyQnRuRDNhZ05WTmtqNEEzaldr?oc=5) | Benzinga |
-| 5h 前 | 0 | 中性 | [Vanguard reports a passive ExxonMobil (XOM) stake above 5% as of September 30. - Stock Titan](https://news.google.com/rss/articles/CBMiygFBVV95cUxQT2JIdXcxYTU4ZFJVUGRfRDF6VGRqX2l4cTJlTTdTcjRvVHFYODdLVUE2REZEYjAzYXk0WE4zZnRZSkEzOFJNU29QWHhDbzBROVlseDA5U3FqV1g4MGh2dmRCdHBDbkVUSVNCb2kwbmpEb0pUZFVCdGxJZHcyWlZTRDZBUGQ2b2hxaEZpY0ppN3VYZ2dpbldtMU5iRS12d1lqakx2SkFNX0J1TUxMVURFam85aWZLeTNEelZicXIyX3FobGtoNDN4NzNR?oc=5) | Stock Titan |
-| 7h 前 | 0 | 中性 | [ExxonMobil stock hits all-time high at 185.88 USD - Investing.com](https://news.google.com/rss/articles/CBMipwFBVV95cUxOT2V5QU9QRnJLMGF2bS1FVXgtLW9XcjBQUW45cTVLWGpiT3FXVmc4dTB3OHgxZXlWN0x2TWpoNUZINFVTQ2ljUnNRSVQ2aWNVdnYxTmhxdl8wUmdISWtaM3FNcEJEY2p2RHB6b2pRd0M1ZWFBWktOejhIdWxjczJKNEFGZ21BdlZJZU5FMmRUUHg1amdDQnFiOHVONmxUaFBoVDA2Y3FKNA?oc=5) | Investing.com |
-| 8h 前 | 0 | 偏多 | [Why is ExxonMobil stock rallying today? - Investing.com](https://news.google.com/rss/articles/CBMiogFBVV95cUxQczlIRWNLX194YlVhckVkMjVnV1pvN1p3eUdrUGxGVGlXd01jTmpXVnVvaUNrZWhzTXpVUlpPUUFJNGpVRUstWWUyazc5MlJsYmxSLWJXNVphdU1JMnVRUm1jZnQ0Y1NPaTB4NjRsYmwxNzhzSDh2eDVVZktGcHhneWVrYUpjN21fbVJyY2dPTnV1R2hoZVR5TGdlVG8xZkE0OEE?oc=5) | Investing.com |
-| 10h 前 | 0 | 中性 | [ExxonMobil Announces Third-Quarter 2026 Results - ExxonMobil](https://news.google.com/rss/articles/CBMixAFBVV95cUxNMEVVb0V5bFpscWtPTmZqTkUxamM2WVFKek5vM3MyQXc0ZnRLR1FZUnd6cWV6QlNYbXI5cmh0RnBNVVJZTTVOLUp2STZjb1VKanNpVGh4b0xSX2x5RnY4QXI3OWZFQ1RuLXJ1dVF2clowYWE4Wm5Nd01DbWo2blBtanRGQ2NxMFdQdlowazRiX3MyeEpCV2hwSHAzZUtvb0ZnT0tmTVVpbXN3N21MMXFZVlRfbWZXY2pEUlJTRjZMUUJXandr?oc=5) | ExxonMobil |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
@@ -153,7 +138,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-27 | 183.63 | 184.88 | 179.77 | **179.91** | -2.5% | 14,156,500 |
 | 2026-10-28 | 180.59 | 183.65 | 180.00 | **182.02** | +1.2% | 12,715,300 |
 | 2026-10-29 | 183.77 | 184.39 | 180.94 | **183.29** | +0.7% | 10,961,300 |
-| 2026-10-30 | 185.98 | 188.50 | 184.68 | **187.25** | +2.2% | 19,466,374 |
+| 2026-10-30 | 185.98 | 188.50 | 184.68 | **187.25** | +2.2% | 21,142,112 |
 
 ## 七、自己去查（本页不做独立验证）
 

@@ -54,7 +54,7 @@ _科技 · 数据截至 2026-10-30 收盘 → 面向 2026-10-30 开盘_
 - **波动**：日均真实波幅约为价格的 3.5%；按本报告 2 ATR 的止损惯例，一个 R 相当于 7.1% 的价格距离
 - **位置**：距 52 周高点 -9.0%，距 52 周低点 +99.5%
 - **量能**：最新一日成交量为 20 日均量的 1.9 倍，量能正常
-- **相对强度**：近一月跑赢 标普500 8.6 个百分点
+- **相对强度**：近一月跑赢 标普500 8.0 个百分点
 - **支撑 / 阻力**：最近的摆动低点 290.46，摆动高点 308.71（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
 
 **我的读图结论**：趋势向上且结构完整；顺势的一侧在上方，风险在于结构一旦破位就要认
@@ -112,18 +112,11 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 4h 前 | 0 | 中性 | [Texas Instruments Inc Stock (TXN) Moved Down by 4.22% on Oct 30: What Signal Does It Send? - TradingKey](https://news.google.com/rss/articles/CBMiigFBVV95cUxPQ3NnejVUME8zZzNLY1JvTTcwbExXSklIQ095czhzMHVuNDg2d1VVMFg5Z2hwelBmWDR2RXJWaXhxYzJFTERtdU9yQ28wYlV5NmJ2SGVEZS0xREE5bG5jU05pYncwcm5kX3BnXzBudmhEeHBPdG0xWGc3ekJ0VlFrUmphMHZwcXVReFE?oc=5) | TradingKey |
-| 4h 前 | 0 | 中性 | [Congressman Ditches Semiconductors, Data Storage: Here’s Three Stocks He Sold - Benzinga](https://news.google.com/rss/articles/CBMixwFBVV95cUxNM1l4bDlvSkpUS1JEVUFuc282a3haQTBISVMtWFFTaEpvRXNXX25wZUNjTlF2eG1ZYS11VU9sbjdDN3RIbGNjMTVtbXpiYmZ6RlZlWGlhel82NTFGRzVVdHBENXBTa0lDdExoZ1U1MXluSWV3LW5abWVKTm05cFhJVmk4RnVlUjd0NGJLUTNkWVY0a1FVODdHVy1nRGJMNFlyYnhkbzVmZExkLW5SbGZGcnFKVEtNNW9nS3pVRjRxcWdudzRZYTF3?oc=5) | Benzinga |
-| 5h 前 | 0 | 中性 | [Board Member At Texas Instruments Exercises Options Worth $829K - Benzinga](https://news.google.com/rss/articles/CBMipwFBVV95cUxQUFBxbXZxdW1Xamc2QndDMm9VTGNEVEk5SDJLYzZ1VFpac21qbGFuMTlFZ3BSS2l2aXdKdFFUMXFxRS1FTUxINTVMX2x4N3BvRURBSy13WUs5cDk5VXBjNnRJZjBfUXpuS2M0RzhxQ09EUHBMMk1BUGtMMk9ibnVNRzhPTWZMcDhDa0xMeWdwSVJJYXhaWmFZVGd6MkZ2OG9Tb0xnbnRidw?oc=5) | Benzinga |
-| 5h 前 | 0 | 中性 | [Options Exercise: ROBERT SANCHEZ At Texas Instruments Realizes $1.36M - Benzinga](https://news.google.com/rss/articles/CBMirgFBVV95cUxPVkU1cHVaRmlMNkVXcHZUM1JXVHI3dFN3VUJodXZ2dmF2ZnBZeE1SZ3JZZ040dE9TVWRhQWlldGJRRWY0Mi1lUUxLV2UtVm9TMjN1LWgtYi1aaFNwMXB1NzE3dms2Vmp2T0h6R3h0dDlVckZPN0RvNWo3M2RPM2ZhYnQzdmVxbkswVHplVnN1MFJhS3JBNVpjejh3bm1md0pVbWJMY0lfUllRYmhPMnc?oc=5) | Benzinga |
-| 5h 前 | 0 | 中性 | [Options Movement At Texas Instruments: PAMELA PATSLEY Exercises Worth $899K - Benzinga](https://news.google.com/rss/articles/CBMitgFBVV95cUxNSmJlcjlzQ0RnSzBBUWc3YXJzVGEyd3JZanp6dFJsUlJOeGVOMk1XQnpqeFgzaUtubE1Kb19CVkt0V2lhV0ZWRTBjb3Ridkd1QkNSWm5QbWN1aGgycC1vYldIUkw4dElkWUFsMzJnbUh0LTdGOWVybXpjOEgtT1NzOWR3c29aTzhnSm1RUUZUVFpvX0pERzQwcWg5V3VUUlN3a2lWX3JKZXFpTEszb1M3bjNsT1BqQQ?oc=5) | Benzinga |
-| 7h 前 | 0 | 中性 | [Is Broadcom Stock Priced Right Against Its Peers? - Trefis](https://news.google.com/rss/articles/CBMirgFBVV95cUxPMVZkMU5qbkxfa1dpOFJEcndGQkl6dlVpV2xKWUtHOVRfMllfbWpmaXRfZ1J0UGZ2TTRxQm5KQk52eFZiUXh2UDRuYkFPQnlCeS1aclo5MHdmN1pqUWJwN3BZckI0cG1LR1ZnRkVzeHRwVnNIMXZ4cHgxTmxQb1hnSmx1NmxTX2JNbGZITW5yMXRqLXVhQnhobmNraTIySEkwcWZsR05kV3VQUjVPMWc?oc=5) | Trefis |
-| 10h 前 | 0 | 中性 | [Should You Buy Texas Instruments Stock Now Or Wait? - Trefis](https://news.google.com/rss/articles/CBMirwFBVV95cUxQQmVrV0NTV3NEXzdwWm5UV2NtYzNuWDBRTzJONXJYcFN6bEdvQUxDcmtkQW1DNURQb1h4TmgyWVVrUzJ1T0ZTaGEyTXhHcS0wV20yVGhnN3ZMYk0ydkkxUU5vc19SSXMyX2xTOVRkUVdzN0dKbDg1a0JXVTNlcldFY05TWVZXVVZiWU8tc0dyT3VVTXZzdHRlb0JDejhiSU1WZ2I5dWtGOGJSNmhKdnVN?oc=5) | Trefis |
-| 16h 前 | 0 | 中性 | [Texas Instruments director Janet Clark sells over $1.3 million in shares By Investing.com - Investing.com South Africa](https://news.google.com/rss/articles/CBMiywFBVV95cUxQN0p0Z2R2TENnbHZ1YWFqQV9UVzhVSkp0TnNPOU9CSU9MaS15eGVuS2c2Q2MzdzlIbERTMzJpTTBsY3RTdF9PR3R1RGhuYnZyWWpsVUFJMmxSbXl4bHp0clNKMVBxNTZMb1EyR29BUWdzNkl1Zml5OVBmdXowR1hxSEx6Q1Q2YzQzd0F1ZVJMVVdldXR2Wkd0VWVqOHBWTlFKZ0Izd0Z5ajhyVmFrcmZJWnROeFV1UE9INmYzVEUzZVVEamk0aDNUZ0Rxcw?oc=5) | Investing.com South Africa |
-| 16h 前 | 0 | 中性 | [Pamela Patsley sells $1.37M in Texas Instruments shares By Investing.com - Investing.com South Africa](https://news.google.com/rss/articles/CBMitAFBVV95cUxOYkdMUzkwUUhyanphRVkwNlZPdWVDbUw3cWZoWWRtbjBETV9VWXk2UXhqSlpDbk02aXo1VmdMMUdVNUZocFN1SFFfQU1YTG5nQVRuWVVNZ0hnenZDYlU5ejQ3ODFnZlhIUzkwOWNORFpSZW1hVGtGaVJtQkM1d05QMjBBUl9sTHNRYi1xOVVCNUpmc2JvNE1CbnYwQktRa2MwUXRBZlptM2pOSFV5bTlDNG4ybUQ?oc=5) | Investing.com South Africa |
-| 23h 前 | 0 | 中性 | [Texas Instruments director Robert Sanchez sells $1.83M in shares - Investing.com](https://news.google.com/rss/articles/CBMixgFBVV95cUxOajlWTnpFc2UyNlZDbDNDRkRVd1doY0lENDRHbUM4b0hKSHNnajBwcFFCd2JUalR2ZGdUQThNdm80ZkczZUdBZU1MSmh4ZXcxODFVdmtCcnpXd3kxV1k5QWxhbS1CRnhTM0lZSUhaejBfSGplaEZQNk93TnNmdEFQcU40aWN3c0RnbnJ0cDhsOTdMZk5KRmh0czYwSzBaNElOa21vclN2OE9zOXIzTk1XdlltdHFmVVk2VFM1U2pMVmdmbFNCLWc?oc=5) | Investing.com |
-| 24h 前 | 0 | 中性 | [Texas Instruments Insiders Sold Shares Worth Over $4.5M - TradingView](https://news.google.com/rss/articles/CBMitwFBVV95cUxOXzlUX0xDOGFJMHVlZ1lhdWJuSEQ2M0tUYXpSS0VnMjFaNHYtYXZNbU0tZTh4dWEtakluWHpmN0FKQkxVZ2lDaE1DOWxmVTlEaTZBaHJNa2t5REE4dkZWWm5BUVNGcVAwLTE1c24wbnEyU0lRTkJPLXNxRXVFSVI1Q3IwUUx1WGM4TzNNRUU5U2FCb1hEQ2hHOFdDeHpMZ3lUbHBaQnI0QlZiUzZtSXFYb3k4eldubFk?oc=5) | TradingView |
-| 24h 前 | 0 | 中性 | [After exercising options, Texas Instruments (TXN) director Patsley sells all 4,532 shares. - Stock Titan](https://news.google.com/rss/articles/CBMitAFBVV95cUxPNXFaM1U4MmdjTC1veXl3ZlByQWtRdktyQkRuTThPQWVXTDFwcUJ0bkRYZEtMbDBsaGZoVnR0VVRFcFktYm1WYUNvVzhfNExGM2FPQzhMYTVTaXk5VjV0YWpoel9tOW5POXRES0UyNVNFSXZZbk5HVzhXelYxNmdjUzAyVS1samJrdE1mZ1hueTFDZGFxUUdqaWtlQ1BKcmdjYWswWmliVmRZSFZfNjBNSWRIN2I?oc=5) | Stock Titan |
+| 0h 前 | 0 | 中性 | [A director sells 6,065 Texas Instruments (TXN) shares and exercises options at $79.26. - Stock Titan](https://news.google.com/rss/articles/CBMitAFBVV95cUxNcGRTbzd2cjBYa3JDS1llSGtUeFlpZkxmNVhTcm13V0o3SnZGWXpLd3ZyNUx5NkdvMVh6a0dXa0p2S21zcGp1R1VZTXlrY0ZMbjFYa1dJNWRQUFdKNE1BQUI0UGozamQ2aWthZVhWSkF2dFBPVXZZSU5jLVh3XzVoYWxiSkVTWHk5c05QUWd5Nzl0bFBfU3FpTF9Gb19hcHRSSWpEUEIwenBPbmYweGlROFVITjk?oc=5) | Stock Titan |
+| 5h 前 | 0 | 偏空 | [Will Texas Instruments stock avoid deeper losses amid weak momentum? - Traders Union](https://news.google.com/rss/articles/CBMikwFBVV95cUxNZk5qZGRvNDNteGptTEtPUkJkQ0xaMkhFZWJLWEp6ZlA0UllHZFZsaF9sbllHNnA0Z1JoVFZHNDFxY2gxSlVQNE5pNWJIaGN0UGFHNmVWU081MFlzMnY3bTd2clIxam9EY0VLbklvRi1iUVFYWFJURmJCY0FiTXIwa3ZQUEcyS29aMmFuRXBVMlQxUm8?oc=5) | Traders Union |
+| 5h 前 | 0 | 中性 | [Texas Instruments stock slips 2.59% as outlook holds - ad-hoc-news.de](https://news.google.com/rss/articles/CBMitAFBVV95cUxNQ3MzdDNZZkxyNFhIWTVsei1lbF9IV2F0S0Y2U0ZQcXZvaWtSY1ZiT1I1djAxU1BIZG5VbHBEbU5RWG9sWDRkRVFnbUVmRERQRVByQ0k3RC1jNGRablVYdWl6OUR2Vm5CMlQ1cGRNMFZBRVk5X0laeExoUmdJZGowaERIMGlhNDNDa3gxZ3ZRTk9Mb2NXdzFaUXl4MWM4TVZmZm54UmlKckpNcGgtXzl5d2xjdlg?oc=5) | ad-hoc-news.de |
+| 9h 前 | 0 | 中性 | [Texas Instruments stock targets AI data center power bottlenecks - ad-hoc-news.de](https://news.google.com/rss/articles/CBMixgFBVV95cUxPYzZTWVRucjBrcEZYNi1pbmFaQ1F0M1NSQU1wVWJCYUk3NzlKVUZlSUFUYkpUQjQ0UFJJRy1Pd2JucXJpdTdpME1qVV81VVdIaXpFT0p5QmxVVFhyUVN2N2pBMG9VRVFNMmh6aEpmb2I3TWNFMndSZ1gyM1p3WEVkRHU5ZW43TEtsM0g3QXNxNzNQQzBZSUU0dDdUMTVmT3hjRFJFTmFZNFk4aHFlc1VaeXVNM2FjNGFLS2hBRnhUX0VIWUlOV1E?oc=5) | ad-hoc-news.de |
+| 34h 前 | 0 | 中性 | [Texas Instruments reports 28 percent revenue growth. Texas Instruments stock gains 1.15 percent. - ad-hoc-news.de](https://news.google.com/rss/articles/CBMi7gFBVV95cUxPUjJNY0FwbEJ2YW5YajE5ZDB6czgyRXBMaXdNNlEtMEdNTlBCUmRfVHRiQmpXSXFaQlpXSXdFU2NlOWppcENUdmhpdF9sdjlvNGtPZzh5VV9RZzQ3UXdmSUdwSkMzU3JQR0tTTFJyTTB4YzZEbFFaZnJkQVloNnZXS1RJOUxVZDUtY1dGVEJ1TGdMRE9aRkFZUzI3NkU2U21rRGl0VTNiMUdtcmZRVGhiZVgwTTJ1UmVjdjd3N1RLUHlZQmZqbzB2VEh6cWVxNE1NU3dYT3VyYTdhUVM0ZkttaVpzTDAwQ1QtcXRWVWZB?oc=5) | ad-hoc-news.de |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -131,7 +124,7 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
-- 政策面对该板块的倾向为 -0.33（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.94（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 

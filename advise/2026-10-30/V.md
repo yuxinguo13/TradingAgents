@@ -54,7 +54,7 @@ _金融 · 数据截至 2026-10-30 收盘 → 面向 2026-10-30 开盘_
 - **波动**：日均真实波幅约为价格的 1.8%；按本报告 2 ATR 的止损惯例，一个 R 相当于 3.6% 的价格距离
 - **位置**：距 52 周高点 -0.2%，距 52 周低点 +40.5%
 - **量能**：最新一日成交量为 20 日均量的 1.1 倍，量能正常
-- **相对强度**：近一月跑赢 标普500 16.6 个百分点
+- **相对强度**：近一月跑赢 标普500 16.0 个百分点
 - **支撑 / 阻力**：最近的摆动低点 372.22，摆动高点 414.60（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
 
 **我的读图结论**：均线与结构互相矛盾，属于震荡；这种形态里止损容易被扫，仓位应比顺势时更小
@@ -112,13 +112,8 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 13h 前 | 10 | 中性 | [Visa Inc. $V Shares Newly Acquired by Brooklands Fund Management Ltd - MarketBeat](https://news.google.com/rss/articles/CBMixgFBVV95cUxOa2ZVdEk4YS1XeG1SZHJBd3BhUHYzTlprZFdTOXViLTZuX1BuQjJWTVZDTmZPNUdlU0FiV1pmTllUQWlQV2JJa1V3VnViMUtMNmtOd19JZ1VYa0JJenNueXRrcHdzcDdZdDVyU2U0ZzZBTGQwUVdiWnpycWZ4QUVMNzhrYzhsNUFaX2dkVV81YS1xLXNiM2d1ZzZOM2xhclBoN3pWMDJnNHR3S01mUmFublhaeExyY1pKN2Z5X0Z4aW9Dbzd2VFE?oc=5) | MarketBeat |
-| 6h 前 | 8 | 偏多 | [Visa (NYSE:V) Reaches New 1-Year High After Analyst Upgrade - MarketBeat](https://news.google.com/rss/articles/CBMiuAFBVV95cUxOTThBOXg2MGt3ZTdQb0I0NVZIRm0zaDU2R0l6MEpTbjRKd2o3cWhROVhZMVROSjN4ZzJibVcwRF9SU01DM0RMblU4QlpFT3pkdVlBV09hd3dPNm1Qdm9tOEpkMThRd0QtY2EzOF9mdUM2WG5xcVpDY1lHdVU5YjhOY3FQVFdQU2dLTE1uQzJPcGt5bmZ4TXpBNXl5WmNuM1hVVGJ4RGV5R0J5Q0pGY2tTTXJUZV83YnNv?oc=5) | MarketBeat |
-| 10h 前 | 2 | 中性 | [Visa Inc. $V Shares Bought by Partners Wealth Management LLC - MarketBeat](https://news.google.com/rss/articles/CBMiuwFBVV95cUxQbFBXUW1MVVdaWWFwUGM2YWxENUY1NVlYdTE0UVYxV0Q4RXRGLTFwazBMVjgxNWYzTElnRDc5eVRIcUJIWGtzT3pmVTRXWjh4SzNMRmxnUEp6T0hJb1piN3hycFR0dzFFVk5uWnJfc0FubUxINU1fa0o3RXZ4OVJ4UUlHU3plNjgxZk83MXp2Qmx3N1FMQkdNWE1tY05IM1hUckVIQjBRSlRTVWlqS1ZVc1lrWW54M0NJenk4?oc=5) | MarketBeat |
-| 7h 前 | 0 | 中性 | [Visa stock hits all-time high at 415.97 USD - Investing.com](https://news.google.com/rss/articles/CBMinwFBVV95cUxOM1JmZXNVR2V0WWhhVmUwWEQzOVc5UFgwZHdvTnBDblBWekREZkpUN2dfUTN5aUQ1b3RVY0Yza0kzYldpUG1ZUlhpemRWWXNvSXZHRl9QbDlDS3p3R2lnVUNEN01CTW5WOVJuRUs4WHRMT3BQUXdZaW1DQndXYmNyeldQZVJENWtvWDFiVzI1X2p3c19kNWZVd01oVDdPaTA?oc=5) | Investing.com |
-| 8h 前 | 0 | 中性 | [Visa’s Record Year Pushes Shares Higher - Yahoo Finance](https://news.google.com/rss/articles/CBMingFBVV95cUxNOVdnMkQ3UTRZTjJXN2lxcGRIM0pBaUZYNS1JQm1UNmdXc0tORnJmTXl4ZEFVR1Q2LW5QQ2M5Y0lkektFZElVSjN6OVgzblZtSllkcEpFV2NHVlMwOWNub2JJY0J2aHpNcVozeEJnY2lERjJpcmV3eS02RnBuQVdvWDhCTm5UeFF1UGJmRzIySUljeWpJaE01d2JmS3hndw?oc=5) | Yahoo Finance |
-| 12h 前 | 0 | 中性 | [Testing Key Resistance, Visa Stock Gains 2.48% on Thursday - JournalArta](https://news.google.com/rss/articles/CBMimwFBVV95cUxQUTdRRzJwUXpBZFh3dWhwUVFGTl9HMEFNQmtvSXFGb2tTQzdtS3FDVGt1NDlwR0tKTU1QSVlDUzlxSklnTUw0SEJ3STQzLWJTcjFzcWhCQnVabk5EaUFOcDc5aWcyUExGU05lQVlYT05rLWN5YVNsNm9heXFRUmRUX2lPVEREZGtFRW1nV0EySVdJbTdaaGR1amw5UQ?oc=5) | JournalArta |
-| 30h 前 | 0 | 中性 | [Visa's Toll Booth Keeps Collecting, But the Price Is Rising - The Globe and Mail](https://news.google.com/rss/articles/CBMi2gFBVV95cUxQQ19QSk9pYTE2UDVyeEk1WEpvTWlWNlgwcGRPQmdFT0Ezc2QtbGVvRmw5ZzUta0E0OWdPWlJHeVZrVno3dDZRMWVHLVNmUkJ6UnRUeURXUjB2QkZDQ0lrVXZKd0daNzVfdTQ2RFZsaFpQanZVTlppak1LalFmWk9QRGxRaVJfekxsNXFuVlFBTVVPZHFLV1ZPY3J2VXhsc010dDR2Rl9PTDlSc0phOHhLMnNJWWlIcWRUdFUwZ0ZMNXFxN2ZnckxrcDhUZFB6aS1fRjNxOVgzdk9TZw?oc=5) | The Globe and Mail |
+| 9h 前 | 8 | 中性 | [Q3 Earnings Estimate for Visa Issued By KeyCorp (NYSE:V) - MarketBeat](https://news.google.com/rss/articles/CBMiugFBVV95cUxQay0xdExtWmZfRG9NT3hCRnFNNDdNc2t1OEZNMi1XakFtYldKTDREMDUtdF90ZHlaS0pWUkd2dDF5cHNQQm5hTU9Gd1FER2NVaXJDZmtIU3RpaXdzeXZxZllfaElkZndBYWVQaUhEUzczT3J6R2R5SllaVWRNS1RSR3JqeWJEVGt3UGx3VDVMaEZfc1R3YzVLNmZ3LVdGYVA0bkktb3FVNWFLeVhwTHF4VVhIYWZkSGo1Unc?oc=5) | MarketBeat |
+| 24h 前 | 8 | 偏多 | [Visa (NYSE:V) Stock Jumps 2.4% Following Analyst Upgrade - MarketBeat](https://news.google.com/rss/articles/CBMisgFBVV95cUxQWWcwUmVJT0JLazdPdUNSYXBCSjBEV3ZqNVlKdHFYbnhyWDVIbk52NGlqVFhEck1Ba1E3NlN5dG56WGtQaDlMQkRydkFTZUM2YUw1bTIwdUswc2ZYX1Vma2xQcjJ5VGdzeVNKYm5UckMtLUp0STRSZ0JhTHR6ajM0VVlkb0xNaW5QbVE1X1NWWWtydDZLSFJJU1JBUGE1TldZTm9tcnY0VkN4RVRDS1ZmNTJn?oc=5) | MarketBeat |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -126,7 +121,7 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
-- 政策面对该板块的倾向为 -0.91（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.73（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 

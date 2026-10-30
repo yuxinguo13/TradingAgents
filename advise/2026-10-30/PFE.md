@@ -54,7 +54,7 @@ _医疗 · 数据截至 2026-10-30 收盘 → 面向 2026-10-30 开盘_
 - **波动**：日均真实波幅约为价格的 2.0%；按本报告 2 ATR 的止损惯例，一个 R 相当于 3.9% 的价格距离
 - **位置**：距 52 周高点 +0.0%，距 52 周低点 +34.5%
 - **量能**：最新一日成交量为 20 日均量的 1.3 倍，量能正常
-- **相对强度**：近一月跑赢 标普500 10.2 个百分点
+- **相对强度**：近一月跑赢 标普500 9.6 个百分点
 - **支撑 / 阻力**：最近的摆动低点 27.64，摆动高点 —（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
 
 **我的读图结论**：均线与结构互相矛盾，属于震荡；这种形态里止损容易被扫，仓位应比顺势时更小
@@ -110,13 +110,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 7h 前 | 6 | 中性 | [Pfizer Yields Nearly 6%, but Its Dividend Exceeds Free Cash Flow. Is It Safe? - 24/7 Wall St.](https://news.google.com/rss/articles/CBMiuAFBVV95cUxNSDd6TzB6NHlQbGp2ZzNWbld0cmpkenpUN3NCT3dWWFJ5eWI2NFpRaWI2WjRnNkxDVnJhNnhxQThCY2NGMWlEMzcxRHBZNVdIXzZzRW1VNU5SSGF0dmtrWGE4WC1SRlBLU3N1UlZfMFRhNFpYemZhXzhrSjE2Q1dqUklVbjlRV2s1TFA4UXUyOFZtTWpFOEVRVlQzSEhqYjJJYW1IeDJWY0ctYmRDbWg0YmZmYTdUQmVH?oc=5) | 24/7 Wall St. |
-| 9h 前 | 5 | 偏多 | [Pfizer stock gains as ELREXFIO win strengthens oncology case - ad-hoc-news.de](https://news.google.com/rss/articles/CBMiwAFBVV95cUxPbzBIU1gtRC1UQWx1bnB3WUhMR1NLdWRNc2NwWExvZ0x3aV9TdDU5UUtpTmdyYmMzV2txSmFSeEpMVGItZVNpV0V0LWtRbXR2SXg0QVZGODI5VERBWnRuVFlVS3NUbWpuZVpVd25VbWh5M1dwOG44QjRma1BBTDBzRGtjb09acjJvU0RiTGdidDhBanZsQllnY2J3d2pnUThKOU5OU2xCbmdxX25YenFEdFI5cTMzSzBYbkxRZXhuRlE?oc=5) | ad-hoc-news.de |
-| 8h 前 | 0 | 偏空 | [Are Wall Street Analysts Predicting Pfizer’s Stock Will Climb or Sink? - Barchart.com](https://news.google.com/rss/articles/CBMisgFBVV95cUxNdGpEY1dzb29qdi0wcVpJbTlkRDhuOUJRUVB1Rm9tT280eDhPTWo1YnZvRTA4RXBnV29tdU5nXzViRWhZcThQUnJEemRrRjA4QjU2YTRiMGN2a204MzFDSVVUMUozT1I2UUdyVXZoVUd4elVHemViZkk3NUQxc0NTY1RSTTNnTkhpdDNyNjZXT2Vadm55Um5mZ2JsOU95M0JZUzlPQktWdWhXZXM5WDJNM2xB?oc=5) | Barchart.com |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 

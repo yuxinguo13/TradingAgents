@@ -54,7 +54,7 @@ _医疗 · 数据截至 2026-10-30 收盘 → 面向 2026-10-30 开盘_
 - **波动**：日均真实波幅约为价格的 3.2%；按本报告 2 ATR 的止损惯例，一个 R 相当于 6.3% 的价格距离
 - **位置**：距 52 周高点 -6.2%，距 52 周低点 +59.0%
 - **量能**：最新一日成交量为 20 日均量的 0.7 倍，量能正常
-- **相对强度**：近一月跑赢 标普500 13.1 个百分点
+- **相对强度**：近一月跑赢 标普500 12.5 个百分点
 - **支撑 / 阻力**：最近的摆动低点 396.15，摆动高点 411.63（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
 
 **我的读图结论**：均线与结构互相矛盾，属于震荡；这种形态里止损容易被扫，仓位应比顺势时更小
@@ -112,8 +112,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 4h 前 | 0 | 中性 | [UnitedHealth Group stock faces a costly AI execution test - ad-hoc-news.de](https://news.google.com/rss/articles/CBMivAFBVV95cUxQTVFnbm1fOEc2cVNGMDJaVk1DbnJpaHVFRE9Ua0JfSVZTX0RUaU16OTIzcTMyUE1Ca2F0bGRyMzZJbzJFeUhwTF9lQmJCMXBlWjVoaDgxVlRhcktHVi1SU0EyYWtQWU5pSmNsemZaTnh3Q1ZSNktPRDgxZ0IyUHFXenY2U3hhLUFtcENSc3dGM2FOZW9pdThPeVlGRW5CbkVndnpjb0p1YkxNZFJWUHd4a3lqWms0TVFTejBKcg?oc=5) | ad-hoc-news.de |
-| 9h 前 | 0 | 中性 | [UnitedHealth Group stock maps a costly AI route to 2027 growth - ad-hoc-news.de](https://news.google.com/rss/articles/CBMiwwFBVV95cUxOcUdWcUtYQU8weHZHN2ZjUHBSNm8tU1JMMHVWSEJnV0hzZFoyRmJWbkIxN1VyYmdmRDRLMnBhQmNMVGxtN3dDV3pxMWRDSnNhS3EzVG1yUzJqb0tOU0dOVkFpRFVON3FCeGFYM1FkOTVJOHdCMkp1dlBpZFd3dGVlcHZJU3VCZXY2QkZldkltbkp1dWJDQk1qQlRpYzdaTHdIN05uSkVScDdYV0VGOFhDd0xMUW1NbW9iUi1EdG9RRXVGY2c?oc=5) | ad-hoc-news.de |
+| 1h 前 | 0 | 中性 | [What UnitedHealth Group Bulls Got Right - Yahoo Finance](https://news.google.com/rss/articles/CBMikwFBVV95cUxOUWp5QWMxT0htaFkxdjFTVTlNazd6Ui1UM3RsbDl3UVQ0dWJjNkp2dEs5dUpJbGd2THgzdElRV0ZBM2xSdVl5bXJFMkNHb3JqN0dWSzQ0WGN2X2w5QUs1QS1jNmlFRm1IZG9WQWgyeXY4ZXNlSk42T19YYlFZWWktR3VvTUtUenFlT1pYQ042STN3N0E?oc=5) | Yahoo Finance |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 

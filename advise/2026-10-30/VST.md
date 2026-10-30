@@ -54,7 +54,7 @@ _未分类 · 数据截至 2026-10-30 收盘 → 面向 2026-10-30 开盘_
 - **波动**：日均真实波幅约为价格的 5.4%；按本报告 2 ATR 的止损惯例，一个 R 相当于 10.9% 的价格距离
 - **位置**：距 52 周高点 -27.9%，距 52 周低点 +3.0%
 - **量能**：最新一日成交量为 20 日均量的 0.7 倍，量能正常
-- **相对强度**：近一月跑赢 标普500 0.7 个百分点
+- **相对强度**：近一月跑赢 标普500 0.1 个百分点
 - **支撑 / 阻力**：最近的摆动低点 137.49，摆动高点 143.51（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
 
 **我的读图结论**：趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌
@@ -112,16 +112,10 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 6h 前 | 8 | 中性 | [Vistra Corp. stock may move 5.8% on earnings release - Investing.com](https://news.google.com/rss/articles/CBMisAFBVV95cUxQSEhuZDU1cGRidVc0d09FbEU5X1dKbTlVdjZROE5HREp5TE1UbTJkb2ptUTdBeXF2dkZHY290bW0tMHY2bURFNEpUMXprRG05OWxQSTdQNzQydHVhOVB1VHNRNU5NMnBESmQ2dFB6OVp2S01nQUJLN29SMGczOTB3eVJrSnhUUlZRUjJjbW16NS01YXh0RGRVNkxyQUlvSWdBdTlIWGZNV1B2bmRSOVlQTQ?oc=5) | Investing.com |
-| 7h 前 | 8 | 中性 | [Vistra Corp. (NYSE:VST) Declares Dividend Increase - $0.23 Per Share - MarketBeat](https://news.google.com/rss/articles/CBMiwgFBVV95cUxNNXE4cGJ4c29kN3lsMXVSY0JtR0V2bUxTTmxDdkFnWnlPRk9lZURhOFFhVkZfdjA0Q3UxQlRoMmJyaEJOdWFFWG1aZFIzYXZVQ1U2em5yNWZ2aWxfbG1JMTZ4OXdreDZfODJwUnhzemt4NS1XZlp2U2txOVpFNGxGdTVtMmg5Q3VPN1hzR1FNY3d5TzlFOGhnLWZYNUxvSXRDYWJTLThKa3VjUWg5VkluckRMNFJNbkE0S3M0TDE4QzExdw?oc=5) | MarketBeat |
-| 7h 前 | 8 | 中性 | [Vistra Corp. (VST) Reports Next Week: Wall Street Expects Earnings Growth - Yahoo Finance](https://news.google.com/rss/articles/CBMimAFBVV95cUxQenhUMGVnMHlYT1p3c3FPNmFKQ01rSk11dVd6bXVDRzZoR3FUc3E1YzQyaDV6RTB3VW0zeXVMY3MzMmVCbGVtSEswSTZLcVkyaGdhZ1dTYVpwUUpKMnAwb0F1amR6OEdMUnlQVkJwOFgyUEloYWlMVWtGWnBfZWUzd0JzWXlyc1M1UTltc1M0eEFETlBuUWN0dg?oc=5) | Yahoo Finance |
-| 14h 前 | 8 | 中性 | [Vistra Corp. (NYSE:VST) Stock Now Rated "Moderate Buy" by Sell-Side Brokerages - MarketBeat](https://news.google.com/rss/articles/CBMi0wFBVV95cUxORV9KS0hqdklGWlZNSFdPeWFGZFlaZlJ1VThMemVSc1RfN2NvZ0ZZeURpNkE2WUh1a01FdmF1MjRIc2JRanlOOTZIOUhBTVhTV09WMk5uckZLc1ljQ2hMb2gyTkhHVG5WRk8zX1ZrWTVwNHExdHlqdzdvTmZYX0FqUVJIdmlrSnRDbFo5ZUJLWEZRcW1jM3FCaHRPZElmMlFUeE5tZUs2ZWotYlo2R2hET1M5aG5zQlVUN0t6WUpobDlua29uUXlZQk5WY3R3bV9Jak1B?oc=5) | MarketBeat |
-| 15h 前 | 8 | 中性 | [Vistra (VST) Set to Release Earnings on Friday - MarketBeat](https://news.google.com/rss/articles/CBMiqwFBVV95cUxPa3kyRmoyNGx4elhvd1RKNTdzSEhCVXM3WTBZMXBTRkpGRjlyMi1uVUprTUN4eU5DYW1KMXpreXB6RWhSZzlxajUySzNRT0hPWHZmemVTTnJEOEFpMk9kSkpSdHUzZzNHVFBWNHJ6cGVKTEFzendBbXVvTTcxek1hMDlnMW1xZ2hxNnJmNWVQZXNaczdFVEFyMTRVMUNxeGxZbDlnS0pFUUJuX00?oc=5) | MarketBeat |
-| 23h 前 | 8 | 偏空 | [Vistra (NYSE:VST) Stock Falls 1.5% Following Analyst Downgrade - MarketBeat](https://news.google.com/rss/articles/CBMiugFBVV95cUxQY2VmT2JfRHkxUGVzWHVVY0g2Si1WX0FrQnFXWEk2NlVQT1haTy1pRzNaTjF2ckVvR1I1WFVBcTRudXBMOUVIWEhCUkZQM3JWUWx2dU9oc25aaXZMVXBCQVZUSUE5UkVBWUhXZ2xBNnNYVXpSRmwyVEVCM1kyZGZaTkxyYkduWW44YXNEQVNDZmlZLVZ4Q2Zod2tUY3JqV2dFWHk5QVp0R2RoekZ6Y3FTdlZURGxfWDZkeEE?oc=5) | MarketBeat |
-| 3h 前 | 0 | 偏空 | [Vistra completes acquisition of Cogentrix Energy as stock falls 2.7% - Traders Union](https://news.google.com/rss/articles/CBMijwFBVV95cUxPd3ZrR01vaHd2NVd6NWQwTTlFTTRfT1B3LVlQQ0VuZk1PMmdLOHROZ0xVempIczEzUm4tXzI5M1hkcEZwTGZvRHJ4U0FROFIyZEdvWTZQVG1ocm92Qnh1ZVNvN3JGU0VaQmpTS2dvSHdWSmNoLTg2R2JNWnR1X2liVVAtRHZYOWpGTFBTTU5XUQ?oc=5) | Traders Union |
-| 4h 前 | 0 | 中性 | [Vistra Closes $4 Billion Cogentrix Energy Purchase From Quantum - Securities.io](https://news.google.com/rss/articles/CBMikwFBVV95cUxOOVlQcnVacHYzNVpJOGZ6dWhpTk4xVThpUEZLdGI3XzhGUE1yV1pZdXhxaGFWbjkzQkFtdG1fM3VQYzBPWmhNYkRRcE1oeHladGNwLTZvQkxjQnlRdWNuanVlOEdSR1hPdVNyVi1kWlFOcmJRX24xMy1oNkxwZ2o3VTNqdmlxNmlwQVlRR09RdFdVdTA?oc=5) | Securities.io |
-| 4h 前 | 0 | 中性 | [Vistra completes acquisition of Cogentrix Energy - TipRanks](https://news.google.com/rss/articles/CBMinwFBVV95cUxQTzhtN2lRd09xeFliQmVtb2RMY0tOckZocmNTNy01U0wwbEhoMUhVd1FjTEM5NTVDNE5USmhQZE1hWFJkZFJ3cndxNUdGTE9YLWE4RE8zRXVPWXg5MmVRQ1UyQjFFc29KNGdGQmpRX3JUTTNVeUowNTBPMW85WnpCVDdTSnItekx4cXZ3VUN4cF9DNzdWMzNRLVN6MjNCV2s?oc=5) | TipRanks |
-| 4h 前 | 0 | 中性 | [Ten natural gas power plants now belong to Vistra, from Texas to New England. - Stock Titan](https://news.google.com/rss/articles/CBMivAFBVV95cUxQNFF1MTIxY0xyNl96a0FBX2tJeGh0SXV4Y2NwVW0zMlgtams3VVd4QzZjOS1jUHlmOFo1dUtfcW9ZdGZmQU80RGpuZFpxSWJQODdCUlhHVlVsd2pjY2tUVnY4MnpqaWMzMksyQWs0QmRyQU1BLXNmczNhamNZNlI2djRwTENDUEdtNTJWQ1ZiTktlcXNJOUpfUzU2NmE5N3lLVENhaU9kYlJGb00tblF4MFk5VmhqZTBqWGZLbg?oc=5) | Stock Titan |
+| 6h 前 | 8 | 中性 | [Vistra Corp. stock may move 5.8% on earnings release By Investing.com - Investing.com South Africa](https://news.google.com/rss/articles/CBMirwFBVV95cUxNMDc4OG5QNUs2VXJPYkpMNndwTzYwbnVqNUY4ZmU5Z18yOTE0ZGJyOXZDWlh2c0lPd0xSYUdfcHJrUFFPWGxkUUNva0c1RFI0LUtuY1lqMnlKRFdpWkRabkx6N3UtWEZuRjRYTnFUOUVIM0pQWllyLXRIWlZ3RXVXclhxSmw1U2EyWFR2NXlELWtVMHpfQlJta0VMSFlCWUNoQ2p4azc5OWJXWjJiVmVR?oc=5) | Investing.com South Africa |
+| 19h 前 | 6 | 偏多 | [Vistra (VST) Raises Quarterly Dividend Slightly to $0.231, Yielding 0.66% - GuruFocus](https://news.google.com/rss/articles/CBMiqAFBVV95cUxOaUdJVHA1U3liT0hMWGVDRUUxQ0lOazcyVmRmck4yV055Z2k0U241b0VQYXo1RmhwN2w5UUpZaUZVV1lnNWI3TU8zSjkyYnBfdUpjWUdtQkEwMVdVbDkzMl9RT3hUcE9rRTR3YkMycWdsLW5LQ25RaW5LdlRva3JwWXVVZkpaMTJyMXhQeEZ6Zl84WU1qU2Nud0Vfd3RlX1JKaVllRUlGaHM?oc=5) | GuruFocus |
+| 5h 前 | 5 | 中性 | [Vistra Corp. (VST) Closes Cogentrix Deal, Adds ~5,500 MW - TradingView](https://news.google.com/rss/articles/CBMiswFBVV95cUxNVW0zTGpLa1ZuTmtTZVg0eWQ5cUdqUGpsTzVaYXA2eFg3d3hWcmYwWm54ajRXREkzQV9uR191WC16eTVnbEc0djVsQThPbHU4SXdfNGlUcG1pamRWM05wNGd2bkhmUDhoTTcydldrWU0wNkdPbW1OZ3MtTmNtSllOMmtPSUNSeTA1RmR5dXkxbkd4a05oVW5zaGV5bVdTVEQ1LVZHdGNwd3FlLTZBUkZiT05NYw?oc=5) | TradingView |
+| 6h 前 | 0 | 偏多 | [VST or SO: Which Utility Stock Offers Stronger Growth Potential? - Yahoo Finance](https://news.google.com/rss/articles/CBMinwFBVV95cUxQWXloaF9EV05WQXpFaUlTajdNS2JVNU43WWZSMktpYVR3YVJEQnNBelBmV0puRU11Wk90aHVfU0JBdVd4S2RLV1BhSmlkNTd5VEQ4elZFQkR5TmN5NUV0REtuVGptbDFIaWM2WTdWRTNFZ3BoeUJraXdpR1YzMGw2RGFKWjRGSmhjZE5FbEM2TG5FYXNWMkxiVllrLUxGak0?oc=5) | Yahoo Finance |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -133,7 +127,6 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 - 摆动高低点都在下移，属于下降结构；在出现一个更高的低点之前，任何反弹都还只是反弹。
 - 下次财报在 7 天后，落在持有期内。财报跳空会直接穿过止损——那一晚的风险不是 1R，是没有上限的。
 - 公司尚未盈利：估值没有盈利可锚，股价由叙事和融资环境决定，这类名字在流动性收紧时跌得最快。
-- 24 小时内的利空标题：Vistra (NYSE:VST) Stock Falls 1.5% Following Analyst Downgrade - MarketBeat（MarketBeat）
 
 ## 六、原始数据（本页所有计算的来源）
 

@@ -10,18 +10,18 @@ _医疗 · 数据截至 2026-10-30 收盘 → 面向 2026-10-30 开盘_
 
 ```text
        ABBV · 近 126 个交易日（日线收盘）
-292.6 ┤                                                                           ╭
-285.4 ┤                                                                     ╭─────╯
-278.3 ┤                                                                   ╭─╯
-271.1 ┤                                                                  ╭╯       ·
-263.9 ┤                                   ╭╮        ╭──╮       ╭──────╮╭─╯  ······
-256.8 ┤                         ╭╮     ╭──╯╰╮       │  ╰────╮╭─╯······╰╯····
-249.6 ┤                       ╭─╯╰─╮ ╭─╯    ╰╮  ╭───╯ ······╰╯··
-242.5 ┤                      ╭╯    ╰─╯       ╰──╯·····
-235.3 ┤                     ╭╯            ······                               ::::
-228.1 ┤                 ╭╮ ╭╯         ····                  :::::::::::::::::::
-221.0 ┤             ╭───╯╰╮│     ·····::::::::::::::::::::::
-213.8 ┤::::::::╭────╯:::::╰╯:····:
+292.8 ┤                                                                           ╭
+285.7 ┤                                                                     ╭─────╯
+278.5 ┤                                                                   ╭─╯
+271.3 ┤                                                                  ╭╯       ·
+264.1 ┤                                   ╭╮        ╭──╮       ╭──────╮╭─╯   ·····
+256.9 ┤                         ╭╮     ╭──╯╰╮       │  ╰────╮╭─╯······╰╯·····
+249.8 ┤                       ╭─╯╰─╮ ╭─╯    ╰╮  ╭───╯ ······╰╯··
+242.6 ┤                      ╭╯    ╰─╯       ╰──╯·····
+235.4 ┤                      │            ······                               ::::
+228.2 ┤                 ╭╮ ╭─╯        ····                   ::::::::::::::::::
+221.0 ┤             ╭───╯╰╮│     ·····:::::::::::::::::::::::
+213.9 ┤::::::::╭────╯:::::╰╯:····:
 206.7 ┤─╮··╭───╯·············
 199.5 ┤ ╰──╯
       └────────────────────────────────────────────────────────────────────────────
@@ -31,30 +31,30 @@ _医疗 · 数据截至 2026-10-30 收盘 → 面向 2026-10-30 开盘_
 
 ```text
        ABBV · 近 21 个交易日（放大看最近节奏）
-294.4 ┤                    ╭
-290.2 ┤            ╭╮     ╭╯
-286.1 ┤          ╭╮│╰─────╯
-281.9 ┤        ╭─╯╰╯
-277.8 ┤      ╭╮│
-273.7 ┤     ╭╯╰╯
-269.5 ┤   ╭─╯
+294.9 ┤                    ╭
+290.7 ┤            ╭╮     ╭╯
+286.5 ┤          ╭╮│╰─────╯
+282.3 ┤        ╭─╯╰╯
+278.1 ┤      ╭╮│
+273.8 ┤     ╭╯╰╯
+269.6 ┤   ╭─╯
 265.4 ┤ ╭─╯
 261.2 ┤─╯
       └─────────────────────
        2026-10-02 2026-10-30
 ```
 
-成交量近 63 日： `█▄▄▃▂▃▃▄▄▃▂▂▁▂▃▂▅▂▃▃▁▅▁▁▁▂▂▂▅▅▅▄▅▅▇▄▄▄▃▂▁▃`
+成交量近 63 日： `█▄▄▃▂▃▃▄▄▃▂▂▁▂▃▂▅▂▃▃▁▅▁▁▁▂▂▂▅▅▅▄▅▅▇▄▄▄▃▂▁▅`
 
 ### 图形读数
 
-- **均线排列**：多头排列 — 现价距 20 日 280.94（+4.8%）、50 日 268.06（+9.8%）、200 日 234.25（+25.7%）
+- **均线排列**：多头排列 — 现价距 20 日 280.96（+5.0%）、50 日 268.07（+10.0%）、200 日 234.25（+25.9%）
 - **形态结构**：上升结构 — 更高的高点 + 更高的低点；前高 267.75 → 291.40（+8.8%）、前低 256.30 → 278.01（+8.5%）
-- **动能**：RSI(14) 73，超买区；近一月的斜率快于近三月（月 +13.9% vs 季 +20.8%），趋势在加速
+- **动能**：RSI(14) 73，超买区；近一月的斜率快于近三月（月 +14.1% vs 季 +21.1%），趋势在加速
 - **波动**：日均真实波幅约为价格的 2.4%；按本报告 2 ATR 的止损惯例，一个 R 相当于 4.7% 的价格距离
-- **位置**：距 52 周高点 +0.0%，距 52 周低点 +51.1%
-- **量能**：最新一日成交量为 20 日均量的 0.8 倍，量能正常
-- **相对强度**：近一月跑赢 标普500 15.6 个百分点
+- **位置**：距 52 周高点 +0.0%，距 52 周低点 +51.4%
+- **量能**：最新一日成交量为 20 日均量的 1.3 倍，量能正常
+- **相对强度**：近一月跑赢 标普500 15.2 个百分点
 - **支撑 / 阻力**：最近的摆动低点 278.01，摆动高点 —（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
 
 **我的读图结论**：趋势向上且结构完整，且贴近 52 周高点——追高的代价是止损离得远；顺势的一侧在上方，风险在于结构一旦破位就要认
@@ -69,7 +69,7 @@ _以上每一条都是对已经发生的价格的描述。均线、RSI、摆动�
 - **增长**：最新季度营收同比 +10.2%；盈利同比 +290.4%；最近 8 次财报里 7 次超预期。
 - **盈利质量**：毛利率 72.8%、营业利润率 40.0%、净利率 9.8%。
 - **资产负债**：现金 $65.69亿；有息负债 $708.85亿；流动比率 0.81（短期偿付紧）；自由现金流 $168.70亿，为正。
-- **卖方预期**：27 位分析师覆盖；平均评级「买入」（1.69/5，1 为最看多）；目标价均值 283.19（较现价 -3.8%），区间 200.00–325.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
+- **卖方预期**：27 位分析师覆盖；平均评级「买入」（1.69/5，1 为最看多）；目标价均值 283.19（较现价 -4.0%），区间 200.00–325.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
 
 **分季度损益**（季度数据，最新在左）
 
@@ -112,18 +112,10 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 5h 前 | 9 | 中性 | [AbbVie stock: Q3 revenue rises as 2026 guidance moves higher - ad-hoc-news.de](https://news.google.com/rss/articles/CBMivwFBVV95cUxPTFI4YlhubWtsVmswa2wxQUFEaUV5Z0VMbnlDaUZiek50MUY5eEVKUml2Z0VEaEVDQ1R2SE9JcW1fc1JXa1VHQU5Wb0tCTWQ4ckhya1JvRTJ2Nnl0SFF4UFZkR1h3Q2MyTFk5VnlPMERKV05KUDI0OVJRLWNBQnp6U2ltTWk2ekRhTmdRcE13SkpYZ0FVNGNEUktOMHpSTVVUN3QxaDJiTEl0VEtFbW1aOEF3ZjBtanFHbVFYWjBidw?oc=5) | ad-hoc-news.de |
-| 1h 前 | 8 | 偏多 | [How Investors May Respond To AbbVie Stock Earnings Beat - Simply Wall St](https://news.google.com/rss/articles/CBMizgFBVV95cUxQTV9ZZk1NV2otUVBNVXdSTEtPdU00UUllWUduejZvRFV2bVAtUDQ4eTlTdGltVVJpMUUybjhsVXJWS21hYmN6b0NVcDRpanB3TGlTbWlaTDBieW0wQ1JXR3RBZkVURTY5UHBmbVZXNDF2VzBOODdUamV3QWVkOEFZUDQwTmRtRjZEVlY0WVpMaGxmdjNQdlpKZGdhZm1UM1J3MldnUVJZMGVhRndhNDlRVFY4QUMwT3FvWlJxQl9kRVVKck9ydjZyV2xNOWxFQdIB0wFBVV95cUxQUllGR1hfZHZkdm1aMkxkNVF3TmR4aENISmI3NkI4V082S2ZKc3ZWdzY1MUlkdlN5LTM1dTliRmRmYkRBbFk0OFRFYXo2VnRfNjIzNHNwcFBwbk1MNzF6WFEzdHh4WXpXQTJPMUFIWklHSW9xTUZuZjhEUy02R1ZGRWRmZWxuc2pNZ042ZHdsdGpOb2NXQkdYN0RlaE15cWJtNnF4ejJDeDFpb3BEeW5GaGtxTExMdXgwajh4bnZvRklqWFoxNGszcGs1WFFmSURrZ3E0?oc=5) | Simply Wall St |
-| 3h 前 | 8 | 偏多 | [AbbVie beats estimates but stock dips - Investing.com](https://news.google.com/rss/articles/CBMimgFBVV95cUxQajNlZVh2NXdudW9WQWVzQnYzaU5Oc3Z6cG9PZ0JWZFF4bjZpYnhkNUdvRDhObnBYZ1h3Z3c5Y1RFcTZLRmF5MG1wRDRLYkkzUkIzMHhhcjFmWXlyd3ZqR09sYXpQcXpFeWx5emRjV3h0LU1ubEQ2dmJ5WVJNb1pfdTNtc2VyR0UwMHplTlBXM0JNRmlLbVFZZGV3?oc=5) | Investing.com |
-| 4h 前 | 8 | 偏多 | [AbbVie's Profit Doubles As Immunology King Beats Again - Investor's Business Daily](https://news.google.com/rss/articles/CBMihgFBVV95cUxQd0pZdmxRUWJrSzhPUU5ZNUl3dzNSSDJsSzBYY1JYMW55Y09wdTI4UWRPTHpPeFNlTWVyTThaTWxUSjA4UGJYZzJjRHMxb25VbWJoSkNmVUdTWGpNUUk1ZnNGd0ZDak5hejFnaDBDQ2dsSlVqTC15QW9IZHVOaWxJWndnSzlpZw?oc=5) | Investor's Business Daily |
-| 5h 前 | 8 | 中性 | [AbbVie’s earnings double as drugmaker eyes a move into obesity treatments - Crain's Chicago Business](https://news.google.com/rss/articles/CBMijwFBVV95cUxOVVZET3hTWi1ZYjRXOHc0dmNhaEtmbEwtRzkydTRySzl4UXlIN3JvZXlZcm5ySGVHWDJfLS1SNUhDTnlLVkhaVUVvbkZJWTBRMlJzMnJBTDdDVXV6SWVhN3dSSmwtZzMtdWY4clMtSVY3VmNSZFRpMjRqQlpkeGRyS1FuNTVPR1g3MGo0RmpIUQ?oc=5) | Crain's Chicago Business |
-| 5h 前 | 8 | 偏多 | [AbbVie’s Q3 beat should keep ‘train rolling’ as company eyes bolt-on deals - BioSpace](https://news.google.com/rss/articles/CBMiqAFBVV95cUxNN2g0MksyVWJ0Z2VhTEZGTnlBcV9UWXpucnhxUUJOTmRnU2FvMVlvWTRNT1NGbDBwUWkzcjJXUXlXNWdvOUREMFhHVy1qU0NFczk2UHZVY0NUUkFvSWJLYkFoN3ZpbVRPTGxGYXMwRXozUkpQTk5VRUw5T29MOHlYRElPaFZrdjRjSHZ0WTJWV3RyeEtsNWNyU1M3cDhRLTBpMHppdlFwMlk?oc=5) | BioSpace |
-| 5h 前 | 8 | 偏多 | [ABBV Beats on Q3 Earnings & Sales, Stock Rises on Raised '26 EPS View - TradingView](https://news.google.com/rss/articles/CBMivgFBVV95cUxPLTFZemk1dGNCbEZmM0FZUk85cUc3TlUtcUNLSnJLNnBaQ0tab1pYNG84RVBDeEVYRXIwZ0hnSi13OFpuSy05VDdRdDRHa0EzWUtOcDd5TkNxVjZTV1k4bDVneGhXeDRJak8zV0pTN2JLeFd3SXRlYVFxdUJERzk0RVl4SERnZWtnSENvaDAzNy1FdTBSRnZRRTBPXzliZ29qdzI2T0k5emlOclhKMi1FR2dMRmJWSVRPTDFfSnpR?oc=5) | TradingView |
-| 6h 前 | 8 | 中性 | [AbbVie Q3 2026 Earnings Call Transcript - Benzinga](https://news.google.com/rss/articles/CBMijAFBVV95cUxNaThwb1hOWWpaRE1sbW1JREVTT3Vqc1NWZ3c1MUExcGVUamxzWGlQUEhYVEhTMklrZjRzVDRFYU9CTDNBNEFtaUlOekZJNjh0Z05vdkljNEFVX21EUmFHMXNicWVXanplRS1UMVBBNEdRbWNJRDhvMlBGRTl1MDM5VTdudDJjSGxaYnhmdA?oc=5) | Benzinga |
-| 7h 前 | 8 | 中性 | [AbbVie Releases Q3 2026 Earnings Report via SEC Filing - Kalkine Media](https://news.google.com/rss/articles/CBMiowFBVV95cUxPOFVZeHBTSjBCamdBc01CY21Sc2xKRU82MDQzLTlVNTVKc0FhR3V5dDFFNHg2TFRsanBTUGhRbTM1TVFmZV9JbXZ2M3lHQ21OZlR6bTVScmU1eDhzemJQT3hETlBXR3hlWmdpaFVwLWxhWmU3dmVzeThrMlJMbW1WTDhFTFpjaDFxTjlrZkJ2azJNMTRwN24tYnVHUUxRN1hGS2Fv?oc=5) | Kalkine Media |
-| 7h 前 | 8 | 中性 | [AbbVie (NYSE:ABBV) posts Q3 2026 sales in line with estimates - TradingView](https://news.google.com/rss/articles/CBMivAFBVV95cUxPbEVFTFBTV01nRmFCZ3hqZ1F4Q1ppX1hIR2lDek4zaFpCMkdzcl9XY0M1WDRaOUNJa1BEU3dJRUh1eURVUnJUSy1JT2ZmeWdFMzJxbmlBOElIUUdYN3BXR0JwQ2lXam44VjBVMzRZaVN5SjV2ZmI2NVhnQ2s2anRlc0ZFclJVWGpZaTY3bmVjYmFxc0ZoeGVFSmhRQTdrdWY1NHdfTlM5NzlvSGdfRUpuUUpBczUxb043UUNmVg?oc=5) | TradingView |
-| 7h 前 | 8 | 中性 | [Here's What Key Metrics Tell Us About AbbVie (ABBV) Q3 Earnings - Yahoo Finance](https://news.google.com/rss/articles/CBMilAFBVV95cUxPT1hUb2VzV3pkNGxQVEgtNHRxWk9lTE96MVZHYWFnTWlxc2V3Q1luemFlNW13NEk4WWQ4UktQNkJvLVpsU09LbHE3ekloQl9DcnZ4R3V1Q250c1NYeFprUjVwa3VWU2ZXQ0wxbGFUMG9Wd2R4ZF80VXFiTXh4REljV1dMaWpQTW1kcGlzR0FEV282dnVD?oc=5) | Yahoo Finance |
-| 8h 前 | 8 | 偏多 | [AbbVie stock slips despite Q3 2026 beat (ABBV:NYSE) - Seeking Alpha](https://news.google.com/rss/articles/CBMifEFVX3lxTFA1djZhanBBMTJHNGZkMkZ4Q19LUDN0d0NYNGVUdlpET3lqdG1tUmcwVFM2X0VCNnBaakhCdkY1MjBldUcwdDZKSkQydmY1LXlFcDRlazAxOGtRUk5nb0JWUFpmQUFKVUIzQVluVS1zMlB6MkJKTjhhZ29NVVk?oc=5) | Seeking Alpha |
+| 3h 前 | 8 | 中性 | [AbbVie: Why I See More Upside After Q3 (NYSE:ABBV) - Seeking Alpha](https://news.google.com/rss/articles/CBMihAFBVV95cUxPb01MYWdRRWRCUElMLUUwbTRFRUt5X1gtTVNZS09pTnh4WGhwSV8xb082RDBtU1NkZ243NEZ5d0JTUzhZNkFDNDRRYlZEZk1mZHdRdFd4RVY2T3VkSlpzb09PZHR2NDRIOGNTMFBNTDgzN2VSeWdkcWwtTnpaamlLb25VYkI?oc=5) | Seeking Alpha |
+| 21h 前 | 0 | 中性 | [AbbVie (ABBV) Stock Still Looks Cheap On Its 197% Five Year Run - Yahoo Finance](https://news.google.com/rss/articles/CBMimgFBVV95cUxNcFpPMGF3aTJ2ZHFjQWFpY0Z2VTBaWENmMVFJZzhUQWc4TEFLRXJsVzBIQWhRNFhjMkJwX3E1MjI3NnVScmJqQVBadG9iOXZrR3lUcjBOUUxQeTlKVUUtWFd2V2lWcEJXd1FpLU1VOGZkaFViWXQzMERWMW9pMS1fVFlDTi1vQVFWNEluQnQ4LW4xaUxTM0tGLWh3?oc=5) | Yahoo Finance |
+| 24h 前 | 0 | 偏多 | [AbbVie Inc. stock outperforms competitors on strong trading day - MarketWatch](https://news.google.com/rss/articles/CBMi1wFBVV95cUxOdmZLOHRlWUhCWnQyZ2dWeUdGb25STTh5WlZtSC1zQVlLbmZhd0pucmRHQmhzX3RDSXA4bGxXVXJXLTdrZDNSWDJTSnphWlA3dnpUVGR0QWRPTHVqUF9OX0dXNjcwMktzVkZvSm9TTUZhajJNdEYwRHJqb19wajU0R1dvbXpWeGlsbHFrNHRwZHFSTWlwOXhkUHBNNWQ5ZnNEODFOc3hWM3MtQndMbjhDbWpFTjRCMnkyS251d3pCS19TRTVlS2ZtdzJETThHdDJfYzltUmRmQQ?oc=5) | MarketWatch |
+| 38h 前 | 0 | 中性 | [AbbVie Inc. (ABBV80.BK) stock price, news, quote and history - Yahoo Finance UK](https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBBUUt1dC1XQ0NNeldRMEI4U2QtSU50ZEFRdFJXdHNxMW92emRoQ2ZQRXM0TWR2M2xrRjRJSF9BNk8tQjlETlAyOWdvWVV0M0xQSUZld1BPeXFJRm5WcEFPTUFMS2lCTlk?oc=5) | Yahoo Finance UK |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -132,7 +124,7 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
 - TTM 市盈率 83 倍，价格里已经计入了不少增长；增长只要减速，杀估值的幅度会大于业绩本身的降幅。
-- 现价已经高于卖方目标价均值 283.19（-3.8%）——共识认为没有上行空间了。
+- 现价已经高于卖方目标价均值 283.19（-4.0%）——共识认为没有上行空间了。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -154,7 +146,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-27 | 283.88 | 287.32 | 283.12 | **286.39** | -0.1% | 3,269,100 |
 | 2026-10-28 | 282.93 | 288.80 | 281.23 | **285.99** | -0.1% | 3,108,000 |
 | 2026-10-29 | 291.00 | 292.67 | 288.04 | **290.79** | +1.7% | 4,323,300 |
-| 2026-10-30 | 292.00 | 298.74 | 291.01 | **294.38** | +1.2% | 4,185,008 |
+| 2026-10-30 | 292.00 | 298.74 | 291.01 | **294.89** | +1.4% | 6,876,983 |
 
 ## 七、自己去查（本页不做独立验证）
 
