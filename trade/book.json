@@ -1,5 +1,5 @@
 {
- "saved_at": "2026-10-30T19:13:23",
+ "saved_at": "2026-10-30T19:18:50",
  "positions": {
   "CBRL": {
    "symbol": "CBRL",
@@ -688,7 +688,7 @@
    ],
    "pnl": 259.6,
    "r": 0.9999999999999968,
-   "reviewed": false,
+   "reviewed": true,
    "sleeve": "aggressive"
   },
   {
@@ -709,7 +709,7 @@
    ],
    "pnl": 202.0,
    "r": 1.0,
-   "reviewed": false,
+   "reviewed": true,
    "sleeve": "aggressive"
   },
   {
@@ -730,7 +730,7 @@
    ],
    "pnl": 74.34,
    "r": 0.9966967888283406,
-   "reviewed": false,
+   "reviewed": true,
    "sleeve": "aggressive"
   },
   {
@@ -746,7 +746,7 @@
    "principles": [],
    "pnl": 0.74,
    "r": 0.0036101083032509494,
-   "reviewed": false,
+   "reviewed": true,
    "sleeve": "aggressive"
   }
  ]
