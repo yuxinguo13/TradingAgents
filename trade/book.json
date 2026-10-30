@@ -1,35 +1,6 @@
 {
- "saved_at": "2026-10-29T19:20:32",
+ "saved_at": "2026-10-30T19:13:23",
  "positions": {
-  "TBBB": {
-   "symbol": "TBBB",
-   "shares": 74,
-   "entry": 55.44,
-   "stop": 55.44,
-   "target": 61.7,
-   "opened": "2026-10-12",
-   "horizon_days": 20,
-   "sector": "",
-   "thesis": "（记录丢失，按交易所挂单恢复；论点未知）",
-   "invalidation": "",
-   "principles": [],
-   "regime": "",
-   "parent_id": "",
-   "legs": {
-    "stop": "36517982-d7e3-469b-b069-c38a1b385b57"
-   },
-   "adopted": false,
-   "stop_raised": false,
-   "sleeve": "aggressive",
-   "triggers": [
-    "volume",
-    "pattern"
-   ],
-   "stop0": 52.67,
-   "pending": false,
-   "trimmed": true,
-   "staged": NaN
-  },
   "CBRL": {
    "symbol": "CBRL",
    "shares": 59,
@@ -759,6 +730,22 @@
    ],
    "pnl": 74.34,
    "r": 0.9966967888283406,
+   "reviewed": false,
+   "sleeve": "aggressive"
+  },
+  {
+   "symbol": "TBBB",
+   "shares": 74,
+   "entry": 55.44,
+   "exit": 55.45,
+   "opened": "2026-10-12",
+   "closed": "2026-10-30",
+   "reason": "stop: 交易所触发止损",
+   "thesis": "（记录丢失，按交易所挂单恢复；论点未知）",
+   "invalidation": "",
+   "principles": [],
+   "pnl": 0.74,
+   "r": 0.0036101083032509494,
    "reviewed": false,
    "sleeve": "aggressive"
   }
