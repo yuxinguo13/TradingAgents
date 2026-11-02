@@ -859,3 +859,21 @@ class TestReflection1030:
         assert out[0].ok, out[0].reason
         closed = DeskBook(home / "desk" / "trade" / "book.json").closed[-1]
         assert closed.shares == 5 and closed.exit == round(px * 1.002, 2)
+
+
+@pytest.mark.unit
+class TestReflection1102:
+    def test_a_trim_records_the_remainders_new_stop(self, home):  # noqa: F811
+        shape("HLD", 100.0, drift=0.3)
+        px = frame_for("HLD", DATA_DAY.isoformat())["Close"].iloc[-1]
+        book = DeskBook(home / "desk" / "trade" / "book.json")
+        book.positions["HLD"] = Position(symbol="HLD", shares=10, entry=round(px * 0.95, 2), stop=round(px * 0.90, 2),
+                                         target=round(px * 1.10, 2), opened="2026-08-12", stop0=round(px * 0.90, 2))
+        book.save()
+        v = FakeVenue(acct(cash=90_000, holdings=[held("HLD", 10, round(px * 0.95, 2), px)]))
+        v.resting["HLD"] = round(px * 0.90, 2)
+        out = executor(v, home).run({"orders": [{"action": "trim", "symbol": "HLD", "fraction": 0.5,
+                                                  "stop": round(px * 0.95, 2), "target": round(px * 1.12, 2)}]})
+        assert out[0].ok, out[0].reason
+        p = DeskBook(home / "desk" / "trade" / "book.json").positions["HLD"]
+        assert p.shares == 5 and p.stop == round(px * 0.95, 2) and p.target == round(px * 1.12, 2)

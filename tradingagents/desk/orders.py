@@ -599,6 +599,14 @@ class Executor:
         if _ok(stop) and _ok(target) and stop < price < target:
             pr = self.broker.protect(sym, left, stop, target)
             out.venue += f"; remainder {left} re-protected: {pr.message}"
+            if pr.ok and sym in self.book.positions:
+                # the book follows the venue: the remainder's stop and target
+                # (2026-11-02: WMT and KDP kept their pre-trim stops in the book)
+                rest = self.book.positions[sym]
+                if stop > rest.stop:
+                    rest.stop = stop
+                rest.target = target
+                self.book.save()
         else:
             out.venue += f"; remainder {left} is UNPROTECTED — send a protect order"
         return out
