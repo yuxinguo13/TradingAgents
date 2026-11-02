@@ -1,5 +1,5 @@
 {
- "saved_at": "2026-11-02T20:20:28",
+ "saved_at": "2026-11-02T20:21:05",
  "positions": {
   "WMT": {
    "symbol": "WMT",
@@ -731,7 +731,7 @@
    ],
    "pnl": 235.21,
    "r": 1.0939999999999999,
-   "reviewed": false,
+   "reviewed": true,
    "sleeve": "core"
   },
   {
@@ -751,7 +751,7 @@
    ],
    "pnl": 164.57,
    "r": 0.970085470085467,
-   "reviewed": false,
+   "reviewed": true,
    "sleeve": "core"
   },
   {
@@ -771,7 +771,7 @@
    ],
    "pnl": 110.69,
    "r": 0.7443181818181769,
-   "reviewed": false,
+   "reviewed": true,
    "sleeve": "core"
   },
   {
@@ -792,7 +792,7 @@
    ],
    "pnl": -3.54,
    "r": -0.013636363636364135,
-   "reviewed": false,
+   "reviewed": true,
    "sleeve": "aggressive"
   },
   {
@@ -812,7 +812,7 @@
    ],
    "pnl": -433.44,
    "r": -1.0033333333333334,
-   "reviewed": false,
+   "reviewed": true,
    "sleeve": "core"
   }
  ]
