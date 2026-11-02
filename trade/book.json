@@ -1,5 +1,5 @@
 {
- "saved_at": "2026-11-02T20:21:05",
+ "saved_at": "2026-11-02T20:21:28",
  "positions": {
   "WMT": {
    "symbol": "WMT",
@@ -191,6 +191,72 @@
    "sleeve": "core",
    "triggers": [],
    "stop0": 508.0,
+   "pending": false,
+   "trimmed": false,
+   "staged": NaN
+  },
+  "LLY": {
+   "symbol": "LLY",
+   "shares": 5,
+   "entry": 1420.0,
+   "stop": 1334.0,
+   "target": 1550.0,
+   "opened": "2026-11-02",
+   "horizon_days": 20,
+   "sector": "",
+   "thesis": "动量账：Eli Lilly 10/29 财报超预期（Q3 营收与 GLP-1 销量），当天放量 2.0 倍 +6.4%，10/30 +3.2%，今天 1,419 收盘前站在突破区；21 日相对标普 +26，三条均线上（20 日 1,260 / 50 日 1,201）。止损在突破日 10/29 低点 1,334（6.0%、1.8 ATR，高于 20 日线），目标 1,550（简报），R 1.5。下次财报 2 月。财报本身已兑现，不计 catalyst。",
+   "invalidation": "收盘跌回 1,334；21 日相对标普回到 +10 以下；到 1R（1,506）先减半",
+   "principles": [
+    "十·强势买强势：volume+pattern+rs",
+    "十·止损在突破日低点或 20 日线取高",
+    "十·到 1R 先减半"
+   ],
+   "regime": "标普 754 在 20 日线下、200 日线上；伊朗松口油价急跌，芯片反弹；VIX 19.4；不是防御日",
+   "parent_id": "421cc6e5-8bc4-401d-8871-e906f4cddd8b",
+   "legs": {
+    "limit": "28f14ccd-35b8-49e9-adaf-a0ace8119909",
+    "stop": "70b2f1c3-fe67-4b2a-912f-1cb118fdd1b0"
+   },
+   "adopted": false,
+   "stop_raised": false,
+   "sleeve": "aggressive",
+   "triggers": [
+    "volume",
+    "pattern",
+    "rs"
+   ],
+   "stop0": 1334.0,
+   "pending": true,
+   "trimmed": false,
+   "staged": NaN
+  },
+  "ABBV": {
+   "symbol": "ABBV",
+   "shares": 35,
+   "entry": 289.18,
+   "stop": 280.0,
+   "target": 315.0,
+   "opened": "2026-11-02",
+   "horizon_days": 30,
+   "sector": "",
+   "thesis": "主仓回踩：AbbVie 10/30 财报超预期后新高 298.6，今天回落到 289，20 日线 282.8、50 日线 269.8 在下方。入场 291（简报），止损 280 在 20 日线与 10/28 低点 281.5 之下（3.8%、1.7 ATR），目标 315，R 2.2。下次财报 2 月。",
+   "invalidation": "收盘跌回 280；医药板块相对标普 5 日跑输 3%",
+   "principles": [
+    "一·趋势向上且结构完整",
+    "二·回踩入场、止损在结构位之下 ≥1 ATR、R ≥ 2",
+    "三·同板块 ≤3（医疗 PFE+LLY+ABBV）"
+   ],
+   "regime": "同上",
+   "parent_id": "fddb1f69-96da-4585-868a-c4f6bd8a2b4c",
+   "legs": {
+    "limit": "75d0a52a-3c24-49d7-b9fc-03d8668841a6",
+    "stop": "4a9aa5df-076f-40d4-9971-5d57d3eb2097"
+   },
+   "adopted": false,
+   "stop_raised": false,
+   "sleeve": "core",
+   "triggers": [],
+   "stop0": 280.0,
    "pending": false,
    "trimmed": false,
    "staged": NaN
