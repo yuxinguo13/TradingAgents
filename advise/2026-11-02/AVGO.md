@@ -108,22 +108,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 9h 前 | 10 | 中性 | [Broadcom Inc. $AVGO Shares Newly Acquired by WPG Advisers LLC - MarketBeat](https://news.google.com/rss/articles/CBMivAFBVV95cUxNTFA3cGhoZzVNYW5WYURxX0FDTlEtd2tqTFZVNXp5WTREQWVtUE8tOUdZVGpSNksyZkE0Y2dDZDlxSFV6UjdCNTlMSUNkdTduLVF1eEhtWHBQOFFmcFAzbHhaRmRYTkxFQy1DOEdFUWlxVmlRc3pvN3d4ck1MZ3htdi0tYXZzbWlrWWpQbTU5MExXTzNETzRuODlwR1Fja1o3d0dkblV1ZGZueEdYRGJvWGRRa1BBRlloQmdnSw?oc=5) | MarketBeat |
-| 10h 前 | 10 | 中性 | [Broadcom Inc. $AVGO Stock Acquired by Essential Investment Partners LLC - MarketBeat](https://news.google.com/rss/articles/CBMiygFBVV95cUxPX3puNFZ4SXVPb0pVZy1mdFBkU25oMHM5UmloZjRSTnpMTFdYT0JYYXdzNHFHc2lIaE9MYzVPYTdVa3hDbmExc1FhT3Q3VndjTkxsM0FVRXJMZjk3a0RtbzRzbTlNUHBqbTRzbUdnSUF4NDdJRTkwNmpwYm9aa3BUTHZtWEpaSzd2cG5nbzQ3ekVOTVJ4cWwwZUNNQ29vMjJlZUI2OXRUbVpVaWw2S19FX3BTTGQ2a29hMkU0dlpJQWRnMU9VaThvRFVn?oc=5) | MarketBeat |
-| 5h 前 | 8 | 中性 | [Buy, Sell or Hold AMD Stock? Key Tips Ahead of Q3 Earnings - TradingView](https://news.google.com/rss/articles/CBMisgFBVV95cUxNTTh5aTNybWtadmdBY3MzUW1YaFhWODdOZzhCOGpacVpsTzN0Y2FWVHROUDhfLXo2dFJ3ZlU0WkxoMnowWGVUOHR6Ym9Bb0JyVkFsb0ppVm02ZUwxdF9PbXMtdm9aLW9WZ0NLVE45eEl1Q2hKYkkwY3h6cHFvUnROM05QWlRUSDVlV1ItaS0xbS1rdFV6bzg4a0dDVF9vMEFLUG56M3R3MVd3b2tLTEh1WU5R?oc=5) | TradingView |
-| 10h 前 | 8 | 偏空 | [Broadcom Inc. $AVGO Stock: D.A. Davidson & CO. Cuts Holdings - MarketBeat](https://news.google.com/rss/articles/CBMiswFBVV95cUxPWkNNZTBobkhydm1NYlZkTHQ2Tk5BbzM1WEJpaEo1OWxPb19aeEpiWlIxNXE3aWcxU09USDdhQ2tVYk9tWUdnMkNvTDNNdmJ0eVlaQjZXaFZyaFFGd1RFUktfS3dhdkl2TWlzR2NvRTF6ZktkRFVfX1FiVG1GNG93ajlxLVdVRGh3Mm5XNmRYREpzeXJQZWY1dlVfd1FydDlGQW4tZ0NOcl8tSWJsWGg1SjVaTQ?oc=5) | MarketBeat |
-| 10h 前 | 8 | 中性 | [Broadcom Inc. $AVGO Stock Holdings Boosted by Conning Inc. - MarketBeat](https://news.google.com/rss/articles/CBMitwFBVV95cUxNZkw2ZHNOc0ZCN0hEMFg4MEkyQmw5WjZGeWUtZ01fam5pVHhaZEhwRWRzVzY4VXRMa3ljZGE1TC0xMjhVZUZHQ0J5WG03d2YwUHJGUnl3cS1tRUFGUTBLU2pQSjFTYzAwa2k2M09XZ2h4T3E0MUV1OC1oandaalJUZHVtTXZxTjdyMlJGdkV4RDlYc3h3X3Naajk1NDVlMTZwbi15WEFDOG0wZVRTcXFPWmNPZVJTb28?oc=5) | MarketBeat |
-| 10h 前 | 8 | 中性 | [Broadcom Inc. $AVGO Stock Sold by LaFleur & Godfrey LLC - MarketBeat](https://news.google.com/rss/articles/CBMisgFBVV95cUxNT0NWUmtEalo5Y3NKQ1d2UElndVVOUzlyMzEtUFd6Ymwyc29TZnk5cGplb0M1RUdnSFdKMldsWjFGcV9Dak5uQnI1NDUxY05Nam82NWpaNy1wQUg3eFFJaTZlaE5aRjRvTUNUMU1rT2xCaFRwYm5vcVg1SkNfTk5XaWpxOG1fMDZENEJmcVhFb2JwQXpNaDRuRE4zSXJ4WXhvREpIejFEdThyMXZvZEdNMzBB?oc=5) | MarketBeat |
-| 10h 前 | 8 | 中性 | [Broadcom Inc. $AVGO Stock Position Reduced by Convergence Financial LLC - MarketBeat](https://news.google.com/rss/articles/CBMiygFBVV95cUxNY2dmdkIzTlU5T0lnc0xWVG5wUVd0T19VaXNBaU9fa2VNMGFrdkJKd0xYT2k5bDBfN3B0LTZLaGJvTVNRNElGT0RyeTExdzBFY3hkeVZrcnFUVjVEZXFqUEZ1X1JkUlh1QVRpbnljcDVuNUJmZnduOS13eHJoTnpNZ0VkWmFQSUZUMmdIVlkxZTJ3a21MWEJiSVNqQmhoelFYeUM1bjg0LTUxTkpkNjdzdVA2Y19NTnBlLWJyT3NiLUpyanVMeGFFUU1n?oc=5) | MarketBeat |
-| 11h 前 | 8 | 中性 | [Broadcom Inc. $AVGO Stock: China Universal Asset Management Co. Ltd. Boosts Position - MarketBeat](https://news.google.com/rss/articles/CBMi1wFBVV95cUxNVk1OT2h1WGJsTGg4WjZHSy1BNm1vVXQ5cWhfeFhGaV94bjRXTExVOHQxeHBKUDBXbU5uOWpmZnVUWjRUcmVROFFhaWh5cFhOdmVwZTdTZldaNTU1bDBSQk4xc0xObklXZ0NjREd5WTZDZ09ZZ3ExUFpUVzI3bmMwaFAtMUJvZHlDWDRXZk4zMGR4ZTZxOXl5WTZRRkJVWVd0TDZ6MUlsdHE2MnFNRENiOVhnejZqcDEzTTVQb2daRDgzT2NSMHc2RGFRcXY0WnFNVVBZVUdDNA?oc=5) | MarketBeat |
-| 35h 前 | 8 | 中性 | [Broadcom Inc. $AVGO Stock Purchased by WestEnd Advisors LLC - MarketBeat](https://news.google.com/rss/articles/CBMiugFBVV95cUxOTkZ6T1VSbkVFMG1SZl9GWlgzSm5ubnFrTThfdWphYkdJXzRQallRbWpGck9JWGw2dWhBQXQxMkNwRjBldGxLZmpoeEhvQXU3alkzeUJKc2kzNnZDX0xHczk4SERPUEJoZ2FBY29SRF8teGgwMVB1X09lWVZGRUZ2SkxhYWxIOXJ3Ql9jVF9OdkZUYzBaZjhxYkxxM2dHVHR1OWwxMGpneGxQMktjeUN2SmJheGFzUXd2TVE?oc=5) | MarketBeat |
-| 35h 前 | 8 | 中性 | [Broadcom Inc. $AVGO Stock Sold by M & L Capital Management Ltd - MarketBeat](https://news.google.com/rss/articles/CBMiuwFBVV95cUxOT0tQNlgyVV9nZGgwckZlNUczREFxcDFWNHl4d2J3Ql9Ea2MybEllTHdYWU53R2FpQl9Ua0czMlE4blNYUFlPZGJ6SC1UVWJqX3pPQ1lJV0x0NzdIUmdINkU2OWxja2l0a2tLNkFyLXFrUWNOUDBoS3lGNjAyREdZdlpuTFJhWlI5d0Y0bTN1T2M3Ty1tMmdQZW45clZwSFhHSk1nUURKdTcwckpidVgtdXpQQ3dZU3MtMzNn?oc=5) | MarketBeat |
-| 35h 前 | 8 | 中性 | [Broadcom Inc. $AVGO Stock: Parametrica Management Ltd Lowers Holdings - MarketBeat](https://news.google.com/rss/articles/CBMixgFBVV95cUxNdnVhRjdHNHRGdjQ1djU4NGF4c2xvOE5aSEtSS01Md3VjcTJGWmRHNHktTUp5RkRNXzRwT2ZWWTBBdVRkQnBIWmlWczJ5LW1IRnpSMHU5VnZpVUhnSmNuT05BODlGRUNQanphZTc0dTh5X3M4SkVNMERfbkk2NVR1QllhTnZrUzM5WWFtZDVDenlpbkppT0hwMzI4STZMZzUyendjdi1kTF9XcTBiRkdCazhEaWoxOC1SLUtYTWlPYXNBVWxuVkE?oc=5) | MarketBeat |
-| 37h 前 | 8 | 中性 | [Broadcom Inc. $AVGO Stock: Busey Bank Lowers Position - MarketBeat](https://news.google.com/rss/articles/CBMisAFBVV95cUxQNk8wSEE4LVVxQjhDTGlIZmJOeFBZdEpaUEZ4bTJvcW1TWmw0RjgtVF9KSFJGaGdOVjJkb3YwbmlVTEwxVUUtWEJ5T3hRZEViN1psUFcwUGVNRHQ5NW5VUGVlYmZnYnF0MWJxZzBGRlRxMXhRNGVxLUlvLTByWWQ5OTdiQVhzQTY2cXpYZkk1c1R3VUVRVEdLZC10NFBDZnIxcnRSWDhBLXNTUGxKUVppZw?oc=5) | MarketBeat |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
@@ -132,8 +117,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 - 图形上是空头排列——现价距 20 日 343.68（-6.2%）、50 日 351.63（-8.4%）、200 日 366.54（-12.1%）。本报告的买入规则本身会过滤掉这种形态。
 - 摆动高低点都在下移，属于下降结构；在出现一个更高的低点之前，任何反弹都还只是反弹。
 - 公司尚未盈利：估值没有盈利可锚，股价由叙事和融资环境决定，这类名字在流动性收紧时跌得最快。
-- 24 小时内的利空标题：Broadcom Inc. $AVGO Stock: D.A. Davidson & CO. Cuts Holdings - MarketBeat（MarketBeat）
-- 政策面对该板块的倾向为 -0.95（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.83（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -155,7 +139,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-28 | 349.22 | 352.40 | 344.35 | **351.81** | +2.8% | 22,718,200 |
 | 2026-10-29 | 342.00 | 346.15 | 338.80 | **345.00** | -1.9% | 17,052,700 |
 | 2026-10-30 | 330.72 | 331.98 | 319.30 | **326.08** | -5.5% | 36,462,300 |
-| 2026-11-02 | 328.37 | 333.56 | 321.86 | **322.23** | -1.2% | 19,713,235 |
+| 2026-11-02 | 328.44 | 333.56 | 321.86 | **322.23** | -1.2% | 19,713,235 |
 
 ## 七、自己去查（本页不做独立验证）
 

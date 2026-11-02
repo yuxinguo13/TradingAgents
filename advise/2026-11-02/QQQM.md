@@ -67,16 +67,7 @@ _读不到财务数据：该代码没有可用的财务数据（可能是 ETF、
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 6h 前 | 0 | 中性 | [AI Stocks Slide: Are Tech ETFs Worth Watching? - TradingView](https://news.google.com/rss/articles/CBMiogFBVV95cUxPY2c4LVNhYXFwQ2pBTnkxOTZWMDZRZjVxRlRHLVEzRXdfSFlYa3c5dDk4c243UnlZeGJ4cjRydUdJOFVaWE5jVTMyQTd5RlJGWU5fZXRCSTNKYldOWmMyQXdkNWJTOUc0bjVvUjhGX2tHWDdUXzFFZFR1dTdNUTRGTWZrZFlXdVZsVG1LN21sc3hBU1VMLUlxZHh0SjRnN3ZsS3c?oc=5) | TradingView |
-| 10h 前 | 0 | 中性 | [If You'd Put $3,000 Into QQQM 5 Years Ago, Here's What You'd Have Now - The Globe and Mail](https://news.google.com/rss/articles/CBMi6AFBVV95cUxNbXBSRHdXZjdvdENjYXFWaFBkMUFwckptV21oX19VLWszNFRRRXo1cEpsYy10VWpKZmtsei1iUE5OUENCb2RKVU8zQ01aOGhWNmxwMkpTWm1qcWtTUnlyZ1N2NUwxOXNaUEhGM1p4WjJPZ20zT25tSlF6OGdKQW5vMHJlakp3UGVTTVNEdzhRS1k0b1hxSlViWG1ndzJ4bHhJRlZyT1FwbDRuRWFETGN3dGFvdE1fZTZIcmxUUURCLUNuVVB1RnVIUlJYUFQyMzQ2eXU2QktUUGwxS2p4S0hVLXUxeFU5Q3pJ?oc=5) | The Globe and Mail |
-| 10h 前 | 0 | 中性 | [Invesco NASDAQ 100 ETF (QQQM) Adds NVIDIA and Apple on Thursday - Yahoo Finance](https://news.google.com/rss/articles/CBMilwFBVV95cUxNUVREdDZTSjR3VEZzbjh1QUpITnVMNW5zQjJFMTl0WVhNVjZhbXVmSzlnbXJmR1pWc19lRVlZQ3NYY0ZTNEVFR3ZwcHN4S1NvOExkOElrZk5UU1pNWlF0Qk5CNzZHTXg1cTA0SWRQSEw0YUZqVER2YnRNX1RxLWtlOTZNNzhpUzBabUxNNmZFT0w5cVBGdzNr?oc=5) | Yahoo Finance |
-| 10h 前 | 0 | 中性 | [INVESCO QQQ (QQQ) Sells NVIDIA and Apple on Oct. 29 - Yahoo Finance](https://news.google.com/rss/articles/CBMimAFBVV95cUxNN25PX2Ric3J0TTk4elhSYnQxZks0WXNyUXc5TllYc0ludjNCVzZLQW93Z0NNYk1zUV9RYjVHRHNUVVJKcGt2OXdwX0F5cEU3R2dUUDZ3WHp0aHdEdWJ1UUJMXzBwLS0tRGI4elNiTVIxZ215WDBCRGhBYnFPVnRBVDJTSENDMmZ0UXNRZkVWVUFwRFZsejJmQw?oc=5) | Yahoo Finance |
-| 12h 前 | 0 | 中性 | [Fidelity’s Broader Nasdaq ETF Has a Surprise for QQQ Investors: Even More Apple - Yahoo Finance](https://news.google.com/rss/articles/CBMiowFBVV95cUxQQ0VQUjJOaWNxSDRvcnp2LWJhNkFGQzVCdlBmams0d2tpb3BiV1lvRDFwczB3N090OHdmdERpbUFETGZwRDNWcTNkQ3J0dDI3ZFVmNFExWEJrLXZyeTRIYkstR2NRUEhQZXVCMW1LVXNYWTQxUFNhSWd0M1Y2SDc4MDg0N3AtWUdzMjFoZk5qNEp5QUppWUhGS1I0VHdGLW5zWlZv?oc=5) | Yahoo Finance |
-| 27h 前 | 0 | 中性 | [QQQM: The Nasdaq 100 Is Having A Panic Attack And I Think This Pullback Should Be Bought - Seeking Alpha](https://news.google.com/rss/articles/CBMixwFBVV95cUxNeXBaRGJ1WjVaQTE0dEFOQzZGenpUMXM5ZHM5aHo1b0pOU2ZpaHE2RFY1TDhZRHE4NlE5UmhzcWZ3R2ZYcl8yS2ZBeWFmV0xKUHJ2QkN1MzViYU1pREtKRmhnXzBiRVpjaUhncEJZOTZjUjdEMUprdkFxM2tteWdBU2Faa3J2bmxJMHVZYlp0NDFYNWprZmNObnFaWFBHQUVLVTRhbGNnSU0tLWxJWUkyTEVoYkp4VlF5ZWFWdk5TMklqT2pXOUNn?oc=5) | Seeking Alpha |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
@@ -104,7 +95,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-28 | 298.16 | 298.97 | 296.65 | **298.71** | +0.6% | 2,430,300 |
 | 2026-10-29 | 295.02 | 295.64 | 293.07 | **294.53** | -1.4% | 2,519,300 |
 | 2026-10-30 | 287.06 | 287.65 | 281.42 | **284.34** | -3.5% | 8,491,800 |
-| 2026-11-02 | 286.30 | 287.98 | 280.15 | **280.49** | -1.4% | 5,054,543 |
+| 2026-11-02 | 286.29 | 287.98 | 280.15 | **280.49** | -1.4% | 5,054,543 |
 
 ## 七、自己去查（本页不做独立验证）
 

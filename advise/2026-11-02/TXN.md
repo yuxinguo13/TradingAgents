@@ -108,13 +108,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 10h 前 | 8 | 偏多 | [Texas Instruments stock gains as Q3 revenue jumps 28% - ad-hoc-news.de](https://news.google.com/rss/articles/CBMitgFBVV95cUxNLUZRd3UtUDBTS3V1T1NveVRsX09vcmMyUUcwNWctZHY5Wl9Zd2JLWjVZZk5ZRDdGbU8xWTJpRFZ0NWxUZmJWWXUxRGE3ak9kMzFPUXYtbW9CeF9nTGlwZlpjUV9BaVBsY20tYV8tZDF0aU11MnFVeDJXMlFHNDB5WG5CZ1BSVWs4SnhqRVJvT3MxMGJERlJQTkhJTk1ReDdDamV5SWRmeUpBYzJIalY0X29ITHZ2UQ?oc=5) | ad-hoc-news.de |
-| 31h 前 | 0 | 中性 | [What Could Texas Instruments Stock Be Worth In Three Years? - Trefis](https://news.google.com/rss/articles/CBMiugFBVV95cUxPdFhuVGVJQlliWUJQUmk0R0F5M3dBWWFGZ0RkbXphQ08xcmJKdURYb19DUTRyRW5QUXdhai1tekt0Y0t5OGc4TzFGWTlfWVh1cG9iSFotYjdrZWdPUXBJM1paT3dXT2RWc253MGFxZVlaUjdvMFAwUWFUWW5SN29mNW1zal9GSG13ZDlRVlVsUDE0dTh4VzZVckY2OHYzSXBpZWVWVnNiaDBSXzF3NzZta0RCT1VYck5NZlE?oc=5) | Trefis |
-| 38h 前 | 0 | 中性 | [3 Reasons TXN is risky and 1 stock to buy instead - StockStory](https://news.google.com/rss/articles/CBMisgFBVV95cUxOYUwtY2tzcnNWNDdfTzYxRlNRUnZOUnhOWXZDZHBDbmtfYmQ0X29IazdaX2lhcmZKQzZILXBoRnF1a3N6a0ZWMTRnQUxuc3pURTlnR3hnU1I3aHpUQ0tVeEJ5WnZNUGlFRzYzSUhEVFlGcjlPVmxHRkp4bDlqLUtjX1BUNTFWSzF3d1Nob0FoTDRWMTRSc2tYZmVxd0QyVlJSQW1PZHFCVzNrbmlqcXhjUVR3?oc=5) | StockStory |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 

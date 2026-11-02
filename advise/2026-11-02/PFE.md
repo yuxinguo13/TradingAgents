@@ -110,18 +110,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 7h 前 | 8 | 中性 | [Pfizer Shares Near 52-Week High Ahead of Earnings - TradingPedia](https://news.google.com/rss/articles/CBMilAFBVV95cUxQSUsybWIyNDY3Q2Z2eDFQcUFueXFBeVFMV25IU2VOakNGdEdsWl9Cam1hZ2VUdl9zNzdVNzhHTWpZVE9jMldBQV94ZkFyWkUxMTFKTkxMTTYxaHNVOUxOWkwwVDRibnk1Nk0xdEVRWGFXakNBel8yX1ljb2hybUM5QWNtdVhMRU1rLW8tN2dfaURaX1Rv?oc=5) | TradingPedia |
-| 7h 前 | 8 | 中性 | [Pfizer stock setup analysis ahead of Tuesday earnings - Investing.com](https://news.google.com/rss/articles/CBMitgFBVV95cUxOT1FHaEZXMkg2djhFT3NFQXJxMTZiQmJpOTVHVXZtQmtkeTNYN3FQUW81QnhzSHpKRlVxQ0tmM2tfYjdWdFBHMUJrUi1GN1RGZ25fZUJTLUdWYVVFLUpRNUlKRXJkTjIxUnB0R3RqXzI4U3hBS2xUWGJSdG1IaERoUk16cVVzR1BXU1VBcFIyRTlYNDdrYjZBVGZSWUMxeFAzeTRmNEhzaWlxZWx0QnIzR0tfTlpTZw?oc=5) | Investing.com |
-| 9h 前 | 8 | 中性 | [How To Earn $500 A Month From Pfizer Stock Ahead Of Q3 Earnings - Benzinga](https://news.google.com/rss/articles/CBMixwFBVV95cUxOX3FKVnRHVHFsVXZ0ZHFBOXNiWVhBUkpvSDVUTUhzTWgtTUVMR2Q2NEZlMUE5d3ZlYlRNMXNzcmU3WFN2dmMzRE5jMWdJVDJNMjV6VjllalZ1RnZWYmt4ZXFWRmFWMXZzeXl5WXZ5VGk0SU12ZTdKMFNGd25INnFIenZlOEppR1J6bHBqS2ZnTzlRMi1WRW1xT0Y3QWRoQnp0bVJrOWlmdFppc000QURNOC1sSjNGdWdvOGZlSzFxSTRrN0M2ejlF?oc=5) | Benzinga |
-| 14h 前 | 8 | 中性 | [What to expect from Pfizer’s (PFE) Q3 earnings - Yahoo Finance](https://news.google.com/rss/articles/CBMilAFBVV95cUxPN1Itd1VZUGl5dVBWVmhjS29zWk1FbmdRaFhwWVBPcjRTOWtTbzVHNmFPeThRTGZqaE95VDB4YmNnRHUzTlNUclVtM3V2Tkp1S2lCeVVKX3BhSGhsdVN3Rm1Vd1Nmb1NlQldUb0ZqUXY5RG5uZGZmaUt4TXR5b3RzSGlrVXMyRDlFVms5YmFyTzFvcmNx?oc=5) | Yahoo Finance |
-| 17h 前 | 8 | 偏多 | [Biotech Stocks Beat The S&P500 – Can Pfizer, Novo And Moderna Earnings Keep The Rally Going? - Stocktwits](https://news.google.com/rss/articles/CBMi0wFBVV95cUxOcV9yY3RKRWRxaE0zdS1WUFVIbDBqMllzSHFwLW9uZ29lWXNVU3JlYlVSNnp4M3AxUjgzVTVuX0laWXNJNlFzSXhJdVNVaVppVlVCbElRaXBJZUUxRHU4ZWxnVDkwZlJRV2c3NXFpLWpiN3oyY0QxeXhqbzR2R2hoWGtDQzBxX1Ria1pqZFN4bVdfbEtGLVpob0VXa2tNTlEyZjBsTGJiUXEzYWNlampnNU1VV1Y1WWFPMnR1OHNGQ05LMG10VGRQWmRGQ3FpSk5MLV93?oc=5) | Stocktwits |
-| 4h 前 | 6 | 中性 | [Altria vs. Pfizer: Which Dividend Stock Pays You More in 10 Years? - Yahoo Finance](https://news.google.com/rss/articles/CBMinAFBVV95cUxQM1BqVjR2Z2I5MnRUODVjSl9kdXpGQ0lCQWd0WDFKbU5LRzRRVDhRYl9DbE1RUmFVUGJReWt2Vk9QN0MzLXJXVXFoX0FMRFR0UkhRN2lEdmxoTE96XzVVd3NyWFRRMVVpa0dOQ1lKdnZMWGxqN0F3RjlVZXBGdVZRMzF6YldWQTl2RkRvRXI2Q3ZnQVdILVJSd2Y2bTI?oc=5) | Yahoo Finance |
-| 20h 前 | 5 | 偏多 | [Pfizer (PFE) Scores Legal And Product Wins, Is The Stock Now Too Expensive? - Simply Wall St](https://news.google.com/rss/articles/CBMi0wFBVV95cUxNbU4yUE8yOEw2YV9RYTRrS09acDh0S3I2VU9ldVdwNnVFak1STWtIX0RHaVU3bkNtalRzV1pHYW5QSG4xSzNsX1RCcWtuU0tCNDhZSVRsblVxVjJzeTRLMnVLM3lhSndwcFFSZW1fRkNaRHFvdndBTEhEM0VKdkN6NGU5cWJLUkRYRlBmY0Z0Z3NUMkZxV3pOUHhuZDZwLU1VUUs2MFhYLXU2QXlvcnl3V0ZJM013b2dGZG93ajRFT2RDdFdEM0Q5N1R3ZmZZd1VNMnVZ0gHYAUFVX3lxTE5BbGpKQ0FlTGNLekFIQWpodXA3VDhxUVVUdjFUdDEzcnBKM3RXdkdXeU9TVlFkeDAwamw3MEdudWlhRWRBWS1ZNld4V3RmLVZyQXBrdmg2ZWhfdC1pOUlhZUlfZEloTnpmMURVb1RSekdCZ29Wcjc1Y1g2WjFZcTJXLUc2aF82T3BJOE5xQjlicTlfVnNqbXBQWjJiWHBmcVpObFdLWWlpRGpCeGtHRHhtSVJDZEJoUDk2VGV3Y2ZCSkFmenRFRmkxdmc0SXdlMHotTGlINmx4Vg?oc=5) | Simply Wall St |
-| 3h 前 | 0 | 中性 | [Pfizer stock hits 52-week high at 30.68 USD - Investing.com](https://news.google.com/rss/articles/CBMinwFBVV95cUxNdUlfR3BxYnFnd0VtM1hTQXR1NHlKbEJScFQ3Slgxb3Izb2ZyN1hLdFNDbGlIZHhRZW1aVHdPUlZTZVFnVERqdjNUa3llTE5vNXRyMUV0eENWNTFTbkhndFdfdHFuQTRlUnRZWUJIMjRpR3c4NUdaV0lBanRpSjJOYWFaMUJESXQxOVhyQ3dvc2I1UzhzcTRqWmk0RGJkR0k?oc=5) | Investing.com |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
@@ -129,7 +118,6 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 - 下次财报在 1 天后，落在持有期内。财报跳空会直接穿过止损——那一晚的风险不是 1R，是没有上限的。
 - 现价已经高于卖方目标价均值 29.26（-4.6%）——共识认为没有上行空间了。
-- 政策面对该板块的倾向为 -0.31（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 

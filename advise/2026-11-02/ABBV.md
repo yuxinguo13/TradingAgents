@@ -11,9 +11,9 @@ _医疗 · 数据截至 2026-11-02 收盘 → 面向 2026-11-02 开盘_
 ```text
        ABBV · 近 126 个交易日（日线收盘）
 291.9 ┤                                                                      ╭╮  ╭─
-284.8 ┤                                                                    ╭─╯╰──╯
+284.7 ┤                                                                    ╭─╯╰──╯
 277.6 ┤                                                                  ╭╮│
-270.5 ┤                                                                 ╭╯╰╯     ··
+270.4 ┤                                                                 ╭╯╰╯     ··
 263.3 ┤                                   ╭╮       ╭───╮      ╭──────╮╭─╯   ·····
 256.1 ┤                        ╭╮    ╭─╮╭─╯╰╮      │   ╰───╮ ╭╯······╰╯·····
 249.0 ┤                      ╭─╯╰──╮ │ ╰╯   │  ╭───╯ ······╰─╯
@@ -48,11 +48,11 @@ _医疗 · 数据截至 2026-11-02 收盘 → 面向 2026-11-02 开盘_
 
 ### 图形读数
 
-- **均线排列**：多头排列 — 现价距 20 日 282.20（+2.4%）、50 日 268.58（+7.6%）、200 日 234.64（+23.1%）
+- **均线排列**：多头排列 — 现价距 20 日 282.20（+2.4%）、50 日 268.58（+7.5%）、200 日 234.64（+23.1%）
 - **形态结构**：上升结构 — 更高的高点 + 更高的低点；前高 267.75 → 291.40（+8.8%）、前低 256.30 → 278.01（+8.5%）
 - **动能**：RSI(14) 63，偏强；近一月的斜率快于近三月（月 +10.6% vs 季 +19.2%），趋势在加速
 - **波动**：日均真实波幅约为价格的 2.4%；按本报告 2 ATR 的止损惯例，一个 R 相当于 4.8% 的价格距离
-- **位置**：距 52 周高点 -2.0%，距 52 周低点 +48.3%
+- **位置**：距 52 周高点 -2.1%，距 52 周低点 +48.3%
 - **量能**：最新一日成交量为 20 日均量的 1.7 倍，量能正常
 - **相对强度**：近一月跑赢 标普500 12.9 个百分点
 - **支撑 / 阻力**：最近的摆动低点 278.01，摆动高点 291.40（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
@@ -112,18 +112,8 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 3h 前 | 8 | 中性 | [AbbVie's Humira Era Is Fading, But Its New Growth Engines Face Another Test - MarketBeat](https://news.google.com/rss/articles/CBMirwFBVV95cUxPbzNpeXctUkhpaGNGdXFYWTZLc2dBSjR2MnRNejJ4RTA4UmI0Sk9jVE9mWjJ5U2J3bk1ONVk4Vl9NZm04Y1lfdUJ2N2tUX0pGM0JYT3RjYi1fYUZXTzIyNm1pMVdtbEc1Z3NuZENFTU1rTDdaenlGWXJNaTJEblRxWHRPbUR0SVZyTDFlTl8ySHVaaGdYOFlDbjk2cENwbUVCdHRIOGtBa0NRQ1JZaGpN?oc=5) | MarketBeat |
-| 5h 前 | 8 | 偏多 | [AbbVie Q3 Results: Revenue beats estimates at $17.404 billion - scanx.trade](https://news.google.com/rss/articles/CBMiswFBVV95cUxPODZTZ1RzRVltOW9BS3RreW1FMHpPT1dVMUJuRENUOE43dHJlSnhlVnZfX3M4RmhWNXNCdzFMSndJR1hnWTFnUWVBbkdYTmF3Q3d3MVZ1UHM3STFHYlBtZDJYOU5mMVlDNE1WV1FZMWV6cXVsWVJwMjk2Z1paOWRQR1VfdlBuUXZSaEp6SVhBMFVxOGRfNzBDSjk4cS1tSGNmYU5LN2E5MEpteGJmb2szMU9oQQ?oc=5) | scanx.trade |
-| 5h 前 | 8 | 偏多 | [AbbVie Analysts Raise Price Target After Q3 Print, Expect Growth To Reaccelerate - Benzinga](https://news.google.com/rss/articles/CBMizAFBVV95cUxNTVB2RmRsUjRJWktIRUlxVGdYX3FySTRPY3hJY3ctR2NwR1VDZFV6VWY5RnpjcElhbjFIRGhiSHUtd0kzVmRrRjN2Wi1EYXNZTms3bi1ZcWcyWVhZeU5uTnJZVGhIWFgtN0ZtbnludE1ydEc0WW9VZmliYmFXMFpmVjMzQl82Q3JIdVNOWW1sVlBNY1hFLWR4eU0zVFlnUEJPcWVZZFpCWVVpSTdUUHVERWRLTVJPSU4tdElldTlLUTdSeXU3cGZfOVEyVno?oc=5) | Benzinga |
-| 6h 前 | 8 | 中性 | [AbbVie Earnings: Raising Our Fair Value Estimate With Significant Pipeline Progress - Morningstar](https://news.google.com/rss/articles/CBMiuAFBVV95cUxOYmRROUxIZzRJdFdoY2E0OC1sNFlWX3ktdnJkNE1OdG0xaWhrTG0yM0pPeDdIbDZBYkNLWHhKTElIbFVMRzlUdmNMMWdJaHdQN1pDZ1pNOHNIX1FKcjFWd0xSXzZfUTNTWnZXVnBhUDd1NlItZDhhMHRBWVVxYjJZc2RibTNfYjdvbGU5c2ZCbUE3UmVSbEF0M0V1aUZsdDByaG5WeXY2ZWZHMDNsNUJPUG1Ddm1CbG5F?oc=5) | Morningstar |
-| 7h 前 | 8 | 偏多 | [ABBV Q3 Earnings Call Highlights Raised Outlook and Pipeline Progress - TradingView](https://news.google.com/rss/articles/CBMiwwFBVV95cUxPdHFGZl9ITEwyNVRhbVFhdnE1NXQ3NmN2b2h6THJFaFJmMEVkVXpXZUU4UDFGTHhKWHQ5ak94ZVJRV1ZvM0dmU1F4Q1k4Ym1RTWdIaHp2NUNSSlZyX01JX0pvN3psUU9sZnFhaWpEXzVadFdrUFpPOTNTVFlWOXlDYzJzcVJtQ3A5V3hlZnZ5bHREc3NKY2tnT245SnJXZGprVDNLRDdXdmJCYmtiOWJqakJMcnRNVlVvdkJqS3pfOE5tbTg?oc=5) | TradingView |
-| 8h 前 | 8 | 偏多 | [These Analysts Increase Their Forecasts On AbbVie After Strong Q3 Results - Benzinga](https://news.google.com/rss/articles/CBMi4gFBVV95cUxQWXA4blNodzJTZkFYR2N1NlAybFRGRlFkc1dCOGlQRmVwYXpiek0tVzk2ZEtsTVhkYi1TUmljYXBiRHhQT29OSl9ZeW1ZVklaWHJrRmxqakd3U2JIRnZxWnVqSURiM05IR3Z3eHdZXzA2TmNwMkxTbDgxQTVvQkp4VWN3Nlc4dHBXNFFQc0YxeUQxRGpyNkZxb3ZnLWhIVFJCS2xvZ2RPODdQQzFULTRNZ2NEOVFkRU9FU09QYnk4cmpxNHZQNnNPTU5FWVpsX2JCY1JIUkszUG1xNkpOZ1czR2Zn?oc=5) | Benzinga |
-| 9h 前 | 8 | 偏多 | [Guggenheim raises Abbvie stock price target to $322 on earnings beat - Investing.com](https://news.google.com/rss/articles/CBMixgFBVV95cUxNT0l1Y0c0a09JWHVnd2h0Q3gwVE5aeWlfOUgyZ2pOVHF3NWxWWFdoYlFNa3JCRzFFNDZKMWlPRWpLTXV1dEFpTDY2VElBSElKRmZqMGs5emtlUkczZnhGbHRRQk9aRGdrWng2bkdYdDBfWmtjREhvdlY4SWFzaHdVYTlsQTdBOTRsb19KNkRaSzJHelhERFF3MkRIc1VaRnplenBFcmJQQmxtNGlUOXRaTnA5N19Yb3VXamFDZUhzYTRkMEl6Q1E?oc=5) | Investing.com |
-| 4h 前 | 6 | 中性 | [The Best Dividend Stocks to Buy With $5,000 in November - The Motley Fool](https://news.google.com/rss/articles/CBMimAFBVV95cUxPeDhUSGpMZXpjSVh5S1Y0WXpvSDV5Q3FsdkJuMVVzbWtWTjlvMU5PaWQyT1JoNHpIU01kTUdQRXJGa004c1dKTU13cDBBZDdyQ0t2X1pHamM1TmxIR0lBT1NUeXZVZGNpanVIVk9VWWNkUThUZF9STnpBWXVIUktnZHVjN2xYYlZiMS04LVZOWTVMMFM0aVYzNg?oc=5) | The Motley Fool |
-| 8h 前 | 6 | 中性 | [2 Safe S&P 500 Healthcare Dividend Stocks Boomers Can Buy and Hold Forever - 24/7 Wall St.](https://news.google.com/rss/articles/CBMiuAFBVV95cUxNMkRscmlqNTJ2UndLbjVrSzZTejJWUUF5M1Q2SW9GMWtZSGtHTS1GY0pISFlqQ2NaVDF3ZE9teEpmTjhOV2ZTaklBcjgyVWJRX3pTVzVmcll4YkRzWDhKbGp3NmJxYWtLaVFPa09ad1JIVTBaZWllV0tDZXA0SXhJX0k3MERGeUNHVWtnakM5LWxEVzZSSjJIdU9lVzlnRGlGT0xSRG1QM2JFaUJDYTZaamFZVzBwZkJU?oc=5) | 24/7 Wall St. |
-| 6h 前 | 5 | 偏多 | [Cantor Fitzgerald raises Abbvie stock price target on immunology pipeline By Investing.com - Investing.com South Africa](https://news.google.com/rss/articles/CBMizwFBVV95cUxNZFY3RDVSWWVhRlZnUjFXMHdieEROYTlfQUc4S3RWUWdGOHFwT1I0bnMwcGNYTEp4aDY5dHlQSFV4eDQwV0lKOE1oSllHek1pdnA2YXFsME5oYkZtUFdtQjhYLU5yTXh1aGw1SDVKQmpIMXo2NDJabTBhcXlNS1hwWFo3Q0hLRE5tRmxkRXIzcE1kR1RDb0ZkSE90a0VEOUQxQUFhTkUxNDdQNzFlT0FYZDJhQmY1RGZuUW9KU3RncmlFaUtBeWpmSHJZTU5zQ2s?oc=5) | Investing.com South Africa |
-| 7h 前 | 5 | 偏多 | [Cantor Fitzgerald raises Abbvie stock price target on immunology pipeline - Investing.com](https://news.google.com/rss/articles/CBMizgFBVV95cUxQcFFPSkxSQldmbEktTjdmN01UWVkwXzFTem0xY1F6QmRMTEdrTkRXRWhJU3NXYTFQVjNrTmpfYUh3alRHZ1IyZFBIanZWQWw2RmpCTlhjQnN5eW16YU83OFVOc0ZjdVBkaXE2Ni0xMXd1bFRKTDRySi1YWUl2Zlp4OUNkUS1SR3llNHdPVWh5a1BFUW1wRWZUc0IyUTIydFVJeVNuX0JCVkZtdEtGWXBiVmNTeXNoREFyZ1B3N2hyVXIzVFIwemQtYXBtX3Nudw?oc=5) | Investing.com |
-| 8h 前 | 5 | 偏多 | [Bernstein raises Abbvie stock price target to $275 on pipeline strength - Investing.com](https://news.google.com/rss/articles/CBMiygFBVV95cUxORXFwR0lRWk1JTUo4d1hsQ21Ib1lYNDJkYW9XMWNhZDBQTWFyWTRKNHExSkNpcDQtZTlzY1g1WHR2dGdYbjlxNy1hYVNHYjJudmRXQ0pwSnJYUTJ4cUlQSEUtbHVlY0ZoMHVoZjVvRVViZ2pETjJQYzNMaXNjQzhOV2tvZUp6Um1xVTFpVm9IeUIyQjZoMGNjNlV1SE05YmVmcWtQTGJOSVNiSXNGbV9ST1k1NjdSM0ZrUHlsalozSTJ0UUNIN3F5NThn?oc=5) | Investing.com |
+| 20h 前 | 0 | 中性 | [AbbVie Inc. (ABBV) Stock Forecasts - Yahoo Finance](https://news.google.com/rss/articles/CBMijAFBVV95cUxPVE9ZNnZnd05NbHBhMzF1dDdGY0xMc1JyVTBOWlNORXM2UmE3NTJjLTl5TF9DMVluQ2ZfTWx0TU5YdFprZGl5RUNJTDlROEJHQVNobVNGWl9NQk95cXBOSzVJeTJMT1pHV1JuSGEyazNnMjhTZkFZWFR0RkYtMXZwNDJjbUdiVlZUa0JTdA?oc=5) | Yahoo Finance |
+| 21h 前 | 0 | 中性 | [META_TITLE_QUOTE - Yahoo Finance](https://news.google.com/rss/articles/CBMiTkFVX3lxTE1CNk5VbE1ZZzlCTF9YaEIwcmRwd21PRG5CM2xjX1JIRUdBaTBFbmJMQ1JlSUZ1a2RsWnZsM1BfMnkxY1hwZUZYdzlwZl9qZw?oc=5) | Yahoo Finance |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -131,7 +121,7 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
-- 政策面对该板块的倾向为 -0.31（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 按本报告掌握的数据，没有触发任何一条成文的风险规则。这不等于没有风险——它只等于「这台机器读到的东西里没有」。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -153,7 +143,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-28 | 282.93 | 288.80 | 281.23 | **285.99** | -0.1% | 3,108,000 |
 | 2026-10-29 | 291.00 | 292.67 | 288.04 | **290.79** | +1.7% | 4,323,300 |
 | 2026-10-30 | 292.00 | 298.74 | 291.01 | **294.89** | +1.4% | 6,897,400 |
-| 2026-11-02 | 290.38 | 294.86 | 286.14 | **288.94** | -2.0% | 8,832,490 |
+| 2026-11-02 | 290.38 | 294.86 | 286.14 | **288.84** | -2.1% | 8,832,490 |
 
 ## 七、自己去查（本页不做独立验证）
 

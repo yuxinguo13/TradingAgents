@@ -54,7 +54,7 @@ _医疗 · 数据截至 2026-11-02 收盘 → 面向 2026-11-02 开盘_
 - **波动**：日均真实波幅约为价格的 3.0%；按本报告 2 ATR 的止损惯例，一个 R 相当于 6.0% 的价格距离
 - **位置**：距 52 周高点 -7.7%，距 52 周低点 +56.4%
 - **量能**：最新一日成交量为 20 日均量的 1.0 倍，量能正常
-- **相对强度**：近一月跑赢 标普500 9.9 个百分点
+- **相对强度**：近一月跑赢 标普500 10.0 个百分点
 - **支撑 / 阻力**：最近的摆动低点 396.15，摆动高点 403.76（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
 
 **我的读图结论**：均线与结构互相矛盾，属于震荡；这种形态里止损容易被扫，仓位应比顺势时更小
@@ -110,21 +110,13 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 3h 前 | 0 | 中性 | [BetterInvesting™ Magazine Update on Amazon.com and UnitedHealth Group - Quantisnow](https://news.google.com/rss/articles/CBMiqgFBVV95cUxObjc0djJfY0ZwWGwwTDFPZV93ejhWekZFRlQzQ1k2c3BBOUZaWHJhOTduS0hJZUxTeE1pNHNVVWJEVGRjbjJ3ODVfWDlUcllqaE9kQXh1OTBOX1l4eTkyUFlWb1F2Z2RzVUptRF91RVE3a3V2S2o2NUJ0bXhuUXczTFduUFRPbDkyckw0alVneW5vVWtYaG9hdEFTa0dYSE56U3JKazlGdnJ5Zw?oc=5) | Quantisnow |
-| 6h 前 | 0 | 中性 | [UnitedHealth Group stock faces fresh scrutiny over AI audits - ad-hoc-news.de](https://news.google.com/rss/articles/CBMiwAFBVV95cUxOU1pWb25LWmRJaHdacS0xemw2V0Znd25lc2lkNmt5V005Q05wTXItMkVCbUlsclJwR1RtcEdyU2oxczVnYl9NZlVkblB3X3l1QUxnTUtlMG5SYjA4RXRVdmVvUWhHV2VkWFJ0X0pubHhHT3paN1lpRzBTeDBfeUt6dHhxMHVZSHR6cnNNeEg3UXRxZ1ZmSE5LRmZrODRZSUhvSGlfMVQ3NUs5YVp2ZjBSWk5yRkdrRmF3R1pBRmxMcXk?oc=5) | ad-hoc-news.de |
-| 15h 前 | 0 | 中性 | [UnitedHealth Group stock slips to EUR 363.80 premarket, -0.27% - ad-hoc-news.de](https://news.google.com/rss/articles/CBMiuAFBVV95cUxPNmRUZHB4YTZ2RmpXbGZiVXJwREkwbUVrNzdKTG4waC13LVJacFRWNDllNjlqS0VhNzNwaGVMNXBCOTBrbXM2bHhrTjNuVkxOMEJ3X1VKWW1rV1FmWDI1Z3JlWFc1MVFZb3BWY2NMMVdLZW5TalB3SndEVm5PcmVUaUNtYzRHazhyVFBKaXl2VFZFNjF0RXNwMW9hWlQ1c2N2RWRVeWNnbkpCMmhtekFQSTc3blloSmxo?oc=5) | ad-hoc-news.de |
-| 17h 前 | 0 | 中性 | [Could AI Audit Claims Change The Bull Case For UnitedHealth Stock (UNH)? - Simply Wall St](https://news.google.com/rss/articles/CBMi0AFBVV95cUxQZXBBNDJubTBwbHRXdlE4aUZzY2NEREdqc3hHT1lablVNSEVsQXllbGxaUXdleHdaZjZxVjUxYkhwUFZDUWZoN1YxSjJ4dGVuTk81U2JrcFc2eGFzd2NGdFhuU3lBNUpPSVpmelVVREJrMFZFdmo3X194dGVnNkVWaHV3Z2MxcHcwSUF6QTNjM0NmemVkR2JDb1IyMHpabVZsSU5NYkpJaVpFdUZUTjliai0tZHNILXJSN3VpcFRxT21tRmJtc0pXVTRuQXloRndo0gHWAUFVX3lxTE1qTjR5eGI4NEdnWWRLYU90T2dwc1A3YnVNbmRXbUwtRUlDNTFmUWpuNjdwS2JJNjNSandDTnVmR1o4YkNKVkhlTXRHT3pOdjM3c25mTEV1NjEzVDdfRHgycUJfY3pWcGdVMFR3OVVObVlSS3ZlSnVEalpybldlQ08zRm9IRlRuajlqdk9leUN2cE1yc0dKNVJFSVpNQWh3ZEI2Z21wMElDbGxkb2hjUGY2cmpwYnQyZTktNzJwRmRnVmNzRlVIX29QQ1VRQk5IWkhaU3d6RFE?oc=5) | Simply Wall St |
-| 29h 前 | 0 | 中性 | [UnitedHealth Group stock faces payer-cost focus at Chicago meeting - ad-hoc-news.de](https://news.google.com/rss/articles/CBMiyAFBVV95cUxONXFGVldPTFJtMV9ZYmxZeVIyWXAtYmVQUHdEYzQycFJrbnNHQWdlcVoyTkk5cVNGRmhSVzd4M2JhSlN3XzRsQ0w4YnFnWTIyRFVTV0xrcmRqWTBFLUNaX3NPTXdkbXhyR3pWRnRkRmxwaUZ2WEVIMTJTcmxxQXY2aUpaY0VpNUFKd0FxQXRDXzBCLWdNaG1XQU55OEdmYk5nLUVvRG56SUFWazZ3WHIwUFljR05LYTVwUHB3cmFNQ1lZcEx6RWpjRQ?oc=5) | ad-hoc-news.de |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
-- 政策面对该板块的倾向为 -0.31（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 按本报告掌握的数据，没有触发任何一条成文的风险规则。这不等于没有风险——它只等于「这台机器读到的东西里没有」。
 
 ## 六、原始数据（本页所有计算的来源）
 

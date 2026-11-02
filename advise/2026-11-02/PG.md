@@ -11,16 +11,16 @@ _必需消费 · 数据截至 2026-11-02 收盘 → 面向 2026-11-02 开盘_
 ```text
        PG · 近 126 个交易日（日线收盘）
 162.6 ┤                                                                           ╭
-160.8 ┤                                                                       ╭─╮ │
-158.9 ┤                                                                      ╭╯ ╰─╯
+160.7 ┤                                                                       ╭─╮ │
+158.8 ┤                                                                      ╭╯ ╰─╯
 157.0 ┤                                                                     ╭╯
 155.1 ┤                                                                    ╭╯
-153.3 ┤                                                                    │
+153.2 ┤                                                                    │
 151.4 ┤                                                                  ╭─╯
 149.5 ┤                  ╭╮╭╮   ╭╮   ╭╮                                  │        ·
-147.7 ┤               ╭──╯╰╯╰╮ ╭╯│   ││╭╮╭╮                      ╭╮ ╭╮ ╭─╯    ····:
+147.6 ┤               ╭──╯╰╯╰╮ ╭╯│   ││╭╮╭╮                      ╭╮ ╭╮ ╭─╯    ····:
 145.8 ┤·╭╮::::::::::::│::::::╰╮│:╰───╯╰╯╰╯╰╮╭───╮····╭╮··╭─╮··╭──╯╰─╯│:│:·····::::
-143.9 ┤ │╰╮··   ╭╮   ╭╯   ····╰╯·········  ╰╯   ╰─╮::│╰╮╭╯:╰╮╭╯      ╰─╯·
+143.9 ┤ │╰╮··   ╭╮   ╭╯   ····╰╯·········  ╰╯   ╰─╮::│╰╮╭╯ ╰╮╭╯      ╰─╯·
 142.1 ┤─╯ ╰╮ ··╭╯╰╮·╭╯····                        ╰──╯ ╰╯   ╰╯
 140.2 ┤    ╰───╯  │ │
 138.3 ┤           ╰─╯
@@ -48,13 +48,13 @@ _必需消费 · 数据截至 2026-11-02 收盘 → 面向 2026-11-02 开盘_
 
 ### 图形读数
 
-- **均线排列**：多头排列 — 现价距 20 日 156.38（+4.7%）、50 日 149.53（+9.5%）、200 日 146.97（+11.4%）
+- **均线排列**：多头排列 — 现价距 20 日 156.38（+4.6%）、50 日 149.53（+9.4%）、200 日 146.97（+11.3%）
 - **形态结构**：上升结构 — 更高的高点 + 更高的低点；前高 148.50 → 165.75（+11.6%）、前低 155.77 → 157.40（+1.0%）
-- **动能**：RSI(14) 67，偏强；近一月的斜率快于近三月（月 +13.7% vs 季 +11.3%），趋势在加速
+- **动能**：RSI(14) 67，偏强；近一月的斜率快于近三月（月 +13.6% vs 季 +11.2%），趋势在加速
 - **波动**：日均真实波幅约为价格的 2.0%；按本报告 2 ATR 的止损惯例，一个 R 相当于 4.1% 的价格距离
-- **位置**：距 52 周高点 -0.5%，距 52 周低点 +22.0%
+- **位置**：距 52 周高点 -0.6%，距 52 周低点 +21.9%
 - **量能**：最新一日成交量为 20 日均量的 0.9 倍，量能正常
-- **相对强度**：近一月跑赢 标普500 16.0 个百分点
+- **相对强度**：近一月跑赢 标普500 15.9 个百分点
 - **支撑 / 阻力**：最近的摆动低点 157.40，摆动高点 165.75（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
 
 **我的读图结论**：趋势向上且结构完整，且贴近 52 周高点——追高的代价是止损离得远；顺势的一侧在上方，风险在于结构一旦破位就要认
@@ -69,7 +69,7 @@ _以上每一条都是对已经发生的价格的描述。均线、RSI、摆动�
 - **增长**：最新季度营收同比 +4.0%；盈利同比 +0.8%；最近 7 次财报里 7 次超预期。
 - **盈利质量**：毛利率 50.6%、营业利润率 26.9%、净利率 18.2%、ROE 29.6%。
 - **资产负债**：现金 $153.65亿；有息负债 $389.25亿；负债/权益 70.3%（负债适中）；流动比率 0.72（短期偿付紧）；自由现金流 $126.53亿，为正。
-- **卖方预期**：23 位分析师覆盖；平均评级「买入」（2.08/5，1 为最看多）；目标价均值 173.65（较现价 +6.1%），区间 151.00–190.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
+- **卖方预期**：23 位分析师覆盖；平均评级「买入」（2.08/5，1 为最看多）；目标价均值 173.65（较现价 +6.2%），区间 151.00–190.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
 
 **分季度损益**（季度数据，最新在左）
 
@@ -112,8 +112,8 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 7h 前 | 0 | 中性 | [Form 144 PROCTER & GAMBLE Co For: 2 November By Investing.com - Investing.com Canada](https://news.google.com/rss/articles/CBMipgFBVV95cUxQVlNfdERmMlpFc0YyT214SEVSQzFSZWhTam5rdlhaVUVxczVMN2NkY2FKUWI0aF9Pc2FDdXZzUVRRXzJNZ1E4Ti1aeEZyUU9weUlRT0YwRGZtdW8xUjFqMXpsRlFyUnd0S194TXNUMnphbFZNTXVKQVFQRFBiM1J1QkRQRkluRVQ1cVVVN1N5TUh5WlExYUxBY2x1ZVYwZ0ZISHotRGNn?oc=5) | Investing.com Canada |
-| 30h 前 | 0 | 中性 | [Procter & Gamble (NYSE:PG) Looks Cheap on Cash. AI Edge Ahead? - Kalkine Media](https://news.google.com/rss/articles/CBMioAFBVV95cUxPMWowdG9fNHk2bHpQSlBBclMtaDdzbGJEaUxpTWZiWnpQQW1NcjA4d3g0WFB1WUM5Ny05aWU2aEg0N1VJRnBvWkNkNnBnMkE4OFREZk1ZQVVXdGhZcXc1MGJnM0kxZWVwalJ6Uk9NbkRqVFdnS1pTRnZYRWZNSi1jNHhtcE1fRzZKRFU5Q1BuTV9rclpfTXBKbWFqZ3Vsek1X?oc=5) | Kalkine Media |
+| 0h 前 | 6 | 中性 | [Procter & Gamble (PG) closes a note offering with repayment due in 2076. - Stock Titan](https://news.google.com/rss/articles/CBMipwFBVV95cUxQOHUtdHNtSExMa0dtTUhyVjMtdEZOMjhXX0J3bTZTdGlNOW56RzY3UlU3bDA5NkU0SGp4UjI5YUlOOFkxaGhmWHQ5R2VxazVSc29zS0U1dW1fd3V5d3FjX0d3N2t3Mk5rSnBTNERYNGU1TW16Z1RjRG1meWdWaFRRZmcxdDBOdnU1NWZqX2lqWlM0V1dkMFNSZ0ozZDRlLWw5OUtBQTF1OA?oc=5) | Stock Titan |
+| 8h 前 | 0 | 偏多 | [Procter & Gamble shares weekly forecast: Supported by strong MACD and firm price structure - Traders Union](https://news.google.com/rss/articles/CBMijAFBVV95cUxOR25VOHY3amd4ZkJfNElxVk9sWXRtQVV5QVMyeUhMMENyMy1CUEdWbk9wN1Z1enNOWXlpeW9RemdyNWNnNDlNR19oOGRWeER0NFJFZmJlYXlOSEtRQ1VTMWl5TjhTU2JyOWtFM0JmVVFsWU1KQnhPMHFfaXEyanZFZmVOYm1CbkRJTFdIRw?oc=5) | Traders Union |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -121,7 +121,7 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
-- 政策面对该板块的倾向为 -0.96（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.84（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -143,7 +143,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-28 | 157.99 | 159.57 | 157.40 | **158.26** | -0.6% | 5,201,300 |
 | 2026-10-29 | 160.09 | 160.95 | 158.66 | **160.59** | +1.5% | 7,507,500 |
 | 2026-10-30 | 164.62 | 165.36 | 161.03 | **161.57** | +0.6% | 11,628,500 |
-| 2026-11-02 | 162.24 | 164.34 | 162.24 | **163.68** | +1.3% | 9,683,068 |
+| 2026-11-02 | 162.24 | 164.34 | 162.24 | **163.56** | +1.2% | 9,683,068 |
 
 ## 七、自己去查（本页不做独立验证）
 
