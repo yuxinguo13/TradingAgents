@@ -1,11 +1,11 @@
 {
- "saved_at": "2026-11-03T20:21:42",
+ "saved_at": "2026-11-03T20:22:52",
  "positions": {
   "WMT": {
    "symbol": "WMT",
    "shares": 43,
    "entry": 118.0,
-   "stop": 118.0,
+   "stop": 122.1,
    "target": 128.0,
    "opened": "2026-10-19",
    "horizon_days": 30,
@@ -28,41 +28,6 @@
    "sleeve": "core",
    "triggers": [],
    "stop0": 113.0,
-   "pending": false,
-   "trimmed": true,
-   "staged": NaN
-  },
-  "FIGS": {
-   "symbol": "FIGS",
-   "shares": 203,
-   "entry": 19.93,
-   "stop": 19.93,
-   "target": 26.8,
-   "opened": "2026-10-20",
-   "horizon_days": 20,
-   "sector": "",
-   "thesis": "动量账：FIGS 10/13 放量 3.7 倍 +12% 起连涨六天，今天 19.98 再创 52 周新高（20.20），三条均线上（20 日 15.6 / 50 日 14.8），21 日相对标普 +52.9，三月 +102%；医护服饰需求与定价改善的叙事还在被追。止损在突破日低 18.93（5.3%、1.0 ATR，高于 20 日线），目标 26.8 = 三月涨幅折三分之一，R 6.5。财报约 11/5 在 20 天持有期内，前一天离场或减半。",
-   "invalidation": "收盘跌回 18.93；收盘跌回 10/16 高点 20.26 下方且量比 >1.5 的阴线当天平掉；21 日相对标普回到 +10 以下；11/4 收盘前离场",
-   "principles": [
-    "十·强势买强势：pattern+rs",
-    "十·拉伸不是动量账的禁忌",
-    "十·止损在突破日低点或 20 日线取高",
-    "十·到 1R 先减半"
-   ],
-   "regime": "同上",
-   "parent_id": "e002faba-1e22-44ba-8dd9-1968cd09a6cd",
-   "legs": {
-    "limit": "ce3f3086-7583-42e7-b0b9-c6a34d9e58f0",
-    "stop": "fa6e2cb8-80e4-4e08-ac74-ad452fb3416f"
-   },
-   "adopted": false,
-   "stop_raised": true,
-   "sleeve": "aggressive",
-   "triggers": [
-    "pattern",
-    "rs"
-   ],
-   "stop0": 18.93,
    "pending": false,
    "trimmed": true,
    "staged": NaN
@@ -196,6 +161,36 @@
    "triggers": [],
    "stop0": 280.0,
    "pending": false,
+   "trimmed": false,
+   "staged": NaN
+  },
+  "V": {
+   "symbol": "V",
+   "shares": 24,
+   "entry": 418.0,
+   "stop": 405.0,
+   "target": 445.0,
+   "opened": "2026-11-03",
+   "horizon_days": 30,
+   "sector": "",
+   "thesis": "主仓回踩：Visa 财报后（10/27，指引放慢但 Q4 超预期）11/2 新高 426.7，今天回落到 421；20 日线 401.5、50 日线 383.2 在下方，21 日相对标普 +16.6。入场 418（简报）在 11/2 阳线实体中部，止损 405 在 10/29 低点 404.4 之上的结构位之下（3.1%、1.7 ATR），目标 445，R 2.1。下次财报 1 月。",
+   "invalidation": "收盘跌回 405；XLF 相对标普 5 日跑输 3%",
+   "principles": [
+    "一·趋势向上且结构完整",
+    "二·回踩入场、止损在结构位之下 ≥1 ATR、R ≥ 2"
+   ],
+   "regime": "标普 754 在 20 日线下、200 日线上；中期选举日、美伊交火；VIX 待数据包；不是防御日",
+   "parent_id": "c17c4431-89fd-4fb0-91f2-5944f2b24458",
+   "legs": {
+    "limit": "ffdd15c8-60dc-4296-afc1-cfae71179298",
+    "stop": "4995adcf-af23-4aa5-94c2-1bcc9e944033"
+   },
+   "adopted": false,
+   "stop_raised": false,
+   "sleeve": "core",
+   "triggers": [],
+   "stop0": 405.0,
+   "pending": true,
    "trimmed": false,
    "staged": NaN
   }
@@ -858,6 +853,27 @@
    "r": -0.9992265103371872,
    "reviewed": true,
    "sleeve": "core"
+  },
+  {
+   "symbol": "FIGS",
+   "shares": 203,
+   "entry": 19.93,
+   "exit": 20.66,
+   "opened": "2026-10-20",
+   "closed": "2026-11-03",
+   "reason": "manual: 四·财报 11/5 盘后在持有期内：按计划 11/4 前全部离场，今天走（简报）；余 203 股、现价 20.72、止损在成本 19.93",
+   "thesis": "动量账：FIGS 10/13 放量 3.7 倍 +12% 起连涨六天，今天 19.98 再创 52 周新高（20.20），三条均线上（20 日 15.6 / 50 日 14.8），21 日相对标普 +52.9，三月 +102%；医护服饰需求与定价改善的叙事还在被追。止损在突破日低 18.93（5.3%、1.0 ATR，高于 20 日线），目标 26.8 = 三月涨幅折三分之一，R 6.5。财报约 11/5 在 20 天持有期内，前一天离场或减半。",
+   "invalidation": "收盘跌回 18.93；收盘跌回 10/16 高点 20.26 下方且量比 >1.5 的阴线当天平掉；21 日相对标普回到 +10 以下；11/4 收盘前离场",
+   "principles": [
+    "十·强势买强势：pattern+rs",
+    "十·拉伸不是动量账的禁忌",
+    "十·止损在突破日低点或 20 日线取高",
+    "十·到 1R 先减半"
+   ],
+   "pnl": 148.19,
+   "r": 0.7300000000000004,
+   "reviewed": false,
+   "sleeve": "aggressive"
   }
  ]
 }
