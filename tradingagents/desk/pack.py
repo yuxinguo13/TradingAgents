@@ -523,7 +523,14 @@ class Packer:
             kind = (sold[-1].get("type") or "") if sold else ""
             reason = ("stop: 交易所触发止损" if kind.startswith("stop") else
                       "target: 交易所触发止盈" if kind == "limit" else "closed at the venue")
-            self.book.close(s, exit_px if _ok(exit_px) else p.stop, today, reason)
+            when = today
+            if sold:
+                # the day the venue filled, in New York time (MSFT 2026-11-02 15:47 ET
+                # was booked as 11-03, the day the pack ran)
+                with contextlib.suppress(ValueError, TypeError):
+                    at = datetime.fromisoformat(str(sold[-1].get("filled_at", "")).replace("Z", "+00:00"))
+                    when = (at.astimezone(clock.ET) if at.tzinfo else at).date()
+            self.book.close(s, exit_px if _ok(exit_px) else p.stop, when, reason)
         # the decision log is the record of what was reviewed; a book copy
         # restored from another session can lose its "reviewed" flags
         # (PLTR and DHT came back into the queue on 2026-10-23)

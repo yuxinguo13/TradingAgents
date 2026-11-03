@@ -877,3 +877,20 @@ class TestReflection1102:
         assert out[0].ok, out[0].reason
         p = DeskBook(home / "desk" / "trade" / "book.json").positions["HLD"]
         assert p.shares == 5 and p.stop == round(px * 0.95, 2) and p.target == round(px * 1.12, 2)
+
+
+@pytest.mark.unit
+class TestReflection1103:
+    def test_a_venue_exit_is_dated_by_its_fill(self, home):  # noqa: F811
+        """MSFT filled at 15:47 ET on 11/2 and was booked as 11/3."""
+        shape("AAA", 100.0, drift=0.6)
+        book = DeskBook(home / "desk" / "trade" / "book.json")
+        book.positions["AAA"] = Position(symbol="AAA", shares=10, entry=100.0, stop=95.0, target=110.0,
+                                         opened="2026-08-10", stop0=95.0)
+        book.save()
+        v = FakeVenue(acct())
+        v.fills = [{"symbol": "AAA", "side": "sell", "type": "stop", "qty": 10, "price": 95.0,
+                    "filled_at": "2026-08-21 20:47:00+00:00"}]
+        pack.Packer(broker=v, market=mkt(task="trade"), book=book, screen=screen_of(), now=MONDAY_OPEN).run()
+        c = DeskBook(home / "desk" / "trade" / "book.json").closed[-1]
+        assert c.symbol == "AAA" and c.closed == "2026-08-21" and c.exit == 95.0
