@@ -1,5 +1,5 @@
 {
- "saved_at": "2026-11-03T20:20:45",
+ "saved_at": "2026-11-03T20:21:42",
  "positions": {
   "WMT": {
    "symbol": "WMT",
@@ -836,7 +836,7 @@
    ],
    "pnl": 0.0,
    "r": 0.0,
-   "reviewed": false,
+   "reviewed": true,
    "sleeve": "core"
   },
   {
@@ -856,7 +856,7 @@
    ],
    "pnl": -245.45,
    "r": -0.9992265103371872,
-   "reviewed": false,
+   "reviewed": true,
    "sleeve": "core"
   }
  ]
