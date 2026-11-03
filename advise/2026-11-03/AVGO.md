@@ -108,22 +108,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 11h 前 | 10 | 中性 | [Broadcom Inc. $AVGO Stock Acquired by Soltis Investment Advisors LLC - MarketBeat](https://news.google.com/rss/articles/CBMixgFBVV95cUxPTmNhQ3FWYjNvQkdCYm1XYjQzZi05VlVQcXJISEhOUjN0Szh6ZWRlTU5RSzNSXzFUQkVKejZycThRd3drZHoxTkVYRXI2RU54MDUxWUE5TDloVklBTWtkU0tHeEdFZ2Z0ZERmbFpEUmZHM3FvTmViMVNPb0s4NE96TzU3YXpRbXUwNnFoTy1OTnZiZlRiMFFQS1NqcEt6d2xUSU95WFZGTnZTb2NiNjNxS29DbV9ZTnQ5X0ZBVmhtT3I3YkswcVE?oc=5) | MarketBeat |
-| 13h 前 | 10 | 中性 | [Broadcom Inc. $AVGO Shares Newly Acquired by Bosman Wealth Management LLC - MarketBeat](https://news.google.com/rss/articles/CBMizAFBVV95cUxOazFGUEEzaFhDa1gxZFJJTDFOekhzN2Vwa3lSN0YzYUx3X3A0MW53dEhOSTZPMFl6cFNJaVh1NkdhS0dKblg1S0NMNFBORWpwRnZsc2d1VUt5dldQTDZ2a2dfT2tNemMtZDJCQzZnRGYwTVFrTmkyVDFMWkRvTFY1R3lydFJfZDBfQUpPbU5UbmszQzRZbTZCQWdsd3gtT1ZYRjZvSHdYc2RLM3hScUwzX2pYWlFlWnZfLUQxTENWRnc5b2I4V3o3VWVwOWY?oc=5) | MarketBeat |
-| 11h 前 | 8 | 中性 | [Broadcom Inc. $AVGO Holdings Lessened by Renaissance Investment Group LLC - MarketBeat](https://news.google.com/rss/articles/CBMizAFBVV95cUxQMmE5SU1vQUR5MGlBVDNuMVl5RW4xYnpfZTRQanY0bmc2eXVhLWVzMERHWXBmUmJrZHdPeWk0N0x2M3A1ZVR3dmw1TFlRMzY0QlVDei0yb25Lb2Y4VTA2NlhyOTBaMHJyZWM2bkdjc2ZfUzVtaFE4X0ppc0Y4eWZNcV95TkU4ZktSbWY5aFFMMlQxdlRCRVItWk0xcGo5ZlNlcnRjRjFlb0U2S1dXSDRadk9sbmlzcW5oM1VuandVZENvSjB1STVOMlNlWW4?oc=5) | MarketBeat |
-| 12h 前 | 8 | 中性 | [Broadcom Inc. $AVGO Stock Position Lowered by Choreo LLC - MarketBeat](https://news.google.com/rss/articles/CBMitgFBVV95cUxOWGhxLTVzTl9VeGFtaEd1Y3hJaGpLbm95cEZfWk1qemRpUWFmYkRmd1ZSUndIWi1xVUZJLU1vWFVWdmZ0LUNfR3lWR0JvTm1RZ0N3YWttbmtzLTU3VTdSSmQxdXExMklNanVVSXR5a0s4X3d3cmJBMEdUN29wV2ZOLTEwYW5uTzZWYUZGVU1iNk9PQnBvN1FmNjZOSjhJSHR6MnVUaTF0RVhaYUxJSzduME1GWUJmUQ?oc=5) | MarketBeat |
-| 31h 前 | 8 | 中性 | [23 Big Funds Bought Advanced Micro Devices Last Quarter. Is It a Buy Before Earnings? - TIKR.com](https://news.google.com/rss/articles/CBMifEFVX3lxTE1nX3FtNWcyRXozTmx1Qzk5ZGhPU2tudFJpZDhFSzBzRnZ1bzNTMVlsNnFjbXdKeDExRWtzQTRLZEdXblZrZE1vV0k4NlByeFcwYm92WnRmRU5rS1BjSmozUG0zb1NULUtoZ1RVM2tMbHNrR3hTSTJJOTRYSVk?oc=5) | TIKR.com |
-| 3h 前 | 7 | 偏空 | [NVIDIA Rises 3% Despite AI CEO’s Warning on Chinese Chip Competition; AMD Climbs 5%, Broadcom Gains 3% - Yahoo Finance](https://news.google.com/rss/articles/CBMilAFBVV95cUxNLTVQcU5XdnlpdndSb1VzQ1dKbllnTW9YWXAyc2dNdjhuWElXenRMa0xpcG1XbV9lVnJTaXktM1ZWM2FxVzV3eUxlLU5sWVJUX1g1MGdGUFpjVUZMVk9HcHpDcEVZNm9VREtQSzBNVFRfTUdpb25ncXhaNkJzWU8tN1lyUkViODJOQlJNWG5HQ3Z0eU5X?oc=5) | Yahoo Finance |
-| 3h 前 | 7 | 偏空 | [NVIDIA Rises 3% Despite AI CEO's Warning on Chinese Chip Competition; AMD Climbs 5%, Broadcom Gains 3% - 24/7 Wall St.](https://news.google.com/rss/articles/CBMi1wFBVV95cUxOUzM5WElEdldxcTYzbFdta1VBUmsyUWlPX25saldDQ3ctZFZjWVJVR25YX1d4QWxtYld3YzZnaEMwbEtsMko0QkdTNkNfQzl2c1BxVFdXOE1FOVN5ekhfdWVVeHVOcGJFbS1nSGx1NlpUQm5ZWHVBTmtGUzJSLUN2Y3hoUmRaV1pUSXkxZ3AxR082bjcxZW44ZTFpNkw4d0hJcV92REFlQUZodXoydmxXRXlOSU9JQnp1TWhqaW95Z1MzeDVxcDBNN2Y0bWxqZGxMYVJCNjVfcw?oc=5) | 24/7 Wall St. |
-| 24h 前 | 5 | 偏多 | [Broadcom: Too Cheap To Ignore (Rating Upgrade) (NASDAQ:AVGO) - Seeking Alpha](https://news.google.com/rss/articles/CBMijAFBVV95cUxQSm95RnFhUWhKWk44Z011SUdXMkMwcXVyclF6NjQtNFRySmxOSDFNcG00YkluQVZDX2JUejNVTDJCaklyWUxlOTJZMEVHaURQY21iZE9NbEFramQzQjRRYUpSVHBQTk5XQkhYODVIYlFYcXB0akhfRjFQSUlVVm94YVFwVkgxN3JTTzNLaQ?oc=5) | Seeking Alpha |
-| 11h 前 | 2 | 中性 | [30,078 Broadcom Inc. $AVGO Shares Sold by VIRGINIA RETIREMENT SYSTEMS ET Al - MarketBeat](https://news.google.com/rss/articles/CBMizgFBVV95cUxOUE5Lb05EbFM4Q1RZTmF2VVFueFBjRXA2M0NSbXlCU25ReFRoNGJJcGcyNWlHa2wwbUJ6OFN5RXdjTXVhUU1WMHlETTFIWkhPalBGa0h4RE9lOHB6bXpjOEt2NHBsNF9ONGhSc3dPWGh2MHFfY2dBYjVFZHZ5c1FaUTg5WFpxT3R3TEo2bTZtdnE0MzRvUlNCejhTU2Fnc1FaTFJVNy0tVmFLaVZpWmU4UlVVUkw1Yk5tUlVSMEI4MDBqdkVTdm03NFUya056UQ?oc=5) | MarketBeat |
-| 11h 前 | 2 | 中性 | [8,842 Broadcom Inc. $AVGO Shares Purchased by Partners Wealth Management LLC - MarketBeat](https://news.google.com/rss/articles/CBMizwFBVV95cUxPcXh1ZmlGcWZqeS1SaFZmd1ZyOTJpM3JDWkhsUTNkQXVmVXVudXcwQjViRDRQNUdxVmpBRnlfNmlxRDV5SFN4a0NYODk5ZlpTTFlFZWFHMTBTVjR0V3NnWE9JcXhIQy13aXl6TWM5UnBDTm1GdUdzeXk2QzctZGFxM05hd0xpcUctWWs1dTIyb0RLNmJBMHVpNDB0UGNsUDdEdUlkcUdNeDlwSU1UU3BlcmRUb3NPRURoR0pIcE5mZ3ZCdDBQeUhPUmYxSWtVVU0?oc=5) | MarketBeat |
-| 11h 前 | 2 | 中性 | [1,794 Broadcom Inc. $AVGO Shares Sold by United Asset Strategies Inc. - MarketBeat](https://news.google.com/rss/articles/CBMixAFBVV95cUxQQUpRSTdEM2xxeXJISlozVTNvRHgwMXdlalRyV3FHZERObXhQNzVmYVdLQnpfWTQzVWwxMV96MFgyVEpURS1EU2M1VVFRVF91WHlIVjBOZzRMTGxTbVZxZnVJZ0twbjlPZ3BFcDkzdHBFYXNrQ3IwenpLZEFnV2xYLW1VVWw0OXQtd0VCcWNXMmN0RUtVYjlKbDVUUTYwY0pUVXRzbTZfWEVPS1Vkalc0Rll4OWVGTU1QSE0tMjR1Wk4zMHBJ?oc=5) | MarketBeat |
-| 13h 前 | 2 | 中性 | [Broadcom Inc. $AVGO Shares Bought by Glenview Trust Co - MarketBeat](https://news.google.com/rss/articles/CBMiswFBVV95cUxPQ3gtc0JONjdyTkdMZGhJTWlRRDZkX1hGdjRVR0p3X3VDazVKaFhWUWxOV0NMcjVxLUVRTFlLcU5FX2xHbXV4Z0FQMEZrUVh3VGk0TUZULTBPdlZCOG5EN2xudXphSXZXZTdVVGJzb2otaGFoNTBycjlpNGctSWxWbENLMU9EYm1zZzlzR1ZIT1dmQTVTTFZNbW9RM0RzS2xlMTlvRTBxeUpQNkpMak5DcmpDcw?oc=5) | MarketBeat |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
@@ -132,9 +117,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 - 图形上是空头排列——现价距 20 日 341.50（-2.7%）、50 日 351.11（-5.4%）、200 日 366.46（-9.4%）。本报告的买入规则本身会过滤掉这种形态。
 - 摆动高低点都在下移，属于下降结构；在出现一个更高的低点之前，任何反弹都还只是反弹。
 - 公司尚未盈利：估值没有盈利可锚，股价由叙事和融资环境决定，这类名字在流动性收紧时跌得最快。
-- 24 小时内的利空标题：NVIDIA Rises 3% Despite AI CEO’s Warning on Chinese Chip Competition; AMD Climbs 5%, Broadcom Gains 3% - Yahoo Finance（Yahoo Finance）
-- 24 小时内的利空标题：NVIDIA Rises 3% Despite AI CEO's Warning on Chinese Chip Competition; AMD Climbs 5%, Broadcom Gains 3% - 24/7 Wall St.（24/7 Wall St.）
-- 政策面对该板块的倾向为 -0.95（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.78（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 

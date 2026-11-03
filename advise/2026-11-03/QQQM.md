@@ -67,11 +67,7 @@ _读不到财务数据：该代码没有可用的财务数据（可能是 ETF、
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 10h 前 | 0 | 中性 | [Invesco QQQ (QQQ) Sells Apple and NVIDIA on Oct. 30 - Yahoo Finance](https://news.google.com/rss/articles/CBMilwFBVV95cUxNajBlaFhRYTNBbG14S3VNODdYMnc1OXNKdE92X3IzLVluX2NtWUxMUG04Y1VzOHI4aEFVRFpuUnRxRmFxM085a3F0Mi1jOTc0U1pVREhjVGt0NndLT0hEdzN6dkNnUEZHLUhYQ2lzY2ZzOENXazBDSWtiUktiV0poRFRlVnY5NVE2MmFHOF9kRWpnNklwdEQ0?oc=5) | Yahoo Finance |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 

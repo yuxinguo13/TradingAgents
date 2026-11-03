@@ -108,14 +108,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 3h 前 | 0 | 中性 | [UnitedHealth Group Incorporated (UNH) Rebounded After Better-Than-Expected Results: Mott Capital’s Take - Yahoo Finance](https://news.google.com/rss/articles/CBMiqgFBVV95cUxOX0p4RkFCYkJxb21XMTZWXzJYbjRhc3BMbC1LT3VxTHo2TXNsYk9nTVpPMTNReWFocG1LVUNnamJ6Q05aRE0xSzl1bGZ2MVYxdlNDWWVJY2xqWVNCRW5ONUx3VGljV0lDRlpVOUtBRWhNSHFPVlVQZXpWVGRxbUhQQ041YnZoRXVjUFhBOVZDLW1sUHF1dWNwb29aWklyRzllSjNwaUh4NzhEdw?oc=5) | Yahoo Finance |
-| 3h 前 | 0 | 中性 | [UnitedHealth Just Gained 11% in a Month: Take Profits, or Buy More? - TIKR.com](https://news.google.com/rss/articles/CBMilAFBVV95cUxObzhWbVRxWWl2UlJsSXR6cHppXzJtQXVSQzRBcE54M2lEbG9KNWFGNU5lTW5tNFMtMXNUb0ZvcXJKS2d6b0JWTGJWcHdvclJyV1VscXNGUW03SHNaOUZkczEwaFBVVjBWdU0wdVB2bkVfeXRFNVVEcnlhczR6cE5OMzk1WVlDNWF2b0pVR2xUSnAxbWoz?oc=5) | TIKR.com |
-| 5h 前 | 0 | 中性 | [Here’s How Much You Would Have Made Owning UnitedHealth Group Stock In The Last 20 Years - Benzinga](https://news.google.com/rss/articles/CBMixAFBVV95cUxQaTBVbHN5eFZLYUxhZTc3QllLcWQ4c0VTb21hUVY3UUtsSE9oYWZ6NHdWY0xjUnAxbjRiV1RFTENlbENlb042TkYxVTNWZnRWNEVmM1ZwSEticnZzT1h4Q0J3elgwRlA4NUtCS0lOUkg1cEhnRjhLQlBQOWs4eVl6SWdjazBUWEVBdDJYNWdWWkZNMjVmOEx6b3pRc29Sc3VGeDRZU3h6TmQxUERtTk5ibU1YQzlOOXBZUWpiTVRBbXdqN1hj?oc=5) | Benzinga |
-| 23h 前 | 0 | 中性 | [Elizabeth Warren Wants to Break Up UnitedHealth, and One Day Later a Nonprofit Called It Undervalued - 24/7 Wall St.](https://news.google.com/rss/articles/CBMi2wFBVV95cUxNbDhKQ0YzWHlwQU9uSGhlaEFDM3RLUm5tR1ZTeTNEdFRvMjdlYVdwckExSklkOXZQNWFxVURDU2NITmNRQ3VWVGJCaG1kRHkzLXJHOUl2ZUs4OVFkZUMySEZmWlRHdHoxbEttVjBwS3dmWm9uTER5UXBNSFFMbTZrUmRsSjYwbTNQM19Vd3ltcFlLaHBOa2Vua3E1clhvN1pETGd2aktrS29iVGlxWkZZbzVsREpPdTJsT05UR21ETVZ1UUNpS2RGR3lwU3hRWi1uR3BPSGNadEU3ZDQ?oc=5) | 24/7 Wall St. |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 

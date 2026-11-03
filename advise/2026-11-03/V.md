@@ -108,29 +108,14 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 9h 前 | 8 | 偏多 | [Will Earnings Beat Change Visa Stock's Narrative - Yahoo Finance](https://news.google.com/rss/articles/CBMingFBVV95cUxQRXdZZkpGdGdZY1I2a1N1WGVJeHhEbURnRFlHZHRSS0JZNm81ajhmVTQ3SDB0YUlsS2hTWnNReDhDb0NaQ0x4RWVLbWVJMUNSb045aDFpNVhQRDZnNzhCdU9HbkFuZ0RjZFJFQVZvWUpGNkVMb2pVT3FBdnAxMFBRUHllelZGMEs4d29SOTZCbkZQVFpRSDl0VFZDZWVJUQ?oc=5) | Yahoo Finance |
-| 10h 前 | 8 | 中性 | [Visa Inc. $V Holdings Lifted by Summit Wealth Group LLC Co. - MarketBeat](https://news.google.com/rss/articles/CBMiuAFBVV95cUxOZzRNM3d6M05qUk9iZnRkclNZS255ME5CX0Nma2paZ1g4WTBlMWtvR19kSTBVb2lSRVBlcy1LdzVyZWFYY09hNE40YzVtVFhIRmF4MFNwQlM1UVhGR2R2M3BweFNfTlQyYndrZWM3OW12bWRWZXFaelYzTWl1RE5WRjNNTUdXT0NNX3R2X2tBcHhOekJLUjdZcG1jYmlfbFM2cDNTa0JlWEstQW5qQjJuSU9jX29VaTdo?oc=5) | MarketBeat |
-| 10h 前 | 8 | 中性 | [Visa Inc. $V Stock Sold by Trek Financial LLC - MarketBeat](https://news.google.com/rss/articles/CBMipwFBVV95cUxQWE5ma3d5bFNlbDVmdDVTdkhReWd2YXVXTGRYS0F3RTdBRElOdXBxcXBDalIwY19CTXh4UzI4b2tLVWdmMnVHXzF4VFVIMFZwbDhLNkNjS1RHcEpoU1c0bmU4Z3FtVl80V05IWnJRcTZsVXhWNzJMeXVxRDVsRm5rWGZlMjB6ZExITDRjLWQwMkpwdjd5eXd5VklKVVhxeEFEbXNZaTFhbw?oc=5) | MarketBeat |
-| 12h 前 | 8 | 中性 | [Visa Inc. $V Position Lowered by Cortland Associates Inc. MO - MarketBeat](https://news.google.com/rss/articles/CBMiugFBVV95cUxOTzZPU1U5bUhqSkdFTmEtd0tBdWNIcWFlRS03QkVaWFVVanN5OE5Mc2lkOTNCd0daMXFPaG02dlFHTWY5RkdpTm5yNGVESnlQNEF2MHRXVzVqbHFwWUZVMGJJY0M1cHE5NFd0M24weUpPWF9DcE53WGxmZnV6a04xZ09xWDFZbkpTY1dpZUtFOWx2TzNLZW1EMzN3RFJzNmZ3VkIyRDZOdXg2SUZhYmo1V0d2Vk45eEY3R3c?oc=5) | MarketBeat |
-| 13h 前 | 8 | 中性 | [Visa Inc. $V Stake Boosted by BOCHK Asset Management Ltd - MarketBeat](https://news.google.com/rss/articles/CBMitgFBVV95cUxNdGNhVGtoSEVkOHdEMDV2QmNDeTF3b05xdk9wNDRwNTRsazNKczNDM1dhd25yZm1tb1J2NTBwb095bXp5QzczT09EZGh0RkstbnV1dThvTWZqaFdXVTEtNjA4ZzFiQmJVeF9CVlg3R0lqUk95SUQ5TUl4S1JIbmNfdVZGM0VGWDZRdEMzOVVFR3FYZUhDNlFpUk5Ec1VFc2dkUjg0U2hGMUF1ZjFpZElITGt1UG9Kdw?oc=5) | MarketBeat |
-| 13h 前 | 8 | 中性 | [Visa Inc. $V Stock Sold by Aware Super Pty Ltd as trustee of Aware Super - MarketBeat](https://news.google.com/rss/articles/CBMiywFBVV95cUxNUFdaRDVpczYwQVY5WFdKMGtJS0hzNVVZVkhuWjZPaFVVbkozUUhEOXdwV3RsdGRPVWljZTBURnBXa09mZXNtR0FwVF90aXY2T3BtVHd5azF5RFRuZ0k0TFRvV0lTb1BWODZRZDFhR0JmZDhvN1RNV2trV3RaWlpkbGM4bDRiZHhVVjRIWGM0ekpGdnJkcjlSZkhLTkc0V3VhM2JrdDFuUnVpM3lvTmprdkg1S0EyZ0l0U1p0ZDZKOU1XVElTbTl3a2F1QQ?oc=5) | MarketBeat |
-| 22h 前 | 8 | 中性 | [Visa (NYSE:V) Stock Price Up 2.9% - What's Next? - MarketBeat](https://news.google.com/rss/articles/CBMiogFBVV95cUxQWVNBeVJfdFhEYkZDb0lHRHBYN0NqaFNZYmFnbUw4aUxMMkRXcWpSeTFidDBUbWZVeDYzWGtRU2RFRjIxamhyTVlyRG5tajBtNDZfMW00TjFHTGRrLUlwaWNjVmlyRl9PT2NkRjJkQmd3TUY1SkJNdjRKeU81NWJCWTdsWXJrNWstTFlUOWVLRllJTl9hOXBGb0ZmT2hQZnQ4MWc?oc=5) | MarketBeat |
-| 9h 前 | 6 | 偏多 | [2 Dividend Growth Stocks to Buy Now: One Raised Its Payout 16%, the Other 71% - Yahoo Finance](https://news.google.com/rss/articles/CBMimAFBVV95cUxNeGdRcjdvTmprZkM5ZFB6V3NmQ1I0ZEkwdHBUS1dmNEdobjBCTms0dkpmck5Zc1hDaWthaFd3eHVlVFZfSGxhNVNST3ZnczJYc0dKVkNBOVNkeC02ZHJHUkVpdVFXMXlVeWh5R1hhWEY0Z1R0c1NhblZlbmpzWmNkWVlMMDh6WW5ZVUZaTmJXc092ejhFM19FTw?oc=5) | Yahoo Finance |
-| 29h 前 | 5 | 偏多 | [Visa (V) Upgraded to Buy: Here's What You Should Know - Yahoo Finance](https://news.google.com/rss/articles/CBMilAFBVV95cUxPSnRvc3BiVWJzdF9ZWUsxa0p6eU1maWFQck5iQVVaTW5SZ1lOcXFmZjhUZi1LM01YX25LM1M1dVREYnM4T1VjMjFQVUR0bC1JUWw3WWNEVmNaOEVFbkFPT00wR0N2dUpSLUJMekVHNTl2amdhejF4QXNsN093U2lmcGx5S3Y5dlhpakxpWEllN1d3S3cw?oc=5) | Yahoo Finance |
-| 10h 前 | 2 | 中性 | [TSG Advice Partners LLC Makes New Investment in Visa Inc. $V - MarketBeat](https://news.google.com/rss/articles/CBMiuwFBVV95cUxQbnE0UDJBd2JsaFFlNldSQ0Q5TTFpczhRQTdJS0hyRlBhd1R5dmh1OFBPYXNfVFRNRGk2TjBnN3IySDl4QjVJaGgtUlZWMy1MNFVSVUFTd2MzQkw2WlZORkhmeE04RjBTVFl5RGE3blNVRlRjTXdKYTY1eGZhRFJIWkxKZDlHZlNXcnVka1VFaW01cVkzV1FOU2E5RXpPQ1Z2TkVOYUcyZGdxR1NDUnplRjR3dGNkVHhPdU44?oc=5) | MarketBeat |
-| 11h 前 | 2 | 中性 | [2,371 Visa Inc. $V Shares Sold by Virtue Capital Management LLC - MarketBeat](https://news.google.com/rss/articles/CBMivgFBVV95cUxPUUNhWW9ubS0tNnNtNlFaT3U3bDc3VEZGYWg1LVBDOHN5U05NYlViTHJrMk84WERFQ2VSeTM5TFBhcUFlQjVhWmNiZW9jVVRkWHFuWDl3X0tSTWQ1TmZSVDQwcjFLTy1xRWtrWGJXUW5XWGVBbGJwR0ZPSnUwNkVkSzZLZEZveWZZWW9yNUkzYlU2NzdNbl9WRDJaUzgyaUJGdlY1TWVCMVp6enRtUXRMWk4wNUZoQmZJdTUxaFl3?oc=5) | MarketBeat |
-| 2h 前 | 0 | 中性 | [Ackman calls stock market "broken" but touts Visa, MasterCard and Netflix - Yahoo Finance](https://news.google.com/rss/articles/CBMingFBVV95cUxQRUVQekMwVDh0SVZ5ZXpfVG5BeW1EZ3JmV1psRUI3Z2lRWjd1eU11RWluN1N1V1B4RjBHUlI4bjk1elNUQUZERFUweGhVak9xZ2w0T1RtQ2x0VGtVdG9NX3dlNy1rTkNXSklfT0prNVJMSjhXZFhPemp1ZW9ia0FaaXplSmNuT1lyR0o1dE5ZWjBjZDdTTm51S1lrUl9IQQ?oc=5) | Yahoo Finance |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
 - 公司尚未盈利：估值没有盈利可锚，股价由叙事和融资环境决定，这类名字在流动性收紧时跌得最快。
-- 政策面对该板块的倾向为 -0.94（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.83（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 

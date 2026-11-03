@@ -53,7 +53,7 @@ _医疗 · 数据截至 2026-11-03 收盘 → 面向 2026-11-03 开盘_
 - **动能**：RSI(14) 58，偏强；近一月的斜率快于近三月（月 +9.4% vs 季 +16.2%），趋势在加速
 - **波动**：日均真实波幅约为价格的 2.1%；按本报告 2 ATR 的止损惯例，一个 R 相当于 4.2% 的价格距离
 - **位置**：距 52 周高点 -2.2%，距 52 周低点 +32.1%
-- **量能**：最新一日成交量为 20 日均量的 1.5 倍，量能正常
+- **量能**：最新一日成交量为 20 日均量的 1.7 倍，量能正常
 - **相对强度**：近一月跑赢 标普500 12.1 个百分点
 - **支撑 / 阻力**：最近的摆动低点 29.22，摆动高点 30.44（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
 
@@ -110,18 +110,18 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 5h 前 | 9 | 中性 | [Non-COVID Portfolio Steps Up: Pfizer Outpaces Consensus and Hikes Guidance - Benzinga](https://news.google.com/rss/articles/CBMiygFBVV95cUxOTmdFdUF5NWVaTnRNS0ZKV2tKNUxjamRuTHJlQUVpME9ZbmdleXlpTDhyTTdBTnpuNFAtRzJ2YmZCdC1pbEFuQzQ1bThnUlNqMjdsQ0s5bTRDVVk5VkVfcEFfZm9pZ3Y3aHdLMGtsTzBNdklOZUtQMGxGbzdTOUFOMVEwdXFoUTE5XzBmbjN5U0V1OXlVRFo0TW9NeHItMG5MX3FhYTJwVjJTS1VYQUM3RzFyVXdhaVJwdF9VdUJ1M1FQVlVQSzBtYm1B?oc=5) | Benzinga |
-| 7h 前 | 9 | 偏多 | [PFE Beats Q3 Earnings & Sales Estimates, Raises 2026 Guidance - TradingView](https://news.google.com/rss/articles/CBMitAFBVV95cUxOU3o0OGRaZVFoa1FndERuY0FTSVZOZzlUTlIydmV6N3pnMk1obWdzS2I0SkptQ2lJcWZqNi15THFKUUdRT2ZJUGt2cUFxOXpBX0pXaGdDTlNYR1djTnRpNmZwV1dDNmZGUEhld3puQnNodXQ4czd5ekl1SFR5d3VOd2Y4OEluOEtoS2t1aHlFbUhDNHAybi1NRUJqZ2JjcTNEbzcxZ0FaSVpEU0xYTWZsZEctWk0?oc=5) | TradingView |
-| 8h 前 | 9 | 偏多 | [Pfizer Beats Expectations in Q3 and Raises Its Guidance. Is the Stock Due for a Big Rally? - The Motley Fool](https://news.google.com/rss/articles/CBMiywFBVV95cUxOS1g3QTFIWDVGV0tsYjEtM0xQNFB0YzRRaDJLVEdJZkw4S2IxdjBpMUpXUGdwX1RCaGtsR2JtWE9ULWE2TmdzbjVrWm4wd2FBODlJYmZnVFVTRnNhX1JVdlp6MmozeVc4aWZfYnRXT0F2Mm1rektOXzZ5Z3FWX21SSmd4dTVLWFFzSENUNExNdzFxUUR6VVlJUWFIMTk1OFZ5eU9RZXZJWjBHdklUSENweEZBSXpldGpaQWI3T0lOTzBzZFNoRWxlSnM4aw?oc=5) | The Motley Fool |
-| 2h 前 | 8 | 中性 | [Pfizer Earnings: Our Pipeline View Is Incrementally Positive - Morningstar](https://news.google.com/rss/articles/CBMimgFBVV95cUxONnZxWGdJNkg1U3FWdlduTkdqRTEzd2ZRVGNZU1FPSDVMWmoyM251NHdpRlFDYlQyLUc0Z1I3LXN0X1czYXJIRU1XSGJ1aDF3YzJoWTJfb3N4MnZraHpJNnQ3T1l6SEFUTHBTc3hjUGRKWnEwYWRlTHVfejY3amFqZ3pyeEUtUHc3NndkZ3Jkc2lzQXZkcWMxRXBR?oc=5) | Morningstar |
-| 4h 前 | 8 | 偏多 | [Nasdaq Surges 1%; Pfizer Posts Upbeat Q3 Earnings - Benzinga](https://news.google.com/rss/articles/CBMirwFBVV95cUxNNEpQRGp1UkppYkhxeEVRcWVKTTREVFM3TlcwSGNhbWFzYVF4TjhBX2ZHTldRRFpWSVRTdUNBVzNEdkVjR0g1bS1lM3RDNE1jRFdISzd4WHgtZzkyN3VXWXdZVHBtM2Uyb0p2ODh2a2puU3V0bFFQZFRrXzlJZk1ZaVI1a2t2LWNSZDEtRERKRENtVnJhUXZScXhYcDV4NlFQQ1lmSHNkSHZNYWZsME4w?oc=5) | Benzinga |
-| 4h 前 | 8 | 偏多 | [Pfizer Raises 2026 Outlook and Names New CFO After Earnings Beat - Yahoo Finance](https://news.google.com/rss/articles/CBMimAFBVV95cUxQM0o0UnhTSkh4UERkTjRXZlVUZWU2UzZMazBxQVNEX3MxcGp1djA4N1B2SVV6bzExcjFnMjNScmRUTWNkZU9yejJNcWhwMjhnMWdPVi1uVTlleE5BTHJyYURfd1Jnc2lMcXRRTWFkTno0M0o4cVVmNW5xckVqZjJfaFgtM1NPNXdTVDlrTEF3Q3d0SGU0amk3OQ?oc=5) | Yahoo Finance |
-| 7h 前 | 8 | 偏空 | [Pfizer's Eliquis Price Gains Cover COVID Drop: Rapid Earnings Reaction - The Motley Fool](https://news.google.com/rss/articles/CBMimAFBVV95cUxNM1ZEM1E4NUdOblJLWXZBbzVhckljN2w1X0d3eHVvT3pmZ3RaTkMxSjh3X20tR3ZjT0pkdDY2SDhwSnc1b3Y3SzU5OEltWjQ5UVFxNWdxOTdxWW9yVG8waXpmTGExbFNSMjI5ckJGbkxSXzlxOHRmbXhRTzFFSFkzSVFuWGFJMkxtM3ZqTEkzM0pjdjBacE8yRA?oc=5) | The Motley Fool |
-| 9h 前 | 8 | 中性 | [Pfizer Reports Earnings 📈 Shares Near Multi-Year Highs - XTB.com](https://news.google.com/rss/articles/CBMirwFBVV95cUxPbm5haExEdWlKczZ2MmRma2syWjJzcHBLekpGdFd1R2VTVTYtenNyc0VTYnQtQ1B4ZThtT1JsdGgtRzk5YngwODc2UXNoUHNhSkx6X3BhM2xUaHp0ZHU4TzlyY1JMQldRTFFnY01kODF5R2tPT2stREFPNHRTREZzd202emZVV3hDa2UwYWM5ZGo0eXRDSGxRUzR5bXdSTlVEU09wRDY2MEd3bllPNDNV?oc=5) | XTB.com |
-| 9h 前 | 8 | 偏多 | [Pfizer (NYSE:PFE) reports strong Q3 2026, full-year outlook slightly exceeds expectations - TradingView](https://news.google.com/rss/articles/CBMi4AFBVV95cUxQNGRoVWpzRFYzcFdpQTRhdVlTRkhya0RfMy0tejhsVHpZb29aVjFUVU5oM01iMVRPb3pzSGI2ZjVWNTc1QmRrWVpzSDFFNlhGMGh4VWdVYTVuNE9SWEpZUmtEY0xYWFVOcjVHbDQwMnRndVNrN3p3QmtLTi1aTWJvZHoyLTR6cjkxSXV3RktMTks1TXp4cEVubU55TFZJY1VuSUhid05WX3lZWG14OHBLWmppckc0Mjh0SUhDNVdQLXdMWkh1anpSMW1mQjRERHYxUmFsWEV2bTR1Z0lMUkJHcw?oc=5) | TradingView |
-| 9h 前 | 8 | 中性 | [PFIZER ($PFE) Releases Q3 2026 Earnings - Quiver Quantitative](https://news.google.com/rss/articles/CBMihAFBVV95cUxNTF9QOEpKdW5XeVk3V1dqSzRvay1ueGtWUnJyU1h0aGJ6ay1lelpLV2NpUDcyOGNKZktXa0taLXdGWngxTEhMSkVKMUhiald1Z0JKaUVPblIwNjA0eUlTV0puZGhuR0hrdUdIZ25CSjQ3bzF4b2c0d0EtbWh2MTNyR2FuV1E?oc=5) | Quiver Quantitative |
-| 9h 前 | 8 | 中性 | [Pfizer (PFE) Surpasses Q3 Earnings and Revenue Estimates - Yahoo Finance](https://news.google.com/rss/articles/CBMingFBVV95cUxOS1dDV1BleUNJdDB3S2F0cDltMmZXc0xnR2E3UWxPOG5ZOTJKT1cwMG9SdVp0UVU1dTZma1FUc1RCZmVEX3FzXy1VN3M0RHoxeFRUVk9vbjR3d05GemR0cTRtVmdBYnEtcDB3LXJKZTd5MHFJUzZFdFJCQ3FXNGlfNFNjRDh4MUdjTVQ3UFA2ZVNCbGFPQk1nVVpkdndyQQ?oc=5) | Yahoo Finance |
-| 10h 前 | 8 | 中性 | [Pfizer Earnings Show Its Newer Medicines Selling 32% More - Stock Titan](https://news.google.com/rss/articles/CBMiogFBVV95cUxNdXBSNklZNEdjdUpSM01Gdk9selUyWHhJdlY0U2ZzVllRb2wtMksyNWlSSXpMNnJIV3lQdlJ6MU1jT2FQaEIxOWR2S29wYXNQSHlJNjItNVExYXp5SEVWSERIc0pnaEdSODEyRnFGQzdrSFJQZTBXY0pneWRnOWdTZzdVd3NYem81MkZUcGRlZGRUZjRLWjBqWXVBNGxmUVFiWlE?oc=5) | Stock Titan |
+| 8h 前 | 9 | 偏多 | [Pfizer raises FY26 EPS guidance to $2.95-$3.05, beats estimates - scanx.trade](https://news.google.com/rss/articles/CBMitAFBVV95cUxQb3lxV1o0VS1Ia2RjV29EaWpnLWdpeVRmMFY3Q256b0k2MUxnUTFaakpzbHdVRFBIU3k2TlNZR1BOM3N0ZVlSMkQ1VXFmVzR0ZzBYb1lOa1dINGlVMDVSRVJEVE1nWlRDR01hS1QzbFRua0Z4LXpzT0liV0VCNjJITXQtbXQxV090ZDRRUnpTcVcyaURuaWF2a1RJMXRabU5ZcEx0RkQ2VS1HTTQ0TUF5QlplcVA?oc=5) | scanx.trade |
+| 3h 前 | 8 | 偏多 | [Moderna jumps 5% pre-earnings; Pfizer dips desp... - Pluang](https://news.google.com/rss/articles/CBMisAFBVV95cUxQOEVQQ19ta3pBNzZDUFhEa3YzNzdzSmdrNHFYX1FLQWI5eHh6UFBuM1F5dTFwV0xvSDdsaXFsMTBNWWV6Qmh4ZWUtcnpLa1RFNGpidVhaRjZmdUdfR2FET0lGdW01bzlOaWZNaDZuYS13bmE5RlZOOC1WVnVYMmd3SndSNnZZZmwyRUY5UTBBQ19XMlJmWnRTNDRNUEQyaXhFWmI2cmVacHF5bWwwdHE3Uw?oc=5) | Pluang |
+| 7h 前 | 8 | 中性 | [Pfizer Q3 2026: What is verified and what is not - Rolling Out](https://news.google.com/rss/articles/CBMidkFVX3lxTE9KQzBXS0lDVmlodEZFSUxQaXRMaXd2dU9XUUE2azg5SzF3S2FlQm53Nkx5Y3JtTDdJZzU4SUlFTzdlNWh4OE91UjZfZ3hKTFpJRWtLcDBGdlVDVmxOeURGYzZfUEVCYms5YU5icC03U2l4SEhrelE?oc=5) | Rolling Out |
+| 8h 前 | 8 | 中性 | [Pfizer (PFE) Reports Q3 Earnings Tomorrow — Here’s Why Wall Street Remains Split - TipRanks](https://news.google.com/rss/articles/CBMiqAFBVV95cUxPWUN6OU0xMTFqbFZfLVEwYjJrc2lESDJhaHV1ZXA4MEwwd1hzVlRmMEFoUkhoazA1UDk1QTlLRmlSNmVpTkF4RnZZaWVxSFp2aFp6d1NxRDd2amc5cG92MEhVZlFwdV9URWZWS0Rod0FLZXU1ZFlxQkNVQnB5V1ZEbWM0VVh4eUxldXdiaWNYUWpsbndSUHhGaldQTjUxcWJ0TENzSDEyS1Q?oc=5) | TipRanks |
+| 9h 前 | 8 | 偏多 | [Pfizer Stock (PFE) Flat Despite Q3 Beat and Raised 2026 Sales Outlook — Here’s Why - TipRanks](https://news.google.com/rss/articles/CBMipAFBVV95cUxQSk1kTkUzRWplLUpsRWRwVFdkU0dBT29kTURvOXhWQ0xOeWdYZUNZM3hNNlg5WDZvdDNndHNtSUVFN0plV0FNRXRmWkhCVkZrekt5QWxSYThTbTJ4R2VlNS1SMVZ6a1FqaDhuMWV6TU1TbXc2Wld4MzRWM25tYURzUXdoaE5tUXJfamVKRGU4NG56ZTJINU9fNmtDUlZxV3ZSTGp5ZA?oc=5) | TipRanks |
+| 34h 前 | 8 | 中性 | [Pfizer stock heads into Q3 report with a lower earnings bar - ad-hoc-news.de](https://news.google.com/rss/articles/CBMivwFBVV95cUxPMXVlYi1SMkFTU3VpWWJPQU5Zb0FQRlg4UGtJTkVDTm03VkRUUmd3Z3VVeVZOWVV2azdYWmlnVWsxTHlNXzdLUWtFbDZmajFXQXcxVHdTNHdhLUN4ZFRzd243WS1Eai1TMlJGdUxzZjhlYlRLZFl6WHp4cWJEQUdveFZmX0hvMEFiRVE4aUxlLVV0ZWZTX1V3anNVYWhQSVBuUGdNbm5QMTdKaHhRaDkwV0d3MmdKMDBrR25uVm5Lcw?oc=5) | ad-hoc-news.de |
+| 6h 前 | 0 | 中性 | [Pfizer stock gets 2026 outlook boost as new products offset COVID drag - ad-hoc-news.de](https://news.google.com/rss/articles/CBMizgFBVV95cUxQUEVHYlN3UnhlNnlmWjJRMUR1MlVvdVZNNzQ2Uk9IMGRiSzFYaExIb04wODZ0NWk3QlpsQXRhbFpublZLbjhKS1Mzd0hjOFZCOVVaMFBXZzRtUEtGZnlpOHQwYjFIT3JnUURlakotanhvWnpDTWItUWJwNWxBczBXRG9HSkZFcVMzaXRvQWowSHZzdEVqNHI0VGJPYmJ1SHV3N3NhMXFFOWNOODhJZDF3VmdYWUc3aFFIM1MwUGJsZ1NKMWx4TGxQLWY2N1FUUQ?oc=5) | ad-hoc-news.de |
+| 8h 前 | 0 | 中性 | [Pfizer stock slips as higher outlook masks a mixed third quarter - ad-hoc-news.de](https://news.google.com/rss/articles/CBMixgFBVV95cUxNMlNSVGNTNFAwbDVqeksyTmZkaVFzMkxWUHhlU2phckMybzZqeDhvVF9FOXlJelU5SWFrSDJUblduV3VXam02MW1haUtwdzlKaU5tUlZaOGREOTRqVFFFOUhHR1RrYWdpQ244em85LUJLaTMxZGtFX2MzcWJXa1FVeW01Y21yUGxfZkNvZkF2M1BQSHFzeXpfYUdYZlNaU2VYQ3phMEQ2NmZteDdGQWdfNlRhVEg4NERiOE5heTFqNlBoc1BzX2c?oc=5) | ad-hoc-news.de |
+| 26h 前 | 0 | 偏多 | [Rivian Stock (RIVN) Defies BofA’s Sell Rating, Jumps 10% — Here’s Why - TipRanks](https://news.google.com/rss/articles/CBMilgFBVV95cUxPZTFCRTZGT0ViaklhWDJKOUhwLW5xazdicGl0Z2FITW9VOEVJN0wtc25vdnNKaWI3a01vLVFRcFVDUTB6SWRRdzJqODh3eElsN1o1b29EQUJHQjBMN1NBMXhxdGxLTTlFdDZpX1pXcGlQZ1d0Qmc5Z2k5dGdEZC04b3A5Mk9FdjZsR2JFd01GRlVZbGpFQkE?oc=5) | TipRanks |
+| 28h 前 | 0 | 中性 | [Pfizer Inc. (PFE) stock price, news, quote and history - Yahoo Finance Singapore](https://news.google.com/rss/articles/CBMiUEFVX3lxTE9fMnpyN21IQXhKY3p6Qm1sU0lNTlliYnlzU1ZhcGd0NDdva191X204ek9sS3BHTmk2VVhnVzNkSWlCd25LdEp0a045R0lsSFg0?oc=5) | Yahoo Finance Singapore |
+| 34h 前 | 0 | 中性 | [Binance Got Hacked for $6.3 Billion. Is Coinbase Stock the Winner? BTIG & H.C. Wainwright Analysts Think So! - TipRanks](https://news.google.com/rss/articles/CBMiywFBVV95cUxOVkhlQ1laOVZhSF9ZLXh2dkM3YzhHWUVhTERHZlNua1pDRll1OUNiN2VvVEE4QTFjNGxqN3hrWXJnQ3RLVkN6eUJ4Z1hrUElQZDVVWmlXVGVpM2VsMHhGS0tnUy12RGtDN0xwSXdzLURTRHNINEJ1eHp2ajRiZ0pPTVlMbWVyM2owd0hPOGlCVkM2eDlkMXItajVuWHpEdmdqSEhFUmZzblFZQ2FVWGRaMGFaSnJMTzJrdGF2cmNkTWV6RTdvMEl5VnoxWQ?oc=5) | TipRanks |
+| 34h 前 | 0 | 偏多 | [Is Pfizer (NYSE:PFE) Recovery Strong Enough to Justify Its Rally? - Kalkine Media](https://news.google.com/rss/articles/CBMiqwFBVV95cUxOcE1RWTRqbGVLX3hwbnlRcG1lOVJPRnAzSFk1bmdKbmMtcEM2ZjZBT0E5SGd6bkhZR1pURG9rMWVETm52cVV5VnlPLUtIRTdtTUJYaF9zelR2U2ZyTkVveWNJd21HYVJuNExDekNUUzBWYjBac1RaaHpkVHdXY21HWFBoRy1Xc2I0eFN6YnJkNlVlT2UzR3JwWTdieFlMVEstMGVnS3NaM3JYVEE?oc=5) | Kalkine Media |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -130,7 +130,6 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
 - 公司尚未盈利：估值没有盈利可锚，股价由叙事和融资环境决定，这类名字在流动性收紧时跌得最快。
-- 24 小时内的利空标题：Pfizer's Eliquis Price Gains Cover COVID Drop: Rapid Earnings Reaction - The Motley Fool（The Motley Fool）
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -152,7 +151,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-29 | 29.99 | 30.18 | 29.61 | **29.95** | +1.7% | 34,259,400 |
 | 2026-10-30 | 30.51 | 30.67 | 30.14 | **30.52** | +1.9% | 45,476,900 |
 | 2026-11-02 | 30.45 | 31.04 | 30.20 | **30.67** | +0.5% | 50,818,500 |
-| 2026-11-03 | 30.68 | 31.06 | 29.89 | **30.00** | -2.2% | 46,735,644 |
+| 2026-11-03 | 30.68 | 31.05 | 29.89 | **30.00** | -2.2% | 52,565,095 |
 
 ## 七、自己去查（本页不做独立验证）
 

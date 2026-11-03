@@ -108,17 +108,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 3h 前 | 8 | 中性 | [Nine-month Humira sales fell 35.4%, but AbbVie (ABBV) earnings rose. - Stock Titan](https://news.google.com/rss/articles/CBMipwFBVV95cUxNMVpuQlU5RjBXd2RxamRxcVl6anA4cDZfbEdXNWFZanVjLXFOYW1VcTl5M0pHblcxcXVSSnlfVWxiMlZoWWhMZzA5SDhfbGtIMXdFMVVXUnZCbU9xaE1mZVZiSF9NcEswNVRxcVZWYUZfU2k5OWlxU3gwejZxMXJRQTgwYjBUdzJ3X0t2ZE84RUk1b3lvUXdxSVljLU00dFRqSUVIMFpzYw?oc=5) | Stock Titan |
-| 5h 前 | 8 | 中性 | [AbbVie Hit a New High After Earnings. There’s More Upside Left. - 24/7 Wall St.](https://news.google.com/rss/articles/CBMipwFBVV95cUxPanVJUzJVWk1SX2dfRWFvTk9admlGdTNETldGZVk4R1hGMEc1a0I0bVhWbXhfczNOdnJQNEhLdG1aSjNCR042czdCLWxzXzV3QW1VaFZiekJzUFllLUEwTDdLeU00YjZMX3Ewamh6QkYtTVI2WHdYbnk3Q3JfQWp3NTg4Q01uaXVWWVFuVVl0T25ud2lHZGc1MUNZS19tTk9XWVAwdVlKMA?oc=5) | 24/7 Wall St. |
-| 27h 前 | 8 | 偏多 | [Guggenheim raises Abbvie stock price target to $322 on earnings beat By Investing.com - Investing.com South Africa](https://news.google.com/rss/articles/CBMixwFBVV95cUxPVDktODEwMzJZdWMzZEw5dmg3SXJiVGVoUTFGdk1iR1U3QncxS29fRmpnQWdvLXZUQm1yeGZMRFVYNmVrRGpSR01wRjg5WXhfeE9jN2p5VlNiMTQxMU5yZUtZM09XRWstRVFBcEhUaUhHNHBfdTdmXzU1Qk9KdkJHZlNVTWMtZGdlTFB5ZGxyWGxYYWRtTzlxakFSWEdod2IxUUdiNkpYVnpPdFVGaTJLT19XVHJtaFpURlh4eHF2aVpoZlVqRzkw?oc=5) | Investing.com South Africa |
-| 32h 前 | 5 | 偏多 | [RBC Capital raises Abbvie stock price target on immunology growth By Investing.com - Investing.com Australia](https://news.google.com/rss/articles/CBMixAFBVV95cUxORnVfRGpWY0VpbUVwSHIxYTdHUElTMFgtUUhDLVVNWkdvNGs4eEg5dVVIdFJzcklDZjlmd2lNSC0tckRHMU1iVWFMbnpOUE5mdTV6alhKQklTdmRWZlVGWW9WN3poV2xVUXhOQ0tJM2lvNGJPQkIyZHM0SExWSk5WeFNnU0l1MnZKeWVJb3pjcFYxZG1RRGI4U0VWbmhqVlcxVHJ2VURjZkFJUjVSZFhldHFTSU9Wa3RTdzllWi1KcmdiNVQw?oc=5) | Investing.com Australia |
-| 36h 前 | 5 | 偏多 | [UBS raises Abbvie stock price target to $295 on strong quarter By Investing.com - Investing.com South Africa](https://news.google.com/rss/articles/CBMivwFBVV95cUxQdURkd09KRXJFbDAySUpSWGhsVVM4MHJsanJOdnVNU1VFWlNXeDJFLU92RXFQQnFuc2dXbHdjQUdONXYzUDBnUktZamZvckY0RWZCbkJTeGxPcHJ5MGdFZUN0c0NsYzM3SmtHNF9BSlJTOTd4T0FxcHBZRjlheEJTSUVXbWpkajNCbEtqSUdGQ1VGdUttZ3lxdTZ4Sy1mMXdjM3RlMEp4WGd3T2ROTFFncWxRcU1YWUFXU3VsdHNYUQ?oc=5) | Investing.com South Africa |
-| 12h 前 | 0 | 中性 | [AbbVie (NYSE:ABBV): A Quality Investing Candidate With Caveats - ChartMill](https://news.google.com/rss/articles/CBMirwFBVV95cUxQMG1pd1Z1bmlSVTByMHJOckVrNEI3MzlwXzdJZEhELVBOMGJlU3QxbER2d3lKaW40OTA2N1g3SU1USDZoaG5LdU9IdGMwSVVwZkxLZ2cxeklkemJhbjJPMU9yX0YzSzZ0Y1k1SmJESlVhbVgzVzMtWlNVWTFlTWo1VEhWVTM3MVQ1anlwcGZBa3dMZ3UtQUdJRVBUczZra1czNFh4em41Qnk0ZFFJb0RJ?oc=5) | ChartMill |
-| 24h 前 | 0 | 偏空 | [AbbVie Inc. stock underperforms Monday when compared to competitors - MarketWatch](https://news.google.com/rss/articles/CBMixAFBVV95cUxNUGNySElDS1BVZ0dIN1BHWkRGckdxWkdvbmlWMDJnMzdoaHRHTW1qTDdKSXJzeDU0cWF5T18wemJnNVBDQzJ1ZFdFdThQdEVob1VHNEIyZWlOMk9Sb3hVVGljVnBLUW1WYWlZdnJiMGtTN2JfR2JOV3pDT0RBUDB2bVAxQjctX0dDd0ZzMTgxZW00a1hXUVRXaDRMcW1pVDE4R0tTbXN6czlpNkZ5UWZqOVJGMUJjdWh4QmlBcDB6b0FRT1Fu?oc=5) | MarketWatch |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 

@@ -110,7 +110,9 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 6h 前 | 8 | 中性 | [ConocoPhillips stock faces November 5 earnings test - ad-hoc-news.de](https://news.google.com/rss/articles/CBMitAFBVV95cUxOQ3VMQWJhR1FJS1dTemtCNlpZanU5c1pXckVfM2xFanQwSEhiNlZlZDV3dlBveGdCZ0g5RDFJbUYzenQ1WGRWNHl4TkFoNjJGaF9lOU1XZENZbHJEM2dWSi1OQ3lXSXFOc2xtbGQxa1dBMGZybVBTQV90aGg4U0dSZjVuYW02V3dSS1Faak5vVnhnV1Utb0dzaXJDYXNRclU2aE9UTDY4RGlBOXZObGRBT0tjbGM?oc=5) | ad-hoc-news.de |
+| 14h 前 | 0 | 中性 | [ConocoPhillips (COP) Stock Price Today, Live Chart & News - TechGraph](https://news.google.com/rss/articles/CBMiV0FVX3lxTFBFX0dsWG5GUGp4YTd4VUZTNFYyLWV6cWJpQm5mMmZyTTBtTzFlUkIxSHFVa0VYOXY2ek4talNYN2phM28zcUY5TVhPQVZkd2ZPNlJkWlA3WQ?oc=5) | TechGraph |
+| 23h 前 | 0 | 偏空 | [ConocoPhillips (COP) Shares Fall 4.7% -- GF Value Says Still Ove - GuruFocus](https://news.google.com/rss/articles/CBMipgFBVV95cUxQZ3RSUFhLUzN2cEU3cFRQQUxrUkdNTW10NHNNazVjdGViTVUxWjNsdVU0amtTVWZqYnVNeWc0eDR5bjFpdURxSDhfY2Q0VVpTVjNUT1U1MWZLeFJqNklGTEhxb0E0czItSkZVYWM1OW4zZUxZLVF2QzZfUmdORlRWQUtSUG9aSDNjVTVsd0hyRGMxczlNSkNwR0gteGZXUmpRTEJtN1Jn?oc=5) | GuruFocus |
+| 24h 前 | 0 | 偏空 | [ConocoPhillips stock underperforms Monday when compared to competitors - MarketWatch](https://news.google.com/rss/articles/CBMi4gFBVV95cUxQU0RxTk5JeHVMM2xzR1FjWjVqTEdFQlozeU5IZElzRXU1a1VzZHNYd2R4T0JwMUQwb1dMRzRGazVTNlZ0VjZsMmFxc0psZEluc1JBWWlzcHJxYjg3Y3ZrTS1fWU41UjNFc1kxOXMyRkotTEVEbXhIb1NTcURpejQ3eUNmNHREdV9GSWFZT3Q0c3YzeGFocnFfLWc3RHlXbHBvenBsU0RfTDJad2NoeGV5bDRIdVBVcjhXRF91VG9yanliZU54NlYxNWhPMVBzZkhYYkl6dkwwV0NsUFBjYVgxWW93?oc=5) | MarketWatch |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 

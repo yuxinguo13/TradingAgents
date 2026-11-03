@@ -110,13 +110,8 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 10h 前 | 8 | 中性 | [Vistra Corp. $VST Holdings Reduced by Sumitomo Mitsui Trust Group Inc. - MarketBeat](https://news.google.com/rss/articles/CBMixwFBVV95cUxPeGVxd19aQzZJZDM5X29sZjI3ME9RbEpxRTJSNzQ1VHhLRWNib0dkUFZ2dXdVbVpHNHRQRXVrc0trY1JkRDUzQmp1ZGUzQ1RJNHlkWWVpMDRKR0lMZXNJRUtCamFsa25DTkZ6Um5HcGVnM21WZ2lnWkExOUcwam5WWEtMVmlZd0NodlpXZ1VGTWVSU1d3N2wwZ0lINmRjemFsa0JZcmFPdEM5SEo0aG1mTzFqdVd6TC1iSnpFMVRZbG54QlhsdElj?oc=5) | MarketBeat |
-| 13h 前 | 8 | 偏多 | [Vistra Corp. $VST Stake Raised by Bank Julius Baer & Co. Ltd Zurich - MarketBeat](https://news.google.com/rss/articles/CBMiwAFBVV95cUxNR292NW1ZT3R3WDFOMjkxU3BUR09SQktRT1dWbVBEZVJNVXVLd1JTdURnMU1vTV9ZU1ExRFpaU0FISF9RTDhlRmVHZkpMa3hIakdaQU5aSm1sN3lMWEJTcU9BcGJKeGdKZkc3aTQtaklFSzJtVXZ1alVRRGh6VDlNMkZsUkQwelFQS0wyeVEzVmxVTHJoRnU4cnB3aTdaQ3lHWUdESGN1SlZHdlA2RXFQdEZ1WC1KNEdzdUFrdlktRjI?oc=5) | MarketBeat |
-| 22h 前 | 8 | 偏空 | [Vistra (NYSE:VST) Stock Falls 2.9% - Should You Sell? - MarketBeat](https://news.google.com/rss/articles/CBMiqgFBVV95cUxOY200bVJ0MDJ3djItVW1aX3A5c0VyVU9nbDMyZjB1RzByQUdYWWdOVlVOMHRDZkFIQjVwSElsbXprSlBTazRIc0NDNk5vLTJTQmV2d0dsVTVsb3ZsdWZicnpsSWpFMmkwM2tHcDZQTmdSZE5FTGFKX1VmMFUyekVaYkdIWTNwb2JTTkFWRnJKV1JiSjgxRWpWa3hKX1NwOWU5N1hnYm1JeC1Fdw?oc=5) | MarketBeat |
-| 11h 前 | 2 | 中性 | [Mirae Asset Global Investments Co. Ltd. Makes New Investment in Vistra Corp. $VST - MarketBeat](https://news.google.com/rss/articles/CBMi1AFBVV95cUxNbE1VU1dFRlNyQWg5eFJKS2dubjdzX25nOWJ6QzhVcFJWNW5yRDgyeHBKa0JVcDl4bWRBaERZYVRSaW0xRGpDWnhLblVFazdBMmR1SEgzY0EtS3hhaEhqcG9qOTJKRkxpYktrSmFXSlRlWkJPaWcydURXNXg4akhjLVlpMU1QczFJRUcwY1BiWFY4NExSdE55MFROVzR6UnRhWnM4QjllQjNfZm1xXzlHamhuUFdWODlQTXhjdnZVR1pTLW5iY0xCa1ZEeFpMalgtRGtJMA?oc=5) | MarketBeat |
-| 13h 前 | 2 | 中性 | [8,026 Vistra Corp. $VST Shares Sold by D.A. Davidson & CO. - MarketBeat](https://news.google.com/rss/articles/CBMisAFBVV95cUxOVmdScndBejlfaktPNVhzVm5JRWkyUjd5dUhqX0lpRmMySXh6aXg3cXlLbWJ4U1doLW11NVpib1N1TFFUUTFPTTdoQVZvOGZrS1lkZWkxMmxraV9VcjVOWjZXZC1tY3hOMUZSU05QWG5YQ0JEaFNCZkQ2Q3YwNmZONEp4dE5ONGJDT3FRdUh6V0R4SmFFYS0tN2NpYVhXR0dYNTVGRUpzNnJkRDBXbUtFYg?oc=5) | MarketBeat |
-| 5h 前 | 0 | 偏多 | [Vistra Gains 5% as Talen Guides 2027 EBITDA Up 26% on “Strong PJM Fundamentals” - Yahoo Finance](https://news.google.com/rss/articles/CBMilwFBVV95cUxONnREeWpEMk9ucnFtS3dDdzc2RkZzQ2Z5dXp5Nl9LcV9YTWVWdFlGYXM2OFFmSFAyNkJKTnA1OEVrNWFpeW84TVp6SG91T2JjV2VnMWFaWW0zcllkMkJla3QzUDlBdmdjOU1YNU5VU2pUYVV0aXpnckczOTlRMllFdDJHclR5ZllmYTNwUUZFaTFWRVNFR2Zz?oc=5) | Yahoo Finance |
-| 24h 前 | 0 | 偏空 | [Vistra Corp. stock underperforms Monday when compared to competitors - MarketWatch](https://news.google.com/rss/articles/CBMixgFBVV95cUxNQTRKZllmUnBCYmpsVWxvaUdsM2NGeVBHaUQtLVZYUTV0X0wtQ2dVSmNySHFVV3hFc0I0MGU0UElQeGp5bHpadzVILVNMWDlOTVgwNE1tRmJoVXB6TUNGdXJDa1RHcl9vMUlVTUZlZXhlNkFqcjF4RU82OFFkWXRUbDV5Ujc2ZzlxM044c0NDZFFIcFFxeGE4MUxia1JHemplNnJXWFpjb1hLV1EwZ1ZYMWQxX1QyRWo0LUsxR3VCTjZEM1ozQUE?oc=5) | MarketWatch |
+| 23h 前 | 9 | 偏多 | [What Is Driving Vistra (NYSE:VST) After Its Guidance Upgrade? - Kalkine Media](https://news.google.com/rss/articles/CBMioAFBVV95cUxOZEFDTjNVQWNuT1pEbXRreVBtSWpBazhnY3UwZE5TNDZJSzlCTE9PWGxvOFNCRWhBalZYQ1RhZXBManZUT0ZBcEpMZnZGUENhU21QRTFRcWRDa0VCdlRyMmNnMVhqMzRTUkJZb3AwRTlZXzJBcFVJeHA4VWl3eGdsZE5XVUdxcXNKaXd5eV9vX2pyM0pISG1VdExxaXE3cVM5?oc=5) | Kalkine Media |
+| 41h 前 | 0 | 中性 | [Can a Federal Loan Reshape Vistra's (NYSE:VST) Nuclear Story? - Kalkine Media](https://news.google.com/rss/articles/CBMinwFBVV95cUxNZkVQY2NUMWpuVWE1eU5XOUE4MXBIX2JKZnRTZzFkUFlkYVBRM0lhLS1RcWN5WmRWdTlLSHlKRTJxU1EzQWJXbTBUZ2xqUHQ3UVhfSGY2X19jUmc5WDZya3VrcjBrb1NaUVFGZ2E3a1JadkRCSlpzeVRJX0VtblZDZ1A2c0J2QXBIaHVUbENZTEhvNjhoOU5pbi1rLTRHdnM?oc=5) | Kalkine Media |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -128,7 +123,6 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 - 摆动高低点都在下移，属于下降结构；在出现一个更高的低点之前，任何反弹都还只是反弹。
 - 下次财报在 3 天后，落在持有期内。财报跳空会直接穿过止损——那一晚的风险不是 1R，是没有上限的。
 - 公司尚未盈利：估值没有盈利可锚，股价由叙事和融资环境决定，这类名字在流动性收紧时跌得最快。
-- 24 小时内的利空标题：Vistra (NYSE:VST) Stock Falls 2.9% - Should You Sell? - MarketBeat（MarketBeat）
 
 ## 六、原始数据（本页所有计算的来源）
 

@@ -110,9 +110,8 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 6h 前 | 0 | 中性 | [Can PG's Premium Brands Hold Up in a Value-Seeking Market? - TradingView](https://news.google.com/rss/articles/CBMiswFBVV95cUxPYXo3M2lUTlBIalZMX3BVR29FLWtCNXVoV3pjeE5lNm9hY09vM3R6YTNRWDZtM0FNRlFYVWYzclNhY0s5QU5nM3c2aFo0SjJOQ1dLcDFuSExNTTdaY2txTmM1SGVtWk5uYVFHVndLNXh1emQ3OVVEMjhPQVJlckxsSHJUYUN6MkpVUEFfUWU5R0w5Tk5ZdnpjRTAzQWRRUTdXNmNaaHhiNm5FLXN6YTd4U0haWQ?oc=5) | TradingView |
-| 9h 前 | 0 | 中性 | [The Procter and Gamble Company Edges Higher on NYSE: PG as All Ratings Lean Positive - Kalkine India](https://news.google.com/rss/articles/CBMixAFBVV95cUxON3pxWFEtRXRDWEpSemJFMEJneDBZRlNJMjlJY1JwYThpSHd5RXA4ZzVkX1hSa3pnZTA3MVdPQS1yeS1iV3E5cWxTNnF1VWF0U2JJVlFUQlV1czI4enZoZTN5VjhpU0IxQTFUcElYWWNrQW92aTlhd0NrQ3dYX0llT1pVWWlON0pJTFJoX2J3VlZsTmlIa1BxRDdKaXIzYVhtNnd2QUl4NTJPSzBxWnpmLXFCbjNvQXNORThDbEpwWFNDTzNp?oc=5) | Kalkine India |
-| 24h 前 | 0 | 偏多 | [Procter & Gamble Co. stock outperforms competitors on strong trading day - MarketWatch](https://news.google.com/rss/articles/CBMiyAFBVV95cUxNb0Q2MDhQdjVlSmZTRVVWbE1QejVtY1JwX0tRanNiZGgtX25NRXlzbG1UdjF4c2tSSm1wRXpYOUpMeWw1M0RKdWdKYzE5cnBOQkpuc21oQjlXNlk2SEctVWkteS1LVUNOSkQ3QVRwNGFpSFMxamcxcmJjdHdzM3F4WmltTUM4Z0ZzSGY5VjA4VFJlR19nYnpmb3BCWGZpZ29tMnk5YjRTT2xscnU2ODRScXAxaFp5ZXVNeHBDUWR6djdJMWZ3UWpTSQ?oc=5) | MarketWatch |
+| 0h 前 | 7 | 中性 | [PG: Procter & Gamble Company filed SEC Form 8-K: Other Events, Financial Statements and Exhibits - Quantisnow](https://news.google.com/rss/articles/CBMipgFBVV95cUxQenNiZXJVWmNMTEYwd1k4M2Z5UzVWNUFuMi1NY0Z0b3I5LWZpTWItWHk2RHE1RmFXT1NDejl1aVdBeFRuTmI5QnBqYk1CRlRiRkwyNkFlbm1SQy16eVdITVBiVnJ2OVoxMXQyVDRhQUxMVk01NS1fWW44V2xEcDMzaUJIMnM0ZUx4ZEVUc3lCYlVzU0ppQnc4T0I1NWRib3A1aUsxckl3?oc=5) | Quantisnow |
+| 8h 前 | 0 | 中性 | [Procter & Gamble stock faces a margin test as costs rise - ad-hoc-news.de](https://news.google.com/rss/articles/CBMiuAFBVV95cUxQSGdpTlRMY1VrMktfeFFxTkg0Z09RNVRYaDdEY0pmNTExMks1ZFZMdTY0aVJXT3hvNG9BQjRkNlRPNzB2UlJwUURUbk5RVlZleFF0SmhpTTVLUEFlSmFSRkVSTnZ4NzR4bjk3R05YdnNPWjZ5cjBfejN4VGozWEQ5OHhMcnI3dW9LakFJdVBmc1ZxaXFha0RLNmRfRFpRMmxrUlJ1eENKLUdoZl9jMnpadmk2UjVTOENS?oc=5) | ad-hoc-news.de |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -121,7 +120,7 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
 - 公司尚未盈利：估值没有盈利可锚，股价由叙事和融资环境决定，这类名字在流动性收紧时跌得最快。
-- 政策面对该板块的倾向为 -0.95（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.76（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 

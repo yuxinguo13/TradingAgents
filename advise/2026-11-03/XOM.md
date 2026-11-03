@@ -48,11 +48,11 @@ _能源 · 数据截至 2026-11-03 收盘 → 面向 2026-11-03 开盘_
 
 ### 图形读数
 
-- **均线排列**：多头排列 — 现价距 20 日 177.41（+0.0%）、50 日 168.32（+5.5%）、200 日 153.91（+15.3%）
+- **均线排列**：多头排列 — 现价距 20 日 177.41（+0.0%）、50 日 168.32（+5.4%）、200 日 153.91（+15.3%）
 - **形态结构**：收敛整理 — 高点走低但低点抬高，区间在收窄；前高 169.64 → 164.91（-2.8%）、前低 159.27 → 174.63（+9.6%）
 - **动能**：RSI(14) 53，中性；近一月的斜率快于近三月（月 +8.2% vs 季 +17.8%），趋势在加速
 - **波动**：日均真实波幅约为价格的 2.5%；按本报告 2 ATR 的止损惯例，一个 R 相当于 5.0% 的价格距离
-- **位置**：距 52 周高点 -5.2%，距 52 周低点 +60.7%
+- **位置**：距 52 周高点 -5.2%，距 52 周低点 +60.6%
 - **量能**：最新一日成交量为 20 日均量的 0.9 倍，量能正常
 - **相对强度**：近一月跑赢 标普500 10.9 个百分点
 - **支撑 / 阻力**：最近的摆动低点 174.63，摆动高点 —（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
@@ -110,11 +110,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 23h 前 | 8 | 偏多 | [How Investors Are Reacting To ExxonMobil Stock Earnings Beat - Yahoo Finance](https://news.google.com/rss/articles/CBMirgFBVV95cUxPZWxteTRJT29ZQTdUbHhUNkwyX21CY19SWWp6WjdrUzl4VVBDYmg3cW56R3dFdl9UWjRCX3VHVW1BTUY3RE42WTBlakQ2aHFtcWlPelRObktXQ3NRc0xlM3NuS2JfanhjbVhIOG9fZjFGc1BLV09rTVBCQ242T1RETGpNajhPMnhmTXVWMExXejd3M0owUFFiamtQYlZTdG9DY3g5cHN2dGRkUXliRFE?oc=5) | Yahoo Finance |
-| 16h 前 | 6 | 中性 | [How Investors Are Reacting To ExxonMobil (XOM) Bigger Buyback Plan - Simply Wall St](https://news.google.com/rss/articles/CBMi0gFBVV95cUxOT0gxcVBCZWIwUFd0WklKRXVMY0ZPUXpxU3hWSzU0SklBdTM4RWlqeFFXRnJxZmkzaWp1VUhoNlhzVU9jRDROYkkwLU1VVWNScmFqOXZ6czExTUU4Z1ZmR2gyd0tWOXJPYjhSU2Q5WVdkTnlNcTJubFJ0dDJTUjdJUzQ0alMzWHdRcEd3RklxdjBrcU5vYThTbVNuXy1DaWRpMkttZXM4bm5iS2t3aHUyWnlFcy1yenpHSE9JTGVibkxka1RvbTQ1RWZuR01hNDJCSUHSAdIBQVVfeXFMTk9IMXFQQmViMFBXdFpJSkV1TGNGT1F6cVN4Vks1NEpJQXUzOEVpanhRV0ZycWZpM2lqdVVIaDZYc1VPY0Q0TmJJMC1NVVVjUnJhajl2enMxMU1FOGdWZkdoMndLVjlyT2I4UlNkOVlXZE55TXEybmxSdHQyU1I3SVM0NGpTM1h3UXBHd0ZJcXYwa3FOb2E4U21Tbl8tQ2lkaTJLbWVzOG5uYktrd2h1Mlp5RXMtcnp6R0hPSUxlYm5MZGtUb200NUVmbkdNYTQyQklB?oc=5) | Simply Wall St |
-| 5h 前 | 0 | 中性 | [ExxonMobil Stock Trades at a Premium: Is It Still Worth Buying? - The Globe and Mail](https://news.google.com/rss/articles/CBMi3gFBVV95cUxNeXNLQ00zZmN6NURORXYwUmFxNXdybnJERDg3dTlHMVkxdXdBODRtQ3hiYmhnSDMwQ3FTR1B3T2I1VDNxc05DeTBkYTJrZmtBWlE3MTN1aDRCM2hkbFJyUFNPX1VzT2p5T3FTdnFzQzQxaUVVLVFrc2YyMllxOXB5TEFqeUdzX1JKNnEwRUpqWXhIdGNBMXFsOWVBU01pd1hvU2RIRW5mOW9MRDJXd0htUEZEN2tBRHlkdkZTaXJvY0o1X3ZaR2hTeUUyT053bTB3ZGphSG0xTVVEa040cFE?oc=5) | The Globe and Mail |
-| 8h 前 | 0 | 中性 | [ExxonMobil Holdings Corporation (XOM) is Attracting Investor Attention: Here is What You Should Know - Yahoo Finance](https://news.google.com/rss/articles/CBMisAFBVV95cUxPdUNjMmRFT3RzX29LWUFRd29NOFhFbzBJbXRWYWg5T0FQWDhXdHdTaHJ6Xy0ySjhWQ2NhV0xNU0xfMnpjV2czeThhR29XTldmLTBKdTk4VWVfQW9UN09qQXRmcGRCQmxqVnlkd1RJVC04YVk1SmlneDZGbDBBdHdSZ2VvOVF5YzBHYm5IWi0xdHQtaUtZSHV0TGd0V0NXVHpMX1QwV1JNWUFJX3R2d3BHcg?oc=5) | Yahoo Finance |
-| 23h 前 | 0 | 偏空 | [ExxonMobil Holdings Corp (XOM) Shares Fall 4.0% -- GF Value Says Still Overvalued - GuruFocus](https://news.google.com/rss/articles/CBMiswFBVV95cUxNejRyZWVBTldKeEpWdkhnWk5HVXJUZkxsQ0FIalIwUFdyZEkzek81VWFsMnk5TmRSM2EwcFg1TllaN0FISzB5S0ZRV2s3VVJfT255VlR3Wm9Ranh3SHlEVXBwV05ZaHdEY01DQTJ3NkdOaGJMbU94bHc0V3RHVU5HMEVuNkFlNGtoaUtDMEtNZGFLb2pHWFU2QXNFTS1GTkc5M2VTa0FoWEVFV0VpdHVZaDhFRQ?oc=5) | GuruFocus |
+| 0h 前 | 0 | 中性 | [Here's How Much $100 Invested In ExxonMobil Holdings 5 Years Ago Would Be Worth Today - Benzinga](https://news.google.com/rss/articles/CBMixAFBVV95cUxOOUxUN0FMTUd4YnVmTEF2TFZWcjhwWDBEemRyT09uMjFEaF9iVjBsdjZZaFVMTldwUzRXZFRLSTVWaWhzb2R5SVc5RjRkUHc5NTlPMkh0dlI0WWJ5UHNaczBnaVd2aVBEMmFmM1EtaU42SjBwMU9hcVp5cndDMWJPZmxoYndXZHRmMHZSU3Vqb1UwWWVpTjE5LTZrYzVZbm1hTWFSelNXd2FHV3YtSnNScXpRRktEWWtnMG5WVTVOUmozT05f?oc=5) | Benzinga |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -144,7 +140,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-10-29 | 183.77 | 184.39 | 180.94 | **183.29** | +0.7% | 10,961,300 |
 | 2026-10-30 | 185.98 | 188.50 | 184.68 | **187.25** | +2.2% | 21,825,700 |
 | 2026-11-02 | 183.98 | 184.59 | 179.67 | **179.67** | -4.0% | 16,460,900 |
-| 2026-11-03 | 178.00 | 180.30 | 177.20 | **177.50** | -1.2% | 11,524,893 |
+| 2026-11-03 | 178.00 | 180.30 | 177.20 | **177.46** | -1.2% | 11,524,893 |
 
 ## 七、自己去查（本页不做独立验证）
 

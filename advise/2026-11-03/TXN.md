@@ -108,15 +108,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 3h 前 | 0 | 偏多 | [Why is Texas Instruments stock rallying today? - Investing.com](https://news.google.com/rss/articles/CBMiqwFBVV95cUxNalN2aEliSnNkVi1ra2hxQnYwV1o0eDRYTnBpek53dWRRb3BfNVMzUHBmeUVqSzVRR2V4RFRmbDJjZVZObTFiTk9lX0FMbmtsenlKZzJlbzNBMUNyRjZpWTdxOVMtYno5dGZQVnRHbl9Qc25yVjhPT293aEZSOFR6SnI3UE5rRS14TUdhRWRBVThROHA3MjZXU3JsN1JabmtmYnY2Z0pWVGRHMGc?oc=5) | Investing.com |
-| 5h 前 | 0 | 中性 | [Texas Instruments Inc Stock (TXN) Moved Up by 4.70% on Nov 3: Facts Behind the Movement - TradingKey](https://news.google.com/rss/articles/CBMiigFBVV95cUxQZ3lZVnN4V0RWUVRVaVY2SlRaOGdyTDgzSWRXSXF3RUtjMVVLWlkyc1RzNjU0Z3praHJrUnFGTEpkZ0x3XzUzUElKaTBaRFNGMVd2ZXZBZlRFYXpxTHJ6Nm5ocEI0TnpMWXBjaVd1ak45cWhLUnljMU4tNXBqVFhKMU9yazl0RXpBNGc?oc=5) | TradingKey |
-| 5h 前 | 0 | 中性 | [Texas Instruments insider purchase and ETF demand: Can TXN sustain gains? - Traders Union](https://news.google.com/rss/articles/CBMikwFBVV95cUxNRTBaSmNwd1JzS1ctSmFHMlhxdG5BREk0ZWJDNGNKcFZNY05HaUQybzRTUWc4YXhnaFFDTXdoeENMbVZuaXM4RldpdkNaN3haRkVuX3JIUV96QWs4bjFUbEtxNk1BenBobVpIbVZuS1Y2N092TF9SM2FYc1dzTzBGYlU2SHhTbTYxSHVsWGtsTnByVHc?oc=5) | Traders Union |
-| 8h 前 | 0 | 中性 | [Porsche is working with Texas Instruments on more efficient, compact vehicle electronics. - Stock Titan](https://news.google.com/rss/articles/CBMiugFBVV95cUxPT2JhRDhqOFlQUFNrUHNJd2xVVUl4MFZ6REZEanpiNkRQSGZVUnJKckU4UVA5QzBibS1mTzhkSGludnFBUHJSaTdjMFJqVkFtQ1RqNUYwUlkxVEVTc0VFN3RYdjVJVG91TW9iUlNBM1p1SEp3QXFYVm85Y21BcjFLQVhodDcwNU8tQW1aMWhTTm5GdFNCTW1lZG9rbENFV293Q3R2cnpjekJQWW0wY1VlX050Sm5HRndtT2c?oc=5) | Stock Titan |
-| 10h 前 | 0 | 中性 | [ETFs Bought $114.8 Million of Texas Instruments (TXN) on Oct. 30 - Yahoo Finance](https://news.google.com/rss/articles/CBMilAFBVV95cUxOc1h0eFBzSDlQOUVnaW5ReWRtcnp5OG9KS0N6OWxaWnFaazFVOUgzZmFsOXFwUXNDZk1SVEE2a1BuTHUtVFFUdkdlWE02amRZR1Z4Rk82ZGdfeEh3MWZUekx0eWhSd2EwVEU3dG1rUTZIbWo2alhJbEd2Sm0zSEtaM2xsQTNyWWhXeUhjOXRNLXhGSXQt?oc=5) | Yahoo Finance |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
