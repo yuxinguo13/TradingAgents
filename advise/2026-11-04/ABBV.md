@@ -110,28 +110,13 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 29h 前 | 8 | 中性 | [AbbVie Hit a New High After Earnings. There’s More Upside Left. - Yahoo Finance](https://news.google.com/rss/articles/CBMimgFBVV95cUxPQ3ZQWE5BZXQ3bVB0OER4blVPOVhUS3cwNWktU0FxQkFXMldTMHA3aXR5YUxoX0ZWWEF4a2pJWUtpZVpjVXNDRDk4RlVENHhUNGZ5anhZZkl5TjJfdGpHb3FWNzdXaWhxWTE5XzJKRTItZnlrRWQ4cFFLMFBSOFdtbXZETVF1bVJ1cV8yQjlRb0hSTHhjTVJTZnRB?oc=5) | Yahoo Finance |
-| 31h 前 | 8 | 中性 | [AbbVie stock: Higher 2026 outlook follows Q3 revenue growth - ad-hoc-news.de](https://news.google.com/rss/articles/CBMivgFBVV95cUxOMGJpQTVFVlNSMDJiWFF6MllVY0V3REgtTDN3aGprWVM0OFRhY1pqdG1XVXJxR0h2UnRMajJBRThxOVNTbGZGa1VOUkxGOG5BemlJYjgyQ2VZczhpekVQXzZOTG5hRzNwYTBTcTFIbGFTeDBmS3l1Nkp4anVzZm5YUHloemlyY0tyRnFzNVVfSDRKdW92NW9RSFNOQzA4Qkp3MHI0b3BUTVNLb1N5S3dZYmRpTC1aXzdDQk0yOFp3?oc=5) | ad-hoc-news.de |
-| 3h 前 | 5 | 中性 | [AbbVie, Nxera ink licensing deal worth up to $1.5B for bowel disease therapy - Seeking Alpha](https://news.google.com/rss/articles/CBMihgFBVV95cUxNWE9LZXROOUUyR0JGYU5Xb0FXNEF2Q0R1cTlwMWxWLUdDQWY4Nm1rakNYSFUtb19OY2RkaUdoeFl6NWVYUTJVTzYwTVd0SGRhbGE1cDN2TjdLSEJraXg2bTNHNmhVU1R4S1Qxd2I3cUdVd1piNDRfbkc4bF96NFpyZVhTcVl3QQ?oc=5) | Seeking Alpha |
-| 6h 前 | 5 | 偏多 | [Freedom Broker raises Abbvie stock price target on strong results By Investing.com - Investing.com Canada](https://news.google.com/rss/articles/CBMixAFBVV95cUxNMjBIbWVfeU5wVXBNazNUZnc0d3RjNTNhVEVTSFZKRTRzS0NIbWd2TW5HcEoyNy0tb05hb2F2bXl5M3c3TDU5bThFXzhLMmROMTJYN09wUk5sdC1WQ0F1cmdHekxvTFliTWwtWDN1M3cwSGJWV1htWlpaX2dCZ0RnMkxsOEc4SVc5R3pVMmdZVjFjY0dBdkZIakk3MEVwWG96cEdmakhVUGVqQVozSDVhTTFOSGM1aWFxcjlKSi1uSWFGcW94?oc=5) | Investing.com Canada |
-| 13h 前 | 5 | 中性 | [AbbVie Inc Stock Price Prediction 2026, 2027, 2030, 2040, 2050 - Share Price Target](https://news.google.com/rss/articles/CBMibEFVX3lxTE54SHQwX2l3aS10dXNNaktoUTZRZTY3eG9YQW5RQXpOMjU2Mm01Tl9fVm1NdnpzelBFbTg2N1lwdHhaQWppcy1HMmJTd0JHaTF4MENjX08xZHVxdmI5d01CanZzQjNEWXVEQTFPQQ?oc=5) | Share Price Target |
-| 6h 前 | 0 | 中性 | [AbbVie stock: Oxford expansion broadens UK drug research - ad-hoc-news.de](https://news.google.com/rss/articles/CBMiugFBVV95cUxPVU5KT1Z6akNoZFFqM182YnJDRjBNTmJrWmpJUFo1NnYxdkprV1lzZjNLY3ZCQk9VWXFPYlJsY1BkTXpDUzhQNVRTd25KakxYUkFqbnRQNzJ3ODBlZTFkVXVWUzdmdC0tNmRkei1sVnVucXNZbVR3RWN1dldWVjAtbmNIN2daek42QlJpZ1FJSHZwREM0UDBtTmRtWUF3TnNZNHpGMHlRbkZnYkJqSHVFdUttc2gxTUIwaUE?oc=5) | ad-hoc-news.de |
-| 6h 前 | 0 | 中性 | [Roundup: Boehringer Ingelheim Licenses Six Oncology Programs From Sino Biopharmaceutical, Nxera Licenses EP4 Agonist to AbbVie - Pharmaceutical Executive](https://news.google.com/rss/articles/CBMivgFBVV95cUxOUlhTNFJMcmVqYkJYa01odWhmWXpNUnIwLUtnUW1XeXZzaXY5VVBsNG1WVmsyYkFFekZmai1LYV9pemVVMXhPdDlmR1dEajZNLUwtZHBIbHZJQnVXTVZsUFh5TUFZTzdBWW0wTENfTmo3cUJuQjlHRHl1cXYtclhWSUdVWHBIclg0TmNIa1F6MlZCM1ctTEtDXzJubVJQR1FFYXd6d2FmZUg3LUZUbE9tMEFtTzl6N1dXc1B4UWVn?oc=5) | Pharmaceutical Executive |
-| 7h 前 | 0 | 中性 | [AbbVie (ABBV) Stock Still Looks Below Fair Value On Its 195% Run - Simply Wall St](https://news.google.com/rss/articles/CBMi1AFBVV95cUxPWktGT29hMUNBX0oyOFpFeWNhakpkeVNpU1RYTGFtWmppaFFiQUFfRjJTX0RNXzdxTlRMaGxCLUhVdXg3NnhGVkhIMXRXM3V4WXFneWdVMlR2QkZfd1oxSzUzNUFYNUZaYVYzYXR0dkhNU1lDczdWdjk3bE54N3RoZEdBMjhQX0o3ZVhSQXpZbkpZc0t1RUluc0ZyOTM0M0IyTU9jVWhvNmVJS2dobXZiNGxESld0eXJEQ0NOT2tXTE9GOWt6RWZ5cVZzRnhPbHBFSFkzLdIB2gFBVV95cUxQWjNiR0JmMlZHRWY3SjFJUmhmYm5HbHF3Ni1FLWkyclAteDZ0OVBlZWIyRGF5b2dwckVsZmt3cjZrbGpJMEJPZUMyNlpCRWJDS1E1alpEcUFFeTVmdkg4cmdBXzJpdWxRRkJaQm5kcTN6SktPT215OHRzUEh0MzVYNGE3VmtzSzV6YmxxWFhZdjB2MFlhb0trSWRiUjVpVFVPdE5HaXVaYmhacmFhN0k5WFQ0UGFtY1hGMDdJZnJxbjd0RjF5N29yb0Z4dWZ2TDFpa0lpSlJialdXQQ?oc=5) | Simply Wall St |
-| 8h 前 | 0 | 中性 | [Is Trending Stock AbbVie Inc. (ABBV) a Buy Now? - Yahoo Finance](https://news.google.com/rss/articles/CBMimwFBVV95cUxOTE55a1pvZ0ZFeE9hSFQ5MThZVzZMcUktWmIwWHg2SEEtNS1HSE1fMTFNVDcxcVpkaVU5TDdEVlpKd3l0X1h3aG54Smd6SlZ0MGppd0V1Mm5ic3lIeWFfN2U5cEJFSW15WnA1M1VTS1ZmRE94RVUyX3FSRkZ0NFE0ZEYybXp1ano1LWV0VDdqYXBSUGNPNkpqNkh3QQ?oc=5) | Yahoo Finance |
-| 9h 前 | 0 | 中性 | [AbbVie stock: Oxford R&D expansion tops GBP 120 million - ad-hoc-news.de](https://news.google.com/rss/articles/CBMiuAFBVV95cUxQOElVV2ZTbm95bHBRZ2F3T0NRRVpPVWI2b1A3empLNlhsUU5KcFctamllNWdIZE5XeVlUQ05mWDVuTGlkX0hINy1naEdQcmp2amdPNU5OLTNhZXN4Z05wbzQ5YjZiaGU2RV92OGtZY08xRklrYjYzMGtIUDR6NHlYSGRZUHVkZkhNVHBXRlZ0OHZrQXRuTUJxMXFjLWdHTXpwTWUwZ3l0cm9kcmFHVWNHbW5ra1ZneFUt?oc=5) | ad-hoc-news.de |
-| 14h 前 | 0 | 中性 | [AbbVie stock at EUR 254.75, down 1.14% before Xetra - ad-hoc-news.de](https://news.google.com/rss/articles/CBMiqwFBVV95cUxOd3dlNmZ3RE5vTVBNYl9leTk2djljbnFJWVhoVy1fNVdrR3VIQ1NlUXN4aUdhLWtxN0ZyenhzV0tRVUxIRnowYXQ5WUwzQ2c2eWNjc0tfRTJTY0M0NWdaa2lycW1Yb3ZqbWxqZTFTZmoyaGdxejBWczlfVzRUWVhEYVFKaFI5dDRXRG9OQjV3WVlIcEFnQXVTZXhDYjlHQW95ZkJnX3ZnZ1RIWkU?oc=5) | ad-hoc-news.de |
-| 29h 前 | 0 | 偏多 | [AbbVie shares hit a new high after strong earni... - Pluang](https://news.google.com/rss/articles/CBMiqAFBVV95cUxNNlBzRjlqcUpKcmx3SEZJWkJuZDU2UVJJR2xoRmdYVmxLU0YwbzluYWhkR0hfc2JlT21ZbGhYaGUzLUVULW9FWHdnZ3Y3LXNrTVFIWWIxUWljd05jb3RlWlRmd092MHdueEs5NFdSYVpiY3lvT1ZsZmY5RXJJVTNPcFZkVnFTbWl3SlAxbjA2cENOclBONDcwc2dOeFBOUlVmaEZLWV85SzA?oc=5) | Pluang |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
-- 政策面对该板块的倾向为 -0.63（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 按本报告掌握的数据，没有触发任何一条成文的风险规则。这不等于没有风险——它只等于「这台机器读到的东西里没有」。
 
 ## 六、原始数据（本页所有计算的来源）
 

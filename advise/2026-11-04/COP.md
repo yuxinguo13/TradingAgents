@@ -110,13 +110,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 5h 前 | 8 | 中性 | [ConocoPhillips stock heads into November 5 earnings report - ad-hoc-news.de](https://news.google.com/rss/articles/CBMivgFBVV95cUxNLXRQQ0NEMVYyeUhyU0EtS09Ec3BXRjVPak51bWVYVjZCQzBuS2hkcno0dnZwZFRERm1NNlpUYS1BZlJxRm9ubUNqRENRWUVtUWYwUVAyWkptazcyN3Npb3I5SW1sbjQ1dlhzTFB4eGFXdUFjNGo5VHNCdS1rWkg4bmhsSmlBZ0UtX2ZSM21Ga1VwWnlNdlU4TDlkcWd5ckUwY0NtQ2tIZEhzUVowZTNsZkFZejltdUluYWxpVlZn?oc=5) | ad-hoc-news.de |
-| 8h 前 | 8 | 中性 | [ConocoPhillips and Devon Energy Earnings Previews: What Shareholders Should Watch - Yahoo Finance](https://news.google.com/rss/articles/CBMirwFBVV95cUxNOUg0VmpGcmJocFY1MnExRlFla0lZX0QwMG40STVQeXRVdTlWQ0pkYlRLa3l4WW5Cbk5FcFFlVUFFa05VRG1CcmFST2hPS2JidEFnNDI2TDV3bXJ5cGM1bnY0cU5EdW1iT0ZCYVhOWHo5R1JiTmVUMm81TXJMV3lja3pQbzItcnNJZ3lmXy1qYWdNZ2dVdHVyU25PNG9HODhyMUxNbVRaSHUyZDdEQnBB?oc=5) | Yahoo Finance |
-| 13h 前 | 8 | 中性 | [ConocoPhillips Reports Soon: How Has The Stock Reacted To Past Earnings? - Trefis](https://news.google.com/rss/articles/CBMiygFBVV95cUxOUXZKT3JHQ1hjNHp0MVVFdHpOQjc0OXIxS1dVOUdEYmtWMy0tQ3lPU1U4UndwVWZEejdpUmpRR1hJTEU5cmZGa0dTSW05ZnBlcXpodkVVQzVMMXBEcmIwOHIzZk1UQWktM2JHTmZJMFZvV1JJdXFKcy0zaW5TVmhjN3JhbjcwbUZQQkRYejZzTzRwdnpxUnlvZkZqZnVILVY3c3JRWUcxUm10TlZzcHFSOU1YcUlVM2RiWmlYVFpFWlltVGg0eFBVR2R3?oc=5) | Trefis |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 

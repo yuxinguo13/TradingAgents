@@ -110,23 +110,13 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 29h 前 | 8 | 中性 | [Texas Instruments stock gains 4.77%; Q4 outlook stays in focus - ad-hoc-news.de](https://news.google.com/rss/articles/CBMiwAFBVV95cUxONEt6R3gxODhpRExlbEM3ZUJHWDlPR0k2Q1ZuaHlSa0lzakdxaG9OWGZ4bk1GQVNXYlFQMEZHbWhqMUxGdmhzNjlTRmNxblpMMkF5eHU0ZkhIcUNCa0pxNnhieVpQMERCVmJNdEh3WGJEZ3E5d3g4OS1qQUh4Y0dVNFZGSHZDWU90MVdkRk5NTlFJeVFxTC00MlUxZ2g4WjBpLUMtQUU4aDdsN185SUJWc3JjeDB5M0sweFJxX2ZuZGI?oc=5) | ad-hoc-news.de |
-| 5h 前 | 0 | 中性 | [Texas Instruments (TXN) Stock May Be Fully Priced Despite Its $2 Billion Notes Sale - Simply Wall St](https://news.google.com/rss/articles/CBMi1wFBVV95cUxNMkN2SHVFdDBEVFV5aHlxSFZ1Q2tsUWZXMjFwTW5lXzZJdVZDWWNpanY0SzgycXU0eGRKaGREc0FzMFN0SmltVVBTdWNTM0U3R3BJU3RRb2JBMEZLSmFnRFFOd000cVlZc3VLN0lOaTZUam5ROHRObnBvTkhaT3c5eG1OU25MVVh5dkFpbmx3M0lIQW1ZRmlJdTA1Skp4OXJIZU1LLUg4UTViQlVnM3dXZm8xcTlrTk54SVpxWDJyY1pUOGJETk5KQWZoNWhvLUNtdjQzSk01Z9IB3AFBVV95cUxOTHdUbC10YWgwY2tpN19vbjZKdWdBNUlUYzZNcGduRHRBalF4SGRFaG1uMmFIZDJaQkt4U0JWcTBvcDRKdnpSOXZfUE13NjdsM21tc0dfZEVOYnVLM3RxLVpyUEtiV3VRRmxpcGNVNnFqSHhyUE9DTjg1WEdLeGd5X3BUZ2U2TFpLaWlpM1lsUFQtWW9MYkZ0VFdjQmU2dG9ZcElOSzRFZXB4S01nOWdyNy1fWTY4M190UGNpMXhZSkdKbGR0R1NUQlRuNUcxVjM3Q05OdnFlTk55Q1JU?oc=5) | Simply Wall St |
-| 6h 前 | 0 | 中性 | [Texas Instruments stock highlights Europe ties ahead of electronica - ad-hoc-news.de](https://news.google.com/rss/articles/CBMiygFBVV95cUxQY28tUm5vYmJXSmw0dFlnQm5wcURScTlmNTE5cHJqcVhLM0ROQkFUWE9tSGpNbHoyOHktTEJ0cWhIRXBTQkJRVS1fcEpWdmNkWDRlbXFFMlR1SWd4bkx4Z01ZLUw2NlBLMmtPdGFsMkFnQkl4RTRLTUVsSmNqaEZqaGFpbkZZX0RUVGR4em1GZjEzX1RpYUtBOFRUYWZXNkZtZDNlOC1oTmFlQ2U0RGtfM3pHSHpMQWZpZzhReVltdV9lY2lkaWdfSjJR?oc=5) | ad-hoc-news.de |
-| 9h 前 | 0 | 中性 | [46 ETFs Add to Texas Instruments (TXN) on Nov. 2 - GuruFocus](https://news.google.com/rss/articles/CBMijAFBVV95cUxPNThJellrR3FRUkpnNXhzTUF4ajRkdXRmVTYyMmNxX2ItS2dReHZHNWhOLV9fVjFobE1CTm9HQk40TFExWjB3cEJfZUZKR1lZUXNaZlRvN0hIMXBpOElMTzRET2pMZ1c4Mmh6TU5oQ094aHVsN2U4TGRUbU55Mzk1R05qV3J4b1ZfREx5Yg?oc=5) | GuruFocus |
-| 13h 前 | 0 | 中性 | [Bull of the Day: Texas Instrument (TXN) - Yahoo Finance](https://news.google.com/rss/articles/CBMimgFBVV95cUxQSXpseXFMdU10dHZxT2FDeDVPVjl2R2xMTkhILWp2LWhKV0E1QzQ2RTAyQzVhbjFCSjRLendtbndwV0pDZmgzWGZaNkRhTmFSbHNIUHFBYnFJN3BXUnRCVjVHdDM0NVZ3aTJoSFpiVzFiaHI2Q3h6OEUyYk1XS2FmdXN5RkRLTjl1dWtrWTBNMjBfNF9ZbFEtMmtB?oc=5) | Yahoo Finance |
-| 14h 前 | 0 | 中性 | [Texas Instruments stock at EUR 279.15, up 0.32% premarket - ad-hoc-news.de](https://news.google.com/rss/articles/CBMiswFBVV95cUxOUWpyVldReXpWakJZbGdtYkQ5a2dRUF9LQ2ltWEh5VzdxMGY3bXA3cVl0d0lPSDUwTllkanp4bUktUDBOZEV1dlFLZjQwTUdSQmJlX2lHZGdjQVQyUkk3anNUYUZpV1FlclN4dlpDaGdXRW8wRlkyUkRBcWZoNVY1RzV6N2trdnZzTDJ5clJGSXpxMGdhNW9TeUQwbUFNbnJoZmwzN3UyVVd2VEVmTW5pRFlZZw?oc=5) | ad-hoc-news.de |
-| 14h 前 | 0 | 中性 | [Texas Instruments and KimberlyClark have been highlighted as Zacks Bull and Bear of the Day - Yahoo Finance](https://news.google.com/rss/articles/CBMitAFBVV95cUxOMGo5TldKZ1FYMVJkWDlMNUZiVHp4X004cm44ZHNRQzM1Tmc3SUlTRHNsUVBRRGFFZmRLb3BnSEpobl9SS1l5a1FONWp6RElBQmdxb21zMlZVWmdROFdsOG82Y1ljQ1hOODVobkpYUEs5S0JiQ3VrVWlUaURyRkoxekV4SDhLc2otNE42MzVDWFNlV3NDVG9CN0t5SndzWWhFWkdkalg1dnFFS0pNWnRiVkFVRXc?oc=5) | Yahoo Finance |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
-- 政策面对该板块的倾向为 -0.95（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 按本报告掌握的数据，没有触发任何一条成文的风险规则。这不等于没有风险——它只等于「这台机器读到的东西里没有」。
 
 ## 六、原始数据（本页所有计算的来源）
 

@@ -67,11 +67,7 @@ _读不到财务数据：该代码没有可用的财务数据（可能是 ETF、
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 46h 前 | 8 | 中性 | [Invesco QQQ (NASDAQ:QQQ) Shares Down 1.4% - Should You Sell? - MarketBeat](https://news.google.com/rss/articles/CBMiswFBVV95cUxQaXRra3dTS0RfQWh1ZjJzTHpNS3VtODR3UE9lWkJWX2xjNzZHbmRkcC1jejJUbGhzbkdsSEZheVFPVGlEQzY0V0VQWnJpXzlZbUlma2p5TDUwRWsxZmxsMWpKSWdRNjcwTzZ1Y0NvV2pSU0JYUnl4MDdJa3RNNDFhdzRBU25OVHMxQ3UzcXFrSnUzUUVKTEZsa2hQNWJNT2NNRkota2ZsbnlXMmtnc3NSMW5vVQ?oc=5) | MarketBeat |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 

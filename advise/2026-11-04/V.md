@@ -110,29 +110,14 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 5h 前 | 8 | 偏多 | [Visa reports strong quarterly results and new partnership: V gains momentum - Traders Union](https://news.google.com/rss/articles/CBMiigFBVV95cUxQdjZuYU4zb0NubmxLUTkxZ3RuWncxRF9vNm14VUxESEQybUc5Y3RTZjczbUdZNVEzQ2lybWI2THM4RHZOeko5OWhsdmpXMlp5ZnU5T3NzV2xRWWpEVlFKX3ltdWdaanN0MTh3YWdQYkptWThiS0hWNS1RU0xPRHdkb2pTTE1iNk81WGc?oc=5) | Traders Union |
-| 12h 前 | 8 | 中性 | [Visa Inc. $V Stock: Hikari Power Ltd Decreases Stake - MarketBeat](https://news.google.com/rss/articles/CBMirwFBVV95cUxQLTRHdlVXZnN6NVk2Tmx5U1lhRk5Mb2JRXzJ4Q3BHRlZiblUwdlJBQkd4SWM3Ty14dDBVQUlXRGZ2Qm9BT1l2c25MY3NCYXBfSWxVaE56YzZCODQ3NFhYZ2tSRUM4OFJGOXlFejdqYnE3VGNiMjkyMW91dFQyUXU4YzBneXNGZkJTX2VKdi1UaFdGVXVQWVdPSkVuTkFLSTBkN1dRMkd5aXdDdW5zTnc4?oc=5) | MarketBeat |
-| 13h 前 | 8 | 中性 | [Visa Inc. $V Stock: AIA Group Ltd Increases Stake - MarketBeat](https://news.google.com/rss/articles/CBMiqwFBVV95cUxOa01kRk1xSWNvSktKYmRhNUp1Y1J2RkN4YUEyVzhmLTBGYXpBOGVvclBPU3pkc0hfaU9lZWJUNjhqUjRtUmwzMjBtdEYxUFhjQVZYV3NtYkVVU2R2dEVmdDZCQWdyT3JuMy1mOVB2dnRCM3MzOXViX3AweDVWS2dLSWYtMk1rb05ycTZWQV9obXJQcnR0M1VhRFh5M0tnREdzOG9XeXRXZHdxRGc?oc=5) | MarketBeat |
-| 23h 前 | 8 | 中性 | [Visa (NYSE:V) Stock Price Down 1.2% on Insider Selling - MarketBeat](https://news.google.com/rss/articles/CBMirwFBVV95cUxQVzUwQkkxaEkySmdQSThWUkZOMUNRVVZiS1Zyd19XRXFOWFFTTE1LOU5JUGd3VUMwdFF6RVhjbkFoWUg4cE5MbFNta3E3RkFFOW9PaFpqYVg0d1JNWnUtcVhVQ09SNlFfbzZMZ2xESHZMczlsZ1FMRFl2aG51cU5yVWt3MEQ0eVZTYnA4TXB5WTM1ZnZKaXpsbUo1YlNvMXdRSWhaeGFqQ0xtTG9JMmNr?oc=5) | MarketBeat |
-| 12h 前 | 7 | 中性 | [Visa CEO Ryan McInerney sells $2.45 million in company stock - Investing.com](https://news.google.com/rss/articles/CBMiwAFBVV95cUxQa1hQS2FkQ0loMGZGX0UxQ1Z1blNvR25rbVI5NUdaazVWTG5YSFJRRm5EeXNFY2doQVpsbDF0TTdKOE1yVktMa3BuOUd4ajVIS1IwNjl0aENBdWFrbWQxdkNiVVM3enViOG02c0RFakVNLS04U0pJYllnTnhPcXVRaUVIVHIyNm9OTGZoa3VxeE9vOXU4YlRwb2ZwOFA0cDgyUkFmNWpFbndFSTBseG5rTmprdnItNXRGc3Jub28xR1E?oc=5) | Investing.com |
-| 15h 前 | 6 | 中性 | [Visa Just Hiked Its Dividend by More Than 16%, But Investors Should Consider Waiting for V to Pull Back Before Buying. - inkl](https://news.google.com/rss/articles/CBMi2AFBVV95cUxOUXdLb3hTekF2RkpoaXRhZG5COUJ4YmVISEVqcTYwRzNEd1pFNnZJMTFPS2VJSndjTllmbW1pcmprLUxxaENCZWo3VVY1ZVZiM3RpdVVHbUV1d3JQVFZpUFMza29uNjlDVHJSX1dxSnlESGtiN3ZpY09XRDZrTUdVVXEwZmhyWGNuMjYyd3huQUcyUjdSOUpwN1JBVzdCR0JheTRsMHZYLW9nczJWalhlamk4cU5XNzZ4MWJQajFqQU03YjFFcWhBZ3hSaDR2REZ2ekd5alplVGM?oc=5) | inkl |
-| 9h 前 | 5 | 偏空 | [Freedom Broker downgrades Visa stock rating on growth slowdown outlook - Investing.com](https://news.google.com/rss/articles/CBMiygFBVV95cUxQX3FZMXVQenRYRHRiT196S2s2MGtEM0hzZlRNYTBHUC05ajNCSFU4dlJvTEIzV0V1WXZRQjNoWTZveUxIQ05KcDdKb3F0dXdpWlZKR3VxWU1PTWpWYXhraFRXaEhHZXlSLW5WMUpnVzl2Y3hOZXNwaTVSZDJLWlQza3A3S2otUll5Q2dyTGotdVY3c19xZThMWFJfT0Y5Vzh4VndzbW5xZ2ZBTkdFd0dtN3drVURmeHNkMWdlRHlYRmZzeDRVYjlKel9B?oc=5) | Investing.com |
-| 10h 前 | 2 | 中性 | [Rakuten Investment Management Inc. Purchases 30,288 Shares of Visa Inc. $V - MarketBeat](https://news.google.com/rss/articles/CBMiywFBVV95cUxPWFA3VXlyRFlyM3NWb1N1aGhZamxITUJUMjFkekRrZk5rYm5wVjcxckkxRXp0OG9HTmlWWFlQdHNxZGE1TExLZGIzNmtJZERWdHpPbGdwMks3b3prYjM2U1FjZElBcl9hTUE2RWpQMFhFeDBGZVpxcy1IMllyY29fOHdnelk4dkZvNWhOd0VWZXNPdzB3b2I1NTh6c3pwOXBRQzh1amxyNTlxZDRzdDRJcjBTdWw2X0FSMVNmdzIyRXhtcW1rOWVrMmpXZw?oc=5) | MarketBeat |
-| 10h 前 | 2 | 中性 | [Visa Inc. $V Shares Acquired by Provenance Wealth Advisors LLC - MarketBeat](https://news.google.com/rss/articles/CBMivgFBVV95cUxOa1cwSkhmRGluSlVDdTdySjZzXzdHalYxSVhzYnkwcW91TE5feFdyaFBxNF9YUzVfNTVyYWZUYXhKa0Zwc3VNSUNHQ1hic183UTY4VjRMTVBkbE9Oa1dIZno1dnZnWC0xS25RRmFaWVg0ZVRyTWprQWFnM0NIX0FoOERCZG5yU3NXTXdydURIY3FJc2VNNWMyajZOaEpvMG9VM1FxNjN3WmlaUEFRR2xzQzV2OTBaajA1d0MzSmdn?oc=5) | MarketBeat |
-| 12h 前 | 2 | 中性 | [18,754 Shares of Visa Inc. $V Acquired by First Nebraska Trust Co - MarketBeat](https://news.google.com/rss/articles/CBMiwAFBVV95cUxPSlJWdGxId25SdnRBNUhGYlR5d2thUzNIMGtzY3dteWQ5T19Ual9wQ3c1WmprbVZBR05MNUxVRFljTDVqenZpQVBxdXp3eDN1YTY0aS1wTnpkRHd4NG9kbmZQQzBZTkN0Z0dtQUR3THJxSVY2UzVTeWc0REtkenh1dTdKRWM0X0szTDdnamxCU3NxSWlVeWdaT2J3TU9oTkZuQUd2QndqWERnZDIzTEwzekk5Q1VoR2g4QWktMEcxU1A?oc=5) | MarketBeat |
-| 12h 前 | 2 | 中性 | [Visa Inc. $V Shares Purchased by IPG Investment Advisors LLC - MarketBeat](https://news.google.com/rss/articles/CBMiuwFBVV95cUxNdUIzMXNmZHFnaHdnQUh0MXN3TWQ1WjZXVmF1UFlZc1hSUjBBa1lvSHp3a1pTc19uS19XMHdPZHNfdmh4U09kQ050aS1rVmg3bWZObFpNYjNHeDVLLTI4UURNdTRLY2pKdHhtc1BaRjNWUnVEZDNkRlpydGtHWVJmVXFQUXZHa3hoeGdoMktMMXRjeFByVHpJSksza2ZMWjAzNGhINjdCNzZKV1d1dXJkSmlGR2ZHb2JCTV9r?oc=5) | MarketBeat |
-| 23h 前 | 2 | 中性 | [Insider Selling: Visa (NYSE:V) CEO Sells $2,445,292.50 in Stock - MarketBeat](https://news.google.com/rss/articles/CBMiugFBVV95cUxNa01HSHJHcldxOGF1VTZPZ2RqVF9wZlQyM2pVSXBUaHVNdy0xVWp1R1JKRDlTZHgxR1lyaWsxSllrMUZfX1E4T0IyUVVxVm5Qd19RdlhmMlRZTHFXd3VqNzRxYVVrNXA0eE4xU2VwcERIdGtTOWV0Y0NtUU1aeVROMVkxYXRkU21CbEFFN0pKcXBSOExpVFVKZVJvRkZMdTJxRTRzeTNMckFDYWMwcVdwS3NIRGxlN1BMZWc?oc=5) | MarketBeat |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
 - RSI 76 已在极端超买区，短期回撤概率高于起涨阶段。
-- 政策面对该板块的倾向为 -0.95（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.50（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 

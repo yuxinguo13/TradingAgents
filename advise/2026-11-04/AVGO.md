@@ -110,22 +110,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 5h 前 | 8 | 中性 | [Intel Drops 5%, NVIDIA Retreats 2% After AMD Earnings Beat and Strong 2027 Outlook as Intel Falls 3%; AMD Stock Goes Nowhere - 24/7 Wall St.](https://news.google.com/rss/articles/CBMi9gFBVV95cUxPVnlhSjhhcGtkM1VvZ1BqMEVhR0d0QWNlaXNfYXNBS3ItR3dIX0k5SS1mQjlqUFBTM0tqa1F6SExNWndUeC1VSzZDNmtwYjVzb0piU3c4MFdlQ0MwdUZBVHVRbTZaT0QwX3llODFMc1A0M1pyLXNJRkJ5MkZRXzJCWUJYUG1RSm9ySVZfb2lhRGtzQVV5ZHBHWk1MQlJRcHZkaGJjNnNEZWpWUDZsbkxJSVZpUWw3Z3FrUEF0cG9hclZwdE1YTHYtNlFndW5pNWRiajlJUTVIcXNNeU93NWJPSWZFSTdUblp4cXVfRUpZM2FIZXV3T3c?oc=5) | 24/7 Wall St. |
-| 11h 前 | 8 | 中性 | [Broadcom Inc. $AVGO Stock: Summit Global Investments Grows Stake - MarketBeat](https://news.google.com/rss/articles/CBMivwFBVV95cUxNZVU5LXFLWTJBb3NoNTF5RnBuZWpHZV9JNzN0VFpMZHFVRVRWMmMtNUxXdXl2UzFIdDNBSUVLbVdjdU9yN2htMDVsQm9OT0t6dVVRMklGU1RqQkswMkU5Y1k4QmdMdEZJMXBVRzBVZHNIN3NpdFkyMTNYMUVycE5DS3k5QTlnR1BEWjhvVXpxamNhTUNHQ1RJWjdTYXRrcExnSmVzMTBhNXNWMGthd2xRUlZuWVp5bzFrY2pEZkhDZw?oc=5) | MarketBeat |
-| 11h 前 | 8 | 中性 | [Broadcom Inc. $AVGO Holdings Lessened by Modera Wealth Management LLC - MarketBeat](https://news.google.com/rss/articles/CBMixwFBVV95cUxPSkdMVlVqUmlsYnZLbzctMHN1Tld5Z1hxZHhXaG10ZThDbXpKSGY4SjRKUk13ZUNMVzg1MUVjYzlib0x1NUFfQmZuLTNXaENUdk9FSXBaSXdwSnZhbVlyWUVKbkFDVGQ5UjhVeTJla0wzdk5tNmpobDBIYkgwTkdOcl90VGpvSXRNdXloMUtkdGhXQ09tUGt6RFBaMXJ0YlRxb0tkd3hnMGFGdDd3Rmk1aUhnelUyQ19RV09xNVdQRWNac0twUzNB?oc=5) | MarketBeat |
-| 11h 前 | 8 | 中性 | [Broadcom Inc. $AVGO Stock Bought by Prosperitas Financial LLC - MarketBeat](https://news.google.com/rss/articles/CBMivAFBVV95cUxPVTR3R29EdTFWek9XM1BGRzhqU093SUs1ZUE3N2NqX016SWtWMHcycjV0MHFNbzVxTjBndmhDSV9jYXhXV19SVVFpTmZSUC1qdGEwa05kbmNpclFvOVdsUGdIRXNQbTFkWW1abXgzUHZHTmZJNGRSSnRKbmw1Q1I5Zno2RG5EYjJ0dmVmWkcxV2FSaEFJbnVIaTdJNmpMYmhwbHp5czBPbXFsSEpmX1NYQTF3N0NPMnRsZ2hmYQ?oc=5) | MarketBeat |
-| 13h 前 | 8 | 中性 | [Broadcom Inc. $AVGO Stock Sold by Americana Partners LLC - MarketBeat](https://news.google.com/rss/articles/CBMitgFBVV95cUxNX0poN3JWVUEyVFo2VzNRVF8zdlNzOTBibjhGaWZERDB1ajRQdzlJc1VzU01KekJoa1BEY016SzRzT05HM0lMb3NTel84RTFXenZIcW1BZUdramkwTWs2eHp0dHpNNE1NcjhIUmZjMktNMUEteENnWFFFZEdDamtjS2pUMW94QjVkdTkxbHR2M3RVZHVRd1RoOHBQX3l4NnZCUEUwa1Jfa1ZZSVJJVS1QOE5zcnZEQQ?oc=5) | MarketBeat |
-| 23h 前 | 8 | 中性 | [Broadcom (NASDAQ:AVGO) Shares Up 3.1% - Here's Why - MarketBeat](https://news.google.com/rss/articles/CBMipgFBVV95cUxPS0hDNlFqTk94Q25ES1NLcVRnWnhJUG80Vm5aczJuT0tlRkFfWUFmQjk5MzVCc2Z5aGhCTTVSRFNpcVFXODk2aGk0UEZ2SThTa000MC1TX0dQVjlORFA2TTBfME9ncldfQ0hRaU1vMEI3Zmt2dWxwbjdfdmg5SUhZdFh5Q0JuWmN1eTczV2hkXzNmVUZ6cy1GbXZ0S2UyOVVJTjREZlR3?oc=5) | MarketBeat |
-| 46h 前 | 8 | 偏空 | [Broadcom (NASDAQ:AVGO) Stock Falls 1.2% - What's Next? - MarketBeat](https://news.google.com/rss/articles/CBMiqgFBVV95cUxQaGx4Vy1RN09Rd1l0SjNScUotZUVkS1J0dms0b1MwRV9wQ2tDYVEyS1ExUkJOcWxpWGV1cnBRcDlVZ0N4dWVhbDFhTTFzNGZIMVNVUDZkMHgzbDhDbXU4UFB6THJzX3FFeDdFa3E4QUpPdWtpOUlhYkt1Vm9fVlFtM0JiaUJEYmlWUmkzNWZMS29wZF9wYXBDTkdmODNOMHRFN01qQmFSWld6QQ?oc=5) | MarketBeat |
-| 30h 前 | 5 | 偏多 | [Broadcom shares climb as AI chip financing deal supports rally - StreetInsider](https://news.google.com/rss/articles/CBMitwFBVV95cUxNaDZWTHVlMmdzaWxnajB0ZHhxTkpRcm5KMS1uNTJpNDlYM0JweDNPaFVpTWFMcFhNbnR3dlZkRHlHNHFocmt2anFRYlV0cG1hRkNrZnlvREEtWEdyX3JfYzJWTVB0V2pQc3dGQklEVDg4b2xyWEZoUzRldDBCWk5CT0puZ2hzVFpzRV9HQWRZT2t1X19meVhycWc5QkI5b0s4Slk3R1F0QXBpMlNCcUk0UmdwYjNLcFU?oc=5) | StreetInsider |
-| 11h 前 | 2 | 中性 | [8,031 Broadcom Inc. $AVGO Shares Acquired by State of Wyoming - MarketBeat](https://news.google.com/rss/articles/CBMiuwFBVV95cUxPWDUzeDhLMnlXdC1zTHdic2lhMjRORUxpMW1BT1pxSnJpNE1HWVo2Y2RPVUdPNzlBMW1RWjFHZDNFWFk3aGV6UUNzTHZyT1pKYXRfbU84SEhqcXhNTlJxV25HRk5PRURWTXo0U0VYRUkxNkxrNE9tVkFEbjhQempKUGd3YzM3UGliWVAtV1BuQXdybkhOQmFCMlV2Z1l3UUxyeE1rOUdid1NKQ0pQNGFuamV0NkxEendIWUN3?oc=5) | MarketBeat |
-| 13h 前 | 2 | 中性 | [Kurv Investment Management LLC Acquires 2,881 Shares of Broadcom Inc. $AVGO - MarketBeat](https://news.google.com/rss/articles/CBMizgFBVV95cUxPem9hTXN6LUdJT2pBa2lNR1FXUTRfUnktd0dYeXM1Vk9EVEhBUjEtZ1QtN2M2YTBoOFFkMDhWSS1FOHFBbmdGNUpkX1A2NDNyRllfU0FVdkpPUkFlRy14cXdwQW1ZeE82MklEME04QmtGZlFYSU50Vm5KQUQtcXEwQjJKOWNtWVhEYTFxUHY3Y1J2eGtrcmFVaGhvQWFGNUtCZzJCZTJ4YzVIU1A2OU9iRy0xOHJxdzVzSnphUFdLc1ZqaHJRMU51aU1XMk5sdw?oc=5) | MarketBeat |
-| 3h 前 | 0 | 中性 | [Is Broadcom Stock a Buy Now? - Yahoo Finance](https://news.google.com/rss/articles/CBMikAFBVV95cUxNeEU5QXUyenM1UGhWLTlaWFk4T0xYV3M3U3N1TXBoS056dWZlUUtxWDY0a0hHaTRGaXJvNnpzNGFLdHpSMUFlSm9hVG16WkJjUDluYmZVWEMyYmdJNFV2d1NKNTNBZWozUkF2dnhoN1MyU1plY3NlUWpaMkFldXBxNjJEZzM4QVZsUUcwOHNwcFM?oc=5) | Yahoo Finance |
-| 3h 前 | 0 | 中性 | [Broadcom Stocks Decline 1.49% as $63 Billion AI Financing Carries Residual-Value Risk - Yahoo Finance](https://news.google.com/rss/articles/CBMilwFBVV95cUxNNFlWS2s4MlRqU0pTV3VyZ0NaN05XVG9FYzlWNXowbjBvXzhtdlc4MUpKUlNPaGwxa1J6dTlwYmhUcElvN3hLNlpNWjc0N2diLU55NDlrd190M2NzY1RNWm9QWk54S2l3cDltU1JwNTJkbEozZnUzUTFqNWVGcnVjWWlFTFAtcTVsanBVZ0JZS1I5SXBtMUhV?oc=5) | Yahoo Finance |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
@@ -133,8 +118,6 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 - 图形上是空头排列——现价距 20 日 338.95（-4.0%）、50 日 350.50（-7.1%）、200 日 366.43（-11.2%）。本报告的买入规则本身会过滤掉这种形态。
 - 摆动高低点都在下移，属于下降结构；在出现一个更高的低点之前，任何反弹都还只是反弹。
-- 24 小时内的利空标题：Broadcom (NASDAQ:AVGO) Stock Falls 1.2% - What's Next? - MarketBeat（MarketBeat）
-- 政策面对该板块的倾向为 -0.95（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 

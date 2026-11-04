@@ -110,25 +110,13 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 7h 前 | 9 | 偏多 | [UnitedHealth Group stock gets dividend date after board approval - ad-hoc-news.de](https://news.google.com/rss/articles/CBMixgFBVV95cUxNRmlCY3RjaTFsQ2hvVk9QTk1NcGI1dzVGczJYaDJoYzRpM3V6YlhhbEtsdzZpejZHWldobmxRS05fQ0gtUG5XWmdTaWxEX0loc2I1U2xKWUptUnJzelZhWkY1eHJzTFZuRURwUHdSSDA1cDVwcEFqSGRZbHpwRWg2QXdtV054R1gzVWNNZmo0S1N3Rm1KZC1nd1pfYmk3dnppYzBycnlwbC1zaE9rQWx5aFU1bkJLdXlDOG1tZWRnUTZmNENEeWc?oc=5) | ad-hoc-news.de |
-| 15h 前 | 6 | 中性 | [UnitedHealth Group Adds 50 Million Shares to Buyback Authorization - www.tokenpost.com](https://news.google.com/rss/articles/CBMiWEFVX3lxTFA1TkxKRnlYY3EtOC1ySWdyT0NMWVE1RkM1R0VZdkFBaFpZd0V1M3ZoMFVQNGczWXNQdjg5bEdBdjRaZlpIVEJhQk5kVkdJRElBeUtRM0diR2M?oc=5) | www.tokenpost.com |
-| 24h 前 | 6 | 中性 | [UnitedHealth Group authorizes additional 50M shares for buyback - TradingView](https://news.google.com/rss/articles/CBMixAFBVV95cUxOVkNsRXl4enBhaFRmbDRJYWdWMGVsU0VHZ01KUkxDcEtuRERhc0N6LWFGZWhYTkI3Tm5rN0xqcUZSWUdkLVcydXdURUhhNmV6WFpoVVZCcThERi1HUmRGRExFODZYNXFjU0VlOHZPZ2hHVFliNXdoNHB1aWwyYXoxSmJ4M3pwWDFQXzFVNGFFVmVzTHNEZnFqRF9TX2RoZ0Z3MWQxRlhhWWxqWVZFYU4ycUN0MTdGa2puYmhQRVkyX3NxN0sz?oc=5) | TradingView |
-| 32h 前 | 5 | 中性 | [UnitedHealth Group stock faces scrutiny over AI contract audits - ad-hoc-news.de](https://news.google.com/rss/articles/CBMixAFBVV95cUxQcGZPTEMxNEVPOEpsd0FlYzFZYzZzb2pscWtybmRNcTAwMk1FX1g1YXpnUjJMVWpCYjQ5ay1oODBJbFZEWWRETnpNSUh4ZXNheGY0WV9BdENjU1FGZHNpRW43WC1fYmhfQVh4X25sZC1ENXZEQThGWFN6WU5xWFNIQjNXdkUtcllfQ3RvdHhfLVd4ekZMSXR2UU95bXN3bnFVZGhla2ZMYUQ4SVI4Rmlndlc5RldfU0FjNlBPY1pCcUg4RU1M?oc=5) | ad-hoc-news.de |
-| 3h 前 | 0 | 中性 | [UnitedHealth Stock Climbs: What's Going On? - Benzinga](https://news.google.com/rss/articles/CBMiowFBVV95cUxQQXpDclVoY1NCdEhKWXRCTUN0VUF5cTNSZnQ4dGRQMVJIMDhLWTltcDBKbzVpTWZPLTZEeWRxMVUwLU5Qb0JHeE81RWhaRFFrNENUWV9KVHpkOWlaU0llc3A0OUNTN01JOWVMVWJyUExPS0xlYzEwZHVYZXNYckRtWGk0MTAyYXdFSndFcU5SOXk4ZHJrbEM2QnQ1cUtxbmNwb3JN?oc=5) | Benzinga |
-| 5h 前 | 0 | 中性 | [UnitedHealth Group stock slips to EUR 356.80 late in session - ad-hoc-news.de](https://news.google.com/rss/articles/CBMiwAFBVV95cUxQVVRPRW5lYjZYckt0ZkJSMjc3YXpmdWp0ODdpSmx2NmkzcHZmY3MxZlNtQUUwWURZREdJV3VUU3NGR3ZHWC1fU2ZDSVRTV25wTHp3OXlvdEZWLUgtMm9ReFRBZFBzb0NlZEFaQl9TWHdkeWFLVmxkZzZSQ3BBaHNoajhLS094UjRzdHlfXzFyZElCX19GUGkzUEVWSEJnTmVQbHM2Z2N4RTNRazRacFpWaG5nRUx1SVZUdE5xN2RPbC0?oc=5) | ad-hoc-news.de |
-| 8h 前 | 0 | 中性 | [$2.32 per share is set for UnitedHealth shareholders in December - Stock Titan](https://news.google.com/rss/articles/CBMisAFBVV95cUxQQVJHci12cV9YUUM5SDh4dVIxYUx3Njd2NkIxZ2VYMmh3RHlSVC1BSThhYzY0VkhURXdubVdMZzhiZ3d4MF9TT2hFa1Y5QVZ5YmYySk1sNnFXMEZSQXdYaVVGd1BET1BkRXQyWnFpemhsSVpPUHkxc1pYaGFIbDdOOUpZYWpLS1V6S2lEYmx0clNIcjlnT1dlR1Q2WlpDTWdiTXpmVW9QZUh6ZkFWQkpzdQ?oc=5) | Stock Titan |
-| 14h 前 | 0 | 中性 | [UnitedHealth Group stock at EUR 370.00, up 2.89% premarket - ad-hoc-news.de](https://news.google.com/rss/articles/CBMitAFBVV95cUxPTGZoTGhoTkZuMGctbWFEOWlmNXdVdGhfUWxBN0hRWnlIR3dFRWFaVjJwV2FqaGctLWhoWkFMbXlmOXJ4LXRRSndyNEVMekwwWkhhUXJMVG5jTVdWMVdyTjFlbVBZSklLS0hJeTZFMW1JbTFZRnp0U3ItdEl2V1NHZHpnSXhNVVkxdE5sT1IxbGZGVXdGVzFOb1BBNS1yMjFIaElPUk9URWhIdUk3SzBTRmYwVko?oc=5) | ad-hoc-news.de |
-| 14h 前 | 0 | 偏空 | [What UnitedHealth Group Doubters Missed - Simply Wall St](https://news.google.com/rss/articles/CBMitgFBVV95cUxQa21XSG5HZ1Y4amx0TzFESE5xRXpxcWhneTMzZ0QtX2RRUFZYLWhzaWowRExhbmZSeWk1N1BidjM2Q2d5UG1YWG9OVUNwWVVwZmhhM0ZkU1RUX2dxT00zYklod3JSVWFodVdER2plaWNLQUxUV0F5b0xEZGJ3WkdvT0V1X3duSzFhUFZmQVU3TW9PdHZPaEw0eHdJNHA5cG5ESTZuX2NqMFhDLW5YWDJ0dENyUl85d9IBuwFBVV95cUxQb0V3TEEtdEU5OXg0emh0RG5zVTRyTWo1ZzVDUS1zRG13MUpPSGVOUEg3TXV4cGt3a1Nfd2xGbGFEd0FXa0Q0dUxseURUWHQwcU1qMmxES0NUQW1tNndvbVhfX0JPSU9NRVRLOWFQWVpScVRzNUUxOUVMLUxBT19LMUczay10OElSVk52VGtvclpKdFpPSkJ1NFBUN3I3Z2hmNGIwSHg1enhJRUl1em44aXRISzZkRU03OE5j?oc=5) | Simply Wall St |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
-- 政策面对该板块的倾向为 -0.63（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 按本报告掌握的数据，没有触发任何一条成文的风险规则。这不等于没有风险——它只等于「这台机器读到的东西里没有」。
 
 ## 六、原始数据（本页所有计算的来源）
 

@@ -112,18 +112,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 27h 前 | 9 | 偏多 | [Moderna Climbs 5% Ahead of Earnings, Pfizer Eases Despite Raised Outlook, Merck Slides 2% Amid New Phase 3 Trial - Yahoo Finance](https://news.google.com/rss/articles/CBMilwFBVV95cUxQUFV3Z3ZzZzA3Smhac0xBOTNqU1R5UGxVcV9HTG9tUDlSdjRQSGxSTF8tNTNjd0YzMVlQeEFtbVNQa2xFeG9nX29HWWdDQWY0NFdkTzROYlEtb05NdFpmV1AtMzN4RkJsZEFaaUZsNXBkTE5SYW5GNXNsNGpGUnNITjd4X3ZqVUdRRUl3WURab0pyb29fMzRJ?oc=5) | Yahoo Finance |
-| 1h 前 | 8 | 偏多 | [Pfizer beats Q3 revenue and EPS estimates, rais... - Pluang](https://news.google.com/rss/articles/CBMikgFBVV95cUxNVHRwaVRXOUpKQ0N2RmZ3ZHRzeTNJd2kyU3ZzXzBNV2JUcHRjUGJOR3pVOFE5MEcxTWdudjVVUFk1TThNM1BWNXgzTGhvcUNYUWo0R0RDeDA0NjRsWGpHSVdPNE4xNkE1NkNmRC04dXRsR2FfN2hBYzR5dmtzQ2VrWkhGSDItclFOMHh6bUt5MWQ5UQ?oc=5) | Pluang |
-| 23h 前 | 8 | 中性 | [Pfizer Inc. Q3 2026 Earnings Call Summary - Yahoo Finance](https://news.google.com/rss/articles/CBMikgFBVV95cUxPTzRDYjM2dEw2alc1SlZhbXRsZTNEbWk4eFNyM2kzU2ZTcmthbWVxdm52TjliUUd5dVJkZEQ1UVFQRmFZa3ZqamVSRHN0X3R5SUNJNksyRGxaWVRramFhZS1NTkthSFdBbnB0dFFIWEx0cU93Q0VaTlV1VTItS1NkWHhHRlVOdzBlVjI4S2M0dWFvdw?oc=5) | Yahoo Finance |
-| 31h 前 | 8 | 偏多 | [Pfizer Raises Full-Year Outlook Following Third-Quarter Beat - Yahoo Finance](https://news.google.com/rss/articles/CBMingFBVV95cUxNazRzamFvM0tpd2l0a1p6Nkd3T0U0THhSVnMwbnBqTTBoWWJjMHhmVDZUMVhvVW1DY05LR2RIa0d0b2NSZzdPWTJXMlBkSFdSeGFwY3J3TDYyWHVsOEtfMk4zUXRZNmF5TWg0MHQ5ekwyamR2bEs5SkcyN01YVUlUbHNiak9QMkkwR2xyaDNSUFJYc1RPZC1GYjZjeDA3Zw?oc=5) | Yahoo Finance |
-| 33h 前 | 8 | 偏多 | [Pfizer earnings beat by $0.14, revenue topped estimates - Investing.com India](https://news.google.com/rss/articles/CBMioAFBVV95cUxOdFotQU12QmNFdU5IM1NXYmJpVUtMYVJSdVlrcTRRMW5QWGRnaFdzZFB0bEF0UEtIVE4xM1pJbUY3Q20za0FWbHlXUWk5aXNZZk9FUUJkNUJVRm9ENXRzaFFsYmhTdDdyc1l6OC1GT0pTRk83V2NDcXREbEFxejNWbTk3OFM0Y0RFNTlPU0JwYXZzMkJYWW1fRjlsM2tKTlM4?oc=5) | Investing.com India |
-| 33h 前 | 8 | 中性 | [Pfizer hikes 2026 outlook despite flat Q3 revenue: names new CFO - Seeking Alpha](https://news.google.com/rss/articles/CBMigwFBVV95cUxNOTF4c0NpeDNqUzhrd3BxcDRpVE5YbnRPRnNaRmNDOHczYml3Z3NBZVo5d1hwMnpxREpGMXlINzctcE9HdFpNa3gxXzJsMTBQSzdmZDlwZzVVQmN3VkpYMWgtbXNpWnJncW9HdHlGZl9YeXZvRGVobWtMR0s1Z29vYXdvNA?oc=5) | Seeking Alpha |
-| 1h 前 | 0 | 中性 | [Pfizer, Inc. (PFE) Stock Forecasts - Yahoo Finance](https://news.google.com/rss/articles/CBMiiAFBVV95cUxQV09Ia1VhZXBEWFF3Y0ZrYUNtUk9maWh4cjBzN19FbVc1WFRrTDFxME4yRWdkN1U2VVF2T2YtaGltZjZZamJfLVFrWmJGUE4tM2VIYzF3OVVWcFZvbk4wT2RlbHFvc1dVQjh4NGp4RjRSS3lwRG5rWU9nTExMR2FFTTJtT0IwWWxO?oc=5) | Yahoo Finance |
-| 7h 前 | 0 | 中性 | [Pfizer (PFE) Gets a Hold from J.P. Morgan - The Globe and Mail](https://news.google.com/rss/articles/CBMivgFBVV95cUxQX0IwdzhEQVlIVmM3QTl2T1BMUkxBWjFjRzdKVVNnR2RlVW9FYnpNMXduQlAxd1FFVFVoTUFNN1h2Tmx3dUJpa0ViZ09QZFlRMHRUcVJuVTNWOFJZQjJpZmZoa3VuZ1liUzFYZzBBNXZTd1ZSY01xRUg5VTBNdkFzYUdhNktTelZJRDBvbDVZdGxGMm9MRXhhWVNkeXhoVUptR2lpdWM0a1NUZnlVVV85eXFIS2FkR0o4T1BQSzd3?oc=5) | The Globe and Mail |
-| 7h 前 | 0 | 中性 | [Pfizer: 3 Key Takeaways for Long-Term Investors - Yahoo Finance](https://news.google.com/rss/articles/CBMikgFBVV95cUxPMGcydFVKWXd5X1FFN0U0Q01NUnUyTFhEQUxyQWgteTNsQnJPbjhXVTM0MGRRMy1mOGhESFJKWFVsV2JCY0FNM2wtSzVURmw3dmtyeUlrTUI4Q0VXaXVYQ19TUUluemVoMGxtRmdDaEIycU5TamlxVVp4czdCNElnSVgxNXBjU2dRTmphSlpCOGpEQQ?oc=5) | Yahoo Finance |
-| 10h 前 | 0 | 中性 | [Amazon, Pfizer, Eaton And A Financial Stock: CNBC ‘Final Trades’ - Amazon.com (NASDAQ:AMZN) - Benzinga](https://news.google.com/rss/articles/CBMiwgFBVV95cUxORjk5WTl2U0VlaDdZazlabEFwM2RlcElEd1lzRVUwX3JBSWxIR0ZhUkNuV2Y3ck1CckNpa3AtTkNwbXR6YS10SDJwdzdwaGNXTGpIcFR5alkwZzBMeVZOM1llVlVqci1zSUUxSmw5cW0xaWwyTnFqODhSOGlqSS1iTFhkYXREM1E2cmxyUUpJR04zY3QyX1dNRy1VVnExajFfdV9WV3pVYlMwYXNXa3pxejREMWl4QzY2NmVmUGIxS1Zodw?oc=5) | Benzinga |
-| 14h 前 | 0 | 中性 | [Pfizer stock slips to EUR 26.72, down 1.84% premarket - ad-hoc-news.de](https://news.google.com/rss/articles/CBMirgFBVV95cUxPTWpkWndmcW1yVmtkOHljRElfUFp5Y1ZYODBLOG9obWJyejA3X3V5TjFuRFpuSGVSREpKVk1mMXZmT19RZnZSZnF1ZEd5bVBiTGU0MVB2ejN1VE1ab2lDX0puN0E3Nm9JOW9TLW5QaDdMUllfcGpQdWh3VXR4TUotWlE4cG9xRkpWNjFoX3FmdTFHU1ZIaTJCeWwzcFk5NV9aTHhJbFNhNE5nQkFVb0E?oc=5) | ad-hoc-news.de |
-| 23h 前 | 0 | 中性 | [Pfizer, Inc. (PFE) Stock Forecasts - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMikAFBVV95cUxPVVBidWo1SkFYYUc4ajdLTzNqMDBCOHFoRFFlcGFHY0F0SmlwSk16Q01mM3JucW8ycXRvMHZmbXJhMU9LMVhLSHpjYkp4NGd3MGVkNHozZE9jVndXZ1hqT0oza2I1bnktTVYtdElQdlBzbk11Q0czR2RlOHRwWGQ4SENwRmRTb1REeHZlWWNPOXU?oc=5) | Yahoo! Finance Canada |
+| 0h 前 | 9 | 偏多 | [Argus raises Pfizer stock price target on 2026 guidance boost By Investing.com - Investing.com India](https://news.google.com/rss/articles/CBMivwFBVV95cUxPWlFSWll5N2xmc3ZibGNPZVFJcjdLQks1YUlCcHZhYTQ0WVRqUUx6Q1NUU1g1NTh1WURmNTA0Z0RQYU4zRUN5a2h4dGFFamRkd25BNnU4a2E3WFRVWWhTU3QtYVlDX1VaNjNIZ3pHSXdyUDBhQTFkbUtGVjV0ci1NT2x1VVVKVkpkblEzYUNkdDhQb185ZnRGZl82NmVfdk8zSGxXWXVvci1ZbGFONEM0dFR2Tm9JVHQ1TXVNWHhLMA?oc=5) | Investing.com India |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -132,7 +121,6 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
 - 现价已经高于卖方目标价均值 29.45（-4.3%）——共识认为没有上行空间了。
-- 政策面对该板块的倾向为 -0.63（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
