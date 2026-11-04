@@ -1,5 +1,5 @@
 {
- "saved_at": "2026-11-04T20:15:01",
+ "saved_at": "2026-11-04T20:20:44",
  "positions": {
   "PFE": {
    "symbol": "PFE",
@@ -841,7 +841,7 @@
    ],
    "pnl": 148.19,
    "r": 0.7300000000000004,
-   "reviewed": false,
+   "reviewed": true,
    "sleeve": "aggressive"
   },
   {
@@ -861,7 +861,7 @@
    ],
    "pnl": 430.68,
    "r": 2.003162800000001,
-   "reviewed": false,
+   "reviewed": true,
    "sleeve": "core"
   }
  ]
