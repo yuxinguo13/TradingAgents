@@ -1,0 +1,190 @@
+# TXN · 德州仪器（Texas Instruments）
+
+_科技 · 数据截至 2026-11-04 收盘 → 面向 2026-11-04 开盘_
+
+[← 回到 2026-11-04 当日报告](../2026-11-04.md)
+
+> 趋势向上且结构完整；顺势的一侧在上方，风险在于结构一旦破位就要认。
+
+## 一、价格与图形
+
+```text
+     TXN · 近 126 个交易日（日线收盘）
+324 ┤                  ╭╮
+314 ┤       ╭─╮        ││                                                     ╭╮╭
+304 ┤   ╭───╯ ╰╮╭╮   ╭─╯╰─╮   ╭──╮                                           ╭╯╰╯
+293 ┤ ╭─╯      ╰╯╰╮ ╭╯    │╭──╯··╰╮··············                  ╭─╮      ╭╯
+283 ┤─╯           ╰─╯  ···╰╯      ╰──╮     ╭─╮   ·······         ╭─╯ ╰──╮ ╭─╯
+273 ┤               ···              ╰─────╯ ╰──╮       ······╭──╯······╰─╯······
+262 ┤            ···                            ╰────╮  ╭───╮╭╯                ::
+252 ┤         ···                                    ╰──╯   ╰╯      :::::::::::
+242 ┤       ··                                          ::::::::::::
+231 ┤    ···                                ::::::::::::
+221 ┤····                        :::::::::::
+211 ┤                 :::::::::::
+200 ┤      :::::::::::
+190 ┤::::::
+    └────────────────────────────────────────────────────────────────────────────
+     2026-05-07                       2026-08-07                       2026-11-04
+     · SMA50   : SMA200   ─ close
+```
+
+```text
+       TXN · 近 21 个交易日（放大看最近节奏）
+312.5 ┤                ╭╮ ╭─
+307.8 ┤              ╭─╯│ │
+303.1 ┤              │  ╰─╯
+298.4 ┤             ╭╯
+293.6 ┤             │
+288.9 ┤──╮          │
+284.2 ┤  ╰╮╭╮    ╭╮╭╯
+279.5 ┤   ╰╯╰─╮  │╰╯
+274.8 ┤       ╰──╯
+      └─────────────────────
+       2026-10-07 2026-11-04
+```
+
+成交量近 63 日： `▄▂▃▂▃▄▂▃▂▂▃▃▁▂▃▂▂▃▁█▄▄▁▂▂▁▂▁▂▂▁▃▄▅▄█▄▄▄▅▇▆`
+
+### 图形读数
+
+- **均线排列**：多头排列 — 现价距 20 日 290.74（+7.1%）、50 日 277.28（+12.3%）、200 日 258.92（+20.3%）
+- **形态结构**：上升结构 — 更高的高点 + 更高的低点；前高 272.00 → 297.30（+9.3%）、前低 270.69 → 294.70（+8.9%）
+- **动能**：RSI(14) 66，偏强；近一月的斜率快于近三月（月 +5.3% vs 季 +12.4%），趋势在加速
+- **波动**：日均真实波幅约为价格的 3.6%；按本报告 2 ATR 的止损惯例，一个 R 相当于 7.2% 的价格距离
+- **位置**：距 52 周高点 -5.3%，距 52 周低点 +107.6%
+- **量能**：最新一日成交量为 20 日均量的 1.3 倍，量能正常
+- **相对强度**：近一月跑赢 标普500 6.9 个百分点
+- **支撑 / 阻力**：最近的摆动低点 294.70，摆动高点 312.21（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
+
+**我的读图结论**：趋势向上且结构完整；顺势的一侧在上方，风险在于结构一旦破位就要认
+
+_以上每一条都是对已经发生的价格的描述。均线、RSI、摆动结构全部是滞后指标，它们能说明现在处于什么状态，不能说明下一步。你自己在图上看到的东西，和这里写的不一致时，以你看到的为准——然后去查是哪个数字有问题。_
+
+## 三、财报与基本面
+
+市值 $2,847.79亿 · 行业 Technology / Semiconductors · TTM 营收 $207.66亿 · TTM EPS 7.71 · 股息率 1.82% · Beta 1.39 · 空头占流通股 2.5%
+
+- **估值**：TTM 市盈率 40.4 倍；前瞻市盈率 26.9 倍（市场预期未来一年盈利上升）；市销率 13.7 倍；EV/EBITDA 27.2 倍；PEG 0.95（低于 1，增长尚未被价格吃掉）。
+- **增长**：最新季度营收同比 +27.7%；盈利同比 +77.0%；最近三个季度营收连续环比上升；最近 7 次财报里 5 次超预期。
+- **盈利质量**：毛利率 60.2%、营业利润率 47.5%、净利率 34.3%、ROE 39.7%。
+- **资产负债**：现金 $81.42亿；有息负债 $135.55亿；负债/权益 70.7%（负债适中）；流动比率 5.59；自由现金流 $47.79亿，为正。
+- **卖方预期**：29 位分析师覆盖；平均评级「买入」（2.03/5，1 为最看多）；目标价均值 336.86（较现价 +8.1%），区间 250.00–400.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
+
+**分季度损益**（季度数据，最新在左）
+
+| 指标 | 2026-09-30 | 2026-06-30 | 2026-03-31 | 2025-12-31 | 2025-09-30 |
+|---|---:|---:|---:|---:|---:|
+| 营收 | $60.55亿 | $54.63亿 | $48.25亿 | $44.23亿 | $47.42亿 |
+| 毛利率 | 64.2% | 61.4% | 58.0% | 55.9% | 57.4% |
+| 营业利润率 | 47.6% | 42.6% | 37.8% | 34.0% | 36.9% |
+| 净利率 | 40.0% | 36.2% | 32.0% | 26.3% | 28.8% |
+| 净利润 | $24.25亿 | $19.80亿 | $15.45亿 | $11.63亿 | $13.64亿 |
+| 摊薄EPS | 2.62 | 2.14 | 1.68 | 1.27 | 1.48 |
+
+**分年度损益**（年度数据，最新在左）
+
+| 指标 | 2025-12-31 | 2024-12-31 | 2023-12-31 | 2022-12-31 |
+|---|---:|---:|---:|---:|
+| 营收 | $176.82亿 | $156.41亿 | $175.19亿 | $200.28亿 |
+| 毛利率 | 57.0% | 58.1% | 62.9% | 68.8% |
+| 营业利润率 | 34.7% | 34.1% | 41.8% | 51.9% |
+| 净利率 | 28.3% | 30.7% | 37.2% | 43.7% |
+| 净利润 | $50.01亿 | $47.99亿 | $65.10亿 | $87.49亿 |
+| 摊薄EPS | 5.45 | 5.20 | 7.07 | 9.41 |
+
+**财报兑现记录**
+
+| 财报日 | 预期EPS | 实际EPS | 超预期 |
+|---|---:|---:|---:|
+| 2027-01-26 | 2.62 | — | 尚未公布 |
+| 2026-10-21 | 2.43 | 2.62 | +7.9% |
+| 2026-07-22 | 1.94 | 2.14 | +10.5% |
+| 2026-04-22 | 1.37 | 1.68 | +22.8% |
+| 2026-01-27 | 1.31 | 1.27 | -2.9% |
+| 2025-10-21 | 1.49 | 1.48 | -0.4% |
+
+_财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会滞后，TTM 窗口是厂商口径而非公司财年口径。以上任何一个数字如果会改变你的决定，请点开本页下方的 SEC EDGAR 链接看原文。_
+
+**财报日历**：下次财报 **2027-01-26**（约 83 天后）；上次财报 2026-10-21，超预期 +7.9%。财报日是这套止损体系唯一无法覆盖的风险：跳空会直接穿过止损价。
+
+## 四、消息面（过去 24 小时）
+
+| 时间 | 材料度 | 倾向 | 标题 | 来源 |
+|---|---:|---|---|---|
+| 29h 前 | 8 | 中性 | [Texas Instruments stock gains 4.77%; Q4 outlook stays in focus - ad-hoc-news.de](https://news.google.com/rss/articles/CBMiwAFBVV95cUxONEt6R3gxODhpRExlbEM3ZUJHWDlPR0k2Q1ZuaHlSa0lzakdxaG9OWGZ4bk1GQVNXYlFQMEZHbWhqMUxGdmhzNjlTRmNxblpMMkF5eHU0ZkhIcUNCa0pxNnhieVpQMERCVmJNdEh3WGJEZ3E5d3g4OS1qQUh4Y0dVNFZGSHZDWU90MVdkRk5NTlFJeVFxTC00MlUxZ2g4WjBpLUMtQUU4aDdsN185SUJWc3JjeDB5M0sweFJxX2ZuZGI?oc=5) | ad-hoc-news.de |
+| 5h 前 | 0 | 中性 | [Texas Instruments (TXN) Stock May Be Fully Priced Despite Its $2 Billion Notes Sale - Simply Wall St](https://news.google.com/rss/articles/CBMi1wFBVV95cUxNMkN2SHVFdDBEVFV5aHlxSFZ1Q2tsUWZXMjFwTW5lXzZJdVZDWWNpanY0SzgycXU0eGRKaGREc0FzMFN0SmltVVBTdWNTM0U3R3BJU3RRb2JBMEZLSmFnRFFOd000cVlZc3VLN0lOaTZUam5ROHRObnBvTkhaT3c5eG1OU25MVVh5dkFpbmx3M0lIQW1ZRmlJdTA1Skp4OXJIZU1LLUg4UTViQlVnM3dXZm8xcTlrTk54SVpxWDJyY1pUOGJETk5KQWZoNWhvLUNtdjQzSk01Z9IB3AFBVV95cUxOTHdUbC10YWgwY2tpN19vbjZKdWdBNUlUYzZNcGduRHRBalF4SGRFaG1uMmFIZDJaQkt4U0JWcTBvcDRKdnpSOXZfUE13NjdsM21tc0dfZEVOYnVLM3RxLVpyUEtiV3VRRmxpcGNVNnFqSHhyUE9DTjg1WEdLeGd5X3BUZ2U2TFpLaWlpM1lsUFQtWW9MYkZ0VFdjQmU2dG9ZcElOSzRFZXB4S01nOWdyNy1fWTY4M190UGNpMXhZSkdKbGR0R1NUQlRuNUcxVjM3Q05OdnFlTk55Q1JU?oc=5) | Simply Wall St |
+| 6h 前 | 0 | 中性 | [Texas Instruments stock highlights Europe ties ahead of electronica - ad-hoc-news.de](https://news.google.com/rss/articles/CBMiygFBVV95cUxQY28tUm5vYmJXSmw0dFlnQm5wcURScTlmNTE5cHJqcVhLM0ROQkFUWE9tSGpNbHoyOHktTEJ0cWhIRXBTQkJRVS1fcEpWdmNkWDRlbXFFMlR1SWd4bkx4Z01ZLUw2NlBLMmtPdGFsMkFnQkl4RTRLTUVsSmNqaEZqaGFpbkZZX0RUVGR4em1GZjEzX1RpYUtBOFRUYWZXNkZtZDNlOC1oTmFlQ2U0RGtfM3pHSHpMQWZpZzhReVltdV9lY2lkaWdfSjJR?oc=5) | ad-hoc-news.de |
+| 9h 前 | 0 | 中性 | [46 ETFs Add to Texas Instruments (TXN) on Nov. 2 - GuruFocus](https://news.google.com/rss/articles/CBMijAFBVV95cUxPNThJellrR3FRUkpnNXhzTUF4ajRkdXRmVTYyMmNxX2ItS2dReHZHNWhOLV9fVjFobE1CTm9HQk40TFExWjB3cEJfZUZKR1lZUXNaZlRvN0hIMXBpOElMTzRET2pMZ1c4Mmh6TU5oQ094aHVsN2U4TGRUbU55Mzk1R05qV3J4b1ZfREx5Yg?oc=5) | GuruFocus |
+| 13h 前 | 0 | 中性 | [Bull of the Day: Texas Instrument (TXN) - Yahoo Finance](https://news.google.com/rss/articles/CBMimgFBVV95cUxQSXpseXFMdU10dHZxT2FDeDVPVjl2R2xMTkhILWp2LWhKV0E1QzQ2RTAyQzVhbjFCSjRLendtbndwV0pDZmgzWGZaNkRhTmFSbHNIUHFBYnFJN3BXUnRCVjVHdDM0NVZ3aTJoSFpiVzFiaHI2Q3h6OEUyYk1XS2FmdXN5RkRLTjl1dWtrWTBNMjBfNF9ZbFEtMmtB?oc=5) | Yahoo Finance |
+| 14h 前 | 0 | 中性 | [Texas Instruments stock at EUR 279.15, up 0.32% premarket - ad-hoc-news.de](https://news.google.com/rss/articles/CBMiswFBVV95cUxOUWpyVldReXpWakJZbGdtYkQ5a2dRUF9LQ2ltWEh5VzdxMGY3bXA3cVl0d0lPSDUwTllkanp4bUktUDBOZEV1dlFLZjQwTUdSQmJlX2lHZGdjQVQyUkk3anNUYUZpV1FlclN4dlpDaGdXRW8wRlkyUkRBcWZoNVY1RzV6N2trdnZzTDJ5clJGSXpxMGdhNW9TeUQwbUFNbnJoZmwzN3UyVVd2VEVmTW5pRFlZZw?oc=5) | ad-hoc-news.de |
+| 14h 前 | 0 | 中性 | [Texas Instruments and KimberlyClark have been highlighted as Zacks Bull and Bear of the Day - Yahoo Finance](https://news.google.com/rss/articles/CBMitAFBVV95cUxOMGo5TldKZ1FYMVJkWDlMNUZiVHp4X004cm44ZHNRQzM1Tmc3SUlTRHNsUVBRRGFFZmRLb3BnSEpobl9SS1l5a1FONWp6RElBQmdxb21zMlZVWmdROFdsOG82Y1ljQ1hOODVobkpYUEs5S0JiQ3VrVWlUaURyRkoxekV4SDhLc2otNE42MzVDWFNlV3NDVG9CN0t5SndzWWhFWkdkalg1dnFFS0pNWnRiVkFVRXc?oc=5) | Yahoo Finance |
+
+_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+
+## 五、反方观点与风险
+
+_以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
+
+- 政策面对该板块的倾向为 -0.95（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+
+## 六、原始数据（本页所有计算的来源）
+
+最近 15 个交易日的 OHLCV：
+
+| 日期 | 开 | 高 | 低 | 收 | 涨跌 | 成交量 |
+|---|---:|---:|---:|---:|---:|---:|
+| 2026-10-15 | 274.05 | 281.14 | 272.26 | **277.76** | -0.5% | 6,857,500 |
+| 2026-10-16 | 274.41 | 283.09 | 272.83 | **275.14** | -0.9% | 7,949,400 |
+| 2026-10-19 | 280.70 | 281.74 | 270.75 | **274.81** | -0.1% | 9,582,000 |
+| 2026-10-20 | 271.37 | 281.08 | 270.69 | **276.43** | +0.6% | 7,659,700 |
+| 2026-10-21 | 277.95 | 287.90 | 276.02 | **283.27** | +2.5% | 10,433,000 |
+| 2026-10-22 | 282.84 | 285.15 | 275.25 | **278.14** | -1.8% | 13,865,800 |
+| 2026-10-23 | 276.52 | 284.81 | 274.93 | **283.31** | +1.9% | 7,512,400 |
+| 2026-10-26 | 287.52 | 297.50 | 283.02 | **296.67** | +4.7% | 7,594,200 |
+| 2026-10-27 | 299.41 | 307.97 | 297.90 | **307.41** | +3.6% | 8,160,900 |
+| 2026-10-28 | 307.29 | 308.49 | 303.51 | **308.33** | +0.3% | 7,355,100 |
+| 2026-10-29 | 304.54 | 311.55 | 304.54 | **311.42** | +1.0% | 5,662,000 |
+| 2026-10-30 | 307.63 | 308.00 | 294.70 | **300.84** | -3.4% | 12,998,300 |
+| 2026-11-02 | 304.10 | 311.52 | 301.24 | **302.02** | +0.4% | 11,078,400 |
+| 2026-11-03 | 309.83 | 316.75 | 305.18 | **312.49** | +3.5% | 9,905,100 |
+| 2026-11-04 | 313.43 | 317.15 | 303.90 | **311.49** | -0.3% | 9,882,286 |
+
+## 七、自己去查（本页不做独立验证）
+
+**行情与图形**
+- [Yahoo Finance 行情](https://finance.yahoo.com/quote/TXN) — 本报告所有价格与均线的来源，先对这里
+- [TradingView 图表](https://www.tradingview.com/chart/?symbol=TXN) — 可画线、可换周期，用来复核本页的 ASCII 图
+- [Finviz 快照](https://finviz.com/quote.ashx?t=TXN) — 一屏看完估值、技术与同业对比
+- [StockCharts 技术面](https://stockcharts.com/h-sc/ui?s=TXN)
+- [Barchart 观点](https://www.barchart.com/stocks/quotes/TXN/opinion) — 把十几个技术指标折算成一个多空票数
+
+**财务与估值**
+- [StockAnalysis 财务报表](https://stockanalysis.com/stocks/TXN/financials/) — 十年利润表/资产负债表/现金流，免费且不用登录
+- [Yahoo 财务](https://finance.yahoo.com/quote/TXN/financials) — 本页财报数字的来源
+- [Yahoo 关键统计](https://finance.yahoo.com/quote/TXN/key-statistics) — 估值倍数、利润率、资产负债的完整版
+- [Macrotrends 长期趋势](https://www.macrotrends.net/stocks/charts/TXN/x/revenue) — 营收与利润的十年折线，看结构性变化
+- [Wisesheets/Koyfin 替代：GuruFocus](https://www.gurufocus.com/stock/TXN/summary)
+
+**原始文件（无中介）**
+- [SEC EDGAR 全部文件](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&ticker=TXN&type=&dateb=&owner=include&count=40) — 10-K/10-Q/8-K 原文；财报电话会与风险因素只在这里
+- [SEC 全文检索](https://efts.sec.gov/LATEST/search-index?q=%22TXN%22&forms=8-K) — 按关键词搜文件正文
+- [OpenInsider 内部人交易](http://openinsider.com/search?q=TXN) — 高管自己在买还是在卖，是少数不靠解读的信号
+- [13F 机构持仓](https://whalewisdom.com/stock/TXN) — 注意：13F 滞后 45 天，不能当作买入理由
+
+**消息与预期**
+- [Yahoo 新闻](https://finance.yahoo.com/quote/TXN/news)
+- [Google News 搜索](https://news.google.com/search?q=Texas+Instruments+stock&hl=en-US)
+- [财报日历与预期](https://stockanalysis.com/stocks/TXN/forecast/) — 下次财报日、市场一致预期、历史超预期记录
+- [Seeking Alpha 讨论](https://seekingalpha.com/symbol/TXN) — 观点密度高，但是买方与卖方混杂，当作反方意见读
+- [公司投资者关系](https://www.google.com/search?q=Texas+Instruments+investor+relations) — 财报原始 PPT 与电话会记录
+
+**中文渠道（转载源，不作独立验证）**
+- [雪球](https://xueqiu.com/S/TXN) — 中文讨论与财报摘要
+- [富途牛牛](https://www.futunn.com/stock/TXN-US) — 中文行情与公告翻译
+- [东方财富](https://quote.eastmoney.com/us/TXN.html) — 中文财务报表
+- [同花顺](http://stock.10jqka.com.cn/usstock/TXN/) — 中文资讯
+
+---
+
+_这一页是一台程序按成文规则读公开数据的结果，不是投资建议。它不知道你的资金、税务和其它持仓。图形结论来自滞后指标，财报数字来自厂商转录，新闻材料度来自关键词打分——三者都会错。把它当作一份整理好的证据，而不是一个答案。_
