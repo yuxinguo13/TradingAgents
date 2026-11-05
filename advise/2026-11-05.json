@@ -1,0 +1,211 @@
+{
+ "date": "2026-11-05",
+ "data_date": "2026-11-05",
+ "generated_at": "2026-11-05T21:21:29.861270",
+ "source": "/root/.tradingagents/desk/advise/my_portfolio.json",
+ "horizon": "long",
+ "total": 39221.31001983643,
+ "cash": 28402.11,
+ "cash_pct": 0.7241499579089902,
+ "lines": [
+  {
+   "symbol": "KDP",
+   "name": "",
+   "sector": "Unknown",
+   "shares": 40.0,
+   "cost": 37.2,
+   "price": 36.88999938964844,
+   "value": 1475.5999755859375,
+   "weight": 0.03762240411754843,
+   "pnl_pct": -0.008333349740633489,
+   "action": "减仓",
+   "act_shares": 20,
+   "urgent": true,
+   "reasons": [
+    "近两天有重大利空：Keurig Dr Pepper (KDP) Stock Falls As Q3 Results Expose Margin Strain - Simply Wall St"
+   ],
+   "cautions": [],
+   "stop": 23.860797691345216,
+   "target": 39.88,
+   "earnings_date": "2027-02-23",
+   "earnings_in": 110.0,
+   "verdict": "趋势向上且结构完整，且贴近 52 周高点——追高的代价是止损离得远；顺势的一侧在上方，风险在于结构一旦破位就要认",
+   "spark": "▁▂▂▃▄▄▄▄▃▃▃▃▃▃▂▃▃▅▆▆▇▇██",
+   "page": "2026-11-05/KDP.md",
+   "is_index": false
+  },
+  {
+   "symbol": "ABBV",
+   "name": "",
+   "sector": "Healthcare",
+   "shares": 5.0,
+   "cost": 295.3,
+   "price": 288.239990234375,
+   "value": 1441.199951171875,
+   "weight": 0.03674532927235166,
+   "pnl_pct": -0.023907923351253024,
+   "action": "加仓",
+   "act_shares": 6,
+   "urgent": false,
+   "reasons": [
+    "趋势完好且回调到均线附近（279.40），仓位只占 3.7%，可以补"
+   ],
+   "cautions": [
+    "政策面对该板块不利（倾向 -0.76）"
+   ],
+   "stop": 188.66519232177734,
+   "target": 305.76,
+   "earnings_date": "2027-02-03",
+   "earnings_in": 90.0,
+   "verdict": "趋势向上且结构完整，且贴近 52 周高点——追高的代价是止损离得远；顺势的一侧在上方，风险在于结构一旦破位就要认",
+   "spark": "▁▁▂▃▃▂▃▂▂▃▃▃▄▃▃▄▅▆▇▇▇▇██",
+   "page": "2026-11-05/ABBV.md",
+   "is_index": false
+  },
+  {
+   "symbol": "QQQM",
+   "name": "",
+   "sector": "Unknown",
+   "shares": 15.0,
+   "cost": 298.13,
+   "price": 266.8500061035156,
+   "value": 4002.7500915527344,
+   "weight": 0.10205549201513968,
+   "pnl_pct": -0.10492065171731924,
+   "action": "持有",
+   "act_shares": 0,
+   "urgent": false,
+   "reasons": [
+    "趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌"
+   ],
+   "cautions": [
+    "50 日和 200 日线都失守、近三月 -10%；长线账户不按此卖，复核线在 200 日线下 20%（223.85），论点变了才走"
+   ],
+   "stop": 223.84578771972656,
+   "target": NaN,
+   "earnings_date": "",
+   "earnings_in": NaN,
+   "verdict": "趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌",
+   "spark": "▅▅▅▄▄▅▄▅▄▄▄▆▇▆▇█▇▆▅▅▄▅▃▁",
+   "page": "2026-11-05/QQQM.md",
+   "is_index": true
+  },
+  {
+   "symbol": "XOM",
+   "name": "",
+   "sector": "Energy",
+   "shares": 10.0,
+   "cost": 175.94,
+   "price": 165.30999755859375,
+   "value": 1653.0999755859375,
+   "weight": 0.042148005121447285,
+   "pnl_pct": -0.06041833830513954,
+   "action": "持有",
+   "act_shares": 0,
+   "urgent": false,
+   "reasons": [
+    "趋势向上且结构完整；顺势的一侧在上方，风险在于结构一旦破位就要认",
+    "政策面对该板块有利（倾向 +0.96）"
+   ],
+   "cautions": [],
+   "stop": 123.42715551757813,
+   "target": 170.27,
+   "earnings_date": "2027-01-29",
+   "earnings_in": 85.0,
+   "verdict": "趋势向上且结构完整；顺势的一侧在上方，风险在于结构一旦破位就要认",
+   "spark": "▂▁▃▃▂▁▃▂▃▄▃▂▂▂▃▃▄▆▆▇█▇█▅",
+   "page": "2026-11-05/XOM.md",
+   "is_index": false
+  },
+  {
+   "symbol": "KO",
+   "name": "",
+   "sector": "Consumer Defensive",
+   "shares": 15.0,
+   "cost": 96.0,
+   "price": 95.7300033569336,
+   "value": 1435.950050354004,
+   "weight": 0.03661147599679264,
+   "pnl_pct": -0.0028124650319417688,
+   "action": "持有",
+   "act_shares": 0,
+   "urgent": false,
+   "reasons": [
+    "趋势向上且结构完整，且贴近 52 周高点——追高的代价是止损离得远；顺势的一侧在上方，风险在于结构一旦破位就要认"
+   ],
+   "cautions": [
+    "有利空消息 1 条，看一眼",
+    "政策面对该板块不利（倾向 -0.96）"
+   ],
+   "stop": 65.51825018310547,
+   "target": 99.19,
+   "earnings_date": "2027-02-09",
+   "earnings_in": 96.0,
+   "verdict": "趋势向上且结构完整，且贴近 52 周高点——追高的代价是止损离得远；顺势的一侧在上方，风险在于结构一旦破位就要认",
+   "spark": "▁▂▂▄▅▃▂▂▂▃▂▃▃▂▁▁▂▄▆▆▇▅▇█",
+   "page": "2026-11-05/KO.md",
+   "is_index": false
+  },
+  {
+   "symbol": "GLDM",
+   "name": "",
+   "sector": "Unknown",
+   "shares": 10.0,
+   "cost": 81.375,
+   "price": 81.05999755859375,
+   "value": 810.5999755859375,
+   "weight": 0.02066733556773018,
+   "pnl_pct": -0.0038709977438555754,
+   "action": "持有",
+   "act_shares": 0,
+   "urgent": false,
+   "reasons": [
+    "趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌"
+   ],
+   "cautions": [
+    "50 日和 200 日线都失守、近三月 -6%；长线账户不按此卖，复核线在 200 日线下 20%（70.99），论点变了才走"
+   ],
+   "stop": 70.99091973876953,
+   "target": NaN,
+   "earnings_date": "",
+   "earnings_in": NaN,
+   "verdict": "趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌",
+   "spark": "▅▅▅▇█▇▅▆▅▅▅▅▄▃▃▃▃▃▃▃▂▂▁▂",
+   "page": "2026-11-05/GLDM.md",
+   "is_index": false
+  }
+ ],
+ "sector_weights": {
+  "Unknown": 0.16034523170041828,
+  "Energy": 0.042148005121447285,
+  "Consumer Defensive": 0.03661147599679264,
+  "Healthcare": 0.03674532927235166
+ },
+ "tilt": {
+  "Consumer Cyclical": -0.9595959595959596,
+  "Industrials": -0.9779492833517089,
+  "Consumer Defensive": -0.9588477366255144,
+  "Technology": -0.9578947368421052,
+  "Basic Materials": -0.9501246882793017,
+  "Energy": 0.9617590822179732,
+  "Financial Services": -0.9664429530201343,
+  "Healthcare": -0.7560975609756098,
+  "Utilities": -0.7333333333333333,
+  "Real Estate": -0.7333333333333333,
+  "Communication Services": -0.7752808988764045
+ },
+ "policy_brief": "## Policy and political backdrop\n\n### trade (145)\n- [9/bearish] EU to impose duties on US imports Friday after Trump tariffs - Reuters (7h ago, Reuters)\n  sectors: Consumer Cyclical-, Industrials-, Consumer Defensive-, Technology-, Basic Materials-\n- [9/bearish] Services sector growth slows, impeded by tariffs, rising fuel costs: ISM - CFO Dive (24h ago, CFO Dive)\n  sectors: Consumer Cyclical-, Industrials-, Consumer Defensive-, Technology-, Basic Materials-\n- [9/bearish] Novelis: Higher earnings and Oswego recoveries met pressure from tariffs, strikes and heavy investment - TradingView (2h ago, TradingView)\n  sectors: Consumer Cyclical-, Industrials-, Consumer Defensive-, Technology-, Basic Materials-\n- [9/bearish] Watch Miran on Midterms, Trump Tariffs, Fed Forward Guidance - Bloomberg.com (21h ago, Bloomberg.com)\n  sectors: Consumer Cyclical-, Industrials-, Consumer Defensive-, Technology-, Basic Materials-\n  ... and 141 more in trade\n\n### fiscal (9)\n- [7/bearish] Congress's first task after midterms is to figure out national debt, debt limit, and shutdown - Fortune (9h ago, Fortune)\n  sectors: Technology-, Healthcare-, Financial Services-, Consumer Cyclical-, Consumer Defensive-, Industrials-, Energy-, Utilities-, Real Estate-, Basic Materials-, Communication Services-\n- [7/bearish] Wall Street Is Already Bracing for a 2027 Debt Ceiling Fight - 24/7 Wall St. (5h ago, 24/7 Wall St.)\n  sectors: Technology-, Healthcare-, Financial Services-, Consumer Cyclical-, Consumer Defensive-, Industrials-, Energy-, Utilities-, Real Estate-, Basic Materials-, Communication Services-\n- [7/bearish] Republicans race to act on debt ceiling, energy permits and IRS reform before January - WKRC (2h ago, WKRC)\n  sectors: Technology-, Healthcare-, Financial Services-, Consumer Cyclical-, Consumer Defensive-, Industrials-, Energy-, Utilities-, Real Estate-, Basic Materials-, Communication Services-\n- [7/bearish] US debt ceiling standoff risk rises after Democrats’ midterm sweep: What investors fear - Firstpost (9h ago, Firstpost)\n  sectors: Technology-, Healthcare-, Financial Services-, Consumer Cyclical-, Consumer Defensive-, Industrials-, Energy-, Utilities-, Real Estate-, Basic Materials-, Communication Services-\n  ... and 5 more in fiscal\n\n### geopolitical (14)\n- [7/neutral] Democratic sweep of Congress ushers in a new era as Trump acknowledges impact of the Iran war - Audacy (31h ago, Audacy)\n  sectors: Energy+, Industrials+, Basic Materials+, Consumer Cyclical-\n- [7/neutral] The Wrong Way to End a War - Foreign Policy in Focus (6h ago, Foreign Policy in Focus)\n  sectors: Energy+, Industrials+, Basic Materials+, Consumer Cyclical-\n- [7/neutral] Yes, Trump Was Already Running Out of Gas Before the Iran War - National Review (2h ago, National Review)\n  sectors: Energy+, Industrials+, Basic Materials+, Consumer Cyclical-\n- [7/neutral] US–Iran War on the Brink: Israel Signals New Offensive as Trump Faces a Dangerous Decision - صوت الإمارات (26h ago, صوت الإمارات)\n  sectors: Energy+, Industrials+, Basic Materials+, Consumer Cyclical-\n  ... and 10 more in geopolitical\n\n### regulatory (11)\n- [7/bearish] SEC Approves Weaker Audit Quality-Control Rules Backed by Big Four - https://www.big4news.com/ (12h ago, https://www.big4news.com/)\n  sectors: Financial Services-\n- [7/bearish] District of Maryland Highlights Antitrust Risk in Compensation and Benefits Information Sharing - Buchanan Ingersoll & Rooney PC (7h ago, Buchanan Ingersoll & Rooney PC)\n  sectors: Technology-, Communication Services-, Consumer Cyclical-\n- [7/bearish] Bae Kim & Lee expands data-driven antitrust center in South Korea - Chosunbiz (21h ago, Chosunbiz)\n  sectors: Technology-, Communication Services-, Consumer Cyclical-\n- [7/bearish] Democrats Take Congress: Drug Pricing Is the Only Bipartisan Lane Left for Biopharma - BigGo Finance (25h ago, BigGo Finance)\n  sectors: Healthcare-\n  ... and 7 more in regulatory\n\n### monetary (1)\n- [3/neutral] Bitcoin Holds Near $80K Ahead of Fed Decision as ETF Demand Returns - KuCoin (12h ago, KuCoin)\n  sectors: Financial Services?, Real Estate?, Utilities?, Technology?\n\n_Sector effects above are directional heuristics, not modelled relationships. The sign can invert — a rate cut is bullish for duration unless it signals a recession — and a scheduled event may already be priced._",
+ "macro_read": [
+  "标普500 收 7,354，近一周 -4.7%，近一月 -5.7%，跌破 50 日线但仍在 200 日线上方",
+  "10 年期美债收益率 4.84%，较一月前 -0.44 个百分点",
+  "收益率曲线正向，10年期高于3月期 0.85 个百分点",
+  "VIX 27.5，波动偏高",
+  "美元指数 101.6，近一月 -0.6%",
+  "原油 91 美元（月 +2.7%），黄金 4,101 美元（月 -1.0%）",
+  "本周最强板块：必需消费 +3.5%、通信 +3.1%；最弱：科技 -14.0%"
+ ],
+ "alerts": [
+  "需要今天处理：KDP"
+ ],
+ "warnings": []
+}
