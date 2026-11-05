@@ -108,26 +108,13 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 19h 前 | 8 | 中性 | [AbbVie (ABBV) Stock Climbs As Q3 Earnings Fuel Growth Case - Yahoo Finance](https://news.google.com/rss/articles/CBMilwFBVV95cUxNV2t4ODllNmJmR2xGeVJCQW04QVd1cVBBYm1YMm9fUGFOUjRFbkpjRHBlN3ZMOGhzTlRGTnZXMXM1NkRJV1VaZURhd0xqc2paNjlFZjBQYlJQeHh2RU9uSmtiWUx6Z3NMbVM3d2VlWUdKLTNnMWFsSWljYTNKajdqSS1FOWx5SklqSktibmI2Y0hxVzVZbWNJ?oc=5) | Yahoo Finance |
-| 2h 前 | 6 | 中性 | [3 Dividend Kings to Buy in November and Never Sell - The Motley Fool](https://news.google.com/rss/articles/CBMimAFBVV95cUxPMFotRklxTWc4WnplM0tteXZzRW1NVS1YSlBkV1ZvQ2ZldnhQZEVCMnlVNkd2NW5KZU8xb01PWF9MUHBWNnBUWDlzckw4QUQydkR5ODRWOHJyNGREeV9FS2N2bE5YcFZXc3pqR083S0dsb2RIVjl6M2FrU0Z2dXNUd2piVWZuRWdESGJERmhIUXFUc0dwUnFERQ?oc=5) | The Motley Fool |
-| 27h 前 | 5 | 中性 | [AbbVie, Nxera ink licensing deal worth up to $1.5B (ABBV:NYSE) - Seeking Alpha](https://news.google.com/rss/articles/CBMihgFBVV95cUxNWE9LZXROOUUyR0JGYU5Xb0FXNEF2Q0R1cTlwMWxWLUdDQWY4Nm1rakNYSFUtb19OY2RkaUdoeFl6NWVYUTJVTzYwTVd0SGRhbGE1cDN2TjdLSEJraXg2bTNHNmhVU1R4S1Qxd2I3cUdVd1piNDRfbkc4bF96NFpyZVhTcVl3QQ?oc=5) | Seeking Alpha |
-| 7h 前 | 0 | 中性 | [AbbVie stock gains as Oxford R&D expansion deepens UK footprint - ad-hoc-news.de](https://news.google.com/rss/articles/CBMixAFBVV95cUxOeG9fcFFaRGNZdURoMTB1QVAtd2pGNXFJYWU0R0RPWnRrdnlzRVcwVnZsUUR1RHJ6V3o5SG1zanBJVl9lTzNLRkxqeDRCSDhMZXJxbnoyMVBMNnk5X0N2TGxxc2M1enYwRjJXZXdsSnBFWGw0a0hZSXpGWmRfaWlpZncwN1N1d1RMSkp1STJPMEVfN2RicGhpdlpFRHAxczlxR05rX29vY3dHUXFHTG5OYnlSZkYwdjhZQklBV19Pa3FrbTNz?oc=5) | ad-hoc-news.de |
-| 7h 前 | 0 | 中性 | [AbbVie stock hits all-time high at 298.74 USD - Investing.com](https://news.google.com/rss/articles/CBMiogFBVV95cUxPVFdlQ3FWcmNtT1NCYmVDdEVOaWxfakhoRnRxU2pZT0tNZnllQnVvSm5rdUg2QnFZQV95WnN0RWhLNXhmcGRqUlpXLUl0cXBNc1hrTzdRV3gwRmMtS18xOVczRk5DcGY0NVlwTU5ROU92TDRKLW9rbGpXTWplcTlZT2lMWjJ3ZlUxcUFPZldvd1hPQi1NdllnT1VrLWlsSTZrMlE?oc=5) | Investing.com |
-| 7h 前 | 0 | 中性 | [Are Wall Street Analysts Bullish on AbbVie Stock? - Barchart.com](https://news.google.com/rss/articles/CBMilwFBVV95cUxQQVc2V25NSmdJYmNydklLTS11NTBpWGtJVDlEZko3dVgwdExBWS1lbmZKWm9EZ09GWUdTaFRna010VlVkNnh4RjNjbi1rR3RxandMenBFZF81VFYyWkxkem5mUGhleGk0djZfcHFSN0hwVFVFdXNnOUlaN2NOLVZaNWptXzhDOGJaVk9naXRXUGxZYkU3Vmsw?oc=5) | Barchart.com |
-| 9h 前 | 0 | 中性 | [What Could AbbVie Stock Be Worth In Three Years? - Trefis](https://news.google.com/rss/articles/CBMirAFBVV95cUxNcFRMOFl3dnFHMmFETmhHWjg0SmpyQW1xTXpMNDQ2Q2poclBVN2VrNWI0WFpQeDRqaTh1VWJlZW9NeE9KLW9iekNEam9ROXJiOVFZcUpscWdkbVJ6em1WUXdMTmgycVBiQ2hBUWhmUjU5SDFTVVFCWmxqRFlXYUJ5MjZSNTctWHQ3MFhVQkRScFJYX1dGakhlQ0J2aUNlVkFZQm0wT0pXSFdFdmoz?oc=5) | Trefis |
-| 16h 前 | 0 | 中性 | [AbbVie Inc. (ABBV) Stock Forecasts - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMikAFBVV95cUxPckJXQkNtQkZRaWVReG9rMjI4cjBpNWM0SkVRamJjNEstSTZHQnFURFZXcWhDM0VJN3o3NjRveHMzWkpDa1IyV0x4LWVZb05UYTFCTlVDYTFGY19GNWpveUF3LXk2RVItbVlyY21ZX1lfMW1Ta1FudHJqRUJ3Z0VtYzBSNzFtNEpzUUR0M2pQWlA?oc=5) | Yahoo! Finance Canada |
-| 22h 前 | 0 | 中性 | [AbbVie Inc (ABBV) Stock Up 3.1% but GF Value Says Overvalued -- GF Score: 77/100 - GuruFocus](https://news.google.com/rss/articles/CBMirwFBVV95cUxNSzBaTjc5cl83TDJZbmI0M1NMSXFjMHBvM3VxQ1NvamZVdEo0eFZNaEhvNVFOYjNycjRlTHppb1JybkVVYnlmal96d1UyYVU3ZkdNazBRMUN1ZlNoNGo1dlFWZlNXZjFCUkQwSEZVZVRKaTl1eWJvWTA0NEpYNjFHV21NOW82YVVteTRST3ZKMTVKUTBsWXNjU1pXNlFMNW1vaDc4bjFuQzFLeW1iQVZz?oc=5) | GuruFocus |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
 - 公司尚未盈利：估值没有盈利可锚，股价由叙事和融资环境决定，这类名字在流动性收紧时跌得最快。
-- 政策面对该板块的倾向为 -0.76（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 

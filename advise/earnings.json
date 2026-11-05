@@ -179,6 +179,16 @@
 "eps_actual": NaN,
 "surprise_pct": NaN,
 "error": "no earnings calendar"
+},
+"LLY|2026-11-05": {
+"symbol": "LLY",
+"as_of": "2026-11-05",
+"next_date": "2027-02-03",
+"last_date": "2026-10-29",
+"eps_estimate": 6.35,
+"eps_actual": 7.48,
+"surprise_pct": 17.88,
+"error": ""
 }
 }
 }

@@ -108,29 +108,14 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 36h 前 | 9 | 偏多 | [Is Coca-Cola (NYSE:KO) Fizzing Again After a Guidance Raise? - Kalkine Media](https://news.google.com/rss/articles/CBMiogFBVV95cUxNTS1hYmQ0N3ptbURzWWhqRFJTN1gzcXNCWUtpZWpFYnlwcEpETUxNbGVKTXgtNmVqeTZGbHN1T1Zxek9RdjVCQ1RZTktaalp5VmFVZjl6c29NNXNvcXRLYjJNY2J5VjdZbDh1NXZRME1USGh2cERubmdOUGtKUGEzTzE1aTgtOGx4SEc3WndHWFREa2tCQTZTZENzUHpvWkIxbVE?oc=5) | Kalkine Media |
-| 2h 前 | 8 | 中性 | [Coca-Cola Consolidated (NASDAQ:COKE) Reaches New 1-Year High - What's Next? - MarketBeat](https://news.google.com/rss/articles/CBMiyAFBVV95cUxOOEZ0Vnd0M3JVX3RCUXZiSDNMcnNraEJjUGtVT1RlRXpHbUdZOER2dVBFRWw5ZWNnaUFsR3dnUnEtSXByWUN2QXR6YS1OdVZDSXBTWkFhNDZHQ0YxdWFCYXVib0FCMkpreGdEZk5XYzNSa0hORHctYkZGR1hOUDRMYVZ3ek05S2ZlSFpGSXdOZ1hnUC1KbVFwWldTMndlY3JRblE4WWZ5NEVqUmxQclhCV0V4RDRlZWVyWFotNmF2SnVtWm8zNEhCeQ?oc=5) | MarketBeat |
-| 9h 前 | 8 | 中性 | [Coca Cola FEMSA (NYSE:KOF) Stock Rated "Hold" in New Coverage at Itau BBA Securities - MarketBeat](https://news.google.com/rss/articles/CBMi2gFBVV95cUxPYUk4b1RhNWl6Z1Z0dF9HSVl5NjI1YUY5S2V6YkZ6UzNFX1pjU3ZULWx1UEhfN0dQTkY0VEVadXdpU2ZVYUNkQVVGSDVzNkRzbll1N01BWjBkZDJrQW1wN1BjcmVCMThkVDh5c3Zad0xIUUJPbzZ5djV6U053U2RWcExXTndqSFktWjRyWlNzUHdxM3BwaEhicEtCUFB3cV84NUpnNllTbHA5Sm9jYTVDblBOVzNMckkyRE5WY1FCRXA2eHBtS2lPMDIzRDBmaTJMT3FPbGV4Q3kwZw?oc=5) | MarketBeat |
-| 21h 前 | 8 | 中性 | [Coca-Cola Consolidated stock in focus after Q3 sales gain - ad-hoc-news.de](https://news.google.com/rss/articles/CBMitwFBVV95cUxNem9Uc1A4WkY1YzdGcGVwak1TbWtDSG5zZFVIWFFIakRjLW0wSTF6ZmVYdHQzLWxPQ0V2b0k3R1BheUVGaXBvRFBaMEE4dG9qd3JNb25TNjRxUzByVXV2VEdfZGJ5NFZFSENCdVVYN29SWms2dEZhektxaUpvTFNhUEw5cFQxOU5UdnFiTXNKcktadG1FLW13MjJHV0g3anV5NGxheGo2YUNuTEMwWmxUdUx1M3phalE?oc=5) | ad-hoc-news.de |
-| 23h 前 | 8 | 中性 | [Coca-Cola (NYSE:KO) Stock Price Up 1.3% - Should You Buy? - MarketBeat](https://news.google.com/rss/articles/CBMirwFBVV95cUxNYUdSaklsWkUxSVNJX0lmTkNiZE9vT08wSWZoTC1mM2FBZDdEZDFuM0dZbkJkNWZUYzJWdUJIZUs3Q3gwT3diRS00RV9kZEhqM3NlU1lkUXBFUC1iZ0Rwc0ZWUnBJanF1MjF0b0EybjllMVdjWXRPRml2QXhGSEd5NlQzUXdJZ29TTjhVZkY3NmZNNnFIUHJILUV5LU1WVllKc0FESXZIVkZDUFNNMGJn?oc=5) | MarketBeat |
-| 47h 前 | 8 | 中性 | [Coca-Cola (NYSE:KO) Shares Down 1.1% - Here's Why - MarketBeat](https://news.google.com/rss/articles/CBMipAFBVV95cUxOaWp3N2R5bm9kSGVZdFVNUjU5M0QxUkpKTF9tRkx5RU1nd0lsXzktQUo0aVBFRjVxRk9WaTNuVm10QTBoMkZoRVNScC1hRWVfNUJhdXN4QzluTElTRU5kTnlnRXZ2bE00N2ZqY1dsQ0FvTWNFYmQ3NU16dVYwclRyZE1MVUxRQ2dHd1VZX3dRN2RBTkktMEFlbVlYX3BlU2pidUthNg?oc=5) | MarketBeat |
-| 6h 前 | 5 | 偏多 | [Coca-Cola stock: Omnicom wins North American media account - ad-hoc-news.de](https://news.google.com/rss/articles/CBMivAFBVV95cUxQeGRIbmtqeF9MU2wyMTI0Vkc1UUc4dnM3U2ZLcTR5d19TaWpCMU1Tb0h6dVhpVnhrc2ZVd2plck9ZWHBWR0lhb3hXSWI4eGIwOElxMFFTbkFXQkdUSWdQQWJPSXF1NG1xOUJHZFBDMHRpem1ST2JxWkZkRXBCY1EtRU45VlhzcVBaemxIUzlRaU9PZldiM3FuWW5CU0JibjRldTlkSGZkZjI3aWs5U2xPcS04VDk4RHZkNDVkNQ?oc=5) | ad-hoc-news.de |
-| 5h 前 | 0 | 中性 | [Can Coca-Cola Keep Expanding Margins While Investing More? - TradingView](https://news.google.com/rss/articles/CBMiswFBVV95cUxPVDh2MHdKVFJWdzRfdER1cFFDbWxCVkYwZ2thNlpSZC1sTmZJUV95djRUUGtzVHRLZldhbWpSZWVQQVZXaDdqUVNnNEIxdEVKOVdOZlFTYWxaZXBOQVo0dFI4S01CQjVQcDBnamNmV1lodzN2d1NFbjFKWkhHWThJS1NIWlRsd0ZQZVRhU29NVE4yYm12N1l6Um5DRkU2QkpmeGkxS3p1TjlRenFfcW9GeEdvOA?oc=5) | TradingView |
-| 9h 前 | 0 | 中性 | [Coca-Cola stock: Global volume growth lifts 2026 outlook - ad-hoc-news.de](https://news.google.com/rss/articles/CBMiugFBVV95cUxPRGtHdHVWUmpGdVRwTjV4Zi0xRm1lYmRTVEcwTE51N1ZZc1VhLXlibndRdWdBbmJMRzlwRWxlMzdTaGtIVHRRZmZXcnFZZHVhajRjWnpsT2Z5RTlyQ3BFUmJ6RWkzcGQ3bGZlQkZnVXAwQnhwT2hoUWRvTXZPb0JEdkNTaGpXY2UxYzY5U1Y4YUUtZzNPS1FacEVBM2lJSmtRU2VZOHlGbHVGMXFaUFVVMTFGbmQ5dUViRWc?oc=5) | ad-hoc-news.de |
-| 24h 前 | 0 | 偏空 | [The largest Coca-Cola bottler in the U.S. cut debt by $450 million through October. - Stock Titan](https://news.google.com/rss/articles/CBMivgFBVV95cUxQaHZJeTZpY0dUazh4RDlYeTBOOWJlWnc5b3cyY19UcXh2LUlIRG5GZDFFZ2MyM3BRTlljandJRXNLZzVBQ0lzYm16QWZfR2FISEx3aVpSWW5oUlV0a1V0V0hHakVBRERiTkMtalRQNThuSC1WdjRSdDBHSkJFdkVqMzlHZjV1cWJwTXo3VkVWU21zYm5TQWlCQlpwdEhsNGNVSVJ4ZFIzTXp3czR3MEowVnVIdVhpRGhBOGwxaXZ3?oc=5) | Stock Titan |
-| 28h 前 | 0 | 中性 | [Can PepsiCo's Snack Pricing Strategy Drive Volume Growth? - TradingView](https://news.google.com/rss/articles/CBMisgFBVV95cUxPcENldTM3SHJHWmxTcnVFSXBrQVJnQl82S0UxWnBGajZscWNFenRTSWJoVGhZdHZoSjFPb0djcVRsMlJ1QThwcmN2anEyVUZFaEItR2RRQmcxLW5RSVVkNnhnWXNEbDJKc1BXdENKRk5OdC1xUGZMTnhISWNqRXNZdEpOVUh6MzlSd3JuYkRVRGZpcTBudmNGWnAzYTNNVWZCcGFFR29LbEh1enV5bTNIMWdB?oc=5) | TradingView |
-| 30h 前 | 0 | 中性 | [Coca-Cola Pays Warren Buffett’s Berkshire $848 Million a Year as Jim Cramer Says Buy KO Stock - Yahoo Finance](https://news.google.com/rss/articles/CBMimgFBVV95cUxPVk1GSW5iNFZuTDhuQW1OR1o1Sk83b1ZtWUVvNmdaaFBqa3A1dzBLTTJPOEhJNFo2dk9yLU9fUGRJcmhHTVJ1QkxUVkl5SGlOcDNkaVI1Sm1abXlRbnBFcTNvTjNOTHQtSlEyS1ZIcFVienR4WGczVE9uSUNqc1JtU1h4d0JwRF9DVU5JUWVJTWNyZU51RU1acnl3?oc=5) | Yahoo Finance |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
 - 公司尚未盈利：估值没有盈利可锚，股价由叙事和融资环境决定，这类名字在流动性收紧时跌得最快。
-- 政策面对该板块的倾向为 -0.96（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.60（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
