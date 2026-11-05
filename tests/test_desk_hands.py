@@ -894,3 +894,16 @@ class TestReflection1103:
         pack.Packer(broker=v, market=mkt(task="trade"), book=book, screen=screen_of(), now=MONDAY_OPEN).run()
         c = DeskBook(home / "desk" / "trade" / "book.json").closed[-1]
         assert c.symbol == "AAA" and c.closed == "2026-08-21" and c.exit == 95.0
+
+
+@pytest.mark.unit
+class TestReflection1105:
+    def test_the_pack_reads_the_index_live_not_only_at_the_last_close(self, home):  # noqa: F811
+        """11/5: SPY −4% on the day; the pack only showed the prior close."""
+        shape("SPY", 100.0, drift=0.3)
+        v = FakeVenue(acct())
+        close = frame_for("SPY", DATA_DAY.isoformat())["Close"].iloc[-1]
+        v.quote = lambda s: close * 0.96 if s == "SPY" else 0.0
+        book = DeskBook(home / "desk" / "trade" / "book.json")
+        pk = pack.Packer(broker=v, market=mkt(task="trade"), book=book, screen=screen_of(), now=MONDAY_OPEN).run()
+        assert pk.regime and pk.regime[0].startswith("⚡ 盘中 SPY") and "-4.0%" in pk.regime[0]

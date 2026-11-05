@@ -262,6 +262,9 @@ class Packer:
             pack.regime = board.read()
         except Exception as exc:
             pack.warnings.append(f"宏观看板没拿到：{exc}")
+        live = self.live_regime(data_day)
+        if live:
+            pack.regime = live + pack.regime
         events = self.market.policy()
         try:
             from tradingagents.live.policy import policy_brief, sector_pressure
@@ -476,6 +479,27 @@ class Packer:
                     and _ok(_num(f.get("price")))):
                 best = float(f["price"])
         return best
+
+    def live_regime(self, data_day) -> list:
+        """The index today, not at the last close. 2026-11-05: the pack read
+        "VIX 16.6, 标普在 200 日线上方" from the prior close while SPY was down
+        4% on the day and 0.8% above its 200-day line at order time."""
+        if not hasattr(self.broker(), "quote"):
+            return []
+        try:
+            f = self.market.facts("SPY", data_day)
+            px = float(self.broker().quote("SPY") or 0.0)
+        except Exception:
+            return []
+        prev, s200 = _num(f.price), _num(f.snap.sma200)
+        if not (_ok(px) and px > 0 and _ok(prev) and prev > 0):
+            return []
+        line = f"⚡ 盘中 SPY {px:,.2f}（较上一收盘 {(px / prev - 1) * 100:+.1f}%）"
+        if _ok(s200) and s200 > 0:
+            line += f"，离 200 日线 {(px / s200 - 1) * 100:+.1f}%"
+            if px < s200:
+                line += " —— 已在 200 日线下方：手册的防御日条件按此核对"
+        return [line]
 
     def _open_buy(self, symbol: str) -> dict | None:
         """The venue's resting buy order for ``symbol``, if any."""
