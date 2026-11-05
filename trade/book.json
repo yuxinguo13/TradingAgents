@@ -1,5 +1,5 @@
 {
- "saved_at": "2026-11-05T20:13:23",
+ "saved_at": "2026-11-05T20:18:57",
  "positions": {
   "PFE": {
    "symbol": "PFE",
@@ -100,7 +100,7 @@
    "stop0": 1334.0,
    "pending": false,
    "trimmed": false,
-   "staged": NaN
+   "staged": 1506.0
   },
   "ABBV": {
    "symbol": "ABBV",
@@ -131,7 +131,7 @@
    "stop0": 280.0,
    "pending": false,
    "trimmed": false,
-   "staged": NaN
+   "staged": 298.36
   }
  },
  "closed": [
