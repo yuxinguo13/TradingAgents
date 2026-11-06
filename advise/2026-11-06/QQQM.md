@@ -69,7 +69,8 @@ _读不到财务数据：该代码没有可用的财务数据（可能是 ETF、
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 3h 前 | 0 | 中性 | [Oracle Corp. Ranks Best in Valuation Among Major Tech Firms Amid AI Market Caution - SSBCrack](https://news.google.com/rss/articles/CBMirAFBVV95cUxQcnQzOWRFODhveE9aM3hic2diM0NpLVVuaERmSVJBTzhEUy1IbDBqdWtRS2RMd2FGN1gtOFFVUjVnTU1PQWhCMEpFOF9BQUtGZHpvbUExalVGbGFTMHdZOW9ZUGUzVks0djJrd3JOZy1ucVd3NkxDY1FSeDlMTjNVamJWeGN0UDAtbkdIV19EVGU0Wnl3NWhJRDVYX21FZzhRc2xrZ1Z6YWNnUWZ3?oc=5) | SSBCrack |
+| 7h 前 | 0 | 中性 | [Invesco NASDAQ 100 ETF (QQQM) Sees Major Net Buying on Tuesday with Top Buys in NVIDIA, Apple, and Microsoft - SSBCrack](https://news.google.com/rss/articles/CBMiywFBVV95cUxPd202eTdpNjFRQlZSUDVhQjBHa0RTbzVCUVV6TWZBNm1RdV9BTEtaTW9Pa2tseXZ4Zl91QWVEdXRPSVkxRElMakJBTExrZnE4OC1Gd3E2ZmhSeUlsbmtLVElPTVIxLWNndmE0cnQyd0w4My1LbVBfYmVDMDN2N0NuMVhPR1JpUkdaQlU0OEcxRlI5YmVjNG1KdXl6VjdpUThPdXU3aFpvaks1SFFfSk5DSWs5anlWUkVvclY2Sko1cDNhcUZDQ3d6cHdJYw?oc=5) | SSBCrack |
+| 36h 前 | 0 | 中性 | [Should Invesco NASDAQ 100 ETF (QQQM) Be on Your Investing Radar? - Yahoo Finance](https://news.google.com/rss/articles/CBMilwFBVV95cUxPRDhUalNud25pSHNFN1hZVXp1cTZUR1hpc1RyYU1pZXBtc3pYMmlFcm5RSWhscm5FTVNVb0dJMDFPY0lsV3BYMVIzOXVSdlhFTlJ0YlRVZW9BZGF4WEk0ajBvcFRJZ2c2ems3WXlHcHpwVFkybXFncEZPallUckhMbzZHN0lldDhqbnk1Uk5OUG5fbVJCUktn?oc=5) | Yahoo Finance |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 

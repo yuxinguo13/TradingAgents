@@ -48,7 +48,7 @@ _医疗 · 数据截至 2026-11-06 收盘 → 面向 2026-11-06 开盘_
 
 ### 图形读数
 
-- **均线排列**：多头排列 — 现价距 20 日 1,301.98（+4.0%）、50 日 1,214.26（+11.5%）、200 日 1,097.80（+23.4%）
+- **均线排列**：多头排列 — 现价距 20 日 1,301.95（+4.0%）、50 日 1,214.25（+11.5%）、200 日 1,097.80（+23.3%）
 - **形态结构**：上升结构 — 更高的高点 + 更高的低点；前高 1,321.21 → 1,449.68（+9.7%）、前低 1,131.21 → 1,257.62（+11.2%）
 - **动能**：RSI(14) 61，偏强；近一月的斜率快于近三月（月 +15.8% vs 季 +10.1%），趋势在加速
 - **波动**：日均真实波幅约为价格的 3.9%；按本报告 2 ATR 的止损惯例，一个 R 相当于 7.8% 的价格距离
@@ -112,18 +112,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 3h 前 | 8 | 中性 | [Healthcare Stocks To Research - November 6th - MarketBeat](https://news.google.com/rss/articles/CBMiowFBVV95cUxNZTdLQlNXZ19aMllmWGloTkRnZkVkMVg2cG1DYUg5SFQxMVBlNzZHTzBheHh1X2R0bUNPdjFFLTJZb01DZHA4OGZDUWdCZFFJY0MzR0dOQVZMUDVGdi13blhBV2lXcnF1N0h0VE9oLXZ2dnJLVTVuRjhIemJ2UnBEOGZrM1lMMjlDMi1XT2hEUWhUYXdiVnZnOVFTUkMzOHhSTHRj?oc=5) | MarketBeat |
-| 24h 前 | 7 | 中性 | [Half of RFK Jr. health panel appointees granted waivers to keep stocks: NY Times - Seeking Alpha](https://news.google.com/rss/articles/CBMiowFBVV95cUxNaTR5b2R0bWRpZjR6VVZDMWRLMVdWSV9QWVQtWDB2T2Z6R19Ialg0ZEV2TllJbjI1eTZMQ0dza015RS1sd2pHLVJFQUpzU21NaXdBMzRJNS0tLURhWjNjNDNNNmZkMWplZDFNd1pqaE1KeTlmQ3FaSmczVFN1RG9VQkpzWmsteWRBLWVCRy1adWowRTJTMmpldHdKNEdHNENWT1ZR?oc=5) | Seeking Alpha |
-| 4h 前 | 5 | 中性 | [Hims & Hers stock climbs on direct partnership with Eli Lilly for obesity drugs - Investing.com](https://news.google.com/rss/articles/CBMi0AFBVV95cUxNY0RrWElIbUhudERvRnhySzdMMDJ3OGRHQWlUajMyOW80RXBEMjVNcFI3ZlBzSDFVcS1vR1R1QXk5ODV0b0tUREJJZG1UbUpfZUxDNzFVeHJINnRORFM3Rmk1Y1RJLUxOYkxEQzlFQWlpWDdJbFZkT3dLTmtxVjBGcGxyczByMFNKbnU0RF9GbUxHVGpLR2E0QW5GbUU5MHZLb2Etd3l6YnBqM2JSanlaLXpXd0JDaXdaQVVwNWlLdUpmQlZUcnRJM2gyR2dxcXZf?oc=5) | Investing.com |
-| 6h 前 | 5 | 偏多 | [Eli Lilly stock slips as strong demand meets deal charges - ad-hoc-news.de](https://news.google.com/rss/articles/CBMivAFBVV95cUxPV2t2RThrX1lGLVMxMUp5VDBSSVlkUGNBcjRLSDVBVEpaNm4xTTdBNGhlbkFiOE4yWEVOaTJ0a0J5T1BBT2c0Qjh5MXNPbWN5Wkh5UlBHNnBGS0RGMzZMSU9wSGlGaVNVa1owVHVCVFhGUkxIVXJUNk9ETW92YlBuTmE4Z3IyeWZPMHFOQzVWTUlPZGZtNGtvTjhpRGR2aTZza3dtU0FSSW55dGZpSXpJeDl1ZmRPZ1JGRkxRbg?oc=5) | ad-hoc-news.de |
-| 5h 前 | 0 | 中性 | [About Eli Lilly and Co (Stove Tokenized Stock) - Coinbase](https://news.google.com/rss/articles/CBMigAFBVV95cUxQZkJ3a0VnZzZhbThRLXdrWHBiUVJkQVlxSkdpV3ZJeVZtXzFBVFZQSWRpd2tHZklCZzUtVEx2RXJQQmVXZHFLZ085elJKSmdKNzJYUlhuM3NNUTljM0tCM0xBNTBFT08ydkZicE1CdDFaRE1pM2JWYi0zaXNpWERNcQ?oc=5) | Coinbase |
-| 6h 前 | 0 | 中性 | [Lilly to sell obesity drugs directly on Hims & Hers site - Reuters](https://news.google.com/rss/articles/CBMiowFBVV95cUxNakJ0R0VKODFoU09YcW1WRDVISTFsa3QzWk9hMWYyMHJYN0x6NmhvaTMtczJxaENnNE1STlhYOG1YRUU4UlN1dDl5Z0FlODVYc0J3a3hZTkR4MVlWYzNsc3RvWF9FM0JMVlpYQ2dTbU02QkV1aklrQmxueF9YUmxkenpwb0NDdEIzcGxpZElETTYyLVhJQWFjbE9qY3EwUE9oNDZz?oc=5) | Reuters |
-| 7h 前 | 0 | 中性 | [Eli Lilly Stock: Is Wall Street Bullish or Bearish? - Barchart.com](https://news.google.com/rss/articles/CBMimAFBVV95cUxPaUtvM1VqR05tMXU5WFp6MzczQmN2djNSN2NneUNsVzVmclhVRlpTbmFNRWNBRmhhREZqQVozaHZUMzdpelVXZVZYaEJabDQzaHF6QktjdEwyaUJ2cnZ2emtCMlRJd2g0ejJGaDlZdVJ2STNETmtkUlZxN3pTaFdxaWxiVThrU1pnamlUNmhIamdRZnNQOUE3Sg?oc=5) | Barchart.com |
-| 10h 前 | 0 | 中性 | [Hims & Hers and Eli Lilly announce agreement to expand acces to Zepbound - TipRanks](https://news.google.com/rss/articles/CBMivAFBVV95cUxOTzduLUpuM2xzejdha0pPZWVLSk1KYkVLNVZwVGktQnZqN0dleDVUaEhNc3JuUmVHTnN4dVpqd1hUSlV4U3dkSFNoN1FFdnNvd0k5V1RsNlRXbnBGcjA5a1hteWhXbXlMWERhZlI5R0V2cDBESGpybnh5RDhXLWJOTzIwYTlvWGFsRTJOcERqMHRNcU0yRnhHNTJRUUQ2aENXdktYSVZIdGRqTWprbEVINFkxUUJnbjJDNDI1MA?oc=5) | TipRanks |
-| 10h 前 | 0 | 中性 | [Lilly's weight-loss drugs start at $149 or $299 a month through Hims & Hers - Stock Titan](https://news.google.com/rss/articles/CBMirgFBVV95cUxNQ1FjRVFBQmxPa1BIN0NzVmVsdzBmU1hWSVJ5Tm8yWXczV3FPWWlRTThERkhIQnBlOUhPN1N1WmFQLWYyaGU2d3RLeENNOTlpM0puUDUwbHFCdGtfbjBiTnI2RmNhaWc1X1h1cTc4dzJLNVJPTF95UjlHWWFRMndDOHpTc2tibkxTTXJVME1pZl9QSTZHVWZPTV9pVENfN0NXYzhSaTk1ckh1dUNVbEE?oc=5) | Stock Titan |
-| 23h 前 | 0 | 偏多 | [Can Volume Trends Help Eli Lilly (NYSE:LLY) Exceed Raised Expectations? - Kalkine Media](https://news.google.com/rss/articles/CBMiswFBVV95cUxQb3liN0RmbFd2RTQ0UU15ZU9hblRFN1ZJX2xBaUkzc2pmYk50RDFpRXo2UGw5eHBWenZ6NzBBczJwYnpiYTdXb1RYaURyREtsSWh6cWdBMDRFUW4wVHY4Rk5CWXJtckQ1Y2xnRlI0UXhlbzl3eWVGRl9tMzlSVU9Ca3QtcUFYRC1TS09BMzBXRUtkYkdxalhjYkR2QUs0NTF6NkRETWpsT2gwMVExcXBvQ2xvQQ?oc=5) | Kalkine Media |
-| 24h 前 | 0 | 中性 | [AI and Tech Selloff Heats Up: Buy Big Pharma Stock LLY as a Safe Haven? - Yahoo Finance](https://news.google.com/rss/articles/CBMijwFBVV95cUxQZWxYb2FUYUYzVnotNzV4Z0R5dkFSekR0V3V1M0pLSVg5VDd6RHRueEN4bGxCbU1sSXVUdmY1TmxSUVBnOUM3dWFsRjA5TTM1WnZhT1liMDQxeXpfYlA4MVdvTURia1pZRXFiaEVvYWV4dU9GMVoya3BNcjBCQmVrcktTZzZDYWthbzBwSDFNWQ?oc=5) | Yahoo Finance |
-| 28h 前 | 0 | 中性 | [Democrats Sweep Midterms: What It Means For Pharma And Biotech Holdings (Stocks To Watch) - Seeking Alpha](https://news.google.com/rss/articles/CBMixgFBVV95cUxNX1o4cVQ3ZTRGcTlaRjR3aFIxeGFXVG9VZGtUSmZwMXpxaVh2Q18zX2dJV0N1eU5RcnVPM0Y1Y1pyek1TSkpDMDI5Z0NsZnhobXR6UEhYVmJ3eFZPVmQtQjhIYzBIYVJzeGVYTUY0Mm9KMXBCY05YQ0pmTzZ2LVVSakNNM25NME5VLXR2OVhQYThHLVYzTl9TSmFnV21URVI0ZVkyR2RRQTZIU2sydG1OZmZfaWpUaDFnc0g0ZkdNM1NEX1BZUnc?oc=5) | Seeking Alpha |
+| 31h 前 | 0 | 中性 | [Eli Lilly stock hits all-time high at 1449.78 USD - Investing.com](https://news.google.com/rss/articles/CBMipwFBVV95cUxPcG9UUXhsTE9na2RJRlhzblAtdFlSSW9TNlZSWkVHZXNmNnhrbkxfblhlb0JLRFNhUUswUEdFNmpBMkE3aVBZb0lTZ1dXWXdhWWd6bEtWdTMwaVI4SmphRE95U3EtTlJfMS1zX0FHYWx2MF94VW9FZXAya3BFOWM2TVNNSTF4RS1XbEpuZzFVUzZWeDJZREVpNkcwOTdhU0pCOVE0clp5Zw?oc=5) | Investing.com |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -131,7 +120,7 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
-- 政策面对该板块的倾向为 -0.57（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 按本报告掌握的数据，没有触发任何一条成文的风险规则。这不等于没有风险——它只等于「这台机器读到的东西里没有」。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -153,7 +142,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-11-03 | 1,399.63 | 1,437.00 | 1,393.47 | **1,409.38** | -0.1% | 2,841,300 |
 | 2026-11-04 | 1,440.00 | 1,445.96 | 1,401.59 | **1,417.99** | +0.6% | 3,637,300 |
 | 2026-11-05 | 1,434.00 | 1,453.00 | 1,364.73 | **1,364.73** | -3.8% | 4,878,900 |
-| 2026-11-06 | 1,350.45 | 1,377.28 | 1,333.22 | **1,354.49** | -0.8% | 3,572,904 |
+| 2026-11-06 | 1,350.45 | 1,377.28 | 1,333.22 | **1,354.00** | -0.8% | 3,572,904 |
 
 ## 七、自己去查（本页不做独立验证）
 

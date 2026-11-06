@@ -112,15 +112,8 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 14h 前 | 9 | 偏多 | [AbbVie (ABBV) Raises Guidance And Dividend On A Valuation That Still Divides - Simply Wall St](https://news.google.com/rss/articles/CBMi1AFBVV95cUxNMmZPeVdla0Zhc012TGE1bWl0VDVYNk9NVlVMdU1vdlppRmVkM1ZlX2dONXVMVXJFOTZoT01LcnQ5V3hBU2c0aFptTm96Vjd5THlYcTV5dXRHNDlKSGRubW1CNkhKUW51dEhIRHJidkFxZTBwcnRyaXRZT2JYQ3ZBdF9NQXVrVXdPeG5aV1BiWVljVndGWG02RTNaX2x3bG1tUVJQQlQtU2ZDT2N2ck9pRDc0ZWFtaTl4a2RXMVdtT3dsU0RURFpMLVhaMVI0Wll3Z3Q3SdIB2gFBVV95cUxNcWdTUmRGVG4ySWtvamZGbjRDYXdxUHJERi1DbEN6alZxSlFMRy1CZ1g5Qy1nZHdaUVBQSGxRcHlnVGljSWJEaWtMYnR6QUxUbklfSHc0MHRnRjlQRXBwd0M5UFR0SVBYZUxTMUtFeDdBX3Vuc2s1N2xvWHI0dWdWVHhGbXJGRkRpcGZvaGx1c2llUGJ2bkhDZVF5Yzc5RHByNkpZZ2FxekZsalFOcEpyVWxRbUQ1Tjlhdm5qWVlIT2RJS0VHU0IyRmNoRFNzNlh3Tm1HNXlRMUpydw?oc=5) | Simply Wall St |
-| 10h 前 | 5 | 中性 | [AbbVie stock in focus after $1.37 billion IBD license deal - ad-hoc-news.de](https://news.google.com/rss/articles/CBMivAFBVV95cUxQWjNhYXg0ZW84a213a2RVVlNxTkFyZlVhbk1TVzhYZ2YzMk16akpEeXROb1pUUUdvN3JWN281QkItSG0xMndSXzdrVEdZVXN3c1NUWEdTeGlYZkppbV95MDdYWk5HMkx0RXE2d1k1NTYwZDlmeExsYzFQWjRuZWlQWlZjNkhLZ1FoTUtVSnYzRC1GX3FCMGlyRWdYX0RnamI5SnAxSWpvX0VTLVVxdDdHcjRHanZYR0NMc2o0UA?oc=5) | ad-hoc-news.de |
-| 1h 前 | 0 | 中性 | [Here's How Much $1000 Invested In AbbVie 10 Years Ago Would Be Worth Today - Benzinga](https://news.google.com/rss/articles/CBMitgFBVV95cUxNT0Y0aE90Njc4NndkRmR6Rk12VlM0X3dHZW5BMjJvYndYWkVnU21acW1GUzZ5NlVDbkZNbmVGTFZKOVRLdW9nYUpRVmNjWkhKdE91dTBtMFFjOUtIWkhTTFNPTmNpZVJjWUp6MlZJVW9QNEtCclJqNGFZamlDZG9KNzZKM2ozM1dwMHVaTTVRTm9zQ2RuODVxeEhncXAyNkxOLWdKNEJhRkZxSVJxc0MwbGpQOTk4Zw?oc=5) | Benzinga |
-| 5h 前 | 0 | 中性 | [AbbVie stock: USD 1.37 billion IBD license expands pipeline - ad-hoc-news.de](https://news.google.com/rss/articles/CBMivgFBVV95cUxQRXdMLTg3c3ZXZGU5VWJKV2MxSU1DQUdzSlpVYjM3cDVsNU5RVDhVMDhKM1JZZGtObkNTMllab1FnUUdtdTctYXlmb2hlUWc4MjZ6Ti1LVDNGNjdiVWtuWHEyRWNBbkEyRWxFWFZIM0hVUV9jbzVPUVBuRERCX0RGQmI2MWJUNmNlaDFhV3lWS2d5MDNJTER3ZzBfTUpBVlVaeEtlVGxLYlpROXY2TTQ4UzZQWkJYOWUtRTFOWER3?oc=5) | ad-hoc-news.de |
-| 7h 前 | 0 | 中性 | [The One Thing To Settle Before Buying AbbVie Stock - Yahoo Finance](https://news.google.com/rss/articles/CBMimwFBVV95cUxOd2NhV0RoeXdaWUlMOHlpLXdkZUw3OG9JdjhYNjhjbTRrV0JkaWFXZkRKTEtLSUlqbEhQOTZfeHNEcVpZVTd0SC1PdUdZMUJJQ21EQnpXQ1lkQnozMW53UWRKUzlncFN4OVN5aE9VVWI3TThiUXd4b2YyY09TRExsRWNDR0xDV21DaWI5bHQyYzJRb2wwVU1qWGFWSQ?oc=5) | Yahoo Finance |
-| 9h 前 | 0 | 中性 | [Is Eli Lilly Stock Worth More Than Its Competitors? - Trefis](https://news.google.com/rss/articles/CBMirwFBVV95cUxOZmhBcTBlLUVHUVBXSTVLbGVRWmRIMHNzLTNBS2gwcE1CN0d1bndxd1dTTmhhMUlFM2NEaHNONmdUcEtURVNhTmxNR25BMVQxSzRkb05xM3dhSWJQV2J3YVlXRHA1UEhVQl95V3hNVnk0ZmUyV3lDYzg1cnhkN09rSzdpUzhBTEkzYjVMNDJRNmFOTGZhWDlCZHVDVzU4REFZeHBiUE9oenJTaC02NDZV?oc=5) | Trefis |
-| 9h 前 | 0 | 中性 | [AbbVie (ABBV) Stock: $288.24, Down 2.24% Nov 5 - JournalArta](https://news.google.com/rss/articles/CBMimAFBVV95cUxQT0RpQUxZOWtybkU4ZHNMWTRaMmpHWkd4ZldGVHlyc1pBNFFkQ25aRzRtdHZFbWN2SGdjMkVNQ0FPVkg0VTA0b0NFdk1hOG5vY1lxLVJpbENLTHl3Q1dpdGpvWTRnV3lwc0hOdXk4TjcwVUdvejNqb0t1WDZTeFRpazg2M2ZWX0RIUUpmdzREd0FVTnRUOVViYQ?oc=5) | JournalArta |
-| 32h 前 | 0 | 中性 | [AbbVie stock: Oxford R&D expansion strengthens UK research footprint - ad-hoc-news.de](https://news.google.com/rss/articles/CBMiygFBVV95cUxPU2wwbVRxbWtTZnRRQjA3a19XbkVPRFlKbHR1bmVRUmRmN3R0aEtMbzl5SUxYellWQmc4V2t4Uk9oTXl1US16VGxrdDRsdFI4UGZhQ1lFSnZRUXhGaUVVVzBJZjBiUDhwdmluVFI0RlQtN043X3I0dDRyODNnbzdXaWgwSHZXTmIyZ2k0azlVb0RTQUt4X2lLLVV4dmYtUURINzhTOUNwMFNFU3p1NUpQeldGTVh4ZTBfcnJsZ1M2T0FwRm1xdnVPc1R3?oc=5) | ad-hoc-news.de |
-| 48h 前 | 0 | 偏空 | [AbbVie Inc. stock underperforms Wednesday when compared to competitors despite daily gains - MarketWatch](https://news.google.com/rss/articles/CBMi4wFBVV95cUxONGtDLUpZVFRuR0drSk1rUThRcEp3bGVSbW5NTWswakp0T3MyUWRtOXM1SnBUX3N2M2NjdVljWTBSeVdFeWJVRWhDbXV4NmFWcGU3dXV4TlJuektpS2toVUM5eFVvc3JXczRFX292WXVkT1M0T0JmMmw4WGVkOXROWXphRFBGRGdjN25EOUc2WDBJbGZjMDFMMzlfUXVJRFhTNzhhN0F4enRxNHZSdWZFUGNLZ2lnLUpQZjdldXpnc3k4WHZIMDV6ZWkzemdKczZ6dU5yOUpLTmZSZHJXM3ItOHV0UQ?oc=5) | MarketWatch |
+| 0h 前 | 0 | 偏空 | [AbbVie Inc. stock underperforms Friday when compared to competitors despite daily gains - MarketWatch](https://news.google.com/rss/articles/CBMi9wFBVV95cUxPZ3NPX0ZiN1dXWHItYVZaQmZsQk5BeHgybnRNc1VNTjZ2TFZqWHN3UThqYnU5WUdHSEVjUW9WaVk4d3hLUEFQMFhYdHZyYVNacUR2OW1KRWhSLU1TTTFkZndnZXhDTmZvdk9NbWFMZThCR0NMQTA1QktfR29LQlVNSlZ0Y0JtalpsMmtSVC1leGxMOXNuYUFnOVBSTEItelJjLXVWZmJsSXVuT2xBNWl3T0hSbjFoQnBTR0xXUUdpRUFuOFFsNjlDZTBSRndzT0Q3eVBPNjc1U0lqeXFJMjN3UXhZNEt2SmIxR0JWM0RnWDhaVENZNjNR?oc=5) | MarketWatch |
+| 8h 前 | 0 | 中性 | [AbbVie Inc. (ABBV) Stock Forecasts - Yahoo Finance](https://news.google.com/rss/articles/CBMiiAFBVV95cUxPRTBON3U4MFVkdVlYdU1FUG9YQlAwSkQ2bUxaT181bFcxSE82LXBrZ3ExczRiZmtFWnNOejUtLTF5SjJuNUs2MF9XVndfRTJncUhOZXhMNVJ6eVVrTkV2OWxJaGh3cE05a0wydzgwallDeVBkNzk2ZURXZjNfMlpXdk04WnNmWlNC?oc=5) | Yahoo Finance |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -128,7 +121,7 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
-- 政策面对该板块的倾向为 -0.57（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 按本报告掌握的数据，没有触发任何一条成文的风险规则。这不等于没有风险——它只等于「这台机器读到的东西里没有」。
 
 ## 六、原始数据（本页所有计算的来源）
 

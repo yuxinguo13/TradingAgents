@@ -110,22 +110,13 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 25h 前 | 9 | 偏多 | [Why Did Coca-Cola (NYSE:KO) Raise Its Full-Year Guidance? - Kalkine Media](https://news.google.com/rss/articles/CBMingFBVV95cUxQRk9RSkQyLVZlRGhGMjNSUEhLdDdoZUQ5dFFHejRWdWM4U1FJYVFJQ0loazdjSDhLeHdIX3BIUnJmN1hlSk4wZS1nVEF0VnFPdnpMOXUzMUF4Zk1NU0FvdGpoZUJiT1hZNVhNY0FXZDZ2dy1uNERhX0NSWjlfcHlQNXItcV81aFdEMUVHeTFKRnVlbFpDbzZIQ3NtUGJ1Zw?oc=5) | Kalkine Media |
-| 11h 前 | 8 | 中性 | [Coca-Cola HBC (LON:CCH) Share Price Crosses Below 200 Day Moving Average - Time to Sell? - MarketBeat](https://news.google.com/rss/articles/CBMi2wFBVV95cUxQVjh3MElvLWZzbjRnMmJ1UE9hMFV5QXBjUVNqMktKSTlmZC1wZmpDeWwyZk5mVVBWdkJMbENIaFVtdDJ3QndVUGdHTGlsUlZiQ1pzV0xUSlF5dUZzU3pmVG52dHo0TFZKemh3ZE5vZlAzblVremIzMW11TDJnUTFWcklXSFB2VWNndzMxYVFyNWJ0VzNpUkxNMURXUWQ3Vjl1OGozX3dld19tZlMyNjg2OEhIbFJHYTFMR19Jb2Jndzd6SjJzOFMyVllUdVpvWUNjTWFicGpEQ3hzd3c?oc=5) | MarketBeat |
-| 10h 前 | 2 | 中性 | [57,561 Coca-Cola Company (The) $KO Shares Bought by Kestra Advisory Services LLC - MarketBeat](https://news.google.com/rss/articles/CBMi0wFBVV95cUxPQURQYjFSeXJzYzl2ZEJwWjByZGxGWmd0TUFhVzI1VFhzY0x6SlJpTXVwaWNGZWQzR0p6V05qRFFpN0J5NTFxeFpCT3kwNXVHczJGajFHMmFFempDUkVyQW1SSmZKM1RnSDZSZkdhT0VKY2JKQVBiQ3pRTDhMZkZ5c0hPdG1aVENhSXlGVkt2WDlpdzNZX3I1Vmc3WllYMVl2a0w0a21BUDhoUTFhWFkxRFdTZG52RHhsOTNaOUpOblc1QkJFeWdrTjFPd005ZWcwN19v?oc=5) | MarketBeat |
-| 12h 前 | 2 | 中性 | [Alta Advisers Ltd Buys 12,900 Shares of Coca-Cola Company (The) $KO - MarketBeat](https://news.google.com/rss/articles/CBMiwgFBVV95cUxPYnFCZW1yMDNVZ0NZLWtLUVlxSDFTUXUtLUtIZ09ydk1PR2NXaVVBMjA3R1pycGU4ZXF2QVZiM3JqQ2tUU0JSMGZrMy1TeE14N05NSUN3SVlXVkprU2ZrdlVqRndTQUoxenJJWktoZnZBQUhXY2dzVnV2RGU0TVQ5WlBYU1doT2ZUb2tnc1cwVUl3dmF0ZndxcGVmN0p4aWJqN2h6WVdFVEtyVzlyY2ZvRlJwSHJiU1VsUk0xWk5VNlgtZw?oc=5) | MarketBeat |
-| 10h 前 | 0 | 中性 | [Coca-Cola stock: Omnicom takes North America media account - ad-hoc-news.de](https://news.google.com/rss/articles/CBMivAFBVV95cUxOc1ZHb21YZENnVG9CeUFlME5GOVJnWVZSRkVGVWFCMzAtU0h3YU9VN3BldmJBazZibGhsRTByazZWb0lJLWo1dHJFQnJmcXE1QWY3NjRnRUZvUldsRk9mWmJib1hxbXJaSGQ2b01TNlhWNHN0ZTF6NE5Db3NycVdKTXN0M3lZay10S09pcGNYNk9JMy1FcFNZTWdES1UwU1lWbXFPMGh6WFVOUEpBeWpYdGFBdTFDeWNLaXRsag?oc=5) | ad-hoc-news.de |
-| 10h 前 | 0 | 中性 | [Coca-Cola HBC rebounds as Russia risk overshadows growth - finchannel](https://news.google.com/rss/articles/CBMivAFBVV95cUxOcTROckFUNWpzNkdKb0dOT2VUVFJkenNYY2xzVUxrQlhiUnlBTUVnTlRuZ1RMWVBic2xqWmdxSlhhX1Y4RkR4VHlHdUdvNFRqeUd4NU1pdlpYMEFXQS0xdWRXdHNESXQ1cEdwc1o2Umpva0hBdDJ2UEsyNFdnTU5ZZmpJNXVSNGZWRF9ZVFNON0hWa1A1cVoyNlJDWWxtcU14UlhaNmtqcVV6a0ZjSlI3OGlSb3NlZ2ZtNkJxZw?oc=5) | finchannel |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
-- 政策面对该板块的倾向为 -0.95（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.62（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 

@@ -112,10 +112,8 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 11h 前 | 6 | 中性 | [Keurig Dr Pepper (KDP) Stock Sees Modest Fair Value Lift As Analysts Weigh Split Plans - Yahoo Finance](https://news.google.com/rss/articles/CBMilgFBVV95cUxQNUY2RFp4NWViZE51eFpMSjNva2xMN09RTzl4REk1VHdod19EMUJBWlIzUEtEVW5PaGd3TGxUbUhEUHA4WnJiSllhQ0UzOTRTUUlEa3hwRlJXdGpoM1JSakxMWEtPUnAyWFNiTGFwSUlNb1dyNUVCdVRSTjBhcGUwSVJPc0QyZ0R2VmZxSlhtU015VG92T1E?oc=5) | Yahoo Finance |
-| 3h 前 | 0 | 中性 | [Fund Update: New $2.9M $KDP stock position opened by GREAT LAKES ADVISORS, LLC - Quiver Quantitative](https://news.google.com/rss/articles/CBMiuwFBVV95cUxPUUxjM05TUHMxeVZnS09BY3lkYzdMZE9lWlJsRmZEZWZRYmRlS2l5cE5ZbURlOUcwLVhHVDJGU2psblBvNVRnUTI0WmNoTndRYTcwZHg1b0ZUTzJYd0xUc2o1MTMyN2h6YXhZa2NiRm91YXRWRURGYmxGV0g1eXcta29kWk1tdl9QTzR5bW82a184a1R6N3NCajVLenBIZUw5cHA1d1A0R21ZTE02VDRUUWRmRWQweGZwVUZJ?oc=5) | Quiver Quantitative |
-| 8h 前 | 0 | 中性 | [Keurig Dr Pepper Inc. (KDP) Stock Forecasts - Yahoo Finance](https://news.google.com/rss/articles/CBMijwFBVV95cUxNZ2NSdWZkT3ZoUS1TNkZrR1JQWk1SWHQzWTZ4VTJkRTNfTHBKTEF3ck82cGpTVmRpSlJ0Zzg5NWwwd3Y1MXdXQ1JkWXBDMzU4S0xOa29NRV80QzNxdXNubWNjRTFKRTZXQmEtMmFlYUx6X2JPSUZrTVBpWE9fN1ljb0E5c2ItTElUb1B6VUFsQQ?oc=5) | Yahoo Finance |
-| 12h 前 | 0 | 中性 | [Keurig Dr Pepper (KDP) Stock Looks Rich After A 47% Run - Simply Wall St](https://news.google.com/rss/articles/CBMi1gFBVV95cUxQOFp1cDVRSXBvMThMWVh4UVB5SG1zOHdiTzA3dk9WSjNIUFJUWTJIMmMtUS0yaW80YmNITWotM0ZORThGRlNhak5VQ3Q0bld3b0FKSXljTzR3Mm43MkhXeTJvYnRTQlIyZVFjWWJ3b2t0bHUwcHNsQmhzQ21PUDdSNV9BS0ZDVkhjczh3TS1EdlpacFZKdVAyQUJNN1g0Vm01Y1M4X05Mem54TUZELU9UT0ZWV2t1cnRvazhTSDBjLVI1bHNGd1l5ZzJCUUlfbE90Rmd6VXl30gHbAUFVX3lxTE9QWVhHTXJtM0tjdmdGTWJYZmwwemdlczB5d1N1QXVtMTlKTEtNR1VMRG9aaGJITF9xUmlsWGJaSWlMbHd5NUFyN2EtaE1sQjhZa0VLdlVhMk9zYmJwVGg1LTZGVFpSQ3pwYndiUEVYVmZaRGUweFBDTlVxcHBVZjVWTTZHbmVvWXhrUHVZVlE5Rm54bU9rUThUQjgwbHNQNTRVeWNMZU1CaTNkVDgySG1Xd2xLTG9KNXBuLTJneGoyb01janJuV3NZOWtVQ3hXeFRlS1lLVFNhXzltaw?oc=5) | Simply Wall St |
+| 9h 前 | 0 | 中性 | [If You Invested $300,000 in Coca-Cola, PepsiCo and Keurig Dr Pepper, Here’s What They’d Pay - Yahoo Finance](https://news.google.com/rss/articles/CBMilgFBVV95cUxQZUlkN0tyckFkZW5qWmROdkZTaEIwcjJUYWdDUGxaMEJJOTR6VkRaeWo2V3k2MG40dU5VbllJUlJNTHZpTnI5b2Z4eVE5RlV2eDRkdFQzTG9CYTNMTTU0OERrcV9FMXEzUVJrQmk5UEZnQy1XVkctdW5oWldTNkwwcGJkZk9iZVg2eHh4YWlzRlJaZDRNUGc?oc=5) | Yahoo Finance |
+| 9h 前 | 0 | 中性 | [If You Invested $300,000 in Coca-Cola, PepsiCo and Keurig Dr Pepper, Here's What They'd Pay - 24/7 Wall St.](https://news.google.com/rss/articles/CBMiyAFBVV95cUxNZFdpRnhyX1lNNUNYZkJkWFc3RW9hdm55OWdoUHYwMkZfNXBGUGdVYU5rMV96TFFKLXFFMUhVX0FKM21UZWJnT2drS3ZVMGVsY2pvczhsRXlaYWM1bklUZ0FOb2k0U0NJamVTdi1EemRFbjZ1UldYa19JVXZoUVFPWHJja1FzRS1xakpvLXZQZXJoNFpYd0J5T1hKM3N3QnB0OEFmUzVTTlRGS0xZZlNMejlZbm9Gam5SazdVTjJvUGdJcm5yUHRPNQ?oc=5) | 24/7 Wall St. |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -123,7 +121,7 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
-- 政策面对该板块的倾向为 -0.95（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.62（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
