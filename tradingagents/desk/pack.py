@@ -37,6 +37,24 @@ from .report import Idea, chart_for, score
 PENDING_DAYS = 2   # a resting buy that has not filled in this many SESSIONS is cancelled
 
 
+def exit_fill_price(sold: list, shares: int) -> float:
+    """Volume-weighted price of the latest sell fills that make up the
+    position's ``shares``. 2026-11-06: LLY's split protection (2 + 3 shares)
+    stopped out at 1,353.93 and 1,355.26 and the book took the last fill
+    for all five."""
+    left, qty, notional = int(shares or 0), 0.0, 0.0
+    for f in reversed(sold):
+        q, px = _num(f.get("qty"), 0.0), _num(f.get("price"))
+        if not (_ok(q) and q > 0 and _ok(px)):
+            continue
+        take = min(q, left) if left > 0 else q
+        qty, notional = qty + take, notional + take * px
+        left -= take
+        if left <= 0:
+            break
+    return notional / qty if qty > 0 else _num(sold[-1].get("price"))
+
+
 def sessions_since(opened: str, today: date) -> int:
     """Trading days between two dates (weekends excluded). 2026-10-19: counted
     in calendar days, a Thursday's limit was three days old on Monday."""
@@ -543,7 +561,7 @@ class Packer:
                 self.book.save()
                 continue
             sold = [f for f in fills if f["symbol"].upper() == s and f["side"] == "sell"]
-            exit_px = _num(sold[-1]["price"]) if sold else _num(self.market.facts(s, today).price)
+            exit_px = exit_fill_price(sold, p.shares) if sold else _num(self.market.facts(s, today).price)
             kind = (sold[-1].get("type") or "") if sold else ""
             reason = ("stop: 交易所触发止损" if kind.startswith("stop") else
                       "target: 交易所触发止盈" if kind == "limit" else "closed at the venue")

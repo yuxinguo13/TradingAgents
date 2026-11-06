@@ -907,3 +907,15 @@ class TestReflection1105:
         book = DeskBook(home / "desk" / "trade" / "book.json")
         pk = pack.Packer(broker=v, market=mkt(task="trade"), book=book, screen=screen_of(), now=MONDAY_OPEN).run()
         assert pk.regime and pk.regime[0].startswith("⚡ 盘中 SPY") and "-4.0%" in pk.regime[0]
+
+
+class TestReflection1106:
+    def test_split_exit_books_the_weighted_fill(self):
+        from tradingagents.desk.pack import exit_fill_price
+        sold = [{"qty": 10, "price": 1500.0},  # an older exit, not this position
+                {"qty": 2, "price": 1353.925}, {"qty": 3, "price": 1355.263333}]
+        assert abs(exit_fill_price(sold, 5) - (2 * 1353.925 + 3 * 1355.263333) / 5) < 1e-6
+
+    def test_single_fill_unchanged(self):
+        from tradingagents.desk.pack import exit_fill_price
+        assert exit_fill_price([{"qty": 35, "price": 117.65}], 35) == 117.65
