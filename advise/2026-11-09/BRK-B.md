@@ -31,8 +31,8 @@ _金融 · 数据截至 2026-11-09 收盘 → 面向 2026-11-09 开盘_
 
 ```text
        BRK-B · 近 21 个交易日（放大看最近节奏）
-579.1 ┤                 ╭╮
-571.4 ┤                 │╰──
+579.1 ┤                 ╭╮ ╭
+571.4 ┤                 │╰─╯
 563.7 ┤                 │
 556.0 ┤               ╭─╯
 548.3 ┤        ╭╮╭╮   │
@@ -48,9 +48,9 @@ _金融 · 数据截至 2026-11-09 收盘 → 面向 2026-11-09 开盘_
 
 ### 图形读数
 
-- **均线排列**：多头排列 — 现价距 20 日 546.59（+5.2%）、50 日 522.96（+10.0%）、200 日 498.20（+15.4%）
+- **均线排列**：多头排列 — 现价距 20 日 546.60（+5.2%）、50 日 522.97（+10.0%）、200 日 498.20（+15.5%）
 - **形态结构**：上升结构 — 更高的高点 + 更高的低点；前高 523.74 → 549.96（+5.0%）、前低 495.96 → 539.23（+8.7%）
-- **动能**：RSI(14) 75，超买区；近一月的斜率快于近三月（月 +11.5% vs 季 +11.4%），趋势在加速
+- **动能**：RSI(14) 75，超买区；近一月的斜率快于近三月（月 +11.6% vs 季 +11.4%），趋势在加速
 - **波动**：日均真实波幅约为价格的 1.9%；按本报告 2 ATR 的止损惯例，一个 R 相当于 3.7% 的价格距离
 - **位置**：距 52 周高点 -0.7%，距 52 周低点 +23.6%
 - **量能**：最新一日成交量为 20 日均量的 1.3 倍，量能正常
@@ -112,18 +112,8 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 6h 前 | 8 | 中性 | [Berkshire Hathaway latest: Q3 earnings, top 5 holdings, record stock buyback, & more - Yahoo Finance](https://news.google.com/rss/articles/CBMixAFBVV95cUxQZ2loVTdsMFF4Z2F5WWdnOHprakxBVGlGcUJ1YWkxNm1uOFltRmNDbU9ISWsySWplc296c1lWWU5DUzBITEN3Zm1xT1pHR1pDQUhUemhGdEdTcVFXdlNCeTRNVDFxeTQ3b1BpbV9SdnQyRjM4S3M2cjBaTE1xRnhXLXlVRzh6Mmd1dkY0LXFGRXotWnhvdjZIeXBaZTE0WnY5MDUtUkVWYWNXa2xvQ2hiMUVmZHFJT054QTB1Z3JDbzR3cDdP?oc=5) | Yahoo Finance |
-| 7h 前 | 8 | 偏多 | [Keefe Bruyette raises Berkshire Hathaway stock price target on earnings beat - Investing.com](https://news.google.com/rss/articles/CBMi0gFBVV95cUxQWmJ5cVJ5ZmVFbXdEdEFWLXQ4cUVUcUhJTEs3UVljUE1tY1BQbUdyd2p5VW5LbVVQWjV5bjgwRVV3YnFza1Bkcy10QnFxdXRuNXZpRzRWZHZSNjlXeVdGaVluN2w1Mnd1TUFuSlc1Q2Q5ZXd6Y0ZHQUM3T2IxNjgtR0xnSTcyZHJjOERMZ3A3OHdkMTFTek8xendKNDRQdS15cktLamNfRXNJSnV2UzRQQlhMakI1N0Jxek5LcWQ5Vm5HdU9yWEl6NG1RbHhZLXhkX3c?oc=5) | Investing.com |
-| 9h 前 | 8 | 偏空 | [Berkshire Hathaway Q3 earnings show weaker insu... - Pluang](https://news.google.com/rss/articles/CBMiqAFBVV95cUxOOXlfSmdQWkRXUlYyUUF1OEhiUF9LbmVIQkpNZXV2VWZnWDRrZ2JsXzl5U0VhQlFSenBGdTN3NTFVWlpWM21zUXpSTnhmN2wzdmtRNU5vSUdGRS0zUC1lNmJ5MlI2QkgzamdtTm9xY2hORnhkaTJPOW91MVZZUXBJLUdydHJLZUtxTEhPOE44LW9GMVpEdWlpbUowQVJSWV9HRUVwbDVpanI?oc=5) | Pluang |
-| 10h 前 | 8 | 中性 | [Berkshire Hathaway Reports 5.8% Decline in Q3 Operating Earnings to $12.71 Billion - Yahoo Finance](https://news.google.com/rss/articles/CBMimwFBVV95cUxPbEZ3aFJvdW5KdEk0Q2k4TmFyYjJhSmx5MFVnblJOX1B0TnZJUWRjSXE2Sk8xYU9HYXZuZS03OW9rZmUxRW1xaWF2cXZVdmRoWlg0MnIyMVYwV21RdURmY1VFM0JnMjdsZDJXTDkyamgwOFdqX0l6Q2RIb0xEZzRtM3BRakdrYkJkVG5va0lmY2JtXzZxSG5oMWtXMA?oc=5) | Yahoo Finance |
-| 11h 前 | 8 | 中性 | [US Stock Futures Mixed as Investors Assess Berkshire Hathaway Earnings, Nvidia Reports and AI Regulation Plans: Dow Jones, S&P, Nasdaq, Wall Street - Yahoo Finance](https://news.google.com/rss/articles/CBMingFBVV95cUxNMVh6MTZGNjR5STJGM05veFRUWEppT1d4X0U4RFhwR1RfTFA2UFhXZVhRdEw5OUJocGQ1emFZanhXbDVuREwtcjV0d2NjbXplNW5rajVCMzJXbnMtenRvaTU5YUVoVWJNX0hkb29ydDhGU0tWdDlfZWNTaEFMOGs1ODEwSWZCRm8wdXhlbTZCbUEtc2tlRERYa1drejQzZw?oc=5) | Yahoo Finance |
-| 14h 前 | 8 | 中性 | [Applied Materials, Cisco, Berkshire Hathaway, Nvidia, Micron and Alphabet are part of Zacks Earnings Preview - TradingView](https://news.google.com/rss/articles/CBMi8gFBVV95cUxNckgzXy1wcmJyd0RRSFZhZ2c0bGJwRkl4c1RiaDc1N25LblJMTk9uNV9SQlR1VDZ3ZUxTYUJhX1pFQ0RwRzNMbmpSUWtjWm1jZXNwTXoxWXJnTlNBanZaWXh5QjFEVEFvd1QwekpQYk5ESXl0cWZwcl9sU21meUpDVnB6Q00tY1U2Y012MHVHZE5Zb05rT3o0LXRGMmVORDhDZllodHV3VTNFbmFlOVRGRWx3S1k2Zkd4LTNqWTUyTlBtWkdWZ2p3bFRWQUxGRThUQWlIbEU2eFRWVy1WN1pabkhRSVFSRjR3SVQ5TkVtYlNydw?oc=5) | TradingView |
-| 23h 前 | 8 | 偏空 | [Berkshire Hathaway boosts stock buybacks despite Q3 profit drop amid economic uncertainty. - Pluang](https://news.google.com/rss/articles/CBMijwFBVV95cUxQcXlyckozZ3dZUS1Xazc1Sl80cFZYeWh1dm53Vmc5RFZ4YnFLTHEtcUlKa1dFRkFrbEtpb1ZWV0FJdXFNdFBxZDVodDlrSFJFM3VOdGNaVEFNcVJBV1ZPSDJJejQ1WkRPNV9LaGY0QzRHZ3NBdnYyRG45V2RaTXRlX0MzX0JzNEplcjJSa1oyVQ?oc=5) | Pluang |
-| 34h 前 | 8 | 偏空 | [Berkshire Hathaway: BNSF And Energy Steal The Show In Q3 (Rating Downgrade) - Seeking Alpha](https://news.google.com/rss/articles/CBMinAFBVV95cUxPNjVIWGhXeEl0aF9saUJhMWk3Y3E1VXN4X3dxaElKdk1tUkd6ZjA3NVNrOGd6UDI2UDhnS1NmcDV3QnJYZXFmOXlQS2pJbk9QYXlvWEhpTS1lREk0MzluTzV1QkJReGFUOWw3NEVkQUYtbVFkNWhXYVZ1WEZ5aXgxek0yeFBBT1BSWi1IaDJQVFJiOW1kS1ZpM3I2Q2U?oc=5) | Seeking Alpha |
-| 42h 前 | 8 | 中性 | [Berkshire Hathaway (BRK.A) Stock Shrugs Off Q3 Earnings Dip - Simply Wall St](https://news.google.com/rss/articles/CBMi3wFBVV95cUxPOW9tYjNUci1hVjNULXRjaXNsc2ZiNjZEMXdZOFZnRHJacXBrNDRQc0g3VGlTWXdPWVFLSy1uZDg4cEFNMHhYbERKUTJmNU5hYVFRa3U2ZHZYSnRGbnNkNy0tQ3VzM0FZcWxWbnlCVGNCdnViQjhGS09ZWDNKUDljdnpaVDJzd1V3ZlFtS3FuQ1JvS2lQTFJHU0pSZUZMZkl0S0k1X0Vod3hOcjQ5WmlJRHZuZTR4RDR3aFdfRzlFZDBLTV9OczQwQVdra3M2MnRBeHNLTmQzWk0zTGJMMnFR0gHkAUFVX3lxTFBrejM0VDU0Q0dEY0M2MUpwSW9SSFdLZ1UwSXAtX2lSbDU2b3hDa3U1TDNjamVDTjd3algteEx2czJ3OU00VFFfT2V1R1FPVUJSRE9ZeTV3X3dFLXJ4UU5fSnVkNDZEZm9KbEQyeWo2cTZOOUJIZFNWU000MllrQXRNY29IRWJMaEk1d3RUanVPanVySjl2d0hGSS1ERGdpY3VOYktiaHZndWJlSTQxRWtpUWZzanBZM3QxTy1CM2h3R3NMS1FWSjIwYnhaRlY1c0RobVdPbV9DWTlZUlRpb1VNTHNXcA?oc=5) | Simply Wall St |
-| 43h 前 | 8 | 中性 | [Berkshire Hathaway (BRK.A) Formalizes Greg Abel Succession After Earnings Slip And $9.6 Billion Repurchase - Yahoo Finance](https://news.google.com/rss/articles/CBMipgFBVV95cUxOb28zSUxaNTBMVXp0WS1UZ0JtTUU1REZtWUNhUHVnaElEMXpNOVZ4a2lqRk9nVWZwblRjeFduS2NPTnU4ZWRHQXVSY2hnNnFxbXUzZzZhSF9jYjhkOXhLTE41SzdkNlotNmstVko2RFJvY1lHbUM4TUxTcEtmUkQ2UzA5NWJxSVlwMjVJOHlXM2pVeXFSX1dIUGJKOEl6cEI2N3lxN3Fn?oc=5) | Yahoo Finance |
-| 10h 前 | 7 | 中性 | [BRK.B: Berkshire Hathaway Inc. filed SEC Form 8-K: Results of... - Quantisnow](https://news.google.com/rss/articles/CBMiqgFBVV95cUxNWWZCTk42UE9YZzhtbFBVVjBKRmUzNEgyMmtfTno0RlR1aWZfVU1kdV9mNGoxUldWQjU5ck5IQVhzMXFjU2d1RE9CWTJWZFltYjEwOVFhUjBBWnFUSS1WMUo3Qk1tdUxaQUE0M0ZPRzRCazJXaDBZLWpHdjBKWV84aGU5dDRHSnZsZVhRYTFkZkc4aHhuUVZIdDlnbFQtMWV6MEZqcE0yd1lyUQ?oc=5) | Quantisnow |
-| 2h 前 | 6 | 中性 | [Warren Buffett's Rule for Stock Buybacks Is Very Specific. Berkshire Spent a Record $9.6 Billion on Them Last Quarter. - The Motley Fool](https://news.google.com/rss/articles/CBMi8wFBVV95cUxQMkZDbzkwLTA3amltUTd6N041ZWVwZVo4bmtpVF9nZTRMZEExTXRBaXRvT2xIdGowdHRwd1BpUG1IdzU4MTRKTnJiSnJNNkZ1a2VOSUlXQTNsY2o2Y1VUaEl2N0wxRlZkRDRfTkJBakZxbkthbVllOG1yaHJZeW80Y19sdUR6TnlxYnZ3aWZOcTg5THFtbEY5cjU5M1ZJUUltR25vZzhNZkFUQm1UNGxjR291YUgxV0FlcllVSTNiWmh4ZGNRa3JtdURvbWNfNGxJbU12c0hidll4RmxDbFFjTHBwZXBobmNBeS00WjdFVUdIblU?oc=5) | The Motley Fool |
+| 10h 前 | 8 | 偏空 | [Berkshire Hathaway stock boosts buybacks as Q3 earnings fall - ad-hoc-news.de](https://news.google.com/rss/articles/CBMiwAFBVV95cUxQZm1RU2hvOEtfcmNoUjAwVll5TTI2T2ctbzBrWnNaNm1vbVNLd0I4S3BpOFgzNHB1cWVQTTBfZ1NEenFLYnB5UE9TQ1FUM0VMTUJ4cW8tOUVmMGdIdFpFNjNlNkpuUlFINnhDbTlZd2JndUVUWk5pTDNNZUQzZDFDUHJsVWVJSVdrWXVweVMybEtYTlBLUEFpbjB1YnYxNVBWZUVfVVMxUHVtNXJJa2l4VlByOW9mZEgyRjAwMVR3cEU?oc=5) | ad-hoc-news.de |
+| 9h 前 | 6 | 偏空 | [Berkshire Hathaway accelerated its stock buybacks as profit dropped 28% - Quartz](https://news.google.com/rss/articles/CBMihAFBVV95cUxPMjdweW9ZRFRvbEJzSjBSTG1Sb3lPZS1yeHlCdzRLZ2l1VmEtSHE1U0hhWUdWaTZ0OWxCQlV6U2FaN0ZwUDJmeHV3SnB0b3hjODRYZDU0dkxVbFZpQ3hIWElJbHpBaEJCWkl3QkVYbER3eEtoWWNKTzNkbzUzc0xhT0c3SV8?oc=5) | Quartz |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -133,9 +123,8 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 - RSI 75 已在极端超买区，短期回撤概率高于起涨阶段。
 - 现价已经高于卖方目标价均值 555.67（-3.4%）——共识认为没有上行空间了。
-- 24 小时内的利空标题：Berkshire Hathaway Q3 earnings show weaker insu... - Pluang（Pluang）
-- 24 小时内的利空标题：Berkshire Hathaway boosts stock buybacks despite Q3 profit drop amid economic uncertainty. - Pluang（Pluang）
-- 政策面对该板块的倾向为 -0.96（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 24 小时内的利空标题：Berkshire Hathaway stock boosts buybacks as Q3 earnings fall - ad-hoc-news.de（ad-hoc-news.de）
+- 政策面对该板块的倾向为 -0.41（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -157,7 +146,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-11-04 | 566.30 | 580.65 | 562.50 | **579.09** | +4.0% | 6,783,400 |
 | 2026-11-05 | 584.23 | 586.30 | 571.10 | **572.33** | -1.2% | 9,829,900 |
 | 2026-11-06 | 562.07 | 575.12 | 559.61 | **570.89** | -0.3% | 5,413,200 |
-| 2026-11-09 | 569.99 | 577.60 | 562.45 | **575.11** | +0.7% | 6,305,862 |
+| 2026-11-09 | 569.99 | 577.59 | 562.45 | **575.25** | +0.8% | 6,305,861 |
 
 ## 七、自己去查（本页不做独立验证）
 

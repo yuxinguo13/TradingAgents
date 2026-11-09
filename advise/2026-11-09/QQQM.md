@@ -67,12 +67,7 @@ _读不到财务数据：该代码没有可用的财务数据（可能是 ETF、
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 9h 前 | 8 | 中性 | [European Shares Start Week on Downbeat Note Amid Nvidia Investigation and Key Economic Data Ahead - SSBCrack](https://news.google.com/rss/articles/CBMiwgFBVV95cUxNWlQtMWdRM25SM0FSTlUyN3hqVHQzQkx6QXlTTTVfTlZNaUMzQWdsY051SzkwMG5tcUZOTTF0eXZpaDlwMF9xVGl5cldnd2hmS09LcTlxWnpGNk16a2ZvSHVpeXZENDg4aERkMl9pVGIwbXJlUnBWZzBFQnhPNjY1T0hjVTZzRU5PZnJnTzFKY1BQTkl1amlCdVdmX2lESEhUT3VOeWRHTkJNdjcwQV8wNGVDZ1JLY0tJT3Z4WVdlNUc2QQ?oc=5) | SSBCrack |
-| 26h 前 | 8 | 中性 | [Top stocks to watch this week as investors brace for earnings and inflation data - SSBCrack](https://news.google.com/rss/articles/CBMiqwFBVV95cUxPUGQzQ1k3UkFlWlFrWXBjaXdiZkRjMkNTMUgzQzQ3V0xmVnVYRnp5YUFvUlBuYUVrbWlhYV9nTG9GZ2NneGxDajRka2tYUG1wbVBaREhiSXhGdVJ2d2lsaEREZzZhZm9UcE8tQzlTME9aUUV0WTJHYXcwM25EVlZzeVREbGZWcmlvVzZJWFFlcWlIZ2QzcjU3VWQ0WU1ialpWamktZ3F3S1MtUjQ?oc=5) | SSBCrack |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 

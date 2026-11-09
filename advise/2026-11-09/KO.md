@@ -112,18 +112,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 6h 前 | 8 | 偏多 | [Coca-Cola stock tracks stronger Q3 demand as 2026 outlook rises - ad-hoc-news.de](https://news.google.com/rss/articles/CBMixAFBVV95cUxPaTRGZnhnWTJVMEVhZ2l3czJUX3Iwb0hBR0NhVmtzMG4wVXJMeWRuUXd5RW5qWVdvdWNfS3BSMzFiNEZKaHpZeTVnQmRFZEtlY3dsR04zUUQ0SEFpZnh5X3oyTTVtOGgxQVhVUXFQdlVrZzFNVnRmTW5BdUpqM3FYRGRpVURsYS1IXzM0ZXlVNXBLd0xIa0VFVDFuczZHcmZYaG1vSjV3aVVuaGJzdzlFb1JiMVlCdkhMeVU0QlJ6Qzd0MWNJ?oc=5) | ad-hoc-news.de |
-| 9h 前 | 8 | 中性 | [Coca-Cola stock: Q3 growth supports higher 2026 outlook - ad-hoc-news.de](https://news.google.com/rss/articles/CBMiuAFBVV95cUxPSWVQSzNEdGpXcy03WVVYQ0xadWN3Z1RQa1U3UXVMY2REbWhJRDN4V05pb1RJZlFFMVdSRVdrc1hLQUtDanZsU0w0bEkyY0Z5bk1QR3lxbWtrTFRJRUpEVTRWN1RjMDBKZHJNVm5JVnNISjFieVlHeUdoYzB4T3JwQ0d0YkliU1VYVmFHbnJfeVFPci1sQ3Q5OUlta0FDUjJ4dWtPQWtGY3dNOUw3UVF6SndaVHIzamFs?oc=5) | ad-hoc-news.de |
-| 11h 前 | 8 | 偏多 | [Coca-Cola Company (The) $KO Stock Position Raised by StoneX Group Inc. - MarketBeat](https://news.google.com/rss/articles/CBMixgFBVV95cUxPanQ3aWgyNmVOdHNUYXZHeTRmODVKTGczR09KN2FjZWlMV21yd3AzYjNPakRYOWZ3VEZyZ2xtcmZteUswZ1FHUXVNWHp6eVEtTGpqOXhEeWVLMG81Q2dSeHVPNzVXZXRBNnpuOTBSc3BxOHlhYjVtVVpPOFR3NVUwTXk4MzdlN2NWYUhoRjhSV2lPWWREMlNLcUw3RTUzMGVCN2h1MXNxcktpRDZ2Qks2eTg0V0pNNFMxVS12Vk9vTFE0TEp5V2c?oc=5) | MarketBeat |
-| 12h 前 | 8 | 中性 | [Coca-Cola Company (The) $KO Stock Holdings Lifted by Elite Wealth Management Inc. - MarketBeat](https://news.google.com/rss/articles/CBMi1AFBVV95cUxPdDVlUks0TTE1ejZ6TldVNDEyb2lvMjcxRVlDcTFlT1Z0UEtsOHdMM0JNSzB6RWdfZVdaY251NkxTcFh1NlJPdU9HWkF2UHFGVnl4NWhHWFNIbVpId2JZc1NmU1o1LWc0UGMtVkVTUDh4NFJjOXJfdVZ2VnNKOGxZcmFic19OSXpIalBrSzFDYmNaQWdEcVhybi12UFJUakk0ZFd3NkU0MExiWU9aaE9yNWFrV0IwTTI0SThSWW81bXZ1UnVTOVhlOE9KcTFqZi0xN0NuWA?oc=5) | MarketBeat |
-| 38h 前 | 8 | 中性 | [Coca-Cola Company (The) (NYSE:KO) Stock Rated "Moderate Buy" by Sell-Side Brokerages - MarketBeat](https://news.google.com/rss/articles/CBMi2gFBVV95cUxOaklPYjlLcnRNcFI2R1FtSkN1Z3MtZjdORHNkNHFtazRDUGJWNTFtWlBGZUNJU2c5MFF1bFAwNlJSNGZUVmhwWWFtS1ZuWHRGeEt1TjEzR2J4NnVVWDBlYndtMEpiSEUxVnREQ0RENEN0TUwycTNsd0VSR3k2c1NKcUl4RkFoTGtVSlJrOFlfVHRHYjJKRW5mMzg5ekRJU1N0cnA0NmlrMzZsN0xHVGFwVkQ1TUdtRW5MZWlZVFBuanlPWi1tMG9nTEZVLWdCbzFBNVlTUHNjQ196QQ?oc=5) | MarketBeat |
-| 3h 前 | 2 | 中性 | [Insider Selling: Coca-Cola (NYSE:KO) EVP Sells $1,968,337.70 in Stock - MarketBeat](https://news.google.com/rss/articles/CBMiwgFBVV95cUxPQ0lGVnhrbXhEWG5DRUpLbXdIOFVFMlVwV29KRk1ULW9aalBxcHRJWWgxMHhjZm1maFJqVGhaNkZKRllFa3hNM1R4WnRwRkMzSEdwcDVyMmtONjlJWm9oSERhVzUtYzM3MFR1Wjltc21VV3JDZmRUVnRlcVUtVzFzU0podVlPYWRhTE1nSjFkbEV5dGFaektJVnRaS0ZQclNuY0g4eTI3SjJ5RlVUZENRZHFOcG9EYWVrTzNTeGlpdjJoUQ?oc=5) | MarketBeat |
-| 10h 前 | 2 | 中性 | [M Holdings Securities Inc. Acquires 48,193 Shares of Coca-Cola Company (The) $KO - MarketBeat](https://news.google.com/rss/articles/CBMi0gFBVV95cUxPR1d0c0w0aFhUNHVUNkdoYk1pOXBMT29FTWdobUdwUVp3c2htY0t6a2hVdmdfa1NNZWFQb2xwWE16WHgteDlnZHFYb01OY2RrdnRRNFNOVWNRT2otZ1lCejBRSlhMWENEeU1KTFZmTXlkWTVpem5FRE1tMHZwWTk3ajZjaGszYTdDTk5QTUt1Y0s2NGo1dnNyUnNxaXY2aWE4V3JUTWU5aFBXd3VnTllNclF4dFRjYTZSNGJwTVMwZEx4YWNtZXNrQkpETGhZRnFVS3c?oc=5) | MarketBeat |
-| 37h 前 | 2 | 中性 | [Coca-Cola Company (The) $KO Shares Bought by Allen Investment Management LLC - MarketBeat](https://news.google.com/rss/articles/CBMizwFBVV95cUxObHFRM3d0SEZRMEFjNDh3ZWx2bHRCRDdnLWFUSUkweHUzcFNnOUl6dWxuUENqNlVsSzFTbDE3OXR0NmJqQURlZFdNblRXWE5zQWF2cjJ5dEdOLXdiZXZ5QWlYczlHcEw2aWhPNjR3Nk5nXzkwWFpjUUFjbDBRU0VsbWlabU1lSTcza2lTYnhWRW5VVG9GUzkwNTJMOTM0MXlnUDAxaEtnSlU5b21UWFR1V091NHgxbGJFcTBSSmp3OTNxN0xpYkRXRE1XNGNyU1U?oc=5) | MarketBeat |
-| 4h 前 | 0 | 中性 | [Coca-Cola evp Nancy Quan sells $1.97 million in company stock - Investing.com](https://news.google.com/rss/articles/CBMiwAFBVV95cUxQM0JxQnFlRWJhVElvZHdrYlV6QUk0UEN4aDdaQm4waU1IRE9tSFN5a2F5aWpqbFMzUWxJcFdHWFFRTjl0ZWRVckdBM2hFRFlLdXZrV3Q1Q3UwRG5kUDFzbktKUENlenktWEVNTjFOOXBqZHp3UEhLUjdiX2FsYTZMVUZmQU50WVo4eFZnMnZKSFZlVUhLaE5xQ2xrQ3Vrd2lIeFdWckNxSl9ZeEZzSEtKRHhGcGFDSHhGeDhSTWNKMHU?oc=5) | Investing.com |
-| 14h 前 | 0 | 中性 | [Coca-Cola's India bottling arm files draft papers for IPO - NewsBytes](https://news.google.com/rss/articles/CBMiqgFBVV95cUxQRkkzcWllcWpBVGFwOVgwSW5FRlVabzNvck1JMHdaYTJJa3lrZFRGSmV4U25fMmlheUdkMTNCaHlmc2hrblU3b1VBeUJlYzhHc2JrdlRZNGo4NmhhRnkzN1BzYWlsWVlaRjRSMGRSQzJGaWZDamVFYy1RczFnUmVPOEZyWk1veDF4X0hXUU81clY2Qk1GOVQxSnpDeDZ1dzlCNmdvRWRJN1gzQQ?oc=5) | NewsBytes |
-| 15h 前 | 0 | 中性 | [News by CNBC TV18 on TradingView, 2026-11-09 — cnbctv:1e2288987094b:0 - TradingView](https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB2cmUxeWdMLW1lT1ZPNS1sUE50VVRFVDVZNTRxR2ZPOEtQZXV0RDZkcjZGVXo3YkIxcEhDXzNGTVp6ZFJIWlhMMVQtb0dYc0hRM1lIWU00dS1WQlZkdld6c0RyaUdnbkE?oc=5) | TradingView |
-| 37h 前 | 0 | 中性 | [Coca-Cola's Indian bottling arm HCCH files IPO papers; entire issue to be OFS - ETLegalWorld.com](https://news.google.com/rss/articles/CBMi5wFBVV95cUxOXzRXckp5WGFVQ2pLRXVJYU8xUG95emNTNTdEa1ExRDF6RFNaSXotNV9vcUNuT0xMczMzaUNHQTdKTTFzeUhBMVFmdXhycTFEVENRN2J5OUJ0SnQtV2F5T0xqZUdpYmtjSlliWXRaSXl6RW1WcWIzRW9uV2J5SEF3UXdrVm5PYk5hanJZTXdFeFJnYXZpMDF3S0J0aHJJMHFlaGdSM0ItYTVLWmpQYjJPWDFRblZiRVEzMDZwTWRwZnlRNmZhbW13QjllRlhlaGc1UFAzVzdyWlJWeS1xV3pLNHMwSHROdDTSAesBQVVfeXFMT0p3bF9aaFBraklQV2N0bUZ6MW05VXA3bmNlTVM4V1U4WURUbVpGRWRibVJXeXNTaWRMcDhtemV0Yk5vSEFic2I3aWJGdGJYOUpqQWg2Qmg5MUhrbnZPZk1HUUhfSEd5c1NsVVk2MUgtWU5JdGFrbHhhMUV3UHhKNlJ4MDJjMng4X2RBVWRET3JibGxYNW9PRWdjdkoxN3k3TFBQT3M1aUVFdjRxLXYwXzZDVi1VRTZmN3FXTTcyOE5waE80ZUw1TnF3RmxHTGJmb1VDVWh3Qnlfc05rUmFkQm1xRFFDMWNMQUw4QQ?oc=5) | ETLegalWorld.com |
+| 23h 前 | 0 | 中性 | [Warren Buffett's Coca-Cola Shares Now Pay Back Two-Thirds of What He Paid, Every Single Year - 24/7 Wall St.](https://news.google.com/rss/articles/CBMisgJBVV95cUxQcEdjdy03RmlrUTMzaFlndXRIcUlKdnJhUmdDUUxxYzNhZFRYUzZtRDctdG5DanowMFBNejZ5NFlJdm1EWWZyMHpTTVBjbk5ac1gtUGZvRkw5dHZlSm9ySUZBVE9DR2UxWm0tNm5GU0ZSczM4UXdrNHRzMFAwUUttdXEyVWFtZ2ZqczFyQ1JDY1phb3psTFZuYzhEZGRXSlNhdjlkUWV3Xy1OTm9WMUk2NnVuVEFSVGgwcW1pNXpFdFB3b0RnOGFTTjFUWXBLWG1mZ3hRRUhSWm43UU5mODJUQUxPWE40WU1kaGF6cUVMZEpKYjc0WWJWSW5XV3ptdUJOT1ZzMUxpTXJtbXVqYS03YU5fRE9GdUpoempCSW1hN0ZlNjN3M1IweFluM1pnYzBQM2c?oc=5) | 24/7 Wall St. |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -131,7 +120,7 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
-- 政策面对该板块的倾向为 -0.94（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.62（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -153,7 +142,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-11-04 | 96.30 | 96.56 | 94.35 | **95.80** | +1.1% | 27,088,300 |
 | 2026-11-05 | 96.94 | 97.39 | 95.47 | **95.73** | -0.1% | 31,053,500 |
 | 2026-11-06 | 93.21 | 96.31 | 93.00 | **95.67** | -0.1% | 18,420,100 |
-| 2026-11-09 | 95.89 | 96.06 | 94.72 | **96.03** | +0.4% | 16,440,800 |
+| 2026-11-09 | 95.89 | 96.06 | 94.72 | **96.03** | +0.4% | 16,440,799 |
 
 ## 七、自己去查（本页不做独立验证）
 

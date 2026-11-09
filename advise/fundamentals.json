@@ -4209,5 +4209,177 @@
    }
   ],
   "error": ""
+ },
+ "JNJ": {
+  "symbol": "JNJ",
+  "fetched_at": 1794261152.2087564,
+  "name": "Johnson & Johnson",
+  "sector": "",
+  "industry": "",
+  "website": "",
+  "market_cap": 679126302720.0,
+  "pe_trailing": 42.8088,
+  "pe_forward": 24.28244,
+  "ps": NaN,
+  "ev_ebitda": NaN,
+  "peg": 3.108,
+  "eps_trailing": NaN,
+  "eps_forward": NaN,
+  "dividend_yield": 0.019115198,
+  "beta": NaN,
+  "revenue_ttm": NaN,
+  "revenue_growth": NaN,
+  "earnings_growth": NaN,
+  "gross_margin": NaN,
+  "operating_margin": NaN,
+  "profit_margin": NaN,
+  "roe": NaN,
+  "debt_to_equity": NaN,
+  "current_ratio": NaN,
+  "total_cash": NaN,
+  "total_debt": NaN,
+  "free_cashflow": NaN,
+  "target_mean": NaN,
+  "target_high": NaN,
+  "target_low": NaN,
+  "rating_mean": NaN,
+  "analysts": NaN,
+  "short_pct_float": NaN,
+  "held_institutions": NaN,
+  "quarters": [
+   {
+    "label": "2026-09-30",
+    "revenue": 25399000000.0,
+    "gross": 17302000000.0,
+    "operating": 6365000000.0,
+    "net": 210000000.0,
+    "eps": 0.087241
+   },
+   {
+    "label": "2026-06-30",
+    "revenue": 25310000000.0,
+    "gross": 17259000000.0,
+    "operating": 7174000000.0,
+    "net": 5534000000.0,
+    "eps": 2.27
+   },
+   {
+    "label": "2026-03-31",
+    "revenue": 24062000000.0,
+    "gross": 15956000000.0,
+    "operating": 6395000000.0,
+    "net": 5235000000.0,
+    "eps": 2.14
+   },
+   {
+    "label": "2025-12-31",
+    "revenue": 24564000000.0,
+    "gross": 16596000000.0,
+    "operating": 5591000000.0,
+    "net": 5116000000.0,
+    "eps": 2.1
+   },
+   {
+    "label": "2025-09-30",
+    "revenue": 23993000000.0,
+    "gross": 16690000000.0,
+    "operating": 7096000000.0,
+    "net": 5152000000.0,
+    "eps": 2.12
+   },
+   {
+    "label": "2025-06-30",
+    "revenue": NaN,
+    "gross": NaN,
+    "operating": NaN,
+    "net": NaN,
+    "eps": NaN
+   }
+  ],
+  "years": [
+   {
+    "label": "2025-12-31",
+    "revenue": 94193000000.0,
+    "gross": 63937000000.0,
+    "operating": 25596000000.0,
+    "net": 26804000000.0,
+    "eps": 11.03
+   },
+   {
+    "label": "2024-12-31",
+    "revenue": 88821000000.0,
+    "gross": 61350000000.0,
+    "operating": 21249000000.0,
+    "net": 14066000000.0,
+    "eps": 5.79
+   },
+   {
+    "label": "2023-12-31",
+    "revenue": 85159000000.0,
+    "gross": 58606000000.0,
+    "operating": 22009000000.0,
+    "net": 35153000000.0,
+    "eps": 13.72
+   },
+   {
+    "label": "2022-12-31",
+    "revenue": 79990000000.0,
+    "gross": 55394000000.0,
+    "operating": 21013000000.0,
+    "net": 17941000000.0,
+    "eps": 6.73
+   }
+  ],
+  "surprises": [
+   {
+    "when": "2027-01-26",
+    "estimate": 2.92,
+    "actual": NaN,
+    "surprise_pct": NaN
+   },
+   {
+    "when": "2026-10-13",
+    "estimate": 2.52,
+    "actual": 2.59,
+    "surprise_pct": 0.0269
+   },
+   {
+    "when": "2026-07-15",
+    "estimate": 2.85,
+    "actual": 2.9,
+    "surprise_pct": 0.0158
+   },
+   {
+    "when": "2026-04-14",
+    "estimate": 2.68,
+    "actual": 2.7,
+    "surprise_pct": 0.0085
+   },
+   {
+    "when": "2026-01-21",
+    "estimate": 2.46,
+    "actual": 2.46,
+    "surprise_pct": -0.0011
+   },
+   {
+    "when": "2025-10-14",
+    "estimate": 2.76,
+    "actual": 2.8,
+    "surprise_pct": 0.0149
+   },
+   {
+    "when": "2025-07-16",
+    "estimate": 2.68,
+    "actual": 2.77,
+    "surprise_pct": 0.0321
+   },
+   {
+    "when": "2025-04-15",
+    "estimate": 2.58,
+    "actual": 2.77,
+    "surprise_pct": 0.0738
+   }
+  ],
+  "error": ""
  }
 }
