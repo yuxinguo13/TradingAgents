@@ -919,3 +919,31 @@ class TestReflection1106:
     def test_single_fill_unchanged(self):
         from tradingagents.desk.pack import exit_fill_price
         assert exit_fill_price([{"qty": 35, "price": 117.65}], 35) == 117.65
+
+
+class TestReflection1109:
+    def _broker(self, stops):
+        from types import SimpleNamespace
+        from unittest.mock import MagicMock
+
+        from tradingagents.live import alpaca as A
+        b = A.AlpacaBroker.__new__(A.AlpacaBroker)
+        b.paper, b.trading, b.data = True, MagicMock(), MagicMock()
+        legs = [{"id": f"s{i}", "symbol": "ABBV", "side": "sell", "type": "stop", "qty": q}
+                for i, (q, _) in enumerate(stops)]
+        b.open_orders = lambda: legs + [{"id": "t", "symbol": "ABBV", "side": "sell", "type": "limit", "qty": 17}]
+        b.trading.get_order_by_id.side_effect = lambda i: SimpleNamespace(stop_price=str(stops[int(i[1:])][1]))
+        return b
+
+    def test_a_raise_moves_every_stop_leg_of_a_staged_half(self):
+        b = self._broker([(18, 280.0), (17, 280.0)])
+        ok, msg = b.raise_stop("ABBV", 281.0)
+        assert ok and b.trading.replace_order_by_id.call_count == 2
+
+    def test_a_leg_already_higher_is_left_and_a_lower_raise_refused(self):
+        b = self._broker([(18, 281.0), (17, 280.0)])
+        ok, _ = b.raise_stop("ABBV", 281.0)
+        assert ok and b.trading.replace_order_by_id.call_count == 1
+        b2 = self._broker([(18, 282.0)])
+        ok2, _ = b2.raise_stop("ABBV", 281.0)
+        assert not ok2 and b2.trading.replace_order_by_id.call_count == 0

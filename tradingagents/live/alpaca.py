@@ -398,24 +398,40 @@ class AlpacaBroker:
                 return o
         return None
 
+    def stop_legs(self, symbol: str) -> list[dict]:
+        """Every open stop order protecting ``symbol`` (a staged half rests
+        two OCO pairs, each with its own stop leg)."""
+        return [o for o in self.open_orders()
+                if o["symbol"].upper() == symbol.upper() and o["side"] == "sell"
+                and o["type"] in ("stop", "stop_limit")]
+
     def raise_stop(self, symbol: str, new_stop: float) -> tuple[bool, str]:
-        """Move the resting stop *up*. A lower stop is refused here, not just
-        by the gate: this adapter never widens a stop for anyone."""
+        """Move the resting stop *up*, on every leg. A lower stop is refused
+        here, not just by the gate: this adapter never widens a stop for anyone.
+
+        2026-11-09: ABBV rested two OCO pairs (17 + 18 shares) after a staged
+        half; the raise to 281 moved one leg and left 17 shares at 280."""
         from alpaca.trading.requests import ReplaceOrderRequest
-        leg = self.stop_leg(symbol)
-        if leg is None:
+        legs = self.stop_legs(symbol)
+        if not legs:
             return False, f"no resting stop for {symbol}"
-        try:
-            cur = float(self.trading.get_order_by_id(leg["id"]).stop_price or 0)
-        except Exception as exc:
-            return False, f"could not read the stop for {symbol}: {exc}"
-        if new_stop <= cur:
-            return False, f"{symbol}: new stop {new_stop:.2f} is not above the resting {cur:.2f}"
-        try:
-            self.trading.replace_order_by_id(leg["id"], ReplaceOrderRequest(stop_price=round(new_stop, 2)))
-        except Exception as exc:
-            return False, f"{symbol}: replace refused: {exc}"
-        return True, f"{symbol}: stop {cur:.2f} → {new_stop:.2f}"
+        moved, notes = [], []
+        for leg in legs:
+            try:
+                cur = float(self.trading.get_order_by_id(leg["id"]).stop_price or 0)
+            except Exception as exc:
+                return False, f"could not read the stop for {symbol}: {exc}"
+            if new_stop <= cur:
+                notes.append(f"{cur:.2f} already at or above")
+                continue
+            try:
+                self.trading.replace_order_by_id(leg["id"], ReplaceOrderRequest(stop_price=round(new_stop, 2)))
+            except Exception as exc:
+                return False, f"{symbol}: replace refused: {exc}" + (f" (moved {', '.join(moved)})" if moved else "")
+            moved.append(f"{cur:.2f} → {new_stop:.2f} ({leg.get('qty', 0):g} sh)")
+        if not moved:
+            return False, f"{symbol}: new stop {new_stop:.2f} is not above the resting stop ({'; '.join(notes)})"
+        return True, f"{symbol}: stop " + "; ".join(moved)
 
     def close_now(self, symbol: str) -> OrderResult:
         """Flatten a position at market, cancelling its bracket legs first.
