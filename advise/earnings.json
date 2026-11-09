@@ -1,75 +1,5 @@
 {
 "rows": {
-"QQQM|2026-11-05": {
-"symbol": "QQQM",
-"as_of": "2026-11-05",
-"next_date": "",
-"last_date": "",
-"eps_estimate": NaN,
-"eps_actual": NaN,
-"surprise_pct": NaN,
-"error": "no earnings calendar"
-},
-"XOM|2026-11-05": {
-"symbol": "XOM",
-"as_of": "2026-11-05",
-"next_date": "2027-01-29",
-"last_date": "2026-10-30",
-"eps_estimate": 4.03,
-"eps_actual": 4.23,
-"surprise_pct": 4.91,
-"error": ""
-},
-"KDP|2026-11-05": {
-"symbol": "KDP",
-"as_of": "2026-11-05",
-"next_date": "2027-02-23",
-"last_date": "2026-11-03",
-"eps_estimate": 0.62,
-"eps_actual": 0.66,
-"surprise_pct": 6.39,
-"error": ""
-},
-"KO|2026-11-05": {
-"symbol": "KO",
-"as_of": "2026-11-05",
-"next_date": "2027-02-09",
-"last_date": "2026-10-27",
-"eps_estimate": 0.88,
-"eps_actual": 0.91,
-"surprise_pct": 3.3,
-"error": ""
-},
-"ABBV|2026-11-05": {
-"symbol": "ABBV",
-"as_of": "2026-11-05",
-"next_date": "2027-02-03",
-"last_date": "2026-10-30",
-"eps_estimate": 3.76,
-"eps_actual": 3.82,
-"surprise_pct": 1.47,
-"error": ""
-},
-"GLDM|2026-11-05": {
-"symbol": "GLDM",
-"as_of": "2026-11-05",
-"next_date": "",
-"last_date": "",
-"eps_estimate": NaN,
-"eps_actual": NaN,
-"surprise_pct": NaN,
-"error": "no earnings calendar"
-},
-"LLY|2026-11-05": {
-"symbol": "LLY",
-"as_of": "2026-11-05",
-"next_date": "2027-02-03",
-"last_date": "2026-10-29",
-"eps_estimate": 6.35,
-"eps_actual": 7.48,
-"surprise_pct": 17.88,
-"error": ""
-},
 "QQQM|2026-11-06": {
 "symbol": "QQQM",
 "as_of": "2026-11-06",
@@ -139,6 +69,106 @@
 "eps_actual": 7.48,
 "surprise_pct": 17.88,
 "error": ""
+},
+"QQQM|2026-11-09": {
+"symbol": "QQQM",
+"as_of": "2026-11-09",
+"next_date": "",
+"last_date": "",
+"eps_estimate": NaN,
+"eps_actual": NaN,
+"surprise_pct": NaN,
+"error": "no earnings calendar"
+},
+"XOM|2026-11-09": {
+"symbol": "XOM",
+"as_of": "2026-11-09",
+"next_date": "2027-01-29",
+"last_date": "2026-10-30",
+"eps_estimate": 4.03,
+"eps_actual": 4.23,
+"surprise_pct": 4.91,
+"error": ""
+},
+"KDP|2026-11-09": {
+"symbol": "KDP",
+"as_of": "2026-11-09",
+"next_date": "2027-02-23",
+"last_date": "2026-11-03",
+"eps_estimate": 0.62,
+"eps_actual": 0.66,
+"surprise_pct": 6.39,
+"error": ""
+},
+"KO|2026-11-09": {
+"symbol": "KO",
+"as_of": "2026-11-09",
+"next_date": "2027-02-09",
+"last_date": "2026-10-27",
+"eps_estimate": 0.88,
+"eps_actual": 0.91,
+"surprise_pct": 3.3,
+"error": ""
+},
+"ABBV|2026-11-09": {
+"symbol": "ABBV",
+"as_of": "2026-11-09",
+"next_date": "2027-02-03",
+"last_date": "2026-10-30",
+"eps_estimate": 3.76,
+"eps_actual": 3.82,
+"surprise_pct": 1.47,
+"error": ""
+},
+"BRK-B|2026-11-09": {
+"symbol": "BRK-B",
+"as_of": "2026-11-09",
+"next_date": "2027-03-01",
+"last_date": "2026-11-07",
+"eps_estimate": 6.14,
+"eps_actual": 5.94,
+"surprise_pct": -3.21,
+"error": ""
+},
+"LLY|2026-11-09": {
+"symbol": "LLY",
+"as_of": "2026-11-09",
+"next_date": "2027-02-03",
+"last_date": "2026-10-29",
+"eps_estimate": 6.35,
+"eps_actual": 7.48,
+"surprise_pct": 17.88,
+"error": ""
+},
+"AMZN|2026-11-09": {
+"symbol": "AMZN",
+"as_of": "2026-11-09",
+"next_date": "2027-02-04",
+"last_date": "2026-10-29",
+"eps_estimate": 1.96,
+"eps_actual": 1.89,
+"surprise_pct": -3.47,
+"error": ""
+},
+"MSFT|2026-11-09": {
+"symbol": "MSFT",
+"as_of": "2026-11-09",
+"next_date": "2027-01-27",
+"last_date": "2026-10-28",
+"eps_estimate": 4.72,
+"eps_actual": 4.89,
+"surprise_pct": 3.59,
+"error": ""
+},
+"GLDM|2026-11-09": {
+"symbol": "GLDM",
+"as_of": "2026-11-09",
+"next_date": "",
+"last_date": "",
+"eps_estimate": NaN,
+"eps_actual": NaN,
+"surprise_pct": NaN,
+"error": "no earnings calendar"
 }
 }
 }
