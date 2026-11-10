@@ -1,5 +1,5 @@
 {
- "saved_at": "2026-11-09T20:20:37",
+ "saved_at": "2026-11-10T20:18:33",
  "positions": {
   "ABBV": {
    "symbol": "ABBV",
@@ -70,7 +70,7 @@
   "CBC": {
    "symbol": "CBC",
    "shares": 208,
-   "entry": 38.75,
+   "entry": 38.723413,
    "stop": 37.2,
    "target": 41.5,
    "opened": "2026-11-09",
@@ -98,7 +98,7 @@
     "rs"
    ],
    "stop0": 37.2,
-   "pending": true,
+   "pending": false,
    "trimmed": false,
    "staged": NaN
   }
