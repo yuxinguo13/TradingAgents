@@ -169,16 +169,6 @@
 "eps_actual": NaN,
 "surprise_pct": NaN,
 "error": "no earnings calendar"
-},
-"JNJ|2026-11-09": {
-"symbol": "JNJ",
-"as_of": "2026-11-09",
-"next_date": "2027-01-26",
-"last_date": "2026-10-13",
-"eps_estimate": 2.52,
-"eps_actual": 2.59,
-"surprise_pct": 2.69,
-"error": ""
 }
 }
 }

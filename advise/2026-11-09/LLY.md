@@ -48,13 +48,13 @@ _医疗 · 数据截至 2026-11-09 收盘 → 面向 2026-11-09 开盘_
 
 ### 图形读数
 
-- **均线排列**：多头排列 — 现价距 20 日 1,313.42（+7.5%）、50 日 1,219.00（+15.8%）、200 日 1,099.57（+28.4%）
+- **均线排列**：多头排列 — 现价距 20 日 1,313.41（+7.5%）、50 日 1,219.00（+15.8%）、200 日 1,099.57（+28.4%）
 - **形态结构**：上升结构 — 更高的高点 + 更高的低点；前高 1,321.21 → 1,449.68（+9.7%）、前低 1,131.21 → 1,257.62（+11.2%）
 - **动能**：RSI(14) 68，偏强；近一月的斜率快于近三月（月 +19.7% vs 季 +16.4%），趋势在加速
 - **波动**：日均真实波幅约为价格的 3.7%；按本报告 2 ATR 的止损惯例，一个 R 相当于 7.4% 的价格距离
 - **位置**：距 52 周高点 -0.4%，距 52 周低点 +66.4%
 - **量能**：最新一日成交量为 20 日均量的 1.3 倍，量能正常
-- **相对强度**：近一月跑赢 标普500 23.1 个百分点
+- **相对强度**：近一月跑赢 标普500 23.0 个百分点
 - **支撑 / 阻力**：最近的摆动低点 1,257.62，摆动高点 1,449.68（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
 
 **我的读图结论**：趋势向上且结构完整，且贴近 52 周高点——追高的代价是止损离得远；顺势的一侧在上方，风险在于结构一旦破位就要认
@@ -112,9 +112,18 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 6h 前 | 5 | 中性 | [Eli Lilly stock gains as Hims & Hers access deal expands reach - ad-hoc-news.de](https://news.google.com/rss/articles/CBMiwAFBVV95cUxOYUF2R19vMEYySHo3ZWZTYW0tbzhYa1JIQ2l5YTBQQlR3ZjR1cHd5SDJtQnlBWmVERFVra1htbWdRcDFnSWdxaGNiT3RmWG1aZG1rU01zRndPQVlFZ3QtUzQ2dndXTGNmLWtnVGtPQjFDMlNZN3JmMVpoYjhxcFZqT3pvX1hLSFQwdHdXNEdxLTd4V2x3dzdWUHJ6dlJ1SlRpQmVGVkhkMnZzTVNCSVBINlVOMl9YOGlwTDR5dHlhYmg?oc=5) | ad-hoc-news.de |
-| 5h 前 | 0 | 中性 | [Eli Lilly May Have Just Found a New $23 Billion Market for Its GLP-1 Pill - Yahoo Finance](https://news.google.com/rss/articles/CBMijgFBVV95cUxPS1c5TDJKS0lRaU1UbUtYalB6S2RkNGZuT2Y1blllZE5vb2wwLUk4YzdlS29sbDUzX1ctYzhLU3JlUFBXSmJuRmFBNnY0d2RhZUQ2TDBKV3dSMUZ0elBrT25LTEZ2a2VSb1llTjBod0NlekROcWtJQU9ScWI1aVVBN3F2anFDUDA3aTRkOFBR?oc=5) | Yahoo Finance |
-| 20h 前 | 0 | 中性 | [3 Super Growth Stocks to Buy Hand Over Fist If the Stock Market Crashes - The Motley Fool](https://news.google.com/rss/articles/CBMimAFBVV95cUxOTmtoa3RNbWhoMUFNb3M1cVhaRUQ1U3VVN3FQZVRyNE0ybDBNbk1MLTJHTU82Ulk0aW9tZWZHYXoxTXJxYVZGRkVsVV9abFZSM1ZPbGxkUWJpV0wzZThrbF95WEdDS3lPdGRvRk4xWk9iZ0JXU1RoVVdVZXV6aVRkOTkxbFJtaUlCLWR6aF9uSE9pckQ5WVZmZw?oc=5) | The Motley Fool |
+| 2h 前 | 9 | 偏多 | [Eli Lilly and Company (LLY) Stock: Surges 4.50% as Foundayo Delivers Positive Phase 3 Sleep Apnea Results - Blockonomi](https://news.google.com/rss/articles/CBMiwwFBVV95cUxNY1FxLVZXX29ZckZQcXZLT2tSZm5rM0NBXzdfTDM3NDR3MTF3OHR3OTRsb0RoT044ZmxTbkRueFFGVEJ2dkxxSEdCaTlGMzRzbjl4RHdkb19yNUJJRnJwWmNaUE9zUGczNGRyNGQ0ZlBJQnNQS0NPd2wzUmpJMzAxcE9Ha3VfZXdsZUU0VHp5Z21DYjJ1VExuTmxzZGlpLXpZSjI0MVktNjNiQUMyZUJjNUpVU0FZckk4dFNuRVJ1MG9fbHc?oc=5) | Blockonomi |
+| 3h 前 | 8 | 中性 | [Best Healthcare Stocks To Keep An Eye On - November 9th - MarketBeat](https://news.google.com/rss/articles/CBMisgFBVV95cUxOX2tLdF96b2hCTHVqeGdRVDFNaUI5WHB1Mko0ajVpazVKU1BhRXRqMDZXa09YbzVoM0pnZzd5WFNmR2lONmE2SlZmTGRocGpnZlVrdkRTVzdNa041VEtYWThEb2N0enp4VWJ5clMwalQtN1RoMV81UVdwUlhHLTBIcXdMOHdyNVgxOXJXdW1JVnVQOWtRVTR6UlNSZGMxLWNiVDA2NEV0QjRWXy1Hd0hTUDlR?oc=5) | MarketBeat |
+| 6h 前 | 5 | 偏多 | [Eli Lilly Gains After Jefferies Raises Price Target to Wall Street-High $1,700 - Benzinga](https://news.google.com/rss/articles/CBMi2wFBVV95cUxQcGlqQVBzMUlEZ1FEY0d2SGdQaU9td01MQzlCd2Q1LVBVWWdQYmRSYkJQN1BxdGtSamtUQWZ1TkZoZDVUdnVKLV9KVklhcW5LcGR1bFdJWjJIaktCX3ZyRnlDdE9WY0NhQ0tVSWl5MVdKakxjYWpXel9TakU3S1JkVkZ2dHZtTkRtWDc0RXBkcGFDVDJwVGxqRXoydzhVR2RpODE5c3hVUmVaWGhpVnN5WkNYZktUTGZDQ0Q1QjBCVnJ2bzQ1LVV6RjltNU1taHIwNHYxcU1adGU5Qlk?oc=5) | Benzinga |
+| 8h 前 | 5 | 偏多 | [Eli Lilly Shares Rise 2.35% After Jefferies Raises Price Target to $1,700 - Yahoo Finance](https://news.google.com/rss/articles/CBMikgFBVV95cUxOWHNGQ0k3SjBUTlFDQnVlVnFUaHBNNV8wU2U2U1VDXzEzQ0xQNmhvTlkwclFRUDQxYTJDRDYyY2Ffdkx6VS1wSzJodm56anNOcFV1YlRDbEI2MFZ0ZjgtcXNqTmxuRG1YVVdDdEoxdkp1NDQzeWlvR0hkNlZrY0ZsVFEtU1FEVXR1T29SUXFWVUluZw?oc=5) | Yahoo Finance |
+| 8h 前 | 5 | 偏多 | [Eli Lilly and Co. stock weighs strong demand against deal charges - ad-hoc-news.de](https://news.google.com/rss/articles/CBMixgFBVV95cUxQVDdub0RpWGR6RVgtLVdBZnU2RUdnc3lNcjUwWHNoRmN3bTloRWZXSXRpN0o5REVuOGMtcE43bWJmYzN5ZVAyZzA3YVZqZTRuTXYxbUt2aFVqc1dMOTdWczItQ29GZU8xd1BDUzZHNFE2Q0xMNzFNVGpjby1lR1lfN3dzNVZ1bEdpRmN2UWpMeFpwdWxPcVJkMUZqRlJWQTZ5LUJKYk9GWlN3eHNlRDdKOEZ1S2ozcF9ub3lZWVV6S0hfbERtN2c?oc=5) | ad-hoc-news.de |
+| 1h 前 | 0 | 偏空 | [Eli Lilly, Novo weight-loss drugs to get rare vision loss warning (LLY:NYSE) - Seeking Alpha](https://news.google.com/rss/articles/CBMinAFBVV95cUxQMzNrN0lDMDFxbV9tSldtanNkMnRxTnVZczRyUTFnTXpKVGFVRkRnaWxDcE9CUUFESHI2ZkcwWXg2eTMyVzBfR2wtbDcwLWY0RDVCaFJrMUVkaXU0aGxzYzU2Q2dISHRLb05zNjd4ek90aVpsQ0JRaGRqYWVSakxGeXJVekEyTV9DTVZQZDRDRzFTQWMxZ0lYRXNOaHE?oc=5) | Seeking Alpha |
+| 1h 前 | 0 | 中性 | [Stocks extend recovery from Thursday's sell-off. Plus, new trial data from Lilly, J&J - CNBC](https://news.google.com/rss/articles/CBMizAFBVV95cUxPV1VXUkxRdTdLZXItTkV0MVZxZXBid0kxU0ZVaE1fQVJ5Yk5vMGdtbFkyNl9qa1BHVjJ3MkZJX0VpazJOcjY2WGZnckliQWxqeTI4Vk13cDhCZnZfZkFsdWZlMzV6OUg5bXRQU2phajhSV3pZWUdpb3A0LWlZZGxEX3RWTWJCU1IxeU04Z3E2akFHYWRvaThPREZFSHJJUTJxSlZFTXlaY1Ffa2JscDMycHJxSFUydTRDMkwxdmtKdEdEeGVzekM3cE9Ecmk?oc=5) | CNBC |
+| 2h 前 | 0 | 中性 | [Eli Lilly’s Weight-Loss Pill Shows Sleep Apnea Benefits. Can It Gain on Novo? - Barron's](https://news.google.com/rss/articles/CBMijgFBVV95cUxQS2dtR0JVZHp2TkVTbzVscFpUdVNxbDBEX1RBQ19ZZDUzNjVLOVZMQ3JGN09kTVYtTHNrNF9wTmlha2l2eTZDa25yUGRMaDFFWHJrQUhLM1ZRMFlwams3c09oR0dkdU5GM1htbXZxQ0lycWVoNmhKQVVjR0F4TFctd2tkZWxPMHdLR0VIU0hn?oc=5) | Barron's |
+| 3h 前 | 0 | 中性 | [Eli Lilly Stocks Rise 3.40% as Jefferies Sets Street-High $1,700 Target - Yahoo Finance](https://news.google.com/rss/articles/CBMikgFBVV95cUxOT2xQTHVUcTQxdGxzeWpEVXlCVEhFU2pURzBMeUluMDNRY3V0WW9hUFV5azR3dGw3VHUzV2M3SU11bFFsMXFzZllWOWRONkhlS0hzV3pTZmtMMkJPVk5rNUdyekNuVUpqNDBVZkN3UnpicWFYdTRBdDBidUZZX1c5bFVyUk1qZTFqUmpMYkYzc3M0UQ?oc=5) | Yahoo Finance |
+| 5h 前 | 0 | 中性 | [Eli Lilly releases Foundayo sleep apnea data - Seeking Alpha](https://news.google.com/rss/articles/CBMiigFBVV95cUxNbElnajZ3S1V2WkVTcDdjWTBpQ1duMk1POWtSRUkzWmlldkF1bG4xR19GazdWWkU5RHZlYVFwREFsX1piS3hiaEZ6NmNhVFJsOGRPazdyeEMtX3hiVjBUaGV4dWlLZ3BJVjF1NnlHVlhUSjdtaTN1MzBWaXhGUllvYnN6M1RrSFlrelE?oc=5) | Seeking Alpha |
+| 5h 前 | 0 | 中性 | [Toronto Dominion Bank (TD): Auto-callable notes tied to Lilly, Microsoft and NVIDIA - Quantisnow](https://news.google.com/rss/articles/CBMijwFBVV95cUxQYlcxQTJHY3M4U19FNmVPZ3BWZjh5UFVIdk82MElZaDN0ajFNNnB2ZzNGMzAyZjFVOVN1a3VYeFpnR3ZObkNBcTc2TWR3RkNrQks4UTV0Uno5VkJzUmw3ZFBIWWFsdTVIdUxoU3EzdWFyT1pQNXBTdlFlZExuY1FwRG15MmlCLU9vVzdKR2ZWNA?oc=5) | Quantisnow |
+| 6h 前 | 0 | 偏空 | [Eli Lilly (LLY) Stock Rises as Foundayo Cuts Sleep Apnea Events by 44% - Blockonomi](https://news.google.com/rss/articles/CBMilgFBVV95cUxQeHVHRzI3LUpjUHlpMGM3dFhiOXNNR0NJWDNQOXVfQXNpb2JwalNuX25mQXRoYjRsUnRUVlAwR0xxa0Z1cVBpVF8zNUtuT2JvY1llejg3YWo1MFpEWm9nR0xRUlRUb0U1cWNOUU43MlBPVmp5ZWRtMzNBUkNnUG5WZzNETzBqcll1UXJTVDB4QlpLM0FrZ2c?oc=5) | Blockonomi |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -122,7 +131,7 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
-- 按本报告掌握的数据，没有触发任何一条成文的风险规则。这不等于没有风险——它只等于「这台机器读到的东西里没有」。
+- 政策面对该板块的倾向为 -0.46（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -144,7 +153,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-11-04 | 1,440.00 | 1,445.96 | 1,401.59 | **1,417.99** | +0.6% | 3,637,300 |
 | 2026-11-05 | 1,434.00 | 1,453.00 | 1,364.73 | **1,364.73** | -3.8% | 4,878,900 |
 | 2026-11-06 | 1,350.45 | 1,377.28 | 1,333.22 | **1,354.00** | -0.8% | 3,803,200 |
-| 2026-11-09 | 1,365.40 | 1,419.67 | 1,364.58 | **1,411.95** | +4.3% | 3,759,968 |
+| 2026-11-09 | 1,365.40 | 1,419.50 | 1,364.58 | **1,411.82** | +4.3% | 3,759,969 |
 
 ## 七、自己去查（本页不做独立验证）
 

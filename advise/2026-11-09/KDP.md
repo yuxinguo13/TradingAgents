@@ -112,8 +112,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 10h 前 | 8 | 中性 | [Q3 profit rose at Keurig Dr Pepper (KDP), with a $400M investment-sale gain in the mix. - Stock Titan](https://news.google.com/rss/articles/CBMisgFBVV95cUxObXczUWNWWm9aOUd3aTFhZE1SakI1VE82ZHBPV2tWRjJHWUROTThKeFpyNlRUSWFvQkE4emhXcTNtdG5XVGdHRGNNcGFGdjJSRjNvcXNpUkNPUkZmNkNNZWJmaUVwYUcwS3FfZlRDM0theDZkMVlvNFk4cGdVTGxJOE1IVmVNMWY0OUVLTnlZY21LWmFnY1RlVWdRbFI5UUZhMkdiTVFGQ0RHLWp5SWVGNDRn?oc=5) | Stock Titan |
-| 37h 前 | 8 | 偏多 | [Keurig Dr Pepper (KDP) After Strong Q3 And Alta Launch Looks Near Fair Value - Simply Wall St](https://news.google.com/rss/articles/CBMi4AFBVV95cUxOWHFDRllMa3JMcGFlM05mX0pxZUllM3J2ME9CaWs3cVNlYUZPOTJlcG5FdWtjM0FsQVJNVXNvOWdTZDZ5LUlWclROdGJ1YVluWDhnWEJuQ2lWWHVqM09NMThHRlZVSGptLTFXOWhuUFdVaXhqRkRNSmJROU1ic3NKX3RPeE5LZ08zTUVwT3prU18zRzl6UGxidjZIVkxzVXpMZk94bFZVVVJYTmZPYXZqdUp1bFY4R0UzUXhEeldQallNYkpHMVh1dkJOWWhIMktiT3NnT25tVFNfUFVRX24xLdIB5gFBVV95cUxNX2NySDgwSHp1ZWhHODRsMEZ4clpLNW1qc1psaDFNNi1rRDBjRjNES05nWEdTT3UzNTZOcVc4UnpDZ0F2ZmRsbW8xV1VOU2FqUHVYdTgzZzRGVThONWVVSFRZcXNObkFGQjlOSTdvUV9ZV1hIOFNYUy1GNFhCVENNT3VySzBqemVzSFpYbEtteTFMcURsUm5rM0ktaDkyNXhYWjJHaGdLaUNFMDBoUVdMNEVncU1jeXhHOEZ2dl9yVjcxNE1OQm1zRGw2aFdUTHhrdkFqaWlXVEI0V21aU0dmVlpqVjdidw?oc=5) | Simply Wall St |
+| 13h 前 | 8 | 中性 | [Keurig Dr Pepper, Inc $KDP Stake Lessened by Allspring Global Investments Holdings LLC - MarketBeat](https://news.google.com/rss/articles/CBMi3gFBVV95cUxPZ21Fd2h4bDY2NTRNU1FmNlF6SEg2d2lNTXZpWjdsQ0l4UUdRQ3lReDQ5bHhrY29fTU1wRm5OTWFLRkdPMlBNY0NOWWNIVVF2NzlMYWpCcEZET1I0Rk9RSXNieUNTRG8zM3g3UVFWb3NpRFZGUnJRX29pazh2aDEtSEhTb2lkRFpFcFdVaFkwMFVOOFlsaUxteUFIT2x6YnVoVDh6RDdHdEZyc0JaQW9hSXhEeHdjNkJzRnE3WTZJNnBmSUpvb1B1OUI2T2dzaldjb1BjTWhiN2JjMUpVY0E?oc=5) | MarketBeat |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -121,7 +120,7 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
-- 政策面对该板块的倾向为 -0.62（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.94（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 

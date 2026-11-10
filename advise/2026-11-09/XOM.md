@@ -110,7 +110,13 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
+| 时间 | 材料度 | 倾向 | 标题 | 来源 |
+|---|---:|---|---|---|
+| 3h 前 | 6 | 中性 | [Exxon (XOM) Stock May Be 24% Below Fair Value After $20b Buyback - Simply Wall St](https://news.google.com/rss/articles/CBMizgFBVV95cUxPZzN0b0pPZlZ0dnN0bU1Ed0Z4RDRwMndjRWliTVZ4T0lraUVVbmJKVzZnTFFQdVZvWjVTdzl6aU5ISUFldk9WcmUyX2g2TnBWRFBaOVRFaUsxTG5sa0Z6VzJ5cWZROFozN3dsR1pUdjlBRmFnLWpiZXRBVFU3VGdCandXZjN2ME0zY0ZkcTRZWVFNOWNLaTdxRUg4V0ZmSUlaTW03a0hQQ2M0OHNHWW9GZ3FMaXUxOW9SWGE4OGxhb2tGNzAydzRTbk5jdXNzQdIB0wFBVV95cUxPVzBqdVBTZjFCTkFGZWVxdF9pNkpnUTlRSmZlLUVvMEMxS1JMcjktcmg2ZDAwMjVVU1ZpMzJzNEd4NDc0cFpFdy13Vk44SWVQSkRKREp3Y1J2a1ZUcm8xbUItczAzcHJoejVUT0szcV80U3F3MjdJZVRIYTBNck9TelZKY0EtczRoamFtTFo3YlJENjVTa0JzdGlNUlBiZWRJa0ZTY09FZWRCWWFSTzN5NmdGZWlsVnd4ckZmY2xUdXFac3EtTjZXcWpRT3dfX3V2cTRn?oc=5) | Simply Wall St |
+| 9h 前 | 0 | 中性 | [GTA Owner Take-Two, ExxonMobil, Clorox And A Financial Stock On CNBC’s ‘Final Trades’ - Benzinga](https://news.google.com/rss/articles/CBMirgFBVV95cUxPUnRndGVaUzZ1THNsOU03NjY1WWxJV2dJcVRmYnZUQnBZMF9xSzhpSjFtb2x2b1VNdTM1YXVvV0xzVWZZanZwOWhmcWg0QThvRTVlSEdVelFRVmJZWDVWeVM2VnJ2ZVNHTXdydXVkeVA5Zl9FbVRONGxtOWdaZWVoZ1QwY014WE95bjI2ekxDTXFxd2NEX2JUMjFMa1BXMlQ1R0lYbC1hZGEtbFRDblE?oc=5) | Benzinga |
+| 11h 前 | 0 | 中性 | [ExxonMobil Is Better Positioned Than XLE Post-Election (NYSE:XOM) - Seeking Alpha](https://news.google.com/rss/articles/CBMimwFBVV95cUxPQ0RXM1pPZnUzQzFzMGdHaXAxWEZBX3EzcU0zYTdnTUJlYXZiRk0yVk9QaDhUNllJdXlfbGZYMmJNVXhwUy1CWEdyLXNnRlNiV0Q5dFFCNG9vclJHRlZYNVdSTHVZMEpXYVJUNXIwdUt6dXJMSDFoNXctZXFWMzlheTFYN3hxSkRFVkhSdUt6QkpsUmRJZ2FFZnZzUQ?oc=5) | Seeking Alpha |
+
+_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
 ## 五、反方观点与风险
 
@@ -138,7 +144,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-11-04 | 174.26 | 174.61 | 167.39 | **169.27** | -4.6% | 25,652,200 |
 | 2026-11-05 | 171.06 | 173.67 | 165.14 | **165.30** | -2.3% | 18,795,100 |
 | 2026-11-06 | 164.25 | 166.79 | 163.51 | **165.87** | +0.3% | 15,868,500 |
-| 2026-11-09 | 163.82 | 165.55 | 162.84 | **164.73** | -0.7% | 17,172,427 |
+| 2026-11-09 | 163.82 | 165.54 | 162.84 | **164.73** | -0.7% | 17,172,428 |
 
 ## 七、自己去查（本页不做独立验证）
 

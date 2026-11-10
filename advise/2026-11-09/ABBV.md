@@ -110,13 +110,21 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
+| 时间 | 材料度 | 倾向 | 标题 | 来源 |
+|---|---:|---|---|---|
+| 6h 前 | 0 | 中性 | [AbbVie stock adds Nxera IBD candidate to immunology pipeline - ad-hoc-news.de](https://news.google.com/rss/articles/CBMiwAFBVV95cUxOUE8yTC1hTHVoTVJmUlJEZVZ1MWFtaXBxaGFfTktpNjNmSHUzUDgtRXpfSjdXYlBrQy04VzltYmlYYUZkcTlPcGkwRjRnRzhyaTRoRjFDZTVNOUhIZV91SDFtdl9ydm9DNEhlZU8waDN3aFcycXVWOXk1MWQwRUExc1FiVDI0UE9ncEtUODdxVWNFNERqbVFxWm02eFN1SnJaXzFyUTdrTHFDTUtpUHYwX1M4d2t0R3hMZF9hM0I3b1A?oc=5) | ad-hoc-news.de |
+| 12h 前 | 0 | 中性 | [Zacks Investment Ideas feature highlights: Moderna, AbbVie, Eli Lilly and Merck - Yahoo Finance](https://news.google.com/rss/articles/CBMiqgFBVV95cUxNNndYM2lSMHJ4Yll2b3RkcVBRX2lGVTE0ZjlLS0tsQVA4akJxSUFYa1kyNk9XTXpyTlhCRS1PRnhITG9qTVJZeFFVcG9KdW9oU3g5bV9FZlU2aFBINERhMEhBMjN5OHdkeDkyamZRaFQ4YVI5LXBCMjZRN0ZYQllVV2dwcjdFaEhVZDB2dGc4OUV1SnlSc29JUXhnekdHZV92WGZuOFpiR3lXUQ?oc=5) | Yahoo Finance |
+| 14h 前 | 0 | 中性 | [AbbVie stock at EUR 263.20, up 1.35% before Xetra - ad-hoc-news.de](https://news.google.com/rss/articles/CBMiqAFBVV95cUxQZUM5ZlREMXdhcS1lcF9FaHNmaEtRZHJJVWNjanJiby02OERSUXVqa2hJTGVvd2tYcmJWM2pnejdQNFk1Y0kxc0NKNWQ0QlZXVDkzaVl3Q21QbFM2Q3Jjd0hVUHBjNmdsYkR6RmNsaTlHWXRiTmE4alNPZ19KNzNiOXczSGU4Q25ZMEJJN1R2ZWRRWllBaENsTjhWaGUxQS04VTNyQTRzZkE?oc=5) | ad-hoc-news.de |
+| 20h 前 | 0 | 中性 | [AbbVie reports improved facial satisfaction among weight-loss drug users (ABBV:NYSE) - Seeking Alpha](https://news.google.com/rss/articles/CBMirwFBVV95cUxPWVBFN1VoZEZiTzBDSTMwcjJTS1h3QjdVYzkwUlh3NXpOY0tURjBLN0sxdUJ1cjF6ek45dnUwRlJRT292YlRfZFFsQ0pIc1lkTWZOWDZSejBrb3J6QlAzblpSYjhhRndWM1RxNktqN0xvWDZjUm9oaDk0WUNlTEFNNWR1OFRUX1F3TFRfYTZfWkdKSFJaWVZGMFVkVjZ6OHYyTVkwRHZ2SC1WWDctN2xz?oc=5) | Seeking Alpha |
+| 30h 前 | 0 | 中性 | [Is AbbVie Inc. (ABBV) the Best Healthcare Stock to Buy Following the 2026 Democratic Midterm Sweep? - Yahoo Finance](https://news.google.com/rss/articles/CBMilwFBVV95cUxOUmNCRVItTzVKZG4zenRnbmNKU1hUSG8tUWlDWEtVSnNuY09WMWdaWFk2bnhpQ2VBZVFqbml1SlFNS1FPblFKVVZCdzVyVXltemgyRHVkQzkwU1VEcE80eXV3THRWZmFuUjRneVRiaHVZWGE3NTVCcXhsVmdMTGtqNUI1YkFOdmR5LXRLM2VHb3EySG9ZMmpv?oc=5) | Yahoo Finance |
+
+_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
 ## 五、反方观点与风险
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
-- 按本报告掌握的数据，没有触发任何一条成文的风险规则。这不等于没有风险——它只等于「这台机器读到的东西里没有」。
+- 政策面对该板块的倾向为 -0.46（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -138,7 +146,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-11-04 | 293.95 | 295.40 | 283.32 | **294.83** | +3.1% | 8,434,200 |
 | 2026-11-05 | 298.74 | 302.93 | 287.71 | **288.24** | -2.2% | 7,967,200 |
 | 2026-11-06 | 282.27 | 291.73 | 281.07 | **291.31** | +1.1% | 5,039,500 |
-| 2026-11-09 | 293.84 | 294.57 | 289.59 | **293.30** | +0.7% | 5,821,616 |
+| 2026-11-09 | 293.84 | 294.57 | 289.62 | **293.30** | +0.7% | 5,821,617 |
 
 ## 七、自己去查（本页不做独立验证）
 
