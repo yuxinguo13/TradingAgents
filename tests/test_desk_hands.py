@@ -947,3 +947,20 @@ class TestReflection1109:
         b2 = self._broker([(18, 282.0)])
         ok2, _ = b2.raise_stop("ABBV", 281.0)
         assert not ok2 and b2.trading.replace_order_by_id.call_count == 0
+
+
+class TestReflection1110:
+    def test_a_stop_leg_below_the_book_is_booked_as_it_rests(self, home):  # noqa: F811
+        """ABBV: a staged half rested 18 sh at 281 and 17 sh at 280; the book said 281."""
+        shape("HLD", 100.0, drift=0.3)
+        book = DeskBook(home / "desk" / "trade" / "book.json")
+        book.positions["HLD"] = Position(symbol="HLD", shares=10, entry=90.0, stop=95.0, target=120.0,
+                                         opened="2026-08-12", stop0=85.0)
+        book.save()
+        v = FakeVenue(acct(cash=90_000, holdings=[held("HLD", 10, 90.0, 100.0)]))
+        v.open_orders = lambda: [
+            {"id": "s1", "symbol": "HLD", "side": "sell", "type": "stop", "stop_price": 95.0},
+            {"id": "s2", "symbol": "HLD", "side": "sell", "type": "stop", "stop_price": 94.0}]
+        pk = pack.Packer(broker=v, market=mkt(task="trade"), book=book, screen=screen_of(), now=MONDAY_OPEN).run()
+        assert DeskBook(home / "desk" / "trade" / "book.json").positions["HLD"].stop == 94.0
+        assert any("低于账本" in w for w in pk.warnings)

@@ -325,7 +325,12 @@ class Packer:
             if hasattr(self.broker(), "open_orders"):
                 for o in self.broker().open_orders():
                     if o.get("side") == "sell" and o.get("type") in ("stop", "stop_limit"):
-                        resting[o["symbol"].upper()] = o
+                        # a staged half rests two stop legs; the lower one is the
+                        # position's real protection (ABBV 2026-11-10: 18 sh at 281,
+                        # 17 sh at 280, and the book read 281)
+                        k, cur = o["symbol"].upper(), resting.get(o["symbol"].upper())
+                        if cur is None or _num(o.get("stop_price")) < _num(cur.get("stop_price")):
+                            resting[k] = o
             for h in sorted(account.holdings or [], key=lambda h: str(h.symbol)):
                 sym = str(h.symbol).upper()
                 f = facts.get(sym)
@@ -341,6 +346,13 @@ class Packer:
                         # the venue is the truth for stops: a stale book copy from
                         # another session undid a raise (MSFT 514.73 → 502, 2026-10-14)
                         pack.warnings.append(f"{sym}: 账本止损 {p.stop:,.2f} 低于交易所挂着的 {venue_stop:,.2f}，已按交易所同步")
+                        p.stop = venue_stop
+                        self.book.save()
+                    elif _ok(venue_stop) and _ok(p.stop) and venue_stop < p.stop - 1e-9:
+                        # a leg the last raise did not reach: book what rests, so the
+                        # next raise_stop is allowed and moves every leg
+                        pack.warnings.append(f"{sym}: 交易所有一张止损只在 {venue_stop:,.2f}，低于账本的 "
+                                             f"{p.stop:,.2f}；账本按交易所记，下次 raise_stop 会把每张都提上去")
                         p.stop = venue_stop
                         self.book.save()
                     staged = _num(getattr(p, "staged", float("nan")))
