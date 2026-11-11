@@ -1,11 +1,11 @@
 {
- "saved_at": "2026-11-10T20:19:19",
+ "saved_at": "2026-11-11T20:19:00",
  "positions": {
   "ABBV": {
    "symbol": "ABBV",
    "shares": 35,
    "entry": 289.18,
-   "stop": 281.0,
+   "stop": 280.0,
    "target": 315.0,
    "opened": "2026-11-02",
    "horizon_days": 30,
@@ -134,14 +134,14 @@
     "rs"
    ],
    "stop0": 19.0,
-   "pending": true,
+   "pending": false,
    "trimmed": false,
    "staged": NaN
   },
   "JNJ": {
    "symbol": "JNJ",
    "shares": 35,
-   "entry": 280.5,
+   "entry": 280.49,
    "stop": 272.0,
    "target": 300.0,
    "opened": "2026-11-10",
@@ -165,7 +165,7 @@
    "sleeve": "core",
    "triggers": [],
    "stop0": 272.0,
-   "pending": true,
+   "pending": false,
    "trimmed": false,
    "staged": NaN
   }
