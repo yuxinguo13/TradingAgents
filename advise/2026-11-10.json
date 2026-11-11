@@ -1,0 +1,412 @@
+{
+ "date": "2026-11-10",
+ "data_date": "2026-11-10",
+ "generated_at": "2026-11-10T21:22:29.987812",
+ "source": "/root/.tradingagents/desk/advise/my_portfolio.json",
+ "horizon": "long",
+ "total": 39659.83008789063,
+ "cash": 20943.49,
+ "cash_pct": 0.5280781575106822,
+ "lines": [
+  {
+   "symbol": "BRK-B",
+   "name": "",
+   "sector": "Financial Services",
+   "shares": 3.0,
+   "cost": 571.83,
+   "price": 583.3400268554688,
+   "value": 1750.0200805664062,
+   "weight": 0.04412575839806085,
+   "pnl_pct": 0.020128406791299458,
+   "action": "减仓",
+   "act_shares": 1,
+   "urgent": true,
+   "reasons": [
+    "近两天有重大利空：Berkshire Hathaway stock buybacks more than double as Q3 profit falls - ad-hoc-news.de"
+   ],
+   "cautions": [
+    "政策面对该板块不利（倾向 -0.96）"
+   ],
+   "stop": 398.96296008300783,
+   "target": 611.87,
+   "earnings_date": "2027-03-01",
+   "earnings_in": 111.0,
+   "verdict": "趋势向上且结构完整，且贴近 52 周高点——追高的代价是止损离得远；顺势的一侧在上方，风险在于结构一旦破位就要认",
+   "spark": "▂▁▁▂▂▂▂▂▃▂▂▂▁▁▂▃▃▄▅▅▅▆▇█",
+   "page": "2026-11-10/BRK-B.md",
+   "is_index": false
+  },
+  {
+   "symbol": "MSFT",
+   "name": "Microsoft Corporation",
+   "sector": "Technology",
+   "shares": 2.0,
+   "cost": 525.0,
+   "price": 533.1599731445312,
+   "value": 1066.3199462890625,
+   "weight": 0.026886649386191973,
+   "pnl_pct": 0.015542805989583242,
+   "action": "减仓",
+   "act_shares": 1,
+   "urgent": true,
+   "reasons": [
+    "近两天有重大利空：Futures Rise; Nvidia Falls On Spy Case Probe - Investor's Business Daily"
+   ],
+   "cautions": [
+    "政策面对该板块不利（倾向 -0.97）"
+   ],
+   "stop": 351.6689956054688,
+   "target": 549.15,
+   "earnings_date": "2027-01-27",
+   "earnings_in": 78.0,
+   "verdict": "均线与结构互相矛盾，属于震荡；这种形态里止损容易被扫，仓位应比顺势时更小",
+   "spark": "▃▁▁▂▄▃▃▂▃▃▃▄▅▅▇▇█▇▇▆▇▅██",
+   "page": "2026-11-10/MSFT.md",
+   "is_index": false
+  },
+  {
+   "symbol": "KO",
+   "name": "",
+   "sector": "Consumer Defensive",
+   "shares": 15.0,
+   "cost": 96.0,
+   "price": 96.91000366210938,
+   "value": 1453.6500549316406,
+   "weight": 0.03665295720405733,
+   "pnl_pct": 0.009479204813639397,
+   "action": "加仓",
+   "act_shares": 20,
+   "urgent": false,
+   "reasons": [
+    "趋势完好且回调到均线附近（93.93），仓位只占 3.7%，可以补"
+   ],
+   "cautions": [
+    "政策面对该板块不利（倾向 -0.95）"
+   ],
+   "stop": 65.82001229858399,
+   "target": 101.01,
+   "earnings_date": "2027-02-09",
+   "earnings_in": 91.0,
+   "verdict": "趋势向上且结构完整，且贴近 52 周高点——追高的代价是止损离得远；顺势的一侧在上方，风险在于结构一旦破位就要认",
+   "spark": "▂▃▄▄▃▂▂▂▃▂▂▂▂▁▁▃▄▆▆▆▅▇▇█",
+   "page": "2026-11-10/KO.md",
+   "is_index": false
+  },
+  {
+   "symbol": "AMZN",
+   "name": "Amazon.com, Inc.",
+   "sector": "Consumer Cyclical",
+   "shares": 5.0,
+   "cost": 255.0,
+   "price": 270.8699951171875,
+   "value": 1354.3499755859375,
+   "weight": 0.03414916232834447,
+   "pnl_pct": 0.06223527496936265,
+   "action": "加仓",
+   "act_shares": 7,
+   "urgent": false,
+   "reasons": [
+    "趋势完好且回调到均线附近（258.33），仓位只占 3.4%，可以补"
+   ],
+   "cautions": [
+    "政策面对该板块不利（倾向 -0.97）"
+   ],
+   "stop": 195.39299993896486,
+   "target": 279.0,
+   "earnings_date": "2027-02-04",
+   "earnings_in": 86.0,
+   "verdict": "趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌",
+   "spark": "▇▇▆▇▆▅▆▄▃▃▅▃▂▃▅▆▅▅▇▃▃▁▆█",
+   "page": "2026-11-10/AMZN.md",
+   "is_index": false
+  },
+  {
+   "symbol": "JNJ",
+   "name": "Johnson & Johnson",
+   "sector": "Healthcare",
+   "shares": 4.0,
+   "cost": 271.97,
+   "price": 280.7799987792969,
+   "value": 1123.1199951171875,
+   "weight": 0.02831883022766935,
+   "pnl_pct": 0.03239327418206739,
+   "action": "加仓",
+   "act_shares": 7,
+   "urgent": false,
+   "reasons": [
+    "趋势完好且回调到均线附近（267.20），仓位只占 2.8%，可以补"
+   ],
+   "cautions": [
+    "政策面对该板块不利（倾向 -0.57）"
+   ],
+   "stop": 197.92375219726563,
+   "target": 289.2,
+   "earnings_date": "2027-01-26",
+   "earnings_in": 77.0,
+   "verdict": "趋势向上且结构完整，且贴近 52 周高点——追高的代价是止损离得远；顺势的一侧在上方，风险在于结构一旦破位就要认",
+   "spark": "▃▅▅▆▅▆▇▅▅▅▅▆▅▂▂▃▁▂▃▅▆▆▆█",
+   "page": "2026-11-10/JNJ.md",
+   "is_index": false
+  },
+  {
+   "symbol": "QQQM",
+   "name": "",
+   "sector": "Unknown",
+   "shares": 15.0,
+   "cost": 298.13,
+   "price": 277.8699951171875,
+   "value": 4168.0499267578125,
+   "weight": 0.1050950021097152,
+   "pnl_pct": -0.06795694791806428,
+   "action": "持有",
+   "act_shares": 0,
+   "urgent": false,
+   "reasons": [
+    "趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌"
+   ],
+   "cautions": [
+    "50 日和 200 日线都失守、近三月 -7%；长线账户不按此卖，复核线在 200 日线下 20%（224.09），论点变了才走"
+   ],
+   "stop": 224.08911059570315,
+   "target": NaN,
+   "earnings_date": "",
+   "earnings_in": NaN,
+   "verdict": "趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌",
+   "spark": "▆▅▄▄▅▄▅▄▄▄▇▇▆▇█▇▆▅▅▄▅▂▁▁",
+   "page": "2026-11-10/QQQM.md",
+   "is_index": true
+  },
+  {
+   "symbol": "KDP",
+   "name": "",
+   "sector": "Unknown",
+   "shares": 40.0,
+   "cost": 37.2,
+   "price": 37.59000015258789,
+   "value": 1503.6000061035156,
+   "weight": 0.03791241673933977,
+   "pnl_pct": 0.010483875069566828,
+   "action": "持有",
+   "act_shares": 0,
+   "urgent": false,
+   "reasons": [
+    "趋势向上且结构完整，且贴近 52 周高点——追高的代价是止损离得远；顺势的一侧在上方，风险在于结构一旦破位就要认"
+   ],
+   "cautions": [],
+   "stop": 23.98098516082764,
+   "target": 41.18,
+   "earnings_date": "2027-02-23",
+   "earnings_in": 105.0,
+   "verdict": "趋势向上且结构完整，且贴近 52 周高点——追高的代价是止损离得远；顺势的一侧在上方，风险在于结构一旦破位就要认",
+   "spark": "▂▁▂▃▂▃▃▂▂▂▁▂▁▁▁▃▄▅▅▆▆▇▇█",
+   "page": "2026-11-10/KDP.md",
+   "is_index": false
+  },
+  {
+   "symbol": "ABBV",
+   "name": "",
+   "sector": "Healthcare",
+   "shares": 5.0,
+   "cost": 295.3,
+   "price": 293.8800048828125,
+   "value": 1469.4000244140625,
+   "weight": 0.03705008370327627,
+   "pnl_pct": -0.004808652614925579,
+   "action": "持有",
+   "act_shares": 0,
+   "urgent": false,
+   "reasons": [
+    "趋势向上且结构完整，且贴近 52 周高点——追高的代价是止损离得远；顺势的一侧在上方，风险在于结构一旦破位就要认"
+   ],
+   "cautions": [
+    "有利空消息 1 条，看一眼",
+    "政策面对该板块不利（倾向 -0.57）"
+   ],
+   "stop": 189.60252612304689,
+   "target": 312.74,
+   "earnings_date": "2027-02-03",
+   "earnings_in": 85.0,
+   "verdict": "趋势向上且结构完整，且贴近 52 周高点——追高的代价是止损离得远；顺势的一侧在上方，风险在于结构一旦破位就要认",
+   "spark": "▁▂▃▃▂▃▂▂▃▃▃▃▃▃▄▅▆▇▇▇▇███",
+   "page": "2026-11-10/ABBV.md",
+   "is_index": false
+  },
+  {
+   "symbol": "LLY",
+   "name": "",
+   "sector": "Healthcare",
+   "shares": 1.0,
+   "cost": 1380.0,
+   "price": 1433.0400390625,
+   "value": 1433.0400390625,
+   "weight": 0.036133287406595604,
+   "pnl_pct": 0.03843481091485512,
+   "action": "持有",
+   "act_shares": 0,
+   "urgent": false,
+   "reasons": [
+    "趋势向上且结构完整，且贴近 52 周高点——追高的代价是止损离得远；顺势的一侧在上方，风险在于结构一旦破位就要认"
+   ],
+   "cautions": [
+    "政策面对该板块不利（倾向 -0.57）"
+   ],
+   "stop": 881.154291015625,
+   "target": 1518.85,
+   "earnings_date": "2027-02-03",
+   "earnings_in": 85.0,
+   "verdict": "趋势向上且结构完整，且贴近 52 周高点——追高的代价是止损离得远；顺势的一侧在上方，风险在于结构一旦破位就要认",
+   "spark": "▃▄▄▃▂▂▂▁▁▂▂▂▂▂▂▂▃▄▅▅▆███",
+   "page": "2026-11-10/LLY.md",
+   "is_index": false
+  },
+  {
+   "symbol": "CEG",
+   "name": "Constellation Energy Corporation",
+   "sector": "Utilities",
+   "shares": 4.0,
+   "cost": 269.67,
+   "price": 267.760009765625,
+   "value": 1071.0400390625,
+   "weight": 0.02700566383388318,
+   "pnl_pct": -0.007082694531742595,
+   "action": "持有",
+   "act_shares": 0,
+   "urgent": false,
+   "reasons": [
+    "趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌"
+   ],
+   "cautions": [
+    "50 日和 200 日线都失守、近三月 -4%；长线账户不按此卖，复核线在 200 日线下 20%（222.40），论点变了才走",
+    "政策面对该板块不利（倾向 -0.90）"
+   ],
+   "stop": 222.40446929931642,
+   "target": NaN,
+   "earnings_date": "2027-02-24",
+   "earnings_in": 106.0,
+   "verdict": "趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌",
+   "spark": "▆▅▅▅▅▇█▇▃▂▃▃▃▂▇█▇▄▃▂▃▃▁▃",
+   "page": "2026-11-10/CEG.md",
+   "is_index": false
+  },
+  {
+   "symbol": "XOM",
+   "name": "",
+   "sector": "Energy",
+   "shares": 5.0,
+   "cost": 175.94,
+   "price": 164.47000122070312,
+   "value": 822.3500061035156,
+   "weight": 0.020735086466106785,
+   "pnl_pct": -0.0651926723843178,
+   "action": "持有",
+   "act_shares": 0,
+   "urgent": false,
+   "reasons": [
+    "趋势向上且结构完整；顺势的一侧在上方，风险在于结构一旦破位就要认",
+    "政策面对该板块有利（倾向 +0.96）"
+   ],
+   "cautions": [],
+   "stop": 123.82533325195314,
+   "target": 169.4,
+   "earnings_date": "2027-01-29",
+   "earnings_in": 80.0,
+   "verdict": "趋势向上且结构完整；顺势的一侧在上方，风险在于结构一旦破位就要认",
+   "spark": "▁▃▃▂▁▃▂▃▄▂▁▂▂▃▃▄▆▆▆███▄▃",
+   "page": "2026-11-10/XOM.md",
+   "is_index": false
+  },
+  {
+   "symbol": "GLDM",
+   "name": "SPDR Gold MiniShares",
+   "sector": "Unknown",
+   "shares": 10.0,
+   "cost": 81.375,
+   "price": 79.75,
+   "value": 797.5,
+   "weight": 0.020108507732702098,
+   "pnl_pct": -0.019969278033794113,
+   "action": "持有",
+   "act_shares": 0,
+   "urgent": false,
+   "reasons": [
+    "趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌"
+   ],
+   "cautions": [
+    "50 日和 200 日线都失守、近三月 -9%；长线账户不按此卖，复核线在 200 日线下 20%（70.78），论点变了才走"
+   ],
+   "stop": 70.77523977661133,
+   "target": NaN,
+   "earnings_date": "",
+   "earnings_in": NaN,
+   "verdict": "趋势向下或已跌破长期均线；在结构重新出现更高的低点之前，任何买入都是在与自己的图形对赌",
+   "spark": "▅▆▇█▇▅▆▅▅▅▅▅▃▃▃▃▃▃▃▂▂▁▂▃",
+   "page": "2026-11-10/GLDM.md",
+   "is_index": false
+  },
+  {
+   "symbol": "ASO",
+   "name": "Academy Sports and Outdoors, Inc.",
+   "sector": "Consumer Cyclical",
+   "shares": 10.0,
+   "cost": 68.69,
+   "price": 70.38999938964844,
+   "value": 703.8999938964844,
+   "weight": 0.017748436953374816,
+   "pnl_pct": 0.024748862857016052,
+   "action": "持有",
+   "act_shares": 0,
+   "urgent": false,
+   "reasons": [
+    "趋势向上且结构完整，且贴近 52 周高点——追高的代价是止损离得远；顺势的一侧在上方，风险在于结构一旦破位就要认"
+   ],
+   "cautions": [
+    "政策面对该板块不利（倾向 -0.97）"
+   ],
+   "stop": 42.297304946899416,
+   "target": 80.78,
+   "earnings_date": "2026-12-08",
+   "earnings_in": 28.0,
+   "verdict": "趋势向上且结构完整，且贴近 52 周高点——追高的代价是止损离得远；顺势的一侧在上方，风险在于结构一旦破位就要认",
+   "spark": "▂▂▂▁▁▁▁▄▃▃▃▂▂▂▃▄▄▅▅▆▅▆▇█",
+   "page": "2026-11-10/ASO.md",
+   "is_index": false
+  }
+ ],
+ "sector_weights": {
+  "Unknown": 0.16311592658175705,
+  "Energy": 0.020735086466106785,
+  "Consumer Defensive": 0.03665295720405733,
+  "Healthcare": 0.10150220133754122,
+  "Financial Services": 0.04412575839806085,
+  "Consumer Cyclical": 0.05189759928171929,
+  "Technology": 0.026886649386191973,
+  "Utilities": 0.02700566383388318
+ },
+ "tilt": {
+  "Consumer Cyclical": -0.9674267100977199,
+  "Industrials": -0.9746192893401016,
+  "Consumer Defensive": -0.9516908212560387,
+  "Technology": -0.9663299663299664,
+  "Basic Materials": -0.9397590361445783,
+  "Real Estate": -0.8974358974358975,
+  "Utilities": -0.8974358974358975,
+  "Financial Services": -0.9581589958158996,
+  "Energy": 0.9626865671641791,
+  "Healthcare": -0.574468085106383,
+  "Communication Services": -0.5348837209302325
+ },
+ "policy_brief": "## Policy and political backdrop\n\n### trade (129)\n- [9/bearish] The Children's Place blames Trump's tariffs as it files for bankruptcy - The Independent (5h ago, The Independent)\n  sectors: Consumer Cyclical-, Industrials-, Consumer Defensive-, Technology-, Basic Materials-\n- [9/bearish] Tariff refunds are still a boon to e.l.f. Beauty - CFO Brew (24h ago, CFO Brew)\n  sectors: Consumer Cyclical-, Industrials-, Consumer Defensive-, Technology-, Basic Materials-\n- [9/bearish] Nvidia Faces Potential New US Chip Export Restrictions to China Amid Reported CEO Investigation - Yahoo Finance (10h ago, Yahoo Finance)\n  sectors: Technology-\n- [8/bearish] White House vows to press ahead with tariffs despite midterm backlash over rising prices - CNBC (1h ago, CNBC)\n  sectors: Consumer Cyclical-, Industrials-, Consumer Defensive-, Technology-, Basic Materials-\n  ... and 125 more in trade\n\n### monetary (25)\n- [8/bearish] 10-year Treasury yield tops 5% after hotter CPI data increases rate hike odds - TradingView (4h ago, TradingView)\n  sectors: Real Estate-, Utilities-, Technology-, Consumer Cyclical-, Financial Services?\n- [8/bearish] Will the Fed raise interest rates in December? A hike looks likely after hot CPI, but isn't decided - Nacionale (7h ago, Nacionale)\n  sectors: Real Estate-, Utilities-, Technology-, Consumer Cyclical-, Financial Services?\n- [8/bearish] US October inflation exceeds forecasts as consumer prices rise 0.4%; Fed rate hike in focus - Moneycontrol.com (6h ago, Moneycontrol.com)\n  sectors: Real Estate-, Utilities-, Technology-, Consumer Cyclical-, Financial Services?\n- [8/bearish] Stock Market Today: S&P 500 Drops After Inflation Hits 0.4% and Fed Official Warns of Bigger Rate Hike - Coinpaper (6h ago, Coinpaper)\n  sectors: Real Estate-, Utilities-, Technology-, Consumer Cyclical-, Financial Services?\n  ... and 21 more in monetary\n\n### geopolitical (12)\n- [7/neutral] Jeffries Refuses to Say If He’ll Support Holding Up Funding Bill to Stop Iran War - Common Dreams (37h ago, Common Dreams)\n  sectors: Energy+, Industrials+, Basic Materials+, Consumer Cyclical-\n- [7/neutral] Saudi Pipeline Attacked as OPEC Output Climbs to 90% of Pre-War Levels - Crude Oil Prices Today | OilPrice.com (28h ago, Crude Oil Prices Today | OilPrice.com)\n  sectors: Energy+, Industrials+, Basic Materials+, Consumer Cyclical-\n- [7/neutral] Crude Oil Falls Below $92/Barrel As Trump Signals End Of Iran War - Trak.in (14h ago, Trak.in)\n  sectors: Energy+, Industrials+, Basic Materials+, Consumer Cyclical-\n- [7/neutral] Trump says US war in Iran ‘effectively over’ as he plays down escalation concerns - The Guardian (22h ago, The Guardian)\n  sectors: Energy+, Industrials+, Basic Materials+, Consumer Cyclical-\n  ... and 8 more in geopolitical\n\n### fiscal (7)\n- [7/bearish] Wall Street Prepares for a Potential US Debt Ceiling Shutdown in 2027 - Tekedia (27h ago, Tekedia)\n  sectors: Technology-, Healthcare-, Financial Services-, Consumer Cyclical-, Consumer Defensive-, Industrials-, Energy-, Utilities-, Real Estate-, Basic Materials-, Communication Services-\n- [7/bearish] EU Debt Ceiling for Ukraine Aid Exceeded, Russian Analyst Claims - PravdaReport (11h ago, PravdaReport)\n  sectors: Technology-, Healthcare-, Financial Services-, Consumer Cyclical-, Consumer Defensive-, Industrials-, Energy-, Utilities-, Real Estate-, Basic Materials-, Communication Services-\n- [6/bearish] Lame-Duck Congress Faces a Shutdown Deadline - The Fiscal Times (21h ago, The Fiscal Times)\n  sectors: Industrials-, Technology-\n- [6/bearish] Lame-Duck Congress Returns to Face a Shutdown Deadline and Hegseth Impeachment - The Fiscal Times (21h ago, The Fiscal Times)\n  sectors: Industrials-, Technology-\n  ... and 3 more in fiscal\n\n### regulatory (4)\n- [7/bearish] PRESCRIPTION DRUGS—FINAL RULES: CMS locks in Medicare drug negotiation rules for 2029 and beyond - VitalLaw.com (23h ago, VitalLaw.com)\n  sectors: Healthcare-\n- [5/neutral] Crypto regulation after the CLARITY Act stalls - Financier Worldwide (5h ago, Financier Worldwide)\n  sectors: Financial Services?\n- [3/neutral] SEC, CFTC poised to plow ahead with crypto rules - American Banker (6h ago, American Banker)\n  sectors: Financial Services?\n- [3/bearish] Antitrust Agenda: Representative-Elect Rebecca Cooke on Her Antitrust Priorities; How the Lame-Duck Period Will Affect Next Congress; The Ne (37h ago, The Capitol Forum)\n  sectors: Technology-, Communication Services-, Consumer Cyclical-\n\n_Sector effects above are directional heuristics, not modelled relationships. The sign can invert — a rate cut is bullish for duration unless it signals a recession — and a scheduled event may already be priced._",
+ "macro_read": [
+  "标普500 收 7,521，近一周 -0.6%，近一月 -3.7%，跌破 50 日线但仍在 200 日线上方",
+  "10 年期美债收益率 4.98%，较一月前 -0.26 个百分点",
+  "收益率曲线正向，10年期高于3月期 0.87 个百分点",
+  "VIX 19.5，波动平静",
+  "美元指数 102.3，近一月 -0.3%",
+  "原油 86 美元（月 -8.0%），黄金 4,039 美元（月 -3.6%）",
+  "本周最强板块：通信 +6.2%、可选消费 +3.2%；最弱：能源 -6.7%"
+ ],
+ "alerts": [
+  "需要今天处理：BRK-B、MSFT"
+ ],
+ "warnings": []
+}

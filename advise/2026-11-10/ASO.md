@@ -1,0 +1,197 @@
+# ASO · Academy Sports and Outdoors
+
+_可选消费 · 数据截至 2026-11-10 收盘 → 面向 2026-11-10 开盘_
+
+[← 回到 2026-11-10 当日报告](../2026-11-10.md)
+
+> 趋势向上且结构完整，且贴近 52 周高点——追高的代价是止损离得远；顺势的一侧在上方，风险在于结构一旦破位就要认。
+
+## 一、价格与图形
+
+```text
+      ASO · 近 126 个交易日（日线收盘）
+70.8 ┤                                                                           ╭
+68.6 ┤                                                                         ╭╮│
+66.5 ┤                                                                         │╰╯
+64.3 ┤                                                                         │
+62.1 ┤                                                                        ╭╯
+60.0 ┤                                                                  ╭───╮╭╯
+57.8 ┤                                                                 ╭╯   ╰╯
+55.7 ┤···                                               ╭╮            ╭╯
+53.5 ┤:::··╭─╮···········  :                            ││         ╭──╯    ::::···
+51.3 ┤ ╭╮ ╭╯ ╰───╮╭╮:╭──╮······::::::::::::::::::::::::╭╯╰─╮::::::╭╯:::::::····
+49.2 ┤─╯╰─╯      ╰╯╰─╯  ╰╮     ·╭╮╭╮╭──╮╭╮╭──╮··       │   ╰──────╯  ······
+47.0 ┤                   ╰──╮ ╭─╯╰╯╰╯  ╰╯╰╯  ╰──╮······│·············
+44.8 ┤                      ╰─╯                 ╰╮    ╭╯
+42.7 ┤                                           ╰────╯
+     └────────────────────────────────────────────────────────────────────────────
+      2026-05-13                       2026-08-13                       2026-11-10
+      · SMA50   : SMA200   ─ close
+```
+
+```text
+      ASO · 近 21 个交易日（放大看最近节奏）
+71.2 ┤                   ╭─
+69.1 ┤                   │
+67.1 ┤                ╭──╯
+65.1 ┤                │
+63.0 ┤                │
+61.0 ┤       ╭─╮  ╭╮╭─╯
+59.0 ┤  ╭────╯ ╰──╯╰╯
+56.9 ┤  │
+54.9 ┤──╯
+     └─────────────────────
+      2026-10-13 2026-11-10
+```
+
+成交量近 63 日： `▂▃▁▂▁▅▂▃▂▂▂▃█▄▃▃▂▄▂▁▂▁▂▁▃▂▂▂▂▂▂▁▁▂▂▁▂▁▁▃▂▃`
+
+### 图形读数
+
+- **均线排列**：多头排列 — 现价距 20 日 61.83（+13.8%）、50 日 54.51（+29.1%）、200 日 52.87（+33.1%）
+- **形态结构**：上升结构 — 更高的高点 + 更高的低点；前高 56.71 → 61.92（+9.2%）、前低 47.50 → 58.28（+22.7%）
+- **动能**：RSI(14) 76，超买区；近一月的斜率快于近三月（月 +30.9% vs 季 +43.4%），趋势在加速
+- **波动**：日均真实波幅约为价格的 4.0%；按本报告 2 ATR 的止损惯例，一个 R 相当于 8.1% 的价格距离
+- **位置**：距 52 周高点 -1.1%，距 52 周低点 +70.6%
+- **量能**：最新一日成交量为 20 日均量的 0.9 倍，量能正常
+- **相对强度**：近一月跑赢 标普500 34.5 个百分点
+- **支撑 / 阻力**：最近的摆动低点 58.28，摆动高点 —（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
+
+**我的读图结论**：趋势向上且结构完整，且贴近 52 周高点——追高的代价是止损离得远；顺势的一侧在上方，风险在于结构一旦破位就要认
+
+_以上每一条都是对已经发生的价格的描述。均线、RSI、摆动结构全部是滞后指标，它们能说明现在处于什么状态，不能说明下一步。你自己在图上看到的东西，和这里写的不一致时，以你看到的为准——然后去查是哪个数字有问题。_
+
+## 三、财报与基本面
+
+市值 $43.35亿 · 行业 Consumer Cyclical / Specialty Retail · TTM 营收 $61.91亿 · TTM EPS 5.96 · 股息率 0.81% · Beta 0.95 · 空头占流通股 23.4%
+
+- **估值**：TTM 市盈率 11.8 倍；前瞻市盈率 9.9 倍（市场预期未来一年盈利上升）；市销率 0.7 倍；EV/EBITDA 8.7 倍；PEG 0.72（低于 1，增长尚未被价格吃掉）。
+- **增长**：最新季度营收同比 +3.0%；盈利同比 +17.3%；最近 7 次财报里 4 次超预期。
+- **盈利质量**：毛利率 35.8%、营业利润率 15.0%、净利率 6.4%、ROE 18.6%。
+- **资产负债**：现金 $2.98亿；有息负债 $19.69亿；负债/权益 90.4%（负债适中）；流动比率 1.74；自由现金流 $1.70亿，为正。
+- **卖方预期**：18 位分析师覆盖；平均评级「买入」（2.05/5，1 为最看多）；目标价均值 60.89（较现价 -13.5%），区间 52.00–70.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
+
+**分季度损益**（季度数据，最新在左）
+
+| 指标 | 2026-07-31 | 2026-04-30 | 2026-01-31 | 2025-10-31 | 2025-07-31 |
+|---|---:|---:|---:|---:|---:|
+| 营收 | $16.47亿 | $14.42亿 | $17.18亿 | $13.84亿 | $16.00亿 |
+| 毛利率 | 40.4% | 33.2% | 33.6% | 35.7% | 36.0% |
+| 营业利润率 | 15.0% | 5.2% | 9.9% | 7.3% | 10.8% |
+| 净利率 | 8.4% | 3.7% | 7.8% | 5.2% | 7.8% |
+| 净利润 | $1.38亿 | $5,270.30万 | $1.34亿 | $7,156.20万 | $1.25亿 |
+| 摊薄EPS | 2.17 | 0.80 | 1.98 | 1.05 | 1.85 |
+
+**分年度损益**（年度数据，最新在左）
+
+| 指标 | 2026-01-31 | 2025-01-31 | 2024-01-31 | 2023-01-31 |
+|---|---:|---:|---:|---:|
+| 营收 | $60.53亿 | $59.33亿 | $61.59亿 | $63.95亿 |
+| 毛利率 | 34.8% | 33.9% | 34.3% | 34.6% |
+| 营业利润率 | 8.5% | 9.1% | 11.0% | 13.2% |
+| 净利率 | 6.2% | 7.1% | 8.4% | 9.8% |
+| 净利润 | $3.77亿 | $4.18亿 | $5.19亿 | $6.28亿 |
+| 摊薄EPS | 5.54 | 5.73 | 6.70 | 7.49 |
+
+**财报兑现记录**
+
+| 财报日 | 预期EPS | 实际EPS | 超预期 |
+|---|---:|---:|---:|
+| 2026-12-08 | 1.06 | — | 尚未公布 |
+| 2026-09-09 | 2.08 | 2.31 | +11.1% |
+| 2026-06-09 | 0.91 | 0.93 | +2.6% |
+| 2026-03-17 | 2.05 | 1.97 | -4.0% |
+| 2025-12-09 | 1.06 | 1.14 | +7.5% |
+| 2025-09-02 | 2.13 | 1.94 | -9.1% |
+
+_财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会滞后，TTM 窗口是厂商口径而非公司财年口径。以上任何一个数字如果会改变你的决定，请点开本页下方的 SEC EDGAR 链接看原文。_
+
+**财报日历**：下次财报 **2026-12-08**（约 28 天后）；上次财报 2026-09-09，超预期 +11.1%。财报日是这套止损体系唯一无法覆盖的风险：跳空会直接穿过止损价。
+
+## 四、消息面（过去 24 小时）
+
+| 时间 | 材料度 | 倾向 | 标题 | 来源 |
+|---|---:|---|---|---|
+| 4h 前 | 8 | 中性 | [Loop backs off Buy rating on Academy Sports on valuation, fundamentals remain upbeat - TradingView](https://news.google.com/rss/articles/CBMi3wFBVV95cUxQWVV0NUQxYXZmcTJ3YktHMGpWX25TSUJOYkFTUWRQcWpoRXVUUlEyZkdrT3VmbXdBeldrQnU3ampwY1Vua3JEWGhzNW1OWlJFZ3ZyNzRJaFNnUS03LVFGd3BMaUZhbklfN0JubmhEaEtjVENFYTI3UEU2OWhacUhBZVBPNGprMG12cUx6OXkxcFF4VTh6eGIxa2U1TWd0cUFTNUxZZVdXd3VGcVdFeFJVZGYtWTlOSzZYNlM4WGx5Y1puSGM0RGNldEdac1VFdHZ5M3VrSUcySzJPUVhRM29N?oc=5) | TradingView |
+| 4h 前 | 8 | 中性 | [Loop backs off Buy rating on Academy Sports on valuation, fundamentals remain upbeat (ASO:NASDAQ) - Seeking Alpha](https://news.google.com/rss/articles/CBMivgFBVV95cUxNUjN6a2lMYUdBdlVoX1JLN0x4R21mSy0xLWRpQlY0dGdqUWhvdVlVTm5JaHF1STF3Z2FOMTZEc3IyT0RTQWVKQnlYTjRqRjVoeGVrbEYwdTcyLTh3eDFZa2N1RjZTZ3F1UHNnSEs2S3JXYmhOT01pa0hQcG9CUXBIbVQyV3VtVzU0Y2xPcXFnRGc2SXlkOUZCa3NkWjRXb05DOFkyekdMY2p2YW8zdGRGWjRXVTFGS050Yl9XWUFB?oc=5) | Seeking Alpha |
+| 9h 前 | 8 | 中性 | [Cantor Fitzgerald Begins Coverage on Academy Sports and Outdoors (NASDAQ:ASO) - MarketBeat](https://news.google.com/rss/articles/CBMi0wFBVV95cUxPaVMyQlRObWJ4eS0xVzRjWXdkUDlrdnpSU25QWU5LazVJOTA0QjhWcGZEbUZ1eFUtbUdvMWRJVllabExZLTh4LTZMblRtNEVWdnloYTJnTzE5N0J4Yi04TFBIaGcxUGxOeWdvcnNid004Rlg0MmhrSGx0YWg4dHlDeUl3OWFhTUlKbE56NXd2czBxZzk4M01kYmttb1UtMjAxemVlMU9nZXdCaFJIVzZUcUExUzNYem5WMHJwQmdzWThhVE5GWkNWa01jR0FZeTU5SkNB?oc=5) | MarketBeat |
+| 9h 前 | 8 | 中性 | [Academy Sports and Outdoors (NASDAQ:ASO) Stock Bumped Down to Hold by Loop Capital - MarketBeat](https://news.google.com/rss/articles/CBMi2gFBVV95cUxQb2lpNWpNb0dZM0VuRERzV1k2bG8ySllTRzZ0ZDdhajJzV0JsQVhYOU9iLUdHbFNPTTJhYi1LaDhDYlRtaEc3d014YnZSZXgyV3J0eWtQQU9TYmZvc2VNUTlqamVUVUREOUFKdDVxQVpkb2tMdThkNzNKZVlMUTVaTjBUMW5GMm4zZXVzc1VkcEFsZXFzNU1JSHMxdEJEYWhiZllhTTBzYzNacFVyX1o4REtLaGtSNi1sRnNaOHluVU5PT0Mxbk1pSVVrbVEtYzdudTRmdHhPRW91UQ?oc=5) | MarketBeat |
+| 29h 前 | 8 | 中性 | [Academy Sports and Outdoors (NASDAQ:ASO) Hits New 1-Year High - Here's Why - MarketBeat](https://news.google.com/rss/articles/CBMiyAFBVV95cUxPci1tN0cwc0VhMFI0V2hQVmR0VDNiN255MDcyRE9iaW91MmEyX2l1bXFPR0pTWGgtT1VXalpmVWNUelVkOXdPNHROajFPNTdkR3o2M2NzSURsYzRUbHR2TTd4SUYybEtBQUdjREhkZFNZYUQxOGNZUUVWTFd5VGxHdjNGUlZEdWtEdUZmSDlJaUdSemhOaVRsSHJMdDg0UG04dHltdkVmWFl6S1ZaY2JpVE1rS0ctUnZDQ0xJT0ZvWlc2Mk9vc2t2ZA?oc=5) | MarketBeat |
+| 2h 前 | 0 | 中性 | [ASO or AS: Which Is the Better Value Stock Right Now? - Yahoo Finance](https://news.google.com/rss/articles/CBMilgFBVV95cUxNLVhGenVkN1hfZHBFNV91S3A1S2d3QXQ3YXZTbmNqNHNkTFRRVkhTeGhoLU5iLVlqV3prcEFNNlZnakZzcjFBNndFa3NQR3NkblhZV2hIUzdWRUx6R1R1cmlreExpcFZ6Wk9NLThsNGJnSVhneUtNd0I4RGM3ZXN0cGo3TFNtSjQ5Tkw1ZHowSW1xdHB5X0E?oc=5) | Yahoo Finance |
+| 8h 前 | 0 | 中性 | [Is Academy Sports and Outdoors (ASO) Stock Outpacing Its Consumer Discretionary Peers This Year? - Yahoo Finance](https://news.google.com/rss/articles/CBMinwFBVV95cUxONHczYmdLeXZ2RXg4dVNKREgwQ3hwbnhxaE9qbDh4bGp1MEJYNDlSdWdiSTVHVlpDRi1rVkZET0c2ZENTWl9zak9uZzJOTHU3OFQ5VGg4MWRvalp3UWlTZEkxdG41WG5wSUN2SHRpelU2YUk0QVpsU28xSjZEM3JnNkxSV1ZZVlRfdlBacmlEc1pSSlZ4M0dFZnQ3S3ZvZTg?oc=5) | Yahoo Finance |
+| 8h 前 | 0 | 中性 | [Is Academy Sports and Outdoors (ASO) Stock Undervalued Right Now? - Yahoo Finance](https://news.google.com/rss/articles/CBMinwFBVV95cUxPRjVsNzFCdHg1NjhLODZ3V3FUSldUem9FVHZFTmVwdUJSNWRrVWtRTEg4Y1l4dkl2SmRTMV9kbm5VdEdSUjZwNmZxVEl5Yy13RS1QdllId1hodmNYRUNyVzFGeHUyLWFDT3FBVTNLcVBUWm9aRkg3NWJBNXVFblFObnRHdUp0cXZtU0J0VHNMa0lZenl0cEd1TmtZU1A3bGc?oc=5) | Yahoo Finance |
+| 32h 前 | 0 | 中性 | [The first 100 in line at each Academy store get bonus cards worth $20 to $500 on Black Friday. - Stock Titan](https://news.google.com/rss/articles/CBMiuwFBVV95cUxNSFBBUW96Z2FoMVkzRVVORW1qN3czeGVBNll3YVU1eEtrcmROWnMtV2VTamY3d185OUQ0T21iODZWNGdJYldfQ1dsZklXdXJ0QmYtVmlYQ3B5QW1kNFhVNGVwMnhHbFkzTEcyS0Fwdi1NNDUtS3YxV3JQUmd6azk4d2ZvYmJxQi1WTW9ieXJUODZjTGhiOXNsM0RVWkVfNFJuT1JsRnZkeUtEbGpUZnFaZzZGVllxT1BrS3Bz?oc=5) | Stock Titan |
+
+_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+
+## 五、反方观点与风险
+
+_以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
+
+- 离最近的支撑 58.28 还有 21%——这段距离里没有明显的接盘位置。
+- RSI 76 已在极端超买区，短期回撤概率高于起涨阶段。
+- 下次财报在 28 天后，落在持有期内。财报跳空会直接穿过止损——那一晚的风险不是 1R，是没有上限的。
+- 空头占流通股 23%，是双向的：可能轧空，也说明有人在认真做空这个逻辑。
+- 现价已经高于卖方目标价均值 60.89（-13.5%）——共识认为没有上行空间了。
+- 政策面对该板块的倾向为 -0.97（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+
+## 六、原始数据（本页所有计算的来源）
+
+最近 15 个交易日的 OHLCV：
+
+| 日期 | 开 | 高 | 低 | 收 | 涨跌 | 成交量 |
+|---|---:|---:|---:|---:|---:|---:|
+| 2026-10-21 | 59.59 | 60.42 | 59.01 | **59.58** | -0.1% | 1,134,000 |
+| 2026-10-22 | 59.39 | 61.92 | 59.20 | **61.78** | +3.7% | 1,682,300 |
+| 2026-10-23 | 60.97 | 61.07 | 59.74 | **60.33** | -2.3% | 826,700 |
+| 2026-10-26 | 60.12 | 61.38 | 59.09 | **59.61** | -1.2% | 1,684,000 |
+| 2026-10-27 | 59.69 | 59.85 | 58.47 | **59.33** | -0.5% | 943,100 |
+| 2026-10-28 | 59.78 | 59.78 | 58.28 | **58.64** | -1.2% | 740,400 |
+| 2026-10-29 | 59.36 | 60.58 | 59.33 | **60.35** | +2.9% | 1,222,200 |
+| 2026-10-30 | 60.86 | 61.18 | 58.65 | **59.20** | -1.9% | 920,400 |
+| 2026-11-02 | 59.30 | 62.51 | 59.30 | **61.84** | +4.5% | 1,416,700 |
+| 2026-11-03 | 62.22 | 62.57 | 60.74 | **60.86** | -1.6% | 936,100 |
+| 2026-11-04 | 63.44 | 67.76 | 63.11 | **67.69** | +11.2% | 2,389,900 |
+| 2026-11-05 | 68.42 | 69.62 | 66.84 | **67.81** | +0.2% | 1,543,500 |
+| 2026-11-06 | 66.17 | 69.12 | 65.83 | **67.26** | -0.8% | 1,458,200 |
+| 2026-11-09 | 68.69 | 71.29 | 67.47 | **71.18** | +5.8% | 3,575,200 |
+| 2026-11-10 | 68.64 | 70.61 | 67.81 | **70.39** | -1.1% | 1,296,529 |
+
+## 七、自己去查（本页不做独立验证）
+
+**行情与图形**
+- [Yahoo Finance 行情](https://finance.yahoo.com/quote/ASO) — 本报告所有价格与均线的来源，先对这里
+- [TradingView 图表](https://www.tradingview.com/chart/?symbol=ASO) — 可画线、可换周期，用来复核本页的 ASCII 图
+- [Finviz 快照](https://finviz.com/quote.ashx?t=ASO) — 一屏看完估值、技术与同业对比
+- [StockCharts 技术面](https://stockcharts.com/h-sc/ui?s=ASO)
+- [Barchart 观点](https://www.barchart.com/stocks/quotes/ASO/opinion) — 把十几个技术指标折算成一个多空票数
+
+**财务与估值**
+- [StockAnalysis 财务报表](https://stockanalysis.com/stocks/ASO/financials/) — 十年利润表/资产负债表/现金流，免费且不用登录
+- [Yahoo 财务](https://finance.yahoo.com/quote/ASO/financials) — 本页财报数字的来源
+- [Yahoo 关键统计](https://finance.yahoo.com/quote/ASO/key-statistics) — 估值倍数、利润率、资产负债的完整版
+- [Macrotrends 长期趋势](https://www.macrotrends.net/stocks/charts/ASO/x/revenue) — 营收与利润的十年折线，看结构性变化
+- [Wisesheets/Koyfin 替代：GuruFocus](https://www.gurufocus.com/stock/ASO/summary)
+
+**原始文件（无中介）**
+- [SEC EDGAR 全部文件](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&ticker=ASO&type=&dateb=&owner=include&count=40) — 10-K/10-Q/8-K 原文；财报电话会与风险因素只在这里
+- [SEC 全文检索](https://efts.sec.gov/LATEST/search-index?q=%22ASO%22&forms=8-K) — 按关键词搜文件正文
+- [OpenInsider 内部人交易](http://openinsider.com/search?q=ASO) — 高管自己在买还是在卖，是少数不靠解读的信号
+- [13F 机构持仓](https://whalewisdom.com/stock/ASO) — 注意：13F 滞后 45 天，不能当作买入理由
+
+**消息与预期**
+- [Yahoo 新闻](https://finance.yahoo.com/quote/ASO/news)
+- [Google News 搜索](https://news.google.com/search?q=Academy+Sports+and+Outdoors+stock&hl=en-US)
+- [财报日历与预期](https://stockanalysis.com/stocks/ASO/forecast/) — 下次财报日、市场一致预期、历史超预期记录
+- [Seeking Alpha 讨论](https://seekingalpha.com/symbol/ASO) — 观点密度高，但是买方与卖方混杂，当作反方意见读
+- [公司投资者关系](https://www.google.com/search?q=Academy+Sports+and+Outdoors+investor+relations) — 财报原始 PPT 与电话会记录
+
+**中文渠道（转载源，不作独立验证）**
+- [雪球](https://xueqiu.com/S/ASO) — 中文讨论与财报摘要
+- [富途牛牛](https://www.futunn.com/stock/ASO-US) — 中文行情与公告翻译
+- [东方财富](https://quote.eastmoney.com/us/ASO.html) — 中文财务报表
+- [同花顺](http://stock.10jqka.com.cn/usstock/ASO/) — 中文资讯
+
+---
+
+_这一页是一台程序按成文规则读公开数据的结果，不是投资建议。它不知道你的资金、税务和其它持仓。图形结论来自滞后指标，财报数字来自厂商转录，新闻材料度来自关键词打分——三者都会错。把它当作一份整理好的证据，而不是一个答案。_
