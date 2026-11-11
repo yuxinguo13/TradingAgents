@@ -88,9 +88,33 @@
   "止盈单（用户 11/9）：每只持仓都挂一张 GTC 限价止盈卖单（约一半股数，挂在目标位）；每天的简报和日报都要列出每张止盈单今天的价格：不变 / 改成多少 / 撤掉，以及新成交的买单要新挂的止盈单。"
  ],
  "take_profit_orders": {
-  "set": "2026-11-09",
-  "tif": "GTC 到 2026-12-31",
+  "set": "2026-11-11",
+  "tif": "GTC",
   "orders": [
+   {
+    "acct": "PCRA B",
+    "sym": "KO",
+    "shares": 7,
+    "limit": 107.0
+   },
+   {
+    "acct": "PCRA B",
+    "sym": "BRK-B",
+    "shares": 1,
+    "limit": 640.0
+   },
+   {
+    "acct": "PCRA B",
+    "sym": "ABBV",
+    "shares": 2,
+    "limit": 330.0
+   },
+   {
+    "acct": "PCRA B",
+    "sym": "KDP",
+    "shares": 10,
+    "limit": 39.5
+   },
    {
     "acct": "PCRA B",
     "sym": "QQQM",
@@ -105,27 +129,9 @@
    },
    {
     "acct": "PCRA B",
-    "sym": "KDP",
-    "shares": 20,
-    "limit": 37.2
-   },
-   {
-    "acct": "PCRA B",
-    "sym": "KO",
-    "shares": 7,
-    "limit": 100.0
-   },
-   {
-    "acct": "PCRA B",
-    "sym": "ABBV",
-    "shares": 2,
-    "limit": 310.0
-   },
-   {
-    "acct": "PCRA B",
-    "sym": "BRK-B",
-    "shares": 1,
-    "limit": 600.0
+    "sym": "APLE",
+    "shares": 10,
+    "limit": 22.5
    },
    {
     "acct": "PCRA A",
@@ -146,6 +152,18 @@
     "limit": 1550.0
    },
    {
+    "acct": "PCRA A",
+    "sym": "CEG",
+    "shares": 1,
+    "limit": 305.0
+   },
+   {
+    "acct": "PCRA A",
+    "sym": "ASO",
+    "shares": 5,
+    "limit": 77.0
+   },
+   {
     "acct": "HSA",
     "sym": "JNJ",
     "shares": 2,
@@ -157,28 +175,48 @@
     "shares": 5,
     "limit": 85.0
    }
-  ],
-  "breakeven_close": {
-   "AMZN": [
-    270.3,
-    255
-   ],
-   "MSFT": [
-    556.5,
-    525
-   ],
-   "JNJ": [
-    288.3,
-    272
-   ],
-   "LLY": [
-    1463,
-    1380
-   ],
-   "BRK-B": [
-    606,
-    572
-   ]
-  }
+  ]
+ },
+ "dip_buy_orders": {
+  "set": "2026-11-11",
+  "tif": "GTC",
+  "orders": [
+   {
+    "acct": "PCRA B",
+    "sym": "APLE",
+    "shares": 60,
+    "limit": 19.6
+   },
+   {
+    "acct": "PCRA B",
+    "sym": "KO",
+    "shares": 10,
+    "limit": 95.7
+   },
+   {
+    "acct": "HSA",
+    "sym": "JNJ",
+    "shares": 3,
+    "limit": 277.0
+   },
+   {
+    "acct": "PCRA A",
+    "sym": "ASO",
+    "shares": 15,
+    "limit": 68.0
+   },
+   {
+    "acct": "PCRA B",
+    "sym": "BRK-B",
+    "shares": 1,
+    "limit": 577.0
+   },
+   {
+    "acct": "PCRA A",
+    "sym": "AVGO",
+    "shares": 2,
+    "limit": 335.0
+   }
+  ]
  }
 }
