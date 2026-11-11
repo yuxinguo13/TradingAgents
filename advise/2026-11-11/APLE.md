@@ -110,21 +110,13 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 20h 前 | 9 | 偏多 | [Is Apple Hospitality REIT (APLE) Fully Valued Following Strong Results And Higher Guidance? - Yahoo Finance](https://news.google.com/rss/articles/CBMimwFBVV95cUxNY2ltT3lOTU82Y1ZNcVhRZ01pRGpodEFyZmJiMUJ4MGpqOG1mVW0xc2pSRFFJd19WV1pmOTZZT3B6MHpoREQwNzVhbFRRUXBPdWhWbEgyZU0wZ0taYWJmU2U4dWh1UEF4dmhDczFFcERsTENBZ044ZFVmaUlQcWd3MWljbm8yS3Q4bmFPWEZTcTl4bTl2S0Q3eV84bw?oc=5) | Yahoo Finance |
-| 32h 前 | 8 | 偏多 | [Apple Hospitality REIT (NYSE:APLE) Stock Price Target Raised at Cantor Fitzgerald - MarketBeat](https://news.google.com/rss/articles/CBMi2AFBVV95cUxPVnBDYTZpQ3RtQmxTUmNhUFVmTG1GUl9SUjI5LVB6Zndqd25aYmViUk9JUGpFMkhxeVhVQ2doX29kWEJ2RF9VRlVJaU1FdEJDZ1JaTnMtMV9qRDNzUmlDQ1JkYzlaY0NNbUYyQVEtNkhvVFdDNHdaVEZsWnJzcWFLSW5mTEpxZnNGdzlBd2ZscW5tcmRHMUlMTVFSMFRuYVRHU1M3Wm1KdFg5VlptSVVHZEdZZ1hZVEdwV014M0czTmNHUEZWSHRJOTlMVkxiYmZXUF9NblFmT3U?oc=5) | MarketBeat |
-| 48h 前 | 8 | 中性 | [Apple Hospitality REIT (NYSE:APLE) Stock Price Expected to Rise, LADENBURG THALM/SH SH Analyst Says - MarketBeat](https://news.google.com/rss/articles/CBMi7gFBVV95cUxNcFpzYTg1SVVrNGp5N0JSbGRGQjRjSlZBMXUwV3BWb2lvSTlRT0Z1cnhtODlhWjl2NGVIdmNMTTNCLWZwNUZMOGlLcHZoR0JtcGJMSXpJM3VDMzRLMExTdXByQUhoTDlTR19pbWZteW4xbm9FalYxSURXV1NVQjJUVUdpamhIMXN1TWVGX2VQWWVWUjhCMlFSNWVZMlB4M2taZDBINzAzVWhpaGMyZllCNE9kc2tIWnlXUC12WmVwOWVzZVpCYkVTdHlqSUNBcU1GYzYyTnlwejl0eW1ZMm9GVEZyVVJiQ3hTdjItRDF3?oc=5) | MarketBeat |
-| 2h 前 | 0 | 中性 | [Apple Hospitality REIT, Inc. (APLE) Stock Forecasts - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMikwFBVV95cUxOakU3ZWFHWXRnRTh0WW5NbTZBeExhNkRoeWluRDFPanRGWGQ1ZjRBb0xNSy1tUHhnbnFUMlVFUGota1BxMVowcDNSLUVRMDk0elZtNllPRlRzVzMya1JJeUxjYkk2eWpuZHZBWjd6LWZvaU90T0k4VmNtOG83dktJSEwxRHZIWWpmazR5VEh4UkZHRmc?oc=5) | Yahoo! Finance Canada |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
 - 现价已经高于卖方目标价均值 18.83（-4.9%）——共识认为没有上行空间了。
-- 政策面对该板块的倾向为 -0.69（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 

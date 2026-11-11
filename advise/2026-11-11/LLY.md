@@ -37,8 +37,8 @@ _医疗 · 数据截至 2026-11-11 收盘 → 面向 2026-11-11 开盘_
 1,352 ┤           │    ╰─╯
 1,323 ┤           │
 1,294 ┤    ╭╮╭╮ ╭─╯
-1,266 ┤  ╭╮│╰╯╰─╯
-1,237 ┤ ╭╯╰╯
+1,266 ┤ ╭─╮│╰╯╰─╯
+1,237 ┤ │ ╰╯
 1,209 ┤─╯
       └─────────────────────
        2026-10-14 2026-11-11
@@ -48,7 +48,7 @@ _医疗 · 数据截至 2026-11-11 收盘 → 面向 2026-11-11 开盘_
 
 ### 图形读数
 
-- **均线排列**：多头排列 — 现价距 20 日 1,338.14（+7.4%）、50 日 1,230.06（+16.9%）、200 日 1,103.45（+30.3%）
+- **均线排列**：多头排列 — 现价距 20 日 1,338.14（+7.4%）、50 日 1,230.06（+16.8%）、200 日 1,103.45（+30.3%）
 - **形态结构**：上升结构 — 更高的高点 + 更高的低点；前高 1,321.21 → 1,453.00（+10.0%）、前低 1,257.62 → 1,333.22（+6.0%）
 - **动能**：RSI(14) 70，超买区；近一月的斜率快于近三月（月 +23.2% vs 季 +19.1%），趋势在加速
 - **波动**：日均真实波幅约为价格的 3.6%；按本报告 2 ATR 的止损惯例，一个 R 相当于 7.2% 的价格距离
@@ -110,25 +110,13 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 27h 前 | 5 | 中性 | [Hims & Hers Celebrated Its Eli Lilly Deal, Then Lost a Quarter of Its Value in a Week - Yahoo Finance](https://news.google.com/rss/articles/CBMilgFBVV95cUxOMXpwWk1sYWNONjdwbVRrZE9oUnBIWUZpUVhKcDF1SC1DdWRud0NtQ0JNOGluMUs5YXdCR0Vtd01tMEd4RHMwM3FndzRJemoyT01JaEZBdmhheTN4TXY4d1VKb1B3NDNsdGVDWWR6eDE0MFoyYnlWSWQwM1B0dDhyRkdxUVhSU1cxb1NaOHJBT3RIWGRMTFE?oc=5) | Yahoo Finance |
-| 1h 前 | 0 | 中性 | [Johnson & Johnson vs. Eli Lilly: Which Healthcare Giant's Stock Is a Better Buy for 2027? - The Motley Fool](https://news.google.com/rss/articles/CBMi2AFBVV95cUxQZkFTWHBWMklKTnVQQWtyUXoyZ255OERScmxmTzE0andPb1NvSDNON2xaRmRodTlNRlJDY3pwbDBEZmtyT3UzTjBrcVQ1d2lCTGRZQ3I1RnAxb2FOVXFMWk9HTmJmMHp2T1hnRnFUQ3hfcEpZdi1ZcWdQVW8yU3ZTcURuT0FuWGxOTURqdWduVUxYTnJ3ZlZwUEE5WHFGRHBIblR3WWZkWW9iZ2xRclhYZExzdk5ZQk8xUlZULWctenBWdmhGeFlQQUJyd3lEcUFDRjVLWlg0d20?oc=5) | The Motley Fool |
-| 5h 前 | 0 | 中性 | [Will Wegovy Pill Drive Renewed GLP-1 Growth Momentum for Novo Stock? - TradingView](https://news.google.com/rss/articles/CBMiwAFBVV95cUxQOEUwMzBIZTNGbTNRMDRpN04yWDNUaFRTdzN6YXF1OEVCWDZ0c2VlUlB2cXowWnJoSTdLSzdwcWtqRndtZ0FIa3QyUE14UWs1TXBGQzlXajNKYThIbmtpS08xUWtTQ1JWUU41U05qV0VVZGlHS0JxZTh1LVJmWl9xUnhGMTlIM0pnY29OaVA1Z05Eb3ZiZ2VwbFdiVHZXcE1IVEtYTmM5eXJaWHdnUEZfY094Y0U1MXVvSHlYd1RMTUs?oc=5) | TradingView |
-| 5h 前 | 0 | 中性 | [Pharmaceuticals ETF (IHE) Hits a New 52-Week High - TradingView](https://news.google.com/rss/articles/CBMipgFBVV95cUxPUzBiWmZ4NWRBdHdPVURaNTlGVGQxT0sybU1lcVpUaDF2WVBLSTlxamZ6eExHWUJ3QTJDYmVBdmpSb0xOb0hMTHFKZnJxOHhQQUtpQUNZQ01VazZEamhpOTB2M3U4c0F5SGFFbXpqemZveUR0R2tfTlRvaktkY19xZWkzRFYyLTMtVjJUSnBZblZ2Tlc3WFNFZUdVNkVNTkdjenhRN3lB?oc=5) | TradingView |
-| 6h 前 | 0 | 中性 | [Bank of America resets Eli Lilly stock target ahead of key event - TheStreet](https://news.google.com/rss/articles/CBMiwAFBVV95cUxQQVdEeXZSTlBiVjVSZ2JVTzR0QzV0TGc5NENkUHpReDJsTHJxcm04bUg1TUtjSGhLLUZRUUNwam9Ibzc4LVppZXV3d2IyMFFqX25EajI2MHoyTk9uaEVYOFpnVndWdXd3SzA0bFVQU1NoR3hLSFFaVFJzZkVxRWtfaFl2aW5IOUd4eXFhWmFPVS1iMzZVM2ZQeF9iSmEyX0NBei1PUnFFRmo4NjZmNFh4TzFxR3UyV1VpaXBrcVN3T0E?oc=5) | TheStreet |
-| 7h 前 | 0 | 中性 | [Eli Lilly shares weekly forecast: Recovery supported by bullish momentum indicators - Traders Union](https://news.google.com/rss/articles/CBMiiwFBVV95cUxNRmhhUmxYUFZySjlJc3FKUTktUmJZTjBoQWMxdnFCRmJnRGFwNTBuX1EtLVhINVBoZ2pqc3dZRkRPdXBfMXFBUDRzbVBMbWZGeWRmRm1OWlhIeUNLSG5FeThKcWZHTmpmVHJwSWdoaGdsQzZhMkhpUmw2NVpzWmlQZzBvZEVjZW94eUkw?oc=5) | Traders Union |
-| 7h 前 | 0 | 中性 | [3 Mega-Cap Stocks with a ‘Perfect 10’ Smart Score - TipRanks](https://news.google.com/rss/articles/CBMijgFBVV95cUxQMm9xN0hPLTlDQzBhb3pMbHRfTTJzTU95LXFOdmg2aXhyclhpa2pKT29nRkdNYkpMbklTX3g5dkIwWDE2RW1pTjdNcEwtc1NOaFJ3ck03SVZtM3N0MDk0aWRxcElleXU5V3dkM2dOb09Uby1rWEplZnJFU3BhVnVPaW5Ecmd0UFlWR2lpS3Vn?oc=5) | TipRanks |
-| 9h 前 | 0 | 中性 | [Lilly sued over alleged firing of sales rep (LLY:NYSE) - Seeking Alpha](https://news.google.com/rss/articles/CBMihAFBVV95cUxPMFdXSXJnbExNczNVWGw5dzNtLWJlbjdWUUMwWExmQVdTTFktMlVzbDZlS2I2bkNEdU9LVV9DZU5SSUtJcHlrNzc3MHZHTDFodFNWM0NqV0xJS1JiWGQ0ejdTckhWSEJmNGVZcUhXNlBjV3NUdDVacnRhSmpKOG12dzIxeWQ?oc=5) | Seeking Alpha |
-| 30h 前 | 0 | 中性 | [Eli Lilly vs Novo Nordisk: What's the Better GLP-1 Stock to Buy? - The Motley Fool](https://news.google.com/rss/articles/CBMiqAFBVV95cUxNNTh4V1NfVjBib18zS1BNd3dXRG5GSE5leTVaVkhINGpld2Eycy1HN1pIOXZRY0VXbEhQa2lMbkk3V2x0anZJcUJlbDN6RmxVdXdIamJTdTJkNDlKLWFRamtWeTNtTThlVTJ5U1JyX2V4UHh5V0hCUUtaQkQwalZxWk9VMmhfQTM1RTg2LURsODBFQkhibHVod0pkN1R0bDJkVENaYWJPdHQ?oc=5) | The Motley Fool |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
-- 政策面对该板块的倾向为 -0.41（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 按本报告掌握的数据，没有触发任何一条成文的风险规则。这不等于没有风险——它只等于「这台机器读到的东西里没有」。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -150,7 +138,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-11-06 | 1,350.45 | 1,377.28 | 1,333.22 | **1,354.00** | -0.8% | 3,803,200 |
 | 2026-11-09 | 1,365.40 | 1,419.67 | 1,364.58 | **1,411.95** | +4.3% | 4,029,800 |
 | 2026-11-10 | 1,408.49 | 1,438.88 | 1,400.00 | **1,432.29** | +1.4% | 3,017,000 |
-| 2026-11-11 | 1,418.08 | 1,440.35 | 1,414.77 | **1,437.43** | +0.4% | 1,845,654 |
+| 2026-11-11 | 1,418.08 | 1,440.35 | 1,414.77 | **1,437.29** | +0.3% | 1,845,654 |
 
 ## 七、自己去查（本页不做独立验证）
 

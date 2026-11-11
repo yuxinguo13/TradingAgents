@@ -110,20 +110,13 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 23h 前 | 9 | 偏多 | [Can AbbVie (ABBV) Justify Its Valuation After Raised Guidance And Strong Results? - Yahoo Finance](https://news.google.com/rss/articles/CBMiowFBVV95cUxOeUh5MUloX3Axc0gtakJLaElvZFh6UjlFVENaR3FQVktTTGRPWlhKMWNCMzBSdkRlWWYwMlI1SWlaT0JDdE5MbnhfdkEyNXVrTDBpSU9rcEN1Wk5PZWpXYXhOV0FWeGhDRWRVT0pFSGRReGtMZjFKRWtHRkhjTm5JS3EzY3U3ZkwwYjd4X1gxWDlXWFNoUTNhSUtVSWY1cDM1emhv?oc=5) | Yahoo Finance |
-| 3h 前 | 0 | 中性 | [ABBV Stock Rises More Than 4% in a Month: Time to Buy, Hold or Sell? - The Globe and Mail](https://news.google.com/rss/articles/CBMi4gFBVV95cUxNb0FSU3VySWlHbDR4Q2JhblQ1YUYzbU90aUZabG44RE1xbElYQnJHSENEWGx5SE1Gcm9Ec0JTU18yOW1vUXl5cWhSSHBjNnVYWWpnMTJ2bi1WN1UyanYweGlFcjVWWUZpQnV1SXM4d2NhV2FDSi1TODJzYng2RU4xWUdRNmNCYzNWQVltQ25lTUY0cktyeWVWdEo4VS11clc1eGZUVjlZQkZMNFVnekttRklNS3F3Mmt5ekUtaVJ0T3A3eEZhaHNFeXB1Si1SVTN5LXZuY3EwZmgzZndMZUtZNm13?oc=5) | The Globe and Mail |
-| 6h 前 | 0 | 偏多 | [AbbVie (ABBV) Stock May Be A Bargain Following Raised Outlook - Simply Wall St](https://news.google.com/rss/articles/CBMi0wFBVV95cUxNRmlveDhOWG9Xa1B1bHpHV1U2REMxTVoyekJjd3dfM3FDYlJYemdfeUVLdDNsMXpWVzZ5ZE5wem5WbGhEenU2Vnd1VHhFZFJYQUxIT3ZiaW9nb1J6WGVGamQ0YzA1TVpjdG1IbEc5VDlQVkpLR1FkMFJzcHItcHgyUE5rZ3dEcjJ4anFHMG9JQlFoWkxKaDdvX2dBdUZvNTVOVUI0LVZlcU1XNEtQOURqdXAwMV8zVVlWQm1nanJLZW5pMko3ckd3cWlkU1p2anh5YXNj0gHYAUFVX3lxTE9uU0hjek5zVGMyckxrbi1SamtXeng5aTdnVWl3Q2hzZXNsQWh4RXFTZy14eHFLalNXa3o1OERDejZsTlk2M1ZOOVRyVHJRaEV0Y0I0TU90RmRIeThJQTVvQU5kLW9UOGRjckhuaDBuRjFPZDdEZlhTdXVIMXJzZkRxSFhYTXFMQXZ0TXlTekYxV2dxcjNhYUdEclhselVUbTJEU29WMXRpZng3aWFXaVNzLXN5akUyekJiaVpmNHN0c1ctbUVIcHhKRG1wcDhxN0MxM1l3dWNlVQ?oc=5) | Simply Wall St |
-| 9h 前 | 0 | 中性 | [AbbVie stock gains pipeline support from migraine and cancer programs - ad-hoc-news.de](https://news.google.com/rss/articles/CBMizAFBVV95cUxQdWN4NTMzWlNYYThCZ0I3RFFlcUM1RHJLeDFTaERneGQ5R3hXS0RrTThUZjd1TWUydVhmVloyTzN1c1lxaXY2R1J0YUdsVEZkLWN6Snk2ZlVPcmJnQmt6Ukx6MWljdHdkZVdVanB3amhQSWxXaWxoVHI3a1J2blpDTjY5VHJCMUVEc1dhYVo4ZGtIWFEzQXd3Nnl1dUxUOFcyV0hUaUFERmhianFjUmttSjF0RS1jNndtVU84SWQzVDdNeHVMemx0ZG52bUY?oc=5) | ad-hoc-news.de |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
-- 政策面对该板块的倾向为 -0.41（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 按本报告掌握的数据，没有触发任何一条成文的风险规则。这不等于没有风险——它只等于「这台机器读到的东西里没有」。
 
 ## 六、原始数据（本页所有计算的来源）
 

@@ -112,8 +112,9 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 10h 前 | 0 | 中性 | [Your Easiest Way to Crypto - Trade Bitcoin, Ethereum &Most Trending Tokens - MEXC](https://news.google.com/rss/articles/CBMihAFBVV95cUxNWHVnQTNnRVY5WU9JTU1qWnUtVmNjdC1VOXlsMm4zTVItQ2hQcFZzeFgtb3cyMndCTDNIWVJmZGFxeEJzXzFRcGtpYm82ZmxwcjMtNDRyWmNVakhWT0oyazZvUFBTS3NYR1lSWUpPX2tYM096ZUk4Q3JyWWJQMVU2SGxjTnc?oc=5) | MEXC |
-| 20h 前 | 0 | 中性 | [Keurig Dr Pepper Inc. (KDP) Stock Forecasts - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMikAFBVV95cUxPSmltZ2g2cGtnQmREQUlhaGhVc1VRUDd3dERYMlpLdG9qOGRhOC1OVVRodEdXTVhta1VCUThtbHpaUjdtUEhoTVhaUXhvOURhZEtBMkcwSjBEOVJlU202ZmRsS0xtR0Y5SXRHc1pIc3lBMks0MjhQbVNqbGM2d3VXUEwyNXFCUk40NjRGV0hiOFE?oc=5) | Yahoo! Finance Canada |
+| 3h 前 | 8 | 中性 | [Keurig Dr Pepper (NASDAQ:KDP) Hits New 52-Week High - Still a Buy? - MarketBeat](https://news.google.com/rss/articles/CBMivgFBVV95cUxPN3FwV25mRTMyQzluOFF3OXYteUxlTkJQM21WUlVMWFZ3MUQxc25PeGtyNmtFQUhSXzByRFRTeUVzWVZsZGpnSXBQM2J5cHFOT0xTbkJhLWp1VWRoMEFjNGhXNG91Q09lVjJuczBmNXhmT2E4MF91c2czclVlY0hmVjlTYUxRSTNhNTQ2V2MyZDJGOW5URXBaYnRVWVhNT3ZmTUlLN0ZuYWJod1dWR3JxN1ZJTTlSUjktXzFseHVn?oc=5) | MarketBeat |
+| 6h 前 | 0 | 中性 | [Keurig Dr Pepper stock hits 52-week high at 37.89 USD - Investing.com](https://news.google.com/rss/articles/CBMirAFBVV95cUxOVVFVRWRXNGdDWFhGUENQSHhqM19zV0FGSDJSUnRDU2dQTVNCMWdnMS1Damo5YUVDcVJQemtvMUx3NU5mdXZJdzZiMG1GbXVQUG50MVRtakEyRmwzMmhIVDRPUTJMRXZXU1hwVjFyWjM1Y0x1ZDF1dEtuQU82RjBFNFVHYzRkaXM1MEozaFpCRV9BZGlHUHhuRkpJWDA1UmZ1TGt4SjIxdmN4clRD?oc=5) | Investing.com |
+| 9h 前 | 0 | 中性 | [Is Keurig Dr Pepper (NASDAQ:KDP) Brewing a Coffee Comeback? - Kalkine Media](https://news.google.com/rss/articles/CBMioAFBVV95cUxNTFd1T1NvWDFEamt4aVR1WEVNZzdBWXk1dE5mbFcyTVo1TjJVV0tHR04wejM5RF9fZEVIN2V5UEZsX2MxSjc2Y2pYYXpzTlF1YjV0WlhYRDhqWmFjdVVXYmNLUC1IZ3JXN2MtdzM2Z18xdUtEZmFLMW5tWHlGQlRUbkxCZy1IMzU1ZDEweW00SDZmMlhWZkpHRzZ5a2lkYUd2?oc=5) | Kalkine Media |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -122,7 +123,6 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
 - 现价已经高于卖方目标价均值 38.08（-0.4%）——共识认为没有上行空间了。
-- 政策面对该板块的倾向为 -0.94（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 

@@ -110,28 +110,13 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 8h 前 | 9 | 中性 | [Johnson & Johnson stock: 73% PSA response supports Phase 3 test - ad-hoc-news.de](https://news.google.com/rss/articles/CBMivwFBVV95cUxPbzEycEpXT3VEUWRaQXJCLUtNYUtRU2N2dEFta2o5T0tDWWVRZVRuTE5iNnEyQjU3d2hjR1NxUEVHTi1MM21nTHBlNDlXNDZDNWh6ajR2dW1jU2U5VTU3bTRrMndPSWRrUmlQOHVXdnI3VzAzWHJiemh4YkpfTTloc1JJeGlqWDZrSHl3dkdVUU93OVZ0NVlWTWZ5MHVYTGRncGVKVFhDMUVHSFhLazBZVE5rXzVzazVxbEJLNVE2TQ?oc=5) | ad-hoc-news.de |
-| 22h 前 | 8 | 偏空 | [Law firm investigates Johnson & Johnson over Q3 earnings miss and talc litigation charges - Pluang](https://news.google.com/rss/articles/CBMiowFBVV95cUxNRTk2N214LXdwVVRUX0hVUTZ2UGVpSU5Qdl9YWWVIUGNmM1hyRk1TYkJ2N3FteWloVzdrZkREd1dtMEk3ZEl1TXVzYjJOT2ppcWpmOFVoWHk2VFAyVXV1LXlZRkZQQnBGU2hkdzV5WXdIc3pINlZhUWhTckFrVlhhaElvMU43VkF4Tmo3RllmR1E3S0d4ZTJVbUJBNUNFTVYxLU93?oc=5) | Pluang |
-| 1h 前 | 6 | 中性 | [Johnson & Johnson Sees a Path to Double-Digit Growth by 2030. Is the Dividend King a Buy? - The Motley Fool](https://news.google.com/rss/articles/CBMimAFBVV95cUxQaXhxY29CS0dCM2JKN2tVTG9oUzNBMi1ENHg5WWZxYVh2SkdpMXRPU1h5b2NzNWZKXzROU0o1Q0NDaTdiNDNsUUtxX2wzbzVFdnJYbjhXOEV3T3VwTVBHWGRXZEpKV3lqVlR3ZnROOW9Jb1JaUVE2bE1RdW5CbTdpeS1iTVY2Y0ZKOFYyU0lmeVFfcVlmNEtkaQ?oc=5) | The Motley Fool |
-| 6h 前 | 6 | 中性 | [3 Legacy Health Care Dividend Stocks That Never Go Out of Style - 24/7 Wall St.](https://news.google.com/rss/articles/CBMiqwFBVV95cUxPeHU4SWUzR3BiTllCZjd0NVNkdlBPV0djWklWUVNqN1pVUFJ0WGRQQkZhVzBldE1KaDFBX21tN1pVWTB4Q3dfbGktTjFsRGtCWFZlMHZYbWxMcGx3aHFEMUNIc0JqZmUxbWRUM2VUWS1sOWhDQjlZVmw1NUVjZjUzLWlQMjFkd1ZnejdBel90M2NFQ3k5ek9MY1NMek53TzlBd2ptQVZVUDdCWlE?oc=5) | 24/7 Wall St. |
-| 26h 前 | 6 | 中性 | [Treasuries Now Offer 2.66% Above Inflation. Are Dividend Stocks in Trouble? - AOL.com](https://news.google.com/rss/articles/CBMieEFVX3lxTFBsZGloVFdISUV4OTVXYnM0Y1RQREwwYUxSblFGLTk3LWRWOTRDMXJuUGhPOTMyYndxcjVxQzRBQ0dlckg5T2hHZUpiYjBPRTM2a0NhcjV6ZEZsb0MxOU8zOVNkUFM0LUR4SnJ4M2Y1Mjk4ajNIUzRrbQ?oc=5) | AOL.com |
-| 1h 前 | 0 | 中性 | [Johnson & Johnson vs. Eli Lilly: Which Healthcare Giant's Stock Is a Better Buy for 2027? - Yahoo Finance](https://news.google.com/rss/articles/CBMikwFBVV95cUxPMjRFdFlOU1dKZkI0NDJ6LWh0eFNRRzh1a1BHU3ktRUFjQXByT29vd3k1OERLeHg1dW9KeDN1VkZGY2dzNnJDZ0haalFVNEhkRVlXUHByR0l0MWE2dDNlOHZhdmh1LVdUN3hEY2ZqQThJRWxZZHNzRnhHYUJzdEprVUtFRkstWXdLMHdxeFIwTmJNME0?oc=5) | Yahoo Finance |
-| 4h 前 | 0 | 中性 | [Johnson & Johnson Reports Favorable Data For Bipolar Study - Benzinga](https://news.google.com/rss/articles/CBMisgFBVV95cUxQRHgxUDhXUllGamNCbkZ2QlhuZVJiazhLb1lIdmpWSFFOYkxDbTZDTUw4M0swREhRVV8wOVlibDNZclFqbkNVMGlEUTFlUGRGWklKN0EwMEtwamlRYVdtRnhOeFMyVUdZZDZOODBKMUNzNUp1REdtdXpKTnJxUWR0Xy1uWWgxN0lDb1dqVE9ITFY4X1R2YV9ZaDVVb0F5T0gwbmFBZ1oyN3o2dTBSU1FtM29B?oc=5) | Benzinga |
-| 6h 前 | 0 | 中性 | [SGOV Yields 3.63%. Can Johnson & Johnson or Verizon Pay Retirees More? - 24/7 Wall St.](https://news.google.com/rss/articles/CBMirgFBVV95cUxQUU9obnAxSnBrYmd6LVEybDR6RElCUW9XRWxwNU1RMkZzcElac012VTRvY3J4TVljZUtPYTFQUlM1U2pYSFYxZER3UnRRWld5X0VoS0x3RUZKQ3lJLXRtdXlCX0kteEpPSWJoaFF6R2xQSW1qaG9WOVpudzVGQm0zRHZXdE42Z29fa3VKbE1TOXpUbk5ONUpGZFAzTVlvSnA0MG9Dc09PY3JyTFFWN1E?oc=5) | 24/7 Wall St. |
-| 10h 前 | 0 | 中性 | [How Much Upside Is Left In Johnson & Johnson Stock? - Trefis](https://news.google.com/rss/articles/CBMirAFBVV95cUxQOENkZUprdWZwVEtPTno5bzFDTWFUZ1RRaG9BR0hNdXZQSnBCU2JvekhtU20xdWVvVEhLT1RQRHo1by1UdXRkZFBOdTZKQ29WUzNqRGFvZTZ2emdRcm16WkRESENZSktieXFrd2pmQ0U4enduZ0J1SzRDWTAtWmg1eV9Zd1ZIRHpvdWI3Z1hSVFM3T3FGWTJHZHpnaTdDOTJtU3pkYlBMWTBNNGxS?oc=5) | Trefis |
-| 14h 前 | 0 | 中性 | [Johnson & Johnson stock at EUR 250.58, down 0.60% premarket - ad-hoc-news.de](https://news.google.com/rss/articles/CBMiswFBVV95cUxNelRVWVQtSzN3RnhjN3BsWkRCQm1ubDVsc21CVUdoaFBhNjlXa1hPWlF5WWtFLW5ZTlR1WXFIbGNPRS1mTDJIRWxmVXJQOUdFY3Y3OEo3UmhhSFE1Z0JoZTFFUFZqajBmdm51bzZKeTNzRHlLTHNsS1B4eDF2Vk51c2xNSXZ1eE9IWW96ZHA1Q1EySWd2Z0dpODNwOUdWTWVqR09zT21tUDZPMnNlZzQ0RTJuaw?oc=5) | ad-hoc-news.de |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
 - 现价已经高于卖方目标价均值 279.41（-0.4%）——共识认为没有上行空间了。
-- 24 小时内的利空标题：Law firm investigates Johnson & Johnson over Q3 earnings miss and talc litigation charges - Pluang（Pluang）
-- 政策面对该板块的倾向为 -0.41（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 

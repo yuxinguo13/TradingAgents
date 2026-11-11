@@ -67,15 +67,7 @@ _读不到财务数据：该代码没有可用的财务数据（可能是 ETF、
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 2h 前 | 0 | 中性 | [3 Possible Paths Forward for AI Stocks (Bull Case, Bear Case, Base Case) -- and How to Invest for Each - The Motley Fool](https://news.google.com/rss/articles/CBMimAFBVV95cUxQcHlmWjZkY2o1YWZ0OGZpeDJTVVVDYXQzSFJEenpfT255ZGRhLVR1cGJoZGVzM2EzUmdyU2UwbVAxNm9YVjdwOGU1eUVhdnRMUy16eEtfOTdEWDlBLWhRWld6ME0wc0R2UXR3VnhvaVRwU0tYYm1Ja3hSYWhkcXh5YnRvYkNPV25lQjZiT0prOFozU013eWZzeg?oc=5) | The Motley Fool |
-| 6h 前 | 0 | 中性 | [The Nasdaq Just Entered Correction Territory. 2 ETFs to Buy on the Dip. - The Globe and Mail](https://news.google.com/rss/articles/CBMi6AFBVV95cUxOV2lBWlhJVDZsWXllS0RoNkZxNF91NWNhc053NzdiYkpQQkxVT1dEaUZsWVY2azhKcVd2dGFyY0VLcm1vZ3V2OG1xNGpBajlZWTk4VjJtMXhCSVQ0ejhULV9lNWNTbFh1d1JGdnV3VnJYVWFad0JiZXBRRURJbHdhNFQtSWVXSHVhVnp5YVBYdmp5TTU3SzcxZEZjQXp1MHZUd01LS2lFbFpDck1zRUh5SjdYbzlDSkhJUEhQQzRNeklKWUVSdE5wWjBUbjkydTRORWd3ZWIxSlpCZk9HNFlzODRVVmFzSHF1?oc=5) | The Globe and Mail |
-| 10h 前 | 0 | 中性 | [Invesco NASDAQ 100 ETF (QQQM) Buys $35.0 Million More Apple on Monday - Yahoo Finance](https://news.google.com/rss/articles/CBMilwFBVV95cUxOVEk5R1lpcTFMWmJGWFYxbEFYM2ZHNTVfYWNFbDJ5SXNPTVBIWnVmMXFZYnMxNURYaGpSRFJ0aGQwaEoyUl9rQ3BpLUppVHVXcnl0cFNJekNreWYyYnNJUGFpaklLRlpHbE1KalkxYWg5ZG5JdjY2TXdkU0NHaXJ5OEljTE9kSzBpSi02Nlpqa2ZuQkZrWHVr?oc=5) | Yahoo Finance |
-| 12h 前 | 0 | 中性 | [Stock ETF buyers pounce on dip as Bitcoin funds bleed $1.6 billion - TradingView](https://news.google.com/rss/articles/CBMiyAFBVV95cUxOMlp6UTdjYkUtV0hmV2xxRFRKOTRIbGtjV1h4MnJMYkgxelZmYnFJbVhBX05fQU9IVXNXSG12RE9UWlRUa21PU18zQ09EcDdRVThTMW5feWZ6QkdqaDVHbDJHM1BERDVoc1Y3dW9WalNnak1KaEM5MjU3MlJHMTZLRDliMnFWZ1lwaHNjZVRCNWNRZXd3a0N6THp2ZFZKQ3ZWS0x0bnhTUWpsdVhIOGo4R3NvSzYwSktYWDVkSnBVcTItSjg4WXRBeQ?oc=5) | TradingView |
-| 26h 前 | 0 | 偏空 | [Invesco QQQ Trust ETF Is Falling Today, Nov. 10 — Here’s Why - TipRanks](https://news.google.com/rss/articles/CBMijgFBVV95cUxQQVJrcU9oWVlhc0JHcUhFdmpfWlJ6Rk1VWUFEM1UybjBVUWUxcWp6UlVwWkNRYkd0TWZuUmVnMURwSlZjWl85dC1DNFVLM0o4a3dzRlVQQnBDZlFHd3J4MXdaQXYzUDkxNkhCUmc5U1VQMWVqeW8yM0RMVC1WZjlyS0RFNHhxUnhrZnhlRGxn?oc=5) | TipRanks |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
@@ -103,7 +95,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-11-06 | 271.14 | 273.63 | 269.30 | **270.22** | +1.3% | 6,821,000 |
 | 2026-11-09 | 272.88 | 280.70 | 272.65 | **279.52** | +3.4% | 4,910,800 |
 | 2026-11-10 | 276.94 | 280.37 | 274.68 | **277.87** | -0.6% | 3,443,200 |
-| 2026-11-11 | 283.01 | 286.40 | 281.49 | **284.23** | +2.3% | 3,019,226 |
+| 2026-11-11 | 283.03 | 286.40 | 281.49 | **284.23** | +2.3% | 3,019,226 |
 
 ## 七、自己去查（本页不做独立验证）
 

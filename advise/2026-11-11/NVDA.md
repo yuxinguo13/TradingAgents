@@ -112,18 +112,11 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 3h 前 | 8 | 中性 | [NVIDIA Earnings Could Put Your 401(k) to the Test - NVIDIA (NASDAQ:NVDA) - Benzinga](https://news.google.com/rss/articles/CBMilwFBVV95cUxPVGNhcVpETHF4U2lra3JnZmZqd05nUVlOTnhEa0ZGbVRMcW5qWi0zVU9jS2ctc1FFWTlveTh4LVZKR1dKMTJLT0djMHlEWnZKT0ZBMGdYcVdhbjRYbXBqRGRUbG5sWmVaTEFzZWt5bFZyODRWdk5hMXJNSnUwUUt4YU9GN0F1M0NxSlZuYmpUYUtQcmg2eVlv?oc=5) | Benzinga |
-| 6h 前 | 8 | 偏多 | [Nvidia stock rebounds, chip stocks surge as CoreWeave earnings boost AI trade - Yahoo Finance](https://news.google.com/rss/articles/CBMizgFBVV95cUxOV3ZDNTlBT1d6a3V4VnJIYzdBaXZOWHBjTGlHUEl2QUw2RmlrUy1lLVZsS2lWYzVIbC1waF84VDNVellXQWpSby1CU0pscmg4YS1nTHI3QmJySGFscHJmdTB4UlhoemRScHA0UGhyUmdiV2tvMEM4M1JnMnVRSzJ0MXhCdHkyZXJJWjhpWUxtRFZOaVd2X2dZemhOSnVzSFNCbndLWTlGWmV3RkFCajJYQUJETXpJZzJabGZLYXY5MGtWNkpvbHFlN29BMmdiZw?oc=5) | Yahoo Finance |
-| 11h 前 | 8 | 中性 | [Nvidia shares rebound as Jensen Huang faces scrutiny ahead of earnings - CNBC](https://news.google.com/rss/articles/CBMigAFBVV95cUxNalRRWWRUS0VHb2Q4Y0dhNFdWY1BzTWlqWG8yOXBwZVJtRlFOck5iZlMzcmJlTHZnRkNaZ0hNUXBrTkptb0xqU3RBSUo5V09ERzlxb095YmRmRHNZaFVYVVhUY0ZxN1E4Q0twdFhLTzA0N0lDTnpXUGl3Szc2eHVUcw?oc=5) | CNBC |
-| 22h 前 | 8 | 中性 | [What to Watch in Nvidia Earnings: Spy Scandal, Data Center Concerns Take Center Stage - Morningstar](https://news.google.com/rss/articles/CBMisgFBVV95cUxNM1EwT3BDVXVxdlpLd182dV80azR6M2lrMHJFZlg4TElPMlpLeDVLSVFQaGk5WkVGLXZNVkNNMzJXSWtBTzRRVVFDZG84T1lRQ1pvX3d1ZkRERGZibkdaWXc3bHVjNWkxbE1SNDBnWUlEMWNRVFB3VENwQWlIWmV3d0FxSWNsanNwVE5aV0hxQ2xTbnIyblRMc0t1T3lZTzdIWE0zN01EV3BSNThSRkhobnp3?oc=5) | Morningstar |
-| 23h 前 | 8 | 中性 | [Nvidia Stock Just Lost 10% in 1 Day. Should You Buy It Before It Reports Earnings on Nov. 17? - Yahoo Finance](https://news.google.com/rss/articles/CBMilAFBVV95cUxNLUVvTFBYdncwRE5SVUxHSmtBdkMySDRMQ1M0NUUwRnBQcURnQ2xsZ3Y0TU1wMTVKRElJSWJvMHBoNGUxSFdOSi1QY3hhQ3QtWXJkRENRWUMzNVpxMkJPQ1VGUWNxWFRneTI4TmxZSzdtUlpnenpkTWt3S2hIZ2dwWW9ySTZxRmVRck1neUFkWEtPc1NZ?oc=5) | Yahoo Finance |
-| 28h 前 | 8 | 偏空 | [Nvidia Stock Falls as Citi Trims Price Target Ahead of Earnings - Yahoo Finance](https://news.google.com/rss/articles/CBMimgFBVV95cUxNR2VNNzU0MmJuaF9rYmFWWWdPZnd3TzMxVi1yck9hRXlSVVlYTXQ0NlM0Zl9uSHhpalVXWFRGM3dSd3lnbHpmRUtJZmRrU2Rsa1A2RUhfTHF0eFhNZk5va2VpUmtxLWNicC1hZVNxMjZRUEpnYTQ2OEExTUt3bmtwZUlXNm9CM24xSVRrWkY1WHNZcktMSmNES2x3?oc=5) | Yahoo Finance |
-| 1h 前 | 7 | 偏空 | [Nvidia stock faces rare downgrades as board investigates CEO Jensen Huang's admitted affair - Fox Business](https://news.google.com/rss/articles/CBMiwAFBVV95cUxOX1BLa2VXQ09tRWR6SHpocTZpaFJsbnU3dVNuMjQ5NEJDNGpHeXlkd2RVQUpyTktsX3NSM1pxVldmRlEwU2FUWk5FbExzcTY4eEtENmw4a3VtaTQyZXlyT2w2WVpOdVRGbjhhQzBuYVdoc2pxOHF0ZXRVbDJFb0J1UUVSemFDQ1RzcXNCM0RBV0EtZ2hPbnpVS1lPY0NCNGVQS2FFN1p3TUdob1p3ZmswXzQ3UUNBQW0wcjVWRmlnMFTSAcYBQVVfeXFMT0g3Sk1HWDFCTWVHSXpjVkJQc25Eb3A1cE9FVENBME1tQ3Z0b29wVjEtQUJ5YzJ1QktoSTYwb1N6MEZlLVVRLWFxdnh0STBfVV9OVUVrV2pGMjBYdnJBaUU5TjFxVFh3REFmNy1XdjhjMWFPT2FzM0NNWkYyZEtYMkhKVUZmS0pJb19lQkRhYTJCeXRiaUtqclh4MXJiYXJFUzE0WVhWT1JkNThjYnpuZE9VMXNNdkJLTVhTakVGTDlqS0VhSzFn?oc=5) | Fox Business |
-| 1h 前 | 7 | 中性 | [Why Nvidia Stock Is Rising While Wall Street Calls for CEO Huang to Step Down - Moomoo](https://news.google.com/rss/articles/CBMinwFBVV95cUxNZWQ2Z19hZzRlRXpsUzFVbER0aEtJSlB5RmlMOGZ2RkNNU01vUTZxQUU3bmpsendEMUQ0MEcwSjhSbWJFbVRKX1dSdGYySUp5V3NfSGFRVFQ1am1yNHdYSXJ2SUZXTTJlTHJKbEpFaHp1WWNKNC16MGFvN2Z1d0ZiTGFrazJlNkRZMG8wellzemZJejl2RGdHLTNqZEpuenM?oc=5) | Moomoo |
-| 1h 前 | 7 | 中性 | [Nvidia Stock Rises Despite Wall Street’s First Call for CEO Huang to Step Down - Barron's](https://news.google.com/rss/articles/CBMiekFVX3lxTE1UZzI1WVJLZk1fSkxrcWZvOHhNRm5YTWp6bkxqOFN0ZjBTVkJBd2w2dG92eXY5U21SZUdYLU1vQjFRcHpyNkpmTTRYSUdFeWNVZVJmaVpGdWFqNzJhYWtPYzZ2U1lrQWZDZ3BMdFZXTUFKR2hRbURCbEln?oc=5) | Barron's |
-| 2h 前 | 7 | 中性 | [Nvidia short-seller warned in May of CEO Jensen Huang's ties to suspected Chinese spy - CBS News](https://news.google.com/rss/articles/CBMieEFVX3lxTE1TUTFtU0c0OUs2ckQ2N2xhZzRBbUZLUzJjajZxS2dzcV9uUDlpbi04akZrdmcyZzNzR2FvQVE5UjctYnppOThIRGZnSW1laF9LRG1mOURMeTFJRElaOEplU0hhR2gtMnFxa1hya1ZNRG1sUWctUWVNcg?oc=5) | CBS News |
-| 2h 前 | 7 | 偏空 | [Nvidia stock is pricing in 2 major risks as CEO Jensen Huang's affair fallout plays out - Yahoo Finance](https://news.google.com/rss/articles/CBMi5AFBVV95cUxOblRWcW9rakVSOGNoV081cEI1U0FiZ19PN0hlNHA1VV9DbXlqUEhjdDRNNEpvNGg4NF83TDlBYUNRSnNpNGo0c3FYM3ZEODFOZXQ5YUpBTHFHRkhqc0hwemlLdVlBN2s5aDlua19kVTRPVFkxLXdWZW51STd1U1ctVmtYbGR5c01GY0EzYldiMmViU3kzR0JRelRwLVNEVWtrOUxrV202emNfcFY2SWozUVplRGdFR2NKWjVSWDhDUWdzdkhreXFJVHhVOU9wTnRvbng4T2FpOThOam9lVVhJLUZybGE?oc=5) | Yahoo Finance |
-| 7h 前 | 7 | 偏空 | [Nvidia stock got a rare Wall Street downgrade over Jensen Huang CEO concerns - Quartz](https://news.google.com/rss/articles/CBMidkFVX3lxTE9PUGF6Y0IyTWEzRU9lNFJwbVJ3clp3Q2J0ZUgwYW9JenZBaUE4SzQtNkw0dG9mak1yTTdTTzJISzQyYnhWb3l3cGxERElzSlgzZk1QWXFrZllsQXJ0aHJrc3pmWS1PT3MtMWR5YnNzWldFVlhGV1E?oc=5) | Quartz |
+| 8h 前 | 9 | 中性 | [Nvidia: Selloff Into Earnings Sets Up An Upside Guidance Surprise (NASDAQ:NVDA) - Seeking Alpha](https://news.google.com/rss/articles/CBMiqAFBVV95cUxQdXdTT3ExWm92eXhwOEJTMXRvNFdod0xhWnB4UEViSUZMQjMwNUlRUXdlWWtIcEZlOHdFVXFPNEt5bEh0VEdFYkhNMnpMckRqckEzNFdiTm1ITzNhQXlUdGhkQXBoTDRXMUlrOXJrY21ERXc2ckRMT1F4U3JKQVM3OUp2SHZWaF84czJCazZYWlBzWDFGS3dvMlU1RUlQbDAzNUpqYWV2OTM?oc=5) | Seeking Alpha |
+| 1h 前 | 0 | 中性 | [Tech round-up: A closer look at Anthropic, Nvidia, CoreWeave, and next week - Yahoo Finance](https://news.google.com/rss/articles/CBMiugFBVV95cUxPN2J1MWp1QUZwcjkzcFRBVC0zXzh0dDM5ZHl5cTV2endxNnNlWGpTNVV1S1dwWGg2MVc2djV3YzVTd0RsM0VCWUJDX1E0OUp0MjBMOUtVZzV6VkQ5bmQ0cGJzNGhLWkw0dFQtRHNPUTZsajRDbmI5LTdWMkxEUVpvR3FhQnBoMzNLeWpSY015QlQ3V201RE0zUFRLOVdLcldNaTJHMWFXcFJuQU5ueVpoWk4zWmhieExPZWc?oc=5) | Yahoo Finance |
+| 1h 前 | 0 | 中性 | [A.I. and Market Whiplash - The New York Times](https://news.google.com/rss/articles/CBMifkFVX3lxTE1LN2lBVk9ialg4T2dCYXJvcGVHeXItRWJCZ2xqMDAzU1otdnM0OXdkNGNyYUY3T2RiZG9xMkFQNnAydHNUeGdrdDY4ckl5LXNCVVQxN3MzS0E0OG1ISEZwRHZKQnF1eTlUemxRLU1saXd1TlZkVnFYR3FFVUliUQ?oc=5) | The New York Times |
+| 12h 前 | 0 | 中性 | [Is Nvidia Stock a Buy Before Nov. 17? Here's What I'm Doing. - Yahoo Finance](https://news.google.com/rss/articles/CBMikgFBVV95cUxOZHZoM1pXakRQb3JMd25uU09wREFsVnF3M1ItU2VvN0VveWNNZGx2cWZXOWlKYWVCRUxhcm1GZ2VTQkhtUm1sa2M2ZUFWUldjeVBhMUJDSGItR0ZiTHJCNXhZbmo5TWVhNHJELXlLamYwUUs5MTNVNV9hRHpsVWxfUXJ1LXdiejNTaUZLTE1FTjlVQQ?oc=5) | Yahoo Finance |
+| 30h 前 | 0 | 中性 | [NVIDIA Corporation (NVDA) Stock Price, News, Quote & History - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMiUkFVX3lxTE51M3YyYUhDNzU1Y2Rjb1RZakJNc2s1NWlnbHBYS1RWTTJyNnpzNUFiUEVJQmRoSElldkd0Z3Bva0s1UURoUFpJcDVxZnRJZXdDcGc?oc=5) | Yahoo! Finance Canada |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -135,9 +128,6 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 - 摆动高低点都在下移，属于下降结构；在出现一个更高的低点之前，任何反弹都还只是反弹。
 - 下次财报在 6 天后，落在持有期内。财报跳空会直接穿过止损——那一晚的风险不是 1R，是没有上限的。
 - 卖方目标价区间 180.00–515.00，宽度超过均值——分歧极大，共识在这只股票上没有信息量。
-- 24 小时内的利空标题：Nvidia Stock Falls as Citi Trims Price Target Ahead of Earnings - Yahoo Finance（Yahoo Finance）
-- 24 小时内的利空标题：Nvidia stock faces rare downgrades as board investigates CEO Jensen Huang's admitted affair - Fox Business（Fox Business）
-- 政策面对该板块的倾向为 -0.95（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -159,7 +149,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-11-06 | 191.10 | 194.90 | 185.22 | **186.64** | +2.8% | 180,212,300 |
 | 2026-11-09 | 173.07 | 179.92 | 170.24 | **178.67** | -4.3% | 462,719,300 |
 | 2026-11-10 | 173.97 | 174.69 | 165.89 | **168.89** | -5.5% | 429,273,200 |
-| 2026-11-11 | 172.80 | 177.54 | 170.77 | **173.73** | +2.9% | 266,639,830 |
+| 2026-11-11 | 172.72 | 177.54 | 170.77 | **173.73** | +2.9% | 266,639,830 |
 
 ## 七、自己去查（本页不做独立验证）
 

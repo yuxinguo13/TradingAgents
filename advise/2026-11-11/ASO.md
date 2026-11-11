@@ -110,11 +110,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 17h 前 | 0 | 中性 | [ASO: Store Growth Helps, Comps Still Carry The Risk To A Full Price - Simply Wall St](https://news.google.com/rss/articles/CBMi-wJBVV95cUxNcnJXNUN3ZTc1UVhYS1ZEVmRYMzlQSm5za3VlQlFtSUxWX1RoZWlwUTVORzFVc1V0SGxQVjJnSFQ2eVNPaGl5Z3FtcG1jRTB5aVZvNzV3UUxfSHBOeURtNm8wcEpwWEFhM3FiQUc1ZHVhS3Zhd2RVd0x5dXotUWZJejV1dGFjZ09wTE90b2puV0xmeWt4WnpmT2c4RlJQVEdxSlBjQ0lNcjJDTlhscVZyS09wLUVpTnFRYnJaSFR3LTdJQXhGdXFQQlVHdE0yMmQydkNIMlZTX0JaaTdOMlBwRXdhLW0yQmhXZVVXQ2xTMzlXbFBCVFU1aW8xVjBmMTZGam9aY0Vzcm9lb3NZakhpN3hFY3pMbW5NNk9od2JxZHZTZ2tVVFJfODVEVkZXUF9KNVdQZFQ2OVc5OS1rZW9ILXUyNVc0RDVsNTVSRklvWC1JcXJubldTeGJ4RkEwMmI5bDg3RDlEMUwxN21XeGJXVlNIVlIyT1JMbWNZ?oc=5) | Simply Wall St |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
@@ -124,7 +120,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 - 下次财报在 27 天后，落在持有期内。财报跳空会直接穿过止损——那一晚的风险不是 1R，是没有上限的。
 - 空头占流通股 20%，是双向的：可能轧空，也说明有人在认真做空这个逻辑。
 - 现价已经高于卖方目标价均值 62.37（-10.0%）——共识认为没有上行空间了。
-- 政策面对该板块的倾向为 -0.96（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.52（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 

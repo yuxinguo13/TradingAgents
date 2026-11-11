@@ -110,22 +110,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 13h 前 | 10 | 中性 | [Amazon.com, Inc. $AMZN Stock Acquired by Capelight Capital Asset Management LP - MarketBeat](https://news.google.com/rss/articles/CBMi0AFBVV95cUxNdlowc2Ztbk9nY3FldlR3OVBUTGJCQzNlc3RLM0lvWjlZbHVyZGRZN0F4RDZpdDNoU3pMM0tnSjNkdFNNQ21qRlBxakJmaXB0WkJKc21ELUxGZjZ0VEFZcUFnMFdSempkNkZLNjg0eTRJRjhaVDZHbDNCTzRzQ1o4ay01NVY3VVRBdDNITWhHTFJmVGo4bkJrajF2ckRUb0xqXzdWX1F3cExDTWZmYWRNY1Y3SmZtbG5FT2p2Qm5kV3hma3RUSkVra1BmMDB2QTZJ?oc=5) | MarketBeat |
-| 6h 前 | 8 | 偏多 | [Amazon's Rally Is Outpacing Big Tech, But Can AWS Justify the AI Spending? - MarketBeat](https://news.google.com/rss/articles/CBMirAFBVV95cUxPU1FrYTU5Y1lQYjZfcEpscUVJS25ndTNUTTJFQVFvRFdJMk93Y2t5SE4xZWQyYVZrc2p2cGxReU5uaFFTbkU5N1FibXFTVk40SWNsbGZYVWx3OE10TTkxQVhxcG1PaXkzX2RKdndKMzJyamtvZzFwYjVRcVJfWEc0V2NZYXpjNXpyYjFMeHhUUU5NajF0UVRHVEFlVk02SXU1NGFsSXBhbVBlcGJ3?oc=5) | MarketBeat |
-| 12h 前 | 8 | 中性 | [Amazon.com, Inc. $AMZN Stock Sold by Sigma Planning Corp - MarketBeat](https://news.google.com/rss/articles/CBMiswFBVV95cUxPY1VQb1dGSG9sTVd1OTRXTjlQOEMycmJ0OW5pekNMT01hb25QMVpCWFFzZXNYSEU0TFUzM1dxWFROQUFvOFFaRW1JWnU2bVVMdXBPc2VYcTFBcjNkYXAyWkRBRmYzRTlSV3pvdHNWWVRQRXJjRTZiWXNta1ZScXNSVFpmMW9rcS1KUmpFbENDQXVVTTAtWmw5QU11VVZFSnZ4dTlMM0FTTkZLTE16b3U1cWtGOA?oc=5) | MarketBeat |
-| 12h 前 | 8 | 中性 | [Amazon.com, Inc. $AMZN Stock Sold by Leeward Financial Partners LLC - MarketBeat](https://news.google.com/rss/articles/CBMiwgFBVV95cUxNeWU0b0NmOXhjcmc1ZzdBZV9acl9pcXROVU0tQ0YyNEktYVhKMWJHbjZtQkJJWmdhZGpkNTgtSkI5OVpScUgzTGgyODF5LTJIR1ZyZ1h3ODRCNDdaOGZfSExiU0sxZWhOZEN4Wmp3a3BhZzNPQlJTakVHMDc1dXcydHE3NDFfTWtGLXZiTlBnLTBMOThuWUhpR2sxcHpHUXRrU3EwQnlkRmptazhBbVc4OHZ5alZJWXdHYzRMQWRGMy1JUQ?oc=5) | MarketBeat |
-| 12h 前 | 8 | 偏多 | [Amazon.com, Inc. $AMZN Stock Holdings Raised by Orange Investment Advisors Inc. - MarketBeat](https://news.google.com/rss/articles/CBMi0AFBVV95cUxOWURTLXh5YVNpaS1oanBqQldkdHVSeVlOeElBNXZ6UFYzQzZGc3U0ajVKbnVTZWJFLThRelYtelBKaEpBZUdQYmhzdTZ2YnhvTnpfOUs2TUN2RVNMNzNKX3lnQnhaYTdBLTFYRnVvTWRRMERwRlpfdkk0WlptUVg5bVFabEpPMURYbkZ2QzFScTY2aG9mclZQdjI3U09JWUk1a1FtQXFQNGVzUmdnOXMzaFcxeVAyUTNyU3ljTEtlWXphc3ZCOEppd1FuS0FnLUFX?oc=5) | MarketBeat |
-| 13h 前 | 8 | 中性 | [Amazon.com, Inc. $AMZN Stock: First Interstate Bank Reduces Holdings - MarketBeat](https://news.google.com/rss/articles/CBMiwgFBVV95cUxOUjZFcHBYNk5mbHFoaFhIOU9jSFNlUW5RbWhWa0ZZT3pzUlhoVUc0cHB6bHNIR25wemJXT0ljWU4xTkFHZC1PTk5YNURXV2JfY2s3ZTJHR0ZRMXh4ZzV6RjUyTGR1LUEtLWxRTFBMTnBZOHJJOUJlMHVRUUY2ZkIzbmt3cmRfZi1RRHFvRjd1cWs5VGROM01KYXVtaFltMno0NU9FZ0xZSnJSUXpSSTJWWmQ3bksyTWtKRzdFT1ZXQ1V6Zw?oc=5) | MarketBeat |
-| 23h 前 | 8 | 中性 | [Amazon.com (NASDAQ:AMZN) Shares Climb 1.5% - Here's What Happened - MarketBeat](https://news.google.com/rss/articles/CBMiuAFBVV95cUxOQkpONVI3RjN1UFNJZXktNFVieElmNUpDX2RqOFJuTXB1UTY0MjhmZGVJZ1dpRDFEN3JJbFY4UzVaOXR2VXI3dmVQNjYxZUpRakwxQUtNUkpfY1JUS0dZNW0taHpPSXBBSC1ITDBqd2lOSG5ITGo4R0xmZEdTME1SWEtxZVJoR3pBNVJoZTl4emQ2b204ekp1N2thbGZLR3JSQ0pNekg2N0h4dWZzRVVBb2NJN042aEpC?oc=5) | MarketBeat |
-| 4h 前 | 5 | 中性 | [Stock Grader Upgrades & Downgrades: MetLife, Allstate, Amazon - InvestorPlace](https://news.google.com/rss/articles/CBMiowFBVV95cUxPZGdtcnN1SEdvZTlhdnVUcWlFckNKY3BxWXNMQzg0aUNHbF9udDhZeGkzRFk3NUxueHVYbTA0Y0ZkSlVldWlUOEUtcWhfclRSUWRWWXlaczZaSDFYVWdHUHU2T1hVbmVJNDZhTHdhSURaVHZRLUp0VU1VMC1MSzhNUjdkWnpLTjU5dDVkMjZyeEt4eDRoTldNTXdpdGx4eHRBQ0Vv?oc=5) | InvestorPlace |
-| 12h 前 | 2 | 中性 | [14,174 Amazon.com, Inc. $AMZN Shares Sold by Provident Investment Management Inc. - MarketBeat](https://news.google.com/rss/articles/CBMi0gFBVV95cUxPYzJ5dU5NcHZRYW9kV2d6QlV5TkZ3U3AzNlowVmVHR3VBOHB1OWVrV1N2TEx4YW5YY1dmeFI1VzhjN0o1ck5wRkpFbnNXNE9OcWk1UmRPc0dFTF85NHRjbE5ydklsNHpSZU1kWGlPeUhpV3BycjFNdUFBaURPWjNDZ3BfQXdGTkhmX0VnSkR0d2EwWktNUF9zeHVYZ1AySUZSZjRUajdGSEdIcGV0UjJuOENJdUN1QXlOY0FjVWtTNk5sT1dUcVF6N0VjaFlabVp6ekE?oc=5) | MarketBeat |
-| 12h 前 | 2 | 中性 | [Kingswood Wealth Advisors LLC Buys 2,410 Shares of Amazon.com, Inc. $AMZN - MarketBeat](https://news.google.com/rss/articles/CBMiyAFBVV95cUxOSHBHWjU2U09SQk5NNkExWWtwU082d2RSdkVCUHBHXy1ONDhHbm1hRXFScmRzTHVNSTJTZEFjbkUyMXloWUlnVzh5T0FjQzZLc2RIcWM2OTQxM0dQT3JlUnF4Vjc0Szc3Tm5iOXltTzRsY0pTeEpvMWdPQXBJc1k2SUVlRFFNYjJISUNjd0ZYVDgwWGpQWjVEejBWaXUwcS1VU284bm5uRk9kVGVkcmRvNmNpY0x1TGdES0JXelBGN0h2V2VYa3ZFNA?oc=5) | MarketBeat |
-| 13h 前 | 2 | 中性 | [1,874 Amazon.com, Inc. $AMZN Shares Sold by Bradley & Co. Private Wealth Management LLC - MarketBeat](https://news.google.com/rss/articles/CBMi1wFBVV95cUxNNzdQUmhJaDlwLTYydXNUOHAtdjg3SkQyeVRZYVljVW1oV0dvaUhZUVRNaXdXcU5SVUxZOXpDeWJ4TU12aXluRnRJeUJiRDdOTWVTLURYOXY2MWNyRUg3b1VjMlpFQ0lYb0V4b196Tk5lN1N5elRHT0dYY2ZxRFR3TW1VUk52dC1iRHQ5WjZZRVNJU0pNT2VGU1p6aWJlN0VXSWYzN0hTMlFnRl9uTGwwZ3d0OUxRbE1La2xFNGNvcktxUlYwTnB2VjJMX3JnYU5SLVE2S2I5QQ?oc=5) | MarketBeat |
-| 8h 前 | 0 | 中性 | [Amazon stock weighs AWS growth against heavy AI investment - ad-hoc-news.de](https://news.google.com/rss/articles/CBMivgFBVV95cUxNQmw5c1pOeWNzT0ZuS2hxNFpVbkJodGQ0b21Da2V1TFgxUjN1bjRIS2pSMnM3WUVQVThvM1hybjBRSXV2UDdDR0tMTjNFYjRXazU1cU5DSFFxQ3lTWUYxaHdULWV3NlQ4aDlfTWxoNmNVRU1uZE8yaGk4Y2dSd3pnYlF1UHY4U2ctcUc3dHlqVU04eTJlUVQ5Y2NzU19VdTVBY0FxOUFLNkVuUHVsXzlDRTRDUTdJbGZ5azJEWl9B?oc=5) | ad-hoc-news.de |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
@@ -133,7 +118,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 - 摆动高低点都在下移，属于下降结构；在出现一个更高的低点之前，任何反弹都还只是反弹。
 - 自由现金流为负（-$347.32亿），意味着经营本身在消耗现金，未来可能需要再融资摊薄。
-- 政策面对该板块的倾向为 -0.96（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.52（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -155,7 +140,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-11-06 | 259.81 | 264.18 | 258.53 | **259.30** | -0.3% | 42,571,500 |
 | 2026-11-09 | 269.32 | 275.34 | 266.91 | **266.93** | +2.9% | 51,523,200 |
 | 2026-11-10 | 266.21 | 272.88 | 266.14 | **270.87** | +1.5% | 38,968,300 |
-| 2026-11-11 | 273.52 | 274.87 | 265.62 | **266.17** | -1.7% | 36,947,731 |
+| 2026-11-11 | 273.27 | 274.87 | 265.62 | **266.17** | -1.7% | 36,947,731 |
 
 ## 七、自己去查（本页不做独立验证）
 

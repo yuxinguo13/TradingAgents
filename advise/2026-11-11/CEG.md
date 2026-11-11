@@ -110,17 +110,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 6h 前 | 9 | 偏多 | [Constellation Energy stock raises outlook after Q3 earnings - ad-hoc-news.de](https://news.google.com/rss/articles/CBMivwFBVV95cUxNbU13NWVOWVFzT29OMDJZdVByemRtVFZ6VHl3QmtHdVNYU0dvWTVPbldBamh2bFJhbmw5LVNPRTJBOHVKOXdEVm16NXRrcEFQZ202bnhwN1pHdmVabTRLV1ZmVEdfY3ROeHFkemM0dmE0NXZkeDAzZDhmdWZ2UlhiSTFIUjktYVZKR1NpSTFVbWVEUHptMVNHTGppTVBRYnhBRFpRdnllZ3p1WmZkSjdZOVVLTDN1b2pBUGFueG02Yw?oc=5) | ad-hoc-news.de |
-| 3h 前 | 8 | 中性 | [Can Constellation Energy's Contracts Power a Stock Rebound? - MarketBeat](https://news.google.com/rss/articles/CBMimgFBVV95cUxQUzJZWlVQbGFGblJOWEZHal9LbENIbHZNTW1ZRG1yLTdLbkE3V2VzWEV4VmhDVTNXMDE0bXpIZ1NSV0RTQkFrdllCeHRxdzZmOWZuVWhWU085cVZra0hrbWltSU04eWozcnd4WDhrLUM1Z0lGS3NveFJHemJabUd1eTNhSlBxYjIwZDIzaXVvVU5hTGxNaUJEdlpn?oc=5) | MarketBeat |
-| 8h 前 | 8 | 偏多 | [Constellation Energy stock raises 2026 outlook after Q3 earnings beat - ad-hoc-news.de](https://news.google.com/rss/articles/CBMizAFBVV95cUxNY1pTQ0JVUjFYZ054RzNpNi1kbHpKOG1fcWd2c2g1aXlndW5tQUhRaXJzaC05NlBFTVFhZzRSeDQ0WS1IYzNKZUwtQjlEVS1DYVJRSmY3dm00UUUydHcyNXRrVEtjUm5rSVZlMmQ1WktKU0E1N2FtZzFBVjl6ank2MUIzREdxamZMNlA4b2o2S2YwWGZiYjZMZ2dfRFU1Uk92NU50aVlSVUVvcE9xRmJQeXZ3Z1lxSTNyTHdIRUNqcGJIOVFoM3lMdTRoQ0k?oc=5) | ad-hoc-news.de |
-| 19h 前 | 8 | 中性 | [Constellation Energy (CEG) Stock Cools After Q3 Earnings Powerhouse - Yahoo Finance](https://news.google.com/rss/articles/CBMiowFBVV95cUxOaEZqZVlkazZEQXlNV1kxbGpKU0w1ekFyX0ZMTDN0TnozREt4aFdEbDRCRVpBdlZQRHJmeU1uMWFMbDZLM1AyQ1dxdFljWHNiNWszMWJJcmRDSkxSNWpiQThlUXd5UTUtZGw2X2pqWEh3dktJUk1QNnlsUFNPSVFTY1ZieWhKel9rZ1BQb2dLT1lJXzRGZW52dWdUWko3YU83eG8w?oc=5) | Yahoo Finance |
-| 22h 前 | 8 | 中性 | [Constellation Energy (CEG) Stock Q3 Results Clash With Valuation Strain - Simply Wall St](https://news.google.com/rss/articles/CBMi1gFBVV95cUxOclhhTHhsUWtrdDNrVk9fWXBaSW00U3ZTQ3RsUGlCcE1EZ0R6U3F0U1UzSW5WbU10WGZaYW4tRUtkYkhhcDFzYUNDTTJlVDE1RkJpdUxVM2VKRExvcERSNnFlbEk1cVdXXzlWUGRPT2xiZ01qS3kzWGlGSHJZU2x0ZFlVcmxuNS10RDhKeDJqZVROTVhkdWpQb2NrMklBaWhtU3JMMjJzYjRlZE04Vmp5SlJSVnk4Wnk4MUVpOFVaYldpVW1IUWtVUGxrUExHQUIyUERUbkhB0gHbAUFVX3lxTE5JbGFpMnYzUkZscEZFRUVJbzF5Nk5BVG5TcXQtLUF1dVpXdkFUZWZqVkdHT0J6a05NRXB6QmFDdlpyNVlpVzVYcjYzckxUN1dHbUxOSExEQXdXWVZPd080eTFLMzk4alNWdmQzN2Y0b2lCYjFSQ0ZsaWFPNmdMdWEyLVExV3NBS3hreVh0RnBfdWZVMS1senlVTEtkTVBkei1VUkNHaWxOVWxCb25MX3NTN0EwQ2tkVURGRXFSdkVTd3lQOExJNXpWTWhJbEQtRG9zbG9MN25BdDY4VQ?oc=5) | Simply Wall St |
-| 3h 前 | 6 | 中性 | [Constellation Energy’s Dividend Is Small. AI Power Demand Could Change That - 24/7 Wall St.](https://news.google.com/rss/articles/CBMiuAFBVV95cUxQYkF5QWdIVW1Mc29wR2kyaHI4MjdwaWhSa1luQ0plbE1ZUjdadFhRYUVFblBQbU56Y0tuUDQwWndpN3JNbk5aTzRGU2d4Y3hPMmJHblZDSFFoQTk1Wk0zM19EUnBTYlJtNXJ0U2JaU05WT2dtalI5eWhqeFZlWnh3cTA5clE5dGR4ZXdmemdFclkwdXItNHdDMFplUWZPdnJSaUNnWDdEejhLTmh3Yk01R25femkwQ1Br?oc=5) | 24/7 Wall St. |
-| 17h 前 | 0 | 中性 | [CEG Stock Is On Track To Reverse Last Week's Losses: Here's Why This Analyst Sees An Upside Of 29% - Yahoo Finance](https://news.google.com/rss/articles/CBMimAFBVV95cUxOYjhjYjVpWHBOVjItZ3lvYUVEcDB2NTVPQW9IOG4wU3o5RFQwR3BFejBFOUdNYnpoRkpTZ1hMcmNiT1N5X2RWQ2NtMXVIaFZSdEtfcWw2ZEhDMnFkNDdieTN5SjZJTHpGTU83emE3MzMtZnRkWWZpUkh0MFV0V3pKNWxjbkt1Z3B5MEg5N1VObFU3aUNQRDlmZQ?oc=5) | Yahoo Finance |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
@@ -129,7 +119,6 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 - 图形上是跌破 200 日线——现价距 20 日 260.94（+5.3%）、50 日 269.76（+1.8%）、200 日 277.94（-1.2%）。本报告的买入规则本身会过滤掉这种形态。
 - 摆动高低点都在下移，属于下降结构；在出现一个更高的低点之前，任何反弹都还只是反弹。
 - 自由现金流为负（-$53.74亿），意味着经营本身在消耗现金，未来可能需要再融资摊薄。
-- 政策面对该板块的倾向为 -0.69（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 

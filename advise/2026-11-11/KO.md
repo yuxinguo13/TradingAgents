@@ -110,22 +110,13 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 9h 前 | 9 | 偏多 | [Coca-Cola stock gains on stronger Q3 demand and higher guidance - ad-hoc-news.de](https://news.google.com/rss/articles/CBMixAFBVV95cUxOVUZ3R0hXaE12c20yWml1M3U4U0VZWjhfMEJWRDN0dlgtbXA4Rk1OeHBqenNZdGdvM0xsdmVDb0RYRHJscFA4MElmNEU3bkVEWFRtWWdseHRwRUZraXN1WVVYNlotUkF4YmJkZ0VjQ1BjOUlDZS1aM3A1VzdPSXQ4QmtlTVR6QUE5ZjZISUJUQXFUREFMd2FhYlpIc0hOeGxxYXlyc2ZUYVhUU2VUUklOVlMyWVRYbUxtZjNjajY4NEZoOFlj?oc=5) | ad-hoc-news.de |
-| 1h 前 | 8 | 中性 | [Coca-Cola (NYSE:KO) Sets New 1-Year High - Still a Buy? - MarketBeat](https://news.google.com/rss/articles/CBMirwFBVV95cUxNZlRKb0dXZ29tUE5vOER0Zl9EekViVzBBSU5FV0RJby1JTzVnME9uYXVGd0dYa3dPNXVIZE45VXFDWXMxdHpGSVRlNWNiMXpCTkhRZ2pYeHdLU2VkbWJWeW5xTDBNLWpHREtiMFVuRWlfSHIzRE82MTRuMFptYzJqb2xVSFF4Z3l5V0RtZ2FaNFhnc0kya3VKMC1mTWVHbS1iRmx6ZUdISFpsakxEU01n?oc=5) | MarketBeat |
-| 9h 前 | 8 | 中性 | [Coca-Cola Stock Earnings Estimates Lifted by Zacks Research - MarketBeat](https://news.google.com/rss/articles/CBMiwAFBVV95cUxPXzdJZE1DTUJlODB3d2xJRUlWNnFiVjJkYWttZEtpd2w2clJUbEtHYV85TDhrbjBHRTVLMTFiQ1kzcXRrZUNmaDUtTnJPQjNGVkh1a2FoSDR2eHozaVZhNnFQZlQ1eUNmSWV0UGVNOEZOSkZJTmtGZGZpS0NmcE9ZNFlBWFFoVEFraTR6YkNuMGY1UktmbExscldTSXlhS3dYQ21IYXpPY2dJcjh2ODkxb21xNjN5UHkxSzdQclluX0c?oc=5) | MarketBeat |
-| 11h 前 | 8 | 中性 | [Coca-Cola Company (The) $KO Position Lessened by Vestor Capital LLC - MarketBeat](https://news.google.com/rss/articles/CBMiwwFBVV95cUxNV3VYNm5XWUhuQ3Y5TUNxNjZ1c05oUm1YN091S25fX283ZHY0S3c0TllyaVd4M1BPVGJXNFYxcjZxQmRKRmtSdDVlbXNRRllwTjFDYnVpQl9RQkRiSlFha1gyM2lFOHlHQTNkdnFnTlEyMlFZampJYXpYOE1GRG1uUDlqNFNPOHJ2UERqX3hlQU14VDJweGptTTNVRHVuYWRaOTllQ0gtSTlkYWszY3ltNmMtb0ZZWWpkU2FNYUk3dmJ5N2M?oc=5) | MarketBeat |
-| 17h 前 | 6 | 中性 | [Kraft Heinz Yields 6.6% and Coca-Cola Yields 2.3%. Here's Why Only 1 of These Dividend Stocks Is a Buy This November. - The Motley Fool](https://news.google.com/rss/articles/CBMikgFBVV95cUxNOFl3V19nR0N5ek9Pb3htVVlUMGVKTnRfUFNaZGhKRF80VzBuRXVUbXVoUVhxeFRCVTFZQnROa3Rkd0ZUdV84NDJBSDdRN25aZDZvR25zekpUeTlEeTgtRHBseHE4MFQzTjVJYVlnLUt6dXVNV21ieTlxeEw4WFZtZDdsLXdJalFNN3g5VmVIWGhjZw?oc=5) | The Motley Fool |
-| 6h 前 | 0 | 中性 | [The Coca-Cola Company Announces Participation in Morgan Stanley Global Consumer & Retail Conference - www.marketscreener.com](https://news.google.com/rss/articles/CBMi5AFBVV95cUxPOE9uUGprV3hPdnRnRmxWdVpiZEF6Z1Vma3pVQzdPV2RjLThnZzkyaWxwV3FVUEYtVTJxeS05Mmd2cHlSU21oT2FaSUJqckNlc0tXVXZKZHRzc3Zya0NwMHNyZHoySkRvd0NLRGVNU3VuTWMxczZJS2N4bDV2dEFnMFBWaE1CQkotU1lJc3I2ZWNKZEhRZTF1OGU5ZnZUZEVHNHhmR1I1blFsSllTQ3VfUk1oX0plcGgydzFrbWVySEtWUERMbmxOeXVLMFdiNWI2SVpwUkJvM09ZSmtCc3ZxQjJTQ3E?oc=5) | www.marketscreener.com |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
-- 政策面对该板块的倾向为 -0.94（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 按本报告掌握的数据，没有触发任何一条成文的风险规则。这不等于没有风险——它只等于「这台机器读到的东西里没有」。
 
 ## 六、原始数据（本页所有计算的来源）
 

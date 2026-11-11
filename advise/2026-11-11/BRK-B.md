@@ -31,12 +31,12 @@ _金融 · 数据截至 2026-11-11 收盘 → 面向 2026-11-11 开盘_
 
 ```text
        BRK-B · 近 21 个交易日（放大看最近节奏）
-588.3 ┤                    ╭
-580.5 ┤               ╭╮  ╭╯
+588.2 ┤                    ╭
+580.4 ┤               ╭╮  ╭╯
 572.6 ┤               │╰──╯
 564.8 ┤               │
 557.0 ┤             ╭─╯
-549.2 ┤      ╭╮╭╮   │
+549.1 ┤      ╭╮╭╮   │
 541.3 ┤    ╭─╯╰╯╰───╯
 533.5 ┤  ╭─╯
 525.7 ┤──╯
@@ -110,20 +110,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 10h 前 | 8 | 偏多 | [Berkshire Hathaway stock buybacks jump as insurance earnings slide - ad-hoc-news.de](https://news.google.com/rss/articles/CBMiyAFBVV95cUxQS2I2dWxGRkFBNll6NEtwUEFYRG1IQmhrUU1aX2s5QVdWTXdLaXVUZVR3dVJDQmlUOEtTUnliQWZXV1RXOUw5TU1EOE52QWtWQ0Z2a1loN3N2T0V5NUdQeC0yalVaYWx1UTVrbGJ2dVFIZnFFT21Ed0s3WURRU25kMXFoSXZlWWx0UlFuM1c1Q0FCZWhOaDNqX0FnbFF0WnZMLWFpRGNLajUySktMR1JaRF92SUg1SU1wYTdqZU9pX0NtZVBvTTM3UA?oc=5) | ad-hoc-news.de |
-| 11h 前 | 8 | 中性 | [Where Does Berkshire Hathaway (BRK.B) Valuation Sit As Q3 2026 Earnings Mixed? - Simply Wall St](https://news.google.com/rss/articles/CBMi4wFBVV95cUxQOUlwUWxaOHZ3bmctU2ptZjA5ckhnWVVIODFFUlk3b0hSZi1Qa2p1bmRPUHVsR2NOQk5JbVJYdnpORkdJVFI4X05CZWxQaWVQM0h3eEhqLVNpM1RTenhQY2dwWXJ3ZEVPdzU0bFFUSndPWW1JeVdEWkktb25SWWxrT2haTHdJQnlmcW12a1hrMGtmX0tUQUZGNVhidDFoRWZ2UUZvdDN5RE9jT0ltN05uUHVNa1lPVjZnZm1pVDA4SHVQMmlhMGUxTDZhOHRTU0VrcDNGUU1NSVNsZVdrV0RFQUw3VdIB6AFBVV95cUxQelpTZnF5eEM5Wl9lVXFSSWwwblBRMWlmQXBwTmVieVNCTUNob25UaFNoU2IyZkoxRXBVNTZPay1JdS1DNGdGdTh4TDJUeE1hVHhoeVJyRHhpNGlEQXZuSkVDcWxZUUdxMlBaVVc3aUtqczdZandNT04wMDhTVkI4ZkN5YmRGQnRKYjMxR0k3NXhkdEhtbUM2VkU2LVZQWW1RMVJWTmtodGc5UEJYNDdRdGhzdkpISGpVOTY4dzBrdmlMRU43MGNFY2kxREdhUjB6SDhQUkNIN0RSbGV4U0J0RVl3bVN1Rkhv?oc=5) | Simply Wall St |
-| 7h 前 | 0 | 中性 | [What You Actually Own When You Buy a Share of Berkshire Hathaway - Yahoo Finance](https://news.google.com/rss/articles/CBMingFBVV95cUxOMVpuMEJ1b0IyTUJPVE1OakZ0NmhqWVNCQTRILXlWaTZPdmkyQzNrb3lXSGVESFZhY0V2eTdMSXdHdFROUW9qT3dlcUN0UkpiMGYtWDhKYVhlOGVmNFpmSDR2WXp6S0VrUWtreEp5ZkxQMlkzWThxMzFZTlZjVkZVMUNCdEQya1ZsOEFWc0czRDBoNHpiX2R0TUhQb3Rrdw?oc=5) | Yahoo Finance |
-| 8h 前 | 0 | 偏空 | [Warren Buffett's Berkshire Just Bought $600 Million in Lennar Stock as the Housing Market Weakens - 24/7 Wall St.](https://news.google.com/rss/articles/CBMi1gFBVV95cUxPY3hnM195bV9HQzJrQU9EQ2VpMkZKMU1ISDBTSW1tZV9meVp3ZmRGWnVtUHRTTWhqVHFCRGRfRXNQczlPZzlDekxucl9nMklKSm1IUlhNdW00Yzdra2VvZ2tHZzlwejNRZ0V6YjBMaS1RUGJNbC16V0FSTERjLWFtb1ZXdC10TUxsd0xMUXpQNkpKVXRLZnJ0NmgtOEJSaFJQa283M19UcVRUTS1aMDBQYldrU1I5RVRjU2ZkVmU5QVJ1eTBINnlHVWpfZzBSeXo5SjVocFF3?oc=5) | 24/7 Wall St. |
-| 9h 前 | 0 | 中性 | [Warren Buffett’s Berkshire Hathaway Sends Jarring Signal to Stock Buyers - FinanceBuzz](https://news.google.com/rss/articles/CBMigwFBVV95cUxObDZHZGdjZkw3OU5nSHR1NkNvTGh0SDJOM29FOS01bW11QzZveE5Mckl4VU9EcG9lc2s0XzI4Nnc1dWxlczQ3UjVXbDFqaHZTNjMxOHc0OGpzQnRqRDVrekZJTkliRzdfakxzang2Ung4OHVackZJMVhYREZkek1BSmpybw?oc=5) | FinanceBuzz |
-| 10h 前 | 0 | 中性 | [Greg Abel's Berkshire Hathaway Owns 37% of This Company. Here's Why the Stock Is Also a Buy for Retail Investors. - The Motley Fool](https://news.google.com/rss/articles/CBMikgFBVV95cUxOM1hXc0JSeWtxeFVyeWZPdWhwOVM4ZTNleEZzTFN6QVlRbHA0S0FnMmJQWGN5Tll0bkJTT0dlYzZ5angzSmpFYjVWNkZwWUNDa2FnV1dPTUZQM3RjUHFoQ1QwYzE0cTY5RDdsekNMRWNudlc4YnB0YlFvaWh5NWsxS180UHlwZTA0YWpHeFFTMEV3Zw?oc=5) | The Motley Fool |
-| 11h 前 | 0 | 中性 | [Warren Buffett's Successor, Greg Abel, Just Bought $9.6 Billion of the Oracle of Omaha's Favorite Stock (No, Not Alphabet!) - Yahoo Finance](https://news.google.com/rss/articles/CBMiogFBVV95cUxPemRfX2I0QTR5M3ViaXh5N3dmR1dJeEt6dWZsRGRaUjliZnpxSHVPOWhTVzlMOEhNTUtWdE1OVEdlSzY4aDFVLUR6QXp1SEVnaTRCSGtmUGNlRDAyTW9WZ09wNWd6UTdoWTFrbHg3R08zc1dyVnMxZ2txdWQ5OEU2Y0laZW9pcGwxLWUzTVVHZHdPODhmbm9JTnFFYU5QVTJraFE?oc=5) | Yahoo Finance |
-| 11h 前 | 0 | 偏空 | [Is the Stock Market Going to Crash? Warren Buffett's Warning Is Hard to Ignore. - The Motley Fool](https://news.google.com/rss/articles/CBMivAFBVV95cUxOVG5FNWE5TzZSSXRDV01wSWdORVZzOENxdVZvR3BqanFWRG5yUDB4M1NscVBBVGZvOFY5NE1ZZFlmQ0UxR0pTWG4yQkJwRGUzS2lIS0VDUUk5Z2NyOVRYcnR4WS1pQjFHRnptNjlRVjlWakhTX3pqaGJ1T2JBMHBZdFozZ3dyZXlqSTg5ZnNpZks0Xy1jMjhJY0JCUnRZLXQySm11UzJMZWdSRlRaLUVFLUhnMUM2eWgzODMtQw?oc=5) | The Motley Fool |
-| 35h 前 | 0 | 中性 | [Berkshire Hathaway buys back $9.6 billion of own stock but profits dip - Jamaica Gleaner](https://news.google.com/rss/articles/CBMitAFBVV95cUxPX2xXN0pXajliNExvUUhQWEVYY0NxLXBZSGFpbnR3UmFuUTF1MVNqRjBFQV8xNElqNVJyendvNm5GVHNwWFFjTFE2eGZqX2FnNXI4VVJkMEZWZXEtNEV2TmREd3hLMEtySTU0N0dWbktKOEkxckEySVlKQ2dxaDZQUmdyb1JJS0VValRpdHUwMWQyR0tyZXJVTGcwLVJjeDVoT2JlSWZGSjc5dFJRdUxkWVlxTl8?oc=5) | Jamaica Gleaner |
-| 46h 前 | 0 | 中性 | [Berkshire Kept Buying Back Stock as Shares Hit Records. Here’s What the Price It Paid Tells You. - The Motley Fool](https://news.google.com/rss/articles/CBMi0gFBVV95cUxPRkV3anV5VFZma0xTWnhMdHBCa2ZHTmRGNFl3N1VJZmd0OEg5dTl2OEtnaW9jaXJ1Z2FPT05vTGZrTXg1ZS0xc21ObC1VSXd0Vjh1TmZDcjltcVowOXZDcEZ2Tm1Lc3pEdk9QRXdpWjJ3RU8wbU9tdFNLNWxYTWh1UnhyUGx6WDBRTWF0RUhWUHg1U3VDcHNubUpLLWIwR0x3djNJNjctYWJ6WHQ2bE5WSzhZMHFKZVlQWVMxZEdON1QtR09lNTdESlQ2MElLY0FkNkE?oc=5) | The Motley Fool |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
@@ -131,7 +118,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 
 - RSI 80 已在极端超买区，短期回撤概率高于起涨阶段。
 - 现价已经高于卖方目标价均值 555.67（-5.5%）——共识认为没有上行空间了。
-- 政策面对该板块的倾向为 -0.94（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.41（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -153,7 +140,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-11-06 | 562.07 | 575.12 | 559.61 | **570.89** | -0.3% | 5,413,200 |
 | 2026-11-09 | 569.99 | 577.69 | 562.45 | **575.25** | +0.8% | 6,333,600 |
 | 2026-11-10 | 575.59 | 586.45 | 574.00 | **583.34** | +1.4% | 4,660,500 |
-| 2026-11-11 | 577.02 | 588.51 | 576.80 | **588.28** | +0.8% | 5,016,680 |
+| 2026-11-11 | 577.02 | 588.51 | 576.80 | **588.24** | +0.8% | 5,016,680 |
 
 ## 七、自己去查（本页不做独立验证）
 

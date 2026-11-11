@@ -112,18 +112,8 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 17h 前 | 7 | 中性 | [Microsoft CFO Amy Hood sells $3.98 million in company stock - Investing.com](https://news.google.com/rss/articles/CBMivwFBVV95cUxNQUpkaDZobHRoN1ZkMjZzU2xnVkJkUkVxOGlPd204Uktkd21RUEVCbXpEQlM3a1E1V1ZnT0VVajBFazBTRWdUbEJiV2ZSSWZJVWQ0cHVmRGJySjV1Z1BoUGJLOEhqV0tCalZlY09mREY2dTVOb0NEa3dLUXU3UjJMQXhGWGgxS2M5aTRRZTdWbXlZRWVFLWtMYnFSV09aVHkyZUNXQm5UWlR0ZVFhQTNZemgtbHEwbmE4MEJiSDlCYw?oc=5) | Investing.com |
-| 2h 前 | 0 | 中性 | [Amazon and Microsoft Lead the Cloud Market. One of Them Has Far Greater Upside. - Yahoo Finance](https://news.google.com/rss/articles/CBMioAFBVV95cUxQX0RNcUVIOXZGOHBnbXRvY2VJaDN3cVpIanlaQjQyNXFCTm95T210NVRiZjc2bTYydEtQWEkza001cmlSd0RBQTVNbWxKTG1GSDl0MjZnX2tXNy1xSXdBQm9aV2R6VmtDcVF4T0kwRWNxNXRsNTN4QnZyaWt3ZWFhYWF6VlBoVThkMUxaNGwyN2tnTDFibl9NbmNfcGt4aFBM?oc=5) | Yahoo Finance |
-| 3h 前 | 0 | 中性 | [The Only 3 Tech Stocks I'd Buy With $5,000 and Never Sell - The Motley Fool](https://news.google.com/rss/articles/CBMilwFBVV95cUxNY3drZFMxRnRVNFlMaVhjeFlMYU8zS1dwTWdNRmU0SU93UjYwaDI2RE95VnozeHV0dnVHZWVjallJd29pSGUyNVhYdXJZWjV0OWx5LXVPbXRjMm5TWkVqNlNOcFlFY0QwUjRGTDluajZFVWdNSktEVFVDLXdoQTczVEU2cWZrZVNuRjFXcVJ4ZFZvYmR1TWlN?oc=5) | The Motley Fool |
-| 3h 前 | 0 | 中性 | [Microsoft Fixes Overzealous Outlook Security Issue: Microsoft Stock (NASDAQ:MSFT) Slips - TipRanks](https://news.google.com/rss/articles/CBMiswFBVV95cUxOZ09qTUdsLXdVTTlxc3IzcFRBMTBkYWhYVW5oUHk3ZjZqZ0c0OGlWdFRxOHNjWlJPNVk4R0ZGRVlNN1VWbHU0eW5QeUxGOEVJRkt4ckNEUmQySW16ZVRvb3RyRlhPd2Q2c2JDNVB5emJlQVhtQ1pscnBzWDl0WFNjdGhKTlpOSmphUkVmZlRGeXZ6Y1ZuS1ZjTjhGamNfOWhRUTJJRjFvUnlqZjNrc3hYcU9FYw?oc=5) | TipRanks |
-| 4h 前 | 0 | 中性 | [This Number Tells Me The Microsoft Data Center Selloff Is Excessive, Prompting Me to Buy - 24/7 Wall St.](https://news.google.com/rss/articles/CBMiywFBVV95cUxPcDFRb2NpUlJCWG9WMmw4QUt0V1ZhTHJnYTRaOFd6VGJSaDFXRjJzclVWVHdTTE5rQURqYlNrSkI5RjZIdmhYVlp6bEdTc19CbEJpUEtqbnd6QVpmSnFieDNrSGNnWTJjMnVRWTVRQjl0YlpaMy1xNEkwWkRvLWxYNmhpMGNPUTB5WUdWX2ZWN2Q2MDdaTHlYeU01bWl0eGlQbzFjZHhiZURtdlEwcl90Wm5SZzlZc0ZCc1AwNml0ZDJfWXFRMmJMNkpPRQ?oc=5) | 24/7 Wall St. |
-| 4h 前 | 0 | 中性 | [Microsoft Stock Suddenly Has an Anthropic Problem - TradingView](https://news.google.com/rss/articles/CBMirgFBVV95cUxOR2czU1lPQnIyWjBJYTYxVXFxTG5ralR5TEZFWEoxUHRlcG9wa1BGR1V4alZ1a2g0enF3SVpPR0RHLW5DVGFxYy1hRC1VZGRkd28wWG4xSzNaVEJFekdFOFU0RzZ3SG41TVdWazA2bUd1UEt1STJtdnFtVVhXV2pxNVotQ2ZiekNzZlVyaEVfU2V0aGRpMk51OFNnTTdiX1VKeFNaQkdYOHcydUhjd2c?oc=5) | TradingView |
-| 4h 前 | 0 | 中性 | [Evercore Plays Down Microsoft 365 Disruption Fears After Anthropic’s Claude Sheets Launch – ‘Not Yet A Substitute For Excel’ - Yahoo Finance](https://news.google.com/rss/articles/CBMinwFBVV95cUxOZXBUdnhrRGh1bmFtajNWcGo1YmZva2otVEYtTWx6S0NHdTduNV9FLUotUDVROXk4TklJOW1xbGpnYkxSRHhfbjRYem5lY0w0VHZ5R2F2Z01EMmtlRkFFS3M2a1F3T2NRM3JPcmZPQWVndFREUGZ6T1phMUtYczJ0RVpxdWV6ZVNObUNsaHFaYTFMZUNadVdTcDM1UlhfTlk?oc=5) | Yahoo Finance |
-| 4h 前 | 0 | 中性 | [What's Going On With Microsoft Stock Wednesday? - Benzinga](https://news.google.com/rss/articles/CBMiogFBVV95cUxQSWd3REhYZ1hQUlJRbjBNa2kwOURNLWU5ZnBIX1ZZdW1pYmp2bHVmLTljVURoNmJXWGswSkxJTy16MnFVd0FUSmFlNkh3TnR5Z005RkpXeXd0Q3RyQ3k2c0dOMlJaSFg3eTZ1cmxvaU9kSzY3SzNtY3NFci1LZ3d2VGZqUkktS19tcW51WmFGR1ZIT0w5aU1QWXo3cm5Tak16THc?oc=5) | Benzinga |
-| 4h 前 | 0 | 中性 | [Microsoft Just Got Another Software Scare. This Time, Its Cash Changes the Story - Inc.com](https://news.google.com/rss/articles/CBMiigFBVV95cUxQRWh5VndIUGNaMVZxVmtwQTZmNmZCMGxhUjVzZUdKcHdSeUpDQXZTaS1OOEcwTXFLdWktOFJ0Qmhmd1B0M2hrZE9HNVJ1VXBReng4TlRSa2dLdHN5eElQLS1EbXVpd0dkRnRpUTZ0NHpDZUYyeGx3bFhDOGNvNHZITi02NWNYTmVNUVE?oc=5) | Inc.com |
-| 4h 前 | 0 | 中性 | [Microsoft Stocks Decline 2.5% as $1 Billion Anthropic Stake Tests Partner-Rival Balance - Yahoo Finance](https://news.google.com/rss/articles/CBMimAFBVV95cUxPd2NEVEtyeThmMlBlejQ5YS0xdkVsTnhiczZRSkY2VUlWSFc1ZmhNek0tTVU5THZvZjdGbW5JWF9rSWFkanM3WkxyTlp6NDhWTHJwcGlzWFdGLXlIcXBOcndpVDlOQTZCanZOZ2VsNFdkMUdKOXZhUDlrS1lNUE9OakVMRVZnQVozTkdtYkFEM3Z3SnBQcjlFSw?oc=5) | Yahoo Finance |
-| 6h 前 | 0 | 中性 | [Anthropic Committed $30 Billion to Azure. Now It’s Coming for Microsoft’s $27.8 Billion Office Cloud - TIKR.com](https://news.google.com/rss/articles/CBMivwFBVV95cUxPN2l5dWdXRGZLMXd6WEkwcGRLNi1oUnJBakJBZXNqdlhrVEROWjZuRW5VVml1VGp6RzFpM0pzaFcyR2oyYVkzNWpHbVZWTHZiUGpMZWMxTktEMU55TVk1Q2RCLXVHYWp1S1U0aUhRaTlZTmFfVXJGbTdDWV9GWXp6Z3BzRWsyN1lGc01uaVFpVk5WXzVIemVvczVTS1ZSMDZORHlwSVB3NjN1bFNoOUxyMlFLb1h0X05mcjBDYzVQbw?oc=5) | TIKR.com |
-| 8h 前 | 0 | 偏空 | [Anthropic's new Claude product drop just sent a message to these 3 tech stocks - Yahoo Finance](https://news.google.com/rss/articles/CBMi0wFBVV95cUxPUE5Ob1FzdzhnbGItQXF6SVJTZExXZWpFYmsyaDFmU3hOYW1qYU9VS2hmaDhaNXN4VEtJb3oxbWltT2doZjl3SHBQa2hmX3Fxblp3a0dOeXJBVUxmSjZUNTl2bUlVdkRkc3VFV0VmQ3VfNWhDeHRCeEEyV25udVNIY2RHRUZNSHBZcDBWUHZ0QmdmeEUxY09zZjlEVUJST0hybll4TXhfTjdfdXhNcGFWemFXYWpaMHMxYWtmcWQyTlh2dkRyWjdZTmhKNUxBWi0xdDVV?oc=5) | Yahoo Finance |
+| 0h 前 | 0 | 中性 | [MSFT Stock Heads to $500 as Microsoft Data-Centre Spending and Anthropic Competition Intensify - FXLeaders](https://news.google.com/rss/articles/CBMi0gFBVV95cUxOZFo3TEdJeXZCVUFCV3pKVWdBZWczcjNzSTBDOFZsTEc1TkVhQ01wWDRCRGo0NDFvcndvbFdwSEVQYms3S1YyNlMwUnJidE1zVzJrdUpZNG1XMjZ5ejlERmF2MDI3V2ozVEpmbUJLOTVET3YxNHh5elV6QVpBR3dLS25JdmQwdFdvcWFYaWFJcmU2QXBWTjVrLWdLWFFsSDR3Y1A1UFBnN2RqZU9FcjY0d0JIcXBEemU3Y2k4QjlTU3dnLS10VjZlYlJ3VkR0X2VtQnc?oc=5) | FXLeaders |
+| 10h 前 | 0 | 中性 | [Microsoft stock hit by major insider trading activity - Finbold](https://news.google.com/rss/articles/CBMif0FVX3lxTE5XTHdVWnlLRE9SRnFaTmxJckxIMEsxR3VZeGQxX3BoUDFmamhvMVduX09YUnVlUlVna3BOMGNWeVdCN0VQMy1uWnFaR2VhYmxlX210QlhnOXZHQnV2eUpNRU91Y21WN292V2I5WmQxUUg0aEVVaHBPODJjb1RjUXc?oc=5) | Finbold |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -131,7 +121,7 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
-- 政策面对该板块的倾向为 -0.95（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 按本报告掌握的数据，没有触发任何一条成文的风险规则。这不等于没有风险——它只等于「这台机器读到的东西里没有」。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -153,7 +143,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-11-06 | 525.69 | 538.33 | 524.47 | **530.61** | -1.0% | 26,956,400 |
 | 2026-11-09 | 544.49 | 548.28 | 538.70 | **545.18** | +2.7% | 25,337,400 |
 | 2026-11-10 | 542.98 | 544.19 | 526.37 | **533.16** | -2.2% | 26,940,900 |
-| 2026-11-11 | 534.23 | 534.76 | 518.45 | **521.12** | -2.3% | 28,355,475 |
+| 2026-11-11 | 534.22 | 534.76 | 518.45 | **521.12** | -2.3% | 28,355,475 |
 
 ## 七、自己去查（本页不做独立验证）
 
