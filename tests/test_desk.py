@@ -275,12 +275,22 @@ class TestAdvise:
         text = advise.format_advice(adv)
         assert "| DOWN |" in text and "**卖出**" in text and "## 先看这里" in text
 
-    def test_a_hard_bearish_headline_forces_an_exit_even_in_an_uptrend(self):
+    def test_a_hard_bearish_headline_alone_does_not_trim_an_uptrend(self):
+        # 2026-11-09: BRK-B, AMZN and MSFT at new highs were told to trim on a headline.
         shape("UP", 100.0, drift=0.40)
         m = mkt(news_items=[news("UP", "UP hit with fraud charges", lean="bearish", materiality=9)])
         pf = advise.Portfolio(cash=0, holdings=[advise.Holding("UP", 10, 90.0)])
         adv = advise.Adviser(market=m, now=FRIDAY_AFTER_CLOSE, with_pages=False).run(pf)
-        assert adv.lines[0].action == advise.TRIM and adv.lines[0].urgent
+        ln = adv.lines[0]
+        assert ln.urgent and not any("重大利空" in r for r in ln.reasons)   # any trim here is for stretch, not the headline
+        assert any("不按标题卖" in c for c in ln.cautions)
+
+    def test_a_hard_bearish_headline_acts_once_the_price_is_under_the_50_day(self):
+        shape("DOWN", 100.0, drift=-0.30)                  # under both lines; the long set alone would hold
+        m = mkt(news_items=[news("DOWN", "DOWN guidance cut", lean="bearish", materiality=8)])
+        pf = advise.Portfolio(cash=0, horizon="long", holdings=[advise.Holding("DOWN", 10, 120.0)])
+        adv = advise.Adviser(market=m, now=FRIDAY_AFTER_CLOSE, with_pages=False).run(pf)
+        assert adv.lines[0].action in (advise.TRIM, advise.SELL) and adv.lines[0].urgent
 
     def test_the_adviser_does_not_touch_the_trade_book(self, home):
         shape("UP", 100.0, drift=0.40)

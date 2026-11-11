@@ -37,6 +37,15 @@ push after writing. **The last desk step of every task is
 deletes). If a pull or push reports a failure, say so in the reply; do not
 retry by hand.
 
+### 账户主人的真实账户（所有者 2026-11-10）
+
+给账户主人的每一条买卖建议（简报、日报、持仓建议、盯盘、临时问答）先读
+`tradingagents/desk/MANUAL.md` §14 和 `~/.tradingagents/desk/advise/PLAYBOOK.md`
+（同一份内容，后者是运行时副本），冲突时以它为准：先定大盘状态，再看板块，
+最后个股；卖只有三种理由，收盘确认，第一次破线卖一半；恐慌日当天不卖；
+盘前和盘中的波动不用来改单；每条建议写成 账户 · 买/卖 · 代码 · 股数 · 限价 ·
+有效期；每天列出每张止盈单是不变、改价还是撤。`advise` 的规则结论只是参考。
+
 ### 错误反思 (owner, 2026-10-13: every day, in every report to the owner)
 
 Every trade run and every report ends with a reflection, written before the

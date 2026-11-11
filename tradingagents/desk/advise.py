@@ -303,11 +303,14 @@ def decide(line: Line, f: Facts, *, total: float, cash: float, today: date,
         line.reasons.append(f"趋势已坏：价格 {px:,.2f} 在 50 日和 200 日线（{s200:,.2f}）下方"
                             + (f"，近三月 {r3 * 100:+.0f}%" if _ok(r3) else "")
                             + (f"，低于 200 日线 {abs(ext) * 100:.0f}%" if deep else ""))
-    elif hard_bear:
+    elif hard_bear and a50 is False:
+        # A headline alone is noise (2026-11-09: BRK-B, AMZN and MSFT were told to
+        # trim at new highs on a fund's 13F and on Nvidia's news). It acts only when
+        # the price agrees: the stock is already under its 50-day line.
         sell = R.bear_news_sells and a200 is False
         line.action, line.urgent = (SELL if sell else TRIM), True
         line.act_shares = int(line.shares) if sell else max(1, int(line.shares // 2))
-        line.reasons.append(f"近两天有重大利空：{hard_bear[0].title}")
+        line.reasons.append(f"近两天有重大利空，且价格已在 50 日线下方：{hard_bear[0].title}")
     elif w > max_w:
         line.action = TRIM
         trim_to = R.trim_to if not line.is_index else R.index_max_weight
@@ -347,7 +350,10 @@ def decide(line: Line, f: Facts, *, total: float, cash: float, today: date,
         line.urgent = line.urgent or line.action != SELL
     if _ok(line.earnings_in) and 0 <= line.earnings_in <= EARNINGS_SOON_DAYS:
         line.cautions.append(f"{line.earnings_in:.0f} 天后财报（{line.earnings_date}），持仓过财报要想清楚")
-    if bear and not hard_bear:
+    if hard_bear and a50 is not False:
+        line.cautions.append(f"有分量较重的利空标题，但价格仍在 50 日线上方，不按标题卖；读一下原文：{hard_bear[0].title}")
+        line.urgent = True
+    elif bear and not hard_bear:
         line.cautions.append(f"有利空消息 {len(bear)} 条，看一眼")
     if tilt < -0.2:
         line.cautions.append(f"政策面对该板块不利（倾向 {tilt:+.2f}）")
@@ -561,7 +567,7 @@ def format_advice(advice: Advice) -> str:
     out += ["---",
             f"规则（{rules.zh}）：跌破 200 日线 {abs(rules.broken_below_200) * 100:.0f}%"
             + ("或同时失守 50/200 日线且三月为负" if rules.break_on_ma_cross else "")
-            + f" → 卖出；重大利空 → {'卖出/减半' if rules.bear_news_sells else '减半'}；"
+            + f" → 卖出；重大利空且价格在 50 日线下方 → {'卖出/减半' if rules.bear_news_sells else '减半'}；"
             f"单一持仓 > {rules.max_weight * 100:.0f}% → 减到 {rules.trim_to * 100:.0f}%（指数基金上限 {rules.index_max_weight * 100:.0f}%）；"
             f"高出 200 日线 {rules.stretch * 100:.0f}% 或 RSI ≥ 80 → 减三分之一；"
             f"趋势完好、回调到均线、占比 < {rules.add_below * 100:.0f}%、有现金、两周内无财报 → 加仓。这不是投资建议。", ""]
