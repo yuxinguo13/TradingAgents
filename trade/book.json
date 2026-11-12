@@ -1,11 +1,11 @@
 {
- "saved_at": "2026-11-12T20:18:14",
+ "saved_at": "2026-11-12T20:18:33",
  "positions": {
   "ABBV": {
    "symbol": "ABBV",
    "shares": 18,
    "entry": 289.18,
-   "stop": 281.0,
+   "stop": 289.18,
    "target": 315.0,
    "opened": "2026-11-02",
    "horizon_days": 30,
@@ -168,6 +168,41 @@
    ],
    "stop0": 62.0,
    "pending": false,
+   "trimmed": false,
+   "staged": NaN
+  },
+  "TW": {
+   "symbol": "TW",
+   "shares": 61,
+   "entry": 131.5,
+   "stop": 128.7,
+   "target": 136.5,
+   "opened": "2026-11-12",
+   "horizon_days": 20,
+   "sector": "",
+   "thesis": "动量账：Tradeweb 连着几天收新高，今天 131.5 又往上走；20 日相对标普 +21%，三条均线上（20 日线 122.4）。止损在突破日低点 128.77 下方（2.1%、0.8 ATR，高于 20 日线），目标 136.5（R 1.8）。下次财报 84 天后。金融板块持有 CBC，加上它是 2 只。",
+   "invalidation": "收盘跌回 128.7；21 日相对标普回到 +10 以下；到 1R（134.3）先减半",
+   "principles": [
+    "十·强势买强势：pattern+rs",
+    "十·止损在突破日低点或 20 日线取高",
+    "十·只在收盘前最后半小时下单且收盘仍在突破位之上",
+    "十·到 1R 先减半"
+   ],
+   "regime": "SPY 757.2 −0.3%，离 200 日线 +3.9%；VIX 17.5；NVDA 出事但其他芯片在涨；10 年期 5.0%；不是防御日",
+   "parent_id": "fa631464-1219-4e36-91bc-8225ee70f13d",
+   "legs": {
+    "limit": "aec040ac-5d9d-4a4d-925b-e03915f301d4",
+    "stop": "cfc903cb-f841-4356-9e87-e7a329e46708"
+   },
+   "adopted": false,
+   "stop_raised": false,
+   "sleeve": "aggressive",
+   "triggers": [
+    "pattern",
+    "rs"
+   ],
+   "stop0": 128.7,
+   "pending": true,
    "trimmed": false,
    "staged": NaN
   }
