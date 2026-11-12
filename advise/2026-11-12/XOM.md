@@ -1,0 +1,189 @@
+# XOM · 埃克森美孚（ExxonMobil Holdings）
+
+_能源 · 数据截至 2026-11-12 收盘 → 面向 2026-11-12 开盘_
+
+[← 回到 2026-11-12 当日报告](../2026-11-12.md)
+
+> 趋势向上且结构完整；顺势的一侧在上方，风险在于结构一旦破位就要认。
+
+## 一、价格与图形
+
+```text
+       XOM · 近 126 个交易日（日线收盘）
+187.2 ┤                                                                      ╭╮
+182.6 ┤                                                                   ╭──╯│
+178.0 ┤                                                               ╭───╯   ╰╮
+173.4 ┤                                                              ╭╯        │
+168.8 ┤                                                  ╭╮         ╭╯      ···╰╮·╭
+164.2 ┤                                       ╭──╮  ╭─╮╭─╯╰─╮  ╭────╯·······    ╰─╯
+159.6 ┤ ╭╮                                ╭───╯  ╰╮╭╯ ╰╯   ·╰──╯·····
+154.9 ┤─╯╰─╮··                     ╭────╮╭╯       ╰╯   ····                 :::::::
+150.3 ┤    │  ╭───╮····           ╭╯    ╰╯      ·······           ::::::::::
+145.7 ┤    ╰──╯   ╰╮   ·······╭───╯·············       :::::::::::
+141.1 ┤            ╰─╮      ╭╮│            ::::::::::::
+136.5 ┤              ╰──────╯╰╯::::::::::::
+131.9 ┤      :::::::::::::::::
+127.2 ┤::::::
+      └────────────────────────────────────────────────────────────────────────────
+       2026-05-15                       2026-08-17                       2026-11-12
+       · SMA50   : SMA200   ─ close
+```
+
+```text
+       XOM · 近 21 个交易日（放大看最近节奏）
+187.2 ┤           ╭╮
+184.4 ┤      ╭─╮ ╭╯│
+181.6 ┤      │ │╭╯ │
+178.7 ┤ ╭────╯ ╰╯  ╰─╮
+175.9 ┤─╯            │
+173.0 ┤              │
+170.2 ┤              ╰╮    ╭
+167.3 ┤               │   ╭╯
+164.5 ┤               ╰───╯
+      └─────────────────────
+       2026-10-15 2026-11-12
+```
+
+成交量近 63 日： `▃▄▃▃▅▄▂▄▂▄▃▄▂▃▃█▄▃▃▂▁▃▂▂▁▂▁▃▂▃▃▂▂▃▃▄▄▅▆▄▂▃`
+
+### 图形读数
+
+- **均线排列**：均线偏多 — 现价距 20 日 175.75（-3.4%）、50 日 169.21（+0.3%）、200 日 155.12（+9.5%）
+- **形态结构**：上升结构 — 更高的高点 + 更高的低点；前高 164.91 → 188.50（+14.3%）、前低 159.27 → 174.63（+9.6%）
+- **动能**：RSI(14) 47，中性；近一月的斜率慢于近三月（月 -4.1% vs 季 +6.7%），涨势在放缓
+- **波动**：日均真实波幅约为价格的 2.8%；按本报告 2 ATR 的止损惯例，一个 R 相当于 5.7% 的价格距离
+- **位置**：距 52 周高点 -9.3%，距 52 周低点 +51.2%
+- **量能**：最新一日成交量为 20 日均量的 0.9 倍，量能正常
+- **相对强度**：近一月跑输 标普500 2.5 个百分点
+- **支撑 / 阻力**：最近的摆动低点 159.27，摆动高点 188.50（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
+
+**我的读图结论**：趋势向上且结构完整；顺势的一侧在上方，风险在于结构一旦破位就要认
+
+_以上每一条都是对已经发生的价格的描述。均线、RSI、摆动结构全部是滞后指标，它们能说明现在处于什么状态，不能说明下一步。你自己在图上看到的东西，和这里写的不一致时，以你看到的为准——然后去查是哪个数字有问题。_
+
+## 三、财报与基本面
+
+市值 $6,925.70亿 · 行业 Energy / Oil & Gas Integrated · TTM 营收 $3,882.32亿 · TTM EPS 9.72 · 股息率 2.47% · Beta 0.14 · 空头占流通股 1.2%
+
+- **估值**：TTM 市盈率 17.5 倍；前瞻市盈率 13.5 倍（市场预期未来一年盈利上升）；市销率 1.8 倍；EV/EBITDA 9.1 倍；PEG 1.31（在 1–2 之间，价格与增长大致匹配）。
+- **增长**：最新季度营收同比 +32.6%；盈利同比 +111.4%；最近 7 次财报里 6 次超预期。
+- **盈利质量**：毛利率 29.8%、营业利润率 12.9%、净利率 10.5%、ROE 15.5%。
+- **资产负债**：现金 $121.53亿；有息负债 $342.50亿；负债/权益 12.6%（负债很轻）；流动比率 1.19；自由现金流 $283.19亿，为正。
+- **卖方预期**：22 位分析师覆盖；平均评级「买入」（2.42/5，1 为最看多）；目标价均值 184.32（较现价 +8.6%），区间 160.00–213.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
+
+**分季度损益**（季度数据，最新在左）
+
+| 指标 | 2026-09-30 | 2026-06-30 | 2026-03-31 | 2025-12-31 | 2025-09-30 |
+|---|---:|---:|---:|---:|---:|
+| 营收 | $1,105.03亿 | $1,145.29亿 | $831.61亿 | $800.39亿 | $833.31亿 |
+| 毛利率 | 24.2% | 22.5% | 16.7% | 20.0% | 22.6% |
+| 营业利润率 | 17.0% | 15.9% | 6.4% | 7.5% | 11.0% |
+| 净利率 | 13.9% | 12.7% | 5.0% | 8.1% | 9.1% |
+| 净利润 | $154.13亿 | $145.25亿 | $41.83亿 | $65.01亿 | $75.48亿 |
+| 摊薄EPS | 3.72 | 3.48 | 1.00 | 1.53 | 1.76 |
+
+**分年度损益**（年度数据，最新在左）
+
+| 指标 | 2025-12-31 | 2024-12-31 | 2023-12-31 | 2022-12-31 |
+|---|---:|---:|---:|---:|
+| 营收 | $3,239.05亿 | $3,392.47亿 | $3,346.97亿 | $3,986.75亿 |
+| 毛利率 | 22.0% | 22.6% | 25.1% | 25.9% |
+| 营业利润率 | 10.5% | 11.7% | 13.3% | 16.1% |
+| 净利率 | 8.9% | 9.9% | 10.8% | 14.0% |
+| 净利润 | $288.44亿 | $336.80亿 | $360.10亿 | $557.40亿 |
+| 摊薄EPS | 6.70 | 7.84 | 8.89 | 13.26 |
+
+**财报兑现记录**
+
+| 财报日 | 预期EPS | 实际EPS | 超预期 |
+|---|---:|---:|---:|
+| 2027-01-29 | 4.09 | — | 尚未公布 |
+| 2026-10-30 | 4.03 | 4.23 | +4.9% |
+| 2026-07-31 | 3.63 | 3.52 | -3.0% |
+| 2026-05-01 | 1.01 | 2.09 | +107.5% |
+| 2026-01-30 | 1.69 | 1.71 | +1.1% |
+| 2025-10-31 | 1.82 | 1.88 | +3.0% |
+
+_财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会滞后，TTM 窗口是厂商口径而非公司财年口径。以上任何一个数字如果会改变你的决定，请点开本页下方的 SEC EDGAR 链接看原文。_
+
+**财报日历**：下次财报 **2027-01-29**（约 78 天后）；上次财报 2026-10-30，超预期 +4.9%。财报日是这套止损体系唯一无法覆盖的风险：跳空会直接穿过止损价。
+
+## 四、消息面（过去 24 小时）
+
+| 时间 | 材料度 | 倾向 | 标题 | 来源 |
+|---|---:|---|---|---|
+| 9h 前 | 8 | 偏多 | [Chevron Q3 Earnings Surge on Strong Refining: Is the Stock a Buy Now? - TradingView](https://news.google.com/rss/articles/CBMiwAFBVV95cUxNZHBGay1vWDZoa3R3YlRFdHB1TXBlTFF6UnZsUllkRnZHVmlJR0Y2Si12UUxENXRWVXdMMmRma21zY3lmZW1XRDNudm8yd0NWNmpwcWgwNXBhZ1pYTHJVSTlZYlMtek5sZFJMNUU1aVg1WHNBVGZ4dnltMDVzVWM5dXB0aXZjOXhVelVOd1RLbHB3azNCcE1sRzZfb2F1M2p6YU1BV3RYbEtieXo0Ymc4UGlXcFR4am9SaGVpZEN5NG0?oc=5) | TradingView |
+| 6h 前 | 7 | 中性 | [XOM: SEC Form DEFA14A filed by ExxonMobil Holdings Corporation - Quantisnow](https://news.google.com/rss/articles/CBMiogFBVV95cUxOS2dmdGhoLVNLOWhwUlZzT291dEhqMVFvYU5xRy1xS2ZqdXVsckNrU1QyZzNOUkhkTlY3MWlpaU1BVExkdGhNQVBRSmFIOVZNbjc0UU1ZUHdjcFJKa0xGTFBxNEEyeUZhM0lrRXBROEhZMjJnNktyWTJZMzVycW5OZmN2bHM1TUE0OExHdmFMdmJfcXZ0Q3dPcEY1WVU3bk5NOEE?oc=5) | Quantisnow |
+| 22h 前 | 5 | 中性 | [Is ExxonMobil Holdings (XOM) Undervalued Following Its Venezuela Return Deal? - Simply Wall St](https://news.google.com/rss/articles/CBMizgFBVV95cUxQN0JibUtxLWwwZDNUQU1ib3hlZm1adzVDU2hYZTV1Z01GdWw4LXVtMXBud1dQZGdUU1hQZFk5OUJ4WFdoY0k4RHFZUE1xNjJnWnBSU193dHlVeGhKR2pIdy1DNkNDanZ3X1Y0c0ZETkFobDVhWlUxaU1XWUNDTEwzR25NX25YcVhvZkM4TV9rNi04MFVwMGppaE9FRXlCOUxfcDlobUZZdzBKUl83U0FyZkczalphb0U3RUtQSkhJY1dSYjJXMWc0WTVWZVppZ9IB0wFBVV95cUxPSUMxSnpGSTF0czRzbVA5OGRIZ3lHNE9iUGZod2hWQ3RtcmRvVnEzVWt6cEQ3M2p5TzJvX1JmSFo2aE1sS21jdzg2TU5ocktsMkZEcnd3SWpOZGVjQzRXamRQMGxTWkpjeVdzY2dYUUlwSUpTOG44UjhzWXlZOGc1UURsZzFIRkxSck9hSU50dmFTYnpxVGRYMW4zZ0FtU2xyMXNaUHBkNEswNFdSWmsyNlB6NDFHZlpJemtqU0NtTHJmTnppcktScDJDRXJuYTlib19j?oc=5) | Simply Wall St |
+| 28h 前 | 5 | 中性 | [ExxonMobil (XOM) Stock May Be 24% Undervalued Despite Venezuela Oil Deal - Yahoo Finance](https://news.google.com/rss/articles/CBMilwFBVV95cUxPdkRQLU41MGJHYzlOTG1SZk9hOGwyMUlrclZOZ25pM3Rha0RDV2tDSFVwaWpETUI3ekU1cjJWNXo5aVlDWk9RWVRRZklOeDNTZDZwSWhRM2dtQXdyQ3p5cVZqZzlPZ1VJNUpUdU5FR1RKQzhtRjBiQm9qU3NPZnNuVHJHejJPLW1TSFFDSkp4T3hNaUFOWE9N?oc=5) | Yahoo Finance |
+| 8h 前 | 0 | 中性 | [Oil Price is Still High: Boon for ExxonMobil's Upstream Business? - TradingView](https://news.google.com/rss/articles/CBMiuwFBVV95cUxPaE9MeTZ3N2VXWkhMQUs1SWdtZ01sOVc1SGtxTHYxUEtkYVhXcHk0M2FpWGYtZ0xHWExpMGtHSFd2LW1rUExVa0w2VXRyd0d2MmR5aTNLYmF3em9qNnFIMUpNXzJGZU5UM0djektoN0hEOTlwczcwcktqRWtYdFdRV1BqOUZ3eUU5QWZ2VTFKTS05X1BuaEpxYkNJU2lTR1FySHZZRTMyZFdyOHV2MUVrRmhycTg1SndtUU1Z?oc=5) | TradingView |
+| 24h 前 | 0 | 偏多 | [ExxonMobil Holdings Corp. stock outperforms competitors on strong trading day - MarketWatch](https://news.google.com/rss/articles/CBMi6gFBVV95cUxPU1Rqd2taLTlyVlQxNUFER19tT1ZKbTRaNzVSZHVyS2tvT0UwdDhzVzVIMTdxb21mQ0JJbWZsT2FMQzRRckZjU0lMY3Jkc084YzN5dVJ5b2FkMGpKeDRHTVk5OGNlVVkzcUhfSS1hOE1JTUNCQWR0V0txaW5yeW5SUVJsOEdtaGhEME5SS3Bla3J2ZjN4Z3RWb1cta3NldmVmOWU5bElTaFJBZDl1VjNVQ3ZqZDZuUEpXNXFfVlZWVjdMM3I0UTFrdzdDMTRkbnd2Y1d4dmRJcl9wVlpLWGVvRkpQN1lBT0h0OVE?oc=5) | MarketWatch |
+
+_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+
+## 五、反方观点与风险
+
+_以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
+
+- 按本报告掌握的数据，没有触发任何一条成文的风险规则。这不等于没有风险——它只等于「这台机器读到的东西里没有」。
+
+## 六、原始数据（本页所有计算的来源）
+
+最近 15 个交易日的 OHLCV：
+
+| 日期 | 开 | 高 | 低 | 收 | 涨跌 | 成交量 |
+|---|---:|---:|---:|---:|---:|---:|
+| 2026-10-23 | 179.37 | 183.75 | 179.00 | **183.21** | +2.8% | 11,517,700 |
+| 2026-10-26 | 181.86 | 184.59 | 181.52 | **184.54** | +0.7% | 10,893,300 |
+| 2026-10-27 | 183.63 | 184.88 | 179.77 | **179.91** | -2.5% | 14,156,500 |
+| 2026-10-28 | 180.59 | 183.65 | 180.00 | **182.02** | +1.2% | 12,715,300 |
+| 2026-10-29 | 183.77 | 184.39 | 180.94 | **183.29** | +0.7% | 10,961,300 |
+| 2026-10-30 | 185.98 | 188.50 | 184.68 | **187.25** | +2.2% | 21,825,700 |
+| 2026-11-02 | 183.98 | 184.59 | 179.67 | **179.67** | -4.0% | 16,460,900 |
+| 2026-11-03 | 178.00 | 180.30 | 177.20 | **177.46** | -1.2% | 11,578,500 |
+| 2026-11-04 | 174.26 | 174.61 | 167.39 | **169.27** | -4.6% | 25,652,200 |
+| 2026-11-05 | 171.06 | 173.67 | 165.14 | **165.30** | -2.3% | 18,795,100 |
+| 2026-11-06 | 164.25 | 166.79 | 163.51 | **165.87** | +0.3% | 15,868,500 |
+| 2026-11-09 | 163.82 | 165.55 | 162.84 | **164.73** | -0.7% | 17,192,900 |
+| 2026-11-10 | 161.86 | 164.96 | 160.11 | **164.47** | -0.2% | 11,481,700 |
+| 2026-11-11 | 165.14 | 166.75 | 164.46 | **166.71** | +1.4% | 13,376,700 |
+| 2026-11-12 | 168.25 | 170.91 | 167.34 | **169.78** | +1.8% | 12,168,806 |
+
+## 七、自己去查（本页不做独立验证）
+
+**行情与图形**
+- [Yahoo Finance 行情](https://finance.yahoo.com/quote/XOM) — 本报告所有价格与均线的来源，先对这里
+- [TradingView 图表](https://www.tradingview.com/chart/?symbol=XOM) — 可画线、可换周期，用来复核本页的 ASCII 图
+- [Finviz 快照](https://finviz.com/quote.ashx?t=XOM) — 一屏看完估值、技术与同业对比
+- [StockCharts 技术面](https://stockcharts.com/h-sc/ui?s=XOM)
+- [Barchart 观点](https://www.barchart.com/stocks/quotes/XOM/opinion) — 把十几个技术指标折算成一个多空票数
+
+**财务与估值**
+- [StockAnalysis 财务报表](https://stockanalysis.com/stocks/XOM/financials/) — 十年利润表/资产负债表/现金流，免费且不用登录
+- [Yahoo 财务](https://finance.yahoo.com/quote/XOM/financials) — 本页财报数字的来源
+- [Yahoo 关键统计](https://finance.yahoo.com/quote/XOM/key-statistics) — 估值倍数、利润率、资产负债的完整版
+- [Macrotrends 长期趋势](https://www.macrotrends.net/stocks/charts/XOM/x/revenue) — 营收与利润的十年折线，看结构性变化
+- [Wisesheets/Koyfin 替代：GuruFocus](https://www.gurufocus.com/stock/XOM/summary)
+
+**原始文件（无中介）**
+- [SEC EDGAR 全部文件](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&ticker=XOM&type=&dateb=&owner=include&count=40) — 10-K/10-Q/8-K 原文；财报电话会与风险因素只在这里
+- [SEC 全文检索](https://efts.sec.gov/LATEST/search-index?q=%22XOM%22&forms=8-K) — 按关键词搜文件正文
+- [OpenInsider 内部人交易](http://openinsider.com/search?q=XOM) — 高管自己在买还是在卖，是少数不靠解读的信号
+- [13F 机构持仓](https://whalewisdom.com/stock/XOM) — 注意：13F 滞后 45 天，不能当作买入理由
+
+**消息与预期**
+- [Yahoo 新闻](https://finance.yahoo.com/quote/XOM/news)
+- [Google News 搜索](https://news.google.com/search?q=ExxonMobil+Holdings+stock&hl=en-US)
+- [财报日历与预期](https://stockanalysis.com/stocks/XOM/forecast/) — 下次财报日、市场一致预期、历史超预期记录
+- [Seeking Alpha 讨论](https://seekingalpha.com/symbol/XOM) — 观点密度高，但是买方与卖方混杂，当作反方意见读
+- [公司投资者关系](https://www.google.com/search?q=ExxonMobil+Holdings+investor+relations) — 财报原始 PPT 与电话会记录
+
+**中文渠道（转载源，不作独立验证）**
+- [雪球](https://xueqiu.com/S/XOM) — 中文讨论与财报摘要
+- [富途牛牛](https://www.futunn.com/stock/XOM-US) — 中文行情与公告翻译
+- [东方财富](https://quote.eastmoney.com/us/XOM.html) — 中文财务报表
+- [同花顺](http://stock.10jqka.com.cn/usstock/XOM/) — 中文资讯
+
+---
+
+_这一页是一台程序按成文规则读公开数据的结果，不是投资建议。它不知道你的资金、税务和其它持仓。图形结论来自滞后指标，财报数字来自厂商转录，新闻材料度来自关键词打分——三者都会错。把它当作一份整理好的证据，而不是一个答案。_

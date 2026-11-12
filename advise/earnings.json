@@ -1,135 +1,5 @@
 {
 "rows": {
-"QQQM|2026-11-10": {
-"symbol": "QQQM",
-"as_of": "2026-11-10",
-"next_date": "",
-"last_date": "",
-"eps_estimate": NaN,
-"eps_actual": NaN,
-"surprise_pct": NaN,
-"error": "no earnings calendar"
-},
-"XOM|2026-11-10": {
-"symbol": "XOM",
-"as_of": "2026-11-10",
-"next_date": "2027-01-29",
-"last_date": "2026-10-30",
-"eps_estimate": 4.03,
-"eps_actual": 4.23,
-"surprise_pct": 4.91,
-"error": ""
-},
-"KDP|2026-11-10": {
-"symbol": "KDP",
-"as_of": "2026-11-10",
-"next_date": "2027-02-23",
-"last_date": "2026-11-03",
-"eps_estimate": 0.62,
-"eps_actual": 0.66,
-"surprise_pct": 6.39,
-"error": ""
-},
-"KO|2026-11-10": {
-"symbol": "KO",
-"as_of": "2026-11-10",
-"next_date": "2027-02-09",
-"last_date": "2026-10-27",
-"eps_estimate": 0.88,
-"eps_actual": 0.91,
-"surprise_pct": 3.3,
-"error": ""
-},
-"ABBV|2026-11-10": {
-"symbol": "ABBV",
-"as_of": "2026-11-10",
-"next_date": "2027-02-03",
-"last_date": "2026-10-30",
-"eps_estimate": 3.76,
-"eps_actual": 3.82,
-"surprise_pct": 1.47,
-"error": ""
-},
-"BRK-B|2026-11-10": {
-"symbol": "BRK-B",
-"as_of": "2026-11-10",
-"next_date": "2027-03-01",
-"last_date": "2026-11-07",
-"eps_estimate": 6.14,
-"eps_actual": 5.94,
-"surprise_pct": -3.21,
-"error": ""
-},
-"LLY|2026-11-10": {
-"symbol": "LLY",
-"as_of": "2026-11-10",
-"next_date": "2027-02-03",
-"last_date": "2026-10-29",
-"eps_estimate": 6.35,
-"eps_actual": 7.48,
-"surprise_pct": 17.88,
-"error": ""
-},
-"AMZN|2026-11-10": {
-"symbol": "AMZN",
-"as_of": "2026-11-10",
-"next_date": "2027-02-04",
-"last_date": "2026-10-29",
-"eps_estimate": 1.96,
-"eps_actual": 1.89,
-"surprise_pct": -3.47,
-"error": ""
-},
-"MSFT|2026-11-10": {
-"symbol": "MSFT",
-"as_of": "2026-11-10",
-"next_date": "2027-01-27",
-"last_date": "2026-10-28",
-"eps_estimate": 4.72,
-"eps_actual": 4.89,
-"surprise_pct": 3.59,
-"error": ""
-},
-"GLDM|2026-11-10": {
-"symbol": "GLDM",
-"as_of": "2026-11-10",
-"next_date": "",
-"last_date": "",
-"eps_estimate": NaN,
-"eps_actual": NaN,
-"surprise_pct": NaN,
-"error": "no earnings calendar"
-},
-"JNJ|2026-11-10": {
-"symbol": "JNJ",
-"as_of": "2026-11-10",
-"next_date": "2027-01-26",
-"last_date": "2026-10-13",
-"eps_estimate": 2.52,
-"eps_actual": 2.59,
-"surprise_pct": 2.69,
-"error": ""
-},
-"CEG|2026-11-10": {
-"symbol": "CEG",
-"as_of": "2026-11-10",
-"next_date": "2027-02-24",
-"last_date": "2026-11-09",
-"eps_estimate": 3.89,
-"eps_actual": 5.06,
-"surprise_pct": 30.08,
-"error": ""
-},
-"ASO|2026-11-10": {
-"symbol": "ASO",
-"as_of": "2026-11-10",
-"next_date": "2026-12-08",
-"last_date": "2026-09-09",
-"eps_estimate": 2.08,
-"eps_actual": 2.31,
-"surprise_pct": 11.05,
-"error": ""
-},
 "QQQM|2026-11-11": {
 "symbol": "QQQM",
 "as_of": "2026-11-11",
@@ -273,6 +143,156 @@
 "NVDA|2026-11-11": {
 "symbol": "NVDA",
 "as_of": "2026-11-11",
+"next_date": "2026-11-17",
+"last_date": "2026-08-26",
+"eps_estimate": 2.09,
+"eps_actual": 2.22,
+"surprise_pct": 6.16,
+"error": ""
+},
+"QQQM|2026-11-12": {
+"symbol": "QQQM",
+"as_of": "2026-11-12",
+"next_date": "",
+"last_date": "",
+"eps_estimate": NaN,
+"eps_actual": NaN,
+"surprise_pct": NaN,
+"error": "no earnings calendar"
+},
+"XOM|2026-11-12": {
+"symbol": "XOM",
+"as_of": "2026-11-12",
+"next_date": "2027-01-29",
+"last_date": "2026-10-30",
+"eps_estimate": 4.03,
+"eps_actual": 4.23,
+"surprise_pct": 4.91,
+"error": ""
+},
+"KDP|2026-11-12": {
+"symbol": "KDP",
+"as_of": "2026-11-12",
+"next_date": "2027-02-23",
+"last_date": "2026-11-03",
+"eps_estimate": 0.62,
+"eps_actual": 0.66,
+"surprise_pct": 6.39,
+"error": ""
+},
+"KO|2026-11-12": {
+"symbol": "KO",
+"as_of": "2026-11-12",
+"next_date": "2027-02-09",
+"last_date": "2026-10-27",
+"eps_estimate": 0.88,
+"eps_actual": 0.91,
+"surprise_pct": 3.3,
+"error": ""
+},
+"ABBV|2026-11-12": {
+"symbol": "ABBV",
+"as_of": "2026-11-12",
+"next_date": "2027-02-03",
+"last_date": "2026-10-30",
+"eps_estimate": 3.76,
+"eps_actual": 3.82,
+"surprise_pct": 1.47,
+"error": ""
+},
+"BRK-B|2026-11-12": {
+"symbol": "BRK-B",
+"as_of": "2026-11-12",
+"next_date": "2027-03-01",
+"last_date": "2026-11-07",
+"eps_estimate": 6.14,
+"eps_actual": 5.94,
+"surprise_pct": -3.21,
+"error": ""
+},
+"LLY|2026-11-12": {
+"symbol": "LLY",
+"as_of": "2026-11-12",
+"next_date": "2027-02-03",
+"last_date": "2026-10-29",
+"eps_estimate": 6.35,
+"eps_actual": 7.48,
+"surprise_pct": 17.88,
+"error": ""
+},
+"AMZN|2026-11-12": {
+"symbol": "AMZN",
+"as_of": "2026-11-12",
+"next_date": "2027-02-04",
+"last_date": "2026-10-29",
+"eps_estimate": 1.96,
+"eps_actual": 1.89,
+"surprise_pct": -3.47,
+"error": ""
+},
+"MSFT|2026-11-12": {
+"symbol": "MSFT",
+"as_of": "2026-11-12",
+"next_date": "2027-01-27",
+"last_date": "2026-10-28",
+"eps_estimate": 4.72,
+"eps_actual": 4.89,
+"surprise_pct": 3.59,
+"error": ""
+},
+"GLDM|2026-11-12": {
+"symbol": "GLDM",
+"as_of": "2026-11-12",
+"next_date": "",
+"last_date": "",
+"eps_estimate": NaN,
+"eps_actual": NaN,
+"surprise_pct": NaN,
+"error": "no earnings calendar"
+},
+"JNJ|2026-11-12": {
+"symbol": "JNJ",
+"as_of": "2026-11-12",
+"next_date": "2027-01-26",
+"last_date": "2026-10-13",
+"eps_estimate": 2.52,
+"eps_actual": 2.59,
+"surprise_pct": 2.69,
+"error": ""
+},
+"CEG|2026-11-12": {
+"symbol": "CEG",
+"as_of": "2026-11-12",
+"next_date": "2027-02-24",
+"last_date": "2026-11-09",
+"eps_estimate": 3.89,
+"eps_actual": 5.06,
+"surprise_pct": 30.08,
+"error": ""
+},
+"ASO|2026-11-12": {
+"symbol": "ASO",
+"as_of": "2026-11-12",
+"next_date": "2026-12-08",
+"last_date": "2026-09-09",
+"eps_estimate": 2.08,
+"eps_actual": 2.31,
+"surprise_pct": 11.05,
+"error": ""
+},
+"APLE|2026-11-12": {
+"symbol": "APLE",
+"as_of": "2026-11-12",
+"next_date": "2027-02-22",
+"last_date": "2026-11-05",
+"eps_estimate": 0.21,
+"eps_actual": 0.27,
+"surprise_pct": 30.92,
+"error": ""
+},
+"NVDA|2026-11-12": {
+"symbol": "NVDA",
+"as_of": "2026-11-12",
 "next_date": "2026-11-17",
 "last_date": "2026-08-26",
 "eps_estimate": 2.09,
