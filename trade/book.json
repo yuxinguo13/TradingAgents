@@ -1,9 +1,9 @@
 {
- "saved_at": "2026-11-11T20:19:32",
+ "saved_at": "2026-11-12T20:17:48",
  "positions": {
   "ABBV": {
    "symbol": "ABBV",
-   "shares": 35,
+   "shares": 18,
    "entry": 289.18,
    "stop": 281.0,
    "target": 315.0,
@@ -29,42 +29,7 @@
    "triggers": [],
    "stop0": 280.0,
    "pending": false,
-   "trimmed": false,
-   "staged": 298.36
-  },
-  "ASO": {
-   "symbol": "ASO",
-   "shares": 113,
-   "entry": 70.86,
-   "stop": 67.45,
-   "target": 77.3,
-   "opened": "2026-11-09",
-   "horizon_days": 20,
-   "sector": "",
-   "thesis": "动量账：Academy Sports 今天 +5% 收在 70.8，收盘前站上 11/5 前高 69.62，创新高；20 日相对标普 +32%，三条均线上（20 日线 61）。今天是突破日，止损放在今天的低点 67.47 下方（4.9%、1.3 ATR，高于 20 日线），目标 77.3（数据包参考目标，R 1.9）。下次财报约 29 天后，在 20 天持有期之外。11/5 我因为指数下跌跳过了它，今天它自己给出了突破确认。",
-   "invalidation": "收盘跌回 67.45；收盘跌回前高 69.6 下方且量比 >1.5；到 1R（74.35）先减半",
-   "principles": [
-    "十·强势买强势：pattern+rs",
-    "十·止损在突破日低点或 20 日线取高",
-    "十·只在收盘前最后半小时下单且收盘仍在突破位之上",
-    "十·到 1R 先减半"
-   ],
-   "regime": "SPY 754.9 +2.7%，离 200 日线 +3.8%；油价跌、芯片反弹；明天 CPI；不是防御日",
-   "parent_id": "87de9f61-d4de-4542-a90b-8f55a33048c3",
-   "legs": {
-    "limit": "72ca9f0a-4875-4f42-9338-3088907fa603",
-    "stop": "b605faf0-7f70-4201-b28e-b1fad913b391"
-   },
-   "adopted": false,
-   "stop_raised": false,
-   "sleeve": "aggressive",
-   "triggers": [
-    "pattern",
-    "rs"
-   ],
-   "stop0": 67.45,
-   "pending": false,
-   "trimmed": false,
+   "trimmed": true,
    "staged": NaN
   },
   "CBC": {
@@ -172,7 +137,7 @@
   "TGTX": {
    "symbol": "TGTX",
    "shares": 124,
-   "entry": 64.75,
+   "entry": 64.63,
    "stop": 62.0,
    "target": 70.0,
    "opened": "2026-11-11",
@@ -202,7 +167,7 @@
     "rs"
    ],
    "stop0": 62.0,
-   "pending": true,
+   "pending": false,
    "trimmed": false,
    "staged": NaN
   }
@@ -967,6 +932,47 @@
    "r": -0.7527519418604639,
    "reviewed": true,
    "sleeve": "aggressive"
+  },
+  {
+   "symbol": "ASO",
+   "shares": 113,
+   "entry": 70.86,
+   "exit": 67.44,
+   "opened": "2026-11-09",
+   "closed": "2026-11-12",
+   "reason": "stop: 交易所触发止损",
+   "thesis": "动量账：Academy Sports 今天 +5% 收在 70.8，收盘前站上 11/5 前高 69.62，创新高；20 日相对标普 +32%，三条均线上（20 日线 61）。今天是突破日，止损放在今天的低点 67.47 下方（4.9%、1.3 ATR，高于 20 日线），目标 77.3（数据包参考目标，R 1.9）。下次财报约 29 天后，在 20 天持有期之外。11/5 我因为指数下跌跳过了它，今天它自己给出了突破确认。",
+   "invalidation": "收盘跌回 67.45；收盘跌回前高 69.6 下方且量比 >1.5；到 1R（74.35）先减半",
+   "principles": [
+    "十·强势买强势：pattern+rs",
+    "十·止损在突破日低点或 20 日线取高",
+    "十·只在收盘前最后半小时下单且收盘仍在突破位之上",
+    "十·到 1R 先减半"
+   ],
+   "pnl": -386.46,
+   "r": -1.0029325513196496,
+   "reviewed": false,
+   "sleeve": "aggressive"
+  },
+  {
+   "symbol": "ABBV",
+   "shares": 17,
+   "entry": 289.18,
+   "exit": 298.752941,
+   "opened": "2026-11-02",
+   "closed": "2026-11-12",
+   "reason": "target: 1R 减半挂单成交 298.75",
+   "thesis": "主仓回踩：AbbVie 10/30 财报超预期后新高 298.6，今天回落到 289，20 日线 282.8、50 日线 269.8 在下方。入场 291（简报），止损 280 在 20 日线与 10/28 低点 281.5 之下（3.8%、1.7 ATR），目标 315，R 2.2。下次财报 2 月。",
+   "invalidation": "收盘跌回 280；医药板块相对标普 5 日跑输 3%",
+   "principles": [
+    "一·趋势向上且结构完整",
+    "二·回踩入场、止损在结构位之下 ≥1 ATR、R ≥ 2",
+    "三·同板块 ≤3（医疗 PFE+LLY+ABBV）"
+   ],
+   "pnl": 162.74,
+   "r": 1.0428040305010902,
+   "reviewed": false,
+   "sleeve": "core"
   }
  ]
 }
