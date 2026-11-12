@@ -216,6 +216,13 @@
     "sym": "AVGO",
     "shares": 2,
     "limit": 335.0
+   },
+   {
+    "acct": "11/12 简报新增：增发后回调",
+    "sym": "KDP",
+    "shares": 20,
+    "limit": 36.0,
+    "account": "PCRA B"
    }
   ]
  }
