@@ -1,5 +1,5 @@
 {
- "saved_at": "2026-11-12T20:18:33",
+ "saved_at": "2026-11-13T20:19:27",
  "positions": {
   "ABBV": {
    "symbol": "ABBV",
@@ -174,7 +174,7 @@
   "TW": {
    "symbol": "TW",
    "shares": 61,
-   "entry": 131.5,
+   "entry": 131.48,
    "stop": 128.7,
    "target": 136.5,
    "opened": "2026-11-12",
@@ -202,7 +202,7 @@
     "rs"
    ],
    "stop0": 128.7,
-   "pending": true,
+   "pending": false,
    "trimmed": false,
    "staged": NaN
   }
