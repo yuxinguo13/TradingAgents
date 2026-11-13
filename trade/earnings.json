@@ -1,15 +1,5 @@
 {
 "rows": {
-"TGTX|2026-11-11": {
-"symbol": "TGTX",
-"as_of": "2026-11-11",
-"next_date": "2027-03-01",
-"last_date": "2026-11-09",
-"eps_estimate": 0.26,
-"eps_actual": 0.35,
-"surprise_pct": 35.92,
-"error": ""
-},
 "ABBV|2026-11-12": {
 "symbol": "ABBV",
 "as_of": "2026-11-12",
@@ -238,6 +228,16 @@
 "eps_estimate": 1.01,
 "eps_actual": 1.04,
 "surprise_pct": 2.58,
+"error": ""
+},
+"RXO|2026-11-13": {
+"symbol": "RXO",
+"as_of": "2026-11-13",
+"next_date": "2027-02-05",
+"last_date": "2026-10-29",
+"eps_estimate": 0.08,
+"eps_actual": 0.09,
+"surprise_pct": 20.0,
 "error": ""
 }
 }
