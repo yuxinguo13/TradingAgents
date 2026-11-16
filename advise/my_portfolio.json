@@ -191,13 +191,13 @@
     "acct": "PCRA B",
     "sym": "KO",
     "shares": 10,
-    "limit": 95.7
+    "limit": 97.5
    },
    {
     "acct": "HSA",
     "sym": "JNJ",
     "shares": 3,
-    "limit": 277.0
+    "limit": 282.0
    },
    {
     "acct": "PCRA A",
@@ -209,7 +209,7 @@
     "acct": "PCRA B",
     "sym": "BRK-B",
     "shares": 1,
-    "limit": 577.0
+    "limit": 589.0
    },
    {
     "acct": "PCRA A",
