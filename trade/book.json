@@ -1,5 +1,5 @@
 {
- "saved_at": "2026-11-13T20:20:01",
+ "saved_at": "2026-11-16T20:18:53",
  "positions": {
   "ABBV": {
    "symbol": "ABBV",
@@ -232,7 +232,7 @@
    "sleeve": "core",
    "triggers": [],
    "stop0": 27.7,
-   "pending": true,
+   "pending": false,
    "trimmed": false,
    "staged": NaN
   }
