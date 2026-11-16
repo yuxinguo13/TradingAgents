@@ -112,18 +112,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 30h 前 | 10 | 中性 | [Amazon.com, Inc. $AMZN Stock Acquired by AMI Investment Management Inc. - MarketBeat](https://news.google.com/rss/articles/CBMixgFBVV95cUxQQ1E2VFNXck13cmZWMWJhVXRTeWxzV1FKWHpTUFJlcm9QblJKQ2FBdk04dHFNWXJHcEZDUHROUlU1enZ3OC1BNUZFRm5FTnhfMlFMM1ZuQzVzdzYzM3hUalgyRW1tZE5LU3pXaHZ1VUQ1c0ZNd2RUWWVKQ0dVU1BtNjBfNnkzM25kVU5rR0UwOWVyV19fLU05WngwNnV3a1g5WDIzOE1WdFl0MTA0YzlNMExVeUZHcGV1YzFaNk9OczhaSWFpTmc?oc=5) | MarketBeat |
-| 10h 前 | 8 | 中性 | [Amazon.com, Inc. $AMZN Shares Newly Bought by M & L Capital Management Ltd - MarketBeat](https://news.google.com/rss/articles/CBMiyAFBVV95cUxQc0VEM0ZoVVkxeVZSZjZBcVhZdDhScVA4QXlUNVhXcnE4YjF5aUthTXBrd0k1YVdpeGN1OEwydGZNVnpjREE3ekRPNjJKM1ZVTDlaUGo3a1U3dGlTRGJjcHVKUlNuMGM1emNta3NwdVFlSjlqeDVEXzlIMlR5aVp1bWlPYUd0VzVKamxiMVpfTlA1WGRsaVRpaGFOal8yT3lfYTFDcTlQYlpxbnNtTDhURldMa3JRUm1FUGdWMVhoRzN6Q1JpaE5aYw?oc=5) | MarketBeat |
-| 10h 前 | 8 | 偏多 | [Amazon.com, Inc. $AMZN Stake Raised by Great Lakes Retirement Inc. - MarketBeat](https://news.google.com/rss/articles/CBMivwFBVV95cUxQR2JndHNMNHA4OWF1R2RrN1d3Y1A1NnA0QlhBcDJxM2Zvdl9XdUJmYkdSNlJkNDlqQlNzNjNLbzRRWnZ3OWdZQjVyU2Rscm1RdnNFRG9XNnZtT1ZobklPTjN3cnY4R3BFZTBFYlREQ3paYUk5XzNMbk0xZFQ4cjlzZVdZMFVHazZwWEVsMmg0V191aDdHNElkZTBERTJFR2xZdlYtVDA5Nzg2M0d3QndsWV9DRGlnR1g4RjAyMXdiUQ?oc=5) | MarketBeat |
-| 11h 前 | 8 | 中性 | [Amazon.com, Inc. $AMZN Stake Reduced by United Asset Strategies Inc. - MarketBeat](https://news.google.com/rss/articles/CBMiwgFBVV95cUxOb0N5ZWU0YlBlOFNRNkFaTDNjM3Jlam1FVkFRdThSVmp3dDZ1enc3TC1VQ0JBYjdkRTNkZG95SGh6SHRLanpSWlhpZ01Ub0JrS0VBcThHaXB6dklYMlZlaWwxSnhRcVNkVUNHT0UxRUVoeG5vclcxNS1mcFNXNTZaSEpGaHhWM3JWbG1scWtCUmhQV3BRZVlnSEU2OUZxOXdiZDRRMVdSQ3I1RGRfN0dLWTRGTU1SZWZUdXppcWZlUlU3dw?oc=5) | MarketBeat |
-| 12h 前 | 8 | 中性 | [Amazon.com, Inc. $AMZN Stock Bought by Choreo LLC - MarketBeat](https://news.google.com/rss/articles/CBMiqgFBVV95cUxQLTVpeDlvVDBRTU5UaC1ya1RxOWFzcnppYjE4MEdRZ2hJYkc3dEJIaE5qT1dzUG0tSTZ6WHEzdUFNeDdCdUw0cW9FZF94cE1SNkFzQU1NcHZZeFQtcnZJUmFNM1h3TUsyUkZzOVNUZk9iTVhtNTgtOHhXT3p2dG13dXQ1aTIxR0tjQmR5ai1idHlaOGFsX3JSejdTYzlvOWJ6b1ZlTHptQjhNZw?oc=5) | MarketBeat |
-| 13h 前 | 8 | 中性 | [Amazon.com, Inc. $AMZN Stock: Bokf Na Boosts Position - MarketBeat](https://news.google.com/rss/articles/CBMirgFBVV95cUxNWURncllCOU8yQXY5b1BqZzVHUmU0YVNCLVgyQjQ0MGtXSHktOW5zdlpiUXBvelBCdmdqeVpuaU9XMlk3bG15RUhNcDlab3NZcmhwNEFlMmhWbEVKNDE1LWRKTGJzdER5Yi1FOXdUa2lnbUxQYUlqMmU1YWR2c08yUG52ZDBZTzNXSnQ3NHloZkR0dmJtOUFKQktCYzNiSFpfWlIwdFFIcWZodk1GY3c?oc=5) | MarketBeat |
-| 29h 前 | 8 | 中性 | [Amazon.com, Inc. $AMZN Stock: WestEnd Advisors LLC Reduces Stake - MarketBeat](https://news.google.com/rss/articles/CBMivAFBVV95cUxQM3AyVmJoNy02Wnczek52endTSkZJaHVGNmszR2dtbTZLX3VxRG1SNVVmYTI4bDhqLTVweW1jdW8tYW85Nmgzc25qcmNCWEFmaUtBR3BaR05ZWnhNWEt3NXIyaFNOaEZxbVZNRHlRcWZ4QU40S3JpWmtCS19Obl9aSTNwSkNmR3IxQmtxSUVOQ0s5ZFBVR0FLR1NJYnNzUW9yU0RhOGtzeWJUTm9NbUcwcUFCNzEzQlVJZjF1SQ?oc=5) | MarketBeat |
-| 29h 前 | 8 | 中性 | [Amazon.com, Inc. $AMZN Stock: VestGen Advisors LLC Reduces Stake - MarketBeat](https://news.google.com/rss/articles/CBMivAFBVV95cUxQQ2NYcEpZVmJ4VnhJcFgtRlVSZHh2VmxLS2QzZ0pIbUpjU0liS1Zvb1JFX3dJblc2MzdBeXY4QlRoRlA0bTZncmpNUG5jUjNxamN2OG5UU2k5YnRQdXd6U3Q1SE5tMHB3T3EyVFF5a3pEQzFySUp5MFdCV2Q0Y1FWWm9uc1kzWFRNRWtpbFh0ZzJJUm90TVNMdEZiWEhSZS1jZV9ZSC1tSU52aTF5NXB4bjdhWGNMTWZSN1Z4QQ?oc=5) | MarketBeat |
-| 29h 前 | 8 | 中性 | [Amazon.com, Inc. $AMZN Stock: Sigma Investment Counselors Inc. Grows Position - MarketBeat](https://news.google.com/rss/articles/CBMizAFBVV95cUxNRFhzZ3ljMXpNQU54ZzVEN0kzWV9wVjVWUnZLSTdSa0xkS1FnVEFDdWd1QVZzc3RraEZ6VHVjcnVrODgyMmVmbDMzX2lSZlp0QkRiRThmN2V1OTBmR0xiZXZmcWFSajg2SHRaeVpLMTFtSU8wMUp3NmYyakg1VkIzYnNhOVdrM3p2MjNabmwxb2txcmNzWG01anVCR0gyOHV0VzVrMUFrQjhSQmV1eDB3YkpQWlVNSFFDeHhqSldjTjBJNTg5TWlHTF9BZXU?oc=5) | MarketBeat |
-| 29h 前 | 8 | 偏空 | [Amazon.com, Inc. $AMZN Stock: Vantage Investment Partners LLC Cuts Holdings - MarketBeat](https://news.google.com/rss/articles/CBMiywFBVV95cUxOX0hHWTRrdUtyTzJlTzQwdnA5MDZJMktkV1BiTnRmZkRSdkhIaXNZaVAySVpxWFo3Z2d0MzF5cy1lYWt0OGJ5NnlZR1NaWHBoVVNfZ1pIbElBdGNTR0tjb25MV0pleUJZZmVuTVhnOGJMcWpYQ2dtNlNZU3J1akRma09PNDBSaERJUWxwUGxwaEZYVTg0Vnk4QXdDNVFUeGFJSUxVUElpaEFlWXVNWWlEcmhmNWR5M0lueGJ1SmFpcmJRWFRmT3Jla2c2dw?oc=5) | MarketBeat |
-| 29h 前 | 8 | 中性 | [Amazon.com, Inc. $AMZN Stock Sold by Mcdonald Capital Investors Inc. CA - MarketBeat](https://news.google.com/rss/articles/CBMixgFBVV95cUxQbEc2Y3ZfOXp3bWpROVRSWVpjQ2lMdzY3bWhHM1FWcVFwemYyX3hhX1BRSmYwb2s0TDN6Q3hlQURUZWlMQ2Q4N3d3MHI2aUhCc3JSY1BCaWtpSC1RUzVCZ3FKbFhaYmZGNHM1N3JJQkdTZGJ4ZGJnby1pUEhfZVNiYUI5Sk5abTVLcjJFWlJTbXM1T0NRYkpaMV9RVFNOeldLOGNDbXBqM3NHMGJxazNHMkpGdU5KSk5GX280ZjlUVVFmM0E5ZkE?oc=5) | MarketBeat |
-| 30h 前 | 8 | 中性 | [Amazon.com, Inc. $AMZN Stock: Convergence Financial LLC Decreases Holdings - MarketBeat](https://news.google.com/rss/articles/CBMiygFBVV95cUxNbzBHZjM2QmdlRWpVeU1raGtqZmR5aktRczJNYkFsOUphYmprUVdLbW1vRlpGaHd3RXV1YWJnbjhwdlFXV0dreVJFN2poLWMxTGE0OWpHODBpaC1VelhTMVpMTzU4WHYxRFJUMGtDaUlxdnlPT2FJSk11c0FXeDYyUHdyQjFzVDZMNGU4ZDdlMGhGRnJfUzhQejU3c2VLM0d2R2VxMlgzYktrTU1IcHRqVzMtRlJGTURzSzdDcDlpckUyYnUybC1GS3Jn?oc=5) | MarketBeat |
+| 0h 前 | 0 | 中性 | [Corvex exits Microsoft, raises holdings in Amazon.com, cuts stake in Walt Disney (MSFT:NASDAQ) - Seeking Alpha](https://news.google.com/rss/articles/CBMitgFBVV95cUxQYmVQUUROcXJfcGFPazRSZkExNWVYc25WaVpfNk5HT21rbG5yY3pTU01lSXB4OGZyZVFuaktNNUJvemxIVmI5enlZUzJtdHp6Zy1GUjFXQ3cxeXlBaTJPM1FkZzdhLWJJcUZFa0JQVUQyUXRleGRLSWFILTdSSnBlTUttYTZHaEhtTGtOY2t5eEJ1SG9udnpweS1DOUJQQ3RiRl9pY2R5YWdKLW91ZWRhRGpOZGVWQQ?oc=5) | Seeking Alpha |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -132,8 +121,7 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
 - 自由现金流为负（-$347.32亿），意味着经营本身在消耗现金，未来可能需要再融资摊薄。
-- 24 小时内的利空标题：Amazon.com, Inc. $AMZN Stock: Vantage Investment Partners LLC Cuts Holdings - MarketBeat（MarketBeat）
-- 政策面对该板块的倾向为 -0.95（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.76（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -155,7 +143,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-11-11 | 273.52 | 274.87 | 265.62 | **266.17** | -1.7% | 37,943,300 |
 | 2026-11-12 | 267.92 | 273.60 | 267.20 | **267.44** | +0.5% | 34,501,500 |
 | 2026-11-13 | 269.56 | 270.05 | 263.91 | **266.66** | -0.3% | 31,076,200 |
-| 2026-11-16 | 262.39 | 262.92 | 256.68 | **257.75** | -3.3% | 47,307,388 |
+| 2026-11-16 | 262.71 | 262.92 | 256.68 | **257.75** | -3.3% | 47,307,388 |
 
 ## 七、自己去查（本页不做独立验证）
 

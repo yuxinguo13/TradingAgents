@@ -67,7 +67,11 @@ _读不到财务数据：该代码没有可用的财务数据（可能是 ETF、
 
 ## 四、消息面（过去 24 小时）
 
-_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
+| 时间 | 材料度 | 倾向 | 标题 | 来源 |
+|---|---:|---|---|---|
+| 9h 前 | 0 | 偏多 | [Nasdaq Soars Last Week Without NVIDIA: ETFs in Focus - TradingView](https://news.google.com/rss/articles/CBMiqwFBVV95cUxQT0tEVnJMbk51Z19vTWdJbkpOaXY5ekZkMlJHaHp6cUJZWmRNWHhVdE5PNEJTUGRkU3Y1eGh1RTdLMHdXOXlpUUtWM2lvMFpxUXgxZnIxR1FfQlZCV2tGTHJCY3Rab2FMaWNTd0NQVC0ta3VRd2FpaGVER3hXZE9CTkI3bl9od0FQSmlZY1pyc0RiUGNSMWVkZlJXVTdwWFQxWUlTbmp0a3c2ZDA?oc=5) | TradingView |
+
+_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
 ## 五、反方观点与风险
 
@@ -96,7 +100,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-11-11 | 283.01 | 286.41 | 281.49 | **284.23** | +2.3% | 3,103,700 |
 | 2026-11-12 | 280.12 | 285.99 | 279.91 | **283.39** | -0.3% | 3,731,700 |
 | 2026-11-13 | 283.55 | 283.62 | 276.60 | **279.97** | -1.2% | 3,676,300 |
-| 2026-11-16 | 276.29 | 276.70 | 271.99 | **272.49** | -2.7% | 5,140,860 |
+| 2026-11-16 | 276.30 | 276.70 | 271.99 | **272.49** | -2.7% | 5,140,860 |
 
 ## 七、自己去查（本页不做独立验证）
 

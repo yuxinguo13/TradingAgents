@@ -110,22 +110,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 1h 前 | 8 | 偏空 | [Nasdaq 100 Plunges as Nvidia Earnings, Anthropic IPO on Horizon - Bloomberg.com](https://news.google.com/rss/articles/CBMiswFBVV95cUxOUWtEOGtHd0VyaHpJRnEzcDYtRklURlFfcFByaFNfQ2dhLVJTbkFoSklXeDd3X1dwdVRRR2JVYVRxazF4NGFzd1o5TVZsR0xWbWFuYnd3eU1fRzNBMWNUY1FzeFZLcWQzWFRPT0Y4SmRCUUVleTVIZzFkRmhCQ1pKMjNlSTVjMGI4aTZnd3k5d3lPUG1XTFpnSHlHN2Zoa3BKUk1hUFdKdUczX20xNFEwNDU1Yw?oc=5) | Bloomberg.com |
-| 2h 前 | 8 | 中性 | [Nvidia live updates: Interim CEO Kress prepares for Q3 earnings, with Huang reportedly planning comeback - Yahoo Finance](https://news.google.com/rss/articles/CBMi8AFBVV95cUxNdXFsd2l6azZDWWJyWDItT0hudzBhMUloOWF4V3FMV1ZlTUhsODg4d0RoY1ZuaXNJeExyWFNjallKQ2wzcW13ektmSzdwTjFYeUxrUkp2T3lPTG5raHY4Q0FEcWhnTmxCLXVYd2hwU05UOXdKcXFobjhRZFpXS3VqQmhsS0pGMFhQY1ZzMW9LS3ZvNGU4bTlJVDdXSTRWYkljem1mSUp0ekNsWWREb0R6OGZnYnM1YzBJTWlFTU1vZG1ubjV5Q2lkZTE2M3JrSWRQam0wb20zZ0Jad1Vud2FaX1Q4NjlncDRIbHQ2Mk5tYjM?oc=5) | Yahoo Finance |
-| 2h 前 | 8 | 偏空 | [NVDL 2X NVIDIA ETF Sinks 9% as NVIDIA Falls 4% on Jensen Huang Fallout Ahead of Earnings; AMD Drops 5% - Yahoo Finance](https://news.google.com/rss/articles/CBMikwFBVV95cUxNazlvVmZVNks3QTR4MXJ6b0NwdVRfRUpyUTF6UHl5WUlpUkhULTE0UUJzUmN6SXF2VjZ2V3k5aVNQUnFuUkVFQUVzb0wtOUdVcGhadGoxNFBGaURXRkZRRVB5U0pxMGFuaDB1WDVGSnFkeDRyeGNSd3VKSXZPN0lfd2tXUmZfR1dxclZ4NURfQ1dIb0U?oc=5) | Yahoo Finance |
-| 3h 前 | 8 | 中性 | [A struggling AI trade is dragging stocks lower ahead of Anthropic's mega-IPO and Nvidia earnings - Business Insider](https://news.google.com/rss/articles/CBMikwFBVV95cUxOZHJ4NHBWRFpWeGdJRzl3OWJuNjhqTDRDX0dLX3FvMW1RNmdnNE5MajNCRkE0UUtWSDJyZTVjby12UTlmS1JOOGJ4UUcwcVd2VEhpeTlyd0Z3WF9rZWlEdHhpV1ozajBDZ0dZZ3UyemQ2U3JHNEM5VUNxaGFqQnE0bmtiNm1xZG5ONFpWTVFEOHZvTVk?oc=5) | Business Insider |
-| 3h 前 | 8 | 中性 | ['No chance Jensen comes back': Nvidia's leadership crisis casts a long shadow over earnings - Business Insider](https://news.google.com/rss/articles/CBMiowFBVV95cUxOT2x3NElMaXZrYmxQRm5GQ2hmbnlSYjZIY1dOYXM2ZndWZDU2T3o1c01mWDU4bUUwVnRKdmQyWnBLVkRjMGw4SHVQQWdyTlRoUTFaVm50QjJxcUV0QlR3bFVCOW1MeXg1TVNiakFVTzhMZzh6VVBVRDhoUWNpOVBVSllsVldmbnJwSHJrN3JiNnRPVm1mWnJGVDdMR3ZwWkFMWC1V?oc=5) | Business Insider |
-| 4h 前 | 8 | 偏多 | [Prediction: Nvidia Stock Will Beat the Market Over the Next 10 Years - Yahoo Finance](https://news.google.com/rss/articles/CBMiogFBVV95cUxOYzJOVEk2Skw2OFlmN2ZLUGxoam9wVXgwa3ZNWFR6bXA2NW9kRHlVanBoR2d6MFlmVWF4SmJEbHVoc0dRNUo3TllFRkZMdEgyZ2FHcUFXckRjS2MxNFprSWE0eFU2TUJ6OF9QVktMOVB3Q1BON1h1UmwwSW5qLVVhWjNxZjlSbnN5anFaU0EzbmJJTUlOdlBhcEtCVUFxbE5mNXc?oc=5) | Yahoo Finance |
-| 4h 前 | 8 | 偏空 | [Stock Market Midday, Nov. 16: Nasdaq Tumbles as Wall Street Braces for Nvidia Earnings and Bitcoin Slides - Yahoo Finance](https://news.google.com/rss/articles/CBMilgFBVV95cUxOZVNlc3FyY2w0TUVtTDRsVF9HUUMyc2JPU3JQZUJvYW5SZll1SUExRXNkXy15amJWNEJTUVdndFNPVEZZUzBzUl8xWFpWTTZkNEg2UzJ3MWpLcHQxRWM1VmFsNENQX2Q2U0hxb3VzRWI2RDU5bklWYWdTSlVsTlRHOW9WSmpFR19rWTFOSmZMd0F5QzVCUWc?oc=5) | Yahoo Finance |
-| 5h 前 | 8 | 中性 | [Cathie Wood and Jim Cramer Disagree on Nvidia Stock Without Jensen Huang. Earnings Could Decide Who's Right - Barchart.com](https://news.google.com/rss/articles/CBMi5AFBVV95cUxPNzFiWXQ3elhBbzZUeVhhYmRvZ2dLczVXbnloYUo0eFktWkZoQm1PYXFlREl4VGRnR0hvdERlYWtqNTNHeUdwa3gtR3NpYTlOVjBNVHR5QVZzaWk1YWxXQkdOVG5mM2pTZWF2bkQyUHFDZWZ5NE9FVy1MeDNfMVMteU9yTWM4MUN4cy0wOTZaT0hRWDlUaUtGZXBOVy1SVmg1a09yN19zWXFkM3hfcHBudnpITXliQUdHSV9kSGdEeTllR1liVEh4Rk9YS21Nd005X0VVbHl6bWs5bjhfOXZIRnFWYlo?oc=5) | Barchart.com |
-| 6h 前 | 8 | 中性 | [Should Nvidia stock be a buy ahead of earnings? - Yahoo Finance](https://news.google.com/rss/articles/CBMimAFBVV95cUxNdzFjdXVCYTYweU53RmZfTk9na0VVcnFnS2kxbUNBcndUZ1AzWElDUHNsZXd0ekZiNnphOUZvbkxwRnFTajNGRXJWY1R5QmpSTmpHVVNlQVdXdE9fR0F0QWhkVE5DSG5QLTY3QkQ1cXVrRVZWYWRKTDlCRVVPbFZVZkxWc2NQdFIwY2RJOFMtc0xnTTBQT3l6Rw?oc=5) | Yahoo Finance |
-| 6h 前 | 8 | 偏空 | [Stock Market Today: Nasdaq-100 Sinks 1% as Nvidia Faces Its First Earnings Without Jensen Huang - Yahoo Finance](https://news.google.com/rss/articles/CBMimgFBVV95cUxPbDVpN2RLWTVRb25zM19CZURtUUlIT056MDhZWVJ4NFlwN0pyeWhIb2FsQmJnOGVDQ1d3UWowSjJZdzg5dVJpa1d2cS1wLVBhOFktaGtXN3JkeDVvemUtZ1RPMHY1OFY2Yjc0QTdmVDQyVVROeDhvem9rZmpjOUNCYXFGcFZ3MXZKclUwR01FTXA4MUFQc1RBdG5R?oc=5) | Yahoo Finance |
-| 7h 前 | 8 | 偏空 | [NVIDIA Falls 4% Ahead of Earnings as Elon Musk Joins Calls to Reinstate Jensen Huang; AMD Drops 6%, Taiwan Semiconductor Slides 5% - Yahoo Finance](https://news.google.com/rss/articles/CBMimgFBVV95cUxOVTN6c1RxdUhEaFJpcmd1amZzR19ISTZfTlhqc0lVNXR3ZE9HQzF6eWlYb3R0TnZZc2FNczBHRkRwTWlLV2RwV2RJSENsMmtFdFUyck5VLUh5eVRHSTliOFJ6U2JpVlJHc0tNX284SE42RGtEMldnXzM0MFVGX2ZLbE9WUHNJYkZYSm1oYi1xeFI3OEFDbnRHcVVn?oc=5) | Yahoo Finance |
-| 8h 前 | 8 | 偏空 | [Stock Market Today: Major Indexes Tumble as Tech Stocks Slide; Nvidia Continues Dropping Ahead of Earnings Report - Yahoo Finance](https://news.google.com/rss/articles/CBMingFBVV95cUxPbW1wUS1nbHJVdTJkWVlfcnM3VVJyZnlOU09wZk5aUkh6WGVDMTFKdEZwV1Q0SHUydXhpZmtteVp0NU9PRnFvMFk3YWw2OVVNa0J1SEZWdldoQnNKdmhlOWtxZ3lRbUZVSk1PREFSbzNrWjZGdkViY2RRVEVqcGdndm9SS081TzZsTTVINE5KWFMwb2JoeU5rZE9LZmVSQQ?oc=5) | Yahoo Finance |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
@@ -136,9 +121,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 - 日均波幅 7.2%，属于高波动：同样的仓位金额，这只股票的日常噪音就能触发大多数人的心理止损。
 - 下次财报在 1 天后，落在持有期内。财报跳空会直接穿过止损——那一晚的风险不是 1R，是没有上限的。
 - 卖方目标价区间 130.00–515.00，宽度超过均值——分歧极大，共识在这只股票上没有信息量。
-- 24 小时内的利空标题：Nasdaq 100 Plunges as Nvidia Earnings, Anthropic IPO on Horizon - Bloomberg.com（Bloomberg.com）
-- 24 小时内的利空标题：NVDL 2X NVIDIA ETF Sinks 9% as NVIDIA Falls 4% on Jensen Huang Fallout Ahead of Earnings; AMD Drops 5% - Yahoo Finance（Yahoo Finance）
-- 政策面对该板块的倾向为 -0.96（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.62（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
@@ -160,7 +143,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-11-11 | 172.80 | 177.54 | 170.77 | **173.73** | +2.9% | 339,214,800 |
 | 2026-11-12 | 151.01 | 167.14 | 148.80 | **166.19** | -4.3% | 747,707,600 |
 | 2026-11-13 | 169.91 | 170.00 | 158.39 | **162.85** | -2.0% | 363,819,700 |
-| 2026-11-16 | 159.01 | 163.00 | 155.01 | **156.14** | -4.1% | 326,601,200 |
+| 2026-11-16 | 159.00 | 163.00 | 155.01 | **156.14** | -4.1% | 326,601,200 |
 
 ## 七、自己去查（本页不做独立验证）
 

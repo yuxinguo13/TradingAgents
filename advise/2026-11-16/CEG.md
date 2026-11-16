@@ -110,16 +110,7 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-| 时间 | 材料度 | 倾向 | 标题 | 来源 |
-|---|---:|---|---|---|
-| 27h 前 | 9 | 偏多 | [Constellation Energy (CEG) Raised 2026 Guidance Again, Is The Stock Still Undervalued? - Simply Wall St](https://news.google.com/rss/articles/CBMi1gFBVV95cUxQRVVESFg2UlVxd09iUF9leHQ5QWJ0MHlOZXAzM0o2aUhPQmZuaWNNNHZ0VmZvWlRuMWxmeE45YkU1cnNhck5ZOGxULWpicHlUTWR4YkZoWmNYalFzNjA1VFMzS0pfLXVYZEZsaWltY3ZmQlIwT3RrSzdRaGoxSWx3Nms1LWI3a1RNckJTdzRscjcyejNfeEtuT1BLeXl1VUt0aFFLeWM1ai1lY25pa09zaDl0ek9zTEtVYnU5S3VUWE91X09kMXBUR2h4MGtDWmJDSlBxWHB30gHbAUFVX3lxTFAxUC1ETWl1aTNEX3dpMmdCdXZ6S1NnZEVIQmVzYlIxNW9WOWNLREt3QzlFR0FlOUlFZUwzUGhVVzg0c3FBUi1GamlPSFE0SzBXMUhqQmY5ODJSd3gtSDVrQ1gweXJ5bUhGUFA2WE9feHpkNXNzemZmc3hGeDJBNVgwRU5nUmtzRG9ReG4wWkRfLXBnWUJQT0hBeWZ4ZXpmU0xLOUI3YUI5UnpibXBjNmw0dVlFamxTb0g2V1NLcVQyS2NVUXlSMWN6ZElOWFNJbDZ1WW1HTnA2cVRNMA?oc=5) | Simply Wall St |
-| 3h 前 | 8 | 中性 | [We Think That There Are Issues Underlying Constellation Energy's (NASDAQ:CEG) Earnings - Simply Wall St](https://news.google.com/rss/articles/CBMi1gFBVV95cUxPU2cyNE5XcFRkbjZvaHRNeE1fOVZyZEJNc3laTXpYQ1BHcUtieTdtcERuMnNiamFVMUNNWG9PRHFJZ1dKSVNVQ2h2UGo0VDY5VlF6bUFjd2ZaVFJLcWFBbjRQaGhlUDBSSVB2bjNRcXF1SDhIS0lJcmZ2ejFpcG1ocHhSQ21JZ0tjOUV4dGlGc1gxY2o1V1ltM2F3RlZoWTEwQnRzRmFpYXdHM0p0QXVtRTJNVUptdUJ6VjFJQklHX3hia2tUSWVCZlZlVVdXQjFucy02cldn0gHbAUFVX3lxTE5Cd2Jxa0pva1FqelktT3FNc2lzak9aWHBualNXMzllOTFkTlBOdExhcUlJam5hbzRMc1B3TEY3ZGp6dk1XZzRKQlY3N1hfdXFaaWhITEQ2cE1JV1RhX0lDeEpKaVcwUjZpRnh6SlBLVndSTWExMnQtX0djUzVIVG1vN1NYRTgyOEVSb3J5UFBIRHlDcE1wQUJZMmR1WjNvRDY1dHoweEM3azJHTl9PcGFHbDFEOUstS2p5UXBtZUZQNTVIV0xRcUtycXlMN1RNZjRMZ0VpOXlZWWgyMA?oc=5) | Simply Wall St |
-| 7h 前 | 5 | 偏多 | [BMO raises Constellation Energy stock price target on contracting outlook By Investing.com - Investing.com Canada](https://news.google.com/rss/articles/CBMizwFBVV95cUxNODVuZnlmcEI5eXVkcWRLTnU5Mm40ZDlyOEpfOUVoTlozREVxRmhrZzdMbmdrd1YxYnctVDJuWjZyazA5TDNQX1RVWHdUc2RpLWUwb29OTlZWSko1czJaMVdmQTIxSzVpWG51bjZYTWJlMWJqR05MRTJDR1BoOFR3MG5aRVlaTWFqYmh5NkZRUEVhcFMxTzFJX3BkYkNXM1V2SVBtUVE5SlVUU1VkdzF0ZlBiR0JrTmkxSzRINzdrMVhwMjc5ZmFyMnBjSFhVcHc?oc=5) | Investing.com Canada |
-| 5h 前 | 0 | 中性 | [Bank Nova Scotia Halifax Pfd 3 (BNS): Structured note tied to Constellation Energy shares, principal at risk - Quantisnow](https://news.google.com/rss/articles/CBMimAFBVV95cUxNdWR2ZWlubi1kdEcyM0RwUWZMRDZva19xVnVkOTBvZmVZTVZJWkd0VjlQVTk4OEU4ZWVIV3lXSDhWdnotVzhmbWxSbmwtX1FqWDYzcndCTG1EMkVkS3cyRjl4dVhVRC1YeFBGaEEtR3ZvYkh2WnBaVk5TdEdZTTJ3U0hRRzI0MWJHdnFGUWdtaWRMTFNwd0d3ZQ?oc=5) | Quantisnow |
-| 6h 前 | 0 | 偏多 | [Constellation Energy stock: CIBC raises target to $346 - ad-hoc-news.de](https://news.google.com/rss/articles/CBMitgFBVV95cUxNYXdueHFub0JFdFVkS0lwN1A2WW9LRUc5OHUyTFhsZHRSbTJWRFo0YVczR29EUURLODZKajQ4MVZBZ1BId1lmNXh4YXNtZ3hqRkR1N3RGd1BrVTFwQ08xdXB1Z0ZxQnpYQjEtSjc3Z1h6ZUdlamg3WFh1bE9IY1ByT29tbkRLN3dxZFFYS1UzUUVnQkRUamE5MGl6N2dpcHFfSkdmNzRoX1o0ZnZLLVdYczQ0THJHQQ?oc=5) | ad-hoc-news.de |
-| 8h 前 | 0 | 中性 | [Constellation Energy Corporation (CEG) is Attracting Investor Attention: Here is What You Should Know - Yahoo Finance](https://news.google.com/rss/articles/CBMisgFBVV95cUxOaEJTbzJfb3lnR25jakd2T2ZlX0pYcVJFQTZVY005Zm9FRk1ISm4yYV92SmlVVzRmOTl0N19RY2lfZUN6WkZmTDFXbFd0SXJ2UmRscmZ2V3cyUWNPX24wSmFkNzJOaGczb1lFWkJvNUFfQ2JvVjNJeU5FZ3YzbVFyMk9kTUJhTXRPOTBTcVlGbEZ2SDlETWhZR1BSbVc4eEhDazZoMEctWW93c1JSQ0s2UU93?oc=5) | Yahoo Finance |
-
-_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
+_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
 
 ## 五、反方观点与风险
 
@@ -128,7 +119,6 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 - 图形上是跌破 200 日线——现价距 20 日 262.49（+5.8%）、50 日 269.08（+3.2%）、200 日 277.88（-0.0%）。本报告的买入规则本身会过滤掉这种形态。
 - 摆动高低点都在下移，属于下降结构；在出现一个更高的低点之前，任何反弹都还只是反弹。
 - 自由现金流为负（-$53.74亿），意味着经营本身在消耗现金，未来可能需要再融资摊薄。
-- 政策面对该板块的倾向为 -0.57（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 
