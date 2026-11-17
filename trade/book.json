@@ -1,5 +1,5 @@
 {
- "saved_at": "2026-11-17T20:13:00",
+ "saved_at": "2026-11-17T20:18:16",
  "positions": {
   "ABBV": {
    "symbol": "ABBV",
@@ -1021,7 +1021,7 @@
    ],
    "pnl": -292.66,
    "r": -0.8973996197718639,
-   "reviewed": false,
+   "reviewed": true,
    "sleeve": "aggressive"
   }
  ]
