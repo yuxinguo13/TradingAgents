@@ -1,5 +1,5 @@
 {
- "saved_at": "2026-11-16T20:18:53",
+ "saved_at": "2026-11-17T20:13:00",
  "positions": {
   "ABBV": {
    "symbol": "ABBV",
@@ -130,43 +130,6 @@
    "sleeve": "core",
    "triggers": [],
    "stop0": 272.0,
-   "pending": false,
-   "trimmed": false,
-   "staged": NaN
-  },
-  "TGTX": {
-   "symbol": "TGTX",
-   "shares": 124,
-   "entry": 64.63,
-   "stop": 62.0,
-   "target": 70.0,
-   "opened": "2026-11-11",
-   "horizon_days": 20,
-   "sector": "",
-   "thesis": "动量账：TG Therapeutics 财报后放量 3.1 倍突破，连着两天收新高，今天 64.7 又往上走；20 日相对标普 +19.9%，三条均线上（20 日线 57.4）。止损在突破日低点 62.00（4.2%、0.8 ATR，高于 20 日线），目标 70（R 1.9）。财报已经过去，下次在 110 天后，不算 catalyst。医疗板块持有 ABBV、JNJ，加上它是 3 只，在上限内。",
-   "invalidation": "收盘跌回 62.0；21 日相对标普回到 +10 以下；到 1R（67.5）先减半",
-   "principles": [
-    "十·强势买强势：volume+pattern+rs",
-    "十·止损在突破日低点或 20 日线取高",
-    "十·只在收盘前最后半小时下单且收盘仍在突破位之上",
-    "十·到 1R 先减半",
-    "三·同板块 ≤3"
-   ],
-   "regime": "SPY 760.3 +1.4%，离 200 日线 +4.4%；VIX 19.5；CoreWeave 带动科技反弹；不是防御日",
-   "parent_id": "e771e83b-05ff-4009-a74f-49c79301f20a",
-   "legs": {
-    "limit": "dd7a0a1d-5662-4720-a03d-c64578c755ea",
-    "stop": "ee445848-996d-4ee8-9160-2759a4f51ca3"
-   },
-   "adopted": false,
-   "stop_raised": false,
-   "sleeve": "aggressive",
-   "triggers": [
-    "volume",
-    "pattern",
-    "rs"
-   ],
-   "stop0": 62.0,
    "pending": false,
    "trimmed": false,
    "staged": NaN
@@ -1038,6 +1001,28 @@
    "r": 1.0428040305010902,
    "reviewed": true,
    "sleeve": "core"
+  },
+  {
+   "symbol": "TGTX",
+   "shares": 124,
+   "entry": 64.63,
+   "exit": 62.269839,
+   "opened": "2026-11-11",
+   "closed": "2026-11-17",
+   "reason": "stop: 交易所触发止损",
+   "thesis": "动量账：TG Therapeutics 财报后放量 3.1 倍突破，连着两天收新高，今天 64.7 又往上走；20 日相对标普 +19.9%，三条均线上（20 日线 57.4）。止损在突破日低点 62.00（4.2%、0.8 ATR，高于 20 日线），目标 70（R 1.9）。财报已经过去，下次在 110 天后，不算 catalyst。医疗板块持有 ABBV、JNJ，加上它是 3 只，在上限内。",
+   "invalidation": "收盘跌回 62.0；21 日相对标普回到 +10 以下；到 1R（67.5）先减半",
+   "principles": [
+    "十·强势买强势：volume+pattern+rs",
+    "十·止损在突破日低点或 20 日线取高",
+    "十·只在收盘前最后半小时下单且收盘仍在突破位之上",
+    "十·到 1R 先减半",
+    "三·同板块 ≤3"
+   ],
+   "pnl": -292.66,
+   "r": -0.8973996197718639,
+   "reviewed": false,
+   "sleeve": "aggressive"
   }
  ]
 }
