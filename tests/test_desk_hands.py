@@ -964,3 +964,12 @@ class TestReflection1110:
         pk = pack.Packer(broker=v, market=mkt(task="trade"), book=book, screen=screen_of(), now=MONDAY_OPEN).run()
         assert DeskBook(home / "desk" / "trade" / "book.json").positions["HLD"].stop == 94.0
         assert any("低于账本" in w for w in pk.warnings)
+
+
+class TestReflection1117:
+    def test_a_pending_takeover_is_flagged(self):
+        from types import SimpleNamespace as NS
+        rows = [NS(symbol="RXO", news=[NS(title="C.H. Robinson to acquire RXO in $5.8 billion deal")]),
+                NS(symbol="NWE", news=[{"title": "NorthWestern Energy Q3 call highlights: Merger nears finish"}]),
+                NS(symbol="KO", news=[NS(title="Coca-Cola hits a record high on pricing")])]
+        assert pack.deal_targets(rows) == ["RXO", "NWE"]

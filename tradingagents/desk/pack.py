@@ -22,6 +22,7 @@ from __future__ import annotations
 import contextlib
 import json
 import logging
+import re
 from dataclasses import asdict, dataclass, field
 from datetime import date, datetime, timedelta
 from pathlib import Path
@@ -153,6 +154,24 @@ class TradePack:
                 row["news"] = [_news_dict(n) for n in row["news"]]
         d["macro_news"] = [_news_dict(n) for n in self.macro_news]
         return d
+
+
+DEAL_WORDS = re.compile(r"\b(to acquire|acquir(?:e|es|ed|ing) by|acquisition of|agrees? to (?:buy|acquire)|"
+                        r"merger|takeover|buyout|to be acquired|deal to buy|go(?:es|ing)? private)\b", re.I)
+
+
+def deal_targets(rows) -> list[str]:
+    """Names whose headlines say a takeover is pending. Their price follows the
+    deal terms, not the trend: RXO (C.H. Robinson, 10/5) was bought 2026-11-13
+    as a pullback and NWE showed "Merger Nears Finish" in the same table."""
+    out = []
+    for r in rows:
+        for n in (getattr(r, "news", None) or [])[:6]:
+            title = n.get("title", "") if isinstance(n, dict) else getattr(n, "title", "")
+            if DEAL_WORDS.search(str(title or "")):
+                out.append(r.symbol)
+                break
+    return out
 
 
 def _news_dict(n) -> dict:
@@ -714,6 +733,10 @@ def format_pack(pack: TradePack, facts: dict | None = None) -> str:
     out.append("")
     out.append(f"## 候选（{len(pack.candidates)}）")
     out += table(pack.candidates)
+    deals = deal_targets(pack.candidates)
+    if deals:
+        out.append(f"- ⚠ 标题里有收购/合并：{', '.join(deals)} —— 可能是待完成的并购标的，价格跟着交易条款走，"
+                   "不按回踩或突破买；先核实")
     out.append("")
     for r in pack.candidates:
         if r.news:
