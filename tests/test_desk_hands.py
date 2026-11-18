@@ -973,3 +973,19 @@ class TestReflection1117:
                 NS(symbol="NWE", news=[{"title": "NorthWestern Energy Q3 call highlights: Merger nears finish"}]),
                 NS(symbol="KO", news=[NS(title="Coca-Cola hits a record high on pricing")])]
         assert pack.deal_targets(rows) == ["RXO", "NWE"]
+
+
+class TestReflection1118:
+    """§10/§11: no new breakout buys while SPY closes under its 20-day line."""
+
+    def _buy(self, g, sleeve="aggressive"):
+        return g.buy("AAA", 100.0, 97.0, 107.0, price=100.5, atr_pct=0.02, sector="Technology",
+                     earnings_days=30, sleeve=sleeve, triggers=["volume", "catalyst"], vol_ratio=2.0)
+
+    def test_a_breakout_is_refused_under_the_index_20_day(self, home):  # noqa: F811
+        v = self._buy(gate(home, index_vs_sma20=-0.01))
+        assert not v.ok and "20-day" in v.reason
+
+    def test_a_breakout_passes_above_it_and_core_is_not_affected(self, home):  # noqa: F811
+        assert self._buy(gate(home, index_vs_sma20=0.005)).ok
+        assert self._buy(gate(home, index_vs_sma20=-0.01), sleeve="core").ok

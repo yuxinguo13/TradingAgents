@@ -242,8 +242,11 @@ class Gate:
 
     def __init__(self, *, equity: float, cash: float, last_equity: float,
                  holdings: dict[str, float], book: DeskBook, today: date,
-                 risk_committed_today: float = 0.0, market_open: bool = True):
+                 risk_committed_today: float = 0.0, market_open: bool = True,
+                 index_vs_sma20: float = float("nan")):
         self.equity, self.cash, self.last_equity = equity, cash, last_equity
+        # SPY's last close over its 20-day line, minus 1 (MANUAL §10)
+        self.index_vs_sma20 = index_vs_sma20
         self.holdings = holdings                     # symbol → market value
         self.book, self.today = book, today
         self.risk_today = risk_committed_today
@@ -276,6 +279,11 @@ class Gate:
         if len(self.book.positions) >= MAX_POSITIONS:
             return Verdict(False, f"{MAX_POSITIONS} positions already")
         if sleeve == AGGRESSIVE:
+            if _ok(self.index_vs_sma20) and self.index_vs_sma20 < 0:
+                # §10 / §11 (2026-11-18): LLY, ASO, TGTX, TW were bought with SPY
+                # closing under its 20-day line and all four stopped at about -1R
+                return Verdict(False, f"SPY closed {self.index_vs_sma20 * 100:.1f}% under its 20-day line; "
+                                      "no new breakout buys until it closes back above")
             have = sum(1 for p in self.book.positions.values() if p.sleeve == AGGRESSIVE)
             if have >= MAX_AGGRESSIVE:
                 return Verdict(False, f"{MAX_AGGRESSIVE} aggressive positions already")
@@ -431,7 +439,8 @@ class Executor:
         gate = Gate(equity=equity, cash=_num(account.cash, 0.0), last_equity=last_equity,
                     holdings=holdings, book=self.book, today=today,
                     risk_committed_today=risk_committed(today, self.log_path),
-                    market_open=market_open or self.dry_run)
+                    market_open=market_open or self.dry_run,
+                    index_vs_sma20=self.index_vs_sma20(data_day))
 
         rank = {"sell": 0, "trim": 1, "cancel_buy": 1, "raise_stop": 2, "stage_half": 2, "protect": 3, "buy": 4}
         for o in sorted(orders, key=lambda o: rank.get(str(o.get("action")), 9)):
@@ -469,6 +478,15 @@ class Executor:
             self.record(out, o, today)
         self.write_note(today)
         return self.outcomes
+
+    def index_vs_sma20(self, data_day) -> float:
+        """SPY's last close against its 20-day line (nan when unknown)."""
+        try:
+            f = self.market.facts("SPY", data_day)
+            c, m = _num(f.price), _num(f.snap.sma20)
+        except Exception:
+            return float("nan")
+        return c / m - 1.0 if _ok(c) and _ok(m) and m > 0 else float("nan")
 
     # --- each action ------------------------------------------------------
 
