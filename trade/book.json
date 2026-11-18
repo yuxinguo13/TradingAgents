@@ -1,37 +1,6 @@
 {
- "saved_at": "2026-11-17T20:18:27",
+ "saved_at": "2026-11-18T20:14:23",
  "positions": {
-  "ABBV": {
-   "symbol": "ABBV",
-   "shares": 18,
-   "entry": 289.18,
-   "stop": 289.18,
-   "target": 315.0,
-   "opened": "2026-11-02",
-   "horizon_days": 30,
-   "sector": "",
-   "thesis": "主仓回踩：AbbVie 10/30 财报超预期后新高 298.6，今天回落到 289，20 日线 282.8、50 日线 269.8 在下方。入场 291（简报），止损 280 在 20 日线与 10/28 低点 281.5 之下（3.8%、1.7 ATR），目标 315，R 2.2。下次财报 2 月。",
-   "invalidation": "收盘跌回 280；医药板块相对标普 5 日跑输 3%",
-   "principles": [
-    "一·趋势向上且结构完整",
-    "二·回踩入场、止损在结构位之下 ≥1 ATR、R ≥ 2",
-    "三·同板块 ≤3（医疗 PFE+LLY+ABBV）"
-   ],
-   "regime": "同上",
-   "parent_id": "fddb1f69-96da-4585-868a-c4f6bd8a2b4c",
-   "legs": {
-    "limit": "75d0a52a-3c24-49d7-b9fc-03d8668841a6",
-    "stop": "4a9aa5df-076f-40d4-9971-5d57d3eb2097"
-   },
-   "adopted": false,
-   "stop_raised": true,
-   "sleeve": "core",
-   "triggers": [],
-   "stop0": 280.0,
-   "pending": false,
-   "trimmed": true,
-   "staged": NaN
-  },
   "CBC": {
    "symbol": "CBC",
    "shares": 208,
@@ -130,41 +99,6 @@
    "sleeve": "core",
    "triggers": [],
    "stop0": 272.0,
-   "pending": false,
-   "trimmed": false,
-   "staged": NaN
-  },
-  "TW": {
-   "symbol": "TW",
-   "shares": 61,
-   "entry": 131.48,
-   "stop": 128.7,
-   "target": 136.5,
-   "opened": "2026-11-12",
-   "horizon_days": 20,
-   "sector": "",
-   "thesis": "动量账：Tradeweb 连着几天收新高，今天 131.5 又往上走；20 日相对标普 +21%，三条均线上（20 日线 122.4）。止损在突破日低点 128.77 下方（2.1%、0.8 ATR，高于 20 日线），目标 136.5（R 1.8）。下次财报 84 天后。金融板块持有 CBC，加上它是 2 只。",
-   "invalidation": "收盘跌回 128.7；21 日相对标普回到 +10 以下；到 1R（134.3）先减半",
-   "principles": [
-    "十·强势买强势：pattern+rs",
-    "十·止损在突破日低点或 20 日线取高",
-    "十·只在收盘前最后半小时下单且收盘仍在突破位之上",
-    "十·到 1R 先减半"
-   ],
-   "regime": "SPY 757.2 −0.3%，离 200 日线 +3.9%；VIX 17.5；NVDA 出事但其他芯片在涨；10 年期 5.0%；不是防御日",
-   "parent_id": "fa631464-1219-4e36-91bc-8225ee70f13d",
-   "legs": {
-    "limit": "aec040ac-5d9d-4a4d-925b-e03915f301d4",
-    "stop": "cfc903cb-f841-4356-9e87-e7a329e46708"
-   },
-   "adopted": false,
-   "stop_raised": false,
-   "sleeve": "aggressive",
-   "triggers": [
-    "pattern",
-    "rs"
-   ],
-   "stop0": 128.7,
    "pending": false,
    "trimmed": false,
    "staged": NaN
@@ -1012,6 +946,47 @@
    "r": 0.5666666666666651,
    "reviewed": false,
    "sleeve": "core"
+  },
+  {
+   "symbol": "ABBV",
+   "shares": 18,
+   "entry": 289.18,
+   "exit": 289.09,
+   "opened": "2026-11-02",
+   "closed": "2026-11-18",
+   "reason": "stop: 交易所触发止损",
+   "thesis": "主仓回踩：AbbVie 10/30 财报超预期后新高 298.6，今天回落到 289，20 日线 282.8、50 日线 269.8 在下方。入场 291（简报），止损 280 在 20 日线与 10/28 低点 281.5 之下（3.8%、1.7 ATR），目标 315，R 2.2。下次财报 2 月。",
+   "invalidation": "收盘跌回 280；医药板块相对标普 5 日跑输 3%",
+   "principles": [
+    "一·趋势向上且结构完整",
+    "二·回踩入场、止损在结构位之下 ≥1 ATR、R ≥ 2",
+    "三·同板块 ≤3（医疗 PFE+LLY+ABBV）"
+   ],
+   "pnl": -1.62,
+   "r": -0.009803921568630912,
+   "reviewed": false,
+   "sleeve": "core"
+  },
+  {
+   "symbol": "TW",
+   "shares": 61,
+   "entry": 131.48,
+   "exit": 128.325738,
+   "opened": "2026-11-12",
+   "closed": "2026-11-18",
+   "reason": "stop: 交易所触发止损",
+   "thesis": "动量账：Tradeweb 连着几天收新高，今天 131.5 又往上走；20 日相对标普 +21%，三条均线上（20 日线 122.4）。止损在突破日低点 128.77 下方（2.1%、0.8 ATR，高于 20 日线），目标 136.5（R 1.8）。下次财报 84 天后。金融板块持有 CBC，加上它是 2 只。",
+   "invalidation": "收盘跌回 128.7；21 日相对标普回到 +10 以下；到 1R（134.3）先减半",
+   "principles": [
+    "十·强势买强势：pattern+rs",
+    "十·止损在突破日低点或 20 日线取高",
+    "十·只在收盘前最后半小时下单且收盘仍在突破位之上",
+    "十·到 1R 先减半"
+   ],
+   "pnl": -192.41,
+   "r": -1.1346266187050313,
+   "reviewed": false,
+   "sleeve": "aggressive"
   }
  ]
 }
