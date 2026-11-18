@@ -1,5 +1,5 @@
 {
- "saved_at": "2026-11-18T20:19:36",
+ "saved_at": "2026-11-18T20:19:40",
  "positions": {
   "CBC": {
    "symbol": "CBC",
@@ -964,7 +964,7 @@
    ],
    "pnl": -1.62,
    "r": -0.009803921568630912,
-   "reviewed": false,
+   "reviewed": true,
    "sleeve": "core"
   },
   {
