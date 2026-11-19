@@ -10,19 +10,19 @@ _医疗 · 数据截至 2026-11-16 收盘 → 面向 2026-11-16 开盘_
 
 ```text
        LLY · 近 126 个交易日（日线收盘）
-1,438 ┤                                                                         ╭──
-1,398 ┤                                                                     ╭───╯
-1,358 ┤                                                                     │
-1,318 ┤                                                                    ╭╯
-1,278 ┤                                      ╭╮                        ╭───╯
-1,238 ┤                                  ╭╮  │╰─╮                    ╭─╯        ···
-1,198 ┤                ╭─────╮    ╭──╮  ╭╯╰──╯ ·╰╮·······    ╭─╮   ╭╮│··········
-1,158 ┤        ╭╮╭╮    │     ╰────╯ ·╰╮╭╯······  ╰───╮   ╭───╯·╰───╯╰╯
-1,118 ┤    ╭╮ ╭╯╰╯╰─╮╭─╯      ······  ╰╯             ╰───╯                      :::
-1,078 ┤  ╭─╯╰─╯     ╰╯    ····                      ::::::::::::::::::::::::::::
-1,038 ┤──╯            ····           :::::::::::::::
-  998 ┤         ······   ::::::::::::
-  958 ┤  ·······:::::::::
+1,439 ┤                                                                         ╭──
+1,399 ┤                                                                     ╭───╯
+1,359 ┤                                                                     │
+1,319 ┤                                                                    ╭╯
+1,279 ┤                                      ╭╮                        ╭───╯
+1,239 ┤                                  ╭╮  │╰─╮                    ╭─╯        ···
+1,199 ┤                ╭─────╮    ╭──╮  ╭╯╰──╯  ╰╮·······    ╭─╮   ╭╮│··········
+1,159 ┤        ╭╮╭╮    │     ╰────╯  ╰╮╭╯······· ╰───╮   ╭───╯·╰───╯╰╯
+1,119 ┤    ╭╮ ╭╯╰╯╰─╮╭─╯       ······ ╰╯             ╰───╯                      :::
+1,079 ┤  ╭─╯╰─╯     ╰╯    ·····                     ::::::::::::::::::::::::::::
+1,039 ┤──╯            ····           :::::::::::::::
+  999 ┤         ······   ::::::::::::
+  959 ┤  ·······:::::::::
   919 ┤··:::::
       └────────────────────────────────────────────────────────────────────────────
        2026-05-19                       2026-08-19                       2026-11-16
@@ -48,13 +48,13 @@ _医疗 · 数据截至 2026-11-16 收盘 → 面向 2026-11-16 开盘_
 
 ### 图形读数
 
-- **均线排列**：多头排列 — 现价距 20 日 1,364.33（+4.9%）、50 日 1,245.28（+15.0%）、200 日 1,108.29（+29.2%）
+- **均线排列**：多头排列 — 现价距 20 日 1,364.47（+5.1%）、50 日 1,245.34（+15.2%）、200 日 1,108.30（+29.4%）
 - **形态结构**：上升结构 — 更高的高点 + 更高的低点；前高 1,319.61 → 1,451.24（+10.0%）、前低 1,256.10 → 1,331.60（+6.0%）
-- **动能**：RSI(14) 67，偏强；近一月的斜率快于近三月（月 +14.0% vs 季 +16.9%），趋势在加速
+- **动能**：RSI(14) 68，偏强；近一月的斜率快于近三月（月 +14.2% vs 季 +17.2%），趋势在加速
 - **波动**：日均真实波幅约为价格的 3.7%；按本报告 2 ATR 的止损惯例，一个 R 相当于 7.3% 的价格距离
-- **位置**：距 52 周高点 -0.8%，距 52 周低点 +68.9%
+- **位置**：距 52 周高点 -0.6%，距 52 周低点 +69.2%
 - **量能**：最新一日成交量为 20 日均量的 1.0 倍，量能正常
-- **相对强度**：近一月跑赢 标普500 17.1 个百分点
+- **相对强度**：近一月跑赢 标普500 17.3 个百分点
 - **支撑 / 阻力**：最近的摆动低点 1,331.60，摆动高点 1,451.24（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
 
 **我的读图结论**：趋势向上且结构完整，且贴近 52 周高点——追高的代价是止损离得远；顺势的一侧在上方，风险在于结构一旦破位就要认
@@ -69,7 +69,7 @@ _以上每一条都是对已经发生的价格的描述。均线、RSI、摆动�
 - **增长**：最新季度营收同比 +38.6%；盈利同比 +16.3%；最近三个季度营收连续环比上升；最近 7 次财报里 6 次超预期。
 - **盈利质量**：毛利率 83.6%、营业利润率 51.3%、净利率 31.9%、ROE 86.0%。
 - **资产负债**：现金 $48.85亿；有息负债 $495.03亿；负债/权益 122.9%（负债适中）；流动比率 1.39；自由现金流 $93.44亿，为正。
-- **卖方预期**：29 位分析师覆盖；平均评级「买入」（1.65/5，1 为最看多）；目标价均值 1,463.40（较现价 +2.2%），区间 940.00–1,700.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
+- **卖方预期**：29 位分析师覆盖；平均评级「买入」（1.65/5，1 为最看多）；目标价均值 1,463.40（较现价 +2.0%），区间 940.00–1,700.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
 
 **分季度损益**（季度数据，最新在左）
 
@@ -110,7 +110,22 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
+| 时间 | 材料度 | 倾向 | 标题 | 来源 |
+|---|---:|---|---|---|
+| 4h 前 | 10 | 中性 | [Eli Lilly and Company entered into definitive agreement to acquire Calytrix Bio, Inc. for $1.5 billion. - marketscreener.com](https://news.google.com/rss/articles/CBMi5AFBVV95cUxNOU5lNVJqLXpGM0VmWktBZFBRdFFLd0s3dlVlSXhLb1Z5Mi00eFNaY3V1Ny13d3hZd2licUd6SXBhYjFZUzlPRHJUOHVvV3hyTDIwVTFEc3I1c1ktREp0N185S2dWSVc1SWFfVkVJQmZIMzJXa1JGUUMwVjdGbjhGeUJYQnhxNGZheG85MUx6dTJhSmxoNE9VdVdOSDliNWhGSlhmRUJ1NWdLU0tYVVgtSnk2ZTNUa2NRS01vVm5xVkpJT1Rrc0pxaVhuYUFZZE1ZQUhuWUsyOVJsRkwyS3FfeGNMZlM?oc=5) | marketscreener.com |
+| 8h 前 | 10 | 中性 | [Eli Lilly to Acquire Calytrix Bio for Up to $1.5 Billion to Expand Blood Cancer Portfolio - Yahoo Finance](https://news.google.com/rss/articles/CBMilgFBVV95cUxQUk82djdRQVJIbW1ZNTB0MWxOcThzWGZmZlVDNm91QXlNM2xjV0FaTXBSOUttYjFneXVoaUF2eklmVFh5SXZFLThGVFJRTDBwei1kOTRPYUVIdXVmeGRnb3pUQTdsMGd1TzRHcW82cVFtNV81SjlpQXJsOFQwcnJCOHQwZC1sQ3NBcHhPZi1FUDdiLWV1d2c?oc=5) | Yahoo Finance |
+| 2h 前 | 8 | 偏多 | [Where Will Eli Lilly Be in 10 Years? 1 Clue: Its Next Potential Blockbuster Just Beat Ozempic Head-to-Head - The Motley Fool](https://news.google.com/rss/articles/CBMi4AFBVV95cUxPeHJLWGJFNE1HMVVVV1FNOThWQlgyZm4wZWJPR3BpSEQwVmlxYXBfN184bUlFUGJrRVFHYjlBR2xmMGZxWURUVjM4WFFkc2lrWUgySmR5a1dCZEJEMExGM0dUTklfSlZQNjNrQk1YdG1vRDBQek1kNGxsb21xSThGbllpdUVHZ3laX1psN1dqYTF4eWlNd25FRmM5d25ad0RtREdoaGd4VmR2eWktX05BQzlUT3I2aTBYcnpudW9IMG1MbE13WkF3ZkdUZlQtSnZNQ0I3NmFRSWFvS0VpWmp4bA?oc=5) | The Motley Fool |
+| 22h 前 | 6 | 中性 | [Prediction: $10,000 Equally Split Between Eli Lilly and Novo Nordisk Will Be Worth This Much by the End of 2027 - Yahoo Finance](https://news.google.com/rss/articles/CBMinAFBVV95cUxOcExWdDluYmctazJxd2NmTndoakhVTzF3aDlpTDVzM2QyQmZtbXgxay1qSUFPSDEwbnFkdTNVVXJNVEJxZTNZYmI2czZrMTN6ZTFORVNMZTJoSHZhenhpT1FuX0NOTjh2VG5LV195WDVRZGsxSlBDWnFvTlVzMURsc1hLNlBFeUZhN2pXaW5HSDlSSkRTYm9sMGZNcUw?oc=5) | Yahoo Finance |
+| 10h 前 | 5 | 中性 | [Barclays Adjusts Price Target on Eli Lilly and Company to $1,550 From $1,400 - marketscreener.com](https://news.google.com/rss/articles/CBMixgFBVV95cUxQQzhlckVQNHJ2MThlZ3ljbTB1Rm9hUWg3eGVYRzdLajRha3VEcGxySjlzeGNYQWxGaXNQT2VXb1RwbVFCbnQ1YXpHckFyckJ6bzhSekdKampTWWd5dUNqQzhkeV9rTHdLTVBTTmI2LXRudFlHcjZNbkNWUlJzOWZTTFVjRHpGUndPM2ZyU1o1ajhWakhaOXZ1a2paWFZVcnNGUnRMLVNGS0xVOG9sSDBXeDJnRDhGbm1uSHFvUnh0d2wtOHcwbGc?oc=5) | marketscreener.com |
+| 11h 前 | 5 | 偏多 | [Eli Lilly price target raised to $1,550 from $1,400 at Barclays - TipRanks](https://news.google.com/rss/articles/CBMirgFBVV95cUxPOTR3SFN1SHhjUUZ1aWlEWEdaMjRyVjlMSlFIYTJrU3dSYzJnbWthZExucjFKSzhaek9lQkE3c1BvSWhxX3NTLVNoUDRieVM0M0RRUmNUZk1CdUZ6UDJMUGtNM2QtUEFfZnBEbks0Y0NJZzI3TjljZ2l1SlVmMFVzY0pSc1FqaVhXcTd4NU1uQkhQLXZCNTdrbDk4Z0tuNC1oQm5rVnJnc0FBY0FQekE?oc=5) | TipRanks |
+| 4h 前 | 0 | 偏多 | [Eli Lilly is trouncing Nvidia — and the weight-loss drug trade is beating AI again - Yahoo Finance](https://news.google.com/rss/articles/CBMi1AFBVV95cUxQV2M0a3E3cEtudzlMREwzTDB6N2VPbUNJZXBHbXloQ3hsTjYzemJhNTlXY0VnbFFkNU9mVFVTdGRWZEE5VEduQW12LWQwNGh6aTk4d0YyMFFRMlg1VDFXT0c3Qm1yNnhDYTRtQS1MYk52d2J4UXdYbGJUN3M4WUhmeUU0MUpvRzdxbEo5cG9IRFQ3b0tLd0pvSndyTWo0RGhEZW9RRlBQTEdteW1XWkVuYVVMWmdWdlprb09NbHA5Y1hlYkZySlI0RDZsWnNEdHphakRIVg?oc=5) | Yahoo Finance |
+| 6h 前 | 0 | 中性 | [Lilly to buy Calytrix for up to $1.5 billion in rare blood cancer bet - Reuters](https://news.google.com/rss/articles/CBMirAFBVV95cUxNeVZwVTIyUlI1TTE2elVDeGp2Skg2LUVlLVItSWpPUEVrSVp5MzVtcDNua0xHZzhqMTlyWDZjbDNRLVVWRXJFSGJSSUVqUWN3cVZjYjRhalFscFVTZVBFTXBkWk1Yc2hjUTVoU1QySF8wakRUN3JiWTFaSDRnY1R1TjlRM1hVbWFsczVnM0FYZ2J1YmZncWRYSlhyYnlHb1ZTQTFITTNyQnJzTHpi?oc=5) | Reuters |
+| 11h 前 | 0 | 中性 | [What Is Driving Eli Lilly (NYSE:LLY) Rapid Growth in Metabolic Health? - Kalkine Media](https://news.google.com/rss/articles/CBMirAFBVV95cUxOZzhvcmtiOVhjdWFBVHNBVnZSOHl2bzRDZXg1QXlhVXltZ3ZHUnBsZmpqa2RsUnVsMV9vYWR5VnJDYnBDZ1ZHLTlad0JFeEdTekdlRVJHejR6VExYWUYzR21hdk1NZGhyZ0JYZFk4MDFpTFVYMjFNalpYSFN5aEJIRTBPMHZfZ3hpTjB4OGhwQUxNZ21xMU45aGJ0VjRMT0hUV0dXU2VwMmtLVnRZ?oc=5) | Kalkine Media |
+| 22h 前 | 0 | 中性 | [Lilly’s Zepbound shows promise in teen obesity trial (LLY:NYSE) - Seeking Alpha](https://news.google.com/rss/articles/CBMilAFBVV95cUxPSVFjaFVEY3ZtN0hrSDJXb28xZzZrczN5MS1jU2ZZNUozNnhEdFhuR0I4Mm41Y0l1WHRRYXBqTjBvVV9HZjZRS3JlOXlaUm9MbXFrNXhjeVkwUXV5TU00a0F1OXNDZnVndGFpMFhtRlVRdnBfNHpQUWswZEluWDFYTEQ2ZkNRakUtQzlCWEZNUnlZdVpw?oc=5) | Seeking Alpha |
+| 25h 前 | 0 | 中性 | [SA Asks: What are the most attractive Big Pharma stocks right now? (LLY:NYSE) - Seeking Alpha](https://news.google.com/rss/articles/CBMipAFBVV95cUxOOUF5UzQzREVxdk13bG1TRk9SUVRZeEtwRUE0TmhzRE1TNXZLT0NPQm1QdnE4eG0xRDE0M29qYjNlQTd1RlRUX285Y2pTMkJDcm1hWFBwRHVHeldXdF9WMi14aFJxNXN1RzlsczZ3WVdzR21yNUV0R3RHcTJCa0RwNDZWYThibFJodW5ENXlCc0RERDl0Uk50TDBQeFU1RVp3XzJGUA?oc=5) | Seeking Alpha |
+| 28h 前 | 0 | 偏空 | [Eli Lilly Stock: What Its 23% Weight-Loss Combo and 27% Dropout Rate Mean - TIKR.com](https://news.google.com/rss/articles/CBMingFBVV95cUxONS1nRWJWSWFxUXV4OEkzaTR2TjBUMENicUdzT1hfUFB0bFhua29QVUp3R0pPMHY1WXBoeDBFYnRyRnp1Si12X09PMXZPRzVJeHBIZ1Q3T3c5YWF6cWVHWEdIQUZDekZIQWRxRTBaSVA4cjRlcUFEWWhycU5NZlF6dUptSndNTEhGWXhTbVBncGtoV0pQZTg4NDVNTTlEQQ?oc=5) | TIKR.com |
+
+_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
 ## 五、反方观点与风险
 
@@ -138,7 +153,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-11-11 | 1,416.36 | 1,438.72 | 1,412.66 | **1,435.55** | +0.3% | 1,872,700 |
 | 2026-11-12 | 1,444.80 | 1,458.23 | 1,425.55 | **1,425.55** | -0.7% | 2,407,800 |
 | 2026-11-13 | 1,429.91 | 1,449.64 | 1,419.77 | **1,443.50** | +1.3% | 2,081,600 |
-| 2026-11-16 | 1,453.75 | 1,475.25 | 1,427.66 | **1,431.67** | -0.8% | 3,066,377 |
+| 2026-11-16 | 1,453.75 | 1,475.25 | 1,427.66 | **1,434.38** | -0.6% | 3,066,377 |
 
 ## 七、自己去查（本页不做独立验证）
 

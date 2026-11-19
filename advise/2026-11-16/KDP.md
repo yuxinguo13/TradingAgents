@@ -112,8 +112,11 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 | 时间 | 材料度 | 倾向 | 标题 | 来源 |
 |---|---:|---|---|---|
-| 7h 前 | 6 | 中性 | [Keurig Dr Pepper Raises $2bn Stock Offering To Cut Debt Ahead Of Split - ESM Magazine](https://news.google.com/rss/articles/CBMiswFBVV95cUxQN096NHpyLVVUU3ZIZ0pXdzktOUw0eHNaMm92Z2w1cUVmelk0NUZhRVlsbzkyWG8za01FUm5uOXk4SDAyeThxVFl2RVFELXBWZDFSUWJfM3FMMXFSa0hrenJ6SWgzekl1WU1OREtYcU5sWVg2OXZKcDhpYy1WQzJLcWFBLWJSWlg5YU1mbWRieDFBblNtMDFPVU14SEtPcjFjdkpBVW1oYkNvQ29zU2NxVlRwcw?oc=5) | ESM Magazine |
-| 11h 前 | 0 | 中性 | [Keurig Dr Pepper Inc. (KDP) Stock Forecasts - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMikAFBVV95cUxQZGVaY0NaQW4tNGNtTWNiU19rZFZRZWpTbzNBUWZKU0VKZjdZNUwzM0xVWVpYTDNwWHFyWkYzQVZ2Q29PU0gteGVRM1JZaGFwSlFNSVdlOENmd1pRS3ROWWkyb0piMkE4NnZ4NFYzeU1PTS1HWUY4cGJZVjZIbmZ5ZEVEZzlRM283RGlzWUNDSXc?oc=5) | Yahoo! Finance Canada |
+| 10h 前 | 8 | 中性 | [Weekly Recap: Debt-focused share sale and JDE Peet’s Q3 contribution - TradingView](https://news.google.com/rss/articles/CBMiyAFBVV95cUxOdVVVcmtBeGZzV252eWIxYU9Eckl2LVhtb1FOdXZnSWR4dlFxdXFJdUZaNzd3LU1RanJJNFRSaWhhMnhycTFaZ3hrTnBmQ045bUZpaGtBUTVGTFgzSlJWZWp2OXZkWE5SVk4xc2l6QmxYREp3NHUwT3pOQjlSN1psTWVKUkpWVVJpUHhrYS15aHNsOUotdVZrWnRFdFNfNEFmaU9kN0w4VjNtZmNTczlGUTV5SGhDdHJKWGx1TEdxMGpmYnctRFVhWg?oc=5) | TradingView |
+| 14h 前 | 8 | 中性 | [Keurig Dr Pepper, Inc (KDP) - What Are Researchers Thinking About This Stock? - MarketBeat](https://news.google.com/rss/articles/CBMi0AFBVV95cUxQT3k1TjF2UHNsQ3kxQWpCWUJWb0tuelp4dXZiNUZwN3pnb1g1NmVibldIb1A1dTZ4WE5FTmF5WjZtTGRmVzhtRFp1bWlnNFNiYW1pMzY3aFdINmdZVVN5SnlrMzJPZE5qSlg1cW9iUzRoTDI5S0wta3A0QURleURtZ0FMMzE5eDJMSTRXSE14UHNOVmttYXRHNDA4RHZZNUNNTzI3NUswc2pGNDFEVzdVVmZCTkptZU85dFFlLW9QRGN5ejdGbUVTODNNVUc1ZGNR?oc=5) | MarketBeat |
+| 5h 前 | 0 | 中性 | [Implied Volatility Surging for Keurig Dr Pepper Stock Options - TradingView](https://news.google.com/rss/articles/CBMiuAFBVV95cUxNblhueU1oZ2gtT1U0LUllXzgyRC1uTTNuZFh3djdIcVpNRnZvaEJRcFBIOWpZdl93MzNtMnhGdkFWdDdROEZoWFo0a3BrZ0hLQUdVOGhzZjBnSFo1TjRiX1FKT3d0ajlucGpQT0JmYzFEMnJkZF9HbG9HU3BjQmRKY05WUEw5MzNuMGM5YVNoNEVxOURnT1FTd2JubnJPeEZrMDlaYlpPM3NWQmtvZnZ4RzdlOFU5dDRq?oc=5) | TradingView |
+| 32h 前 | 0 | 中性 | [Trading Systems Reacting to (KDP) Volatility - Stock Traders Daily](https://news.google.com/rss/articles/CBMiwAFBVV95cUxNeHFReDBuRWh5SjkydTg4Ny1wRjZtUHVkSllaakxQZkJSd0pyellrcFVkZkFCSVFQc0RwSVgtR2Y2QVZiNFc0a3dZbzVXd3pBUmFld21UVEMzbldsYm5jaC11Y19vRl82WGc5OWNkSTBrMDVBbjJveWd5dEdfTklvaEFLVEFxTUdkWFhtRmVuSUp4V1NIRFVjWkJoZWU5MllURW5iU2czaUVhelRsNUF1aHExSmJjLTR0V1l6N2VCd24?oc=5) | Stock Traders Daily |
+| 46h 前 | 0 | 中性 | [How Investors Are Reacting To Keurig Dr Pepper (KDP) $2b Share Sale - Yahoo Finance](https://news.google.com/rss/articles/CBMiogFBVV95cUxNMUpZeW5JOENWRE4xWl9TYm1NZWlwanhTQTVsLVFRNzdVUnpuLVhnYWo1WDZyUzg0MUx3d1p3RTNmR0Q5SjhxLWNHZmt2dTR5QjczdTVjeGJWd25jNjgwb1pWNm4za2x1bTZENnhfdHNHUDZlWUJmMTUxWWZ4U21RNm5qRlI3TEVjc2pyV2NKZlRIM3dUeDMzdE5RQkx2RTlPVHc?oc=5) | Yahoo Finance |
 
 _材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
@@ -121,7 +124,7 @@ _材料度是关键词打分（0–12），不是重要性的度量：机构持�
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
-- 政策面对该板块的倾向为 -0.62（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.96（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 

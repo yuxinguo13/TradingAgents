@@ -110,14 +110,29 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
+| 时间 | 材料度 | 倾向 | 标题 | 来源 |
+|---|---:|---|---|---|
+| 12h 前 | 9 | 偏多 | [Coca-Cola HBC gets approval for JSE listing ahead of $2.6 billion acquisition deal - Businessfront](https://news.google.com/rss/articles/CBMif0FVX3lxTE1TNzFOQWNQRHBFdUVYVC1TMTE1UnRzRmdfQ2dfbUJFdnZpZ1gyU0tNUExaLTRmLVpXbF9fRHpJT0JQZk1Vbm4xOW9vZlBFd3R3UElvdXpkWVE2QjlsZTd3a213LW9TUktYREhiQUFFQ0tCQ2RQRnlFSXJKTmNPemM?oc=5) | Businessfront |
+| 22h 前 | 9 | 偏多 | [Coca-Cola Icecek stock: S&P raises outlook to positive - ad-hoc-news.de](https://news.google.com/rss/articles/CBMisgFBVV95cUxObHRRdzJLMl9nTjJFRzVaNDNscEwtclRqdHpwTi1pVGdESDdxdHV0bzFUakpBakdLSHN2MnIxNk0tMXR2TjNzWS1aY2xHRV83X01MUGEzNFBab3JYZ0FiYTlsRzliY0ZlT3lKRmVWTzZIRHRoY0t5eWxqWVNhSlYxVmJwSVlWS2diN1FhYTlTaFZseVZoeExfVXhhVThWRmRFM0FwLUJrVmJzWHRPMXFIaGtB?oc=5) | ad-hoc-news.de |
+| 25h 前 | 8 | 中性 | [Water Stocks To Research - November 15th - MarketBeat](https://news.google.com/rss/articles/CBMingFBVV95cUxONzRPNHpBSTJGTkRLZnZEWjlPeHRpM2NVQ0FiMlYycndibUVmSUhfLXBzcEdNU19LM2NFTkhrQXJzbUJhSUEtSGpZeFQ3MExlSWh2emJsc29MQmZzLXJoMHZmdXZ2WGl2dE8ybFhnWGRDQTlHM25EM3IzbmpTdlEwNHAtc2NmUmpBU1JmRlBJUWp6emJsMmZxbjdOZmdCZw?oc=5) | MarketBeat |
+| 1h 前 | 0 | 偏多 | [QUICK SPARK: Wall Street Sold Chips, Bought Coca-Cola at the Strongest Pace Since September 2001 - Benzinga](https://news.google.com/rss/articles/CBMitwFBVV95cUxNUGhlaGg1eWotdVU2MWNrR3JCSjVKS3Y3eEttUkpRS0VpcXdSX3VkeXFWUnZPRFl0OUFDeXNyUHJEUVlVcERFSkNaRTFIQTg0S2U4TGJMTHJ2R3RXQ3FLNGNYVGZLR00xNm9XOFgyTGFya2g3bnhreHFUZ1NnMmZUOHdzbmNGU1g2UVo5a3hXTUdzMm4xOWl6ajVnUmZfZDhvX0FBdWhSTV9pS2RrdUVpdlZqS29waGs?oc=5) | Benzinga |
+| 3h 前 | 0 | 中性 | [What Does Warren Buffett's 90/10 Rule Say to a 74-Year-Old With $1 Million of Coca-Cola at a Record? - 24/7 Wall St.](https://news.google.com/rss/articles/CBMi2AFBVV95cUxOeUo2RURpYlFXalhrWDkzZGJMbXkxc1BZc3RDbHpDYTJxbkF0dU9sQ3pEMUFyWGlRSElNWDZqamVRbi01cG9PcWpvY0doUFVvN3FhcjRITXBXT0twVE4yT043QlFSWDRhOThNQVNMbmdNNnEtam1yc3A1cmoxLVFlWU1kNEtlYjU1bndBTlF6QjBLQzBqX0ZmYzhmdmpLajJHYzFDY3JFSlc5TUZ5bUlNT0Qtd0JJQ0hqSnFoU2hVV2lLZVMwSEtfVWc0NzBhVnptZjlrdXNURTU?oc=5) | 24/7 Wall St. |
+| 3h 前 | 0 | 偏空 | [PepsiCo Stock Drops 2.4% in 6 Months: Is More Downside Ahead? - TradingView](https://news.google.com/rss/articles/CBMitAFBVV95cUxNdmZKNDhmOV9UTnEyMDd6Z2hKVTZUaXpSeGExT2VuMGNvbElETFJERDFnY3paRFREY2l1dF9iZGpzMTBnakowVS1kS0FmYkc2RUdIanhoYXEyZUktd19MeFRSUmNKZV91bk80VG1BakkyRExyWEdrMUwyd3ZsdENsdC0ybmcwNTEtVjdoM3ZET1g2bC10ZWtjWG02bWlIb0I2QW5tdWVOUjc4RGtRRl8xeE50cU4?oc=5) | TradingView |
+| 6h 前 | 0 | 中性 | [Coca-Cola Stock (KO) Rises Above $100 as Investors Seek Safety in a Volatile Market - TipRanks](https://news.google.com/rss/articles/CBMirwFBVV95cUxOaE13N2FBOGJ1TTUwTEdYYTFSeGtudk9hamxWdi1teEM5WkVHWlVyWlRlUXRKQmt3WE5TQ1ZsMjVGU3kyUjctQUtUS1kzMUdMN0JqeGE5b2pSbWJtWUlEdTQzMllEUU9DQUxPRzBIYlFON2lIQmNDd3FRWG5SWnNscE5GR2c5VjVDWnBPdGdfNmVPU2ZJdmFxai1tVzlkWmo0SmhVY2JhTWtqZ21JOTBv?oc=5) | TipRanks |
+| 11h 前 | 0 | 中性 | [Coca-Cola HBC sets Nov 23 date for listing on Johannesburg Stock Exchange - Nairametrics](https://news.google.com/rss/articles/CBMirwFBVV95cUxNcWNDRnBIemg5T2Foc1NGX3dTZndjYlM0azgzZUdRdGttTlpIb1F3eEdOWDhvVUZXalBaaDkyQXY5aTRMMGVTS2preF9JSnNGczE5cTlqUTA1SWw3SHJCR3BrWHpUZTRrYlZ2MlRkVDlHaGg5NWt2SVp6SGFWUU9wT1VLaFpIZlFGeHJvTzVfZVgwQXpIWjZpTjNxelVQUmRGb2x5dXpzRUs4SDVFWElj?oc=5) | Nairametrics |
+| 11h 前 | 0 | 中性 | [Coca-Cola HBC secures JSE secondary listing - thenational.co.za](https://news.google.com/rss/articles/CBMijwFBVV95cUxNMHFpZmlldFZvWGNvckxyMlJkSjVHY2RNendndURoU1lWaVk4LWlJNTVRUGg4LXZpb0FRS1NPejlFei0teU5BVUFONkFLeENxT1diNU1TWExlY1poNlpBRmh0dG9Ja01FLTVPWjdIZnFxRXJ2RTdHbF9BU0VvMW4yeG9lNFJyRWVtYUZ4cmFUUQ?oc=5) | thenational.co.za |
+| 11h 前 | 0 | 中性 | [Coca-Cola HBC Secures Johannesburg Listing Ahead of CCBA Acquisition - ESM Magazine](https://news.google.com/rss/articles/CBMiuwFBVV95cUxQa1QyOGtId0U4RXA1MmlMVUx1aGp5M0dNX1dKbHVRRml3enlpVHJYQTUweERnN3dCeWlXV3BJazVLZTlqSFFiSGVjMVlwV3FiUDUxbV9pRlVqakpwSEY5dUhkTm54VnJDamZpVlM3LVZyTVBXZUQwZU9TVmY0LWg5UU40cTNtbC1zUkwycm5Cbm81VThmbElMMTdzSEM3TzB0NURKaTNEZ1h2dG1RNUVXYzlNR0U1eWw2dFBn?oc=5) | ESM Magazine |
+| 12h 前 | 0 | 中性 | [India's largest Coca-Cola bottler is going public; the fine print may surprise you - ET Now](https://news.google.com/rss/articles/CBMizAFBVV95cUxPSnRmazU5ME5ZV1lMZjZnN2ZJZG11Z1RlVWFsQ3I3Wmt6cUs2T05VZDhmVTJreFpIZlpOZmNrT1c3WTZwZWo5WDdqdTlaNmVMVlpmTEN0ZGg0Uk04WkJrNXNZS2lacmlXemU4OF9TdWVqcFlRSXU2ZmYxV1ZUZmgyTXhUd3h1eS1SeVpfNDlrSHpzUzJJX3h4cVA1eUxhNlYtSFNENHU0WDM0d0FueWRrUXBHQ244RmZNV1liV3hNTEJDM214MlNTdFh5dkfSAdIBQVVfeXFMTlNuckxibHRLNjNSbWJPc3BIcGZScnNENWNNWVJ0ci1saVY4Z1k0dG1IRXhXTUFET1U2VVU0aGNlZ09Cd0FDX3BGbnlTRjU3aXAyazloOFN1V05oNjJDODdlNDlicFdkVzJlMWJHNUNvbThIdDE1c0ZRdUN2ODJOcFBTbV9Rd2dJSWlNUDJsMlBJRy16aFFBS3hlS3VWNy1mR1VYME5MQ19WamNqTzBPc0tCMExJWHFYMUFiXzQ5Tll5ZmpVZ3RWYzRIclBQUUFpTzJR?oc=5) | ET Now |
+| 13h 前 | 0 | 中性 | [Coca-Cola HBC confirms JSE listing - Moneyweb](https://news.google.com/rss/articles/CBMikAFBVV95cUxNLXI3aHM4Nlk1VV9TMHF6VUFtb2J3cEEyTGJWVm1LM0wyb0xqVENDZ1VXcFlUSnU0VlNMSlhvdmtmMXp1R0ptMGxRMkJRaTQzYWNRaVFqU0NnZWU2NDA4d0htTzFydGQ0N3lfZWVWQVotY2E4V0FaWW0tbE55ckZRcmZjTzJMY0xmVkpFdmZDNEg?oc=5) | Moneyweb |
+
+_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
 ## 五、反方观点与风险
 
 _以下每一条都是按规则从同一批数据里读出来的，不是为了平衡而写的场面话。_
 
 - 现价已经高于卖方目标价均值 98.43（-1.1%）——共识认为没有上行空间了。
-- 政策面对该板块的倾向为 -0.62（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
+- 政策面对该板块的倾向为 -0.96（负值＝逆风），这只影响排序、不构成否决，但它是逆风。
 
 ## 六、原始数据（本页所有计算的来源）
 

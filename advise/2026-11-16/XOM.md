@@ -13,8 +13,8 @@ _能源 · 数据截至 2026-11-16 收盘 → 面向 2026-11-16 开盘_
 183.9 ┤                                                                  ╭╮╭─╮
 179.6 ┤                                                               ╭──╯╰╯ ╰╮
 175.2 ┤                                                             ╭─╯       │
-170.9 ┤                                                 ╭╮         ╭╯         │····
-166.6 ┤                                      ╭─╮      ╭─╯│       ╭─╯   ·······╰────
+170.9 ┤                                                 ╭╮         ╭╯         │···╭
+166.6 ┤                                      ╭─╮      ╭─╯│       ╭─╯   ·······╰───╯
 162.3 ┤─╮                                   ╭╯ ╰╮ ╭───╯  ╰─╮╭────╯·····
 158.0 ┤ │                         ╭╮     ╭──╯   ╰─╯      ··╰╯···
 153.7 ┤·╰─╮·····                 ╭╯╰───╮╭╯          ·····                ::::::::::
@@ -48,11 +48,11 @@ _能源 · 数据截至 2026-11-16 收盘 → 面向 2026-11-16 开盘_
 
 ### 图形读数
 
-- **均线排列**：均线偏多 — 现价距 20 日 174.76（-4.5%）、50 日 169.53（-1.6%）、200 日 155.42（+7.4%）
+- **均线排列**：均线偏多 — 现价距 20 日 174.76（-4.5%）、50 日 169.53（-1.5%）、200 日 155.43（+7.4%）
 - **形态结构**：扩张震荡 — 高点抬高但低点下移，波动在放大；前高 164.91 → 188.50（+14.3%）、前低 174.63 → 160.11（-8.3%）
-- **动能**：RSI(14) 43，偏弱；近一月的斜率慢于近三月（月 -6.8% vs 季 +0.8%），涨势在放缓
+- **动能**：RSI(14) 43，偏弱；近一月的斜率慢于近三月（月 -6.7% vs 季 +0.9%），涨势在放缓
 - **波动**：日均真实波幅约为价格的 2.8%；按本报告 2 ATR 的止损惯例，一个 R 相当于 5.6% 的价格距离
-- **位置**：距 52 周高点 -10.9%，距 52 周低点 +48.6%
+- **位置**：距 52 周高点 -10.8%，距 52 周低点 +48.7%
 - **量能**：最新一日成交量为 20 日均量的 0.9 倍，量能正常
 - **相对强度**：近一月跑输 标普500 3.7 个百分点
 - **支撑 / 阻力**：最近的摆动低点 160.11，摆动高点 168.64（由 ±3 根 K 线的分形极值定义，不是画线画出来的）
@@ -69,7 +69,7 @@ _以上每一条都是对已经发生的价格的描述。均线、RSI、摆动�
 - **增长**：最新季度营收同比 +32.6%；盈利同比 +111.4%；最近 7 次财报里 6 次超预期。
 - **盈利质量**：毛利率 29.8%、营业利润率 12.9%、净利率 10.5%、ROE 15.5%。
 - **资产负债**：现金 $121.53亿；有息负债 $342.50亿；负债/权益 12.6%（负债很轻）；流动比率 1.19；自由现金流 $283.19亿，为正。
-- **卖方预期**：22 位分析师覆盖；平均评级「买入」（2.42/5，1 为最看多）；目标价均值 184.18（较现价 +10.4%），区间 160.00–213.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
+- **卖方预期**：22 位分析师覆盖；平均评级「买入」（2.42/5，1 为最看多）；目标价均值 184.18（较现价 +10.3%），区间 160.00–213.00。分析师目标价是共识而不是预测，且随价格一起移动——它更适合用来看分歧有多大（区间宽度），而不是用来当目标位。
 
 **分季度损益**（季度数据，最新在左）
 
@@ -110,7 +110,14 @@ _财务数字来自 Yahoo Finance 对申报文件的转录：会被重述、会�
 
 ## 四、消息面（过去 24 小时）
 
-_过去 24 小时没有抓到这只股票的新闻。没有消息本身也是一种状态：本次建议的依据只有价格与财报。_
+| 时间 | 材料度 | 倾向 | 标题 | 来源 |
+|---|---:|---|---|---|
+| 10h 前 | 6 | 中性 | [ExxonMobil Holdings Corp's Dividend Analysis - GuruFocus](https://news.google.com/rss/articles/CBMiigFBVV95cUxPYmMxV09mdDBnbmlWaW52UXFEZkVzSldXXzM3YW52LThNcWVpX183VXFHLXIwUzg5UDBTU0QzdmI0RFlNUjRLNkN4cUFMTEdWX3ZzNjhHUUVKYk9KZjg3cGk3emt1QnR1ZTl1TDQ4d0RQckxuV0V2S2lvQmUyV3IzbVpscl9wR1I2NVE?oc=5) | GuruFocus |
+| 4h 前 | 0 | 中性 | [What's Going On With ExxonMobil Stock Monday? - Benzinga](https://news.google.com/rss/articles/CBMiowFBVV95cUxNaVFoRS1HNnIwSVVMeUt1WkpScnpPNzEyQUdmVFYwUncwSURpaGxKR08wajBUdV82WVlMOWQ2Z2RQTElUdUxpR1Q5aXRYay1qcEJYcm5xMGJKYmZoWEdDejRlMlEyaTNfVEVULV9faml5WmlQYkx0MlMtNF94YzFvTFo1bVJUUXhrMGU0dkFLQ18yNXo5dDc1MkNhVFptbVhlRFMw?oc=5) | Benzinga |
+| 8h 前 | 0 | 中性 | [ExxonMobil Holdings Corporation (XOM) Is a Trending Stock: Facts to Know Before Betting on It - Yahoo Finance](https://news.google.com/rss/articles/CBMirgFBVV95cUxQdlZNcVozVTRySlVNZkl1YmUxaWR4WW8tNlZCdkFPS1RpLTN2UjhiZWdlV2VBWko2UFdHVjM1d1ZxQU45WTNtamJTYkd5VnBqcFhleW5vUEFubEpYald0S1VDUl9qc0xySENjTEZsVGpSWk1ZWExYNEFDekZnakY0QUl2SXUxSE9DQnhueFd3YWt0SmJTOWFxN1lzbG1wb05LNndwd2poTkFxR2dUWEE?oc=5) | Yahoo Finance |
+| 11h 前 | 0 | 中性 | [The Zacks Analyst Blog Highlights Visa, ExxonMobil Holdings and Pfizer - The Globe and Mail](https://news.google.com/rss/articles/CBMi6AFBVV95cUxPZXBCekFEM1pYSDBubGR3andweU91N19RSC1wOHBqSXQtbDg5NDktTkY2eFlhVzlveGVFajU3eW85WWlqbzktckV0R0xVSkl0S2VUbUpobXNEUHZqb3FCWS1ZY2Y4a2F1LS1HbFlGMUNtcDdFd1R3VVRpZFVXUGNkTEYxWGlfOXlEc09iN3REanNHZ3NReDAzXzRFQjhCMWV2d3c0WGRMcDVkT2VBWVV3ZXpFZ0NsMGdjbUhmOUMwUVlTbHlYMGRlS2dyMGd5R0lmVGRTRlp2dmNWa0hnM3d1SFRrdzVmS2Rp?oc=5) | The Globe and Mail |
+
+_材料度是关键词打分（0–12），不是重要性的度量：机构持仓申报一类的噪音被压到 3 以下，但一条打 9 分的标题也可能只是转载。_
 
 ## 五、反方观点与风险
 
@@ -138,7 +145,7 @@ _以下每一条都是按规则从同一批数据里读出来的，不是为了�
 | 2026-11-11 | 165.14 | 166.75 | 164.46 | **166.71** | +1.4% | 13,376,700 |
 | 2026-11-12 | 168.25 | 170.92 | 167.34 | **169.78** | +1.8% | 12,243,800 |
 | 2026-11-13 | 171.43 | 171.71 | 169.21 | **170.59** | +0.5% | 11,474,700 |
-| 2026-11-16 | 169.53 | 170.25 | 166.48 | **166.87** | -2.2% | 12,546,395 |
+| 2026-11-16 | 169.53 | 170.25 | 166.48 | **166.98** | -2.1% | 12,546,395 |
 
 ## 七、自己去查（本页不做独立验证）
 
