@@ -1,5 +1,5 @@
 {
- "saved_at": "2026-11-19T20:13:15",
+ "saved_at": "2026-11-19T20:18:25",
  "positions": {},
  "closed": [
   {
@@ -903,7 +903,7 @@
    ],
    "pnl": -333.51,
    "r": -1.0525136650402782,
-   "reviewed": false,
+   "reviewed": true,
    "sleeve": "aggressive"
   },
   {
