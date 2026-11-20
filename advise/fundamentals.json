@@ -165,7 +165,7 @@
  },
  "MSFT": {
   "symbol": "MSFT",
-  "fetched_at": 1795125128.586181,
+  "fetched_at": 1795211555.1589901,
   "name": "",
   "sector": "",
   "industry": "",
@@ -175,7 +175,7 @@
   "pe_forward": NaN,
   "ps": NaN,
   "ev_ebitda": NaN,
-  "peg": 1.5037,
+  "peg": 1.4742,
   "eps_trailing": NaN,
   "eps_forward": NaN,
   "dividend_yield": NaN,
@@ -665,7 +665,7 @@
  },
  "AXTI": {
   "symbol": "AXTI",
-  "fetched_at": 1795125139.5264084,
+  "fetched_at": 1795211566.237545,
   "name": "",
   "sector": "",
   "industry": "",
@@ -1009,7 +1009,7 @@
  },
  "LLY": {
   "symbol": "LLY",
-  "fetched_at": 1795125125.4655392,
+  "fetched_at": 1795211552.0874984,
   "name": "",
   "sector": "",
   "industry": "",
@@ -1019,7 +1019,7 @@
   "pe_forward": NaN,
   "ps": NaN,
   "ev_ebitda": NaN,
-  "peg": 1.2779,
+  "peg": 1.2487,
   "eps_trailing": NaN,
   "eps_forward": NaN,
   "dividend_yield": NaN,
@@ -1130,7 +1130,7 @@
   "surprises": [
    {
     "when": "2027-02-03",
-    "estimate": 11.25,
+    "estimate": 11.26,
     "actual": NaN,
     "surprise_pct": NaN
    },
@@ -1525,7 +1525,7 @@
  },
  "QQQM": {
   "symbol": "QQQM",
-  "fetched_at": 1795125116.482217,
+  "fetched_at": 1795211542.8101296,
   "name": "",
   "sector": "",
   "industry": "",
@@ -2287,7 +2287,7 @@
  },
  "GLDM": {
   "symbol": "GLDM",
-  "fetched_at": 1795125130.0707338,
+  "fetched_at": 1795211556.9363806,
   "name": "",
   "sector": "",
   "industry": "",
@@ -2328,7 +2328,7 @@
  },
  "ABBV": {
   "symbol": "ABBV",
-  "fetched_at": 1795125122.436366,
+  "fetched_at": 1795211549.0149727,
   "name": "",
   "sector": "",
   "industry": "",
@@ -2338,7 +2338,7 @@
   "pe_forward": NaN,
   "ps": NaN,
   "ev_ebitda": NaN,
-  "peg": 0.5755,
+  "peg": 0.5705,
   "eps_trailing": NaN,
   "eps_forward": NaN,
   "dividend_yield": NaN,
@@ -2672,7 +2672,7 @@
  },
  "XOM": {
   "symbol": "XOM",
-  "fetched_at": 1795125117.7851772,
+  "fetched_at": 1795211544.2515478,
   "name": "",
   "sector": "",
   "industry": "",
@@ -2682,7 +2682,7 @@
   "pe_forward": NaN,
   "ps": NaN,
   "ev_ebitda": NaN,
-  "peg": 1.2646,
+  "peg": 1.2516,
   "eps_trailing": NaN,
   "eps_forward": NaN,
   "dividend_yield": NaN,
@@ -3524,7 +3524,7 @@
  },
  "KDP": {
   "symbol": "KDP",
-  "fetched_at": 1795125119.243641,
+  "fetched_at": 1795211545.719091,
   "name": "",
   "sector": "",
   "industry": "",
@@ -3671,7 +3671,7 @@
     "when": "2026-02-24",
     "estimate": 0.59,
     "actual": 0.6,
-    "surprise_pct": 0.020099999999999996
+    "surprise_pct": 0.0191
    },
    {
     "when": "2025-10-27",
@@ -3696,7 +3696,7 @@
  },
  "KO": {
   "symbol": "KO",
-  "fetched_at": 1795125120.8666222,
+  "fetched_at": 1795211547.519638,
   "name": "",
   "sector": "",
   "industry": "",
@@ -3706,7 +3706,7 @@
   "pe_forward": NaN,
   "ps": NaN,
   "ev_ebitda": NaN,
-  "peg": 4.1332,
+  "peg": 4.049,
   "eps_trailing": NaN,
   "eps_forward": NaN,
   "dividend_yield": NaN,
@@ -3868,7 +3868,7 @@
  },
  "BRK-B": {
   "symbol": "BRK-B",
-  "fetched_at": 1795125123.842991,
+  "fetched_at": 1795211550.5849462,
   "name": "",
   "sector": "",
   "industry": "",
@@ -4002,6 +4002,12 @@
    {
     "when": "2026-08-08",
     "estimate": 5.13,
+    "actual": NaN,
+    "surprise_pct": NaN
+   },
+   {
+    "when": "2026-08-08",
+    "estimate": 5.13,
     "actual": 6.03,
     "surprise_pct": 0.174
    },
@@ -4028,19 +4034,13 @@
     "estimate": 5.04,
     "actual": 5.17,
     "surprise_pct": 0.0271
-   },
-   {
-    "when": "2025-05-03",
-    "estimate": 4.72,
-    "actual": 4.47,
-    "surprise_pct": -0.0537
    }
   ],
   "error": ""
  },
  "AMZN": {
   "symbol": "AMZN",
-  "fetched_at": 1795125127.1615942,
+  "fetched_at": 1795211553.737161,
   "name": "",
   "sector": "",
   "industry": "",
@@ -4050,7 +4050,7 @@
   "pe_forward": NaN,
   "ps": NaN,
   "ev_ebitda": NaN,
-  "peg": 1.1969,
+  "peg": 1.1945,
   "eps_trailing": NaN,
   "eps_forward": NaN,
   "dividend_yield": NaN,
@@ -4212,7 +4212,7 @@
  },
  "JNJ": {
   "symbol": "JNJ",
-  "fetched_at": 1795125131.5641732,
+  "fetched_at": 1795211558.2848773,
   "name": "",
   "sector": "",
   "industry": "",
@@ -4222,7 +4222,7 @@
   "pe_forward": NaN,
   "ps": NaN,
   "ev_ebitda": NaN,
-  "peg": 3.0684,
+  "peg": 3.0058,
   "eps_trailing": NaN,
   "eps_forward": NaN,
   "dividend_yield": NaN,
@@ -4384,7 +4384,7 @@
  },
  "CEG": {
   "symbol": "CEG",
-  "fetched_at": 1795125133.0849633,
+  "fetched_at": 1795211559.9326293,
   "name": "",
   "sector": "",
   "industry": "",
@@ -4394,7 +4394,7 @@
   "pe_forward": NaN,
   "ps": NaN,
   "ev_ebitda": NaN,
-  "peg": 0.9067,
+  "peg": 0.8697,
   "eps_trailing": NaN,
   "eps_forward": NaN,
   "dividend_yield": NaN,
@@ -4505,7 +4505,7 @@
   "surprises": [
    {
     "when": "2027-02-24",
-    "estimate": 2.72,
+    "estimate": 2.62,
     "actual": NaN,
     "surprise_pct": NaN
    },
@@ -4556,7 +4556,7 @@
  },
  "ASO": {
   "symbol": "ASO",
-  "fetched_at": 1795125134.8581555,
+  "fetched_at": 1795211561.4976327,
   "name": "",
   "sector": "",
   "industry": "",
@@ -4566,7 +4566,7 @@
   "pe_forward": NaN,
   "ps": NaN,
   "ev_ebitda": NaN,
-  "peg": 0.7403,
+  "peg": 0.7141,
   "eps_trailing": NaN,
   "eps_forward": NaN,
   "dividend_yield": NaN,
@@ -4728,7 +4728,7 @@
  },
  "APLE": {
   "symbol": "APLE",
-  "fetched_at": 1795125136.3064866,
+  "fetched_at": 1795211563.0865214,
   "name": "",
   "sector": "",
   "industry": "",
@@ -4900,7 +4900,7 @@
  },
  "NVDA": {
   "symbol": "NVDA",
-  "fetched_at": 1795125137.7139702,
+  "fetched_at": 1795211564.535871,
   "name": "",
   "sector": "",
   "industry": "",
@@ -4910,7 +4910,7 @@
   "pe_forward": NaN,
   "ps": NaN,
   "ev_ebitda": NaN,
-  "peg": 0.1843,
+  "peg": 0.1782,
   "eps_trailing": NaN,
   "eps_forward": NaN,
   "dividend_yield": NaN,
